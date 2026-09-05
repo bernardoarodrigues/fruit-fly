@@ -1,0 +1,445 @@
+{
+  "schema": 1,
+  "descriptive_after_complete_batch": true,
+  "source_result_sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6",
+  "bins_exact_raw_labels": {
+    "CA": [
+      "CA(L)",
+      "CA(R)"
+    ],
+    "lobe_labels": [
+      "aL(L)",
+      "aL(R)",
+      "bL(L)",
+      "bL(R)",
+      "a'L(L)",
+      "a'L(R)",
+      "b'L(L)",
+      "b'L(R)",
+      "gL(L)",
+      "gL(R)"
+    ],
+    "PED": [
+      "PED(L)",
+      "PED(R)"
+    ],
+    "unspecified_labels": [
+      "CentralBrain-unspecified",
+      "<unspecified>",
+      "Optic-unspecified(L)",
+      "Optic-unspecified(R)"
+    ],
+    "other_named_ROIs": [
+      "CRE(R)",
+      "CRE(L)",
+      "LAL(L)",
+      "SMP(L)",
+      "EB",
+      "SMP(R)",
+      "SIP(L)",
+      "BU(L)",
+      "SIP(R)",
+      "SCL(R)",
+      "ICL(L)",
+      "SCL(L)",
+      "AVLP(L)",
+      "SLP(R)",
+      "AVLP(R)",
+      "PLP(L)",
+      "PLP(R)",
+      "PVLP(R)",
+      "LH(L)",
+      "LH(R)",
+      "SLP(L)",
+      "ICL(R)",
+      "LO(R)"
+    ]
+  },
+  "rows": [
+    {
+      "target": "KC",
+      "source_group": "<missing>",
+      "contacts": 104849,
+      "bin_counts": {
+        "CA": 38653,
+        "lobe_labels": 32834,
+        "PED": 2350,
+        "unspecified_labels": 8865,
+        "other_named_ROIs": 22147
+      },
+      "bin_percent": {
+        "CA": 36.86539690411926,
+        "lobe_labels": 31.315510877547712,
+        "PED": 2.24131846751042,
+        "unspecified_labels": 8.455016261480797,
+        "other_named_ROIs": 21.122757489341815
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "ALIN",
+      "contacts": 2,
+      "bin_counts": {
+        "CA": 0,
+        "lobe_labels": 1,
+        "PED": 0,
+        "unspecified_labels": 0,
+        "other_named_ROIs": 1
+      },
+      "bin_percent": {
+        "CA": 0.0,
+        "lobe_labels": 50.0,
+        "PED": 0.0,
+        "unspecified_labels": 0.0,
+        "other_named_ROIs": 50.0
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "ALPN",
+      "contacts": 390928,
+      "bin_counts": {
+        "CA": 342708,
+        "lobe_labels": 4,
+        "PED": 34,
+        "unspecified_labels": 46968,
+        "other_named_ROIs": 1214
+      },
+      "bin_percent": {
+        "CA": 87.66524782057054,
+        "lobe_labels": 0.0010232063193222282,
+        "PED": 0.008697253714238939,
+        "unspecified_labels": 12.014488601481602,
+        "other_named_ROIs": 0.31054311791429623
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "APL (type override)",
+      "contacts": 196200,
+      "bin_counts": {
+        "CA": 30407,
+        "lobe_labels": 129034,
+        "PED": 15838,
+        "unspecified_labels": 15163,
+        "other_named_ROIs": 5758
+      },
+      "bin_percent": {
+        "CA": 15.49796126401631,
+        "lobe_labels": 65.76656472986748,
+        "PED": 8.072375127421,
+        "unspecified_labels": 7.7283384301732925,
+        "other_named_ROIs": 2.9347604485219163
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "CX",
+      "contacts": 99,
+      "bin_counts": {
+        "CA": 9,
+        "lobe_labels": 48,
+        "PED": 0,
+        "unspecified_labels": 15,
+        "other_named_ROIs": 27
+      },
+      "bin_percent": {
+        "CA": 9.090909090909092,
+        "lobe_labels": 48.484848484848484,
+        "PED": 0.0,
+        "unspecified_labels": 15.151515151515152,
+        "other_named_ROIs": 27.272727272727273
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "DAN",
+      "contacts": 225127,
+      "bin_counts": {
+        "CA": 1714,
+        "lobe_labels": 204106,
+        "PED": 4716,
+        "unspecified_labels": 5382,
+        "other_named_ROIs": 9209
+      },
+      "bin_percent": {
+        "CA": 0.7613480391068153,
+        "lobe_labels": 90.66260377475825,
+        "PED": 2.0948175918481566,
+        "unspecified_labels": 2.3906506105442706,
+        "other_named_ROIs": 4.09057998374251
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "Kenyon_Cell",
+      "contacts": 1153845,
+      "bin_counts": {
+        "CA": 33915,
+        "lobe_labels": 955703,
+        "PED": 82866,
+        "unspecified_labels": 46696,
+        "other_named_ROIs": 34665
+      },
+      "bin_percent": {
+        "CA": 2.9393029393029395,
+        "lobe_labels": 82.82767616100949,
+        "PED": 7.181727181727182,
+        "unspecified_labels": 4.04699071365738,
+        "other_named_ROIs": 3.0043030043030043
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "MBON",
+      "contacts": 11181,
+      "bin_counts": {
+        "CA": 43,
+        "lobe_labels": 10271,
+        "PED": 161,
+        "unspecified_labels": 382,
+        "other_named_ROIs": 324
+      },
+      "bin_percent": {
+        "CA": 0.3845809856005724,
+        "lobe_labels": 91.86119309542974,
+        "PED": 1.4399427600393524,
+        "unspecified_labels": 3.416510151149271,
+        "other_named_ROIs": 2.897773007781057
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "known_graph_source_not_in_prior_input_inventory",
+      "contacts": 0,
+      "bin_counts": {
+        "CA": 0,
+        "lobe_labels": 0,
+        "PED": 0,
+        "unspecified_labels": 0,
+        "other_named_ROIs": 0
+      },
+      "bin_percent": {
+        "CA": null,
+        "lobe_labels": null,
+        "PED": null,
+        "unspecified_labels": null,
+        "other_named_ROIs": null
+      }
+    },
+    {
+      "target": "KC",
+      "source_group": "outside_modeled_graph",
+      "contacts": 95200,
+      "bin_counts": {
+        "CA": 10162,
+        "lobe_labels": 63325,
+        "PED": 2499,
+        "unspecified_labels": 15952,
+        "other_named_ROIs": 3262
+      },
+      "bin_percent": {
+        "CA": 10.67436974789916,
+        "lobe_labels": 66.51785714285714,
+        "PED": 2.625,
+        "unspecified_labels": 16.756302521008404,
+        "other_named_ROIs": 3.426470588235294
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "<missing>",
+      "contacts": 7741,
+      "bin_counts": {
+        "CA": 1176,
+        "lobe_labels": 4236,
+        "PED": 408,
+        "unspecified_labels": 711,
+        "other_named_ROIs": 1210
+      },
+      "bin_percent": {
+        "CA": 15.191835680144685,
+        "lobe_labels": 54.72161219480687,
+        "PED": 5.270636868621625,
+        "unspecified_labels": 9.184859837230333,
+        "other_named_ROIs": 15.631055419196485
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "ALIN",
+      "contacts": 0,
+      "bin_counts": {
+        "CA": 0,
+        "lobe_labels": 0,
+        "PED": 0,
+        "unspecified_labels": 0,
+        "other_named_ROIs": 0
+      },
+      "bin_percent": {
+        "CA": null,
+        "lobe_labels": null,
+        "PED": null,
+        "unspecified_labels": null,
+        "other_named_ROIs": null
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "ALPN",
+      "contacts": 5416,
+      "bin_counts": {
+        "CA": 4522,
+        "lobe_labels": 32,
+        "PED": 11,
+        "unspecified_labels": 676,
+        "other_named_ROIs": 175
+      },
+      "bin_percent": {
+        "CA": 83.49335302806499,
+        "lobe_labels": 0.5908419497784343,
+        "PED": 0.20310192023633677,
+        "unspecified_labels": 12.481536189069423,
+        "other_named_ROIs": 3.2311669128508123
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "APL (type override)",
+      "contacts": 22,
+      "bin_counts": {
+        "CA": 2,
+        "lobe_labels": 11,
+        "PED": 1,
+        "unspecified_labels": 5,
+        "other_named_ROIs": 3
+      },
+      "bin_percent": {
+        "CA": 9.090909090909092,
+        "lobe_labels": 50.0,
+        "PED": 4.545454545454546,
+        "unspecified_labels": 22.727272727272727,
+        "other_named_ROIs": 13.636363636363637
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "CX",
+      "contacts": 12,
+      "bin_counts": {
+        "CA": 0,
+        "lobe_labels": 5,
+        "PED": 0,
+        "unspecified_labels": 1,
+        "other_named_ROIs": 6
+      },
+      "bin_percent": {
+        "CA": 0.0,
+        "lobe_labels": 41.666666666666664,
+        "PED": 0.0,
+        "unspecified_labels": 8.333333333333334,
+        "other_named_ROIs": 50.0
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "DAN",
+      "contacts": 8099,
+      "bin_counts": {
+        "CA": 98,
+        "lobe_labels": 7345,
+        "PED": 224,
+        "unspecified_labels": 278,
+        "other_named_ROIs": 154
+      },
+      "bin_percent": {
+        "CA": 1.2100259291270528,
+        "lobe_labels": 90.69020866773675,
+        "PED": 2.765773552290406,
+        "unspecified_labels": 3.432522533646129,
+        "other_named_ROIs": 1.9014693171996542
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "Kenyon_Cell",
+      "contacts": 210352,
+      "bin_counts": {
+        "CA": 27302,
+        "lobe_labels": 138716,
+        "PED": 20979,
+        "unspecified_labels": 16586,
+        "other_named_ROIs": 6769
+      },
+      "bin_percent": {
+        "CA": 12.979196774929642,
+        "lobe_labels": 65.94470221343272,
+        "PED": 9.973282878223168,
+        "unspecified_labels": 7.884878679546665,
+        "other_named_ROIs": 3.2179394538678023
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "MBON",
+      "contacts": 2383,
+      "bin_counts": {
+        "CA": 8,
+        "lobe_labels": 1855,
+        "PED": 110,
+        "unspecified_labels": 147,
+        "other_named_ROIs": 263
+      },
+      "bin_percent": {
+        "CA": 0.3357112882920688,
+        "lobe_labels": 77.84305497272346,
+        "PED": 4.616030214015947,
+        "unspecified_labels": 6.168694922366765,
+        "other_named_ROIs": 11.036508602601762
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "known_graph_source_not_in_prior_input_inventory",
+      "contacts": 0,
+      "bin_counts": {
+        "CA": 0,
+        "lobe_labels": 0,
+        "PED": 0,
+        "unspecified_labels": 0,
+        "other_named_ROIs": 0
+      },
+      "bin_percent": {
+        "CA": null,
+        "lobe_labels": null,
+        "PED": null,
+        "unspecified_labels": null,
+        "other_named_ROIs": null
+      }
+    },
+    {
+      "target": "APL",
+      "source_group": "outside_modeled_graph",
+      "contacts": 8979,
+      "bin_counts": {
+        "CA": 2175,
+        "lobe_labels": 4578,
+        "PED": 396,
+        "unspecified_labels": 1459,
+        "other_named_ROIs": 371
+      },
+      "bin_percent": {
+        "CA": 24.223187437353825,
+        "lobe_labels": 50.985633144002676,
+        "PED": 4.410290678249249,
+        "unspecified_labels": 16.24902550395367,
+        "other_named_ROIs": 4.131863236440584
+      }
+    }
+  ],
+  "method": "Sum exact target_group_roi_contacts over KC!=APL orAPL targets and listed disjoint labels. No renormalization after excluding unknown/outsidegraph contacts.",
+  "limits": [
+    "These are posthoc descriptive neuropil bins, not validated electrical compartments or detected claws.",
+    "All41raw labels remain in producer outputs; source groups retain outsidegraph/anomaly bins."
+  ]
+}

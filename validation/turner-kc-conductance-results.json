@@ -1,0 +1,858 @@
+{
+  "schema": "turner-kc-conductance-results-v1",
+  "status": "numeric_pass",
+  "plan": {
+    "path": "validation/turner-kc-conductance-plan.json",
+    "bytes": 9325,
+    "sha256": "7fe5d98a2717f0499e7677093f227d3754eec42891d216363b1e8655b066c845"
+  },
+  "source": {
+    "path": "scripts/assay_turner_kc_conductance.py",
+    "bytes": 24342,
+    "sha256": "7a19cfff32c999d7865f5d6f1d11016d3a590180fabf0057de618bb5807e3843"
+  },
+  "started": {
+    "path": "validation/turner-kc-conductance-started.json",
+    "bytes": 466,
+    "sha256": "e386701a8a77387022a64fe4abb2baf441f762f6835f93ef784c7542aea95d20"
+  },
+  "arms": [
+    {
+      "id": "g005",
+      "status": "numeric_pass",
+      "definition": {
+        "id": "g005",
+        "gbar_mS_per_cm2": 0.05,
+        "event": true,
+        "author_intended_EPSP_peak_mV": 1.4
+      },
+      "metrics": {
+        "event": true,
+        "voltage_peak_delta_mV": 1.4570797784438216,
+        "voltage_peak_time_ms": 4.9506707608799605,
+        "voltage_t10_ms": 0.31000936788708233,
+        "voltage_t90_ms": 2.95414737522516,
+        "voltage_rise_ms": 2.6441380073380776,
+        "voltage_falling_1e_time_ms": 18.990125037229337,
+        "voltage_peak_to_1e_ms": 14.039454276349376,
+        "clamp_peak_inward_uA_per_cm2": 0.8873388470538425,
+        "clamp_peak_time_ms": 0.3,
+        "clamp_t10_ms": 0.02413667979187949,
+        "clamp_t90_ms": 0.2623744140593034,
+        "clamp_rise_ms": 0.2382377342674239,
+        "clamp_peak_to_1e_ms": 2.5,
+        "voltage_asymptotic_tau_ms": 11.235955056179776,
+        "clamp_asymptotic_tau_ms": 2.5,
+        "instantaneous_voltage_decay_ms": {
+          "1": 35.21267749347068,
+          "5": 13.589737606582052,
+          "10": 11.648743850141988,
+          "20": 11.25370818431955,
+          "40": 11.235990461123826
+        },
+        "source_differences": {
+          "EPSP_amplitude_minus_author_intended_mV": 0.05707977844382173,
+          "EPSP_amplitude_minus_reported_mean_mV": 0.05707977844382173,
+          "EPSP_rise_minus_reported_mean_ms": 0.5441380073380775,
+          "EPSC_rise_minus_reported_mean_ms": -0.6617622657325761,
+          "conditional_EPSP_tail_minus_paper_fitted_decay_ms": -0.2640449438202239,
+          "conditional_EPSC_tail_minus_paper_fitted_decay_ms": -0.2999999999999998,
+          "decay_comparison_caveat": "Different metrics: source exponential fit window unavailable; no exact fitted-decay reproduction claimed"
+        }
+      },
+      "solver_steps": [
+        {
+          "max_step_ms": 0.2,
+          "nfev": 15094,
+          "saved_internal_time_count": 1008,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.1,
+          "nfev": 30064,
+          "saved_internal_time_count": 2006,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.05,
+          "nfev": 60064,
+          "saved_internal_time_count": 4006,
+          "success": true
+        }
+      ],
+      "reference_count": 194
+    },
+    {
+      "id": "g004",
+      "status": "numeric_pass",
+      "definition": {
+        "id": "g004",
+        "gbar_mS_per_cm2": 0.04,
+        "event": true,
+        "author_intended_EPSP_peak_mV": 1.2
+      },
+      "metrics": {
+        "event": true,
+        "voltage_peak_delta_mV": 1.1693137331346897,
+        "voltage_peak_time_ms": 4.955591038626,
+        "voltage_t10_ms": 0.3105105149806622,
+        "voltage_t90_ms": 2.95860390583603,
+        "voltage_rise_ms": 2.648093390855368,
+        "voltage_falling_1e_time_ms": 18.9935157263787,
+        "voltage_peak_to_1e_ms": 14.0379246877527,
+        "clamp_peak_inward_uA_per_cm2": 0.709871077643074,
+        "clamp_peak_time_ms": 0.3,
+        "clamp_t10_ms": 0.02413667979187949,
+        "clamp_t90_ms": 0.2623744140593034,
+        "clamp_rise_ms": 0.2382377342674239,
+        "clamp_peak_to_1e_ms": 2.5,
+        "voltage_asymptotic_tau_ms": 11.235955056179776,
+        "clamp_asymptotic_tau_ms": 2.5,
+        "instantaneous_voltage_decay_ms": {
+          "1": 35.206877274885606,
+          "5": 13.586736054043332,
+          "10": 11.647743117658822,
+          "20": 11.25363958877966,
+          "40": 11.235990292748463
+        },
+        "source_differences": {
+          "EPSP_amplitude_minus_author_intended_mV": -0.030686266865310285,
+          "EPSP_amplitude_minus_reported_mean_mV": -0.23068626686531024,
+          "EPSP_rise_minus_reported_mean_ms": 0.5480933908553678,
+          "EPSC_rise_minus_reported_mean_ms": -0.6617622657325761,
+          "conditional_EPSP_tail_minus_paper_fitted_decay_ms": -0.2640449438202239,
+          "conditional_EPSC_tail_minus_paper_fitted_decay_ms": -0.2999999999999998,
+          "decay_comparison_caveat": "Different metrics: source exponential fit window unavailable; no exact fitted-decay reproduction claimed"
+        }
+      },
+      "solver_steps": [
+        {
+          "max_step_ms": 0.2,
+          "nfev": 15094,
+          "saved_internal_time_count": 1008,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.1,
+          "nfev": 30064,
+          "saved_internal_time_count": 2006,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.05,
+          "nfev": 60064,
+          "saved_internal_time_count": 4006,
+          "success": true
+        }
+      ],
+      "reference_count": 194
+    },
+    {
+      "id": "zero_event",
+      "status": "numeric_pass",
+      "definition": {
+        "id": "zero_event",
+        "gbar_mS_per_cm2": 0.05,
+        "event": false,
+        "author_intended_EPSP_peak_mV": null
+      },
+      "metrics": {
+        "event": false,
+        "voltage_peak_delta_mV": 0.0,
+        "voltage_peak_time_ms": null,
+        "voltage_t10_ms": null,
+        "voltage_t90_ms": null,
+        "voltage_rise_ms": null,
+        "voltage_falling_1e_time_ms": null,
+        "voltage_peak_to_1e_ms": null,
+        "clamp_peak_inward_uA_per_cm2": 0.0,
+        "clamp_peak_time_ms": null,
+        "clamp_t10_ms": null,
+        "clamp_t90_ms": null,
+        "clamp_rise_ms": null,
+        "clamp_peak_to_1e_ms": null,
+        "voltage_asymptotic_tau_ms": null,
+        "clamp_asymptotic_tau_ms": null,
+        "instantaneous_voltage_decay_ms": null,
+        "source_differences": null
+      },
+      "solver_steps": [
+        {
+          "max_step_ms": 0.2,
+          "nfev": 15169,
+          "saved_internal_time_count": 1013,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.1,
+          "nfev": 30154,
+          "saved_internal_time_count": 2012,
+          "success": true
+        },
+        {
+          "max_step_ms": 0.05,
+          "nfev": 60154,
+          "saved_internal_time_count": 4012,
+          "success": true
+        }
+      ],
+      "reference_count": 190
+    }
+  ],
+  "checks": [
+    {
+      "name": "Frozen source and primary inputs match before",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "Frozen Python/NumPy/SciPy versions match",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g005 finite output states",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g005 exact gate error",
+      "passed": true,
+      "value": 1.6445178552260131e-15,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 gate below zero",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 gate above one",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 voltage below baseline",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 voltage above excitatory reversal",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 endpoint baseline approach",
+      "passed": true,
+      "value": 5.420108250412122e-08,
+      "limit": 1e-06,
+      "relation": "<="
+    },
+    {
+      "name": "g005 transmitter-offset state continuity",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-12,
+      "relation": "<="
+    },
+    {
+      "name": "g005 step0.2 versus primary voltage",
+      "passed": true,
+      "value": 1.7204987434737973e-12,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g005 step0.2 versus primary gate",
+      "passed": true,
+      "value": 9.442724380193113e-13,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 step0.1 versus primary voltage",
+      "passed": true,
+      "value": 8.178509952605495e-13,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g005 step0.1 versus primary gate",
+      "passed": true,
+      "value": 4.5075054799781356e-13,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g005 density-current gate crosscheck",
+      "passed": true,
+      "value": 4.912736883966318e-15,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g005 independent voltage quadrature",
+      "passed": true,
+      "value": 3.0956140428806123e-15,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g005 reference estimated quadrature error",
+      "passed": true,
+      "value": 7.721206642279288e-13,
+      "limit": 1e-09,
+      "relation": "<="
+    },
+    {
+      "name": "g005 positive event EPSP",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g005 peak and crossing order",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g005 independent gate boundary value",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 finite output states",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g004 exact gate error",
+      "passed": true,
+      "value": 1.6445178552260131e-15,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 gate below zero",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 gate above one",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 voltage below baseline",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 voltage above excitatory reversal",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 endpoint baseline approach",
+      "passed": true,
+      "value": 4.3509384279022155e-08,
+      "limit": 1e-06,
+      "relation": "<="
+    },
+    {
+      "name": "g004 transmitter-offset state continuity",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-12,
+      "relation": "<="
+    },
+    {
+      "name": "g004 step0.2 versus primary voltage",
+      "passed": true,
+      "value": 1.486630263336508e-12,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g004 step0.2 versus primary gate",
+      "passed": true,
+      "value": 1.0167144903761027e-12,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 step0.1 versus primary voltage",
+      "passed": true,
+      "value": 6.5714968189301e-13,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g004 step0.1 versus primary gate",
+      "passed": true,
+      "value": 4.5075054799781356e-13,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "g004 density-current gate crosscheck",
+      "passed": true,
+      "value": 3.941291737419306e-15,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g004 independent voltage quadrature",
+      "passed": true,
+      "value": 2.4819556132538168e-15,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "g004 reference estimated quadrature error",
+      "passed": true,
+      "value": 9.767339628283011e-13,
+      "limit": 1e-09,
+      "relation": "<="
+    },
+    {
+      "name": "g004 positive event EPSP",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g004 peak and crossing order",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "g004 independent gate boundary value",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event finite output states",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "zero_event exact gate error",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event gate below zero",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event gate above one",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event voltage below baseline",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event voltage above excitatory reversal",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event endpoint baseline approach",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event transmitter-offset state continuity",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-12,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event step0.2 versus primary voltage",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event step0.2 versus primary gate",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event step0.1 versus primary voltage",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event step0.1 versus primary gate",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-10,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event density-current gate crosscheck",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event independent voltage quadrature",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-08,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event reference estimated quadrature error",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-09,
+      "relation": "<="
+    },
+    {
+      "name": "zero_event zero-event arrays exactly zero",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "zero_event zero-event normalized metrics unavailable",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "All frozen arms present and numerically passed",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "Frozen source and primary inputs match after",
+      "passed": true,
+      "value": true
+    },
+    {
+      "name": "Frozen plan unchanged",
+      "passed": true,
+      "value": true
+    }
+  ],
+  "exceptions": [],
+  "scope": "Fixed published density-parameter conductance equations; all three local arms together. No parameter fit, threshold/reset, APL, network, state clamp, or source-default change.",
+  "physiological_acceptance": "Not established; source dispersions are not acceptance bounds; model is historical effective synaptic approximation",
+  "fixed_intrinsic_properties": {
+    "tau_m_ms": 11.235955056179776,
+    "reported_somatic_tau_lower_ms": 200.0,
+    "somatic_tau_constraint_met": false,
+    "total_input_resistance_Gohm": null,
+    "reason": "Area missing; source densities identify specific resistance and effective time constant, not total resistance"
+  },
+  "arrays": {
+    "path": "validation/turner-kc-conductance-arrays.npz",
+    "bytes": 3438944,
+    "sha256": "64c916e9e5f634e2ca7be6cd6ae5b7b5882a82d6cefb4d8b7cf4eafd01e32ed4"
+  },
+  "array_schema": {
+    "time_ms": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "event_exact_gate": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_step_0p2_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_step_0p1_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_step_0p05_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_gate_O": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_u_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_V_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_clamp_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g005_reference_time_ms": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g005_reference_u_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g005_reference_quad_error_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g005_reference_ode_u_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g005_reference_exact_gate": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g004_step_0p2_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_step_0p1_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_step_0p05_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_gate_O": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_u_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_V_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_clamp_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "g004_reference_time_ms": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g004_reference_u_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g004_reference_quad_error_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g004_reference_ode_u_mV": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "g004_reference_exact_gate": {
+      "shape": [
+        194
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_step_0p2_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_step_0p1_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_step_0p05_O_u": {
+      "shape": [
+        2,
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_gate_O": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_u_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_V_mV": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_clamp_outward_synaptic_current_uA_per_cm2": {
+      "shape": [
+        20001
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_reference_time_ms": {
+      "shape": [
+        190
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_reference_u_mV": {
+      "shape": [
+        190
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_reference_quad_error_mV": {
+      "shape": [
+        190
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_reference_ode_u_mV": {
+      "shape": [
+        190
+      ],
+      "dtype": "float64"
+    },
+    "zero_event_reference_exact_gate": {
+      "shape": [
+        190
+      ],
+      "dtype": "float64"
+    }
+  },
+  "finished_utc": "2026-09-05T20:57:49.049318+00:00",
+  "wall_s": 1.2223300409968942,
+  "checks_passed": 58,
+  "checks_failed": 0
+}

@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T21:09:37.481702+00:00",
+  "status": "completed_spatial_join_and_reference",
+  "producer_checks": 3422,
+  "independent_spatial_checks": 40954,
+  "fixed_reference_independent_checks": 204,
+  "artifacts": [
+    {
+      "path": "scripts/download_malecns_synaptic_partners.py",
+      "bytes": 5473,
+      "sha256": "8fad0eebe3691effa2d664db97dc40c403cf08cd6ef99634ca3b331582a9db85"
+    },
+    {
+      "path": "scripts/analyze_kc_apl_contact_locations.py",
+      "bytes": 17118,
+      "sha256": "8e3b2f81e372469d826da185f3953066398e81db278274ae5beb2ad08decd6df"
+    },
+    {
+      "path": "scripts/review_kc_apl_contact_locations.py",
+      "bytes": 21255,
+      "sha256": "f50f1446440db0ff20c17b9e37a377857d6ed36b2e956de6c949537470cc01f3"
+    },
+    {
+      "path": "scripts/plot_kc_apl_contact_locations.py",
+      "bytes": 16334,
+      "sha256": "ec0a9f3c876493fd421766ac69a5a890a84f16e3951f879faf9545b53bf2f5d9"
+    },
+    {
+      "path": "validation/malecns-synaptic-partners-acquisition.json",
+      "bytes": 1095,
+      "sha256": "2e7901012332546c0c52fdfbf6b5f423f38199bd27481953e1a9901b65ef095c"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-independent-review.json",
+      "bytes": 13330,
+      "sha256": "33b478c9a0f7470dfeaaf244db2f70d98a6de50c9943b3e6c384256a0be06ef0"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-descriptive-summary.json",
+      "bytes": 11074,
+      "sha256": "a70829dac1bf175119b799ec2d9d2b03f84125046e6601fbabd8711012bc3f6c"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-figure.png",
+      "bytes": 791935,
+      "sha256": "b4bbe148c4f3ca39fab5c73cda83cea9b451dae4e833d7519d0a3514dee704ac"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plot-receipt.json",
+      "bytes": 27249,
+      "sha256": "18f86bffd3bd102e747574a739646690607ed6da4b1da3b7dfe8e054f26f91ab"
+    },
+    {
+      "path": "docs/kc-apl-contact-locations.md",
+      "bytes": 9130,
+      "sha256": "5e7adad81643911b9816442c63fa1cacb5812e6d2b89977d701b35c92e1ab2c3"
+    },
+    {
+      "path": "docs/turner-kc-conductance.md",
+      "bytes": 8546,
+      "sha256": "11130b784f37e84c282d33a2c7a3546150fe5d5cb84f55b99d82ce151617b107"
+    },
+    {
+      "path": "validation/turner-kc-conductance-completion.json",
+      "bytes": 849,
+      "sha256": "804fa456409633a9c79483f3c70b261e0e7d25b9d08f3bb3653ec2be4cad0f38"
+    },
+    {
+      "path": "validation/turner-kc-conductance-independent-review.json",
+      "bytes": 35985,
+      "sha256": "fc51ca9e4579f902333d8ffdfacf822167156f3c365d9e4d5529a2b0dda5e843"
+    },
+    {
+      "path": "research/24-kc-spatial-mechanism-constraints.md",
+      "bytes": 7846,
+      "sha256": "8b056efb00413a953108f700005671c9963a03623895fcff8686076a5794c2f8"
+    },
+    {
+      "path": "validation/kc-spatial-mechanism-source-review.json",
+      "bytes": 20462,
+      "sha256": "ce28681fb594db1f9d9a5e0b43c572d44c6f7aa3b8af0f5010842eba55381c9c"
+    }
+  ],
+  "root_final_verification": {
+    "unique_pins_verified": 49,
+    "descriptive_rows_verified": 20,
+    "local_links_valid": true,
+    "final_spatial_figure_visually_inspected": true
+  },
+  "all_modeled_edges_reconciled": true,
+  "outside_graph_preserved": true,
+  "compartment_assignment": false,
+  "runtime_changes": false,
+  "H1_promoted": false,
+  "overall_goal_complete": false,
+  "new_recurrent_batch_launched": false,
+  "next_scope": "Freeze a gamma-lobe KC fast-positive-term model-dependence diagnostic with exact source/target/ROI and mixed-ROI contact handling. Keep anatomical contacts and unknown receptor kinetics; strongest primary functional evidence is gamma-axon reporter modulation.",
+  "notes": "Spatial raw6.8GB source and103.6MB selectedparquet are ignored reproducible data with verified provenance; compact derivedarrays/code/research are tracked. Publicphysiologydata/model-code leads are not yet acquired."
+}

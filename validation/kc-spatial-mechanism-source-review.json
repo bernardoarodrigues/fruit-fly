@@ -1,0 +1,530 @@
+{
+  "schema": "kc-spatial-mechanism-source-review-v1",
+  "created_utc": "2026-09-05T21:07:25.391551+00:00",
+  "status": "completed_bounded_primary_source_review",
+  "scope": "Three primary papers plus official ROI nomenclature; no physiological value extraction, model fitting, simulation or new contact reduction",
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9613607/",
+      "retrieved_utc": "2026-09-05T21:01:59.346717+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9613607/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-spatial-mechanisms/manoim2022.html",
+      "bytes": 286834,
+      "sha256": "dd3bc3548066cd647ade84efb6e0b10473627dab4d072fc4121b39e9d49af763",
+      "text_length": 103814,
+      "source_id": "manoim2022",
+      "doi": "10.1016/j.cub.2022.09.007",
+      "title": "Lateral Axonal Modulation is Required for Stimulus-Specific Olfactory Conditioning in Drosophila",
+      "classification": "readable primary author manuscript / article full HTML with figure captions and methods",
+      "is_primary_article": true,
+      "is_challenge": false,
+      "content_verification": {
+        "citation_title_present": true,
+        "doi_present": true,
+        "main_results_read": true,
+        "relevant_figure_captions_read": true,
+        "methods_read": true
+      },
+      "text": {
+        "path": "data/raw/kc-spatial-mechanisms/manoim2022.txt",
+        "bytes": 104365,
+        "sha256": "c4cd4b7a0e4faac07d8e7bd11938344d8ff113bc8e48db064c7611c6b4729a8c"
+      },
+      "text_extraction": "stdlib HTMLParser; block-tag newlines; scripts/styles excluded; no digitization",
+      "retained_article_header_date": "2022-09-20"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948350/",
+      "retrieved_utc": "2026-09-05T21:01:59.836163+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948350/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-spatial-mechanisms/wolkovitz2026.html",
+      "bytes": 295037,
+      "sha256": "12689358f87c9f9dc1c26afe6eca2bda076e4c3d5365451bc7d6d0e1a0987fcf",
+      "text_length": 105730,
+      "source_id": "wolkovitz2026",
+      "doi": "10.1016/j.cub.2026.01.014",
+      "title": "A voltage-dependent switch underlies efficient yet specific learning and memory",
+      "classification": "readable primary author manuscript / article full HTML with figure captions and methods",
+      "is_primary_article": true,
+      "is_challenge": false,
+      "content_verification": {
+        "citation_title_present": true,
+        "doi_present": true,
+        "main_results_read": true,
+        "relevant_figure_captions_read": true,
+        "methods_read": true
+      },
+      "text": {
+        "path": "data/raw/kc-spatial-mechanisms/wolkovitz2026.txt",
+        "bytes": 106286,
+        "sha256": "3f2d42760ef05e5aff22ec5b6e94eda6e2cffa525bec76d6aa15709161d054b5"
+      },
+      "text_extraction": "stdlib HTMLParser; block-tag newlines; scripts/styles excluded; no digitization",
+      "retained_article_header_date": "2026-02-23"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4819445/",
+      "retrieved_utc": "2026-09-05T21:02:00.287001+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4819445/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-spatial-mechanisms/barnstedt2016.html",
+      "bytes": 266166,
+      "sha256": "e3f1b094659e0517656679921322082d9b654efc33fea1ec4129df7db465de37",
+      "text_length": 93080,
+      "source_id": "barnstedt2016",
+      "doi": "10.1016/j.neuron.2016.02.015",
+      "title": "Memory-Relevant Mushroom Body Output Synapses Are Cholinergic",
+      "classification": "readable primary author manuscript / article full HTML with figure captions and methods",
+      "is_primary_article": true,
+      "is_challenge": false,
+      "content_verification": {
+        "citation_title_present": true,
+        "doi_present": true,
+        "main_results_read": true,
+        "relevant_figure_captions_read": true,
+        "methods_read": true
+      },
+      "text": {
+        "path": "data/raw/kc-spatial-mechanisms/barnstedt2016.txt",
+        "bytes": 93955,
+        "sha256": "b79e7a8343a3e108ea54aa210268f28ece8ed0b7d406ffe83490f7a3da14a2d3"
+      },
+      "text_extraction": "stdlib HTMLParser; block-tag newlines; scripts/styles excluded; no digitization",
+      "retained_article_header_date": "2016-03-16"
+    }
+  ],
+  "additional_acquisition_attempts": [
+    {
+      "url": "https://www.janelia.org/sites/default/files/Project%20Teams/Fly%20EM/1.1%20191004_HemibrainDataset.pdf",
+      "final_url": "https://www.janelia.org/sites/default/files/Project%20Teams/Fly%20EM/1.1%20191004_HemibrainDataset.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "data/raw/kc-spatial-mechanisms/janelia-roi-explorer.pdf",
+      "bytes": 1855864,
+      "sha256": "34cbd2d91973ed65a10e3e2ed75653ee2b5ab6cf4051a7df8137ca58b21f06b9",
+      "is_pdf": true,
+      "utc": "2026-09-05T21:04:51.368080+00:00",
+      "classification": "official Janelia-hosted Hemibrain glossary with draft placeholders elsewhere; name expansion only",
+      "is_primary_article": false,
+      "is_challenge": false,
+      "inspected_physical_pdf_page": 5,
+      "render": {
+        "path": "data/raw/kc-spatial-mechanisms/janelia-roi-explorer-page5.png",
+        "bytes": 339391,
+        "sha256": "2ec7d447c2c9fae5a80d5bc229079d681a84b740e6c38d49f3909950032df84d"
+      },
+      "render_method": "pdftoppm -f 5 -singlefile -scale-to 1600 -png; visually inspected with view_image"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4819445/bin/mmc1.pdf",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4819445/bin/mmc1.pdf",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-spatial-mechanisms/barnstedt2016-supplement.pdf.html",
+      "bytes": 1816,
+      "sha256": "d2d8c28b837c46128eda8d9c3282d3150564863e9a044b816142a0e47b605aca",
+      "is_pdf": false,
+      "utc": "2026-09-05T21:04:51.579922+00:00",
+      "classification": "HTML browser challenge returned for requested PDF; not acquired supplemental article content",
+      "is_primary_article": false,
+      "is_challenge": true
+    }
+  ],
+  "protocols": [
+    {
+      "id": "manoim2022_fig1",
+      "source": "manoim2022",
+      "domain": [
+        "anatomy",
+        "expression"
+      ],
+      "dataset": "Hemibrain v1.2.1, not MaleCNS",
+      "roi_assignment_in_source": "Calyx classified dendritic; alpha/beta, alpha-prime/beta-prime and gamma lobes classified axonal",
+      "expression_drivers": [
+        "mAChR-B MiMIC-GAL4",
+        "mAChR-B T2A-GAL4"
+      ],
+      "receptor_localization_method": "OK107-driven C-terminal HA-tagged receptor overexpression",
+      "observation": "Lobes and somata labeled; calyx not labeled. Reporter signal strongest alpha-beta and gamma; weak alpha-prime-beta-prime.",
+      "limits": [
+        "Not a native receptor map at every contact",
+        "Not a per-contact functional efficacy measurement",
+        "Hemibrain anatomy is not an exact MaleCNS cell/receptor crosswalk"
+      ]
+    },
+    {
+      "id": "manoim2022_fig3_4_S3",
+      "source": "manoim2022",
+      "domain": [
+        "GCaMP6f calcium",
+        "ACh3.0 release reporter"
+      ],
+      "age_days_general": [
+        7,
+        10
+      ],
+      "sex": null,
+      "sex_status": "not stated in retained full main text/methods",
+      "prep": "in vivo mounted fly, exposed perfused brain, two-photon imaging",
+      "sampling_hz": 30,
+      "reporters": [
+        "GCaMP6f",
+        "ACh3.0"
+      ],
+      "drivers": {
+        "MB247-GAL4": "alpha-beta and gamma",
+        "c305a-GAL4": "alpha-prime-beta-prime",
+        "R71G10-GAL4": "gamma"
+      },
+      "odors": [
+        "MCH",
+        "OCT"
+      ],
+      "imaging_odor_protocol": {
+        "liquid_dilution": 0.1,
+        "carrier_l_per_min": 0.4,
+        "stimulus_l_per_min": 0.4,
+        "nominal_final_fraction": 0.05,
+        "delivery_distance_mm": 5,
+        "limit": "nominal dilution protocol, not measured gas-phase concentration or KC spike rate"
+      },
+      "fig3_n_as_caption_order": {
+        "order": [
+          "control_MCH",
+          "control_OCT",
+          "KD_MCH",
+          "KD_OCT"
+        ],
+        "gamma": [
+          13,
+          14,
+          9,
+          8
+        ],
+        "gamma_calyx": [
+          10,
+          10,
+          10,
+          11
+        ]
+      },
+      "uncertainty": "plotted mean and SEM; no numerical trace extraction in this review",
+      "observation": "Knockdown increases gamma axonal ON/OFF/integral calcium without comparable calyx change; ACh reporter also increases except OCT OFF. Overexpression generally reverses gamma effect; an OCT OFF calyx exception is reported.",
+      "limits": [
+        "No paired KC electrical recording",
+        "Ca/release reporter response is not a somatic EPSP or firing rate",
+        "Gamma finding not universally demonstrated in all subtypes"
+      ]
+    },
+    {
+      "id": "manoim2022_fig5",
+      "source": "manoim2022",
+      "domain": [
+        "cAMP reporter"
+      ],
+      "driver": "MB247-GAL4",
+      "reporter": "cAMPr",
+      "sampling_hz": 30,
+      "age_days_general": [
+        7,
+        10
+      ],
+      "sex": null,
+      "prep": "exposed perfused brain, local horizontal-lobe puff",
+      "TTX_uM": 1,
+      "puff_duration_s": 2,
+      "ACh_alone_mM": 1,
+      "ACh_with_DA_mM": 0.5,
+      "DA_bath_mM": 5,
+      "co_puff": "ACh plus DA, compared to DA control; source caption retains imaging gap during puff",
+      "n": {
+        "A_control": 13,
+        "A_KD": 12,
+        "B_DA_only": 7,
+        "B_DA_and_ACh": 6,
+        "B_KD": 7
+      },
+      "uncertainty": "means and SEM",
+      "observation": "ACh suppresses basal and DA-elevated cAMP; mAChR-B RNAi nearly abolishes suppression",
+      "limits": [
+        "Pipette/bath concentrations not cleft concentration",
+        "No per-spike transfer, current, voltage or fast time constant identified",
+        "TTX used to limit circuit contributions; not proof of every route eliminated"
+      ]
+    },
+    {
+      "id": "manoim2022_fig6",
+      "source": "manoim2022",
+      "domain": [
+        "GCaMP6f calcium"
+      ],
+      "prep": "in vivo mounted fly, exposed perfused brain",
+      "age_protocol": "collected 3 days post-eclosion; then 3-4 days on 1 mM retinal in darkness",
+      "sex": null,
+      "subset_activation": "MB247-GAL4 plus SPARC2-I-CsChrimson::tdTomato; nSyb-PhiC31",
+      "expected_expression_percent_from_method": [
+        17,
+        22
+      ],
+      "expression_percent_limit": "expected from SPARC variant, not measured for every experimental animal",
+      "readout_driver": "MB247-LexA / LexAop-GCaMP6f",
+      "readout_region": "gamma axons/ROIs not expressing CsChrimson",
+      "light_wavelength_nm": 625,
+      "light_pulse_hz": 33,
+      "odor_duration_s": 5,
+      "sampling_hz": 30,
+      "odors": [
+        "OCT",
+        "MCH"
+      ],
+      "n": {
+        "OCT_control": 7,
+        "OCT_KD": 6,
+        "MCH_control": 7,
+        "MCH_KD": 7
+      },
+      "analysis": "paired odor without/with subset activation; order balanced across experiments; ON peak and response integral; Wilcoxon matched-pairs signed rank",
+      "uncertainty": "means and SEM",
+      "observation": "Neighbor gamma calcium suppression in control; suppression abolished by mAChR-B RNAi",
+      "limits": [
+        "Light pulse frequency is not a recorded neuronal firing rate",
+        "Lateral modulation shown, possible additional autoreceptor action not excluded",
+        "No unitary amplitude/delay or somatic electrical sign established"
+      ]
+    },
+    {
+      "id": "barnstedt2016_cholinergic_and_KC_negative",
+      "source": "barnstedt2016",
+      "domain": [
+        "ChAT/VAChT expression",
+        "GCaMP calcium"
+      ],
+      "age_days": [
+        1,
+        7
+      ],
+      "sex": null,
+      "sex_status": "physiological sex not stated in retained main methods",
+      "prep": "isolated explant brain in AHLS",
+      "MBON_evidence": {
+        "driver": "R21D02-GAL4 M4/6",
+        "reporters": [
+          "GCaMP5",
+          "GCaMP6f"
+        ],
+        "ACh_transmitter_test_mM": 1,
+        "n_brains_per_transmitter": 5,
+        "trials_per_brain": 10,
+        "nicotine_uM": [
+          1,
+          10,
+          100
+        ],
+        "observation": "ACh and sufficiently strong nicotine evoke MBON Ca; nicotinic antagonists suppress response; nAChR knockdowns affect MBON odor responses"
+      },
+      "KC_negative": {
+        "figure": "S3F, reported in main text",
+        "drug_independently_verified": "ACh",
+        "location": "MB lobes / KC axons",
+        "observation": "no detectable calcium transient",
+        "sampling_hz": 12,
+        "concentration": null,
+        "puff_duration": null,
+        "n": null,
+        "supplement_status": "direct PDF request returned challenge; exact supplemental protocol not verified"
+      },
+      "methods_positive_control": "500 mM KCl at experiment end to verify responsiveness",
+      "timing_uncertainty": "Methods list 33.3 Hz general, 100 Hz for some S3E traces, and 12 Hz for S3E/S3F separate camera; only S3F 12 Hz carried into negative claim",
+      "limits": [
+        "Nicotinic MBON result is not a KC-KC receptor map",
+        "No detectable Ca is not no electrical response or absent function",
+        "2022 narrative also names nicotine at KC axons; not independently verified from 2016 main text"
+      ]
+    },
+    {
+      "id": "wolkovitz2026_fig3",
+      "source": "wolkovitz2026",
+      "domain": [
+        "heterologous voltage-clamp GIRK currents"
+      ],
+      "species_prep": "Xenopus laevis oocytes, two-electrode voltage clamp 3-5 days after cRNA injection",
+      "constructs": [
+        "Drosophila mAChR-B 1 ng/oocyte",
+        "GIRK1 200 pg/oocyte",
+        "GIRK2 200 pg/oocyte",
+        "G-alpha-i3 2 ng/oocyte"
+      ],
+      "voltage_mV": [
+        -80,
+        40
+      ],
+      "WT_EC50_nM": [
+        516,
+        1470
+      ],
+      "WT_n_range_by_voltage": [
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "reported_fold_EC50_shift": 2.85,
+      "reported_p": 0.048,
+      "uncertainty": "dose-response means and SEM; fitted EC50, no calibration to native KC currents",
+      "variant": "R329D/E331P receptor removes voltage-dependent shift while retaining maximal response",
+      "extracellular_K_mM": 24,
+      "sampling_rate": null,
+      "limits": [
+        "GIRK is a coexpressed reporter, not demonstrated native KC effector conductance",
+        "Not a membrane potential waveform in KCs",
+        "No event-triggered synaptic impulse response extracted"
+      ]
+    },
+    {
+      "id": "wolkovitz2026_fig6",
+      "source": "wolkovitz2026",
+      "domain": [
+        "cAMP reporter"
+      ],
+      "age_days_general": [
+        7,
+        10
+      ],
+      "sex": null,
+      "sex_status": "mixed males/females explicitly specified for behavior only, imaging cohort not specified",
+      "driver": "R71G10-GAL4 gamma KCs",
+      "reporter": "G-Flamp1",
+      "sampling_hz": 30,
+      "DA_bath_mM": 5,
+      "ACh_puff_mM": 0.5,
+      "DA_co_puff_mM": 5,
+      "puff_duration_s": 2,
+      "odor": "IAA",
+      "odor_concentration_for_exact_panel": null,
+      "odor_duration_for_exact_panel": null,
+      "general_imaging_nominal_final_fractions": [
+        5e-06,
+        0.0005,
+        0.05
+      ],
+      "n": 5,
+      "uncertainty": "means and SEM",
+      "observation": "ACh suppresses DA-induced cAMP without odor; suppression diminished with odor activation",
+      "limits": [
+        "Odor/no-odor comparison is not a native KC voltage clamp despite main-text phrase about two membrane potentials",
+        "Exact Figure6 IAA pulse duration/concentration not assigned from general protocol range",
+        "No per-spike GPCR gain or kinetics identified"
+      ]
+    }
+  ],
+  "roi_name_expansions": {
+    "source": "Janelia Hemibrain glossary physical page 5",
+    "CA": "calyx",
+    "gL": "gamma lobe",
+    "aL": "alpha lobe",
+    "bL": "beta lobe",
+    "a'L": "alpha-prime lobe",
+    "b'L": "beta-prime lobe",
+    "PED": "pedunculus",
+    "limits": "Name expansion only. Older document with draft placeholders does not establish same boundaries across dataset versions or an electrical/receptor compartment."
+  },
+  "existing_MaleCNS_documentation": {
+    "path": "data/raw/pn-kc-apl-compartment/malecns-download.html",
+    "bytes": 44208,
+    "sha256": "51144922891ccdc5cda2490d55b39ef69222134ed6944bbff2766379e403ad3c",
+    "url": "https://male-cns.janelia.org/download/",
+    "scope": "Primary postsynaptic neuropil and coordinate documentation; no individual receptor mapping"
+  },
+  "public_leads_not_acquired": [
+    {
+      "source": "manoim2022",
+      "kind": "raw XLSX link found in article",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-1.xlsx",
+      "article_reported_size": "22.6 MB",
+      "content_inspected": false
+    },
+    {
+      "source": "manoim2022",
+      "kind": "statistical Table S1 XLSX link found in article",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-Table_S1.xlsx",
+      "article_reported_size": "28.7 KB",
+      "content_inspected": false
+    },
+    {
+      "source": "manoim2022",
+      "kind": "supplementary PDF link found in article",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-Supplementary.pdf",
+      "article_reported_size": "1 MB",
+      "content_inspected": false
+    },
+    {
+      "source": "wolkovitz2026",
+      "kind": "data repository identified by paper",
+      "url": "https://doi.org/10.57760/sciencedb.34257",
+      "content_inspected": false
+    },
+    {
+      "source": "wolkovitz2026",
+      "kind": "data repository identified by paper",
+      "url": "https://doi.org/10.5281/zenodo.18045004",
+      "content_inspected": false
+    },
+    {
+      "source": "wolkovitz2026",
+      "kind": "model code identified by paper",
+      "url": "https://github.com/nawrotlab/KC_KC_lateral_interactions",
+      "content_inspected": false,
+      "executed": false
+    }
+  ],
+  "availability_correction": "2022 prose says available on request but HTML also links raw XLSX and statistics XLSX. Their contents are unverified. 2026 model/data repositories identified but not acquired.",
+  "diagnostic_advice": {
+    "supported_question": "Dependence of existing model recruitment/persistence on its fast positive KC-KC contribution in explicitly selected lobe contacts",
+    "strongest_direct_mechanism_scope": "gamma axons",
+    "keep_anatomical_contacts": true,
+    "not_established": [
+      "all KC-KC contacts nonfunctional",
+      "every lobe contact inhibitory in voltage",
+      "a universal negative conductance/current",
+      "native KC mAChR-B/GIRK kinetics or per-spike gain",
+      "a unique cause of any whole-network phenotype"
+    ],
+    "implementation_boundary": "Separate literal lobe ROI set from PED and CA; declare mixed-ROI pair handling. No runtime implementation here."
+  },
+  "acquisition_receipts": [
+    {
+      "path": "data/raw/kc-spatial-mechanisms/acquisition.json",
+      "bytes": 1384,
+      "sha256": "e6aa5509e577e4b091fa4225a0b184d1496a0aa3dc48f03818bce6fb427e0f3d"
+    },
+    {
+      "path": "data/raw/kc-spatial-mechanisms/acquisition-phase2.json",
+      "bytes": 1045,
+      "sha256": "446290bc5b688f563dbfdc2a309c35d679559b923c7ea2bb63a87a966dbb6abc"
+    }
+  ],
+  "report": {
+    "path": "research/24-kc-spatial-mechanism-constraints.md",
+    "bytes": 7846,
+    "sha256": "8b056efb00413a953108f700005671c9963a03623895fcff8686076a5794c2f8"
+  },
+  "verification": {
+    "all_acquired_file_hashes_rechecked": true,
+    "all_three_primary_titles_and_DOIs_present": true,
+    "all_six_public_lead_links_present_in_retained_HTML": true,
+    "ROI_glossary_page_render_visually_checked": true,
+    "challenge_classified_as_failure_not_PDF": true,
+    "new_model_runs": 0,
+    "new_fits": 0,
+    "new_digitizations": 0
+  }
+}

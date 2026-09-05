@@ -1,0 +1,1235 @@
+{
+  "schema": "turner-kc-conductance-independent-review/v1",
+  "created_utc": "2026-09-05T20:58:27.280904+00:00",
+  "passed": true,
+  "checks_passed": 204,
+  "checks_total": 204,
+  "checks": [
+    {
+      "name": "externally supplied results SHA",
+      "passed": true
+    },
+    {
+      "name": "complete three-arm numeric batch before interpretation",
+      "passed": true
+    },
+    {
+      "name": "reported check counts",
+      "passed": true
+    },
+    {
+      "name": "hash/size: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "hash/size: data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "passed": true
+    },
+    {
+      "name": "hash/size: data/raw/pn-kc-physiology/turner2008-author.txt",
+      "passed": true
+    },
+    {
+      "name": "hash/size: research/21-pn-kc-physiology-calibration.md",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/pn-kc-physiology-source-review.json",
+      "passed": true
+    },
+    {
+      "name": "hash/size: docs/pn-kc-waveform-candidate-review.md",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash/size: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-started.json",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash/size: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-results.json",
+      "passed": true
+    },
+    {
+      "name": "hash/size: validation/turner-kc-conductance-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "started plan/source links",
+      "passed": true
+    },
+    {
+      "name": "literal primary-source model parameters",
+      "passed": true
+    },
+    {
+      "name": "fixed arm definitions; no gain fitting",
+      "passed": true
+    },
+    {
+      "name": "clock and baseline",
+      "passed": true
+    },
+    {
+      "name": "unit labels preserve density and unknown transmitter units",
+      "passed": true
+    },
+    {
+      "name": "primary numerical/readout definitions",
+      "passed": true
+    },
+    {
+      "name": "exact retained output clock",
+      "passed": true
+    },
+    {
+      "name": "array schema key set",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: time_ms",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: event_exact_gate",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_step_0p2_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_step_0p1_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_step_0p05_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_gate_O",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_V_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_clamp_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_reference_time_ms",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_reference_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_reference_quad_error_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_reference_ode_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g005_reference_exact_gate",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_step_0p2_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_step_0p1_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_step_0p05_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_gate_O",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_V_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_clamp_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_reference_time_ms",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_reference_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_reference_quad_error_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_reference_ode_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: g004_reference_exact_gate",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_step_0p2_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_step_0p1_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_step_0p05_O_u",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_gate_O",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_V_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_clamp_outward_synaptic_current_uA_per_cm2",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_reference_time_ms",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_reference_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_reference_quad_error_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_reference_ode_u_mV",
+      "passed": true
+    },
+    {
+      "name": "array dtype/shape/finite: zero_event_reference_exact_gate",
+      "passed": true
+    },
+    {
+      "name": "shared exact gate array",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-14
+    },
+    {
+      "name": "g005 sampled state dimensions 0p2",
+      "passed": true
+    },
+    {
+      "name": "g005 exact gate all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 9.45493683346399e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g005 independent scalar Radau all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 1.7589402157014433e-12,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g005 sampled state dimensions 0p1",
+      "passed": true
+    },
+    {
+      "name": "g005 exact gate all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 4.4989012515372906e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g005 independent scalar Radau all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 8.289046532494737e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g005 sampled state dimensions 0p05",
+      "passed": true
+    },
+    {
+      "name": "g005 exact gate all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 1.6445178552260131e-15,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g005 independent scalar Radau all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 3.6259883984257613e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g005 primary gate/voltage copies",
+      "passed": true
+    },
+    {
+      "name": "g005 baseline-relative voltage algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "g005 outward current density algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "g005 separate ideal clamp current",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "g005 current direction and physical bounds",
+      "passed": true
+    },
+    {
+      "name": "g005 no initial state jump",
+      "passed": true
+    },
+    {
+      "name": "g005 unforced endpoint approaches baseline",
+      "passed": true
+    },
+    {
+      "name": "g005 exact predeclared/reference-defined anchors",
+      "passed": true
+    },
+    {
+      "name": "g005 saved quadrature versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 2.9976021664879227e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g005 saved dense ODE versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 2.9976021664879227e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g005 saved reference gate",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-14
+    },
+    {
+      "name": "g005 retained quadrature error estimates",
+      "passed": true
+    },
+    {
+      "name": "g005 independent metric voltage_peak_delta_mV",
+      "passed": true,
+      "max_absolute_difference": 6.972200594645983e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_peak_time_ms",
+      "passed": true,
+      "max_absolute_difference": 1.2168044349891716e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_t10_ms",
+      "passed": true,
+      "max_absolute_difference": 1.6986412276764895e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_t90_ms",
+      "passed": true,
+      "max_absolute_difference": 1.376232461325344e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_rise_ms",
+      "passed": true,
+      "max_absolute_difference": 1.3935519405094965e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_falling_1e_time_ms",
+      "passed": true,
+      "max_absolute_difference": 1.5170087408478139e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_peak_to_1e_ms",
+      "passed": true,
+      "max_absolute_difference": 1.6395773627664312e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric voltage_asymptotic_tau_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_peak_inward_uA_per_cm2",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_peak_time_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_t10_ms",
+      "passed": true,
+      "max_absolute_difference": 1.419094008969779e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_t90_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_rise_ms",
+      "passed": true,
+      "max_absolute_difference": 1.4191148256514907e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_peak_to_1e_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 independent metric clamp_asymptotic_tau_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 instantaneous decay at peak+1",
+      "passed": true,
+      "max_absolute_difference": 8.462563982902793e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g005 instantaneous decay at peak+5",
+      "passed": true,
+      "max_absolute_difference": 2.6645352591003757e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g005 instantaneous decay at peak+10",
+      "passed": true,
+      "max_absolute_difference": 5.861977570020827e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g005 instantaneous decay at peak+20",
+      "passed": true,
+      "max_absolute_difference": 1.2434497875801753e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g005 instantaneous decay at peak+40",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g005 reported signed residual EPSP_amplitude_minus_author_intended_mV",
+      "passed": true,
+      "max_absolute_difference": 6.972200594645983e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 reported signed residual EPSP_amplitude_minus_reported_mean_mV",
+      "passed": true,
+      "max_absolute_difference": 6.972200594645983e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 reported signed residual EPSP_rise_minus_reported_mean_ms",
+      "passed": true,
+      "max_absolute_difference": 1.3935519405094965e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 reported signed residual EPSC_rise_minus_reported_mean_ms",
+      "passed": true,
+      "max_absolute_difference": 1.419087070075875e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 reported signed residual conditional_EPSP_tail_minus_paper_fitted_decay_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g005 reported signed residual conditional_EPSC_tail_minus_paper_fitted_decay_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 sampled state dimensions 0p2",
+      "passed": true
+    },
+    {
+      "name": "g004 exact gate all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 1.0179357357031904e-12,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g004 independent scalar Radau all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 1.505261193468499e-12,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g004 sampled state dimensions 0p1",
+      "passed": true
+    },
+    {
+      "name": "g004 exact gate all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 4.4989012515372906e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g004 independent scalar Radau all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 6.642898037201306e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g004 sampled state dimensions 0p05",
+      "passed": true
+    },
+    {
+      "name": "g004 exact gate all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 1.6445178552260131e-15,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "g004 independent scalar Radau all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 2.964295475749168e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g004 primary gate/voltage copies",
+      "passed": true
+    },
+    {
+      "name": "g004 baseline-relative voltage algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "g004 outward current density algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "g004 separate ideal clamp current",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "g004 current direction and physical bounds",
+      "passed": true
+    },
+    {
+      "name": "g004 no initial state jump",
+      "passed": true
+    },
+    {
+      "name": "g004 unforced endpoint approaches baseline",
+      "passed": true
+    },
+    {
+      "name": "g004 exact predeclared/reference-defined anchors",
+      "passed": true
+    },
+    {
+      "name": "g004 saved quadrature versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 2.0039525594484076e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g004 saved dense ODE versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 2.0039525594484076e-13,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "g004 saved reference gate",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-14
+    },
+    {
+      "name": "g004 retained quadrature error estimates",
+      "passed": true
+    },
+    {
+      "name": "g004 independent metric voltage_peak_delta_mV",
+      "passed": true,
+      "max_absolute_difference": 9.481304630298837e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_peak_time_ms",
+      "passed": true,
+      "max_absolute_difference": 2.0605739337042905e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_t10_ms",
+      "passed": true,
+      "max_absolute_difference": 8.104628079763643e-15,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_t90_ms",
+      "passed": true,
+      "max_absolute_difference": 5.280220705117245e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_rise_ms",
+      "passed": true,
+      "max_absolute_difference": 5.360156762890256e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_falling_1e_time_ms",
+      "passed": true,
+      "max_absolute_difference": 5.684341886080802e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_peak_to_1e_ms",
+      "passed": true,
+      "max_absolute_difference": 1.4921397450962104e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric voltage_asymptotic_tau_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_peak_inward_uA_per_cm2",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_peak_time_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_t10_ms",
+      "passed": true,
+      "max_absolute_difference": 1.419094008969779e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_t90_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_rise_ms",
+      "passed": true,
+      "max_absolute_difference": 1.4191148256514907e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_peak_to_1e_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 independent metric clamp_asymptotic_tau_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 instantaneous decay at peak+1",
+      "passed": true,
+      "max_absolute_difference": 1.0658141036401503e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g004 instantaneous decay at peak+5",
+      "passed": true,
+      "max_absolute_difference": 1.9539925233402755e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g004 instantaneous decay at peak+10",
+      "passed": true,
+      "max_absolute_difference": 7.105427357601002e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g004 instantaneous decay at peak+20",
+      "passed": true,
+      "max_absolute_difference": 1.7763568394002505e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g004 instantaneous decay at peak+40",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "g004 reported signed residual EPSP_amplitude_minus_author_intended_mV",
+      "passed": true,
+      "max_absolute_difference": 9.481304630298837e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 reported signed residual EPSP_amplitude_minus_reported_mean_mV",
+      "passed": true,
+      "max_absolute_difference": 9.481304630298837e-14,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 reported signed residual EPSP_rise_minus_reported_mean_ms",
+      "passed": true,
+      "max_absolute_difference": 5.360156762890256e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 reported signed residual EPSC_rise_minus_reported_mean_ms",
+      "passed": true,
+      "max_absolute_difference": 1.419087070075875e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 reported signed residual conditional_EPSP_tail_minus_paper_fitted_decay_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "g004 reported signed residual conditional_EPSC_tail_minus_paper_fitted_decay_ms",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "zero_event sampled state dimensions 0p2",
+      "passed": true
+    },
+    {
+      "name": "zero_event exact gate all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "zero_event independent scalar Radau all samples 0p2",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "zero_event sampled state dimensions 0p1",
+      "passed": true
+    },
+    {
+      "name": "zero_event exact gate all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "zero_event independent scalar Radau all samples 0p1",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "zero_event sampled state dimensions 0p05",
+      "passed": true
+    },
+    {
+      "name": "zero_event exact gate all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "zero_event independent scalar Radau all samples 0p05",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "zero_event primary gate/voltage copies",
+      "passed": true
+    },
+    {
+      "name": "zero_event baseline-relative voltage algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "zero_event outward current density algebra",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "zero_event separate ideal clamp current",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "zero_event current direction and physical bounds",
+      "passed": true
+    },
+    {
+      "name": "zero_event no initial state jump",
+      "passed": true
+    },
+    {
+      "name": "zero_event unforced endpoint approaches baseline",
+      "passed": true
+    },
+    {
+      "name": "zero_event exact predeclared/reference-defined anchors",
+      "passed": true
+    },
+    {
+      "name": "zero_event saved quadrature versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "zero_event saved dense ODE versus independent Radau",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "zero_event saved reference gate",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-14
+    },
+    {
+      "name": "zero_event retained quadrature error estimates",
+      "passed": true
+    },
+    {
+      "name": "zero-event exact retained state",
+      "passed": true
+    },
+    {
+      "name": "zero-event undefined kinetics remain null",
+      "passed": true
+    },
+    {
+      "name": "intrinsic membrane ratio from source densities",
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "intrinsic boundary/missing area not promoted",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-results.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-completion.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: scripts/review_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "end hash: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "end hash: data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "passed": true
+    },
+    {
+      "name": "end hash: data/raw/pn-kc-physiology/turner2008-author.txt",
+      "passed": true
+    },
+    {
+      "name": "end hash: research/21-pn-kc-physiology-calibration.md",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/pn-kc-physiology-source-review.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: docs/pn-kc-waveform-candidate-review.md",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-started.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: scripts/assay_turner_kc_conductance.py",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-results.json",
+      "passed": true
+    },
+    {
+      "name": "end hash: validation/turner-kc-conductance-arrays.npz",
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "inputs": [
+    {
+      "path": "validation/turner-kc-conductance-results.json",
+      "bytes": 20663,
+      "sha256": "4d28d85529adbd88909e4f4b8d7aa6c655b5b4650dea75b45807e65e539b60d2"
+    },
+    {
+      "path": "validation/turner-kc-conductance-plan.json",
+      "bytes": 9325,
+      "sha256": "7fe5d98a2717f0499e7677093f227d3754eec42891d216363b1e8655b066c845"
+    },
+    {
+      "path": "validation/turner-kc-conductance-completion.json",
+      "bytes": 849,
+      "sha256": "804fa456409633a9c79483f3c70b261e0e7d25b9d08f3bb3653ec2be4cad0f38"
+    },
+    {
+      "path": "scripts/review_turner_kc_conductance.py",
+      "bytes": 18352,
+      "sha256": "7d2ab1fde941e845d5e68aba06273b6176cf8eae637782bfe8e24886289d5f59"
+    },
+    {
+      "path": "scripts/assay_turner_kc_conductance.py",
+      "bytes": 24342,
+      "sha256": "7a19cfff32c999d7865f5d6f1d11016d3a590180fabf0057de618bb5807e3843"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.txt",
+      "bytes": 122695,
+      "sha256": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+    },
+    {
+      "path": "research/21-pn-kc-physiology-calibration.md",
+      "bytes": 13958,
+      "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+    },
+    {
+      "path": "validation/pn-kc-physiology-source-review.json",
+      "bytes": 24866,
+      "sha256": "f2788a16cfc1738e9d11033798fdbbcc4ab3ff0044f9c4c6853b420a17f1edcc"
+    },
+    {
+      "path": "docs/pn-kc-waveform-candidate-review.md",
+      "bytes": 9483,
+      "sha256": "ec286b317b74e175374daa646268c7dcc094363afa6e5f7aec7d85a4c287c1a9"
+    },
+    {
+      "path": "validation/turner-kc-conductance-plan.json",
+      "bytes": 9325,
+      "sha256": "7fe5d98a2717f0499e7677093f227d3754eec42891d216363b1e8655b066c845"
+    },
+    {
+      "path": "scripts/assay_turner_kc_conductance.py",
+      "bytes": 24342,
+      "sha256": "7a19cfff32c999d7865f5d6f1d11016d3a590180fabf0057de618bb5807e3843"
+    },
+    {
+      "path": "validation/turner-kc-conductance-started.json",
+      "bytes": 466,
+      "sha256": "e386701a8a77387022a64fe4abb2baf441f762f6835f93ef784c7542aea95d20"
+    },
+    {
+      "path": "validation/turner-kc-conductance-arrays.npz",
+      "bytes": 3438944,
+      "sha256": "64c916e9e5f634e2ca7be6cd6ae5b7b5882a82d6cefb4d8b7cf4eafd01e32ed4"
+    },
+    {
+      "path": "validation/turner-kc-conductance-plan.json",
+      "bytes": 9325,
+      "sha256": "7fe5d98a2717f0499e7677093f227d3754eec42891d216363b1e8655b066c845"
+    },
+    {
+      "path": "scripts/assay_turner_kc_conductance.py",
+      "bytes": 24342,
+      "sha256": "7a19cfff32c999d7865f5d6f1d11016d3a590180fabf0057de618bb5807e3843"
+    },
+    {
+      "path": "validation/turner-kc-conductance-results.json",
+      "bytes": 20663,
+      "sha256": "4d28d85529adbd88909e4f4b8d7aa6c655b5b4650dea75b45807e65e539b60d2"
+    },
+    {
+      "path": "validation/turner-kc-conductance-arrays.npz",
+      "bytes": 3438944,
+      "sha256": "64c916e9e5f634e2ca7be6cd6ae5b7b5882a82d6cefb4d8b7cf4eafd01e32ed4"
+    }
+  ],
+  "arms": [
+    {
+      "id": "g005",
+      "independent_reference": {
+        "method": "scalar Radau with closed-form gate",
+        "nfev": 19964,
+        "njev": 3,
+        "rtol": 2e-12,
+        "atol": 2e-13,
+        "split_ms": 0.3
+      },
+      "samples_per_resolution": 20001,
+      "resolutions": 3,
+      "worst_voltage_difference_mV": 1.7589402157014433e-12,
+      "worst_gate_difference": 9.45493683346399e-13,
+      "reference_anchors": 194,
+      "metrics": {
+        "voltage_peak_delta_mV": 1.457079778443752,
+        "voltage_peak_time_ms": 4.950670760880082,
+        "voltage_t10_ms": 0.31000936788706535,
+        "voltage_t90_ms": 2.9541473752265364,
+        "voltage_rise_ms": 2.644138007339471,
+        "voltage_falling_1e_time_ms": 18.99012503722782,
+        "voltage_peak_to_1e_ms": 14.039454276347737,
+        "voltage_asymptotic_tau_ms": 11.235955056179776,
+        "clamp_peak_inward_uA_per_cm2": 0.8873388470538425,
+        "clamp_peak_time_ms": 0.3,
+        "clamp_t10_ms": 0.024136679790460396,
+        "clamp_t90_ms": 0.2623744140593034,
+        "clamp_rise_ms": 0.238237734268843,
+        "clamp_peak_to_1e_ms": 2.5,
+        "clamp_asymptotic_tau_ms": 2.5
+      },
+      "instantaneous_voltage_decay_ms": {
+        "1": 35.212677493462216,
+        "5": 13.589737606581785,
+        "10": 11.648743850142047,
+        "20": 11.253708184319537,
+        "40": 11.235990461123826
+      },
+      "source_residuals": {
+        "EPSP_amplitude_minus_author_intended_mV": 0.057079778443752005,
+        "EPSP_amplitude_minus_reported_mean_mV": 0.057079778443752005,
+        "EPSP_rise_minus_reported_mean_ms": 0.544138007339471,
+        "EPSC_rise_minus_reported_mean_ms": -0.661762265731157,
+        "conditional_EPSP_tail_minus_paper_fitted_decay_ms": -0.2640449438202239,
+        "conditional_EPSC_tail_minus_paper_fitted_decay_ms": -0.2999999999999998
+      }
+    },
+    {
+      "id": "g004",
+      "independent_reference": {
+        "method": "scalar Radau with closed-form gate",
+        "nfev": 19900,
+        "njev": 3,
+        "rtol": 2e-12,
+        "atol": 2e-13,
+        "split_ms": 0.3
+      },
+      "samples_per_resolution": 20001,
+      "resolutions": 3,
+      "worst_voltage_difference_mV": 1.505261193468499e-12,
+      "worst_gate_difference": 1.0179357357031904e-12,
+      "reference_anchors": 194,
+      "metrics": {
+        "voltage_peak_delta_mV": 1.1693137331347845,
+        "voltage_peak_time_ms": 4.955591038625794,
+        "voltage_t10_ms": 0.3105105149806541,
+        "voltage_t90_ms": 2.958603905836558,
+        "voltage_rise_ms": 2.648093390855904,
+        "voltage_falling_1e_time_ms": 18.993515726378643,
+        "voltage_peak_to_1e_ms": 14.037924687752849,
+        "voltage_asymptotic_tau_ms": 11.235955056179776,
+        "clamp_peak_inward_uA_per_cm2": 0.709871077643074,
+        "clamp_peak_time_ms": 0.3,
+        "clamp_t10_ms": 0.024136679790460396,
+        "clamp_t90_ms": 0.2623744140593034,
+        "clamp_rise_ms": 0.238237734268843,
+        "clamp_peak_to_1e_ms": 2.5,
+        "clamp_asymptotic_tau_ms": 2.5
+      },
+      "instantaneous_voltage_decay_ms": {
+        "1": 35.206877274896264,
+        "5": 13.586736054043527,
+        "10": 11.647743117658814,
+        "20": 11.253639588779658,
+        "40": 11.235990292748463
+      },
+      "source_residuals": {
+        "EPSP_amplitude_minus_author_intended_mV": -0.030686266865215472,
+        "EPSP_amplitude_minus_reported_mean_mV": -0.23068626686521543,
+        "EPSP_rise_minus_reported_mean_ms": 0.5480933908559038,
+        "EPSC_rise_minus_reported_mean_ms": -0.661762265731157,
+        "conditional_EPSP_tail_minus_paper_fitted_decay_ms": -0.2640449438202239,
+        "conditional_EPSC_tail_minus_paper_fitted_decay_ms": -0.2999999999999998
+      }
+    },
+    {
+      "id": "zero_event",
+      "independent_reference": {
+        "method": "scalar Radau with closed-form gate",
+        "nfev": 1764,
+        "njev": 2,
+        "rtol": 2e-12,
+        "atol": 2e-13,
+        "split_ms": 0.3
+      },
+      "samples_per_resolution": 20001,
+      "resolutions": 3,
+      "worst_voltage_difference_mV": 0.0,
+      "worst_gate_difference": 0.0,
+      "reference_anchors": 190,
+      "metrics": null
+    }
+  ],
+  "source_review": {
+    "visual_source": "Turner author PDF physical page4, printed p736; preparation on physical page3/p735",
+    "rendered_page": {
+      "path": "tmp/turner-kc-conductance-review/source-equations-page.png",
+      "bytes": 1012710,
+      "sha256": "b2a151232115813b98ca059fe5009d9c40140a2fb6d09ae9785760037000631f"
+    },
+    "model_parameters": "Printed fixed density values independently transcribed; no producer import.",
+    "unit_identity": "(1e-3 S)/(1e-6 F)=1e3 per second=1 per ms; mS*mV=uA. No extra1000 in ms ODE.",
+    "gate": "The activation rate is alpha times transmitter .5; transmitter concentration unit is not specified.",
+    "historical_model": "Only passive intrinsic membrane properties plus synaptic activation gate; not a new active-channel or whole-network reproduction.",
+    "source_cohort": "Female Canton-S, KC1\u20132 days. EPSP49 events Methods/50 Results in7cells, EPSC50events in5cells; not matched physiological cohorts.",
+    "source_decay": "Published exponential fit windows absent; theoretical tails and 1/e durations are separately defined model summaries."
+  },
+  "scope": "Independent scalar reference calculations on completed fixed-arm saved data. No producer/helper imports, fitting, network simulation or runtime edits.",
+  "limits": [
+    "Numerical consistency of a historical effective-event model is not biological validation.",
+    "Reported dispersions are not assumed SEM/SD, confidence intervals or hard biological bounds.",
+    "No membrane area, absolute whole-cell conductance/capacitance, PN identity, graph-contact or claw mapping inferred.",
+    "Fixed published gains remain unchanged despite any mismatch from rounded author-intended amplitudes.",
+    "Somatic greater-than200ms constraint remains unmet; no APL or threshold tuning."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T20:59:25.238302+00:00",
+  "inputs": [
+    {
+      "path": "scripts/analyze_kc_apl_contact_locations.py",
+      "bytes": 17118,
+      "sha256": "8e3b2f81e372469d826da185f3953066398e81db278274ae5beb2ad08decd6df"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/syn-partners-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 6777179098,
+      "sha256": "959d8ef4173b35382a3e6acfaf5167c795b6d10b877572d146af04e1b487bc07"
+    },
+    {
+      "path": "validation/malecns-synaptic-partners-acquisition.json",
+      "bytes": 1095,
+      "sha256": "2e7901012332546c0c52fdfbf6b5f423f38199bd27481953e1a9901b65ef095c"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-arrays.npz",
+      "bytes": 16204143,
+      "sha256": "cd0b5bc4aeb2d4981c7b1c5b36831b87f58496e82c237c2eb8ced5c6e0ef2451"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-independent-review.json",
+      "bytes": 32155,
+      "sha256": "b0c1e66525ec72ee12954856a6c7c0de1443a9e423ecf346da4a6f173982f0ba"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    }
+  ],
+  "source_schema": "x_pre: int32\ny_pre: int32\nz_pre: int32\nbody_pre: int64\nconf_pre: float\nx_post: int32\ny_post: int32\nz_post: int32\nbody_post: int64\nconf_post: float\nprimary_post: dictionary<values=string, indices=int16, ordered=1>\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 1542",
+  "source_columns": [
+    "x_pre",
+    "y_pre",
+    "z_pre",
+    "body_pre",
+    "conf_pre",
+    "x_post",
+    "y_post",
+    "z_post",
+    "body_post",
+    "conf_post",
+    "primary_post"
+  ],
+  "source_batches": 4759,
+  "source_expected_rows": 311833243,
+  "targets": 4066,
+  "expected_modeled_pairs": 836650,
+  "expected_modeled_contacts": 2316256,
+  "target_selector": "All4064 class Kenyon_Cell plus2 exact type APL, exact indices from independently reviewed inventory.",
+  "source_groups": [
+    "<missing>",
+    "ALIN",
+    "ALPN",
+    "APL (type override)",
+    "CX",
+    "DAN",
+    "Kenyon_Cell",
+    "MBON",
+    "known_graph_source_not_in_prior_input_inventory",
+    "outside_modeled_graph"
+  ],
+  "target_types": [
+    "APL",
+    "KC",
+    "KCa'b'-ap1",
+    "KCa'b'-ap2",
+    "KCa'b'-m",
+    "KCab-c",
+    "KCab-m",
+    "KCab-p",
+    "KCab-s",
+    "KCg",
+    "KCg-d",
+    "KCg-m",
+    "KCg-s1",
+    "KCg-s2",
+    "KCg-s3",
+    "KCg-s4"
+  ],
+  "raw_selection": "Every raw partner row with body_post in the4066target IDs; no confidence re-filter or deduplication. Record original absolute row ordinal and all11raw columns.",
+  "join": "Map body IDs exactly. Modeled-source rows must match an incoming CSR edge; preserve and count any known-source/missing-edge anomaly. Outside-graph bodies remain a distinct source group.",
+  "labels": "Decode primary_post dictionary per batch; retain exact logical strings and null separately, including blank/unassigned labels. Encounter-order labels in arrays are explicitly listed.",
+  "coordinate_units": "Native x/y/z integer voxel coordinates. 1voxel=.008micrometres. No axis reorientation or anatomical compartment assignment.",
+  "duplicate_policy": "Count repeated full partner identities (both IDs and all6coordinates); retain all rows, never collapse a shared presynaptic point or deduplicate counts to force equality.",
+  "aggregates": "Every modeled edge total, sparse edge/ROI contact counts, dense target/source-group/ROI counts including outsidegraph and known-source anomalies, target-type/source-group/ROI counts, ROI coordinate bounding boxes.",
+  "exact_gates": [
+    "all raw rows visited",
+    "all selected targets joined",
+    "every modeled edge reproduces oldcontactcount",
+    "no known-source pair absent from graph",
+    "all partition sums exact includingnull/outsidegraph"
+  ],
+  "preflight": {
+    "passed": true,
+    "checks": 3,
+    "scope": "Missing/out-of-range ID joins, reordered dictionary labels, null/string/blank separation"
+  },
+  "limits": [
+    "Neuropil label is not a claw, branch or electrical compartment. ROI segmentation is coarser than EM coordinates.",
+    "No runtime parameter, graph, gain, receptor sign, APL law or neuron state changes.",
+    "Raw confidence and coordinate anomalies remain reported, not hidden by additional filtering."
+  ]
+}

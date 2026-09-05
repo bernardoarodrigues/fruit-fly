@@ -49,7 +49,10 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [21 — PN–KC physiology](21-pn-kc-physiology-calibration.md) | Source-defined EPSP/EPSC and claw-integration assays, intrinsic time-constant mismatch, preparation and data limits |
 | [22 — APL local feedback](22-apl-local-feedback-constraints.md) | Nonspiking evidence, spatial calcium/release/suppression measurements and missing conversion laws |
 | [23 — KC contact locations](23-kc-contact-location-availability.md) | Verified local flat-graph schema and public same-version spatial data for a future compartment audit |
+| [24 — KC spatial mechanisms](24-kc-spatial-mechanism-constraints.md) | Primary γ-axon muscarinic modulation evidence, electrical/sex-transfer limits, ROI names and public source-data leads |
 | [KC waveform comparison](../docs/kc-synaptic-response.md) | Executed five-arm local assay, conditional timing tradeoff, separate somatic constraint and independent mathematical derivation |
+| [Fixed Turner reference](../docs/turner-kc-conductance.md) | Executed published conductance equations, approximate intended amplitudes and retained timing/intrinsic differences |
+| [KC/APL contact locations](../docs/kc-apl-contact-locations.md) | Exact spatial reconciliation of all modeled KC/APL contacts, raw neuropil distributions and outside-graph records |
 
 ## How to interpret the notes
 

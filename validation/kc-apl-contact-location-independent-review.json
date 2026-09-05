@@ -1,0 +1,473 @@
+{
+  "schema": 1,
+  "passed": true,
+  "completed_utc": "2026-09-05T21:03:27.621128+00:00",
+  "source_start": [
+    {
+      "path": "scripts/review_kc_apl_contact_locations.py",
+      "bytes": 21255,
+      "sha256": "f50f1446440db0ff20c17b9e37a377857d6ed36b2e956de6c949537470cc01f3"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "bytes": 103578335,
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "scripts/analyze_kc_apl_contact_locations.py",
+      "bytes": 17118,
+      "sha256": "8e3b2f81e372469d826da185f3953066398e81db278274ae5beb2ad08decd6df"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/syn-partners-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 6777179098,
+      "sha256": "959d8ef4173b35382a3e6acfaf5167c795b6d10b877572d146af04e1b487bc07"
+    },
+    {
+      "path": "validation/malecns-synaptic-partners-acquisition.json",
+      "bytes": 1095,
+      "sha256": "2e7901012332546c0c52fdfbf6b5f423f38199bd27481953e1a9901b65ef095c"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-arrays.npz",
+      "bytes": 16204143,
+      "sha256": "cd0b5bc4aeb2d4981c7b1c5b36831b87f58496e82c237c2eb8ced5c6e0ef2451"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-independent-review.json",
+      "bytes": 32155,
+      "sha256": "b0c1e66525ec72ee12954856a6c7c0de1443a9e423ecf346da4a6f173982f0ba"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    }
+  ],
+  "source_end": [
+    {
+      "path": "scripts/review_kc_apl_contact_locations.py",
+      "bytes": 21255,
+      "sha256": "f50f1446440db0ff20c17b9e37a377857d6ed36b2e956de6c949537470cc01f3"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "bytes": 103578335,
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "scripts/analyze_kc_apl_contact_locations.py",
+      "bytes": 17118,
+      "sha256": "8e3b2f81e372469d826da185f3953066398e81db278274ae5beb2ad08decd6df"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/syn-partners-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 6777179098,
+      "sha256": "959d8ef4173b35382a3e6acfaf5167c795b6d10b877572d146af04e1b487bc07"
+    },
+    {
+      "path": "validation/malecns-synaptic-partners-acquisition.json",
+      "bytes": 1095,
+      "sha256": "2e7901012332546c0c52fdfbf6b5f423f38199bd27481953e1a9901b65ef095c"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-arrays.npz",
+      "bytes": 16204143,
+      "sha256": "cd0b5bc4aeb2d4981c7b1c5b36831b87f58496e82c237c2eb8ced5c6e0ef2451"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-independent-review.json",
+      "bytes": 32155,
+      "sha256": "b0c1e66525ec72ee12954856a6c7c0de1443a9e423ecf346da4a6f173982f0ba"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    }
+  ],
+  "preflight": {
+    "passed": true,
+    "checks": 4,
+    "scope": "Logical dictionary remapping, null/string/blank separation, and independent exact target selection with an absent/out-of-range/null body."
+  },
+  "check_count": 40954,
+  "categories": {
+    "fixed_plan": {
+      "checked": 1,
+      "passed": 1
+    },
+    "completed_result": {
+      "checked": 1,
+      "passed": 1
+    },
+    "result_plan_link": {
+      "checked": 1,
+      "passed": 1
+    },
+    "no_compartment_or_model_claim": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_input_artifact_pins": {
+      "checked": 15,
+      "passed": 15
+    },
+    "raw_source_pin": {
+      "checked": 1,
+      "passed": 1
+    },
+    "acquisition_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "reviewed_inventory": {
+      "checked": 1,
+      "passed": 1
+    },
+    "reviewed_inventory_links": {
+      "checked": 3,
+      "passed": 3
+    },
+    "inventory_array_result_link": {
+      "checked": 1,
+      "passed": 1
+    },
+    "graph_metadata_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "graph_manifest_array": {
+      "checked": 4,
+      "passed": 4
+    },
+    "graph_manifest_metadata": {
+      "checked": 1,
+      "passed": 1
+    },
+    "literal_target_population": {
+      "checked": 1,
+      "passed": 1
+    },
+    "CSR_unique_sorted_pairs": {
+      "checked": 1,
+      "passed": 1
+    },
+    "frozen_population_sizes": {
+      "checked": 1,
+      "passed": 1
+    },
+    "source_group_schema": {
+      "checked": 1,
+      "passed": 1
+    },
+    "type_schema": {
+      "checked": 1,
+      "passed": 1
+    },
+    "direct_graph_vs_inventory": {
+      "checked": 5,
+      "passed": 5
+    },
+    "selected_columns": {
+      "checked": 1,
+      "passed": 1
+    },
+    "selected_order": {
+      "checked": 1,
+      "passed": 1
+    },
+    "actual_source_schema": {
+      "checked": 1,
+      "passed": 1
+    },
+    "complete_raw_selection_ordinals": {
+      "checked": 3406,
+      "passed": 3406
+    },
+    "selected_original_raw_field": {
+      "checked": 37466,
+      "passed": 37466
+    },
+    "full_raw_selection_coverage": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_target_rows_join": {
+      "checked": 1,
+      "passed": 1
+    },
+    "literal_ROI_labels_and_order": {
+      "checked": 1,
+      "passed": 1
+    },
+    "derived_row_field": {
+      "checked": 6,
+      "passed": 6
+    },
+    "every_CSR_contact_exact": {
+      "checked": 1,
+      "passed": 1
+    },
+    "partition_payload_schema": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_partition_arrays_exact": {
+      "checked": 9,
+      "passed": 9
+    },
+    "summary_join_totals": {
+      "checked": 1,
+      "passed": 1
+    },
+    "complete_partitions": {
+      "checked": 1,
+      "passed": 1
+    },
+    "summary_group_ROI_counts": {
+      "checked": 1,
+      "passed": 1
+    },
+    "modeled_and_outside_partitions": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_missing_field_counts": {
+      "checked": 1,
+      "passed": 1
+    },
+    "raw_confidence_anomalies": {
+      "checked": 2,
+      "passed": 2
+    },
+    "raw_coordinate_anomalies": {
+      "checked": 6,
+      "passed": 6
+    },
+    "all_ROI_bounds": {
+      "checked": 1,
+      "passed": 1
+    },
+    "full_partner_identity_duplicates": {
+      "checked": 1,
+      "passed": 1
+    },
+    "duplicate_identity_conservation": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_sources_and_outputs_unchanged": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "statistics": {
+    "raw_rows": 311833243,
+    "selected_rows": 2420435,
+    "selected_batches": 3406,
+    "modeled_pairs": 836650,
+    "modeled_contacts": 2316256,
+    "outside_graph_rows": 104179,
+    "known_source_missing_pair_rows": 0,
+    "target_cells": 4066,
+    "ROI_labels": [
+      "gL(L)",
+      "CentralBrain-unspecified",
+      "CRE(R)",
+      "CRE(L)",
+      "gL(R)",
+      "bL(L)",
+      "b'L(L)",
+      "LAL(L)",
+      "a'L(L)",
+      "bL(R)",
+      "a'L(R)",
+      "b'L(R)",
+      "SMP(L)",
+      "aL(L)",
+      "aL(R)",
+      "EB",
+      "SMP(R)",
+      "SIP(L)",
+      "BU(L)",
+      "SIP(R)",
+      "<unspecified>",
+      "PED(L)",
+      "SCL(R)",
+      "PED(R)",
+      "ICL(L)",
+      "SCL(L)",
+      "AVLP(L)",
+      "SLP(R)",
+      "AVLP(R)",
+      "PLP(L)",
+      "PLP(R)",
+      "PVLP(R)",
+      "LH(L)",
+      "LH(R)",
+      "SLP(L)",
+      "ICL(R)",
+      "CA(L)",
+      "Optic-unspecified(L)",
+      "CA(R)",
+      "Optic-unspecified(R)",
+      "LO(R)"
+    ],
+    "unknown_label_counts": [
+      {
+        "label": "CentralBrain-unspecified",
+        "contacts": 159215
+      },
+      {
+        "label": "<unspecified>",
+        "contacts": 2
+      },
+      {
+        "label": "Optic-unspecified(L)",
+        "contacts": 14
+      },
+      {
+        "label": "Optic-unspecified(R)",
+        "contacts": 55
+      }
+    ],
+    "missing_fields": {
+      "x_pre": 0,
+      "y_pre": 0,
+      "z_pre": 0,
+      "body_pre": 0,
+      "conf_pre": 0,
+      "x_post": 0,
+      "y_post": 0,
+      "z_post": 0,
+      "body_post": 0,
+      "conf_post": 0,
+      "primary_post": 0
+    },
+    "duplicate_identity": {
+      "unique_identities": 2420435,
+      "repeated_identities": 0,
+      "additional_rows": 0,
+      "maximum_multiplicity": 1,
+      "all_rows_retained": true
+    },
+    "coordinate_scale_um_per_voxel": 0.008
+  },
+  "last_complete_scan_counts": {
+    "raw_rows": 311833243,
+    "selected_rows": 2420435,
+    "selected_batches": 3406
+  },
+  "wall_seconds": 26.22739337501116,
+  "scope": "Full local source-body/ROI rescan over all record batches, complete target selection by exact body IDs, all eleven original selected raw fields at original row ordinals, direct CSR identities/contact totals, derived per-row fields, all partition arrays, metadata anomalies and partner-identity duplicates.",
+  "limits": [
+    "No download, simulation, parameter fitting, runtime mutation or producer import.",
+    "Partner rows retain polyadic presynaptic repeats; identity duplicates are reported without removing rows.",
+    "Dictionary encodings are compared as logical labels; valid numeric source fields are compared byte-for-byte, with exact null masks.",
+    "Neuropils and 8nm native coordinates do not identify claws, axonal/dendritic electrical compartments or APL membrane parameters.",
+    "Outside-graph source bodies, literal missing/unspecified labels and confidence/coordinate anomalies remain in their declared partitions; anatomical sums do not validate functional receptor signs."
+  ]
+}
