@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T05:26:29.815667+00:00",
+  "scope": "Independent manual source review plus retained receipt/hash/syntax verification. No neural kernel, original engine, full graph, conditional replay or synthetic checker executed by this review.",
+  "source_review_passed": true,
+  "reported_synthetic_checks": 143,
+  "independent_synthetic_execution": false,
+  "synthetic_raw_arrays_independently_reconstructed": false,
+  "inputs": {
+    "scripts/inhibitory_recurrent_kernel.py": {
+      "sha256": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f",
+      "bytes": 22085
+    },
+    "scripts/check_inhibitory_recurrent_kernel.py": {
+      "sha256": "be0880ee377c28cd5819d9e78840cd04df878bdb1db8d454ea96bc90fa863963",
+      "bytes": 8299
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "bytes": 13805
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091
+    },
+    "validation/inhibitory-recurrent-kernel-checks.json": {
+      "sha256": "86134f8c541f7a71cb19e15b6fdf8223b2571a2ef6bc6d615b8c73186edf1370",
+      "bytes": 5519
+    },
+    "docs/inhibitory-recurrent-kernel-independent-review.md": {
+      "sha256": "7cf313f0d2a753d1c2f2d617b01376d249e4a8a4ffa01d18450b1f139dd33695",
+      "bytes": 6335
+    },
+    "scripts/inhibitory-recurrent-kernel-independent-review.py": {
+      "sha256": "7c60bd6684b280af4aad98a704d17c8aad8d1d9e4c2b07b0efaeca958cdfb8f2",
+      "bytes": 5107
+    }
+  },
+  "checks": [
+    {
+      "name": "pinned:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "syntax_only:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "pinned:scripts/check_inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "syntax_only:scripts/check_inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "pinned:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "syntax_only:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "pinned:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "syntax_only:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-recurrent-kernel-checks.json",
+      "passed": true
+    },
+    {
+      "name": "syntax_only:scripts/inhibitory-recurrent-kernel-independent-review.py",
+      "passed": true
+    },
+    {
+      "name": "author_receipt_all143_reported_checks",
+      "passed": true
+    },
+    {
+      "name": "author_receipt_pins_reviewed_sources",
+      "passed": true
+    }
+  ],
+  "check_count": 12,
+  "passed": true,
+  "findings": [
+    "C0 source operation order and source/delay/threshold/direct/reset semantics match the fixed original engine case; no direct current is supported.",
+    "Own-arm refractory handling differs only as declared for recurrent synaptic state; direct voltage events retain native same-tick firing rejection in all arms.",
+    "Global signed edge counters partition unblocked visits from accepted/unavailable and count blocked edges separately; event logs are selected-target only.",
+    "Completed-prefix slicing, exclusive clock and explicit partial mutable state agree; recognized failure prohibits continuation. Uncaught allocation/interruption remains runner responsibility.",
+    "H uses the unchanged scalar solver and normalized negative increments; this review does not independently validate full-graph H trajectories or local accuracy on newly generated states."
+  ],
+  "resolved_before_freeze": [
+    "Ambiguous delivery mask now separated into direct and synaptic eligibility; compatibility alias documented and synthetic assertions added.",
+    "Failure clock now distinguishes completed_prefix_end_tick from last_completed_transition_tick."
+  ],
+  "limits": [
+    "Author control receipt retains booleans and hashes, not raw synthetic trajectories; no independent numerical reconstruction of those results is claimed.",
+    "Author numerical parity uses np.array_equal; stronger raw-byte parity remains appropriate for full-graph C0 reference gates.",
+    "Only injected H interval failure and invalid external-input rejection are exercised by the reported checker; all other failure paths have source-review coverage only here.",
+    "Prospective reset counters on a failed partial tick require phase-based validity; placeholders are not observations.",
+    "No full-graph performance, physiology, seed robustness, complete recurrent comparison or default promotion is established."
+  ],
+  "documentation": "docs/inhibitory-recurrent-kernel-independent-review.md"
+}

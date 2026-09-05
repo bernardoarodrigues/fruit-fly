@@ -10,7 +10,11 @@ The user explicitly cancelled the proposed embodied Eon integration benchmark. T
 
 H1 must not be selected because its voltage plot looks better. Before promotion it must satisfy numerical bound and accuracy checks, relevant physiological amplitude/timing comparisons, meaningful stimulus contrasts, seed robustness, and improved recurrent full-network behavior without uncontrolled persistence. Conditional fixed-input replay cannot satisfy the recurrent gate. Record failed and unresolved criteria explicitly; see [operational promotion gates](inhibitory-promotion-gates.md).
 
-Next is the [separately scoped recurrent comparison](inhibitory-recurrent-design.md), beginning with a measured implementation/performance check and preserving all four controls. BANC is available as a female CNS structural comparison; the [retained metadata audit](../research/17-banc-comparative-circuit-insights.md) informs identities and circuit hypotheses without supplying missing electrophysiological parameters or reopening the deferred paired-animal scope.
+The [recurrent implementation/performance check](inhibitory-recurrent-performance.md) now completes all five 50 ms runs with 280 checks. C0 matches the original full state exactly; altered arms generate their own distinct recurrent histories. The hybrid cost rises as inhibition spreads. Next is a matched four-thread check, then the [separately scoped three-seed stimulus/withdrawal comparison](inhibitory-recurrent-design.md), preserving all four controls. The short startup probe cannot satisfy the longer recurrent gate.
+
+The [5 ms filter comparison](ln-inhibitory-linear-filter-results.md) and its [independent numerical review](ln-inhibitory-linear-filter-independent-review.md) reject the declared direct mapping between the displayed rate and current summaries: the bounded filtered-rate change is negative while the current change is positive. Different cohorts, acausal smoothing and unresolved circuit identities prevent interpreting this as receptor or full-network rejection. No gain or time constant was fitted.
+
+BANC is available as a female CNS structural comparison; the [retained metadata audit](../research/17-banc-comparative-circuit-insights.md) informs identities and circuit hypotheses without supplying missing electrophysiological parameters or reopening the deferred paired-animal scope.
 
 ## Required milestones and evidence
 

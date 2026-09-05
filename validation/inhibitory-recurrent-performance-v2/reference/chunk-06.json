@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "end_tick": 350,
+  "completed_ticks": 50,
+  "coherent_state": true,
+  "spike_indices": {
+    "array": "root__spike_indices",
+    "shape": [
+      26
+    ],
+    "dtype": "int32"
+  },
+  "spike_ticks": {
+    "array": "root__spike_ticks",
+    "shape": [
+      26
+    ],
+    "dtype": "int64"
+  },
+  "candidate": {
+    "array": "root__candidate",
+    "shape": [
+      50,
+      36
+    ],
+    "dtype": "bool"
+  },
+  "applied": {
+    "array": "root__applied",
+    "shape": [
+      50,
+      36
+    ],
+    "dtype": "bool"
+  },
+  "traversed_edges": 15146,
+  "applied_accounting": "Inferred candidate AND no same-tick source firing; source refractory zero",
+  "logical_rng_before": 12938309994344447185,
+  "logical_rng_completed_prefix": 5204347824851566179,
+  "logical_rng_note": "External stream ownership; partial failed tick may already have used supplied inputs, see phase",
+  "checkpoint_digest": "da8a63e29623b4aa1a26e0ff427798934b472d4ba9f0f5a88c6f96928b82f55a"
+}

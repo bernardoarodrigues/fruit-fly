@@ -1,0 +1,515 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:26:10.227971+00:00",
+  "plan": {
+    "path": "validation/ln-inhibitory-linear-filter-plan.json",
+    "bytes": 4606,
+    "sha256": "5a06f97accebbe83e47c3f1265db680b480cba24e944cad1fa14cf7e999b4b92"
+  },
+  "attempt": {
+    "path": "validation/ln-inhibitory-linear-filter-attempt.json",
+    "bytes": 501,
+    "sha256": "fd5ed6bf307c30d1da4d2bb007e5909cc9ae0d86ee78f03c3a371aa3c9749f9f"
+  },
+  "checks": [
+    {
+      "name": "frozen input: data/raw/ln-inhibitory-transfer/phase2/ink-bins.json",
+      "passed": true
+    },
+    {
+      "name": "frozen input: validation/ln-inhibitory-transfer-phase2-results.json",
+      "passed": true
+    },
+    {
+      "name": "frozen input: validation/ln-inhibitory-transfer-phase2-plan.json",
+      "passed": true
+    },
+    {
+      "name": "frozen input: validation/ln-inhibitory-transfer-phase2-validation.json",
+      "passed": true
+    },
+    {
+      "name": "frozen input: docs/ln-inhibitory-linear-filter-design.md",
+      "passed": true
+    },
+    {
+      "name": "frozen input: scripts/check_ln_inhibitory_linear_filter.py",
+      "passed": true
+    },
+    {
+      "name": "runtime versions",
+      "passed": true
+    },
+    {
+      "name": "all manufactured cases pass at both precisions",
+      "passed": true
+    },
+    {
+      "name": "full required prefix coverage",
+      "passed": true
+    },
+    {
+      "name": "retained F graphical difference strictly positive",
+      "passed": true
+    },
+    {
+      "name": "60/90 digit absolute agreement",
+      "passed": true,
+      "maximum_absolute_difference": "3.5377719411157928950194360162459E-58"
+    },
+    {
+      "name": "all rate anchor corners retained",
+      "passed": true
+    },
+    {
+      "name": "negative baseline lower bounds retained",
+      "passed": true
+    },
+    {
+      "name": "all real-bin normalized quadratures pass",
+      "passed": true,
+      "count": 548,
+      "maximum_normalized_difference": 2.220446049250313e-16,
+      "maximum_quad_error_estimate": 1.1102230243802727e-14
+    },
+    {
+      "name": "guard dominates propagated independent integral disagreement",
+      "passed": true,
+      "conservative_unit_gain_error": 1.5222153188635567e-12,
+      "absolute_guard": "1E-10"
+    },
+    {
+      "name": "real partition total kernel mass identity",
+      "passed": true,
+      "residual": "3.9099176861499670457639E-90"
+    }
+  ],
+  "real_input_evaluated": true,
+  "fit_or_time_constant_search": false,
+  "manufactured": [
+    {
+      "checks": [
+        {
+          "name": "initial-state coefficient strictly negative",
+          "passed": true,
+          "alpha": "-1.75720567599082436063626909863994300054233757054154731549646E-23"
+        },
+        {
+          "name": "initial state monotonicity for 0,1,1e30",
+          "passed": true
+        },
+        {
+          "name": "zero source leaves alpha*x0 only",
+          "passed": true,
+          "difference_at_x0_3": "-5.27161702797247308190880729591982900162701271162464194648938E-23"
+        },
+        {
+          "name": "constant-source mass identity",
+          "passed": true,
+          "residual": "-4.233757054154731549646E-61"
+        },
+        {
+          "name": "constant source equilibrium cancellation",
+          "passed": true
+        },
+        {
+          "name": "zero-state constant transient not discarded",
+          "passed": true,
+          "transient": "2.98724964918440141308165746768790310085E-22"
+        },
+        {
+          "name": "manufactured signed rectangle reaches all corner bounds",
+          "passed": true,
+          "lower": "-1.94999484634727931472310996144496884901628375168888406072887",
+          "upper": "7.59999227370916340188063776210502631274171938963140800952244",
+          "corners": [
+            "0.799992267617171503995586387650374619334746644761470673625514",
+            "7.59999227370916340188063776210502631274171938963140800952244",
+            "-1.94999484634727931472310996144496884901628375168888406072887",
+            "4.85000515974471258316194141300968284439068899318105327516806"
+          ]
+        },
+        {
+          "name": "manufactured normalized signed-kernel quadrature",
+          "passed": true
+        },
+        {
+          "name": "manufactured impulse responses via independent window quadrature",
+          "passed": true
+        }
+      ],
+      "kernel_quad": [
+        {
+          "lo_s": "-0.197",
+          "hi_s": "0.05",
+          "analytic_mass": "-0.0499999998969423186656368242181891611169668662717269759330193",
+          "normalization_width_times_scale": "2.46999999490895054208332717598248402641231751075804074293343",
+          "analytic_normalized": "-0.0202429149797570850202358007867222158088258914334992167375484",
+          "quad_normalized": -0.020242914979757082,
+          "quad_normalized_error_estimate": 9.150081970394325e-14,
+          "normalized_difference": 3.469446951953614e-18,
+          "raw_difference_bound_from_normalized": 2.2601559373685827e-13,
+          "passed": true
+        },
+        {
+          "lo_s": "0.05",
+          "hi_s": "0.149999999989694231919669867716480477304137849760234818116340",
+          "analytic_mass": "-0.950000000000000000531044280889855703680805268639634805800375",
+          "normalization_width_times_scale": "0.999999997835788692722204315209452839899061833309212569075396",
+          "analytic_normalized": "-0.950000002056000746894570245641697703713679736945958148197322",
+          "quad_normalized": -0.9500000020560007,
+          "quad_normalized_error_estimate": 1.0547118757100044e-14,
+          "normalized_difference": 1.1102230246251565e-16,
+          "raw_difference_bound_from_normalized": 1.065814103649609e-14,
+          "passed": true
+        },
+        {
+          "lo_s": "0.149999999989694231919669867716480477304137849760234818116340",
+          "hi_s": "0.15",
+          "analytic_mass": "1.06208855798522342282707807278205644049376227009931537567638E-19",
+          "normalization_width_times_scale": "2.12417711670015606986269490544395680355247157665049595854262E-19",
+          "analytic_normalized": "0.499999999828237198661164461953503108793239417376045060538680",
+          "quad_normalized": 0.4999999998282371,
+          "quad_normalized_error_estimate": 5.551115121218831e-15,
+          "normalized_difference": 5.551115123125783e-17,
+          "raw_difference_bound_from_normalized": 1.1909467229828375e-33,
+          "passed": true
+        },
+        {
+          "lo_s": "0.15",
+          "hi_s": "0.25",
+          "analytic_mass": "0.0499999997938846379685619299679854117508796415053521733340679",
+          "normalization_width_times_scale": "0.999999997938846377561442172034059619844179023624192724400896",
+          "analytic_normalized": "0.0499999998969423188780721086017029809922089511812096362200448",
+          "quad_normalized": 0.04999999989694233,
+          "quad_normalized_error_estimate": 1.4163716219956559e-15,
+          "normalized_difference": 6.938893903907228e-18,
+          "raw_difference_bound_from_normalized": 1.4233105129659016e-15,
+          "passed": true
+        },
+        {
+          "lo_s": "0.25",
+          "hi_s": "0.35",
+          "analytic_mass": "0.950000000103057681121927891398297019007791048818790363779955",
+          "normalization_width_times_scale": "0.999999997938846377561442172034059619844179023624192724400896",
+          "analytic_normalized": "0.950000002061153626686912092014040156230090013378109654223959",
+          "quad_normalized": 0.9500000020611535,
+          "quad_normalized_error_estimate": 1.0547118757100044e-14,
+          "normalized_difference": 1.1102230246251565e-16,
+          "raw_difference_bound_from_normalized": 1.0658141037594494e-14,
+          "passed": true
+        }
+      ],
+      "impulses": [
+        {
+          "source_time_s": "-0.1",
+          "window_integrals": [
+            {
+              "analytic": "9.35762294955267612527665439320527857968819694140755390411069E-13",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            },
+            {
+              "analytic": "3.97544972771463418379858432343371723895050687919666091225182E-30",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "-9.35762294955267608552215711605893674170235370707038151460562E-13"
+        },
+        {
+          "source_time_s": "0.1",
+          "window_integrals": [
+            {
+              "analytic": "9.99954600070237515148464408484439449389762081911133435030741",
+              "normalized_difference": 0.0,
+              "quad_error": 2.8326146575791914e-15,
+              "passed": true
+            },
+            {
+              "analytic": "9.35762294955267612527665439320527857968819694140755390411069E-13",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "-9.99954600070143938918968881723186682845830029125336553061327"
+        },
+        {
+          "source_time_s": "0.15",
+          "window_integrals": [
+            {
+              "analytic": "0",
+              "passed": true
+            },
+            {
+              "analytic": "2.06115361819020357267435138482658619351714925771953813880579E-8",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "2.06115361819020357267435138482658619351714925771953813880579E-8"
+        },
+        {
+          "source_time_s": "0.3",
+          "window_integrals": [
+            {
+              "analytic": "0",
+              "passed": true
+            },
+            {
+              "analytic": "9.99954600070237515148464408484439449389762081911133435030741",
+              "normalized_difference": 0.0,
+              "quad_error": 2.8326146575791914e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "9.99954600070237515148464408484439449389762081911133435030741"
+        }
+      ],
+      "passed": true,
+      "decimal_digits": 60
+    },
+    {
+      "checks": [
+        {
+          "name": "initial-state coefficient strictly negative",
+          "passed": true,
+          "alpha": "-1.75720567599082436063626909863994300054233757054154731549645411491990900823138500329542361E-23"
+        },
+        {
+          "name": "initial state monotonicity for 0,1,1e30",
+          "passed": true
+        },
+        {
+          "name": "zero source leaves alpha*x0 only",
+          "passed": true,
+          "difference_at_x0_3": "-5.27161702797247308190880729591982900162701271162464194648936234475972702469415500988627083E-23"
+        },
+        {
+          "name": "constant-source mass identity",
+          "passed": true,
+          "residual": "-9.00823138500329542361E-92"
+        },
+        {
+          "name": "constant source equilibrium cancellation",
+          "passed": true
+        },
+        {
+          "name": "zero-state constant transient not discarded",
+          "passed": true,
+          "transient": "2.98724964918440141308165746768790310092197386992063043634397199536383E-22"
+        },
+        {
+          "name": "manufactured signed rectangle reaches all corner bounds",
+          "passed": true,
+          "lower": "-1.94999484634727931472310996144496884901628375168888406072886910732156149266360034155578819",
+          "upper": "7.59999227370916340188063776210502631274171938963140800952243938627063782782050756825077059",
+          "corners": [
+            "0.799992267617171503995586387650374619334746644761470673625514694942207880438533668735005779",
+            "7.59999227370916340188063776210502631274171938963140800952243938627063782782050756825077059",
+            "-1.94999484634727931472310996144496884901628375168888406072886910732156149266360034155578819",
+            "4.85000515974471258316194141300968284439068899318105327516805558400686845471837355795997662"
+          ]
+        },
+        {
+          "name": "manufactured normalized signed-kernel quadrature",
+          "passed": true
+        },
+        {
+          "name": "manufactured impulse responses via independent window quadrature",
+          "passed": true
+        }
+      ],
+      "kernel_quad": [
+        {
+          "lo_s": "-0.197",
+          "hi_s": "0.05",
+          "analytic_mass": "-0.0499999998969423186656368242181891611169668662717269759330194160952154111319338336261569513",
+          "normalization_width_times_scale": "2.46999999490895054208332717598248402641231751075804074293342706986348883429138662946492383",
+          "analytic_normalized": "-0.0202429149797570850202358007867222158088258914334992167375484410777511231972576326961767428",
+          "quad_normalized": -0.020242914979757082,
+          "quad_normalized_error_estimate": 9.150081970394325e-14,
+          "normalized_difference": 3.469446951953614e-18,
+          "raw_difference_bound_from_normalized": 2.2601559373685827e-13,
+          "passed": true
+        },
+        {
+          "lo_s": "0.05",
+          "hi_s": "0.149999999989694231919669867716480477304137849760234818116339932741473288292262368601791776",
+          "analytic_mass": "-0.950000000000000000531044280889855703680805268639634805800374487943812056317534887850611606",
+          "normalization_width_times_scale": "0.999999997835788692722204315209452839899061833309212569075395290056308705214841504504298544",
+          "analytic_normalized": "-0.950000002056000746894570245641697703713679736945958148197322324478570006636536417670383817",
+          "quad_normalized": -0.9500000020560007,
+          "quad_normalized_error_estimate": 1.0547118757100044e-14,
+          "normalized_difference": 1.1102230246251565e-16,
+          "raw_difference_bound_from_normalized": 1.065814103649609e-14,
+          "passed": true
+        },
+        {
+          "lo_s": "0.149999999989694231919669867716480477304137849760234818116339932741473288292262368601791776",
+          "hi_s": "0.15",
+          "analytic_mass": "1.06208855798522342282707807278205644049376234355022801601540941260844070182939778395256964E-19",
+          "normalization_width_times_scale": "2.12417711670015606986269490544395680355247157665052851499076637434605556600282311619412376E-19",
+          "analytic_normalized": "0.499999999828237198661164461953503108793239451954562917947235016494108866999001118239156646",
+          "quad_normalized": 0.4999999998282371,
+          "quad_normalized_error_estimate": 5.551115121218831e-15,
+          "normalized_difference": 5.551115123125783e-17,
+          "raw_difference_bound_from_normalized": 1.1909467229828375e-33,
+          "passed": true
+        },
+        {
+          "lo_s": "0.15",
+          "hi_s": "0.25",
+          "analytic_mass": "0.0499999997938846379685619299679854117508796415053521733340679084110978482396245435678457179",
+          "normalization_width_times_scale": "0.999999997938846377561442172034059619844179023624192724400896307027755338370835976215440647",
+          "analytic_normalized": "0.0499999998969423188780721086017029809922089511812096362200448153513877669185417988107720324",
+          "quad_normalized": 0.04999999989694233,
+          "quad_normalized_error_estimate": 1.4163716219956559e-15,
+          "normalized_difference": 6.938893903907228e-18,
+          "raw_difference_bound_from_normalized": 1.4233105129659016e-15,
+          "passed": true
+        },
+        {
+          "lo_s": "0.25",
+          "hi_s": "0.35",
+          "analytic_mass": "0.950000000103057681121927891398297019007791048818790363779955184648612233081458201189227968",
+          "normalization_width_times_scale": "0.999999997938846377561442172034059619844179023624192724400896307027755338370835976215440647",
+          "analytic_normalized": "0.950000002061153626686912092014040156230090013378109654223959382055033359256190328614192217",
+          "quad_normalized": 0.9500000020611535,
+          "quad_normalized_error_estimate": 1.0547118757100044e-14,
+          "normalized_difference": 1.1102230246251565e-16,
+          "raw_difference_bound_from_normalized": 1.0658141037594494e-14,
+          "passed": true
+        }
+      ],
+      "impulses": [
+        {
+          "source_time_s": "-0.1",
+          "window_integrals": [
+            {
+              "analytic": "9.35762294955267612527665439320527857968819694140755390411068951098275179556250062386917356E-13",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            },
+            {
+              "analytic": "3.97544972771463418379858432343371723895050687919666091225182406385787922145527110416083761E-30",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "-9.35762294955267608552215711605893674170235370707038151460562071901614267304425998529038135E-13"
+        },
+        {
+          "source_time_s": "0.1",
+          "window_integrals": [
+            {
+              "analytic": "9.99954600070237515148464408484439449389762081911133435030740928694349000578385697718347475",
+              "normalized_difference": 0.0,
+              "quad_error": 2.8326146575791914e-15,
+              "passed": true
+            },
+            {
+              "analytic": "9.35762294955267612527665439320527857968819694140755390411068951098275179556250062386917356E-13",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "-9.99954600070143938918968881723186682845830029125336553061326853155307893683275870200391850"
+        },
+        {
+          "source_time_s": "0.15",
+          "window_integrals": [
+            {
+              "analytic": "0",
+              "passed": true
+            },
+            {
+              "analytic": "2.06115361819020357267435138482658619351714925771953813880579837357834510485852628935299628E-8",
+              "normalized_difference": 6.938893903907228e-18,
+              "quad_error": 1.4163716219956559e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "2.06115361819020357267435138482658619351714925771953813880579837357834510485852628935299628E-8"
+        },
+        {
+          "source_time_s": "0.3",
+          "window_integrals": [
+            {
+              "analytic": "0",
+              "passed": true
+            },
+            {
+              "analytic": "9.99954600070237515148464408484439449389762081911133435030740928694349000578385697718347475",
+              "normalized_difference": 0.0,
+              "quad_error": 2.8326146575791914e-15,
+              "passed": true
+            }
+          ],
+          "signed_window_weight": "9.99954600070237515148464408484439449389762081911133435030740928694349000578385697718347475"
+        }
+      ],
+      "passed": true,
+      "decimal_digits": 90
+    }
+  ],
+  "precision_summaries": [
+    {
+      "decimal_digits": 60,
+      "unit_gain_B_lower": "-16.4013534634486367757202209515034005777812286574093285511590",
+      "unit_gain_B_upper": "-8.64902091164990664945932136136590604198870111500046506941555",
+      "initial_state_coefficient_alpha": "-1.75720567599082436063626909863994300054233757054154731549646E-23",
+      "kernel_sign_crossing_s": "0.149999999989694231919669867716480477304137849760234818116340",
+      "positive_kernel_mass_total": "0.999999999896942319196698677164804773041378497602348181163395",
+      "negative_kernel_mass_total": "-0.999999999896942319196681105108044864797772134911361781733398",
+      "guarded_lower": "-16.4013534635486367757202209515034005777812286574093285511590",
+      "guarded_upper": "-8.64902091154990664945932136136590604198870111500046506941555"
+    },
+    {
+      "decimal_digits": 90,
+      "unit_gain_B_lower": "-16.4013534634486367757202209515034005777812286574093285511586959151128994308994042442607812",
+      "unit_gain_B_upper": "-8.64902091164990664945932136136590604198870111500046506941519622280588842071049805639837541",
+      "initial_state_coefficient_alpha": "-1.75720567599082436063626909863994300054233757054154731549645411491990900823138500329542361E-23",
+      "kernel_sign_crossing_s": "0.149999999989694231919669867716480477304137849760234818116339932741473288292262368601791776",
+      "positive_kernel_mass_total": "0.999999999896942319196698677164804773041378497602348181163399327414732882922623686017917753",
+      "negative_kernel_mass_total": "-0.999999999896942319196681105108044864797772134911361781733393904039027467449468721476768550",
+      "guarded_lower": "-16.4013534635486367757202209515034005777812286574093285511586959151128994308994042442607812",
+      "guarded_upper": "-8.64902091154990664945932136136590604198870111500046506941519622280588842071049805639837541"
+    }
+  ],
+  "decision": {
+    "classification": "conditionally_incompatible_displayed_summary_filter",
+    "guarded_upper_unit_gain_scale": "-8.64902091154990664945932136136590604198870111500046506941519622280588842071049805639837541",
+    "alpha_strictly_negative": true,
+    "gain": "all fixed G>0, not estimated",
+    "initial_state": "all finite x0>=0, not assigned a measured value",
+    "observed_F_late_minus_early_pA": [
+      "1.4890348434123817",
+      "2.2917845159302064"
+    ],
+    "statement": "A negative guarded B upper bound and alpha<0 exclude a positive output difference for every admitted input, G>0 and x0>=0. This is only the declared mapping of separately recorded displayed means."
+  },
+  "passed": true,
+  "full_bounds_and_quad_evidence": {
+    "path": "validation/ln-inhibitory-linear-filter-bounds.json.gz",
+    "bytes": 458522,
+    "sha256": "6ee2adea5ddad8ee56d9047d410bcd028acca74e5f365fed503978f8a37abfa6",
+    "uncompressed_bytes": 2652206,
+    "uncompressed_sha256": "f7996c16d977283761c666930ba5301b70382251a85b4f6709aa50d0338c52bd"
+  },
+  "completed_utc": "2026-09-05T05:26:10.696320+00:00",
+  "check_count": 16,
+  "limits": [
+    "Displayed E is acausally smoothed over 100 ms; no deconvolution",
+    "E and F are different five/nine-cell cohorts",
+    "Broad NP3056 female LN populations, no exact male targets",
+    "No pA/nS conversion, per-spike gain, receptor rejection, fitted trace, time-constant search, or full-network claim"
+  ]
+}

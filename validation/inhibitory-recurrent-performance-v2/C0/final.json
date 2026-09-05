@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "arm": "C0",
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "seed": 11,
+  "tick": 500,
+  "time_ms": 50.0,
+  "coherent_state": true,
+  "failure": null,
+  "parameters": {
+    "dt_ms": 0.1,
+    "resting_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_tau_ms": 20.0,
+    "synapse_tau_ms": 5.0,
+    "delay_ticks": 18,
+    "refractory_ticks": 22,
+    "input_refractory_ticks": 0,
+    "direct_voltage_increment_mv": 68.75,
+    "inhibitory_reversal_mv": -75.0
+  },
+  "v": {
+    "array": "root__v",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "s": {
+    "array": "root__s",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "h": {
+    "array": "root__h",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "last": {
+    "array": "root__last",
+    "shape": [
+      166700
+    ],
+    "dtype": "int64"
+  },
+  "refractory": {
+    "array": "root__refractory",
+    "shape": [
+      166700
+    ],
+    "dtype": "int64"
+  },
+  "blocked": {
+    "array": "root__blocked",
+    "shape": [
+      166700
+    ],
+    "dtype": "bool"
+  },
+  "input_indices": {
+    "array": "root__input_indices",
+    "shape": [
+      36
+    ],
+    "dtype": "int32"
+  },
+  "selected_indices": {
+    "array": "root__selected_indices",
+    "shape": [
+      48
+    ],
+    "dtype": "int32"
+  },
+  "pending_count": {
+    "array": "root__pending_count",
+    "shape": [
+      19
+    ],
+    "dtype": "int64"
+  },
+  "pending": {
+    "array": "root__pending",
+    "shape": [
+      7
+    ],
+    "dtype": "int32"
+  },
+  "rng_ownership": "No RNG in kernel or wrapper; caller must archive supplied uniforms and source RNG boundaries",
+  "synaptic_state_meaning": "canonical signed current-like s in mV",
+  "logical_rng_state": 17002731536089512071
+}

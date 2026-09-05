@@ -1,0 +1,2939 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:19:35.283741+00:00",
+  "checks": [
+    {
+      "name": "frozen_plan_hash",
+      "passed": true
+    },
+    {
+      "name": "complete_15_trials",
+      "passed": true
+    },
+    {
+      "name": "design_clock_and_seeds",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/experiment_or42a_summary.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:fruitfly/data.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:fruitfly/sensors.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-primary/results.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-primary/male-vm7d-population.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen:data/processed/malecns_v1/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:data/processed/malecns_v1/neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-summary-plan.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-summary-experiment.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-summary-environment.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-summary-window-table.csv",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/review_or42a_summary.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/or42a-summary-ATTRIBUTION.md",
+      "passed": true
+    },
+    {
+      "name": "graph_and_metadata_identity",
+      "passed": true
+    },
+    {
+      "name": "exact36_ordered_sources",
+      "passed": true
+    },
+    {
+      "name": "source_side_nerve_identity",
+      "passed": true
+    },
+    {
+      "name": "exact365_first_hop",
+      "passed": true
+    },
+    {
+      "name": "exact_current_default_motor_groups",
+      "passed": true
+    },
+    {
+      "name": "no_source_motor_overlap",
+      "passed": true
+    },
+    {
+      "name": "source_drive_contract",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed11:no_input:zero_control",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:constant_baseline:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:isoamyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed11:ethyl_acetate_source_outputs_blocked:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed11:50ms_identical_positive_unblocked:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed11:50ms_identical_positive_unblocked:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed11:50ms_blocked_same_candidates",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed12:no_input:zero_control",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:constant_baseline:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:isoamyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed12:ethyl_acetate_source_outputs_blocked:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed12:50ms_identical_positive_unblocked:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed12:50ms_identical_positive_unblocked:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed12:50ms_blocked_same_candidates",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed13:no_input:zero_control",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:constant_baseline:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:isoamyl_acetate:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:result_exact_outer_record",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:artifact:trace.npz",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:artifact:samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:trace_schema",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:sample_schema_clock",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:source_identity",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:spike_ranges_order_unique",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:all_candidate_events_from_RNG",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:RNG_all_boundaries",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:source_spike_arrays",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:applied_C0_candidate_partition",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:candidate_and_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:all_window_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:all_delayed_edge_visits",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:all_sample_event_counts_rates",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:window_source_firsthop_motor_counts",
+      "passed": true
+    },
+    {
+      "name": "seed13:ethyl_acetate_source_outputs_blocked:final_full_state_and_last_sample_extrema",
+      "passed": true
+    },
+    {
+      "name": "seed13:50ms_identical_positive_unblocked:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed13:50ms_identical_positive_unblocked:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "seed13:50ms_blocked_same_candidates",
+      "passed": true
+    },
+    {
+      "name": "all15_exact_trial_identities",
+      "passed": true
+    },
+    {
+      "name": "inputs_unchanged_at_completion",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "scripts/audit_inhibitory_recurrent_inputs.py": {
+      "bytes": 19744,
+      "sha256": "ce8ee60f7ea491d8ca14cb237c41a923f552607f1c73f50e7be2c75a84e29929"
+    },
+    "validation/or42a-summary-plan.json": {
+      "bytes": 10824,
+      "sha256": "32a0f8f33d61b532c871a025b975945c7d79530d123b4ee5f7753ea54a0dd41e"
+    },
+    "validation/or42a-summary-experiment.json": {
+      "bytes": 93796,
+      "sha256": "09f8a0135d80b8ecffbc3ffe733fbcb8becba28617d7d2c1b784d073c156dada"
+    },
+    "validation/or42a-summary-independent-review.json": {
+      "bytes": 16862,
+      "sha256": "281d17b1e51338de15fccbf92749f41ab08b9fb54f72f7c46008fdb79fe42f4c"
+    },
+    "scripts/experiment_or42a_summary.py": {
+      "bytes": 17458,
+      "sha256": "12d4fdc004b6945d6d55b91e90d011379bb1dd4189c5393cd514a099a9d537e5"
+    },
+    "fruitfly/neural.py": {
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "fruitfly/data.py": {
+      "bytes": 11325,
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc"
+    },
+    "fruitfly/sensors.py": {
+      "bytes": 8867,
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536"
+    },
+    "validation/or42a-primary/results.json": {
+      "bytes": 4508,
+      "sha256": "bcb7c95269498710185acca33ea2545e0f4be42a01e9f01069f8ceeb6a6e6bb6"
+    },
+    "validation/or42a-primary/male-vm7d-population.csv": {
+      "bytes": 894,
+      "sha256": "3270bfb69b5986d7b878a2e705adf621391aadb241cadc2a2b838c6b71664d41"
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    "data/processed/malecns_v1/neurons.feather": {
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    "validation/or42a-summary-environment.json": {
+      "bytes": 573,
+      "sha256": "fbec7bfe431fc759acb8dd708a3f2a2d2fe1ba9811f1205d4ae36d0cefa0e127"
+    },
+    "validation/or42a-summary-window-table.csv": {
+      "bytes": 5016,
+      "sha256": "74537e934e20f44b8107a4517de688aa7f600c178f2862b07bb7657096258a57"
+    },
+    "scripts/review_or42a_summary.py": {
+      "bytes": 20546,
+      "sha256": "8cc85a03b393781cdf96790aad29022ba305aa6de969610108bec5cfa35a8ca2"
+    },
+    "validation/or42a-summary-ATTRIBUTION.md": {
+      "bytes": 1375,
+      "sha256": "f06de2830c31aaffc92dda6d81c377ea7b016c1a27f17f5f5ace65c1f90e53d0"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/result.json": {
+      "bytes": 5036,
+      "sha256": "d297db5560754b50587bbfec736b502a9f0b65adc7b7dc692c8f88b9e916994e"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/trace.npz": {
+      "bytes": 11008,
+      "sha256": "bf92ff63786b99fee1efa36af89e72ecd80ba7cf726e9fa842f959eb6e42ece5"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/samples.jsonl": {
+      "bytes": 203423,
+      "sha256": "5dbb628eff97141e373436240263b351877a929bd5c01e6bd9354864df8f5d9c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/result.json": {
+      "bytes": 5291,
+      "sha256": "26cf67596ad67b86a89c113ae812a60fbf6cbb7e850bc8a33be71c86a758d1ad"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz": {
+      "bytes": 4595398,
+      "sha256": "f1f9042bdf1c3e0cb2e4d987b72c41375b62fe298dad29c7ffbc9cb3ab30fd0b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl": {
+      "bytes": 229364,
+      "sha256": "1295ca2dbcce62e3c6f7ca20428b58ec96bed80c86d94af586bd21b3344aece2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/result.json": {
+      "bytes": 5339,
+      "sha256": "21adc71dd15a43ff3d455561954cfbfa5b279ea4cdd3e248ecf0132d7a327cda"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/trace.npz": {
+      "bytes": 4581880,
+      "sha256": "8dd1cea1aadf8dfb2d7658ddff10c99c70a80f6df25f2a732f9e1b5cba6738a8"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/samples.jsonl": {
+      "bytes": 229831,
+      "sha256": "23857d445e6aaeb304550b4d4d42fe88cb7ddeea8cccb7af9d32da3f8a8481c3"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/result.json": {
+      "bytes": 5367,
+      "sha256": "ecaa418c95571f6b497f8e6868afc60852b72d582210a686caf219c7705c4cfc"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/trace.npz": {
+      "bytes": 4615262,
+      "sha256": "16dcb8c7428159538587e18508d66a201a9430afdcc3f78da5b80a4cca0b017c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/samples.jsonl": {
+      "bytes": 230866,
+      "sha256": "14a37979feb397e828d2a7493c7d51ebfe5b12a49a312944168b36fc347403a1"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/result.json": {
+      "bytes": 5229,
+      "sha256": "c620db2b71f904cd95706e4d1cf95d432bdc572d8e10b87c2342a4fef9c6d8c3"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 35527,
+      "sha256": "6d85d732ff75b7a0ae6bdbd4a1e4bdd73f223f498e059157945fd2b4b95f72a2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204223,
+      "sha256": "b0410d23f7527cf5fdd98353a68bee997f21a834b03fe4b3508b6211ff6263ac"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/result.json": {
+      "bytes": 5034,
+      "sha256": "7cb2bd668881adec3a4ed1e24d76355c894f20d864d927859acb35e7f5329921"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/trace.npz": {
+      "bytes": 11008,
+      "sha256": "fc44d2554ec350e24dd9e8384f508decf189be00b7604f9da758f520e3e10acf"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/samples.jsonl": {
+      "bytes": 203388,
+      "sha256": "67d2f79474b2d4658440b3d54ed9499f2aa492b5b689df03da3841fda29c58b7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/result.json": {
+      "bytes": 5305,
+      "sha256": "23c76e298cffa3706aa7f5ef9982516c1b02d01f624223448c94b5dd92bb7173"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/trace.npz": {
+      "bytes": 4732507,
+      "sha256": "07617c61bd263bcecc7702667efff293f16fadc792fb6e4c186b48195be83325"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/samples.jsonl": {
+      "bytes": 229742,
+      "sha256": "de3c4a851ab49c3a48abd5b143ec976938a265b3849d101399c9f389e28f9943"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/result.json": {
+      "bytes": 5340,
+      "sha256": "41f6f72813c1b0052ed0958d3eb0023f10045fbb0e33eb8830abef77bd915e23"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/trace.npz": {
+      "bytes": 4791832,
+      "sha256": "bad74967cb3ff5300f731f0f86a7f9000717ca5a790e6f22aee88769aa97140d"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/samples.jsonl": {
+      "bytes": 230306,
+      "sha256": "f1d64a7c962fe48180d7b87e73015f9c6759c9cdcb0b08bb374e28f0cb5c2db7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/result.json": {
+      "bytes": 5364,
+      "sha256": "3c8daae4caa7d7cc5c474a2dfe9d2b6050b71946446c6bc61941bb77cb5cff1d"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/trace.npz": {
+      "bytes": 4747355,
+      "sha256": "e27c8358ef7411ed1b3e3b2803ba0035b4d4e556cf4f05fee06431c78e6e4811"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/samples.jsonl": {
+      "bytes": 231377,
+      "sha256": "c360db127658bd8cff008838613878b26ef68f29f8fc8b6e326a7649cc3e7370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/result.json": {
+      "bytes": 5226,
+      "sha256": "da7d8bff2baccaf0dd184dc0e511adb1dfed514c7db2a7f39a36cc30bc44a4a3"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 34980,
+      "sha256": "2c46eb6a3a9b7550e1023deeb18a14fd98fb468b8d37ec286f13647ca6fb0bc9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204188,
+      "sha256": "bd97333c913558961afeb25cac0bced0dab679166891e0abae096e8287cb3991"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/result.json": {
+      "bytes": 5033,
+      "sha256": "8b5146b129eba537d8c86cfa3740ce5e20b9805d73ea1a64066359ac16de0e3f"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/trace.npz": {
+      "bytes": 11007,
+      "sha256": "e51aa493cf3d81744ce09c8f57630eac356ceaa1658b89e0772af4f438b50946"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/samples.jsonl": {
+      "bytes": 203406,
+      "sha256": "88ee9b3e690fa917daf13763d4b3f27beed401ba8701c3dde080390abc87e7ca"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/result.json": {
+      "bytes": 5304,
+      "sha256": "6e0c2adefe4019db127244097be624838d0d22ed145ab47f5e7c22222e740574"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/trace.npz": {
+      "bytes": 4888866,
+      "sha256": "73816d2b5a295c43ff3320b89dd260d0e4b901a6ed056398415da282ace4f86e"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/samples.jsonl": {
+      "bytes": 230377,
+      "sha256": "1dd51b26ab199c495f6e5b133b40498039486ec0634623786a157bd3d8c8d95b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/result.json": {
+      "bytes": 5339,
+      "sha256": "9697781260de8f2ec9d509bb5f36828ef5371848659189b73b335d9782a46244"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/trace.npz": {
+      "bytes": 4915776,
+      "sha256": "2deae03a58f4984990126caf338df440a7de70012dfc19bdef88fd31a2909370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/samples.jsonl": {
+      "bytes": 230856,
+      "sha256": "57cfdb55d371a067ae364cee37576a623fa447d5a4ffa870a608e768ede68626"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/result.json": {
+      "bytes": 5364,
+      "sha256": "377a08e88800203f000f3f71a143335948c6f41d7094383305b463e6da3990f1"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/trace.npz": {
+      "bytes": 4898720,
+      "sha256": "5ba8e2ee34fe848ecaff8d674df603762ee93834b991f2a03bfdf004126bc3ec"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/samples.jsonl": {
+      "bytes": 231936,
+      "sha256": "e1ad6fad0e5804654f6197b267bdf43f7d4681a59405a56119d9305e007c31c9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/result.json": {
+      "bytes": 5223,
+      "sha256": "7463ad166a92f0cdef882c8023e63e38efb8dbf5daa23c0d68423b311b22cc1c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 35470,
+      "sha256": "ae22b2da244e4b8fcf4935f866852e162a45e26350c9347373567fa8df21787a"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204206,
+      "sha256": "917a8044e390e87106c9d640d639c7ea387d24ca411df336d8bd7f56edee0853"
+    }
+  },
+  "trials": [
+    {
+      "seed": 11,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-no_input",
+      "spikes": 0,
+      "candidate_arrivals": 0,
+      "applied_arrivals": 0,
+      "samples": 300,
+      "initial_rng_state": 3926704849073358691,
+      "final_rng_state": 13581153611792153621,
+      "prefix_50ms": {
+        "spikes": 0,
+        "source_spikes": 0,
+        "candidate_arrivals": 0,
+        "applied_arrivals": 0,
+        "rng_state": 17002731536089512071,
+        "ordered_spike_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ordered_spike_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_source_events": 0,
+        "pending_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_delivery_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 0.0,
+          "rng_before": 14863194432466872543,
+          "rng_after": 17002731536089512071,
+          "rng_draws": 1800,
+          "requested_arrivals": 0,
+          "applied_direct_voltage_arrivals": 0,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 0,
+          "all_spikes": 0,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "377e960454fc76fcc11670bc5ecc347be13caf90f11478bea70c7842f6fefa38",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    },
+    {
+      "seed": 11,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline",
+      "spikes": 1016416,
+      "candidate_arrivals": 618,
+      "applied_arrivals": 617,
+      "samples": 300,
+      "initial_rng_state": 3926704849073358691,
+      "final_rng_state": 13581153611792153621,
+      "prefix_50ms": {
+        "spikes": 113,
+        "source_spikes": 30,
+        "candidate_arrivals": 30,
+        "applied_arrivals": 30,
+        "rng_state": 17002731536089512071,
+        "ordered_spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+        "ordered_spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+        "pending_source_events": 7,
+        "pending_indices_sha256": "caa6bff4c53d59e8fdbdfb457c499deb254d546ca36766c338a25b3afbed19f2",
+        "pending_delivery_ticks_sha256": "c05ac0106716796f2a3aaa5ce2c7616d4271ec2bbfa3679e1ac3b895a79fd39d",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 14863194432466872543,
+          "rng_after": 17002731536089512071,
+          "rng_draws": 1800,
+          "requested_arrivals": 2,
+          "applied_direct_voltage_arrivals": 2,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 2,
+          "all_spikes": 10,
+          "actual_edge_visits": 1269,
+          "global_voltage_min_mv": -199.6017809640471,
+          "global_voltage_max_mv": -45.23717664677575,
+          "source_voltage_min_mv": -52.771391456776705,
+          "source_voltage_max_mv": -50.90794570863453,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "f7808af936e8dd50ed1a7102bb251bdf3b55da29fa79c2d5fd70ca5f52f72d2b",
+      "final_synaptic_sha256": "ae225040de87c43ef26d0e6eb50365a4deb07026e69778e264307d7e536fb8b1"
+    },
+    {
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate",
+      "spikes": 1010620,
+      "candidate_arrivals": 3123,
+      "applied_arrivals": 3085,
+      "samples": 300,
+      "initial_rng_state": 3926704849073358691,
+      "final_rng_state": 13581153611792153621,
+      "prefix_50ms": {
+        "spikes": 113,
+        "source_spikes": 30,
+        "candidate_arrivals": 30,
+        "applied_arrivals": 30,
+        "rng_state": 17002731536089512071,
+        "ordered_spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+        "ordered_spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+        "pending_source_events": 7,
+        "pending_indices_sha256": "caa6bff4c53d59e8fdbdfb457c499deb254d546ca36766c338a25b3afbed19f2",
+        "pending_delivery_ticks_sha256": "c05ac0106716796f2a3aaa5ce2c7616d4271ec2bbfa3679e1ac3b895a79fd39d",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 14863194432466872543,
+          "rng_after": 17002731536089512071,
+          "rng_draws": 1800,
+          "requested_arrivals": 2,
+          "applied_direct_voltage_arrivals": 2,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 2,
+          "all_spikes": 10,
+          "actual_edge_visits": 1269,
+          "global_voltage_min_mv": -199.6017809640471,
+          "global_voltage_max_mv": -45.23717664677575,
+          "source_voltage_min_mv": -52.771391456776705,
+          "source_voltage_max_mv": -50.90794570863453,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "f0783adeb1815f31ee2abf80529f40789db6f3ddb13fc929cbed44d81bfc5f4e",
+      "final_synaptic_sha256": "b5a434ec2407267cafe3c253a5b249bfc89cc0ec5f177ad41b7b48269a07894a"
+    },
+    {
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate",
+      "spikes": 1022633,
+      "candidate_arrivals": 1485,
+      "applied_arrivals": 1478,
+      "samples": 300,
+      "initial_rng_state": 3926704849073358691,
+      "final_rng_state": 13581153611792153621,
+      "prefix_50ms": {
+        "spikes": 113,
+        "source_spikes": 30,
+        "candidate_arrivals": 30,
+        "applied_arrivals": 30,
+        "rng_state": 17002731536089512071,
+        "ordered_spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+        "ordered_spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+        "pending_source_events": 7,
+        "pending_indices_sha256": "caa6bff4c53d59e8fdbdfb457c499deb254d546ca36766c338a25b3afbed19f2",
+        "pending_delivery_ticks_sha256": "c05ac0106716796f2a3aaa5ce2c7616d4271ec2bbfa3679e1ac3b895a79fd39d",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 14863194432466872543,
+          "rng_after": 17002731536089512071,
+          "rng_draws": 1800,
+          "requested_arrivals": 2,
+          "applied_direct_voltage_arrivals": 2,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 2,
+          "all_spikes": 10,
+          "actual_edge_visits": 1269,
+          "global_voltage_min_mv": -199.6017809640471,
+          "global_voltage_max_mv": -45.23717664677575,
+          "source_voltage_min_mv": -52.771391456776705,
+          "source_voltage_max_mv": -50.90794570863453,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "11094fadebf01cb5f335601c724ed229c3b6d26d65637cb7f9d40d564cb8263f",
+      "final_synaptic_sha256": "06572dc805359039dc5e3db89e583cd7d701e5e4f58376943dbe9f301e7590dd"
+    },
+    {
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked",
+      "spikes": 3085,
+      "candidate_arrivals": 3123,
+      "applied_arrivals": 3085,
+      "samples": 300,
+      "initial_rng_state": 3926704849073358691,
+      "final_rng_state": 13581153611792153621,
+      "prefix_50ms": {
+        "spikes": 30,
+        "source_spikes": 30,
+        "candidate_arrivals": 30,
+        "applied_arrivals": 30,
+        "rng_state": 17002731536089512071,
+        "ordered_spike_indices_sha256": "9a6d717c59c6b4082344ee3b8e30f55f156f2bafcb4104baf8d90017f4fcb6f0",
+        "ordered_spike_ticks_sha256": "22b2a5de310b0d65023906e3454c23dfe0e9e3b728b98b35785d682483942d14",
+        "pending_source_events": 1,
+        "pending_indices_sha256": "2c292f44ada7e1883f7404989859a1a87ad4b3f9a65cfb69bd389ef46e63c3a4",
+        "pending_delivery_ticks_sha256": "01f629f0807a547c90252f658557d888852aec7555ccbdf041134e56a6755ede",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 14863194432466872543,
+          "rng_after": 17002731536089512071,
+          "rng_draws": 1800,
+          "requested_arrivals": 2,
+          "applied_direct_voltage_arrivals": 2,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 2,
+          "all_spikes": 2,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "377e960454fc76fcc11670bc5ecc347be13caf90f11478bea70c7842f6fefa38",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    },
+    {
+      "seed": 12,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-no_input",
+      "spikes": 0,
+      "candidate_arrivals": 0,
+      "applied_arrivals": 0,
+      "samples": 300,
+      "initial_rng_state": 9986919024197907781,
+      "final_rng_state": 4493313800868040218,
+      "prefix_50ms": {
+        "spikes": 0,
+        "source_spikes": 0,
+        "candidate_arrivals": 0,
+        "applied_arrivals": 0,
+        "rng_state": 7461862444540912325,
+        "ordered_spike_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ordered_spike_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_source_events": 0,
+        "pending_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_delivery_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 0.0,
+          "rng_before": 6277766847591367221,
+          "rng_after": 7461862444540912325,
+          "rng_draws": 1800,
+          "requested_arrivals": 0,
+          "applied_direct_voltage_arrivals": 0,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 0,
+          "all_spikes": 0,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "377e960454fc76fcc11670bc5ecc347be13caf90f11478bea70c7842f6fefa38",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    },
+    {
+      "seed": 12,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline",
+      "spikes": 1067686,
+      "candidate_arrivals": 623,
+      "applied_arrivals": 623,
+      "samples": 300,
+      "initial_rng_state": 9986919024197907781,
+      "final_rng_state": 4493313800868040218,
+      "prefix_50ms": {
+        "spikes": 82,
+        "source_spikes": 22,
+        "candidate_arrivals": 22,
+        "applied_arrivals": 22,
+        "rng_state": 7461862444540912325,
+        "ordered_spike_indices_sha256": "9c193949f2867df9956933e0fa235100d72d40b660957ce159d7ca3b67c83dde",
+        "ordered_spike_ticks_sha256": "61118a6a9754c0f119c73f1bb7dfce6c621319a1ba93bd98f69daf1c155631ce",
+        "pending_source_events": 2,
+        "pending_indices_sha256": "0abd271b25358388c5a2ddd1ae24ad5ced2d3bbaf712d2f466bd5451cf6579d2",
+        "pending_delivery_ticks_sha256": "74ba6104ed575599463c485a24ae72c6595762042bc290e886ddcd453aaaa69f",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 6277766847591367221,
+          "rng_after": 7461862444540912325,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 5,
+          "actual_edge_visits": 2864,
+          "global_voltage_min_mv": -101.27716268696273,
+          "global_voltage_max_mv": -45.29083748213721,
+          "source_voltage_min_mv": -52.239163685303495,
+          "source_voltage_max_mv": -50.10903757073315,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "9c225762031312310d69dae2fd13babdbcc6e7aa3dac4bc6e392c2d1349b0650",
+      "final_synaptic_sha256": "61477aba61e8af475d5273248af9a3db0a5b48a09265b46dd6f06017a3627976"
+    },
+    {
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate",
+      "spikes": 1085645,
+      "candidate_arrivals": 3064,
+      "applied_arrivals": 3026,
+      "samples": 300,
+      "initial_rng_state": 9986919024197907781,
+      "final_rng_state": 4493313800868040218,
+      "prefix_50ms": {
+        "spikes": 82,
+        "source_spikes": 22,
+        "candidate_arrivals": 22,
+        "applied_arrivals": 22,
+        "rng_state": 7461862444540912325,
+        "ordered_spike_indices_sha256": "9c193949f2867df9956933e0fa235100d72d40b660957ce159d7ca3b67c83dde",
+        "ordered_spike_ticks_sha256": "61118a6a9754c0f119c73f1bb7dfce6c621319a1ba93bd98f69daf1c155631ce",
+        "pending_source_events": 2,
+        "pending_indices_sha256": "0abd271b25358388c5a2ddd1ae24ad5ced2d3bbaf712d2f466bd5451cf6579d2",
+        "pending_delivery_ticks_sha256": "74ba6104ed575599463c485a24ae72c6595762042bc290e886ddcd453aaaa69f",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 6277766847591367221,
+          "rng_after": 7461862444540912325,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 5,
+          "actual_edge_visits": 2864,
+          "global_voltage_min_mv": -101.27716268696273,
+          "global_voltage_max_mv": -45.29083748213721,
+          "source_voltage_min_mv": -52.239163685303495,
+          "source_voltage_max_mv": -50.10903757073315,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "53350e705736373457732a24151a6558cd8d1e2917c8adae8701a94e377165d7",
+      "final_synaptic_sha256": "a190a70c144bf89b5c2f762f6e4458c66e73ec5b265dc38211f2107cd50987c8"
+    },
+    {
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate",
+      "spikes": 1078758,
+      "candidate_arrivals": 1446,
+      "applied_arrivals": 1442,
+      "samples": 300,
+      "initial_rng_state": 9986919024197907781,
+      "final_rng_state": 4493313800868040218,
+      "prefix_50ms": {
+        "spikes": 82,
+        "source_spikes": 22,
+        "candidate_arrivals": 22,
+        "applied_arrivals": 22,
+        "rng_state": 7461862444540912325,
+        "ordered_spike_indices_sha256": "9c193949f2867df9956933e0fa235100d72d40b660957ce159d7ca3b67c83dde",
+        "ordered_spike_ticks_sha256": "61118a6a9754c0f119c73f1bb7dfce6c621319a1ba93bd98f69daf1c155631ce",
+        "pending_source_events": 2,
+        "pending_indices_sha256": "0abd271b25358388c5a2ddd1ae24ad5ced2d3bbaf712d2f466bd5451cf6579d2",
+        "pending_delivery_ticks_sha256": "74ba6104ed575599463c485a24ae72c6595762042bc290e886ddcd453aaaa69f",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 6277766847591367221,
+          "rng_after": 7461862444540912325,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 5,
+          "actual_edge_visits": 2864,
+          "global_voltage_min_mv": -101.27716268696273,
+          "global_voltage_max_mv": -45.29083748213721,
+          "source_voltage_min_mv": -52.239163685303495,
+          "source_voltage_max_mv": -50.10903757073315,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "f40de2082415bca3f170b66fda5f6639354c6e1aae5dda9a0ffbe5f25c0f194f",
+      "final_synaptic_sha256": "5791fda5926fb88ab385a1bc923985c6e0deeb7d5af9b3ddd500e5e153e9cd5b"
+    },
+    {
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked",
+      "spikes": 3025,
+      "candidate_arrivals": 3064,
+      "applied_arrivals": 3026,
+      "samples": 300,
+      "initial_rng_state": 9986919024197907781,
+      "final_rng_state": 4493313800868040218,
+      "prefix_50ms": {
+        "spikes": 22,
+        "source_spikes": 22,
+        "candidate_arrivals": 22,
+        "applied_arrivals": 22,
+        "rng_state": 7461862444540912325,
+        "ordered_spike_indices_sha256": "152b9d84cde76838cd2f9510669c7831556be2de9b5652554d18655adc87d2b4",
+        "ordered_spike_ticks_sha256": "a83a030822f85320d47d6374b1916e9bdf1b2fc0fa9228ee27d2ffd70b55f967",
+        "pending_source_events": 0,
+        "pending_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_delivery_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 6277766847591367221,
+          "rng_after": 7461862444540912325,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 1,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "182aa1784901f90a3d44453364309dd7e2ceac89b6856e9d41d0f305947c240b",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    },
+    {
+      "seed": 13,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-no_input",
+      "spikes": 0,
+      "candidate_arrivals": 0,
+      "applied_arrivals": 0,
+      "samples": 300,
+      "initial_rng_state": 1477825346072093981,
+      "final_rng_state": 3214217756490935302,
+      "prefix_50ms": {
+        "spikes": 0,
+        "source_spikes": 0,
+        "candidate_arrivals": 0,
+        "applied_arrivals": 0,
+        "rng_state": 9726742448920413414,
+        "ordered_spike_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ordered_spike_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_source_events": 0,
+        "pending_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_delivery_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 0.0,
+          "rng_before": 1769160338855998075,
+          "rng_after": 9726742448920413414,
+          "rng_draws": 1800,
+          "requested_arrivals": 0,
+          "applied_direct_voltage_arrivals": 0,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 0,
+          "all_spikes": 0,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "377e960454fc76fcc11670bc5ecc347be13caf90f11478bea70c7842f6fefa38",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    },
+    {
+      "seed": 13,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline",
+      "spikes": 1131434,
+      "candidate_arrivals": 583,
+      "applied_arrivals": 582,
+      "samples": 300,
+      "initial_rng_state": 1477825346072093981,
+      "final_rng_state": 3214217756490935302,
+      "prefix_50ms": {
+        "spikes": 29,
+        "source_spikes": 10,
+        "candidate_arrivals": 10,
+        "applied_arrivals": 10,
+        "rng_state": 9726742448920413414,
+        "ordered_spike_indices_sha256": "5eaed7b28cd98b0380ae6fe5b983554bc01848bc9d5df0543a504463be573803",
+        "ordered_spike_ticks_sha256": "9a1b156a50e9bb9a9682298cac047de6cd75f8673c01053a7f43cc89b290f545",
+        "pending_source_events": 3,
+        "pending_indices_sha256": "8cc47a4c549a1060a39f9b2effb81f2d6bc99cca0d01788c43d4e950d66441bd",
+        "pending_delivery_ticks_sha256": "69834ff58a11f8fbec744e78db21e2a031fae7ea7f54175f25137b085d19f27e",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 1769160338855998075,
+          "rng_after": 9726742448920413414,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 4,
+          "actual_edge_visits": 3572,
+          "global_voltage_min_mv": -91.99477025050533,
+          "global_voltage_max_mv": -45.349150022696435,
+          "source_voltage_min_mv": -52.455785701686096,
+          "source_voltage_max_mv": -51.337047316566355,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "5d7f8001a3c747c88141bd04d52092eb7010741f17586f559cf96320269f09ae",
+      "final_synaptic_sha256": "faf9913a604d3dd79f8bc1d3f9c30ce52f175bf7826027836824906f11bed0c9"
+    },
+    {
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate",
+      "spikes": 1137723,
+      "candidate_arrivals": 3136,
+      "applied_arrivals": 3088,
+      "samples": 300,
+      "initial_rng_state": 1477825346072093981,
+      "final_rng_state": 3214217756490935302,
+      "prefix_50ms": {
+        "spikes": 29,
+        "source_spikes": 10,
+        "candidate_arrivals": 10,
+        "applied_arrivals": 10,
+        "rng_state": 9726742448920413414,
+        "ordered_spike_indices_sha256": "5eaed7b28cd98b0380ae6fe5b983554bc01848bc9d5df0543a504463be573803",
+        "ordered_spike_ticks_sha256": "9a1b156a50e9bb9a9682298cac047de6cd75f8673c01053a7f43cc89b290f545",
+        "pending_source_events": 3,
+        "pending_indices_sha256": "8cc47a4c549a1060a39f9b2effb81f2d6bc99cca0d01788c43d4e950d66441bd",
+        "pending_delivery_ticks_sha256": "69834ff58a11f8fbec744e78db21e2a031fae7ea7f54175f25137b085d19f27e",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 1769160338855998075,
+          "rng_after": 9726742448920413414,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 4,
+          "actual_edge_visits": 3572,
+          "global_voltage_min_mv": -91.99477025050533,
+          "global_voltage_max_mv": -45.349150022696435,
+          "source_voltage_min_mv": -52.455785701686096,
+          "source_voltage_max_mv": -51.337047316566355,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "7467f858f39ff2ad054c319e620f3b5fc578effc42af87bab02c7ddc696355f9",
+      "final_synaptic_sha256": "d9fe3d6c586de113788f2190cfe7f6559cc3b5c50c1238f348d86bfd79b3cb8b"
+    },
+    {
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate",
+      "spikes": 1134730,
+      "candidate_arrivals": 1421,
+      "applied_arrivals": 1416,
+      "samples": 300,
+      "initial_rng_state": 1477825346072093981,
+      "final_rng_state": 3214217756490935302,
+      "prefix_50ms": {
+        "spikes": 29,
+        "source_spikes": 10,
+        "candidate_arrivals": 10,
+        "applied_arrivals": 10,
+        "rng_state": 9726742448920413414,
+        "ordered_spike_indices_sha256": "5eaed7b28cd98b0380ae6fe5b983554bc01848bc9d5df0543a504463be573803",
+        "ordered_spike_ticks_sha256": "9a1b156a50e9bb9a9682298cac047de6cd75f8673c01053a7f43cc89b290f545",
+        "pending_source_events": 3,
+        "pending_indices_sha256": "8cc47a4c549a1060a39f9b2effb81f2d6bc99cca0d01788c43d4e950d66441bd",
+        "pending_delivery_ticks_sha256": "69834ff58a11f8fbec744e78db21e2a031fae7ea7f54175f25137b085d19f27e",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 1769160338855998075,
+          "rng_after": 9726742448920413414,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 4,
+          "actual_edge_visits": 3572,
+          "global_voltage_min_mv": -91.99477025050533,
+          "global_voltage_max_mv": -45.349150022696435,
+          "source_voltage_min_mv": -52.455785701686096,
+          "source_voltage_max_mv": -51.337047316566355,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "84204a1ca7a996edf38607e1ece68a9930739bce645f94d851831a15b38f457d",
+      "final_synaptic_sha256": "139be1a521554fcbcdde96b8fd66789e79b573dbd0d41ec2598562bd8f9da04f"
+    },
+    {
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked",
+      "spikes": 3088,
+      "candidate_arrivals": 3136,
+      "applied_arrivals": 3088,
+      "samples": 300,
+      "initial_rng_state": 1477825346072093981,
+      "final_rng_state": 3214217756490935302,
+      "prefix_50ms": {
+        "spikes": 10,
+        "source_spikes": 10,
+        "candidate_arrivals": 10,
+        "applied_arrivals": 10,
+        "rng_state": 9726742448920413414,
+        "ordered_spike_indices_sha256": "b2a5761822aaccf285819fbab3461d01654793cd78e51774a73df2599a694162",
+        "ordered_spike_ticks_sha256": "916b8201a5b5b2e1d1d4a5a74ce890c2295ed3ca5831c58a7f8ce6d15e64fcc8",
+        "pending_source_events": 0,
+        "pending_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "pending_delivery_ticks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "last_sample": {
+          "chunk": 9,
+          "start_tick": 450,
+          "end_tick": 500,
+          "window": 0,
+          "rate_hz": 11.0,
+          "rng_before": 1769160338855998075,
+          "rng_after": 9726742448920413414,
+          "rng_draws": 1800,
+          "requested_arrivals": 1,
+          "applied_direct_voltage_arrivals": 1,
+          "same_tick_spike_rejected_arrivals": 0,
+          "actual_source_spikes": 1,
+          "all_spikes": 1,
+          "actual_edge_visits": 0,
+          "global_voltage_min_mv": -52.0,
+          "global_voltage_max_mv": -52.0,
+          "source_voltage_min_mv": -52.0,
+          "source_voltage_max_mv": -52.0,
+          "all_state_finite": true,
+          "motor_rates_hz": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "unrealized_motor_command": {
+            "behavior": "rest",
+            "left": 0.0,
+            "right": 0.0
+          }
+        }
+      },
+      "final_voltage_sha256": "377e960454fc76fcc11670bc5ecc347be13caf90f11478bea70c7842f6fefa38",
+      "final_synaptic_sha256": "82dba2ccacd519455579208551100f050d621df48cdd21f7961e562673c0e333"
+    }
+  ],
+  "prefix_pairs": [
+    {
+      "seed": 11,
+      "reference": "constant_baseline",
+      "condition": "ethyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    },
+    {
+      "seed": 11,
+      "reference": "constant_baseline",
+      "condition": "isoamyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    },
+    {
+      "seed": 12,
+      "reference": "constant_baseline",
+      "condition": "ethyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    },
+    {
+      "seed": 12,
+      "reference": "constant_baseline",
+      "condition": "isoamyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    },
+    {
+      "seed": 13,
+      "reference": "constant_baseline",
+      "condition": "ethyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    },
+    {
+      "seed": 13,
+      "reference": "constant_baseline",
+      "condition": "isoamyl_acetate",
+      "all_spikes_candidates_applied_and10_samples_exact": true
+    }
+  ],
+  "errors": [],
+  "neural_execution": false,
+  "duplicate_arrays_written": false,
+  "larger_rolling_spike_archive_opened": false,
+  "method": "Saved Or42a data only; independent integer xorshift64* reconstruction, graph joins and per-window/per-sample spike/event counts. No engine/producer import or execution.",
+  "limits": [
+    "50 ms has no complete retained v/s checkpoint. Prefix parity can compare exact spikes, candidates/applied flags, 10 five-ms samples and reconstructible pending/last-spike identities; it cannot establish full 50 ms state parity from old artifacts.",
+    "1500 ms has full voltage and synaptic arrays, but no stored complete last-spike, refractory, current, source mask or pending checkpoint. Last-spike/pending identities can be reconstructed from complete spikes; configured current/mask/refractory semantics rely on frozen source and reported drive checks.",
+    "Applied-arrival flags are inferred from candidate events and same-tick source spikes under the inspected zero-source-refractory C0 schedule, not instrumented direct voltage writes. Altered arms must derive their own eligibility from fixed candidates.",
+    "Per-five-ms finite flags and extrema are producer observations; internal per-tick extrema and intermediate complete state arrays are unavailable. Finite is not physiologically plausible.",
+    "Edge visits include inactive postsynaptic targets and zero-weight edges. Accepted postsynaptic increments are not recorded.",
+    "Result.json hashes are newly recorded and their complete JSON values match the historically retained outer trial records; older receipts independently pin trace.npz and samples.jsonl, not separate result.json bytes.",
+    "Only three positive-baseline unblocked conditions have identical prefixes; zero-Hz no_input is excluded. The blocked condition shares candidates/RNG but may have different recurrent output.",
+    "Excitation-event rates combine different biological summaries and are not clamped source firing rates. Three simulation seeds are not biological replicates. This audit provides no body or physiology validation."
+  ],
+  "graph": {
+    "sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+    "neurons": 166700,
+    "edges": 25582938,
+    "source_body_ids": [
+      36550,
+      97032,
+      101539,
+      101657,
+      104136,
+      113302,
+      119792,
+      120384,
+      124378,
+      126302,
+      127708,
+      130608,
+      130700,
+      131182,
+      131890,
+      132188,
+      132980,
+      133027,
+      136640,
+      138213,
+      141991,
+      144724,
+      156821,
+      163983,
+      167295,
+      512833,
+      512834,
+      521423,
+      521428,
+      521430,
+      525099,
+      525228,
+      527468,
+      569149,
+      922423,
+      927197
+    ],
+    "source_graph_indices": [
+      23793,
+      73366,
+      76669,
+      76746,
+      78551,
+      85145,
+      89584,
+      89973,
+      92605,
+      93836,
+      94688,
+      96467,
+      96525,
+      96797,
+      97258,
+      97436,
+      97908,
+      97936,
+      99940,
+      100767,
+      102690,
+      104035,
+      108965,
+      111263,
+      112198,
+      126321,
+      126322,
+      131221,
+      131223,
+      131224,
+      132657,
+      132723,
+      133624,
+      143464,
+      164119,
+      164244
+    ],
+    "first_hop_body_ids": [
+      10096,
+      10133,
+      10169,
+      10176,
+      10201,
+      10208,
+      10254,
+      10342,
+      10376,
+      10397,
+      10456,
+      10459,
+      10463,
+      10473,
+      10491,
+      10515,
+      10593,
+      10632,
+      10650,
+      10737,
+      10786,
+      10835,
+      10929,
+      10942,
+      11058,
+      11080,
+      11092,
+      11099,
+      11123,
+      11227,
+      11244,
+      11262,
+      11289,
+      11292,
+      11294,
+      11342,
+      11345,
+      11359,
+      11379,
+      11399,
+      11400,
+      11478,
+      11517,
+      11523,
+      11531,
+      11556,
+      11594,
+      11603,
+      11620,
+      11722,
+      11725,
+      11736,
+      11744,
+      11749,
+      11783,
+      11788,
+      11837,
+      11870,
+      11914,
+      11922,
+      11952,
+      11975,
+      11991,
+      11992,
+      11993,
+      12109,
+      12111,
+      12171,
+      12320,
+      12338,
+      12354,
+      12373,
+      12471,
+      12491,
+      12511,
+      12534,
+      12541,
+      12616,
+      12717,
+      12837,
+      12929,
+      12934,
+      12977,
+      12994,
+      13028,
+      13194,
+      13225,
+      13294,
+      13314,
+      13386,
+      13431,
+      13480,
+      13529,
+      13550,
+      13596,
+      13621,
+      13716,
+      13821,
+      13832,
+      13944,
+      13951,
+      13972,
+      14019,
+      14161,
+      14212,
+      14243,
+      14386,
+      14391,
+      14430,
+      14506,
+      14573,
+      14685,
+      14895,
+      15183,
+      15353,
+      16107,
+      16124,
+      16460,
+      16508,
+      16524,
+      17325,
+      17569,
+      17650,
+      17817,
+      18016,
+      18084,
+      18165,
+      18332,
+      18726,
+      18730,
+      18834,
+      19305,
+      19938,
+      20044,
+      20380,
+      20402,
+      20581,
+      20620,
+      21132,
+      21567,
+      22026,
+      22166,
+      22243,
+      22276,
+      22717,
+      23401,
+      23477,
+      23694,
+      23854,
+      24828,
+      25081,
+      26095,
+      26223,
+      27379,
+      27614,
+      28037,
+      28406,
+      28525,
+      29536,
+      29824,
+      30021,
+      30421,
+      30885,
+      31348,
+      32482,
+      32795,
+      33833,
+      34084,
+      35196,
+      37732,
+      39201,
+      40593,
+      40838,
+      41213,
+      42101,
+      44171,
+      44302,
+      44513,
+      45251,
+      46500,
+      46692,
+      47272,
+      48530,
+      48817,
+      48963,
+      50775,
+      52223,
+      52622,
+      55561,
+      57783,
+      58408,
+      58500,
+      60268,
+      60623,
+      61572,
+      62692,
+      66244,
+      66371,
+      67052,
+      69646,
+      70052,
+      70684,
+      71476,
+      71796,
+      72871,
+      77710,
+      78460,
+      79645,
+      83192,
+      87970,
+      88479,
+      88924,
+      89758,
+      89871,
+      91027,
+      93290,
+      95369,
+      95665,
+      95720,
+      97057,
+      99373,
+      102945,
+      105377,
+      107386,
+      108654,
+      112569,
+      114513,
+      115312,
+      116618,
+      117635,
+      130279,
+      131568,
+      137073,
+      139337,
+      142440,
+      143631,
+      143937,
+      144792,
+      146547,
+      148621,
+      149192,
+      157976,
+      158232,
+      158302,
+      159132,
+      159579,
+      160438,
+      160795,
+      160953,
+      161551,
+      163950,
+      164026,
+      164505,
+      164841,
+      168808,
+      168906,
+      169187,
+      171940,
+      172817,
+      173837,
+      173919,
+      174167,
+      175009,
+      175056,
+      178301,
+      178728,
+      182223,
+      185263,
+      185970,
+      186020,
+      188926,
+      192978,
+      193203,
+      193726,
+      196833,
+      199178,
+      202226,
+      203443,
+      204591,
+      211459,
+      213955,
+      214129,
+      223927,
+      225561,
+      230201,
+      239398,
+      245617,
+      246941,
+      247232,
+      247975,
+      250430,
+      251188,
+      254440,
+      261305,
+      267437,
+      273402,
+      316593,
+      441290,
+      456658,
+      511807,
+      512828,
+      512829,
+      512835,
+      513513,
+      513734,
+      513911,
+      515554,
+      517458,
+      519242,
+      519245,
+      519251,
+      519544,
+      519545,
+      519546,
+      519551,
+      520787,
+      520915,
+      521158,
+      521290,
+      521422,
+      521431,
+      521438,
+      521439,
+      521586,
+      521935,
+      523544,
+      523591,
+      524164,
+      524208,
+      524235,
+      524238,
+      525106,
+      525140,
+      525165,
+      525173,
+      527409,
+      527469,
+      527470,
+      527523,
+      527566,
+      529429,
+      530777,
+      531244,
+      531560,
+      532655,
+      532766,
+      532768,
+      546390,
+      551294,
+      555322,
+      559282,
+      564397,
+      564692,
+      566006,
+      571446,
+      580855,
+      918029,
+      918293,
+      920382,
+      928415,
+      954518,
+      144295263,
+      677279003,
+      816904261,
+      844236462
+    ],
+    "motor_groups": {
+      "forward": [
+        13805,
+        230783
+      ],
+      "turn_left": [
+        10442,
+        523769
+      ],
+      "turn_right": [
+        10360,
+        10760
+      ],
+      "feeding": [
+        10331,
+        16949
+      ],
+      "escape": [
+        10001,
+        10010
+      ]
+    },
+    "motor_grooming_enabled": false,
+    "source_count": 36,
+    "first_hop_count": 365,
+    "source_side_counts": {
+      "R": 18,
+      "L": 18
+    },
+    "source_nerve": "MxLbN"
+  },
+  "parameters": {
+    "dt_ms": 0.1,
+    "resting_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_tau_ms": 20.0,
+    "synapse_tau_ms": 5.0,
+    "refractory_ms": 2.2,
+    "delay_ms": 1.8,
+    "poisson_weight_mv": 68.75
+  },
+  "rng_states": {
+    "11": {
+      "initial": 3926704849073358691,
+      "after_50ms": 17002731536089512071,
+      "after_1500ms": 13581153611792153621,
+      "draws_50ms": 18000,
+      "draws_1500ms": 540000
+    },
+    "12": {
+      "initial": 9986919024197907781,
+      "after_50ms": 7461862444540912325,
+      "after_1500ms": 4493313800868040218,
+      "draws_50ms": 18000,
+      "draws_1500ms": 540000
+    },
+    "13": {
+      "initial": 1477825346072093981,
+      "after_50ms": 9726742448920413414,
+      "after_1500ms": 3214217756490935302,
+      "draws_50ms": 18000,
+      "draws_1500ms": 540000
+    }
+  },
+  "all_spikes_inspected": 9694843,
+  "prefix_probe_reference": {
+    "seed": 11,
+    "condition": "constant_baseline",
+    "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline",
+    "spikes": 1016416,
+    "candidate_arrivals": 618,
+    "applied_arrivals": 617,
+    "samples": 300,
+    "initial_rng_state": 3926704849073358691,
+    "final_rng_state": 13581153611792153621,
+    "prefix_50ms": {
+      "spikes": 113,
+      "source_spikes": 30,
+      "candidate_arrivals": 30,
+      "applied_arrivals": 30,
+      "rng_state": 17002731536089512071,
+      "ordered_spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+      "ordered_spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+      "pending_source_events": 7,
+      "pending_indices_sha256": "caa6bff4c53d59e8fdbdfb457c499deb254d546ca36766c338a25b3afbed19f2",
+      "pending_delivery_ticks_sha256": "c05ac0106716796f2a3aaa5ce2c7616d4271ec2bbfa3679e1ac3b895a79fd39d",
+      "last_sample": {
+        "chunk": 9,
+        "start_tick": 450,
+        "end_tick": 500,
+        "window": 0,
+        "rate_hz": 11.0,
+        "rng_before": 14863194432466872543,
+        "rng_after": 17002731536089512071,
+        "rng_draws": 1800,
+        "requested_arrivals": 2,
+        "applied_direct_voltage_arrivals": 2,
+        "same_tick_spike_rejected_arrivals": 0,
+        "actual_source_spikes": 2,
+        "all_spikes": 10,
+        "actual_edge_visits": 1269,
+        "global_voltage_min_mv": -199.6017809640471,
+        "global_voltage_max_mv": -45.23717664677575,
+        "source_voltage_min_mv": -52.771391456776705,
+        "source_voltage_max_mv": -50.90794570863453,
+        "all_state_finite": true,
+        "motor_rates_hz": {
+          "forward": 0.0,
+          "turn_left": 0.0,
+          "turn_right": 0.0,
+          "feeding": 0.0,
+          "escape": 0.0
+        },
+        "unrealized_motor_command": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        }
+      }
+    },
+    "final_voltage_sha256": "f7808af936e8dd50ed1a7102bb251bdf3b55da29fa79c2d5fd70ca5f52f72d2b",
+    "final_synaptic_sha256": "ae225040de87c43ef26d0e6eb50365a4deb07026e69778e264307d7e536fb8b1"
+  },
+  "completed_utc": "2026-09-05T05:19:36.560019+00:00",
+  "check_count": 293,
+  "passed": true
+}

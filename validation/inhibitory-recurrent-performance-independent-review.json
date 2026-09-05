@@ -1,0 +1,3093 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:34:01.506477+00:00",
+  "reviewer_script": {
+    "path": "scripts/review_inhibitory_recurrent_performance.py",
+    "sha256": "6d21bdc8bddeb626bca466c8fea1442eff9fac76f97c75550ec6df36a454bb12"
+  },
+  "scope": "Saved data and source inspection only; no producer imports or neural runs",
+  "oracle_selection": "All selected H0/H1 intervals with availability derived from own saved spikes",
+  "oracle_tolerance_mv": 1e-08,
+  "scipy_quad": {
+    "epsabs": 1e-11,
+    "epsrel": 1e-12,
+    "limit": 200
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "inputs": {
+    "validation/inhibitory-recurrent-performance-plan-v2.json": {
+      "bytes": 6567,
+      "sha256": "b8dce6c73dad3f0502ef5c13cc866257a84dc33f9adf5c7b5dd3b62ac17e6360"
+    },
+    "validation/inhibitory-recurrent-performance-v2/results.json": {
+      "bytes": 69536,
+      "sha256": "d9a8269b2e24538bb652367c3ac11bcf4c8a5f33b91d4c0f75377fb8b28dac82"
+    },
+    "scripts/probe_inhibitory_recurrent_v2.py": {
+      "bytes": 20751,
+      "sha256": "ac9d61bfb32733ea50dce70a54e2902d7855e58c90c14503eb0d78cb8ece0b24"
+    },
+    "scripts/probe_inhibitory_recurrent.py": {
+      "bytes": 20017,
+      "sha256": "3a87246dbdf51c7bb8a600f1ea564624fbc409cb4ed7f32b00737b14944e94cc"
+    },
+    "validation/inhibitory-recurrent-performance-plan.json": {
+      "bytes": 5721,
+      "sha256": "83174a7776c5794ece78fbebf1127cbf468f910371c0e8d4e83428b3de9cd550"
+    },
+    "validation/inhibitory-recurrent-performance/results.json": {
+      "bytes": 5786,
+      "sha256": "005c80ea80f5b38ffe9d7336ba7b24a0bd7b37c8489f6edc629b581030fdb134"
+    },
+    "scripts/inhibitory_recurrent_kernel.py": {
+      "bytes": 22085,
+      "sha256": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f"
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    "fruitfly/neural.py": {
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "validation/inhibitory-factorial-solver-plan.json": {
+      "bytes": 15650,
+      "sha256": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687"
+    },
+    "validation/inhibitory-recurrent-input-audit.json": {
+      "bytes": 88861,
+      "sha256": "17270ce9ba3a3eb1fa39e32d601835528cdc2c6f0729ba071cfd49a7f8852b5d"
+    },
+    "validation/inhibitory-recurrent-kernel-checks.json": {
+      "bytes": 5519,
+      "sha256": "86134f8c541f7a71cb19e15b6fdf8223b2571a2ef6bc6d615b8c73186edf1370"
+    },
+    "validation/inhibitory-recurrent-kernel-independent-review.json": {
+      "bytes": 4845,
+      "sha256": "adb8798ef5f951a980415ec08decd5b145a170b2f923b5490040ef5a14e2cb53"
+    },
+    "validation/or42a-summary-plan.json": {
+      "bytes": 10824,
+      "sha256": "32a0f8f33d61b532c871a025b975945c7d79530d123b4ee5f7753ea54a0dd41e"
+    },
+    "validation/or42a-summary-experiment.json": {
+      "bytes": 93796,
+      "sha256": "09f8a0135d80b8ecffbc3ffe733fbcb8becba28617d7d2c1b784d073c156dada"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz": {
+      "bytes": 4595398,
+      "sha256": "f1f9042bdf1c3e0cb2e4d987b72c41375b62fe298dad29c7ffbc9cb3ab30fd0b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl": {
+      "bytes": 229364,
+      "sha256": "1295ca2dbcce62e3c6f7ca20428b58ec96bed80c86d94af586bd21b3344aece2"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/input-stream.json": {
+      "bytes": 484,
+      "sha256": "667659ed56115fd6874a6c5117106fc290dafa97c7b6045ddb366d876ee5b26d"
+    },
+    "validation/inhibitory-recurrent-performance-v2/selection.npz": {
+      "bytes": 1116,
+      "sha256": "d93ee9ac4a07247c80cc31d3df6651d94931702d6c205b70026ca9668fd85a42"
+    },
+    "validation/inhibitory-recurrent-performance-v2/input-stream.npz": {
+      "bytes": 140906,
+      "sha256": "2e2abd7f9547ac66e133613fcaf33bca51253b8d62cd048ca3cac93170bf1f77"
+    },
+    "validation/inhibitory-recurrent-performance-v2/selection.json": {
+      "bytes": 325,
+      "sha256": "5c864e73576d99099586b933b74fce18dff251705241d59fa02e3e599e4dbd5b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/scalar-grid.json": {
+      "bytes": 281,
+      "sha256": "38f66e319b62198e0fec69f8f993d1e156a22795d064df0253fd93569b49af6a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/scalar-grid.npz": {
+      "bytes": 2496,
+      "sha256": "c5cdc465a07de41808018e6c2c0bad97fe2343f1170586b6c947a8ac3a50841b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/final.npz": {
+      "bytes": 221758,
+      "sha256": "cca31f5267e25d935afbefbf350955f8479322af2b4d42c5019c41da20bd4e6a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-05.json": {
+      "bytes": 4996,
+      "sha256": "4e4d65e5062e424995480cb75f4ec8c121d286d03b63f3543055997b8a819bb3"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-04.npz": {
+      "bytes": 51388,
+      "sha256": "f2778b01331929e1ce425dfdf58844e3ce3166afc5ef9c3f06d7ac9ae82da681"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-05.npz": {
+      "bytes": 52270,
+      "sha256": "a4a8e683c7ac8354f53705f580d4781c45e06b09c74ae9735fc4bb8dbdbb2d27"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-09.json": {
+      "bytes": 4995,
+      "sha256": "7fb6591e72f3beea046f666078dc1e6074e3a521d653f2f3878f75471935e464"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-07.npz": {
+      "bytes": 53904,
+      "sha256": "0434da68d9026a8a760f42422bd4010fbb39871551b606301163faef34b3a0f2"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-06.npz": {
+      "bytes": 51218,
+      "sha256": "0a62c11dc2d5e565962cbd4b6384b9b7d971f3590cabc63353b446e3f8ce6a87"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-02.npz": {
+      "bytes": 38608,
+      "sha256": "f91d01053581169d3cb2c08f6b53689bff920f75fc1edade6b3dfac3a4039947"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-08.json": {
+      "bytes": 4993,
+      "sha256": "71e506c218d3b15040f13f9327fd310a1975d3e017d282fcffbaadfde2aa253b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-03.npz": {
+      "bytes": 47238,
+      "sha256": "9cfc322e4e290e4470f05c82b8e0f96154e3eda38dbf0c3b7c6da441a4fcd839"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-01.npz": {
+      "bytes": 13148,
+      "sha256": "25d964839c546f5c58dd19253d9d6a2be8d2c765989297b2548770e2f7b28b8f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-04.json": {
+      "bytes": 4996,
+      "sha256": "2d865cb4c358780467bd5457646a31e3168eee5d050685e4a89f9a211b881f75"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-03.json": {
+      "bytes": 4995,
+      "sha256": "227074a323046711ff321b55bcfa9efe5f4a026d9b35c909368ea884ba191471"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-02.json": {
+      "bytes": 4991,
+      "sha256": "d77678bc3a05d1f1fa4be1228f858b23f5d3f6a520e8ec740a2628334a6048e0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-01.json": {
+      "bytes": 4991,
+      "sha256": "e6f6c5a00b289239ec28c3af91e8a67ac6d1481fe6a6cc16aa20b4128bab3167"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-00.json": {
+      "bytes": 4988,
+      "sha256": "9b0fb43b5229da112ef07cd09495246f102d17db4c6604ced844196045d7bc7e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-07.json": {
+      "bytes": 4995,
+      "sha256": "2f8dcc097cfd3ff005ab1e1ac7a40dd0057556f1e0fcf722793a2c07106b413b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/final.json": {
+      "bytes": 1830,
+      "sha256": "a73098551abe268012bad9082793df688436383f7b88f12e3b671a73cf1bd0ae"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/initial.json": {
+      "bytes": 1826,
+      "sha256": "ea7c989683cda80517dab20f82f48a47bbf8b7f8e3136b036867378ef663cb1e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-06.json": {
+      "bytes": 4995,
+      "sha256": "533a26910ac0673fc4c22382d251bf4ada585ead68a3cf2f05879dd27d82f9e5"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-08.npz": {
+      "bytes": 51141,
+      "sha256": "6cfff6768e609e58cfe0f94bc96999030271efed040e55d5424030dcaa20720e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-09.npz": {
+      "bytes": 49763,
+      "sha256": "9ed269ebab901181531047f81c5644392a5c414153f3864edd5ddc28dc558f19"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/final.npz": {
+      "bytes": 493668,
+      "sha256": "6f9485d14bee4039963b8707003dabd77240e0ed1299310ef1d0811cf3e6079f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-05.json": {
+      "bytes": 4996,
+      "sha256": "ac1dbc5123e3b496716602a80f873e77b7a7de8ba66458fbac51c55eb337eae5"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-04.npz": {
+      "bytes": 52372,
+      "sha256": "30bc7d252c3d532903f30110e240581f3b28f37a7d8306ed3b0e867424112840"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-05.npz": {
+      "bytes": 53864,
+      "sha256": "11437b1acbad1f132f8440fdf22d1ef75356fef0c8d97f837e25aa732b8f958e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-09.json": {
+      "bytes": 5001,
+      "sha256": "0791037766a9c90e988492647cafa9ba0c7190cb6b0397ee43014637452093f8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-07.npz": {
+      "bytes": 54886,
+      "sha256": "78c8e0b985ac4c9e70405c5ce83c1eea8b451f50a0a4b8e98b1dd753a91b39c5"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-06.npz": {
+      "bytes": 54307,
+      "sha256": "0ec3e24c8a5ed974ca6fad023c3cb4af8676f6d7056da5abf826df754ecde281"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-02.npz": {
+      "bytes": 39252,
+      "sha256": "729478ada1371ed240964bfda9fe7f1b96721d8c26b2dee0695fdf2e6f0459a1"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-08.json": {
+      "bytes": 4999,
+      "sha256": "35b95063e902ca8e8f77047426f5edb4f7d2156f03a1726bde2f0947420d82a0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-03.npz": {
+      "bytes": 49087,
+      "sha256": "602cfde814c8fcc34103805f1724eb417e73fc976de39eae5dd94f8ce0d0ceb4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-01.npz": {
+      "bytes": 13142,
+      "sha256": "70b2808293aaf088e835214cb65925f9629ab39eb7303129d5933de0ac5e7554"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-04.json": {
+      "bytes": 4996,
+      "sha256": "17cb5c569758c49a45127ddea79d7606aa8eb7f6ea08d2fa9b4a4f8a9a4345b0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-03.json": {
+      "bytes": 4995,
+      "sha256": "398e8c3fc56fa494b9f8443ca5307181161f4a5d90e2d1756873878f10635bc9"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-02.json": {
+      "bytes": 4991,
+      "sha256": "872864eeab03ec0a32874eb320830d171577e16a739fbf1a710b3201a7c21086"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-01.json": {
+      "bytes": 4991,
+      "sha256": "e6f6c5a00b289239ec28c3af91e8a67ac6d1481fe6a6cc16aa20b4128bab3167"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-00.json": {
+      "bytes": 4988,
+      "sha256": "9b0fb43b5229da112ef07cd09495246f102d17db4c6604ced844196045d7bc7e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-07.json": {
+      "bytes": 4995,
+      "sha256": "6dae0669db032b8a5206ca46213e286d66c1a7d02e5b73cf381174b9eb2c0c0f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/final.json": {
+      "bytes": 1833,
+      "sha256": "d45e199e5c7c5ade333805e707ae98dd4c7c5daabcb9845fc81c633e0bf7961d"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/initial.json": {
+      "bytes": 1826,
+      "sha256": "62924e5b7ff9bd11a43323244ff457dfac1eb837d4a58243e121f7915ad24a00"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-06.json": {
+      "bytes": 4995,
+      "sha256": "fee452bc45aa75e412987dee63b102a9fd3220ceddcbadc9cf15ac8e1a88b95c"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-08.npz": {
+      "bytes": 65166,
+      "sha256": "b518762cde743df71adefa8499b1b44815f4e4e115a1728acfc7afca1e7d1d6b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-09.npz": {
+      "bytes": 81107,
+      "sha256": "be68f089dc409945d66c39c73f5dd5c1aa45ef4e23b05d4eb78bdd4e56af4e68"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/final.npz": {
+      "bytes": 292101,
+      "sha256": "224ed7e436cf0fe3e296254dde63920602fe0ad0989c54408263a4d9f2d59724"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-05.json": {
+      "bytes": 4996,
+      "sha256": "55fa87b40c37dcaee4f3f33f415a21be963b80026725ac592037ea0af7747b93"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-04.npz": {
+      "bytes": 55166,
+      "sha256": "a3b0415fe9d519839770199b18becc315017025f574ecbbe68b7fa7186725782"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-05.npz": {
+      "bytes": 69335,
+      "sha256": "f6bc3837f1047258f46621d5fff2888032ebf0c4559ffdfc56eb0c6aac20a56f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-09.json": {
+      "bytes": 4995,
+      "sha256": "0012d88767fd37cedd52bf4a03c3eb3409ab8e52e3ec2d17072aba24e197f2e6"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-07.npz": {
+      "bytes": 68891,
+      "sha256": "d0471945fdbd800c7c1f77f797fe620a63d2fa59a924e87778384464035430b8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-06.npz": {
+      "bytes": 68912,
+      "sha256": "678ca386a12dd4a6b1f4a4b53a326217768d1fe94d2b52cc5bd71728f35872a7"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-02.npz": {
+      "bytes": 39252,
+      "sha256": "729478ada1371ed240964bfda9fe7f1b96721d8c26b2dee0695fdf2e6f0459a1"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-08.json": {
+      "bytes": 4995,
+      "sha256": "dd6a5809a6e343826a9c54662a7fd35e917a734ac6e9e5cd85040ef28e5f0297"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-03.npz": {
+      "bytes": 49087,
+      "sha256": "602cfde814c8fcc34103805f1724eb417e73fc976de39eae5dd94f8ce0d0ceb4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-01.npz": {
+      "bytes": 13142,
+      "sha256": "70b2808293aaf088e835214cb65925f9629ab39eb7303129d5933de0ac5e7554"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-04.json": {
+      "bytes": 4996,
+      "sha256": "299c0c1d363bf584196ffb091e8bafe4dc0f917f584548e32332bd202a5daec2"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-03.json": {
+      "bytes": 4995,
+      "sha256": "398e8c3fc56fa494b9f8443ca5307181161f4a5d90e2d1756873878f10635bc9"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-02.json": {
+      "bytes": 4991,
+      "sha256": "872864eeab03ec0a32874eb320830d171577e16a739fbf1a710b3201a7c21086"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-01.json": {
+      "bytes": 4991,
+      "sha256": "e6f6c5a00b289239ec28c3af91e8a67ac6d1481fe6a6cc16aa20b4128bab3167"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-00.json": {
+      "bytes": 4988,
+      "sha256": "9b0fb43b5229da112ef07cd09495246f102d17db4c6604ced844196045d7bc7e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-07.json": {
+      "bytes": 4995,
+      "sha256": "de9f0f49e9a458ea67d6af109ad287a1878d96c62e19f2624172092ce7db04d7"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/final.json": {
+      "bytes": 1827,
+      "sha256": "de35952af9ead40c4eed8d4e106402fff29ab8c6d1055906dd1c87ebc38dc03c"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/initial.json": {
+      "bytes": 1823,
+      "sha256": "b5314e45c3cfa7d75a26f4768e4be566c905d70f3821c6702807058b134e219f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-06.json": {
+      "bytes": 4995,
+      "sha256": "02c48c44c93f4dc25d9dad30662ce97f7128f8dcec74805f05b7f29090aa2d6c"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-08.npz": {
+      "bytes": 67887,
+      "sha256": "88c39d51cd75b3ddb387157132a8bf9b3d5e42fecf3024ea69c71a580efcea4f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-09.npz": {
+      "bytes": 69706,
+      "sha256": "3d2d8d871fa6d5589b54e64344153a61141ffa47144b12d365929dffbd644948"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/final.npz": {
+      "bytes": 233594,
+      "sha256": "559994ea295dc3b38771efe607573fa93b706bcecd4758cfd7d2324107e9e17a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-05.json": {
+      "bytes": 4996,
+      "sha256": "b457a724f003690aed5acd2e25f50b72bfe93c1b8dc901d25ca2a1690df7d97d"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-04.npz": {
+      "bytes": 54031,
+      "sha256": "43e0dc58637096f3a61492063e9829be73b720149259bbe0b61ef965926bedd4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-05.npz": {
+      "bytes": 67140,
+      "sha256": "fb14244459e291f7c11eeefa094662ab98c53654b7dca3d9f4afe64990a1d7d8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-09.json": {
+      "bytes": 4993,
+      "sha256": "a4efbaa3dec300631fda1da38358fa790e1c6f8cdb7d2a782f99ec38edb9c292"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-07.npz": {
+      "bytes": 67504,
+      "sha256": "245d4b28663bd6bb000e217a61ea9d088c9c961dbacd0fefe60e777b7b3f9c38"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-06.npz": {
+      "bytes": 64759,
+      "sha256": "3be796210ad3118ddb14afe44f6757c905231b721fc6d66cd7a96c5c693f01ac"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-02.npz": {
+      "bytes": 38608,
+      "sha256": "f91d01053581169d3cb2c08f6b53689bff920f75fc1edade6b3dfac3a4039947"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-08.json": {
+      "bytes": 4994,
+      "sha256": "c9e2e206b9f0fbf0eeb2901abd33f8607f033b64fce9274688c1a23a67a12c41"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-03.npz": {
+      "bytes": 47238,
+      "sha256": "9cfc322e4e290e4470f05c82b8e0f96154e3eda38dbf0c3b7c6da441a4fcd839"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-01.npz": {
+      "bytes": 13148,
+      "sha256": "25d964839c546f5c58dd19253d9d6a2be8d2c765989297b2548770e2f7b28b8f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-04.json": {
+      "bytes": 4996,
+      "sha256": "f7a247b2ab40d57e7891f8d4b7e12ac5c2efd111779a38bcc5446eb6afc09b7c"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-03.json": {
+      "bytes": 4995,
+      "sha256": "227074a323046711ff321b55bcfa9efe5f4a026d9b35c909368ea884ba191471"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-02.json": {
+      "bytes": 4991,
+      "sha256": "d77678bc3a05d1f1fa4be1228f858b23f5d3f6a520e8ec740a2628334a6048e0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-01.json": {
+      "bytes": 4991,
+      "sha256": "e6f6c5a00b289239ec28c3af91e8a67ac6d1481fe6a6cc16aa20b4128bab3167"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-00.json": {
+      "bytes": 4988,
+      "sha256": "9b0fb43b5229da112ef07cd09495246f102d17db4c6604ced844196045d7bc7e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-07.json": {
+      "bytes": 4995,
+      "sha256": "d8f7c2387bdac1d2bae5961258f6fb318760b45c57fd2f63c183ebf161dd406e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/final.json": {
+      "bytes": 1827,
+      "sha256": "d5886981dc4235eb7bb835644d248effdfddcf3d4f3010422d61feb5f42a6ee2"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/initial.json": {
+      "bytes": 1823,
+      "sha256": "210a3ccca03364b053276c2cb36843d6e1563f2a3bfe7f0e6fb39eb5175d7f18"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-06.json": {
+      "bytes": 4995,
+      "sha256": "28d4ff0fa80fca851cbeed5965a04198270b7dedf7fe3dbd84c370da08a11695"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-08.npz": {
+      "bytes": 67142,
+      "sha256": "0d01bec7aa8000f098c1f907d603a934652e8d28641df96d91db8cff772c127f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-09.npz": {
+      "bytes": 65195,
+      "sha256": "4daef8b38112bd0ea65a934da0be3f23060a75917b27eed6148941aeb93d1c4f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/final.npz": {
+      "bytes": 443172,
+      "sha256": "51aa25d0b3cbe7ca41624cbfd1ed3764b24eed1940d51ecf136ef5e2ca72cc3b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-05.json": {
+      "bytes": 990,
+      "sha256": "cf64bb95df4d7a6d31d281268bcba9e3523cc8fce41ea12d5ea08f82bbc2c0d7"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-04.npz": {
+      "bytes": 1048,
+      "sha256": "fa91749f59af340c2a892588ef9d96d60182c78cc36777e607f466ffe8b65c03"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-05.npz": {
+      "bytes": 991,
+      "sha256": "abfd624ba34be933d419190b920337109c9bfbc5a9c85f783fa0094d1b052107"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-09.json": {
+      "bytes": 989,
+      "sha256": "6000837f19f455758be014ed0042082788d589c978267fe2dd0c23086200dba1"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-07.npz": {
+      "bytes": 980,
+      "sha256": "0376a1c6657d2aec2d3273ff9b55752e42e2ed98cf68068fe486d6973fc416fa"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-06.npz": {
+      "bytes": 1052,
+      "sha256": "64caa89d81baca62b911ca3e94002b6acf192c67f073d4219b59b5f661bbdef3"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-02.npz": {
+      "bytes": 900,
+      "sha256": "5a1c948e006bb4570f473a0bd114c061f1c8b571e2986b926a28df69fda6ab4d"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-08.json": {
+      "bytes": 987,
+      "sha256": "b3339e9376829240acddc6d6164ed589706c9ff20dd6d89eabec030bc68ffe45"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-03.npz": {
+      "bytes": 995,
+      "sha256": "86103a016edf526b8e8ce8bdae18d97b5df0e42a55a71d2cb4e68568b094c8cc"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-01.npz": {
+      "bytes": 898,
+      "sha256": "bc7218b325acc1b9b90021d482df9e43af9195bb711f7873ddd81a0f64489b44"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-00.npz": {
+      "bytes": 872,
+      "sha256": "437ab6ad80478a18c5d48798c446469a82169323dfab0e3a521450ee3a315cfc"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-04.json": {
+      "bytes": 990,
+      "sha256": "62b2f6a41e1a8ee77f8bcd0c6685293d2812d5c6e8943fce8502ab32c85df680"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-03.json": {
+      "bytes": 988,
+      "sha256": "3c9fc5e2ded69a3318f33e6cfa8ad757200b100a373c4baf8c3d0e58c30395a8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-02.json": {
+      "bytes": 984,
+      "sha256": "04e59eaba062e97607ce9a8af62b7b2cd3110dfe3e0ac77e281a32b71a3ae140"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/initial.npz": {
+      "bytes": 22107,
+      "sha256": "b6e4f90e08fc3b918468441929170d92aa49d85d94e86e8c22e25e8af25f8136"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-01.json": {
+      "bytes": 985,
+      "sha256": "ebe9de1c8d2ae7962cc8cbf2e341f8aeb9bdc13dff980f9346a346910356ddf0"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-00.json": {
+      "bytes": 982,
+      "sha256": "d37d1980d7411c1900e7eb6ec232b93ec8b4cbaf32a56acf78f889f90c804a74"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-07.json": {
+      "bytes": 989,
+      "sha256": "e881dc7ed685fb8aa6da973e049de8cf039e1694adb291dfa88e74ed747de975"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/final.json": {
+      "bytes": 2977,
+      "sha256": "bb8c78a922d63ccc645fffcbee37758f94d5125253b8b4906f49ee949191524e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/initial.json": {
+      "bytes": 2972,
+      "sha256": "e783947655d6da83e7291913dfac470c8305d0a6869bfff506964bfe707b8e8a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-06.json": {
+      "bytes": 989,
+      "sha256": "b38a9e44d6450a9426b0f0c4ed1a24496c560adca90da6ebcaa1b649b4ad550a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-08.npz": {
+      "bytes": 939,
+      "sha256": "979221b167d5821e7623c3fd993107a8a61cc8f3fa8278ba9d31efdab034f542"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-09.npz": {
+      "bytes": 958,
+      "sha256": "c258c6c6bd5c58be2a93d8b29da384eece5ac1ef55d80d38f91a61a1c1e66e52"
+    }
+  },
+  "checks": [
+    {
+      "name": "producer_plan_hash",
+      "passed": true
+    },
+    {
+      "name": "producer_complete_and_280_checks",
+      "passed": true
+    },
+    {
+      "name": "declared_scope",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/probe_inhibitory_recurrent_v2.py",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/probe_inhibitory_recurrent.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance/results.json",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-factorial-solver-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-input-audit.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-kernel-checks.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-kernel-independent-review.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/or42a-summary-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/or42a-summary-experiment.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/weights.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/input-stream.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/selection.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/input-stream.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/selection.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/scalar-grid.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/scalar-grid.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/final.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-05.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-04.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-05.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-09.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-07.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-06.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-02.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-08.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-03.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-01.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-00.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-04.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-03.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-02.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/initial.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-01.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-00.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-07.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/final.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/initial.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-06.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-08.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C0/chunk-09.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/final.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-05.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-04.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-05.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-09.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-07.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-06.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-02.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-08.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-03.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-01.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-00.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-04.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-03.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-02.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/initial.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-01.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-00.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-07.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/final.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/initial.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-06.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-08.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/C1/chunk-09.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/final.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-05.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-04.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-05.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-09.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-07.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-06.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-02.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-08.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-03.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-01.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-00.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-04.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-03.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-02.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/initial.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-01.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-00.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-07.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/final.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/initial.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-06.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-08.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H1/chunk-09.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/final.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-05.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-04.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-05.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-09.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-07.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-06.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-02.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-08.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-03.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-01.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-00.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-04.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-03.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-02.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/initial.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-01.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-00.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-07.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/final.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/initial.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-06.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-08.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/H0/chunk-09.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/final.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-05.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-04.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-05.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-09.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-07.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-06.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-02.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-08.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-03.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-01.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-00.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-04.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-03.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-02.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/initial.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-01.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-00.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-07.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/final.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/initial.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-06.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-08.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/inhibitory-recurrent-performance-v2/reference/chunk-09.npz",
+      "passed": true
+    },
+    {
+      "name": "producer_artifact_inventory_complete",
+      "passed": true
+    },
+    {
+      "name": "original_compilation_failure_preserved",
+      "passed": true
+    },
+    {
+      "name": "graph_array_identity",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/input-stream",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/selection",
+      "passed": true
+    },
+    {
+      "name": "exact_ordered_inputs_and_selection",
+      "passed": true
+    },
+    {
+      "name": "independent_uniforms_rng_and_probabilities",
+      "passed": true
+    },
+    {
+      "name": "archived_input_rng_start",
+      "passed": true
+    },
+    {
+      "name": "archived_113_spikes_candidates",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/initial",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/final",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-00",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-01",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-02",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-03",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-04",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-05",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-06",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-07",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-08",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/reference/chunk-09",
+      "passed": true
+    },
+    {
+      "name": "reference:endpoint_clock",
+      "passed": true
+    },
+    {
+      "name": "reference:initial_state_and_fixed_masks",
+      "passed": true
+    },
+    {
+      "name": "reference:endpoint_provenance",
+      "passed": true
+    },
+    {
+      "name": "reference:endpoint_finite",
+      "passed": true
+    },
+    {
+      "name": "reference:zero_conductance_current_arm",
+      "passed": true
+    },
+    {
+      "name": "reference:original_rng_and_current",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_v",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_s",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_last",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_refractory",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_pending_count",
+      "passed": true
+    },
+    {
+      "name": "reference:canonical_pending",
+      "passed": true
+    },
+    {
+      "name": "reference:all_candidate_pairing",
+      "passed": true
+    },
+    {
+      "name": "reference:spike_shape_order_range",
+      "passed": true
+    },
+    {
+      "name": "reference:exact_archived_spikes_and_applied",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk0_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk0_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk0_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk1_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk1_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk1_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk2_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk2_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk2_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk3_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk3_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk3_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk4_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk4_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk4_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk5_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk5_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk5_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk6_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk6_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk6_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk7_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk7_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk7_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk8_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk8_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk8_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk9_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk9_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:chunk9_archived_summary",
+      "passed": true
+    },
+    {
+      "name": "reference:independent_final_digest",
+      "passed": true
+    },
+    {
+      "name": "reference:spikes_obey_refractory",
+      "passed": true
+    },
+    {
+      "name": "reference:final_last_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "reference:final_pending_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "reference:direct_candidates_vs_own_same_tick_fire",
+      "passed": true
+    },
+    {
+      "name": "reference:all_chunk_edge_visits_from_history",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/initial",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/final",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-00",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-01",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-02",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-03",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-04",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-05",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-06",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-07",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-08",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C0/chunk-09",
+      "passed": true
+    },
+    {
+      "name": "C0:endpoint_clock",
+      "passed": true
+    },
+    {
+      "name": "C0:initial_state_and_fixed_masks",
+      "passed": true
+    },
+    {
+      "name": "C0:endpoint_provenance",
+      "passed": true
+    },
+    {
+      "name": "C0:endpoint_finite",
+      "passed": true
+    },
+    {
+      "name": "C0:zero_conductance_current_arm",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_v",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_v",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_s",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_s",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_h",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_h",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_last",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_last",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_refractory",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_refractory",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_blocked",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_blocked",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_pending_count",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_pending_count",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_final_pending",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_initial_pending",
+      "passed": true
+    },
+    {
+      "name": "C0:all_candidate_pairing",
+      "passed": true
+    },
+    {
+      "name": "C0:spike_shape_order_range",
+      "passed": true
+    },
+    {
+      "name": "C0:exact_archived_spikes_and_applied",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk0_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk0_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk0_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk1_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk1_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk1_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk2_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk2_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk2_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk3_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk3_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk3_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk4_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk4_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk4_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk5_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk5_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk5_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk6_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk6_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk6_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk7_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk7_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk7_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk8_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk8_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk8_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk9_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk9_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk9_producer_digest_agreement_only",
+      "passed": true
+    },
+    {
+      "name": "C0:independent_final_digest",
+      "passed": true
+    },
+    {
+      "name": "C0:spikes_obey_refractory",
+      "passed": true
+    },
+    {
+      "name": "C0:final_last_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "C0:final_pending_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "C0:direct_candidates_vs_own_same_tick_fire",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_trace_continuity",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_shapes",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_endpoint_states",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_available_and_fired_from_history",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_firing_threshold",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_events_exact_graph_identity_order_disposition",
+      "passed": true
+    },
+    {
+      "name": "C0:all_global_signed_edge_dispositions",
+      "passed": true
+    },
+    {
+      "name": "C0:available_work_from_history",
+      "passed": true
+    },
+    {
+      "name": "C0:completed_finite_telemetry",
+      "passed": true
+    },
+    {
+      "name": "C0:extrema_indices_and_order",
+      "passed": true
+    },
+    {
+      "name": "C0:endpoint_global_extrema_recomputable",
+      "passed": true
+    },
+    {
+      "name": "C0:chunk_postreset_extrema_match_summaries",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_synaptic_transition_exact",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_external_and_reset_exact",
+      "passed": true
+    },
+    {
+      "name": "C0:unavailable_voltage_contract",
+      "passed": true
+    },
+    {
+      "name": "C0:selected_values_enclosed_by_global_telemetry",
+      "passed": true
+    },
+    {
+      "name": "C0:named_selected_extrema_match",
+      "passed": true,
+      "detail": {
+        "comparisons": 1055
+      }
+    },
+    {
+      "name": "C0:selected_current_interval_closed_form",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/initial",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/final",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-00",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-01",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-02",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-03",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-04",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-05",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-06",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-07",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-08",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/C1/chunk-09",
+      "passed": true
+    },
+    {
+      "name": "C1:endpoint_clock",
+      "passed": true
+    },
+    {
+      "name": "C1:initial_state_and_fixed_masks",
+      "passed": true
+    },
+    {
+      "name": "C1:endpoint_provenance",
+      "passed": true
+    },
+    {
+      "name": "C1:endpoint_finite",
+      "passed": true
+    },
+    {
+      "name": "C1:zero_conductance_current_arm",
+      "passed": true
+    },
+    {
+      "name": "C1:all_candidate_pairing",
+      "passed": true
+    },
+    {
+      "name": "C1:spike_shape_order_range",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk0_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk0_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk1_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk1_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk2_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk2_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk3_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk3_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk4_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk4_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk5_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk5_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk6_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk6_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk7_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk7_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk8_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk8_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk9_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk9_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "C1:independent_final_digest",
+      "passed": true
+    },
+    {
+      "name": "C1:spikes_obey_refractory",
+      "passed": true
+    },
+    {
+      "name": "C1:final_last_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "C1:final_pending_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "C1:direct_candidates_vs_own_same_tick_fire",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_trace_continuity",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_shapes",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_endpoint_states",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_available_and_fired_from_history",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_firing_threshold",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_events_exact_graph_identity_order_disposition",
+      "passed": true
+    },
+    {
+      "name": "C1:all_global_signed_edge_dispositions",
+      "passed": true
+    },
+    {
+      "name": "C1:available_work_from_history",
+      "passed": true
+    },
+    {
+      "name": "C1:completed_finite_telemetry",
+      "passed": true
+    },
+    {
+      "name": "C1:extrema_indices_and_order",
+      "passed": true
+    },
+    {
+      "name": "C1:endpoint_global_extrema_recomputable",
+      "passed": true
+    },
+    {
+      "name": "C1:chunk_postreset_extrema_match_summaries",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_synaptic_transition_exact",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_external_and_reset_exact",
+      "passed": true
+    },
+    {
+      "name": "C1:unavailable_voltage_contract",
+      "passed": true
+    },
+    {
+      "name": "C1:selected_values_enclosed_by_global_telemetry",
+      "passed": true
+    },
+    {
+      "name": "C1:named_selected_extrema_match",
+      "passed": true,
+      "detail": {
+        "comparisons": 1085
+      }
+    },
+    {
+      "name": "C1:selected_current_interval_closed_form",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/initial",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/final",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-00",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-01",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-02",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-03",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-04",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-05",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-06",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-07",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-08",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H0/chunk-09",
+      "passed": true
+    },
+    {
+      "name": "H0:endpoint_clock",
+      "passed": true
+    },
+    {
+      "name": "H0:initial_state_and_fixed_masks",
+      "passed": true
+    },
+    {
+      "name": "H0:endpoint_provenance",
+      "passed": true
+    },
+    {
+      "name": "H0:endpoint_finite",
+      "passed": true
+    },
+    {
+      "name": "H0:endpoint_hybrid_bounds",
+      "passed": true
+    },
+    {
+      "name": "H0:all_candidate_pairing",
+      "passed": true
+    },
+    {
+      "name": "H0:spike_shape_order_range",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk0_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk0_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk1_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk1_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk2_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk2_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk3_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk3_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk4_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk4_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk5_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk5_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk6_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk6_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk7_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk7_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk8_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk8_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk9_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk9_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H0:independent_final_digest",
+      "passed": true
+    },
+    {
+      "name": "H0:spikes_obey_refractory",
+      "passed": true
+    },
+    {
+      "name": "H0:final_last_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "H0:final_pending_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "H0:direct_candidates_vs_own_same_tick_fire",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_trace_continuity",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_shapes",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_endpoint_states",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_available_and_fired_from_history",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_firing_threshold",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_events_exact_graph_identity_order_disposition",
+      "passed": true
+    },
+    {
+      "name": "H0:all_global_signed_edge_dispositions",
+      "passed": true
+    },
+    {
+      "name": "H0:available_work_from_history",
+      "passed": true
+    },
+    {
+      "name": "H0:completed_finite_telemetry",
+      "passed": true
+    },
+    {
+      "name": "H0:extrema_indices_and_order",
+      "passed": true
+    },
+    {
+      "name": "H0:hybrid_phase_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "H0:endpoint_global_extrema_recomputable",
+      "passed": true
+    },
+    {
+      "name": "H0:chunk_postreset_extrema_match_summaries",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_synaptic_transition_exact",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_external_and_reset_exact",
+      "passed": true
+    },
+    {
+      "name": "H0:unavailable_voltage_contract",
+      "passed": true
+    },
+    {
+      "name": "H0:selected_values_enclosed_by_global_telemetry",
+      "passed": true
+    },
+    {
+      "name": "H0:named_selected_extrema_match",
+      "passed": true,
+      "detail": {
+        "comparisons": 1055
+      }
+    },
+    {
+      "name": "H0:all_selected_available_time_domain_quadrature",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/initial",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/final",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-00",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-01",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-02",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-03",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-04",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-05",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-06",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-07",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-08",
+      "passed": true
+    },
+    {
+      "name": "archive_schema:validation/inhibitory-recurrent-performance-v2/H1/chunk-09",
+      "passed": true
+    },
+    {
+      "name": "H1:endpoint_clock",
+      "passed": true
+    },
+    {
+      "name": "H1:initial_state_and_fixed_masks",
+      "passed": true
+    },
+    {
+      "name": "H1:endpoint_provenance",
+      "passed": true
+    },
+    {
+      "name": "H1:endpoint_finite",
+      "passed": true
+    },
+    {
+      "name": "H1:endpoint_hybrid_bounds",
+      "passed": true
+    },
+    {
+      "name": "H1:all_candidate_pairing",
+      "passed": true
+    },
+    {
+      "name": "H1:spike_shape_order_range",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk0_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk0_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk1_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk1_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk2_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk2_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk3_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk3_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk4_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk4_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk5_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk5_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk6_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk6_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk7_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk7_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk8_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk8_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk9_clock_rng",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk9_reported_summary",
+      "passed": true
+    },
+    {
+      "name": "H1:independent_final_digest",
+      "passed": true
+    },
+    {
+      "name": "H1:spikes_obey_refractory",
+      "passed": true
+    },
+    {
+      "name": "H1:final_last_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "H1:final_pending_from_all_own_spikes",
+      "passed": true
+    },
+    {
+      "name": "H1:direct_candidates_vs_own_same_tick_fire",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_trace_continuity",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_shapes",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_endpoint_states",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_available_and_fired_from_history",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_firing_threshold",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_events_exact_graph_identity_order_disposition",
+      "passed": true
+    },
+    {
+      "name": "H1:all_global_signed_edge_dispositions",
+      "passed": true
+    },
+    {
+      "name": "H1:available_work_from_history",
+      "passed": true
+    },
+    {
+      "name": "H1:completed_finite_telemetry",
+      "passed": true
+    },
+    {
+      "name": "H1:extrema_indices_and_order",
+      "passed": true
+    },
+    {
+      "name": "H1:hybrid_phase_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "H1:endpoint_global_extrema_recomputable",
+      "passed": true
+    },
+    {
+      "name": "H1:chunk_postreset_extrema_match_summaries",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_synaptic_transition_exact",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_external_and_reset_exact",
+      "passed": true
+    },
+    {
+      "name": "H1:unavailable_voltage_contract",
+      "passed": true
+    },
+    {
+      "name": "H1:selected_values_enclosed_by_global_telemetry",
+      "passed": true
+    },
+    {
+      "name": "H1:named_selected_extrema_match",
+      "passed": true,
+      "detail": {
+        "comparisons": 1145
+      }
+    },
+    {
+      "name": "H1:all_selected_available_time_domain_quadrature",
+      "passed": true
+    },
+    {
+      "name": "producer_recorded_resource_budget",
+      "passed": true
+    }
+  ],
+  "arms": {
+    "reference": {
+      "spikes": 113,
+      "candidate_count": 30,
+      "applied_count": 30,
+      "rejected_same_tick_source_fire": 0,
+      "pending_sources": 7,
+      "final_voltage_range_mv": [
+        -199.6017809640471,
+        -45.23717664677575
+      ],
+      "final_voltage_sha256": "31b1410474723b9bdbcbe5e06b8f247b01b5e8c5bdc245154620133ad4729058",
+      "spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+      "spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+      "expected_selected_events": 1677,
+      "reconstructed_edge_counts": [
+        [
+          50429,
+          656,
+          20946
+        ],
+        [
+          50337,
+          649,
+          20816
+        ],
+        [
+          92,
+          7,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_count_axes": [
+        "visited_unblocked",
+        "accepted",
+        "target_unavailable",
+        "source_blocked"
+      ],
+      "edge_sign_axis": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "kernel_seconds": 0.08257504092762247
+    },
+    "C0": {
+      "spikes": 113,
+      "candidate_count": 30,
+      "applied_count": 30,
+      "rejected_same_tick_source_fire": 0,
+      "pending_sources": 7,
+      "final_voltage_range_mv": [
+        -199.6017809640471,
+        -45.23717664677575
+      ],
+      "final_voltage_sha256": "31b1410474723b9bdbcbe5e06b8f247b01b5e8c5bdc245154620133ad4729058",
+      "spike_indices_sha256": "6e086f2292c0b2d8deb6452d420e6d674d53a9b50abbcda97fadf48c2521dc57",
+      "spike_ticks_sha256": "75be5e8747462e59503edbc7943ee4401426e4d85cd9abcde150da1538174c1d",
+      "expected_selected_events": 1677,
+      "reconstructed_edge_counts": [
+        [
+          50429,
+          656,
+          20946
+        ],
+        [
+          50337,
+          649,
+          20816
+        ],
+        [
+          92,
+          7,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_count_axes": [
+        "visited_unblocked",
+        "accepted",
+        "target_unavailable",
+        "source_blocked"
+      ],
+      "edge_sign_axis": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "kernel_seconds": 0.9723031231551431,
+      "selected_available_intervals": 24000,
+      "selected_spikes": 30,
+      "selected_accepted_negative_events": 418,
+      "phase_voltage_range_mv": [
+        -213.1957420499227,
+        18.2723494642459
+      ],
+      "reported_hybrid_quadrature_calls": 0,
+      "reported_peak_h_before": 0.0,
+      "selected_synaptic_max_abs_error": 0.0,
+      "selected_conductance_max_abs_error": 0.0,
+      "selected_current_interval_max_abs_error_mv": 0.0
+    },
+    "C1": {
+      "spikes": 2861,
+      "candidate_count": 30,
+      "applied_count": 30,
+      "rejected_same_tick_source_fire": 0,
+      "pending_sources": 1053,
+      "final_voltage_range_mv": [
+        -176.04261184319694,
+        -45.000854801701884
+      ],
+      "final_voltage_sha256": "6fabc1f7b3c29cc47885a9fe84b496125cfb8e7477aeeeca6a0e1e7c45bede3f",
+      "spike_indices_sha256": "83f0e9f5649a21f4f3a4a9ee231c05c9ca420715b5116443432d5288b3ee6c27",
+      "spike_ticks_sha256": "6f4c12d63e47e906ab5dd201f6dc98cea2e5bbec94afaffd69aab3f656a7a048",
+      "expected_selected_events": 5913,
+      "reconstructed_edge_counts": [
+        [
+          321319,
+          52832,
+          542511
+        ],
+        [
+          321319,
+          52832,
+          542511
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_count_axes": [
+        "visited_unblocked",
+        "accepted",
+        "target_unavailable",
+        "source_blocked"
+      ],
+      "edge_sign_axis": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "kernel_seconds": 0.8471981259062886,
+      "selected_available_intervals": 24000,
+      "selected_spikes": 30,
+      "selected_accepted_negative_events": 2023,
+      "phase_voltage_range_mv": [
+        -193.19197417444713,
+        18.624674390012075
+      ],
+      "reported_hybrid_quadrature_calls": 0,
+      "reported_peak_h_before": 0.0,
+      "selected_synaptic_max_abs_error": 0.0,
+      "selected_conductance_max_abs_error": 0.0,
+      "selected_current_interval_max_abs_error_mv": 0.0
+    },
+    "H0": {
+      "spikes": 99,
+      "candidate_count": 30,
+      "applied_count": 30,
+      "rejected_same_tick_source_fire": 0,
+      "pending_sources": 2,
+      "final_voltage_range_mv": [
+        -70.1997375541274,
+        -45.1225892242723
+      ],
+      "final_voltage_sha256": "8eb7257ebb37804f5d2e5eebb061dc084e9c2e34745174472d19b409371240d9",
+      "spike_indices_sha256": "e9b9ed28f6e4130f8b8ed34a37ef166c6080d4493be54ea4acd49e92991f752d",
+      "spike_ticks_sha256": "c3c160f88cbfbffb7f93b311c35ac885f7656f045b0e594b1175680ef95af4d9",
+      "expected_selected_events": 1596,
+      "reconstructed_edge_counts": [
+        [
+          47789,
+          328,
+          18081
+        ],
+        [
+          47713,
+          323,
+          17963
+        ],
+        [
+          76,
+          5,
+          118
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_count_axes": [
+        "visited_unblocked",
+        "accepted",
+        "target_unavailable",
+        "source_blocked"
+      ],
+      "edge_sign_axis": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "kernel_seconds": 3.012197750096675,
+      "selected_available_intervals": 24000,
+      "selected_spikes": 30,
+      "selected_accepted_negative_events": 374,
+      "phase_voltage_range_mv": [
+        -73.09908552956999,
+        18.22373249348938
+      ],
+      "reported_hybrid_quadrature_calls": 2738573,
+      "reported_peak_h_before": 28.40525309111943,
+      "selected_synaptic_max_abs_error": 0.0,
+      "selected_conductance_max_abs_error": 0.0,
+      "independent_voltage_oracle": {
+        "intervals": 24000,
+        "positive_h_intervals": 9589,
+        "zero_h_intervals": 14411,
+        "initial_h_range": [
+          0.0,
+          14.039247587088234
+        ],
+        "initial_p_mv_range": [
+          0.0,
+          35.427556452154555
+        ],
+        "max_abs_error_mv": 1.4210854715202004e-14,
+        "max_quad_error_estimate_mv": 3.199996991857505e-15,
+        "worst": {
+          "tick": 81,
+          "selected_column": 26,
+          "graph_index": 97908,
+          "body_id": 132980,
+          "initial_v_mv": -51.961240126063934,
+          "initial_p_mv": 1.4929818260513532,
+          "initial_h": 0.0,
+          "recorded_prethreshold_mv": -51.95406119408757,
+          "oracle_mv": -51.95406119408756,
+          "abs_error_mv": 1.4210854715202004e-14,
+          "quad_error_estimate_mv": 1.3554182911870232e-15
+        }
+      }
+    },
+    "H1": {
+      "spikes": 150,
+      "candidate_count": 30,
+      "applied_count": 30,
+      "rejected_same_tick_source_fire": 0,
+      "pending_sources": 3,
+      "final_voltage_range_mv": [
+        -69.80048585686232,
+        -45.026747153529485
+      ],
+      "final_voltage_sha256": "7d702a10be77fd689f8182c5d9a2b9146b9bbae25a693a1dd8ae109795c8e977",
+      "spike_indices_sha256": "3b9ce2e3effcf09d25a8248483ec40d225e0862ee02473fd78686ae93a98c21a",
+      "spike_ticks_sha256": "9cb52cf422eadfdb0cc2f828ad6490f8a83efe01c16dc881154a8d3e49a43a47",
+      "expected_selected_events": 1800,
+      "reconstructed_edge_counts": [
+        [
+          76766,
+          1720,
+          25524
+        ],
+        [
+          76766,
+          1720,
+          25524
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edge_count_axes": [
+        "visited_unblocked",
+        "accepted",
+        "target_unavailable",
+        "source_blocked"
+      ],
+      "edge_sign_axis": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "kernel_seconds": 3.507444874034263,
+      "selected_available_intervals": 24000,
+      "selected_spikes": 30,
+      "selected_accepted_negative_events": 441,
+      "phase_voltage_range_mv": [
+        -72.592448689435,
+        18.405268214119367
+      ],
+      "reported_hybrid_quadrature_calls": 3152827,
+      "reported_peak_h_before": 24.768746831445988,
+      "selected_synaptic_max_abs_error": 0.0,
+      "selected_conductance_max_abs_error": 0.0,
+      "independent_voltage_oracle": {
+        "intervals": 24000,
+        "positive_h_intervals": 10227,
+        "zero_h_intervals": 13773,
+        "initial_h_range": [
+          0.0,
+          14.039247587088234
+        ],
+        "initial_p_mv_range": [
+          0.0,
+          48.43508623499534
+        ],
+        "max_abs_error_mv": 1.4210854715202004e-14,
+        "max_quad_error_estimate_mv": 3.836687482634686e-15,
+        "worst": {
+          "tick": 81,
+          "selected_column": 26,
+          "graph_index": 97908,
+          "body_id": 132980,
+          "initial_v_mv": -51.961240126063934,
+          "initial_p_mv": 1.4929818260513532,
+          "initial_h": 0.0,
+          "recorded_prethreshold_mv": -51.95406119408757,
+          "oracle_mv": -51.95406119408756,
+          "abs_error_mv": 1.4210854715202004e-14,
+          "quad_error_estimate_mv": 1.3554182911870232e-15
+        }
+      }
+    }
+  },
+  "exceptions": [],
+  "input_summary": {
+    "candidate_count": 30,
+    "draws": 18000,
+    "candidate_sha256": "3283334715af42b87477050e4e55410069a85320c5db6e4e7a329dbbe0fc5bbc",
+    "rng_start": 3926704849073358691,
+    "rng_end": 17002731536089512071,
+    "selected_ids": [
+      10001,
+      10010,
+      10331,
+      10360,
+      10442,
+      10760,
+      13314,
+      13805,
+      16949,
+      36550,
+      67052,
+      97032,
+      101539,
+      101657,
+      104136,
+      113302,
+      119792,
+      120384,
+      124378,
+      126302,
+      127708,
+      130608,
+      130700,
+      131182,
+      131890,
+      132188,
+      132980,
+      133027,
+      136640,
+      138213,
+      141991,
+      144724,
+      156821,
+      163983,
+      167295,
+      230783,
+      512833,
+      512834,
+      521423,
+      521428,
+      521430,
+      523769,
+      525099,
+      525228,
+      527468,
+      569149,
+      922423,
+      927197
+    ],
+    "input_ids": [
+      36550,
+      97032,
+      101539,
+      101657,
+      104136,
+      113302,
+      119792,
+      120384,
+      124378,
+      126302,
+      127708,
+      130608,
+      130700,
+      131182,
+      131890,
+      132188,
+      132980,
+      133027,
+      136640,
+      138213,
+      141991,
+      144724,
+      156821,
+      163983,
+      167295,
+      512833,
+      512834,
+      521423,
+      521428,
+      521430,
+      525099,
+      525228,
+      527468,
+      569149,
+      922423,
+      927197
+    ]
+  },
+  "producer_timing_scope": {
+    "recorded": {
+      "wall_seconds": 9.77673500002129,
+      "output_bytes": 4063022,
+      "peak_rss_bytes": 505036800
+    },
+    "scalar_grid": {
+      "intervals": 16000,
+      "seconds": 0.008680792001541704,
+      "intervals_per_second": 1843149.7952212666,
+      "positive_h_intervals": 13312,
+      "max_iterations": 3,
+      "checksum": -850437.0194036117
+    },
+    "independently_remeasured": false,
+    "limits": "Recorded timings and sampled process limits only; this review does not benchmark execution"
+  },
+  "limits": [
+    "Initial/final canonical arrays are available and independently compared. Intermediate C0/reference digest equality is a producer assertion; full intermediate global states were not retained.",
+    "Global event dispositions and refractory availability are independently reconstructed from every saved spike. Global intermediate voltage extrema/finite counts remain telemetry except endpoint and selected-value checks.",
+    "Selected interval oracle and transitions check retained states without generating new spikes, fitting parameters, or advancing a model.",
+    "50 ms, seed 11, one baseline stimulus. C1 activity is already greater than C0; no withdrawal, longer persistence, stimulus contrasts, seed robustness, physiological amplitude or model promotion follows.",
+    "The -75 mV lower bound is an engineering property of declared hybrid states, not a measured receptor reversal."
+  ],
+  "check_count": 499,
+  "passed": true,
+  "finished_utc": "2026-09-05T05:34:02.349573+00:00"
+}

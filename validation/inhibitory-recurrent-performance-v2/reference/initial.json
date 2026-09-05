@@ -1,0 +1,150 @@
+{
+  "v": {
+    "array": "root__v",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "s": {
+    "array": "root__s",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "h": {
+    "array": "root__h",
+    "shape": [
+      166700
+    ],
+    "dtype": "float64"
+  },
+  "last": {
+    "array": "root__last",
+    "shape": [
+      166700
+    ],
+    "dtype": "int64"
+  },
+  "refractory": {
+    "array": "root__refractory",
+    "shape": [
+      166700
+    ],
+    "dtype": "int64"
+  },
+  "blocked": {
+    "array": "root__blocked",
+    "shape": [
+      166700
+    ],
+    "dtype": "bool"
+  },
+  "pending_count": {
+    "array": "root__pending_count",
+    "shape": [
+      19
+    ],
+    "dtype": "int64"
+  },
+  "pending": {
+    "array": "root__pending",
+    "shape": [
+      0
+    ],
+    "dtype": "int32"
+  },
+  "tick": 0,
+  "seed": 11,
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "coherent_state": true,
+  "original_complete_state": {
+    "version": 1,
+    "parameters": {
+      "dt_ms": 0.1,
+      "resting_mv": -52.0,
+      "reset_mv": -52.0,
+      "threshold_mv": -45.0,
+      "membrane_tau_ms": 20.0,
+      "synapse_tau_ms": 5.0,
+      "refractory_ms": 2.2,
+      "delay_ms": 1.8,
+      "poisson_weight_mv": 68.75
+    },
+    "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+    "tick": 0,
+    "seed": 11,
+    "voltage_mv": {
+      "array": "root__original_complete_state__voltage_mv",
+      "shape": [
+        166700
+      ],
+      "dtype": "float64"
+    },
+    "synaptic_mv": {
+      "array": "root__original_complete_state__synaptic_mv",
+      "shape": [
+        166700
+      ],
+      "dtype": "float64"
+    },
+    "last_spike_tick": {
+      "array": "root__original_complete_state__last_spike_tick",
+      "shape": [
+        166700
+      ],
+      "dtype": "int64"
+    },
+    "refractory_ticks": {
+      "array": "root__original_complete_state__refractory_ticks",
+      "shape": [
+        166700
+      ],
+      "dtype": "int64"
+    },
+    "ablated": {
+      "array": "root__original_complete_state__ablated",
+      "shape": [
+        166700
+      ],
+      "dtype": "bool"
+    },
+    "rng_state": {
+      "array": "root__original_complete_state__rng_state",
+      "shape": [
+        1
+      ],
+      "dtype": "uint64"
+    },
+    "current_mv": {
+      "array": "root__original_complete_state__current_mv",
+      "shape": [
+        166700
+      ],
+      "dtype": "float64"
+    },
+    "previous_drive": {
+      "array": "root__original_complete_state__previous_drive",
+      "shape": [
+        36
+      ],
+      "dtype": "int32"
+    },
+    "pending_count": {
+      "array": "root__original_complete_state__pending_count",
+      "shape": [
+        19
+      ],
+      "dtype": "int64"
+    },
+    "pending": {
+      "array": "root__original_complete_state__pending",
+      "shape": [
+        0
+      ],
+      "dtype": "int32"
+    }
+  },
+  "logical_rng_state": 3926704849073358691
+}

@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-09-05T05:28:10.649348+00:00",
+  "source_sha256": "ac9d61bfb32733ea50dce70a54e2902d7855e58c90c14503eb0d78cb8ece0b24",
+  "scope": "Pre-freeze compilation check observed by root; no full graph load or run",
+  "cases": [
+    {
+      "v": -52.0,
+      "p": 0.0,
+      "h": 0.0,
+      "dt": 0.1
+    },
+    {
+      "v": -52.0,
+      "p": 3.0,
+      "h": 3.0,
+      "dt": 0.1
+    }
+  ],
+  "coefficients": "Existing coefficients(.1) helper",
+  "repetitions": 1,
+  "observed_shape": [
+    2,
+    7
+  ],
+  "observed_all_finite": true,
+  "observed_checksum": -104.32349766934959,
+  "limits": "Console shape/finite/checksum observation; individual result rows were not printed or retained. Runtime probe retains complete scalar grid outputs. Preflight warms this JIT signature, so run warmup is not necessarily cold compilation."
+}

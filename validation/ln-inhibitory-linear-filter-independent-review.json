@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:29:57.945419+00:00",
+  "inputs": {
+    "scripts/review_ln_inhibitory_linear_filter.py": {
+      "bytes": 14957,
+      "sha256": "8e5f65c042a27ee6f654b739ec89b1033379f346d271c6a20875510af995615f"
+    },
+    "validation/ln-inhibitory-linear-filter-plan.json": {
+      "bytes": 4606,
+      "sha256": "5a06f97accebbe83e47c3f1265db680b480cba24e944cad1fa14cf7e999b4b92"
+    },
+    "validation/ln-inhibitory-linear-filter-results.json": {
+      "bytes": 22768,
+      "sha256": "ab0be9499bf73e6463194401cd5ac1d050e31aa6398d48311380486e69c0fefa"
+    },
+    "validation/ln-inhibitory-linear-filter-attempt.json": {
+      "bytes": 501,
+      "sha256": "fd5ed6bf307c30d1da4d2bb007e5909cc9ae0d86ee78f03c3a371aa3c9749f9f"
+    },
+    "scripts/check_ln_inhibitory_linear_filter.py": {
+      "bytes": 21155,
+      "sha256": "66ecca05fbb32d63029d78a56216ce7deea68f3eb739f35f5fbb08cadadbfeb7"
+    },
+    "validation/ln-inhibitory-linear-filter-bounds.json.gz": {
+      "bytes": 458522,
+      "sha256": "6ee2adea5ddad8ee56d9047d410bcd028acca74e5f365fed503978f8a37abfa6"
+    },
+    "data/raw/ln-inhibitory-transfer/phase2/ink-bins.json": {
+      "bytes": 880365,
+      "sha256": "0f0403a2251c609299313ef5dcf490071d7f0b60df9d0c2d6d3350bbaa632580"
+    },
+    "validation/ln-inhibitory-transfer-phase2-results.json": {
+      "bytes": 10271,
+      "sha256": "e33c3a08c5e448baa0f3db07a681a8a2442fb2d40156b5abc158c216f6835b71"
+    },
+    "validation/ln-inhibitory-transfer-phase2-plan.json": {
+      "bytes": 4979,
+      "sha256": "8da8c3f16dbf1cdb2ddf247bb91917e547d0a47694eb15dfa0d4dae634e734d9"
+    },
+    "validation/ln-inhibitory-transfer-phase2-validation.json": {
+      "bytes": 8371,
+      "sha256": "6b3db7a916f0f942b8721c6e55dc37800c91b5d2d933c99394a5ca3720fc9389"
+    },
+    "docs/ln-inhibitory-linear-filter-design.md": {
+      "bytes": 8687,
+      "sha256": "8abe6c57e74029403ddd2b11ec3a0b764af23fe51ec9d9a59201791cb66ed4eb"
+    }
+  },
+  "checks": [
+    {
+      "name": "pin:scripts/check_ln_inhibitory_linear_filter.py",
+      "passed": true
+    },
+    {
+      "name": "pin:validation/ln-inhibitory-linear-filter-plan.json",
+      "passed": true
+    },
+    {
+      "name": "pin:validation/ln-inhibitory-linear-filter-results.json",
+      "passed": true
+    },
+    {
+      "name": "pin:validation/ln-inhibitory-linear-filter-bounds.json.gz",
+      "passed": true
+    },
+    {
+      "name": "receipt:data/raw/ln-inhibitory-transfer/phase2/ink-bins.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-transfer-phase2-results.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-transfer-phase2-plan.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-transfer-phase2-validation.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:docs/ln-inhibitory-linear-filter-design.md",
+      "passed": true
+    },
+    {
+      "name": "receipt:scripts/check_ln_inhibitory_linear_filter.py",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-linear-filter-plan.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-linear-filter-attempt.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-linear-filter-plan.json",
+      "passed": true
+    },
+    {
+      "name": "receipt:scripts/check_ln_inhibitory_linear_filter.py",
+      "passed": true
+    },
+    {
+      "name": "receipt:validation/ln-inhibitory-linear-filter-bounds.json.gz",
+      "passed": true
+    },
+    {
+      "name": "one_frozen_completed_attempt",
+      "passed": true
+    },
+    {
+      "name": "fixed_equation_and_windows",
+      "passed": true
+    },
+    {
+      "name": "decoded_bounds_receipt",
+      "passed": true
+    },
+    {
+      "name": "547_contiguous_supported_bins",
+      "passed": true
+    },
+    {
+      "name": "positive_calibration_denominator",
+      "passed": true
+    },
+    {
+      "name": "initial_coefficient_sign_and_shift_identity",
+      "passed": true
+    },
+    {
+      "name": "unique_crossing_location_and_signs",
+      "passed": true
+    },
+    {
+      "name": "summaries_match_result",
+      "passed": true
+    },
+    {
+      "name": "saved_alpha_and_crossing",
+      "passed": true
+    },
+    {
+      "name": "both_precision_tables_complete",
+      "passed": true
+    },
+    {
+      "name": "every_bin_identity_and_all8_corners",
+      "passed": true,
+      "maximum_error": "5.478103135358971275426371216812737897319119948052423376405499334548518792326574528617636794370344208e-89"
+    },
+    {
+      "name": "all_signed_kernel_integrals_independent",
+      "passed": true,
+      "intervals": 548,
+      "mixed_sign_bins": 1,
+      "maximum_error": "3.983489462079165269865883498687675257574586343354110435171938459375799522337819439180863493194696222e-92"
+    },
+    {
+      "name": "every_signed_corner_contribution",
+      "passed": true,
+      "maximum_error": "1.980900923507017870299492516784141126265156771194573623796668024404313483355996456592540520386769737e-90"
+    },
+    {
+      "name": "baseline_negative_enclosures_retained",
+      "passed": true,
+      "bins_ending_at_or_before_zero_with_negative_lower": 188
+    },
+    {
+      "name": "global_bound_sums",
+      "passed": true
+    },
+    {
+      "name": "integrated_kernel_mass_identity",
+      "passed": true,
+      "residual": "1.597375040383223404489744457266493282880279419713746099080748766954308748510148441390994867307272749e-101"
+    },
+    {
+      "name": "initial_state_and_constant_equilibrium",
+      "passed": true
+    },
+    {
+      "name": "guarded_bound_arithmetic_and_negative_upper",
+      "passed": true
+    },
+    {
+      "name": "saved_quadrature_error_arithmetic_and_guard",
+      "passed": true
+    },
+    {
+      "name": "60_90_digit_saved_agreement",
+      "passed": true,
+      "maximum_bin_difference": "5.451831594604021224805108669820000000000008491615682687429539776531258934940848538504574608939076539e-59"
+    },
+    {
+      "name": "manufactured_impulse:60:-0.1",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:60:0.1",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:60:0.15",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:60:0.3",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:90:-0.1",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:90:0.1",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:90:0.15",
+      "passed": true
+    },
+    {
+      "name": "manufactured_impulse:90:0.3",
+      "passed": true
+    },
+    {
+      "name": "reported_numerical_checks_pass",
+      "passed": true
+    },
+    {
+      "name": "conditional_decision_matches_inequalities",
+      "passed": true
+    },
+    {
+      "name": "input_bytes_unchanged",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "method": "Independent 100-digit mpmath integration of the pointwise window-response kernel and recomputation of all saved calibration corners/signed interval bounds. No producer functions or extraction are executed.",
+  "mpmath_version": "1.3.0",
+  "mpmath_digits": 100,
+  "producer_execution": false,
+  "re_extraction": false,
+  "time_constant_search": false,
+  "model_fit": false,
+  "limits": [
+    "This checks the one frozen 5 ms positive-gain displayed-summary mapping, with unknown finite nonnegative initial filter state. It is not a neural network simulation or a rejection of a biological receptor or recurrent mechanism.",
+    "E and F are separate five/nine-cell female LN cohorts, not paired input-output recordings; D repeats F's same current cohort.",
+    "E is displayed with 100 ms acausal Hanning smoothing. The calculation treats that displayed curve as mathematical input without deconvolution or equating it to transmitter release.",
+    "Ink/anchor/bin envelopes are graphical sensitivity ranges, not SEM, confidence intervals or guaranteed errors of the original recordings. Relaxing common calibration and within-bin structure enlarges the input family.",
+    "The 1e-10 guard is numerically cross-checked, not a machine-certified interval-arithmetic proof. The conditional sign margin is many orders larger than numerical discrepancies.",
+    "No gain, initial-state value, conductance, pA prediction or alternative time constant is selected. Negative baseline lower bounds are retained; the initial-state extremum at zero is a mathematical bound, not a measured zero baseline."
+  ],
+  "independent_summary": {
+    "B_lower": "-16.4013534634486367757202209515034005777812286574093285511586959151128994308994042442607811632383069",
+    "B_upper": "-8.649020911649906649459321361365906041988701115000465069415196222805888420710498056398374695932708395",
+    "guarded_lower": "-16.4013534635486367757202209515034005777812286574093285511586959151128994308994042442607811632383069",
+    "guarded_upper": "-8.649020911549906649459321361365906041988701115000465069415196222805888420710498056398374695932708395",
+    "alpha": "-0.00000000000000000000001757205675990824360636269098639943000542337570541547315496454114919909008231385003295423613134617406",
+    "kernel_zero_s": "0.1499999999896942319196698677164804773041378497602348181163399327414732882922623686017917755714448494",
+    "positive_kernel_mass": "0.9999999998969423191966986771648047730413784976023481811633993274147328829226236860179177557144484943",
+    "negative_kernel_mass": "-0.9999999998969423191966811051080448647977721349113617817333939040390274674494687214767685566243661804",
+    "selected_bins": 547,
+    "signed_intervals": 548,
+    "maximum_kernel_mass_difference": "3.983489462079165269865883498687675257574586343354110435171938459375799522337819439180863493194696222e-92",
+    "propagated_reported_quadrature_error": 1.5222153188635567e-12,
+    "F_displayed_difference_pA": [
+      "1.4890348434123817",
+      "2.2917845159302064"
+    ],
+    "statement": "For this input family, fixed tau=.005s, every G>0 and finite x0>=0, alpha*x0+G*B is strictly negative. This conflicts only with the declared direct mapping to the separately recorded positive F displayed change."
+  },
+  "completed_utc": "2026-09-05T05:29:59.222508+00:00",
+  "check_count": 46,
+  "passed": true
+}

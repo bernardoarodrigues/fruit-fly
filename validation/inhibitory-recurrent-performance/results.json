@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "plan_sha256": "83174a7776c5794ece78fbebf1127cbf468f910371c0e8d4e83428b3de9cd550",
+  "started_utc": "2026-09-05T05:27:11.908829+00:00",
+  "complete": false,
+  "checks": [
+    {
+      "name": "scalar_grid_count",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:scripts/probe_inhibitory_recurrent.py",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/inhibitory-factorial-solver-plan.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/inhibitory-recurrent-input-audit.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/inhibitory-recurrent-kernel-checks.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/inhibitory-recurrent-kernel-independent-review.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/or42a-summary-plan.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:validation/or42a-summary-experiment.json",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "post_run_source_unchanged:data/processed/malecns_v1/weights.npy",
+      "passed": true
+    }
+  ],
+  "arms": [],
+  "errors": [
+    {
+      "type": "TypingError",
+      "message": "Failed in nopython mode pipeline (step: nopython frontend)\nNo implementation of function Function(<built-in function getitem>) found for signature:\n \n >>> getitem(Tuple(float64, float64, float64, float64, float64, int64, float64), int64)\n \nThere are 22 candidate implementations:\n - Of which 22 did not match due to:\n Overload of function 'getitem': File: <numerous>: Line N/A.\n   With argument(s): '(Tuple(float64, float64, float64, float64, float64, int64, float64), int64)':\n  No match.\n\nDuring: typing of intrinsic-call at /Users/bernardo/Documents/Code/fruit-fly/scripts/probe_inhibitory_recurrent.py (138)\n\nFile \"scripts/probe_inhibitory_recurrent.py\", line 138:\ndef scalar_tile(grid, repetitions):\n    <source elided>\n            result=hybrid_step(v,p,h,dt,a,b,c,NODES32,WEIGHTS32)\n            for j in range(7):results[i,j]=result[j]\n            ^\n\nDuring: Pass nopython_type_inference",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/probe_inhibitory_recurrent.py\", line 182, in run\n    t=time.perf_counter();scalar_tile(grid,1);result['warmup']['scalar_seconds']=time.perf_counter()-t\n                          ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/numba/core/dispatcher.py\", line 422, in _compile_for_args\n    error_rewrite(e, 'typing')\n  File \"/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/numba/core/dispatcher.py\", line 363, in error_rewrite\n    raise e.with_traceback(None)\nnumba.core.errors.TypingError: Failed in nopython mode pipeline (step: nopython frontend)\nNo implementation of function Function(<built-in function getitem>) found for signature:\n \n >>> getitem(Tuple(float64, float64, float64, float64, float64, int64, float64), int64)\n \nThere are 22 candidate implementations:\n - Of which 22 did not match due to:\n Overload of function 'getitem': File: <numerous>: Line N/A.\n   With argument(s): '(Tuple(float64, float64, float64, float64, float64, int64, float64), int64)':\n  No match.\n\nDuring: typing of intrinsic-call at /Users/bernardo/Documents/Code/fruit-fly/scripts/probe_inhibitory_recurrent.py (138)\n\nFile \"scripts/probe_inhibitory_recurrent.py\", line 138:\ndef scalar_tile(grid, repetitions):\n    <source elided>\n            result=hybrid_step(v,p,h,dt,a,b,c,NODES32,WEIGHTS32)\n            for j in range(7):results[i,j]=result[j]\n            ^\n\nDuring: Pass nopython_type_inference\n"
+    }
+  ],
+  "warmup": {
+    "reference_seconds": 0.16941783396760002,
+    "factorial_seconds": 0.0082639169995673
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "executable": "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.5.2",
+    "numba": "0.67.0",
+    "scipy": "1.18.1"
+  },
+  "execution_wall_seconds": 0.23377462499774992,
+  "wall_seconds": 0.32178125000791624,
+  "finished_utc": "2026-09-05T05:27:12.230515+00:00",
+  "artifacts": {
+    "validation/inhibitory-recurrent-performance/input-stream.json": {
+      "bytes": 484,
+      "sha256": "667659ed56115fd6874a6c5117106fc290dafa97c7b6045ddb366d876ee5b26d"
+    },
+    "validation/inhibitory-recurrent-performance/input-stream.npz": {
+      "bytes": 140906,
+      "sha256": "2e2abd7f9547ac66e133613fcaf33bca51253b8d62cd048ca3cac93170bf1f77"
+    }
+  }
+}

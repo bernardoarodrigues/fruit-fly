@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T05:25:58.944751+00:00",
+  "inputs": [
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/ink-bins.json",
+      "bytes": 880365,
+      "sha256": "0f0403a2251c609299313ef5dcf490071d7f0b60df9d0c2d6d3350bbaa632580"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-results.json",
+      "bytes": 10271,
+      "sha256": "e33c3a08c5e448baa0f3db07a681a8a2442fb2d40156b5abc158c216f6835b71"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-plan.json",
+      "bytes": 4979,
+      "sha256": "8da8c3f16dbf1cdb2ddf247bb91917e547d0a47694eb15dfa0d4dae634e734d9"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-validation.json",
+      "bytes": 8371,
+      "sha256": "6b3db7a916f0f942b8721c6e55dc37800c91b5d2d933c99394a5ca3720fc9389"
+    },
+    {
+      "path": "docs/ln-inhibitory-linear-filter-design.md",
+      "bytes": 8687,
+      "sha256": "8abe6c57e74029403ddd2b11ec3a0b764af23fe51ec9d9a59201791cb66ed4eb"
+    },
+    {
+      "path": "scripts/check_ln_inhibitory_linear_filter.py",
+      "bytes": 21155,
+      "sha256": "66ecca05fbb32d63029d78a56216ce7deea68f3eb739f35f5fbb08cadadbfeb7"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "tau_s": "0.005",
+  "t0_s": "-0.197",
+  "initial_state": "unknown, finite, nonnegative; no upper bound",
+  "gain": "fixed positive, unspecified; never fitted or selected",
+  "constant_observation_offset": "cancels in the difference",
+  "windows_s": {
+    "baseline": [
+      "-0.15",
+      "-0.05"
+    ],
+    "early": [
+      "0.05",
+      "0.15"
+    ],
+    "late": [
+      "0.25",
+      "0.35"
+    ]
+  },
+  "decimal_precisions": [
+    60,
+    90
+  ],
+  "absolute_unit_gain_guard": "1e-10",
+  "precision_agreement_absolute_tolerance": "1e-30",
+  "quad": {
+    "epsabs": 1e-12,
+    "epsrel": 1e-12,
+    "limit": 100,
+    "normalized_agreement_tolerance": 1e-10,
+    "maximum_normalized_error_estimate": 1e-10
+  },
+  "rate_rule": "For every needed 1 ms bin, retain all eight corners of q=20+40*(anchor20-y)/(anchor20-anchor60). Use the original full y-ink and anchor intervals. No baseline clipping, common-anchor fit, midpoint trace or resampling. Independently relaxed per-bin bounds are a conservative superset, not a realizable witness.",
+  "kernel_rule": "Analytic window impulse integrals in Decimal, splitting each bin at early/late endpoints and the exact single signed-kernel crossing. Sum positive and negative kernel masses separately and pair each with the correct rate bound. Retain 60/90-digit results and all 90-digit per-bin masses/corners/contributions.",
+  "initial_state_rule": "alpha=A_early*(exp(-0.2/tau)-1)<0. Unknown x0>=0 can only decrease the output difference. It is not set to zero observationally and its coefficient is never discarded.",
+  "quad_rule": "Crosscheck every analytic sign-constant interval with SciPy quadrature on u in [0,1], normalizing by interval width and maximal endpoint kernel magnitude. Evaluate the integrand independently with piecewise exp/expm1 formulas in local coordinates; use stable offsets around the sign crossing. Report normalized comparisons and corresponding raw integral errors.",
+  "manufactured_cases": [
+    "zero source with arbitrary nonnegative initial state",
+    "constant source plus its equilibrium initial state",
+    "constant source from zero state retains its small transient",
+    "impulses at -0.1,0.1,0.15,0.3 s via separately integrated window responses",
+    "signed enclosure on disjoint negative/positive kernel intervals, all four constant-corner assignments",
+    "kernel mass identity integral(K)=-alpha and initial-state monotonicity"
+  ],
+  "decision": "Only if all numerical/coverage checks pass and B_upper+1e-10<0: this displayed-summary mapping is conditionally incompatible with positive F late-minus-early current for every positive gain and nonnegative initial state. Otherwise not excluded, or unresolved on failure. Never infer a match from relaxed bounds.",
+  "attempts": "One recorded run; an attempt marker precedes all checks. Failures retain their partial evidence before any reviewed amendment. The same source is evaluated at two frozen precision levels, not two tuned attempts.",
+  "limits": [
+    "Displayed E is acausally smoothed over 100 ms; no deconvolution",
+    "E and F are different five/nine-cell cohorts",
+    "Broad NP3056 female LN populations, no exact male targets",
+    "No pA/nS conversion, per-spike gain, receptor rejection, fitted trace, time-constant search, or full-network claim"
+  ]
+}

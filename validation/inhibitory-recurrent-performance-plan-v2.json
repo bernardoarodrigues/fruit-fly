@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T05:27:50.079344+00:00",
+  "purpose": "C0 exact source parity and measured recurrent execution cost; not the scientific stimulus/seed panel",
+  "execution_order": [
+    "reference",
+    "C0",
+    "C1",
+    "H0",
+    "H1"
+  ],
+  "seed": 11,
+  "duration_ms": 50,
+  "dt_ms": 0.1,
+  "chunk_ms": 5,
+  "rate_hz": 11,
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "old_trial": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline",
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "executable": "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.5.2",
+    "numba": "0.67.0",
+    "scipy": "1.18.1"
+  },
+  "sources": {
+    "scripts/probe_inhibitory_recurrent_v2.py": {
+      "bytes": 20751,
+      "sha256": "ac9d61bfb32733ea50dce70a54e2902d7855e58c90c14503eb0d78cb8ece0b24"
+    },
+    "scripts/probe_inhibitory_recurrent.py": {
+      "bytes": 20017,
+      "sha256": "3a87246dbdf51c7bb8a600f1ea564624fbc409cb4ed7f32b00737b14944e94cc"
+    },
+    "validation/inhibitory-recurrent-performance-plan.json": {
+      "bytes": 5721,
+      "sha256": "83174a7776c5794ece78fbebf1127cbf468f910371c0e8d4e83428b3de9cd550"
+    },
+    "validation/inhibitory-recurrent-performance/results.json": {
+      "bytes": 5786,
+      "sha256": "005c80ea80f5b38ffe9d7336ba7b24a0bd7b37c8489f6edc629b581030fdb134"
+    },
+    "scripts/inhibitory_recurrent_kernel.py": {
+      "bytes": 22085,
+      "sha256": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f"
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    "fruitfly/neural.py": {
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "validation/inhibitory-factorial-solver-plan.json": {
+      "bytes": 15650,
+      "sha256": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687"
+    },
+    "validation/inhibitory-recurrent-input-audit.json": {
+      "bytes": 88861,
+      "sha256": "17270ce9ba3a3eb1fa39e32d601835528cdc2c6f0729ba071cfd49a7f8852b5d"
+    },
+    "validation/inhibitory-recurrent-kernel-checks.json": {
+      "bytes": 5519,
+      "sha256": "86134f8c541f7a71cb19e15b6fdf8223b2571a2ef6bc6d615b8c73186edf1370"
+    },
+    "validation/inhibitory-recurrent-kernel-independent-review.json": {
+      "bytes": 4845,
+      "sha256": "adb8798ef5f951a980415ec08decd5b145a170b2f923b5490040ef5a14e2cb53"
+    },
+    "validation/or42a-summary-plan.json": {
+      "bytes": 10824,
+      "sha256": "32a0f8f33d61b532c871a025b975945c7d79530d123b4ee5f7753ea54a0dd41e"
+    },
+    "validation/or42a-summary-experiment.json": {
+      "bytes": 93796,
+      "sha256": "09f8a0135d80b8ecffbc3ffe733fbcb8becba28617d7d2c1b784d073c156dada"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz": {
+      "bytes": 4595398,
+      "sha256": "f1f9042bdf1c3e0cb2e4d987b72c41375b62fe298dad29c7ffbc9cb3ab30fd0b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl": {
+      "bytes": 229364,
+      "sha256": "1295ca2dbcce62e3c6f7ca20428b58ec96bed80c86d94af586bd21b3344aece2"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    }
+  },
+  "budget": {
+    "wall_seconds": 600,
+    "output_bytes": 2147483648,
+    "peak_rss_bytes": 8589934592,
+    "enforcement": "Checked before and after each 5 ms chunk and each arm. One chunk/archive operation can overshoot; compilation, input generation and scalar grid count toward wall budget. Preflight source hashing is before execution; final source rechecks/artifact hashing/report writing are outside enforcement. No process kill."
+  },
+  "scalar_grid": {
+    "source": "validation/inhibitory-factorial-solver-plan.json",
+    "cases": 125,
+    "repetitions": 128,
+    "method": "Every frozen case is an independent interval with its own dt/coefficient; warmed compiled nested loop; no changing state between repetitions"
+  },
+  "pairing": "Immutable Python integer xorshift64* stream; initial SeedSequence(11) uint64. Kernel receives uniforms and has no RNG. Logical RNG boundaries are recorded separately.",
+  "c0_gate": "Before altered arms: exact every-5ms full-state digest and final arrays against fresh original reference; old 50ms ordered spikes, candidates/applied flags, RNG, edge visits and extrema. Old prefix alone has no full state checkpoint.",
+  "direct_events": "36 fixed Or42a sources, rate*.1/1000; applied reference inferred from candidates and same-tick spikes under zero source refractory; factorial instrumented writes compared to inference.",
+  "selection": "36 input cells, two earlier inhibitory targets, ten fixed motor cells; no body or decoder execution",
+  "retention": "Each chunk: all spikes, candidate/applied masks, selected traces/events, per-tick global phase diagnostics and edge/work counts. Initial/final full mutable checkpoints. No full all-cell time cube.",
+  "failure": "Preserve partial files, failed checks and checkpoint; stop further arms after failed C0 parity or numerical failure. Resource termination is an engineering outcome, not biological rejection.",
+  "limits": [
+    "Quiet baseline may greatly underestimate later inhibitory work. Scalar cost is a separate workload, not a neural-time forecast.",
+    "This probe does not establish physiology, stimulus contrasts, seed robustness or absence of persistent activity. No H1 promotion."
+  ],
+  "amendment": "Initial probe failed while compiling scalar timing helper, before graph load or any full-graph arm. Replace only dynamic indexing of the heterogeneous solver tuple with seven literal indices. Preserve original source, plan, input stream and failed receipt. Same arms, inputs, solver, cases, tolerances and budgets."
+}
