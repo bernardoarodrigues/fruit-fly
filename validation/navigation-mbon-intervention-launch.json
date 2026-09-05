@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-09-05T18:53:46.317240+00:00",
+  "plan": {
+    "path": "validation/navigation-mbon-intervention-plan.json",
+    "bytes": 142367,
+    "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+  },
+  "run_dir": "runs/20260905T185111580463Z-navigation-mbon-intervention",
+  "source_commit": "db9ae7080d037d5a6ae58363d0c6ae1703fd3362",
+  "started": {
+    "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/started.json",
+    "bytes": 340,
+    "sha256": "4e475030ba2e88e85fdf3110833bca7c1ab3c1ca8a8a917a2e0a7e2cefdd40e0"
+  },
+  "parent_pid": 8937,
+  "worker_pid": 8963,
+  "verified_processes": " 8937 38850 Ss   01:36 .venv/bin/python scripts/experiment_navigation_mbon_intervention.py run\n 8963  8937 R    01:35 /Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python /Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_navigation_mbon_intervention.py worker --ordinal 26 --expected-plan-sha dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc\n",
+  "initial_checkpoint_complete": true,
+  "worker_progress_present": true,
+  "parent_terminal_present": false,
+  "heartbeat": {
+    "id": "fruit-fly-status-every-10-minutes",
+    "name": "Analyze completed MBON intervention",
+    "status": "ACTIVE",
+    "scope": "Quiet complete-batch trigger; no per-trial interpretation"
+  },
+  "limits": "Launch/liveness snapshot only. No active-intervention outcome or numerical-reference result is asserted."
+}

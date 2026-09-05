@@ -2,7 +2,7 @@
 
 Evidence snapshot: 2026-09-05. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
-Latest: the [MBON input audit](navigation-ladder-mbon-inputs.md) is complete. Independent reconstruction matches all six saved synaptic-state histories bitwise, and Kenyon cells supply about 92.15% of positive accepted increments during the declared interval. The predeclared rule selects one [KC-to-MBON edge-delivery intervention](navigation-mbon-intervention.md); synthetic checks and six actual-graph inactive prefix comparisons pass. The active six-trial batch is being prepared. H1 and the negative local depression fit remain unpromoted; the Eon body integration remains cancelled.
+Latest: the [MBON input audit](navigation-ladder-mbon-inputs.md) is complete. Independent reconstruction matches all six saved synaptic-state histories bitwise, and Kenyon cells supply about 92.15% of positive accepted increments during the declared interval. The predeclared rule selects one [KC-to-MBON edge-delivery intervention](navigation-mbon-intervention.md); synthetic checks and six actual-graph inactive prefix comparisons pass. The active six-trial batch launched after `db9ae70`; its quiet completion trigger waits for all results before analysis. H1 and the negative local depression fit remain unpromoted; the Eon body integration remains cancelled.
 
 | Gate | Current evidence | Remaining work |
 |---|---|---|
