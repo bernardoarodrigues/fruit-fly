@@ -1,0 +1,129 @@
+{
+  "inspected_utc": "2026-09-05T04:12:26.296763+00:00",
+  "runtime_source_commit": "ef6e230",
+  "plan_path": "validation/flybody-habitat-viewer-plan.json",
+  "plan_sha256": "5cd524da9a1edd06b5a01128bfcf1420652c0cbf0d193e2743db9865cf2c5f82",
+  "checks": {
+    "sensory_reset_zero_clock": true,
+    "sensory_initial_and_reset_fields_equal": true,
+    "sensory_advanced_at_least_point_one_second": true,
+    "sensory_paused_and_rest": true,
+    "failure_is_terminal": true,
+    "failure_image_still_same_bytes": true,
+    "failure_frame_metadata_unchanged": true,
+    "failure_image_age_increased": true,
+    "failure_telemetry_and_diagnostics_retained": true,
+    "failure_journal_matches_api": true
+  },
+  "ui_inspection": {
+    "method": "Actual Codex in-app browser accessibility trees and screenshots; commands clicked in UI. Read-only local HTTP snapshots/frames retained separately.",
+    "8774": [
+      "Sensory assay and 30 \u00d7 24 mm habitat labels visible",
+      "Overview, Follow and Side inspected at t=0; camera changes did not advance time",
+      "Resume followed by Pause at 0.8899999999999346 s; pause clock/frame stable over one wall second",
+      "Reset restores t=0 and the eight retained scientific telemetry groups",
+      "Smooth resource discs; residual dotted reference shadows visible in close cameras. This v1 is not final clean-render evidence."
+    ],
+    "8775": [
+      "Controller-only baseline and Walking commands bypass neural activity clearly visible",
+      "One Resume produced source failure at tick384; no reset, retry or render request was made after failure",
+      "LAST FRAME / SIMULATION STOPPED label visible; transport/camera/stimulus/mute controls disabled",
+      "Visible message gives last image 0.7500 s, completed telemetry 0.7600 s, neural failure 0.7680 s and physical failure 0.7680 s"
+    ]
+  },
+  "clocks_s": {
+    "last_image": 0.74999999999995,
+    "last_completed_advance": 0.7599999999999489,
+    "failure_neural": 0.768,
+    "failure_physical": 0.7679999999999481
+  },
+  "suite": {
+    "source_commit": "ef6e230",
+    "command": ".venv/bin/python -m pytest -q",
+    "tests_passed": 175,
+    "subtests_passed": 54,
+    "wall_seconds": 19.98,
+    "warnings": "22 existing Brian2 PyparsingDeprecationWarning messages",
+    "javascript_syntax": "node --check fruitfly/web/app.js passed"
+  },
+  "artifacts": {
+    "validation/flybody-habitat-viewer/8774/follow-frame.jpg": {
+      "bytes": 43244,
+      "sha256": "9b23c476a957b12a4159ce53a8021b17488fe017cf8365722fb7763d3e3ef54e"
+    },
+    "validation/flybody-habitat-viewer/8774/follow.json": {
+      "bytes": 23832,
+      "sha256": "f193ec1095ad23a2f0e38189a76a84c8b0b2d9f003b7769c8f49c629f236e20c"
+    },
+    "validation/flybody-habitat-viewer/8774/initial-frame.jpg": {
+      "bytes": 37038,
+      "sha256": "0119adc2cb2142d16a2649c5a1c4e1c357cb5f6bdd7fe4405f66018c0ee3a69a"
+    },
+    "validation/flybody-habitat-viewer/8774/initial.json": {
+      "bytes": 23834,
+      "sha256": "0c5ffa9252a12ed5fc0283988a1e76577a9681d8d7d9ecd7ab841c4a8b95e849"
+    },
+    "validation/flybody-habitat-viewer/8774/paused-frame.jpg": {
+      "bytes": 45929,
+      "sha256": "32160a805973dab32cb18baa30a85c92121870fa07a0724a7992dcfe31fc93a8"
+    },
+    "validation/flybody-habitat-viewer/8774/paused.json": {
+      "bytes": 25050,
+      "sha256": "01a4cb226bf6b6f434eed049b0d230c474efd5d8ce895fc3164682d4a280ce0b"
+    },
+    "validation/flybody-habitat-viewer/8774/reset-comparison.json": {
+      "bytes": 159,
+      "sha256": "9db1e9b603d2c42d1a7c70d8158eecd2481d7bab292500b0670e436efc4e8c08"
+    },
+    "validation/flybody-habitat-viewer/8774/reset-frame.jpg": {
+      "bytes": 45804,
+      "sha256": "f232f7bc6addad320c0324f30745d2342c7b873a11f74993bb9947386cffa06f"
+    },
+    "validation/flybody-habitat-viewer/8774/reset.json": {
+      "bytes": 23829,
+      "sha256": "9a86fecb27edc36d4a81f7a16729c4cf61091d66138c2604fdd905089adb49c4"
+    },
+    "validation/flybody-habitat-viewer/8774/running.json": {
+      "bytes": 25065,
+      "sha256": "952985845ada2fbb0c829e9ab2c70f1467dc18fb0ee402a167e10c809fbbbe30"
+    },
+    "validation/flybody-habitat-viewer/8774/side-frame.jpg": {
+      "bytes": 45804,
+      "sha256": "18bcb764ef00655ff3b1dd30ff5bcd5f1e9531508799f513a59218ec0225271b"
+    },
+    "validation/flybody-habitat-viewer/8774/side.json": {
+      "bytes": 23828,
+      "sha256": "d43d83a3af761897c5af2c3bfaa1ae3af3a70b2a28e74ebc9c89e03d1ebc2df7"
+    },
+    "validation/flybody-habitat-viewer/8775/failed.json": {
+      "bytes": 56475,
+      "sha256": "e8ecb7a2fe6105d05722b4abe011a79b086ab047403f35a7a9428a0820332f87"
+    },
+    "validation/flybody-habitat-viewer/8775/failure-journal.jsonl": {
+      "bytes": 21409,
+      "sha256": "a41030641adab7814266c6e4791f6709fd05c94d145564457f8b1c334d90d22a"
+    },
+    "validation/flybody-habitat-viewer/8775/initial-frame.jpg": {
+      "bytes": 37038,
+      "sha256": "0119adc2cb2142d16a2649c5a1c4e1c357cb5f6bdd7fe4405f66018c0ee3a69a"
+    },
+    "validation/flybody-habitat-viewer/8775/initial.json": {
+      "bytes": 23920,
+      "sha256": "274787e3469559c72ee4debebda4be59b0ab55d947912260c4e1f19fdf41a01c"
+    },
+    "validation/flybody-habitat-viewer/8775/last-frame.jpg": {
+      "bytes": 37109,
+      "sha256": "d2460c3cf2124ef5fe5349731844eaa4579a8d6c656110a07cc7f878c53fdfd7"
+    },
+    "validation/flybody-habitat-viewer/8775/manifest.json": {
+      "bytes": 28567,
+      "sha256": "b1f58065c45b6d0de4eeb2ba6bbbbbd7ff0e20ab3c5fda766525c4d69af2ef73"
+    }
+  },
+  "limits": [
+    "Passing viewer checks do not make physical wall avoidance successful",
+    "Full graph runs in controller_only but cannot choose its walking command",
+    "No natural foraging or physiological calibration; sensory run stayed at rest",
+    "Runtime v1 shadow artifacts require a separately retained rendering addendum; original trials remain unchanged"
+  ]
+}
