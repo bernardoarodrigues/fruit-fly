@@ -1,0 +1,75 @@
+{
+  "data": "validation/apl-timecourse-traces.json",
+  "calibration_pairs": [
+    [
+      "C",
+      11
+    ],
+    [
+      "C",
+      12
+    ]
+  ],
+  "evaluation_pairs": [
+    [
+      "D",
+      12
+    ],
+    [
+      "D",
+      13
+    ],
+    [
+      "E",
+      0
+    ],
+    [
+      "E",
+      1
+    ]
+  ],
+  "clocks": [
+    "common_calcium_bar",
+    "literal_row_bar"
+  ],
+  "input_proxies": [
+    "signed",
+    "nonnegative"
+  ],
+  "tau_bounds_s": [
+    0.001,
+    100.0
+  ],
+  "tau_grid_points": 81,
+  "source_pins": [
+    {
+      "path": "validation/apl-timecourse-traces.json",
+      "sha256": "22a1a66911a2a3d263142a0ad20d82a97fa9f9d4c7a8e23a58a24bb5dae5eaba"
+    },
+    {
+      "path": "validation/apl-timecourse-extraction-results.json",
+      "sha256": "45672f16ea232fc17bc7ee9c9c3fe663745702bbf8116f11dcd1ea91e010d1c1"
+    },
+    {
+      "path": "scripts/apl_reporter_filter.py",
+      "sha256": "d6de48af6b69ada05528c8981d0d1ecbc7ad2ff4e3b19b962cd21985e1ce19e0"
+    },
+    {
+      "path": "scripts/compare_apl_reporter_filter.py",
+      "sha256": "bb8f9f056990528094a196598c3fe9207dbab1d3e08dff32cf865799b8da15ff"
+    },
+    {
+      "path": "tests/test_apl_reporter_filter.py",
+      "sha256": "378c2bdc94d6bc1d5fbe661307fb3f41fe256c048a9ec2ea4607fabb8d3056f3"
+    }
+  ],
+  "design": [
+    "Fit one nonnegative gain and one shared low-pass tau to two declared horizontal-lobe color pairs. These terminal color ranks were selected by plot order, not by largest measured peak.",
+    "D/E evaluation pairs and all remaining secondary pairs never enter optimizer. Published curves were previously inspected; evaluation means excluded from fit, not blind or previously unseen data.",
+    "Normalize each calcium trace and each dye driver by its own positive peak during 0-12 s. This is a shape comparison; target normalization uses each evaluation trace peak and cannot validate absolute amplitude.",
+    "Gate input history at ATP time zero. Solve piecewise-linear driver exactly. Nonnegative proxy rectifies sampled dye knots before interpolation; signed proxy is an algebraic control. Raw negative measurements remain retained.",
+    "For every assumption, compare an instantaneous gain-only control with a low-pass fit whose candidate set includes tau=0. Evaluate complete 40 paired traces for both models: 320 predictions total.",
+    "Graphical input bounds pass through the same fitted positive-gain filter and compare with calcium stroke bounds, all normalized by fixed central peaks. This conditional envelope omits parameter, biological and normalization uncertainty. It is not a confidence interval or physiological acceptance threshold.",
+    "A 0.1 s grid is interpolation, not independent source samples. No statistical p-values or likelihood confidence intervals. No default selection, network run or membrane/release interpretation."
+  ]
+}
