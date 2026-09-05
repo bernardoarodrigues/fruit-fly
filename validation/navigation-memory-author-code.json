@@ -1,0 +1,89 @@
+{
+  "scope": "bounded author-code reproduction; not a male whole-brain simulation or full figure replication",
+  "repository": "https://github.com/nagellab/Lanzetal2025",
+  "commit": "b52ee5742e96a579356bc475d01a08d640759789",
+  "source_url": "https://raw.githubusercontent.com/nagellab/Lanzetal2025/b52ee5742e96a579356bc475d01a08d640759789/model_code/recurrent_python_clean.ipynb",
+  "notebook_sha256": "f3174d6a279fd5b488c79910d8336c2ae2baa69380e7268dd93450e908226a54",
+  "upstream_code_license": "GPL-3.0",
+  "python": "3.12.14",
+  "numpy": "2.5.2",
+  "source_cells": [
+    0,
+    3,
+    5,
+    8,
+    10
+  ],
+  "model_function_changes": [],
+  "experiment_changes": [
+    "state_fast selects 0 then 1",
+    "extra dt/2 diagnostic bypasses author's fixed-sample fit helper"
+  ],
+  "parameters": {
+    "hdk_n": 30,
+    "pfg_n": 18,
+    "global_inhibitory_n": 1,
+    "inactive_extra_exc_unit_n": 1,
+    "alpha": 10,
+    "dt_s": 0.001,
+    "duration_s": 20,
+    "stimulus_on_s": 5,
+    "stimulus_off_s": 9,
+    "exc": 5.6,
+    "inh": 3.6,
+    "b_all_per_s": 25,
+    "a_fast_per_s": 4.63,
+    "a_slow_per_s": 0.64,
+    "gaussian_sigma_both_directions_rad": 0.25,
+    "input": "1+cos(preferred angle) into both local populations"
+  },
+  "runs": {
+    "slow": {
+      "wall_seconds": 2.170121749979444,
+      "author_stdout": "100.0% done",
+      "warnings": [
+        "divide by zero encountered in log"
+      ],
+      "author_fitted_decay_per_sample": -0.0001711386826425852,
+      "author_fit_tau_s": 5.843214313437549,
+      "author_zero_fit_means": "classified nondecaying or fit not accepted",
+      "min_activity": 0.0,
+      "max_activity": 0.48783521374046407,
+      "contrast_at_stimulus_offset": 0.4859131809654447,
+      "contrast_1s_after_offset": 0.2886511176412348,
+      "contrast_5s_after_offset": 0.15333113391216943,
+      "contrast_final": 0.05867039203873261,
+      "first_one_over_e_crossing_after_offset_s": 4.019,
+      "hdk_bump_peak_index_at_offset": 15,
+      "hdk_bump_peak_index_final": 15,
+      "numerical_comparison": {
+        "dt_s": 0.0005,
+        "wall_seconds": 4.120134333032183,
+        "finite": true,
+        "hdk_max_abs_activity_difference": 0.001,
+        "hdk_rms_activity_difference": 5.355068638150112e-05
+      }
+    },
+    "fast": {
+      "wall_seconds": 2.059247541008517,
+      "author_stdout": "100.0% done",
+      "warnings": [
+        "divide by zero encountered in log"
+      ],
+      "author_fitted_decay_per_sample": -0.0007571519103472576,
+      "author_fit_tau_s": 1.3207389248233732,
+      "author_zero_fit_means": "classified nondecaying or fit not accepted",
+      "min_activity": 0.0,
+      "max_activity": 0.8642735036902277,
+      "contrast_at_stimulus_offset": 0.8622907424007711,
+      "contrast_1s_after_offset": 0.3930956341152806,
+      "contrast_5s_after_offset": 0.018759030475719692,
+      "contrast_final": 0.00023610269612788648,
+      "first_one_over_e_crossing_after_offset_s": 1.2630000000000001,
+      "hdk_bump_peak_index_at_offset": 15,
+      "hdk_bump_peak_index_final": 15
+    }
+  },
+  "plot": "validation/navigation-memory-author-code.png",
+  "contrast_trace_100hz": "validation/navigation-memory-author-code.csv"
+}

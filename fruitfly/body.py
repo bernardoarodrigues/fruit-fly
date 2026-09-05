@@ -21,6 +21,7 @@ from flygym_demo.complex_terrain import (
 )
 
 from .physiology import Physiology, PhysiologyConfig, ResourcePatch
+from .wind import local_airflow
 
 
 @dataclass(frozen=True)
@@ -36,6 +37,9 @@ class BodyConfig:
     water_radius_mm: float = 2.0
     water_amount: float = 1.5
     wind_mm_s: tuple[float, float] = (-2.0, 0.0)
+    odor_emission_interval_s: float = .1
+    odor_prehistory_s: float = 3.0
+    odor_puff_lifetime_s: float = 8.0
     drive_limit: float = 1.2
     intended_sex: str = "male"
     body_profile: str = "female-derived NeuroMechFly morphology surrogate"
@@ -67,6 +71,13 @@ class BodyConfig:
                 raise ValueError(f"{name} must contain {expected} finite values")
         if not math.isfinite(self.initial_heading_rad):
             raise ValueError("Heading must be finite")
+        if (not all(math.isfinite(v) and v > 0 for v in
+                    (self.odor_emission_interval_s, self.odor_puff_lifetime_s))
+                or not math.isfinite(self.odor_prehistory_s)
+                or not 0 <= self.odor_prehistory_s <= self.odor_puff_lifetime_s):
+            raise ValueError("Odor emission/lifetime must be positive; prehistory must lie in [0,lifetime]")
+        if self.odor_puff_lifetime_s / self.odor_emission_interval_s > 100_000:
+            raise ValueError("Puff resolution exceeds the supported 100,000 active-puff budget")
         for position, radius in ((self.food_position_mm, self.food_radius_mm),
                                  (self.water_position_mm, self.water_radius_mm)):
             if any(abs(v) + radius >= self.arena_half_size_mm - .2 for v in position):
@@ -81,26 +92,38 @@ class PuffField:
     """Gaussian puffs with horizontal advection and reflecting-floor images.
 
     Field coordinates are SI; concentration uses arbitrary mass/m^3. Emission
-    is sampled at 10 Hz, with 3 s of declared initialization prehistory. Lateral
+    is sampled at 10 Hz by default, with 3 s of initialization prehistory. Lateral
     boundaries are open even though the locomotion arena has physical walls.
-    Puffs leave this approximation after 8 s; removed mass is explicitly tracked.
+    Puffs leave after 8 s by default; removed mass is explicitly tracked.
     Depleting food stops new release and does not erase old airborne puffs.
     """
 
-    def __init__(self, source_m, wind_m_s, initial_fraction=1.0):
+    def __init__(self, source_m, wind_m_s, initial_fraction=1.0, *,
+                 emission_interval_s=.1, prehistory_s=3.0, lifetime_s=8.0):
+        if (not all(math.isfinite(v) and v > 0 for v in (emission_interval_s, lifetime_s))
+                or not math.isfinite(prehistory_s) or not 0 <= prehistory_s <= lifetime_s
+                or lifetime_s / emission_interval_s > 100_000):
+            raise ValueError("Invalid puff time resolution or retention window")
         self.source = np.asarray(source_m, dtype=float)
         self.wind = np.asarray(wind_m_s, dtype=float)
-        self.births = list(np.arange(-3, 0, .1))
-        self.masses = [initial_fraction] * len(self.births)
+        self.emission_interval_s = emission_interval_s
+        self.lifetime_s = lifetime_s
+        # Keep a 10 arbitrary-mass-unit/s source when refining emission timing.
+        self.mass_per_puff = 10 * emission_interval_s
+        count = int(math.floor(prehistory_s / emission_interval_s + 1e-10))
+        self.births = [index * emission_interval_s for index in range(-count, 0)]
+        self.masses = [initial_fraction * self.mass_per_puff] * len(self.births)
+        self.emission_index = 0
         self.next_emission = 0.0
         self.retired_mass = 0.0
 
     def advance(self, t_s, source_fraction):
         while self.next_emission <= t_s + 1e-12:
             self.births.append(self.next_emission)
-            self.masses.append(source_fraction)
-            self.next_emission += .1
-        while self.births and self.births[0] < t_s - 8.0:
+            self.masses.append(source_fraction * self.mass_per_puff)
+            self.emission_index += 1
+            self.next_emission = self.emission_index * self.emission_interval_s
+        while self.births and self.births[0] < t_s - self.lifetime_s:
             self.births.pop(0)
             self.retired_mass += self.masses.pop(0)
 
@@ -198,7 +221,16 @@ class BodyRuntime:
         body_ids = self.sim._internal_bodyids_by_fly[self.fly.name]
         id_for = lambda name: body_ids[body_order.index(BodySegment(name))]
         self._thorax_id = id_for("c_thorax")
+        self._head_id = id_for("c_head")
         self._antenna_ids = [id_for(side + "_funiculus") for side in ("l", "r")]
+        # Imported head mesh axes are not forward/left/up. Define that basis
+        # from the neutral keyframe's thorax, then let it follow head rotation.
+        reference = mujoco.MjData(self.model)
+        mujoco.mj_resetDataKeyframe(self.model, reference, self.sim._neutral_keyframe_id)
+        mujoco.mj_forward(self.model, reference)
+        self._head_anatomical_basis = (reference.xmat[self._head_id].reshape(3, 3).T
+                                      @ reference.xmat[self._thorax_id].reshape(3, 3))
+        self._antenna_jacobian = np.empty((3, self.model.nv))
         self._tarsus5_ids = [id_for(leg + "_tarsus5") for leg in self.controller.legs]
         geom_map = self.sim._internal_geomid_by_bodyseg_by_fly[self.fly.name]
         self._stumble_map = np.full(self.model.ngeom, -1, dtype=int)
@@ -262,7 +294,10 @@ class BodyRuntime:
         self.food = ResourcePatch("food", "food", self.config.food_amount)
         self.water = ResourcePatch("water", "water", self.config.water_amount)
         self.field = PuffField((*np.asarray(self.config.food_position_mm) * .001, .00007),
-                              (*np.asarray(self.config.wind_mm_s) * .001, 0), self.food.fraction)
+                              (*np.asarray(self.config.wind_mm_s) * .001, 0), self.food.fraction,
+                              emission_interval_s=self.config.odor_emission_interval_s,
+                              prehistory_s=self.config.odor_prehistory_s,
+                              lifetime_s=self.config.odor_puff_lifetime_s)
         self.field.advance(0, self.food.fraction)
         self._update_contact_cache()
         self._vision = None
@@ -371,6 +406,7 @@ class BodyRuntime:
         return {
             "t_s": self.time_s,
             "antenna_odor": self.field.sample(antenna_m, self.time_s).tolist(),
+            "wind": self._observe_wind(),
             "taste_food": bool(self._food_contact and self.food.remaining > 0),
             "taste_water": bool(self._water_contact and self.water.remaining > 0),
             "food_contact_by_leg": {leg.upper(): bool(contact and self.food.remaining > 0)
@@ -397,6 +433,17 @@ class BodyRuntime:
                        "shape": list(self._vision.shape) if self._vision is not None else None,
                        "mean_by_eye": self._vision.mean(axis=(1, 2)).tolist() if self._vision is not None else None},
         }
+
+    def _observe_wind(self):
+        velocities = np.empty((2, 3))
+        for index, body_id in enumerate(self._antenna_ids):
+            # Jacobian at the same body origin used for odor sampling. This
+            # includes base translation, rotation and antennal joint motion.
+            mujoco.mj_jacBody(self.model, self.data, self._antenna_jacobian, None, body_id)
+            velocities[index] = self._antenna_jacobian @ self.data.qvel
+        head_to_world = (self.data.xmat[self._head_id].reshape(3, 3)
+                         @ self._head_anatomical_basis)
+        return local_airflow((*self.config.wind_mm_s, 0), velocities, head_to_world)
 
     def _sample_vision(self):
         self._vision = self.sim.get_ommatidia_readouts(self.fly.name)

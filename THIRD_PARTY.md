@@ -10,5 +10,7 @@ Dependencies and research artifacts retain their respective licenses. Preserve u
 | [Shiu model](https://github.com/philshiu/Drosophila_brain_model) | MIT reference checkout at 91bdd1e7dcf193f3e7ca5a8933497fcef63b7960; unchanged original builder with matched input-event replay. |
 | [Eon fly-brain](https://github.com/eonsystemspbc/fly-brain) | Research/code audit only, GPL-2.0-or-later root license noted; code is not copied here. |
 | User-provided PDFs | Preserved unchanged; each retains its stated publication license; hashes in research/provided-papers.json. |
+| [Lanz et al. model](https://github.com/nagellab/Lanzetal2025) | GPL-3.0 author notebook, downloaded separately and checksum-verified for a bounded reproduction. No model code imported into the full-brain runtime. Pin and protocol in docs/navigation-memory-model-audit.md. |
+| [Suver et al. wind data](https://doi.org/10.5061/dryad.k06kh8f) | CC0 primary dataset; local acquisition and measured-fit provenance in docs/wind-calibration.md. The paper has a separate publication license. |
 
 Morphology acquisition has separate specimen, license and checksum provenance. Biological measurements, model approximations and project hypotheses are distinguished in the research notes.
