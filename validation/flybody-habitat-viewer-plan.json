@@ -1,0 +1,31 @@
+{
+  "prepared_utc": "2026-09-05T04:08:18.860849+00:00",
+  "sources": {
+    "configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+    "configs/male-flybody-habitat-wall-contact.json": "8f7ddb0f5430b0e4dd995f024e910d212d37a7e2d356685a0bd3cf956b81b328",
+    "fruitfly/simulation.py": "8f7e9201ec8c810635ce4a75829bf16d900fe600c01220ebed3e1bca3e013057",
+    "fruitfly/viewer.py": "ac1f427205b5239c6d0dccb82454071bcf565732b57a3899d1a98f851ba4f982",
+    "fruitfly/web/app.js": "2197b38674943a501fc8ac327a5174f80f70da46491e4d765ac770778f23a5b2",
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/flybody_habitat.py": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+    "validation/flybody-habitat-visual-execution-plan.json": "eb42dfe25a0b82383b5a2af83e47c058a73c2a35186afc0f39ed9d643f78050e"
+  },
+  "source_freeze_before_render": "fd19b56",
+  "cases": {
+    "8774": "Actual sensory viewer, inspect reset overview/follow/side, briefly resume through at least 0.1 simulated seconds then pause and reset. Preserve initialized, advanced, paused and reset API/frame receipts. Natural walking is not expected and is not a pass condition.",
+    "8775": "Actual controller_only viewer; from reset command straight walking via existing controller_only mode. Full neural graph evolves but cannot select the walking command. Resume once and retain first source failure; pause if 2 simulated seconds are reached without failure. No wall-triggered steering or retry."
+  },
+  "checks": [
+    "Habitat label states 30 by 24 mm; correct assay label is visible",
+    "Three cameras have clean resource regions and one physical fly without ghost/trajectory",
+    "Pause and camera controls do not advance simulated time, reset restores initial state",
+    "On actual physical failure, status error, controls disabled, worker exits, last frame retained, completed telemetry clock and cached failed neural/native clocks labeled separately",
+    "API cached failure agrees with run failures.jsonl; no render or recovery after failure"
+  ],
+  "limits": [
+    "UI run is a separate experiment from the frozen native contact trial",
+    "No natural avoidance, foraging, male morphology or physiological validation",
+    "Preserve original failed render and contact gates; viewer quality cannot repair a contact result"
+  ]
+}

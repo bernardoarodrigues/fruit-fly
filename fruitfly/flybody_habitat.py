@@ -118,6 +118,15 @@ class NativeHabitat:
             "resource_contact":"Active tarsal floor contacts within planar center/radius; wall contacts excluded",
             "odor_boundary":"Unbounded uniform puff advection; no wall-flow or odor-boundary coupling",
             "walls":[], "resource_regions":{}}
+        # Identifiers for edits to the camera's derived MjvScene only.
+        self.visual_ghost_ids = {i for i in range(model.ngeom)
+            if (model.id2name(i,"geom") or "").startswith("ghost/")}
+        self.visual_trajectory_ids = {i for i in range(model.nsite)
+            if (model.id2name(i,"site") or "").startswith("traj_")}
+        self.visual_resource_ids = {}
+        self.metadata["display"] = {"resource_marker_lift_mm":.05,
+            "scope":"Camera MjvScene only; compiled native model/data and planar sensing unchanged",
+            "reference_ghost_visible":False,"reference_trajectory_visible":False}
         for gid in self.wall_ids:
             self.metadata["walls"].append({"geom":model.id2name(gid,"geom"), "compiled_geom_id":int(gid),
                 "center_mm":(model.geom_pos[gid]*10).tolist(), "half_size_mm":(model.geom_size[gid]*10).tolist(),
@@ -127,9 +136,38 @@ class NativeHabitat:
             sid = model.name2id(name,"site")
             if sid<0:
                 raise ValueError("Compiled resource site missing")
+            self.visual_resource_ids[sid] = kind
             self.metadata["resource_regions"][kind] = {"site":name, "center_mm":(model.site_pos[sid]*10).tolist(),
                 "radius_mm":float(model.site_size[sid,0]*10), "visual_half_thickness_mm":float(model.site_size[sid,1]*10),
                 "collision_surface":self.floor_identifier, "separate_collision_geometry":False}
+
+    def render_scene_callback(self, physics, scene):
+        """Adjust disposable visualization geoms after dm-control scene update.
+
+        Moving the rendered disc above the coplanar floor avoids depth conflict.
+        The 0.05 mm lift is a display offset, not food height or collision mass.
+        Reference ghosts and trajectory dots remain in native task state.
+        """
+        import mujoco
+        edits = []
+        for index in range(scene.ngeom):
+            geom = scene.geoms[index]
+            change = None
+            before = {"position_cm":geom.pos.tolist(),"rgba":geom.rgba.tolist()}
+            if geom.objtype==mujoco.mjtObj.mjOBJ_SITE and geom.objid in self.visual_resource_ids:
+                geom.pos[2] += .005  # cm: 0.05 mm, renderer only.
+                change = "resource_marker_lift"
+            elif geom.objtype==mujoco.mjtObj.mjOBJ_SITE and geom.objid in self.visual_trajectory_ids:
+                geom.rgba[3] = 0.
+                change = "hide_reference_trajectory"
+            elif geom.objtype==mujoco.mjtObj.mjOBJ_GEOM and geom.objid in self.visual_ghost_ids:
+                geom.rgba[3] = 0.
+                change = "hide_reference_ghost"
+            if change:
+                edits.append({"scene_geom_index":index,"native_object_type":int(geom.objtype),
+                    "native_object_id":int(geom.objid),"change":change,"before":before,
+                    "after":{"position_cm":geom.pos.tolist(),"rgba":geom.rgba.tolist()}})
+        self.last_render_scene_edits = edits
 
     def sample(self, model, diagnostic, root_position_cm):
         import numpy as np

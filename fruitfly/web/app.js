@@ -69,7 +69,10 @@ function update(data) {
   const bodyLabel = telemetry.body_backend === "flybody" && telemetry.body_metadata?.reference_mode === "rolling"
     ? "FlyBody body · learned motor surrogate with an engineering posture hold · rolling reference"
     : bodyLabels[telemetry.body_backend] || "Body adapter not reported";
-  setText("body-adapter", bodyLabel);
+  const habitat = telemetry.body_metadata?.habitat;
+  const habitatLabel = habitat?.enabled && Array.isArray(habitat.inner_size_mm)
+    ? ` · ${number(habitat.inner_size_mm[0], 0)} × ${number(habitat.inner_size_mm[1], 0)} mm habitat` : "";
+  setText("body-adapter", bodyLabel + habitatLabel);
   $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", ready && data.trial_complete ? "Trial complete" : labels[data.status] || data.status);

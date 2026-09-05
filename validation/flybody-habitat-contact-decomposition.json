@@ -1,0 +1,3841 @@
+{
+  "sources_sha256": {
+    "validation/flybody-habitat-results.json": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+    "validation/flybody-habitat-shallow-contact-results.json": "5056bdd20c270ea3690d9864eca05d62286991e257f0a477a11f8b6dff9ca65e"
+  },
+  "script_sha256": "8fb25a0e02b8233331f3c7f68f2afbe81f2cdc68208d3312fb7d25b74c8d00a2",
+  "records": [
+    {
+      "source": "validation/flybody-habitat-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_x_neg",
+      "axis": 0,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/thorax_collision",
+          "position_mm": [
+            -15.148694728114048,
+            1.552401125151379e-06,
+            1.1826152771034866
+          ],
+          "distance_mm": -0.3033953368491838,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/thorax_collision2",
+          "position_mm": [
+            -15.159170488811773,
+            9.432302389469994e-05,
+            1.622198948378709
+          ],
+          "distance_mm": -0.30612447557949185,
+          "normal_world_dyne": [
+            7186.64458974463,
+            -2.7385057263200823,
+            9888.716903809789
+          ],
+          "tangential_world_dyne": [
+            -4938.378770066118,
+            299.52385581951376,
+            3589.0594971048445
+          ],
+          "total_world_dyne": [
+            2248.2658196785123,
+            296.7853500931937,
+            13477.776400914632
+          ],
+          "normal_local_force_dyne": 12224.344152649368,
+          "inward_normal_axis_dyne": 7186.64458974463,
+          "inward_tangential_axis_dyne": -4938.378770066118,
+          "inward_total_axis_dyne": 2248.2658196785123,
+          "decomposition_max_error_dyne": 1.8189894035458565e-12
+        },
+        {
+          "fly_geom": "walker/wing_left_brown_collision",
+          "position_mm": [
+            -15.747957290805282,
+            0.38153281095899816,
+            1.5122562551683036
+          ],
+          "distance_mm": -1.575673774123232,
+          "normal_world_dyne": [
+            -8.771647343830908,
+            -10.019776853147837,
+            -64.05107110572177
+          ],
+          "tangential_world_dyne": [
+            -32.27731894228389,
+            3.650701346336266,
+            3.8492103545207916
+          ],
+          "total_world_dyne": [
+            -41.0489662861148,
+            -6.369075506811571,
+            -60.20186075120098
+          ],
+          "normal_local_force_dyne": 65.42077219890973,
+          "inward_normal_axis_dyne": -8.771647343830908,
+          "inward_tangential_axis_dyne": -32.27731894228389,
+          "inward_total_axis_dyne": -41.0489662861148,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/wing_left_membrane_collision",
+          "position_mm": [
+            -15.75996748605968,
+            0.06769678237186443,
+            1.5760871289451217
+          ],
+          "distance_mm": -0.7801503551506588,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/wing_right_brown_collision",
+          "position_mm": [
+            -15.747957290806017,
+            -0.381532810974462,
+            1.5122562551639287
+          ],
+          "distance_mm": -1.5756737778521304,
+          "normal_world_dyne": [
+            -9.295787722342801,
+            10.618497872712618,
+            -67.87837415746964
+          ],
+          "tangential_world_dyne": [
+            -33.5087740775829,
+            6.84078293686973,
+            5.659082063940723
+          ],
+          "total_world_dyne": [
+            -42.8045617999257,
+            17.45928080958235,
+            -62.219292093528914
+          ],
+          "normal_local_force_dyne": 69.32992027049434,
+          "inward_normal_axis_dyne": -9.295787722342801,
+          "inward_tangential_axis_dyne": -33.5087740775829,
+          "inward_total_axis_dyne": -42.8045617999257,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/wing_right_membrane_collision",
+          "position_mm": [
+            -15.759967472437246,
+            -0.06769718050320188,
+            1.5760870412182015
+          ],
+          "distance_mm": -0.7801504403093874,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_collision",
+          "position_mm": [
+            -15.308426292981972,
+            -0.0067110070526778245,
+            1.3544854302999465
+          ],
+          "distance_mm": -1.486092384505862,
+          "normal_world_dyne": [
+            934.7738183129829,
+            -5.3232902652209155,
+            -7469.018809597908
+          ],
+          "tangential_world_dyne": [
+            -2156.2747963717666,
+            -591.4521717710589,
+            -269.44379234419074
+          ],
+          "total_world_dyne": [
+            -1221.5009780587834,
+            -596.7754620362799,
+            -7738.462601942099
+          ],
+          "normal_local_force_dyne": 7527.288516255373,
+          "inward_normal_axis_dyne": 934.7738183129829,
+          "inward_tangential_axis_dyne": -2156.2747963717666,
+          "inward_total_axis_dyne": -1221.5009780587834,
+          "decomposition_max_error_dyne": 2.2737367544323206e-13
+        },
+        {
+          "fly_geom": "walker/abdomen_2_collision",
+          "position_mm": [
+            -15.446224057847687,
+            -0.006247031134082333,
+            1.3585390893673894
+          ],
+          "distance_mm": -1.5307849184121334,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_3_collision",
+          "position_mm": [
+            -15.626416600426346,
+            -0.0024824100527299194,
+            1.3212432228696434
+          ],
+          "distance_mm": -1.5026370303044598,
+          "normal_world_dyne": [
+            104.38437239656984,
+            1.1926743980668157,
+            -756.3728045662702
+          ],
+          "tangential_world_dyne": [
+            -18.975895183731964,
+            -381.28582671412335,
+            -3.220021580074192
+          ],
+          "total_world_dyne": [
+            85.40847721283788,
+            -380.09315231605655,
+            -759.5928261463445
+          ],
+          "normal_local_force_dyne": 763.5426243244647,
+          "inward_normal_axis_dyne": 104.38437239656984,
+          "inward_tangential_axis_dyne": -18.975895183731964,
+          "inward_total_axis_dyne": 85.40847721283788,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_4_collision",
+          "position_mm": [
+            -15.826245922076163,
+            -0.25714101226741665,
+            1.0425244675430283
+          ],
+          "distance_mm": -1.085617940800839,
+          "normal_world_dyne": [
+            15.298279357018652,
+            839.6372351861913,
+            -115.56261688226911
+          ],
+          "tangential_world_dyne": [
+            257.6550331176725,
+            41.275065643357216,
+            333.9986728806514
+          ],
+          "total_world_dyne": [
+            272.95331247469113,
+            880.9123008295486,
+            218.43605599838227
+          ],
+          "normal_local_force_dyne": 847.6906525868236,
+          "inward_normal_axis_dyne": 15.298279357018652,
+          "inward_tangential_axis_dyne": 257.6550331176725,
+          "inward_total_axis_dyne": 272.95331247469113,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_5_collision",
+          "position_mm": [
+            -15.916749624424424,
+            0.0038681870620047073,
+            0.6364359259147206
+          ],
+          "distance_mm": -0.12399403576775378,
+          "normal_world_dyne": [
+            -156.6354726360069,
+            -9.225809398158125,
+            630.6268826897659
+          ],
+          "tangential_world_dyne": [
+            126.67242832110432,
+            -297.98826777893373,
+            27.10352696305776
+          ],
+          "total_world_dyne": [
+            -29.963044314902582,
+            -307.2140771770919,
+            657.7304096528237
+          ],
+          "normal_local_force_dyne": 649.8538697414735,
+          "inward_normal_axis_dyne": -156.6354726360069,
+          "inward_tangential_axis_dyne": 126.67242832110432,
+          "inward_total_axis_dyne": -29.963044314902582,
+          "decomposition_max_error_dyne": 5.684341886080802e-14
+        },
+        {
+          "fly_geom": "walker/coxa_T2_left_collision",
+          "position_mm": [
+            -15.05724637648677,
+            0.0935925131963379,
+            0.742440594726155
+          ],
+          "distance_mm": -0.06716453379314322,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T2_left_collision",
+          "position_mm": [
+            -15.034375267468498,
+            0.09050513814447755,
+            0.6413077324058014
+          ],
+          "distance_mm": -0.06875053493699754,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T2_right_collision",
+          "position_mm": [
+            -15.057314213261018,
+            -0.09517583980101219,
+            0.7407939171155877
+          ],
+          "distance_mm": -0.06723920360228997,
+          "normal_world_dyne": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T2_right_collision",
+          "position_mm": [
+            -15.034410630345054,
+            -0.09090965799182754,
+            0.6390014082378109
+          ],
+          "distance_mm": -0.06882126069010938,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T3_left_collision",
+          "position_mm": [
+            -15.178615328036004,
+            0.14932658124032605,
+            0.8682821657326181
+          ],
+          "distance_mm": -0.9094620943224199,
+          "normal_world_dyne": [
+            800.1720047889705,
+            1529.1488651045418,
+            -3178.5471778698534
+          ],
+          "tangential_world_dyne": [
+            -1467.1798874312362,
+            1048.5993634110716,
+            135.11463903621882
+          ],
+          "total_world_dyne": [
+            -667.0078826422657,
+            2577.7482285156134,
+            -3043.4325388336347
+          ],
+          "normal_local_force_dyne": 3616.867933840399,
+          "inward_normal_axis_dyne": 800.1720047889705,
+          "inward_tangential_axis_dyne": -1467.1798874312362,
+          "inward_total_axis_dyne": -667.0078826422657,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T3_left_collision",
+          "position_mm": [
+            -15.833331843456047,
+            0.6129586910522599,
+            1.0552118352947895
+          ],
+          "distance_mm": -0.333336313087907,
+          "normal_world_dyne": [
+            -148.5228621995455,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            73.63941526799009,
+            -9.59148935123235
+          ],
+          "total_world_dyne": [
+            -148.5228621995455,
+            73.63941526799009,
+            -9.59148935123235
+          ],
+          "normal_local_force_dyne": 148.5228621995455,
+          "inward_normal_axis_dyne": -148.5228621995455,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -148.5228621995455,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T3_left_collision",
+          "position_mm": [
+            -15.87392545286885,
+            0.6403380555111262,
+            1.0701972081058497
+          ],
+          "distance_mm": -0.252149094262302,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T3_right_collision",
+          "position_mm": [
+            -15.176405791119716,
+            -0.14884396178563333,
+            0.8680446033337114
+          ],
+          "distance_mm": -0.9087665923106149,
+          "normal_world_dyne": [
+            1044.9242108995547,
+            -1158.2753547441716,
+            -3043.83062353238
+          ],
+          "tangential_world_dyne": [
+            -1218.084263517391,
+            -1199.746142772191,
+            38.38277016930528
+          ],
+          "total_world_dyne": [
+            -173.16005261783633,
+            -2358.0214975163626,
+            -3005.4478533630745
+          ],
+          "normal_local_force_dyne": 3420.288477407323,
+          "inward_normal_axis_dyne": 1044.9242108995547,
+          "inward_tangential_axis_dyne": -1218.084263517391,
+          "inward_total_axis_dyne": -173.16005261783633,
+          "decomposition_max_error_dyne": 2.842170943040401e-14
+        },
+        {
+          "fly_geom": "walker/femur_T3_right_collision",
+          "position_mm": [
+            -15.828372884181661,
+            -0.6055436605162372,
+            1.0567108937183247
+          ],
+          "distance_mm": -0.3432542316366811,
+          "normal_world_dyne": [
+            -208.3792613239178,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -103.54969361479647,
+            11.52996486365796
+          ],
+          "total_world_dyne": [
+            -208.3792613239178,
+            -103.54969361479647,
+            11.52996486365796
+          ],
+          "normal_local_force_dyne": 208.3792613239178,
+          "inward_normal_axis_dyne": -208.3792613239178,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -208.3792613239178,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T3_right_collision",
+          "position_mm": [
+            -15.868472012781925,
+            -0.6323826427361979,
+            1.0724926201966147
+          ],
+          "distance_mm": -0.263055974436153,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 9554.592244274083,
+      "summed_inward_tangential_axis_dyne": -9480.352244151334,
+      "summed_inward_total_axis_dyne": 74.24000012274954
+    },
+    {
+      "source": "validation/flybody-habitat-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_x_pos",
+      "axis": 0,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/thorax_collision",
+          "position_mm": [
+            15.16516216416241,
+            2.1898836036500714e-06,
+            1.3178220054174385
+          ],
+          "distance_mm": -0.3369953407392885,
+          "normal_world_dyne": [
+            -9146.961019888191,
+            -0.09757241843855406,
+            1161.9706818297534
+          ],
+          "tangential_world_dyne": [
+            580.9597528968444,
+            42.88592632522257,
+            4573.282683851266
+          ],
+          "total_world_dyne": [
+            -8566.001266991347,
+            42.78835390678401,
+            5735.253365681019
+          ],
+          "normal_local_force_dyne": 9220.47025776377,
+          "inward_normal_axis_dyne": 9146.961019888191,
+          "inward_tangential_axis_dyne": -580.9597528968444,
+          "inward_total_axis_dyne": 8566.001266991347,
+          "decomposition_max_error_dyne": 7.105427357601002e-15
+        },
+        {
+          "fly_geom": "walker/thorax_collision2",
+          "position_mm": [
+            15.112894711673995,
+            4.963929336264706e-07,
+            1.3548451617350443
+          ],
+          "distance_mm": -0.21712468255044512,
+          "normal_world_dyne": [
+            -178.9069799128265,
+            -0.0003775367810779063,
+            -210.81471998835815
+          ],
+          "tangential_world_dyne": [
+            -105.40155094451144,
+            1.4515578500378497,
+            89.44855753258281
+          ],
+          "total_world_dyne": [
+            -284.3085308573379,
+            1.4511803132567718,
+            -121.36616245577534
+          ],
+          "normal_local_force_dyne": 276.49693239788553,
+          "inward_normal_axis_dyne": 178.9069799128265,
+          "inward_tangential_axis_dyne": 105.40155094451144,
+          "inward_total_axis_dyne": 284.3085308573379,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/head_collision",
+          "position_mm": [
+            15.510258074918145,
+            2.1821820678888504e-05,
+            1.3930744421150376
+          ],
+          "distance_mm": -1.5434521467275344,
+          "normal_world_dyne": [
+            -243.72644323919167,
+            -0.2136508002733035,
+            -5802.938861798032
+          ],
+          "tangential_world_dyne": [
+            2280.840381395717,
+            -35.87993707813469,
+            -95.79515849050082
+          ],
+          "total_world_dyne": [
+            2037.1139381565254,
+            -36.09358787840799,
+            -5898.734020288533
+          ],
+          "normal_local_force_dyne": 5808.054929022842,
+          "inward_normal_axis_dyne": 243.72644323919167,
+          "inward_tangential_axis_dyne": -2280.840381395717,
+          "inward_total_axis_dyne": -2037.1139381565254,
+          "decomposition_max_error_dyne": 9.094947017729282e-13
+        },
+        {
+          "fly_geom": "walker/rostrum_collision_right",
+          "position_mm": [
+            15.245907249236906,
+            0.11400379158174344,
+            0.6619081286760973
+          ],
+          "distance_mm": -0.49181449847381165,
+          "normal_world_dyne": [
+            -354.58054163396883,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            3.2087591685562997,
+            177.26123093039234
+          ],
+          "total_world_dyne": [
+            -354.58054163396883,
+            3.2087591685562997,
+            177.26123093039234
+          ],
+          "normal_local_force_dyne": 354.58054163396883,
+          "inward_normal_axis_dyne": 354.58054163396883,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 354.58054163396883,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/rostrum_collision_left",
+          "position_mm": [
+            15.245907297873863,
+            -0.11399620841822776,
+            0.661908068207544
+          ],
+          "distance_mm": -0.49181459574772723,
+          "normal_world_dyne": [
+            -374.1783080823643,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            3.067519063192649,
+            187.06400478617508
+          ],
+          "total_world_dyne": [
+            -374.1783080823643,
+            3.067519063192649,
+            187.06400478617508
+          ],
+          "normal_local_force_dyne": 374.1783080823643,
+          "inward_normal_axis_dyne": 374.1783080823643,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 374.1783080823643,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/rostrum_collision",
+          "position_mm": [
+            15.495898322516666,
+            6.549440184856851e-06,
+            1.018073501706064
+          ],
+          "distance_mm": -1.0625917268447178,
+          "normal_world_dyne": [
+            23.2302198188645,
+            -0.0803153518023247,
+            -2470.624841404498
+          ],
+          "tangential_world_dyne": [
+            1235.3107470460084,
+            2.034327492233066,
+            11.615028040616231
+          ],
+          "total_world_dyne": [
+            1258.5409668648729,
+            1.9540121404307416,
+            -2459.0098133638817
+          ],
+          "normal_local_force_dyne": 2470.7340521651436,
+          "inward_normal_axis_dyne": -23.2302198188645,
+          "inward_tangential_axis_dyne": -1235.3107470460084,
+          "inward_total_axis_dyne": -1258.5409668648729,
+          "decomposition_max_error_dyne": 2.220446049250313e-16
+        },
+        {
+          "fly_geom": "walker/haustellum_collision",
+          "position_mm": [
+            15.272008837302867,
+            3.6966693868168686e-06,
+            0.7745426154049393
+          ],
+          "distance_mm": -0.544017674605733,
+          "normal_world_dyne": [
+            -1934.6775027924152,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            16.49630174781995,
+            967.1980831150456
+          ],
+          "total_world_dyne": [
+            -1934.6775027924152,
+            16.49630174781995,
+            967.1980831150456
+          ],
+          "normal_local_force_dyne": 1934.6775027924152,
+          "inward_normal_axis_dyne": 1934.6775027924152,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 1934.6775027924152,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/labrum_left_lower_collision",
+          "position_mm": [
+            15.522258211859663,
+            0.031090729626691162,
+            0.7486739975626322
+          ],
+          "distance_mm": -0.7704706865045567,
+          "normal_world_dyne": [
+            89.6251969857076,
+            -1382.8583740430945,
+            -1200.7601490359625
+          ],
+          "tangential_world_dyne": [
+            1508.1346920167562,
+            -626.3412806155153,
+            833.8952242585071
+          ],
+          "total_world_dyne": [
+            1597.7598890024638,
+            -2009.19965465861,
+            -366.86492477745537
+          ],
+          "normal_local_force_dyne": 1833.6179793263113,
+          "inward_normal_axis_dyne": -89.6251969857076,
+          "inward_tangential_axis_dyne": -1508.1346920167562,
+          "inward_total_axis_dyne": -1597.7598890024638,
+          "decomposition_max_error_dyne": 2.2737367544323206e-13
+        },
+        {
+          "fly_geom": "walker/labrum_right_lower_collision",
+          "position_mm": [
+            15.522169284544452,
+            -0.03079971584543713,
+            0.7491140244244654
+          ],
+          "distance_mm": -0.7709314181439277,
+          "normal_world_dyne": [
+            89.02486718658044,
+            1391.7880449743532,
+            -1205.1358374203417
+          ],
+          "tangential_world_dyne": [
+            1538.155324384533,
+            606.788682416686,
+            814.3939272271624
+          ],
+          "total_world_dyne": [
+            1627.1801915711135,
+            1998.5767273910394,
+            -390.7419101931792
+          ],
+          "normal_local_force_dyne": 1843.1906509490407,
+          "inward_normal_axis_dyne": -89.02486718658044,
+          "inward_tangential_axis_dyne": -1538.155324384533,
+          "inward_total_axis_dyne": -1627.1801915711135,
+          "decomposition_max_error_dyne": 2.2737367544323206e-13
+        },
+        {
+          "fly_geom": "walker/antenna_left_collision",
+          "position_mm": [
+            15.87942253350745,
+            0.09826082666425588,
+            1.2563729577523612
+          ],
+          "distance_mm": -0.24115493298509905,
+          "normal_world_dyne": [
+            2466.8100068825015,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            221.65679737101794,
+            1213.3244276339017
+          ],
+          "total_world_dyne": [
+            2466.8100068825015,
+            221.65679737101794,
+            1213.3244276339017
+          ],
+          "normal_local_force_dyne": 2466.8100068825015,
+          "inward_normal_axis_dyne": -2466.8100068825015,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": -2466.8100068825015,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/antenna_right_collision",
+          "position_mm": [
+            15.880102894043615,
+            -0.10406218068097094,
+            1.2549459474223634
+          ],
+          "distance_mm": -0.2397942119127714,
+          "normal_world_dyne": [
+            2445.290637558572,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -223.96064437770698,
+            1201.9580713580754
+          ],
+          "total_world_dyne": [
+            2445.290637558572,
+            -223.96064437770698,
+            1201.9580713580754
+          ],
+          "normal_local_force_dyne": 2445.290637558572,
+          "inward_normal_axis_dyne": -2445.290637558572,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": -2445.290637558572,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T1_left_collision",
+          "position_mm": [
+            15.08476827581983,
+            0.1893761493646831,
+            0.8953422423281272
+          ],
+          "distance_mm": -0.10588580862459396,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T1_left_collision",
+          "position_mm": [
+            15.16734028265531,
+            0.5178652128244359,
+            0.9823984478718195
+          ],
+          "distance_mm": -0.33468056531061946,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T1_left_collision",
+          "position_mm": [
+            15.267233519800115,
+            0.7017359660317404,
+            0.556354862132483
+          ],
+          "distance_mm": -0.534467039600226,
+          "normal_world_dyne": [
+            -82.26991444972492,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            12.457932966218534,
+            39.20311992814436
+          ],
+          "total_world_dyne": [
+            -82.26991444972492,
+            12.457932966218534,
+            39.20311992814436
+          ],
+          "normal_local_force_dyne": 82.26991444972492,
+          "inward_normal_axis_dyne": 82.26991444972492,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 82.26991444972492,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T1_left_collision",
+          "position_mm": [
+            15.593272009718248,
+            0.7790764344051876,
+            0.18772581644351138
+          ],
+          "distance_mm": -0.3754516328870229,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -113.36789184396602
+          ],
+          "tangential_world_dyne": [
+            53.99565022247249,
+            17.249332808508864,
+            -0.0
+          ],
+          "total_world_dyne": [
+            53.99565022247249,
+            17.249332808508864,
+            -113.36789184396602
+          ],
+          "normal_local_force_dyne": 113.36789184396602,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -53.99565022247249,
+          "inward_total_axis_dyne": -53.99565022247249,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T1_left_collision",
+          "position_mm": [
+            15.646354944481866,
+            0.8197343222343754,
+            0.12619401338778702
+          ],
+          "distance_mm": -0.25238802677557426,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T1_left_collision",
+          "position_mm": [
+            15.678597383368942,
+            0.8485852393659478,
+            0.08568975669152934
+          ],
+          "distance_mm": -0.17137951338305873,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T1_left_collision",
+          "position_mm": [
+            15.704743591308329,
+            0.8704027081312518,
+            0.04346496916667886
+          ],
+          "distance_mm": -0.08692993833335735,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T1_left_collision",
+          "position_mm": [
+            15.704743591308333,
+            0.8704027081312518,
+            0.04601496916667891
+          ],
+          "distance_mm": -0.0920299383333579,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T1_right_collision",
+          "position_mm": [
+            15.084476447166688,
+            -0.1922809369902079,
+            0.8954460474705389
+          ],
+          "distance_mm": -0.10554220243177821,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T1_right_collision",
+          "position_mm": [
+            15.17724605318268,
+            -0.516822790565778,
+            0.9850526490579561
+          ],
+          "distance_mm": -0.35449210636535894,
+          "normal_world_dyne": [
+            -644.7507419223235,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            81.391113184481,
+            311.93166959598324
+          ],
+          "total_world_dyne": [
+            -644.7507419223235,
+            81.391113184481,
+            311.93166959598324
+          ],
+          "normal_local_force_dyne": 644.7507419223235,
+          "inward_normal_axis_dyne": 644.7507419223235,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 644.7507419223235,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T1_right_collision",
+          "position_mm": [
+            15.743666515901356,
+            -0.7032751609248564,
+            0.5574793414613401
+          ],
+          "distance_mm": -0.5126669681972884,
+          "normal_world_dyne": [
+            914.063159011882,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -77.08558631700966,
+            -61.38898999876613
+          ],
+          "total_world_dyne": [
+            914.063159011882,
+            -77.08558631700966,
+            -61.38898999876613
+          ],
+          "normal_local_force_dyne": 914.063159011882,
+          "inward_normal_axis_dyne": -914.063159011882,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": -914.063159011882,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T1_right_collision",
+          "position_mm": [
+            15.607628604633526,
+            -0.7681496741889002,
+            0.1881917617461526
+          ],
+          "distance_mm": -0.3763835234923053,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -260.0296346763191
+          ],
+          "tangential_world_dyne": [
+            -129.72583862115297,
+            8.663689832488553,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -129.72583862115297,
+            8.663689832488553,
+            -260.0296346763191
+          ],
+          "normal_local_force_dyne": 260.0296346763191,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 129.72583862115297,
+          "inward_total_axis_dyne": 129.72583862115297,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T1_right_collision",
+          "position_mm": [
+            15.65651473864621,
+            -0.8167981175274264,
+            0.12673078353680256
+          ],
+          "distance_mm": -0.25346156707360534,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -56.75863735904626
+          ],
+          "tangential_world_dyne": [
+            -26.642157086809657,
+            -9.776563531000468,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -26.642157086809657,
+            -9.776563531000468,
+            -56.75863735904626
+          ],
+          "normal_local_force_dyne": 56.75863735904626,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 26.642157086809657,
+          "inward_total_axis_dyne": 26.642157086809657,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T1_right_collision",
+          "position_mm": [
+            15.683477592547499,
+            -0.8476426257226062,
+            0.08603620142771995
+          ],
+          "distance_mm": -0.17207240285543995,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T1_right_collision",
+          "position_mm": [
+            15.703595469803515,
+            -0.8750224758221756,
+            0.04418924303587979
+          ],
+          "distance_mm": -0.08837848607175922,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T1_right_collision",
+          "position_mm": [
+            15.703595469803515,
+            -0.8750224758221756,
+            0.04673924303587984
+          ],
+          "distance_mm": -0.09347848607175921,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -34.334651874823614
+          ],
+          "tangential_world_dyne": [
+            -29.695465673250776,
+            -17.23506999736623,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -29.695465673250776,
+            -17.23506999736623,
+            -34.334651874823614
+          ],
+          "normal_local_force_dyne": 34.334651874823614,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 29.695465673250776,
+          "inward_total_axis_dyne": 29.695465673250776,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T2_left_collision",
+          "position_mm": [
+            15.013172326840273,
+            1.491167727368431,
+            0.16868428041428574
+          ],
+          "distance_mm": -0.02634465368054787,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T2_left_collision",
+          "position_mm": [
+            15.021135638909083,
+            1.5678284218466796,
+            0.10822094884932965
+          ],
+          "distance_mm": -0.04227127781816409,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T2_left_collision",
+          "position_mm": [
+            15.045489486057068,
+            1.640880010036596,
+            0.02915141680845945
+          ],
+          "distance_mm": -0.058302833616919285,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -20.786005042229235
+          ],
+          "tangential_world_dyne": [
+            6.084646490007962,
+            8.425650034005006,
+            -0.0
+          ],
+          "total_world_dyne": [
+            6.084646490007962,
+            8.425650034005006,
+            -20.786005042229235
+          ],
+          "normal_local_force_dyne": 20.786005042229235,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -6.084646490007962,
+          "inward_total_axis_dyne": -6.084646490007962,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T2_left_collision",
+          "position_mm": [
+            15.045489486057068,
+            1.6408800100365961,
+            0.031851416808459376
+          ],
+          "distance_mm": -0.06370283361691874,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -27.683401451043625
+          ],
+          "tangential_world_dyne": [
+            16.99491686966541,
+            21.85276908066358,
+            -0.0
+          ],
+          "total_world_dyne": [
+            16.99491686966541,
+            21.85276908066358,
+            -27.683401451043625
+          ],
+          "normal_local_force_dyne": 27.683401451043625,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -16.99491686966541,
+          "inward_total_axis_dyne": -16.99491686966541,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T2_right_collision",
+          "position_mm": [
+            15.000477031218542,
+            -1.3558839846918433,
+            0.27668201458299846
+          ],
+          "distance_mm": -0.0009540624370828329,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T2_right_collision",
+          "position_mm": [
+            15.014010633393038,
+            -1.49244804323838,
+            0.16848286224797615
+          ],
+          "distance_mm": -0.028021266786073563,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T2_right_collision",
+          "position_mm": [
+            15.021999665427376,
+            -1.5686221868343855,
+            0.10790852528541672
+          ],
+          "distance_mm": -0.04399933085475338,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T2_right_collision",
+          "position_mm": [
+            15.048020328602444,
+            -1.6410842662185823,
+            0.029005361686434417
+          ],
+          "distance_mm": -0.058010723372869215,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -19.025508715342617
+          ],
+          "tangential_world_dyne": [
+            6.1911594866782105,
+            -7.222329242004194,
+            -0.0
+          ],
+          "total_world_dyne": [
+            6.1911594866782105,
+            -7.222329242004194,
+            -19.025508715342617
+          ],
+          "normal_local_force_dyne": 19.025508715342617,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -6.1911594866782105,
+          "inward_total_axis_dyne": -6.1911594866782105,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T2_right_collision",
+          "position_mm": [
+            15.048020328602442,
+            -1.6410842662185823,
+            0.03170536168643434
+          ],
+          "distance_mm": -0.06341072337286867,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -22.967020820317437
+          ],
+          "tangential_world_dyne": [
+            15.719718499205271,
+            -16.744386989873295,
+            -0.0
+          ],
+          "total_world_dyne": [
+            15.719718499205271,
+            -16.744386989873295,
+            -22.967020820317437
+          ],
+          "normal_local_force_dyne": 22.967020820317437,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -15.719718499205271,
+          "inward_total_axis_dyne": -15.719718499205271,
+          "decomposition_max_error_dyne": 0.0
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 6932.007364476898,
+      "summed_inward_tangential_axis_dyne": -6950.921976982164,
+      "summed_inward_total_axis_dyne": -18.914612505265623
+    },
+    {
+      "source": "validation/flybody-habitat-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_y_neg",
+      "axis": 1,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/thorax_collision",
+          "position_mm": [
+            0.016816541572215384,
+            -12.126467446221177,
+            1.2518548648059715
+          ],
+          "distance_mm": -0.23699999236927632,
+          "normal_world_dyne": [
+            -5.1528035583450186e-05,
+            43.78454587314249,
+            -0.005957211567903924
+          ],
+          "tangential_world_dyne": [
+            -7.050122681266207,
+            -0.0028282237013477927,
+            -20.726007463627248
+          ],
+          "total_world_dyne": [
+            -7.050174209301791,
+            43.78171764944115,
+            -20.73196467519515
+          ],
+          "normal_local_force_dyne": 43.78454627843417,
+          "inward_normal_axis_dyne": 43.78454587314249,
+          "inward_tangential_axis_dyne": -0.0028282237013477927,
+          "inward_total_axis_dyne": 43.78171764944115,
+          "decomposition_max_error_dyne": 7.105427357601002e-15
+        },
+        {
+          "fly_geom": "walker/thorax_collision2",
+          "position_mm": [
+            -0.044535109770491264,
+            -12.051282049888417,
+            1.4970181851583786
+          ],
+          "distance_mm": -0.07999999757664375,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/head_collision",
+          "position_mm": [
+            0.7136281354520513,
+            -12.133505858544751,
+            1.219619212504006
+          ],
+          "distance_mm": -0.254996189761608,
+          "normal_world_dyne": [
+            -8.425659758617853e-06,
+            2.222377678709849,
+            -0.0001393687149227383
+          ],
+          "tangential_world_dyne": [
+            -0.1833657208919542,
+            -6.942421932778082e-05,
+            -1.095955130998826
+          ],
+          "total_world_dyne": [
+            -0.1833741465517128,
+            2.2223082544905215,
+            -1.0960944997137487
+          ],
+          "normal_local_force_dyne": 2.222377683095834,
+          "inward_normal_axis_dyne": 2.222377678709849,
+          "inward_tangential_axis_dyne": -6.942421932778082e-05,
+          "inward_total_axis_dyne": 2.2223082544905215,
+          "decomposition_max_error_dyne": 4.440892098500626e-16
+        },
+        {
+          "fly_geom": "walker/wing_left_membrane_collision",
+          "position_mm": [
+            -1.3519259669160117,
+            -12.106026257235134,
+            1.7101765560030544
+          ],
+          "distance_mm": -0.22356399263539162,
+          "normal_world_dyne": [
+            0.4195230999849183,
+            0.8825908757818628,
+            3.0450269427166243
+          ],
+          "tangential_world_dyne": [
+            -0.0677783137263584,
+            -1.531884178289536,
+            0.4533495409953886
+          ],
+          "total_world_dyne": [
+            0.3517447862585599,
+            -0.6492933025076734,
+            3.4983764837120126
+          ],
+          "normal_local_force_dyne": 3.1979923963800325,
+          "inward_normal_axis_dyne": 0.8825908757818628,
+          "inward_tangential_axis_dyne": -1.531884178289536,
+          "inward_total_axis_dyne": -0.6492933025076734,
+          "decomposition_max_error_dyne": 4.440892098500626e-16
+        },
+        {
+          "fly_geom": "walker/wing_right_brown_collision",
+          "position_mm": [
+            -1.666728242888214,
+            -12.294343925615287,
+            1.5837413927560977
+          ],
+          "distance_mm": -1.6576628818173536,
+          "normal_world_dyne": [
+            -2.7697981864266326,
+            4.304772714136911,
+            -21.92171805274293
+          ],
+          "tangential_world_dyne": [
+            -10.05584035818823,
+            -5.04909338250159,
+            0.27905882870425663
+          ],
+          "total_world_dyne": [
+            -12.825638544614861,
+            -0.7443206683646784,
+            -21.64265922403867
+          ],
+          "normal_local_force_dyne": 22.511432040140516,
+          "inward_normal_axis_dyne": 4.304772714136911,
+          "inward_tangential_axis_dyne": -5.04909338250159,
+          "inward_total_axis_dyne": -0.7443206683646784,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/wing_right_membrane_collision",
+          "position_mm": [
+            -1.6774096391803046,
+            -12.23001721927691,
+            1.5970517240469868
+          ],
+          "distance_mm": -0.4850077623761279,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_collision",
+          "position_mm": [
+            -0.6345306215317361,
+            -12.056257965034442,
+            1.1833763567126958
+          ],
+          "distance_mm": -0.08787924486074208,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_2_collision",
+          "position_mm": [
+            -0.5891907146788573,
+            -12.10000719068372,
+            1.162833853861345
+          ],
+          "distance_mm": -0.17347825583569645,
+          "normal_world_dyne": [
+            0.19445197671597603,
+            83.87183471167263,
+            0.014397266568138401
+          ],
+          "tangential_world_dyne": [
+            1.842188091165758,
+            0.002920697611651436,
+            -41.89554873366571
+          ],
+          "total_world_dyne": [
+            2.036640067881734,
+            83.87475540928428,
+            -41.881151467097574
+          ],
+          "normal_local_force_dyne": 83.87206135987519,
+          "inward_normal_axis_dyne": 83.87183471167263,
+          "inward_tangential_axis_dyne": 0.002920697611651436,
+          "inward_total_axis_dyne": 83.87475540928428,
+          "decomposition_max_error_dyne": 1.4210854715202004e-14
+        },
+        {
+          "fly_geom": "walker/abdomen_3_collision",
+          "position_mm": [
+            -1.0502926794199252,
+            -12.109433311441906,
+            1.0706125799446948
+          ],
+          "distance_mm": -0.19512922810120387,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_4_collision",
+          "position_mm": [
+            -1.2649199247631668,
+            -12.11150675406197,
+            0.9570257853637558
+          ],
+          "distance_mm": -0.20021086480695563,
+          "normal_world_dyne": [
+            -0.11884807965554424,
+            12.138400976216525,
+            -0.028895525412772814
+          ],
+          "tangential_world_dyne": [
+            4.126377748732889,
+            0.02980616794247698,
+            -4.450960883486276
+          ],
+          "total_world_dyne": [
+            4.0075296690773445,
+            12.168207144159002,
+            -4.47985640889905
+          ],
+          "normal_local_force_dyne": 12.139017179197046,
+          "inward_normal_axis_dyne": 12.138400976216525,
+          "inward_tangential_axis_dyne": 0.02980616794247698,
+          "inward_total_axis_dyne": 12.168207144159002,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_5_collision",
+          "position_mm": [
+            -1.1970450459213418,
+            -12.098451546428405,
+            0.9351231207942976
+          ],
+          "distance_mm": -0.17161451480953488,
+          "normal_world_dyne": [
+            0.03964380621438223,
+            11.350725529666638,
+            0.008368254148981515
+          ],
+          "tangential_world_dyne": [
+            3.2559089486633432,
+            -0.007944536996891974,
+            -4.6485639427208625
+          ],
+          "total_world_dyne": [
+            3.2955527548777255,
+            11.342780992669747,
+            -4.640195688571881
+          ],
+          "normal_local_force_dyne": 11.350797844595533,
+          "inward_normal_axis_dyne": 11.350725529666638,
+          "inward_tangential_axis_dyne": -0.007944536996891974,
+          "inward_total_axis_dyne": 11.342780992669747,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_6_collision",
+          "position_mm": [
+            -1.371703267767054,
+            -12.082924039924583,
+            0.8632805129956184
+          ],
+          "distance_mm": -0.13840066263817608,
+          "normal_world_dyne": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_7_collision",
+          "position_mm": [
+            -1.6670031526467677,
+            -12.031958103608822,
+            0.7489638596429102
+          ],
+          "distance_mm": -0.06391620721764427,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T1_right_collision",
+          "position_mm": [
+            0.24374618773307632,
+            -12.04007851750022,
+            0.8937679476804963
+          ],
+          "distance_mm": -0.048325468147638426,
+          "normal_world_dyne": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T1_right_collision",
+          "position_mm": [
+            0.5044921063653602,
+            -12.183411395282889,
+            0.9850526490579561
+          ],
+          "distance_mm": -0.36682279056577566,
+          "normal_world_dyne": [
+            -0.0,
+            1116.841522553303,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -190.6547285235067,
+            -0.0,
+            524.866193535479
+          ],
+          "total_world_dyne": [
+            -190.6547285235067,
+            1116.841522553303,
+            524.866193535479
+          ],
+          "normal_local_force_dyne": 1116.841522553303,
+          "inward_normal_axis_dyne": 1116.841522553303,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": 1116.841522553303,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T1_right_collision",
+          "position_mm": [
+            0.7235330318027116,
+            -12.733537580462427,
+            0.5574793414613401
+          ],
+          "distance_mm": -0.5329248390751462,
+          "normal_world_dyne": [
+            -0.0,
+            -1007.2678663209948,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -15.855954988236105,
+            -0.0,
+            -268.0458370229283
+          ],
+          "total_world_dyne": [
+            -15.855954988236105,
+            -1007.2678663209948,
+            -268.0458370229283
+          ],
+          "normal_local_force_dyne": 1007.2678663209948,
+          "inward_normal_axis_dyne": -1007.2678663209948,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -1007.2678663209948,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T1_right_collision",
+          "position_mm": [
+            0.8076286046335264,
+            -12.568149674188899,
+            0.1881917617461526
+          ],
+          "distance_mm": -0.3763835234923053,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -335.74925898191634
+          ],
+          "tangential_world_dyne": [
+            116.0065000699207,
+            121.34406935756672,
+            -0.0
+          ],
+          "total_world_dyne": [
+            116.0065000699207,
+            121.34406935756672,
+            -335.74925898191634
+          ],
+          "normal_local_force_dyne": 335.74925898191634,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 121.34406935756672,
+          "inward_total_axis_dyne": 121.34406935756672,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T1_right_collision",
+          "position_mm": [
+            0.856514738646207,
+            -12.616798117527424,
+            0.12673078353680256
+          ],
+          "distance_mm": -0.25346156707360534,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -97.56833051695408
+          ],
+          "tangential_world_dyne": [
+            39.66532369782937,
+            28.399944998411762,
+            -0.0
+          ],
+          "total_world_dyne": [
+            39.66532369782937,
+            28.399944998411762,
+            -97.56833051695408
+          ],
+          "normal_local_force_dyne": 97.56833051695408,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 28.399944998411762,
+          "inward_total_axis_dyne": 28.399944998411762,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T1_right_collision",
+          "position_mm": [
+            0.8834775925474971,
+            -12.647642625722604,
+            0.08603620142771995
+          ],
+          "distance_mm": -0.17207240285543995,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -8.964748136939118
+          ],
+          "tangential_world_dyne": [
+            3.5531026381378714,
+            2.7326066186968876,
+            -0.0
+          ],
+          "total_world_dyne": [
+            3.5531026381378714,
+            2.7326066186968876,
+            -8.964748136939118
+          ],
+          "normal_local_force_dyne": 8.964748136939118,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 2.7326066186968876,
+          "inward_total_axis_dyne": 2.7326066186968876,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T1_right_collision",
+          "position_mm": [
+            0.9035954698035137,
+            -12.675022475822173,
+            0.04418924303587979
+          ],
+          "distance_mm": -0.08837848607175922,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T1_right_collision",
+          "position_mm": [
+            0.9035954698035136,
+            -12.675022475822173,
+            0.04673924303587984
+          ],
+          "distance_mm": -0.09347848607175921,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -21.36081460191158
+          ],
+          "tangential_world_dyne": [
+            16.33716815032245,
+            12.935548532828475,
+            -0.0
+          ],
+          "total_world_dyne": [
+            16.33716815032245,
+            12.935548532828475,
+            -21.36081460191158
+          ],
+          "normal_local_force_dyne": 21.36081460191158,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 12.935548532828475,
+          "inward_total_axis_dyne": 12.935548532828475,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T2_right_collision",
+          "position_mm": [
+            -0.15494602745826547,
+            -12.03425368889857,
+            0.8365924771155617
+          ],
+          "distance_mm": -0.042107049469508814,
+          "normal_world_dyne": [
+            8.738938287861995,
+            416.9961931970804,
+            28.322336595867164
+          ],
+          "tangential_world_dyne": [
+            -159.3697430264923,
+            12.486776059779991,
+            -134.67164759027443
+          ],
+          "total_world_dyne": [
+            -150.6308047386303,
+            429.4829692568604,
+            -106.34931099440728
+          ],
+          "normal_local_force_dyne": 418.048261488438,
+          "inward_normal_axis_dyne": 416.9961931970804,
+          "inward_tangential_axis_dyne": 12.486776059779991,
+          "inward_total_axis_dyne": 429.4829692568604,
+          "decomposition_max_error_dyne": 1.4210854715202004e-14
+        },
+        {
+          "fly_geom": "walker/femur_T2_right_collision",
+          "position_mm": [
+            -0.013191996978726278,
+            -12.739314287020651,
+            1.0277561585145052
+          ],
+          "distance_mm": -0.5213714259586998,
+          "normal_world_dyne": [
+            -0.0,
+            -1101.7432616844567,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            219.7967443327007,
+            -0.0,
+            336.6423531817322
+          ],
+          "total_world_dyne": [
+            219.7967443327007,
+            -1101.7432616844567,
+            336.6423531817322
+          ],
+          "normal_local_force_dyne": 1101.7432616844567,
+          "inward_normal_axis_dyne": -1101.7432616844567,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -1101.7432616844567,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T2_right_collision",
+          "position_mm": [
+            0.11556211174506108,
+            -12.92983846765418,
+            0.4835538357375596
+          ],
+          "distance_mm": -0.14032306469163794,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T2_right_collision",
+          "position_mm": [
+            0.11556211174506108,
+            -12.937088467654181,
+            0.48355383573755906
+          ],
+          "distance_mm": -0.12582306469163795,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T3_right_collision",
+          "position_mm": [
+            -0.39222281783250457,
+            -12.00805335992245,
+            0.8397787952679412
+          ],
+          "distance_mm": -0.009597396410787485,
+          "normal_world_dyne": [
+            -0.30309961589016493,
+            162.66809107459605,
+            0.9713787599681248
+          ],
+          "tangential_world_dyne": [
+            -73.88730863864657,
+            0.06537093543483577,
+            -34.00216425111154
+          ],
+          "total_world_dyne": [
+            -74.19040825453675,
+            162.73346201003088,
+            -33.03078549114341
+          ],
+          "normal_local_force_dyne": 162.67127373917478,
+          "inward_normal_axis_dyne": 162.66809107459605,
+          "inward_tangential_axis_dyne": 0.06537093543483577,
+          "inward_total_axis_dyne": 162.73346201003088,
+          "decomposition_max_error_dyne": 1.4210854715202004e-14
+        },
+        {
+          "fly_geom": "walker/femur_T3_right_collision",
+          "position_mm": [
+            -0.9111457683633201,
+            -12.229971830258119,
+            1.0567108937183247
+          ],
+          "distance_mm": -0.45994366051623836,
+          "normal_world_dyne": [
+            -0.0,
+            130.18215835847772,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            48.92278531257923,
+            -0.0,
+            42.934946907818876
+          ],
+          "total_world_dyne": [
+            48.92278531257923,
+            130.18215835847772,
+            42.934946907818876
+          ],
+          "normal_local_force_dyne": 130.18215835847772,
+          "inward_normal_axis_dyne": 130.18215835847772,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": 130.18215835847772,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T3_right_collision",
+          "position_mm": [
+            -1.2501721114988071,
+            -12.546803879715942,
+            0.24130044606798629
+          ],
+          "distance_mm": -0.4826008921359721,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -126.41052756117234
+          ],
+          "tangential_world_dyne": [
+            -63.14264852613231,
+            -2.812704513239728,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -63.14264852613231,
+            -2.812704513239728,
+            -126.41052756117234
+          ],
+          "normal_local_force_dyne": 126.41052756117234,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -2.812704513239728,
+          "inward_total_axis_dyne": -2.812704513239728,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T3_right_collision",
+          "position_mm": [
+            -1.5019466214593664,
+            -12.68957167746876,
+            0.14718178435197682
+          ],
+          "distance_mm": -0.2943635687039536,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T3_right_collision",
+          "position_mm": [
+            -1.6556801746801715,
+            -12.769868440530995,
+            0.09650737945905763
+          ],
+          "distance_mm": -0.19301475891811568,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T3_right_collision",
+          "position_mm": [
+            -1.7369060490576873,
+            -12.812902523262412,
+            0.06514768613028687
+          ],
+          "distance_mm": -0.1302953722605737,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T3_right_collision",
+          "position_mm": [
+            -1.8124615969098945,
+            -12.852256640370639,
+            0.02979571463156805
+          ],
+          "distance_mm": -0.05959142926313603,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -0.0,
+          "inward_total_axis_dyne": -0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T3_right_collision",
+          "position_mm": [
+            -1.8124615969098945,
+            -12.852256640370639,
+            0.0320457146315678
+          ],
+          "distance_mm": -0.06409142926313548,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -5.266685846059485
+          ],
+          "tangential_world_dyne": [
+            4.523305006951062,
+            -2.697719706562334,
+            -0.0
+          ],
+          "total_world_dyne": [
+            4.523305006951062,
+            -2.697719706562334,
+            -5.266685846059485
+          ],
+          "normal_local_force_dyne": 5.266685846059485,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": -2.697719706562334,
+          "inward_total_axis_dyne": -2.697719706562334,
+          "decomposition_max_error_dyne": 0.0
+        }
+      ],
+      "summed_inward_normal_axis_dyne": -123.76791446266732,
+      "summed_inward_tangential_axis_dyne": 165.89479940276206,
+      "summed_inward_total_axis_dyne": 42.1268849400947
+    },
+    {
+      "source": "validation/flybody-habitat-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_y_pos",
+      "axis": 1,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/thorax_collision",
+          "position_mm": [
+            0.016817186490428376,
+            12.126467446293407,
+            1.2518528925341343
+          ],
+          "distance_mm": -0.2369999925141454,
+          "normal_world_dyne": [
+            -0.0003297573288264251,
+            -88.03466412414869,
+            -0.01148022597973635
+          ],
+          "tangential_world_dyne": [
+            -14.651419883917193,
+            0.005467679779632395,
+            -41.50736585629873
+          ],
+          "total_world_dyne": [
+            -14.651749641246019,
+            -88.02919644436906,
+            -41.51884608227847
+          ],
+          "normal_local_force_dyne": 88.03466487330999,
+          "inward_normal_axis_dyne": 88.03466412414869,
+          "inward_tangential_axis_dyne": -0.005467679779632395,
+          "inward_total_axis_dyne": 88.02919644436906,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/thorax_collision2",
+          "position_mm": [
+            -0.044535091283432665,
+            12.05128204989039,
+            1.4970182013732014
+          ],
+          "distance_mm": -0.0799999975800757,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/head_collision",
+          "position_mm": [
+            0.7136281949208012,
+            12.133509848076503,
+            1.2196190114059906
+          ],
+          "distance_mm": -0.2550038097675158,
+          "normal_world_dyne": [
+            -1.1549171151224836e-05,
+            -2.229178594979283,
+            -0.00013584270374016437
+          ],
+          "tangential_world_dyne": [
+            -0.20484307668490415,
+            6.782570411145275e-05,
+            -1.0956042241882078
+          ],
+          "total_world_dyne": [
+            -0.20485462585605535,
+            -2.229110769275171,
+            -1.095740066891948
+          ],
+          "normal_local_force_dyne": 2.2291785991482227,
+          "inward_normal_axis_dyne": 2.229178594979283,
+          "inward_tangential_axis_dyne": -6.782570411145275e-05,
+          "inward_total_axis_dyne": 2.229110769275171,
+          "decomposition_max_error_dyne": 4.440892098500626e-16
+        },
+        {
+          "fly_geom": "walker/wing_left_brown_collision",
+          "position_mm": [
+            -1.6667163468809854,
+            12.294336109163504,
+            1.5837414415473043
+          ],
+          "distance_mm": -1.6576629796735376,
+          "normal_world_dyne": [
+            -2.777722629371684,
+            -4.31696960651981,
+            -21.984487781246386
+          ],
+          "tangential_world_dyne": [
+            -10.057132084129014,
+            5.118689115227169,
+            0.2655826280376809
+          ],
+          "total_world_dyne": [
+            -12.834854713500697,
+            0.8017195087073591,
+            -21.718905153208702
+          ],
+          "normal_local_force_dyne": 22.575864824921123,
+          "inward_normal_axis_dyne": 4.31696960651981,
+          "inward_tangential_axis_dyne": -5.118689115227169,
+          "inward_total_axis_dyne": -0.8017195087073591,
+          "decomposition_max_error_dyne": 3.552713678800501e-15
+        },
+        {
+          "fly_geom": "walker/wing_left_membrane_collision",
+          "position_mm": [
+            -1.6774325453991346,
+            12.230017275009782,
+            1.597054995847145
+          ],
+          "distance_mm": -0.4850079900489917,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/wing_right_membrane_collision",
+          "position_mm": [
+            -1.3494429806415542,
+            12.106024400825433,
+            1.709867176187963
+          ],
+          "distance_mm": -0.22355914706647081,
+          "normal_world_dyne": [
+            0.4137738175738042,
+            -0.871036961071007,
+            3.0056432126982258
+          ],
+          "tangential_world_dyne": [
+            -0.08496419722245242,
+            1.5105382569530141,
+            0.4494514210643637
+          ],
+          "total_world_dyne": [
+            0.3288096203513518,
+            0.6395012958820071,
+            3.4550946337625894
+          ],
+          "normal_local_force_dyne": 3.1565495848632454,
+          "inward_normal_axis_dyne": 0.871036961071007,
+          "inward_tangential_axis_dyne": -1.5105382569530141,
+          "inward_total_axis_dyne": -0.6395012958820071,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_collision",
+          "position_mm": [
+            -0.45329993157531584,
+            12.047499114617404,
+            1.2060584444805669
+          ],
+          "distance_mm": -0.0741972504933566,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_2_collision",
+          "position_mm": [
+            -0.8156483654764859,
+            12.092917212063048,
+            1.1378417110500572
+          ],
+          "distance_mm": -0.1611795690137545,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_3_collision",
+          "position_mm": [
+            -0.756599734596987,
+            12.105411926457093,
+            1.1112758804412306
+          ],
+          "distance_mm": -0.18795872713181225,
+          "normal_world_dyne": [
+            0.6156992209313374,
+            -46.545285027625674,
+            0.06401175806740243
+          ],
+          "tangential_world_dyne": [
+            9.158001823370263,
+            0.09171521902439432,
+            -21.39706232772227
+          ],
+          "total_world_dyne": [
+            9.7737010443016,
+            -46.45356980860128,
+            -21.333050569654866
+          ],
+          "normal_local_force_dyne": 46.549401084640614,
+          "inward_normal_axis_dyne": 46.545285027625674,
+          "inward_tangential_axis_dyne": -0.09171521902439432,
+          "inward_total_axis_dyne": 46.45356980860128,
+          "decomposition_max_error_dyne": 3.552713678800501e-15
+        },
+        {
+          "fly_geom": "walker/abdomen_4_collision",
+          "position_mm": [
+            -1.0022614959059144,
+            12.108768045686507,
+            1.011416040046744
+          ],
+          "distance_mm": -0.19529349938634732,
+          "normal_world_dyne": [
+            0.26570618368197996,
+            -26.76758934385159,
+            0.04622885328231166
+          ],
+          "tangential_world_dyne": [
+            5.3654063290642116,
+            0.03208228914995106,
+            -12.261954562457019
+          ],
+          "total_world_dyne": [
+            5.631112512746191,
+            -26.73550705470164,
+            -12.215725709174707
+          ],
+          "normal_local_force_dyne": 26.7689479838861,
+          "inward_normal_axis_dyne": 26.76758934385159,
+          "inward_tangential_axis_dyne": -0.03208228914995106,
+          "inward_total_axis_dyne": 26.73550705470164,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_5_collision",
+          "position_mm": [
+            -1.4444131964141103,
+            12.098398644368338,
+            0.8736982414196783
+          ],
+          "distance_mm": -0.17152229972987068,
+          "normal_world_dyne": [
+            -0.007554500295310839,
+            -2.202980170705654,
+            -0.002186615011477486
+          ],
+          "tangential_world_dyne": [
+            0.487737391561648,
+            -0.0006922675336902399,
+            -0.9876272721572946
+          ],
+          "total_world_dyne": [
+            0.4801828912663372,
+            -2.2036724382393444,
+            -0.989813887168772
+          ],
+          "normal_local_force_dyne": 2.2029942088626178,
+          "inward_normal_axis_dyne": 2.202980170705654,
+          "inward_tangential_axis_dyne": 0.0006922675336902399,
+          "inward_total_axis_dyne": 2.2036724382393444,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_6_collision",
+          "position_mm": [
+            -1.5961358545662878,
+            12.07825298366571,
+            0.7951684043917682
+          ],
+          "distance_mm": -0.13060464522902573,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/abdomen_7_collision",
+          "position_mm": [
+            -1.6670031526467677,
+            12.030041896391177,
+            0.7489638596429102
+          ],
+          "distance_mm": -0.06008379278235457,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T1_left_collision",
+          "position_mm": [
+            0.24444400925957857,
+            12.037717709964467,
+            0.894255391973868
+          ],
+          "distance_mm": -0.04548443357267785,
+          "normal_world_dyne": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T1_left_collision",
+          "position_mm": [
+            0.48468056531061965,
+            12.183932606412217,
+            0.9823984478718195
+          ],
+          "distance_mm": -0.3678652128244348,
+          "normal_world_dyne": [
+            -0.0,
+            -1179.1395651325977,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -191.2550718881706,
+            -0.0,
+            557.686315048454
+          ],
+          "total_world_dyne": [
+            -191.2550718881706,
+            -1179.1395651325977,
+            557.686315048454
+          ],
+          "normal_local_force_dyne": 1179.1395651325977,
+          "inward_normal_axis_dyne": 1179.1395651325977,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 1179.1395651325977,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T1_left_collision",
+          "position_mm": [
+            0.6982670396002273,
+            12.732767983015872,
+            0.556354862132483
+          ],
+          "distance_mm": -0.5344640339682583,
+          "normal_world_dyne": [
+            -0.0,
+            1137.833037620102,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -45.648324395514926,
+            -0.0,
+            -190.25535446579588
+          ],
+          "total_world_dyne": [
+            -45.648324395514926,
+            1137.833037620102,
+            -190.25535446579588
+          ],
+          "normal_local_force_dyne": 1137.833037620102,
+          "inward_normal_axis_dyne": -1137.833037620102,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": -1137.833037620102,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T1_left_collision",
+          "position_mm": [
+            0.7932720097182469,
+            12.57907643440519,
+            0.18772581644351138
+          ],
+          "distance_mm": -0.3754516328870229,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -361.06585849654243
+          ],
+          "tangential_world_dyne": [
+            122.12607119999105,
+            -132.95623819970243,
+            -0.0
+          ],
+          "total_world_dyne": [
+            122.12607119999105,
+            -132.95623819970243,
+            -361.06585849654243
+          ],
+          "normal_local_force_dyne": 361.06585849654243,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 132.95623819970243,
+          "inward_total_axis_dyne": 132.95623819970243,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T1_left_collision",
+          "position_mm": [
+            0.8463549444818625,
+            12.619734322234377,
+            0.12619401338778702
+          ],
+          "distance_mm": -0.25238802677557426,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -124.86181816101391
+          ],
+          "tangential_world_dyne": [
+            47.51462895529826,
+            -40.496647316276174,
+            -0.0
+          ],
+          "total_world_dyne": [
+            47.51462895529826,
+            -40.496647316276174,
+            -124.86181816101391
+          ],
+          "normal_local_force_dyne": 124.86181816101391,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 40.496647316276174,
+          "inward_total_axis_dyne": 40.496647316276174,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T1_left_collision",
+          "position_mm": [
+            0.8785973833689393,
+            12.648585239365948,
+            0.08568975669152934
+          ],
+          "distance_mm": -0.17137951338305873,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -34.704032134542466
+          ],
+          "tangential_world_dyne": [
+            12.828082551978436,
+            -11.684723344541167,
+            -0.0
+          ],
+          "total_world_dyne": [
+            12.828082551978436,
+            -11.684723344541167,
+            -34.704032134542466
+          ],
+          "normal_local_force_dyne": 34.704032134542466,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 11.684723344541167,
+          "inward_total_axis_dyne": 11.684723344541167,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T1_left_collision",
+          "position_mm": [
+            0.904743591308329,
+            12.670402708131254,
+            0.04346496916667886
+          ],
+          "distance_mm": -0.08692993833335735,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T1_left_collision",
+          "position_mm": [
+            0.904743591308329,
+            12.670402708131254,
+            0.04601496916667891
+          ],
+          "distance_mm": -0.0920299383333579,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -42.08289350721179
+          ],
+          "tangential_world_dyne": [
+            30.33897915896761,
+            -29.163612079628564,
+            -0.0
+          ],
+          "total_world_dyne": [
+            30.33897915896761,
+            -29.163612079628564,
+            -42.08289350721179
+          ],
+          "normal_local_force_dyne": 42.08289350721179,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 29.163612079628564,
+          "inward_total_axis_dyne": 29.163612079628564,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T2_left_collision",
+          "position_mm": [
+            -0.1546308389566921,
+            12.033572201010365,
+            0.8378373936663155
+          ],
+          "distance_mm": -0.04130004438025228,
+          "normal_world_dyne": [
+            8.918682496619786,
+            -424.3129587678155,
+            28.40656354154184
+          ],
+          "tangential_world_dyne": [
+            -157.3676126657964,
+            -12.846795541969005,
+            -142.48643798682727
+          ],
+          "total_world_dyne": [
+            -148.4489301691766,
+            -437.1597543097845,
+            -114.07987444528543
+          ],
+          "normal_local_force_dyne": 425.3562774052042,
+          "inward_normal_axis_dyne": 424.3129587678155,
+          "inward_tangential_axis_dyne": 12.846795541969005,
+          "inward_total_axis_dyne": 437.1597543097845,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/femur_T2_left_collision",
+          "position_mm": [
+            -0.014496780913709033,
+            12.734065959352051,
+            1.029380471794017
+          ],
+          "distance_mm": -0.5318680812958952,
+          "normal_world_dyne": [
+            -0.0,
+            1130.9746834401294,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            223.72771316559997,
+            -0.0,
+            348.0208562754684
+          ],
+          "total_world_dyne": [
+            223.72771316559997,
+            1130.9746834401294,
+            348.0208562754684
+          ],
+          "normal_local_force_dyne": 1130.9746834401294,
+          "inward_normal_axis_dyne": -1130.9746834401294,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": -1130.9746834401294,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T2_left_collision",
+          "position_mm": [
+            0.11329326202402755,
+            12.927113940373559,
+            0.4847439627131833
+          ],
+          "distance_mm": -0.14577211925288483,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T2_left_collision",
+          "position_mm": [
+            0.11329326202402755,
+            12.934313940373558,
+            0.4847439627131833
+          ],
+          "distance_mm": -0.1313721192528826,
+          "normal_world_dyne": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": -0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/coxa_T3_left_collision",
+          "position_mm": [
+            -0.38817367883248255,
+            12.00477079389377,
+            0.8425695886630635
+          ],
+          "distance_mm": -0.005634572031771168,
+          "normal_world_dyne": [
+            -0.09702841906541868,
+            -180.47940488105584,
+            0.37643223622204475
+          ],
+          "tangential_world_dyne": [
+            -78.90386812693494,
+            -0.048910987092894195,
+            -43.78834180250798
+          ],
+          "total_world_dyne": [
+            -79.00089654600035,
+            -180.52831586814872,
+            -43.411909566285935
+          ],
+          "normal_local_force_dyne": 180.4798235315035,
+          "inward_normal_axis_dyne": 180.47940488105584,
+          "inward_tangential_axis_dyne": 0.048910987092894195,
+          "inward_total_axis_dyne": 180.52831586814872,
+          "decomposition_max_error_dyne": 1.4210854715202004e-14
+        },
+        {
+          "fly_geom": "walker/femur_T3_left_collision",
+          "position_mm": [
+            -0.9210636869120927,
+            12.233679345526129,
+            1.0552118352947895
+          ],
+          "distance_mm": -0.46735869105226047,
+          "normal_world_dyne": [
+            -0.0,
+            -130.33264201189175,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            48.876734210307106,
+            -0.0,
+            43.10120933784778
+          ],
+          "total_world_dyne": [
+            48.876734210307106,
+            -130.33264201189175,
+            43.10120933784778
+          ],
+          "normal_local_force_dyne": 130.33264201189175,
+          "inward_normal_axis_dyne": 130.33264201189175,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 130.33264201189175,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tibia_T3_left_collision",
+          "position_mm": [
+            -1.249895192517372,
+            12.550025156969793,
+            0.24060421100475626
+          ],
+          "distance_mm": -0.4812084220095121,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -127.44398342737472
+          ],
+          "tangential_world_dyne": [
+            -63.70086560694954,
+            1.640715967068487,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -63.70086560694954,
+            1.640715967068487,
+            -127.44398342737472
+          ],
+          "normal_local_force_dyne": 127.44398342737472,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -1.640715967068487,
+          "inward_total_axis_dyne": -1.640715967068487,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus_T3_left_collision",
+          "position_mm": [
+            -1.5025416194845296,
+            12.687351905161822,
+            0.14603222913128933
+          ],
+          "distance_mm": -0.2920644582625786,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus2_T3_left_collision",
+          "position_mm": [
+            -1.6560197660700209,
+            12.768272589006294,
+            0.0954152748341619
+          ],
+          "distance_mm": -0.19083054966832366,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus3_T3_left_collision",
+          "position_mm": [
+            -1.737559395945729,
+            12.812418042704465,
+            0.06375222450518359
+          ],
+          "distance_mm": -0.12750444901036767,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsus4_T3_left_collision",
+          "position_mm": [
+            -1.8134451523990383,
+            12.854892090753182,
+            0.028824171274777766
+          ],
+          "distance_mm": -0.05764834254955602,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "total_world_dyne": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "normal_local_force_dyne": 0.0,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.0,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/tarsal_claw_T3_left_collision",
+          "position_mm": [
+            -1.813445152399038,
+            12.854892090753182,
+            0.031074171274778073
+          ],
+          "distance_mm": -0.06214834254955657,
+          "normal_world_dyne": [
+            -0.0,
+            -0.0,
+            -5.374233410115893
+          ],
+          "tangential_world_dyne": [
+            4.646635582999008,
+            2.7002152701615043,
+            -0.0
+          ],
+          "total_world_dyne": [
+            4.646635582999008,
+            2.7002152701615043,
+            -5.374233410115893
+          ],
+          "normal_local_force_dyne": 5.374233410115893,
+          "inward_normal_axis_dyne": 0.0,
+          "inward_tangential_axis_dyne": -2.7002152701615043,
+          "inward_total_axis_dyne": -2.7002152701615043,
+          "decomposition_max_error_dyne": 0.0
+        }
+      ],
+      "summed_inward_normal_axis_dyne": -183.57544643796896,
+      "summed_inward_tangential_axis_dyne": 216.09812811367567,
+      "summed_inward_total_axis_dyne": 32.5226816757067
+    },
+    {
+      "source": "validation/flybody-habitat-shallow-contact-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_x_neg",
+      "axis": 0,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/wing_left_membrane_collision",
+          "position_mm": [
+            -15.003076719483769,
+            0.2507371935028001,
+            1.7711066683646277
+          ],
+          "distance_mm": -0.009999915144712355,
+          "normal_world_dyne": [
+            0.011911769908122014,
+            0.006184445334714899,
+            0.02871544053372475
+          ],
+          "tangential_world_dyne": [
+            0.013641693680677577,
+            0.004575581014242567,
+            -0.00664430506348591
+          ],
+          "total_world_dyne": [
+            0.02555346358879959,
+            0.010760026348957466,
+            0.022071135470238843
+          ],
+          "normal_local_force_dyne": 0.031697226242811856,
+          "inward_normal_axis_dyne": 0.011911769908122014,
+          "inward_tangential_axis_dyne": 0.013641693680677577,
+          "inward_total_axis_dyne": 0.02555346358879959,
+          "decomposition_max_error_dyne": 3.469446951953614e-18
+        },
+        {
+          "fly_geom": "walker/wing_right_membrane_collision",
+          "position_mm": [
+            -15.003076745323277,
+            -0.250732788369439,
+            1.7711076758305655
+          ],
+          "distance_mm": -0.00999999964900398,
+          "normal_world_dyne": [
+            0.011961999179334203,
+            -0.006210639113667635,
+            0.028836542407830852
+          ],
+          "tangential_world_dyne": [
+            0.013965357102604397,
+            -0.0038113023961909944,
+            -0.006613976503801259
+          ],
+          "total_world_dyne": [
+            0.0259273562819386,
+            -0.010021941509858629,
+            0.02222256590402959
+          ],
+          "normal_local_force_dyne": 0.031830922710553614,
+          "inward_normal_axis_dyne": 0.011961999179334203,
+          "inward_tangential_axis_dyne": 0.013965357102604397,
+          "inward_total_axis_dyne": 0.0259273562819386,
+          "decomposition_max_error_dyne": 3.469446951953614e-18
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 0.02387376908745622,
+      "summed_inward_tangential_axis_dyne": 0.027607050783281975,
+      "summed_inward_total_axis_dyne": 0.05148081987073819
+    },
+    {
+      "source": "validation/flybody-habitat-shallow-contact-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_x_pos",
+      "axis": 0,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/antenna_left_collision",
+          "position_mm": [
+            15.004319639465734,
+            0.09826082666425588,
+            1.2563729577523612
+          ],
+          "distance_mm": -0.008639278931470203,
+          "normal_world_dyne": [
+            -0.5447057170857261,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            0.006269615952855066,
+            -0.27228068508851755
+          ],
+          "total_world_dyne": [
+            -0.5447057170857261,
+            0.006269615952855066,
+            -0.27228068508851755
+          ],
+          "normal_local_force_dyne": 0.5447057170857261,
+          "inward_normal_axis_dyne": 0.5447057170857261,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 0.5447057170857261,
+          "decomposition_max_error_dyne": 0.0
+        },
+        {
+          "fly_geom": "walker/antenna_right_collision",
+          "position_mm": [
+            15.0050000000019,
+            -0.10406218068097094,
+            1.2549459474223634
+          ],
+          "distance_mm": -0.010000000003797856,
+          "normal_world_dyne": [
+            -1.6673541813482444,
+            -0.0,
+            -0.0
+          ],
+          "tangential_world_dyne": [
+            -0.0,
+            0.1505177158407586,
+            -0.29716728218293886
+          ],
+          "total_world_dyne": [
+            -1.6673541813482444,
+            0.1505177158407586,
+            -0.29716728218293886
+          ],
+          "normal_local_force_dyne": 1.6673541813482444,
+          "inward_normal_axis_dyne": 1.6673541813482444,
+          "inward_tangential_axis_dyne": 0.0,
+          "inward_total_axis_dyne": 1.6673541813482444,
+          "decomposition_max_error_dyne": 0.0
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 2.2120598984339708,
+      "summed_inward_tangential_axis_dyne": 0.0,
+      "summed_inward_total_axis_dyne": 2.2120598984339708
+    },
+    {
+      "source": "validation/flybody-habitat-shallow-contact-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_y_neg",
+      "axis": 1,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/tarsal_claw_T2_right_collision",
+          "position_mm": [
+            0.2636809050336555,
+            -12.002210227654903,
+            0.002483149611889335
+          ],
+          "distance_mm": -0.006648650474053337,
+          "normal_world_dyne": [
+            -0.0,
+            1.3502764436996146,
+            -1.5170104399315782
+          ],
+          "tangential_world_dyne": [
+            0.13655024546075406,
+            -1.4789701659775394,
+            -1.3164171606782429
+          ],
+          "total_world_dyne": [
+            0.13655024546075406,
+            -0.12869372227792478,
+            -2.8334276006098214
+          ],
+          "normal_local_force_dyne": 2.0309030378803117,
+          "inward_normal_axis_dyne": 1.3502764436996146,
+          "inward_tangential_axis_dyne": -1.4789701659775394,
+          "inward_total_axis_dyne": -0.12869372227792478,
+          "decomposition_max_error_dyne": 4.440892098500626e-16
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 1.3502764436996146,
+      "summed_inward_tangential_axis_dyne": -1.4789701659775394,
+      "summed_inward_total_axis_dyne": -0.12869372227792478
+    },
+    {
+      "source": "validation/flybody-habitat-shallow-contact-results.json",
+      "original_overall_passed": false,
+      "wall": "habitat_wall_y_pos",
+      "axis": 1,
+      "active_contacts": [
+        {
+          "fly_geom": "walker/tarsal_claw_T2_left_collision",
+          "position_mm": [
+            0.26057862186623104,
+            12.002191037926988,
+            0.002480835030195805
+          ],
+          "distance_mm": -0.0066197249624276935,
+          "normal_world_dyne": [
+            -0.0,
+            -1.3434450960964999,
+            -1.5211355378605143
+          ],
+          "tangential_world_dyne": [
+            0.13816437406834153,
+            1.4843393256664277,
+            -1.3109472090925571
+          ],
+          "total_world_dyne": [
+            0.13816437406834153,
+            0.14089422956992792,
+            -2.8320827469530716
+          ],
+          "normal_local_force_dyne": 2.0294575755033484,
+          "inward_normal_axis_dyne": 1.3434450960964999,
+          "inward_tangential_axis_dyne": -1.4843393256664277,
+          "inward_total_axis_dyne": -0.14089422956992792,
+          "decomposition_max_error_dyne": 1.1102230246251565e-16
+        }
+      ],
+      "summed_inward_normal_axis_dyne": 1.3434450960964999,
+      "summed_inward_tangential_axis_dyne": -1.4843393256664277,
+      "summed_inward_total_axis_dyne": -0.14089422956992792
+    }
+  ],
+  "native_steps": 0,
+  "changed_gates": false,
+  "interpretation": "Positive-x deep-overlap net-axis gate and both shallow y-wall net-axis gates remain failed. All shallow probes have inward normal force. At the y-wall lower edges, a larger tangential horizontal component reverses total horizontal force. This is saved-data decomposition, not a new successful controller trial or a revised pass threshold."
+}

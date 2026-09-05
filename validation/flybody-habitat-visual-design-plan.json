@@ -1,0 +1,14 @@
+{
+  "prepared_utc": "2026-09-05T04:04:08.418186+00:00",
+  "phase": "before_visual_runtime_edits",
+  "source_sha256": {
+    "fruitfly/flybody_worker.py": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+    "fruitfly/flybody_habitat.py": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+    "validation/flybody-habitat-results.json": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+    "validation/flybody-habitat-shallow-contact-results.json": "5056bdd20c270ea3690d9864eca05d62286991e257f0a477a11f8b6dff9ca65e"
+  },
+  "problem": "Saved initial overview and actual browser exhibit severe resource-marker depth conflict; reference ghost and trajectory dots appear as extra animals/path.",
+  "change": "Use existing dm-control MovableCamera scene_callback to modify only derived MjvScene after update: translate rendered resource site geoms upward by 0.05 mm; set rendered ghost geom and traj site alpha to zero. Do not change MjModel, MjData, controller, contacts, resource geometry or actor observations.",
+  "units": "Rendered offset 0.05 mm = 0.005 cm, explicitly visualization only; compiled sensing plane remains z=0.",
+  "validation": "Freeze visual execution plan after patch. Record paused native arrays, cached/actual actor, clocks and full binary compiled MjModel digest before/after three cameras and repeat render; save scene edits and screenshots. Compare first 100 actual actor/native states against retained original habitat wall trial after those renders. Inspect corrected screenshots; preserve original failed display, trials and both failed force gates."
+}

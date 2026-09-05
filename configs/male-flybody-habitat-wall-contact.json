@@ -1,0 +1,44 @@
+{
+  "seed": 11,
+  "connectome": "data/processed/malecns_v1",
+  "neural_model": "shiu",
+  "body_backend": "flybody",
+  "coupling_s": 0.002,
+  "assay": "controller_only",
+  "enable_taste": true,
+  "proprioception": {
+    "max_rate_hz": 30,
+    "half_speed_rad_s": 5
+  },
+  "body": {
+    "reference_mode": "rolling",
+    "horizon_s": null,
+    "food_position_mm": [
+      6,
+      0
+    ],
+    "food_radius_mm": 3,
+    "water_position_mm": [
+      5,
+      7
+    ],
+    "water_radius_mm": 2,
+    "habitat": {
+      "inner_size_mm": [
+        30,
+        24
+      ],
+      "center_mm": [
+        0,
+        0
+      ],
+      "wall_height_mm": 6,
+      "wall_thickness_mm": 1
+    }
+  },
+  "viewer": {
+    "camera": "overview",
+    "fps": 8,
+    "step_seconds": 0.01
+  }
+}

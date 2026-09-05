@@ -1,0 +1,2648 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T04:04:28.336670+00:00",
+  "reviewer_sha256": "db22fca60e84fa24c2e27b8f821fa49d25922236c21059a3d1ef53075d3593b5",
+  "scope": "Independent source inspection, saved native states/actor arrays/contact geometry and pure floor-contact predicate; no physics, policy or neural execution.",
+  "cases": [
+    {
+      "case": "frozen_default",
+      "saved_samples": 1001,
+      "native_intervals_reached": 1000,
+      "actor_values": 741741,
+      "endpoint_time_s": 1.9999999999998124,
+      "native_failure": null
+    },
+    {
+      "case": "new_default",
+      "saved_samples": 1001,
+      "native_intervals_reached": 1000,
+      "actor_values": 741741,
+      "endpoint_time_s": 1.9999999999998124,
+      "native_failure": null
+    },
+    {
+      "case": "rolling_prefix",
+      "saved_samples": 251,
+      "native_intervals_reached": 250,
+      "actor_values": 185991,
+      "endpoint_time_s": 0.4999999999999776,
+      "native_failure": null
+    },
+    {
+      "case": "habitat_wall_push",
+      "saved_samples": 385,
+      "native_intervals_reached": 384,
+      "actor_values": 285285,
+      "endpoint_time_s": 0.7679999999999481,
+      "native_failure": {
+        "type": "RuntimeError",
+        "message": "Source physical failure at tick 384",
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/validate_flybody_habitat.py\", line 243, in run_case\n    worker.advance(*command)\n  File \"/Users/bernardo/Documents/Code/fruit-fly/fruitfly/flybody_worker.py\", line 266, in advance\n    raise RuntimeError(\"Source physical failure at tick \" + str(self.tick))\nRuntimeError: Source physical failure at tick 384\n",
+        "attempted_interval": 383,
+        "native_time_s": 0.7679999999999481,
+        "worker_failed": true
+      }
+    },
+    {
+      "case": "offset_geometry",
+      "saved_samples": 1,
+      "native_intervals_reached": 0,
+      "actor_values": 741,
+      "endpoint_time_s": 0.0,
+      "native_failure": null
+    }
+  ],
+  "simulation_rerun": false,
+  "plan_sha256": "a9a5c7dc77124d6008d78ceb9c98b7785c02ff15ce47d3db926d262fd94c4397",
+  "passed": true,
+  "producer_validation_passed": false,
+  "producer_failed_gates": [
+    "all_four_wall_probes_inward_contact"
+  ],
+  "wall_trial": {
+    "end_time_s": 0.7679999999999481,
+    "endpoint_root_mm": [
+      12.883292442931424,
+      1.7135839920453366
+    ],
+    "first_contact_time_s": 0.6659999999999593,
+    "first_active_force_time_s": 0.6659999999999593,
+    "minimum_contact_distance_mm": -0.042018476303531616,
+    "maximum_contact_force_dyne": 6.031158398580871,
+    "active_contact_samples": 35,
+    "source_terminated": true,
+    "endpoint_guard_diagnostics": {
+      "qacc_norm": 60481.88288222551,
+      "linear_cm_s": 8.221485703006726,
+      "angular_rad_s": 54.823693623754075,
+      "reference_error_cm": 0.30404789467590226
+    },
+    "native_failure": {
+      "type": "RuntimeError",
+      "message": "Source physical failure at tick 384",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/validate_flybody_habitat.py\", line 243, in run_case\n    worker.advance(*command)\n  File \"/Users/bernardo/Documents/Code/fruit-fly/fruitfly/flybody_worker.py\", line 266, in advance\n    raise RuntimeError(\"Source physical failure at tick \" + str(self.tick))\nRuntimeError: Source physical failure at tick 384\n",
+      "attempted_interval": 383,
+      "native_time_s": 0.7679999999999481,
+      "worker_failed": true
+    }
+  },
+  "deep_probe_outcomes": [
+    {
+      "wall": "habitat_wall_x_neg",
+      "active_contacts": 21,
+      "inward_force": true,
+      "summed_force_world_dyne_on_fly": [
+        74.24000012274976,
+        94.52161734852922,
+        -313.4756310516185
+      ],
+      "minimum_distance_mm": -1.5756737778521304,
+      "normal_axes_with_wall_outward_sign": [
+        -0.9941692973325938,
+        -0.5878961275961031,
+        0.13408046174020996,
+        0.14970744400074495,
+        0.13408046174111835,
+        0.1497074421432278,
+        -0.1241846670676054,
+        -0.10970159661865493,
+        -0.1367106027498107,
+        -0.01804700725475057,
+        0.2410318379704656,
+        -0.999610603630233,
+        -1.0,
+        -0.9996128251633934,
+        -1.0,
+        -0.22123340399087948,
+        1.0,
+        1.0,
+        -0.30550762539528165,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "wall": "habitat_wall_x_pos",
+      "active_contacts": 36,
+      "inward_force": false,
+      "summed_force_world_dyne_on_fly": [
+        18.914612505265723,
+        41.9223160164847,
+        -19.864599831942062
+      ],
+      "minimum_distance_mm": -1.5434521467275344,
+      "normal_axes_with_wall_outward_sign": [
+        -0.9920276042522144,
+        -0.6470486972903381,
+        -0.04196352242147212,
+        -1.0,
+        -1.0,
+        0.009402153096367247,
+        -1.0,
+        0.04887888207697263,
+        0.04829932657305006,
+        1.0,
+        1.0,
+        -0.9848891401279367,
+        -1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.9848902254105837,
+        -1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "wall": "habitat_wall_y_neg",
+      "active_contacts": 33,
+      "inward_force": true,
+      "summed_force_world_dyne_on_fly": [
+        -56.03733544497376,
+        42.12688494009457,
+        -189.27635100820592
+      ],
+      "minimum_distance_mm": -1.6576628818173536,
+      "normal_axes_with_wall_outward_sign": [
+        -0.9999999907434993,
+        -0.9999999843351048,
+        -0.9999999980264448,
+        -0.2759827936992319,
+        -0.1912260715560431,
+        -0.24242749971505986,
+        -0.9999999294157573,
+        -0.9999972976912826,
+        -0.9999116753010734,
+        -0.9999492378195514,
+        -0.9999936290884671,
+        -0.999993585674614,
+        -1.0,
+        -0.998793924104043,
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.9974833807761531,
+        1.0,
+        1.0,
+        1.0,
+        -0.9999804349931886,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "wall": "habitat_wall_y_pos",
+      "active_contacts": 33,
+      "inward_force": true,
+      "summed_force_world_dyne_on_fly": [
+        -49.47289669260787,
+        -32.52268167570668,
+        -189.88856378701308
+      ],
+      "minimum_distance_mm": -1.6576629796735376,
+      "normal_axes_with_wall_outward_sign": [
+        -0.9999999914901556,
+        -0.9999999841227474,
+        -0.9999999981298313,
+        -0.1912205640846316,
+        -0.2424272088396934,
+        -0.275945914250146,
+        -0.9999999293843758,
+        -0.9999972973334145,
+        -0.9999115765848962,
+        -0.9999492456694478,
+        -0.9999936276922984,
+        -0.9999935848377691,
+        -1.0,
+        -0.9989081983787061,
+        -1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.9975471888089832,
+        1.0,
+        1.0,
+        1.0,
+        -0.999997680347645,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "shallow_addendum": {
+    "producer_validation_passed": false,
+    "producer_check_count": 31,
+    "producer_failed_gates": [
+      "habitat_wall_y_neg_active_inward_force",
+      "habitat_wall_y_pos_active_inward_force"
+    ],
+    "probes": [
+      {
+        "wall": "habitat_wall_x_neg",
+        "active_target_contacts": 2,
+        "net_force_inward": true,
+        "summed_world_force_dyne": [
+          0.05148081987073819,
+          0.0007380848390988373,
+          0.044293701374268434
+        ],
+        "normal_component_world_dyne": [
+          0.02387376908745622,
+          -2.6193778952735523e-05,
+          0.0575519829415556
+        ],
+        "tangent_component_world_dyne": [
+          0.027607050783281968,
+          0.0007642786180515728,
+          -0.013258281567287165
+        ],
+        "net_axis_outward_dyne": -0.05148081987073819,
+        "normal_axis_outward_dyne": -0.02387376908745622,
+        "tangent_axis_outward_dyne": -0.027607050783281968,
+        "minimum_contact_distance_mm": -0.00999999964900398,
+        "maximum_inner_plane_error_mm": 0.0030767453232769526,
+        "contact_positions_mm": [
+          [
+            -15.003076719483769,
+            0.2507371935028001,
+            1.7711066683646277
+          ],
+          [
+            -15.003076745323277,
+            -0.250732788369439,
+            1.7711076758305655
+          ]
+        ],
+        "final_translation_cm": [
+          -1.2339963455258256,
+          0.0
+        ]
+      },
+      {
+        "wall": "habitat_wall_x_pos",
+        "active_target_contacts": 2,
+        "net_force_inward": true,
+        "summed_world_force_dyne": [
+          -2.2120598984339708,
+          0.15678733179361368,
+          -0.5694479672714564
+        ],
+        "normal_component_world_dyne": [
+          -2.2120598984339708,
+          0.0,
+          0.0
+        ],
+        "tangent_component_world_dyne": [
+          0.0,
+          0.15678733179361368,
+          -0.5694479672714564
+        ],
+        "net_axis_outward_dyne": -2.2120598984339708,
+        "normal_axis_outward_dyne": -2.2120598984339708,
+        "tangent_axis_outward_dyne": 0.0,
+        "minimum_contact_distance_mm": -0.010000000003797856,
+        "maximum_inner_plane_error_mm": 0.005000000001899707,
+        "contact_positions_mm": [
+          [
+            15.004319639465734,
+            0.09826082666425588,
+            1.2563729577523612
+          ],
+          [
+            15.0050000000019,
+            -0.10406218068097094,
+            1.2549459474223634
+          ]
+        ],
+        "final_translation_cm": [
+          1.395359421191657,
+          0.0
+        ]
+      },
+      {
+        "wall": "habitat_wall_y_neg",
+        "active_target_contacts": 1,
+        "net_force_inward": false,
+        "summed_world_force_dyne": [
+          0.13655024546075406,
+          -0.12869372227792478,
+          -2.8334276006098214
+        ],
+        "normal_component_world_dyne": [
+          0.0,
+          1.3502764436996146,
+          -1.5170104399315782
+        ],
+        "tangent_component_world_dyne": [
+          0.13655024546075406,
+          -1.4789701659775394,
+          -1.316417160678243
+        ],
+        "net_axis_outward_dyne": 0.12869372227792478,
+        "normal_axis_outward_dyne": -1.3502764436996146,
+        "tangent_axis_outward_dyne": 1.4789701659775394,
+        "minimum_contact_distance_mm": -0.006648650474053337,
+        "maximum_inner_plane_error_mm": 0.002210227654902752,
+        "contact_positions_mm": [
+          [
+            0.2636809050336555,
+            -12.002210227654903,
+            0.002483149611889335
+          ]
+        ],
+        "final_translation_cm": [
+          0.0,
+          -1.0290063301890549
+        ]
+      },
+      {
+        "wall": "habitat_wall_y_pos",
+        "active_target_contacts": 1,
+        "net_force_inward": false,
+        "summed_world_force_dyne": [
+          0.13816437406834153,
+          0.14089422956992792,
+          -2.8320827469530716
+        ],
+        "normal_component_world_dyne": [
+          0.0,
+          -1.3434450960964999,
+          -1.5211355378605143
+        ],
+        "tangent_component_world_dyne": [
+          0.13816437406834153,
+          1.484339325666428,
+          -1.3109472090925574
+        ],
+        "net_axis_outward_dyne": 0.14089422956992792,
+        "normal_axis_outward_dyne": -1.3434450960964999,
+        "tangent_axis_outward_dyne": 1.484339325666428,
+        "minimum_contact_distance_mm": -0.0066197249624276935,
+        "maximum_inner_plane_error_mm": 0.0021910379269876046,
+        "contact_positions_mm": [
+          [
+            0.26057862186623104,
+            12.002191037926988,
+            0.002480835030195805
+          ]
+        ],
+        "final_translation_cm": [
+          0.0,
+          1.0289424075981295
+        ]
+      }
+    ],
+    "bisection_iterations_verified": 160,
+    "limits": "Final saved contact forces/normals and arithmetic are independently checked. Intermediate forward states were not retained, so bisection contact counts are recorded outcomes rather than independently recomputed geometry. Normal/tangent decomposition is algebra on fixed contacts, not frictionless counterfactual dynamics."
+  },
+  "limits": [
+    "Independent-review passed means saved evidence agrees with source and claims, not that the producer validation passed: its positive-x deep-overlap probe fails.",
+    "Controller trial stops at 0.768s after native reference-error termination, with no avoidance or sustained-control success claim.",
+    "Root containment only at saved2ms endpoints; finite-height open top does not establish full-mesh or indefinite containment, and soft penetration is observed.",
+    "Contact frame/local forces are retained for independent world-force arithmetic; efc_address is not retained, so active flags are partly grounded in source inspection.",
+    "Detached probe before/after hashes cover nine named native arrays, actor hash, cached observations and clock, not every native model/data field.",
+    "Render and failure-latch nonmutation are producer boolean receipts; their before/after hash dictionaries were not retained for independent equality reconstruction.",
+    "Pure floor-only resource predicate checked in isolation; native trials do not run host ingestion physiology or wall-avoidance neural behavior.",
+    "Compiled metadata and frozen source establish geometry; the complete compiled MuJoCo model was not archived for independent native recompilation.",
+    "Air/odor transport remains unbounded; female-derived body and pretrained policy remain uncalibrated as male morphology or physiology."
+  ],
+  "completed_utc": "2026-09-05T04:04:29.141850+00:00",
+  "checks": [
+    {
+      "name": "frozen-execution-plan",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/validate_flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_worker.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_bridge.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_persistent_task.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_airflow.py",
+      "passed": true
+    },
+    {
+      "name": "hash:configs/male-flybody-rolling-habitat.json",
+      "passed": true
+    },
+    {
+      "name": "hash:tests/test_flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-design-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-walking-acquisition.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-stance-actuator-audit.json",
+      "passed": true
+    },
+    {
+      "name": "hash:tmp/flybody-habitat-baseline/c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb/flybody_worker.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-results.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/frozen_default-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/frozen_default-states.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/frozen_default.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/frozen_default.log",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-follow.png",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-overview.png",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-side.png",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-initial-overview.png",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-states.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.log",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/new_default-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/new_default-states.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/new_default.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/new_default.log",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-initial-overview.png",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-states.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.log",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-states.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.log",
+      "passed": true
+    },
+    {
+      "name": "all-upstream-source-and-asset-files",
+      "passed": true,
+      "files": 223
+    },
+    {
+      "name": "all-frozen-policy-members",
+      "passed": true,
+      "members": 3
+    },
+    {
+      "name": "all-five-planned-cases",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:case-receipt-preserved",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:complete-sample-count",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:consecutive-control-ticks",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:native-clock",
+      "passed": true,
+      "maximum_absolute_error": 1.8762769116165146e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "frozen_default:endpoint-receipt-exact",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:qpos",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:qvel",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:qacc",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:act",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:ctrl",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:canonical_action",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:native_action",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:target_pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:actuator_force_preceding_stage",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:actuator_length",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:actuator_activation",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:velocity_world_mm_s",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:angular_velocity_world_rad_s",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:support_dyne_by_leg",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:ground_force_g_mm_s2",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:antenna_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:claw_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:warnings",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:tick",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:journal-array:native_time_s",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:finite-raw-arrays",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:warnings-zero",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:actual-actor-layout",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:actual-actor-hashes",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:commands-native-action-map-and-integrated-targets",
+      "passed": true
+    },
+    {
+      "name": "frozen_default:qacc-guard-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 1.1641532182693481e-10
+    },
+    {
+      "name": "frozen_default:reference-error-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 9.71445146547012e-17
+    },
+    {
+      "name": "frozen_default:default-habitat-absent",
+      "passed": true
+    },
+    {
+      "name": "new_default:case-receipt-preserved",
+      "passed": true
+    },
+    {
+      "name": "new_default:complete-sample-count",
+      "passed": true
+    },
+    {
+      "name": "new_default:consecutive-control-ticks",
+      "passed": true
+    },
+    {
+      "name": "new_default:native-clock",
+      "passed": true,
+      "maximum_absolute_error": 1.8762769116165146e-13,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "new_default:endpoint-receipt-exact",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:qpos",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:qvel",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:qacc",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:act",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:ctrl",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:canonical_action",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:native_action",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:target_pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:actuator_force_preceding_stage",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:actuator_length",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:actuator_activation",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:velocity_world_mm_s",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:angular_velocity_world_rad_s",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:support_dyne_by_leg",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:ground_force_g_mm_s2",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:antenna_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:claw_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:warnings",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:tick",
+      "passed": true
+    },
+    {
+      "name": "new_default:journal-array:native_time_s",
+      "passed": true
+    },
+    {
+      "name": "new_default:finite-raw-arrays",
+      "passed": true
+    },
+    {
+      "name": "new_default:warnings-zero",
+      "passed": true
+    },
+    {
+      "name": "new_default:actual-actor-layout",
+      "passed": true
+    },
+    {
+      "name": "new_default:actual-actor-hashes",
+      "passed": true
+    },
+    {
+      "name": "new_default:commands-native-action-map-and-integrated-targets",
+      "passed": true
+    },
+    {
+      "name": "new_default:qacc-guard-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 1.1641532182693481e-10
+    },
+    {
+      "name": "new_default:reference-error-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 9.71445146547012e-17
+    },
+    {
+      "name": "new_default:default-habitat-absent",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:case-receipt-preserved",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:complete-sample-count",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:consecutive-control-ticks",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:native-clock",
+      "passed": true,
+      "maximum_absolute_error": 2.2426505097428162e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "rolling_prefix:endpoint-receipt-exact",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:qpos",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:qvel",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:qacc",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:act",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:ctrl",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:canonical_action",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:native_action",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:target_pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:actuator_force_preceding_stage",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:actuator_length",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:actuator_activation",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:velocity_world_mm_s",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:angular_velocity_world_rad_s",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:support_dyne_by_leg",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:ground_force_g_mm_s2",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:antenna_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:claw_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:warnings",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:tick",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:journal-array:native_time_s",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:finite-raw-arrays",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:warnings-zero",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:actual-actor-layout",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:actual-actor-hashes",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:commands-native-action-map-and-integrated-targets",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:qacc-guard-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 1.1641532182693481e-10
+    },
+    {
+      "name": "rolling_prefix:reference-error-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 6.938893903907228e-17
+    },
+    {
+      "name": "rolling_prefix:rolling-reference-and-clock",
+      "passed": true
+    },
+    {
+      "name": "rolling_prefix:default-habitat-absent",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:case-receipt-preserved",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:complete-sample-count",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:consecutive-control-ticks",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:native-clock",
+      "passed": true,
+      "maximum_absolute_error": 5.1958437552457326e-14,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "habitat_wall_push:endpoint-receipt-exact",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:qpos",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:qvel",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:qacc",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:act",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:ctrl",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:canonical_action",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:native_action",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:target_pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:actuator_force_preceding_stage",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:actuator_length",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:actuator_activation",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:velocity_world_mm_s",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:angular_velocity_world_rad_s",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:support_dyne_by_leg",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:ground_force_g_mm_s2",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:antenna_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:claw_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:warnings",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:tick",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:journal-array:native_time_s",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:finite-raw-arrays",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:warnings-zero",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:actual-actor-layout",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:actual-actor-hashes",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:commands-native-action-map-and-integrated-targets",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:qacc-guard-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 1.1641532182693481e-10
+    },
+    {
+      "name": "habitat_wall_push:reference-error-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 3.885780586188048e-16
+    },
+    {
+      "name": "habitat_wall_push:rolling-reference-and-clock",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:geometry-config",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:visible-plane-center",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:visible-plane-half-size",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:four-walls-exact-name-order",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:unique-positive-wall-ids",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:friction",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:solref",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_neg:solimp",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:friction",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:solref",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_x_pos:solimp",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:friction",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:solref",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_neg:solimp",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:friction",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:solref",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:habitat_wall_y_pos:solimp",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:food:visual-center",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:food:radius",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:food:planar-footprint-inside",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:water:visual-center",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:water:radius",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_push:water:planar-footprint-inside",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:metadata-matches-worker-export",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:all-root-containment-values-recomputed",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_push:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 36,
+      "maximum_absolute_error_dyne": 0.0
+    },
+    {
+      "name": "habitat_wall_push:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "offset_geometry:case-receipt-preserved",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:complete-sample-count",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:consecutive-control-ticks",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:native-clock",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "offset_geometry:endpoint-receipt-exact",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:qpos",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:qvel",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:qacc",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:act",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:ctrl",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:canonical_action",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:native_action",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:target_pose_cm_quat",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:actuator_force_preceding_stage",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:actuator_length",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:actuator_activation",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:velocity_world_mm_s",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:angular_velocity_world_rad_s",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:support_dyne_by_leg",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:ground_force_g_mm_s2",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:antenna_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:claw_positions_mm",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:warnings",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:tick",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:journal-array:native_time_s",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:finite-raw-arrays",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:warnings-zero",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:actual-actor-layout",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:actual-actor-hashes",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:commands-native-action-map-and-integrated-targets",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:qacc-guard-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "offset_geometry:reference-error-recomputed",
+      "passed": true,
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "offset_geometry:rolling-reference-and-clock",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:geometry-config",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:visible-plane-center",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:visible-plane-half-size",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:four-walls-exact-name-order",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:unique-positive-wall-ids",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:friction",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:solref",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_neg:solimp",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:friction",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:solref",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_x_pos:solimp",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:friction",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:solref",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_neg:solimp",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:center-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:half-size-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:inner-face-mm",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:collision-settings",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:friction",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:solref",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:habitat_wall_y_pos:solimp",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:food:visual-center",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:food:radius",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:food:planar-footprint-inside",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:water:visual-center",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:water:radius",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "offset_geometry:water:planar-footprint-inside",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:metadata-matches-worker-export",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:all-root-containment-values-recomputed",
+      "passed": true
+    },
+    {
+      "name": "offset_geometry:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 0,
+      "maximum_absolute_error_dyne": 0.0
+    },
+    {
+      "name": "offset_geometry:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "default:actor-key-order-and-shapes",
+      "passed": true
+    },
+    {
+      "name": "default:all-actual-actor-values-exact",
+      "passed": true
+    },
+    {
+      "name": "default:every-legacy-state-field-exact",
+      "passed": true
+    },
+    {
+      "name": "precontact:actor-key-order-and-shapes",
+      "passed": true
+    },
+    {
+      "name": "precontact:all-actual-actor-values-exact",
+      "passed": true
+    },
+    {
+      "name": "precontact:every-legacy-state-field-exact",
+      "passed": true
+    },
+    {
+      "name": "precontact:no-wall-records",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:all-outcome-fields-recomputed",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:root-contained-at-all-saved-endpoints",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:only-positive-x-wall-contact",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:source-failure-kept",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:reference-threshold-alone-crossed",
+      "passed": true
+    },
+    {
+      "name": "wall-trial:failure-latch-source-receipt",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:named-live-state-hashes-equal",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:named-live-array-scope",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:zero-time-and-actor-match",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:initial-array-hash:qpos",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:initial-array-hash:qvel",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:initial-array-hash:qacc",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:initial-array-hash:act",
+      "passed": true
+    },
+    {
+      "name": "detached-probes:initial-array-hash:ctrl",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_neg:prespecified-deep-probe-translation",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_x_neg:probe-qpos-only-translated-root",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_neg:probe-qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_neg:zero-step-clock",
+      "passed": true
+    },
+    {
+      "name": "detached:habitat_wall_x_neg:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 21,
+      "maximum_absolute_error_dyne": 1.1368683772161603e-13
+    },
+    {
+      "name": "detached:habitat_wall_x_neg:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "habitat_wall_x_neg:summed-contact-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "habitat_wall_x_neg:reported-probe-status-correct",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_pos:prespecified-deep-probe-translation",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_x_pos:probe-qpos-only-translated-root",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_pos:probe-qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_x_pos:zero-step-clock",
+      "passed": true
+    },
+    {
+      "name": "detached:habitat_wall_x_pos:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 36,
+      "maximum_absolute_error_dyne": 2.2737367544323206e-13
+    },
+    {
+      "name": "detached:habitat_wall_x_pos:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "habitat_wall_x_pos:summed-contact-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "habitat_wall_x_pos:reported-probe-status-correct",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_neg:prespecified-deep-probe-translation",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_y_neg:probe-qpos-only-translated-root",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_neg:probe-qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_neg:zero-step-clock",
+      "passed": true
+    },
+    {
+      "name": "detached:habitat_wall_y_neg:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 33,
+      "maximum_absolute_error_dyne": 1.4210854715202004e-14
+    },
+    {
+      "name": "detached:habitat_wall_y_neg:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 6.661338147750939e-16
+    },
+    {
+      "name": "habitat_wall_y_neg:summed-contact-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "habitat_wall_y_neg:reported-probe-status-correct",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_pos:prespecified-deep-probe-translation",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "habitat_wall_y_pos:probe-qpos-only-translated-root",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_pos:probe-qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "habitat_wall_y_pos:zero-step-clock",
+      "passed": true
+    },
+    {
+      "name": "detached:habitat_wall_y_pos:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 33,
+      "maximum_absolute_error_dyne": 3.552713678800501e-15
+    },
+    {
+      "name": "detached:habitat_wall_y_pos:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "habitat_wall_y_pos:summed-contact-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "habitat_wall_y_pos:reported-probe-status-correct",
+      "passed": true
+    },
+    {
+      "name": "failed-positive-x-deep-probe-preserved",
+      "passed": true
+    },
+    {
+      "name": "reset:raw-initial-state-exact",
+      "passed": true
+    },
+    {
+      "name": "reset:actor-hash-and-metadata-receipts",
+      "passed": true
+    },
+    {
+      "name": "reset:retained-endpoint",
+      "passed": true
+    },
+    {
+      "name": "render:all-three-source-nonmutation-receipts",
+      "passed": true
+    },
+    {
+      "name": "pure-floor-resource-boundary-contract-48-cases",
+      "passed": true
+    },
+    {
+      "name": "producer-status-faithfully-failed",
+      "passed": true
+    },
+    {
+      "name": "shallow:frozen-plan",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-shallow-contact-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-shallow-contact-results.json",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/validate_flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_worker.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_bridge.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_persistent_task.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/flybody_airflow.py",
+      "passed": true
+    },
+    {
+      "name": "hash:configs/male-flybody-rolling-habitat.json",
+      "passed": true
+    },
+    {
+      "name": "hash:tests/test_flybody_habitat.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-design-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-walking-acquisition.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-stance-actuator-audit.json",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/validate_flybody_habitat_contacts.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-execution-plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-habitat-results.json",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-failed-receipt-retained",
+      "passed": true
+    },
+    {
+      "name": "shallow:zero-integrated-steps",
+      "passed": true
+    },
+    {
+      "name": "shallow:sampled-live-hashes-identical",
+      "passed": true
+    },
+    {
+      "name": "shallow:nine-full-native-arrays-identical",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-initial:qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:qvel",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-initial:qvel",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:qacc",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-initial:qacc",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:act",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-initial:act",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:ctrl",
+      "passed": true
+    },
+    {
+      "name": "shallow:original-initial:ctrl",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:sensordata",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:xpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:xmat",
+      "passed": true
+    },
+    {
+      "name": "shallow:raw-native-hash:cvel",
+      "passed": true
+    },
+    {
+      "name": "shallow:actual-initial-actor",
+      "passed": true
+    },
+    {
+      "name": "shallow:initial-actor-hash",
+      "passed": true
+    },
+    {
+      "name": "shallow:same-compiled-metadata",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:original-upper-bracket-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:original-bracket-evidence",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:all-40-bisection-branches",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:frozen-extra-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:translated-qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:zero-native-time",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 2,
+      "maximum_absolute_error_dyne": 3.469446951953614e-18
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:reported-normal-directions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:all-target-normals-inward",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:summed-world-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:inner-plane-coordinate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:shallow-inner-face-positions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_neg:active-count-and-recorded-net-gate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:original-upper-bracket-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:original-bracket-evidence",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:all-40-bisection-branches",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:frozen-extra-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:translated-qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:zero-native-time",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 2,
+      "maximum_absolute_error_dyne": 0.0
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:reported-normal-directions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:all-target-normals-inward",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:summed-world-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:inner-plane-coordinate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:shallow-inner-face-positions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_x_pos:active-count-and-recorded-net-gate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:original-upper-bracket-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:original-bracket-evidence",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:all-40-bisection-branches",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:frozen-extra-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:translated-qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:zero-native-time",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 2,
+      "maximum_absolute_error_dyne": 4.440892098500626e-16
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:reported-normal-directions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:all-target-normals-inward",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:summed-world-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:inner-plane-coordinate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:shallow-inner-face-positions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_neg:active-count-and-recorded-net-gate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:original-upper-bracket-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:original-bracket-evidence",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:all-40-bisection-branches",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:frozen-extra-translation",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:translated-qpos",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:qvel-unchanged",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:zero-native-time",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:all-saved-world-forces-reconstructed",
+      "passed": true,
+      "contacts": 2,
+      "maximum_absolute_error_dyne": 1.1102230246251565e-16
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:all-contact-frames-orthonormal",
+      "passed": true,
+      "maximum_absolute_error": 2.7755575615628914e-16
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:reported-normal-directions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:all-target-normals-inward",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:summed-world-force",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:inner-plane-coordinate",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:shallow-inner-face-positions",
+      "passed": true
+    },
+    {
+      "name": "shallow:habitat_wall_y_pos:active-count-and-recorded-net-gate",
+      "passed": true
+    },
+    {
+      "name": "shallow:two-failed-y-force-gates-retained",
+      "passed": true
+    }
+  ],
+  "check_count": 460,
+  "inputs": {
+    "scripts/validate_flybody_habitat.py": {
+      "expected_sha256": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+      "actual_sha256": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+      "bytes": 23137
+    },
+    "fruitfly/flybody_worker.py": {
+      "expected_sha256": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+      "actual_sha256": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+      "bytes": 26022
+    },
+    "fruitfly/flybody_bridge.py": {
+      "expected_sha256": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+      "actual_sha256": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+      "bytes": 22959
+    },
+    "fruitfly/flybody_habitat.py": {
+      "expected_sha256": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+      "actual_sha256": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+      "bytes": 9644
+    },
+    "fruitfly/flybody_persistent_task.py": {
+      "expected_sha256": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+      "actual_sha256": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+      "bytes": 5679
+    },
+    "fruitfly/flybody_airflow.py": {
+      "expected_sha256": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+      "actual_sha256": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+      "bytes": 3042
+    },
+    "configs/male-flybody-rolling-habitat.json": {
+      "expected_sha256": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+      "actual_sha256": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+      "bytes": 674
+    },
+    "tests/test_flybody_habitat.py": {
+      "expected_sha256": "d1125189b993e100fb3937ff6520a63f18442cb0ecc49ed55317b222107b8be3",
+      "actual_sha256": "d1125189b993e100fb3937ff6520a63f18442cb0ecc49ed55317b222107b8be3",
+      "bytes": 2333
+    },
+    "validation/flybody-habitat-design-plan.json": {
+      "expected_sha256": "a34c821ab71052fc9da0b6fc909aa1908798669406af50ecc3148d4d9819604b",
+      "actual_sha256": "a34c821ab71052fc9da0b6fc909aa1908798669406af50ecc3148d4d9819604b",
+      "bytes": 1483
+    },
+    "validation/flybody-source-manifest.json": {
+      "expected_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "actual_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "bytes": 56679
+    },
+    "validation/flybody-walking-acquisition.json": {
+      "expected_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "actual_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "bytes": 1677
+    },
+    "validation/flybody-stance-actuator-audit.json": {
+      "expected_sha256": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+      "actual_sha256": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+      "bytes": 34646
+    },
+    "tmp/flybody-habitat-baseline/c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb/flybody_worker.py": {
+      "expected_sha256": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+      "actual_sha256": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+      "bytes": 24494
+    },
+    "validation/flybody-habitat-results.json": {
+      "expected_sha256": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+      "actual_sha256": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+      "bytes": 485729
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default-arrays.npz": {
+      "expected_sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "actual_sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "bytes": 6614264
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default-states.jsonl.gz": {
+      "expected_sha256": "686b769184e04b0d70e83bbe32eec19014eecaae0b7938ac752941adc2dc039b",
+      "actual_sha256": "686b769184e04b0d70e83bbe32eec19014eecaae0b7938ac752941adc2dc039b",
+      "bytes": 6313187
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default.json": {
+      "expected_sha256": "6ca27ff6b628b585a7d524cb80bfda980e3b82620787794bcb20dce9ae5ea6a8",
+      "actual_sha256": "6ca27ff6b628b585a7d524cb80bfda980e3b82620787794bcb20dce9ae5ea6a8",
+      "bytes": 40548
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default.log": {
+      "expected_sha256": "07b8a32b94adf0c26f0ddb2d2ba342fd3bb631a6a2a397ab8e20fa9324af2b0f",
+      "actual_sha256": "07b8a32b94adf0c26f0ddb2d2ba342fd3bb631a6a2a397ab8e20fa9324af2b0f",
+      "bytes": 225
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-arrays.npz": {
+      "expected_sha256": "f39708b3ea145ceeec4f992bcbb982940450df5827efd1dce741197b49adbf60",
+      "actual_sha256": "f39708b3ea145ceeec4f992bcbb982940450df5827efd1dce741197b49adbf60",
+      "bytes": 2718234
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-follow.png": {
+      "expected_sha256": "483fb2e84b1ed069753d3db99ee108d23f6599095153f116019245c2eea2b3cc",
+      "actual_sha256": "483fb2e84b1ed069753d3db99ee108d23f6599095153f116019245c2eea2b3cc",
+      "bytes": 176285
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-overview.png": {
+      "expected_sha256": "131b395eb0aa81cf6ed14073d4771ccc471669f0e121873aa56764a80b0b69d0",
+      "actual_sha256": "131b395eb0aa81cf6ed14073d4771ccc471669f0e121873aa56764a80b0b69d0",
+      "bytes": 106803
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-side.png": {
+      "expected_sha256": "b5788b7ff060c16042263e80e563b00bd1f3bcd6990e4c912e77e6c9b7b03fee",
+      "actual_sha256": "b5788b7ff060c16042263e80e563b00bd1f3bcd6990e4c912e77e6c9b7b03fee",
+      "bytes": 203503
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-initial-overview.png": {
+      "expected_sha256": "59f4f5498be2167847eeef0d08be04a97ea1960a9de72777e309007f426dc910",
+      "actual_sha256": "59f4f5498be2167847eeef0d08be04a97ea1960a9de72777e309007f426dc910",
+      "bytes": 110493
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-states.jsonl.gz": {
+      "expected_sha256": "822865ea8e488be4d57712980515a598d863df8a49c3d1f4e8c5a7b32c44692c",
+      "actual_sha256": "822865ea8e488be4d57712980515a598d863df8a49c3d1f4e8c5a7b32c44692c",
+      "bytes": 2497608
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.json": {
+      "expected_sha256": "d68fcc1fa7f0a339c8ff2712af6b279cc15704e75ac2c889911167bc1a876e85",
+      "actual_sha256": "d68fcc1fa7f0a339c8ff2712af6b279cc15704e75ac2c889911167bc1a876e85",
+      "bytes": 245944
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.log": {
+      "expected_sha256": "51e841e3866995760b0c84f6bc17837c09559fc3bf825675fefd22f89273352e",
+      "actual_sha256": "51e841e3866995760b0c84f6bc17837c09559fc3bf825675fefd22f89273352e",
+      "bytes": 132
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default-arrays.npz": {
+      "expected_sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "actual_sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "bytes": 6614264
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default-states.jsonl.gz": {
+      "expected_sha256": "9aba10d91350ce8b63abef74c52d4e812ab2ade8ee844e43f19ec30808a27fa4",
+      "actual_sha256": "9aba10d91350ce8b63abef74c52d4e812ab2ade8ee844e43f19ec30808a27fa4",
+      "bytes": 6313184
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default.json": {
+      "expected_sha256": "f51c3f975e0e86b504e1abf5f0ccf32137b94094a90ec7ffd40fee9b6709fdcf",
+      "actual_sha256": "f51c3f975e0e86b504e1abf5f0ccf32137b94094a90ec7ffd40fee9b6709fdcf",
+      "bytes": 40454
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default.log": {
+      "expected_sha256": "b414a27f70de6f4eef472ddc52f39b069ad5a38a8a78fc85c41171ce59b620a3",
+      "actual_sha256": "b414a27f70de6f4eef472ddc52f39b069ad5a38a8a78fc85c41171ce59b620a3",
+      "bytes": 210
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-arrays.npz": {
+      "expected_sha256": "265c1678705f1b91e552c2febebdf1323392fde9543e20a62240d0fecb57fc08",
+      "actual_sha256": "265c1678705f1b91e552c2febebdf1323392fde9543e20a62240d0fecb57fc08",
+      "bytes": 6781
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-initial-overview.png": {
+      "expected_sha256": "4e103f741b44f2103c3f8fac39d9d94fb64a81da800d3639b994ee6f739478dc",
+      "actual_sha256": "4e103f741b44f2103c3f8fac39d9d94fb64a81da800d3639b994ee6f739478dc",
+      "bytes": 112407
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-states.jsonl.gz": {
+      "expected_sha256": "92cab4a591f3bbca14176c66ba9011e7661dcd637ab1375d0f3176f4be50fd92",
+      "actual_sha256": "92cab4a591f3bbca14176c66ba9011e7661dcd637ab1375d0f3176f4be50fd92",
+      "bytes": 3977
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry.json": {
+      "expected_sha256": "10bddb947c7bb7bd7b975226495e89173dc9bca924cd444bbeeba4410b84eb6e",
+      "actual_sha256": "10bddb947c7bb7bd7b975226495e89173dc9bca924cd444bbeeba4410b84eb6e",
+      "bytes": 41329
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry.log": {
+      "expected_sha256": "6120e8d40f4c89c364455409bda5e320b7e53aafd57e587d30bdd8af774e2efc",
+      "actual_sha256": "6120e8d40f4c89c364455409bda5e320b7e53aafd57e587d30bdd8af774e2efc",
+      "bytes": 94
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-arrays.npz": {
+      "expected_sha256": "17698b77e0c87719353389c357a12a206f19faa88cab813ac3811cde8ec5ed47",
+      "actual_sha256": "17698b77e0c87719353389c357a12a206f19faa88cab813ac3811cde8ec5ed47",
+      "bytes": 1774154
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-states.jsonl.gz": {
+      "expected_sha256": "edd57d96e966f3ab131078a9ada8e738004105a05e74e26ae25a177161a7e1f1",
+      "actual_sha256": "edd57d96e966f3ab131078a9ada8e738004105a05e74e26ae25a177161a7e1f1",
+      "bytes": 1619965
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.json": {
+      "expected_sha256": "1600971d2248cb35776e2e2559f8c49d1c6d09e9a58466aa660d55d22544f5c9",
+      "actual_sha256": "1600971d2248cb35776e2e2559f8c49d1c6d09e9a58466aa660d55d22544f5c9",
+      "bytes": 40652
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.log": {
+      "expected_sha256": "6b7108a21850084e7230118addcd44386a63f24c2aa44dec1705df543ddba3d9",
+      "actual_sha256": "6b7108a21850084e7230118addcd44386a63f24c2aa44dec1705df543ddba3d9",
+      "bytes": 127
+    },
+    "validation/flybody-habitat-shallow-contact-plan.json": {
+      "expected_sha256": "9886c5a0d3fb86c8451cc3aa27c8fd1049c513b68e229dde2db0f3d1eb3c56f9",
+      "actual_sha256": "9886c5a0d3fb86c8451cc3aa27c8fd1049c513b68e229dde2db0f3d1eb3c56f9",
+      "bytes": 3341
+    },
+    "validation/flybody-habitat-shallow-contact-results.json": {
+      "expected_sha256": "5056bdd20c270ea3690d9864eca05d62286991e257f0a477a11f8b6dff9ca65e",
+      "actual_sha256": "5056bdd20c270ea3690d9864eca05d62286991e257f0a477a11f8b6dff9ca65e",
+      "bytes": 224065
+    },
+    "scripts/validate_flybody_habitat_contacts.py": {
+      "expected_sha256": "3288b89d9f789d4f5ce48a128013a814f8041c538adfd27248bacb6646fe9ad8",
+      "actual_sha256": "3288b89d9f789d4f5ce48a128013a814f8041c538adfd27248bacb6646fe9ad8",
+      "bytes": 9180
+    },
+    "validation/flybody-habitat-execution-plan.json": {
+      "expected_sha256": "a9a5c7dc77124d6008d78ceb9c98b7785c02ff15ce47d3db926d262fd94c4397",
+      "actual_sha256": "a9a5c7dc77124d6008d78ceb9c98b7785c02ff15ce47d3db926d262fd94c4397",
+      "bytes": 6112
+    }
+  }
+}

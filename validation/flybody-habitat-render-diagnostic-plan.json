@@ -1,0 +1,21 @@
+{
+  "sources_sha256": {
+    "scripts/diagnose_flybody_habitat_render.py": "41636acf19a4200b79dd5cf63b09702cef70096a4e02339a84d5ba10254c0af4",
+    "scripts/validate_flybody_habitat_visual.py": "b9e9f864cb1e6242b0d1054788798fcabf30da04305525e1c62b72931f2a651d",
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_habitat.py": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+    "validation/flybody-habitat-visual-results.json": "f0a9a07476022869b455e5c3dbb8d8d09fb05c4f280ec77341a9000424b02c10"
+  },
+  "reason": "Original visual receipt preserves a failed exact-pixel comparison between worker and a separately constructed source camera. Save repeated images and poses/scenes to distinguish source display behavior from physical mutation.",
+  "sequence": [
+    "worker",
+    "source",
+    "worker",
+    "source",
+    "worker"
+  ],
+  "seed": 11,
+  "physics_steps": 0,
+  "policy_advances": 0,
+  "scope": "Diagnostic only; no changed runtime or overwritten pixel gate. Exact render-pose and scene equality are inspected independently of pixel equality."
+}

@@ -373,7 +373,11 @@ class Worker:
         if name not in ("follow", "overview", "side"):
             raise ValueError("Unknown camera")
         if self.camera is None:
-            self.camera = MovableCamera(self.env.physics, height=self.config["height"], width=self.config["width"])
+            if self.habitat is None:
+                self.camera = MovableCamera(self.env.physics, height=self.config["height"], width=self.config["width"])
+            else:
+                self.camera = MovableCamera(self.env.physics, height=self.config["height"], width=self.config["width"],
+                    scene_callback=self.habitat.render_scene_callback)
         position = np.asarray(self.state["pose_cm_quat"][:3])
         lookat = [0., 0., 0.] if name == "overview" else position
         distance = 5. if name == "overview" else (1.1 if name == "follow" else .7)

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "source_sha256": {
+    "scripts/validate_flybody_habitat_visual.py": "b9e9f864cb1e6242b0d1054788798fcabf30da04305525e1c62b72931f2a651d",
+    "scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_habitat.py": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "validation/flybody-habitat-visual-design-plan.json": "39739bed4081a983e01622906e068d5e62c82e7fee8fc2f3e2f0b86602c46ea1",
+    "validation/flybody-habitat-results.json": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e"
+  },
+  "config": {
+    "physics_dt_s": 0.0002,
+    "horizon_s": null,
+    "reference_mode": "rolling",
+    "habitat": {
+      "inner_size_mm": [
+        30.0,
+        24.0
+      ],
+      "center_mm": [
+        0.0,
+        0.0
+      ],
+      "wall_height_mm": 6.0,
+      "wall_thickness_mm": 1.0
+    },
+    "source_path": "/Users/bernardo/Documents/Code/fruit-fly/data/raw/flybody/source",
+    "worker_python": "tmp/flybody-env/bin/python",
+    "initial_position_mm": [
+      0.0,
+      0.0,
+      1.278
+    ],
+    "initial_heading_rad": 0.0,
+    "food_position_mm": [
+      6.0,
+      0.0
+    ],
+    "food_radius_mm": 3.0,
+    "food_amount": 1.5,
+    "water_position_mm": [
+      5.0,
+      7.0
+    ],
+    "water_radius_mm": 2.0,
+    "water_amount": 1.5,
+    "wind_mm_s": [
+      -2.0,
+      0.0
+    ],
+    "odor_emission_interval_s": 0.1,
+    "odor_prehistory_s": 3.0,
+    "odor_puff_lifetime_s": 8.0,
+    "drive_limit": 1.2,
+    "intended_sex": "male",
+    "body_profile": "female-derived FlyBody morphology surrogate",
+    "width": 800,
+    "height": 560,
+    "enable_grooming": false,
+    "enable_vision": false,
+    "enable_wind": false,
+    "world_illumination": null,
+    "wind_reference_path": null,
+    "wind_reference_allow_sex_transfer": false,
+    "physiology": {
+      "energy_capacity": 1.0,
+      "hydration_capacity": 1.0,
+      "crop_capacity": 0.3,
+      "initial_energy": 0.55,
+      "initial_hydration": 0.75,
+      "food_intake_per_s": 0.08,
+      "water_intake_per_s": 0.12,
+      "assimilation_per_s": 0.04,
+      "basal_energy_per_s": 0.0005,
+      "locomotion_energy_per_mm": 8e-05,
+      "basal_water_loss_per_s": 0.0003,
+      "locomotion_water_loss_per_mm": 4e-05,
+      "stationary_threshold_mm_s": 1.0
+    }
+  },
+  "seed": 11,
+  "parity_intervals": 100,
+  "render_cameras": [
+    "overview",
+    "follow",
+    "side",
+    "overview"
+  ],
+  "scene_only": "Resource cylinder display center +0.05 mm Z; ghost geom/traj site display alpha 0. All compiled geometry/sensing left unchanged.",
+  "native_model_check": "Entire compiled MjModel serialized with mj_saveModel before/after each render; identical MJB bytes",
+  "native_data_check": "Nine explicit arrays from original snapshot, all cached observations, actor hash and native time. Save actual arrays/actor before/after paused renders",
+  "parity_check": "Reset and 100 control ticks after paused renders vs first 101 saved actual actor/native samples from original habitat wall trial; identical state fields including raw contact diagnostics",
+  "legacy_camera_check": "Habitat disabled: no callback and rendered output unchanged vs manually constructed source MovableCamera at identical pose",
+  "scope": "Small renderer/native parity check, no new wall run or change to prior outcomes. Visual offset is not food height or collision geometry."
+}
