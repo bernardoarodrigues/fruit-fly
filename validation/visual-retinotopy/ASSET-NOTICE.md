@@ -6,6 +6,6 @@ Source: [reiserlab/eyemap_T4](https://github.com/reiserlab/eyemap_T4/tree/99d2a4
 
 Changes made 2026-09-05 UTC: extract the 852 right-eye female geometric axes, preserve one-based source indices and lattice coordinates, normalize/report Cartesian directions, and calculate azimuth/elevation using x forward, y left, z dorsal. No male neural correspondence is introduced. Source RData remains separately acquired; [the receipt](zhao-extraction.json) gives exact URLs and hashes, and [the extraction script](../../scripts/extract_zhao_eye_template.py) specifies the complete transformation. The source repository also supplies the original processing scripts.
 
-The coverage CSV/plots under `validation/visual-template-coverage/` use these same source-derived axes, with numerical camera-support calculations added. They retain this source attribution and GPL-3.0 terms for the source-derived data.
+The coverage CSV/plots under `validation/visual-template-coverage/` and per-axis CSV/support geometry under `validation/multiview-eye/` use these same source-derived axes, with numerical camera-support calculations added. They retain this source attribution and GPL-3.0 terms for the source-derived data.
 
 Upstream license SHA-256: `3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986`.

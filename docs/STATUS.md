@@ -60,11 +60,13 @@ The released [FlyBody walking policy](flybody-inference-trial.md) loads in a sep
 
 The [anatomical visual audit](visual-retinotopy-feasibility.md) exactly joins 13,267 released right-side visual cells to the retained male graph and extracts 852 geometric optical directions from a female micro-CT template. Their male registration remains unresolved. The [camera-coverage study](visual-template-coverage.md) finds 69 template axes outside the current right camera and another 79 inside its aperture but absent from the pixel resampling. No nearest-facet substitution or visual neural drive was installed.
 
+The isolated [six-view sampler](multiview-eye.md) now acquires all 852 axes from the actual moving eye origin/head frame, with 38 geometric target checks and a world-light/RGB seam control. Its four-pixel interpolation is a numerical point-query approximation, not an ommatidial acceptance kernel. The existing arena has no world lamps, so disabling camera-attached illumination leaves its non-emissive surfaces dark; that result is recorded explicitly. No visual neural mapping or default camera change is installed.
+
 The [FlyMimic muscle audit](musculoskeletal-feasibility.md) compiles the source-native 15-MTU left-foreleg model and verifies its mechanical responses. Its fast activation time constants produce numerical overshoot at the source Euler timestep. Force units and exact male motor-unit identities remain unresolved; this does not replace the six-leg body. An [independent feeding review](feeding-independent-review.md) verifies the stored identities, input histories and four neural-only replays, preserving the original failed feedback-equality control.
 
 An isolated [proboscis geometry audit](proboscis-mechanics.md) verifies source mesh transforms and a two-pitch diagnostic Jacobian. The source has no NeuroMechFly oral-motion limits, extension trajectory or identified mouth aperture; generic hinge defaults and an arbitrary distal mesh vertex cannot supply them. No physical swallowing claim or runtime oral controller was added.
 
-Latest complete suite: **141 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+Latest complete suite: **150 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 ## Compute and next gates
 

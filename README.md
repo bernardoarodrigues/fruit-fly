@@ -61,6 +61,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Male column/female optics registration boundary](docs/visual-retinotopy-feasibility.md), [measured-template camera coverage](docs/visual-template-coverage.md)
 - [Fixed FlyBody comparison and stopping failure](docs/flybody-motor-comparison.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
+- [Full optical-template sampling through six views](docs/multiview-eye.md), including moving-head, cube-seam and lighting checks
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

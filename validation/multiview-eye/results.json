@@ -1,0 +1,2124 @@
+{
+  "scope": "Six-view female optical-surrogate acquisition; no neural registration/input.",
+  "completed": true,
+  "checks": {
+    "all_852_unit_axes_retained": true,
+    "all_source_support_inside_rendered_images": true,
+    "unit_weight_sums": true,
+    "all_38_rendered_targets": true,
+    "seam_smooth_field_error_under_1e-5": true,
+    "rgb_world_light_and_seam_probe": true,
+    "actual_body_all_axes_finite": true,
+    "actual_head_rotation_exceeds20deg_and_eye_origin_moves": true,
+    "render_does_not_mutate_body_or_model_cameras": true
+  },
+  "mujoco_version": "3.9.0",
+  "source": {
+    "title": "Zhao et al.2025 Eye structure shapes neuron function in Drosophila motion vision",
+    "doi": "10.1038/s41586-025-09276-5",
+    "repository": "https://github.com/reiserlab/eyemap_T4",
+    "commit": "99d2a43123db636cedb55af9ff31a59657e7d17e",
+    "source_sex": "female",
+    "sample": "20240701",
+    "eye": "R",
+    "source_ray_count": 852,
+    "source_index": "right lens index1..852; source array and rendered pixel indices otherwise zero-based",
+    "coordinate_system": "x forward / y left / z dorsal; no plot-y reflection",
+    "template_to_body": "Canonical head bases identified as a declared different-specimen female body-optics surrogate; no landmark fit or male cell assignment."
+  },
+  "acquisition": {
+    "core_resolution": 256,
+    "guard_pixels_per_edge": 1,
+    "rendered_image_shape_per_face": [
+      258,
+      258,
+      3
+    ],
+    "rendered_fovy_deg": 90.44587930239506,
+    "core_fovy_deg": 90,
+    "face_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "pixel_centers": "column+0.5,row+0.5; upper-left image origin",
+    "query": "Bilinear RGB from four raw pixel centres in the max-positive-dot face; deterministic FACE_NAMES tie order.",
+    "normalization": "All finite unit axes have four valid weights summing to1. No outside-face padding, missing support renormalization, or nearest-facet substitution.",
+    "invalid_contract": "Rows with nonfinite coordinates or norm differing from1 by more than1e-6 remain present: validFalse, face/pixel indices-1, weights0, sampleNaN. Not encountered in the verified source.",
+    "origin": "Current right-eye MuJoCo camera origin; six colocated monocular views with no stereo offset.",
+    "model_changes": "None. Only independently owned renderer.scene GL camera structs are overwritten after geometry update.",
+    "occlusion": "Exactly FlyGym default MjvOption minus groups1/2; visibility vector[1,0,0,0,0,0]. Hidden markers/selected body segments, other group0 body parts occlude.",
+    "lighting": "All world lights retained; camera-attached headlight contribution zeroed only in private scene. Avoids retaining unrelated default-free-camera illumination or rotating artificial illumination at cube seams; model/default eye headlight unchanged.",
+    "data_state": "Caller must supply current forward kinematics and must not advance physics concurrently during six-frame acquisition."
+  },
+  "pixel_center_support_max_angle_deg": {
+    "min": 0.2133682240053182,
+    "median": 0.3699639245353361,
+    "p95": 0.5159117705276234,
+    "max": 0.5944614668520982
+  },
+  "pixel_cell_corner_support_max_angle_deg": {
+    "min": 0.40414151915591784,
+    "median": 0.6250130171589103,
+    "p95": 0.8127082263347388,
+    "max": 0.9091134655570804
+  },
+  "weighted_mean_direction_error_deg": {
+    "min": 4.829673078902934e-06,
+    "median": 0.00016805574552371925,
+    "p95": 0.00026319128745504416,
+    "max": 0.0002813517751169651
+  },
+  "source_count_by_face": {
+    "+x": 251,
+    "-x": 28,
+    "+y": 0,
+    "-y": 320,
+    "+z": 170,
+    "-z": 83
+  },
+  "seam_tests": [
+    {
+      "axis": [
+        1,
+        1,
+        0
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "+y",
+        "+x",
+        "+x"
+      ],
+      "max_coordinate_field_error": 6.743471657411071e-06,
+      "max_transition_component_range": 5.465435120921569e-06
+    },
+    {
+      "axis": [
+        1,
+        -1,
+        0
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "-y",
+        "+x",
+        "+x"
+      ],
+      "max_coordinate_field_error": 6.7434716576331155e-06,
+      "max_transition_component_range": 5.465435121143614e-06
+    },
+    {
+      "axis": [
+        1,
+        0,
+        1
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "+z",
+        "+x",
+        "+x"
+      ],
+      "max_coordinate_field_error": 6.7434716576331155e-06,
+      "max_transition_component_range": 5.465435121143614e-06
+    },
+    {
+      "axis": [
+        1,
+        0,
+        -1
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "-z",
+        "+x",
+        "+x"
+      ],
+      "max_coordinate_field_error": 6.743471657522093e-06,
+      "max_transition_component_range": 5.465435120921569e-06
+    },
+    {
+      "axis": [
+        0,
+        1,
+        1
+      ],
+      "perturbed_dimension": 1,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "+z",
+        "+y",
+        "+y"
+      ],
+      "max_coordinate_field_error": 6.7434716576331155e-06,
+      "max_transition_component_range": 5.465435121143614e-06
+    },
+    {
+      "axis": [
+        0,
+        -1,
+        -1
+      ],
+      "perturbed_dimension": 1,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "-y",
+        "-y",
+        "-z"
+      ],
+      "max_coordinate_field_error": 6.743471657522093e-06,
+      "max_transition_component_range": 5.465435120921569e-06
+    },
+    {
+      "axis": [
+        1,
+        1,
+        1
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "+y",
+        "+x",
+        "+x"
+      ],
+      "max_coordinate_field_error": 2.93655475547272e-06,
+      "max_transition_component_range": 3.0135403692455043e-06
+    },
+    {
+      "axis": [
+        -1,
+        -1,
+        -1
+      ],
+      "perturbed_dimension": 0,
+      "epsilon": 1e-07,
+      "selected_faces": [
+        "-x",
+        "-x",
+        "-y"
+      ],
+      "max_coordinate_field_error": 2.9365547555837423e-06,
+      "max_transition_component_range": 3.013540369134482e-06
+    }
+  ],
+  "rendered_target_tests": [
+    {
+      "pose_index": 0,
+      "target": "cube_0",
+      "head_axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        20.71,
+        -0.29,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_1",
+      "head_axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -19.29,
+        -0.29,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_2",
+      "head_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        19.71,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_3",
+      "head_axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        -20.29,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_4",
+      "head_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        -0.29,
+        21.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_5",
+      "head_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        -0.29,
+        -18.63
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_6",
+      "head_axis": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        14.852135623730948,
+        13.85213562373095,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_7",
+      "head_axis": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        14.852135623730948,
+        -14.432135623730948,
+        1.37
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_8",
+      "head_axis": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        14.852135623730948,
+        -0.29,
+        15.512135623730948
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_9",
+      "head_axis": [
+        0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        14.852135623730948,
+        -0.29,
+        -12.77213562373095
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_10",
+      "head_axis": [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        13.85213562373095,
+        15.512135623730948
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_11",
+      "head_axis": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.71,
+        -14.432135623730948,
+        -12.77213562373095
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_12",
+      "head_axis": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        12.257005383792517,
+        11.257005383792517,
+        12.917005383792517
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 1230,
+      "rendered_pixel_count": 1230,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "cube_13",
+      "head_axis": [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -10.837005383792516,
+        -11.837005383792516,
+        -10.177005383792515
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 1230,
+      "rendered_pixel_count": 1230,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "female_lens_1",
+      "head_axis": [
+        0.4041847225603197,
+        0.0022806856980681,
+        -0.9146745369373654
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        8.793694451206395,
+        -0.244386286038638,
+        -16.923490738747308
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 330,
+      "rendered_pixel_count": 330,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "female_lens_200",
+      "head_axis": [
+        -0.1070555267372035,
+        -0.8197810584102765,
+        -0.5625816655977571
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -1.4311105347440702,
+        -16.68562116820553,
+        -9.881633311955142
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 461,
+      "rendered_pixel_count": 461,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "female_lens_395",
+      "head_axis": [
+        0.5912984379907126,
+        -0.8010875830882024,
+        0.0928700245054657
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        12.535968759814253,
+        -16.311751661764045,
+        3.2274004901093143
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 491,
+      "rendered_pixel_count": 491,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "female_lens_600",
+      "head_axis": [
+        0.4853037240215291,
+        -0.7040465373408422,
+        0.5184580684194293
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        10.41607448043058,
+        -14.370930746816843,
+        11.739161368388586
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 725,
+      "rendered_pixel_count": 725,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 0,
+      "target": "female_lens_852",
+      "head_axis": [
+        -0.2211485688845462,
+        -0.025683474602761,
+        0.9749018769151316
+      ],
+      "head_to_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -3.7129713776909243,
+        -0.8036694920552199,
+        20.868037538302634
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 273,
+      "rendered_pixel_count": 273,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_0",
+      "head_axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        8.453723566825357,
+        13.680047118173707,
+        13.406300463040967
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_1",
+      "head_axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -7.0337235668253575,
+        -14.260047118173706,
+        -10.666300463040969
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_2",
+      "head_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -17.67187263153273,
+        4.5220930648995425,
+        7.611035081847709
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_3",
+      "head_axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        19.09187263153273,
+        -5.102093064899543,
+        -4.871035081847709
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_4",
+      "head_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        2.1733878087170493,
+        -13.768929625558268,
+        16.072957262759967
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_5",
+      "head_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -0.7533878087170494,
+        13.18892962555827,
+        -13.332957262759969
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 256,
+      "rendered_pixel_count": 256,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_6",
+      "head_axis": [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -6.812307342927911,
+        12.990978688647438,
+        14.294027905812705
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_7",
+      "head_axis": [
+        0.7071067811865475,
+        -0.7071067811865475,
+        0.0
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        19.18358623440049,
+        6.18565141286499,
+        5.467871449817395
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_8",
+      "head_axis": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        7.220410888785836,
+        0.057272509387710946,
+        20.27751046180862
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_9",
+      "head_axis": [
+        0.7071067811865475,
+        0.0,
+        -0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        5.1508680026867415,
+        19.119357592124718,
+        -0.5156111061785227
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_10",
+      "head_axis": [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -11.25317534561465,
+        -6.418378903477279,
+        16.179639011991227
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_11",
+      "head_axis": [
+        0.0,
+        -0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        12.673175345614652,
+        5.838378903477279,
+        -13.439639011991225
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 708,
+      "rendered_pixel_count": 708,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_12",
+      "head_axis": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        -4.587050880896562,
+        2.7718100429505395,
+        20.411180930448626
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 1230,
+      "rendered_pixel_count": 1230,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "cube_13",
+      "head_axis": [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        6.007050880896562,
+        -3.3518100429505395,
+        -17.671180930448624
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 1230,
+      "rendered_pixel_count": 1230,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "female_lens_1",
+      "head_axis": [
+        0.4041847225603197,
+        0.0022806856980681,
+        -0.9146745369373654
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        2.4594479211286178,
+        17.696288204113372,
+        -7.199298023165675
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 330,
+      "rendered_pixel_count": 330,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "female_lens_200",
+      "head_axis": [
+        -0.1070555267372035,
+        -0.8197810584102765,
+        -0.5625816655977571
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        14.12682744524352,
+        1.852565180529787,
+        -13.30644901710702
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 461,
+      "rendered_pixel_count": 461,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "female_lens_395",
+      "head_axis": [
+        0.5912984379907126,
+        -0.8010875830882024,
+        0.0928700245054657
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        20.150246429981987,
+        2.8637705120438497,
+        4.852893954592286
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 491,
+      "rendered_pixel_count": 491,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "female_lens_600",
+      "head_axis": [
+        0.4853037240215291,
+        -0.7040465373408422,
+        0.5184580684194293
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        18.16845687750062,
+        -3.886481386526835,
+        10.440149121862191
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 725,
+      "rendered_pixel_count": 725,
+      "jaccard_across_six_images": 1.0,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    },
+    {
+      "pose_index": 1,
+      "target": "female_lens_852",
+      "head_axis": [
+        -0.2211485688845462,
+        -0.025683474602761,
+        0.9749018769151316
+      ],
+      "head_to_world": [
+        [
+          0.3871861783412679,
+          -0.9190936315766365,
+          0.07316939043585247
+        ],
+        [
+          0.6985023559086854,
+          0.24060465324497715,
+          -0.6739464812779135
+        ],
+        [
+          0.6018150231520484,
+          0.31205175409238545,
+          0.7351478631379984
+        ]
+      ],
+      "origin_world_model_units": [
+        0.71,
+        -0.29,
+        1.37
+      ],
+      "target_center_world_model_units": [
+        0.8962564956151697,
+        -16.64368098821599,
+        12.881838543582173
+      ],
+      "sphere_angular_radius_deg": 4.0,
+      "analytic_pixel_count": 273,
+      "rendered_pixel_count": 272,
+      "jaccard_across_six_images": 0.9963369963369964,
+      "bilinear_mask_value_at_target_axis": 1.0,
+      "check": true
+    }
+  ],
+  "rgb_world_light_probe": {
+    "description": "A flat colored wall crosses +x/+y seam under one fixed world light.\n\n    This tests preservation of renderer lights and sampling consistency, not\n    photon units or a measured Drosophila spectral sensitivity.\n    ",
+    "head_axes": [
+      [
+        0.7071067458312058,
+        0.7071068165418875,
+        0.0
+      ],
+      [
+        0.7071067811865475,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.7071068165418839,
+        0.7071067458312092,
+        0.0
+      ]
+    ],
+    "world_light_dir": [
+      1,
+      0,
+      0
+    ],
+    "world_light_ambient": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "world_light_diffuse": [
+      0.7,
+      0.5,
+      0.3
+    ],
+    "wall_rgba": [
+      0.8,
+      0.5,
+      0.2,
+      1
+    ],
+    "selected_faces": [
+      "+y",
+      "+x",
+      "+x"
+    ],
+    "scene_lights": [
+      {
+        "id": -1,
+        "headlight": true,
+        "direction": [
+          4.329780301713277e-17,
+          0.7071067690849304,
+          -0.7071067690849304
+        ],
+        "ambient": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "diffuse": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "specular": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 0.0
+      },
+      {
+        "id": 0,
+        "headlight": false,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "ambient": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "diffuse": [
+          0.699999988079071,
+          0.5,
+          0.30000001192092896
+        ],
+        "specular": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "intensity": 0.0
+      }
+    ],
+    "world_light_enabled_rgb": [
+      [
+        163.0,
+        77.0,
+        20.0
+      ],
+      [
+        163.0,
+        77.0,
+        20.0
+      ],
+      [
+        163.0,
+        77.0,
+        20.0
+      ]
+    ],
+    "world_light_disabled_rgb": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "max_seam_channel_range_0_255": 0.0,
+    "world_light_preserved": true,
+    "private_headlight_zeroed": true,
+    "model_lights_not_overwritten": true,
+    "check": true
+  },
+  "actual_body_tests": [
+    {
+      "pose": "initial",
+      "head_yaw_offset_deg": 0.0,
+      "head_pitch_offset_deg": 0.0,
+      "origin_world_mm": [
+        -3.216946105778401,
+        -0.3800128429259358,
+        1.1713722727478348
+      ],
+      "head_to_world": [
+        [
+          0.999735639946451,
+          -5.861817393849898e-06,
+          0.022992394101203437
+        ],
+        [
+          2.371005223736477e-06,
+          0.9999999884676911,
+          0.00015185190747050666
+        ],
+        [
+          -0.022992394726176146,
+          -0.0001517572488055955,
+          0.9997356284310864
+        ]
+      ],
+      "origin_displacement_from_initial_mm": 0.0,
+      "head_rotation_from_initial_deg": 0.0,
+      "render_six_faces_wall_s": 0.036764707998372614,
+      "sample_shape": [
+        852,
+        3
+      ],
+      "valid_axis_count": 852,
+      "all_rgb_finite": true,
+      "rgb_range": [
+        0.0,
+        255.00000000000003
+      ],
+      "rgb_zero_sample_count": 329,
+      "world_ray_norm_max_error": 3.3306690738754696e-15,
+      "model_camera_and_qpos_qvel_unchanged": true,
+      "near_plane_mm": 0.0005000000237487257,
+      "far_plane_mm": 250.0,
+      "model_world_light_count": 0,
+      "scene_lights": [
+        {
+          "id": -1,
+          "headlight": true,
+          "ambient": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diffuse": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "geomgroup_visibility": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "pose": "head_yaw25_pitch-15",
+      "head_yaw_offset_deg": 25.0,
+      "head_pitch_offset_deg": -15.0,
+      "origin_world_mm": [
+        -3.2295979943569297,
+        -0.37275209832298384,
+        1.0562052726238762
+      ],
+      "head_to_world": [
+        [
+          0.9712562892725065,
+          0.006550943860795699,
+          -0.2379460142199054
+        ],
+        [
+          -0.10628698607005502,
+          0.9063719426830257,
+          -0.40889237961736036
+        ],
+        [
+          0.21298896013819743,
+          0.42242986003777755,
+          0.8810157298299042
+        ]
+      ],
+      "origin_displacement_from_initial_mm": 0.11608715094421387,
+      "head_rotation_from_initial_deg": 29.093209501236768,
+      "render_six_faces_wall_s": 0.021678499993868172,
+      "sample_shape": [
+        852,
+        3
+      ],
+      "valid_axis_count": 852,
+      "all_rgb_finite": true,
+      "rgb_range": [
+        0.0,
+        255.00000000000003
+      ],
+      "rgb_zero_sample_count": 437,
+      "world_ray_norm_max_error": 3.1086244689504383e-15,
+      "model_camera_and_qpos_qvel_unchanged": true,
+      "near_plane_mm": 0.0005000000237487257,
+      "far_plane_mm": 250.0,
+      "model_world_light_count": 0,
+      "scene_lights": [
+        {
+          "id": -1,
+          "headlight": true,
+          "ambient": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diffuse": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "specular": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "geomgroup_visibility": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "neural_input_installed": false,
+  "male_registration": null,
+  "physiological_transfer": null,
+  "limits": [
+    "Full angular acquisition is an engineering change, not a reconstruction of the physiological eye.",
+    "Individual lens origins, refraction, aberration, measured acceptance functions, spectral sensitivities, adaptation and phototransduction are absent.",
+    "Finite raw pixel rasterization and four-pixel bilinear interpolation approximate point-direction queries; kernel size varies with cube position and has no measured optical interpretation.",
+    "Guard pixels remove undefined seam support, but independent face rasterization can still differ for high-frequency textures or geometry exactly at seams; tests quantify geometry/smooth fields only.",
+    "RGB includes renderer lighting, material/texture and anti-aliasing conventions. It is display RGB, not photon flux or neural current/release.",
+    "Existing selected-body hiding and clipping may omit real near-field occluders. Complete geometric direction coverage does not mean every direction sees the environment rather than body/background.",
+    "The tested actual body has no independent model world lights; suppressing its headlight makes non-emissive floor/resource/body surfaces black. This is retained as valid dark RGB, not padding; no hidden diagnostic lamp is added to that body scene.",
+    "Female template and female-derived body are different specimens; no male neural column identities assigned. Runtime body/viewer/neural defaults are untouched."
+  ],
+  "source_sha256": {
+    "scripts/validate_multiview_eye.py": "4514237597d058498fd090afbb90e8704ec71fb4579313726a373cc8e757a22b",
+    "fruitfly/multiview.py": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+    "fruitfly/body.py": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+    "validation/visual-retinotopy/zhao-female-right-eye-directions.csv": "7ac32cfeee41236f6b4c76ffbb3f60c5559f6af81426a94cb8768e6a4f93d194",
+    "validation/visual-retinotopy/zhao-extraction.json": "dc9ba774c495906ab6bcc1f9f741d41a36e4fd387c528c73ed143182db1e405f"
+  },
+  "outputs": {
+    "female-right-ray-sampling.csv": "9c377d286f47cf7f60267fe78a81821e0a33587f475e3d33f5ed73292b2df01e",
+    "cube-support.npz": "2f0df3d3f1d02ee84a49e33ad86e18395ad4239dbb082572f9b76462fd3be3c0"
+  }
+}
