@@ -1,0 +1,42 @@
+{
+  "claim": "physical body and heuristic locomotion smoke test; no neural emulation",
+  "morphology": "same female-derived NeuroMechFly geometry for every instance",
+  "controller": "FlyGym HybridTurningController with CPG and reflex corrections",
+  "flygym_commit": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+  "mujoco": "3.9.0",
+  "python": "3.12.14",
+  "machine": "arm64",
+  "flies": 2,
+  "timestep_s": 0.0001,
+  "simulated_s": 1.0,
+  "wall_s_excluding_setup_and_render": 9.535255875030998,
+  "realtime_factor": 0.1048739554665332,
+  "nq": 146,
+  "nv": 144,
+  "nu": 96,
+  "finite": true,
+  "displacement_mm": [
+    [
+      12.734734239496891,
+      3.0957268623581222,
+      0.0019778580813347713
+    ],
+    [
+      13.306579609644063,
+      -0.6423799653188711,
+      -0.0807651725892149
+    ]
+  ],
+  "final_thorax_mm": [
+    [
+      13.287658142979398,
+      0.09571614247991533,
+      1.1608493187987035
+    ],
+    [
+      13.859497696558105,
+      2.3576043356964105,
+      1.078105629670577
+    ]
+  ]
+}

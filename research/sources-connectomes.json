@@ -1,0 +1,238 @@
+{
+  "checked_date": "2026-09-04",
+  "timezone": "America/Los_Angeles",
+  "scope": "connectomes and neural models",
+  "sources": [
+    {
+      "id": "C01",
+      "title": "Sexual dimorphism in the complete connectome of the Drosophila male central nervous system \u2014 final Cell article",
+      "url": "https://doi.org/10.1016/j.cell.2026.08.015",
+      "status": "read_supplied_pdf",
+      "notes": "Final September 3, 2026 Cell paper. Supplied drosophila-2026.pdf inspected via tmp/pdfs/drosophila-2026.txt. 166700 neurons,11710 types,124.2M retained synaptic links,25.6M edges,40.1% both-ended completion. CC BY 4.0. Authoritative over earlier abstract counts."
+    },
+    {
+      "id": "C02",
+      "title": "MaleCNS preprint version 2",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.09.680999v2",
+      "status": "http_403",
+      "notes": "Supplied link. October 30,2025 preprint superseded by final Cell version; browser fetch403 is not evidence of paywall."
+    },
+    {
+      "id": "C03",
+      "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
+      "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "status": "read_primary_web",
+      "notes": "September3,2026 announcement links both female and male resources. Headline rounded numbers are not exact graph statistics."
+    },
+    {
+      "id": "C04",
+      "title": "Male CNS Connectome \u2014 Janelia project",
+      "url": "https://www.janelia.org/project-team/flyem/male-cns-connectome",
+      "status": "read_primary_web",
+      "notes": "Official entrypoint; v1.0 release June8,2026 and final publication September3. Some summary dimorphism counts still correspond to earlier release."
+    },
+    {
+      "id": "C05",
+      "title": "MaleCNS download documentation",
+      "url": "https://male-cns.janelia.org/download/",
+      "status": "read_primary_web",
+      "notes": "Official public bulk files; neuPrint account/token for API. CC BY4.0. Segment graph includes fragments and must be filtered."
+    },
+    {
+      "id": "C06",
+      "title": "MaleCNS release notes",
+      "url": "https://male-cns.janelia.org/release/",
+      "status": "read_primary_web",
+      "notes": "v1.0 June8,2026. Notes call v0.9 October5,2025 while project news call October3; preserve discrepancy if precise original release timing matters."
+    },
+    {
+      "id": "C07",
+      "title": "Google publication abstract for MaleCNS",
+      "url": "https://research.google/pubs/sexual-dimorphism-in-the-complete-connectome-of-the-drosophila-male-central-nervous-system/",
+      "status": "read_primary_web_stale_counts",
+      "notes": "166691 neurons/11691 types and older dimorphism numbers differ from final supplied Cell PDF; not used for current exact counts."
+    },
+    {
+      "id": "C08",
+      "title": "Neuronal wiring diagram of an adult brain",
+      "url": "https://www.nature.com/articles/s41586-024-07558-y",
+      "status": "read_primary_web_and_supplied_pdf",
+      "notes": "2024 FlyWire female brain;139255 neurons and54.5M retained chemical synaptic links. Brain not VNC. User provided drosophila-2024.pdf."
+    },
+    {
+      "id": "C09",
+      "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+      "url": "https://www.nature.com/articles/s41586-024-07686-5",
+      "status": "read_primary_web",
+      "notes": "2024 annotation companion paper; distinguishes individual variation, technical noise and cell-type conservation."
+    },
+    {
+      "id": "C10",
+      "title": "Distributed control circuits across a brain-and-cord connectome \u2014 final Nature BANC paper",
+      "url": "https://www.nature.com/articles/s41586-026-10735-w",
+      "status": "read_primary_full_html_via_https",
+      "notes": "PublishedJune8,2026; v888 materializationApril17,2026.155916 proofread/roughly proofread neurons;18% both-ended synapse attachment. Female lamina/ocellar omissions and antennal damage. BANC claim that MaleCNS also lacks lamina conflicts with final MaleCNS Methods, so do not generalize it."
+    },
+    {
+      "id": "C11",
+      "title": "BANC final publication PubMed record",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42259917/",
+      "status": "read_primary_index",
+      "notes": "PMCID PMC13518251; DOI10.1038/s41586-026-10735-w; final journal citation Nature656:957-970,August2026, epubJune8."
+    },
+    {
+      "id": "C12",
+      "title": "BANC v888 final Dataverse deposit",
+      "url": "https://doi.org/10.7910/DVN/7WTH1N",
+      "status": "http_403_from_environment",
+      "notes": "Final static deposit linked by authors. Dataverse API and page blocked; GCS mirror accessible. Do not infer subscription requirement."
+    },
+    {
+      "id": "C13",
+      "title": "BANC project analysis repository",
+      "url": "https://github.com/htem/BANC-project",
+      "status": "read_primary_repository",
+      "notes": "CC BY4.0 code and data declared; included code archives may differ. README~188000 neurons/199M predicted synapses is not paper155916 proofread/roughly-proofread inventory."
+    },
+    {
+      "id": "C14",
+      "title": "BANC data location index",
+      "url": "https://github.com/htem/BANC-project/blob/main/manuscript/print/banc_data_locations.md",
+      "status": "read_primary_repository",
+      "notes": "Lists bulk files; v2 detection-size threshold>=5, v3>=10. These are not neuron-pair synapse count thresholds. NT filename without_v2 is404; corrected by public object inventory."
+    },
+    {
+      "id": "C15",
+      "title": "BANC post-proofreading pipeline",
+      "url": "https://github.com/htem/bancpipeline",
+      "status": "read_primary_repository",
+      "notes": "Data preprocessing, matching and typing; GCS mirror evolves, Dataverse provides frozen paper snapshot."
+    },
+    {
+      "id": "C16",
+      "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+      "url": "https://www.nature.com/articles/s41586-025-08925-z",
+      "status": "read_primary_web",
+      "notes": "2025 integrated FAFB/FANC/MANC neck-connective atlas; cross-specimen correspondence is inferred, not continuous physical reconstruction."
+    },
+    {
+      "id": "C17",
+      "title": "FANC automated reconstruction and client",
+      "url": "https://github.com/htem/FANC_auto_recon",
+      "status": "read_primary_repository",
+      "notes": "Female VNC resource, sparse/targeted reconstruction. Repository code GPL3.0; data license must be checked separately."
+    },
+    {
+      "id": "C18",
+      "title": "MANC official project",
+      "url": "https://www.janelia.org/project-team/flyem/manc-connectome",
+      "status": "read_primary_web",
+      "notes": "Male VNC, not whole brain;~23000 neurons. DatasetCC BY. Public GCS bulk data and neuPrint."
+    },
+    {
+      "id": "C19",
+      "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
+      "url": "https://elifesciences.org/reviewed-preprints/97769",
+      "status": "http_403_primary_project_confirmed",
+      "notes": "eLife2024 reviewed-preprint cited by official project; browser fulltext blocked. Prefer project+companion literature for inspected details."
+    },
+    {
+      "id": "C20",
+      "title": "A Drosophila computational brain model reveals sensorimotor processing",
+      "url": "https://www.nature.com/articles/s41586-024-07763-9",
+      "status": "read_primary_full_html_via_https",
+      "notes": "Shiu2024 Brian2 LIF model. Feeding/grooming validations; missing internal state,gap junctions,non-spiking cells,long-range peptides;0Hz baseline.91% tested predictions,84% excluding optogenetic set dominated by negatives."
+    },
+    {
+      "id": "C21",
+      "title": "Drosophila_brain_model code",
+      "url": "https://github.com/philshiu/Drosophila_brain_model",
+      "status": "read_primary_repository",
+      "notes": "User-supplied LIF brain model source. Root agent handles detailed code/license reproducibility audit."
+    },
+    {
+      "id": "C22",
+      "title": "FlyWire neuron annotations",
+      "url": "https://github.com/flyconnectome/flywire_annotations",
+      "status": "read_primary_repository",
+      "notes": "v783 segmentation; annotation2.1.0 matches2024 papers;3.1.0 updates for peer-reviewed maleCNS. Authors warn Codex annotations mix sources. Pin tag+commit."
+    },
+    {
+      "id": "C23",
+      "title": "FlyWire v783 connectivity dataset",
+      "url": "https://zenodo.org/records/10676866",
+      "status": "read_primary_dataset_and_api",
+      "notes": "ZenodoAPI licensecc-by-4.0. Proofread IDs~1.1MB;proofread_connections~852MB;all synapses~9.5GB. Per-neuropil rows may require aggregation. Orphan endpoints present in all-synapse table."
+    },
+    {
+      "id": "C24",
+      "title": "Codex FlyWire FAQ and release list",
+      "url": "https://codex.flywire.ai/faq",
+      "status": "read_primary_web",
+      "notes": "Public dataset selector listed FAFB783,BANC888,MANC1.2.1,MAOL1.1,MCNS0.9. MCNS here lagged official1.0; BANC release dateMay20 differs from CAVE materializationApril17."
+    },
+    {
+      "id": "C25",
+      "title": "BANC public GCS neurotransmitter object inventory",
+      "url": "https://storage.googleapis.com/storage/v1/b/lee-lab_brain-and-nerve-cord-fly-connectome/o?prefix=compiled_data/banc_888/banc_888_neurotransmitter&fields=items(name,size,md5Hash,updated)",
+      "status": "read_public_api",
+      "notes": "Confirmed valid banc_888_neurotransmitter_prediction_v2.csv;21107592bytes;updated2026-05-13T22:58:10.097Z;MD5base64TrvR1uBdQZKtDG2ydzmo4w==."
+    }
+  ],
+  "read_only_data_availability_checks": [
+    {
+      "name": "male_metadata",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "http_status": 200,
+      "bytes": 14483314,
+      "etag": "50a7718770c57220f160ba4f431ab89e",
+      "last_modified": "2026-06-03T13:54:38Z"
+    },
+    {
+      "name": "male_edges",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "http_status": 200,
+      "bytes": 1051241946,
+      "etag": "f30e9dcca25cfd021bf1e7b3d975599e",
+      "last_modified": "2026-06-03T13:54:47Z"
+    },
+    {
+      "name": "banc_metadata",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_meta.feather",
+      "http_status": 200,
+      "bytes": 57503026,
+      "etag": "8c2b93a608c7163ec9d94d68e0756ff4",
+      "last_modified": "2026-08-21T18:23:34Z"
+    },
+    {
+      "name": "banc_edges_v2",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_edgelist_simple_v2.feather",
+      "http_status": 200,
+      "bytes": 305250378,
+      "etag": "394406f8a9bdf093c895f95aff4f6c49",
+      "last_modified": "2026-06-02T10:28:55Z"
+    },
+    {
+      "name": "banc_edges_v3",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_edgelist_simple_v3.feather",
+      "http_status": 200,
+      "bytes": 359161658,
+      "etag": "08542b0771db7418ed474be60dc9886c",
+      "last_modified": "2026-08-12T23:46:17Z"
+    },
+    {
+      "name": "banc_nt_bad_documented_path",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_neurotransmitter_prediction.csv",
+      "http_status": 404
+    },
+    {
+      "name": "banc_nt_corrected_path",
+      "url": "https://storage.googleapis.com/lee-lab_brain-and-nerve-cord-fly-connectome/compiled_data/banc_888/banc_888_neurotransmitter_prediction_v2.csv",
+      "status": "listed_in_public_gcs_inventory",
+      "bytes": 21107592,
+      "md5_base64": "TrvR1uBdQZKtDG2ydzmo4w==",
+      "last_modified": "2026-05-13T22:58:10.097Z"
+    }
+  ],
+  "limitations": "File HEAD/API checks establish accessibility, not parsing, graph integrity, successful import or simulation. No bulk connectome files were downloaded in this subtask."
+}
