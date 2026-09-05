@@ -94,12 +94,12 @@ not a calibrated peripheral visual encoder. Its
 [code](https://github.com/JNLiew/flylif_orientation_maps) has not yet been audited
 here; no parameter or claimed synapse count was imported from it.
 
-## Next bounded experiment
+## Optical experiment completed; anatomical registration next
 
-Calibrate the existing camera/retina against known directions without touching
-the neural graph. Preserve each facet's angular support, source-pixel weights,
-out-of-image fraction, pose transform and optical asset hashes. Verify with
-rendered targets independently of the algebraic projection. In parallel, audit
+The [camera/retina calibration](retina-ray-calibration.md) now preserves each
+facet's angular support, source-pixel weights, out-of-image fraction, pose
+transform and optical asset hashes. Three random-image checks and fourteen
+independently rendered targets pass. In parallel, audit
 the author's anatomical registration data. A future adapter must explicitly
 reject unresolved mappings and distinguish measured anatomy, transferred
 optics and fitted physiology; it must not fill missing directions by index.

@@ -1,0 +1,1138 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-04",
+  "scope": "source and metadata only; no inference, weight load, package install, or runtime change",
+  "repository_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "figshare_version": 4,
+  "figshare_doi": "10.25378/janelia.25309105.v4",
+  "figshare_collection_license": {
+    "value": 6,
+    "name": "GPL 3.0+",
+    "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+  },
+  "policy_archive": {
+    "id": 44815195,
+    "name": "trained-fly-policies.zip",
+    "size": 6537720,
+    "is_link_only": false,
+    "download_url": "https://ndownloader.figshare.com/files/44815195",
+    "supplied_md5": "12934d5a1c60631a710bc2b6d297d3ce",
+    "computed_md5": "",
+    "mimetype": "application/zip"
+  },
+  "full_archive_digest_verified": false,
+  "zip_members": [
+    {
+      "name": "flight/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 0,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "flight/assets/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 65,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "flight/saved_model.pb",
+      "bytes": 92740,
+      "compressed_bytes": 11407,
+      "header_offset": 137,
+      "crc32": "f2515c2e",
+      "compression": 8
+    },
+    {
+      "name": "flight/variables/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 11623,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "flight/variables/variables.data-00000-of-00001",
+      "bytes": 662096,
+      "compressed_bytes": 622503,
+      "header_offset": 11698,
+      "crc32": "9ef630c5",
+      "compression": 8
+    },
+    {
+      "name": "flight/variables/variables.index",
+      "bytes": 800,
+      "compressed_bytes": 347,
+      "header_offset": 634305,
+      "crc32": "bc984283",
+      "compression": 8
+    },
+    {
+      "name": "vision-bumps/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 634742,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-bumps/assets/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 634813,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-bumps/saved_model.pb",
+      "bytes": 111365,
+      "compressed_bytes": 14438,
+      "header_offset": 634891,
+      "crc32": "31c9af08",
+      "compression": 8
+    },
+    {
+      "name": "vision-bumps/variables/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 649414,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-bumps/variables/variables.data-00000-of-00001",
+      "bytes": 655114,
+      "compressed_bytes": 614658,
+      "header_offset": 649495,
+      "crc32": "2d733c71",
+      "compression": 8
+    },
+    {
+      "name": "vision-bumps/variables/variables.index",
+      "bytes": 1366,
+      "compressed_bytes": 549,
+      "header_offset": 1264263,
+      "crc32": "b70520e1",
+      "compression": 8
+    },
+    {
+      "name": "vision-trench/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1264908,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-trench/assets/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1264980,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-trench/saved_model.pb",
+      "bytes": 111369,
+      "compressed_bytes": 14840,
+      "header_offset": 1265059,
+      "crc32": "2be2a523",
+      "compression": 8
+    },
+    {
+      "name": "vision-trench/variables/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1279985,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "vision-trench/variables/variables.data-00000-of-00001",
+      "bytes": 655114,
+      "compressed_bytes": 613980,
+      "header_offset": 1280067,
+      "crc32": "473f13bf",
+      "compression": 8
+    },
+    {
+      "name": "vision-trench/variables/variables.index",
+      "bytes": 1366,
+      "compressed_bytes": 549,
+      "header_offset": 1894158,
+      "crc32": "1aa1c792",
+      "compression": 8
+    },
+    {
+      "name": "walking/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1894804,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "walking/assets/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1894870,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "walking/saved_model.pb",
+      "bytes": 110102,
+      "compressed_bytes": 12602,
+      "header_offset": 1894943,
+      "crc32": "9856f7f1",
+      "compression": 8
+    },
+    {
+      "name": "walking/variables/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "header_offset": 1907625,
+      "crc32": "00000000",
+      "compression": 0
+    },
+    {
+      "name": "walking/variables/variables.data-00000-of-00001",
+      "bytes": 4919480,
+      "compressed_bytes": 4627102,
+      "header_offset": 1907701,
+      "crc32": "37e15712",
+      "compression": 8
+    },
+    {
+      "name": "walking/variables/variables.index",
+      "bytes": 924,
+      "compressed_bytes": 387,
+      "header_offset": 6534908,
+      "crc32": "921de1cc",
+      "compression": 8
+    }
+  ],
+  "range_receipts": [
+    {
+      "url": "https://ndownloader.figshare.com/files/44815195",
+      "status": 206,
+      "content_range": "bytes 6472184-6537719/6537720",
+      "etag": "\"2156cdfa8650b3d02e9e90a89abf34cf-1\"",
+      "last_modified": "Sun, 03 Mar 2024 20:59:07 GMT",
+      "bytes_read": 65536,
+      "sha256": "0e74d75597fbfc05e07972fdd246da75c22f9fef33f44ffd0b724e1d6adf5989"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/44815195",
+      "status": 206,
+      "content_range": "bytes 1894943-1894972/6537720",
+      "etag": "\"2156cdfa8650b3d02e9e90a89abf34cf-1\"",
+      "last_modified": "Sun, 03 Mar 2024 20:59:07 GMT",
+      "bytes_read": 30,
+      "sha256": "93507084112b477ef03507ee1f0ac64b9a3aad99dc8199e28253fac3bbcea8a5"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/44815195",
+      "status": 206,
+      "content_range": "bytes 1894973-1907624/6537720",
+      "etag": "\"2156cdfa8650b3d02e9e90a89abf34cf-1\"",
+      "last_modified": "Sun, 03 Mar 2024 20:59:07 GMT",
+      "bytes_read": 12652,
+      "sha256": "8a050449cccd867d8e4c3833bdc4104e8c6ebb918a3ebb9391a00f98e23cab67"
+    }
+  ],
+  "source_manifest": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/pyproject.toml",
+      "bytes": 1368,
+      "sha256": "9ed12e3026c32b06dfff1cbdc914dcf0d2c600767cfb603c2d68e3f24ccebbed"
+    },
+    {
+      "path": "flybody/fly_envs.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/fly_envs.py",
+      "bytes": 13859,
+      "sha256": "0c520d4ae2daa051b838dafa7ef595fc260a035c1b7516fd4c0afdb4c231e781"
+    },
+    {
+      "path": "flybody/fruitfly/fruitfly.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/fruitfly/fruitfly.py",
+      "bytes": 29784,
+      "sha256": "a9301c0a5b40ab120af0f83ebfcbf90ca416813ef0cdf6cbb96ac8a0f65fb810"
+    },
+    {
+      "path": "flybody/tasks/base.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/base.py",
+      "bytes": 18781,
+      "sha256": "a31b8b06b052d19f6108ae11f1f88e0d6ac92096a3c3a4db364774c43775385a"
+    },
+    {
+      "path": "flybody/tasks/constants.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/constants.py",
+      "bytes": 825,
+      "sha256": "d17e819e3fc54d2e231267dc833d77dd119575082ca19f4e27228ad0471d1891"
+    },
+    {
+      "path": "flybody/tasks/walk_imitation.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/walk_imitation.py",
+      "bytes": 8899,
+      "sha256": "6e155c1007de189845827f3c4db2d2572f7c377cef720776e1efd9c7b1a9d253"
+    },
+    {
+      "path": "flybody/tasks/trajectory_loaders.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/trajectory_loaders.py",
+      "bytes": 11671,
+      "sha256": "6b6731fab9b57a9c0ad90a46d6f987f05668fe3586107da96d109a9be8338a46"
+    },
+    {
+      "path": "flybody/tasks/synthetic_trajectories.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/synthetic_trajectories.py",
+      "bytes": 2866,
+      "sha256": "4296d195c5debba580e422b3e30fba742d5b62a039a45e7b7c5a715d102e2430"
+    },
+    {
+      "path": "flybody/tasks/task_utils.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/tasks/task_utils.py",
+      "bytes": 9748,
+      "sha256": "a8b9cb7f03c2bdf5f907fe41c9f66b67be9d39c8e8bc6b62a3f7ead39774c915"
+    },
+    {
+      "path": "flybody/agents/utils_tf.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/agents/utils_tf.py",
+      "bytes": 3756,
+      "sha256": "d2901e7f08f105759a40b5dcde8882d731637de1a62ee9f4117262c0a8a76127"
+    },
+    {
+      "path": "flybody/agents/network_factory.py",
+      "url": "https://raw.githubusercontent.com/TuragaLab/flybody/d015e9bfe441bd90ae431bac24c55cb74bdbce26/flybody/agents/network_factory.py",
+      "bytes": 5691,
+      "sha256": "15ecd198c92a3199c233429581b02906a87aca82ffe63eb02bff9675c07ec234"
+    }
+  ],
+  "graph": {
+    "sha256": "49cdb0874021609c1aa5634a3073a394ef55b7ce54b6487c020c8ed2ec37d5d4",
+    "bytes": 110102,
+    "tensorflow_version": "2.8.0",
+    "tensorflow_git_version": "v2.8.0-rc1-32-g3f878cff5b6",
+    "variables": [
+      {
+        "object_node_id": 6,
+        "name": "feedforward_mlp_torso/linear/b",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 7,
+        "name": "feedforward_mlp_torso/linear/w",
+        "shape": [
+          741,
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 8,
+        "name": "feedforward_mlp_torso/layer_norm/offset",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 9,
+        "name": "feedforward_mlp_torso/layer_norm/scale",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 10,
+        "name": "feedforward_mlp_torso/mlp/linear_0/b",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 11,
+        "name": "feedforward_mlp_torso/mlp/linear_0/w",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 12,
+        "name": "feedforward_mlp_torso/mlp/linear_1/b",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 13,
+        "name": "feedforward_mlp_torso/mlp/linear_1/w",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 14,
+        "name": "feedforward_mlp_torso/mlp/linear_2/b",
+        "shape": [
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 15,
+        "name": "feedforward_mlp_torso/mlp/linear_2/w",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 16,
+        "name": "MultivariateNormalDiagHead/linear/b",
+        "shape": [
+          59
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 17,
+        "name": "MultivariateNormalDiagHead/linear/w",
+        "shape": [
+          512,
+          59
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 18,
+        "name": "MultivariateNormalDiagHead/linear/b",
+        "shape": [
+          59
+        ],
+        "dtype_enum": 1
+      },
+      {
+        "object_node_id": 19,
+        "name": "MultivariateNormalDiagHead/linear/w",
+        "shape": [
+          512,
+          59
+        ],
+        "dtype_enum": 1
+      }
+    ],
+    "functions": {
+      "__inference___call___10048": {
+        "input": [
+          [
+            {
+              "walker/accelerometer": {
+                "tensor_name": "args_0/walker/accelerometer",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/actuator_activation": {
+                "tensor_name": "args_0/walker/actuator_activation",
+                "shape": [
+                  -1,
+                  59
+                ],
+                "dtype_enum": 1
+              },
+              "walker/appendages_pos": {
+                "tensor_name": "args_0/walker/appendages_pos",
+                "shape": [
+                  -1,
+                  21
+                ],
+                "dtype_enum": 1
+              },
+              "walker/force": {
+                "tensor_name": "args_0/walker/force",
+                "shape": [
+                  -1,
+                  18
+                ],
+                "dtype_enum": 1
+              },
+              "walker/gyro": {
+                "tensor_name": "args_0/walker/gyro",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/joints_pos": {
+                "tensor_name": "args_0/walker/joints_pos",
+                "shape": [
+                  -1,
+                  85
+                ],
+                "dtype_enum": 1
+              },
+              "walker/joints_vel": {
+                "tensor_name": "args_0/walker/joints_vel",
+                "shape": [
+                  -1,
+                  85
+                ],
+                "dtype_enum": 1
+              },
+              "walker/ref_displacement": {
+                "tensor_name": "args_0/walker/ref_displacement",
+                "shape": [
+                  -1,
+                  65,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/ref_root_quat": {
+                "tensor_name": "args_0/walker/ref_root_quat",
+                "shape": [
+                  -1,
+                  65,
+                  4
+                ],
+                "dtype_enum": 1
+              },
+              "walker/touch": {
+                "tensor_name": "args_0/walker/touch",
+                "shape": [
+                  -1,
+                  6
+                ],
+                "dtype_enum": 1
+              },
+              "walker/velocimeter": {
+                "tensor_name": "args_0/walker/velocimeter",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/world_zaxis": {
+                "tensor_name": "args_0/walker/world_zaxis",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              }
+            }
+          ],
+          {}
+        ],
+        "output": {
+          "registered_type": "tensorflow_probability.python.distributions.independent.Independent_ACTTypeSpec",
+          "class_enum": 12,
+          "state": [
+            3,
+            {
+              "distribution": {
+                "registered_type": "tfp.distributions.Normal_ACTTypeSpec",
+                "class_enum": 12,
+                "state": [
+                  3,
+                  {
+                    "loc": {
+                      "tensor_name": "",
+                      "shape": [
+                        -1,
+                        59
+                      ],
+                      "dtype_enum": 1
+                    },
+                    "scale": {
+                      "tensor_name": "",
+                      "shape": [
+                        -1,
+                        59
+                      ],
+                      "dtype_enum": 1
+                    }
+                  },
+                  {
+                    "allow_nan_stats": true,
+                    "name": "Normal_1",
+                    "validate_args": false
+                  },
+                  [
+                    "parameters"
+                  ],
+                  [],
+                  [
+                    "name"
+                  ]
+                ]
+              }
+            },
+            {
+              "experimental_use_kahan_sum": false,
+              "reinterpreted_batch_ndims": 1,
+              "validate_args": false
+            },
+            [
+              "name"
+            ],
+            [
+              "reinterpreted_batch_ndims"
+            ],
+            []
+          ]
+        }
+      },
+      "__inference_wrapped_module_10264": {
+        "input": [
+          [
+            {
+              "walker/accelerometer": {
+                "tensor_name": "args_0/walker/accelerometer",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/actuator_activation": {
+                "tensor_name": "args_0/walker/actuator_activation",
+                "shape": [
+                  -1,
+                  59
+                ],
+                "dtype_enum": 1
+              },
+              "walker/appendages_pos": {
+                "tensor_name": "args_0/walker/appendages_pos",
+                "shape": [
+                  -1,
+                  21
+                ],
+                "dtype_enum": 1
+              },
+              "walker/force": {
+                "tensor_name": "args_0/walker/force",
+                "shape": [
+                  -1,
+                  18
+                ],
+                "dtype_enum": 1
+              },
+              "walker/gyro": {
+                "tensor_name": "args_0/walker/gyro",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/joints_pos": {
+                "tensor_name": "args_0/walker/joints_pos",
+                "shape": [
+                  -1,
+                  85
+                ],
+                "dtype_enum": 1
+              },
+              "walker/joints_vel": {
+                "tensor_name": "args_0/walker/joints_vel",
+                "shape": [
+                  -1,
+                  85
+                ],
+                "dtype_enum": 1
+              },
+              "walker/ref_displacement": {
+                "tensor_name": "args_0/walker/ref_displacement",
+                "shape": [
+                  -1,
+                  65,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/ref_root_quat": {
+                "tensor_name": "args_0/walker/ref_root_quat",
+                "shape": [
+                  -1,
+                  65,
+                  4
+                ],
+                "dtype_enum": 1
+              },
+              "walker/touch": {
+                "tensor_name": "args_0/walker/touch",
+                "shape": [
+                  -1,
+                  6
+                ],
+                "dtype_enum": 1
+              },
+              "walker/velocimeter": {
+                "tensor_name": "args_0/walker/velocimeter",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              },
+              "walker/world_zaxis": {
+                "tensor_name": "args_0/walker/world_zaxis",
+                "shape": [
+                  -1,
+                  3
+                ],
+                "dtype_enum": 1
+              }
+            }
+          ],
+          {}
+        ],
+        "output": {
+          "registered_type": "tensorflow_probability.python.distributions.independent.Independent_ACTTypeSpec",
+          "class_enum": 12,
+          "state": [
+            3,
+            {
+              "distribution": {
+                "registered_type": "tfp.distributions.Normal_ACTTypeSpec",
+                "class_enum": 12,
+                "state": [
+                  3,
+                  {
+                    "loc": {
+                      "tensor_name": "",
+                      "shape": [
+                        -1,
+                        59
+                      ],
+                      "dtype_enum": 1
+                    },
+                    "scale": {
+                      "tensor_name": "",
+                      "shape": [
+                        -1,
+                        59
+                      ],
+                      "dtype_enum": 1
+                    }
+                  },
+                  {
+                    "allow_nan_stats": true,
+                    "name": "Normal",
+                    "validate_args": false
+                  },
+                  [
+                    "parameters"
+                  ],
+                  [],
+                  [
+                    "name"
+                  ]
+                ]
+              }
+            },
+            {
+              "experimental_use_kahan_sum": false,
+              "reinterpreted_batch_ndims": 1,
+              "validate_args": false
+            },
+            [
+              "name"
+            ],
+            [
+              "reinterpreted_batch_ndims"
+            ],
+            []
+          ]
+        }
+      }
+    },
+    "op_counts_including_save_restore": {
+      "VarHandleOp": 14,
+      "ReadVariableOp": 42,
+      "NoOp": 7,
+      "Const": 173,
+      "Placeholder": 1,
+      "StatefulPartitionedCall": 3,
+      "StaticRegexFullMatch": 1,
+      "Select": 1,
+      "StringJoin": 1,
+      "ShardedFilename": 1,
+      "SaveV2": 1,
+      "Pack": 1,
+      "MergeV2Checkpoints": 1,
+      "Identity": 28,
+      "RestoreV2": 1,
+      "AssignVariableOp": 14,
+      "Shape": 28,
+      "StridedSlice": 28,
+      "ConcatV2": 30,
+      "Reshape": 28,
+      "MatMul": 12,
+      "AddV2": 18,
+      "Mean": 4,
+      "StopGradient": 2,
+      "SquaredDifference": 2,
+      "Rsqrt": 2,
+      "Mul": 8,
+      "Sub": 2,
+      "Tanh": 2,
+      "Elu": 6,
+      "Softplus": 4,
+      "RealDiv": 2
+    },
+    "parameter_count": 1229430,
+    "flat_input_count": 741
+  },
+  "package_metadata": [
+    {
+      "name": "tensorflow",
+      "version": "2.8.0",
+      "url": "https://pypi.org/pypi/tensorflow/2.8.0/json",
+      "metadata_sha256": "37909e43c39f81f8d279f8bc2a6905c9db80dd57e32cc62f395541a2fd4c83fa",
+      "requires_python": "",
+      "requires_dist": [
+        "absl-py (>=0.4.0)",
+        "astunparse (>=1.6.0)",
+        "flatbuffers (>=1.12)",
+        "gast (>=0.2.1)",
+        "google-pasta (>=0.1.1)",
+        "h5py (>=2.9.0)",
+        "keras-preprocessing (>=1.1.1)",
+        "libclang (>=9.0.1)",
+        "numpy (>=1.20)",
+        "opt-einsum (>=2.3.2)",
+        "protobuf (>=3.9.2)",
+        "setuptools",
+        "six (>=1.12.0)",
+        "termcolor (>=1.1.0)",
+        "typing-extensions (>=3.6.6)",
+        "wrapt (>=1.11.0)",
+        "tensorboard (<2.9,>=2.8)",
+        "tf-estimator-nightly (==2.8.0.dev2021122109)",
+        "keras (<2.9,>=2.8.0rc0)",
+        "tensorflow-io-gcs-filesystem (>=0.23.1)",
+        "grpcio (<2.0,>=1.24.3)"
+      ],
+      "files": [
+        {
+          "filename": "tensorflow-2.8.0-cp310-cp310-macosx_10_14_x86_64.whl",
+          "bytes": 217460555,
+          "sha256": "78c3ba2e0c952aa9eb388200f1923e40287f9357492a464188ca3043e35edc52"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp310-cp310-manylinux2010_x86_64.whl",
+          "bytes": 497645933,
+          "sha256": "2a520538e77a52fb428acb05e300c960844fd1d2c3918ca8ca14127edba6f83b"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp310-cp310-win_amd64.whl",
+          "bytes": 437988651,
+          "sha256": "b7170844ae6b048d82a9d7a61b2fa627f2e16cb829267bf0ce4b3a0de0a61054"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+          "bytes": 217354432,
+          "sha256": "fa4a723368d5f748b6f4ec305cf7c26b98e4a6a8c2ce1425f8ae10383a37bcfc"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp37-cp37m-manylinux2010_x86_64.whl",
+          "bytes": 497518115,
+          "sha256": "05fb161c6b2a6c4b8317a703a0a6d7f7aa6b5e3c6ea31bbc4f44ef96b89c3344"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp37-cp37m-win_amd64.whl",
+          "bytes": 437939270,
+          "sha256": "291fa84f1022914580810ad76732fb254e44a8a609128e1c58873a12b2f81559"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp38-cp38-macosx_10_14_x86_64.whl",
+          "bytes": 217436882,
+          "sha256": "dd0f9f113ebc21b73fcd349db1629e187b8686395b8146d100eb1706a943bbc0"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp38-cp38-manylinux2010_x86_64.whl",
+          "bytes": 497623578,
+          "sha256": "8489b4f1771e146f752b0eaeb57acf183bd07357e4550464e7dff18b3b656b5d"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp38-cp38-win_amd64.whl",
+          "bytes": 437951022,
+          "sha256": "da38d4043185267e7316ae5dc98d18e89c8af4170859f64798e7a3607fd606e3"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp39-cp39-macosx_10_14_x86_64.whl",
+          "bytes": 217460667,
+          "sha256": "52f225fecc688281b3ae2cba2b52d3ed6215ed4a3ffb686b9cfd09885ca65563"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp39-cp39-manylinux2010_x86_64.whl",
+          "bytes": 497647203,
+          "sha256": "9d91a989e5455ae713c03fd7236071ab3f232ad8ff2831f2658072933546091f"
+        },
+        {
+          "filename": "tensorflow-2.8.0-cp39-cp39-win_amd64.whl",
+          "bytes": 437983714,
+          "sha256": "b360c13b3e58b9a5c0780cbdb6b549eea73f620275fa203f8508fe418ae02735"
+        }
+      ]
+    },
+    {
+      "name": "tensorflow-macos",
+      "version": "2.8.0",
+      "url": "https://pypi.org/pypi/tensorflow-macos/2.8.0/json",
+      "metadata_sha256": "93ee4deb0a8a475e0e1d02382a216d1a725c257b13a1b9a4e454d80e5469487b",
+      "requires_python": "",
+      "requires_dist": [
+        "absl-py (>=0.4.0)",
+        "astunparse (>=1.6.0)",
+        "flatbuffers (>=1.12)",
+        "gast (>=0.2.1)",
+        "google-pasta (>=0.1.1)",
+        "h5py (>=2.9.0)",
+        "keras-preprocessing (>=1.1.1)",
+        "libclang (>=9.0.1)",
+        "numpy (>=1.20)",
+        "opt-einsum (>=2.3.2)",
+        "protobuf (>=3.9.2)",
+        "setuptools",
+        "six (>=1.12.0)",
+        "termcolor (>=1.1.0)",
+        "typing-extensions (>=3.6.6)",
+        "wrapt (>=1.11.0)",
+        "tensorboard (<2.9,>=2.8)",
+        "tf-estimator-nightly (==2.8.0.dev2021122109)",
+        "keras (<2.9,>=2.8.0rc0)",
+        "grpcio (<2.0,>=1.24.3)"
+      ],
+      "files": [
+        {
+          "filename": "tensorflow_macos-2.8.0-cp38-cp38-macosx_11_0_arm64.whl",
+          "bytes": 190081187,
+          "sha256": "10c53c1331844bf9eba4dbf6de6c1fd94f7787df00582fb32f8f3f17f7b4c024"
+        },
+        {
+          "filename": "tensorflow_macos-2.8.0-cp38-cp38-macosx_11_0_x86_64.whl",
+          "bytes": 218915044,
+          "sha256": "53834b7d08e2e07f3e8b5821abfe87fdd693e54d97281f5fa8a626394bd6cd49"
+        },
+        {
+          "filename": "tensorflow_macos-2.8.0-cp39-cp39-macosx_11_0_arm64.whl",
+          "bytes": 190101805,
+          "sha256": "7f522e7b478f2bbd1707632edb0942e22df7878142c60316876fd0269a80d1e7"
+        }
+      ]
+    },
+    {
+      "name": "dm-reverb",
+      "version": "0.7.0",
+      "url": "https://pypi.org/pypi/dm-reverb/0.7.0/json",
+      "metadata_sha256": "33ee0b78e87a876d79f52b0b43132adf7550c4cf43a6b681a09abee44ab96c01",
+      "requires_python": ">=3",
+      "requires_dist": [
+        "dm-tree",
+        "portpicker",
+        "dataclasses ; python_version < \"3.7.0\"",
+        "tensorflow (~=2.8.0) ; extra == 'tensorflow'"
+      ],
+      "files": [
+        {
+          "filename": "dm_reverb-0.7.0-cp310-cp310-manylinux2010_x86_64.whl",
+          "bytes": 6448208,
+          "sha256": "6f4038fe5d3d96d9f75e4789dfd30ece016a6e0ed42e3afa5a1132e71b2bcea8"
+        },
+        {
+          "filename": "dm_reverb-0.7.0-cp37-cp37m-manylinux2010_x86_64.whl",
+          "bytes": 6448170,
+          "sha256": "96cf1ae91d2a8dc1ae05a352d846fef96db2b01e86eec9bfafd6bf32741ebf0c"
+        },
+        {
+          "filename": "dm_reverb-0.7.0-cp38-cp38-manylinux2010_x86_64.whl",
+          "bytes": 6449117,
+          "sha256": "dea2d8cec7168289bb62f21d0c03071c9d8f8539f5f14babd9c090814d7e68d1"
+        },
+        {
+          "filename": "dm_reverb-0.7.0-cp39-cp39-manylinux2010_x86_64.whl",
+          "bytes": 6448210,
+          "sha256": "c467ee0f3f7b3e296ae9cc27949aa3b1fc645bd3ea99516b3604a67b8d55eadd"
+        }
+      ]
+    },
+    {
+      "name": "tensorflow",
+      "version": "2.15.1",
+      "url": "https://pypi.org/pypi/tensorflow/2.15.1/json",
+      "metadata_sha256": "660e3886fb5f1e68d86827d61ae134bf5a52302e7feeef628969457b38774444",
+      "requires_python": ">=3.9",
+      "requires_dist": [
+        "absl-py (>=1.0.0)",
+        "astunparse (>=1.6.0)",
+        "flatbuffers (>=23.5.26)",
+        "gast (!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1)",
+        "google-pasta (>=0.1.1)",
+        "h5py (>=2.9.0)",
+        "libclang (>=13.0.0)",
+        "ml-dtypes (~=0.3.1)",
+        "numpy (<2.0.0,>=1.23.5)",
+        "opt-einsum (>=2.3.2)",
+        "packaging",
+        "protobuf (!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3)",
+        "setuptools",
+        "six (>=1.12.0)",
+        "termcolor (>=1.1.0)",
+        "typing-extensions (>=3.6.6)",
+        "wrapt (<1.15,>=1.11.0)",
+        "tensorflow-io-gcs-filesystem (>=0.23.1)",
+        "grpcio (<2.0,>=1.24.3)",
+        "tensorboard (<2.16,>=2.15)",
+        "tensorflow-estimator (<2.16,>=2.15.0)",
+        "keras (<2.16,>=2.15.0)",
+        "tensorflow-cpu-aws (==2.15.1) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+        "tensorflow-intel (==2.15.1) ; platform_system == \"Windows\"",
+        "nvidia-cublas-cu12 (==12.2.5.6) ; extra == 'and-cuda'",
+        "nvidia-cuda-cupti-cu12 (==12.2.142) ; extra == 'and-cuda'",
+        "nvidia-cuda-nvcc-cu12 (==12.2.140) ; extra == 'and-cuda'",
+        "nvidia-cuda-nvrtc-cu12 (==12.2.140) ; extra == 'and-cuda'",
+        "nvidia-cuda-runtime-cu12 (==12.2.140) ; extra == 'and-cuda'",
+        "nvidia-cudnn-cu12 (==8.9.4.25) ; extra == 'and-cuda'",
+        "nvidia-cufft-cu12 (==11.0.8.103) ; extra == 'and-cuda'",
+        "nvidia-curand-cu12 (==10.3.3.141) ; extra == 'and-cuda'",
+        "nvidia-cusolver-cu12 (==11.5.2.141) ; extra == 'and-cuda'",
+        "nvidia-cusparse-cu12 (==12.1.2.141) ; extra == 'and-cuda'",
+        "nvidia-nccl-cu12 (==2.16.5) ; extra == 'and-cuda'",
+        "nvidia-nvjitlink-cu12 (==12.2.140) ; extra == 'and-cuda'"
+      ],
+      "files": [
+        {
+          "filename": "tensorflow-2.15.1-cp310-cp310-macosx_10_15_x86_64.whl",
+          "bytes": 236439313,
+          "sha256": "91b51a507007d63a70b65be307d701088d15042a6399c0e2312b53072226e909"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp310-cp310-macosx_12_0_arm64.whl",
+          "bytes": 205693732,
+          "sha256": "10132acc072d59696c71ce7221d2d8e0e3ff1e6bc8688dbac6d7aed8e675b710"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "bytes": 2121,
+          "sha256": "30c5ef9c758ec9ff7ce2aff76b71c980bc5119b879071c2cc623b1591a497a1a"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 475215357,
+          "sha256": "ea290e435464cf0794f657b48786e5fa413362abe55ed771c172c25980d070ce"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp310-cp310-win_amd64.whl",
+          "bytes": 2098,
+          "sha256": "8e5431d45ceb416c2b1b6de87378054fbac7d2ed35d45b102d89a786613fffdc"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp311-cp311-macosx_10_15_x86_64.whl",
+          "bytes": 236482723,
+          "sha256": "6761efe511e6ee0f893f60738fefbcc51d6dc386eeaaafea59d21899ef369ffd"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp311-cp311-macosx_12_0_arm64.whl",
+          "bytes": 205736374,
+          "sha256": "aa926114d1e13ffe5b2ea59c3f195216f26646d7fe36e9e5207b291e4b7902ff"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "bytes": 2121,
+          "sha256": "e73d43dbc68d8c711e70edecc4ac70472799a25ec4ec18a84d479ee18033d3c5"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 475258663,
+          "sha256": "bb0edd69103c154245c5f209f0507355cc68ba7e4de350084bc31edc562478e4"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp311-cp311-win_amd64.whl",
+          "bytes": 2096,
+          "sha256": "a49f8755c74a89553294a99ab25aa87ab1cddbfa40fe58387e09f64f0578cedc"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp39-cp39-macosx_10_15_x86_64.whl",
+          "bytes": 236437643,
+          "sha256": "f8e85821317c9c0fbf1256e9f721cfb1400ba1e09becb844b3ddd91f744805fc"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp39-cp39-macosx_12_0_arm64.whl",
+          "bytes": 205692241,
+          "sha256": "b75815b6a601edad52b4181e9805c8fcd04813a6ab1d5cd8127188dfd2788e20"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+          "bytes": 2120,
+          "sha256": "432788ac5d1234b9e9b7c7f73603a5655271a28c293329c52c7c0b9434a1184e"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "bytes": 475214135,
+          "sha256": "89b5aa1022dec47e567512eaf4e1271b8e6c1ff1984e30d0d9127bd1093ed4c5"
+        },
+        {
+          "filename": "tensorflow-2.15.1-cp39-cp39-win_amd64.whl",
+          "bytes": 2095,
+          "sha256": "aaf3cfa290597ebbdf19d1a78729e3f555e459506cd58f8d7399359ac5e02a05"
+        }
+      ]
+    },
+    {
+      "name": "tensorflow-probability",
+      "version": "0.23.0",
+      "url": "https://pypi.org/pypi/tensorflow-probability/0.23.0/json",
+      "metadata_sha256": "71f23d0e0d7773468a0b8075190dcb3cf948012960f6d4d02988f593dd92e72f",
+      "requires_python": ">=3.9",
+      "requires_dist": [
+        "absl-py",
+        "six >=1.10.0",
+        "numpy >=1.13.3",
+        "decorator",
+        "cloudpickle >=1.3",
+        "gast >=0.3.2",
+        "dm-tree",
+        "jax ; extra == 'jax'",
+        "jaxlib ; extra == 'jax'",
+        "tensorflow-datasets >=2.2.0 ; extra == 'tfds'"
+      ],
+      "files": [
+        {
+          "filename": "tensorflow_probability-0.23.0-py2.py3-none-any.whl",
+          "bytes": 6915575,
+          "sha256": "dda5cacfe50cb19ecd96f3ce81e6ff8680d84213bcfe94ca0aaf6e5f51c88061"
+        }
+      ]
+    }
+  ]
+}

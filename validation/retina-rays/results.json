@@ -1,0 +1,385 @@
+{
+  "scope": "Audit actual FlyGym facet ray footprints; no neural/anatomical registration.\n\nDecode the installed fisheye resampler with unique pixel codes. Independently\ncheck pinhole geometry against MuJoCo-rendered sphere silhouettes at known rays.\n",
+  "completed": true,
+  "neural_input_installed": false,
+  "anatomical_registration": null,
+  "physiological_phototransduction": null,
+  "mujoco_version": "3.9.0",
+  "source_sha256": {
+    "/Users/bernardo/Documents/Code/fruit-fly/scripts/calibrate_retina_rays.py": "4dc0c95ff64e4d7c8032d944ec105e7dea1ca1fb5b1de70814e555d47b98cb1e",
+    "/Users/bernardo/Documents/Code/fruit-fly/fruitfly/body.py": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/vision/retina.py": "fbb43595de2d7736423424b5cb4ea8eabc369d500fb028c26065c0e2ec4746c6",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/vision.yaml": "aeaf9c67603e85ac81d251a01e7a20821687c1a62be0626af49ef09919e10545",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/compound_eye.npz": "51afb29664ac1f4ef05535f417ae37ed8a625911c99995720ca382799eef36b3"
+  },
+  "raw_image_shape": [
+    512,
+    450,
+    3
+  ],
+  "facet_count_per_eye": 721,
+  "distortion_coefficient": 3.8,
+  "zoom": 2.72,
+  "pixel_lookup_parity_errors": [
+    1.2212453270876722e-15,
+    1.3322676295501878e-15,
+    1.5543122344752192e-15
+  ],
+  "cameras_at_initial_pose": [
+    {
+      "side": "L",
+      "camera_id": 1,
+      "name": "fly/l_eye_cam_camera",
+      "fovy_deg": 157.0,
+      "position_world_mm": [
+        -3.2172357898791186,
+        0.3799745112997607,
+        1.1728673424364222
+      ],
+      "rotation_camera_to_world": [
+        [
+          0.8914630331877621,
+          0.015841632896213348,
+          -0.4528164121659688
+        ],
+        [
+          -0.45288369273897044,
+          0.0007488501767689594,
+          -0.8915692906748922
+        ],
+        [
+          -0.013784821754114551,
+          0.9998742330366346,
+          0.007841989455037886
+        ]
+      ],
+      "rotation_camera_to_head_forward_left_up": [
+        [
+          0.8915682881953352,
+          0.0003606454459721244,
+          -0.4528861417832479
+        ],
+        [
+          -0.45288628537907144,
+          0.0007099796423326848,
+          -0.8915680055074137
+        ],
+        [
+          4.570853378199874e-17,
+          0.9999996829318416,
+          0.0007963267107332678
+        ]
+      ]
+    },
+    {
+      "side": "R",
+      "camera_id": 2,
+      "name": "fly/r_eye_cam_camera",
+      "fovy_deg": 157.0,
+      "position_world_mm": [
+        -3.2172331230691666,
+        -0.38002548626090993,
+        1.1728968455059765
+      ],
+      "rotation_camera_to_world": [
+        [
+          -0.8914833801740625,
+          0.013700623120871558,
+          -0.4528461944187364
+        ],
+        [
+          -0.4528883648502312,
+          2.7553467642660312e-05,
+          0.8915672314660823
+        ],
+        [
+          0.012227504108200615,
+          0.9999061416787631,
+          0.006180289344171197
+        ]
+      ],
+      "rotation_camera_to_head_forward_left_up": [
+        [
+          -0.8915671574438289,
+          -0.0017806038301898136,
+          -0.4528850110320999
+        ],
+        [
+          -0.4528857109958681,
+          -1.1310792215029583e-05,
+          0.8915685798904354
+        ],
+        [
+          -0.0015926529164869212,
+          0.9999984146597836,
+          -0.0007963257007738773
+        ]
+      ]
+    }
+  ],
+  "facet_valid_fraction_range": [
+    0.9913793103448276,
+    1.0
+  ],
+  "facets_with_any_invalid_pixels": 2,
+  "facet_angular_support_radius_deg_range": [
+    1.9958842903994685,
+    4.34369301384142
+  ],
+  "source_unique_pixels_per_facet_range": [
+    37,
+    242
+  ],
+  "checks": {
+    "pixel_lookup_parity": true,
+    "all_14_rendered_geometry_trials": true
+  },
+  "rendered_geometry_trials": [
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        5.839092453440257,
+        18.211360324797607,
+        1.0160275533356644
+      ],
+      "raw_predicted_pixels": 88,
+      "raw_rendered_pixels": 88,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 1.495505343615663e-16,
+      "facet_max_absolute_error": 3.9968028886505635e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": -55,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        -12.627614630527074,
+        18.02724929605196,
+        1.3087450335268058
+      ],
+      "raw_predicted_pixels": 522,
+      "raw_rendered_pixels": 522,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.0386667609918686e-16,
+      "facet_max_absolute_error": 3.9968028886505635e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 55,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        16.58213601122575,
+        3.1880251867609477,
+        0.857070436725114
+      ],
+      "raw_predicted_pixels": 522,
+      "raw_rendered_pixels": 522,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.192066409430949e-16,
+      "facet_max_absolute_error": 3.885780586188048e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": -40,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        3.516658029119372,
+        14.029981494537587,
+        -11.801414271279766
+      ],
+      "raw_predicted_pixels": 216,
+      "raw_rendered_pixels": 216,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.240328309334834e-16,
+      "facet_max_absolute_error": 5.662137425588298e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 40,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        3.9239702428349177,
+        14.049235559143135,
+        13.906856458351436
+      ],
+      "raw_predicted_pixels": 216,
+      "raw_rendered_pixels": 214,
+      "raw_jaccard": 0.9907407407407407,
+      "facet_rms_error": 0.001365056600857933,
+      "facet_max_absolute_error": 0.02597402597402587,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": -45,
+      "elevation_camera_up_deg": 30,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        -8.431121455413898,
+        16.853581975699946,
+        11.244394206601111
+      ],
+      "raw_predicted_pixels": 420,
+      "raw_rendered_pixels": 420,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.9052713602508657e-16,
+      "facet_max_absolute_error": 5.662137425588298e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 45,
+      "elevation_camera_up_deg": -30,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        13.088341445299868,
+        5.745265371785801,
+        -9.090748249059558
+      ],
+      "raw_predicted_pixels": 420,
+      "raw_rendered_pixels": 420,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.116985445768525e-16,
+      "facet_max_absolute_error": 4.440892098500626e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        5.839690765305561,
+        -18.211370115582554,
+        1.0492910586225526
+      ],
+      "raw_predicted_pixels": 88,
+      "raw_rendered_pixels": 88,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 1.495505343615663e-16,
+      "facet_max_absolute_error": 3.9968028886505635e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": -55,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        16.582813671512344,
+        -3.1879759960592717,
+        0.9016757790173238
+      ],
+      "raw_predicted_pixels": 522,
+      "raw_rendered_pixels": 522,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.0386667609918686e-16,
+      "facet_max_absolute_error": 3.9968028886505635e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 55,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        -12.627603661257403,
+        -18.027353192129898,
+        1.3023231784887068
+      ],
+      "raw_predicted_pixels": 522,
+      "raw_rendered_pixels": 522,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.192066409430949e-16,
+      "facet_max_absolute_error": 3.885780586188048e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": -40,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        3.5446412776301974,
+        -14.039982173444281,
+        -11.776336255085063
+      ],
+      "raw_predicted_pixels": 216,
+      "raw_rendered_pixels": 216,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.240328309334834e-16,
+      "facet_max_absolute_error": 5.662137425588298e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 40,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        3.8969049091134442,
+        -14.039273732340098,
+        13.932754893738224
+      ],
+      "raw_predicted_pixels": 216,
+      "raw_rendered_pixels": 216,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.2303127730869064e-16,
+      "facet_max_absolute_error": 5.662137425588298e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": -45,
+      "elevation_camera_up_deg": 30,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        13.384380627565221,
+        -5.75244687234087,
+        10.946509756049325
+      ],
+      "raw_predicted_pixels": 420,
+      "raw_rendered_pixels": 420,
+      "raw_jaccard": 1.0,
+      "facet_rms_error": 2.9052713602508657e-16,
+      "facet_max_absolute_error": 5.662137425588298e-15,
+      "geometry_check": true
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 45,
+      "elevation_camera_up_deg": -30,
+      "angular_radius_deg": 6.0,
+      "target_center_world_mm": [
+        -8.726425790832636,
+        -16.84645198495859,
+        -8.752101618597168
+      ],
+      "raw_predicted_pixels": 420,
+      "raw_rendered_pixels": 419,
+      "raw_jaccard": 0.9976190476190476,
+      "facet_rms_error": 0.0004597771127925301,
+      "facet_max_absolute_error": 0.012345679012346344,
+      "geometry_check": true
+    }
+  ],
+  "footprints_sha256": "df7c1405f0a92a964ba4dd26437b492bc24ffdfdd8b4c5bdbc43a390f2a061c0",
+  "limits": [
+    "Ray footprints describe the implemented artificial optics, not measured fly receptive fields.",
+    "Mean ray alone discards finite facet support and duplicate pixel weights; retain lookup.",
+    "Pale mask is shared across eyes and is not a mapped biological R7/R8 mosaic.",
+    "Body pose changes require current camera/head transforms, not this initial world pose.",
+    "Segmentation targets test geometry, not radiometry, renderer background, or body self-occlusion."
+  ]
+}

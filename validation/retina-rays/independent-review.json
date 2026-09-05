@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "scope": "Independently review the saved artificial-retina geometry calibration.\n\nRead root calibration artifacts without modifying them. Reconstruct the local\nFlyGym sampling formula, reduce facets separately, query a fresh BodyRuntime,\nand test peripheral rendered spheres using world-space quadratic intersections.\nThis does not register biological facets or validate phototransduction.\n",
+  "completed": true,
+  "seed": 419,
+  "thresholds": {
+    "source_index_mismatches": 0,
+    "facet_mean_ray_max_absolute_error": 1e-12,
+    "facet_support_radius_max_absolute_error_deg": 1e-09,
+    "facet_valid_fraction_max_absolute_error": 1e-12,
+    "facet_readout_max_absolute_error": 1e-12,
+    "fresh_camera_pose_max_absolute_error": 1e-12,
+    "rotation_orthogonality_max_absolute_error": 1e-12,
+    "peripheral_raw_jaccard_min": 0.97
+  },
+  "versions": {
+    "mujoco": "3.9.0",
+    "numpy": "2.5.2",
+    "flygym": "2.1.0"
+  },
+  "review_source_sha256": {
+    "/Users/bernardo/Documents/Code/fruit-fly/scripts/review_retina_rays.py": "1f1e1524e52f0652336eeff48e7ce4c78d2e5b451757963c13a03e5386af4a7b",
+    "/Users/bernardo/Documents/Code/fruit-fly/fruitfly/body.py": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/vision/retina.py": "fbb43595de2d7736423424b5cb4ea8eabc369d500fb028c26065c0e2ec4746c6",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/simulation.py": "c2a6fded0ccedb2124c1ac421e1b52cb2c087bfa40fcb38f8a32722d21c012d2",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/vision.yaml": "aeaf9c67603e85ac81d251a01e7a20821687c1a62be0626af49ef09919e10545",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/compound_eye.npz": "51afb29664ac1f4ef05535f417ae37ed8a625911c99995720ca382799eef36b3"
+  },
+  "reviewed_artifact_sha256": {
+    "scripts/calibrate_retina_rays.py": "4dc0c95ff64e4d7c8032d944ec105e7dea1ca1fb5b1de70814e555d47b98cb1e",
+    "validation/retina-rays/results.json": "d9bdf0e76c4b36051e4941e9e9250ac5adc2f9be1de46a4517c04c5f8d8d90ae",
+    "validation/retina-rays/ray-footprints.npz": "df7c1405f0a92a964ba4dd26437b492bc24ffdfdd8b4c5bdbc43a390f2a061c0",
+    "validation/retina-rays/rendered-checks.png": "a82ad47328180d38d2c172f02007280c678715d83fd93812c3a071a6f4b9882b"
+  },
+  "calibration_source_hash_matches": {
+    "/Users/bernardo/Documents/Code/fruit-fly/scripts/calibrate_retina_rays.py": true,
+    "/Users/bernardo/Documents/Code/fruit-fly/fruitfly/body.py": true,
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/vision/retina.py": true,
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/vision.yaml": true,
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/compound_eye.npz": true
+  },
+  "metrics": {
+    "source_index_mismatches": 0,
+    "facet_mean_ray_max_absolute_error": 2.220446049250313e-16,
+    "facet_support_radius_max_absolute_error_deg": 4.907185768843192e-13,
+    "facet_valid_fraction_max_absolute_error": 0.0,
+    "random_rgb_readout_max_absolute_error": 1.6653345369377348e-15,
+    "white_field_readout_max_absolute_error": 5.662137425588298e-15,
+    "incorrect_uniform_unique_pixel_readout_max_absolute_error": 0.05084398976982091,
+    "facets_with_repeated_source_pixels": 700,
+    "incomplete_facets": [
+      {
+        "facet_id_one_based": 1,
+        "invalid_destination_pixels": 2,
+        "destination_pixels": 232
+      },
+      {
+        "facet_id_one_based": 16,
+        "invalid_destination_pixels": 1,
+        "destination_pixels": 232
+      }
+    ],
+    "peripheral_raw_jaccard_min": 0.9994588744588745
+  },
+  "fresh_camera_checks": [
+    {
+      "eye": "L",
+      "camera_name": "fly/l_eye_cam_camera",
+      "world_position_max_absolute_error_mm": 0.0,
+      "world_rotation_max_absolute_error": 0.0,
+      "head_rotation_max_absolute_error": 0.0,
+      "orthogonality_max_absolute_error": 1.3988810110276972e-14,
+      "determinant": 1.0000000000000209,
+      "optical_forward_head_forward_left_up": [
+        0.4528861417832479,
+        0.8915680055074137,
+        -0.0007963267107332678
+      ]
+    },
+    {
+      "eye": "R",
+      "camera_name": "fly/r_eye_cam_camera",
+      "world_position_max_absolute_error_mm": 0.0,
+      "world_rotation_max_absolute_error": 0.0,
+      "head_rotation_max_absolute_error": 0.0,
+      "orthogonality_max_absolute_error": 1.4654943925052066e-14,
+      "determinant": 1.0000000000000218,
+      "optical_forward_head_forward_left_up": [
+        0.4528850110320999,
+        -0.8915685798904354,
+        0.0007963257007738773
+      ]
+    }
+  ],
+  "peripheral_trials": [
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 74,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        16.417611923487964,
+        -3.411824383416369,
+        0.8646200149304418
+      ],
+      "raw_predicted_pixels": 3324,
+      "raw_rendered_pixels": 3324,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": -74,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -17.85955876244748,
+        14.001765478386481,
+        1.3946528604331454
+      ],
+      "raw_predicted_pixels": 3324,
+      "raw_rendered_pixels": 3324,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 73,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -0.26643308523377884,
+        5.607689758871908,
+        20.2507015142852
+      ],
+      "raw_predicted_pixels": 4372,
+      "raw_rendered_pixels": 4372,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": -73,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -0.8724102404685508,
+        5.5790445994499915,
+        -17.99667786242784
+      ],
+      "raw_predicted_pixels": 4372,
+      "raw_rendered_pixels": 4372,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": 60,
+      "elevation_camera_up_deg": 40,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        12.283375489781799,
+        1.210431378147061,
+        13.784028722307685
+      ],
+      "raw_predicted_pixels": 1848,
+      "raw_rendered_pixels": 1848,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "L",
+      "azimuth_camera_right_deg": -60,
+      "elevation_camera_up_deg": -40,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -11.78029714368377,
+        13.209151659993065,
+        -11.55844028633543
+      ],
+      "raw_predicted_pixels": 1848,
+      "raw_rendered_pixels": 1848,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 74,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -17.85978308918063,
+        -14.001894923882086,
+        1.3739030999685837
+      ],
+      "raw_predicted_pixels": 3324,
+      "raw_rendered_pixels": 3324,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": -74,
+      "elevation_camera_up_deg": 0,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        16.418169947897145,
+        3.4118745827845296,
+        0.9037498465229163
+      ],
+      "raw_predicted_pixels": 3324,
+      "raw_rendered_pixels": 3324,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": 73,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -0.30720542527803785,
+        -5.592879122791296,
+        20.261057986962275
+      ],
+      "raw_predicted_pixels": 4372,
+      "raw_rendered_pixels": 4372,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 0,
+      "elevation_camera_up_deg": -73,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -0.8312842672839014,
+        -5.593933103277295,
+        -17.98754196519972
+      ],
+      "raw_predicted_pixels": 4372,
+      "raw_rendered_pixels": 4372,
+      "raw_jaccard": 1.0
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": 60,
+      "elevation_camera_up_deg": 40,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        -11.400548378472358,
+        -13.218521663125792,
+        14.142336592361387
+      ],
+      "raw_predicted_pixels": 1848,
+      "raw_rendered_pixels": 1847,
+      "raw_jaccard": 0.9994588744588745
+    },
+    {
+      "eye": "R",
+      "azimuth_camera_right_deg": -60,
+      "elevation_camera_up_deg": -40,
+      "angular_radius_deg": 6.0,
+      "distance_model_mm": 20.0,
+      "sphere_radius_model_mm": 2.0905692653530696,
+      "target_center_world_mm": [
+        11.904088348775012,
+        -1.2011317760273132,
+        -11.89123042752883
+      ],
+      "raw_predicted_pixels": 1848,
+      "raw_rendered_pixels": 1848,
+      "raw_jaccard": 1.0
+    }
+  ],
+  "checks": {
+    "source_index_mismatches": true,
+    "facet_mean_ray_max_absolute_error": true,
+    "facet_support_radius_max_absolute_error_deg": true,
+    "facet_valid_fraction_max_absolute_error": true,
+    "calibration_source_hashes_match": true,
+    "footprint_hash_matches": true,
+    "unique_source_counts_match": true,
+    "random_rgb_parity": true,
+    "white_field_parity": true,
+    "fresh_camera_poses": true,
+    "proper_rotations": true,
+    "eyes_face_outward": true,
+    "all_12_peripheral_geometry_trials": true,
+    "root_artifacts_unchanged": true
+  },
+  "limits": [
+    "Local implementation audit; no biological retinal registration or phototransduction validation.",
+    "Render checks use segmentation and tessellated spheres; they do not validate radiometry or body self-occlusion.",
+    "Camera positions and head transforms are checked at initialization, not every articulated pose.",
+    "Per-facet means are descriptive; finite support, duplicate weights and invalid destination samples remain necessary.",
+    "The wrong uniform-unique-pixel comparator also omits invalid-sample attenuation; its error is diagnostic, not a pure duplicate-weight ablation."
+  ]
+}
