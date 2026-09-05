@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "scripts/check_flybody_airflow_module.py": "ae6804ad0dbf48335b43314aa8cb285aa369cc5da234a708aa1e4371508d45d3",
+    "fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "scripts/audit_flybody_airflow.py": "5b6be252aa153941682ed4e080f1bfe9ffc5c59923f874733217493964a3e24b",
+    "validation/flybody-airflow-geometry.json": "f7e1d8ee5518bdc2923f0643f02205715df13fc0bffa5c62592f48717e1fdec8",
+    "validation/flybody-airflow-independent-review.json": "1adaa61231793d4a2a4268663f592b208d2dde68981d334926c6aeac320c278a",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2"
+  },
+  "native_worker_revision": "f433f4f",
+  "seed": 11,
+  "physics_steps": 0,
+  "tests": "New reader against all four previously independently reviewed native geometry probes; exact native state bytes and actor observations before/after; detached forwarded copies only",
+  "tolerance": 1e-12,
+  "runtime_integration": false,
+  "claim_limit": "Read-only point geometry; no distal receptor calibration, wind force, neural input or body runtime promotion"
+}

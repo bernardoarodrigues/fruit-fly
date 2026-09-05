@@ -1,0 +1,11 @@
+# Optional FlyBody airflow observation
+
+The isolated reader [module](../fruitfly/flybody_airflow.py) reproduces all four independently reviewed native geometry probes without advancing physics. Its [frozen check](../validation/flybody-airflow-module/plan.json) and [result](../validation/flybody-airflow-module/result.json) retain the sampled vectors, exact before/after bytes for nine named native arrays, and original actor-observation bytes. This is not an inventory of every MuJoCo state field. The optional body integration is implemented; its full-neural comparison is pending.
+
+The implementation samples the same proximal antenna origins used for odor. Point velocities come from native Jacobians, with source cm/s converted to mm/s. A neutral thorax-aligned basis follows the articulated head. [The geometry review](flybody-airflow-independent-review.md) establishes these frames and units while preserving the distinction between a proximal pivot and a distal arista or sensillum.
+
+The integration uses an explicit `enable_wind` option, disabled by default. The native worker exposes point position, point velocity and head rotation computed on its existing detached diagnostic state. The host subtracts sensor velocity from configured ambient airflow and uses the existing tested `local_airflow` function. This supplies a sensory observation only: it introduces no force, deflection, release model, spike input or steering rule. The existing measured female antenna reference remains unsupported in this body backend.
+
+All three frozen longer neural attempts concluded before changing their runtime dependencies. A new fixed two-second full-neural run will compare the original locomotor-feedback prefix for all declared physical fields, ordered neural drives, RNG and spike hashes with airflow enabled. The new local-flow values must satisfy their declared geometry and units, and zero-step/render/reset controls must preserve the original clocks and state. Then the live viewer will be checked for the actual observation and its limits.
+
+No runtime result is claimed by this preparatory note. Root owns this integration; the source walking controller, neural parameters and existing sensory encoders remain outside its change scope.

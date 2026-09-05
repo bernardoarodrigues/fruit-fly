@@ -86,6 +86,10 @@ class Worker:
             raise ValueError("Reference mode and trial horizon disagree")
         if self.reference_mode == "rolling":
             self.provenance["rolling_task_sha256"] = digest(ROOT / "fruitfly/flybody_persistent_task.py")
+        if type(config.get("enable_wind", False)) is not bool:
+            raise ValueError("enable_wind must be an explicit boolean")
+        if config.get("enable_wind", False):
+            self.provenance["airflow_module_sha256"] = digest(ROOT / "fruitfly/flybody_airflow.py")
         self.env = None
         self.camera = None
         self.state = None
@@ -158,6 +162,14 @@ class Worker:
         self.claws = [self.env.task.walker.mjcf_model.find("site", "claw_" + LEG_SOURCE[leg]) for leg in LEGS]
         if min(self.antenna_ids + [self.root_id]) < 0 or any(site is None for site in self.claws) or not self.tarsal_geoms:
             raise ValueError("Missing native sensory geometry")
+        self.airflow_reader = None
+        if self.config.get("enable_wind", False):
+            if str(ROOT) not in sys.path:
+                sys.path.insert(0, str(ROOT))
+            from fruitfly.flybody_airflow import FlyBodyAirflow
+            neutral = copy.copy(self.d.ptr)
+            mujoco.mj_forward(self.m.ptr, neutral)
+            self.airflow_reader = FlyBodyAirflow(self.m.ptr, neutral)
         self.qids, self.vids = {}, {}
         for name in ("coxa", "femur", "tibia"):
             ids = [self.m.name2id("walker/" + name + "_" + LEG_SOURCE[leg], "joint") for leg in LEGS]
@@ -302,6 +314,9 @@ class Worker:
             "source_terminated": bool(self.step_result.last()), "contact_count": int(d.ncon)}
         state["finite"] = all(np.isfinite(a).all() for a in
             (d.qpos, d.qvel, d.qacc, d.act, d.ctrl, d.actuator_force, support, ground, spatial))
+        if self.airflow_reader is not None:
+            state["airflow_geometry"] = self.airflow_reader.sample(diagnostic)
+            state["finite"] = state["finite"] and all(np.isfinite(a).all() for a in state["airflow_geometry"].values())
         return state
 
     def metadata(self):
@@ -318,6 +333,7 @@ class Worker:
                 "headlight": {key: value.tolist() for key, value in self.headlight.items()}},
             "tarsal_geoms": [self.m.id2name(i, "geom") for i in sorted(self.tarsal_geoms)],
             "antenna_bodies": [self.m.id2name(i, "body") for i in self.antenna_ids],
+            "airflow_geometry": self.airflow_reader.metadata if self.airflow_reader is not None else {"enabled": False},
             "action_names": self.names, "action_minimum": self.lo.tolist(), "action_maximum": self.hi.tolist()}
 
     def light(self, value):

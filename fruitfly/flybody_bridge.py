@@ -21,6 +21,7 @@ from typing import Mapping
 import numpy as np
 
 from .physiology import Physiology, PhysiologyConfig, ResourcePatch
+from .wind import local_airflow
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGS = ("LF", "LM", "LH", "RF", "RM", "RH")
@@ -57,6 +58,7 @@ class FlyBodyConfig:
     height: int = 560
     enable_grooming: bool = False
     enable_vision: bool = False
+    enable_wind: bool = False
     world_illumination: None = None
     wind_reference_path: None = None
     wind_reference_allow_sex_transfer: bool = False
@@ -69,6 +71,8 @@ class FlyBodyConfig:
             raise ValueError("physiology must be a PhysiologyConfig or mapping")
         if self.physics_dt_s != .0002:
             raise ValueError("FlyBody physics step is fixed to 0.2 ms")
+        if type(self.enable_wind) is not bool:
+            raise ValueError("enable_wind must be an explicit boolean")
         if self.reference_mode not in ("bounded", "rolling"):
             raise ValueError("FlyBody reference mode must be bounded or rolling")
         if (self.reference_mode == "bounded" and self.horizon_s != 2.
@@ -285,6 +289,16 @@ class FlyBodyRuntime:
                   "source_femur": state["joint_angles_rad"]["femur"]}
         velocities = {"tibia_pitch": state["tibia_velocity_rad_s"], "source_coxa": state["joint_velocities_rad_s"]["coxa"],
                       "source_femur": state["joint_velocities_rad_s"]["femur"]}
+        wind = {"enabled": False, "reason": "FlyBody airflow observation disabled by configuration; odor advection remains enabled"}
+        if self.config.enable_wind:
+            geometry = state["airflow_geometry"]
+            wind = {"enabled": True, **local_airflow((*self.config.wind_mm_s, 0.),
+                geometry["antenna_origin_velocity_world_mm_s"], geometry["head_to_world"]),
+                "sampling_point": "proximal antenna origin; not distal arista or sensillum",
+                "sensor_position_world_mm": copy.deepcopy(geometry["antenna_origin_positions_mm"]),
+                "sensor_velocity_world_mm_s": copy.deepcopy(geometry["antenna_origin_velocity_world_mm_s"]),
+                "frame_definition": "neutral thorax-aligned axes following the articulated head",
+                "mechanical_or_neural_transduction": False}
         self._observation = {"t_s": self.time_s,
             "pose": {"position_mm": (np.asarray(state["pose_cm_quat"][:3]) * 10).tolist(), "heading_rad": state["heading_rad"]},
             "antenna_odor": self.field.sample(np.asarray(state["antenna_positions_mm"]) * .001, self.time_s).tolist(),
@@ -297,7 +311,7 @@ class FlyBodyRuntime:
                 "ground_force_by_leg": state["ground_force_g_mm_s2"], "joint_angles_rad": angles,
                 "joint_velocities_rad_s": velocities, "body_angular_velocity_rad_s": state["body_angular_velocity_rad_s"],
                 "leg_order": list(LEGS), "tarsus_height_site": "source claw site; differs from NMF tarsus5 origin"},
-            "wind": {"enabled": False, "reason": "FlyBody anatomical head-frame basis not yet verified; odor advection remains enabled"},
+            "wind": wind,
             "vision": {"enabled": False, "sample_t_s": None, "shape": None, "mean_by_eye": None},
             "grooming": {"enabled": False, "state": "disabled", "requested": False, "actual_active": False,
                          "armed": False, "source_time_s": None, "completed_count": 0, "cancelled_count": 0}}
@@ -354,7 +368,7 @@ class FlyBodyRuntime:
                 "physiology_sampling_s": .002, "force_units": "g mm/s^2 (native dyne multiplied by10)"},
             "capabilities": {"walk": True, "engineering_stance": True, "abstract_feeding": True,
                 "odor": True, "tarsal_taste": True, "club_proprioception": True,
-                "grooming": False, "compound_vision": False, "head_frame_wind": False,
+                "grooming": False, "compound_vision": False, "head_frame_wind": self.config.enable_wind,
                 "world_illumination": False, "persistent_reference": self.config.reference_mode == "rolling"},
             "field": {"puffs": len(self.field.births), "retired_arbitrary_mass": self.field.retired_mass}}
 

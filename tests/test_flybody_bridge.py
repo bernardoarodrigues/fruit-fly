@@ -23,6 +23,15 @@ class FlyBodyBoundaryTests(unittest.TestCase):
         self.assertEqual(config.reference_mode, "rolling")
         self.assertEqual(FlyBodyConfig().horizon_s, 2.)
 
+    def test_airflow_requires_explicit_boolean_and_preserves_empirical_boundary(self):
+        self.assertFalse(FlyBodyConfig().enable_wind)
+        self.assertTrue(FlyBodyConfig(enable_wind=True).enable_wind)
+        for value in ("false", 0, 1, None):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                FlyBodyConfig(enable_wind=value)
+        with self.assertRaises(ValueError):
+            FlyBodyConfig(enable_wind=True, wind_reference_path="calibration.json", wind_reference_allow_sex_transfer=True)
+
     def test_drive_map_and_policy_mute(self):
         np.testing.assert_array_equal(map_drive(.5, .5, "walk")[1:], [10, 0])
         np.testing.assert_array_equal(map_drive(1, 1, "walk")[1:], [20, 0])

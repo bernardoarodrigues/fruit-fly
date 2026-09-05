@@ -176,6 +176,7 @@ function update(data) {
     : hasWind ? "Source angle: negative left, positive right, zero anterior." : "");
   setText("wind-limit", wind.enabled === false ? "Wind sensing is disabled for this body; odor advection still uses the configured airflow." : windReference
     ? "Measured female reference; neural pathway unmapped. Predicts steady arista angles only; no male mechanics or joint actuation is validated."
+    : wind.sampling_point ? "Airflow at proximal antenna origins; distal receptors and neural pathway unmapped."
     : "Airflow geometry only; neural pathway unmapped.");
   setText("neural-subtitle", neural.ablated ? `${neural.ablation_target || "Motor readout"} muted` : neural.neurons ? "Spiking network telemetry" : "Waiting for neural telemetry");
   if (typeof neural.ablated === "boolean") $("ablation").checked = neural.ablated;
