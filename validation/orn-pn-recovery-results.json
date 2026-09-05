@@ -1,0 +1,738 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T03:53:09.300593+00:00",
+  "plan_sha256": "ee55fbcd9a4c1ceab5ad22de237dca40eec3ae452656980fdeb46c389d92ea09",
+  "source_sha256": {
+    "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a",
+    "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "S8B:x-tick-117-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:x-tick-116-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:x-tick-114-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:x-calibration-residual-below-0.1pt",
+      "passed": true
+    },
+    {
+      "name": "S8B:y-tick-113-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:y-tick-112-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:y-tick-111-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:y-tick-109-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:y-calibration-residual-below-0.1pt",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-133-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-133-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-132-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-133-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.015620000000012624,
+      "marker_minus_bar_midpoint_top_pt": -0.008304999999950269
+    },
+    {
+      "name": "S8B:marker-133-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-135-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-135-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-131-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-135-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.01659999999998263,
+      "marker_minus_bar_midpoint_top_pt": -0.023684999999943557
+    },
+    {
+      "name": "S8B:marker-135-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-137-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-137-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-130-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-137-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.05467999999996209,
+      "marker_minus_bar_midpoint_top_pt": 0.014895000000024083
+    },
+    {
+      "name": "S8B:marker-137-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-139-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-139-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-129-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-139-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.0,
+      "marker_minus_bar_midpoint_top_pt": -0.008059999999943557
+    },
+    {
+      "name": "S8B:marker-139-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-141-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-141-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-128-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-141-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.0644500000000221,
+      "marker_minus_bar_midpoint_top_pt": -0.0161200000000008
+    },
+    {
+      "name": "S8B:marker-141-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-143-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-143-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-127-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-143-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.06347999999997,
+      "marker_minus_bar_midpoint_top_pt": -0.012209999999981846
+    },
+    {
+      "name": "S8B:marker-143-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-145-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-145-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-126-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-145-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.0,
+      "marker_minus_bar_midpoint_top_pt": -0.03198000000003276
+    },
+    {
+      "name": "S8B:marker-145-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-147-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-147-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-125-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-147-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.05664999999999054,
+      "marker_minus_bar_midpoint_top_pt": -0.015870000000006712
+    },
+    {
+      "name": "S8B:marker-147-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-149-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-149-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-124-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-149-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.01561999999995578,
+      "marker_minus_bar_midpoint_top_pt": -0.06786999999997079
+    },
+    {
+      "name": "S8B:marker-149-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-151-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-151-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-123-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-151-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.015629999999987376,
+      "marker_minus_bar_midpoint_top_pt": 0.0078099999999494685
+    },
+    {
+      "name": "S8B:marker-151-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-153-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-153-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-122-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-153-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.04883000000000948,
+      "marker_minus_bar_midpoint_top_pt": 0.031985000000020136
+    },
+    {
+      "name": "S8B:marker-153-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-155-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-155-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-121-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-155-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.007810000000006312,
+      "marker_minus_bar_midpoint_top_pt": 0.015870000000006712
+    },
+    {
+      "name": "S8B:marker-155-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-157-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-157-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-120-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-157-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.023439999999993688,
+      "marker_minus_bar_midpoint_top_pt": -0.00805499999995618
+    },
+    {
+      "name": "S8B:marker-157-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-159-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-159-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-119-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-159-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.06445999999999685,
+      "marker_minus_bar_midpoint_top_pt": -0.04785000000003947
+    },
+    {
+      "name": "S8B:marker-159-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-161-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-161-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8B:error-118-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-161-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.0,
+      "marker_minus_bar_midpoint_top_pt": -0.04003999999997632
+    },
+    {
+      "name": "S8B:marker-161-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8B:printed-fit-grey-stroke",
+      "passed": true
+    },
+    {
+      "name": "S8B:printed-fit-200-vertices",
+      "passed": true
+    },
+    {
+      "name": "S8B:printed-fit-path-endpoints-complete",
+      "passed": true
+    },
+    {
+      "name": "S8B:marker-and-curve-time-order",
+      "passed": true
+    },
+    {
+      "name": "S8D:x-tick-86-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:x-tick-85-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:x-tick-84-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:x-tick-82-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:x-calibration-residual-below-0.1pt",
+      "passed": true
+    },
+    {
+      "name": "S8D:y-tick-81-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:y-tick-80-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:y-tick-78-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:y-calibration-residual-below-0.1pt",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-93-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-93-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-92-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-93-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.05566500000003316,
+      "marker_minus_bar_midpoint_top_pt": -0.08349500000008447
+    },
+    {
+      "name": "S8D:marker-93-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-95-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-95-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-91-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-95-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.016594999999995252,
+      "marker_minus_bar_midpoint_top_pt": 0.0
+    },
+    {
+      "name": "S8D:marker-95-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-97-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-97-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-90-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-97-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.04003499999998894,
+      "marker_minus_bar_midpoint_top_pt": 0.048344999999926586
+    },
+    {
+      "name": "S8D:marker-97-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-99-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-99-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-89-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-99-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.007815000000050532,
+      "marker_minus_bar_midpoint_top_pt": -0.05565999999998894
+    },
+    {
+      "name": "S8D:marker-99-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-101-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-101-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-88-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-101-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": -0.015625,
+      "marker_minus_bar_midpoint_top_pt": -0.0600549999999771
+    },
+    {
+      "name": "S8D:marker-101-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-103-single-fill-stroke-observation",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-103-circular-bounds",
+      "passed": true
+    },
+    {
+      "name": "S8D:error-87-vertical-centerline",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-103-bar-pairing",
+      "passed": true,
+      "marker_minus_bar_x_pt": 0.0004899999999565807,
+      "marker_minus_bar_midpoint_top_pt": -0.007814999999993688
+    },
+    {
+      "name": "S8D:marker-103-reprojection",
+      "passed": true
+    },
+    {
+      "name": "S8D:printed-fit-grey-stroke",
+      "passed": true
+    },
+    {
+      "name": "S8D:printed-fit-200-vertices",
+      "passed": true
+    },
+    {
+      "name": "S8D:printed-fit-path-endpoints-complete",
+      "passed": true
+    },
+    {
+      "name": "S8D:marker-and-curve-time-order",
+      "passed": true
+    },
+    {
+      "name": "21-distinct-observations-not-42-drawing-objects",
+      "passed": true
+    },
+    {
+      "name": "400-printed-curve-vertices-not-400-measurements",
+      "passed": true
+    },
+    {
+      "name": "csv-roundtrip:-points.csv",
+      "passed": true
+    },
+    {
+      "name": "csv-roundtrip:-printed-fit.csv",
+      "passed": true
+    },
+    {
+      "name": "csv-roundtrip:-calibration.csv",
+      "passed": true
+    },
+    {
+      "name": "all-source-and-script-hashes-still-match",
+      "passed": true
+    }
+  ],
+  "check_count": 137,
+  "panels": [
+    {
+      "panel": "S8B",
+      "point_count": 15,
+      "printed_curve_vertices": 200,
+      "calibration": {
+        "x": {
+          "scale": 0.017682763964542877,
+          "offset": -6.83798017213994,
+          "anchor_coordinate": 386.70313,
+          "anchor_value": 0.0,
+          "max_abs_tick_residual_points": 0.04735500000003867
+        },
+        "y": {
+          "scale": -0.03476096218806815,
+          "offset": 7.50140868799267,
+          "anchor_coordinate": 215.7998,
+          "anchor_value": 0.0,
+          "max_abs_tick_residual_points": 0.03238666666666745
+        }
+      },
+      "horizontal_baseline_top_pt": 215.7998,
+      "horizontal_baseline_y_value": 0.0,
+      "marker_time_range_s": [
+        0.00027620477312638296,
+        2.0016749114027217
+      ],
+      "marker_y_range": [
+        0.2435982184311641,
+        2.766415719555972
+      ],
+      "max_abs_marker_error_x_offset_pt": 0.06445999999999685,
+      "max_abs_marker_error_y_midpoint_offset_pt": 0.06786999999997079,
+      "zero_height_error_observations": [],
+      "point_outside_drawn_bar_observations": [],
+      "printed_time_constant_s": null,
+      "biological_sample_size": null
+    },
+    {
+      "panel": "S8D",
+      "point_count": 6,
+      "printed_curve_vertices": 200,
+      "calibration": {
+        "x": {
+          "scale": 0.28873266954334237,
+          "offset": -112.6280168473588,
+          "anchor_coordinate": 390.07715,
+          "anchor_value": 0.0,
+          "max_abs_tick_residual_points": 0.03450333333336175
+        },
+        "y": {
+          "scale": -0.010288045733243928,
+          "offset": 5.837260297536451,
+          "anchor_coordinate": 567.3828100000001,
+          "anchor_value": 0.0,
+          "max_abs_tick_residual_points": 0.00048500000002604793
+        }
+      },
+      "horizontal_baseline_top_pt": 570.98242,
+      "horizontal_baseline_y_value": -0.03703295230184202,
+      "marker_time_range_s": [
+        0.5078186882027842,
+        30.00014147900806
+      ],
+      "marker_y_range": [
+        0.46279122499657716,
+        1.0000804010774051
+      ],
+      "max_abs_marker_error_x_offset_pt": 0.05566500000003316,
+      "max_abs_marker_error_y_midpoint_offset_pt": 0.08349500000008447,
+      "zero_height_error_observations": [
+        5
+      ],
+      "point_outside_drawn_bar_observations": [
+        5
+      ],
+      "printed_time_constant_s": 7.5,
+      "biological_sample_size": null
+    }
+  ],
+  "scope": "Vector-derived figure observations, vertical bar extents and existing printed-fit paths only; no fitting, tau inference, normalization inference, pooling, model run, or original-trial claim.",
+  "error_bar_status": {
+    "convention": "mean +/- SEM across experiments in general paper methods",
+    "evidence": "Main paper page index10, Data Analysis: All mean values are reported as mean \u00b1 SEM, averaged across experiments.",
+    "panel_caption_explicit": false,
+    "panel_specific_sample_size": null,
+    "observations_are_independent_experiments": false
+  },
+  "biological_context": {
+    "species": "Drosophila melanogaster",
+    "sex": "female",
+    "age_days": [
+      2,
+      7
+    ],
+    "glomerulus": "VM2",
+    "measurement": "Somatic PN whole-cell voltage-clamp uEPSCs after minimal antennal-nerve stimulation",
+    "evidence_pages": {
+      "main_methods": 10,
+      "supplemental_methods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "figure_S8": 13
+    },
+    "unknowns": [
+      "S8B/D panel-specific n and per-point n",
+      "Cell/trial identities and covariance",
+      "Exact pooling across S8B train frequencies",
+      "Exact S8B post-train probe frequency",
+      "Whether S8A 500ms example train duration applies to every S8B input",
+      "S8D recovery-ratio denominator and normalization operation",
+      "Exact duration of S8D pre-pause 7Hz conditioning"
+    ]
+  },
+  "artifacts": {
+    "validation/orn-pn-recovery-geometry.json": {
+      "sha256": "b1b66da55b179e0c19e43fe733a60e4a905ba482d9168467fd2374428fc2278f",
+      "bytes": 265195
+    },
+    "validation/orn-pn-recovery-calibration.csv": {
+      "sha256": "4a07950996424138ede3d89e231a8387377b99edab301c05d8ea99abf763a0f5",
+      "bytes": 1715
+    },
+    "validation/orn-pn-recovery-points.csv": {
+      "sha256": "d39f4764e84d4d9590e14336760ed3948ef04b57e95e76a2c7a1dce047d71536",
+      "bytes": 11500
+    },
+    "validation/orn-pn-recovery-printed-fit.csv": {
+      "sha256": "6e1a8e51c93cce935744c6ed3fef38c2b4a6e9736bc1d4ceb75e80d54f546ca8",
+      "bytes": 45221
+    }
+  }
+}

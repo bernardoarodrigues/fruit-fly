@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T03:53:00.389295+00:00",
+  "git_head": "986790d41272b0850d778dc01513fb95e52b395e",
+  "script_path": "scripts/extract_orn_pn_recovery.py",
+  "script_sha256": "88eb126757b6ab0e6cd378f13d8d298173f90e212e40128d70d3962991dc85ef",
+  "source_inputs": {
+    "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf": {
+      "sha256": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a",
+      "bytes": 5470888
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf": {
+      "sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6",
+      "bytes": 1353000
+    }
+  },
+  "source_page_index": 13,
+  "source_page_size_points": [
+    612,
+    792
+  ],
+  "parser": {
+    "pdfplumber": "0.11.9",
+    "pdfminer": "20251230"
+  },
+  "selected_raw_geometry_sha256": "9027df621961371ab4c8f79a4c08a59cd3946b03df278246ed4176cab4497654",
+  "panels": {
+    "S8B": {
+      "x_ticks": [
+        [
+          117,
+          0.0
+        ],
+        [
+          116,
+          1.0
+        ],
+        [
+          114,
+          2.0
+        ]
+      ],
+      "y_ticks": [
+        [
+          113,
+          0.0
+        ],
+        [
+          112,
+          1.0
+        ],
+        [
+          111,
+          2.0
+        ],
+        [
+          109,
+          3.0
+        ]
+      ],
+      "markers": [
+        133,
+        135,
+        137,
+        139,
+        141,
+        143,
+        145,
+        147,
+        149,
+        151,
+        153,
+        155,
+        157,
+        159,
+        161
+      ],
+      "error_bars": [
+        132,
+        131,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123,
+        122,
+        121,
+        120,
+        119,
+        118
+      ],
+      "fit_curve": 1,
+      "baseline": 115,
+      "ordinate_axis": 110,
+      "y_unit": "pA",
+      "x_label": "time after train (s)",
+      "y_label": "uEPSC amplitude (pA)",
+      "protocol": "Recovery following 50-200 Hz antennal-nerve trains; repeated post-train probes are visible in S8A.",
+      "normalization": "Absolute plotted uEPSC amplitude in pA; no normalization applied here.",
+      "printed_time_constant_s": null
+    },
+    "S8D": {
+      "x_ticks": [
+        [
+          86,
+          0.0
+        ],
+        [
+          85,
+          10.0
+        ],
+        [
+          84,
+          20.0
+        ],
+        [
+          82,
+          30.0
+        ]
+      ],
+      "y_ticks": [
+        [
+          81,
+          0.0
+        ],
+        [
+          80,
+          0.5
+        ],
+        [
+          78,
+          1.0
+        ]
+      ],
+      "markers": [
+        93,
+        95,
+        97,
+        99,
+        101,
+        103
+      ],
+      "error_bars": [
+        92,
+        91,
+        90,
+        89,
+        88,
+        87
+      ],
+      "fit_curve": 0,
+      "baseline": 83,
+      "ordinate_axis": 79,
+      "y_unit": "recovery_ratio",
+      "x_label": "pause duration (s)",
+      "y_label": "recovery ratio",
+      "protocol": "Pause between periods of 7 Hz antennal-nerve stimulation (S8C/D).",
+      "normalization": "Recovery-ratio denominator is not explicitly defined in S8 caption or inspected methods; do not infer from terminal point.",
+      "printed_time_constant_s": 7.5
+    }
+  },
+  "frozen_before_numerical_extraction": true,
+  "calibration": "Affine coordinate conversion anchored only to first/last labeled ticks on each axis. Retain all intermediate tick residuals. Use actual D y=0 tick, not the lower horizontal baseline. No least-squares or biological curve fitting.",
+  "marker_rule": "One observation per filled circular path. Require next stroke path identical. Center is midpoint of x0/x1 and top/bottom bounds; preserve full paths, bounds, center, line widths and source indices. Do not round to nominal stimulus times.",
+  "error_bar_rule": "Use the assigned vertical vector centerline endpoints, including zero-height D terminal path. Require unique nearest-x matching to marker within0.2PDFpt; retain x offset, y midpoint offset, lower/upper endpoints and signed deviations from marker. Do not recenter, symmetrize, clip or label zero extent as zero sampling uncertainty.",
+  "fit_rule": "Export every path endpoint in original order. Require cubic segments have first control=previous endpoint and second control=final endpoint: their loci are straight segments. Preserve all original cubic paths. These are the source printed fits; estimate no new parameters, no extrapolation.",
+  "uncertainty": "Retain affine calibration residuals and per-marker/error-stroke halfwidth converted to axis units as graphical sensitivity quantities only. These are not statistical confidence intervals or a validated extraction error bound; do not add them to SEM.",
+  "data_status": "Digitized figure-level plotted summaries and printed fit geometry, not original per-cell or trial measurements.",
+  "error_bar_status": {
+    "convention": "mean +/- SEM across experiments in general paper methods",
+    "evidence": "Main paper page index10, Data Analysis: All mean values are reported as mean \u00b1 SEM, averaged across experiments.",
+    "panel_caption_explicit": false,
+    "panel_specific_sample_size": null,
+    "observations_are_independent_experiments": false
+  },
+  "biological_context": {
+    "species": "Drosophila melanogaster",
+    "sex": "female",
+    "age_days": [
+      2,
+      7
+    ],
+    "glomerulus": "VM2",
+    "measurement": "Somatic PN whole-cell voltage-clamp uEPSCs after minimal antennal-nerve stimulation",
+    "evidence_pages": {
+      "main_methods": 10,
+      "supplemental_methods": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "figure_S8": 13
+    },
+    "unknowns": [
+      "S8B/D panel-specific n and per-point n",
+      "Cell/trial identities and covariance",
+      "Exact pooling across S8B train frequencies",
+      "Exact S8B post-train probe frequency",
+      "Whether S8A 500ms example train duration applies to every S8B input",
+      "S8D recovery-ratio denominator and normalization operation",
+      "Exact duration of S8D pre-pause 7Hz conditioning"
+    ]
+  },
+  "output_names": [
+    "-geometry.json",
+    "-calibration.csv",
+    "-points.csv",
+    "-printed-fit.csv",
+    "-results.json",
+    "-digitization.png",
+    "-plot-receipt.json"
+  ],
+  "no_fitting": true,
+  "no_neural_model": true,
+  "no_protocol_pooling": true
+}

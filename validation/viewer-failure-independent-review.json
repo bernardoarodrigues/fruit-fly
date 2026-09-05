@@ -1,0 +1,180 @@
+{
+  "reviewed_commit": "986790d41272b0850d778dc01513fb95e52b395e",
+  "parent_commit": "eb45f8a7e70a52909937247f5982bfd76757f2b8",
+  "reviewed_utc": "2026-09-05T03:57:01.293352+00:00",
+  "verdict": "no_correctness_blocker_found_in_reviewed_scope",
+  "review_type": "independent source review, existing targeted tests and extra synthetic transport fixture",
+  "reviewer_authored_producer": false,
+  "source_hashes": [
+    {
+      "path": "fruitfly/simulation.py",
+      "bytes": 27743,
+      "sha256": "8f7e9201ec8c810635ce4a75829bf16d900fe600c01220ebed3e1bca3e013057",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "fruitfly/viewer.py",
+      "bytes": 21393,
+      "sha256": "ac1f427205b5239c6d0dccb82454071bcf565732b57a3899d1a98f851ba4f982",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "fruitfly/web/app.js",
+      "bytes": 19003,
+      "sha256": "4b14291712670b7ae3ffa9a0648d6728f42cf45b721d6ba72c485f724fcfa599",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "tests/test_simulation.py",
+      "bytes": 4699,
+      "sha256": "0066415f1b3288ead0719de684a4d7af4bc131f54ffd0ff209571bb1e7fd54ba",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "tests/test_viewer.py",
+      "bytes": 14860,
+      "sha256": "bbceff606bffd04cc30c53eefc7dd21e6fde418dc718430507d9dadf87df72e8",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "matches_reviewed_commit": true
+    },
+    {
+      "path": "fruitfly/sensors.py",
+      "bytes": 8867,
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+      "matches_reviewed_commit": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "focused_pytest",
+      "command": ".venv/bin/python -m pytest tests/test_viewer.py tests/test_simulation.py -q",
+      "exit_code": 0,
+      "stdout": "15 passed, 23 subtests passed in 5.86s",
+      "existing_full_graph_test_included": true
+    },
+    {
+      "name": "javascript_syntax",
+      "command": "node --check fruitfly/web/app.js",
+      "exit_code": 0
+    },
+    {
+      "name": "runner_normal_path_ast_unchanged",
+      "methods": [
+        "advance",
+        "snapshot",
+        "render",
+        "_require_multiple"
+      ],
+      "passed": true
+    },
+    {
+      "name": "neural_sensor_decoder_bytes_unchanged",
+      "paths": [
+        "fruitfly/neural.py",
+        "fruitfly/sensors.py"
+      ],
+      "passed": true
+    },
+    {
+      "name": "independent_distinct_image_clock_fixture",
+      "passed": true,
+      "runner": "synthetic fixture, no graph or body imported/constructed",
+      "worker": "fruitfly.viewer._simulation_worker",
+      "viewer_config": {
+        "step_seconds": 0.01,
+        "fps": 1,
+        "speed": 0.1
+      },
+      "image_t_s": 0.01,
+      "completed_telemetry_t_s": 0.02,
+      "physical_failure_t_s": 0.025,
+      "neural_failure_t_s": 0.03,
+      "packet_count": 2,
+      "last_packet_status": "error",
+      "last_packet_telemetry_basis": "last_completed_advance",
+      "last_packet_has_frame": false,
+      "last_packet_has_frame_t_s": false,
+      "nan_qpos_encoded": [
+        null
+      ],
+      "calls": [
+        [
+          "advance",
+          0.0,
+          0.0
+        ],
+        [
+          "advance",
+          0.01,
+          0.0
+        ],
+        [
+          "render",
+          0.01
+        ],
+        [
+          "advance",
+          0.01,
+          0.01
+        ],
+        [
+          "advance",
+          0.01,
+          0.02
+        ],
+        [
+          "cached_diagnostics",
+          0.025
+        ],
+        [
+          "close",
+          0.025
+        ]
+      ],
+      "fixture_rule": "advance completes two .01s requests; third increments physical clock by .005 then raises; diagnostics reports neural .03; render asserts physical clock <=.02; close only records call"
+    },
+    {
+      "name": "source_review_failure_semantics",
+      "passed": true,
+      "observations": [
+        "exception handler only reads cached failure accessor; no advance/render",
+        "error packet does not replace receiver image timestamp/sequence",
+        "frame age is time.time minus image receiver timestamp, not any packet timestamp",
+        "error remains terminal; commands reject error/stopped/dead worker",
+        "failure accessor deep-copies; cache precedes journal write; reset clears cache",
+        "cleanup may attempt final snapshot, but does not render or advance physics",
+        "UI distinguishes telemetry/image/failure clocks and formats null or undefined as unavailable"
+      ]
+    }
+  ],
+  "inspection_attempt_errors": [
+    {
+      "error": "First source identity inventory referenced nonexistent fruitfly/encoders.py",
+      "resolution": "Located actual fruitfly/sensors.py; verified against commit and parent"
+    },
+    {
+      "error": "Second source identity inventory referenced nonexistent fruitfly/motor.py",
+      "resolution": "Located MotorDecoder in fruitfly/sensors.py; verified whole file unchanged"
+    }
+  ],
+  "limitations": [
+    "No actual browser rendering exercised",
+    "No physical habitat/contact failure trial run",
+    "Synthetic clock fixture is not biology or physics validation",
+    "Source files have exact reviewed-commit hashes; unrelated habitat edits were present and untouched",
+    "Frame age uses wall clock and receiver arrival; it is not monotonic capture age",
+    "Runner paths without a cached failure receipt remain null; existing final-snapshot cleanup behavior is unchanged"
+  ],
+  "new_full_graph_experiments": 0,
+  "runtime_edits": false,
+  "review_document": {
+    "path": "docs/viewer-failure-independent-review.md",
+    "bytes": 2547,
+    "sha256": "e19e76130620566082e0f1a437827b64799058ec36a83b191de56ddc8de3764b"
+  }
+}

@@ -38,6 +38,7 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [10 — Implementation findings](10-implementation-findings.md) | Reproduced data/model issues, negative results and practical consequences; no biological novelty claim |
 | [11 — Current mechanism findings](11-current-mechanism-findings.md) | Native-body feedback, rolling references, afferent event semantics and discriminating next tests |
 | [12 — Persistent loop and physiological constraints](12-persistent-loop-and-physiological-constraints.md) | Twelve-second results, sensory-only negative endpoint, exact voltage attribution and synaptic/airflow units |
+| [13 — Antennal-lobe inhibitory constraints](13-antennal-lobe-inhibitory-constraints.md) | Fast/slow and presynaptic inhibition, spiking versus graded source evidence, exact-type limits and proposed comparisons |
 
 ## How to interpret the notes
 
