@@ -2,6 +2,8 @@
 
 Snapshot: 2026-09-04. Recommendation: build a **modular, experimentally testable digital fly**, with explicit fidelity limits per subsystem. Use sex-specific brain-and-VNC data, a MuJoCo body, calibrated sensory adapters, and separate physiological dynamics. Grow the model through validated assays rather than assuming that a large wiring diagram supplies the rest of the organism.
 
+> **Implementation update:** the active scope is one male, with a working full-MaleCNS neural/body loop and live viewer. The initial two-body recommendation below is retained as the dated research proposal. Follow [the active single-fly plan](../docs/PLAN.md), [current evidence and remaining gates](../docs/STATUS.md), and [reproduced findings](10-implementation-findings.md) for current work.
+
 ## Findings that change the plan
 
 1. **Female connectomes are available.** The 2024 FlyWire paper maps a female brain. The newer [BANC paper](https://www.nature.com/articles/s41586-026-10735-w) maps brain and nerve cord in another female specimen, including abdominal circuitry relevant to reproduction. Use MaleCNS and BANC as distinct anatomical scaffolds. Activating extra neurons in a male network is not a substitute for the female's wiring and physiology.
@@ -33,9 +35,10 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [07 — Reference code audit](07-reference-code-audit.md) | Pinned Shiu/Eon source inspection; licenses, stimulation/silencing semantics and benchmark interpretation |
 | [08 — Bibliography](08-bibliography.md) | Consolidated linked source index; detailed records remain in domain JSON registries |
 | [09 — Access and downloads](09-access-and-downloads.md) | Every supplied reference accounted for; open-access alternatives and optional methods requests |
+| [10 — Implementation findings](10-implementation-findings.md) | Reproduced data/model issues, negative results and practical consequences; no biological novelty claim |
 
 ## How to interpret the notes
 
 **Evidence** is what the source reports within its assay. **Locally reproduced** means a recorded execution in this workspace. **Proposal/assumption** is a chosen implementation. **Inference/hypothesis** needs testing. No new biological discovery or novelty claim is made here.
 
-The first task after this package is to choose a narrow neural replication assay, download its exact compatible graph and identifiers, and establish a persistent, testable input/output neural backend. The long-term target remains two sex-specific animals; the implementation roadmap makes its unresolved work visible.
+The initial research proposal called for a narrow neural replication and persistent backend. Those engineering steps have since been executed and are recorded in the current implementation status. The long-term target remains two sex-specific animals; current development focuses on one male, with major sensory, physiological and behavioral validation gates still open.

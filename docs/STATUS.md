@@ -74,6 +74,8 @@ The [fixed posture-hold experiment](flybody-stance-experiment.md) now passes sto
 
 [Optional world illumination](world-illumination.md) adds a fixed scene lamp without changing sampled physical states at 21 times across 1,000 steps. Thirteen diagnostic checks and the live viewer light/reset inspection pass. The former unilluminated multiview result remains the record for the legacy configuration; visual-to-neural mapping remains open.
 
+The [DoOR odor audit](door-odor-audit.md) now records chemical identities, missing and signed baseline-relative consensus evidence, selected source-study values, and candidate joins to all 2,635 named male ORNs. Updated olfactory identity data expose ambiguities and one palpal-label/nerve conflict. No dimensionless score is used as a firing rate, no missing response is filled with zero, and no new odor-driven behavior is claimed.
+
 ## Compute and next gates
 
 Active neural-only benchmarks took about 2.4–3.5 wall seconds per simulated second; full-loop checks about 5.9–7.6, excluding graph construction and renderer setup. Current RAM is sufficient. More CPU capacity can help parameter/seed sweeps. A GPU does not automatically accelerate the present Numba CPU implementation; hardware recommendations should follow a measured accelerated backend.

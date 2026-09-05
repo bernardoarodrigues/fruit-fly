@@ -1,0 +1,168 @@
+{
+  "scope": "Evidence import and exact-label crosswalk only; no concentration-to-Hz model, mixture law, or neural activation",
+  "script_sha256": "d65b8d97d3deb1f91fd73ae316f043a484ff96602965895efd814c8c6a5554bf",
+  "source_provenance_sha256": "ee4dd7b3aa095784aff2e232deac9f719b3b44d75003e797a7c04f1c590f6d75",
+  "source_bytes": 2101579,
+  "door_version": "2.0.1.9001",
+  "matrix": {
+    "rows_including_SFR": 691,
+    "units": 78,
+    "finite_values_including_SFR": 7379,
+    "missing_values": 46519,
+    "all_missing_units": [
+      "Or22c",
+      "Or24a",
+      "Or67d",
+      "pb2A"
+    ],
+    "missing_SFR_units": [
+      "Or22b",
+      "Or22c",
+      "Or24a",
+      "Or67d",
+      "pb2A"
+    ],
+    "negative_unshifted_consensus_values": 0,
+    "negative_deltas_to_known_SFR": 2374,
+    "finite_values_with_unknown_SFR": 11
+  },
+  "male": {
+    "named_orn_cells": 2635,
+    "named_orn_glomeruli": 53,
+    "side_counts": {
+      "R": 1343,
+      "L": 883,
+      "unknown": 409
+    },
+    "entry_nerve_counts": {
+      "AN": 2451,
+      "MxLbN": 184
+    },
+    "receptorType_nonmissing": 0,
+    "door_exact_mapping_rows": 62,
+    "door_exact_unique_glomeruli_including_unknown_receptor": 48,
+    "door_unmatched_glomeruli": [
+      "DL2d",
+      "DL2v",
+      "VM6l",
+      "VM6m",
+      "VM6v"
+    ],
+    "benton_unmatched_glomeruli": [
+      "VM6l",
+      "VM6m",
+      "VM6v"
+    ],
+    "palpal_glomerulus_count": 6,
+    "palpal_label_cell_count": 185,
+    "palpal_entry_nerve_conflict_bodyIds": [
+      125395
+    ]
+  },
+  "study_audit": {
+    "metadata_rows": 42,
+    "raw_tables": [
+      "Or42b",
+      "Or59b",
+      "Or22a",
+      "Or42a",
+      "Or71a",
+      "Or33c",
+      "Or85e",
+      "pb2A",
+      "Or46a",
+      "Or59c",
+      "Or85d",
+      "Ir75a",
+      "Ir64a.DC4",
+      "Ir64a.DP1m",
+      "Or47b",
+      "ab4B"
+    ],
+    "raw_unit_dataset_columns": 73,
+    "selected_raw_cells_including_NA": 438,
+    "selected_raw_finite_cells": 144,
+    "raw_datasets_missing_exact_metadata_join": [
+      "Muench.2016.AntGC1",
+      "Muench.2016.AntGC3"
+    ],
+    "calcium_technique_with_spikes_unit_conflicts": [
+      "Silbering.2011.AL",
+      "Silbering.2011.AL_8a"
+    ],
+    "EC50_dataset_name_vs_data_type_review_required": [
+      "Nissler.2007.EC50",
+      "Nissler.2007.nmr"
+    ],
+    "sex_field_in_source_metadata": false,
+    "raw_SFR_offset_restoration_to_original_paper": "not_verified; preserve stored numbers and metadata flags separately"
+  },
+  "checks": {
+    "all_49_source_hashes_and_48_git_blobs_match": true,
+    "male_source_metadata_hashes_match": true,
+    "691_unique_rows_and_78_unique_consensus_units": true,
+    "chemical_identity_keys_unique_and_in_both_tables": true,
+    "missing_values_remain_missing_and_unknown_SFR_not_zero_filled": true,
+    "SFR_subtraction_numpy_pandas_parity": true,
+    "per_cell_join_has_2635_unique_body_ids_without_expansion": true,
+    "all_source_65_EV1_identity_rows_extracted_without_formula_evaluation": true,
+    "runtime_and_graph_never_imported_or_modified": true
+  },
+  "artifacts": [
+    {
+      "path": "validation/door/benton2025-identity-excerpt.csv",
+      "sha256": "5c3441cce689b94bb8562e40ebc179ee4737408b8b9d3a16d431c2a3035e3021",
+      "bytes": 3056
+    },
+    {
+      "path": "validation/door/chemical-consensus.csv",
+      "sha256": "04e900fc50fe7c08e6bd3130ef9de47ec473121a98f10cf75dcffe6629e639e4",
+      "bytes": 48633
+    },
+    {
+      "path": "validation/door/chemical-identities.csv",
+      "sha256": "82452b264106773d4ff13ace1c3864beccbffb34e40e49a2740e2a6456099b86",
+      "bytes": 523
+    },
+    {
+      "path": "validation/door/door-mapping-audit.csv",
+      "sha256": "ea1cf115d5710829fd8ef4cee2a9a7c429348ec353877f192c8a8097bc91760d",
+      "bytes": 12968
+    },
+    {
+      "path": "validation/door/excluded-studies.csv",
+      "sha256": "a1842b0b25bcd6c67d47f4f7eea8f412880550ab46e95dd675bc2a4a6631936d",
+      "bytes": 1334
+    },
+    {
+      "path": "validation/door/male-glomerulus-crosswalk.csv",
+      "sha256": "83359fefee505fb3e9164c99cd2510dd8cfe259364d6104f349f46707da2ee17",
+      "bytes": 9884
+    },
+    {
+      "path": "validation/door/male-orn-candidates.csv",
+      "sha256": "8ac828c1040ffd40189c3c02068fb2692ed174fbc990f739df81ef692ac7a677",
+      "bytes": 231178
+    },
+    {
+      "path": "validation/door/responding-unit-inventory.csv",
+      "sha256": "2b5f49463f4059430515792a710ab0d5bee76def6c5efbbcfaf2a05b6b6d8886",
+      "bytes": 7433
+    },
+    {
+      "path": "validation/door/selected-study-values.csv",
+      "sha256": "0d4e03ed21443f5e7a69fa1ee59683ab29912f2ee7656cc964feaefd9592e4ad",
+      "bytes": 154520
+    },
+    {
+      "path": "validation/door/study-metadata.csv",
+      "sha256": "b3e5b90aeac79a10c465aa3df7e87ccabf13ddd8f68a92b9e922e20e3045d3cc",
+      "bytes": 9958
+    },
+    {
+      "path": "validation/door/consensus-diagnostic.png",
+      "sha256": "f148e5539a3eb040064d0b21e97e563d223d12e270b4a85638a449b2b0802be9",
+      "bytes": 146641
+    }
+  ]
+}

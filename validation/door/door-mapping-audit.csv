@@ -1,0 +1,98 @@
+door_mapping_row_1based,receptor,sensillum,OSN,glomerulus,co.receptor,coexpressing,related1,related2,related3,related4,related5,related6,Ors,sensillum.type,adult,larva,dataset.existing,comment,code,code.OSN,exact_male_glomerulus_match,in_consensus_columns,consensus_finite_count,same_glomerulus_rows_are_alternatives_not_additive_channels
+1,?,?,?,VA7m,?,NA,NA,NA,NA,NA,NA,NA,?,NA,NA,NA,False,NA,VA7m,NA,True,False,NA,True
+2,Or42b,ab1,ab1A,DM1,Orco,NA,NA,NA,NA,NA,NA,NA,Or42b,antennal basiconic,True,True,True,NA,DM1,ab1A,True,True,177,True
+3,Or92a,ab1,ab1B,VA2,Orco,NA,NA,NA,NA,NA,NA,NA,Or92a,antennal basiconic,True,NA,True,NA,VA2,ab1B,True,True,174,True
+4,Gr21a.Gr63a,ab1,ab1C,V,NA,Gr21a+Gr63a,NA,NA,NA,NA,NA,NA,Gr21a+Gr63a,antennal basiconic,True,True,True,NA,V,ab1C,True,True,52,True
+5,Or10a,ab1,ab1D,DL1,Orco,Gr10a,Gr10a,NA,NA,NA,NA,NA,Or10a+Gr10a,antennal basiconic,True,NA,True,NA,DL1,ab1D,True,True,235,True
+6,Or67a,ab10,ab10A,DM6,Orco,NA,NA,NA,NA,NA,NA,NA,Or67a,antennal basiconic,True,NA,True,NA,DM6,ab10A,True,True,127,True
+7,Or49a,ab10,ab10B,DL4,Orco,Or85f,Or85f,NA,NA,NA,NA,NA,Or49a+85f,antennal basiconic,True,True,True,NA,NA,NA,True,True,30,True
+8,Or85f,ab10,ab10B,DL4,Orco,Or49a,Or49a,NA,NA,NA,NA,NA,Or49a+85f,antennal basiconic,True,NA,True,NA,DL4,ab10B,True,True,114,True
+9,Or59b,ab2,ab2A,DM4,Orco,NA,NA,NA,NA,NA,NA,NA,Or59b,antennal basiconic,True,NA,True,NA,DM4,ab2A,True,True,173,True
+10,ab2B,ab2,ab2B,DM5,Orco,Or85a+33b,Or85a,Or33b,NA,NA,NA,NA,Or85a+33b,antennal basiconic,NA,NA,True,NA,DM5,ab2B,True,True,101,True
+11,Or85a,ab2,ab2B,DM5,Orco,Or33b,Or33b,ab2B,NA,NA,NA,NA,Or85a+33b,antennal basiconic,True,NA,True,NA,NA,NA,True,True,114,True
+12,Or33b,ab2+ab5,ab2B+ab5B,DM5+DM3,Orco,Or85a (in ab2B) / Or47a (in ab5B),Or85a,Or47a,ab2B,ab5B,NA,NA,Or85a+33b,antennal basiconic,True,True,True,NA,NA,NA,False,True,122,True
+13,Or22a,ab3,ab3A,DM2,Orco,Or22b,Or22b,NA,NA,NA,NA,NA,Or22a+b,antennal basiconic,True,NA,True,NA,DM2,ab3A,True,True,225,True
+14,Or22b,ab3,ab3A,DM2,Orco,Or22a,Or22a,NA,NA,NA,NA,NA,Or22a+b,antennal basiconic,True,NA,True,NA,NA,NA,True,True,11,True
+15,ab3B,ab3,ab3B,VM5d,Orco,Or85b+98b,Or85b,Or98b,NA,NA,NA,NA,Or85b+98b,antennal basiconic,NA,NA,False,NA,NA,NA,True,False,NA,True
+16,Or85b,ab3,ab3B,VM5d,Orco,Or98b,Or98b,ab3B,NA,NA,NA,NA,Or85b+98b,antennal basiconic,True,NA,True,NA,VM5d,ab3B,True,True,161,True
+17,Or98b,ab3,ab3B,VM5d,Orco,Or85b,Or85b,ab3B,NA,NA,NA,NA,Or85b+98b,antennal basiconic,True,NA,False,see Or85b for data,NA,NA,True,False,NA,True
+18,Or7a,ab4,ab4A,DL5,Orco,NA,NA,NA,NA,NA,NA,NA,Or7a,antennal basiconic,True,True,True,NA,DL5,ab4A,True,True,222,True
+19,ab4B,ab4,ab4B,DA2,Orco,Or33a+56a,Or33a,Or56a,NA,NA,NA,NA,Or33a+56a,antennal basiconic,NA,NA,True,NA,DA2,ab4B,True,True,182,True
+20,Or33a,ab4,ab4B,DA2,Orco,Or56a,Or56a,ab4B,NA,NA,NA,NA,Or33a+56a,antennal basiconic,True,True,True,NA,NA,NA,True,True,30,True
+21,Or56a,ab4,ab4B,DA2,Orco,Or33a,Or33a,ab4B,NA,NA,NA,NA,Or33a+56a,antennal basiconic,True,NA,False,see ab4B for data,NA,NA,True,False,NA,True
+22,Or82a,ab5,ab5A,VA6,Orco,NA,NA,NA,NA,NA,NA,NA,Or82a,antennal basiconic,True,True,True,NA,VA6,ab5A,True,True,180,True
+23,ab5B,ab5,ab5B,DM3,Orco,Or47a+33b,Or47a,Or33b,NA,NA,NA,NA,Or47a+33b,antennal basiconic,NA,NA,True,NA,DM3,ab5B,True,True,82,True
+24,Or47a,ab5,ab5B,DM3,Orco,Or33b,Or33b,ab5B,NA,NA,NA,NA,Or47a+33b,antennal basiconic,True,True,True,NA,NA,NA,True,True,135,True
+25,Or13a,ab6,ab6A,DC2,Orco,NA,NA,NA,NA,NA,NA,NA,Or13a,antennal basiconic,True,NA,True,NA,DC2,ab6A,True,True,167,True
+26,Or49b,ab6,ab6B,VA5,Orco,NA,NA,NA,NA,NA,NA,NA,Or49b,antennal basiconic,True,NA,True,NA,VA5,ab6B,True,True,164,True
+27,Or98a,ab7,ab7A,VM5v,Orco,NA,NA,NA,NA,NA,NA,NA,Or98a,antennal basiconic,True,NA,True,NA,VM5v,ab7A,True,True,161,True
+28,Or67c,ab7,ab7B,VC4,Orco,NA,NA,NA,NA,NA,NA,NA,Or67c,antennal basiconic,True,NA,True,NA,VC4,ab7B,True,True,161,True
+29,Or43b,ab8,ab8A,VM2,Orco,NA,NA,NA,NA,NA,NA,NA,Or43b,antennal basiconic,True,NA,True,NA,VM2,ab8A,True,True,144,True
+30,Or9a,ab8,ab8B,VM3,Orco,NA,NA,NA,NA,NA,NA,NA,Or9a,antennal basiconic,True,True,True,NA,VM3,ab8B,True,True,144,True
+31,Or67b,ab9,ab9,VA3,Orco,NA,NA,NA,NA,NA,NA,NA,Or67b,antennal basiconic,True,True,True,NA,VA3,ab9X,True,True,121,True
+32,Or69a,ab9,ab9,D,Orco,NA,NA,NA,NA,NA,NA,NA,Or69a,antennal basiconic,True,NA,True,NA,D,ab9Y,True,True,107,True
+33,Ir31a,ac1,ac1,VL2p,Ir8a,NA,ac1,NA,NA,NA,NA,NA,Ir31a,antennal coeloconic,True,NA,True,NA,VL2p,ac1X,True,True,24,True
+34,Ir92a,ac1,ac1,VM1,"Ir25a, Ir76b",NA,ac1,NA,NA,NA,NA,NA,Ir92a,antennal coeloconic,True,NA,True,NA,VM1,ac1Z,True,True,24,True
+35,ac1A,ac1,ac1A,?,NA,NA,ac1,NA,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,NA,NA,ac1A,False,True,63,True
+36,ac1,ac1,ac1A+B+C,VL1+VM1+VL2p,NA,NA,ac1A,ac1B,ac1BC,Ir31a,Ir75d,Ir92a,NA,antennal coeloconic,NA,NA,True,"summed responses, individual ORNs could not be separated (Silbering et al. 2011)",NA,NA,False,True,172,True
+37,ac1B,ac1,ac1B,?,NA,NA,ac1BC,ac1,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,NA,NA,ac1B,False,True,47,True
+38,ac1BC,ac1,ac1B+C,?,NA,NA,ac1B,ac1,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,"summed responses from ac1B and C ORNs, only A neuron could be separated (Marshall et al. 2010)",NA,NA,False,True,24,True
+39,Ir75d,"ac1, ac2, ac4",NA,VL1,Ir25a,NA,ac1,ac2,ac4,NA,NA,NA,Ir75d,antennal coeloconic,True,NA,True,"Ir75a is expressed in one ORN of each of the ac1, ac2 and the ac4 sensilla",VL1,NA,True,True,24,True
+40,Ir41a,ac2,ac2,VC5,Ir76b,NA,ac2,NA,NA,NA,NA,NA,Ir41a,antennal coeloconic,True,NA,True,NA,VC5,ac2Z,True,True,24,True
+41,Ir75a,ac2,ac2,DP1l,Ir8a,NA,Ir75b,Ir75c,ac2,ac3A,NA,NA,Ir75a,antennal coeloconic,True,NA,True,"Ir75a is the sole receptor expressed in some ac2 neurons projecting to glomerulus DP1l,
+Ir75a is also expressed in ac3A neurons projecting to glomerulus DL2d+v, here along with Ir75b and Ir75c (see data set ac3A for responses)",DP1l,ac2X,True,True,24,True
+42,ac2A,ac2,ac2A,?,NA,NA,ac2,NA,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,NA,NA,ac2A,False,True,84,True
+43,ac2,ac2,ac2A+B+C,VL1+DP1l+VC5,NA,NA,ac2A,ac2B,ac2BC,Ir41a,Ir75a,Ir75d,NA,antennal coeloconic,NA,NA,True,"summed responses, individual ORNs could not be separated (Silbering et al. 2011)",NA,NA,False,True,172,True
+44,ac2B,ac2,ac2B,?,NA,NA,ac2,ac2BC,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,NA,NA,ac2B,False,True,48,True
+45,ac2BC,ac2,ac2B+C,?,NA,NA,ac2,ac2B,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,"summed responses from ac2B and C ORNs, only A neuron could be separated (Marshall et al. 2010)",NA,NA,False,True,44,True
+46,ac3A,ac3,ac3A,DL2d/v,Ir8a,Ir75a+b+c,Ir75a,Ir75b,Ir75c,NA,NA,NA,Ir75a+b+c,antennal coeloconic,NA,NA,True,"mapping to DL2d&v, separation unclear",DL2d,ac3A,False,True,95,True
+47,ac3A,ac3,ac3A,DL2d/v,Ir8a,Ir75a+b+c,Ir75a,Ir75b,Ir75c,NA,NA,NA,Ir75a+b+c,antennal coeloconic,NA,NA,True,"mapping to DL2d&v, separation unclear",DL2v,NA,False,True,95,True
+48,Ir75b,ac3,ac3A,DL2d/v,Ir8a,NA,Ir75a,Ir75c,ac3A,NA,NA,NA,Ir75a+b+c,antennal coeloconic,True,NA,False,NA,NA,NA,False,False,NA,True
+49,Ir75c,ac3,ac3A,DL2d/v,Ir8a,NA,Ir75a,Ir75b,NA,NA,NA,NA,Ir75a+b+c,antennal coeloconic,True,NA,False,NA,NA,NA,False,False,NA,True
+50,ac3_noOr35a,ac3,ac3A+B,DL2d/v+VC3,NA,NA,NA,NA,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,"summed responses from the ac3 sensillum, Or35a was knocked down (Silbering et al. 2011)",NA,NA,False,True,172,True
+51,ac3B,ac3,ac3B,VC3,"Orco, Ir76b",Or35a,Or35a,NA,NA,NA,NA,NA,Or35a,antennal coeloconic,NA,NA,True,NA,VC3,ac3B,True,True,98,True
+52,Or35a,ac3,ac3B,VC3,"Orco, Ir76b",NA,ac3B,NA,NA,NA,NA,NA,Or35a,antennal coeloconic,True,True,True,NA,NA,NA,True,True,123,True
+53,ac4,ac4,ac4,?,NA,NA,NA,NA,NA,NA,NA,NA,NA,antennal coeloconic,NA,NA,True,"summed responses, individual ORNs could not be separated (Silbering et al. 2011)",NA,NA,False,True,190,True
+54,Ir76a,ac4,ac4,VM4,"Ir25a, Ir76b",NA,NA,NA,NA,NA,NA,NA,Ir76a,antennal coeloconic,True,NA,True,NA,VM4,ac4Z,True,True,24,True
+55,Ir84a,ac4,ac4,VL2a,Ir8a,NA,NA,NA,NA,NA,NA,NA,Ir84a,antennal coeloconic,True,NA,True,NA,VL2a,ac4X,True,True,24,True
+56,Or67d,at1,at1A,DA1,Orco,NA,NA,NA,NA,NA,NA,NA,Or67d,antennal trichoid,True,NA,True,NA,DA1,at1A,True,True,0,True
+57,Or83c,at2,at2A,DC3,Orco,NA,NA,NA,NA,NA,NA,NA,Or83c,antennal trichoid / intermediate,True,NA,True,named ai2A in Ronderos et al. 2014,DC3,at2A,True,True,123,True
+58,Or23a,at2,at2B,DA3,Orco,NA,NA,NA,NA,NA,NA,NA,Or23a,antennal trichoid / intermediate,True,NA,True,named ai2B in Ronderos et al. 2014,DA3,at2B,True,True,115,True
+59,Or19a,at3,at3,DC1,Orco,Or19b,Or19b,NA,NA,NA,NA,NA,Or19a+b,antennal trichoid / intermediate,True,NA,True,named ai2A in Dweck et al. 2013,DC1,at3A,True,True,497,True
+60,Or19b,at3,at3,DC1,Orco,Or19a,Or19a,NA,NA,NA,NA,NA,Or19a+b,antennal trichoid / intermediate,True,NA,False,named ai2A in Dweck et al. 2013; see Or19a for data,NA,NA,True,False,NA,True
+61,Or2a,at3,at3,DA4m,Orco,NA,NA,NA,NA,NA,NA,NA,Or2a,antennal trichoid / intermediate,True,True,True,named ai2 in Dweck et al. 2013,DA4m,at3Y,True,True,124,True
+62,Or43a,at3,at3,DA4l,Orco,NA,NA,NA,NA,NA,NA,NA,Or43a,antennal trichoid / intermediate,True,NA,True,named ai2 in Dweck et al. 2013,DA4l,at3Z,True,True,115,True
+63,Or47b,at4,at4A,VA1v,Orco,NA,NA,NA,NA,NA,NA,NA,Or47b,antennal trichoid,True,NA,True,NA,VA1v,at4A,True,True,178,True
+64,Or65a,at4,at4B,DL3,Orco,Or65b+c,Or65b,Or65c,NA,NA,NA,NA,Or65a+b+c,antennal trichoid,True,NA,True,NA,DL3,at4B,True,True,116,True
+65,Or65b,at4,at4B,DL3,Orco,Or65a+c,Or65a,Or65c,NA,NA,NA,NA,Or65a+b+c,antennal trichoid,True,NA,False,see aOr65a for data,NA,NA,True,False,NA,True
+66,Or65c,at4,at4B,DL3,Orco,Or65a+b,Or65a,Or65b,NA,NA,NA,NA,Or65a+b+c,antennal trichoid,True,NA,False,see aOr65a for data,NA,NA,True,False,NA,True
+67,Or88a,at4,at4C,VA1d,Orco,NA,NA,NA,NA,NA,NA,NA,Or88a,antennal trichoid,True,NA,True,NA,VA1d,at4C,True,True,115,True
+68,Or42a,pb1,pb1A,VM7d,Orco,NA,NA,NA,NA,NA,NA,NA,Or42a,maxillary palp,True,True,True,NA,VM7d,pb1A,True,True,72,True
+69,Or71a,pb1,pb1B,VC2,Orco,NA,NA,NA,NA,NA,NA,NA,Or71a,maxillary palp,True,NA,True,NA,VC2,pb1B,True,True,149,True
+70,Or33c,pb2,pb2A,VC1,Orco,Or85e,Or85e,NA,NA,NA,NA,NA,Or33c+85e,maxillary palp,True,NA,True,NA,NA,NA,True,True,12,True
+71,Or85e,pb2,pb2A,VC1,Orco,Or33c,Or33c,NA,NA,NA,NA,NA,Or33c+85e,maxillary palp,True,NA,True,NA,NA,NA,True,True,12,True
+72,pb2A,pb2,pb2A,VC1,Orco,Or33c+85e,Or33c,Or85e,NA,NA,NA,NA,Or33c+85e,maxillary palp,NA,NA,True,NA,VC1,pb2A,True,True,0,True
+73,Or46a,pb2,pb2B,VA7l,Orco,NA,NA,NA,NA,NA,NA,NA,Or46a,maxillary palp,True,NA,True,NA,VA7l,pb2B,True,True,12,True
+74,Or59c,pb3,pb3A,VM7v,Orco,NA,NA,NA,NA,NA,NA,NA,Or59c,maxillary palp,True,NA,True,NA,VM7v,pb3A,True,True,53,True
+75,Or85d,pb3,pb3B,VA4,Orco,NA,NA,NA,NA,NA,NA,NA,Or85d,maxillary palp,True,NA,True,NA,VA4,pb3B,True,True,51,True
+76,Ir40a.VP1,sacI,sacI,VP1,Ir25a,NA,NA,NA,NA,NA,NA,NA,Ir40a,sacculus,True,NA,False,formerly VM6 (Grabe et al. 2014,VP1,sacIX,False,False,NA,True
+77,Ir40a.VP4,sacI,sacI,VP4,Ir25a,NA,NA,NA,NA,NA,NA,NA,Ir40a,sacculus,True,NA,False,NA,VP4,sacIY,False,False,NA,True
+78,Ir64a.DC4,sacIII,sacII,DC4,Ir8a,NA,NA,NA,NA,NA,NA,NA,Ir64a,sacculus,True,NA,True,NA,DC4,sacIIX,True,True,24,True
+79,Ir64a.DP1m,sacIII,sacII,DP1m,Ir8a,NA,NA,NA,NA,NA,NA,NA,Ir64a,sacculus,True,NA,True,NA,DP1m,sacIIY,True,True,24,True
+80,Ir25a,NA,NA,NA,-,NA,NA,NA,NA,NA,NA,NA,NA,antennal coeloconic,True,NA,False,the Ir25a co-receptor,NA,NA,False,False,NA,True
+81,Ir76b,NA,NA,NA,-,NA,NA,NA,NA,NA,NA,NA,NA,antennal coeloconic,True,NA,False,the Ir76b co-receptor (?),NA,NA,False,False,NA,True
+82,Ir8a,NA,NA,NA,-,NA,NA,NA,NA,NA,NA,NA,NA,antennal coeloconic,True,NA,False,the Ir8a co-receptor,NA,NA,False,False,NA,True
+83,Or1a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+84,Or22c,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,0,True
+85,Or24a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,0,True
+86,Or30a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+87,Or45a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,31,True
+88,Or45b,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+89,Or59a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,29,True
+90,Or63a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,False,NA,NA,NA,False,False,NA,True
+91,Or74a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+92,Or83a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,False,NA,True
+93,Or83b,NA,NA,NA,-,NA,NA,NA,NA,NA,NA,NA,NA,NA,True,True,False,the Orco co-receptor expressed together with all Ors,NA,NA,False,False,NA,True
+94,Or85c,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+95,Or94a,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,30,True
+96,Or94b,NA,NA,NA,Orco,NA,NA,NA,NA,NA,NA,NA,NA,NA,False,True,True,NA,NA,NA,False,True,31,True

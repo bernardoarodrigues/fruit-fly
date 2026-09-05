@@ -20,4 +20,7 @@ Dependencies and research artifacts retain their respective licenses. Preserve u
 | [Zhao et al. eye geometry](https://github.com/reiserlab/eyemap_T4) | GPL-3.0 repository at 99d2a43123db636cedb55af9ff31a59657e7d17e. The separately labeled female optical-template CSV is an extraction/transformation of its RData, with source hashes and reproduction code. See validation/visual-retinotopy/ASSET-NOTICE.md and the retained upstream license. |
 | [FlyMimic](https://github.com/gizemozd/FlyMimic) | Apache-2.0 repository at 9ea1131626cd76f7203b74076ef8f0e9cab30bef; source models/meshes acquired separately for an isolated mechanical audit. Numerical results retain source-unit and donor limits; no assets or trained policy are vendored into the runtime. |
 
+| [DoOR.data](https://github.com/ropensci/DoOR.data) | CC BY-SA 4.0 tables at db323a496577c4b4a72b5c2fcd1859e07521ffb5, downloaded separately. Derived response/crosswalk tables retain [attribution and alteration notices](validation/door/ATTRIBUTION.md). DoOR.functions GPL-3 source is inspected only. |
+| [Benton et al. olfactory identity resource](https://doi.org/10.1038/s44319-025-00476-8) | CC BY 4.0 Dataset EV1; selected anatomical text columns retain exact Excel rows and source hashes. Its identity updates are kept separate from DoOR response evidence. |
+
 Morphology acquisition has separate specimen, license and checksum provenance. Biological measurements, model approximations and project hypotheses are distinguished in the research notes.

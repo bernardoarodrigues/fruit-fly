@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "scope": "Frozen small DoOR tables, audited source functions, and Benton 2025 EV1 anatomical update. No runtime mapping.",
+  "sources": [
+    {
+      "repository": "https://github.com/ropensci/DoOR.data",
+      "commit": "db323a496577c4b4a72b5c2fcd1859e07521ffb5",
+      "commit_date": "2026-07-17T21:42:32Z",
+      "license": "CC BY-SA 4.0",
+      "local_dir": "data/raw/door",
+      "files": [
+        {
+          "path": "DESCRIPTION",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/DESCRIPTION",
+          "bytes": 1136,
+          "sha256": "2e4138a205940944aee8e2a069e2104fc5ae24296256a0371392c462f92c0777",
+          "git_blob_sha1": "50982ca645bea9674633ad36e5da26aa73f2eaad"
+        },
+        {
+          "path": "NEWS.md",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/NEWS.md",
+          "bytes": 1150,
+          "sha256": "f414b43dc68659eb87768e1bf8c1f572c53bf31f6b637083c3d7e0ea246823d2",
+          "git_blob_sha1": "4ddaae48a02c402870edeb151effedab68d812d3"
+        },
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/README.md",
+          "bytes": 1648,
+          "sha256": "0ad95d568dc0cfc1cd7c9d5ef44db5f5e72310d7fe304a2bc65f28b1296377ec",
+          "git_blob_sha1": "9d6ab22ec42924f6bdb53a0fd64dc851d7d27333"
+        },
+        {
+          "path": "R/DoOR.data-package.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/R/DoOR.data-package.R",
+          "bytes": 109338,
+          "sha256": "208bd44d3637e85e2957f04012459415c4bb7b84b4174aa12e74797cf16435b5",
+          "git_blob_sha1": "eb1b4fd7c9a28fe91b1080e3b7b44deb4d1eb64a"
+        },
+        {
+          "path": "R/load_door_data.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/R/load_door_data.R",
+          "bytes": 1110,
+          "sha256": "c5a5e1ef3b9ee7763c5e0c3b22f65affd48b2f64c251d0d394cbb46ec91320d1",
+          "git_blob_sha1": "3881f1029992d6b89f5efd5cb3a996f0dfd5d295"
+        },
+        {
+          "path": "data/door_dataset_info.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_dataset_info.csv",
+          "bytes": 11105,
+          "sha256": "6ab8bc1c843ffe4763e563eb763029c421898dce7889c31dc2c21b544c9be269",
+          "git_blob_sha1": "43d165dc70b7b587df7842b1c1675419c4a7dd3f"
+        },
+        {
+          "path": "data/door_excluded_data.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_excluded_data.csv",
+          "bytes": 1921,
+          "sha256": "bb931e672833a57c6f856bcf14eda2015426c370285cd82854879041887289d9",
+          "git_blob_sha1": "014e4ed921a5169908aef24b2f4f2efbb8a8d5f3"
+        },
+        {
+          "path": "data/door_global_normalization_weights.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_global_normalization_weights.csv",
+          "bytes": 10954,
+          "sha256": "11be001e440a8601e0a699a085baf59d3be8ad164d7e31b0a7635e720461379f",
+          "git_blob_sha1": "6f76f65e81b04fc16d411014feed5751fbf53b4d"
+        },
+        {
+          "path": "data/door_mappings.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_mappings.csv",
+          "bytes": 12824,
+          "sha256": "1197c492e769b1b587c907c5b750ffa2507d7e6c9fe9dfcb2ee8603871e00912",
+          "git_blob_sha1": "2f5d9c6fcac5b450b152401072e6f86a440dfb3a"
+        },
+        {
+          "path": "data/door_response_matrix.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_response_matrix.csv",
+          "bytes": 295852,
+          "sha256": "bc2aa5414ff54d3a1399f5fe171e154bcadc754bcf323a3c27711a54f70848e2",
+          "git_blob_sha1": "23f0732c55d700567be54f68f20cb45fd10c51df"
+        },
+        {
+          "path": "data/door_response_matrix_non_normalized.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_response_matrix_non_normalized.csv",
+          "bytes": 293153,
+          "sha256": "6e3aaebe5ab53f847c127501aa67273188b13db529e86ce032a4b9be13aac810",
+          "git_blob_sha1": "5614150a91c3940900706ffbbbc2165b761e0c18"
+        },
+        {
+          "path": "data/door_response_range.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/door_response_range.csv",
+          "bytes": 1550,
+          "sha256": "5499f1d7bf3217f9af8bc45ee90c85ef09c9f2afd11ca833fae1ad055d97a7f4",
+          "git_blob_sha1": "acd781ac006acaa6177d8ccbe4bbc5e5b7d206ef"
+        },
+        {
+          "path": "data/odor.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/odor.csv",
+          "bytes": 155880,
+          "sha256": "a31d1841cf90ce23ec149760a5efa38eae02de7820bb2300c3a7dba221745940",
+          "git_blob_sha1": "ed32e0a692694f9c0da3356dc75e04d6ccdc05df"
+        },
+        {
+          "path": "data/ORs.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/ORs.csv",
+          "bytes": 1011,
+          "sha256": "5c9e0f2abeab684eedf8137dd22e161b7ca58d1fd96f6a1e7a25e8e39ad742a0",
+          "git_blob_sha1": "b88dc16a9cb417d3fb8587a9434359eee1ecf55c"
+        },
+        {
+          "path": "man/door_dataset_info.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_dataset_info.Rd",
+          "bytes": 2102,
+          "sha256": "54a6f772518a0646651406db4d0e5ecd7c760a22d993f0775f16e36e213f4c1d",
+          "git_blob_sha1": "a03b654bca128912ec546b8e3e7aad0680715d9e"
+        },
+        {
+          "path": "man/door_mappings.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_mappings.Rd",
+          "bytes": 2134,
+          "sha256": "5be797db5fbaa75084198728af419a9ca8839660a33004ed8441e7484ff7ead7",
+          "git_blob_sha1": "f733c0c3b0bd2eee89e1d9c9fc597d3b0ff520d8"
+        },
+        {
+          "path": "man/door_response_matrix.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_response_matrix.Rd",
+          "bytes": 4633,
+          "sha256": "8a3f56d401ce900ef4aa50d01cfbf792bad0f2497d8f8340e4ab9c68a1c2a9e7",
+          "git_blob_sha1": "25900a87914d49364c08e9fdc5618f8352c1965e"
+        },
+        {
+          "path": "man/door_response_matrix_non_normalized.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_response_matrix_non_normalized.Rd",
+          "bytes": 4577,
+          "sha256": "49b5475319c96745471cd6c6536c8171f0daa748d5efeb4f842916687122fc78",
+          "git_blob_sha1": "a81fac498850ed5a3ac6f1b559c038a5945b455f"
+        },
+        {
+          "path": "man/door_global_normalization_weights.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_global_normalization_weights.Rd",
+          "bytes": 3555,
+          "sha256": "e87e8114023a24932cd3bbd9993c37fdd0f024bb2a51265bad961186dfdbe98d",
+          "git_blob_sha1": "1425b9d78b659ab0b8ba71f20a1e3369a09994a6"
+        },
+        {
+          "path": "man/door_response_range.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/door_response_range.Rd",
+          "bytes": 631,
+          "sha256": "45a54daa6a94d87c1a8f0ec8f6ceef6d44b638cbe174ca13d9548d68943c77a3",
+          "git_blob_sha1": "27b6f38ad263b0c9c6a20871eae33a2617a794fb"
+        },
+        {
+          "path": "man/odor.Rd",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/man/odor.Rd",
+          "bytes": 1950,
+          "sha256": "f88f12687603e05facb7c019f6b714299dc64bc61b0fec6497fa3548069ca29f",
+          "git_blob_sha1": "601efcef9dfb59d2f50b015490028353282c6c06"
+        },
+        {
+          "path": "data/Or42b.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or42b.csv",
+          "bytes": 74306,
+          "sha256": "e3ac8690cb11ec5d861c42e98449bc11f8ff735609540c2bf859e367e3f61109",
+          "git_blob_sha1": "b9ca503a849382cc865bec59ba0b41f080c07581"
+        },
+        {
+          "path": "data/Or59b.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or59b.csv",
+          "bytes": 76124,
+          "sha256": "0fbbdec3b79e3386962306a57e9cc74b1efb3d62a2b65bafa6612d8124495a2f",
+          "git_blob_sha1": "2450fc20e87f35c6f89598c44beda9981ce7403c"
+        },
+        {
+          "path": "data/Or22a.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or22a.csv",
+          "bytes": 85070,
+          "sha256": "60a869fbe0412b706b3b39d3ca3adca9d8ea5831196225b4f7c3e9419df97ebe",
+          "git_blob_sha1": "43853ea1daf10d7b459b23209d43efd39f22fecf"
+        },
+        {
+          "path": "data/Or42a.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or42a.csv",
+          "bytes": 67696,
+          "sha256": "a43be99d43301de1b33d26de6223372a196c149d0e2c974a884e8322b452e033",
+          "git_blob_sha1": "bf50c033b227726ec5f0def00c14cc648a175daf"
+        },
+        {
+          "path": "data/Or71a.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or71a.csv",
+          "bytes": 63658,
+          "sha256": "3547e833bcfbe382e3c6be30eac7013a85d9dd4b7d83b4c97bb292b4d830559c",
+          "git_blob_sha1": "ac8646d2ea2eb5e78d0aa5ab091a3cd5d0b85caa"
+        },
+        {
+          "path": "data/Or33c.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or33c.csv",
+          "bytes": 57100,
+          "sha256": "a97bc6e0cd19de2324d3d8709f06e8826e38736f43c76dffdf60046847ed159c",
+          "git_blob_sha1": "494a46b4b4e2d53cfcc3b03153cae06a349107dc"
+        },
+        {
+          "path": "data/Or85e.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or85e.csv",
+          "bytes": 57102,
+          "sha256": "e25ce3145c67c21077a77d3a8ca8c0d6e70bc3a830d953d748f3694d8ecdcc5d",
+          "git_blob_sha1": "83065f3458361cb6f40d41fda7028c627f4dc071"
+        },
+        {
+          "path": "data/pb2A.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/pb2A.csv",
+          "bytes": 61329,
+          "sha256": "8123ef0feea3a6671d727873bc320568a29d84efd4d12c499e04239a5af92556",
+          "git_blob_sha1": "b9753d7752ac8666404e6a9df4d624ff73017fef"
+        },
+        {
+          "path": "data/Or46a.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or46a.csv",
+          "bytes": 61350,
+          "sha256": "b3095c11f3cf92fb64c4783854505dc70ce76ce2b773e56d1dee45f49030b0bd",
+          "git_blob_sha1": "8b8c6a7e4d7245da29d6b3918b385ec3a2a09400"
+        },
+        {
+          "path": "data/Or59c.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or59c.csv",
+          "bytes": 63436,
+          "sha256": "5ec3e85fc24c24f08610b18e465300668fc18ab616c1f587f14e9cbfc25de93b",
+          "git_blob_sha1": "e3aec2a2eaa0bbb61fd5b4fd11d23b87119244f2"
+        },
+        {
+          "path": "data/Or85d.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or85d.csv",
+          "bytes": 61335,
+          "sha256": "9a8d7fd5c6cb6c5aec997be556409c2a79e20d68a6830e57c0afe76eeb559607",
+          "git_blob_sha1": "2eee6037656d4352c5bad1a42ecbbd4aa580e26b"
+        },
+        {
+          "path": "data/Ir75a.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Ir75a.csv",
+          "bytes": 59350,
+          "sha256": "f45ba7e12e524e436b4e3d34314cdfdb9d00f74f03548487641302e98a9e0cca",
+          "git_blob_sha1": "f28642db16fd5c81d586f6b4f3ff51a7e77cc0b0"
+        },
+        {
+          "path": "data/Ir64a.DC4.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Ir64a.DC4.csv",
+          "bytes": 57181,
+          "sha256": "98145fedd6d43be7b852b469e8bcd071e2fa6fdfcdbf3d30e7614e429c17b7a8",
+          "git_blob_sha1": "b819ada02ddb91286951337646a5156d864a4d97"
+        },
+        {
+          "path": "data/Ir64a.DP1m.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Ir64a.DP1m.csv",
+          "bytes": 57175,
+          "sha256": "2547555b053050155bf29d00ca928522dadcbaa24a20f64cec3852a6b051fa5a",
+          "git_blob_sha1": "eeffb1e1a96fc77fca3558d2af09b069581f848c"
+        },
+        {
+          "path": "data/Or47b.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/Or47b.csv",
+          "bytes": 68042,
+          "sha256": "f7f5b7adac77fa0291d2d22633c82437bfea99dd7f0cd9b3b39da8fc51928f20",
+          "git_blob_sha1": "54b10f73d6b200872dc8cb998b68111f8c898430"
+        },
+        {
+          "path": "data/ab4B.csv",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/db323a496577c4b4a72b5c2fcd1859e07521ffb5/data/ab4B.csv",
+          "bytes": 65931,
+          "sha256": "905362b719f3846753456a57df1b068ba7a3a84c85c5380c2a4f683ca9120aa5",
+          "git_blob_sha1": "ede0085074d95a007bfbe98bd3f95da227313fc2"
+        }
+      ]
+    },
+    {
+      "commit": "15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6",
+      "date": "2026-08-18T12:21:22Z",
+      "license": "GPL-3",
+      "local_dir": "data/raw/door/functions",
+      "files": [
+        {
+          "path": "DESCRIPTION",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/DESCRIPTION",
+          "bytes": 1321,
+          "sha256": "946791e2890f7b9ddc9374cd89da915ca23976f461a50ae664cabfadfa2d527d",
+          "git_blob_sha1": "c60baf38e38b4c4d5ae137e9384eb717d1b1f536"
+        },
+        {
+          "path": "R/global_norm.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/global_norm.R",
+          "bytes": 3025,
+          "sha256": "8f3504e78f9f17421f9b442ebfae01a4a1e9fb349d5c1e323e6b94af1bbc89ba",
+          "git_blob_sha1": "3d2478cc057bb091d3bce1d4b6a6d9fbea959dbc"
+        },
+        {
+          "path": "R/door_norm.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/door_norm.R",
+          "bytes": 688,
+          "sha256": "d1b5f2faeb2ab949308fd09d6099dbf38d17bfa7a0ccdf4165eb3acc07ea4a7c",
+          "git_blob_sha1": "385599a1d788fee1e0db01e9e13d925c4016a6f9"
+        },
+        {
+          "path": "R/reset_sfr.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/reset_sfr.R",
+          "bytes": 1194,
+          "sha256": "5cffbfb5685a3233f9586177b2e8c18f4bcc9dbde577d913af231c8abd838014",
+          "git_blob_sha1": "84fe6e7c61db2eb16ad3285c510b6e3e6ac24c6c"
+        },
+        {
+          "path": "R/model_response.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/model_response.R",
+          "bytes": 10228,
+          "sha256": "d1206d38ee3dcda91abcb4e185cf5173857fa576d0603586e583442d0ee33728",
+          "git_blob_sha1": "c37c63ea4b1909e298f3cba1ef17f7b95ed253c0"
+        },
+        {
+          "path": "R/create_door_database.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/create_door_database.R",
+          "bytes": 3782,
+          "sha256": "0ea7416e5251e3bc56e58f7c35cf70f411e85d1f9069966493be0428e07bab47",
+          "git_blob_sha1": "a4475c8ecbd3128ceca53e372cf46adc846e55e6"
+        },
+        {
+          "path": "R/get_normalized_responses.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/get_normalized_responses.R",
+          "bytes": 2262,
+          "sha256": "1a570287839e153803f191fa63daf2c37bb94e8ba792881599eeccfe6bb49766",
+          "git_blob_sha1": "8d0a12e80559b0a13272353e93c6d3d39ac64a9c"
+        },
+        {
+          "path": "R/back_project.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/back_project.R",
+          "bytes": 4872,
+          "sha256": "45c3893cf39892d346af0d21bea01121e11e372ab091156c0ea0d7042d790282",
+          "git_blob_sha1": "1d42882c8ff8076072b3c53bedf20889910b54b3"
+        },
+        {
+          "path": "R/door_default_values.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/door_default_values.R",
+          "bytes": 5408,
+          "sha256": "25788eb7c490020e0861ed0f6552505da07b0aa35b0bf7b46ace0961da99c944",
+          "git_blob_sha1": "8eb5a34258b0dc3c21a8a14dfdb664da880c983c"
+        },
+        {
+          "path": "R/get_responses.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/get_responses.R",
+          "bytes": 1786,
+          "sha256": "ca13b438df78d69c2a8854c06c09204c456faee20ae190acf4d5da1e85e3e39c",
+          "git_blob_sha1": "0effbffda68ce7b66db74e72f7331d8b64470ed3"
+        },
+        {
+          "path": "R/import_new_data.R",
+          "url": "https://raw.githubusercontent.com/ropensci/DoOR.functions/15e415e4d84dfbbba6febefdfd0f2c1ddcf31cd6/R/import_new_data.R",
+          "bytes": 15000,
+          "sha256": "84e3a87acc6ec3d0b80f41cc957cda8d69c491ab64a9fb7d04c5841bd70694ad",
+          "git_blob_sha1": "3b6808cc14711c3a711a68066e3284f035b49b0a"
+        }
+      ]
+    },
+    {
+      "repository": "https://doi.org/10.1038/s44319-025-00476-8",
+      "license": "CC BY 4.0; article supplementary dataset",
+      "local_dir": "data/raw/door/benton2025",
+      "files": [
+        {
+          "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs44319-025-00476-8/MediaObjects/44319_2025_476_MOESM2_ESM.xlsx",
+          "path": "dataset-ev1.xlsx",
+          "bytes": 97614,
+          "sha256": "0b0e76250bcbca8c5acc3c0ba1cc9634060d7f992cc5979d710c9fff3613d49d",
+          "license": "CC BY 4.0; article supplementary dataset",
+          "article": "https://doi.org/10.1038/s44319-025-00476-8"
+        }
+      ]
+    }
+  ],
+  "male_inputs": [
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    }
+  ],
+  "male_primary_sources": [
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "path": "data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "size": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "etag": "\"50a7718770c57220f160ba4f431ab89e\"",
+      "last_modified": "Wed, 03 Jun 2026 13:54:38 GMT",
+      "generation": "1780494878811468",
+      "seconds": 3.744892874965444
+    },
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "path": "data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "size": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "etag": "\"3d842b12fe5c49eefade528d7dd24a1f\"",
+      "last_modified": "Mon, 08 Jun 2026 05:01:39 GMT",
+      "generation": "1780894899156750",
+      "seconds": 14.794378874998074
+    },
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "path": "data/raw/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "size": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "etag": "\"f30e9dcca25cfd021bf1e7b3d975599e\"",
+      "last_modified": "Wed, 03 Jun 2026 13:54:47 GMT",
+      "generation": "1780494887545976",
+      "seconds": 75.13518766599009
+    }
+  ],
+  "male_license": "MaleCNS data CC BY 4.0; attribution Berg et al., Cell 2026, DOI 10.1016/j.cell.2026.08.015"
+}
