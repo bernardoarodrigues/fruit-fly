@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-09-05T23:00:50.353394+00:00",
+  "attempts": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-1.xlsx",
+      "requested_utc": "2026-09-05T23:00:49.926124+00:00",
+      "acquired_xlsx": false,
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-1.xlsx",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-reporter-data/NIHMS1837499-supplement-1.xlsx.response",
+      "bytes": 1816,
+      "sha256": "c717e2797cf8d85ba998aa78e21f8bbdb58dce5390f07514dcfde3407cd9cc4c"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-Table_S1.xlsx",
+      "requested_utc": "2026-09-05T23:00:50.152913+00:00",
+      "acquired_xlsx": false,
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9613607/bin/NIHMS1837499-supplement-Table_S1.xlsx",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/kc-reporter-data/NIHMS1837499-supplement-Table_S1.xlsx.response",
+      "bytes": 1817,
+      "sha256": "392c766b4e1eea5fed60dab27fd68f1b34d4e29c12e48fc94ff1af94ef0be7f8"
+    }
+  ],
+  "all_workbooks_acquired": false,
+  "source_file": {
+    "path": "scripts/acquire_kc_reporter_workbooks.py",
+    "sha256": "41e66d4e45e4c1dd6066368347615174539de8f06b64c2adc935956f0e2b9d5b"
+  }
+}

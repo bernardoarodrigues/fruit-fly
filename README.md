@@ -6,6 +6,8 @@ A research simulator coupling the **166,700-neuron male CNS** to one articulated
 
 The completed [contact-aware γ-KC intervention](docs/kc-gamma-intervention-results.md) reduces γ firing substantially but leaves saturated downstream output and global persistence. All six cases were reviewed together; H1 remains experimental.
 
+The subsequent [reporter-data and author-model audit](research/27-kc-reporter-data-and-author-model-audit.md) preserves public WT/KD calcium summaries and identifies limits on their use for electrical calibration. No new fit or neural batch has started.
+
 ## Install and watch
 
 Python 3.12 and uv were used on Apple Silicon. From the repository root:
