@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T18:38:01.636625+00:00",
+  "inputs": [
+    {
+      "path": "scripts/analyze_navigation_ladder_mbon_inputs.py",
+      "bytes": 20201,
+      "sha256": "17212f5f1c5dce0f012efcb33f3158e1f5dba399f552ead03dc46868ea43b437"
+    },
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    },
+    {
+      "path": "scripts/review_navigation_ladder_mbon_inputs.py",
+      "bytes": 30047,
+      "sha256": "79e98d2ca0bc0fcb69e4b47be04584b2b94a36e80cf00d6d9d77449e17ef6506"
+    },
+    {
+      "path": "scripts/inhibitory_recurrent_panel_kernel.py",
+      "bytes": 29863,
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    {
+      "path": "docs/navigation-ladder-mbon-input-plan.md",
+      "bytes": 5804,
+      "sha256": "f7120dcee5c53b5206c8861bbbf3bb3d9b287350a569cc3490dced6ddb52c383"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-plan.json",
+      "bytes": 33875,
+      "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/results.json",
+      "bytes": 13458870,
+      "sha256": "021bbc028ceec91611d97010fec48deae7940eb3b155649ba279a7ccf5f1916c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/signs.npy",
+      "bytes": 166828,
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-H1-batch-review.json",
+      "bytes": 34164,
+      "sha256": "5c35177d8a7bfd894d1e58e4f2949ce918b652ddc39643289d884b0516c4806c"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-final-integrity.json",
+      "bytes": 73014,
+      "sha256": "1e96c6f2946d3b1055be3fb3e1925fdf3f44c688ff87505469bc428a4b3c983e"
+    },
+    {
+      "path": "validation/navigation-ladder-timing-independent-review.json",
+      "bytes": 13794,
+      "sha256": "2ce57bdc8d637bb11ff76d313d88b4f967504bd95d14e7a7b16e0ea44e7964ab"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.json",
+      "bytes": 14071,
+      "sha256": "8e5eebcb1c904a663ea25eb8abdb721945d37dbba55602351d8be0173c75f641"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.npz",
+      "bytes": 988546,
+      "sha256": "f659af08045d06ac27784e767f409cccca0fb0e1e28567c0c33bae4385477086"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.complete.json",
+      "bytes": 576,
+      "sha256": "4d4eb02e6a25524aa760f936bf667b12fde5b5c6a0fa74c5eafbf47335704018"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    }
+  ],
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "trials": [
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate"
+    }
+  ],
+  "targets": {
+    "indices": [
+      246,
+      1749,
+      2550,
+      3477,
+      3513,
+      7264,
+      8528,
+      127463,
+      130136,
+      131044
+    ],
+    "body_ids": [
+      10267,
+      11873,
+      12726,
+      13728,
+      13768,
+      17946,
+      19366,
+      514853,
+      519368,
+      521086
+    ],
+    "count": 10,
+    "availability": "mapped",
+    "selector": {
+      "field": "type",
+      "operator": "isin",
+      "values": [
+        "MBON12",
+        "MBON13",
+        "MBON14"
+      ]
+    },
+    "index_sha256": "e90eec90153ea9bca84c86c3eece395fb748b507b682870a357c6f57aa065fc9",
+    "metadata_counts": {
+      "type": {
+        "MBON14": 4,
+        "MBON12": 4,
+        "MBON13": 2
+      },
+      "superclass": {
+        "cb_intrinsic": 10
+      },
+      "rootSide": {
+        "<missing>": 10
+      },
+      "somaSide": {
+        "R": 5,
+        "L": 5
+      },
+      "consensus_nt": {
+        "acetylcholine": 10
+      },
+      "model_sign": {
+        "1": 10
+      }
+    },
+    "root_side_indices": {
+      "L": [],
+      "R": [],
+      "M": [],
+      "unknown": [],
+      "missing": [
+        246,
+        1749,
+        2550,
+        3477,
+        3513,
+        7264,
+        8528,
+        127463,
+        130136,
+        131044
+      ]
+    },
+    "soma_side_indices": {
+      "L": [
+        1749,
+        2550,
+        3477,
+        3513,
+        8528
+      ],
+      "R": [
+        246,
+        7264,
+        127463,
+        130136,
+        131044
+      ],
+      "M": [],
+      "unknown": [],
+      "missing": []
+    },
+    "current_select_side_indices": {
+      "L": [
+        1749,
+        2550,
+        3477,
+        3513,
+        8528
+      ],
+      "R": [
+        246,
+        7264,
+        127463,
+        130136,
+        131044
+      ],
+      "M": [],
+      "unknown": [],
+      "missing": []
+    },
+    "mirror_mapping": null,
+    "column_angle_mapping": null,
+    "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+  },
+  "neurons": 166700,
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "window_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "checkpoint_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "delay_ticks": 18,
+  "dt_ms": 0.1,
+  "decay": 0.9801986733067553,
+  "trace_clock": "Row T is state after ticks 0 through T-1; arrival at emission+18, added after decay for that delivery tick.",
+  "ordering": "Promote original float32 weights to float64; retain ordered source spikes and ascending original CSR edges. H1 receives during refractory/firing ticks and retains p/h through reset.",
+  "grouping_fields": {
+    "class": "class",
+    "nt": "consensus_nt"
+  },
+  "missing_label": "<missing>",
+  "isi_convention": "Assign each interval to the window of its second spike, carrying previous spike across windows. First observed spike has no interval.",
+  "gate": "Same nonmissing annotated class uniquely largest summed positive accepted increment over [5000,15000) in all six trials, after all eight checkpoint p/h bitwise gates. This is a proposed edge intervention, not proof of cause.",
+  "independent_regrouped_tolerances": {
+    "atol": 1e-09,
+    "rtol": 1e-12
+  },
+  "manufactured_preflight": {
+    "passed": true,
+    "checks": 6,
+    "scope": "Scalar independent fixture including blocked/zero edges, delay, boundaries and pending events"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "limits": [
+    "Saved-history synaptic-state reconstruction only; no voltage solver, threshold, new network spikes or body simulation.",
+    "Transmitter-derived model signs are not calibrated receptor effects; p and h have different units and are not subtracted.",
+    "Post-hoc selection reuses six previous trials; no new biological evidence or model promotion.",
+    "No continuous MBON voltage was saved; input rankings alone do not establish causes of individual spikes."
+  ]
+}

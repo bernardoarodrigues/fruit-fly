@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "scope": "Durable publication of existing six/twelve-cell synthetic development evidence only; no test or simulation rerun during publication",
+  "passed": true,
+  "final_checks": {
+    "path": "validation/navigation-mbon-intervention-kernel-checks.json",
+    "size_bytes": 12859,
+    "sha256": "0c7ab923bbb40cccf3a0b11a0feed8b87ec92e5014804f5316e8d45d74cd867c"
+  },
+  "final_source_records": [
+    {
+      "path": "scripts/navigation_mbon_intervention_kernel.py",
+      "size_bytes": 17716,
+      "sha256": "5cfb8c0e51e7bc968a23c2be41133634e284a39ca6f63e5d010f0656b17241a4"
+    },
+    {
+      "path": "scripts/check_navigation_mbon_intervention_kernel.py",
+      "size_bytes": 19499,
+      "sha256": "f621119fccbe68fed0536a40997af3c3683eb4daf18f32cbaaf5d0ddfa97b6e3"
+    }
+  ],
+  "development_artifacts": [
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-1-check_navigation_mbon_intervention_kernel.py",
+      "size_bytes": 16747,
+      "sha256": "fdee50c02596724ae9efd101b9db03677c4ec5fbf1d87d5d9dd114f6c4c1bea1"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-1-failure.json",
+      "size_bytes": 1149,
+      "sha256": "2aeba64a9b110839d9f792cbfb68f4a40d6a028f722b61b7477e92c6e1507f17"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-1-navigation_mbon_intervention_kernel.py",
+      "size_bytes": 16585,
+      "sha256": "755b479a93b7e91ce7ab2a03ccb229b615ce54214aa4c0874bb769f4140d4625"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-2-check_navigation_mbon_intervention_kernel.py",
+      "size_bytes": 17426,
+      "sha256": "d9b6ad7ff38e4d369398ea2026d0115d3150be76379c7d96f712761021530a54"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-2-checks.json",
+      "size_bytes": 10711,
+      "sha256": "2b2979c152fee980d26bf8993fdfa123dc9345f5911f6b47a11214c006fda5f4"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-2-navigation_mbon_intervention_kernel.py",
+      "size_bytes": 16704,
+      "sha256": "65d7ff736a247814a2ad2b6adfc782e27a8577dfe86b3c668c63f0e35a74d63f"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-3-check_navigation_mbon_intervention_kernel.py",
+      "size_bytes": 19499,
+      "sha256": "f621119fccbe68fed0536a40997af3c3683eb4daf18f32cbaaf5d0ddfa97b6e3"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-3-checks.json",
+      "size_bytes": 12859,
+      "sha256": "0c7ab923bbb40cccf3a0b11a0feed8b87ec92e5014804f5316e8d45d74cd867c"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-development/attempt-3-navigation_mbon_intervention_kernel.py",
+      "size_bytes": 17716,
+      "sha256": "5cfb8c0e51e7bc968a23c2be41133634e284a39ca6f63e5d010f0656b17241a4"
+    }
+  ],
+  "original_tmp_artifacts": [
+    {
+      "path": "tmp/navigation-mbon-intervention-development/attempt-1-check_navigation_mbon_intervention_kernel.py",
+      "size_bytes": 16747,
+      "sha256": "fdee50c02596724ae9efd101b9db03677c4ec5fbf1d87d5d9dd114f6c4c1bea1"
+    },
+    {
+      "path": "tmp/navigation-mbon-intervention-development/attempt-1-failure.json",
+      "size_bytes": 1149,
+      "sha256": "2aeba64a9b110839d9f792cbfb68f4a40d6a028f722b61b7477e92c6e1507f17"
+    },
+    {
+      "path": "tmp/navigation-mbon-intervention-development/attempt-1-navigation_mbon_intervention_kernel.py",
+      "size_bytes": 16585,
+      "sha256": "755b479a93b7e91ce7ab2a03ccb229b615ce54214aa4c0874bb769f4140d4625"
+    },
+    {
+      "path": "tmp/navigation-mbon-intervention-development/attempt-2-checks.json",
+      "size_bytes": 10711,
+      "sha256": "2b2979c152fee980d26bf8993fdfa123dc9345f5911f6b47a11214c006fda5f4"
+    },
+    {
+      "path": "tmp/navigation-mbon-intervention-development/attempt-3-checks.json",
+      "size_bytes": 12859,
+      "sha256": "0c7ab923bbb40cccf3a0b11a0feed8b87ec92e5014804f5316e8d45d74cd867c"
+    }
+  ],
+  "copy_equality": true,
+  "tmp_original_hashes_unchanged": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "failed",
+      "checks_passed": 17,
+      "checks_total": 18,
+      "failure_record": "validation/navigation-mbon-intervention-development/attempt-1-failure.json",
+      "failure_evidence_scope": "The initial failure summary and exact executed source bytes were saved immediately. The summary retains the failing expression, check counts, boundary events, and tool-output chunk reference; it is not represented as the full raw checker stdout.",
+      "explanation": "Checker incorrectly required subtraction of two differently accumulated floating-point h states to equal exactly 2.0. Their recorded values on the corrected check are 5.882368317456969 and 3.882368317456969, difference 1.9999999999999996. All initial inert/nonempty-inactive parity checks and delayed event identities passed before that assertion.",
+      "earlier_import_only_failures": "Three source derivation errors failed closed before synthetic execution: delivery anchor had zero matches, short return anchor had three matches, and method indentation caused compile refusal. Their descriptions are retained in the failure summary; no executed model states existed for those import attempts."
+    },
+    {
+      "attempt": 2,
+      "status": "passed",
+      "checks_passed": 122,
+      "checks_total": 122,
+      "changes": "Checker compares each branch against its exact ordered decay/addition recurrence, without subtracting already-rounded state totals; source also rejects illegal negative last-spike sentinel values at restore. No edge-delivery logic was changed to make the failed subtraction assertion pass.",
+      "source_recovery": "Both exact intermediate source byte streams were reconstructed by removing only the subsequent observation-expansion method/test block. Their SHA256 values match the source hashes inside the already-retained attempt-2 checker output."
+    },
+    {
+      "attempt": 3,
+      "status": "passed",
+      "checks_passed": 157,
+      "checks_total": 157,
+      "changes": "Parent-requested observation-only replace_selected_indices API and focused invariance/rejection checks added. Every original selected column, all other outputs, input membership, full neural state and pending queue retain parity."
+    }
+  ],
+  "limits": [
+    "The full-network audit gate and live no-suppression saved-checkpoint prefix probe are separate evidence.",
+    "These synthetic checks neither execute nor establish the effect of any active full-network intervention.",
+    "Caller must archive intervention specification and source RNG boundaries separately from the unchanged checkpoint schema."
+  ]
+}

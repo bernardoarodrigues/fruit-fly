@@ -1,0 +1,629 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T18:45:49.864890+00:00",
+  "inputs": [
+    {
+      "path": "scripts/check_navigation_mbon_intervention_prefix.py",
+      "bytes": 22535,
+      "sha256": "b44835182e93bf7c3b5e623c9c7846ea3cdde8385b7d08a828b553271334c44e"
+    },
+    {
+      "path": "scripts/navigation_mbon_intervention_kernel.py",
+      "bytes": 17716,
+      "sha256": "5cfb8c0e51e7bc968a23c2be41133634e284a39ca6f63e5d010f0656b17241a4"
+    },
+    {
+      "path": "scripts/check_navigation_mbon_intervention_kernel.py",
+      "bytes": 19499,
+      "sha256": "f621119fccbe68fed0536a40997af3c3683eb4daf18f32cbaaf5d0ddfa97b6e3"
+    },
+    {
+      "path": "scripts/inhibitory_recurrent_panel_kernel.py",
+      "bytes": 29863,
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "scripts/inhibitory_recurrent_panel_archive.py",
+      "bytes": 17406,
+      "sha256": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+    },
+    {
+      "path": "scripts/review_inhibitory_recurrent_panel_trial.py",
+      "bytes": 18286,
+      "sha256": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-kernel-checks.json",
+      "bytes": 12859,
+      "sha256": "0c7ab923bbb40cccf3a0b11a0feed8b87ec92e5014804f5316e8d45d74cd867c"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-plan.json",
+      "bytes": 33875,
+      "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-results.json",
+      "bytes": 47318,
+      "sha256": "94599739999cd8d8b04e5898de012ceaf63a721bdf437dea291b6b3ad4b174d6"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-independent-review.json",
+      "bytes": 38677,
+      "sha256": "36d74000d8056d67a3535d9df2cf8aaa918eed5c794c30da61be18350b5bcb8b"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-plan.json",
+      "bytes": 12791,
+      "sha256": "f4f19d66ed4888c73666326d2ff7fe1fd2ed3231c22022ebcf182bcdd05a2b69"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-arrays.npz",
+      "bytes": 26837757,
+      "sha256": "2322d1dd1ef826e1400c9b9d3a04b365b6c034821cdbb2a5ef3c63a99c1112a0"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.npz",
+      "bytes": 988546,
+      "sha256": "f659af08045d06ac27784e767f409cccca0fb0e1e28567c0c33bae4385477086"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.json",
+      "bytes": 14071,
+      "sha256": "8e5eebcb1c904a663ea25eb8abdb721945d37dbba55602351d8be0173c75f641"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.complete.json",
+      "bytes": 576,
+      "sha256": "4d4eb02e6a25524aa760f936bf667b12fde5b5c6a0fa74c5eafbf47335704018"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.npz",
+      "bytes": 8388039,
+      "sha256": "7a888d1b264c2d97d29e5b8657f90f7f6de0cdf93bd049e16e3c9e07f774bdc4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.json",
+      "bytes": 1121,
+      "sha256": "ddcc3b53d2598ac5a79dd2b848d1bb91d970574c34a9632d037816f02e0a00fd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.complete.json",
+      "bytes": 582,
+      "sha256": "11683fa0ba11b86114875a63546acdccbfffafe47ff6181e50a726f12fdeeef4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.npz",
+      "bytes": 8388150,
+      "sha256": "76fb68b96ef0f0cb6e1cf3b0584b5e77b46166ad300cc549419326d353219124"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.json",
+      "bytes": 1121,
+      "sha256": "4f04b4d262b1b8b6c59dc93d2332679c76c7b4073e7034d50bbb6145b0bf6dfe"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.complete.json",
+      "bytes": 582,
+      "sha256": "46b441c83bb448e5feaec6af5cc138021b60565ea91b0758a2dc9c015934624d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.npz",
+      "bytes": 8388243,
+      "sha256": "b6cc12da5e20f3bfdfcad63aeed0c7246331627fce99df4c1ba6565e6b61d795"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.json",
+      "bytes": 1121,
+      "sha256": "d3945ae1a902315a3f32f446fc66c3c8734acf663a2c483d4ed689d79002f480"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.complete.json",
+      "bytes": 582,
+      "sha256": "34bb77b903f058ae9ba56d1ce10adf0e0a51acde89a11f3c3f2eda1727484ee7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2990152,
+      "sha256": "899eed00ab8adf13c67869aacc1efddf2164bdfa6ec7ce797754f370b8db9556"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "579fbe8f79360f2cf01f1a22bf86c3fa792e52a0c33d6db929739f87bd7cdd5e"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "b2eac015362587dd8783812e8343a1183c872a4d2fbedf7802a329c506292336"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.npz",
+      "bytes": 118239,
+      "sha256": "1025b91cde6a0f3f7a133703e9925b4e2c02028ce56e3cae13873a527a2c26e6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.json",
+      "bytes": 53086,
+      "sha256": "a257c1bfaeaacc5383f67b7f7f6e4e9c42dfdb2dc0c7877dde133601bd0cb7df"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "9774ce1acfcee1866e7efb6ad2718afabf625b219f9b3ee552d506168a6fe7b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0100.npz",
+      "bytes": 141495,
+      "sha256": "9f6700717e37b8fd68d8f7e100d54d9ecbb8bbd487df501ec522770a6ff77cb5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0100.json",
+      "bytes": 58324,
+      "sha256": "a8dd3dd9fd34b4492128fa3b7f2ba7b9da96af8997fac3b1716efd164ba887d4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0100.complete.json",
+      "bytes": 640,
+      "sha256": "51159e18952a5fbee167b0c08da3401cdb7aa5182ae343609beaeb053382ae93"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2965560,
+      "sha256": "7537ca01f507e216ed22350d218742ffdff18af9e6905280fd45edd79d17f9ae"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "05e4568a9cc4225d10ba0b57c5fc537c00c96b9278573f7e860ae8caf70c6ca9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "0982eb9ee7ef4036c85b4573adc96558145fa1a9472ad78553dec27a08758467"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.npz",
+      "bytes": 116412,
+      "sha256": "64d2d212955012f22799277a2b6c52b93305f2221873338d86a492fb2c51b137"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.json",
+      "bytes": 53061,
+      "sha256": "3fe64edd3225d96bd6b8cd44298d8bdacfc67f723a148bb124ec8fdb821d7f16"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "6c25cc2d65a2d9f6864336b1a4b0080f22b532e6c066c66535a05d5b7caac57e"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0100.npz",
+      "bytes": 142896,
+      "sha256": "c544cdfbb49d8ccf7c8e873481e55a23632ee03fae490609d408e316eb0ea02d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0100.json",
+      "bytes": 58337,
+      "sha256": "3a82bea06881ee281ac2703a6472d2038a8aff057cad80de53b56aa36c95c9e3"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0100.complete.json",
+      "bytes": 640,
+      "sha256": "b875a1cce06a20a29c7790442c6682408d41724807a0de419c7d01d05f42a9fd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2968834,
+      "sha256": "d2b4b5bd2488647d2e9fcf34b1f3f62676ddc461fd2293fd4dd0693fe02e0cfa"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.json",
+      "bytes": 8171,
+      "sha256": "e2788bafb0fa32206af6ca5119b0751c4c2d95d9c7168a22bc093e384ba0c908"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "1b80df5a0ec562e490dd6d75fb721b415a220cf80fc5c3d3e9f860dbe4c6c459"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.npz",
+      "bytes": 118694,
+      "sha256": "1f31f7e1a5bf78261958ed3d8df5e12cf634118375f6d8d7e8aeff5c54f7129f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.json",
+      "bytes": 53126,
+      "sha256": "45876384d35255b01ef5660b3f2a6314f8446b6383e7472554b4c11d2ab4f1c2"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "e5d0c1d5c8dbfc19c0810b6c24c6678be97cade22f29b2258650e6b53c01e5cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0100.npz",
+      "bytes": 143553,
+      "sha256": "b8b79a3ff500614785c9717a00427f0bfd71b22b494b6642b5dcdb2c3b7d5896"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0100.json",
+      "bytes": 58334,
+      "sha256": "8c472dfa891bfd07b8826ddd7c26a46e7ad7097556cd65ac30f0ada3e211ab44"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0100.complete.json",
+      "bytes": 640,
+      "sha256": "7bf92463d691d889d1be5d7be4a09ab4d5b36c9fad32be8026ddfb85b5888e68"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2990152,
+      "sha256": "899eed00ab8adf13c67869aacc1efddf2164bdfa6ec7ce797754f370b8db9556"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "4b5df8e4a5414b53c7f520309f03071fe3ada0c7198c99e7ec52b3c6605c678a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "345f207c7c757b0aed4ec8dd5f008b6af6d4b9beb92ae23ef47878a7288152cc"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.npz",
+      "bytes": 118239,
+      "sha256": "1025b91cde6a0f3f7a133703e9925b4e2c02028ce56e3cae13873a527a2c26e6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.json",
+      "bytes": 53086,
+      "sha256": "0ce5d003bdbfb3f212f17543e2964b2023d971f1dfe35cf5268e96017d50ed86"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "939a5eb27dac622d1cbaf782eb631d7644f687fd3a1e45d2fe152429e3ffd48c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0100.npz",
+      "bytes": 144888,
+      "sha256": "75d4fa021a7f29c31c98e5f68b29493b5abfc172f21874f80ba1c001d8b73ca9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0100.json",
+      "bytes": 58292,
+      "sha256": "44caac7290861a405390533f7f2b145514ee6a2c354f312a860ddd6148c646f3"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0100.complete.json",
+      "bytes": 632,
+      "sha256": "d760dc8d98065244b93c32987ff16840a2d9d75ab8aaf76f87d34ca1abe4b0d4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2965560,
+      "sha256": "7537ca01f507e216ed22350d218742ffdff18af9e6905280fd45edd79d17f9ae"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "79ee1d4184a2b3c7efbb0f6cc01b6430f7e65411be76d3e7a3a5a34fca442c7f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "bd63b9fa4cdb50ed5d4e1549ebee93220a22eaf9cda79e6c2e8779aae2fe9172"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.npz",
+      "bytes": 116412,
+      "sha256": "64d2d212955012f22799277a2b6c52b93305f2221873338d86a492fb2c51b137"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.json",
+      "bytes": 53061,
+      "sha256": "74918753cb1bf331d414c62b946f3e529909c0a9fd6067411708956314838a79"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "1fc268c24331200540b0c8edf6adb370e1ddefb1c8be227897a0801de3e9bc67"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0100.npz",
+      "bytes": 146293,
+      "sha256": "e7c0b0b9aa2244259da89d7e56dc046845519d6eb35c8726b624e4350e244a41"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0100.json",
+      "bytes": 58303,
+      "sha256": "80873f30a6c33f66998a223119e6937dbf1c764fc698e46552c1a897e3ad6ed2"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0100.complete.json",
+      "bytes": 632,
+      "sha256": "8a4201e269c661d298952c64799028cd41a1714c39304bf5abe86ebb6f4cb8ae"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2968834,
+      "sha256": "d2b4b5bd2488647d2e9fcf34b1f3f62676ddc461fd2293fd4dd0693fe02e0cfa"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8171,
+      "sha256": "814249620a0bf7ee4fa08621ad1cae1c92afb9030ed04be90196054dc0bdb4a3"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "67c25e04cc3fe8b47d8fd9ac6265ff83d66acc8af207468d48b75dd36af109da"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.npz",
+      "bytes": 118694,
+      "sha256": "1f31f7e1a5bf78261958ed3d8df5e12cf634118375f6d8d7e8aeff5c54f7129f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.json",
+      "bytes": 53126,
+      "sha256": "b566450cd47882fca8cdc60fef989bc389da76fc8d57cabb4885c60a22d2bde7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "ed083fb3bb8164f960f25f3e89aaf29395e33db738d3801b54cc6fef85483656"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0100.npz",
+      "bytes": 148174,
+      "sha256": "99dcb17ffeeaa262c7dfb847f60681868c4ea501aa69e398256d3996f538a7d0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0100.json",
+      "bytes": 58338,
+      "sha256": "8c11e3322f9894f1c31b9376a87cb0a8ca8aa1ae1f53779fcad3e017b4eeb0c1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0100.complete.json",
+      "bytes": 632,
+      "sha256": "5cc2e1ad0535725b9bda48b7583b6063c40f319b7903de34303e05a5d422dd16"
+    }
+  ],
+  "trials": [
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate"
+    }
+  ],
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "start_tick": 5000,
+  "end_tick": 5050,
+  "chunk_index": 100,
+  "threads": 4,
+  "dt_ms": 0.1,
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "inactive_delivery_window_ticks": [
+    10000,
+    15000
+  ],
+  "suppressed_edge_count": 8236,
+  "selected_class": "Kenyon_Cell",
+  "condition_rates_hz": {
+    "no_input": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "constant_baseline": [
+      11.0,
+      11.0,
+      11.0,
+      0.0
+    ],
+    "ethyl_acetate": [
+      11.0,
+      149.0,
+      11.0,
+      0.0
+    ],
+    "isoamyl_acetate": [
+      11.0,
+      57.67908699377742,
+      11.0,
+      0.0
+    ],
+    "ethyl_acetate_source_outputs_blocked": [
+      11.0,
+      149.0,
+      11.0,
+      0.0
+    ]
+  },
+  "selection": "Restore exact original48 checkpoint; derived observation selection is sorted unique original48 plus the ten verified MBON12_14 targets. Original branch remains48. Event logging explicitly stays original48.",
+  "input": "Use archived seed uniforms[5000:5050] and exact source expression np.full(36, rate)*.1/1000; pulse-phase rate from the frozen panel plan. Record logical RNG boundaries; no generator or RNG restoration inside kernel.",
+  "comparison": {
+    "trace_fields_projected_to_original48": [
+      "selected_v",
+      "selected_s",
+      "selected_h",
+      "selected_prethreshold_v",
+      "selected_available",
+      "selected_fired",
+      "selected_delivery_available",
+      "selected_direct_available",
+      "selected_synaptic_available"
+    ],
+    "output_fields": "Every original kernel output field is compared recursively by dtype/shape/bytes to saved chunk100; the derived58 output is projected only for the declared trace fields. Global diagnostics, events, references, schema and scalar fields must be identical.",
+    "checkpoint": "Every original kernel checkpoint field equals archived5000 before branch. After observation expansion and at5050, only selected_indices intentionally differs; all full dynamical arrays, clock, parameters, masks and valid packed queue match original. Expanded selection must equal declared sorted58.",
+    "new_MBON_traces": "Ten added v/s/h initial and final trace rows equal corresponding full checkpoint states; intermediate MBON values are newly recorded observations, not independently retained historical traces.",
+    "own_history": "Verify initial pending queue from saved chunk99 tail; reconstruct final last-spike array and pending queue from checkpoint5000 plus current spikes. Compare current input masks against exact uniforms and firing stamps."
+  },
+  "total_network_advances": 12,
+  "ticks_per_advance": 50,
+  "output_directory": "runs/navigation-mbon-intervention-prefix-<first12_plan_sha256>",
+  "resource_budget": {
+    "wall_seconds": 600,
+    "output_bytes": 268435456,
+    "peak_rss_bytes": 4294967296
+  },
+  "budget_scope": "Start after preflight hashing; checked before/after each branch and publication. One operation can overshoot. Final source rehash and result publication are outside the execution limit.",
+  "failure": "Stop at first disagreement/exception/interruption, retain all completed outputs and attempted-state phase; no retry, tuning, active suppression or extension.",
+  "limits": [
+    "This inactive5ms branch verifies exact implementation and observation invariance, not the active intervention outcome or physiological validity.",
+    "The actual suppressed mask is nonempty but all tested delivery ticks precede its window.",
+    "Historical full state at5050 was not retained; full endpoint parity uses the separately restored frozen original branch, while all historical retained kernel fields are compared exactly."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "numba": "0.67.0"
+  }
+}

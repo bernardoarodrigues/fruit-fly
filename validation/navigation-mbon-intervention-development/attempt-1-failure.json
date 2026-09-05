@@ -1,0 +1,38 @@
+{
+  "kind": "synthetic development attempt, not experiment plan/result",
+  "command": ".venv/bin/python scripts/check_navigation_mbon_intervention_kernel.py",
+  "exit_code": 1,
+  "checks_passed": 17,
+  "checks_total": 18,
+  "first_failure": {
+    "type": "AssertionError",
+    "check": "negative_delivery_removed_exactly",
+    "expression": "original_out[\"selected_h\"][22, 2] - altered_out[\"selected_h\"][22, 2] == 2."
+  },
+  "source_hashes": {
+    "scripts/navigation_mbon_intervention_kernel.py": "755b479a93b7e91ce7ab2a03ccb229b615ce54214aa4c0874bb769f4140d4625",
+    "scripts/check_navigation_mbon_intervention_kernel.py": "fdee50c02596724ae9efd101b9db03677c4ec5fbf1d87d5d9dd114f6c4c1bea1"
+  },
+  "boundary_suppression_events": [
+    [
+      21,
+      0,
+      0,
+      2,
+      3
+    ],
+    [
+      21,
+      0,
+      2,
+      4,
+      3
+    ]
+  ],
+  "initial_import_only_issues": [
+    "Delivery anchor indent wrong; failed closed with zero matches",
+    "Return anchor insufficiently specific; failed closed with three matches",
+    "AST method extraction retained body indentation; compile refused"
+  ],
+  "tool_output_chunk": "2491f2"
+}

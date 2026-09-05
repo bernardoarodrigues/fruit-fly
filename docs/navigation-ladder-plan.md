@@ -18,6 +18,8 @@ The [readout script](../scripts/analyze_navigation_ladder_readouts.py) pins the 
 
 **Next measurement:** the [MBON input audit plan](navigation-ladder-mbon-input-plan.md) fixes the ten MBON12–14 targets, six existing H1 EA/constant trials and seven windows. It reconstructs transmitter-resolved arrivals and conditional synaptic states from recorded spikes, requiring agreement with all saved checkpoints before proposing one edge-selective intervention. Continuous MBON voltage was not recorded. This advances the LH/MB rung while compatible local amplitude/history constraints remain missing. Freeze the complete intervention condition/seed set and analyze that batch only when all results are ready. Do not infer a unique failure boundary from persistence or from a downstream clamp alone.
 
+**Measurement complete:** the [input report](navigation-ladder-mbon-inputs.md) verifies all six complete `p/h` histories independently. Kenyon cells uniquely supply the largest positive accepted increment in every condition, satisfying the fixed class-selection rule. The [single intervention protocol](navigation-mbon-intervention.md) selects 8,236 positive KC-to-MBON edge deliveries during `[5000,15000)` ticks. Its synthetic and actual-graph inactive-prefix checks pass; the active six-trial batch is the next causal measurement. This is not a replacement synapse model or H1 promotion.
+
 ## Separate behavioral experiments
 
 | Assay | Stimulus and controls | Valid behavioral outcomes | Claims excluded |

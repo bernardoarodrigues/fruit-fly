@@ -1,0 +1,421 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "Figure from frozen summary values only. No model, producer import, new spike reduction, fit or biological research.",
+  "independent_numerical_review_status": "Not asserted or inspected by this plotting receipt.",
+  "aggregation": {
+    "positive_share": "For each trial, divide each of the six saved class_positive_ranking p_increment values by their sum. These are positive accepted model increments in [5000,15000); no negative-state subtraction or current conversion.",
+    "isi": "In each existing half-open window, sum saved isi_at_22_ticks_count over ten cells and divide by the sum of isi_interval_count over the same cells. A zero denominator gives null/undefined, never zero. Interval is assigned by its second spike with prior spike carried across windows."
+  },
+  "rendering": {
+    "format": "PNG",
+    "first_render": true,
+    "log_color_scale": true,
+    "isi_stairs_baseline": null,
+    "visual_inspection": "Pending separate human/model view after this one rendering."
+  },
+  "input_artifacts": [
+    {
+      "path": "validation/navigation-ladder-mbon-input-results.json",
+      "bytes": 47318,
+      "sha256": "94599739999cd8d8b04e5898de012ceaf63a721bdf437dea291b6b3ad4b174d6"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-plan.json",
+      "bytes": 12791,
+      "sha256": "f4f19d66ed4888c73666326d2ff7fe1fd2ed3231c22022ebcf182bcdd05a2b69"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-arrays.npz",
+      "bytes": 26837757,
+      "sha256": "2322d1dd1ef826e1400c9b9d3a04b365b6c034821cdbb2a5ef3c63a99c1112a0"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-edges.csv",
+      "bytes": 828657,
+      "sha256": "70de6ffa36066ec62484afc540f86ccda7e30556c06d402d614471a2c61ec87d"
+    },
+    {
+      "path": "scripts/plot_navigation_ladder_mbon_inputs.py",
+      "bytes": 11028,
+      "sha256": "1d6250a0af694154685a71bf4c755963556f99b087dd73bc02c30739b48b2580"
+    }
+  ],
+  "plotted_trials": [
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 26,
+        "name": "26-H1-seed11-constant_baseline"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4783285.243807286,
+        "DAN": 298385.1805970371,
+        "<missing>": 75714.65217089653,
+        "MBON": 32903.75117087364,
+        "ALPN": 485.3750105202198,
+        "CX": 49.22500106692314
+      },
+      "total_positive_increment": 5190823.42775768,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.1488721467368,
+        "DAN": 5.748320757771042,
+        "<missing>": 1.4586250760527903,
+        "MBON": 0.6338830751769056,
+        "ALPN": 0.00935063612306094,
+        "CX": 0.0009483081393925827
+      },
+      "isi_at_22_numerator": [
+        0,
+        1577,
+        2272,
+        2272,
+        2272,
+        2274,
+        2273
+      ],
+      "isi_interval_denominator": [
+        0,
+        1673,
+        2272,
+        2272,
+        2272,
+        2274,
+        2273
+      ],
+      "isi_fraction": [
+        null,
+        0.9426180514046623,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 35,
+        "name": "35-H1-seed11-ethyl_acetate"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4782610.393790394,
+        "DAN": 298385.1805970371,
+        "<missing>": 75848.30217388272,
+        "MBON": 32909.801171183586,
+        "ALPN": 486.2000105381012,
+        "CX": 50.87500110268593
+      },
+      "total_positive_increment": 5190290.752744138,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.14532714302756,
+        "DAN": 5.748910702917347,
+        "<missing>": 1.4613497737825432,
+        "MBON": 0.6340646938475263,
+        "ALPN": 0.009367490834324537,
+        "CX": 0.0009801955906957236
+      },
+      "isi_at_22_numerator": [
+        0,
+        1577,
+        2272,
+        2272,
+        2272,
+        2274,
+        2273
+      ],
+      "isi_interval_denominator": [
+        0,
+        1673,
+        2272,
+        2272,
+        2272,
+        2274,
+        2273
+      ],
+      "isi_fraction": [
+        null,
+        0.9426180514046623,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 29,
+        "name": "29-H1-seed12-constant_baseline"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4782439.893786043,
+        "DAN": 298463.55560585856,
+        "<missing>": 75785.32717192173,
+        "MBON": 32905.4011708796,
+        "ALPN": 485.3750105202198,
+        "CX": 51.42500111460686
+      },
+      "total_positive_increment": 5190130.977746338,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.1448786994327,
+        "DAN": 5.750597757273895,
+        "<missing>": 1.4601813999851945,
+        "MBON": 0.633999436853669,
+        "ALPN": 0.009351883653829864,
+        "CX": 0.000990822800717385
+      },
+      "isi_at_22_numerator": [
+        0,
+        1639,
+        2272,
+        2276,
+        2272,
+        2272,
+        2271
+      ],
+      "isi_interval_denominator": [
+        0,
+        1744,
+        2272,
+        2276,
+        2272,
+        2272,
+        2271
+      ],
+      "isi_fraction": [
+        null,
+        0.9397935779816514,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 38,
+        "name": "38-H1-seed12-ethyl_acetate"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4781964.143776834,
+        "DAN": 298465.4806059003,
+        "<missing>": 75778.17717176676,
+        "MBON": 32900.17617061734,
+        "ALPN": 485.10001051425934,
+        "CX": 51.42500111460686
+      },
+      "total_positive_increment": 5189644.502736747,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.14434902535378,
+        "DAN": 5.751173908896942,
+        "<missing>": 1.4601805023794079,
+        "MBON": 0.6339581864088669,
+        "ALPN": 0.009347461280988378,
+        "CX": 0.0009909156800140741
+      },
+      "isi_at_22_numerator": [
+        0,
+        1639,
+        2272,
+        2276,
+        2272,
+        2272,
+        2271
+      ],
+      "isi_interval_denominator": [
+        0,
+        1744,
+        2272,
+        2276,
+        2272,
+        2272,
+        2271
+      ],
+      "isi_fraction": [
+        null,
+        0.9397935779816514,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 32,
+        "name": "32-H1-seed13-constant_baseline"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4783092.743799388,
+        "DAN": 298359.6056021154,
+        "<missing>": 75757.82717043161,
+        "MBON": 32904.30117076635,
+        "ALPN": 485.10001051425934,
+        "CX": 47.30000102519989
+      },
+      "total_positive_increment": 5190646.877754241,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.14829782196274,
+        "DAN": 5.748023562935996,
+        "<missing>": 1.4595064729814293,
+        "MBON": 0.6339152314865727,
+        "ALPN": 0.009345656176174716,
+        "CX": 0.0009112544570873307
+      },
+      "isi_at_22_numerator": [
+        0,
+        1578,
+        2272,
+        2271,
+        2273,
+        2274,
+        2272
+      ],
+      "isi_interval_denominator": [
+        0,
+        1684,
+        2272,
+        2271,
+        2273,
+        2274,
+        2272
+      ],
+      "isi_fraction": [
+        null,
+        0.9370546318289786,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 41,
+        "name": "41-H1-seed13-ethyl_acetate"
+      },
+      "class_positive_increment": {
+        "Kenyon_Cell": 4783003.093802214,
+        "DAN": 298359.33060210943,
+        "<missing>": 75821.62717223167,
+        "MBON": 32901.826170653105,
+        "ALPN": 486.2000105381012,
+        "CX": 51.42500111460686
+      },
+      "total_positive_increment": 5190623.502758861,
+      "class_share_percent": {
+        "Kenyon_Cell": 92.1469856417058,
+        "DAN": 5.748044150062683,
+        "<missing>": 1.460742185056031,
+        "MBON": 0.6338704040692896,
+        "ALPN": 0.009366890322129543,
+        "CX": 0.000990728784071394
+      },
+      "isi_at_22_numerator": [
+        0,
+        1578,
+        2272,
+        2271,
+        2273,
+        2274,
+        2272
+      ],
+      "isi_interval_denominator": [
+        0,
+        1684,
+        2272,
+        2271,
+        2273,
+        2274,
+        2272
+      ],
+      "isi_fraction": [
+        null,
+        0.9370546318289786,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "paired_isi_overlap": [
+    {
+      "seed": 11,
+      "numerators_equal": true,
+      "denominators_equal": true,
+      "fractions_equal": true
+    },
+    {
+      "seed": 12,
+      "numerators_equal": true,
+      "denominators_equal": true,
+      "fractions_equal": true
+    },
+    {
+      "seed": 13,
+      "numerators_equal": true,
+      "denominators_equal": true,
+      "fractions_equal": true
+    }
+  ],
+  "window_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "window_edges_seconds": [
+    0.0,
+    0.05,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "class_order": [
+    "Kenyon_Cell",
+    "DAN",
+    "<missing>",
+    "MBON",
+    "ALPN",
+    "CX"
+  ],
+  "isi_ticks": 22,
+  "isi_ms": 2.2,
+  "checks": 39,
+  "output_artifact": {
+    "path": "validation/navigation-ladder-mbon-input-figure.png",
+    "bytes": 242885,
+    "sha256": "5189f34c1fb2d19a4b333ac0be639ea14f080ae1da965bf57394d826c7c1c538"
+  },
+  "completed_utc": "2026-09-05T18:42:13.519281+00:00"
+}
