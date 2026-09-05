@@ -1,0 +1,36 @@
+{
+  "completed_utc": "2026-09-05T23:55:59.889086+00:00",
+  "status": "six_synthetic_tests_passed",
+  "command": ".venv/bin/python -m pytest -q tests/test_apl_ephys_measurements.py",
+  "exit_code": 0,
+  "tests": 6,
+  "source_pins": [
+    {
+      "path": "scripts/apl_ephys_measurements.py",
+      "sha256": "35e6cf100486c69d33a6a179729ec94c3a39ae41a803487c51f4fbdfabb7da9c"
+    },
+    {
+      "path": "tests/test_apl_ephys_measurements.py",
+      "sha256": "bb5d158803a40abfe7e2a4507bf81734216c01993e5d3807af870358d4135de5"
+    }
+  ],
+  "known_references": {
+    "resistance_MOhm": 120,
+    "passive_tau_s": 0.01,
+    "ahp_exponential_tau_s": [
+      0.02,
+      0.1,
+      0.3
+    ],
+    "ahp_interval_relation": "tau * log(7/3)"
+  },
+  "scope": "Constructed unfiltered waveforms only. These example values are not fitted APL parameters. No partial archive inspection or biological data analysis.",
+  "covered": [
+    "mV/pA to MOhm conversion and nonzero holding current",
+    "single exponential transient with independently known asymptote and tau",
+    "flat voltage and absent current step",
+    "70-to-30 recovery interval, not exponential tau",
+    "weak AHP, incomplete window and repeated crossings",
+    "malformed arrays and invalid windows rejected"
+  ]
+}
