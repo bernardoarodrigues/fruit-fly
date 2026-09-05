@@ -1,0 +1,1285 @@
+{
+  "started_utc": "2026-09-05T11:10:58.206448+00:00",
+  "plan_sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5",
+  "source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+  },
+  "ordinals": [
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46,
+    49,
+    52,
+    55,
+    58
+  ],
+  "rows": [
+    {
+      "ordinal": 25,
+      "arm": "H0",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review.json",
+        "sha256": "ed48c76e372c3a06d5b3fe340561b7a0e4e7d871f64edb1bfef0cd5b241fad3f"
+      },
+      "passed": true,
+      "checks": 60688,
+      "statistics": {
+        "spikes": 1502022,
+        "candidates": 618,
+        "applied": 617,
+        "reconstructed_selected_edges": 310368,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2975,
+        "unique_reference_inputs": 2967,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          271985,
+          276664,
+          269946
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "8329b476dffd7032864910c3207fbeb60b1f4401bdadc9c3d3423bcf29894758",
+      "source_start_end_identical": true,
+      "seconds": 6.162504290987272,
+      "numerical": {
+        "reference_rows": 2975,
+        "unique_saved_inputs": 2967,
+        "maxima_mv": {
+          "production_quad_error_mv": 9.947598300641403e-14,
+          "production_64_error_mv": 9.947598300641403e-14,
+          "ode_quad_error_mv": 1.5987211554602254e-12,
+          "independent_quad_error_mv": 5.215625333197434e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.38446357828832,
+        "reference_production_voltage_min_mv": -73.01711722481812,
+        "unique_input_ode_methods": {
+          "DOP853": 2967,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review-references.npz",
+          "bytes": 195132,
+          "sha256": "05b7c11de06914c6ea93825ff2a0d660a02731f728ba7af3e4f8acdef64825f8"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2975,
+          "passed": 2975
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 596,
+          "passed": 596
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2975,
+          "passed": 2975
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 28,
+      "arm": "H0",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review.json",
+        "sha256": "85b4138100f2ff62f7c1c8c9adecb7bf4a88db6adb77b66f1a4a228c97c11df5"
+      },
+      "passed": true,
+      "checks": 60711,
+      "statistics": {
+        "spikes": 1438989,
+        "candidates": 623,
+        "applied": 623,
+        "reconstructed_selected_edges": 302116,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2980,
+        "unique_reference_inputs": 2972,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          275050,
+          263955,
+          274053
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "543002d847aaa7c1e28bd350bfa932ac06ad3e906c13d67356eef2e20918f495",
+      "source_start_end_identical": true,
+      "seconds": 6.064385041012429,
+      "numerical": {
+        "reference_rows": 2980,
+        "unique_saved_inputs": 2972,
+        "maxima_mv": {
+          "production_quad_error_mv": 2.842170943040401e-14,
+          "production_64_error_mv": 2.842170943040401e-14,
+          "ode_quad_error_mv": 1.5845103007450234e-12,
+          "independent_quad_error_mv": 4.944508691605838e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.09222865044374,
+        "reference_production_voltage_min_mv": -69.86973958882294,
+        "unique_input_ode_methods": {
+          "DOP853": 2972,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review-references.npz",
+          "bytes": 194928,
+          "sha256": "dd139e94426ce4b99248a377c693ba5973841e72f47fc719beeb3d21dfaa5c32"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2980,
+          "passed": 2980
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 597,
+          "passed": 597
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2980,
+          "passed": 2980
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 31,
+      "arm": "H0",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review.json",
+        "sha256": "22b9dd2f0fb231da725cbc40384335a2ff821d0778a6f496f1250fb06dcf4dfb"
+      },
+      "passed": true,
+      "checks": 60675,
+      "statistics": {
+        "spikes": 1561665,
+        "candidates": 583,
+        "applied": 582,
+        "reconstructed_selected_edges": 315784,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2971,
+        "unique_reference_inputs": 2962,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          282426,
+          281866,
+          271879
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "964d836efb58ab98033fa5961cc81389dae5b122c0ff92466a17239094186d17",
+      "source_start_end_identical": true,
+      "seconds": 6.395017084025312,
+      "numerical": {
+        "reference_rows": 2971,
+        "unique_saved_inputs": 2962,
+        "maxima_mv": {
+          "production_quad_error_mv": 1.4210854715202004e-14,
+          "production_64_error_mv": 1.4210854715202004e-14,
+          "ode_quad_error_mv": 1.5560885913146194e-12,
+          "independent_quad_error_mv": 5.0615800125904544e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 71.69388952987725,
+        "reference_production_voltage_min_mv": -71.129298385693,
+        "unique_input_ode_methods": {
+          "DOP853": 2962,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review-references.npz",
+          "bytes": 194474,
+          "sha256": "2767fef46fced130aa75f6d2a145cc2af4d5517ec781cd56f819f150af000abd"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2971,
+          "passed": 2971
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 593,
+          "passed": 593
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2971,
+          "passed": 2971
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 34,
+      "arm": "H0",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review.json",
+        "sha256": "4ab508d32f0784b2d1a88d687a65c2096858fa217cc96f81313ab34c2df8f444"
+      },
+      "passed": true,
+      "checks": 60711,
+      "statistics": {
+        "spikes": 1539687,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 322320,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2982,
+        "unique_reference_inputs": 2974,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          282129,
+          284152,
+          283198
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "46ffc1179ac8d9365999465eb0aa3ef552515820521743883925d691c6916bc1",
+      "source_start_end_identical": true,
+      "seconds": 6.642912166949827,
+      "numerical": {
+        "reference_rows": 2982,
+        "unique_saved_inputs": 2974,
+        "maxima_mv": {
+          "production_quad_error_mv": 2.1316282072803006e-14,
+          "production_64_error_mv": 2.1316282072803006e-14,
+          "ode_quad_error_mv": 1.5987211554602254e-12,
+          "independent_quad_error_mv": 5.154291284931881e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.38446357828832,
+        "reference_production_voltage_min_mv": -73.01711722481812,
+        "unique_input_ode_methods": {
+          "DOP853": 2974,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review-references.npz",
+          "bytes": 195682,
+          "sha256": "9cd247555e3f4e979319ed9c724ba74bdb87fa26b7366a9c06d42194f734901c"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2982,
+          "passed": 2982
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 596,
+          "passed": 596
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2982,
+          "passed": 2982
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 37,
+      "arm": "H0",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review.json",
+        "sha256": "4ff0857c493043af96d1013591cf3e8aae9187c35da87e01b81457bc85758567"
+      },
+      "passed": true,
+      "checks": 60735,
+      "statistics": {
+        "spikes": 1485743,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 312378,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2984,
+        "unique_reference_inputs": 2976,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          281093,
+          275577,
+          281616
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "94fd2a945c79ac40d27f4100070af4b140163fd7d523c7b8cd4a37bba0b39e44",
+      "source_start_end_identical": true,
+      "seconds": 6.755959665984847,
+      "numerical": {
+        "reference_rows": 2984,
+        "unique_saved_inputs": 2976,
+        "maxima_mv": {
+          "production_quad_error_mv": 2.1316282072803006e-14,
+          "production_64_error_mv": 2.1316282072803006e-14,
+          "ode_quad_error_mv": 1.5418777365994174e-12,
+          "independent_quad_error_mv": 5.108225681567586e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 71.38751531631188,
+        "reference_production_voltage_min_mv": -69.86973958882294,
+        "unique_input_ode_methods": {
+          "DOP853": 2976,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review-references.npz",
+          "bytes": 195124,
+          "sha256": "e0db4219074c8c4d9c3839283caba470622c22c1dfe4bb3c4f58713a1e5df0c2"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2984,
+          "passed": 2984
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 597,
+          "passed": 597
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2984,
+          "passed": 2984
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 40,
+      "arm": "H0",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review.json",
+        "sha256": "a83b97634ae83eff011f107e3baa38ce87067a4f62a7e9b2484c15760f730361"
+      },
+      "passed": true,
+      "checks": 60708,
+      "statistics": {
+        "spikes": 1578296,
+        "candidates": 3136,
+        "applied": 3088,
+        "reconstructed_selected_edges": 326827,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2974,
+        "unique_reference_inputs": 2965,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          281398,
+          284910,
+          280078
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "c5b2a9834cb3fc3c07c15ab891a71dcbb38564607c9dc3e5f16e5aae2a25aa3c",
+      "source_start_end_identical": true,
+      "seconds": 6.759006083011627,
+      "numerical": {
+        "reference_rows": 2974,
+        "unique_saved_inputs": 2965,
+        "maxima_mv": {
+          "production_quad_error_mv": 2.1316282072803006e-14,
+          "production_64_error_mv": 2.1316282072803006e-14,
+          "ode_quad_error_mv": 1.5916157281026244e-12,
+          "independent_quad_error_mv": 4.8658840918631874e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.37588094883256,
+        "reference_production_voltage_min_mv": -71.129298385693,
+        "unique_input_ode_methods": {
+          "DOP853": 2965,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review-references.npz",
+          "bytes": 195058,
+          "sha256": "9e3918b1791d4d2aee45a3b2eec90295a1f606c0b1f556f447dc303f61d9b865"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2974,
+          "passed": 2974
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 593,
+          "passed": 593
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2974,
+          "passed": 2974
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 43,
+      "arm": "H0",
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review.json",
+        "sha256": "6efda9857bdc3f17bdbdf3505a749d639c0c17930dde03143daa8c5cd7a5e700"
+      },
+      "passed": true,
+      "checks": 60707,
+      "statistics": {
+        "spikes": 1527545,
+        "candidates": 1485,
+        "applied": 1478,
+        "reconstructed_selected_edges": 315462,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2980,
+        "unique_reference_inputs": 2972,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          275112,
+          278129,
+          281992
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "03c5b459812ce47e0dc7e0ed6e6e6ec007243f54b0bb79bc7feb344f2b72dd71",
+      "source_start_end_identical": true,
+      "seconds": 6.551139583985787,
+      "numerical": {
+        "reference_rows": 2980,
+        "unique_saved_inputs": 2972,
+        "maxima_mv": {
+          "production_quad_error_mv": 1.4210854715202004e-14,
+          "production_64_error_mv": 1.4210854715202004e-14,
+          "ode_quad_error_mv": 1.5987211554602254e-12,
+          "independent_quad_error_mv": 5.020454501644122e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.38446357828832,
+        "reference_production_voltage_min_mv": -73.01711722481812,
+        "unique_input_ode_methods": {
+          "DOP853": 2972,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review-references.npz",
+          "bytes": 195469,
+          "sha256": "3eec55b5879f8ded64bf6b7365ea4cf70227ffc811dc703783c12a24c5ce06c8"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2980,
+          "passed": 2980
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 596,
+          "passed": 596
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2980,
+          "passed": 2980
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 46,
+      "arm": "H0",
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review.json",
+        "sha256": "24dcb57e861b1e0fdff9052c667f7584e9e3ff68c246b8546ab8c134e32445fa"
+      },
+      "passed": true,
+      "checks": 60727,
+      "statistics": {
+        "spikes": 1475836,
+        "candidates": 1446,
+        "applied": 1442,
+        "reconstructed_selected_edges": 306856,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2983,
+        "unique_reference_inputs": 2975,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          275305,
+          280974,
+          282072
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "fbf9ce71632358d95691d9bfa8d73a6841c27cc8d1e89bf3a9b5444477532462",
+      "source_start_end_identical": true,
+      "seconds": 6.5516727499780245,
+      "numerical": {
+        "reference_rows": 2983,
+        "unique_saved_inputs": 2975,
+        "maxima_mv": {
+          "production_quad_error_mv": 4.263256414560601e-14,
+          "production_64_error_mv": 4.263256414560601e-14,
+          "ode_quad_error_mv": 1.5418777365994174e-12,
+          "independent_quad_error_mv": 4.951089577578641e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 71.08582068038312,
+        "reference_production_voltage_min_mv": -69.86973958882294,
+        "unique_input_ode_methods": {
+          "DOP853": 2975,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review-references.npz",
+          "bytes": 195086,
+          "sha256": "7ce29d7ae83fc5fc5bcfb5be14dee3743a1a1618a61ae78bab0620cfebd627bd"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2983,
+          "passed": 2983
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 597,
+          "passed": 597
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2983,
+          "passed": 2983
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 49,
+      "arm": "H0",
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review.json",
+        "sha256": "75f74f89498a687da40decfd3b56e53ec59143a6a8550d4e048785241f45ee09"
+      },
+      "passed": true,
+      "checks": 60664,
+      "statistics": {
+        "spikes": 1567632,
+        "candidates": 1421,
+        "applied": 1416,
+        "reconstructed_selected_edges": 319321,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2970,
+        "unique_reference_inputs": 2961,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          279933,
+          283383,
+          275002
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "f70e650164ec8404d9980c95b98c465944d09ff4f4f8299f8df43d63b3944494",
+      "source_start_end_identical": true,
+      "seconds": 6.623281417007092,
+      "numerical": {
+        "reference_rows": 2970,
+        "unique_saved_inputs": 2961,
+        "maxima_mv": {
+          "production_quad_error_mv": 2.1316282072803006e-14,
+          "production_64_error_mv": 2.1316282072803006e-14,
+          "ode_quad_error_mv": 1.6129320101754274e-12,
+          "independent_quad_error_mv": 5.0428868536975846e-14
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 72.01743924690705,
+        "reference_production_voltage_min_mv": -71.129298385693,
+        "unique_input_ode_methods": {
+          "DOP853": 2961,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review-references.npz",
+          "bytes": 194646,
+          "sha256": "134f8a3c53ad5ce3c9670870a42c1ddad62850f4769c5172ba85bb6991bf2215"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 2970,
+          "passed": 2970
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": {
+          "checked": 593,
+          "passed": 593
+        },
+        "saved_reference_exact_precedent": {
+          "checked": 2970,
+          "passed": 2970
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 52,
+      "arm": "H0",
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "sha256": "b863a118721b6f6daebe0dc89d655f70627ff5795c9b5cc73e44b274dfe4ffca"
+      },
+      "passed": true,
+      "checks": 53827,
+      "statistics": {
+        "spikes": 3085,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 10945,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "216adc8553342cab0db143e430e8d9355a8f61d7bb19549ba25c0eae0e95356e",
+      "source_start_end_identical": true,
+      "seconds": 3.547461958019994,
+      "numerical": {
+        "reference_rows": 1800,
+        "unique_saved_inputs": 1,
+        "maxima_mv": {
+          "production_quad_error_mv": 0.0,
+          "production_64_error_mv": 0.0,
+          "ode_quad_error_mv": 0.0,
+          "independent_quad_error_mv": 1.2735699002986633e-15
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 0.0,
+        "reference_production_voltage_min_mv": -52.0,
+        "unique_input_ode_methods": {
+          "DOP853": 1,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+          "bytes": 8029,
+          "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": null,
+        "saved_reference_exact_precedent": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 55,
+      "arm": "H0",
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "sha256": "c8405954be78b27b27509c943286802dc64fee7b441871639257b0df136bd287"
+      },
+      "passed": true,
+      "checks": 53827,
+      "statistics": {
+        "spikes": 3026,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 10336,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "e9cba5192029d17d4e34445957478b9b9932b9dbc22723a83f1b5421fc8f719d",
+      "source_start_end_identical": true,
+      "seconds": 3.4819557079463266,
+      "numerical": {
+        "reference_rows": 1800,
+        "unique_saved_inputs": 1,
+        "maxima_mv": {
+          "production_quad_error_mv": 0.0,
+          "production_64_error_mv": 0.0,
+          "ode_quad_error_mv": 0.0,
+          "independent_quad_error_mv": 1.2735699002986633e-15
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 0.0,
+        "reference_production_voltage_min_mv": -52.0,
+        "unique_input_ode_methods": {
+          "DOP853": 1,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+          "bytes": 8029,
+          "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": null,
+        "saved_reference_exact_precedent": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    },
+    {
+      "ordinal": 58,
+      "arm": "H0",
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "existing_receipt": false,
+      "exit_code": 0,
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "sha256": "1e9de9bfdcd276c2a3c18598ac36d004a19107156f14f0010b9092cc7982373d"
+      },
+      "passed": true,
+      "checks": 53827,
+      "statistics": {
+        "spikes": 3088,
+        "candidates": 3136,
+        "applied": 3088,
+        "reconstructed_selected_edges": 11032,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "error": null,
+      "failures": [],
+      "terminal_sha256": "ad766e739ff50c98581da0274dbdf21cc3900304f424276bd200d96c0e9ac6ed",
+      "source_start_end_identical": true,
+      "seconds": 3.4615698339766823,
+      "numerical": {
+        "reference_rows": 1800,
+        "unique_saved_inputs": 1,
+        "maxima_mv": {
+          "production_quad_error_mv": 0.0,
+          "production_64_error_mv": 0.0,
+          "ode_quad_error_mv": 0.0,
+          "independent_quad_error_mv": 1.2735699002986633e-15
+        },
+        "threshold_unresolved": 0,
+        "reference_input_h_max": 0.0,
+        "reference_production_voltage_min_mv": -52.0,
+        "unique_input_ode_methods": {
+          "DOP853": 1,
+          "Radau": 0
+        },
+        "reference_artifact": {
+          "path": "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+          "bytes": 8029,
+          "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+        }
+      },
+      "coverage": {
+        "H_selected_lower_bound": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_finite_phase_and_checks": {
+          "checked": 600,
+          "passed": 600
+        },
+        "independent_reference_frozen_gates": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "global_max_h_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_nearest_threshold_dominates_selected": {
+          "checked": 600,
+          "passed": 600
+        },
+        "global_log_ratio_dominates_selected": null,
+        "saved_reference_exact_precedent": {
+          "checked": 1800,
+          "passed": 1800
+        },
+        "selected_synapse_conductance_bitwise": {
+          "checked": 600,
+          "passed": 600
+        }
+      }
+    }
+  ],
+  "status": "complete",
+  "errors": [],
+  "log": "validation/inhibitory-recurrent-panel-H0-batch-audit.log",
+  "scope": "Sequential saved-data-only H0 audit batch. Existing receipts are inspected and never overwritten; each missing review is invoked once with the frozen reader. No network execution.",
+  "passed": true,
+  "finished_utc": "2026-09-05T11:12:10.714035+00:00",
+  "final_source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+  },
+  "source_unchanged": true,
+  "limitations": [
+    "Independent H integration covers only predetermined saved reference intervals. Global winner optimality over unselected cells cannot be reconstructed from the retained selected48 traces.",
+    "The lower-bound checks cover every selected saved step plus producer-reported all-cell phase counters, rather than independent all-cell interval integration.",
+    "Exact selected p/h, input masks, delayed events, spikes/counts and queues are verified by the reader; global accepted/unavailable dispositions remain a checked partition.",
+    "Numerical agreement and a lower bound do not establish electrophysiological amplitude/timing, behavioral adequacy or model promotion."
+  ],
+  "log_sha256": "eacaa55373e7382b5db0053a829deaadbe7848e9ac5e9a87ac8d319e017a3bd5"
+}

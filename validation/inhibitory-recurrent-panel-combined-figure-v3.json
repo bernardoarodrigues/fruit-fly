@@ -1,0 +1,19 @@
+{
+  "source": {
+    "path": "validation/inhibitory-recurrent-panel-combined-analysis.json",
+    "bytes": 1728082,
+    "sha256": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29"
+  },
+  "script": {
+    "path": "scripts/plot_inhibitory_recurrent_panel.py",
+    "bytes": 5479,
+    "sha256": "abe0caa06295d594efee5a8e53aa9a90868a5cf1f6985e3460f033168edc613f"
+  },
+  "output": {
+    "path": "validation/inhibitory-recurrent-panel-combined-figure-v3.png",
+    "bytes": 357535,
+    "sha256": "51dafb184d8a8096d46eea3ca2983ed2491c460a12b300c49704ecd2569dc718"
+  },
+  "plot": "All four arms and three individual paired RNG seeds. Constant-input window means and predefined matched pulse differences; no biological confidence intervals or newly fitted targets.",
+  "rendering_correction": "Version 1 duplicated panel titles and overlapped footnotes. Version 2 fixed layout. Independent visual review caught default stairs closure to zero at 3 s; version 3 uses baseline=None to avoid implying unobserved cessation. Numerical input unchanged; prior scripts, PNGs and manifests retained."
+}

@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-09-05T11:11:12.288199+00:00",
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "ordinals": [
+    26,
+    29,
+    32,
+    35,
+    38,
+    41,
+    44,
+    47,
+    50,
+    53,
+    56,
+    59
+  ],
+  "source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd",
+    "scripts/run_inhibitory_recurrent_H1_audits.py": "13e0c1ca6cd719354416d331c3306f9d7e5391f2f2f1b17fac866446fb54e2aa",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "validation/inhibitory-recurrent-panel-plan.json": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+  },
+  "existing_receipts": [],
+  "scope": "One sequential batch of frozen saved-data reader invocations only; no model execution.",
+  "failure_policy": "Inspect and skip existing receipts. Preserve all first failures and orphan artifacts. Stop batch on a failed receipt/reader; never retry or alter reader/helper."
+}

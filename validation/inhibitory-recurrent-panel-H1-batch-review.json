@@ -1,0 +1,900 @@
+{
+  "started_utc": "2026-09-05T11:11:12.288513+00:00",
+  "completed_utc": "2026-09-05T11:12:37.883620+00:00",
+  "wall_seconds": 85.59552791703027,
+  "plan": {
+    "path": "validation/inhibitory-recurrent-panel-H1-batch-review-plan.json",
+    "bytes": 1322,
+    "sha256": "c82b11fb4bdce9c63381f9eb190261e58a13453b41133357d1a7240d96b85a71"
+  },
+  "log": {
+    "path": "validation/inhibitory-recurrent-panel-H1-batch-review.log",
+    "bytes": 15263,
+    "sha256": "430d5fbae50b5e188a22738737a397c70d66238ab028dd6cef504113fc19816f"
+  },
+  "source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd",
+    "scripts/run_inhibitory_recurrent_H1_audits.py": "13e0c1ca6cd719354416d331c3306f9d7e5391f2f2f1b17fac866446fb54e2aa",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "validation/inhibitory-recurrent-panel-plan.json": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+  },
+  "final_source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd",
+    "scripts/run_inhibitory_recurrent_H1_audits.py": "13e0c1ca6cd719354416d331c3306f9d7e5391f2f2f1b17fac866446fb54e2aa",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "validation/inhibitory-recurrent-panel-plan.json": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+  },
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "ordinals": [
+    26,
+    29,
+    32,
+    35,
+    38,
+    41,
+    44,
+    47,
+    50,
+    53,
+    56,
+    59
+  ],
+  "complete": true,
+  "passed": true,
+  "trials": [
+    {
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review.json",
+        "bytes": 1162158,
+        "sha256": "cb5225ac6c981d21b7b5bcfecbb740082b19534f8a30bfbd265307f613060786"
+      },
+      "passed": true,
+      "check_count": 60393,
+      "statistics": {
+        "spikes": 6204186,
+        "candidates": 618,
+        "applied": 617,
+        "reconstructed_selected_edges": 585080,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2995,
+        "unique_reference_inputs": 2987,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1081226,
+          1084286,
+          1082354
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.076055708981585,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review-references.npz",
+        "bytes": 197096,
+        "sha256": "45d9574912e8bcbf7f61e44ac41d1ab5d82152135bb12b5cd1c327cf5bb1e3ec"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 2.1316282072803006e-14,
+        "production_64_error_mv": 1.4210854715202004e-14,
+        "ode_quad_error_mv": 2.0676793610618915e-12,
+        "independent_quad_error_mv": 2.022473411424653e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 1.4206307241693139e-08,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:12.288913+00:00",
+      "finished_utc": "2026-09-05T11:11:20.685206+00:00"
+    },
+    {
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review.json",
+        "bytes": 1160673,
+        "sha256": "e8c5dc92fdb28ea6f0c78df642cdeae7963ee3428924921be1996f711e7167f8"
+      },
+      "passed": true,
+      "check_count": 60401,
+      "statistics": {
+        "spikes": 6234443,
+        "candidates": 623,
+        "applied": 623,
+        "reconstructed_selected_edges": 587275,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2994,
+        "unique_reference_inputs": 2986,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1081571,
+          1081196,
+          1081672
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 7.964443541015498,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review-references.npz",
+        "bytes": 196005,
+        "sha256": "258eaae2223e491b104008953a77e96b68963193aa7035b1fecfda734e446e48"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 2.1316282072803006e-14,
+        "production_64_error_mv": 2.1316282072803006e-14,
+        "ode_quad_error_mv": 1.8900436771218665e-12,
+        "independent_quad_error_mv": 1.933302432703635e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 2.2432175228459528e-08,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:20.685567+00:00",
+      "finished_utc": "2026-09-05T11:11:28.935997+00:00"
+    },
+    {
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review.json",
+        "bytes": 1164744,
+        "sha256": "c19f0483f93cf7779523154d212b301e9403880ab6f3a19a7753412734cf51b3"
+      },
+      "passed": true,
+      "check_count": 60534,
+      "statistics": {
+        "spikes": 6202367,
+        "candidates": 583,
+        "applied": 582,
+        "reconstructed_selected_edges": 583615,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2991,
+        "unique_reference_inputs": 2983,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1080211,
+          1084596,
+          1080417
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.115453374979552,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review-references.npz",
+        "bytes": 198163,
+        "sha256": "31100a9e3798f5d94d83da6083d40b45603dd6dd0e7e496c418d50c42c25fdbe"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 4.263256414560601e-14,
+        "production_64_error_mv": 4.263256414560601e-14,
+        "ode_quad_error_mv": 1.8971491044794675e-12,
+        "independent_quad_error_mv": 1.933456473561675e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 9.199460748732236e-09,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:28.936342+00:00",
+      "finished_utc": "2026-09-05T11:11:37.348601+00:00"
+    },
+    {
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review.json",
+        "bytes": 1162687,
+        "sha256": "bd65c0a7b53831a1991ac2d6993b534b3f951ae86246fe4115385fde85f7f11d"
+      },
+      "passed": true,
+      "check_count": 60395,
+      "statistics": {
+        "spikes": 6211775,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 597052,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2995,
+        "unique_reference_inputs": 2987,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1082199,
+          1082838,
+          1083252
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.17181583296042,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review-references.npz",
+        "bytes": 197134,
+        "sha256": "bbf643c184ec8b46a0c7c082ae19067fbc66ba2b74aa4356bb43a58d0256021d"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 1.4210854715202004e-14,
+        "production_64_error_mv": 1.4210854715202004e-14,
+        "ode_quad_error_mv": 2.0818902157770935e-12,
+        "independent_quad_error_mv": 2.0366324041452435e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 6.5592757891863585e-09,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:37.348908+00:00",
+      "finished_utc": "2026-09-05T11:11:45.804875+00:00"
+    },
+    {
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review.json",
+        "bytes": 1160828,
+        "sha256": "d9964f6e4aba9785abf6ae9a5ad6ea0f6b501f2239899363c6bce0b9cb422203"
+      },
+      "passed": true,
+      "check_count": 60401,
+      "statistics": {
+        "spikes": 6236369,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 598835,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2994,
+        "unique_reference_inputs": 2986,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1082363,
+          1082305,
+          1078846
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.23625312501099,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review-references.npz",
+        "bytes": 196181,
+        "sha256": "59cb3904a6827acc571d9630c9e602e4cbd4b46f8c6c59a806e4a773c536a672"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 4.263256414560601e-14,
+        "production_64_error_mv": 4.263256414560601e-14,
+        "ode_quad_error_mv": 1.8971491044794675e-12,
+        "independent_quad_error_mv": 1.9525420581476154e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 2.2423378709390818e-09,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:45.805193+00:00",
+      "finished_utc": "2026-09-05T11:11:54.331857+00:00"
+    },
+    {
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review.json",
+        "bytes": 1165615,
+        "sha256": "773872d6c4b2b4097a348dba0475ecc2c8c1a0f46e2e62dd2ed7c0365b29a49d"
+      },
+      "passed": true,
+      "check_count": 60582,
+      "statistics": {
+        "spikes": 6215664,
+        "candidates": 3136,
+        "applied": 3088,
+        "reconstructed_selected_edges": 596684,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2992,
+        "unique_reference_inputs": 2984,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1081539,
+          1086560,
+          1082856
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.27062179200584,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review-references.npz",
+        "bytes": 198483,
+        "sha256": "03fa274f455e819e99eb287392cb3c9e2d318a29a643da659ab353478b91b08b"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 4.263256414560601e-14,
+        "production_64_error_mv": 4.263256414560601e-14,
+        "ode_quad_error_mv": 1.9397816686250735e-12,
+        "independent_quad_error_mv": 1.8905481766280517e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 4.5335042386795976e-08,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:11:54.332197+00:00",
+      "finished_utc": "2026-09-05T11:12:02.896781+00:00"
+    },
+    {
+      "ordinal": 44,
+      "name": "44-H1-seed11-isoamyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review.json",
+        "bytes": 1161800,
+        "sha256": "272f4e2d7743ddcb71e0f144bac2aee1cc7f32220acd5ea3f13f8dd64c6d8676"
+      },
+      "passed": true,
+      "check_count": 60394,
+      "statistics": {
+        "spikes": 6204199,
+        "candidates": 1485,
+        "applied": 1478,
+        "reconstructed_selected_edges": 589894,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2995,
+        "unique_reference_inputs": 2987,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1081098,
+          1081736,
+          1081113
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.203214875014964,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review-references.npz",
+        "bytes": 196902,
+        "sha256": "5c4c32101ad0a51c6ef86201e44e656afc163a97b6167240cdd38324d00742f5"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 2.1316282072803006e-14,
+        "production_64_error_mv": 2.1316282072803006e-14,
+        "ode_quad_error_mv": 2.0676793610618915e-12,
+        "independent_quad_error_mv": 2.0332641908044028e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 2.7285622650197183e-09,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:02.897108+00:00",
+      "finished_utc": "2026-09-05T11:12:11.403221+00:00"
+    },
+    {
+      "ordinal": 47,
+      "name": "47-H1-seed12-isoamyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review.json",
+        "bytes": 1160935,
+        "sha256": "ab7ea7cc3d770130be32fe767f654a4f53a9a7b5330130901a8eee7d9c737db3"
+      },
+      "passed": true,
+      "check_count": 60401,
+      "statistics": {
+        "spikes": 6238424,
+        "candidates": 1446,
+        "applied": 1442,
+        "reconstructed_selected_edges": 592212,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2994,
+        "unique_reference_inputs": 2986,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1082252,
+          1081536,
+          1082763
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 8.010849334008526,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review-references.npz",
+        "bytes": 196333,
+        "sha256": "d6d4814387e62e14d4dd84f790b5435f8e8e69b301f076b1713a071638eaa019"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 4.263256414560601e-14,
+        "production_64_error_mv": 4.263256414560601e-14,
+        "ode_quad_error_mv": 1.8545165403338615e-12,
+        "independent_quad_error_mv": 1.9422652843085307e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 1.5657001029012463e-08,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:11.403517+00:00",
+      "finished_utc": "2026-09-05T11:12:19.713900+00:00"
+    },
+    {
+      "ordinal": 50,
+      "name": "50-H1-seed13-isoamyl_acetate",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review.json",
+        "bytes": 1164470,
+        "sha256": "5c387d0a9ebe2cea1f624a194a016f520abaf251b4cd2a7572796659848e73eb"
+      },
+      "passed": true,
+      "check_count": 60567,
+      "statistics": {
+        "spikes": 6205096,
+        "candidates": 1421,
+        "applied": 1416,
+        "reconstructed_selected_edges": 588347,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 2993,
+        "unique_reference_inputs": 2985,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          1082225,
+          1078698,
+          1083258
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 7.7839990420034155,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review-references.npz",
+        "bytes": 197719,
+        "sha256": "8c136e05f6c9d9d7b91afd6d40391797aeb6f34243f3f47074c48b3d81747011"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 4.263256414560601e-14,
+        "production_64_error_mv": 4.263256414560601e-14,
+        "ode_quad_error_mv": 1.8971491044794675e-12,
+        "independent_quad_error_mv": 1.929859946544037e-13
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 1.330697330104158e-09,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:19.714241+00:00",
+      "finished_utc": "2026-09-05T11:12:27.797113+00:00"
+    },
+    {
+      "ordinal": 53,
+      "name": "53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "bytes": 9461,
+        "sha256": "c2d8b5d770d983ee6acf637dcdf8b6320f9d1f88e1166a76dc3bfd51cbe0e17d"
+      },
+      "passed": true,
+      "check_count": 53827,
+      "statistics": {
+        "spikes": 3085,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 10945,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 3.1145217499579303,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+        "bytes": 8029,
+        "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 0.0,
+        "production_64_error_mv": 0.0,
+        "ode_quad_error_mv": 0.0,
+        "independent_quad_error_mv": 1.2735699002986633e-15
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 7.0,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:27.797413+00:00",
+      "finished_utc": "2026-09-05T11:12:31.155870+00:00"
+    },
+    {
+      "ordinal": 56,
+      "name": "56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "bytes": 9461,
+        "sha256": "4a0db733f05ec2a56fd2d3f103d77140ed9994cfcec9843186d512a41c41ca10"
+      },
+      "passed": true,
+      "check_count": 53827,
+      "statistics": {
+        "spikes": 3026,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 10336,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 3.1249929589685053,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+        "bytes": 8029,
+        "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 0.0,
+        "production_64_error_mv": 0.0,
+        "ode_quad_error_mv": 0.0,
+        "independent_quad_error_mv": 1.2735699002986633e-15
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 7.0,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:31.156184+00:00",
+      "finished_utc": "2026-09-05T11:12:34.528198+00:00"
+    },
+    {
+      "ordinal": 59,
+      "name": "59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review.json",
+        "bytes": 9459,
+        "sha256": "d059e04f8d7b550f3b12a014bb28962da748e1e20a44b39e2069597dc9b18809"
+      },
+      "passed": true,
+      "check_count": 53827,
+      "statistics": {
+        "spikes": 3088,
+        "candidates": 3136,
+        "applied": 3088,
+        "reconstructed_selected_edges": 11032,
+        "fully_audited_chunks": 600,
+        "reference_intervals": 1800,
+        "unique_reference_inputs": 1,
+        "independent_threshold_unresolved": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "wall_seconds": 3.10821970802499,
+      "failures": [],
+      "error": null,
+      "reviewer_sources": {
+        "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+        "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+        "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+        "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+      },
+      "reference_artifact": {
+        "path": "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+        "bytes": 8029,
+        "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+      },
+      "reference_artifact_valid": true,
+      "identity_and_sources_match": true,
+      "numerical_maxima_mv": {
+        "production_quad_error_mv": 0.0,
+        "production_64_error_mv": 0.0,
+        "ode_quad_error_mv": 0.0,
+        "independent_quad_error_mv": 1.2735699002986633e-15
+      },
+      "threshold_timing_unresolved": 0,
+      "minimum_sampled_threshold_margin_mv": 7.0,
+      "batch_entry_passed": true,
+      "skipped_existing": false,
+      "reader_returncode": 0,
+      "started_utc": "2026-09-05T11:12:34.528511+00:00",
+      "finished_utc": "2026-09-05T11:12:37.883210+00:00"
+    }
+  ],
+  "error": null,
+  "summary": {
+    "indexed_trials": 12,
+    "check_count": 705549,
+    "numerical_maxima_mv": {
+      "production_quad_error_mv": 4.263256414560601e-14,
+      "production_64_error_mv": 4.263256414560601e-14,
+      "ode_quad_error_mv": 2.0818902157770935e-12,
+      "independent_quad_error_mv": 2.0366324041452435e-13
+    },
+    "threshold_timing_unresolved": 0,
+    "reference_intervals": 32343,
+    "spikes": 55961722,
+    "selected_event_rows": 5351307
+  },
+  "limits": [
+    "Batch executes the frozen independent reader, not a new independent implementation of its checks.",
+    "This batch author authored the independent scalar reference helper; that role is disclosed rather than counted as a separate numerical reviewer.",
+    "Selected 48 p/h states, source events, direct/reset algebra and saved reference intervals are checked; full global inter-checkpoint voltage is not reconstructed.",
+    "Global winning-reference optimality over unselected cells is not independently established. Numeric agreement does not validate physiology or promote H1.",
+    "Only these 12 assigned H1 trials are in this batch; earlier H1 no-input receipts and the H0 batch remain separate."
+  ]
+}

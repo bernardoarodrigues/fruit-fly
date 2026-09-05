@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-09-05T11:24:08.726775+00:00",
+  "source_sha256": {
+    "validation/inhibitory-recurrent-panel-combined-analysis.json": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29",
+    "scripts/summarize_inhibitory_recurrent_panel.py": "f9d4f63b8a3aca75e5e2c5b832af4fcc50fd3a9b41ce36729ba43075a1548a35",
+    "scripts/review_inhibitory_recurrent_panel_combined.py": "726c835a27df5847cf359544a2cf96ed202be9dd45d2dfcaf7e960dfe11c7395"
+  },
+  "checkpoint_ordinals": [
+    2,
+    33,
+    34,
+    35
+  ],
+  "scope": "Rehash 306 aggregate inputs and linked trial/audit receipts; independently check four seed11 ethyl-acetate final count distributions and all five factorial contrasts for their 12 cohorts/seven windows. No reducer or model execution.",
+  "quantile_method": "Sort integer counts; exact Fraction rank (n-1)*q and linear interpolation, divide by exact window duration. No numpy.quantile or numpy.median.",
+  "numeric_tolerance_hz": 1e-10,
+  "failure_policy": "Retain first result including failures; no retry or frozen source modification."
+}

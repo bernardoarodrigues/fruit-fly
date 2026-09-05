@@ -1,0 +1,711 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T11:28:23.052511+00:00",
+  "passed": false,
+  "scope": "Report number/interpretation and corrected figure review against frozen combined evidence and saved references; no model execution, producer import, fitting or source acquisition.",
+  "interpretation_review": [
+    "The two within-handling inhibitory contrasts and their interaction support conditional model attribution; three handling mechanisms remain bundled.",
+    "Persistence is restricted to the observed 1.5-second off interval; neither indefinite stability nor uncontrolled growth is established.",
+    "Three numerical seeds are not biological replicates; population ranking and rare target responses remain seed dependent.",
+    "Engineering reversal and at-rest normalization do not supply measured inhibitory pA/nS or receptor calibration; the earlier 5 ms test concerns a conditional displayed-summary mapping.",
+    "The finite-window 456 Hz rate is compatible with 22-tick spacing and does not imply a refractory violation."
+  ],
+  "limits": [
+    "This review checks the report against retained evidence and independently reduces saved scalar references; it does not reconstruct unsaved global trajectories or rerun integrators.",
+    "Automation pause state, Git publication history and broader project completion are operational statements outside this numerical/scientific review."
+  ],
+  "error": {
+    "type": "AssertionError",
+    "message": "factor table C1_minus_C0",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_report.py\", line 169, in main\n    review(out, args.visual_qa_sha)\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_report.py\", line 103, in review\n    ck(\"factor table \" + field, text in doc)\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_report.py\", line 36, in ck\n    raise AssertionError(name)\nAssertionError: factor table C1_minus_C0\n"
+  },
+  "checks": [
+    {
+      "name": "frozen combined evidence",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 2871695",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 554896",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 12564",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 157832582",
+      "passed": true
+    },
+    {
+      "name": "sixty reviews and 36000 reduced chunk pairs",
+      "passed": true
+    },
+    {
+      "name": "exact 4x5x3 coverage",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table C0",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range C0",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table C0",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero C0",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive C0",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 00-C0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 00-C0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 01-C0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 01-C0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 02-C0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 02-C0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 03-C0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 03-C0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 04-C0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 04-C0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 05-C0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 05-C0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 06-C0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 06-C0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 07-C0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 07-C0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 08-C0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 08-C0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 09-C0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 09-C0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 10-C0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 10-C0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 11-C0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 11-C0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 12-C0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 12-C0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 13-C0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 13-C0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 14-C0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 14-C0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table C1",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range C1",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table C1",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero C1",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive C1",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 27-C1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 27-C1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 30-C1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 30-C1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 33-C1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 33-C1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 36-C1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 36-C1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 39-C1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 39-C1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 42-C1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 42-C1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 45-C1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 45-C1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 48-C1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 48-C1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 51-C1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 51-C1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 54-C1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 54-C1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 57-C1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 57-C1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table H0",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range H0",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table H0",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero H0",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive H0",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table H1",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range H1",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table H1",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero H1",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive H1",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "feeding group totals",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "exact rare target identities and seeds",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies C0",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies H0",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies H1",
+      "passed": true
+    },
+    {
+      "name": "H1 active median 434 each seed",
+      "passed": true
+    },
+    {
+      "name": "H1 all-cell p90 and maximum",
+      "passed": true
+    },
+    {
+      "name": "other active firsthop medians",
+      "passed": true
+    },
+    {
+      "name": "about 7.3 percent nonsource active",
+      "passed": true
+    },
+    {
+      "name": "finite window refractory count arithmetic",
+      "passed": true
+    },
+    {
+      "name": "factor table H0_minus_C0",
+      "passed": true
+    },
+    {
+      "name": "factor table H1_minus_C1",
+      "passed": true
+    },
+    {
+      "name": "factor table C1_minus_C0",
+      "passed": false
+    }
+  ],
+  "check_count": 166,
+  "input_receipts": {
+    "validation/inhibitory-recurrent-panel-combined-analysis.json": {
+      "path": "validation/inhibitory-recurrent-panel-combined-analysis.json",
+      "bytes": 1728082,
+      "sha256": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29"
+    },
+    "docs/inhibitory-recurrent-panel-results.md": {
+      "path": "docs/inhibitory-recurrent-panel-results.md",
+      "bytes": 13692,
+      "sha256": "b14d6ff35d8499782183d687d114c707665667d8ce97a97e5e01d70e6daf3407"
+    },
+    "scripts/review_inhibitory_recurrent_panel_report.py": {
+      "path": "scripts/review_inhibitory_recurrent_panel_report.py",
+      "bytes": 13254,
+      "sha256": "2bdce333abfa855899d6a507318920c47d9bf553adf751daf97d295904ad116d"
+    }
+  },
+  "script": {
+    "path": "scripts/review_inhibitory_recurrent_panel_report.py",
+    "bytes": 13254,
+    "sha256": "2bdce333abfa855899d6a507318920c47d9bf553adf751daf97d295904ad116d"
+  }
+}

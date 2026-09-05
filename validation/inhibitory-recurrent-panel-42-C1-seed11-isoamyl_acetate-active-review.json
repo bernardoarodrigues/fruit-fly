@@ -1,0 +1,221 @@
+{
+  "completed_utc": "2026-09-05T11:11:58.833604+00:00",
+  "trial": {
+    "arm": "C1",
+    "seed": 11,
+    "condition": "isoamyl_acetate",
+    "ordinal": 42,
+    "name": "42-C1-seed11-isoamyl_acetate"
+  },
+  "plan_sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5",
+  "source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_active.py": "2329e31a90bfaae48372a36ce3ccd03146bdec785dff9c511737c10bead81226",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+  },
+  "terminal_sha256": "86a1daa511d37eaf6c37228b5c9731629857d5505de4a2229789d58a80803e03",
+  "result_sha256": "794364c5a797f8b9e07b96a6632236f7fed0271d6ff3f9cc464bfea0bc0f6b07",
+  "passed": true,
+  "check_count": 37624,
+  "categories": {
+    "artifact_hash_and_size": {
+      "checked": 3050,
+      "passed": 3050
+    },
+    "complete_report_and_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "completed_clocks": {
+      "checked": 1,
+      "passed": 1
+    },
+    "frozen_source": {
+      "checked": 61,
+      "passed": 61
+    },
+    "archive_no_incomplete_evidence": {
+      "checked": 611,
+      "passed": 611
+    },
+    "archive_header_transaction": {
+      "checked": 611,
+      "passed": 611
+    },
+    "archive_marker_payload_paths": {
+      "checked": 611,
+      "passed": 611
+    },
+    "array_descriptor_and_bytes": {
+      "checked": 19319,
+      "passed": 19319
+    },
+    "all_payload_arrays_referenced": {
+      "checked": 611,
+      "passed": 611
+    },
+    "fixed_shapes": {
+      "checked": 1,
+      "passed": 1
+    },
+    "checkpoint_identity": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_membership": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_own_history": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_counts": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_selected_state": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_finite_C_state": {
+      "checked": 8,
+      "passed": 8
+    },
+    "packed_spike_header": {
+      "checked": 600,
+      "passed": 600
+    },
+    "packed_spike_original_bytes": {
+      "checked": 1200,
+      "passed": 1200
+    },
+    "chunk_clock": {
+      "checked": 600,
+      "passed": 600
+    },
+    "ordered_raw_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_refractory_from_own_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "direct_input_masks": {
+      "checked": 600,
+      "passed": 600
+    },
+    "rng_and_rate": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_shapes_and_continuity": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_eligibility_from_own_history": {
+      "checked": 600,
+      "passed": 600
+    },
+    "C_prethreshold_bitwise": {
+      "checked": 600,
+      "passed": 600
+    },
+    "strict_threshold_from_prestate": {
+      "checked": 600,
+      "passed": 600
+    },
+    "direct_and_reset_voltage_bitwise": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_event_order_and_disposition": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_synapse_bitwise": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_edge_partition": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_edge_visits_from_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_finite_phase_and_checks": {
+      "checked": 600,
+      "passed": 600
+    },
+    "event_population_metadata": {
+      "checked": 600,
+      "passed": 600
+    },
+    "histogram_population_sums": {
+      "checked": 600,
+      "passed": 600
+    },
+    "telemetry_counts": {
+      "checked": 600,
+      "passed": 600
+    },
+    "raw_count_matrix": {
+      "checked": 1,
+      "passed": 1
+    },
+    "cohort_order_hash": {
+      "checked": 12,
+      "passed": 12
+    },
+    "raw_cohort_metrics": {
+      "checked": 84,
+      "passed": 84
+    },
+    "reported_totals": {
+      "checked": 1,
+      "passed": 1
+    },
+    "final_source_and_result_stable": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "statistics": {
+    "spikes": 7467776,
+    "candidates": 1485,
+    "applied": 1478,
+    "reconstructed_selected_edges": 710148,
+    "off_nonsource_counts": [
+      1265067,
+      1268518,
+      1267357
+    ],
+    "off_source_counts": [
+      0,
+      0,
+      0
+    ],
+    "forward_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "decoded_archives": 611,
+  "decoded_arrays": 19319,
+  "wall_seconds": 7.005108708981425,
+  "scope": "Completed C0/C1 saved-data verification only; no producer/kernel/metric helper imports or neural simulation",
+  "limits": [
+    "H intervals are explicitly outside this reviewer version.",
+    "Full global voltage trajectories between checkpoints are not independently reconstructed; selected48 voltage/synapse algebra is checked at every tick.",
+    "Global accepted/unavailable edge counts are checked as a partition; exact full-graph delivery visits and selected event dispositions are reconstructed."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T11:25:09.116686+00:00",
+  "passed": false,
+  "scope": "First visual inspection of combined figure v2, not a failed neural/numeric audit",
+  "figure": {
+    "path": "validation/inhibitory-recurrent-panel-combined-figure-v2.png",
+    "bytes": 360745,
+    "sha256": "db655e30a3648c096d19bed23ffdc73be1f03b50a00df5bc151a677502bf03e2"
+  },
+  "analysis": {
+    "path": "validation/inhibitory-recurrent-panel-combined-analysis.json",
+    "bytes": 1728082,
+    "sha256": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29"
+  },
+  "issue": {
+    "panel": "A and B",
+    "observation": "Each nonzero final stair trace closes vertically to zero at exactly 3.0 seconds, where no zero-rate endpoint was observed. This can imply unobserved activity cessation.",
+    "requested_fix": "Retain v2 and render a new version with open stair endpoints (for example baseline=None)."
+  },
+  "layout_otherwise_clear": true,
+  "producer_or_frozen_outputs_changed": false
+}

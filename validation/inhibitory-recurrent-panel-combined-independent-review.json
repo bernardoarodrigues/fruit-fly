@@ -1,0 +1,682 @@
+{
+  "completed_utc": "2026-09-05T11:24:10.776590+00:00",
+  "plan": {
+    "path": "validation/inhibitory-recurrent-panel-combined-independent-review-plan.json",
+    "bytes": 1080,
+    "sha256": "02967ff02f5be112dd005a9a8acb0ccdafdc113968e9d39e1e90afa9f5ed7266"
+  },
+  "source_sha256": {
+    "validation/inhibitory-recurrent-panel-combined-analysis.json": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29",
+    "scripts/summarize_inhibitory_recurrent_panel.py": "f9d4f63b8a3aca75e5e2c5b832af4fcc50fd3a9b41ce36729ba43075a1548a35",
+    "scripts/review_inhibitory_recurrent_panel_combined.py": "726c835a27df5847cf359544a2cf96ed202be9dd45d2dfcaf7e960dfe11c7395"
+  },
+  "passed": true,
+  "check_count": 3804,
+  "categories": {
+    "aggregate_complete": {
+      "checked": 1,
+      "passed": 1
+    },
+    "aggregate_input_hash": {
+      "checked": 306,
+      "passed": 306
+    },
+    "reducer_source_pin": {
+      "checked": 1,
+      "passed": 1
+    },
+    "reviewed_integrity_fixes_present": {
+      "checked": 1,
+      "passed": 1
+    },
+    "parent_terminal_link": {
+      "checked": 1,
+      "passed": 1
+    },
+    "terminal_resources_copied": {
+      "checked": 1,
+      "passed": 1
+    },
+    "ordered_trial_identity": {
+      "checked": 60,
+      "passed": 60
+    },
+    "trial_terminal_links": {
+      "checked": 60,
+      "passed": 60
+    },
+    "audit_receipt_link": {
+      "checked": 60,
+      "passed": 60
+    },
+    "audit_checks": {
+      "checked": 60,
+      "passed": 60
+    },
+    "trial_resources_and_timing": {
+      "checked": 60,
+      "passed": 60
+    },
+    "component_totals": {
+      "checked": 1,
+      "passed": 1
+    },
+    "chunk_record_digest": {
+      "checked": 1,
+      "passed": 1
+    },
+    "selection_metadata_frozen": {
+      "checked": 1,
+      "passed": 1
+    },
+    "selection_payload_frozen": {
+      "checked": 1,
+      "passed": 1
+    },
+    "typed_count_or_cohort_array": {
+      "checked": 16,
+      "passed": 16
+    },
+    "selected_checkpoint_frozen": {
+      "checked": 8,
+      "passed": 8
+    },
+    "selected_checkpoint_dimensions": {
+      "checked": 4,
+      "passed": 4
+    },
+    "cohort_n_identity": {
+      "checked": 48,
+      "passed": 48
+    },
+    "checkpoint_cohort_counts": {
+      "checked": 336,
+      "passed": 336
+    },
+    "checkpoint_mean_rate": {
+      "checked": 336,
+      "passed": 336
+    },
+    "checkpoint_rate_quantile": {
+      "checked": 1680,
+      "passed": 1680
+    },
+    "checkpoint_active_median": {
+      "checked": 133,
+      "passed": 133
+    },
+    "empty_active_median": {
+      "checked": 203,
+      "passed": 203
+    },
+    "factorial_coefficient_conventions": {
+      "checked": 1,
+      "passed": 1
+    },
+    "selected_factorial_coverage": {
+      "checked": 1,
+      "passed": 1
+    },
+    "checkpoint_factorial_effect": {
+      "checked": 420,
+      "passed": 420
+    },
+    "review_source_unchanged": {
+      "checked": 3,
+      "passed": 3
+    }
+  },
+  "failures": [],
+  "error": null,
+  "summary": {
+    "input_hashes": 306,
+    "trial_links": 60,
+    "component_checks": 2871695,
+    "selected_checkpoint_ordinals": [
+      2,
+      33,
+      34,
+      35
+    ],
+    "selected_cohorts": 12,
+    "selected_cell_windows": 336,
+    "quantile_values": 1680,
+    "factorial_values": 420,
+    "max_absolute_errors_hz": {
+      "checkpoint_mean_rate": 7.105427357601002e-15,
+      "checkpoint_rate_quantile": 1.864464138634503e-11,
+      "checkpoint_active_median": 1.4210854715202004e-14,
+      "checkpoint_factorial_effect": 2.842170943040401e-14
+    }
+  },
+  "selected_examples": [
+    {
+      "ordinal": 2,
+      "arm": "C0",
+      "cohort": "all",
+      "mean_rates_hz": [
+        0.013557288542291542,
+        2.075491568352996,
+        4.999004199160168,
+        5.256712657468507,
+        5.266454709058189,
+        5.2539172165566885,
+        5.234157168566287
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          55.55555555555556,
+          180.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          130.0,
+          400.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          130.0,
+          402.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          130.0,
+          400.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          130.0,
+          402.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          130.0,
+          400.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 2,
+      "arm": "C0",
+      "cohort": "motor:forward",
+      "mean_rates_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 33,
+      "arm": "C1",
+      "cohort": "all",
+      "mean_rates_hz": [
+        0.343251349730054,
+        14.992908085049656,
+        15.306790641871626,
+        15.197072585482903,
+        15.245302939412118,
+        15.184139172165567,
+        15.181739652069586
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          160.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.2222222222222223,
+          344.44444444444446,
+          455.55555555555554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          352.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          352.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          352.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          350.0200000000186,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          352.0,
+          456.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 33,
+      "arm": "C1",
+      "cohort": "motor:forward",
+      "mean_rates_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 34,
+      "arm": "H0",
+      "cohort": "all",
+      "mean_rates_hz": [
+        0.01187762447510498,
+        1.7430913817236553,
+        3.3986442711457707,
+        3.312225554889022,
+        3.384871025794841,
+        3.4091421715656867,
+        3.3976964607078584
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          55.55555555555556,
+          217.77777777777777
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          110.0,
+          390.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          108.0,
+          388.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          110.0,
+          390.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          110.0,
+          388.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          110.0,
+          390.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 34,
+      "arm": "H0",
+      "cohort": "motor:forward",
+      "mean_rates_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 35,
+      "arm": "H1",
+      "cohort": "all",
+      "mean_rates_hz": [
+        0.017996400719856028,
+        10.533186695994134,
+        13.079280143971205,
+        12.99377324535093,
+        12.98379124175165,
+        12.991457708458308,
+        12.996424715056989
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          100.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          275.55555555555554,
+          402.22222222222223
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          342.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          342.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          342.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          342.0,
+          456.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          342.0,
+          456.0
+        ]
+      ]
+    },
+    {
+      "ordinal": 35,
+      "arm": "H1",
+      "cohort": "motor:forward",
+      "mean_rates_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saved_quantiles_hz": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "No reducer/model execution and no new spike recount. Existing passed raw-data audits supply the raw-spike provenance.",
+    "All aggregate input hashes and 60 audit/result/terminal links are checked; 72,000 chunk-record digest entries are reconstructed from frozen artifact records, not rehashed raw chunk payloads in this review.",
+    "Fresh count-array distributions and exact-rational factorial arithmetic are checked only for four seed11 ethyl-acetate checkpoints, all 12 cohorts and seven windows.",
+    "Producer extrema remain telemetry reductions, not independently reconstructed global trajectories. Terminal resources are copied recorded snapshots, not a new final filesystem/RSS census.",
+    "This reviewer authored the scalar reference helper and ran the separate H1 audit batch; the present work is independent of the aggregate reducer implementation, not independent of all prior project work.",
+    "Three technical seeds, a three-second duration and fixed neural motor readouts do not validate measured physiology or body behavior, and do not promote H1."
+  ]
+}

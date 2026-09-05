@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T06:35:22.602284+00:00",
+  "passed": false,
+  "method": "Read only previously passed independent C1 receipts and their pinned summaries; reduce retained per-tick phase minima for ordinal24. No producer metric/model imports or neural run.",
+  "window_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "dt_s": 0.0001,
+  "limits": [
+    "Current-model engineering/numerical observations, not physiological voltages or calibrated natural behavior.",
+    "Three no-input seeds plus one stimulated C1 seed; no stimulated seed robustness or arm promotion.",
+    "Observed off activity over 1.5 seconds does not establish indefinite stability or growth.",
+    "Fixed motor-group spikes do not demonstrate movement or feeding."
+  ],
+  "error": {
+    "type": "KeyError",
+    "message": "'phase_min'",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/summarize_inhibitory_recurrent_c1_first_stimulus.py\", line 123, in main\n    summarize(out)\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/summarize_inhibitory_recurrent_c1_first_stimulus.py\", line 86, in summarize\n    desc = per_tick[name][\"array\"]\n           ~~~~~~~~^^^^^^\nKeyError: 'phase_min'\n"
+  },
+  "checks": [
+    {
+      "name": "exact frozen panel plan",
+      "passed": true
+    },
+    {
+      "name": "unchanged frozen independent reader",
+      "passed": true
+    },
+    {
+      "name": "complete independently certified trial 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "certified result and terminal unchanged 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "all raw cohort metrics certified 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "seven complete windows 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "complete independently certified trial 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "certified result and terminal unchanged 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "all raw cohort metrics certified 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "seven complete windows 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "complete independently certified trial 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "certified result and terminal unchanged 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "all raw cohort metrics certified 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "seven complete windows 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "complete independently certified trial 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "certified result and terminal unchanged 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "all raw cohort metrics certified 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "seven complete windows 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned graph ID vector",
+      "passed": true
+    },
+    {
+      "name": "phase chunk 0 metadata pinned",
+      "passed": true
+    },
+    {
+      "name": "phase chunk 0 payload pinned",
+      "passed": true
+    }
+  ],
+  "check_count": 21,
+  "input_receipts": {
+    "validation/inhibitory-recurrent-panel-plan.json": {
+      "path": "validation/inhibitory-recurrent-panel-plan.json",
+      "bytes": 33875,
+      "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+    },
+    "scripts/review_inhibitory_recurrent_panel_active.py": {
+      "path": "scripts/review_inhibitory_recurrent_panel_active.py",
+      "bytes": 16573,
+      "sha256": "2329e31a90bfaae48372a36ce3ccd03146bdec785dff9c511737c10bead81226"
+    },
+    "validation/inhibitory-recurrent-panel-15-C1-seed11-no_input-active-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-15-C1-seed11-no_input-active-review.json",
+      "bytes": 5100,
+      "sha256": "12e09a09f16749b74f6f65181b07d3634e2b4fc518ded0bb12fa6f9361a5a456"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/15-C1-seed11-no_input/terminal.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/15-C1-seed11-no_input/terminal.json",
+      "bytes": 672,
+      "sha256": "1b4e5b4bea8dd67c7176b48b6ff32d2bccd7f6c5490fbff73793783f0bc1ea3a"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/15-C1-seed11-no_input/result.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/15-C1-seed11-no_input/result.json",
+      "bytes": 465811,
+      "sha256": "9acd6f6aa0fe66c80e62515f1f33c27e79d20100e04e131ba98295e691d589a2"
+    },
+    "validation/inhibitory-recurrent-panel-18-C1-seed12-no_input-active-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-18-C1-seed12-no_input-active-review.json",
+      "bytes": 5102,
+      "sha256": "0d62d1f169c2cf9567b179bea298c368e1995c3a9a576e925b11b22fc0ff3b1c"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/18-C1-seed12-no_input/terminal.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/18-C1-seed12-no_input/terminal.json",
+      "bytes": 673,
+      "sha256": "4942b16548e287d6233e29156e614c5632094d293b1698ce3e9ccab2ace972aa"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/18-C1-seed12-no_input/result.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/18-C1-seed12-no_input/result.json",
+      "bytes": 465813,
+      "sha256": "fd08f58734d388df933677fd3cabece1606cf54d54639eace885fd06c35323d1"
+    },
+    "validation/inhibitory-recurrent-panel-21-C1-seed13-no_input-active-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-21-C1-seed13-no_input-active-review.json",
+      "bytes": 5101,
+      "sha256": "d19a82039d6575d016ecf64773d42bc32aad6bc48d7e2e591ec77c1f6c0b20e2"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/21-C1-seed13-no_input/terminal.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/21-C1-seed13-no_input/terminal.json",
+      "bytes": 671,
+      "sha256": "a0541db84556cee093843864642233f7bcb6be614d1104400c5ded191b161478"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/21-C1-seed13-no_input/result.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/21-C1-seed13-no_input/result.json",
+      "bytes": 465814,
+      "sha256": "3ea50ce8acf0682e74ff6e124148f312b2af1df37e480382092a59d36c702516"
+    },
+    "validation/inhibitory-recurrent-panel-24-C1-seed11-constant_baseline-active-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-24-C1-seed11-constant_baseline-active-review.json",
+      "bytes": 5152,
+      "sha256": "62b11c81bd3064e10e833cec92f7807381a5b524c9a50ac5bd29d1f0a804d0fc"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/terminal.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "6fb027bb4483512d325e808ffc79370d03533edf3993c9c46c583490944a0d3e"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/result.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/result.json",
+      "bytes": 485020,
+      "sha256": "61286979cf06b1563663b6e5aeed8a471f6daf5f2175dfdae49024551b1c9809"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/chunk-0000.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/chunk-0000.json",
+      "bytes": 36949,
+      "sha256": "0b141ed91888eae03f6b3da4d8321fd214c691c8ea8fa1a82991281420765642"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/chunk-0000.npz": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/24-C1-seed11-constant_baseline/chunk-0000.npz",
+      "bytes": 6825,
+      "sha256": "cf60a8367aa1841fb679948548a5f01d21941cdf3643397a90da213d33245775"
+    }
+  }
+}

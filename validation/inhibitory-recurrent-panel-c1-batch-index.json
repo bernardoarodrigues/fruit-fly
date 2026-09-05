@@ -1,0 +1,719 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T11:11:16.626731+00:00",
+  "passed": true,
+  "requested_missing_ordinals": [
+    27,
+    30,
+    33,
+    36,
+    39,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57
+  ],
+  "executed_ordinals": [
+    27,
+    30,
+    33,
+    36,
+    39,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57
+  ],
+  "reused_ordinals": [
+    15,
+    18,
+    21,
+    24
+  ],
+  "reviews": [
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 11,
+        "condition": "no_input",
+        "ordinal": 15,
+        "name": "15-C1-seed11-no_input"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-15-C1-seed11-no_input-active-review.json",
+        "bytes": 5100,
+        "sha256": "12e09a09f16749b74f6f65181b07d3634e2b4fc518ded0bb12fa6f9361a5a456"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "1b4e5b4bea8dd67c7176b48b6ff32d2bccd7f6c5490fbff73793783f0bc1ea3a",
+      "result_sha256": "9acd6f6aa0fe66c80e62515f1f33c27e79d20100e04e131ba98295e691d589a2",
+      "statistics": {
+        "spikes": 0,
+        "candidates": 0,
+        "applied": 0,
+        "reconstructed_selected_edges": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 12,
+        "condition": "no_input",
+        "ordinal": 18,
+        "name": "18-C1-seed12-no_input"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-18-C1-seed12-no_input-active-review.json",
+        "bytes": 5102,
+        "sha256": "0d62d1f169c2cf9567b179bea298c368e1995c3a9a576e925b11b22fc0ff3b1c"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "4942b16548e287d6233e29156e614c5632094d293b1698ce3e9ccab2ace972aa",
+      "result_sha256": "fd08f58734d388df933677fd3cabece1606cf54d54639eace885fd06c35323d1",
+      "statistics": {
+        "spikes": 0,
+        "candidates": 0,
+        "applied": 0,
+        "reconstructed_selected_edges": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 13,
+        "condition": "no_input",
+        "ordinal": 21,
+        "name": "21-C1-seed13-no_input"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-21-C1-seed13-no_input-active-review.json",
+        "bytes": 5101,
+        "sha256": "d19a82039d6575d016ecf64773d42bc32aad6bc48d7e2e591ec77c1f6c0b20e2"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "a0541db84556cee093843864642233f7bcb6be614d1104400c5ded191b161478",
+      "result_sha256": "3ea50ce8acf0682e74ff6e124148f312b2af1df37e480382092a59d36c702516",
+      "statistics": {
+        "spikes": 0,
+        "candidates": 0,
+        "applied": 0,
+        "reconstructed_selected_edges": 0,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 24,
+        "name": "24-C1-seed11-constant_baseline"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-24-C1-seed11-constant_baseline-active-review.json",
+        "bytes": 5152,
+        "sha256": "62b11c81bd3064e10e833cec92f7807381a5b524c9a50ac5bd29d1f0a804d0fc"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "6fb027bb4483512d325e808ffc79370d03533edf3993c9c46c583490944a0d3e",
+      "result_sha256": "61286979cf06b1563663b6e5aeed8a471f6daf5f2175dfdae49024551b1c9809",
+      "statistics": {
+        "spikes": 7463962,
+        "candidates": 618,
+        "applied": 617,
+        "reconstructed_selected_edges": 705929,
+        "off_nonsource_counts": [
+          1268741,
+          1265988,
+          1266733
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 27,
+        "name": "27-C1-seed12-constant_baseline"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-27-C1-seed12-constant_baseline-active-review.json",
+        "bytes": 5152,
+        "sha256": "8169c57d8de840e5c22affe613e315257983c81cad0ef206ac92dbf8f3304091"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "3aaa6eede5611324c09cad11595ebb237b549563503147e5a0bff29039629cea",
+      "result_sha256": "04e83030e1e108f996f3ceba98aecd7b7fb34181405d0f03b6d6d8f96b70edc4",
+      "statistics": {
+        "spikes": 7458635,
+        "candidates": 623,
+        "applied": 623,
+        "reconstructed_selected_edges": 703826,
+        "off_nonsource_counts": [
+          1270592,
+          1268444,
+          1267036
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 30,
+        "name": "30-C1-seed13-constant_baseline"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-30-C1-seed13-constant_baseline-active-review.json",
+        "bytes": 5152,
+        "sha256": "cb4fc16c61f230ac5f3387fa13064668565cf41a08a9e8417fe11d7a51453b46"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "085a412639795349c9da5b0d75e28dc14c113224cde147873b96ad73ccebb8be",
+      "result_sha256": "f6d20b0757a04e4505335963bfab9903f0856fbc9027c36ffb21c0ce15e619e7",
+      "statistics": {
+        "spikes": 7271443,
+        "candidates": 583,
+        "applied": 582,
+        "reconstructed_selected_edges": 686591,
+        "off_nonsource_counts": [
+          1264985,
+          1266307,
+          1264707
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 33,
+        "name": "33-C1-seed11-ethyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-33-C1-seed11-ethyl_acetate-active-review.json",
+        "bytes": 5147,
+        "sha256": "4e02ec3c154ef64227ff822ac587ab3da96501fc3ab909676c3a47a3d8b2640e"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "53e050147e3d8e03dbcea9cadad7f7041dbec10decd71daa86fe43ad10ce90b8",
+      "result_sha256": "0a107119179e12ae784758c7e1473e2db7d12538b8ee8af0bcdec6b72af63570",
+      "statistics": {
+        "spikes": 7471743,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 718198,
+        "off_nonsource_counts": [
+          1270696,
+          1265598,
+          1265398
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 36,
+        "name": "36-C1-seed12-ethyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-36-C1-seed12-ethyl_acetate-active-review.json",
+        "bytes": 5146,
+        "sha256": "4b711f777cdd10c97bf0153e65dd96d6891afddca186569dbb3ac312c50984e8"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "7c80f790a978d71c8b35cbef09aa4d8297a1561ac9bd657928bcec5330d9bf6d",
+      "result_sha256": "a1f12ffac6fe83994fe7d8e8228424570b5db5f3ed1b8ef0ae63f43ac9ed82f7",
+      "statistics": {
+        "spikes": 7463661,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 715797,
+        "off_nonsource_counts": [
+          1265943,
+          1269002,
+          1266606
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 39,
+        "name": "39-C1-seed13-ethyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-39-C1-seed13-ethyl_acetate-active-review.json",
+        "bytes": 5146,
+        "sha256": "a97c7d6db3629a128071d1540e4d173d28fd84dd3d53363c41aa05160f59d158"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "3ad85973678b7e25bf44c15cf2a8a68c0322daab824da5767e340c86e72f7d2c",
+      "result_sha256": "ae06096175dafb8b1411594f99fb7158f7df359139e6fb6937d0bd8bd6009e63",
+      "statistics": {
+        "spikes": 7284312,
+        "candidates": 3136,
+        "applied": 3087,
+        "reconstructed_selected_edges": 700522,
+        "off_nonsource_counts": [
+          1267106,
+          1266024,
+          1266786
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 11,
+        "condition": "isoamyl_acetate",
+        "ordinal": 42,
+        "name": "42-C1-seed11-isoamyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-42-C1-seed11-isoamyl_acetate-active-review.json",
+        "bytes": 5150,
+        "sha256": "6764bf0b77cf4b305bfae64f7acb502dc9d62168bc3497e667fb46a9afc94ab9"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "86a1daa511d37eaf6c37228b5c9731629857d5505de4a2229789d58a80803e03",
+      "result_sha256": "794364c5a797f8b9e07b96a6632236f7fed0271d6ff3f9cc464bfea0bc0f6b07",
+      "statistics": {
+        "spikes": 7467776,
+        "candidates": 1485,
+        "applied": 1478,
+        "reconstructed_selected_edges": 710148,
+        "off_nonsource_counts": [
+          1265067,
+          1268518,
+          1267357
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 12,
+        "condition": "isoamyl_acetate",
+        "ordinal": 45,
+        "name": "45-C1-seed12-isoamyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-45-C1-seed12-isoamyl_acetate-active-review.json",
+        "bytes": 5150,
+        "sha256": "5f8b648c5de185602237efc72f1b48ce0460bfc9c79a00db43d12d7f4db74cf8"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "1dc6ecb99ece7a70c23f350ffa1d5c387adb0043f6931ce07614a3e37c6c3f56",
+      "result_sha256": "ae5acc6a7633503a3844e424f67a0bb31b6884eebcd99d0bc530e27a3568adc9",
+      "statistics": {
+        "spikes": 7461635,
+        "candidates": 1446,
+        "applied": 1442,
+        "reconstructed_selected_edges": 708544,
+        "off_nonsource_counts": [
+          1270959,
+          1267487,
+          1266962
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 13,
+        "condition": "isoamyl_acetate",
+        "ordinal": 48,
+        "name": "48-C1-seed13-isoamyl_acetate"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-48-C1-seed13-isoamyl_acetate-active-review.json",
+        "bytes": 5150,
+        "sha256": "40a6c024b17a12bfabe94fa891fb4c540d20feac9460c412df5c164578b8596b"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "c200587ee8ffb2d554f1b4fe56897a38d37ed80e89bbdb9e64f780ad31617f3c",
+      "result_sha256": "9b48d6ecfec467c4c78947a6aefdf8a3ac0f8856b78b9e8c0f8932f318111f1b",
+      "statistics": {
+        "spikes": 7285262,
+        "candidates": 1421,
+        "applied": 1416,
+        "reconstructed_selected_edges": 691479,
+        "off_nonsource_counts": [
+          1267424,
+          1266968,
+          1268099
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 11,
+        "condition": "ethyl_acetate_source_outputs_blocked",
+        "ordinal": 51,
+        "name": "51-C1-seed11-ethyl_acetate_source_outputs_blocked"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-51-C1-seed11-ethyl_acetate_source_outputs_blocked-active-review.json",
+        "bytes": 5169,
+        "sha256": "c7078ff9c9c110d230fa29f4c396dc4d9a4f6e82310ed71403e02d86a18a94d5"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "ae49e24e010bf2e2b411880903528e4cee3ac302af3a4f2163086793d5a2caac",
+      "result_sha256": "34bfb149518f0a8d5d048a2816c6a4ba69a17c562ddc600bdb4ff022d6ce4e69",
+      "statistics": {
+        "spikes": 3085,
+        "candidates": 3123,
+        "applied": 3085,
+        "reconstructed_selected_edges": 10945,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 12,
+        "condition": "ethyl_acetate_source_outputs_blocked",
+        "ordinal": 54,
+        "name": "54-C1-seed12-ethyl_acetate_source_outputs_blocked"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-54-C1-seed12-ethyl_acetate_source_outputs_blocked-active-review.json",
+        "bytes": 5170,
+        "sha256": "2c49022f4031ebbd59bb4525745b76ef7b33554b37a58899b4a645e236dccf63"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "86cc12b7ca0a569f84ff68acc450654ca0bad2436e1d6234ba5c78342b6997ff",
+      "result_sha256": "397ec97dbe674218d7c059f214cb7201486493542fedfa4614304fb1e3e643f5",
+      "statistics": {
+        "spikes": 3026,
+        "candidates": 3064,
+        "applied": 3026,
+        "reconstructed_selected_edges": 10336,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          1,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "spec": {
+        "arm": "C1",
+        "seed": 13,
+        "condition": "ethyl_acetate_source_outputs_blocked",
+        "ordinal": 57,
+        "name": "57-C1-seed13-ethyl_acetate_source_outputs_blocked"
+      },
+      "receipt": {
+        "path": "validation/inhibitory-recurrent-panel-57-C1-seed13-ethyl_acetate_source_outputs_blocked-active-review.json",
+        "bytes": 5171,
+        "sha256": "5a9188067eb5af19eb19dfab55973817c2edd20a837ae286c70df9feeb5a2d35"
+      },
+      "passed": true,
+      "check_count": 37624,
+      "terminal_sha256": "d53f7fc0fad45d12ff51aaa5927b9459d045f2d0bea2843aa656f88a036a125c",
+      "result_sha256": "77ef6551b9645232b230540b502861d5811655183826d5ced41b28fe7256e988",
+      "statistics": {
+        "spikes": 3088,
+        "candidates": 3136,
+        "applied": 3088,
+        "reconstructed_selected_edges": 11032,
+        "off_nonsource_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_source_counts": [
+          0,
+          0,
+          0
+        ],
+        "forward_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "scope": "Sequential frozen independent C1 saved-data reader only, after authoritative completion; no producer or neural execution.",
+  "limits": [
+    "Selected48 state transitions and ordered selected edges are reconstructed, not every intermediate global voltage or global accepted/unavailable edge disposition.",
+    "Passing numerical/archive checks is not physiological accuracy, long-term stability or promotion."
+  ],
+  "plan": {
+    "path": "validation/inhibitory-recurrent-panel-plan.json",
+    "bytes": 33875,
+    "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+  },
+  "reader": {
+    "path": "scripts/review_inhibitory_recurrent_panel_active.py",
+    "bytes": 16573,
+    "sha256": "2329e31a90bfaae48372a36ce3ccd03146bdec785dff9c511737c10bead81226"
+  },
+  "script": {
+    "path": "scripts/review_inhibitory_recurrent_c1_batch.py",
+    "bytes": 5906,
+    "sha256": "2b79b7bcf496478a1271fdd53c0042af23fd3901ec960785a58f9ac57ac5cab0"
+  },
+  "parent_terminal": {
+    "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+    "bytes": 674,
+    "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+  },
+  "preserved_optional_summary_failure": {
+    "path": "validation/inhibitory-recurrent-panel-c1-first-stimulus-summary.json",
+    "bytes": 8686,
+    "sha256": "7f5aea66fec2237923b3d54c43f3eb30818b8ee708899f214001cb20039efc01"
+  },
+  "reviewed_C1_trials": 15,
+  "component_checks": 564360,
+  "preexisting_receipts_unchanged": true,
+  "total_archived_spikes": 66637628,
+  "finished_utc": "2026-09-05T11:12:22.551903+00:00"
+}

@@ -1,0 +1,1589 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T11:28:50.365631+00:00",
+  "passed": true,
+  "scope": "Report number/interpretation and corrected figure review against frozen combined evidence and saved references; no model execution, producer import, fitting or source acquisition.",
+  "interpretation_review": [
+    "The two within-handling inhibitory contrasts and their interaction support conditional model attribution; three handling mechanisms remain bundled.",
+    "Persistence is restricted to the observed 1.5-second off interval; neither indefinite stability nor uncontrolled growth is established.",
+    "Three numerical seeds are not biological replicates; population ranking and rare target responses remain seed dependent.",
+    "Engineering reversal and at-rest normalization do not supply measured inhibitory pA/nS or receptor calibration; the earlier 5 ms test concerns a conditional displayed-summary mapping.",
+    "The finite-window 456 Hz rate is compatible with 22-tick spacing and does not imply a refractory violation."
+  ],
+  "limits": [
+    "This review checks the report against retained evidence and independently reduces saved scalar references; it does not reconstruct unsaved global trajectories or rerun integrators.",
+    "Automation pause state, Git publication history and broader project completion are operational statements outside this numerical/scientific review."
+  ],
+  "reviewed_reference_rows": 75342,
+  "independent_saved_reference_maxima": {
+    "H0": {
+      "production_quad": 9.947598300641403e-14,
+      "ode_quad": 1.6129320101754274e-12
+    },
+    "H1": {
+      "production_quad": 4.263256414560601e-14,
+      "ode_quad": 2.0818902157770935e-12
+    }
+  },
+  "visual_qa": {
+    "png": {
+      "path": "validation/inhibitory-recurrent-panel-combined-figure-v3.png",
+      "bytes": 357535,
+      "sha256": "51dafb184d8a8096d46eea3ca2983ed2491c460a12b300c49704ecd2569dc718"
+    },
+    "passed": true,
+    "method": "Assistant inspected the actual PNG using view_image; no clipped text or artificial closing drop at 3 s in the corrected figure."
+  },
+  "checks": [
+    {
+      "name": "frozen combined evidence",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 2871695",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 554896",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 12564",
+      "passed": true
+    },
+    {
+      "name": "reported exact count 157832582",
+      "passed": true
+    },
+    {
+      "name": "sixty reviews and 36000 reduced chunk pairs",
+      "passed": true
+    },
+    {
+      "name": "exact 4x5x3 coverage",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table C0",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range C0",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table C0",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero C0",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive C0",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 00-C0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 00-C0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 01-C0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 01-C0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 02-C0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 02-C0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 03-C0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 03-C0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 04-C0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 04-C0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 05-C0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 05-C0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 06-C0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 06-C0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 07-C0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 07-C0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 08-C0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 08-C0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 09-C0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 09-C0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 10-C0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 10-C0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 11-C0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 11-C0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 12-C0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 12-C0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 13-C0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 13-C0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 14-C0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 14-C0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table C1",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range C1",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table C1",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero C1",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive C1",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 15-C1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 18-C1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 21-C1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 24-C1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 27-C1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 27-C1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 30-C1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 30-C1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 33-C1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 33-C1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 36-C1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 36-C1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 39-C1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 39-C1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 42-C1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 42-C1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 45-C1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 45-C1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 48-C1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 48-C1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 51-C1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 51-C1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 54-C1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 54-C1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 57-C1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 57-C1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table H0",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range H0",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table H0",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero H0",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive H0",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "arm numerical table H1",
+      "passed": true
+    },
+    {
+      "name": "withdrawal ratio range H1",
+      "passed": true
+    },
+    {
+      "name": "first hop contrast table H1",
+      "passed": true
+    },
+    {
+      "name": "no input and blocked nonsource zero H1",
+      "passed": true
+    },
+    {
+      "name": "all driven off windows positive H1",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off inputs and source boundary counts 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "forward and escape silent 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "feeding group totals",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "rare target baseline only 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "exact rare target identities and seeds",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies C0",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies H0",
+      "passed": true
+    },
+    {
+      "name": "population EA IA sign varies H1",
+      "passed": true
+    },
+    {
+      "name": "H1 active median 434 each seed",
+      "passed": true
+    },
+    {
+      "name": "H1 all-cell p90 and maximum",
+      "passed": true
+    },
+    {
+      "name": "other active firsthop medians",
+      "passed": true
+    },
+    {
+      "name": "about 7.3 percent nonsource active",
+      "passed": true
+    },
+    {
+      "name": "finite window refractory count arithmetic",
+      "passed": true
+    },
+    {
+      "name": "factor table H0_minus_C0",
+      "passed": true
+    },
+    {
+      "name": "factor table H1_minus_C1",
+      "passed": true
+    },
+    {
+      "name": "factor table C1_minus_C0",
+      "passed": true
+    },
+    {
+      "name": "factor table H1_minus_H0",
+      "passed": true
+    },
+    {
+      "name": "factor table interaction",
+      "passed": true
+    },
+    {
+      "name": "handling contrasts larger for stated endpoint",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 16-H0-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 17-H1-seed11-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 19-H0-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 20-H1-seed12-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 22-H0-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 23-H1-seed13-no_input",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 25-H0-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 26-H1-seed11-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 28-H0-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 29-H1-seed12-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 31-H0-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 32-H1-seed13-constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 34-H0-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 35-H1-seed11-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 37-H0-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 38-H1-seed12-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 40-H0-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 41-H1-seed13-ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 43-H0-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 44-H1-seed11-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 46-H0-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 47-H1-seed12-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 49-H0-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 50-H1-seed13-isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 52-H0-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 53-H1-seed11-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 55-H0-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 56-H1-seed12-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 58-H0-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported H bound and finiteness 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned H reader 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "pinned saved references 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reference row counts and margin 59-H1-seed13-ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "reported total reference rows",
+      "passed": true
+    },
+    {
+      "name": "reported reference error H0",
+      "passed": true
+    },
+    {
+      "name": "reported reference error H1",
+      "passed": true
+    },
+    {
+      "name": "reported ODE discrepancy and tolerance",
+      "passed": true
+    },
+    {
+      "name": "positive prethreshold overshoot C1",
+      "passed": true
+    },
+    {
+      "name": "positive prethreshold overshoot H1",
+      "passed": true
+    },
+    {
+      "name": "report image equals visually inspected file",
+      "passed": true
+    },
+    {
+      "name": "explicit physiology and promotion limits",
+      "passed": true
+    },
+    {
+      "name": "fixed source analysis and report unchanged",
+      "passed": true
+    }
+  ],
+  "check_count": 298,
+  "input_receipts": {
+    "validation/inhibitory-recurrent-panel-combined-analysis.json": {
+      "path": "validation/inhibitory-recurrent-panel-combined-analysis.json",
+      "bytes": 1728082,
+      "sha256": "bb42919231572491e2adbd4adfa67f53c1ce0b87bdd5a8f229628b0797488d29"
+    },
+    "docs/inhibitory-recurrent-panel-results.md": {
+      "path": "docs/inhibitory-recurrent-panel-results.md",
+      "bytes": 13692,
+      "sha256": "b14d6ff35d8499782183d687d114c707665667d8ce97a97e5e01d70e6daf3407"
+    },
+    "validation/inhibitory-recurrent-panel-16-H0-seed11-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-16-H0-seed11-no_input-H-review.json",
+      "bytes": 9363,
+      "sha256": "e6f5c1df720d5494f4c5901f27fc25d7d834200dc6de9734b6b2e83b3e04ee39"
+    },
+    "validation/inhibitory-recurrent-panel-16-H0-seed11-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-16-H0-seed11-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-17-H1-seed11-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-17-H1-seed11-no_input-H-review.json",
+      "bytes": 9363,
+      "sha256": "de6c99d36e53743ff674a32b92ec3698a1158a5c46036b2a97e4d5b3745ae772"
+    },
+    "validation/inhibitory-recurrent-panel-17-H1-seed11-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-17-H1-seed11-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-19-H0-seed12-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-19-H0-seed12-no_input-H-review.json",
+      "bytes": 9364,
+      "sha256": "220a53b82439cef9c5588b80028a23bd9a2bcce9908337bf02bb716af66a54c5"
+    },
+    "validation/inhibitory-recurrent-panel-19-H0-seed12-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-19-H0-seed12-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-20-H1-seed12-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-20-H1-seed12-no_input-H-review.json",
+      "bytes": 9364,
+      "sha256": "187e12ae93ecf4eda26567626985bc17e8aad346d6d7bea6ddbe0cd5ac47b83c"
+    },
+    "validation/inhibitory-recurrent-panel-20-H1-seed12-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-20-H1-seed12-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-22-H0-seed13-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-22-H0-seed13-no_input-H-review.json",
+      "bytes": 9364,
+      "sha256": "ceac295cbf587c18e487a735bdefed596cf1f3252f8bce841e04b506a3a86530"
+    },
+    "validation/inhibitory-recurrent-panel-22-H0-seed13-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-22-H0-seed13-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-23-H1-seed13-no_input-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-23-H1-seed13-no_input-H-review.json",
+      "bytes": 9363,
+      "sha256": "f7afd57db9ba6628c802fb375e011ec849d629011e8fe5880f06c68e0872ea65"
+    },
+    "validation/inhibitory-recurrent-panel-23-H1-seed13-no_input-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-23-H1-seed13-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review.json",
+      "bytes": 1159262,
+      "sha256": "ed48c76e372c3a06d5b3fe340561b7a0e4e7d871f64edb1bfef0cd5b241fad3f"
+    },
+    "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-25-H0-seed11-constant_baseline-H-review-references.npz",
+      "bytes": 195132,
+      "sha256": "05b7c11de06914c6ea93825ff2a0d660a02731f728ba7af3e4f8acdef64825f8"
+    },
+    "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review.json",
+      "bytes": 1162158,
+      "sha256": "cb5225ac6c981d21b7b5bcfecbb740082b19534f8a30bfbd265307f613060786"
+    },
+    "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-26-H1-seed11-constant_baseline-H-review-references.npz",
+      "bytes": 197096,
+      "sha256": "45d9574912e8bcbf7f61e44ac41d1ab5d82152135bb12b5cd1c327cf5bb1e3ec"
+    },
+    "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review.json",
+      "bytes": 1161341,
+      "sha256": "85b4138100f2ff62f7c1c8c9adecb7bf4a88db6adb77b66f1a4a228c97c11df5"
+    },
+    "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-28-H0-seed12-constant_baseline-H-review-references.npz",
+      "bytes": 194928,
+      "sha256": "dd139e94426ce4b99248a377c693ba5973841e72f47fc719beeb3d21dfaa5c32"
+    },
+    "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review.json",
+      "bytes": 1160673,
+      "sha256": "e8c5dc92fdb28ea6f0c78df642cdeae7963ee3428924921be1996f711e7167f8"
+    },
+    "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-29-H1-seed12-constant_baseline-H-review-references.npz",
+      "bytes": 196005,
+      "sha256": "258eaae2223e491b104008953a77e96b68963193aa7035b1fecfda734e446e48"
+    },
+    "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review.json",
+      "bytes": 1157351,
+      "sha256": "22b9dd2f0fb231da725cbc40384335a2ff821d0778a6f496f1250fb06dcf4dfb"
+    },
+    "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-31-H0-seed13-constant_baseline-H-review-references.npz",
+      "bytes": 194474,
+      "sha256": "2767fef46fced130aa75f6d2a145cc2af4d5517ec781cd56f819f150af000abd"
+    },
+    "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review.json",
+      "bytes": 1164744,
+      "sha256": "c19f0483f93cf7779523154d212b301e9403880ab6f3a19a7753412734cf51b3"
+    },
+    "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-32-H1-seed13-constant_baseline-H-review-references.npz",
+      "bytes": 198163,
+      "sha256": "31100a9e3798f5d94d83da6083d40b45603dd6dd0e7e496c418d50c42c25fdbe"
+    },
+    "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review.json",
+      "bytes": 1162177,
+      "sha256": "4ab508d32f0784b2d1a88d687a65c2096858fa217cc96f81313ab34c2df8f444"
+    },
+    "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-34-H0-seed11-ethyl_acetate-H-review-references.npz",
+      "bytes": 195682,
+      "sha256": "9cd247555e3f4e979319ed9c724ba74bdb87fa26b7366a9c06d42194f734901c"
+    },
+    "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review.json",
+      "bytes": 1162687,
+      "sha256": "bd65c0a7b53831a1991ac2d6993b534b3f951ae86246fe4115385fde85f7f11d"
+    },
+    "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-35-H1-seed11-ethyl_acetate-H-review-references.npz",
+      "bytes": 197134,
+      "sha256": "bbf643c184ec8b46a0c7c082ae19067fbc66ba2b74aa4356bb43a58d0256021d"
+    },
+    "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review.json",
+      "bytes": 1162922,
+      "sha256": "4ff0857c493043af96d1013591cf3e8aae9187c35da87e01b81457bc85758567"
+    },
+    "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-37-H0-seed12-ethyl_acetate-H-review-references.npz",
+      "bytes": 195124,
+      "sha256": "e0db4219074c8c4d9c3839283caba470622c22c1dfe4bb3c4f58713a1e5df0c2"
+    },
+    "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review.json",
+      "bytes": 1160828,
+      "sha256": "d9964f6e4aba9785abf6ae9a5ad6ea0f6b501f2239899363c6bce0b9cb422203"
+    },
+    "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-38-H1-seed12-ethyl_acetate-H-review-references.npz",
+      "bytes": 196181,
+      "sha256": "59cb3904a6827acc571d9630c9e602e4cbd4b46f8c6c59a806e4a773c536a672"
+    },
+    "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review.json",
+      "bytes": 1158650,
+      "sha256": "a83b97634ae83eff011f107e3baa38ce87067a4f62a7e9b2484c15760f730361"
+    },
+    "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-40-H0-seed13-ethyl_acetate-H-review-references.npz",
+      "bytes": 195058,
+      "sha256": "9e3918b1791d4d2aee45a3b2eec90295a1f606c0b1f556f447dc303f61d9b865"
+    },
+    "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review.json",
+      "bytes": 1165615,
+      "sha256": "773872d6c4b2b4097a348dba0475ecc2c8c1a0f46e2e62dd2ed7c0365b29a49d"
+    },
+    "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-41-H1-seed13-ethyl_acetate-H-review-references.npz",
+      "bytes": 198483,
+      "sha256": "03fa274f455e819e99eb287392cb3c9e2d318a29a643da659ab353478b91b08b"
+    },
+    "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review.json",
+      "bytes": 1161390,
+      "sha256": "6efda9857bdc3f17bdbdf3505a749d639c0c17930dde03143daa8c5cd7a5e700"
+    },
+    "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-43-H0-seed11-isoamyl_acetate-H-review-references.npz",
+      "bytes": 195469,
+      "sha256": "3eec55b5879f8ded64bf6b7365ea4cf70227ffc811dc703783c12a24c5ce06c8"
+    },
+    "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review.json",
+      "bytes": 1161800,
+      "sha256": "272f4e2d7743ddcb71e0f144bac2aee1cc7f32220acd5ea3f13f8dd64c6d8676"
+    },
+    "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-44-H1-seed11-isoamyl_acetate-H-review-references.npz",
+      "bytes": 196902,
+      "sha256": "5c4c32101ad0a51c6ef86201e44e656afc163a97b6167240cdd38324d00742f5"
+    },
+    "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review.json",
+      "bytes": 1162718,
+      "sha256": "24dcb57e861b1e0fdff9052c667f7584e9e3ff68c246b8546ab8c134e32445fa"
+    },
+    "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-46-H0-seed12-isoamyl_acetate-H-review-references.npz",
+      "bytes": 195086,
+      "sha256": "7ce29d7ae83fc5fc5bcfb5be14dee3743a1a1618a61ae78bab0620cfebd627bd"
+    },
+    "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review.json",
+      "bytes": 1160935,
+      "sha256": "ab7ea7cc3d770130be32fe767f654a4f53a9a7b5330130901a8eee7d9c737db3"
+    },
+    "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-47-H1-seed12-isoamyl_acetate-H-review-references.npz",
+      "bytes": 196333,
+      "sha256": "d6d4814387e62e14d4dd84f790b5435f8e8e69b301f076b1713a071638eaa019"
+    },
+    "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review.json",
+      "bytes": 1157094,
+      "sha256": "75f74f89498a687da40decfd3b56e53ec59143a6a8550d4e048785241f45ee09"
+    },
+    "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-49-H0-seed13-isoamyl_acetate-H-review-references.npz",
+      "bytes": 194646,
+      "sha256": "134f8a3c53ad5ce3c9670870a42c1ddad62850f4769c5172ba85bb6991bf2215"
+    },
+    "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review.json",
+      "bytes": 1164470,
+      "sha256": "5c387d0a9ebe2cea1f624a194a016f520abaf251b4cd2a7572796659848e73eb"
+    },
+    "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-50-H1-seed13-isoamyl_acetate-H-review-references.npz",
+      "bytes": 197719,
+      "sha256": "8c136e05f6c9d9d7b91afd6d40391797aeb6f34243f3f47074c48b3d81747011"
+    },
+    "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9460,
+      "sha256": "b863a118721b6f6daebe0dc89d655f70627ff5795c9b5cc73e44b274dfe4ffca"
+    },
+    "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-52-H0-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9461,
+      "sha256": "c2d8b5d770d983ee6acf637dcdf8b6320f9d1f88e1166a76dc3bfd51cbe0e17d"
+    },
+    "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-53-H1-seed11-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9461,
+      "sha256": "c8405954be78b27b27509c943286802dc64fee7b441871639257b0df136bd287"
+    },
+    "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-55-H0-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9461,
+      "sha256": "4a0db733f05ec2a56fd2d3f103d77140ed9994cfcec9843186d512a41c41ca10"
+    },
+    "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-56-H1-seed12-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9461,
+      "sha256": "1e9de9bfdcd276c2a3c18598ac36d004a19107156f14f0010b9092cc7982373d"
+    },
+    "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-58-H0-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review.json",
+      "bytes": 9459,
+      "sha256": "d059e04f8d7b550f3b12a014bb28962da748e1e20a44b39e2069597dc9b18809"
+    },
+    "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz": {
+      "path": "validation/inhibitory-recurrent-panel-59-H1-seed13-ethyl_acetate_source_outputs_blocked-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    },
+    "validation/inhibitory-recurrent-panel-combined-figure-v3.png": {
+      "path": "validation/inhibitory-recurrent-panel-combined-figure-v3.png",
+      "bytes": 357535,
+      "sha256": "51dafb184d8a8096d46eea3ca2983ed2491c460a12b300c49704ecd2569dc718"
+    },
+    "docs/inhibitory-factorial-design-review.md": {
+      "path": "docs/inhibitory-factorial-design-review.md",
+      "bytes": 10855,
+      "sha256": "f494a728841dd0f53540f98d777b6fe8b12fa0e53f8d7e9ff6da4536f527664f"
+    },
+    "docs/ln-inhibitory-linear-filter-results.md": {
+      "path": "docs/ln-inhibitory-linear-filter-results.md",
+      "bytes": 6953,
+      "sha256": "560b7bc329d535e1313fffbbe216eae6861833ced5af6887cfdf46beee26d740"
+    },
+    "docs/inhibitory-promotion-gates.md": {
+      "path": "docs/inhibitory-promotion-gates.md",
+      "bytes": 12695,
+      "sha256": "be6d056a820f11093381ede4d2fcf0960a1ebb703105b4174176ffa026e8234b"
+    },
+    "validation/inhibitory-recurrent-panel-results-review-visual-v2.json": {
+      "path": "validation/inhibitory-recurrent-panel-results-review-visual-v2.json",
+      "bytes": 1009,
+      "sha256": "16c8c21e14068e56dcbdc4a270886da0b19455f92fec8fe32f14b960b4fb0efe"
+    },
+    "validation/inhibitory-recurrent-panel-results-independent-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-results-independent-review.json",
+      "bytes": 20727,
+      "sha256": "760f11605ba8f4751ae7bbe0f077ba25b0984e96f48cc03c24fafa4c9bce2366"
+    },
+    "validation/inhibitory-recurrent-panel-results-review-amendment.json": {
+      "path": "validation/inhibitory-recurrent-panel-results-review-amendment.json",
+      "bytes": 1112,
+      "sha256": "c3787d94728239496c5b0fa819dccbf8651d748b87ecc0ec04713db8ca1bf8af"
+    },
+    "scripts/review_inhibitory_recurrent_panel_report_v2.py": {
+      "path": "scripts/review_inhibitory_recurrent_panel_report_v2.py",
+      "bytes": 13478,
+      "sha256": "638bd49c3fa2b3a65f2f532cf67d8f9fc05f12499fa1dbaa238414f79d3ab438"
+    }
+  },
+  "script": {
+    "path": "scripts/review_inhibitory_recurrent_panel_report_v2.py",
+    "bytes": 13478,
+    "sha256": "638bd49c3fa2b3a65f2f532cf67d8f9fc05f12499fa1dbaa238414f79d3ab438"
+  }
+}

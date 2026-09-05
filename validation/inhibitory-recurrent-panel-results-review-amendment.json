@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "reason": "First checker exact-text matcher omitted explicit plus signs in positive factorial rows; the report values match the aggregate. New checker changes only signed display matching and receipt path/provenance. No report, aggregate, figure, source experiment or first checker/receipt edited.",
+  "first_script": {
+    "path": "scripts/review_inhibitory_recurrent_panel_report.py",
+    "bytes": 13254,
+    "sha256": "2bdce333abfa855899d6a507318920c47d9bf553adf751daf97d295904ad116d"
+  },
+  "first_receipt": {
+    "path": "validation/inhibitory-recurrent-panel-results-independent-review.json",
+    "bytes": 20727,
+    "sha256": "760f11605ba8f4751ae7bbe0f077ba25b0984e96f48cc03c24fafa4c9bce2366"
+  },
+  "corrected_script": {
+    "path": "scripts/review_inhibitory_recurrent_panel_report_v2.py",
+    "bytes": 13478,
+    "sha256": "638bd49c3fa2b3a65f2f532cf67d8f9fc05f12499fa1dbaa238414f79d3ab438"
+  },
+  "expected_report": {
+    "path": "docs/inhibitory-recurrent-panel-results.md",
+    "bytes": 13692,
+    "sha256": "b14d6ff35d8499782183d687d114c707665667d8ce97a97e5e01d70e6daf3407"
+  }
+}
