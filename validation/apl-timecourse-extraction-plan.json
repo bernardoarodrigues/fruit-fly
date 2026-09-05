@@ -1,0 +1,178 @@
+{
+  "pdf": "data/raw/apl-local-feedback/amin-2020.pdf",
+  "page_index": 7,
+  "groups": [
+    {
+      "panel": "C",
+      "stimulation": "horizontal_lobe",
+      "signal": "calcium",
+      "curve_indices": [
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "stimulus_line_index": 339
+    },
+    {
+      "panel": "C",
+      "stimulation": "horizontal_lobe",
+      "signal": "dye",
+      "curve_indices": [
+        2146,
+        2147,
+        2148,
+        2149,
+        2150,
+        2151,
+        2152,
+        2153,
+        2154,
+        2155,
+        2156,
+        2157,
+        2158
+      ],
+      "stimulus_line_index": 340
+    },
+    {
+      "panel": "D",
+      "stimulation": "vertical_lobe",
+      "signal": "calcium",
+      "curve_indices": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "stimulus_line_index": 341
+    },
+    {
+      "panel": "D",
+      "stimulation": "vertical_lobe",
+      "signal": "dye",
+      "curve_indices": [
+        2255,
+        2256,
+        2257,
+        2258,
+        2259,
+        2260,
+        2261,
+        2262,
+        2263,
+        2264,
+        2265,
+        2266,
+        2267,
+        2268
+      ],
+      "stimulus_line_index": 342
+    },
+    {
+      "panel": "E",
+      "stimulation": "calyx",
+      "signal": "calcium",
+      "curve_indices": [
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2037
+      ],
+      "stimulus_line_index": 343
+    },
+    {
+      "panel": "E",
+      "stimulation": "calyx",
+      "signal": "dye",
+      "curve_indices": [
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2048,
+        2049,
+        2050
+      ],
+      "stimulus_line_index": 344
+    }
+  ],
+  "scale_line_indices": {
+    "calcium_time": 254,
+    "dye_time": 258
+  },
+  "scale_vertical_indices": {
+    "calcium": 252,
+    "dye": 256
+  },
+  "scale_amplitudes": {
+    "calcium": 2.0,
+    "dye": 0.2
+  },
+  "time_grid": {
+    "start": -4.5,
+    "stop": 14.5,
+    "step": 0.1,
+    "decimal_rounding": 10
+  },
+  "cubic_subdivisions": 32,
+  "reference_points_per_trace": 9,
+  "coordinate_atol_pt": 0.001,
+  "source_pins": [
+    {
+      "path": "data/raw/apl-local-feedback/amin-2020.pdf",
+      "sha256": "11d2b9feca23aa0823b70e023cda2959bea37029b394635adf4be33dfd81a213"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    },
+    {
+      "path": "scripts/extract_apl_timecourses.py",
+      "sha256": "b9c749086c3794258d3d2eabc9470177ec95dae5dadb14d3d9a45524c553a45e"
+    }
+  ],
+  "caveats": [
+    "Calcium and dye 5 s bars have different physical widths: retain common-calcium-bar and literal-row-bar time axes.",
+    "Baseline is mean plotted center over common-bar -4 to -1 s; original fluorescence baseline not supplied.",
+    "0.1 s grid oversamples approximately 5 Hz published imaging; these are not independent samples.",
+    "Color rank is plot order, not an independently validated anatomical segment ID.",
+    "Stroke thickness is graphical uncertainty, not biological SEM or an instrument error model.",
+    "ATP perfusion/clearance and reporter kinetics confound intrinsic APL response timing.",
+    "No fitting, parameter selection, raw sample reconstruction or neural runtime change."
+  ]
+}

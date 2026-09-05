@@ -1,0 +1,30 @@
+{
+  "reason": "Review found floating arange values could exclude intended closed-interval endpoints from baseline and 0-12 s summaries. Round the declared decimal grid before masks; repeat this small extraction, preserving first-attempt artifacts and hashes.",
+  "initial_attempt": [
+    {
+      "original_path": "scripts/extract_apl_timecourses.py",
+      "preserved_path": "tmp/apl-timecourse-initial/extract_apl_timecourses.py",
+      "bytes": 6615,
+      "sha256": "02a249a981544b3bdd2749635bb45a9ea02ec5e109d8ad131ad27a9e04bf25cd"
+    },
+    {
+      "original_path": "validation/apl-timecourse-extraction-plan.json",
+      "preserved_path": "tmp/apl-timecourse-initial/apl-timecourse-extraction-plan.json",
+      "bytes": 3761,
+      "sha256": "ba9fb30bf3cd0af30647483ec0f00238e13685be84db67aff4fab7e7af368286"
+    },
+    {
+      "original_path": "validation/apl-timecourse-extraction-results.json",
+      "preserved_path": "tmp/apl-timecourse-initial/apl-timecourse-extraction-results.json",
+      "bytes": 1528,
+      "sha256": "27aa8d44334879a12386f92321806389f0f0907b1d39d90138953f996012b5bf"
+    },
+    {
+      "original_path": "validation/apl-timecourse-traces.json",
+      "preserved_path": "tmp/apl-timecourse-initial/apl-timecourse-traces.json",
+      "bytes": 2637917,
+      "sha256": "6edb3f88cd414be7532fe8d79da99e7745fddec2f5c3bf6668ae06e5da0cb2fe"
+    }
+  ],
+  "final_plan_sha256": "6af3ba8d416e1116ea7ace48341e263879db16f7b805880aaf05c27fa346ec0c"
+}

@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "path": "data/raw/apl-timecourse-source/apl200607.mat",
+      "url": "https://raw.githubusercontent.com/aclinlab/amin-et-al-2020/d16f97f26e605ec0591043db636b7ff8e9801e0f/apl200607.mat",
+      "bytes": 24305457,
+      "git_blob_sha1": "fc6362c9e4a9c9c48655e6d9b13d5a77ff70840c",
+      "sha256": "2370823eeb91f12f62aca1b7316f1731f70ae1c3d9e246d3334217d1a65bcf19",
+      "loaded_variables": [
+        {
+          "name": "apl",
+          "python_type": "MatlabOpaque",
+          "shape": [
+            1
+          ],
+          "fields": null,
+          "dtype_fields": [
+            "_TypeSystem",
+            "_Class",
+            "_ObjectMetadata"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/raw/apl-timecourse-source/aplmanualSkel200303.mat",
+      "url": "https://raw.githubusercontent.com/aclinlab/amin-et-al-2020/d16f97f26e605ec0591043db636b7ff8e9801e0f/aplmanualSkel200303.mat",
+      "bytes": 1198024,
+      "git_blob_sha1": "ab752547519ade5bb1ae98d52eafd7a1cbc16675",
+      "sha256": "62e0eb4289636c521db3657421e4cf789b7fae4d0f1f46bc2ef59bbf485eb983",
+      "loaded_variables": [
+        {
+          "name": "aplSkel",
+          "python_type": "MatlabOpaque",
+          "shape": [
+            1
+          ],
+          "fields": null,
+          "dtype_fields": [
+            "_TypeSystem",
+            "_Class",
+            "_ObjectMetadata"
+          ]
+        }
+      ]
+    }
+  ],
+  "executed_author_code": false,
+  "inspection_limit": "MATLAB class objects load as MatlabOpaque. Properties are not exposed by scipy loadmat; no claim that hidden contents contain no traces.",
+  "first_inspection_error": "scipy.io.whosmat: TypeError: 'NoneType' object is not iterable; loadmat succeeds with opaque objects"
+}

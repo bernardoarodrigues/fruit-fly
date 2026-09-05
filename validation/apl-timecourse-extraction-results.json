@@ -1,0 +1,34 @@
+{
+  "status": "extracted_displayed_apl_and_dye_timecourses",
+  "trace_count": 80,
+  "points_per_trace": 191,
+  "numeric_reference_sections": 720,
+  "maximum_coordinate_error_pt": 0.00010138092312672597,
+  "time_scales_points_per_second": {
+    "calcium": 2.4924000000000093,
+    "dye": 2.25
+  },
+  "amplitude_scales_points_per_dff": {
+    "calcium": 7.11749999999995,
+    "dye": 65.07000000000005
+  },
+  "dye_literal_time_multiplier": 1.1077333333333375,
+  "plan_sha256": "6af3ba8d416e1116ea7ace48341e263879db16f7b805880aaf05c27fa346ec0c",
+  "data": {
+    "path": "validation/apl-timecourse-traces.json",
+    "bytes": 2379222,
+    "sha256": "22a1a66911a2a3d263142a0ad20d82a97fa9f9d4c7a8e23a58a24bb5dae5eaba"
+  },
+  "raw_sample_count_known": false,
+  "fit_performed": false,
+  "runtime_changed": false,
+  "caveats": [
+    "Calcium and dye 5 s bars have different physical widths: retain common-calcium-bar and literal-row-bar time axes.",
+    "Baseline is mean plotted center over common-bar -4 to -1 s; original fluorescence baseline not supplied.",
+    "0.1 s grid oversamples approximately 5 Hz published imaging; these are not independent samples.",
+    "Color rank is plot order, not an independently validated anatomical segment ID.",
+    "Stroke thickness is graphical uncertainty, not biological SEM or an instrument error model.",
+    "ATP perfusion/clearance and reporter kinetics confound intrinsic APL response timing.",
+    "No fitting, parameter selection, raw sample reconstruction or neural runtime change."
+  ]
+}
