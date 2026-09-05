@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-09-05T06:27:23.789520+00:00",
+  "passed": true,
+  "plan": {
+    "path": "validation/inhibitory-recurrent-panel-plan.json",
+    "bytes": 33875,
+    "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+  },
+  "parent_admission": {
+    "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/all-c0-prefixes-passed.json",
+    "bytes": 3650,
+    "sha256": "8c865b2d52441ec96f656e9094e5c5245042c88764bce507574cdbad3158bd5f"
+  },
+  "all_c0_gates": [
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/00-C0-seed11-no_input/c0-prefix-gate.json",
+      "bytes": 746,
+      "sha256": "dd0dd980d07a82e63ccdd8f72a1e266c4402b5f1e20580fc7f884c02905f8f16"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/01-C0-seed11-constant_baseline/c0-prefix-gate.json",
+      "bytes": 775,
+      "sha256": "b5f93aa8a01ea17fb82dca786e8eea1c84b4add1fea0c1eedc3f6e1d3d317a94"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/02-C0-seed11-ethyl_acetate/c0-prefix-gate.json",
+      "bytes": 763,
+      "sha256": "91d163c57172c9d760c5122cbb409dbd6833ad51c61baea367e70f00830a7b5d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/03-C0-seed11-isoamyl_acetate/c0-prefix-gate.json",
+      "bytes": 769,
+      "sha256": "b4ee1aa0b4b52c2214ed2941bc358a516d3e94e47b7f973e5b0b09c7a2cb0201"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/04-C0-seed11-ethyl_acetate_source_outputs_blocked/c0-prefix-gate.json",
+      "bytes": 830,
+      "sha256": "bf8078223803e13efbf8140e353f28c763c56c474b34724415d9f55ec1dd6e26"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/05-C0-seed12-no_input/c0-prefix-gate.json",
+      "bytes": 746,
+      "sha256": "6277e17d027d3ce231e1aabec4cef8ebdc9a6196d5bde2216ad425c316c60690"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/06-C0-seed12-constant_baseline/c0-prefix-gate.json",
+      "bytes": 775,
+      "sha256": "c50587a71a2f57bee4a78dd89b1cce3de2cff8113a2d7b8497d4677b185f90de"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/07-C0-seed12-ethyl_acetate/c0-prefix-gate.json",
+      "bytes": 763,
+      "sha256": "d953f189c657270b6b793405052673de55668e337448bc57284f0d158d4a97a1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/08-C0-seed12-isoamyl_acetate/c0-prefix-gate.json",
+      "bytes": 769,
+      "sha256": "797845a1b43b95a009894ac534537b08405f3b4df6779e81caede19d25ccff08"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/09-C0-seed12-ethyl_acetate_source_outputs_blocked/c0-prefix-gate.json",
+      "bytes": 830,
+      "sha256": "d294a37cfb691950274a1925f012cf1d2271c03a105d3253dd03aaee467d4249"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/10-C0-seed13-no_input/c0-prefix-gate.json",
+      "bytes": 746,
+      "sha256": "897e9f6e52064281d313f250fab10b2e10c889c5473907cb76c1862d03b06227"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/11-C0-seed13-constant_baseline/c0-prefix-gate.json",
+      "bytes": 775,
+      "sha256": "aa4581f3796fdade7a7d1382eb175b42a6f94d7f082f4a4fc38b4cc8420eb205"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/12-C0-seed13-ethyl_acetate/c0-prefix-gate.json",
+      "bytes": 763,
+      "sha256": "5276af253a8b81ef1a120b2413baca2f48f7e814081303fe7852fa9860c094dc"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/13-C0-seed13-isoamyl_acetate/c0-prefix-gate.json",
+      "bytes": 769,
+      "sha256": "da42a9c56e8a1a37e8eaa0438edc1d85dfb22dd380168387630df6562b4b3879"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/14-C0-seed13-ethyl_acetate_source_outputs_blocked/c0-prefix-gate.json",
+      "bytes": 830,
+      "sha256": "a208449b9577069b5a1eafb13fca302b46a702188089a93e9f89dae083d971e4"
+    }
+  ],
+  "first_altered_trial": {
+    "arm": "C1",
+    "seed": 11,
+    "condition": "no_input",
+    "ordinal": 15,
+    "name": "15-C1-seed11-no_input"
+  },
+  "first_altered_started": {
+    "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/15-C1-seed11-no_input/started.json",
+    "bytes": 304,
+    "sha256": "70ed88c1fe490461b12bf0cf577032b4e518e0eed3b955f7a629b2f68648ba56"
+  },
+  "first_altered_utc": "2026-09-05T06:22:31.871053+00:00",
+  "last_C0_terminal_utc": "2026-09-05T06:22:30.528856+00:00",
+  "independent_C0_audit": {
+    "path": "validation/inhibitory-recurrent-panel-c0-audit-summary.json",
+    "bytes": 278072,
+    "sha256": "0942b7b1ba57a33391488aa36eb069f514e394a4295cd3b6a99b8e43f9394256"
+  },
+  "scope": "Read-only admission evidence: frozen loader verifies all15 real prefix checkpoint payloads; all C0 terminal timestamps precede the first altered trial. Independent saved-data review is linked separately and was not a parent dispatch prerequisite. No model execution."
+}

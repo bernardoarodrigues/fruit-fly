@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T06:25:49.198265+00:00",
+  "source": {
+    "path": "validation/inhibitory-recurrent-panel-c0-audit-summary.json",
+    "bytes": 278072,
+    "sha256": "0942b7b1ba57a33391488aa36eb069f514e394a4295cd3b6a99b8e43f9394256"
+  },
+  "script": {
+    "path": "scripts/plot_inhibitory_recurrent_c0.py",
+    "bytes": 9256,
+    "sha256": "474c7b9139d1749ad02f1e8416d178e6f92e6cda65b77f6e6f5ec2a085708470"
+  },
+  "outputs": [
+    {
+      "path": "validation/inhibitory-recurrent-panel-c0-figure.png",
+      "bytes": 323859,
+      "sha256": "9072b18bbea312c7c7495422d7506abd363b0479c2175345b53e37596b78d108"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-c0-figure.svg",
+      "bytes": 78663,
+      "sha256": "4804ad04d6b544111e8a1bf9433834633ddd31ceba929a69d5cb0c65a4f5d9ae"
+    }
+  ],
+  "python": "3.12.14",
+  "matplotlib": "3.11.1",
+  "rendering_only": true,
+  "data_fields": [
+    "trials[].cohorts[non_source|first_hop_non_source].mean_rates_hz",
+    "contrasts[].EA_minus_constant_pulse_hz",
+    "contrasts[].IA_minus_constant_pulse_hz",
+    "contrasts[].EA_minus_IA_pulse_hz"
+  ],
+  "display": {
+    "time_boundaries_s": [
+      0.0,
+      0.05,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "odor_interval_s": [
+      0.5,
+      1
+    ],
+    "input_off_s": 1.5,
+    "numeric_seeds": [
+      11,
+      12,
+      13
+    ],
+    "conditions_drawn": [
+      "constant_baseline",
+      "ethyl_acetate",
+      "isoamyl_acetate"
+    ],
+    "all_conditions_retained_in_source": true,
+    "seed_encoding": "11 solid/circle, 12 dashed/square, 13 dotted/triangle; small x offsets in contrast panels only",
+    "no_pooling_no_confidence_intervals": true
+  },
+  "limits": [
+    "Existing audited means and contrasts only; no new model execution or statistical analysis.",
+    "Graphical stairs depict half-open-window means, not instantaneous dynamics.",
+    "The 3-second C0 data do not establish physiological accuracy, indefinite stability or promotion."
+  ]
+}

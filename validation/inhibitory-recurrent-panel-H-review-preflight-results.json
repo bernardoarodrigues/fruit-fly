@@ -1,0 +1,262 @@
+{
+  "completed_utc": "2026-09-05T06:21:36.981543+00:00",
+  "plan_sha256": "2b01a9b73507ab662140f2e7bfbb631392676938ae7d5510987626c1751dac24",
+  "source_sha256": {
+    "scripts/check_inhibitory_recurrent_panel_H_review.py": "3b2a441c26d71e44a096a9edf240f0cb0ed3f7263854a6afc80a02dae6b99e9e",
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-recurrent-parallel-arrays.json": "1da2644b0d387efd70f6eadbc854e063501b72046e8cc5c70528070e4326c44d",
+    "validation/inhibitory-recurrent-parallel-arrays.npz": "27150ce07c5e5117313129ae94b50ac01ab00444ed98beb0ee1b6fb1d99b004b",
+    "validation/inhibitory-recurrent-panel-numerics-review-cases.json": "bea02b52bf6b903b340303538092fbd9fc51385e7cbd193fbfef57aa7e4b7c9e",
+    "validation/inhibitory-recurrent-panel-plan.json": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "H0_p_exact",
+      "passed": true
+    },
+    {
+      "name": "H0_h_exact",
+      "passed": true
+    },
+    {
+      "name": "H0_exercises_available_unavailable_and_firing",
+      "passed": true
+    },
+    {
+      "name": "H0_accepted_positive_and_negative_edges",
+      "passed": true
+    },
+    {
+      "name": "H1_p_exact",
+      "passed": true
+    },
+    {
+      "name": "H1_h_exact",
+      "passed": true
+    },
+    {
+      "name": "H1_exercises_available_unavailable_and_firing",
+      "passed": true
+    },
+    {
+      "name": "H1_accepted_positive_and_negative_edges",
+      "passed": true
+    },
+    {
+      "name": "saved_reference_fixture_checks",
+      "passed": true
+    },
+    {
+      "name": "two_rows_one_actual_reference_evaluation",
+      "passed": true
+    },
+    {
+      "name": "first_available_ticks_retained",
+      "passed": true
+    },
+    {
+      "name": "changed_recorded_predecessor_detected",
+      "passed": true
+    },
+    {
+      "name": "missing_reference_population_rejected",
+      "passed": true
+    },
+    {
+      "name": "interrupt_exact_context",
+      "passed": true
+    },
+    {
+      "name": "interrupt_completed_results_preserved",
+      "passed": true
+    },
+    {
+      "name": "interrupt_failed_status",
+      "passed": true
+    },
+    {
+      "name": "interrupt_structured_context",
+      "passed": true
+    },
+    {
+      "name": "solver_failure_exact_context",
+      "passed": true
+    },
+    {
+      "name": "solver_failure_completed_results_preserved",
+      "passed": true
+    },
+    {
+      "name": "solver_failure_failed_status",
+      "passed": true
+    },
+    {
+      "name": "solver_failure_structured_context",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:scripts/check_inhibitory_recurrent_panel_H_review.py",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:scripts/review_inhibitory_recurrent_panel_H.py",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:scripts/review_inhibitory_recurrent_panel_trial.py",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:scripts/inhibitory_panel_reference_audit.py",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:validation/inhibitory-recurrent-parallel-arrays.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:validation/inhibitory-recurrent-parallel-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:validation/inhibitory-recurrent-panel-numerics-review-cases.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:validation/inhibitory-recurrent-panel-plan.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged:validation/inhibitory-panel-reference-audit-results.json",
+      "passed": true
+    }
+  ],
+  "error": null,
+  "evidence": {
+    "reference_fixture_categories": {
+      "reference_completed_interval_domain": {
+        "checked": 3,
+        "passed": 3
+      },
+      "reference_record_margin_stiffness": {
+        "checked": 3,
+        "passed": 3
+      },
+      "global_reference_selected_precedent": {
+        "checked": 3,
+        "passed": 3
+      },
+      "reference_duplicate_exact_state": {
+        "checked": 3,
+        "passed": 3
+      },
+      "global_max_h_dominates_selected": {
+        "checked": 1,
+        "passed": 1
+      },
+      "global_nearest_threshold_dominates_selected": {
+        "checked": 1,
+        "passed": 1
+      },
+      "global_log_ratio_dominates_selected": {
+        "checked": 1,
+        "passed": 1
+      },
+      "global_log_ratio_reconstruction": {
+        "checked": 1,
+        "passed": 1
+      },
+      "exact_reference_selection_population": {
+        "checked": 1,
+        "passed": 1
+      },
+      "no_partial_references_in_complete_chunk": {
+        "checked": 1,
+        "passed": 1
+      },
+      "saved_reference_exact_precedent": {
+        "checked": 2,
+        "passed": 2
+      },
+      "saved_reference_success": {
+        "checked": 2,
+        "passed": 2
+      },
+      "producer_reference_error_arithmetic": {
+        "checked": 2,
+        "passed": 2
+      },
+      "producer_reference_frozen_gates": {
+        "checked": 2,
+        "passed": 2
+      },
+      "independent_reference_frozen_gates": {
+        "checked": 2,
+        "passed": 2
+      }
+    },
+    "interrupt": {
+      "chunk": 1,
+      "tick": 102,
+      "index": 7,
+      "inputs": [
+        -51.0,
+        0.0,
+        3.0,
+        0.1
+      ],
+      "completed_rows": 2,
+      "status": "interrupted",
+      "error_type": "KeyboardInterrupt",
+      "error": "deliberate saved-row preflight interruption",
+      "helper_record": null,
+      "method_limit": "A bare interruption does not expose the helper method or its unfinished local partial values."
+    },
+    "solver_failure": {
+      "chunk": 1,
+      "tick": 102,
+      "index": 7,
+      "inputs": [
+        -51.0,
+        0.0,
+        3.0,
+        0.1
+      ],
+      "completed_rows": 2,
+      "status": "failed",
+      "error_type": "ReferenceAuditError",
+      "error": "Independent reference time_domain_ode failed: RuntimeError: deliberate preflight failure",
+      "helper_record": {
+        "inputs": {
+          "v": -51.0,
+          "p": 0.0,
+          "h": 3.0,
+          "dt": 0.1
+        },
+        "method": "time_domain_ode",
+        "partial": {
+          "quad_v": -52.0,
+          "order64_v": -52.0
+        },
+        "error_type": "RuntimeError",
+        "message": "deliberate preflight failure",
+        "traceback": "injected"
+      },
+      "method_limit": "A bare interruption does not expose the helper method or its unfinished local partial values."
+    }
+  },
+  "arrays": {
+    "path": "validation/inhibitory-recurrent-panel-H-review-preflight-arrays.npz",
+    "bytes": 461811,
+    "sha256": "bc2f02315fa25622a9c30ffa343b5b207a029d9dc53fa12fbbb01aad8e12ed05"
+  },
+  "limits": [
+    "The dispatch fixture is intentionally mocked and is not a physical trajectory. Only its single saved scalar input was evaluated.",
+    "The p/h checks inspect retained fixture events and states. They do not generate or rerun spikes.",
+    "Injected interruption checks exercise reference-boundary retention; no process signal, archive failure or live full trial was tested."
+  ]
+}

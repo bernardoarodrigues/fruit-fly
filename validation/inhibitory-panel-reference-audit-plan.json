@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-09-05T06:18:15.577103+00:00",
+  "source_sha256": {
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-factorial-solver-plan.json": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687",
+    "validation/inhibitory-factorial-solver-results.json": "7f0a65072d1a0cd7121c7405e7671a3c44013a85af951e0d864bb4617c284e38",
+    "scripts/inhibitory_factorial_solver.py": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+  },
+  "scope": "Evaluate only the exact 125 saved scalar cases, once each; no original helper import, new grid or network.",
+  "methods": {
+    "derivation": "Independent scalar references; no producer, helper, graph or runtime imports.\n\nUnits: v,p are mV; h is dimensionless; time is ms. The specified equations are\n  v' = (-52-v+p-h*(v+75))/20, p'=-p/5, h'=-h/5.\nWriting y=v+75 gives y'+(1+h(t))*y/20=(23+p(t))/20.\nFor T=dt, p(T)=p0*exp(-T/5), h(T)=h0*exp(-T/5). With backward lag\nq=(T-t)/T, the accumulated attenuation from t to T is\n  x(q)=T*q/20 + h(T)*expm1(T*q/5)/4.\nIts derivative is positive. Changing variables in the integrating factor gives\n  y(T)=exp(-x(1))*y(0) + integral_0^x(1) exp(-x)\n       * (23+p(T)*exp(T*q(x)/5))/(1+h(T)*exp(T*q(x)/5)) dx.\nSciPy Brent solves q(x) on [0,1]. Adaptive and separately generated 64-node\nLegendre integration use this coordinate, without a special h=0 source branch.\nSince p,h>=0, the omitted tail after c is <=(23+p0)*exp(-c) mV.\n\nThe ODE reference separately advances all three original states in time,\nusing an analytic 3x3 Jacobian for Radau. It does not call the integral path.\nBoth time constants, method-selection boundary and tolerances are fixed before\nvalidation against the retained 125-case scalar grid. No parameter search,\nthreshold/reset logic, fitting or physiological conclusion is implemented.\n",
+    "quad_epsabs": 1e-11,
+    "quad_epsrel": 1e-13,
+    "tail_bound_mv": 1e-15,
+    "brent_coordinate": "dimensionless backward lag q in [0,1]",
+    "brent_rtol": 1.7763568394002505e-15,
+    "brent_xtol": 5e-324,
+    "legendre_order": 64,
+    "ode_states": [
+      "v",
+      "p",
+      "h"
+    ],
+    "ode_rtol": 2e-12,
+    "ode_atol": 2e-12,
+    "ode_selection": "Radau iff (1+h)*dt/20>10, otherwise DOP853",
+    "ode_jacobian": "analytic 3x3 for Radau"
+  },
+  "tolerances_mv": {
+    "production_vs_quad": 1e-08,
+    "32_vs_64": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "bounds": 1e-10,
+    "quad_error_estimate": 1e-09,
+    "constant_h_reference": 2e-08
+  },
+  "case_count": 125,
+  "case_source": "validation/inhibitory-factorial-solver-plan.json",
+  "environment": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "failure_policy": "Record each failed case with exact inputs, failed method and completed partial values. No retries, parameter changes or substitutions; retain first receipt.",
+  "claim_limit": "Synthetic scalar numerical audit; neither physiological validation nor recurrent-network equivalence."
+}

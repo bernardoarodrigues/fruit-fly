@@ -1,0 +1,364 @@
+{
+  "completed_utc": "2026-09-05T06:26:15.803408+00:00",
+  "trial": {
+    "arm": "H1",
+    "seed": 11,
+    "condition": "no_input",
+    "ordinal": 17,
+    "name": "17-H1-seed11-no_input"
+  },
+  "plan_sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5",
+  "source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+  },
+  "final_source_sha256": {
+    "scripts/review_inhibitory_recurrent_panel_H.py": "80a68d09ed3d028a7bc193ab5471c270bf6576018c7cd04dab6852a500d64237",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8",
+    "scripts/inhibitory_panel_reference_audit.py": "2a20ac9ed6b5dfd312b7f7aeb83028920c403f8972374213d731fcafddbea743",
+    "validation/inhibitory-panel-reference-audit-results.json": "4985dac16fe3192c6e703cafa3aaf42ab4251c75a5952baef8b65aeb950abafd"
+  },
+  "terminal_sha256": "6f49a8cfd3f95ef026d467f09a00c0aef37703285ec42b446dae02810bc8ea83",
+  "result_sha256": "8f8e9cc98273452769a39f926e4d7f87dc52ced9caee263fd4bcc80ff16b115c",
+  "passed": true,
+  "check_count": 53827,
+  "categories": {
+    "validated_independent_helper_source": {
+      "checked": 1,
+      "passed": 1
+    },
+    "artifact_hash_and_size": {
+      "checked": 3050,
+      "passed": 3050
+    },
+    "complete_report_and_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "completed_clocks": {
+      "checked": 1,
+      "passed": 1
+    },
+    "frozen_source": {
+      "checked": 61,
+      "passed": 61
+    },
+    "archive_no_incomplete_evidence": {
+      "checked": 611,
+      "passed": 611
+    },
+    "archive_header_transaction": {
+      "checked": 611,
+      "passed": 611
+    },
+    "archive_marker_payload_paths": {
+      "checked": 611,
+      "passed": 611
+    },
+    "array_descriptor_and_bytes": {
+      "checked": 19319,
+      "passed": 19319
+    },
+    "all_payload_arrays_referenced": {
+      "checked": 611,
+      "passed": 611
+    },
+    "fixed_shapes": {
+      "checked": 1,
+      "passed": 1
+    },
+    "checkpoint_identity": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_membership": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_own_history": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_counts": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_selected_state": {
+      "checked": 8,
+      "passed": 8
+    },
+    "checkpoint_finite_H_state": {
+      "checked": 8,
+      "passed": 8
+    },
+    "packed_spike_header": {
+      "checked": 600,
+      "passed": 600
+    },
+    "packed_spike_original_bytes": {
+      "checked": 1200,
+      "passed": 1200
+    },
+    "chunk_clock": {
+      "checked": 600,
+      "passed": 600
+    },
+    "ordered_raw_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_refractory_from_own_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "direct_input_masks": {
+      "checked": 600,
+      "passed": 600
+    },
+    "rng_and_rate": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_shapes_and_continuity": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_eligibility_from_own_history": {
+      "checked": 600,
+      "passed": 600
+    },
+    "H_unavailable_voltage_hold": {
+      "checked": 600,
+      "passed": 600
+    },
+    "H_selected_lower_bound": {
+      "checked": 600,
+      "passed": 600
+    },
+    "strict_threshold_from_prestate": {
+      "checked": 600,
+      "passed": 600
+    },
+    "direct_and_reset_voltage_bitwise": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_event_order_and_disposition": {
+      "checked": 600,
+      "passed": 600
+    },
+    "selected_synapse_conductance_bitwise": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_edge_partition": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_edge_visits_from_spikes": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_finite_phase_and_checks": {
+      "checked": 600,
+      "passed": 600
+    },
+    "reference_completed_interval_domain": {
+      "checked": 1200,
+      "passed": 1200
+    },
+    "reference_record_margin_stiffness": {
+      "checked": 1200,
+      "passed": 1200
+    },
+    "global_reference_selected_precedent": {
+      "checked": 1200,
+      "passed": 1200
+    },
+    "reference_duplicate_exact_state": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_max_h_dominates_selected": {
+      "checked": 600,
+      "passed": 600
+    },
+    "global_nearest_threshold_dominates_selected": {
+      "checked": 600,
+      "passed": 600
+    },
+    "exact_reference_selection_population": {
+      "checked": 600,
+      "passed": 600
+    },
+    "no_partial_references_in_complete_chunk": {
+      "checked": 600,
+      "passed": 600
+    },
+    "saved_reference_exact_precedent": {
+      "checked": 1800,
+      "passed": 1800
+    },
+    "saved_reference_success": {
+      "checked": 1800,
+      "passed": 1800
+    },
+    "producer_reference_error_arithmetic": {
+      "checked": 1800,
+      "passed": 1800
+    },
+    "producer_reference_frozen_gates": {
+      "checked": 1800,
+      "passed": 1800
+    },
+    "independent_reference_frozen_gates": {
+      "checked": 1800,
+      "passed": 1800
+    },
+    "event_population_metadata": {
+      "checked": 600,
+      "passed": 600
+    },
+    "histogram_population_sums": {
+      "checked": 600,
+      "passed": 600
+    },
+    "telemetry_counts": {
+      "checked": 600,
+      "passed": 600
+    },
+    "raw_count_matrix": {
+      "checked": 1,
+      "passed": 1
+    },
+    "cohort_order_hash": {
+      "checked": 12,
+      "passed": 12
+    },
+    "raw_cohort_metrics": {
+      "checked": 84,
+      "passed": 84
+    },
+    "saved_reference_count": {
+      "checked": 1,
+      "passed": 1
+    },
+    "reported_totals": {
+      "checked": 1,
+      "passed": 1
+    },
+    "final_source_and_result_stable": {
+      "checked": 1,
+      "passed": 1
+    },
+    "reviewer_dependencies_unchanged": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "statistics": {
+    "spikes": 0,
+    "candidates": 0,
+    "applied": 0,
+    "reconstructed_selected_edges": 0,
+    "fully_audited_chunks": 600,
+    "reference_intervals": 1800,
+    "unique_reference_inputs": 1,
+    "independent_threshold_unresolved": 0,
+    "off_nonsource_counts": [
+      0,
+      0,
+      0
+    ],
+    "off_source_counts": [
+      0,
+      0,
+      0
+    ],
+    "forward_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "decoded_archives": 611,
+  "decoded_arrays": 19319,
+  "wall_seconds": 3.057100542006083,
+  "scope": "Completed H0/H1 saved-data verification and independent selected fixed-interval scalar references; no neural simulation or producer/kernel/metric helper imports",
+  "limits": [
+    "Full global voltage trajectories between checkpoints are not reconstructed. Selected48 p/h and direct/reset algebra are checked at every tick; independent H integration is limited to the predeclared saved reference intervals.",
+    "Global winner optimality over unselected cells is not independently reconstructible without an all-cell time cube; selected-population dominance and saved state/selection identity are checked.",
+    "Global accepted/unavailable edge totals are checked as a partition; exact full-graph delivery visits and selected event dispositions are reconstructed.",
+    "Numerical accuracy and the lower bound do not establish physiology, seed robustness, or H1 promotion."
+  ],
+  "reference_evaluation_state": {
+    "chunk": 599,
+    "tick": 29950,
+    "index": 3103,
+    "inputs": [
+      -52.0,
+      0.0,
+      0.0,
+      0.1
+    ],
+    "completed_rows": 1799,
+    "status": "completed"
+  },
+  "completed_unique_reference_evaluations": [
+    {
+      "inputs": [
+        -52.0,
+        0.0,
+        0.0,
+        0.1
+      ],
+      "result": {
+        "quad_v": -52.0,
+        "quad_error_estimate": 1.2735699002986633e-15,
+        "order64_v": -52.0,
+        "ode_method": "DOP853",
+        "ode_nfev": 74,
+        "ode_v": -52.0
+      }
+    }
+  ],
+  "independent_references": {
+    "records": 1800,
+    "unique_saved_inputs": 1,
+    "columns": [
+      "chunk",
+      "tick",
+      "graph_index",
+      "before_v_mv",
+      "p_mv",
+      "h",
+      "dt_ms",
+      "production_v_mv",
+      "producer_quad_v_mv",
+      "producer_64_v_mv",
+      "producer_ode_v_mv",
+      "independent_quad_v_mv",
+      "independent_quad_error_mv",
+      "independent_64_v_mv",
+      "independent_ode_v_mv",
+      "production_quad_error_mv",
+      "production_64_error_mv",
+      "ode_quad_error_mv",
+      "threshold_margin_mv",
+      "timing_unresolved"
+    ],
+    "artifact": {
+      "path": "validation/inhibitory-recurrent-panel-17-H1-seed11-no_input-H-review-references.npz",
+      "bytes": 8029,
+      "sha256": "4d895c9ab84bfc737a7545517c194823f25f024d3a5ba0d777c8fb82fed91896"
+    }
+  }
+}
