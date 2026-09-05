@@ -1,0 +1,772 @@
+{
+  "completed_utc": "2026-09-05T23:25:15.847848+00:00",
+  "wall_seconds": 13.924925875035115,
+  "status": "passed_static_spatial_operator_benchmark",
+  "plan": {
+    "path": "validation/apl-spatial-operator-plan.json",
+    "bytes": 1797,
+    "sha256": "2b24d9773aa2c4e89d4c3811ad51470666647511b5cb7e1973dd574e102fa0ef"
+  },
+  "arrays": {
+    "path": "validation/apl-spatial-operator-arrays.npz",
+    "bytes": 8408209,
+    "sha256": "bbbaf0a61bcf3be7d3fec7b328aecf2bd87aa8813cea16982aa7586ee7f5c78e"
+  },
+  "reference_checks": 294,
+  "skeletons": [
+    {
+      "body_id": 10540,
+      "original_nodes": 43737,
+      "expanded_nodes": 154911,
+      "refined_nodes": 309819,
+      "components": 3,
+      "source_regions": [
+        "CA",
+        "gL",
+        "aL"
+      ],
+      "source_counts": [
+        14728,
+        32786,
+        13350
+      ],
+      "total_length_um": 37267.61260880871,
+      "total_electrotonic_length_sqrt_um": 61352.26424477524,
+      "global_length_to_electrotonic_ratio_sqrt_um": 0.6074366295614334,
+      "output_contacts": 95542,
+      "unique_output_sites": 15674,
+      "max_direct_sum_error": 3.2751579226442118e-15,
+      "infinite_scale_error": 7.789324740770098e-13,
+      "refinement": [
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "max_original_node_error": 1.0547118733938987e-15
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "max_original_node_error": 1.8318679906315083e-15
+        }
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.009599785910786144,
+          "output_unique_mean": 0.012190155497464794,
+          "output_contact_quantiles": [
+            5.086221290204406e-08,
+            1.7642300046479624e-05,
+            0.062125890738322254,
+            0.14874068911084842
+          ],
+          "reference_max_error": 7.216449660063518e-16,
+          "three_footprint_operator_seconds": 0.29416983301052824
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.01921531600882382,
+          "output_unique_mean": 0.0177602878881935,
+          "output_contact_quantiles": [
+            5.924065275195821e-06,
+            0.014374104329033929,
+            0.05479403966293078,
+            0.10814553668497641
+          ],
+          "reference_max_error": 7.216449660063518e-16,
+          "three_footprint_operator_seconds": 0.29416983301052824
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.01452576922436015,
+          "output_unique_mean": 0.013787184600484795,
+          "output_contact_quantiles": [
+            5.692418739014104e-06,
+            0.0014817490909753719,
+            0.07375598047817812,
+            0.14074956493872898
+          ],
+          "reference_max_error": 7.216449660063518e-16,
+          "three_footprint_operator_seconds": 0.29416983301052824
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.03189844978122368,
+          "output_unique_mean": 0.03853797981391964,
+          "output_contact_quantiles": [
+            0.00021945485044406383,
+            0.004087193136918379,
+            0.17085842102794693,
+            0.2957510818901979
+          ],
+          "reference_max_error": 1.304512053934559e-15,
+          "three_footprint_operator_seconds": 0.29337120900163427
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.07585237078911905,
+          "output_unique_mean": 0.07061379887468391,
+          "output_contact_quantiles": [
+            0.0012160053974064407,
+            0.07823590259463187,
+            0.16823433896612186,
+            0.2544062273983596
+          ],
+          "reference_max_error": 1.304512053934559e-15,
+          "three_footprint_operator_seconds": 0.29337120900163427
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.06328531106630919,
+          "output_unique_mean": 0.05992056113341348,
+          "output_contact_quantiles": [
+            0.0013422337107040388,
+            0.030932743071273746,
+            0.2162331035752636,
+            0.3164029286089241
+          ],
+          "reference_max_error": 1.304512053934559e-15,
+          "three_footprint_operator_seconds": 0.29337120900163427
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.06597379295856781,
+          "output_unique_mean": 0.07561139919254692,
+          "output_contact_quantiles": [
+            0.003616463781651599,
+            0.02540996718709079,
+            0.27131144687317116,
+            0.39597231408866385
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.2918375839944929
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.14691263984118683,
+          "output_unique_mean": 0.13786303581137807,
+          "output_contact_quantiles": [
+            0.00943894874455851,
+            0.1590203973195953,
+            0.27881175192738855,
+            0.37130054599533946
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.2918375839944929
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.1309434087250002,
+          "output_unique_mean": 0.12473860711039506,
+          "output_contact_quantiles": [
+            0.011011709449746708,
+            0.09408467021365301,
+            0.3433494662546824,
+            0.44938880999837405
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.2918375839944929
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 41.15655655808885,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.012534753886219177,
+          "output_unique_mean": 0.01591654715075134,
+          "output_contact_quantiles": [
+            4.435115664993403e-07,
+            6.0862290481575196e-05,
+            0.08108938526146367,
+            0.17956374545864254
+          ],
+          "reference_max_error": 5.689893001203927e-16,
+          "three_footprint_operator_seconds": 0.30116849998012185
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 41.15655655808885,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.024576126614995315,
+          "output_unique_mean": 0.022746058859631126,
+          "output_contact_quantiles": [
+            2.2494624453071854e-05,
+            0.019273408152814735,
+            0.06770991661083031,
+            0.12653873542738817
+          ],
+          "reference_max_error": 5.689893001203927e-16,
+          "three_footprint_operator_seconds": 0.30116849998012185
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 41.15655655808885,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.019222784009320322,
+          "output_unique_mean": 0.018221737096443362,
+          "output_contact_quantiles": [
+            2.1669790627584667e-05,
+            0.0030888808335890992,
+            0.09241024231240733,
+            0.16825964137749322
+          ],
+          "reference_max_error": 5.689893001203927e-16,
+          "three_footprint_operator_seconds": 0.30116849998012185
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 82.3131131161777,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.039531660594877685,
+          "output_unique_mean": 0.04727396607340412,
+          "output_contact_quantiles": [
+            0.0006550337193174035,
+            0.007673355653928274,
+            0.20660375495321215,
+            0.32908538977002105
+          ],
+          "reference_max_error": 2.275957200481571e-15,
+          "three_footprint_operator_seconds": 0.29306975001236424
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 82.3131131161777,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.09531881569601643,
+          "output_unique_mean": 0.08889800862091217,
+          "output_contact_quantiles": [
+            0.0027642868777942543,
+            0.10133334345459842,
+            0.2003643023389922,
+            0.2951613423653267
+          ],
+          "reference_max_error": 2.275957200481571e-15,
+          "three_footprint_operator_seconds": 0.29306975001236424
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 82.3131131161777,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.08154046790117961,
+          "output_unique_mean": 0.07731235512164515,
+          "output_contact_quantiles": [
+            0.003063575773390758,
+            0.0464375340809692,
+            0.2570567841201555,
+            0.3625947323215964
+          ],
+          "reference_max_error": 2.275957200481571e-15,
+          "three_footprint_operator_seconds": 0.29306975001236424
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "CA",
+          "source_contacts": 14728,
+          "scale": 123.46966967426656,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.08094787797169045,
+          "output_unique_mean": 0.09148096112275864,
+          "output_contact_quantiles": [
+            0.00751519912062799,
+            0.03876337709028416,
+            0.31004253981837804,
+            0.4272143462270725
+          ],
+          "reference_max_error": 3.2751579226442118e-15,
+          "three_footprint_operator_seconds": 0.2939567500143312
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "gL",
+          "source_contacts": 32786,
+          "scale": 123.46966967426656,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.17859176162132426,
+          "output_unique_mean": 0.16804448554196103,
+          "output_contact_quantiles": [
+            0.017272296712678995,
+            0.19719206200598952,
+            0.3218183524234898,
+            0.41924121157291294
+          ],
+          "reference_max_error": 3.2751579226442118e-15,
+          "three_footprint_operator_seconds": 0.2939567500143312
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "aL",
+          "source_contacts": 13350,
+          "scale": 123.46966967426656,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.1615955933602149,
+          "output_unique_mean": 0.15424570879197633,
+          "output_contact_quantiles": [
+            0.0197057202353782,
+            0.12473087954534469,
+            0.38977586437536027,
+            0.4956734393262476
+          ],
+          "reference_max_error": 3.2751579226442118e-15,
+          "three_footprint_operator_seconds": 0.2939567500143312
+        }
+      ]
+    },
+    {
+      "body_id": 10977,
+      "original_nodes": 45168,
+      "expanded_nodes": 151764,
+      "refined_nodes": 303526,
+      "components": 2,
+      "source_regions": [
+        "CA",
+        "gL",
+        "aL"
+      ],
+      "source_counts": [
+        12574,
+        27548,
+        11389
+      ],
+      "total_length_um": 37613.96492033877,
+      "total_electrotonic_length_sqrt_um": 62691.28186697229,
+      "global_length_to_electrotonic_ratio_sqrt_um": 0.5999871720625156,
+      "output_contacts": 100658,
+      "unique_output_sites": 16661,
+      "max_direct_sum_error": 1.7208456881689926e-15,
+      "infinite_scale_error": 2.774447338538266e-13,
+      "refinement": [
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "max_original_node_error": 1.5265566588595902e-15
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "max_original_node_error": 9.43689570931383e-16
+        }
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.008331839706967544,
+          "output_unique_mean": 0.010952783354752417,
+          "output_contact_quantiles": [
+            3.6559700855722063e-09,
+            7.5196538343349535e-06,
+            0.04760302399382193,
+            0.09246000003545184
+          ],
+          "reference_max_error": 1.8735013540549517e-16,
+          "three_footprint_operator_seconds": 0.29585529200267047
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.016933541677232454,
+          "output_unique_mean": 0.014812676722184576,
+          "output_contact_quantiles": [
+            4.84693432540655e-07,
+            0.008113506903233541,
+            0.057204470606556986,
+            0.10068980636038544
+          ],
+          "reference_max_error": 1.8735013540549517e-16,
+          "three_footprint_operator_seconds": 0.29585529200267047
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 25.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 25.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.0113311405907794,
+          "output_unique_mean": 0.010818355704689501,
+          "output_contact_quantiles": [
+            4.056186301597361e-06,
+            0.0015084443274285075,
+            0.06950056953934992,
+            0.1569210087206973
+          ],
+          "reference_max_error": 1.8735013540549517e-16,
+          "three_footprint_operator_seconds": 0.29585529200267047
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.02449588193182356,
+          "output_unique_mean": 0.03064772554628412,
+          "output_contact_quantiles": [
+            5.853435863747308e-05,
+            0.002654657344607477,
+            0.11369219629599102,
+            0.1756957636105181
+          ],
+          "reference_max_error": 5.273559366969494e-16,
+          "three_footprint_operator_seconds": 0.28514774999348447
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.0684057131888493,
+          "output_unique_mean": 0.06071719953451294,
+          "output_contact_quantiles": [
+            0.0004007064879604262,
+            0.060701399510937275,
+            0.16769974708866234,
+            0.23909505558457
+          ],
+          "reference_max_error": 5.273559366969494e-16,
+          "three_footprint_operator_seconds": 0.28514774999348447
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 50.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 50.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.04396374717660963,
+          "output_unique_mean": 0.041306600738255005,
+          "output_contact_quantiles": [
+            0.0009798353518582774,
+            0.028078149986875207,
+            0.1466325583336537,
+            0.27020934328419
+          ],
+          "reference_max_error": 5.273559366969494e-16,
+          "three_footprint_operator_seconds": 0.28514774999348447
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.05141465981095979,
+          "output_unique_mean": 0.06046851327930137,
+          "output_contact_quantiles": [
+            0.0014965554556735856,
+            0.01903229757752208,
+            0.18687688029452268,
+            0.2538739258920776
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.284613249998074
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.1344381148005149,
+          "output_unique_mean": 0.12093722044801208,
+          "output_contact_quantiles": [
+            0.0049025271495626065,
+            0.14208859871954016,
+            0.2808560269147538,
+            0.36407204488863437
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.284613249998074
+        },
+        {
+          "metric": "constant_diameter",
+          "length_parameter_um": 75.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 75.0,
+          "scale_units": "um",
+          "output_contact_mean": 0.09452686882887038,
+          "output_unique_mean": 0.08866723521208827,
+          "output_contact_quantiles": [
+            0.007413715208488556,
+            0.0833864420605519,
+            0.22203954149850968,
+            0.34631970220081154
+          ],
+          "reference_max_error": 1.7208456881689926e-15,
+          "three_footprint_operator_seconds": 0.284613249998074
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 41.667557514704875,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.010004095660280175,
+          "output_unique_mean": 0.013194622830271893,
+          "output_contact_quantiles": [
+            3.455629222731784e-08,
+            2.2789379190064332e-05,
+            0.05684581340985486,
+            0.10382497743753341
+          ],
+          "reference_max_error": 2.8449465006019636e-16,
+          "three_footprint_operator_seconds": 0.28428724996047094
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 41.667557514704875,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.020090801196683244,
+          "output_unique_mean": 0.017588185121665434,
+          "output_contact_quantiles": [
+            1.5502094073970326e-06,
+            0.011136294752669392,
+            0.06635456878316462,
+            0.10689356539847263
+          ],
+          "reference_max_error": 2.8449465006019636e-16,
+          "three_footprint_operator_seconds": 0.28428724996047094
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 25.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 41.667557514704875,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.014432845358424649,
+          "output_unique_mean": 0.01372078580622809,
+          "output_contact_quantiles": [
+            1.0821549564405136e-05,
+            0.002843026837030674,
+            0.08302908747033591,
+            0.18411021575059575
+          ],
+          "reference_max_error": 2.8449465006019636e-16,
+          "three_footprint_operator_seconds": 0.28428724996047094
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 83.33511502940975,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.028733978370811635,
+          "output_unique_mean": 0.035676289333244314,
+          "output_contact_quantiles": [
+            0.00018251225672983663,
+            0.004686997408887307,
+            0.13001896248714542,
+            0.19316616793350241
+          ],
+          "reference_max_error": 8.049116928532385e-16,
+          "three_footprint_operator_seconds": 0.285191125003621
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 83.33511502940975,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.08073923225071829,
+          "output_unique_mean": 0.07186096558191972,
+          "output_contact_quantiles": [
+            0.0008173865039119169,
+            0.07743147872190488,
+            0.18604506350537622,
+            0.2629717943924415
+          ],
+          "reference_max_error": 8.049116928532385e-16,
+          "three_footprint_operator_seconds": 0.285191125003621
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 50.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 83.33511502940975,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.056228666999374316,
+          "output_unique_mean": 0.05262952699025017,
+          "output_contact_quantiles": [
+            0.0017074761580918615,
+            0.040629074841036145,
+            0.16823823776440927,
+            0.3002976245939571
+          ],
+          "reference_max_error": 8.049116928532385e-16,
+          "three_footprint_operator_seconds": 0.285191125003621
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "CA",
+          "source_contacts": 12574,
+          "scale": 125.00267254411462,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.06073948245023728,
+          "output_unique_mean": 0.07045982489583516,
+          "output_contact_quantiles": [
+            0.003204430033372432,
+            0.02784998193778992,
+            0.20585527502024195,
+            0.27139522788930115
+          ],
+          "reference_max_error": 1.5265566588595902e-15,
+          "three_footprint_operator_seconds": 0.2844938330235891
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "gL",
+          "source_contacts": 27548,
+          "scale": 125.00267254411462,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.15556741208303668,
+          "output_unique_mean": 0.14053956779397642,
+          "output_contact_quantiles": [
+            0.00809276662482931,
+            0.17048646936280817,
+            0.30722180622409806,
+            0.3935606033809474
+          ],
+          "reference_max_error": 1.5265566588595902e-15,
+          "three_footprint_operator_seconds": 0.2844938330235891
+        },
+        {
+          "metric": "source_radius",
+          "length_parameter_um": 75.0,
+          "source_region": "aL",
+          "source_contacts": 11389,
+          "scale": 125.00267254411462,
+          "scale_units": "sqrt(um)",
+          "output_contact_mean": 0.11715642765740669,
+          "output_unique_mean": 0.10974085450006359,
+          "output_contact_quantiles": [
+            0.011276766402431158,
+            0.10920777670790884,
+            0.2571158625488302,
+            0.3787021096459664
+          ],
+          "reference_max_error": 1.5265566588595902e-15,
+          "three_footprint_operator_seconds": 0.2844938330235891
+        }
+      ]
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "scripts/apl_spatial_operator.py",
+      "sha256": "66832d4086eb808013cd00fbcc0782adffe5173c8452be6ae71cdea7a7d62213"
+    },
+    {
+      "path": "scripts/benchmark_apl_spatial_operator.py",
+      "sha256": "1cf8337412a3b9f4303e9c75185eefc66157a9b6d96d00de772e9a0152e722e0"
+    },
+    {
+      "path": "tests/test_apl_spatial_operator.py",
+      "sha256": "2b05ff9e9af129a95e5a63e4e6c531935ed11bf0fda72b51fbc601a3124cab2a"
+    },
+    {
+      "path": "validation/male-apl-geometry-arrays.npz",
+      "sha256": "3738c62a7294da9f109447a164b9767491976628e3d55df35be1bc0363df058b"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    }
+  ],
+  "physiological_fit": false,
+  "neural_network_run": false,
+  "runtime_changed": false,
+  "scope": "36 static anatomical probes. ROI-wide unit-total input is not an ATP puff or measured KC spiking."
+}

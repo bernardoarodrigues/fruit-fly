@@ -1,0 +1,48 @@
+{
+  "geometry": "validation/male-apl-geometry-arrays.npz",
+  "contacts": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+  "source_regions": [
+    "CA",
+    "gL",
+    "aL"
+  ],
+  "length_parameters_um": [
+    25.0,
+    50.0,
+    75.0
+  ],
+  "refinement_length_um": 50.0,
+  "seed": 20260906,
+  "reference_outputs": 8,
+  "response_atol": 1e-10,
+  "geometry_atol": 1e-08,
+  "inputs": "All KC-to-APL contacts in the literal ipsilateral ROI, equal per contact with total mass one for each of three separate footprints",
+  "radius_case": "Linearly tapered source radii, electrotonic integral; k=lambda*total_electrotonic_length/total_physical_length over entire native forest",
+  "limits": "Static attenuation reference, not physical cable dynamics; ROI inputs are not the published ATP puffs; no fit or parameter promotion",
+  "source_pins": [
+    {
+      "path": "scripts/apl_spatial_operator.py",
+      "sha256": "66832d4086eb808013cd00fbcc0782adffe5173c8452be6ae71cdea7a7d62213"
+    },
+    {
+      "path": "scripts/benchmark_apl_spatial_operator.py",
+      "sha256": "1cf8337412a3b9f4303e9c75185eefc66157a9b6d96d00de772e9a0152e722e0"
+    },
+    {
+      "path": "tests/test_apl_spatial_operator.py",
+      "sha256": "2b05ff9e9af129a95e5a63e4e6c531935ed11bf0fda72b51fbc601a3124cab2a"
+    },
+    {
+      "path": "validation/male-apl-geometry-arrays.npz",
+      "sha256": "3738c62a7294da9f109447a164b9767491976628e3d55df35be1bc0363df058b"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    }
+  ]
+}
