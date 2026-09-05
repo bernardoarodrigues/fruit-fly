@@ -1,6 +1,7 @@
 # Retain byte-level CSV hashes, including the extractor's standard CRLF rows.
 validation/visual-retinotopy/zhao-female-right-eye-directions.csv -text whitespace=cr-at-eol
 validation/ln-inhibitory-transfer-phase2-summary.csv -text whitespace=cr-at-eol
+validation/kc-reporter-traces.csv -text whitespace=cr-at-eol
 
 # Preserve raw, hashed Numba diagnostic alignment and trailing spaces.
 validation/inhibitory-recurrent-parallel-compiler.txt -text whitespace=-blank-at-eol
