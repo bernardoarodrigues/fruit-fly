@@ -1,0 +1,931 @@
+{
+  "status": "paused",
+  "paused": true,
+  "camera": "side",
+  "speed": 1.0,
+  "telemetry": {
+    "status": "running",
+    "t_s": 5.440000000002631,
+    "brain_t_s": 5.44,
+    "realtime_factor": 0.12699153795742302,
+    "behavior": "walk",
+    "requested_behavior": "walk",
+    "assay": "motor_probe",
+    "pose": {
+      "position_mm": [
+        45.742018165640275,
+        -0.01394652183173484,
+        1.3672754224742047
+      ],
+      "heading_rad": 0.024081001716169517
+    },
+    "physiology": {
+      "energy": 0.5428878418854202,
+      "hydration": 0.7461719209427108,
+      "capacities": {
+        "energy": 1.0,
+        "hydration": 1.0,
+        "crop": 0.3
+      },
+      "crop": 0.0,
+      "hunger": 0.45711215811457984,
+      "thirst": 0.2538280790572892,
+      "alive": true,
+      "food_ingested": 0.0,
+      "water_ingested": 0.0,
+      "energy_spent": 0.007112158114577498,
+      "water_lost": 0.0038280790572887487,
+      "feeding_s": 0.0,
+      "resting_s": 0.2440000000000002,
+      "units": "normalized engineering resource units; uncalibrated"
+    },
+    "body_backend": "flybody",
+    "body_metadata": {
+      "name": "flybody",
+      "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+      "source_manifest_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "policy_receipt_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "worker_sha256": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+      "code_license": "Apache-2.0",
+      "policy_collection_license": "GPL-3.0-or-later",
+      "versions": {
+        "tensorflow": "2.15.1",
+        "tensorflow-probability": "0.23.0",
+        "dm-control": "1.0.27",
+        "mujoco": "3.2.7",
+        "numpy": "1.26.4"
+      },
+      "python": "3.10.21 (main, Aug 14 2026, 15:25:49) [Clang 22.1.3 ]",
+      "rolling_task_sha256": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+      "airflow_module_sha256": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+      "nq": 116,
+      "nv": 114,
+      "nu": 59,
+      "physics_timestep_s": 0.0002,
+      "control_timestep_s": 0.002,
+      "horizon_s": null,
+      "reference_mode": "rolling",
+      "initialization_settling_s": 0.0,
+      "reference_frames": 66,
+      "preview_frames": 65,
+      "actor_observation_shapes": {
+        "walker/accelerometer": [
+          3
+        ],
+        "walker/actuator_activation": [
+          59
+        ],
+        "walker/appendages_pos": [
+          21
+        ],
+        "walker/force": [
+          18
+        ],
+        "walker/gyro": [
+          3
+        ],
+        "walker/joints_pos": [
+          85
+        ],
+        "walker/joints_vel": [
+          85
+        ],
+        "walker/touch": [
+          6
+        ],
+        "walker/velocimeter": [
+          3
+        ],
+        "walker/world_zaxis": [
+          3
+        ],
+        "walker/ref_displacement": [
+          65,
+          3
+        ],
+        "walker/ref_root_quat": [
+          65,
+          4
+        ]
+      },
+      "gravity_cm_s2": [
+        0.0,
+        0.0,
+        -981.0
+      ],
+      "body_weight_dyne": 0.9659136593406252,
+      "original_lighting": {
+        "mode": "source_native_flybody",
+        "nlight": 3,
+        "light_diffuse": [
+          [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          [
+            0.699999988079071,
+            0.699999988079071,
+            0.699999988079071
+          ]
+        ],
+        "light_ambient": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "light_specular": [
+          [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ]
+        ],
+        "headlight": {
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929
+          ],
+          "ambient": [
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "specular": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ]
+        }
+      },
+      "tarsal_geoms": [
+        "walker/tarsus_T1_left",
+        "walker/tarsus_T1_left_collision",
+        "walker/tarsal_claw_T1_left",
+        "walker/tarsal_claw_T1_left_collision",
+        "walker/tarsus_T1_right",
+        "walker/tarsus_T1_right_collision",
+        "walker/tarsal_claw_T1_right",
+        "walker/tarsal_claw_T1_right_collision",
+        "walker/tarsus_T2_left",
+        "walker/tarsus_T2_left_collision",
+        "walker/tarsal_claw_T2_left",
+        "walker/tarsal_claw_T2_left_collision",
+        "walker/tarsus_T2_right",
+        "walker/tarsus_T2_right_collision",
+        "walker/tarsal_claw_T2_right",
+        "walker/tarsal_claw_T2_right_collision",
+        "walker/tarsus_T3_left",
+        "walker/tarsus_T3_left_collision",
+        "walker/tarsal_claw_T3_left",
+        "walker/tarsal_claw_T3_left_collision",
+        "walker/tarsus_T3_right",
+        "walker/tarsus_T3_right_collision",
+        "walker/tarsal_claw_T3_right",
+        "walker/tarsal_claw_T3_right_collision"
+      ],
+      "antenna_bodies": [
+        "walker/antenna_left",
+        "walker/antenna_right"
+      ],
+      "airflow_geometry": {
+        "enabled": true,
+        "sampling_point": "proximal antenna body origin; not distal arista or sensillum",
+        "antenna_bodies": [
+          "walker/antenna_left",
+          "walker/antenna_right"
+        ],
+        "antenna_order": [
+          "L",
+          "R"
+        ],
+        "head_axes": [
+          "forward",
+          "left",
+          "up"
+        ],
+        "basis_in_head": [
+          [
+            0.0,
+            -0.9999999999999998,
+            0.0
+          ],
+          [
+            0.9697465690594813,
+            0.0,
+            -0.24411389103728615
+          ],
+          [
+            0.24411389103728615,
+            0.0,
+            0.9697465690594813
+          ]
+        ],
+        "frame_definition": "neutral thorax axes expressed in head; follows articulated head rotation",
+        "velocity_method": "mj_jac at body origin times native qvel; cm/s multiplied by 10",
+        "audit": "docs/flybody-airflow-independent-review.md",
+        "distal_receptor_frame_validated": false,
+        "mechanical_or_neural_transduction": false
+      },
+      "action_names": [
+        "adhere_claw_T1_left",
+        "adhere_claw_T1_right",
+        "adhere_claw_T2_left",
+        "adhere_claw_T2_right",
+        "adhere_claw_T3_left",
+        "adhere_claw_T3_right",
+        "head_abduct",
+        "head_twist",
+        "head",
+        "abdomen_abduct",
+        "abdomen",
+        "coxa_abduct_T1_left",
+        "coxa_twist_T1_left",
+        "coxa_T1_left",
+        "femur_twist_T1_left",
+        "femur_T1_left",
+        "tibia_T1_left",
+        "tarsus_T1_left",
+        "tarsus2_T1_left",
+        "coxa_abduct_T1_right",
+        "coxa_twist_T1_right",
+        "coxa_T1_right",
+        "femur_twist_T1_right",
+        "femur_T1_right",
+        "tibia_T1_right",
+        "tarsus_T1_right",
+        "tarsus2_T1_right",
+        "coxa_abduct_T2_left",
+        "coxa_twist_T2_left",
+        "coxa_T2_left",
+        "femur_twist_T2_left",
+        "femur_T2_left",
+        "tibia_T2_left",
+        "tarsus_T2_left",
+        "tarsus2_T2_left",
+        "coxa_abduct_T2_right",
+        "coxa_twist_T2_right",
+        "coxa_T2_right",
+        "femur_twist_T2_right",
+        "femur_T2_right",
+        "tibia_T2_right",
+        "tarsus_T2_right",
+        "tarsus2_T2_right",
+        "coxa_abduct_T3_left",
+        "coxa_twist_T3_left",
+        "coxa_T3_left",
+        "femur_twist_T3_left",
+        "femur_T3_left",
+        "tibia_T3_left",
+        "tarsus_T3_left",
+        "tarsus2_T3_left",
+        "coxa_abduct_T3_right",
+        "coxa_twist_T3_right",
+        "coxa_T3_right",
+        "femur_twist_T3_right",
+        "femur_T3_right",
+        "tibia_T3_right",
+        "tarsus_T3_right",
+        "tarsus2_T3_right"
+      ],
+      "action_minimum": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.20000000298023224,
+        -3.0,
+        -0.5,
+        -0.699999988079071,
+        -1.0499999523162842,
+        -1.0,
+        -0.800000011920929,
+        -0.20000000298023224,
+        -1.0,
+        -0.15000000596046448,
+        -1.350000023841858,
+        -0.699999988079071,
+        -0.8999999761581421,
+        -1.0,
+        -0.800000011920929,
+        -0.20000000298023224,
+        -1.0,
+        -0.15000000596046448,
+        -1.350000023841858,
+        -0.699999988079071,
+        -0.8999999761581421,
+        -0.5,
+        -0.75,
+        -0.20000000298023224,
+        -1.0,
+        -0.15000000596046448,
+        -1.350000023841858,
+        -1.0,
+        -0.8999999761581421,
+        -0.5,
+        -0.75,
+        -0.20000000298023224,
+        -1.0,
+        -0.15000000596046448,
+        -1.350000023841858,
+        -1.0,
+        -0.8999999761581421,
+        -0.8999999761581421,
+        -0.15000000596046448,
+        -0.30000001192092896,
+        -1.0,
+        -0.699999988079071,
+        -1.350000023841858,
+        -0.800000011920929,
+        -0.8999999761581421,
+        -0.8999999761581421,
+        -0.15000000596046448,
+        -0.30000001192092896,
+        -1.0,
+        -0.699999988079071,
+        -1.350000023841858,
+        -0.800000011920929,
+        -0.8999999761581421
+      ],
+      "action_maximum": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.20000000298023224,
+        3.0,
+        0.30000001192092896,
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071,
+        0.800000011920929,
+        1.7000000476837158,
+        1.0,
+        2.0,
+        1.2999999523162842,
+        1.2000000476837158,
+        0.8999999761581421,
+        0.699999988079071,
+        0.800000011920929,
+        1.7000000476837158,
+        1.0,
+        2.0,
+        1.2999999523162842,
+        1.2000000476837158,
+        0.8999999761581421,
+        0.30000001192092896,
+        0.800000011920929,
+        0.8999999761581421,
+        1.0,
+        2.0,
+        1.2999999523162842,
+        1.7999999523162842,
+        0.8999999761581421,
+        0.30000001192092896,
+        0.800000011920929,
+        0.8999999761581421,
+        1.0,
+        2.0,
+        1.2999999523162842,
+        1.7999999523162842,
+        0.8999999761581421,
+        0.25,
+        0.800000011920929,
+        1.2999999523162842,
+        1.0,
+        1.5,
+        1.2999999523162842,
+        1.2000000476837158,
+        0.8999999761581421,
+        0.25,
+        0.800000011920929,
+        1.2999999523162842,
+        1.0,
+        1.5,
+        1.2999999523162842,
+        1.2000000476837158,
+        0.8999999761581421
+      ],
+      "profile": "female-derived FlyBody morphology surrogate",
+      "intended_sex": "male",
+      "worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T033352970403Z/flybody-worker.log",
+      "finite_horizon": false,
+      "controller": "Frozen pretrained mean policy; native neutral-zero position hold with adhesion1",
+      "command_map": "speed=20*clip((L+R)/2,0,1); yaw=2*clip((R-L)/1.2,-1,1)",
+      "physiology_sampling_s": 0.002,
+      "force_units": "g mm/s^2 (native dyne multiplied by10)"
+    },
+    "body_capabilities": {
+      "walk": true,
+      "engineering_stance": true,
+      "abstract_feeding": true,
+      "odor": true,
+      "tarsal_taste": true,
+      "club_proprioception": true,
+      "grooming": false,
+      "compound_vision": false,
+      "head_frame_wind": true,
+      "world_illumination": false,
+      "persistent_reference": true
+    },
+    "physics": {
+      "native_time_s": 5.440000000002631,
+      "tick": 2720,
+      "finite": true,
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "up_z": 0.9981506291007166,
+      "source_terminated": false,
+      "contact_count": 10,
+      "nq": 116,
+      "nv": 114,
+      "nu": 59,
+      "timestep_s": 0.0002,
+      "control_timestep_s": 0.002,
+      "max_abs_qacc": 22430.55101372282,
+      "initialization_settling_s": 0.0,
+      "horizon_s": null,
+      "last_error": null
+    },
+    "senses": {
+      "odor": [
+        3.612038084623295e-16,
+        3.377079169762911e-16
+      ],
+      "odor_rates_hz": [
+        5.0,
+        5.0
+      ],
+      "taste_food": false,
+      "taste_water": false,
+      "sweet_event_rates_hz": {
+        "LF": 0.0,
+        "LM": 0.0,
+        "LH": 0.0,
+        "RF": 0.0,
+        "RM": 0.0,
+        "RH": 0.0
+      },
+      "club_event_rates_hz": {
+        "LF": 20.466125923910845,
+        "LM": 14.576819038807361,
+        "LH": 23.34387561229894,
+        "RF": 14.32384418695992,
+        "RM": 4.490513496472132,
+        "RH": 23.440760459142453
+      },
+      "light": 1.0
+    },
+    "proprioception": {
+      "speed_mm_s": 11.438769881389868,
+      "yaw_rate_rad_s": -3.7997312915394077,
+      "tarsus_height_mm": [
+        0.05179945071942368,
+        0.0408951175811227,
+        0.04251577363007476,
+        0.15878551730515472,
+        0.04924084921917856,
+        0.026369821692920733
+      ],
+      "ground_force_by_leg": [
+        [
+          3.104984890594271,
+          -5.6025450908214,
+          11.709209114010976
+        ],
+        [
+          -1.2020797485094445,
+          -2.9550398668704467,
+          7.622134619227966
+        ],
+        [
+          -10.547418168334994,
+          3.8951777773348812,
+          11.243684446602307
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.3919199776750375,
+          -2.4705350673085995,
+          10.173219587325256
+        ],
+        [
+          8.738977534239739,
+          3.2649992349372754,
+          9.328984314923456
+        ]
+      ],
+      "joint_angles_rad": {
+        "tibia_pitch": [
+          0.07731813663778991,
+          -0.14765135184770165,
+          -0.21732101989057664,
+          -0.1504630558458725,
+          -0.24256697761913576,
+          0.5584839868401187
+        ],
+        "source_coxa": [
+          -0.128863543678492,
+          -0.13601659159812562,
+          -0.011919131487603334,
+          0.04078713397349215,
+          -0.10917408181573944,
+          -0.03818029967325051
+        ],
+        "source_femur": [
+          0.05365483169403934,
+          0.08808366392732703,
+          -0.09126778000067341,
+          -0.10261985001946189,
+          -0.10787805848404511,
+          0.3505624261638634
+        ]
+      },
+      "joint_velocities_rad_s": {
+        "tibia_pitch": [
+          -5.1562650413254225,
+          6.850855678826809,
+          -10.163413904605628,
+          12.33119856681036,
+          -4.040920311977274,
+          15.948146178790733
+        ],
+        "source_coxa": [
+          -1.2506896398722007,
+          1.6773193874248657,
+          -0.09697818845600642,
+          24.45626339430295,
+          -2.382390975064523,
+          9.768743179737093
+        ],
+        "source_femur": [
+          -13.02998349811771,
+          5.902558599113344,
+          -6.059400019483729,
+          -3.512625786490924,
+          -4.96592738590408,
+          17.230133028444328
+        ]
+      },
+      "body_angular_velocity_rad_s": [
+        -1.7802608546796552,
+        0.8094066892518571,
+        -3.709153924346475
+      ],
+      "leg_order": [
+        "LF",
+        "LM",
+        "LH",
+        "RF",
+        "RM",
+        "RH"
+      ],
+      "tarsus_height_site": "source claw site; differs from NMF tarsus5 origin"
+    },
+    "motor": {
+      "behavior": "walk",
+      "left": 0.6414991620608824,
+      "right": 0.6414991620608824
+    },
+    "neural": {
+      "neurons": 166700,
+      "edges": 25582938,
+      "active_neurons": 7278,
+      "spikes": 8908,
+      "total_spikes": 4741521,
+      "output_rates": {
+        "forward": 25.659966482435298,
+        "turn_left": 0.0,
+        "turn_right": 0.0,
+        "feeding": 25.74613678460671,
+        "escape": 0.0
+      },
+      "traversed_edges": 1719413527,
+      "voltage_mv": {
+        "minimum": -429.33951363241886,
+        "maximum": -45.00022183886701,
+        "mean": -53.29704803463014
+      },
+      "ablated": false,
+      "ablation_target": "motor readout",
+      "ablation_description": "Mutes locomotor output while neural spikes continue. FlyBody retains an engineering posture hold with maximum foot adhesion.",
+      "blocked_synaptic_outputs": [],
+      "backend": "Numba CPU sparse-event shiu LIF",
+      "model": "shiu",
+      "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+    },
+    "resources": {
+      "food": {
+        "name": "food",
+        "kind": "food",
+        "initial": 1.5,
+        "remaining": 1.5
+      },
+      "water": {
+        "name": "water",
+        "kind": "water",
+        "initial": 1.5,
+        "remaining": 1.5
+      }
+    },
+    "resource_balance": {
+      "nutrient": -1.9984014443252818e-15,
+      "water": -4.440892098500626e-16
+    },
+    "stimuli": {
+      "odor": 1.0,
+      "light": 1.0
+    },
+    "vision": {
+      "enabled": false,
+      "sample_t_s": null,
+      "shape": null,
+      "mean_by_eye": null
+    },
+    "illumination": {
+      "mode": "source_native_flybody",
+      "relative_gain": 1.0,
+      "nlight": 3,
+      "light_diffuse": [
+        [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ]
+      ],
+      "light_ambient": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "light_specular": [
+        [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ]
+      ],
+      "headlight": {
+        "diffuse": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "ambient": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "specular": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ]
+      }
+    },
+    "wind": {
+      "enabled": true,
+      "relative_velocity_head_mm_s": [
+        [
+          -11.187591614504814,
+          8.887780586695374,
+          5.138924088770586
+        ],
+        [
+          -11.15414166229422,
+          8.89051409730933,
+          4.344636219201389
+        ]
+      ],
+      "horizontal_speed_mm_s": [
+        14.288276659211832,
+        14.263804441206547
+      ],
+      "source_azimuth_deg": [
+        38.464752446280556,
+        38.55692865871661
+      ],
+      "antenna_order": [
+        "L",
+        "R"
+      ],
+      "head_axes": [
+        "forward",
+        "left",
+        "up"
+      ],
+      "sampling_point": "proximal antenna origin; not distal arista or sensillum",
+      "sensor_position_world_mm": [
+        [
+          46.70297865364276,
+          0.0943137098917832,
+          1.4182512765296849
+        ],
+        [
+          46.7115139569985,
+          -0.07103342069623336,
+          1.4143996531141694
+        ]
+      ],
+      "sensor_velocity_world_mm_s": [
+        [
+          9.690922709813186,
+          -8.328950019499139,
+          -4.951192628668694
+        ],
+        [
+          9.632180027345418,
+          -8.350443717400019,
+          -4.158660667587643
+        ]
+      ],
+      "frame_definition": "neutral thorax-aligned axes following the articulated head",
+      "mechanical_or_neural_transduction": false
+    },
+    "wind_reference": null,
+    "grooming": {
+      "enabled": false,
+      "state": "disabled",
+      "requested": false,
+      "actual_active": false,
+      "armed": false,
+      "source_time_s": null,
+      "completed_count": 0,
+      "cancelled_count": 0
+    },
+    "grooming_sensory_probe": null,
+    "events": [
+      {
+        "t_s": 0.01,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 0.8419999999999399,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 0.8459999999999395,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 1.0019999999999223,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 1.0239999999999199,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 1.2919999999998903,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 1.3279999999998864,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 2.0379999999998084,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 2.259999999999784,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 2.339999999999775,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 2.3539999999997736,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 2.6459999999997414,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 2.6619999999997397,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 3.2799999999996716,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 3.329999999999666,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 3.8419999999996097,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 3.8439999999996095,
+        "behavior": "walk"
+      },
+      {
+        "t_s": 4.794000000001268,
+        "behavior": "rest"
+      },
+      {
+        "t_s": 4.858000000001403,
+        "behavior": "walk"
+      }
+    ],
+    "warnings": [
+      "Female-derived body is a declared morphology surrogate for the male CNS.",
+      "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+      "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+      "Optional FlyBody learned motor surrogate: native physics/policy in an isolated process; rest/feed/motor mute retain an engineering neutral posture hold with maximum adhesion. No proboscis actuation or natural stance claim.",
+      "FlyBody feedback and resource bookkeeping are sampled every 2 ms. This bounded integration retains source task termination; indefinite operation is not yet supported.",
+      "Optional FeCO club adapter encodes bidirectional tibia movement with configured, uncalibrated gain; hook/claw and vibration are unmapped.",
+      "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence.",
+      "Motor calibration assay: DNg97 neurons receive direct Poisson stimulation."
+    ],
+    "run_dir": "runs/20260905T033352970403Z"
+  },
+  "frame_sequence": 275,
+  "error": null,
+  "updated_at": 1788579343.0063539,
+  "observed_realtime_factor": null,
+  "trial_complete": false,
+  "trial_limit_s": null,
+  "worker_alive": true,
+  "frame_age_seconds": 31.487203121185303
+}

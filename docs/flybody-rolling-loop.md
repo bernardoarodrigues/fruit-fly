@@ -1,8 +1,10 @@
 # Full-neural rolling FlyBody experiment
 
-Status: root source review and recorder self-tests pass. No rolling full-neural plan has yet been frozen and no trial has been run. This document implements steps 4–5 of [the persistent-runtime plan](flybody-persistent-runtime-plan.md); the completed bridge and its matching independent review are required before freezing or execution.
+Status: **all three fixed 12-second attempts completed and passed their engineering gates**. The [independent review](flybody-rolling-loop-independent-review.md) checks 18,000 physical intervals and 31,489,162 lossless ordered spikes. The [outcome analysis](flybody-rolling-loop-outcomes.md) retains the sensory-only all-rest result, absent food contact/intake and implausible neural voltages. This implements steps 4–5 of [the persistent-runtime plan](flybody-persistent-runtime-plan.md); it does not complete natural-foraging or physiological validation.
 
-## Proposed experiment
+Plan SHA-256: `3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498`; source revision `848436f`. Later optional airflow work changes runtime files. Exact reproduction must use the frozen source/data hashes, not substitute the current checkout. [Results](../validation/flybody-rolling-loop/results.json) retain all raw artifact receipts.
+
+## Frozen experiment
 
 Run three independent 12 s conditions sequentially, each with seed 11, the full retained MaleCNS graph (166,700 neurons; 25,582,938 edges), unchanged Shiu parameters and 2 ms brain/body coupling. The rolling FlyBody task uses its original 0.2 ms physics step, 2 ms actor step and 66-row reference buffer with 65 actor-visible frames. The body and target are never recentered. The food patch remains at `[6, 10]` mm with radius 3 mm. Current odor, sweet-taste and club proprioception encoders remain enabled.
 
@@ -62,4 +64,6 @@ The pretrained walking body is a female-derived engineering surrogate controlled
 
 `.venv/bin/python scripts/check_flybody_rolling_loop.py --self-test` passed without constructing a simulator. It checks exact ID/time byte roundtrip (including unsorted repeated IDs above float64's exact integer range and signed-zero timestamps), an empty batch, hash receipts, full readback, truncated metadata/block/array/gzip rejection, and fake completed/partial-failure state retention. The fake physiology has no clock attribute; the partial-failure test retains a failed public snapshot, nonfinite native evidence, distinct brain/native/observation times and pending checkpoint arrays.
 
-Plan/result hashes, experiment outcomes and observed limitations will be added only after root review, freezing and execution. No planned behavior is presented here as an observed result.
+Both locomotor attempts reproduce the original two-second prefix exactly, including original ordered spike hashes. They travel 91.075 and 90.243 mm over twelve seconds; sensory-only travels 0.015 mm while commanding rest throughout. All clocks remain synchronized within 8.04e−12 s, native warnings remain zero and resource residuals remain below 3.8e−15 normalized units. The largest sampled negative voltage is −532.581 mV. These results establish the recorded numerical/body coupling and expose the remaining physiological problem.
+
+The [live-viewer inspection](../validation/flybody-rolling-viewer/inspection.json) records actual browser operation beyond the former horizon, pause at 3.73 s, a camera change with unchanged state and an explicit reset to time zero. The viewer remains an interactive experiment; twelve seconds of validation does not establish indefinite stability.

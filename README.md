@@ -2,7 +2,7 @@
 
 A research simulator coupling the **166,700-neuron male CNS** to one articulated MuJoCo fly. Current scope: one male; a second fly and paired reproduction are deferred. Research, source audits, negative results and hypotheses are retained here.
 
-**Working:** full retained MaleCNS import, persistent sparse spiking engine, physical body with bilateral odor/contact sensing and finite resources, a live browser viewer, and neural-to-motor positive/negative controls. **Not yet validated:** odor-guided foraging, a biologically calibrated male neural model, male articulated morphology, or the full behavioral repertoire. The default body uses a declared NeuroMechFly/CPG surrogate. An optional FlyBody body and learned motor policy now run the same full male graph in bounded trials. See [current evidence](docs/STATUS.md) and the [single-fly plan](docs/PLAN.md).
+**Working:** full retained MaleCNS import, persistent sparse spiking engine, physical body with bilateral odor/contact sensing and finite resources, a live browser viewer, and neural-to-motor positive/negative controls. **Not yet validated:** odor-guided foraging, a biologically calibrated male neural model, male articulated morphology, or the full behavioral repertoire. The default body uses a declared NeuroMechFly/CPG surrogate. An optional FlyBody body and learned motor policy now run the same full male graph through three reviewed 12-second trials with lossless spike records. See [current evidence](docs/STATUS.md) and the [single-fly plan](docs/PLAN.md).
 
 ## Install and watch
 
@@ -44,7 +44,15 @@ The optional [FlyBody runtime](docs/flybody-bridge.md) uses a separately pinned 
 .venv/bin/python -m fruitfly.viewer --config configs/male-flybody-probe.json --port 8771 --paused
 ```
 
-Open [the FlyBody viewer](http://127.0.0.1:8771), then Resume. This direct-neuron calibration trial runs for **2 simulated seconds**, displays **Trial complete**, and keeps Reset and camera controls available. Four [full-graph trials](docs/flybody-loop.md) verify physical sensory feedback and motor coupling. A rolling-reference extension is being tested separately before longer use; no natural foraging claim follows from these trials.
+Open [the bounded FlyBody viewer](http://127.0.0.1:8771), then Resume. This direct-neuron calibration trial runs for **2 simulated seconds**, displays **Trial complete**, and keeps Reset and camera controls available. Four [full-graph trials](docs/flybody-loop.md) verify physical sensory feedback and motor coupling.
+
+For the reviewed rolling controller with optional local antenna airflow, launch:
+
+```sh
+.venv/bin/python -m fruitfly.viewer --config configs/male-flybody-rolling-airflow-probe.json --port 8773 --paused
+```
+
+Open [the rolling FlyBody viewer](http://127.0.0.1:8773) and Resume. [Three 12-second neural trials](docs/flybody-rolling-loop.md) retain every ordered spike and repeated stop/resume controls. The sensory-only trial remained at rest; none contacted food. The rolling reference removes the artificial two-second limit while retaining physical termination guards. Airflow reports motion-relative velocity at proximal antenna origins; it supplies no wind-driven neural input. These remain engineering trials with an unbounded source floor and an uncalibrated neural model.
 
 ## Validate and investigate
 
@@ -73,6 +81,8 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Engineering posture holds and restart experiment](docs/flybody-stance-experiment.md), [independent actuator/trace review](docs/flybody-stance-independent-review.md)
 - [Optional fixed arena illumination](docs/world-illumination.md)
 - [Native FlyBody bridge and parity](docs/flybody-bridge.md), [four full-graph trials](docs/flybody-loop.md), [independent saved-journal review](docs/flybody-loop-independent-review.md)
+- [Twelve-second rolling neural loop](docs/flybody-rolling-loop.md), [motion and voltage outcomes](docs/flybody-rolling-loop-outcomes.md), [independent spike/state review](docs/flybody-rolling-loop-independent-review.md), [optional FlyBody airflow](docs/flybody-airflow-runtime.md)
+- [Isolated olfactory synaptic transfer](docs/orn-pn-transfer-audit.md), [independent matrix-exponential review](docs/orn-pn-transfer-independent-review.md)
 - [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md), [executed excitation assay](docs/or42a-summary-experiment.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
 - [Full optical-template sampling through six views](docs/multiview-eye.md), including moving-head, cube-seam and lighting checks

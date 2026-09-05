@@ -1,0 +1,19 @@
+# Persistent execution and the physiological bottleneck
+
+These are reproducible findings about the implemented model and retained datasets, not claims of new Drosophila biology. Source papers, numerical assumptions and new hypotheses remain distinct.
+
+## Observed in the local model
+
+1. **Removing the fixed recording horizon preserves the established prefix.** Both longer locomotor trials exactly reproduce the first two seconds of their bounded predecessors, then complete twelve seconds with continuous native/reference/brain clocks. The rolling buffer has fixed storage; it does not reset or recenter the body. [Methods and independent review](../docs/flybody-rolling-loop-independent-review.md).
+2. **Spiking activity is insufficient for sensory-driven locomotion.** The sensory-only condition records 10,523,447 network spikes while all 6,000 motor commands are rest. Its body drifts 0.015 mm. Neither this condition nor either probe condition contacts food or ingests it. A network activity count or MN9 spike count is therefore an inadequate behavioral endpoint in this experiment. [Outcomes](../docs/flybody-rolling-loop-outcomes.md).
+3. **The negative-voltage failure persists without the direct motor probe.** At the twelve-second endpoint, 29 sensory-only cells lie below −200 mV; none belongs to its actual listed input set. Cells 67052 (`lLN2T_b`) and 13314 (`M_vPNml50`) are the two most negative endpoint cells in all three conditions. Their output transmitter labels do not identify the incoming cause. Endpoint attribution and trajectory-sampled extrema are separate measurements.
+4. **A contact-rule weight is not an EPSP peak.** In the unchanged 20/5 ms linear dynamics, one nominal 0.275 mV positive synaptic-state increment produces an isolated passive peak of about 0.04331 mV after 9.242 ms. Actual male ORN→adPN edge weights span markedly different passive responses across four selected glomeruli. All 616 selected edges are individually subthreshold from rest. [Anatomical/impulse audit](../docs/orn-pn-transfer-audit.md), [independent reconstruction](../docs/orn-pn-transfer-independent-review.md).
+5. **Antenna point choice changes motion-relative airflow.** The proximal pivot and inertial center have different velocities during rotation. Exact native Jacobians and independent source-XML kinematics agree at the audited pivot, but that pivot is not a distal arista or sensillum. The optional observation retains this limitation. [Airflow review](../docs/flybody-airflow-independent-review.md).
+
+## Consequences and testable hypotheses
+
+The next useful neural diagnostic is a replay of recorded incoming spikes for the repeatedly extreme cells, preserving accepted delivery, inhibitory/excitatory signs, delays, refractory gating and resets. Matching the saved endpoint would localize this model's numerical input balance without rerunning the full graph. It would not establish the corresponding biological current.
+
+Synaptic-state decay and activity-dependent depression are different mechanisms. The [measured ORN–PN lead](../docs/orn-pn-physiology-lead.md) motivates temporal constraints, while its female somatic recordings cannot directly calibrate every male EM contact. A specified scalar depression reference can establish a correct numerical implementation first. Fitting a fly-specific temporal model must separately preserve assay timing, normalization, sex/compartment transfer and prospective evaluation data.
+
+A successful finite run cannot establish indefinite stability or a complete animal. The source FlyBody floor is unbounded, morphology remains female-derived, the learned motor policy supplies an engineering intermediary, and major neural sensory mappings remain missing. These limits guide the next experiments rather than being concealed by a moving rendered fly.

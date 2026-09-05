@@ -37,6 +37,7 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [09 — Access and downloads](09-access-and-downloads.md) | Every supplied reference accounted for; open-access alternatives and optional methods requests |
 | [10 — Implementation findings](10-implementation-findings.md) | Reproduced data/model issues, negative results and practical consequences; no biological novelty claim |
 | [11 — Current mechanism findings](11-current-mechanism-findings.md) | Native-body feedback, rolling references, afferent event semantics and discriminating next tests |
+| [12 — Persistent loop and physiological constraints](12-persistent-loop-and-physiological-constraints.md) | Twelve-second results, sensory-only negative endpoint, exact voltage attribution and synaptic/airflow units |
 
 ## How to interpret the notes
 

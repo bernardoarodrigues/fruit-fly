@@ -1,0 +1,467 @@
+{
+  "created_utc": "2026-09-05T03:32:25.089232+00:00",
+  "passed_saved_record_checks": true,
+  "all_attempts_concluded": true,
+  "all_declared_experiment_gates_pass": true,
+  "scope": "Independent saved gzip/binary-array/source review; no neural, policy or physical simulation.",
+  "plan_sha256": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+  "results_sha256": "ba0774f38f8d65853b0a85fb372cf56f2a65196b22f27127be577c3d0e9bb800",
+  "reviewer_sha256": "7750e08a164d70a1452065aac4dcf764c475290bc29e5ac2c32badc33d9e4266",
+  "frozen_sources": {
+    "scripts/check_flybody_rolling_loop.py": {
+      "sha256": "dcaf13600b46d009339ad3ce9f14f10bfc8aa62bc3f9eeac9ef7191a3a59a7b1",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "scripts/check_flybody_loop.py": {
+      "sha256": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "configs/male-flybody-rolling-probe.json": {
+      "sha256": "d1c2068e4e0860e2b92ee9f84a7aeee01af226ea754956e6c4668c3bf8602870",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/simulation.py": {
+      "sha256": "480b83f238267c1ebd6a11190998ed1192766b8f60526d36e569deb50b16bf2f",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/data.py": {
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/body.py": {
+      "sha256": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/sensors.py": {
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/proprioception.py": {
+      "sha256": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/physiology.py": {
+      "sha256": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/wind.py": {
+      "sha256": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/flybody_bridge.py": {
+      "sha256": "0a2ec29d9f767e065f03e553674257b6712b927178dd752ed6a3cad35128ca3e",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/flybody_worker.py": {
+      "sha256": "b7093722b2a26fa98f0b00f506a3c508e2eaf558e8a83ec932e4b97cc367f16b",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "fruitfly/flybody_persistent_task.py": {
+      "sha256": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "pyproject.toml": {
+      "sha256": "4912536f8a2c0fd45c3d1c77f124a9394ee387344447c9d0f605ddc74cda2e2c",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "uv.lock": {
+      "sha256": "f7316f55c13ab07504818a1e06449a69820d5da95dfb31bf339d310cf2108940",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-source-manifest.json": {
+      "sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-walking-acquisition.json": {
+      "sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-inference-requirements.lock": {
+      "sha256": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-stance-plan.json": {
+      "sha256": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-stance-experiment.json": {
+      "sha256": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-loop/plan.json": {
+      "sha256": "6ab6b5f8bbcb4cc3343e97824c182e4c30e9d5d1902d21804cf56eb25f16d403",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-loop/archival.json": {
+      "sha256": "4e6b622af47b77cc92d83cb30b55e9dba1d6e85b2e521b10331cad00a7a7c3d9",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-rolling-bridge/plan.json": {
+      "sha256": "22ac32806f690bf7f6f864023470574bff321d212233e1164484e5ed55174604",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-rolling-bridge/results.json": {
+      "sha256": "78a9ae5389c692b9039f546b3f526ccaea759553706cd138bb3811c0a2c9eb75",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "validation/flybody-rolling-bridge/independent-review.json": {
+      "sha256": "b5846795baf38ccfd41411d70f839e81edc8d0190ae851ade470dae0324f6c6a",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "docs/flybody-persistent-runtime-plan.md": {
+      "sha256": "5850137e5cab9052afe60109b19fe72050d8d5725a7fba997f38b079f3df71f8",
+      "origin": "848436f5127d95b36f57f74948c16a7489474cf6"
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "origin": "local ignored data"
+    },
+    "data/processed/malecns_v1/neurons.feather": {
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+      "origin": "local ignored data"
+    }
+  },
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "conditions": [
+    {
+      "condition": "locomotor_feedback",
+      "producer_complete": true,
+      "producer_gates_pass": true,
+      "independently_checkable_gates_pass": true,
+      "closed_journal_verified": true,
+      "physical_returned_ticks": 6000,
+      "physical_summary_ticks": 6000,
+      "producer_validated_ticks": 6000,
+      "lossless_neural_batches": 6000,
+      "lossless_spikes": 10524467,
+      "completed_physical_spikes": 10524467,
+      "pending_physical_batch_spikes": 0,
+      "totals": {
+        "lossless_spikes": 10524467,
+        "RNG_draws_checked": 29277260,
+        "completed_spikes": 10524467,
+        "completed_edge_visits": 3813896501,
+        "odor": 6247,
+        "sweet": 0,
+        "club": 19627,
+        "motor_forward": 388,
+        "motor_turn_left": 0,
+        "motor_turn_right": 0,
+        "motor_feeding": 731,
+        "motor_escape": 0
+      },
+      "behavior": {
+        "rest": 1753,
+        "walk": 4247
+      },
+      "mute_windows": [
+        {
+          "first_tick": 300,
+          "end_tick": 600,
+          "completed_ticks": 300,
+          "neural_spikes": 524219
+        },
+        {
+          "first_tick": 1500,
+          "end_tick": 1800,
+          "completed_ticks": 300,
+          "neural_spikes": 526174
+        },
+        {
+          "first_tick": 4500,
+          "end_tick": 5300,
+          "completed_ticks": 800,
+          "neural_spikes": 1406633
+        }
+      ],
+      "maxima": {
+        "encoder_rate_error_hz": 0.0,
+        "input_rate_odor": 5.855223746580003,
+        "input_rate_sweet": 0.0,
+        "input_rate_club": 28.023867502184295,
+        "clock_error_s": 8.032685627767933e-12,
+        "integrated_target_error_cm_quat": 0.0,
+        "resource_residual": 3.774758283725532e-15,
+        "qacc_abs_native": 266042.20295218454
+      },
+      "minimum_sampled_voltage_mv": -532.5810840597999,
+      "maximum_sampled_voltage_mv": 21.025327994709897,
+      "planar_path_mm_2ms_chords": 91.07510824836444,
+      "net_planar_displacement_mm": 76.34663704270831,
+      "prefix": {
+        "matched_ticks": 1000,
+        "differences": [],
+        "matched_content_sha256": "cfc815a093191945fee4e3ace7cf1e2befeca92f36ba9af5da379f5081135b92"
+      },
+      "failures": [],
+      "unhealthy_completed_records": [],
+      "final_native_state": {
+        "native_time_s": 11.99999999999871,
+        "tick": 6000,
+        "finite_flag": true,
+        "source_terminated": false,
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_array_finiteness": {
+          "qpos": true,
+          "qvel": true,
+          "qacc": true,
+          "act": true,
+          "ctrl": true,
+          "native_action": true,
+          "actuator_force_preceding_stage": true
+        },
+        "brain_minus_native_s": 1.2896350654045818e-12,
+        "cached_observation_t_s": 11.99999999999871
+      },
+      "stage_clocks": {
+        "brain_t_ms": 12000.0,
+        "native_time_s": 11.99999999999871,
+        "native_control_tick": 6000,
+        "host_physiology_t_s": null,
+        "host_physiology_clock_note": "No independent elapsed physiology clock is exposed. A partial native step may not update physiology; do not infer its clock from native or observation time.",
+        "cached_observation_t_s": 11.99999999999871,
+        "latest_neural_interval_end_ms": 12000.0
+      },
+      "worker_exit_code": 0,
+      "retained_files_verified": 12,
+      "final_checkpoint_verified": true,
+      "journal_sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+      "spikes_sha256": "b70007557b5408e0028523a4e8385e4e2cbf0241be8a6b99dda681831f3a4c8e"
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "producer_complete": true,
+      "producer_gates_pass": true,
+      "independently_checkable_gates_pass": true,
+      "closed_journal_verified": true,
+      "physical_returned_ticks": 6000,
+      "physical_summary_ticks": 6000,
+      "producer_validated_ticks": 6000,
+      "lossless_neural_batches": 6000,
+      "lossless_spikes": 10441248,
+      "completed_physical_spikes": 10441248,
+      "pending_physical_batch_spikes": 0,
+      "totals": {
+        "lossless_spikes": 10441248,
+        "RNG_draws_checked": 29277260,
+        "completed_spikes": 10441248,
+        "completed_edge_visits": 3787758919,
+        "odor": 6242,
+        "sweet": 0,
+        "club": 19494,
+        "motor_forward": 388,
+        "motor_turn_left": 1,
+        "motor_turn_right": 0,
+        "motor_feeding": 692,
+        "motor_escape": 0
+      },
+      "behavior": {
+        "rest": 1700,
+        "walk": 4300
+      },
+      "mute_windows": [
+        {
+          "first_tick": 300,
+          "end_tick": 600,
+          "completed_ticks": 300,
+          "neural_spikes": 526843
+        },
+        {
+          "first_tick": 1500,
+          "end_tick": 1800,
+          "completed_ticks": 300,
+          "neural_spikes": 527433
+        },
+        {
+          "first_tick": 4500,
+          "end_tick": 5300,
+          "completed_ticks": 800,
+          "neural_spikes": 1402890
+        }
+      ],
+      "maxima": {
+        "encoder_rate_error_hz": 0.0,
+        "input_rate_odor": 5.855223746580003,
+        "input_rate_sweet": 0.0,
+        "input_rate_club": 28.078250797830428,
+        "clock_error_s": 8.032685627767933e-12,
+        "integrated_target_error_cm_quat": 4.336808689942018e-19,
+        "resource_residual": 3.552713678800501e-15,
+        "qacc_abs_native": 293343.38159399794
+      },
+      "minimum_sampled_voltage_mv": -526.6193047519381,
+      "maximum_sampled_voltage_mv": 20.152420401634927,
+      "planar_path_mm_2ms_chords": 90.24288796930743,
+      "net_planar_displacement_mm": 77.34193794225445,
+      "prefix": {
+        "matched_ticks": 1000,
+        "differences": [],
+        "matched_content_sha256": "123e65e1d76c20f1ff4ca910d89947d91438ca5ee1bc70484cba6caf91d37196"
+      },
+      "failures": [],
+      "unhealthy_completed_records": [],
+      "final_native_state": {
+        "native_time_s": 11.99999999999871,
+        "tick": 6000,
+        "finite_flag": true,
+        "source_terminated": false,
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_array_finiteness": {
+          "qpos": true,
+          "qvel": true,
+          "qacc": true,
+          "act": true,
+          "ctrl": true,
+          "native_action": true,
+          "actuator_force_preceding_stage": true
+        },
+        "brain_minus_native_s": 1.2896350654045818e-12,
+        "cached_observation_t_s": 11.99999999999871
+      },
+      "stage_clocks": {
+        "brain_t_ms": 12000.0,
+        "native_time_s": 11.99999999999871,
+        "native_control_tick": 6000,
+        "host_physiology_t_s": null,
+        "host_physiology_clock_note": "No independent elapsed physiology clock is exposed. A partial native step may not update physiology; do not infer its clock from native or observation time.",
+        "cached_observation_t_s": 11.99999999999871,
+        "latest_neural_interval_end_ms": 12000.0
+      },
+      "worker_exit_code": 0,
+      "retained_files_verified": 12,
+      "final_checkpoint_verified": true,
+      "journal_sha256": "fce2d3dd3df05d783c7c60f6f7ae5ca3a2afe0b8219a747057eced4b21b1d24f",
+      "spikes_sha256": "a0736ccc38e722e28a291a22ef0fd1ad6e3d8804f1b27c9810c0c74375456937"
+    },
+    {
+      "condition": "sensory_only",
+      "producer_complete": true,
+      "producer_gates_pass": true,
+      "independently_checkable_gates_pass": true,
+      "closed_journal_verified": true,
+      "physical_returned_ticks": 6000,
+      "physical_summary_ticks": 6000,
+      "producer_validated_ticks": 6000,
+      "lossless_neural_batches": 6000,
+      "lossless_spikes": 10523447,
+      "completed_physical_spikes": 10523447,
+      "pending_physical_batch_spikes": 0,
+      "totals": {
+        "lossless_spikes": 10523447,
+        "RNG_draws_checked": 29037260,
+        "completed_spikes": 10523447,
+        "completed_edge_visits": 3819294555,
+        "odor": 11693,
+        "sweet": 0,
+        "club": 23,
+        "motor_forward": 0,
+        "motor_turn_left": 0,
+        "motor_turn_right": 0,
+        "motor_feeding": 708,
+        "motor_escape": 0
+      },
+      "behavior": {
+        "rest": 6000
+      },
+      "mute_windows": [],
+      "maxima": {
+        "encoder_rate_error_hz": 0.0,
+        "input_rate_odor": 10.327011068615032,
+        "input_rate_sweet": 0.0,
+        "input_rate_club": 9.081269792414338,
+        "clock_error_s": 8.032685627767933e-12,
+        "integrated_target_error_cm_quat": 0.0,
+        "resource_residual": 2.4424906541753444e-15,
+        "qacc_abs_native": 4556.165046547869
+      },
+      "minimum_sampled_voltage_mv": -527.9634624629839,
+      "maximum_sampled_voltage_mv": 20.924589225768514,
+      "planar_path_mm_2ms_chords": 0.015170921902159873,
+      "net_planar_displacement_mm": 0.008560293104314151,
+      "prefix": null,
+      "failures": [],
+      "unhealthy_completed_records": [],
+      "final_native_state": {
+        "native_time_s": 11.99999999999871,
+        "tick": 6000,
+        "finite_flag": true,
+        "source_terminated": false,
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_array_finiteness": {
+          "qpos": true,
+          "qvel": true,
+          "qacc": true,
+          "act": true,
+          "ctrl": true,
+          "native_action": true,
+          "actuator_force_preceding_stage": true
+        },
+        "brain_minus_native_s": 1.2896350654045818e-12,
+        "cached_observation_t_s": 11.99999999999871
+      },
+      "stage_clocks": {
+        "brain_t_ms": 12000.0,
+        "native_time_s": 11.99999999999871,
+        "native_control_tick": 6000,
+        "host_physiology_t_s": null,
+        "host_physiology_clock_note": "No independent elapsed physiology clock is exposed. A partial native step may not update physiology; do not infer its clock from native or observation time.",
+        "cached_observation_t_s": 11.99999999999871,
+        "latest_neural_interval_end_ms": 12000.0
+      },
+      "worker_exit_code": 0,
+      "retained_files_verified": 12,
+      "final_checkpoint_verified": true,
+      "journal_sha256": "a14143cf81e9d8aa5c0ec64d8e2bd2115d015a5af4b39e3822ec2099bd3b0cce",
+      "spikes_sha256": "e3e8688a068d99a651d36196b79b4d603939f98baa07f2abd06073ebed7ddf93"
+    }
+  ],
+  "paired_mechanisms": {
+    "paired_neural_intervals": 6000,
+    "first_ordered_input_difference_tick": 21,
+    "first_non_sensory_spike_event_difference_tick": 4,
+    "first_downstream_difference_with_identical_input_history_tick": 4
+  },
+  "limits": [
+    "Closed condition-summary receipts are required. No active/truncated gzip is counted as a completed attempt.",
+    "All full ordered spike IDs/times are independently hashed and counted, including retained neural batches preceding a failed physical return.",
+    "Delayed edge visits count unblocked source outdegrees at delivery time, including edges whose target is refractory. They are not counts of successful postsynaptic updates.",
+    "RNG transition reconstruction checks 20 draws per listed input index, including zero rates. Actual Bernoulli draws and applied input-event masks are not journaled in this experiment.",
+    "Complete voltage/synaptic/mask state exists only in the final checkpoint. Per-interval finite/mask flags and voltage extrema remain producer assertions corroborated by the final arrays.",
+    "Actor-input digests are retained, but full 741-value actor arrays and complete 66-frame references are absent from these journals. Separate bridge evidence establishes actor parity; current target integration and per-step sizes/counters are independently checked here.",
+    "Initial reset/render/advance0 equality and worker reaping are producer receipts; initial/post-render comparison arrays and operating-system process history are not independently retained.",
+    "Puff positions and full field state are absent. Recorded concentrations and encoder mappings are checkable; exact spatial plume sampling remains producer evidence.",
+    "No independent host physiology elapsed-time clock exists. Failure clocks are reported separately without assigning cached host state the native clock.",
+    "Graph transmission or motor-probe locomotion does not establish physiological firing/voltage, natural navigation, male body mechanics, reproduction, or indefinite stability."
+  ]
+}
