@@ -1,0 +1,1958 @@
+{
+  "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "mujoco_version": "3.2.7",
+  "initialization_only_no_physics_rollout": true,
+  "position_law_verified": "actuator output = gain * (filtered native target - actual transmission length), bias velocity coefficient zero; passive damping/stiffness retained",
+  "candidate_measured_target": "physics.data.actuator_length in exact action-spec order, clipped to the original native ctrlrange; includes joint/tendon transmissions without guessing qpos mapping",
+  "candidate_neutral_target": "native position target zero, permitted by every original position ctrlrange",
+  "hold_adhesion": "native1 to each first-six claw adhesion channels; original gain/dynamics retained",
+  "rows": [
+    {
+      "action_index": 0,
+      "name": "adhere_claw_T1_left",
+      "compiled_actuator_id": 53,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 53,
+      "force_limited": false
+    },
+    {
+      "action_index": 1,
+      "name": "adhere_claw_T1_right",
+      "compiled_actuator_id": 54,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 54,
+      "force_limited": false
+    },
+    {
+      "action_index": 2,
+      "name": "adhere_claw_T2_left",
+      "compiled_actuator_id": 55,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 55,
+      "force_limited": false
+    },
+    {
+      "action_index": 3,
+      "name": "adhere_claw_T2_right",
+      "compiled_actuator_id": 56,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 56,
+      "force_limited": false
+    },
+    {
+      "action_index": 4,
+      "name": "adhere_claw_T3_left",
+      "compiled_actuator_id": 57,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 57,
+      "force_limited": false
+    },
+    {
+      "action_index": 5,
+      "name": "adhere_claw_T3_right",
+      "compiled_actuator_id": 58,
+      "position_target": false,
+      "trntype": 5,
+      "gain": [
+        0.985,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        0.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 58,
+      "force_limited": false
+    },
+    {
+      "action_index": 6,
+      "name": "head_abduct",
+      "compiled_actuator_id": 0,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2,
+        0.2
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 0,
+      "force_limited": true
+    },
+    {
+      "action_index": 7,
+      "name": "head_twist",
+      "compiled_actuator_id": 1,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -3.0,
+        3.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 1,
+      "force_limited": true
+    },
+    {
+      "action_index": 8,
+      "name": "head",
+      "compiled_actuator_id": 2,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.5,
+        0.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 2,
+      "force_limited": true
+    },
+    {
+      "action_index": 9,
+      "name": "abdomen_abduct",
+      "compiled_actuator_id": 3,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.7,
+        0.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 3,
+      "force_limited": false
+    },
+    {
+      "action_index": 10,
+      "name": "abdomen",
+      "compiled_actuator_id": 4,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.05,
+        0.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 4,
+      "force_limited": false
+    },
+    {
+      "action_index": 11,
+      "name": "coxa_abduct_T1_left",
+      "compiled_actuator_id": 5,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        0.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 5,
+      "force_limited": false
+    },
+    {
+      "action_index": 12,
+      "name": "coxa_twist_T1_left",
+      "compiled_actuator_id": 6,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 6,
+      "force_limited": false
+    },
+    {
+      "action_index": 13,
+      "name": "coxa_T1_left",
+      "compiled_actuator_id": 7,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2,
+        1.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 7,
+      "force_limited": false
+    },
+    {
+      "action_index": 14,
+      "name": "femur_twist_T1_left",
+      "compiled_actuator_id": 8,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 8,
+      "force_limited": false
+    },
+    {
+      "action_index": 15,
+      "name": "femur_T1_left",
+      "compiled_actuator_id": 9,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        2.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 9,
+      "force_limited": false
+    },
+    {
+      "action_index": 16,
+      "name": "tibia_T1_left",
+      "compiled_actuator_id": 10,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 10,
+      "force_limited": false
+    },
+    {
+      "action_index": 17,
+      "name": "tarsus_T1_left",
+      "compiled_actuator_id": 11,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.7,
+        1.2
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 11,
+      "force_limited": false
+    },
+    {
+      "action_index": 18,
+      "name": "tarsus2_T1_left",
+      "compiled_actuator_id": 12,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 12,
+      "force_limited": false
+    },
+    {
+      "action_index": 19,
+      "name": "coxa_abduct_T1_right",
+      "compiled_actuator_id": 13,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        0.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 13,
+      "force_limited": false
+    },
+    {
+      "action_index": 20,
+      "name": "coxa_twist_T1_right",
+      "compiled_actuator_id": 14,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 14,
+      "force_limited": false
+    },
+    {
+      "action_index": 21,
+      "name": "coxa_T1_right",
+      "compiled_actuator_id": 15,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2,
+        1.7
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 15,
+      "force_limited": false
+    },
+    {
+      "action_index": 22,
+      "name": "femur_twist_T1_right",
+      "compiled_actuator_id": 16,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 16,
+      "force_limited": false
+    },
+    {
+      "action_index": 23,
+      "name": "femur_T1_right",
+      "compiled_actuator_id": 17,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        2.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 17,
+      "force_limited": false
+    },
+    {
+      "action_index": 24,
+      "name": "tibia_T1_right",
+      "compiled_actuator_id": 18,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 18,
+      "force_limited": false
+    },
+    {
+      "action_index": 25,
+      "name": "tarsus_T1_right",
+      "compiled_actuator_id": 19,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.7,
+        1.2
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 19,
+      "force_limited": false
+    },
+    {
+      "action_index": 26,
+      "name": "tarsus2_T1_right",
+      "compiled_actuator_id": 20,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 20,
+      "force_limited": false
+    },
+    {
+      "action_index": 27,
+      "name": "coxa_abduct_T2_left",
+      "compiled_actuator_id": 21,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.5,
+        0.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 21,
+      "force_limited": false
+    },
+    {
+      "action_index": 28,
+      "name": "coxa_twist_T2_left",
+      "compiled_actuator_id": 22,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.75,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 22,
+      "force_limited": false
+    },
+    {
+      "action_index": 29,
+      "name": "coxa_T2_left",
+      "compiled_actuator_id": 23,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 23,
+      "force_limited": false
+    },
+    {
+      "action_index": 30,
+      "name": "femur_twist_T2_left",
+      "compiled_actuator_id": 24,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 24,
+      "force_limited": false
+    },
+    {
+      "action_index": 31,
+      "name": "femur_T2_left",
+      "compiled_actuator_id": 25,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        2.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 25,
+      "force_limited": false
+    },
+    {
+      "action_index": 32,
+      "name": "tibia_T2_left",
+      "compiled_actuator_id": 26,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 26,
+      "force_limited": false
+    },
+    {
+      "action_index": 33,
+      "name": "tarsus_T2_left",
+      "compiled_actuator_id": 27,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 27,
+      "force_limited": false
+    },
+    {
+      "action_index": 34,
+      "name": "tarsus2_T2_left",
+      "compiled_actuator_id": 28,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 28,
+      "force_limited": false
+    },
+    {
+      "action_index": 35,
+      "name": "coxa_abduct_T2_right",
+      "compiled_actuator_id": 29,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.5,
+        0.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 29,
+      "force_limited": false
+    },
+    {
+      "action_index": 36,
+      "name": "coxa_twist_T2_right",
+      "compiled_actuator_id": 30,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.75,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 30,
+      "force_limited": false
+    },
+    {
+      "action_index": 37,
+      "name": "coxa_T2_right",
+      "compiled_actuator_id": 31,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.2,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 31,
+      "force_limited": false
+    },
+    {
+      "action_index": 38,
+      "name": "femur_twist_T2_right",
+      "compiled_actuator_id": 32,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 32,
+      "force_limited": false
+    },
+    {
+      "action_index": 39,
+      "name": "femur_T2_right",
+      "compiled_actuator_id": 33,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        2.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 33,
+      "force_limited": false
+    },
+    {
+      "action_index": 40,
+      "name": "tibia_T2_right",
+      "compiled_actuator_id": 34,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 34,
+      "force_limited": false
+    },
+    {
+      "action_index": 41,
+      "name": "tarsus_T2_right",
+      "compiled_actuator_id": 35,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 35,
+      "force_limited": false
+    },
+    {
+      "action_index": 42,
+      "name": "tarsus2_T2_right",
+      "compiled_actuator_id": 36,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 36,
+      "force_limited": false
+    },
+    {
+      "action_index": 43,
+      "name": "coxa_abduct_T3_left",
+      "compiled_actuator_id": 37,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.25
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 37,
+      "force_limited": false
+    },
+    {
+      "action_index": 44,
+      "name": "coxa_twist_T3_left",
+      "compiled_actuator_id": 38,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 38,
+      "force_limited": false
+    },
+    {
+      "action_index": 45,
+      "name": "coxa_T3_left",
+      "compiled_actuator_id": 39,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.3,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 39,
+      "force_limited": false
+    },
+    {
+      "action_index": 46,
+      "name": "femur_twist_T3_left",
+      "compiled_actuator_id": 40,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 40,
+      "force_limited": false
+    },
+    {
+      "action_index": 47,
+      "name": "femur_T3_left",
+      "compiled_actuator_id": 41,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.7,
+        1.5
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 41,
+      "force_limited": false
+    },
+    {
+      "action_index": 48,
+      "name": "tibia_T3_left",
+      "compiled_actuator_id": 42,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 42,
+      "force_limited": false
+    },
+    {
+      "action_index": 49,
+      "name": "tarsus_T3_left",
+      "compiled_actuator_id": 43,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.8,
+        1.2
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 43,
+      "force_limited": false
+    },
+    {
+      "action_index": 50,
+      "name": "tarsus2_T3_left",
+      "compiled_actuator_id": 44,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 44,
+      "force_limited": false
+    },
+    {
+      "action_index": 51,
+      "name": "coxa_abduct_T3_right",
+      "compiled_actuator_id": 45,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.25
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 45,
+      "force_limited": false
+    },
+    {
+      "action_index": 52,
+      "name": "coxa_twist_T3_right",
+      "compiled_actuator_id": 46,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.15,
+        0.8
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 46,
+      "force_limited": false
+    },
+    {
+      "action_index": 53,
+      "name": "coxa_T3_right",
+      "compiled_actuator_id": 47,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.3,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 47,
+      "force_limited": false
+    },
+    {
+      "action_index": 54,
+      "name": "femur_twist_T3_right",
+      "compiled_actuator_id": 48,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.0,
+        1.0
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 48,
+      "force_limited": false
+    },
+    {
+      "action_index": 55,
+      "name": "femur_T3_right",
+      "compiled_actuator_id": 49,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.8,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.7,
+        1.5
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 49,
+      "force_limited": false
+    },
+    {
+      "action_index": 56,
+      "name": "tibia_T3_right",
+      "compiled_actuator_id": 50,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -1.35,
+        1.3
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 50,
+      "force_limited": false
+    },
+    {
+      "action_index": 57,
+      "name": "tarsus_T3_right",
+      "compiled_actuator_id": 51,
+      "position_target": true,
+      "trntype": 0,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.8,
+        1.2
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 51,
+      "force_limited": false
+    },
+    {
+      "action_index": 58,
+      "name": "tarsus2_T3_right",
+      "compiled_actuator_id": 52,
+      "position_target": true,
+      "trntype": 3,
+      "gain": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "bias": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "gear": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "initial_actuator_length": 0.0,
+      "initial_native_control": 0.0,
+      "activation_address": 52,
+      "force_limited": false
+    }
+  ]
+}

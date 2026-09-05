@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-09-05T02:23:15.153862+00:00",
+  "script_sha256": "228f2a52369e9d1b7a775336e6814e6d0296f522564a0c0da58422652758aa4c",
+  "actuator_audit_sha256": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+  "comparison_script_sha256": "7f0f19e3d2062bb56bcd9971bc6e39021dadc96070ac95c4f563c0233533edea",
+  "metrics_script_sha256": "6923ef8a5a3581cc747ca5b786fb9b82b8fac565d165f2e3d552a22739e51171",
+  "baseline_results_sha256": "b5852b5e3c1b0337a69717b4281f98f6b4ada9df92b9281615df1b176ba034e5",
+  "source_manifest_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+  "policy_receipt_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+  "requirements_lock_sha256": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+  "variants": [
+    "policy_zero",
+    "last_target",
+    "measured_length",
+    "neutral_zero"
+  ],
+  "assays": [
+    "zero_start",
+    "walk_stop",
+    "walk_stop_resume"
+  ],
+  "seed": 11,
+  "duration_s": 2.0,
+  "physics_dt_s": 0.0002,
+  "control_dt_s": 0.002,
+  "seed_caveat": "Previous seeds11/12 yielded identical deterministic mean-policy physics; do not repeat as independent trials.",
+  "gate_schedule": {
+    "zero_start": "off throughout; intended on-speed20mm/s suppressed",
+    "walk_stop": "on0-.6s then off.6-2s",
+    "walk_stop_resume": "on0-.6s, off.6-1.2s, on1.2-2s"
+  },
+  "windows": {
+    "zero_start": {
+      "stop": [
+        0.3,
+        2.0
+      ]
+    },
+    "walk_stop": {
+      "stop": [
+        0.85,
+        2.0
+      ]
+    },
+    "walk_stop_resume": {
+      "stop": [
+        0.85,
+        1.2
+      ],
+      "resume": [
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "hold_semantics": {
+    "policy_zero": "Control: original policy continues selecting posture with zero-speed reference while gate off.",
+    "last_target": "At off edge capture last applied native position targets. At zero-start these are reset native controls (zero).",
+    "measured_length": "At off edge capture actual actuator transmission lengths in source action order, including tendon channels; original affine gain law verified.",
+    "neutral_zero": "At off edge set all53 native position targets to zero, the source neutral geometry.",
+    "adhesion": "All three engineering holds command native1 to each of six adhesion controls; original0.985gain/filter/friction retained. This is an engineering stance choice, not measured neural adhesion.",
+    "bounds": "Clip latched position targets once to original ctrlrange; retain clipping diagnostic. No root pose or velocity clamps.",
+    "mute": "Locomotor-policy output mute with posture actuation retained. Shadow policy is evaluated but contributes no actions during engineering hold.",
+    "resume": "At rising gate release latch and immediately use unchanged mean-policy action; reference advances from preserved integrated target, no recenter/reset or entry blend."
+  },
+  "reference": "1100frames; rebuild current-only65frame128ms preview each tick. No anticipation of gate edges, no food or environmental targets.",
+  "rules": {
+    "physical": "Every trial after.3s finite; warningszero; rootheight>=.5mm; upright_z>=.5; <=1%500Hzsamples withoutpositiveactualleg-floorforce.",
+    "stop": "Every declared stopwindow median unsmoothed speed<=1mm/s and net displacement<=.5mm.",
+    "resume": "In1.5-2s median speed16-24mm/s; medianabsolute yaw<=1.2*frozenstraight20+10deg/s; physicalgatealsoapplies.",
+    "resume_absolute_yaw_ceiling_deg_s": 55.333115416206695,
+    "mute": "Every gate-off native hold action equals captured/clipped53positiontargets plus adhesion1; shadow policy output ignored.",
+    "decision": "Each engineering variant must pass everyassay/stop/physical/mute/resumecheck; no automaticpromotion. Baselinecontrolineligible."
+  },
+  "scope": "12fixedtrials (4variantsx3assays), nofit/gainsearch/neuralintegration; preservefailures; female-derived body and engineering posture hold."
+}

@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "plan_sha256": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+  "results_sha256": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+  "checker_sha256": "c3d716e5f9fa8c8f5c97d93411ae32393ebc9c3986b9de1c0b8e631e98e3f23b",
+  "trials": [
+    {
+      "variant": "policy_zero",
+      "assay": "zero_start",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "cb769746a7a856e3f8ba4af19f825d6eb2f34cf14bf674b559a7e58ca48ad462"
+    },
+    {
+      "variant": "policy_zero",
+      "assay": "walk_stop",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "1310aaea48d7b3c13635fc409552d15c94ae6e36fdf186baf7b90260dfc7eb60"
+    },
+    {
+      "variant": "policy_zero",
+      "assay": "walk_stop_resume",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "3daf6f47406543606e7bfbfb64a2ec65b5c22391bd6c9109db72557b96f30edf"
+    },
+    {
+      "variant": "last_target",
+      "assay": "zero_start",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159"
+    },
+    {
+      "variant": "last_target",
+      "assay": "walk_stop",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "3527e8ec2e94de7a2ebbce022bfbe537d8821ffab6d262b24bc9e1044cd3541a"
+    },
+    {
+      "variant": "last_target",
+      "assay": "walk_stop_resume",
+      "preserved_failure": "RuntimeError: early source termination at step613"
+    },
+    {
+      "variant": "measured_length",
+      "assay": "zero_start",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159"
+    },
+    {
+      "variant": "measured_length",
+      "assay": "walk_stop",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "4afcbf400585fc9395afd210d09d38c2a1c2720310f2453842249b43795e401a"
+    },
+    {
+      "variant": "measured_length",
+      "assay": "walk_stop_resume",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "6ef97b35881a121cfa711b35f737785db0af4a51f7c9dab3a529c6191ba39498"
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "zero_start",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159"
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "walk_stop",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "49f132fda80609b3197c56b752499fbac3585cc9eaa98a19de45bd29e4b16c9f"
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "walk_stop_resume",
+      "metrics_and_motor_gate_verified": true,
+      "trace_sha256": "1152bc4cc0a746169399e4e7539529e019b80a62e1883277f2a374b6712d24cf"
+    }
+  ],
+  "original_baseline_physics_prefixes_bitwise_identical": {
+    "zero_start": true,
+    "walk_stop": true,
+    "walk_stop_resume": true
+  },
+  "stop_and_resume_assays_identical_until_resume_edge": {
+    "policy_zero": true,
+    "last_target": true,
+    "measured_length": true,
+    "neutral_zero": true
+  },
+  "all_hold_actions_exact": true,
+  "runtime_changed": false
+}

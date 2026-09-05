@@ -12,8 +12,8 @@ time. `--config path/to/config.json` passes a JSON object to the simulation.
 
 The arena shows real JPEG frames rendered by MuJoCo. It is not a prerecorded clip
 or a browser approximation of the body. Browser reloads reconnect to the same
-worker. Pause, resume, reset, three camera views, food odor intensity, ambient
-light, and the model's motor readout mute are available. The mute does not silence
+worker. Pause, resume, reset, three camera views, food odor intensity, scene
+lighting, and the model's motor readout mute are available. The mute does not silence
 neurons: spikes continue to be simulated. Its target is displayed from runtime
 telemetry. The assay banner distinguishes sensory stimulation, direct DN motor
 calibration, and a controller-only baseline. The female-derived body morphology
@@ -35,6 +35,7 @@ The neural panel reports model voltage minimum, mean and maximum. A separate
 sensory panel shows optional compound-eye sample timing/intensity and FeCO club
 input rates, explicitly distinguishing rendered eye samples from an implemented
 neural vision pathway.
+The lighting control reports a fixed arena lamp or camera-attached headlight from runtime metadata. The optional world-light probe runs on port 8770. Zero gain can leave the fixed background visible. Paused retinal values retain their displayed sampling time until stepping resumes, while viewport lighting updates immediately.
 The wind readout shows source azimuth and relative horizontal air speed at the
 left and right antennae. An optional measured female reference shows predicted
 steady arista deflections only when the runtime's domain gates pass; otherwise
@@ -111,6 +112,7 @@ physiology: {energy, hydration, crop, capacities?: {energy, hydration, crop}}
 stimuli: {odor, light}                           # source gain controls
 senses: {odor: [left, right], taste_food, taste_water, club_event_rates_hz?}
 vision: {enabled, sample_t_s, shape, mean_by_eye}
+illumination?: {mode, world_light_count, camera_headlight_active, light_stimulus_gain, ...}
 wind: {relative_velocity_head_mm_s, source_azimuth_deg, horizontal_speed_mm_s,
        antenna_reference?: {estimated_steady_arista_deflection_deg, excluded_because}}
 wind_reference?: {nominal_speed_mm_s, speed_tolerance_fraction,

@@ -22,6 +22,7 @@ from flygym_demo.complex_terrain import (
 )
 
 from .physiology import Physiology, PhysiologyConfig, ResourcePatch
+from .illumination import WorldIlluminationConfig, add_world_illumination, illumination_snapshot
 from .wind import local_airflow, MeasuredAntennaReference
 
 
@@ -52,9 +53,14 @@ class BodyConfig:
     grooming_trace_path: str = "data/grooming/unilateral_left.npz"
     enable_vision: bool = False
     vision_period_s: float = .02
+    world_illumination: WorldIlluminationConfig | None = None
     physiology: PhysiologyConfig = field(default_factory=PhysiologyConfig)
 
     def __post_init__(self):
+        if isinstance(self.world_illumination, Mapping):
+            object.__setattr__(self, "world_illumination", WorldIlluminationConfig(**self.world_illumination))
+        if self.world_illumination is not None and not isinstance(self.world_illumination, WorldIlluminationConfig):
+            raise ValueError("world_illumination must be a configuration object or None")
         scalars = (self.physics_dt_s, self.arena_half_size_mm, self.food_radius_mm,
                    self.water_radius_mm, self.drive_limit)
         if not all(math.isfinite(v) and v > 0 for v in scalars):
@@ -224,6 +230,8 @@ class BodyRuntime:
             grooming_pairs = add_grooming_contacts(world, self.fly)
         world.mjcf_root.worldbody.add_camera(name="overview", pos=(0, -32, 39),
             xyaxes=(1, 0, 0, 0, .773, .634), fovy=49)
+        if cfg.world_illumination is not None:
+            add_world_illumination(world.mjcf_root, cfg.world_illumination)
         self.sim = Simulation(world, timestep=cfg.physics_dt_s)
         self.model, self.data = self.sim.mj_model, self.sim.mj_data
         self.model.vis.global_.offwidth = max(cfg.width, self.model.vis.global_.offwidth)
@@ -586,6 +594,7 @@ class BodyRuntime:
     def snapshot(self) -> dict:
         """Observer/evaluator state. Never pass this privileged world data to brain."""
         return {"observation": self.observe(), "config": asdict(self.config),
+                "illumination": illumination_snapshot(self.model, self.config.world_illumination, self._stimuli["light"]),
                 "wind_reference": self.wind_reference.provenance if self.wind_reference else None,
                 "grooming_reference": ({"source": self._grooming.trace["metadata"],
                     "control": asdict(self._grooming_config)} if self._grooming is not None else None),

@@ -1,0 +1,250 @@
+{
+  "passed": true,
+  "scope": "Independent source/read-only saved-result review,8 non-rollout unit tests,and real gain setter on separately compiled static fixture; no BodyRuntime construction/reset,physics stepping,new rendering,or original artifact edits.",
+  "reviewed_file_sha256": {
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/multiview.py": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+    "scripts/validate_world_illumination.py": "a03f9470f92e04ad90dc880c9f4378e45f69dbbffbb23aa3dc369ac4475aae6b",
+    "tests/test_illumination.py": "fd162ce5d47c10a17e40a477ebd13d68af1ac44eb12be3b06c54394bc3d92649",
+    "tests/test_multiview.py": "8d486d43eb27d54d35c2845ea2a0ddd8d98773b2779bae1815b4e6445c9f6ea4",
+    "validation/world-illumination/results.json": "55cffdcbb7e235a57bb1628cd16d723f4df771bb95506106c39fdafb3f06d274",
+    "validation/world-illumination/fixture-rgb.csv": "bf7ac1e9c418118fd281aea9879901dc2446a0e433acf0f0019e2fc356073266",
+    "validation/world-illumination/diagnostic.png": "9cfba1fddf86b1cb607d5cf9338c1838f9ebb1417fdb1366699fdb7ab7e7980c"
+  },
+  "original_recorded_source_hashes_match_current": true,
+  "original_producer_checks": {
+    "fixture": {
+      "lit_patch_above100": true,
+      "world_shadow_below40": true,
+      "half_gain_rgb_within1": true,
+      "zero_gain_surfaces_black": true,
+      "world_point_rgb_head_rotation_within1": true,
+      "headlight_disabled": true
+    },
+    "body": {
+      "default_preserved": true,
+      "snapshot_modes_identify_configuration": true,
+      "one_fixed_light_only_opt_in": true,
+      "all_compared_nonlight_arrays_equal": true,
+      "1000_physics_steps_exact": true,
+      "native_retina_responds_and_restores": true,
+      "gain_and_reset_preserved": true
+    },
+    "count": 13
+  },
+  "independently_recomputed_fixture_checks": {
+    "lit_patch_above100": true,
+    "world_shadow_below40": true,
+    "half_gain_rgb_within1": true,
+    "zero_gain_surfaces_black": true,
+    "world_point_rgb_head_rotation_within1": true
+  },
+  "fixture_csv_json_equal": true,
+  "fixture_max_half_gain_error_display_units": 0.5000000000000142,
+  "fixture_max_head_rotation_difference_display_units": 2.842170943040401e-14,
+  "fixture_coverage": {
+    "world_points": 2,
+    "head_orientations": 2,
+    "gains": [
+      1.0,
+      0.5,
+      0.0
+    ],
+    "same_cube_face_for_all_samples": 5,
+    "cross_seam_claim": false
+  },
+  "body_evidence": {
+    "recorded_equal_public_model_arrays": 423,
+    "raw_model_arrays_retained": false,
+    "recorded_state_comparison_samples": 21,
+    "sample_period_s": 0.005,
+    "start_s": 0.0,
+    "end_s": 0.1,
+    "integrated_physics_steps_reported": 1000,
+    "individually_observed_physics_steps": false,
+    "sampled_qpos_qvel_max_difference": 0.0,
+    "sampled_contact_counts_equal": true,
+    "contact_pair_or_force_identity_verified": false,
+    "raw_state_trajectories_retained": false,
+    "native_retina_raw_arrays_retained": false,
+    "native_retina_restoration_producer_witness": true,
+    "native_retina_gain1_vs0_max_difference_producer_witness": 0.46130210161209106
+  },
+  "independent_gain_setter_fixture": {
+    "source_function": "BodyRuntime.set_stimulus",
+    "fixture_compilation_only": true,
+    "physics_steps": 0,
+    "gain_sequence": [
+      {
+        "gain": 1.0,
+        "ambient": [
+          [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ]
+        ],
+        "diffuse": [
+          [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        ]
+      },
+      {
+        "gain": 0.5,
+        "ambient": [
+          [
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
+          ]
+        ],
+        "diffuse": [
+          [
+            0.32499998807907104,
+            0.32499998807907104,
+            0.32499998807907104
+          ]
+        ]
+      },
+      {
+        "gain": 0.0,
+        "ambient": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "diffuse": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "gain": 1.0,
+        "ambient": [
+          [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ]
+        ],
+        "diffuse": [
+          [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        ]
+      },
+      {
+        "gain": 2.0,
+        "ambient": [
+          [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        ],
+        "diffuse": [
+          [
+            1.2999999523162842,
+            1.2999999523162842,
+            1.2999999523162842
+          ]
+        ]
+      },
+      {
+        "gain": 10.0,
+        "ambient": [
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "diffuse": [
+          [
+            6.5,
+            6.5,
+            6.5
+          ]
+        ]
+      },
+      {
+        "gain": 0.5,
+        "ambient": [
+          [
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
+          ]
+        ],
+        "diffuse": [
+          [
+            0.32499998807907104,
+            0.32499998807907104,
+            0.32499998807907104
+          ]
+        ]
+      }
+    ],
+    "base_relative_not_cumulative": true,
+    "invalid_gain_rejected_without_mutation": true,
+    "headlight_stays_disabled": true,
+    "full_body_reset_rerun": false
+  },
+  "unit_tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_illumination.py -k 'not leaves_fixture_geometry_and_dynamics_exact and not rgb_scaling_world_shadow_and_head_rotation'",
+    "passed": 8,
+    "deselected": 2,
+    "reason_for_deselection": "No physics or new rendered validation rerun requested."
+  },
+  "figure_visually_inspected": "validation/world-illumination/diagnostic.png",
+  "findings": [
+    {
+      "id": "coverage_wording",
+      "severity": "reporting",
+      "file": "scripts/validate_world_illumination.py",
+      "lines": [
+        102,
+        107,
+        156
+      ],
+      "finding": "Frozen1000_physics_steps_exact key is computed from21 sampled endpoint comparisons,not each internal physics step; same limitation applies to contact count.",
+      "resolution": "Interpret as21 identical sampled qpos/qvel/contact counts across1000 integrated steps; retain original evidence."
+    },
+    {
+      "id": "artifact_scope",
+      "severity": "reporting",
+      "finding": "Artifact stores state-comparison summaries,model-array names and retinal extrema/restoration witnesses,not raw trajectories/model arrays/native retinal arrays.",
+      "resolution": "Do not claim those raw objects are retained or independently recomputed."
+    }
+  ],
+  "source_review": {
+    "new_light_world_attached_fixed_directional": true,
+    "headlight_inactive_and_zeroed": true,
+    "specular_zero": true,
+    "no_geometry_or_dynamics_write_in_insertion_helper": true,
+    "BodyConfig_opt_in_default_preserved": true,
+    "body_insertion_before_compilation": true,
+    "base_light_arrays_copied_after_compilation": true,
+    "reset_restores_base_arrays_by_source_inspection_and_original_witness": true,
+    "metadata_outside_neural_input": true
+  },
+  "limits": [
+    "Dimensionless quantized/clipped renderer RGB; no irradiance/photon/spectral or phototransduction calibration.",
+    "Zero light gain leaves skybox/background/emissive appearance possible; not complete darkness.",
+    "No all-facet/cross-seam radiometry validated by two fixture points on one face.",
+    "Light gains change rendering coefficients immediately; cached BodyRuntime retina updates on its declared simulation-time vision stride and retains sample_t_s. Gain assay renders native eyes directly.",
+    "No neural visual mapping or endogenous day-night entrainment is installed.",
+    "This review does not independently reproduce original physics/model-array/contact/retinal witnesses without retained raw arrays."
+  ]
+}

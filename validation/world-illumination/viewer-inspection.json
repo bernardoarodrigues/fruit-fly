@@ -1,0 +1,79 @@
+{
+  "kind": "Manual live browser inspection through accessibility controls and screenshots; read-only API confirmation",
+  "checked_at": "2026-09-05T02:37:28.055884+00:00",
+  "url": "http://127.0.0.1:8770/",
+  "source_sha256": {
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/simulation.py": "360103f900eb12069de60baa4ec671fb511c76832a1114c65b55a21916dab57c",
+    "fruitfly/web/app.js": "8992ccb5b05fc9ef00e23039a60d87381dedc576f89b4af35d5591ba49b5aede",
+    "fruitfly/web/index.html": "9618bf8ca23805ab8dc61e1d6b3afb77d73973b0d354db7ebd6388868237d483",
+    "configs/male-world-illumination-probe.json": "66cd3754ea65946e90ebf2b040a7ae651811a3d654d51dea5551ed454e40f67f"
+  },
+  "checks": {
+    "running_full_graph_visible": true,
+    "pause_freezes_time": true,
+    "fixed_arena_light_label_visible": true,
+    "zero_gain_dark_surfaces_gray_background_visually_observed": true,
+    "resumed_retinal_sample_response_visible": true,
+    "gain_one_restored": true,
+    "reset_zero_time_initial_state": true,
+    "layout_visually_inspected": true
+  },
+  "live_low_light_sample": {
+    "t_s": 29.16,
+    "mean_by_eye": [
+      0.2522677481174469,
+      0.24706844985485077
+    ]
+  },
+  "final_state": {
+    "status": "paused",
+    "t_s": 0.0,
+    "illumination": {
+      "mode": "fixed_world_directional",
+      "world_light_count": 1,
+      "camera_headlight_active": false,
+      "light_stimulus_gain": 1.0,
+      "world_ambient_rgb": [
+        [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ]
+      ],
+      "world_diffuse_rgb": [
+        [
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421
+        ]
+      ],
+      "coefficient_units": "dimensionless renderer RGB; no biological radiometry",
+      "background_scaled_by_light_gain": false
+    },
+    "vision": {
+      "enabled": true,
+      "sample_t_s": 0.0,
+      "shape": [
+        2,
+        721,
+        2
+      ],
+      "mean_by_eye": [
+        0.30476710200309753,
+        0.3072050213813782
+      ]
+    },
+    "neural": {
+      "neurons": 166700,
+      "edges": 25582938
+    }
+  },
+  "limits": [
+    "Live low-light sample is not matched to the earlier pose/time.",
+    "Paused viewport refreshes immediately; retinal sample remains at its reported time until stepping resumes.",
+    "Screenshots inspected in browser tool output; not archived as image files."
+  ],
+  "passed": true
+}

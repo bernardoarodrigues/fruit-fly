@@ -1,0 +1,924 @@
+{
+  "scope": "Optional dimensionless world-light validation; no neural input/radiometry.",
+  "fixture": {
+    "configuration": {
+      "direction_world": [
+        0.3,
+        -0.2,
+        -1.0
+      ],
+      "position_world": [
+        -6.0,
+        4.0,
+        20.0
+      ],
+      "ambient_rgb": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "diffuse_rgb": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "cast_shadows": true
+    },
+    "origin_world_model_units": [
+      3.0,
+      -4.0,
+      5.0
+    ],
+    "targets_world_model_units": [
+      [
+        -1.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.8,
+        -0.2,
+        0.0
+      ]
+    ],
+    "head_euler_xyz_deg": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        21,
+        -38,
+        63
+      ]
+    ],
+    "sample_axes_follow_world_targets": "head_axis = world_axis @ head_to_world; world points and world light stay fixed while head/cube cameras rotate",
+    "cube_face_indices_for_pose1": [
+      5,
+      5
+    ],
+    "rgb": [
+      [
+        [
+          [
+            144.99999999999997,
+            144.99999999999997,
+            144.99999999999997
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            73.0,
+            73.0,
+            73.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            145.0,
+            145.0,
+            145.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            73.0,
+            73.0,
+            73.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ]
+    ],
+    "checks": {
+      "lit_patch_above100": true,
+      "world_shadow_below40": true,
+      "half_gain_rgb_within1": true,
+      "zero_gain_surfaces_black": true,
+      "world_point_rgb_head_rotation_within1": true,
+      "headlight_disabled": true
+    },
+    "max_half_gain_rgb_error": 0.5000000000000142,
+    "max_head_rotation_rgb_difference": 2.842170943040401e-14,
+    "limits": "Two interior surface samples, three coefficient gains and two head orientations. Does not establish arbitrary-texture/seam radiometric fidelity. Quantization and clipping prevent global exact linear RGB scaling."
+  },
+  "body": {
+    "legacy_light_count": 0,
+    "opt_in_light_count": 1,
+    "legacy_snapshot_illumination": {
+      "mode": "legacy_camera_headlight",
+      "world_light_count": 0,
+      "camera_headlight_active": true,
+      "light_stimulus_gain": 1.0,
+      "world_ambient_rgb": [],
+      "world_diffuse_rgb": [],
+      "coefficient_units": "dimensionless renderer RGB; no biological radiometry",
+      "background_scaled_by_light_gain": false
+    },
+    "opt_in_snapshot_illumination": {
+      "mode": "fixed_world_directional",
+      "world_light_count": 1,
+      "camera_headlight_active": false,
+      "light_stimulus_gain": 1.0,
+      "world_ambient_rgb": [
+        [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ]
+      ],
+      "world_diffuse_rgb": [
+        [
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421
+        ]
+      ],
+      "coefficient_units": "dimensionless renderer RGB; no biological radiometry",
+      "background_scaled_by_light_gain": false
+    },
+    "legacy_headlight_active": 1,
+    "opt_in_headlight_active": 0,
+    "equal_model_ndarray_names": [
+      "B_colind",
+      "B_rowadr",
+      "B_rownnz",
+      "D_colind",
+      "D_diag",
+      "D_rowadr",
+      "D_rownnz",
+      "M_colind",
+      "M_rowadr",
+      "M_rownnz",
+      "actuator_acc0",
+      "actuator_actadr",
+      "actuator_actearly",
+      "actuator_actlimited",
+      "actuator_actnum",
+      "actuator_actrange",
+      "actuator_armature",
+      "actuator_biasprm",
+      "actuator_biastype",
+      "actuator_cranklength",
+      "actuator_ctrllimited",
+      "actuator_ctrlrange",
+      "actuator_damping",
+      "actuator_dampingpoly",
+      "actuator_delay",
+      "actuator_dynprm",
+      "actuator_dyntype",
+      "actuator_forcelimited",
+      "actuator_forcerange",
+      "actuator_gainprm",
+      "actuator_gaintype",
+      "actuator_gear",
+      "actuator_group",
+      "actuator_history",
+      "actuator_historyadr",
+      "actuator_length0",
+      "actuator_lengthrange",
+      "actuator_plugin",
+      "actuator_trnid",
+      "actuator_trntype",
+      "actuator_user",
+      "body_bvhadr",
+      "body_bvhnum",
+      "body_conaffinity",
+      "body_contype",
+      "body_dofadr",
+      "body_dofnum",
+      "body_geomadr",
+      "body_geomnum",
+      "body_gravcomp",
+      "body_inertia",
+      "body_invweight0",
+      "body_ipos",
+      "body_iquat",
+      "body_jntadr",
+      "body_jntnum",
+      "body_margin",
+      "body_mass",
+      "body_mocapid",
+      "body_parentid",
+      "body_plugin",
+      "body_pos",
+      "body_quat",
+      "body_rootid",
+      "body_sameframe",
+      "body_simple",
+      "body_subtreemass",
+      "body_treeid",
+      "body_user",
+      "body_weldid",
+      "bvh_aabb",
+      "bvh_child",
+      "bvh_depth",
+      "bvh_nodeid",
+      "cam_bodyid",
+      "cam_fovy",
+      "cam_intrinsic",
+      "cam_ipd",
+      "cam_mat0",
+      "cam_mode",
+      "cam_output",
+      "cam_pos",
+      "cam_pos0",
+      "cam_poscom0",
+      "cam_projection",
+      "cam_quat",
+      "cam_resolution",
+      "cam_sensorsize",
+      "cam_targetbodyid",
+      "cam_user",
+      "dof_M0",
+      "dof_Madr",
+      "dof_armature",
+      "dof_bodyid",
+      "dof_damping",
+      "dof_dampingpoly",
+      "dof_frictionloss",
+      "dof_invweight0",
+      "dof_jntid",
+      "dof_length",
+      "dof_parentid",
+      "dof_simplenum",
+      "dof_solimp",
+      "dof_solref",
+      "dof_treeid",
+      "eq_active0",
+      "eq_data",
+      "eq_obj1id",
+      "eq_obj2id",
+      "eq_objtype",
+      "eq_solimp",
+      "eq_solref",
+      "eq_type",
+      "exclude_signature",
+      "flex_activelayers",
+      "flex_bending",
+      "flex_bendingadr",
+      "flex_bvhadr",
+      "flex_bvhnum",
+      "flex_cellnum",
+      "flex_centered",
+      "flex_conaffinity",
+      "flex_condim",
+      "flex_contype",
+      "flex_damping",
+      "flex_dim",
+      "flex_edge",
+      "flex_edgeadr",
+      "flex_edgedamping",
+      "flex_edgeequality",
+      "flex_edgeflap",
+      "flex_edgenum",
+      "flex_edgestiffness",
+      "flex_elem",
+      "flex_elemadr",
+      "flex_elemdataadr",
+      "flex_elemedge",
+      "flex_elemedgeadr",
+      "flex_elemlayer",
+      "flex_elemnum",
+      "flex_elemtexcoord",
+      "flex_evpair",
+      "flex_evpairadr",
+      "flex_evpairnum",
+      "flex_flatskin",
+      "flex_friction",
+      "flex_gap",
+      "flex_group",
+      "flex_internal",
+      "flex_interp",
+      "flex_margin",
+      "flex_matid",
+      "flex_node",
+      "flex_node0",
+      "flex_nodeadr",
+      "flex_nodebodyid",
+      "flex_nodenum",
+      "flex_passive",
+      "flex_priority",
+      "flex_radius",
+      "flex_rgba",
+      "flex_rigid",
+      "flex_selfcollide",
+      "flex_shell",
+      "flex_shelldataadr",
+      "flex_shellnum",
+      "flex_size",
+      "flex_solimp",
+      "flex_solmix",
+      "flex_solref",
+      "flex_stiffness",
+      "flex_stiffnessadr",
+      "flex_texcoord",
+      "flex_texcoordadr",
+      "flex_vert",
+      "flex_vert0",
+      "flex_vertadr",
+      "flex_vertbodyid",
+      "flex_vertedge",
+      "flex_vertedgeadr",
+      "flex_vertedgenum",
+      "flex_vertmetric",
+      "flex_vertnum",
+      "flexedge_J_colind",
+      "flexedge_J_rowadr",
+      "flexedge_J_rownnz",
+      "flexedge_invweight0",
+      "flexedge_length0",
+      "flexedge_rigid",
+      "flexvert_J_colind",
+      "flexvert_J_rowadr",
+      "flexvert_J_rownnz",
+      "geom_aabb",
+      "geom_bodyid",
+      "geom_conaffinity",
+      "geom_condim",
+      "geom_contype",
+      "geom_dataid",
+      "geom_fluid",
+      "geom_friction",
+      "geom_gap",
+      "geom_group",
+      "geom_margin",
+      "geom_matid",
+      "geom_plugin",
+      "geom_pos",
+      "geom_priority",
+      "geom_quat",
+      "geom_rbound",
+      "geom_rgba",
+      "geom_sameframe",
+      "geom_size",
+      "geom_solimp",
+      "geom_solmix",
+      "geom_solref",
+      "geom_type",
+      "geom_user",
+      "hfield_adr",
+      "hfield_data",
+      "hfield_ncol",
+      "hfield_nrow",
+      "hfield_pathadr",
+      "hfield_size",
+      "jnt_actfrclimited",
+      "jnt_actfrcrange",
+      "jnt_actgravcomp",
+      "jnt_actuatorid",
+      "jnt_axis",
+      "jnt_bodyid",
+      "jnt_dofadr",
+      "jnt_group",
+      "jnt_limited",
+      "jnt_margin",
+      "jnt_pos",
+      "jnt_qposadr",
+      "jnt_range",
+      "jnt_solimp",
+      "jnt_solref",
+      "jnt_stiffness",
+      "jnt_stiffnesspoly",
+      "jnt_type",
+      "jnt_user",
+      "key_act",
+      "key_ctrl",
+      "key_mpos",
+      "key_mquat",
+      "key_qpos",
+      "key_qvel",
+      "key_time",
+      "mapD2M",
+      "mapM2D",
+      "mapM2M",
+      "mat_emission",
+      "mat_metallic",
+      "mat_reflectance",
+      "mat_rgba",
+      "mat_roughness",
+      "mat_shininess",
+      "mat_specular",
+      "mat_texid",
+      "mat_texrepeat",
+      "mat_texuniform",
+      "mesh_bvhadr",
+      "mesh_bvhnum",
+      "mesh_face",
+      "mesh_faceadr",
+      "mesh_facenormal",
+      "mesh_facenum",
+      "mesh_facetexcoord",
+      "mesh_graph",
+      "mesh_graphadr",
+      "mesh_normal",
+      "mesh_normaladr",
+      "mesh_normalnum",
+      "mesh_octadr",
+      "mesh_octnum",
+      "mesh_pathadr",
+      "mesh_polyadr",
+      "mesh_polymap",
+      "mesh_polymapadr",
+      "mesh_polymapnum",
+      "mesh_polynormal",
+      "mesh_polynum",
+      "mesh_polyvert",
+      "mesh_polyvertadr",
+      "mesh_polyvertnum",
+      "mesh_pos",
+      "mesh_quat",
+      "mesh_scale",
+      "mesh_texcoord",
+      "mesh_texcoordadr",
+      "mesh_texcoordnum",
+      "mesh_vert",
+      "mesh_vertadr",
+      "mesh_vertnum",
+      "numeric_adr",
+      "numeric_data",
+      "numeric_size",
+      "oct_aabb",
+      "oct_child",
+      "oct_coeff",
+      "oct_depth",
+      "pair_dim",
+      "pair_friction",
+      "pair_gap",
+      "pair_geom1",
+      "pair_geom2",
+      "pair_margin",
+      "pair_signature",
+      "pair_solimp",
+      "pair_solref",
+      "pair_solreffriction",
+      "plugin",
+      "plugin_attr",
+      "plugin_attradr",
+      "plugin_stateadr",
+      "plugin_statenum",
+      "qpos0",
+      "qpos_spring",
+      "sensor_adr",
+      "sensor_cutoff",
+      "sensor_datatype",
+      "sensor_delay",
+      "sensor_dim",
+      "sensor_history",
+      "sensor_historyadr",
+      "sensor_interval",
+      "sensor_intprm",
+      "sensor_needstage",
+      "sensor_noise",
+      "sensor_objid",
+      "sensor_objtype",
+      "sensor_plugin",
+      "sensor_refid",
+      "sensor_reftype",
+      "sensor_type",
+      "sensor_user",
+      "site_bodyid",
+      "site_group",
+      "site_matid",
+      "site_pos",
+      "site_quat",
+      "site_rgba",
+      "site_sameframe",
+      "site_size",
+      "site_type",
+      "site_user",
+      "skin_boneadr",
+      "skin_bonebindpos",
+      "skin_bonebindquat",
+      "skin_bonebodyid",
+      "skin_bonenum",
+      "skin_bonevertadr",
+      "skin_bonevertid",
+      "skin_bonevertnum",
+      "skin_bonevertweight",
+      "skin_face",
+      "skin_faceadr",
+      "skin_facenum",
+      "skin_group",
+      "skin_inflate",
+      "skin_matid",
+      "skin_pathadr",
+      "skin_rgba",
+      "skin_texcoord",
+      "skin_texcoordadr",
+      "skin_vert",
+      "skin_vertadr",
+      "skin_vertnum",
+      "ten_J_colind",
+      "ten_J_rowadr",
+      "ten_J_rownnz",
+      "tendon_actfrclimited",
+      "tendon_actfrcrange",
+      "tendon_actuatorid",
+      "tendon_adr",
+      "tendon_armature",
+      "tendon_damping",
+      "tendon_dampingpoly",
+      "tendon_frictionloss",
+      "tendon_group",
+      "tendon_invweight0",
+      "tendon_length0",
+      "tendon_lengthspring",
+      "tendon_limited",
+      "tendon_margin",
+      "tendon_matid",
+      "tendon_num",
+      "tendon_range",
+      "tendon_rgba",
+      "tendon_solimp_fri",
+      "tendon_solimp_lim",
+      "tendon_solref_fri",
+      "tendon_solref_lim",
+      "tendon_stiffness",
+      "tendon_stiffnesspoly",
+      "tendon_treeid",
+      "tendon_treenum",
+      "tendon_user",
+      "tendon_width",
+      "tex_adr",
+      "tex_colorspace",
+      "tex_data",
+      "tex_height",
+      "tex_nchannel",
+      "tex_pathadr",
+      "tex_type",
+      "tex_width",
+      "text_adr",
+      "text_size",
+      "tree_bodyadr",
+      "tree_bodynum",
+      "tree_dofadr",
+      "tree_dofnum",
+      "tree_sleep_policy",
+      "tuple_adr",
+      "tuple_objid",
+      "tuple_objprm",
+      "tuple_objtype",
+      "tuple_size",
+      "wrap_objid",
+      "wrap_prm",
+      "wrap_type"
+    ],
+    "model_array_differences": [],
+    "comparison_exclusions": "Private storage arrays (including _sizes), light arrays and global name-table/name-offset arrays; public numerical geometry, inertia, contacts, actuators, cameras, sensors and other model ndarray fields are compared exactly.",
+    "changed_public_count_or_storage_scalars": {
+      "nbuffer": [
+        23314100,
+        23315572
+      ],
+      "nlight": [
+        0,
+        1
+      ],
+      "nnames": [
+        20981,
+        21012
+      ],
+      "nnames_map": [
+        1604,
+        1606
+      ]
+    },
+    "equal_timestep": true,
+    "gravity_equal": true,
+    "simulated_s": 0.1,
+    "physics_steps": 1000,
+    "drive": [
+      0.8,
+      1.0
+    ],
+    "state_samples": [
+      {
+        "time_s": 0.0,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.005,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.01,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.015000000000000001,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.02,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.025,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.030000000000000002,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.035,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.04,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.045000000000000005,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.05,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.055,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.060000000000000005,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.065,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.07,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.075,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.08,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.085,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.09000000000000001,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.095,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      },
+      {
+        "time_s": 0.1,
+        "qpos_max_absolute_difference": 0.0,
+        "qvel_max_absolute_difference": 0.0,
+        "contact_count_equal": true
+      }
+    ],
+    "light_gain_samples": [
+      {
+        "gain": 1.0,
+        "rgb_min": 4.0,
+        "rgb_max": 255.00000000000003,
+        "fully_black_axes": 0,
+        "ambient": [
+          [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ]
+        ],
+        "diffuse": [
+          [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        ],
+        "qpos_unchanged": true,
+        "native_retina_shape": [
+          2,
+          721,
+          2
+        ],
+        "native_retina_range": [
+          0.0,
+          1.0
+        ],
+        "native_retina_finite": true,
+        "headlight_active": 0
+      },
+      {
+        "gain": 0.5,
+        "rgb_min": 2.0,
+        "rgb_max": 255.00000000000003,
+        "fully_black_axes": 0,
+        "ambient": [
+          [
+            0.05000000074505806,
+            0.05000000074505806,
+            0.05000000074505806
+          ]
+        ],
+        "diffuse": [
+          [
+            0.32499998807907104,
+            0.32499998807907104,
+            0.32499998807907104
+          ]
+        ],
+        "qpos_unchanged": true,
+        "native_retina_shape": [
+          2,
+          721,
+          2
+        ],
+        "native_retina_range": [
+          0.0,
+          1.0
+        ],
+        "native_retina_finite": true,
+        "headlight_active": 0
+      },
+      {
+        "gain": 0.0,
+        "rgb_min": 0.0,
+        "rgb_max": 255.00000000000003,
+        "fully_black_axes": 329,
+        "ambient": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "diffuse": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "qpos_unchanged": true,
+        "native_retina_shape": [
+          2,
+          721,
+          2
+        ],
+        "native_retina_range": [
+          0.0,
+          1.0
+        ],
+        "native_retina_finite": true,
+        "headlight_active": 0
+      },
+      {
+        "gain": 1.0,
+        "rgb_min": 4.0,
+        "rgb_max": 255.00000000000003,
+        "fully_black_axes": 0,
+        "ambient": [
+          [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.10000000149011612
+          ]
+        ],
+        "diffuse": [
+          [
+            0.6499999761581421,
+            0.6499999761581421,
+            0.6499999761581421
+          ]
+        ],
+        "qpos_unchanged": true,
+        "native_retina_shape": [
+          2,
+          721,
+          2
+        ],
+        "native_retina_range": [
+          0.0,
+          1.0
+        ],
+        "native_retina_finite": true,
+        "headlight_active": 0
+      }
+    ],
+    "reset_restores_opt_in_base_coefficients": true,
+    "native_retina_max_gain1_vs0_difference": 0.46130210161209106,
+    "native_retina_max_restored_gain1_difference": 0.0,
+    "checks": {
+      "default_preserved": true,
+      "snapshot_modes_identify_configuration": true,
+      "one_fixed_light_only_opt_in": true,
+      "all_compared_nonlight_arrays_equal": true,
+      "1000_physics_steps_exact": true,
+      "native_retina_responds_and_restores": true,
+      "gain_and_reset_preserved": true
+    }
+  },
+  "body_integration_validated": true,
+  "mujoco_version": "3.9.0",
+  "background_caveat": "Fixed skybox/background/emissive surfaces are not light coefficients and may remain visible at zero gain.",
+  "engineering_parameters": true,
+  "biological_radiometry": false,
+  "neural_input_installed": false,
+  "source_sha256": {
+    "scripts/validate_world_illumination.py": "a03f9470f92e04ad90dc880c9f4378e45f69dbbffbb23aa3dc369ac4475aae6b",
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/multiview.py": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22"
+  },
+  "source_body_sha256_if_tested": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1"
+}

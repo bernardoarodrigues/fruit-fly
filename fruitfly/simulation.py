@@ -259,6 +259,7 @@ class SimulationRunner:
                        "model": self.neural_model, "graph_sha256": self.brain.graph_sha256},
             "resources": world["resources"], "resource_balance": world["resource_balance"],
             "stimuli": world["stimuli"], "vision": observation["vision"],
+            "illumination": world.get("illumination"),
             "wind": observation["wind"], "wind_reference": world["wind_reference"],
             "grooming": observation.get("grooming"),
             "grooming_sensory_probe": ({"source_group": "grooming_sensory",

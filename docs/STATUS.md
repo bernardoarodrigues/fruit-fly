@@ -66,9 +66,13 @@ The [FlyMimic muscle audit](musculoskeletal-feasibility.md) compiles the source-
 
 An isolated [proboscis geometry audit](proboscis-mechanics.md) verifies source mesh transforms and a two-pitch diagnostic Jacobian. The source has no NeuroMechFly oral-motion limits, extension trajectory or identified mouth aperture; generic hinge defaults and an arbitrary distal mesh vertex cannot supply them. No physical swallowing claim or runtime oral controller was added.
 
-Latest complete suite: **150 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+Latest complete suite: **160 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 The [ten-second loop experiment](extended-loop.md) completes three full-graph conditions with finite, upright bodies and conserved resources. It retains one failed gate: after releasing motor mute, the fly requests feeding at the food patch rather than locomotion. Its [47-check independent review](extended-loop-independent-review.md) confirms that outcome and the actual mute release. No sampled wall interactions occur, and the current-based voltage failure remains. This is bounded engineering robustness evidence, not a completed natural-behavior milestone.
+
+The [fixed posture-hold experiment](flybody-stance-experiment.md) now passes stopping and restart with source-native measured-length and neutral-zero position targets plus maximum adhesion. The last-commanded-target candidate fails on resumption, and the original policy still fails its stopping criterion. An [independent review](flybody-stance-independent-review.md) reconstructs all twelve traces, actuator transmissions and filters. This supports a bounded optional engineering adapter; it does not resolve the measured gait mismatch or establish neural stance control.
+
+[Optional world illumination](world-illumination.md) adds a fixed scene lamp without changing sampled physical states at 21 times across 1,000 steps. Thirteen diagnostic checks and the live viewer light/reset inspection pass. The former unilluminated multiview result remains the record for the legacy configuration; visual-to-neural mapping remains open.
 
 ## Compute and next gates
 

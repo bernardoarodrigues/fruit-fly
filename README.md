@@ -36,6 +36,8 @@ That assay is motor calibration, not emergent foraging. Light currently changes 
 
 `configs/male-grooming-sensory-probe.json` instead stimulates 42 audited JO-F antennal sensory cells. The [two-seed body assay](docs/grooming-sensory-loop.md) passes 18 controls, including unchanged sensory spike trains with all downstream activity and movement abolished by blocking sensory outputs. Launch on port 8769. Inputs are imposed neural events; physical touch transduction and natural grooming are not yet calibrated.
 
+`configs/male-world-illumination-probe.json` enables a fixed arena lamp with camera headlights disabled. Launch it on port 8770. The [lighting checks](docs/world-illumination.md) cover sampled physics invariance, shadows, eye responses and the live light/reset controls. Renderer brightness remains an engineering stimulus, with neural vision mapping pending.
+
 ## Validate and investigate
 
 ```sh
@@ -60,6 +62,8 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Independent feeding review](docs/feeding-independent-review.md), [muscle mechanics and timestep audit](docs/musculoskeletal-feasibility.md), [unresolved muscle identifiers](docs/muscle-identifier-boundary.md)
 - [Male column/female optics registration boundary](docs/visual-retinotopy-feasibility.md), [measured-template camera coverage](docs/visual-template-coverage.md)
 - [Fixed FlyBody comparison and stopping failure](docs/flybody-motor-comparison.md)
+- [Engineering posture holds and restart experiment](docs/flybody-stance-experiment.md), [independent actuator/trace review](docs/flybody-stance-independent-review.md)
+- [Optional fixed arena illumination](docs/world-illumination.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
 - [Full optical-template sampling through six views](docs/multiview-eye.md), including moving-head, cube-seam and lighting checks
 - [Ten-second full-brain runs and feeding/restart interaction](docs/extended-loop.md), [independent saved-data review](docs/extended-loop-independent-review.md)

@@ -116,6 +116,9 @@ function update(data) {
     setText(`voltage-${label}`, typeof value === "number" && Number.isFinite(value) ? `${number(value, 1)} mV` : "—");
   }
   const vision = telemetry.vision || {};
+  const illumination = telemetry.illumination || {};
+  const lightModes = {fixed_world_directional: "Fixed arena light", legacy_camera_headlight: "Camera-attached light"};
+  setText("lighting-mode", lightModes[illumination.mode] || "Lighting source not reported");
   setText("vision-status", vision.enabled === true ? "Camera enabled" : vision.enabled === false ? "Disabled" : "Not reported");
   setText("vision-values", Array.isArray(vision.mean_by_eye)
     ? `L ${number(vision.mean_by_eye[0], 3)} · R ${number(vision.mean_by_eye[1], 3)} · native intensity`

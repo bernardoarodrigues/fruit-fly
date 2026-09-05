@@ -1,0 +1,1583 @@
+{
+  "passed": true,
+  "scope": "Independent scalar/array review of all frozen traces plus source initialization; no physics rerun, training, fitting, or runtime integration.",
+  "reviewer_script_sha256": "cccd0543b189da71aaff09aebbeaba2dc2dfd02231bc9129bae4582a4787f7b4",
+  "reviewed_file_sha256": {
+    "validation/flybody-stance-plan.json": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+    "validation/flybody-stance-experiment.json": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+    "scripts/experiment_flybody_stance.py": "228f2a52369e9d1b7a775336e6814e6d0296f522564a0c0da58422652758aa4c",
+    "validation/flybody-stance-actuator-audit.json": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+    "scripts/compare_flybody_motor.py": "7f0f19e3d2062bb56bcd9971bc6e39021dadc96070ac95c4f563c0233533edea",
+    "scripts/benchmark_freewalking.py": "6923ef8a5a3581cc747ca5b786fb9b82b8fac565d165f2e3d552a22739e51171",
+    "validation/flybody-motor-comparison.json": "b5852b5e3c1b0337a69717b4281f98f6b4ada9df92b9281615df1b176ba034e5",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "validation/flybody-inference-requirements.lock": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+    "scripts/audit_flybody_stance_actuators.py": "20d62dc93343f5e6d9df2f8e677f2c06f53097f54f21db35000ab646c91547ab",
+    "scripts/check_flybody_stance.py": "c3d716e5f9fa8c8f5c97d93411ae32393ebc9c3986b9de1c0b8e631e98e3f23b",
+    "scripts/plot_flybody_stance.py": "96c130538c7d7d634da754e328d454bdcef9f9a2fe855576799e79000604f49f",
+    "validation/flybody-stance-validation.json": "8d5497ec747398cb035811ef5fef170c26d2514480c389e7ab7e73b3dcc1d024",
+    "validation/flybody-stance-failure-diagnostic.json": "867183d2e26cd2de53c70b9d75906611a842a939dced83e9bf3c89077e7382cd",
+    "validation/flybody-stance-experiment.png": "b403f74ebc7548869d5f05ee07acee0eb745edc1ea2aeab66b2dba90bed42dcc",
+    "docs/flybody-stance-experiment.md": "5c47b378678c0a92d85545d7bfcf692b0e0e635e77a0c1b957bf0e04e061cf82"
+  },
+  "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "source_files_verified_count": 223,
+  "versions": {
+    "mujoco": "3.2.7",
+    "dm-control": "1.0.27",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "dm_control_engine_sha256": "58d6ff0e59dd0fe0fb14ab75c4e257820c6f9442bd83f9693c8da606e48955ae",
+  "seed_for_source_initialization": 11,
+  "source_model_time_after_initialization_s": 0,
+  "physics_integration_calls": 0,
+  "physics_step_s": 0.0002,
+  "control_step_s": 0.002,
+  "source_substeps_per_control": 10,
+  "activation_equation": "a_next = clamp(u) + (a - clamp(u)) * (1 - 0.0002/tau)^10; source Euler FILTER, tau adhesion0.007/position0.01s; float64 compiled control bounds",
+  "exact_action_order_and_transmission_map": [
+    {
+      "action_index": 0,
+      "name": "adhere_claw_T1_left",
+      "compiled_id": 53,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 1,
+      "name": "adhere_claw_T1_right",
+      "compiled_id": 54,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 2,
+      "name": "adhere_claw_T2_left",
+      "compiled_id": 55,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 3,
+      "name": "adhere_claw_T2_right",
+      "compiled_id": 56,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 4,
+      "name": "adhere_claw_T3_left",
+      "compiled_id": 57,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 5,
+      "name": "adhere_claw_T3_right",
+      "compiled_id": 58,
+      "transmission_type": 5,
+      "length_terms": [],
+      "activation_tau_s": 0.007,
+      "control_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 6,
+      "name": "head_abduct",
+      "compiled_id": 0,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/head_abduct",
+          "qpos_index": 7,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "action_index": 7,
+      "name": "head_twist",
+      "compiled_id": 1,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/head_twist",
+          "qpos_index": 8,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -3.0,
+        3.0
+      ]
+    },
+    {
+      "action_index": 8,
+      "name": "head",
+      "compiled_id": 2,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/head",
+          "qpos_index": 9,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.5,
+        0.3
+      ]
+    },
+    {
+      "action_index": 9,
+      "name": "abdomen_abduct",
+      "compiled_id": 3,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/abdomen_abduct",
+          "qpos_index": 27,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_2",
+          "qpos_index": 29,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_3",
+          "qpos_index": 31,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_4",
+          "qpos_index": 33,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_5",
+          "qpos_index": 35,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_6",
+          "qpos_index": 37,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_abduct_7",
+          "qpos_index": 39,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.7,
+        0.7
+      ]
+    },
+    {
+      "action_index": 10,
+      "name": "abdomen",
+      "compiled_id": 4,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/abdomen",
+          "qpos_index": 28,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_2",
+          "qpos_index": 30,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_3",
+          "qpos_index": 32,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_4",
+          "qpos_index": 34,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_5",
+          "qpos_index": 36,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_6",
+          "qpos_index": 38,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/abdomen_7",
+          "qpos_index": 40,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.05,
+        0.7
+      ]
+    },
+    {
+      "action_index": 11,
+      "name": "coxa_abduct_T1_left",
+      "compiled_id": 5,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T1_left",
+          "qpos_index": 43,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        0.7
+      ]
+    },
+    {
+      "action_index": 12,
+      "name": "coxa_twist_T1_left",
+      "compiled_id": 6,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T1_left",
+          "qpos_index": 44,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.8,
+        0.8
+      ]
+    },
+    {
+      "action_index": 13,
+      "name": "coxa_T1_left",
+      "compiled_id": 7,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T1_left",
+          "qpos_index": 45,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.2,
+        1.7
+      ]
+    },
+    {
+      "action_index": 14,
+      "name": "femur_twist_T1_left",
+      "compiled_id": 8,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T1_left",
+          "qpos_index": 46,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 15,
+      "name": "femur_T1_left",
+      "compiled_id": 9,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T1_left",
+          "qpos_index": 47,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        2.0
+      ]
+    },
+    {
+      "action_index": 16,
+      "name": "tibia_T1_left",
+      "compiled_id": 10,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T1_left",
+          "qpos_index": 48,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 17,
+      "name": "tarsus_T1_left",
+      "compiled_id": 11,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T1_left",
+          "qpos_index": 49,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.7,
+        1.2
+      ]
+    },
+    {
+      "action_index": 18,
+      "name": "tarsus2_T1_left",
+      "compiled_id": 12,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T1_left",
+          "qpos_index": 50,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T1_left",
+          "qpos_index": 51,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T1_left",
+          "qpos_index": 52,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T1_left",
+          "qpos_index": 53,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    },
+    {
+      "action_index": 19,
+      "name": "coxa_abduct_T1_right",
+      "compiled_id": 13,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T1_right",
+          "qpos_index": 54,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        0.7
+      ]
+    },
+    {
+      "action_index": 20,
+      "name": "coxa_twist_T1_right",
+      "compiled_id": 14,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T1_right",
+          "qpos_index": 55,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.8,
+        0.8
+      ]
+    },
+    {
+      "action_index": 21,
+      "name": "coxa_T1_right",
+      "compiled_id": 15,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T1_right",
+          "qpos_index": 56,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.2,
+        1.7
+      ]
+    },
+    {
+      "action_index": 22,
+      "name": "femur_twist_T1_right",
+      "compiled_id": 16,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T1_right",
+          "qpos_index": 57,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 23,
+      "name": "femur_T1_right",
+      "compiled_id": 17,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T1_right",
+          "qpos_index": 58,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        2.0
+      ]
+    },
+    {
+      "action_index": 24,
+      "name": "tibia_T1_right",
+      "compiled_id": 18,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T1_right",
+          "qpos_index": 59,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 25,
+      "name": "tarsus_T1_right",
+      "compiled_id": 19,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T1_right",
+          "qpos_index": 60,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.7,
+        1.2
+      ]
+    },
+    {
+      "action_index": 26,
+      "name": "tarsus2_T1_right",
+      "compiled_id": 20,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T1_right",
+          "qpos_index": 61,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T1_right",
+          "qpos_index": 62,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T1_right",
+          "qpos_index": 63,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T1_right",
+          "qpos_index": 64,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    },
+    {
+      "action_index": 27,
+      "name": "coxa_abduct_T2_left",
+      "compiled_id": 21,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T2_left",
+          "qpos_index": 65,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.5,
+        0.3
+      ]
+    },
+    {
+      "action_index": 28,
+      "name": "coxa_twist_T2_left",
+      "compiled_id": 22,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T2_left",
+          "qpos_index": 66,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.75,
+        0.8
+      ]
+    },
+    {
+      "action_index": 29,
+      "name": "coxa_T2_left",
+      "compiled_id": 23,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T2_left",
+          "qpos_index": 67,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.2,
+        0.9
+      ]
+    },
+    {
+      "action_index": 30,
+      "name": "femur_twist_T2_left",
+      "compiled_id": 24,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T2_left",
+          "qpos_index": 68,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 31,
+      "name": "femur_T2_left",
+      "compiled_id": 25,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T2_left",
+          "qpos_index": 69,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        2.0
+      ]
+    },
+    {
+      "action_index": 32,
+      "name": "tibia_T2_left",
+      "compiled_id": 26,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T2_left",
+          "qpos_index": 70,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 33,
+      "name": "tarsus_T2_left",
+      "compiled_id": 27,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T2_left",
+          "qpos_index": 71,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.8
+      ]
+    },
+    {
+      "action_index": 34,
+      "name": "tarsus2_T2_left",
+      "compiled_id": 28,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T2_left",
+          "qpos_index": 72,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T2_left",
+          "qpos_index": 73,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T2_left",
+          "qpos_index": 74,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T2_left",
+          "qpos_index": 75,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    },
+    {
+      "action_index": 35,
+      "name": "coxa_abduct_T2_right",
+      "compiled_id": 29,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T2_right",
+          "qpos_index": 76,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.5,
+        0.3
+      ]
+    },
+    {
+      "action_index": 36,
+      "name": "coxa_twist_T2_right",
+      "compiled_id": 30,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T2_right",
+          "qpos_index": 77,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.75,
+        0.8
+      ]
+    },
+    {
+      "action_index": 37,
+      "name": "coxa_T2_right",
+      "compiled_id": 31,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T2_right",
+          "qpos_index": 78,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.2,
+        0.9
+      ]
+    },
+    {
+      "action_index": 38,
+      "name": "femur_twist_T2_right",
+      "compiled_id": 32,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T2_right",
+          "qpos_index": 79,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 39,
+      "name": "femur_T2_right",
+      "compiled_id": 33,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T2_right",
+          "qpos_index": 80,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        2.0
+      ]
+    },
+    {
+      "action_index": 40,
+      "name": "tibia_T2_right",
+      "compiled_id": 34,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T2_right",
+          "qpos_index": 81,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 41,
+      "name": "tarsus_T2_right",
+      "compiled_id": 35,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T2_right",
+          "qpos_index": 82,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.8
+      ]
+    },
+    {
+      "action_index": 42,
+      "name": "tarsus2_T2_right",
+      "compiled_id": 36,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T2_right",
+          "qpos_index": 83,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T2_right",
+          "qpos_index": 84,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T2_right",
+          "qpos_index": 85,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T2_right",
+          "qpos_index": 86,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    },
+    {
+      "action_index": 43,
+      "name": "coxa_abduct_T3_left",
+      "compiled_id": 37,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T3_left",
+          "qpos_index": 87,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.25
+      ]
+    },
+    {
+      "action_index": 44,
+      "name": "coxa_twist_T3_left",
+      "compiled_id": 38,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T3_left",
+          "qpos_index": 88,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        0.8
+      ]
+    },
+    {
+      "action_index": 45,
+      "name": "coxa_T3_left",
+      "compiled_id": 39,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T3_left",
+          "qpos_index": 89,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.3,
+        1.3
+      ]
+    },
+    {
+      "action_index": 46,
+      "name": "femur_twist_T3_left",
+      "compiled_id": 40,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T3_left",
+          "qpos_index": 90,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 47,
+      "name": "femur_T3_left",
+      "compiled_id": 41,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T3_left",
+          "qpos_index": 91,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.7,
+        1.5
+      ]
+    },
+    {
+      "action_index": 48,
+      "name": "tibia_T3_left",
+      "compiled_id": 42,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T3_left",
+          "qpos_index": 92,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 49,
+      "name": "tarsus_T3_left",
+      "compiled_id": 43,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T3_left",
+          "qpos_index": 93,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.8,
+        1.2
+      ]
+    },
+    {
+      "action_index": 50,
+      "name": "tarsus2_T3_left",
+      "compiled_id": 44,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T3_left",
+          "qpos_index": 94,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T3_left",
+          "qpos_index": 95,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T3_left",
+          "qpos_index": 96,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T3_left",
+          "qpos_index": 97,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    },
+    {
+      "action_index": 51,
+      "name": "coxa_abduct_T3_right",
+      "compiled_id": 45,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_abduct_T3_right",
+          "qpos_index": 98,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.25
+      ]
+    },
+    {
+      "action_index": 52,
+      "name": "coxa_twist_T3_right",
+      "compiled_id": 46,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_twist_T3_right",
+          "qpos_index": 99,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.15,
+        0.8
+      ]
+    },
+    {
+      "action_index": 53,
+      "name": "coxa_T3_right",
+      "compiled_id": 47,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/coxa_T3_right",
+          "qpos_index": 100,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.3,
+        1.3
+      ]
+    },
+    {
+      "action_index": 54,
+      "name": "femur_twist_T3_right",
+      "compiled_id": 48,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_twist_T3_right",
+          "qpos_index": 101,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "action_index": 55,
+      "name": "femur_T3_right",
+      "compiled_id": 49,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/femur_T3_right",
+          "qpos_index": 102,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.7,
+        1.5
+      ]
+    },
+    {
+      "action_index": 56,
+      "name": "tibia_T3_right",
+      "compiled_id": 50,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tibia_T3_right",
+          "qpos_index": 103,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -1.35,
+        1.3
+      ]
+    },
+    {
+      "action_index": 57,
+      "name": "tarsus_T3_right",
+      "compiled_id": 51,
+      "transmission_type": 0,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus_T3_right",
+          "qpos_index": 104,
+          "coefficient": 1.0
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.8,
+        1.2
+      ]
+    },
+    {
+      "action_index": 58,
+      "name": "tarsus2_T3_right",
+      "compiled_id": 52,
+      "transmission_type": 3,
+      "length_terms": [
+        {
+          "joint": "walker/tarsus2_T3_right",
+          "qpos_index": 105,
+          "coefficient": 1.0
+        },
+        {
+          "joint": "walker/tarsus3_T3_right",
+          "qpos_index": 106,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus4_T3_right",
+          "qpos_index": 107,
+          "coefficient": 0.5
+        },
+        {
+          "joint": "walker/tarsus5_T3_right",
+          "qpos_index": 108,
+          "coefficient": 0.5
+        }
+      ],
+      "activation_tau_s": 0.01,
+      "control_range": [
+        -0.9,
+        0.9
+      ]
+    }
+  ],
+  "ground_geometry_ids": {
+    "0": "groundplane"
+  },
+  "trials": [
+    {
+      "variant": "policy_zero",
+      "assay": "zero_start",
+      "trace_sha256": "cb769746a7a856e3f8ba4af19f825d6eb2f34cf14bf674b559a7e58ca48ad462",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9961211909686509,
+        "min_height_mm": 1.3106929602697746,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 5.731290287474136
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 1.6962783315144785,
+          "absolute_yaw_median_deg_s": 1.4379453885386155,
+          "net_displacement_mm": 0.02342476993721884,
+          "passed": false
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "policy_zero",
+      "assay": "walk_stop",
+      "trace_sha256": "1310aaea48d7b3c13635fc409552d15c94ae6e36fdf186baf7b90260dfc7eb60",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.992786557438777,
+        "min_height_mm": 1.29429793758464,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 5.832211855993893
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 1.8739690579784616,
+          "absolute_yaw_median_deg_s": 0.2411066813039316,
+          "net_displacement_mm": 0.017418649598844912,
+          "passed": false
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "policy_zero",
+      "assay": "walk_stop_resume",
+      "trace_sha256": "3daf6f47406543606e7bfbfb64a2ec65b5c22391bd6c9109db72557b96f30edf",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9919922351564385,
+        "min_height_mm": 1.252789581168975,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 5.195424065907776
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 1.8739690579784616,
+          "absolute_yaw_median_deg_s": 0.2866173133232541,
+          "net_displacement_mm": 0.016739503496834608,
+          "passed": false
+        },
+        "resume": {
+          "speed_median_mm_s": 19.901570266528505,
+          "absolute_yaw_median_deg_s": 35.448061991781536,
+          "net_displacement_mm": 10.03121234751534,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "last_target",
+      "assay": "zero_start",
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 4.440892098500626e-16,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9998511388891367,
+        "min_height_mm": 1.2785625739211275,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 7.118559753159328
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0002120546383784239,
+          "absolute_yaw_median_deg_s": 0.011083385543307385,
+          "net_displacement_mm": 0.0003097457576676309,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "last_target",
+      "assay": "walk_stop",
+      "trace_sha256": "3527e8ec2e94de7a2ebbce022bfbe537d8821ffab6d262b24bc9e1044cd3541a",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.7763568394002505e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.7801251657215693,
+        "min_height_mm": 1.0435576201231238,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 2.2127890010479985
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0035409392516144167,
+          "absolute_yaw_median_deg_s": 0.02825328886964746,
+          "net_displacement_mm": 0.001489766338199956,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "last_target",
+      "assay": "walk_stop_resume",
+      "trace_sha256": "efc95c8f713ff0bc30e759131c90992a134e9610d4f5c4b43ca8efc81079d85b",
+      "samples": 614,
+      "reconstructed_duration_s": 1.226,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.7763568394002505e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.6877827107069172,
+        "min_height_mm": 1.0435576201231238,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 2.7409263272854094
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.00594451398436236,
+          "absolute_yaw_median_deg_s": 0.17052351209451552,
+          "net_displacement_mm": 0.00023514296476662502,
+          "passed": true
+        }
+      },
+      "retained_failure": "RuntimeError: early source termination at step613"
+    },
+    {
+      "variant": "measured_length",
+      "assay": "zero_start",
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 4.440892098500626e-16,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9998511388891367,
+        "min_height_mm": 1.2785625739211275,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 7.118559753159328
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0002120546383784239,
+          "absolute_yaw_median_deg_s": 0.011083385543307385,
+          "net_displacement_mm": 0.0003097457576676309,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "measured_length",
+      "assay": "walk_stop",
+      "trace_sha256": "4afcbf400585fc9395afd210d09d38c2a1c2720310f2453842249b43795e401a",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.992786557438777,
+        "min_height_mm": 1.2831633963645572,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 4.979855586702374
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0033072272744737404,
+          "absolute_yaw_median_deg_s": 0.012343777112345798,
+          "net_displacement_mm": 0.0004852751848091421,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "measured_length",
+      "assay": "walk_stop_resume",
+      "trace_sha256": "6ef97b35881a121cfa711b35f737785db0af4a51f7c9dab3a529c6191ba39498",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9925086838400184,
+        "min_height_mm": 1.2818251432898442,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 4.788523747954813
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.003762794550277763,
+          "absolute_yaw_median_deg_s": 0.011929639149762753,
+          "net_displacement_mm": 0.00045389176402997605,
+          "passed": true
+        },
+        "resume": {
+          "speed_median_mm_s": 20.56898220929061,
+          "absolute_yaw_median_deg_s": 35.403562186744,
+          "net_displacement_mm": 10.062655050389296,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "zero_start",
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 4.440892098500626e-16,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9998511388891367,
+        "min_height_mm": 1.2785625739211275,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 7.118559753159328
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0002120546383784239,
+          "absolute_yaw_median_deg_s": 0.011083385543307385,
+          "net_displacement_mm": 0.0003097457576676309,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "walk_stop",
+      "trace_sha256": "49f132fda80609b3197c56b752499fbac3585cc9eaa98a19de45bd29e4b16c9f",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9852030095317369,
+        "min_height_mm": 1.3062385599524173,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 5.822257174148957
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.0031965248954524744,
+          "absolute_yaw_median_deg_s": 0.1495387956760051,
+          "net_displacement_mm": 0.0036970794595746767,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    },
+    {
+      "variant": "neutral_zero",
+      "assay": "walk_stop_resume",
+      "trace_sha256": "1152bc4cc0a746169399e4e7539529e019b80a62e1883277f2a374b6712d24cf",
+      "samples": 1001,
+      "reconstructed_duration_s": 2.0,
+      "max_transmission_length_error_native": 0.0,
+      "max_activation_error_native": 1.0547118733938987e-15,
+      "gate_policy_latch_verified": true,
+      "all_retained_arrays_finite": true,
+      "physical_recomputed": {
+        "min_up_z": 0.9853145760252371,
+        "min_height_mm": 1.2833865148557897,
+        "unsupported_fraction": 0.0,
+        "support_over_weight_mean": 5.160082662880813
+      },
+      "windows": {
+        "stop": {
+          "speed_median_mm_s": 0.003243633228160247,
+          "absolute_yaw_median_deg_s": 0.15165949152921002,
+          "net_displacement_mm": 0.001145140916075879,
+          "passed": true
+        },
+        "resume": {
+          "speed_median_mm_s": 19.70670102016587,
+          "absolute_yaw_median_deg_s": 29.335279026071092,
+          "net_displacement_mm": 10.089178720666718,
+          "passed": true
+        }
+      },
+      "retained_failure": null
+    }
+  ],
+  "identical_until_command_edge": {
+    "policy_zero": true,
+    "last_target": true,
+    "measured_length": true,
+    "neutral_zero": true
+  },
+  "all_three_zero_start_holds_bitwise_identical": true,
+  "recomputed_decisions": {
+    "policy_zero": false,
+    "last_target": false,
+    "measured_length": true,
+    "neutral_zero": true
+  },
+  "recomputed_failure_diagnostic": {
+    "reference_distance_cm": 0.3114005241742827,
+    "root_linear_speed_cm_s": 4.969452877065093,
+    "root_angular_speed_rad_s": 24.962404356600203
+  },
+  "plot_visually_inspected": "validation/flybody-stance-experiment.png",
+  "limits": [
+    "One deterministic state, speed, surface and stop phase. No biological stance or general robustness validation.",
+    "Current actuator_length follows terminal mj_step1; raw actuator_force is preceding force-stage telemetry, not simultaneous with retained poststep activation/length.",
+    "No native data.time series is retained; trace time is reconstructed from action count and compiled source steps.",
+    "Ground contact forces were recomputed by source experiment using mj_forward on a detached data copy. This review checks IDs/code and saved aggregate gates, not an independent force solve.",
+    "Support sums absolute world-vertical contact forces including artificial maximum adhesion; not net weight balance or physiological force evidence.",
+    "Failure qacc/warnings unrecorded; reference-distance threshold explains termination but does not exclude simultaneous source conditions.",
+    "Sampled 500Hz geometry/support and interval displacement speeds do not establish continuous-time extrema or continuous contact.",
+    "Heading uses declared 7.5ms Gaussian with reflected window edges; displayed 11-sample speed median is cosmetic only.",
+    "Source validator skips most failed-trace checks. This review includes its finite state, mapping, filter, command/latch and available stop window."
+  ]
+}

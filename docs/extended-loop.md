@@ -91,8 +91,9 @@ review means the **failed experimental outcome is faithfully reproduced**.
 .venv/bin/python scripts/review_extended_loop.py
 ```
 
-The experiment refuses changed source hashes. Reproduce its historical source
-revision rather than editing the plan to admit a changed model. Ignored graph
+The experiment refuses changed source hashes. Its historical source revision is
+Git commit `eeb30b0`; reproduce that revision rather than editing the plan to
+admit a changed model. Ignored graph
 data and recorded run telemetry must be available at their manifest paths.
 
 Each ten-second integration took 66.4–73.1 wall seconds, including telemetry and
