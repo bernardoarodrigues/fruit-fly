@@ -1,0 +1,47 @@
+{
+  "body_ids": [
+    10540,
+    10977
+  ],
+  "contacts": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+  "neurons": "data/processed/malecns_v1/neurons.feather",
+  "seed": 20260905,
+  "reference_nodes": 32,
+  "reference_points": 32,
+  "reference_pairs": 16,
+  "path_atol_um": 1e-08,
+  "projection_atol_um": 1e-10,
+  "coordinate_units_um": 0.008,
+  "scope": "Both APL cells, all retained incoming endpoints and outgoing endpoints onto selected KC/APL targets; preserve every raw contact row and disconnected component",
+  "attachment_rule": "Exact closest skeleton segment; no attachment distance cutoff or component bridge",
+  "source_pins": [
+    {
+      "path": "scripts/apl_skeleton_geometry.py",
+      "sha256": "094af9567e68193cd01859fdf50b2e25c20ae514019468d90b7af2fc969805ad"
+    },
+    {
+      "path": "scripts/audit_male_apl_geometry.py",
+      "sha256": "b1ee3982d18180461739d4dc8d33c2fcffbc0e0d751fc5aa260338416ba20170"
+    },
+    {
+      "path": "tests/test_apl_skeleton_geometry.py",
+      "sha256": "90aafa064b9b5e42a5d1b11a6eaf8684bfd10497067b8cf052c5bf03d21a06e7"
+    },
+    {
+      "path": "data/raw/male-apl-skeletons/10540.swc",
+      "sha256": "22372942488c2e9222a1634a63c980c94d8130f4f497c5c62d4bbda4a784170f"
+    },
+    {
+      "path": "data/raw/male-apl-skeletons/10977.swc",
+      "sha256": "34123fc48a5ffee6b9b29e857219776ccdcb737d885b9de90e2a43d57ecaf9cf"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    }
+  ]
+}

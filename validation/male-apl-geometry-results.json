@@ -1,0 +1,275 @@
+{
+  "completed_utc": "2026-09-05T23:19:39.783626+00:00",
+  "wall_seconds": 9.044449667038862,
+  "status": "completed_geometry_and_contact_attachment_audit",
+  "plan": {
+    "path": "validation/male-apl-geometry-plan.json",
+    "bytes": 1747,
+    "sha256": "32ac5bdb3322dfdaac7dda7dd02180da90b39d745997ee072910bd62d3896df5"
+  },
+  "arrays": {
+    "path": "validation/male-apl-geometry-arrays.npz",
+    "bytes": 9616448,
+    "sha256": "3738c62a7294da9f109447a164b9767491976628e3d55df35be1bc0363df058b"
+  },
+  "source_pins": [
+    {
+      "path": "scripts/apl_skeleton_geometry.py",
+      "sha256": "094af9567e68193cd01859fdf50b2e25c20ae514019468d90b7af2fc969805ad"
+    },
+    {
+      "path": "scripts/audit_male_apl_geometry.py",
+      "sha256": "b1ee3982d18180461739d4dc8d33c2fcffbc0e0d751fc5aa260338416ba20170"
+    },
+    {
+      "path": "tests/test_apl_skeleton_geometry.py",
+      "sha256": "90aafa064b9b5e42a5d1b11a6eaf8684bfd10497067b8cf052c5bf03d21a06e7"
+    },
+    {
+      "path": "data/raw/male-apl-skeletons/10540.swc",
+      "sha256": "22372942488c2e9222a1634a63c980c94d8130f4f497c5c62d4bbda4a784170f"
+    },
+    {
+      "path": "data/raw/male-apl-skeletons/10977.swc",
+      "sha256": "34123fc48a5ffee6b9b29e857219776ccdcb737d885b9de90e2a43d57ecaf9cf"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    }
+  ],
+  "reference_checks": 2477,
+  "skeletons": [
+    {
+      "body_id": 10540,
+      "instance": "APL_R",
+      "status": "Traced",
+      "statusLabel": "Roughly traced",
+      "graph_index": 502,
+      "nodes": 43737,
+      "edges": 43734,
+      "root_node_ids": [
+        1,
+        43725,
+        43729
+      ],
+      "component_node_counts": [
+        43724,
+        4,
+        9
+      ],
+      "length_um": {
+        "min": 0.06976073394108973,
+        "median": 0.7240773439350253,
+        "p95": 1.6028135262718552,
+        "p99": 2.212092873276355,
+        "max": 9.2587998531127
+      },
+      "total_length_um": 37267.61260880871,
+      "radius_um": {
+        "min": 0.256,
+        "median": 0.256,
+        "p95": 0.768,
+        "p99": 0.8888640000000001,
+        "max": 5.174184
+      },
+      "radius_floor_count": 30102,
+      "contact_rows": 220214,
+      "unique_contact_locations": 140331,
+      "groups": [
+        {
+          "incoming": true,
+          "counterpart_is_kc": true,
+          "contact_rows": 108338,
+          "unique_locations": 108338,
+          "residual_um": {
+            "min": 0.0003089559541460239,
+            "median": 0.7310266752998935,
+            "p95": 1.5234697240181756,
+            "p99": 1.7928948397076816,
+            "max": 2.578766216623748
+          },
+          "attached_component_counts": [
+            108338,
+            0,
+            0
+          ]
+        },
+        {
+          "incoming": true,
+          "counterpart_is_kc": false,
+          "contact_rows": 16318,
+          "unique_locations": 16318,
+          "residual_um": {
+            "min": 0.006531972647435593,
+            "median": 0.714136121253331,
+            "p95": 1.5454500954642998,
+            "p99": 1.835257330782254,
+            "max": 2.7479737990017172
+          },
+          "attached_component_counts": [
+            16316,
+            2,
+            0
+          ]
+        },
+        {
+          "incoming": false,
+          "counterpart_is_kc": true,
+          "contact_rows": 95542,
+          "unique_locations": 15674,
+          "residual_um": {
+            "min": 0.0063947730502768845,
+            "median": 0.6252709888710681,
+            "p95": 1.34861113742992,
+            "p99": 1.6813137720247275,
+            "max": 2.283281848568007
+          },
+          "attached_component_counts": [
+            95542,
+            0,
+            0
+          ]
+        },
+        {
+          "incoming": false,
+          "counterpart_is_kc": false,
+          "contact_rows": 16,
+          "unique_locations": 16,
+          "residual_um": {
+            "min": 0.23066606384797525,
+            "median": 0.4838915911609897,
+            "p95": 0.9577394670159407,
+            "p99": 0.9818636783904269,
+            "max": 0.9878947312340484
+          },
+          "attached_component_counts": [
+            16,
+            0,
+            0
+          ]
+        }
+      ],
+      "max_node_path_error_um": 1.4210854715202004e-12,
+      "max_projection_error_um": 1.3988810110276972e-14,
+      "max_attachment_path_error_um": 9.663381206337363e-13
+    },
+    {
+      "body_id": 10977,
+      "instance": "APL_L",
+      "status": "Traced",
+      "statusLabel": "Roughly traced",
+      "graph_index": 904,
+      "nodes": 45168,
+      "edges": 45166,
+      "root_node_ids": [
+        1,
+        45161
+      ],
+      "component_node_counts": [
+        45160,
+        8
+      ],
+      "length_um": {
+        "min": 0.11746114251103848,
+        "median": 0.7240773439350253,
+        "p95": 1.5360000000000014,
+        "p99": 2.1110300803162443,
+        "max": 7.057432961070237
+      },
+      "total_length_um": 37613.96492033878,
+      "radius_um": {
+        "min": 0.256,
+        "median": 0.256,
+        "p95": 0.768,
+        "p99": 0.8888640000000001,
+        "max": 4.5742
+      },
+      "radius_floor_count": 31545,
+      "contact_rows": 219012,
+      "unique_contact_locations": 135011,
+      "groups": [
+        {
+          "incoming": true,
+          "counterpart_is_kc": true,
+          "contact_rows": 102014,
+          "unique_locations": 102014,
+          "residual_um": {
+            "min": 7.850462293418876e-17,
+            "median": 0.7241804561822747,
+            "p95": 1.514267787839444,
+            "p99": 1.7703325782560972,
+            "max": 2.3675269797829075
+          },
+          "attached_component_counts": [
+            102014,
+            0
+          ]
+        },
+        {
+          "incoming": true,
+          "counterpart_is_kc": false,
+          "contact_rows": 16334,
+          "unique_locations": 16334,
+          "residual_um": {
+            "min": 0.0,
+            "median": 0.7013561466459164,
+            "p95": 1.5219040672599895,
+            "p99": 1.8112647544353595,
+            "max": 3.3101357411081263
+          },
+          "attached_component_counts": [
+            16331,
+            3
+          ]
+        },
+        {
+          "incoming": false,
+          "counterpart_is_kc": true,
+          "contact_rows": 100658,
+          "unique_locations": 16661,
+          "residual_um": {
+            "min": 0.011313708498981003,
+            "median": 0.6191090372462675,
+            "p95": 1.3472365790639882,
+            "p99": 1.6427099561395495,
+            "max": 2.4469231142953305
+          },
+          "attached_component_counts": [
+            100658,
+            0
+          ]
+        },
+        {
+          "incoming": false,
+          "counterpart_is_kc": false,
+          "contact_rows": 6,
+          "unique_locations": 6,
+          "residual_um": {
+            "min": 0.1741355793627446,
+            "median": 0.5301572548342075,
+            "p95": 1.1304103324460972,
+            "p99": 1.1525691090321917,
+            "max": 1.1581088031787152
+          },
+          "attached_component_counts": [
+            6,
+            0
+          ]
+        }
+      ],
+      "max_node_path_error_um": 1.8758328224066645e-12,
+      "max_projection_error_um": 2.731148640577885e-14,
+      "max_attachment_path_error_um": 1.5063505998114124e-12
+    }
+  ],
+  "graph_changed": false,
+  "artificial_bridges_added": false,
+  "neural_simulation_run": false,
+  "electrical_model_calibrated": false,
+  "scope": "All retained incoming APL endpoints and APL outgoing endpoints onto selected KC/APL targets; not every outgoing APL contact in the CNS."
+}
