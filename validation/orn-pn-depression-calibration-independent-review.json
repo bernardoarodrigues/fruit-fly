@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T18:14:27.043316+00:00",
+  "scope": "Independent saved-value/source review; no optimizer rerun, fitted parameter search, graph/neural/body execution, or runtime imports.",
+  "source_start": {
+    "scripts/calibrate_orn_pn_depression.py": {
+      "path": "scripts/calibrate_orn_pn_depression.py",
+      "bytes": 15117,
+      "sha256": "998f2e8f8319a10ab2d2d67d344811c980740883c63db8a7c7250bc72ba6e888"
+    },
+    "validation/orn-pn-depression-fig8f-points.csv": {
+      "path": "validation/orn-pn-depression-fig8f-points.csv",
+      "bytes": 24175,
+      "sha256": "a7eb118d67232d86fb4aba1a817549e5e5c7afadf542207a03ab60037ca70fba"
+    },
+    "validation/orn-pn-depression-fig8f-results.json": {
+      "path": "validation/orn-pn-depression-fig8f-results.json",
+      "bytes": 100058,
+      "sha256": "5a664d8f890e995b5bd79402bff7ea53977d14205098ee2922e6cbd4bacaabce"
+    },
+    "validation/orn-pn-depression-fig8f-independent-review.json": {
+      "path": "validation/orn-pn-depression-fig8f-independent-review.json",
+      "bytes": 10325,
+      "sha256": "de3f41c6252b571ac4c339339de8639b47e1ba5d06715472d8c07b340167523a"
+    },
+    "validation/orn-pn-depression-comparison-results.json": {
+      "path": "validation/orn-pn-depression-comparison-results.json",
+      "bytes": 3871,
+      "sha256": "83ebe866d7f02f512449228d3b9ef762638a76e9da13e630e37407a26b5bc8a0"
+    },
+    "validation/synaptic-depression-reference-arrays.npz": {
+      "path": "validation/synaptic-depression-reference-arrays.npz",
+      "bytes": 550403,
+      "sha256": "49e64860028ad2f87292c93dea382b178b3f5cfe6f1faafc42be9cd7adddf76e"
+    },
+    "fruitfly/neural.py": {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "fruitfly/sensors.py": {
+      "path": "fruitfly/sensors.py",
+      "bytes": 8867,
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536"
+    },
+    "validation/orn-pn-depression-calibration-plan.json": {
+      "path": "validation/orn-pn-depression-calibration-plan.json",
+      "bytes": 12417,
+      "sha256": "abce77922dc08156fd6b155614fc035bc9f13b2f91ad1125d46ac24f7440a5d2"
+    },
+    "validation/orn-pn-depression-calibration-results.json": {
+      "path": "validation/orn-pn-depression-calibration-results.json",
+      "bytes": 19056,
+      "sha256": "97775ae6ca24a1e459f52b36591f583cddf1ea7441c0729354b425e9f062703a"
+    },
+    "validation/orn-pn-depression-calibration-arrays.npz": {
+      "path": "validation/orn-pn-depression-calibration-arrays.npz",
+      "bytes": 9652,
+      "sha256": "5309dc206ff496286270b28d0c71ce02b74fd5f66600ac8f12884d21c9fc201b"
+    },
+    "validation/orn-pn-depression-calibration-predictions.csv": {
+      "path": "validation/orn-pn-depression-calibration-predictions.csv",
+      "bytes": 3477,
+      "sha256": "aa0b52cf9f7f147e54eb221317abd9df2850f45fd7ac2ccb4a43811f505631f4"
+    },
+    "validation/orn-pn-depression-calibration-profile.csv": {
+      "path": "validation/orn-pn-depression-calibration-profile.csv",
+      "bytes": 8367,
+      "sha256": "93fa204959ac6646573bd1f741d5e54e3b36b51eb71346a9222437d147723e21"
+    }
+  },
+  "reference": "Independent 60-digit Decimal read-before-decrement recurrence over28 baseline events and regular test events; exact rational7Hz intervals and positive declared phase fractions. Predictions and SSE are evaluated only at retained parameter values.",
+  "tolerances": {
+    "curve_and_summary_percentage_points": 1e-09,
+    "SSE_percentage_points_squared": 1e-06,
+    "absolute_efficacy": 1e-12
+  },
+  "execution_history": "First saved-data review invocation; all producer profiles completed and were retained. Pre-execution suggestion to preserve partial profile rows arrived after the successful run and was not retrofitted into frozen source.",
+  "jacobian_crosscheck": {
+    "independent_method": "60-digit recurrence analytic forward derivatives for f and ln(tau): on recovery a=1-(1-post)*e, d_ln_tau a=e*d_ln_tau post-(1-post)*e*dt/tau; quotient rule for a/a0.",
+    "independent_singular_values": [
+      111.94926748774841,
+      12.818660264319057
+    ],
+    "saved_scipy_finite_difference_singular_values": [
+      111.94926872959952,
+      12.81866078397959
+    ],
+    "maximum_absolute_difference": 1.2418511090572792e-06,
+    "original_jacobian_array_retained": false,
+    "interpretation": "Local coordinate sensitivities do not establish global identifiability or a closed interval for tau, especially at an active search bound."
+  },
+  "summary": {
+    "best": {
+      "start": [
+        0.5,
+        -4.605170185988091
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 16,
+      "f": 0.8074986873190908,
+      "tau_s": 99.99999999999996,
+      "SSE": 179.50271635171003,
+      "optimality": 2.6343342017612346e-06,
+      "active_mask": [
+        0,
+        1
+      ]
+    },
+    "recomputed_effective_20Hz_shape": {
+      "first_test_efficacy": 0.009767101912531882,
+      "normalized_floor": 0.2653092054816173,
+      "per_event_decay": 0.8070950388959464
+    },
+    "recomputed_rate_metrics": [
+      {
+        "frequency_hz": 15,
+        "role": "evaluation",
+        "means": 7,
+        "RMSE_percentage_points": 12.167649279609932,
+        "MAE_percentage_points": 11.260026767331343,
+        "mean_signed_error_percentage_points": -11.260026767331343,
+        "last_predicted_percent": 49.75335069534575,
+        "last_observed_percent": 66.24365482233502
+      },
+      {
+        "frequency_hz": 20,
+        "role": "development",
+        "means": 9,
+        "RMSE_percentage_points": 4.465954126645408,
+        "MAE_percentage_points": 3.302440797871125,
+        "mean_signed_error_percentage_points": -0.059342322579022756,
+        "last_predicted_percent": 37.20736631199809,
+        "last_observed_percent": 35.53299492385786
+      },
+      {
+        "frequency_hz": 50,
+        "role": "evaluation",
+        "means": 24,
+        "RMSE_percentage_points": 21.19540329250697,
+        "MAE_percentage_points": 18.261494837624145,
+        "mean_signed_error_percentage_points": 18.261494837624145,
+        "last_predicted_percent": 11.152742294374454,
+        "last_observed_percent": 4.060913705583756
+      }
+    ],
+    "profile_rows_checked": 121,
+    "attempts_checked": 30,
+    "reported_optimizer_successes": 30,
+    "starts_within_1e_minus6_SSE_of_saved_best": 25,
+    "saved_profile_near_best_sampled_tau_extent_s": [
+      2.610157215682536,
+      100.0
+    ],
+    "tau_infinite_interior_f_limit": {
+      "f": 0.8815300829089423,
+      "SSE": 256.4158087927624,
+      "RMSE_percentage_points": 5.3376629175527786
+    },
+    "nominal_first_test_model_efficacy_percent_of_fully_recovered": 0.9767101912531881,
+    "phase_rows_checked": 15,
+    "prediction_rows_checked": 43,
+    "scalar_reference_only": true
+  },
+  "source_review": {
+    "development_only": "Only9 noninitial20Hz means enter residual(), sse_f(),30start selection,121fixed-tau profiles, and the analytic infinity-boundary objective.",
+    "evaluation_only": "15/50Hz values and all5positive-gap scenarios per rate are evaluated after best selection, using exactly the saved best f/tau.",
+    "profile_amendment": "Endpoint-adjacent intervals now refined while retaining exact endpoints and sampled grid minimum; not a mathematical global-optimum certificate.",
+    "success_history": "All completed profile rows are saved in CSV/NPZ. The unchanged source would not retain partial profile rows if a future earlier failure occurred; no such failure happened in this execution."
+  },
+  "limits": [
+    "No optimizer search or convergence path was rerun. Saved f/tau objective values and best-among-recorded-successes selection are verified; this does not prove a global optimum beyond the declared bounds or that every profile refinement found the mathematical optimum.",
+    "The winning tau hits100s, an engineering search bound. The sampled2.61-100s near-best span is a descriptive1percentagepoint RMSE rule, not a biological interval, likelihood or uncertainty estimate.",
+    "All30 starts report optimizer success, but they do not agree in objective value: nearly flat low-tau starts can terminate with much worse SSE.",
+    "First-test normalization hides the fitted model's very strong baseline depletion: a0 is about0.00977 of fully recovered model efficacy. This state is not a measured current or an independently calibrated physiological baseline.",
+    "15/50Hz curves were previously inspected and use the same source cells; they are evaluation curves for this20Hz fit, not unseen validation. The15Hz error worsens relative to the unfitted reference while20/50Hz errors decrease.",
+    "The paper's exact normalization/pooling and baseline-test phase remain unresolved. Gap sensitivity keeps parameters fixed and does not estimate the biological phase. No SEM weighting, per-cell independence, p-values, absolute gain, release-probability inference, male transfer or network promotion is established."
+  ],
+  "completed_utc": "2026-09-05T18:14:27.137449+00:00",
+  "wall_seconds": 0.09414462500717491,
+  "passed": true,
+  "check_count": 689,
+  "checks_by_category": {
+    "provenance": 16,
+    "source_scope": 4,
+    "input_population": 7,
+    "development_attempts": 32,
+    "development_SSE": 31,
+    "nominal_invariants": 5,
+    "nominal_arrays": 6,
+    "nominal_summary": 18,
+    "csv_alignment": 43,
+    "csv_prediction": 86,
+    "phase_contract": 34,
+    "phase_arrays": 15,
+    "phase_summary": 15,
+    "profile": 123,
+    "profile_SSE": 121,
+    "profile_RMSE": 121,
+    "archive_profile": 2,
+    "archive_schema": 1,
+    "profile_near_best": 1,
+    "infinite_limit": 3,
+    "effective_shape": 3,
+    "boundary_flags": 1,
+    "source_stability": 1
+  },
+  "maximum_absolute_differences": {
+    "development_SSE": 3.410605131648481e-13,
+    "nominal_arrays": 3.552713678800501e-14,
+    "nominal_summary": 2.1316282072803006e-14,
+    "csv_prediction": 3.552713678800501e-14,
+    "phase_arrays": 3.552713678800501e-14,
+    "phase_summary": 3.552713678800501e-14,
+    "phase_contract": 0.0,
+    "nominal_invariants": 0.0,
+    "profile_SSE": 1.4551915228366852e-11,
+    "profile_RMSE": 1.4210854715202004e-14,
+    "profile_near_best": 0.0,
+    "infinite_limit": 0.0,
+    "effective_shape": 1.6653345369377348e-16
+  },
+  "failed_checks": [],
+  "source_end_identical": true
+}

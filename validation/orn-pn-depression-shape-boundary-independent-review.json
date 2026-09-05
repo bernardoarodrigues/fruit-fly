@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T18:21:15.218638+00:00",
+  "scope": "Independent saved-value and source audit of the shape-boundary result. No optimizer, root-finding search, model/runtime imports or neural/body execution.",
+  "source_start": {
+    "scripts/check_orn_pn_depression_shape_boundary.py": {
+      "path": "scripts/check_orn_pn_depression_shape_boundary.py",
+      "bytes": 20931,
+      "sha256": "f622c9b6adb01a0908ad395e5e3a385de71c434dba713414deb6988543500334"
+    },
+    "validation/orn-pn-depression-fig8f-points.csv": {
+      "path": "validation/orn-pn-depression-fig8f-points.csv",
+      "bytes": 24175,
+      "sha256": "a7eb118d67232d86fb4aba1a817549e5e5c7afadf542207a03ab60037ca70fba"
+    },
+    "validation/orn-pn-depression-fig8f-results.json": {
+      "path": "validation/orn-pn-depression-fig8f-results.json",
+      "bytes": 100058,
+      "sha256": "5a664d8f890e995b5bd79402bff7ea53977d14205098ee2922e6cbd4bacaabce"
+    },
+    "validation/orn-pn-depression-fig8f-independent-review.json": {
+      "path": "validation/orn-pn-depression-fig8f-independent-review.json",
+      "bytes": 10325,
+      "sha256": "de3f41c6252b571ac4c339339de8639b47e1ba5d06715472d8c07b340167523a"
+    },
+    "validation/orn-pn-depression-calibration-plan.json": {
+      "path": "validation/orn-pn-depression-calibration-plan.json",
+      "bytes": 12417,
+      "sha256": "abce77922dc08156fd6b155614fc035bc9f13b2f91ad1125d46ac24f7440a5d2"
+    },
+    "validation/orn-pn-depression-calibration-results.json": {
+      "path": "validation/orn-pn-depression-calibration-results.json",
+      "bytes": 19056,
+      "sha256": "97775ae6ca24a1e459f52b36591f583cddf1ea7441c0729354b425e9f062703a"
+    },
+    "validation/orn-pn-depression-calibration-arrays.npz": {
+      "path": "validation/orn-pn-depression-calibration-arrays.npz",
+      "bytes": 9652,
+      "sha256": "5309dc206ff496286270b28d0c71ce02b74fd5f66600ac8f12884d21c9fc201b"
+    },
+    "validation/orn-pn-depression-calibration-predictions.csv": {
+      "path": "validation/orn-pn-depression-calibration-predictions.csv",
+      "bytes": 3477,
+      "sha256": "aa0b52cf9f7f147e54eb221317abd9df2850f45fd7ac2ccb4a43811f505631f4"
+    },
+    "validation/orn-pn-depression-calibration-profile.csv": {
+      "path": "validation/orn-pn-depression-calibration-profile.csv",
+      "bytes": 8367,
+      "sha256": "93fa204959ac6646573bd1f741d5e54e3b36b51eb71346a9222437d147723e21"
+    },
+    "validation/orn-pn-depression-shape-boundary-plan.json": {
+      "path": "validation/orn-pn-depression-shape-boundary-plan.json",
+      "bytes": 70921,
+      "sha256": "42fc9a1c9d57f2596de8bf98412ddbc9bee5ac8e8ee92ae731e9ab210c80f2f4"
+    },
+    "validation/orn-pn-depression-shape-boundary-results.json": {
+      "path": "validation/orn-pn-depression-shape-boundary-results.json",
+      "bytes": 14979,
+      "sha256": "27af79e33d31783b65646b8351a7d14a0f10b6cc74d4a4e06ed9c06fedfe00ac"
+    },
+    "validation/orn-pn-depression-shape-boundary-arrays.npz": {
+      "path": "validation/orn-pn-depression-shape-boundary-arrays.npz",
+      "bytes": 198915,
+      "sha256": "80e67c18e8cdd2093aa8a385030ab309f68304af94920a5e758017ef50d07ca5"
+    },
+    "validation/orn-pn-depression-shape-boundary-predictions.csv": {
+      "path": "validation/orn-pn-depression-shape-boundary-predictions.csv",
+      "bytes": 3199,
+      "sha256": "f632197db5bd0aeefce1a25a6b55bb3974ee742f5a8f3ad60d9e3bcc712861a5"
+    }
+  },
+  "methods": [
+    "60-digit Decimal read-before-decrement event recurrence at the one retained mapped root for all15/20/50Hz events.",
+    "Independent linear normal-equation b(q) calculation at the4001 saved q coordinates and four retained profile candidates; objective evaluation at25 retained optimizer endpoints. No optimizer rerun.",
+    "All4097 saved inverse points checked by vectorized28event baseline recurrence and algebraic f/q/b identities. Saved sign-change brackets and monotonicity recounted only; no new roots sought."
+  ],
+  "tolerances": {
+    "percentage_point_predictions_and_metrics": 1e-09,
+    "SSE_percentage_points_squared": 1e-07,
+    "inverse_and_efficacy_absolute": 1e-10
+  },
+  "summary": {
+    "best_shape": {
+      "method": "least_squares",
+      "start": [
+        0.75,
+        0.0
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "b": 0.26112538764204973,
+      "q": 0.8079004712382397,
+      "SSE": 179.25692182005457,
+      "optimality": 7.984074787122796e-06,
+      "active_mask": [
+        0,
+        0
+      ]
+    },
+    "mapped_f": 0.8082894819335432,
+    "mapped_tau_s": 103.86539120086083,
+    "mapped_first_test_model_efficacy": 0.009594430850638712,
+    "development_RMSE_improvement_percentage_points": 0.0030586811096426914,
+    "recomputed_metrics": [
+      {
+        "frequency_hz": 15,
+        "RMSE_percentage_points": 12.388133152972577,
+        "MAE_percentage_points": 11.461658751437968,
+        "mean_signed_error_percentage_points": -11.461658751437968,
+        "first_test_efficacy": 0.009594430850638712
+      },
+      {
+        "frequency_hz": 20,
+        "RMSE_percentage_points": 4.462895445535763,
+        "MAE_percentage_points": 3.323677358085745,
+        "mean_signed_error_percentage_points": -0.20422824957020286,
+        "first_test_efficacy": 0.009594430850638712
+      },
+      {
+        "frequency_hz": 50,
+        "RMSE_percentage_points": 21.171654151712854,
+        "MAE_percentage_points": 18.200316387304625,
+        "mean_signed_error_percentage_points": 18.200316387304625,
+        "first_test_efficacy": 0.009594430850638712
+      }
+    ],
+    "saved_profile_points_checked": 4001,
+    "retained_profile_candidates_checked": 4,
+    "retained_multistart_endpoints_checked": 25,
+    "saved_inverse_points_checked": 4097,
+    "detected_saved_sign_change_brackets": 1,
+    "mapped_roots_evaluated": 1,
+    "root_uniqueness_proved": false
+  },
+  "limits": [
+    "The exact b(q) expression minimizes b at each fixed saved q; finite q sampling/refinement and multistart agreement are numerical evidence, not a global-optimality certificate. Optimizers were not rerun.",
+    "All saved inverse states and sign-change metadata agree, and the retained root reproduces the fitted shape. No additional root search was performed; a finite grid does not prove uniqueness or exclude tangent/closely spaced roots elsewhere.",
+    "Relaxing the100s bound changes the development RMSE by only about0.00306 percentage points. The recovered tau remains a conditional model parameter, not measured physiological kinetics.",
+    "15/50Hz outputs use the same mapped f/tau and nominal event schedule after shape selection; those curves were already inspected and share source animals. They are evaluation, not unseen biological validation.",
+    "Fully recovered initial efficacy, exact baseline/test phase and first-test normalization remain assumptions. Strong baseline depletion persists (a0 about0.00959); neither the shape fit nor inversion establishes absolute physiological amplitude, release probability, male transfer or network promotion."
+  ],
+  "completed_utc": "2026-09-05T18:21:15.232219+00:00",
+  "wall_seconds": 0.013589583977591246,
+  "passed": true,
+  "check_count": 274,
+  "checks_by_category": {
+    "provenance": 14,
+    "source_scope": 3,
+    "input_population": 5,
+    "retained_optimizer_endpoints": 27,
+    "endpoint_SSE": 26,
+    "saved_profile": 2,
+    "profile_b": 1,
+    "profile_SSE": 1,
+    "profile_candidates": 8,
+    "profile_candidate_SSE": 4,
+    "profile_candidate_agreement": 1,
+    "selection": 1,
+    "shape_predictions": 1,
+    "development_RMSE": 1,
+    "inverse_archive": 1,
+    "inverse_bounds": 2,
+    "inverse_log_grid": 1,
+    "inverse_f": 1,
+    "inverse_a0": 1,
+    "inverse_b": 1,
+    "inverse_q": 1,
+    "inverse_residual": 1,
+    "saved_bracket_metadata": 4,
+    "mapped_root": 2,
+    "mapped_tau": 1,
+    "mapped_f": 1,
+    "mapped_prediction": 3,
+    "mapped_absolute": 3,
+    "evaluation_metadata": 2,
+    "evaluation_metric": 8,
+    "evaluation_shape": 4,
+    "prediction_CSV": 46,
+    "prediction_CSV_values": 86,
+    "mapped_a0": 3,
+    "mapped_development_SSE": 2,
+    "mapped_shape_identity": 1,
+    "mapped_recovered_bq": 2,
+    "prior_comparison": 1,
+    "source_stability": 1
+  },
+  "maximum_absolute_differences": {
+    "endpoint_SSE": 2.842170943040401e-14,
+    "profile_b": 2.220446049250313e-16,
+    "profile_SSE": 3.637978807091713e-12,
+    "profile_candidates": 0.0,
+    "profile_candidate_SSE": 2.842170943040401e-14,
+    "profile_candidate_agreement": 0.0,
+    "shape_predictions": 0.0,
+    "development_RMSE": 0.0,
+    "inverse_bounds": 0.0,
+    "inverse_log_grid": 0.0,
+    "inverse_f": 1.1102230246251565e-16,
+    "inverse_a0": 2.220446049250313e-16,
+    "inverse_b": 3.3306690738754696e-16,
+    "inverse_q": 1.1102230246251565e-16,
+    "inverse_residual": 0.0,
+    "saved_bracket_metadata": 0.0,
+    "mapped_tau": 0.0,
+    "mapped_f": 0.0,
+    "mapped_prediction": 2.842170943040401e-14,
+    "mapped_absolute": 5.204170427930421e-18,
+    "evaluation_metric": 1.4210854715202004e-14,
+    "evaluation_shape": 1.6653345369377348e-16,
+    "prediction_CSV_values": 2.842170943040401e-14,
+    "mapped_a0": 5.204170427930421e-18,
+    "mapped_development_SSE": 1.7053025658242404e-13,
+    "mapped_shape_identity": 2.220446049250313e-16,
+    "mapped_recovered_bq": 1.6653345369377348e-16,
+    "prior_comparison": 0.0
+  },
+  "failed_checks": [],
+  "source_end_identical": true
+}
