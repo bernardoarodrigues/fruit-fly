@@ -1,0 +1,258 @@
+{
+  "scope": "Female optical template versus implemented right-camera support, without fitting.\n\nNo MaleCNS angular registration or neural input. The declared surrogate assumes\nthe author x-forward/y-left/z-dorsal basis aligns with the body's head basis.\n",
+  "completed": true,
+  "neural_input_installed": false,
+  "male_cell_registration": null,
+  "source_sex": "female",
+  "source_sample": "20240701",
+  "eye": "R",
+  "body_surrogate": "Female-derived body geometry plus female optical template from another specimen; canonical head axes identified without fitted rotation/translation. Not a biological co-registration.",
+  "camera_to_head_rotation": [
+    [
+      -0.8915671574438289,
+      -0.0017806038301898136,
+      -0.4528850110320999
+    ],
+    [
+      -0.4528857109958681,
+      -1.1310792215029583e-05,
+      0.8915685798904354
+    ],
+    [
+      -0.0015926529164869212,
+      0.9999984146597836,
+      -0.0007963257007738773
+    ]
+  ],
+  "raw_camera_fovy_deg": 157.0,
+  "raw_image_shape": [
+    512,
+    450,
+    3
+  ],
+  "template_axes": 852,
+  "camera_facets": 721,
+  "point_axis_coverage": {
+    "inside_raw_frustum": 783,
+    "outside_raw_frustum": 69,
+    "inside_frustum_and_sampled_source_pixel": 704,
+    "inside_frustum_but_unsampled_source_pixel": 79,
+    "distinct_sampled_raw_pixels": 77040,
+    "total_raw_pixels": 230400
+  },
+  "nearest_facet_mean_error_deg": {
+    "all": {
+      "min": 0.207990934340485,
+      "median": 1.9540144897107068,
+      "p95": 12.885744000536398,
+      "max": 31.404027613750745,
+      "mean": 3.1317356493081157
+    },
+    "inside_raw_frustum": {
+      "min": 0.207990934340485,
+      "median": 1.8677349472101437,
+      "p95": 3.752972174966283,
+      "max": 10.52068227853019,
+      "mean": 2.060194835033143
+    },
+    "outside_raw_frustum": {
+      "min": 4.676658202121728,
+      "median": 15.683549666032858,
+      "p95": 23.92310295156335,
+      "max": 31.404027613750745,
+      "mean": 15.291394454776274
+    }
+  },
+  "diagnostic_cap_protocol": {
+    "radii_deg": [
+      1.0,
+      2.0,
+      4.0
+    ],
+    "kernel": "uniform spherical caps; analyst numerical probes, not biological acceptance angles",
+    "solid_angle_support": "Equal-area cap quadrature; samples projected to raw source-pixel cells, then lookup membership. Includes missing frustum and unsampled pixels separately.",
+    "coarse_grid": [
+      32,
+      128
+    ],
+    "fine_grid": [
+      64,
+      256
+    ],
+    "normalization": "Rows of actual pixel-center facet response normalized only when nonzero; preserve geometric loss metrics separately.",
+    "rendering": "No additional renderer run. Uses existing14-target camera calibration and exact stored lookup; this audit only projects the released template through it."
+  },
+  "apertures": {
+    "cap1deg": {
+      "diagnostic_radius_deg": 1.0,
+      "any_actual_facet_response_count": 733,
+      "zero_actual_facet_response_count": 119,
+      "zero_response_despite_axis_inside_frustum": 50,
+      "raw_frustum_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.9204636694679798
+      },
+      "sampled_pixel_cell_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.8268505687444982
+      },
+      "geometric_support_loss_fraction": {
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.17314943125550175
+      },
+      "less_than_half_cap_mass_sampled_count": 131,
+      "quadrature_max_absolute_change": 0.0091552734375,
+      "quadrature_p95_absolute_change": 0.00042724609375,
+      "weights": {
+        "path": "data/derived/visual-template-coverage/cap1deg-unit-sum-facet-response-weights.npz",
+        "sha256": "b936fd517567811ee240a3cbb6781600b557b19afab389339d299858ec299531",
+        "shape": [
+          852,
+          721
+        ],
+        "nnz": 1337,
+        "row_order": "CSV order; right_lens_index_1based1..852",
+        "column_order": "zero-based camera facet0..720",
+        "meaning": "Engineering diagnostic only: pixel-center top-hat facet responses divided by their row sum; a missing row stays zero. This normalization does not restore lost cap support."
+      }
+    },
+    "cap2deg": {
+      "diagnostic_radius_deg": 2.0,
+      "any_actual_facet_response_count": 744,
+      "zero_actual_facet_response_count": 108,
+      "zero_response_despite_axis_inside_frustum": 39,
+      "raw_frustum_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.9213915901004989
+      },
+      "sampled_pixel_cell_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.8261874919765991
+      },
+      "geometric_support_loss_fraction": {
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.1738125080234008
+      },
+      "less_than_half_cap_mass_sampled_count": 132,
+      "quadrature_max_absolute_change": 0.01043701171875,
+      "quadrature_p95_absolute_change": 0.0009765625,
+      "weights": {
+        "path": "data/derived/visual-template-coverage/cap2deg-unit-sum-facet-response-weights.npz",
+        "sha256": "664c13c83ec0fcebdd59d4e722450ff7a2ce6bad3a11fb95cfd6d9a4c0e0ed5b",
+        "shape": [
+          852,
+          721
+        ],
+        "nnz": 2267,
+        "row_order": "CSV order; right_lens_index_1based1..852",
+        "column_order": "zero-based camera facet0..720",
+        "meaning": "Engineering diagnostic only: pixel-center top-hat facet responses divided by their row sum; a missing row stays zero. This normalization does not restore lost cap support."
+      }
+    },
+    "cap4deg": {
+      "diagnostic_radius_deg": 4.0,
+      "any_actual_facet_response_count": 765,
+      "zero_actual_facet_response_count": 87,
+      "zero_response_despite_axis_inside_frustum": 20,
+      "raw_frustum_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.9201400828473445
+      },
+      "sampled_pixel_cell_mass_fraction": {
+        "min": 0.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.8244824476645026
+      },
+      "geometric_support_loss_fraction": {
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "mean": 0.17551755233549735
+      },
+      "less_than_half_cap_mass_sampled_count": 136,
+      "quadrature_max_absolute_change": 0.01153564453125,
+      "quadrature_p95_absolute_change": 0.0016387939453124944,
+      "weights": {
+        "path": "data/derived/visual-template-coverage/cap4deg-unit-sum-facet-response-weights.npz",
+        "sha256": "f94f2261fe477473f440c8e87f2bd8b2d5b394de8df2a129080b8fdcbb81eb53",
+        "shape": [
+          852,
+          721
+        ],
+        "nnz": 4698,
+        "row_order": "CSV order; right_lens_index_1based1..852",
+        "column_order": "zero-based camera facet0..720",
+        "meaning": "Engineering diagnostic only: pixel-center top-hat facet responses divided by their row sum; a missing row stays zero. This normalization does not restore lost cap support."
+      }
+    }
+  },
+  "synthetic_cap_image_upstream_parity": [
+    {
+      "right_lens_index_1based": 1,
+      "radius_deg": 2.0,
+      "max_facet_error": 0.0
+    },
+    {
+      "right_lens_index_1based": 200,
+      "radius_deg": 2.0,
+      "max_facet_error": 0.0
+    },
+    {
+      "right_lens_index_1based": 395,
+      "radius_deg": 2.0,
+      "max_facet_error": 1.1102230246251565e-16
+    },
+    {
+      "right_lens_index_1based": 600,
+      "radius_deg": 2.0,
+      "max_facet_error": 1.1102230246251565e-16
+    },
+    {
+      "right_lens_index_1based": 852,
+      "radius_deg": 2.0,
+      "max_facet_error": 0.0
+    }
+  ],
+  "source_sha256": {
+    "scripts/check_visual_template_coverage.py": "c35eff8cca7bc728ae7064462fc39e8e696e89b9d0ab14be1af8eb49127babe7",
+    "scripts/calibrate_retina_rays.py": "4dc0c95ff64e4d7c8032d944ec105e7dea1ca1fb5b1de70814e555d47b98cb1e",
+    "validation/visual-retinotopy/zhao-female-right-eye-directions.csv": "7ac32cfeee41236f6b4c76ffbb3f60c5559f6af81426a94cb8768e6a4f93d194",
+    "validation/visual-retinotopy/zhao-extraction.json": "dc9ba774c495906ab6bcc1f9f741d41a36e4fd387c528c73ed143182db1e405f",
+    "validation/retina-rays/results.json": "d9bdf0e76c4b36051e4941e9e9250ac5adc2f9be1de46a4517c04c5f8d8d90ae",
+    "validation/retina-rays/ray-footprints.npz": "df7c1405f0a92a964ba4dd26437b492bc24ffdfdd8b4c5bdbc43a390f2a061c0"
+  },
+  "csv_sha256": "d86208441cdf8c19c66fc0c4e857088c4c412b8a7d38cef5cfcb045b6e7c7fb8",
+  "limits": [
+    "Template canonical axes are a declared surrogate-to-body alignment, not measured common specimen landmarks.",
+    "This is far-field angular coverage; individual lens origins and near-field parallax are not modelled.",
+    "Point support is sensitive to gaps in a deterministic sparse pixel sampler; finite caps are reported separately.",
+    "Geometric pixel-cell quadrature and actual pixel-center response are different discretizations; neither is a measured photoreceptor transfer.",
+    "Unit-sum response weights discard their absolute response scale; use retained support/loss and original response mass when interpreting them.",
+    "Nearest-facet errors describe sampling mismatch only, not a chosen neuronal registration.",
+    "No additional rendering, optical-parameter fit, retina change, male column assignment, or neural simulation was performed."
+  ]
+}

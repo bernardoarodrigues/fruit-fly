@@ -1,0 +1,66 @@
+{
+  "source": "Zhao et al.2025, Eye structure shapes neuron function in Drosophila motion vision",
+  "doi": "10.1038/s41586-025-09276-5",
+  "repository_commit": "99d2a43123db636cedb55af9ff31a59657e7d17e",
+  "sources": [
+    {
+      "path": "data/eyemap.RData",
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/eyemap.RData",
+      "bytes": 182218,
+      "sha256": "c3f63c69afdc3f381cdafabb1d376b8e25ec5a71bce67550ae42fcdd79cf618e"
+    },
+    {
+      "path": "data/microCT/20240701.RData",
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/microCT/20240701.RData",
+      "bytes": 310361,
+      "sha256": "8408447f8c5798fbc6d751de79ef4983d08c342a500c9a55b2a3b4b38d92deec"
+    },
+    {
+      "path": "data/med_ixy.RData",
+      "url": "https://raw.githubusercontent.com/reiserlab/eyemap_T4/99d2a43123db636cedb55af9ff31a59657e7d17e/data/med_ixy.RData",
+      "bytes": 2337,
+      "sha256": "4c2430e8e2b8e488d2d26643e141b1622d46b464ea3f43b016d0cb0b27bd5ff7"
+    }
+  ],
+  "reader_versions": {
+    "rdata": "1.1.0",
+    "xarray": "2026.7.0"
+  },
+  "reader_warnings": [
+    "Missing constructor for R class \"prcomp\". The underlying R object is returned instead.",
+    "Missing constructor for R class \"solve_LSAP\". The underlying R object is returned instead."
+  ],
+  "coordinate_convention": "Author canonical Cartesian: x forward, y left, z dorsal. azimuth=atan2(y,x), elevation=asin(z), degrees. Do not import y-reflected inside-out plotting coordinates.",
+  "meaning": "Author smoothed lens-minus-photoreceptor-tip geometric optical-axis estimates from female microCT; not measured electrophysiological receptive fields or male facet identities.",
+  "scope": "Right-eye female template extraction only; no chosen MaleCNS grid transform or runtime input.",
+  "right_eye_lenses": 852,
+  "left_eye_lenses_present_in_scan": 857,
+  "matched_fafb_mi1_rows": 778,
+  "unmatched_fafb_mi1_rows": 1,
+  "unmatched_right_eye_lenses": 74,
+  "coherent_directions_exactly_equal": true,
+  "all_matched_pq_exactly_equal": true,
+  "direction_norm_max_error": 2.220446049250313e-16,
+  "equator": {
+    "upper_marker_count": 9,
+    "upper_p_plus_q": [
+      0
+    ],
+    "lower_marker_count": 10,
+    "lower_p_plus_q": [
+      -1
+    ]
+  },
+  "no_identity_crosswalk": "FAFB Mi1 identifiers in eyemap are R array row indices, not MaleCNS bodyIds. No identity join is inferred.",
+  "excluded_objects": [
+    "utp_lens_rot: sphere-projected lens positions, not optical directions",
+    "*_aux: includes39 generated boundary-support points",
+    "standalone lens_ixy.RData: older786-row grid, incompatible with embedded852-row grid"
+  ],
+  "output": {
+    "name": "zhao-female-right-eye-directions.csv",
+    "sha256": "7ac32cfeee41236f6b4c76ffbb3f60c5559f6af81426a94cb8768e6a4f93d194"
+  },
+  "script_sha256": "f19f08ff7537b15e468c2ce41a67e1199284881934ddd73e652bcc46d1dd237e",
+  "completed": true
+}

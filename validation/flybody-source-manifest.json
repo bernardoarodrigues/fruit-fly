@@ -1,0 +1,1347 @@
+{
+  "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "github_tree_url": "https://api.github.com/repos/TuragaLab/flybody/git/trees/d015e9bfe441bd90ae431bac24c55cb74bdbce26?recursive=1",
+  "tree_metadata_sha256": "e9f36ee0dcff250a61ab24dd546513b3120db63f94fb48fe24ed61ff258f03dd",
+  "scope": "all files under flybody plus LICENSE and pyproject; local pre-existing checkout verified against pinned Git tree",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "flybody/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "flybody/agents/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "flybody/agents/actors.py",
+      "bytes": 3773,
+      "sha256": "618b7dbea98cb02d8cbfb31bf0e1b481566dd0dc822d013c2415b4df7c20bd7c",
+      "git_blob_sha1": "6921545e3201736a936e64df020cf7b3e2a33a84"
+    },
+    {
+      "path": "flybody/agents/agent_dmpo.py",
+      "bytes": 15765,
+      "sha256": "f28b569d566b88df4b7e5f1934ea8796ce08ce9c15f3aa0ddf819b88027eb3f2",
+      "git_blob_sha1": "3fc5865b8a157ce517ed0b672e4a6ad9075b2e99"
+    },
+    {
+      "path": "flybody/agents/counting.py",
+      "bytes": 4542,
+      "sha256": "8fc710382396c51f902d2a4052f1e761b8a0708daf4193d59395710187c85a63",
+      "git_blob_sha1": "ba908bfa9097687e51f86c487e24cb7015473a09"
+    },
+    {
+      "path": "flybody/agents/learning_dmpo.py",
+      "bytes": 16276,
+      "sha256": "50bb1474cdb17ec3a0108e135a6d94690a8e611289d31905d561222d02e1ec34",
+      "git_blob_sha1": "130074b26e1f11b24112d54aa8bdd1865a5a6ac7"
+    },
+    {
+      "path": "flybody/agents/losses_mpo.py",
+      "bytes": 22680,
+      "sha256": "b59038fa4f7c937e5944780e467821a4426f506cc5f977c608c74e8dcf6f83bb",
+      "git_blob_sha1": "478317e9f5f932cd34880441caa486af2d9338fe"
+    },
+    {
+      "path": "flybody/agents/network_factory.py",
+      "bytes": 5691,
+      "sha256": "15ecd198c92a3199c233429581b02906a87aca82ffe63eb02bff9675c07ec234",
+      "git_blob_sha1": "cb60560a7ae50fbdd4abe9b5a9437a1b94712232"
+    },
+    {
+      "path": "flybody/agents/network_factory_vis.py",
+      "bytes": 13565,
+      "sha256": "65e0790411fbc75d7701b79cfeeae9cfcc736475ad0711446d22efecee6b290c",
+      "git_blob_sha1": "10ad3a251faa86d49f84ebba3aa32d28d0adbd9d"
+    },
+    {
+      "path": "flybody/agents/ray_distributed_dmpo.py",
+      "bytes": 15195,
+      "sha256": "f9652efcc365aaa730c7d07d4af54169310a49be490cdc015e625d17fa02a8c3",
+      "git_blob_sha1": "2e192a18385aed436afc39597179a3fb3fc57c74"
+    },
+    {
+      "path": "flybody/agents/remote_as_local_wrapper.py",
+      "bytes": 2760,
+      "sha256": "07af5735a9bcebe7f9da7c6c9f28197ec7e4e0b0c93df8a85da7301566ea39c5",
+      "git_blob_sha1": "34b138733b78e76526b7edb2084f1b2319d0963c"
+    },
+    {
+      "path": "flybody/agents/utils_ray.py",
+      "bytes": 562,
+      "sha256": "cfc345e546b60b26153544cdbe156d0ed12ed30a887d846f59b1e69a5cd9d972",
+      "git_blob_sha1": "ee13bed0552ea8d6a915c5b2b9d206248b623114"
+    },
+    {
+      "path": "flybody/agents/utils_tf.py",
+      "bytes": 3756,
+      "sha256": "d2901e7f08f105759a40b5dcde8882d731637de1a62ee9f4117262c0a8a76127",
+      "git_blob_sha1": "399b2d6d65d5527f10be51f9156031e032cdf062"
+    },
+    {
+      "path": "flybody/download_data.py",
+      "bytes": 2015,
+      "sha256": "ec285e8bc26f9c6c9418e3cb968552901e3841f97663cd0918113ed880eae3c3",
+      "git_blob_sha1": "5a2bb29e86be3b114c534d4f6c1193d3b598806c"
+    },
+    {
+      "path": "flybody/ellipsoid_fluid_model.py",
+      "bytes": 12145,
+      "sha256": "034ed84ebb5a2a69c5b3bef49de3ebfd94f41ab137fd05e308ba31b8368a0f09",
+      "git_blob_sha1": "951eb72d342fcc450bd6a86f3d52611f58c44601"
+    },
+    {
+      "path": "flybody/fly_envs.py",
+      "bytes": 13859,
+      "sha256": "0c520d4ae2daa051b838dafa7ef595fc260a035c1b7516fd4c0afdb4c231e781",
+      "git_blob_sha1": "08a5aec0ae5d3145dabfaf45b0c4a0a12066808f"
+    },
+    {
+      "path": "flybody/fruitfly/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_1_body.obj",
+      "bytes": 787312,
+      "sha256": "b2abf8b9b30827e7d9c685a71e1f9a75c6141cf91a62fff925ce5d4e2265d77f",
+      "git_blob_sha1": "e91595837b0036f62a7e1358115c58d3d96f03a1"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_1_lower.obj",
+      "bytes": 257805,
+      "sha256": "6ef6434b53b205a11afa6a7ddf308a82271f2b37eda2a0294e9002d4c9b1480d",
+      "git_blob_sha1": "ecf6a42ff08c02bf82e2e605384b9055e41bae4c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_2_body.obj",
+      "bytes": 331650,
+      "sha256": "36f8551badf82699818f53f941eb3600b2d79b35f149f7e65b533942a31a6370",
+      "git_blob_sha1": "a2cd8d2c2bd0124ea893837f8a44362a7319a795"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_2_lower.obj",
+      "bytes": 274657,
+      "sha256": "669ecb6d178583084119c77928806b688080d5e1e674f634407819335f06c2af",
+      "git_blob_sha1": "0fecd5dedd35d6573dad655e8f92c3114b3aa24c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_3_body.obj",
+      "bytes": 398902,
+      "sha256": "4b1f96ca00c052c616ade8ddba493698a603169d7c23fba2045cd5fe087d2368",
+      "git_blob_sha1": "1ab89dc0de15a35a203e11e3b900dd0eb924da36"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_3_lower.obj",
+      "bytes": 324270,
+      "sha256": "8d673599ab4fe00e29520f4a9645bb71aac13395c596ed6efdff756673c92d3d",
+      "git_blob_sha1": "317a56f2c6a2b82861953b4053379e56e9388f42"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_4_body.obj",
+      "bytes": 397790,
+      "sha256": "4e4d7303cb9ee3b50bccf760372991de11b38c36745f2f48a1ca6bf68d2721e4",
+      "git_blob_sha1": "d5bd4bdaaff33a260538c32c46805b36687055cb"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_4_lower.obj",
+      "bytes": 323970,
+      "sha256": "1564d59e1e0da9e5c6aba3f641dff3b4be20a50a67bcedcab32e0ca17380a0b9",
+      "git_blob_sha1": "6843711fac2cd3859de7ea493984dc0670b5f3ba"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_5_body.obj",
+      "bytes": 388232,
+      "sha256": "a6e44333d3af208b4048ce607ff844616a96edb4b393cecc7078374f71888de0",
+      "git_blob_sha1": "d207b9d81eede267c89ba970d6f9af80069f3362"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_5_lower.obj",
+      "bytes": 349771,
+      "sha256": "166b42d02c2b134814ceec44651fed6c2a371e9deb90c6df5c970bf38a874419",
+      "git_blob_sha1": "8fc3d6a199f3773de69f7fa97ecc45903436f218"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_6_body.obj",
+      "bytes": 397553,
+      "sha256": "47a1634715d18bbe774db0f67b41a5fca5a586ec5ac0d9e1e3bb7ffd734c4565",
+      "git_blob_sha1": "f7e98f76817aed6fd66703ff6ff65bb62871ce95"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_6_lower.obj",
+      "bytes": 323874,
+      "sha256": "9abd1b7fefefbb500cf8fcb9f0d03366929d681c9381b3da0f8a0160cbc91415",
+      "git_blob_sha1": "bcaf48f1147531b97d0788e98e119e66af093f59"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_7_body.obj",
+      "bytes": 397608,
+      "sha256": "d11f701e20cfb2481fe9afead4f3dc0fc9cd4571529f287847c70509a31762bd",
+      "git_blob_sha1": "5284cd832a81c26e84d24582e14d4a803c42d877"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_7_lower.obj",
+      "bytes": 323778,
+      "sha256": "70d46067d1a7ad757fcb8487c6830ef6fa98de7b6549d5ae6675b33380021de6",
+      "git_blob_sha1": "bdae0bb6fddbcca54e07ca7f072153db33519a39"
+    },
+    {
+      "path": "flybody/fruitfly/assets/abdomen_8_body.obj",
+      "bytes": 902381,
+      "sha256": "6ca5cd83a307f066db7b9ac1c976ad0526b87ada9f630e67356682a962386408",
+      "git_blob_sha1": "2d115e358a30a5cb6f456365860fad8a89a84d51"
+    },
+    {
+      "path": "flybody/fruitfly/assets/antenna_left_black.obj",
+      "bytes": 853134,
+      "sha256": "685ef74b39ef6c8374f1ed49f3f845fbe66e169cbb572d2958809b6223a8b6e2",
+      "git_blob_sha1": "1927bae6f6f253edf50858e42793445da672ea87"
+    },
+    {
+      "path": "flybody/fruitfly/assets/antenna_left_body.obj",
+      "bytes": 2058111,
+      "sha256": "39105bc670a8a39e03c15a67fb441b833daa00cf5ed6d55d30dbcd3043b3120c",
+      "git_blob_sha1": "b5d1339ead15696e207f62045df9c5bdc5891613"
+    },
+    {
+      "path": "flybody/fruitfly/assets/antenna_right_black.obj",
+      "bytes": 848016,
+      "sha256": "528b092ffa5c27670408172d79752d5a63f74812a7210ce59cbf6e1214ab3f67",
+      "git_blob_sha1": "7aff83ed6d52632c91c9829d2fa25116c3f241bf"
+    },
+    {
+      "path": "flybody/fruitfly/assets/antenna_right_body.obj",
+      "bytes": 2045592,
+      "sha256": "d70e06616ac82bd64573073f92bf4b6ed838865a1041ddea4b2cdf8e1d9194c8",
+      "git_blob_sha1": "b37348331e6580718ae7ead5b9704777f3afd14f"
+    },
+    {
+      "path": "flybody/fruitfly/assets/blender_model/drosophila.blend",
+      "bytes": 20751800,
+      "sha256": "88c13449572924557ee77e3da2a318643b8a987ac1c7a60b77ed164faa29bead",
+      "git_blob_sha1": "bb622aa83224d342d1baeec98304c5aa4b02f7cc"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T1_left_body.obj",
+      "bytes": 1105100,
+      "sha256": "30c1ff292e34e2b20421f023976f132d5eac26d01216bd8fd97e289d89aa1b75",
+      "git_blob_sha1": "40d9239052d5b48569f58e28abd6f2ded13090a5"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T1_right_body.obj",
+      "bytes": 1102424,
+      "sha256": "4b63ad8ed672c08b1ec6faeb27b0b693af4c96b808a8892285aa86e58469c592",
+      "git_blob_sha1": "c379dc967b7404bd5ef7e74984d268c68d118898"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T2_left_body.obj",
+      "bytes": 1250039,
+      "sha256": "51e7c30d788783c79bde8ba7afdc2c14040ce66fb6bb08d45e784273ea0c3937",
+      "git_blob_sha1": "1a18a76668f5ce43aac4ca24c5bb8b9c81e929d4"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T2_right_body.obj",
+      "bytes": 1244997,
+      "sha256": "965687d9a0bce1511c0d9af1e3f928eb41f904c44aeef38a6b334f42edefee41",
+      "git_blob_sha1": "9db7b0096e38467e37e9260d97e8affd27ac0ff6"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T3_left_body.obj",
+      "bytes": 865841,
+      "sha256": "ccfd14f407ab665047251f1b88010b96c997797e05c4e1bf51dec125ed2a0e03",
+      "git_blob_sha1": "e2c955ece9d099362a9af9ad8f14360fa6529b6a"
+    },
+    {
+      "path": "flybody/fruitfly/assets/coxa_T3_right_body.obj",
+      "bytes": 859909,
+      "sha256": "013557a9fda80ee50dd530cf90fa42a3840c620b5b884c690a1f6eb6bafd1a86",
+      "git_blob_sha1": "147430365f5cbe24c9123eef0ee2a828e0f92fbf"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T1_left_body.obj",
+      "bytes": 1154869,
+      "sha256": "88dd01b942a309e85329dc968862d6d6bb3db4ff08a5ec3ab0be7579841b9561",
+      "git_blob_sha1": "3b56b0bd8df3dbf87dca0159558d87e6fc97220b"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T1_right_body.obj",
+      "bytes": 1140432,
+      "sha256": "45d3a2175bfd449058bfef74efd4e0eeba785c3bf2ce2979f4598a388aeb1c4a",
+      "git_blob_sha1": "db8e889bcba2d70588c54b350dcf4ce90899ba8e"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T2_left_body.obj",
+      "bytes": 1614762,
+      "sha256": "fae05c5dde22b6ade379196659e39908f6f6dfae37e1f734f89daa7291fbad6e",
+      "git_blob_sha1": "35d76422693d5eff13dedc95a8284ca72c0bd648"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T2_right_body.obj",
+      "bytes": 1605906,
+      "sha256": "bac7f1c059d638095d365cc0217eb59c7d8d55745435bff3f1b3b8fb1b877e4e",
+      "git_blob_sha1": "9caeefbd0c6260dd1fa9ee4e45de3ae5377f35c6"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T3_left_body.obj",
+      "bytes": 1652601,
+      "sha256": "6f808fdd62673962a4f32cfa37f893e277bd22c91f42592670115d58d3784c73",
+      "git_blob_sha1": "c6179315c01edb8882843cdbddaba5dfc1e30a88"
+    },
+    {
+      "path": "flybody/fruitfly/assets/femur_T3_right_body.obj",
+      "bytes": 1640717,
+      "sha256": "cb156e6bc4920163ebb52b7a45a2e56173f98bb2eb6a1e67b08677305f5ababe",
+      "git_blob_sha1": "910184733fd5ea3d48a75e6d4e11c336755efb6b"
+    },
+    {
+      "path": "flybody/fruitfly/assets/floor.xml",
+      "bytes": 572,
+      "sha256": "1490751ff170d089b8882aa4972778b64bcf56f6d39b0e87029156dcf0452019",
+      "git_blob_sha1": "b2bf705c8e822897548d7eaa6bb64bb07a63f738"
+    },
+    {
+      "path": "flybody/fruitfly/assets/fruitfly.xml",
+      "bytes": 65787,
+      "sha256": "d14946fd0311025ecca70c8eeb5de80e1fe18700d3072be37ecbb18d33d80fd8",
+      "git_blob_sha1": "58fb7c74376005afa9aeb2908c28f8b5e977762b"
+    },
+    {
+      "path": "flybody/fruitfly/assets/haltere_left_body.obj",
+      "bytes": 653095,
+      "sha256": "728aa62e18e089692c39dae8d45bda45680bd8c6ce2c6c6aef6abb282b9691fc",
+      "git_blob_sha1": "1f582e77cf888fa0a79a23e7d112e3ec151f4b61"
+    },
+    {
+      "path": "flybody/fruitfly/assets/haltere_right_body.obj",
+      "bytes": 649901,
+      "sha256": "a7d7ab9b1462f5295e5212ff3f30ccee2c96fed1836319cebe095b0c71af0941",
+      "git_blob_sha1": "0e5eb20fdec1c1a69042147e7b0c1fdf5c2b4e50"
+    },
+    {
+      "path": "flybody/fruitfly/assets/haustellum_black.obj",
+      "bytes": 1324760,
+      "sha256": "ba122d45bfbc09dc18bfab42f8fda8d5056e05ee719e199c5a32b8aa6bd8fe6c",
+      "git_blob_sha1": "0f41566d28e3b4692be4b4f34edd77e573ace998"
+    },
+    {
+      "path": "flybody/fruitfly/assets/haustellum_body.obj",
+      "bytes": 1869810,
+      "sha256": "33a7c2f675418396461b1b21a4e1d2471a4a3b9ead58eb58cfe1c0863f24cfee",
+      "git_blob_sha1": "3c9fc683757a09bb8b622b5d77bdf07dc7cb635c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/head_black.obj",
+      "bytes": 12364825,
+      "sha256": "3ee34824c8d9427bf6b55a68aa655ce9ac767ef083ca224740ca8c34f2722f3a",
+      "git_blob_sha1": "5ad110afebf2f02f5ee1f33a3394ec3852d3d841"
+    },
+    {
+      "path": "flybody/fruitfly/assets/head_body.obj",
+      "bytes": 6161382,
+      "sha256": "d11ad6a8e1956251e1326118a88323909833022f7a99c17e5b6534f3b06fc0f6",
+      "git_blob_sha1": "364e79b53f5e54da2351f307322675ee6ab08e81"
+    },
+    {
+      "path": "flybody/fruitfly/assets/head_ocelli.obj",
+      "bytes": 6158153,
+      "sha256": "848e452df8102c3d8efe0774d7653678ac26e1ca158b43db0a1c6451226f9870",
+      "git_blob_sha1": "a03182814a359c2b9b24e9ed124f32a6a181b233"
+    },
+    {
+      "path": "flybody/fruitfly/assets/head_red.obj",
+      "bytes": 31095839,
+      "sha256": "d5e71663e2e94d16cb0941ebc86717ac67b6758fbec5c34be6fa6e221dbdc649",
+      "git_blob_sha1": "fcde7b1190290cb45719cfb3398fd2b3c57ac5b1"
+    },
+    {
+      "path": "flybody/fruitfly/assets/labrum_left_lower.obj",
+      "bytes": 501599,
+      "sha256": "f74a0c1ebbc87f331c1489696f91ef2a30e759491bfa89fb75d2ae805a92faef",
+      "git_blob_sha1": "87e43ec25397214e5d325513276cdb3d8c97b6fe"
+    },
+    {
+      "path": "flybody/fruitfly/assets/labrum_right_lower.obj",
+      "bytes": 515939,
+      "sha256": "52b9580c79ba48c6a76c8d749d26dd5128e605b65c4f4a7e6e48d93b8ef565c8",
+      "git_blob_sha1": "1d89d00a36f23c215f4b24ea869673e62f1694a8"
+    },
+    {
+      "path": "flybody/fruitfly/assets/rostrum_body.obj",
+      "bytes": 2118298,
+      "sha256": "fee573751b7287681fbf8feb752b4c8b94860cf39fb66cd970740385f7c8e52b",
+      "git_blob_sha1": "99b3deb4f7b25c5e05ccdb4e8ffaad98810540c3"
+    },
+    {
+      "path": "flybody/fruitfly/assets/rostrum_bristle-brown.obj",
+      "bytes": 1549365,
+      "sha256": "87da480fa50150977f1058725b87d91faf8e38441ed6508be8fe9803f88f7413",
+      "git_blob_sha1": "dcd4152012fd3e0f5be86ce7ae4e11b538aec28c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T1_left_brown.obj",
+      "bytes": 798635,
+      "sha256": "ea38ac4fbee2184ad0a4f35fd542df5ded7e6dd6ff1c344b02438ddc506b2ae0",
+      "git_blob_sha1": "09fdf1e616cd8a3a8c5843680428779aa4d77aa5"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T1_right_brown.obj",
+      "bytes": 822582,
+      "sha256": "62af3faf65ebd70ab8bcdba2b2c34bef402cce056dc0fbdbbacac4a4c1a88c44",
+      "git_blob_sha1": "57bc146367d898a85acdfa5d41106d6600500e73"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T2_left_brown.obj",
+      "bytes": 842537,
+      "sha256": "603c6a11072643b366535a3ed1b831735cdb128df25fd3467b20440a96f296d3",
+      "git_blob_sha1": "962cd348aaaf909f7e5df1f61a0b4b70bbe47211"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T2_right_brown.obj",
+      "bytes": 868092,
+      "sha256": "b568c7f9c67959b3f3d6fc832ad735b6626530b7e136f027cde1a4855a4977ca",
+      "git_blob_sha1": "b4cc24efa435bf477a369047e7fb8920d8388ab3"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T3_left_brown.obj",
+      "bytes": 910050,
+      "sha256": "2d44246c00c36d6320f7add8552fa0a7bd6e55bf9250a1f5792d4c3125278ed2",
+      "git_blob_sha1": "55f8aaf7f83cdac465a89e35a321291748c65dad"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsal_claw_T3_right_brown.obj",
+      "bytes": 947595,
+      "sha256": "aec466c50c5f52943c6d72416e4af323a92d778a25c621cec48214c70e089f4b",
+      "git_blob_sha1": "6eacc7816a76cd2253582a53355782c0e7537ca8"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_1_left_body.obj",
+      "bytes": 345465,
+      "sha256": "0ca608bb4de12a51b7e69b92244f3ccc1c37ca562fedf1a6a1ad48c3c3c62013",
+      "git_blob_sha1": "f3c352a9f61c1e660d82586f0843b9596889d95f"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_1_right_body.obj",
+      "bytes": 349162,
+      "sha256": "ed1020232748ec3741157af4a9d49a4ee1073f2818a37c4d097ae9a99f3dd1dc",
+      "git_blob_sha1": "5e1de80a118f4d12f7a7aa153ffb17bf2b022bd1"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_2_left_body.obj",
+      "bytes": 312982,
+      "sha256": "84d42548a63c20cc83ab751e605633b710af4bae04c29d32e9d851a1c67e889f",
+      "git_blob_sha1": "32517b6625742a03da3e68ed333f68f7d3f03255"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_2_right_body.obj",
+      "bytes": 316628,
+      "sha256": "e17d74c8c4ea3bb2f4142855f6b90c263e327141dde64941b0d6bb128874d002",
+      "git_blob_sha1": "1166f7519fbdb93cd60bc7c292fc897548bd1598"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_3_left_body.obj",
+      "bytes": 313430,
+      "sha256": "98b9fb8059491b075d832cbc593df9b12d12e1ccffca350001c679146ce0dc4b",
+      "git_blob_sha1": "13f021272e166c5ba16d531d5f7e4f8d8dc2a8f7"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_3_right_body.obj",
+      "bytes": 317108,
+      "sha256": "9be16f63f33ffb1a2f693236fbb80178b90a4b21ba3b3d1d0898edf5a5ec8f75",
+      "git_blob_sha1": "c8a9c02301864d09a56f5250f054b340628e0bad"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_4_left_body.obj",
+      "bytes": 314245,
+      "sha256": "c7ccf8d3f3258aeb8eb33935f8f1d766a344b591490094abace8ee283425ac78",
+      "git_blob_sha1": "9edbd0efbdbc3afd471989e1840fb3aeb3630853"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T1_4_right_body.obj",
+      "bytes": 318044,
+      "sha256": "04d252037202891d2ecd7b786165afc79820e4da2f0d3dd7a1a50720dfea3893",
+      "git_blob_sha1": "a7ea5cc653246ba0f0d0de863dff47611e265b8b"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_1_left_body.obj",
+      "bytes": 592366,
+      "sha256": "b73af79b7b16daeefa003d02cbd249e305e5e305bfd365ea495b5da959b5bf47",
+      "git_blob_sha1": "fe4a7f0fe47c94f4b04b029d92a3930ba6882069"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_1_right_body.obj",
+      "bytes": 605394,
+      "sha256": "8001e338bc91061f44ba00c37612d50a63c369d1910a011235892b97a299df35",
+      "git_blob_sha1": "8ce28017dfd3377920c34846b297c576d1ff8e2c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_2_left_body.obj",
+      "bytes": 416307,
+      "sha256": "b83c5ff6d9d0c376a0c57638ff456bb13bce7779558a19b59fc33544c485b76a",
+      "git_blob_sha1": "73646af98c6d2e961f6126e8df61a829e75ab2ed"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_2_right_body.obj",
+      "bytes": 421543,
+      "sha256": "85306a72a46c0b2b581cfaa383f82af1d73e282b9bbdf0aea60d1690cddc6b36",
+      "git_blob_sha1": "f7140da27ec4a5a5fb9c85f098c7f850340c391e"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_3_left_body.obj",
+      "bytes": 347736,
+      "sha256": "6aeb61bf2f0c566a22a340dcbb533c6018703cfce0fe81431abf6b2c93134832",
+      "git_blob_sha1": "2be6bb97cc451b82f05055580aaf285485ccaaef"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_3_right_body.obj",
+      "bytes": 352255,
+      "sha256": "afff461a7b84d4cdbbad46ba7f04d3267a5815a54cb5e1342f7c8103af993051",
+      "git_blob_sha1": "ec29505eb4de005ee23b1f6864d4c1810a52dfc5"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_4_left_body.obj",
+      "bytes": 315831,
+      "sha256": "03f2121ae2419672a5cc764a430b88c0d94f31b3a152a7764ecdec4ecbc1f41c",
+      "git_blob_sha1": "92d53948c3b5c824bbcd10212629b8940944ef26"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T2_4_right_body.obj",
+      "bytes": 319508,
+      "sha256": "749277fac68e413badea0a76ed204ad81ebbca1a1c9f72f3e7dc00b7582d520f",
+      "git_blob_sha1": "9ffb6110c30772fb64e9f13ecd33573e9d6efef2"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_1_left_body.obj",
+      "bytes": 831974,
+      "sha256": "50e42d7f3aba2a42313a7804ae5dd8f9d2b52006fb449bd92df3088e8d9f0d24",
+      "git_blob_sha1": "3502bbb930aea4e28968e33b14eb6ece2dc0c944"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_1_right_body.obj",
+      "bytes": 846729,
+      "sha256": "eff29a60c5f741e339d2dea5ac27143fb1009ecb7d3a7bd07b35d1804ab7e65a",
+      "git_blob_sha1": "c2fd12f85e7fd560e2821cd3354c90a2a5f8e05c"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_2_left_body.obj",
+      "bytes": 478593,
+      "sha256": "a6e504636518cd984acaad4254ea7e967cfb2ec60522cd6c32856829db5e271f",
+      "git_blob_sha1": "f49212a89435cdeb0bb9561b27e3e01ba72a99f7"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_2_right_body.obj",
+      "bytes": 486458,
+      "sha256": "01ca78ac975d9371470a78402c901434d92d2e200f6fb4685a1228ad3462723f",
+      "git_blob_sha1": "a94316a89fe0d57223b8341a9b92db869edd1eec"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_3_left_body.obj",
+      "bytes": 344280,
+      "sha256": "fd367fbdbf7133da991fe9cfb2f9b48437bb2aa3c475eac1b1fa214020c3117f",
+      "git_blob_sha1": "4cb8cf218a5e4f2af702c564c56fddd4890ea170"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_3_right_body.obj",
+      "bytes": 348822,
+      "sha256": "59e9c489621f2f225d256fac116945282b3b6994980b3c042ef662e879585a32",
+      "git_blob_sha1": "9f5e1e94c7e53bba273ea636c02b0aa4d95a7190"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_4_left_body.obj",
+      "bytes": 350442,
+      "sha256": "f60138bef74a9bc35aeaec3df67872dbda7f990c52bd5702bf901ae874dee751",
+      "git_blob_sha1": "04f1808adec3e69cf8f9dbf9ee0aee46c0ba205f"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tarsus_T3_4_right_body.obj",
+      "bytes": 350447,
+      "sha256": "a2d849312ecb9ed9d5bd1ab6a8bfd5f3fa25db016abaf3339968dc79463fe1cd",
+      "git_blob_sha1": "971b3c1280760b570fa4c8bd9eca27b2844e8a20"
+    },
+    {
+      "path": "flybody/fruitfly/assets/thorax_black.obj",
+      "bytes": 12653964,
+      "sha256": "99e5244ef12728410550ce9db87c0955fad4203de9a3385c9a47686abc49a05c",
+      "git_blob_sha1": "b235e1578b9468d6a4687dbef068ca06904a04a2"
+    },
+    {
+      "path": "flybody/fruitfly/assets/thorax_body.obj",
+      "bytes": 9431470,
+      "sha256": "ca9b148939cb1eee4c9545a745ca8a91ca6ca7c92086ffdc1fcb3d8d0f6853d3",
+      "git_blob_sha1": "1f8e6cac46959e66a02adcd728528aa77d4cbad1"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T1_left_body.obj",
+      "bytes": 516940,
+      "sha256": "8df1760f6d1577db63c22a44224660349ce488d788b96c4caa8226d8ce976855",
+      "git_blob_sha1": "ee66921433cfdb4db6cb2f2e0e725d1e53e9d218"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T1_right_body.obj",
+      "bytes": 515517,
+      "sha256": "320c29dbddb1eb8610282dc72df5e4208d9cb241c282b709daf400e4ce7c12a8",
+      "git_blob_sha1": "fb46344a8617025ce9ef4bdd1ae97de73fb0e0f8"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T2_left_body.obj",
+      "bytes": 660368,
+      "sha256": "5d31bc233c9efc7fbd51f34bbff10d9b3dca819fd27d89e19f96613bdda3da40",
+      "git_blob_sha1": "c9ead61fb978b79f0ce071f8c5bebe7b7688dc34"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T2_right_body.obj",
+      "bytes": 669281,
+      "sha256": "fe175d7e0366ce105544ada99591a53da1da3030cdc1a6aff66ae30619877d4b",
+      "git_blob_sha1": "f147ae1714314db77e1ddd8b8dea486522ece0b1"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T3_left_body.obj",
+      "bytes": 1180232,
+      "sha256": "0c8ec3402ef0701f37964a1322bd732ae9e70170b5979c5e55baf63429dd704f",
+      "git_blob_sha1": "75238e7d4a895ae3b9525e6e1ea8ad5618c0ec5f"
+    },
+    {
+      "path": "flybody/fruitfly/assets/tibia_T3_right_body.obj",
+      "bytes": 1140937,
+      "sha256": "55dd96ec2e882fe4255c2a538c6ed01d7b474b0e51bf0b9736e64992852078c3",
+      "git_blob_sha1": "cfb3f813a8c23167bf6d95d9f5eb3fcba6cc584a"
+    },
+    {
+      "path": "flybody/fruitfly/assets/wing_left_brown.obj",
+      "bytes": 2824706,
+      "sha256": "27ec3ae2ea4adb8ade08f34c8da90057cf9913047aa0662e85ab4ba353a30771",
+      "git_blob_sha1": "1e69ba80230ca6e16ffdcfc696f200d4db272b45"
+    },
+    {
+      "path": "flybody/fruitfly/assets/wing_left_membrane.obj",
+      "bytes": 221433,
+      "sha256": "b88bf2167a5ddadedd963114cb0f367e1b89c5cdb99f7325875235c46fd4b9b2",
+      "git_blob_sha1": "f9e5ec2b41448e4ecb076d773fdcbb5d1f30d841"
+    },
+    {
+      "path": "flybody/fruitfly/assets/wing_right_brown.obj",
+      "bytes": 2805048,
+      "sha256": "27cd3b9a608b8b17f3a63d4aba774806d55deda8750edf08c8f86e2a79dad64d",
+      "git_blob_sha1": "74d66dcd3ba858fa1e2089a77e5d48b1a8588671"
+    },
+    {
+      "path": "flybody/fruitfly/assets/wing_right_membrane.obj",
+      "bytes": 219913,
+      "sha256": "b4df8b8c4331dfa2ca2078ac852188809142935c766c547c17d213e867fa8ead",
+      "git_blob_sha1": "56a487d917cdc2322c43331b1c107a9eedacc60c"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/README.md",
+      "bytes": 1208,
+      "sha256": "5a9cca7587d2b4803bc32efa453e7788f4b77c650e0d59a7f1dd7a4e7a5fcf70",
+      "git_blob_sha1": "df8caecfb36cccc462d58410e8813567de984960"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/add_flyid_labels.py",
+      "bytes": 2058,
+      "sha256": "a2a182c91e16c0b4fc024f69892732a23545ddf742b4bedc4f9cfcdf1c4b29d7",
+      "git_blob_sha1": "479e734c056008e5e293052bd079612e228b7e80"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_1_body.msh",
+      "bytes": 157480,
+      "sha256": "79ecbadcb17d52ee9f62aba809dca26fabb8b782b71d90fd598d20f14be90735",
+      "git_blob_sha1": "6fd0e732f4a1dc9d8b6b288063e86b4f70d8f062"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_1_lower.msh",
+      "bytes": 51856,
+      "sha256": "ea9183100bd8b32da7851db8bf922d207774a5dd8db566084f339327b0edcb3b",
+      "git_blob_sha1": "fe06a6087aeffccfe178f12f85d9744603859ebd"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_2_body.msh",
+      "bytes": 66976,
+      "sha256": "d45e6c884bb87db52fe47316be2e0546e0b66cbfa1aca9b66fefab8755a6b0d2",
+      "git_blob_sha1": "1d9e39f09ebf4f68b77dce9d1193a3a62a58de6d"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_2_lower.msh",
+      "bytes": 55312,
+      "sha256": "d8266530dce9ebccd35fe8287a92b0c52eaf75d458dd648496e6441cd6a368ee",
+      "git_blob_sha1": "50c6e35fad38b15f1d32aa907cf856cf9d0979e7"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_3_body.msh",
+      "bytes": 80800,
+      "sha256": "e7b82e6e9cd58a331f68e4b0cece77c8fb61805f54965a3ef06fdb92ca70d4d9",
+      "git_blob_sha1": "bb74f96f8144b51f1ef44363da8ac232c8405729"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_3_lower.msh",
+      "bytes": 65680,
+      "sha256": "09936005029746f7e7431a3ceee95bb2b24ad98b09be50cc96382c9e18ce5b44",
+      "git_blob_sha1": "9c9b4fc624cfb87bac0285ad390225f54a0e824a"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_4_body.msh",
+      "bytes": 80800,
+      "sha256": "64b190ebb8b8cde559217c841e765b143c5d94a5b6d9a2f088f1c6483ca61613",
+      "git_blob_sha1": "18f5df14066baf9fd0ce9989f170ddb953839764"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_4_lower.msh",
+      "bytes": 65680,
+      "sha256": "2040fbb0df3d68bb36a4a145693d12bf083b4b37ab2d1053efa98a5c15c72cb8",
+      "git_blob_sha1": "d553612631f23376cdfde6cffa4381493826a5bd"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_5_body.msh",
+      "bytes": 79072,
+      "sha256": "2dc6a75c07652b6efded49f859a42ae958023dba76e79089a7c50fa946115c99",
+      "git_blob_sha1": "df98adb799e5a4a58b63602d7869b85c3974ca53"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_5_lower.msh",
+      "bytes": 70864,
+      "sha256": "a1d1154fb48e707ef15a5f2782f80f026e257275513e42a9d09a8d59047b67ec",
+      "git_blob_sha1": "c23560efbe69af45defa5ce400b5dca859f21650"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_6_body.msh",
+      "bytes": 80800,
+      "sha256": "78b38a6f511337872fdb70f00b3a92998a5dfa493bacc5644fe4e16537c1b5ac",
+      "git_blob_sha1": "1112a79870341b7ca45f3f7403830121a1a131d4"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_6_lower.msh",
+      "bytes": 65680,
+      "sha256": "c3dfa69f6b8ade5b9e9d36dbad098fbd6cc72bd21b5240d70e8d4e7d7e280ef0",
+      "git_blob_sha1": "eb6a4a1f4bd0384d3e9f9ae477ca33fff0cddfef"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_7_body.msh",
+      "bytes": 80800,
+      "sha256": "b06c16cc0d1ce45a623ce832430a48ae6a206144c0f9ad0838ad2dcc04e3a4c3",
+      "git_blob_sha1": "d6aba9c8674260d377e71c242c9326820b9e819e"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_7_lower.msh",
+      "bytes": 65680,
+      "sha256": "326579e7bc81e62eb71c9cb42013c9a1fcdb1f0073466ae5789bbde5a1c38095",
+      "git_blob_sha1": "a1a40d27eae00804bb8028d2a57454c844d39d62"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/abdomen_8_body.msh",
+      "bytes": 182104,
+      "sha256": "fa3ce14dd91d48f9f56b47b76c462ee10e97f62e05de6ae23e2ca7bd7a90c110",
+      "git_blob_sha1": "e5c53f118653b1d548654c3b7b06900e8993f4e7"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/antenna_left_black.msh",
+      "bytes": 185776,
+      "sha256": "d287e368270afb762e2df6a64fd5e4204a6b698d561cbd60321e304827a8eafb",
+      "git_blob_sha1": "353f67a6107010f21839aad28f444ffdf9b50cd0"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/antenna_left_body.msh",
+      "bytes": 445840,
+      "sha256": "8f1d1eeaf9771ba4049874fece45b2ad2c4bb0193e2167a4ed23ab88e6a8a561",
+      "git_blob_sha1": "c274dc87d520049f4c106af3437d141a7fad28de"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/antenna_right_black.msh",
+      "bytes": 185776,
+      "sha256": "beb8dc6c550c5bfbccffaa22e54a091aee7b7f916a50cff901852e59afefe33a",
+      "git_blob_sha1": "9a742a36a94e339ce1517b1fd4eeeec0ec6c377a"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/antenna_right_body.msh",
+      "bytes": 445840,
+      "sha256": "47eba257b7762a47721f5d0e2200dd309ab271308fb566d73b3fb42e824cedfe",
+      "git_blob_sha1": "a0493295a9fa9095aa94c3c78c6d98c6aab7a424"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T1_left_body.msh",
+      "bytes": 241072,
+      "sha256": "beb7e0fe784c6b0c862ddc2e650e6bdc24c6d66d6845854c9ed7325b04b77546",
+      "git_blob_sha1": "9df055b0edec171d550030bf5f4594200764fd32"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T1_right_body.msh",
+      "bytes": 241072,
+      "sha256": "3be101193e4f754136970791b0f69efe72a7c9964cf6f5ec22776283995e5989",
+      "git_blob_sha1": "990dd6c6092d49e00518e6229d945ef609482f4f"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T2_left_body.msh",
+      "bytes": 275200,
+      "sha256": "d6683ad7b677b666c2832fc4e7d74be7dc483d3a3f21f2fa25b1d22fd1397511",
+      "git_blob_sha1": "ef693f0e2a48428d78e2c19761d5fbf1adb7aeb5"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T2_right_body.msh",
+      "bytes": 275200,
+      "sha256": "18126ece1b3ef06048d777bc3c5ac10d62e868fe66d2285399adf4d0a8ac8671",
+      "git_blob_sha1": "98be03ac7dd1c560ed176565deb55e87d56f1415"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T3_left_body.msh",
+      "bytes": 208672,
+      "sha256": "4081e3b1363a591f4a9f079d6fc5abd41b6e60fce6056bcb1c6de89f7d08d79d",
+      "git_blob_sha1": "256dc0cc5881c3b909ea8b8ae5ff6be547c2a9fb"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/coxa_T3_right_body.msh",
+      "bytes": 208672,
+      "sha256": "09f1aa3c4f07c4aee3dbdfd1b1c1744f383519061147c605230c87d98aa043db",
+      "git_blob_sha1": "3e7814a1fa971b4ffb403689b9b2300ca97f0660"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/drosophila.xml",
+      "bytes": 72321,
+      "sha256": "fefed18d994c0debba4dd987c0d875b253ccf7707c828d35bba84766c4288026",
+      "git_blob_sha1": "aa7332fb55715bec1159df6db0f41f404163f5d9"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/drosophila_defaults.xml",
+      "bytes": 8545,
+      "sha256": "54fd63fa2754d2d2dc9cf46e07e0df8e509ef55010ceeb8148a7d7a69d1e78a8",
+      "git_blob_sha1": "c148861ff5b717d756bc5a1242c183653c9394a4"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/drosophila_fused.xml",
+      "bytes": 45421,
+      "sha256": "7fb9659ead621e45adc715ae49f8142e2e643893fa43c7dc1e00c01e2682fea3",
+      "git_blob_sha1": "11abf9ccf2467bfe5f555d62653bd4a13dac52b5"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T1_left_body.msh",
+      "bytes": 232000,
+      "sha256": "6e9009c1679201761e223087e611ee04277887cebc3ceceb7708f67f3e3250d4",
+      "git_blob_sha1": "59d3fc7bed926daa7d0a5452c35ea4998f66f509"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T1_right_body.msh",
+      "bytes": 232000,
+      "sha256": "04533e369c27b66fc02ce000a2ee30ef976a40f85827d1212ba74f87e8ead72f",
+      "git_blob_sha1": "0d385990b742b698f202132ece5f72a06ed535c8"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T2_left_body.msh",
+      "bytes": 321424,
+      "sha256": "4c800ba553b6290b41e7ef5323f995ac3e1cecfc776ea5f6dfdd5980ae7ffd88",
+      "git_blob_sha1": "cd49ae925953aaee3da07142c9d1e661d265b1ea"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T2_right_body.msh",
+      "bytes": 321424,
+      "sha256": "8f20457c42b594f27d92b9ee564f6693d17d9b3d19e1e2d29d63394311c920a6",
+      "git_blob_sha1": "2804b089fb4f0492ca5cc4684b04f0dbfd9fa302"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T3_left_body.msh",
+      "bytes": 331792,
+      "sha256": "56ef5d80e3f79d8ed027253d3fa1bc2d04f2e896061bd1c261988920da622744",
+      "git_blob_sha1": "a3ce197f74099f975cc8da0fd2a810428453da8a"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/femur_T3_right_body.msh",
+      "bytes": 331792,
+      "sha256": "a8dcbfe41879a4f1bd0f351f7b7484b0b885313f22992d7c992a56e125d0efa3",
+      "git_blob_sha1": "93819cee022132025e4debc6f2b1940f80b10409"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/haltere_left_body.msh",
+      "bytes": 134800,
+      "sha256": "0faa9b44ae9fee25d64ed27b227407af9bcc8b54e7c3512944fa0cb0881621aa",
+      "git_blob_sha1": "bc4d52d1b1af0923b0eaee1ee2d04a029a0cf132"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/haltere_right_body.msh",
+      "bytes": 134800,
+      "sha256": "3cb3e72731af622ee3aa6d87ac59aa4696cf1973107e01dd2d39e18630c52ec0",
+      "git_blob_sha1": "545cbab095108b8ec6191c771381d2367ae03208"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/haustellum_black.msh",
+      "bytes": 285136,
+      "sha256": "1b0406a0e48437753fed5cb45fe2f433f6de719a1136406080b1467ae2f8f580",
+      "git_blob_sha1": "ce3c56f3d9ef3d18db7cb73e873b6fdbac720637"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/haustellum_body.msh",
+      "bytes": 395728,
+      "sha256": "d18452f0581cc0cfe6ef07fea57fb8c1871c2ca928ba7ce1a0deec9bc4535871",
+      "git_blob_sha1": "f9d83b9984fd69de21d3b53e36e993a53548b684"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/head_black.msh",
+      "bytes": 2589856,
+      "sha256": "75ddfbb30f19b3d30d8c6f12e6a1e6d00abb8a4d97467e0b71f307a6956d2a5f",
+      "git_blob_sha1": "ffb2f26bd18f69a956f1f32544d3adad3ba3315a"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/head_body.msh",
+      "bytes": 1291696,
+      "sha256": "022df432be98daa48694243fd78590b3754a04f6b2f37a4b005120d530b32ed2",
+      "git_blob_sha1": "4236c6db5f21703109a411c993430f25f4561c93"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/head_ocelli.msh",
+      "bytes": 1285648,
+      "sha256": "4f5b51ec12cc939f7352d414b9df4e540b447981e363e60dc097695d5c6377f1",
+      "git_blob_sha1": "4a4c281a8fdb52fac1936318f694162c935b691d"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/head_red.msh",
+      "bytes": 6404848,
+      "sha256": "d66a02ce14d9495948977c47a32d418bcfe8f03a0f1041b4fbf69b8418dec3aa",
+      "git_blob_sha1": "53d30f86c0b2c8a7df68d823fe759ebf94078093"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/labrum_left_lower.msh",
+      "bytes": 103696,
+      "sha256": "7f5e16915514fc28db5c103207c476f911bd8e3d4fe7f0902f171990c1246a74",
+      "git_blob_sha1": "f00f225670d6d9e246f216f5b7fa7d7f4c111009"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/labrum_right_lower.msh",
+      "bytes": 103696,
+      "sha256": "3f11eeedb22d3db4aa0efcfa574a75d3c350fc013653c543b299d267f543d050",
+      "git_blob_sha1": "b183450cc0c74e27449624d9d960cfb7a8b881cf"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/rostrum_body.msh",
+      "bytes": 456640,
+      "sha256": "125f6bea6271085ac0e8d417ccbeb4bfbb0fe1c1aa6d90ae3928027f8e1e8747",
+      "git_blob_sha1": "f0bd54e3fa5421d3ef05c0c67fb89eee8940603d"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/rostrum_bristle-brown.msh",
+      "bytes": 332656,
+      "sha256": "feca1d6e17d66ace85983b44a436c4358861fe2c9f3a5857b46669ecf7c90e64",
+      "git_blob_sha1": "f5dca5352236b2587d04903bb4bebc72151d24d5"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T1_left_brown.msh",
+      "bytes": 170224,
+      "sha256": "4f8461daae90cebe7a8467b1932278ec83cd84c9e251c5bb82bcc91122425eff",
+      "git_blob_sha1": "104fa46fc43ae0f806e5e18d97b40bf29fed01de"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T1_right_brown.msh",
+      "bytes": 170224,
+      "sha256": "39be2577ed595e9aaed066df8c92543f8fc84d907af218cd67cfcc92c5816940",
+      "git_blob_sha1": "51a8ce9020a95f83fa552a4c564bac9c5d355426"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T2_left_brown.msh",
+      "bytes": 178864,
+      "sha256": "85b909b313ec7a6a807e6f44b9421ca6e2b24fa94b060bde90a933fdbbcc8133",
+      "git_blob_sha1": "9fd8426aeedf48c3a2522d2c9b86feae0e93af66"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T2_right_brown.msh",
+      "bytes": 178864,
+      "sha256": "709fb06b41af2f62a5edfaf170b59e494df6f544f269a59f32e1c6ec92d533ae",
+      "git_blob_sha1": "bd8127c62abe147d6a32af1f97cbd21532880aaa"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T3_left_brown.msh",
+      "bytes": 196144,
+      "sha256": "f6995711ec1f8f83095e608625bd0e800549743dc6568daab45d92405a36b053",
+      "git_blob_sha1": "4c224a0da45cf6466609147f74aa9cd08fdd656c"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsal_claw_T3_right_brown.msh",
+      "bytes": 196144,
+      "sha256": "887a8bdf5a4476552ac244e8c4eb0bc605a29efd6e4de20b818200d0aa125ea9",
+      "git_blob_sha1": "f1a125410393a45313b527dadb0fe33017b59d9e"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_1_left_body.msh",
+      "bytes": 70864,
+      "sha256": "fe0ff70c9e8c3a4ebbaccb26bc0d024edce09783a84e9797db7cd26f6cc516ac",
+      "git_blob_sha1": "0d2926cc5a378c3b61e4870b10eb10c8c4555e25"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_1_right_body.msh",
+      "bytes": 70864,
+      "sha256": "125be44dde90723465812e9ccc3ec482e47f1abc271d475af81aace2097136a0",
+      "git_blob_sha1": "b2238e9a7f74f9eba46da7faccb500b6e577adcf"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_2_left_body.msh",
+      "bytes": 63952,
+      "sha256": "297be4843e4843d8055ea9f1bc6ecd5dc36879f4a9892321f4a5e779e4ff8c04",
+      "git_blob_sha1": "f8c0375fa9a62debe16851cf1b0f307decde5148"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_2_right_body.msh",
+      "bytes": 63952,
+      "sha256": "22087fd1594294ab0435f1f311505bd524196bf7d7815d12757a42bd2eb848e6",
+      "git_blob_sha1": "81eba2eabe3171779a10de0feb99fc4d39be79e2"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_3_left_body.msh",
+      "bytes": 63952,
+      "sha256": "b807fb0a8c1d182392c961c5478e66b91353bea15268e31eb99428f92535ad95",
+      "git_blob_sha1": "ae1e169dd5ba8ff9b806300596a571937165e0b3"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_3_right_body.msh",
+      "bytes": 63952,
+      "sha256": "4f5c8a0e0ca7269196a66a1b358b74e980d08a4cf9ff340894b9f39e46ae1911",
+      "git_blob_sha1": "475817de0fbfcd9e810e6c875ac99afe0d6e2c93"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_4_left_body.msh",
+      "bytes": 63952,
+      "sha256": "5f3569e698878734e2fd92c7f709b037827fa9ece4ead462d1da84e71d519336",
+      "git_blob_sha1": "116844cb7149519c332589aba0767a5364fba6dc"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T1_4_right_body.msh",
+      "bytes": 63952,
+      "sha256": "9354c89e540202c1f225f842fd6206f1c9a38b46a51e749c1c83ef7ccc671741",
+      "git_blob_sha1": "97acf78de18ff1bc0a509274bce8cd509bcea081"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_1_left_body.msh",
+      "bytes": 120976,
+      "sha256": "c73e962712faa6361ad7c14302f54e39d569330561c208bea67c97b8c34eea5b",
+      "git_blob_sha1": "46ed4fb43eebbee296642d0c119a0a241418eb96"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_1_right_body.msh",
+      "bytes": 120976,
+      "sha256": "bdcd2504f332ad3c8810da550bd9725ccf3cf363f8f4b836d56cba0f7dee5aff",
+      "git_blob_sha1": "b49ee4c20a1a0f48a802fd92481508eaed5d686f"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_2_left_body.msh",
+      "bytes": 84688,
+      "sha256": "1c3de43ee2dcd29f840c003ff63ed60901c945510f8b19f4358ce0e1fc985fe3",
+      "git_blob_sha1": "7b81306c72420e9328b0ad9141b159fd4bec28bf"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_2_right_body.msh",
+      "bytes": 84688,
+      "sha256": "65e308734f2b632e7ac8d09efabc14cf18acd5ab17160b85cce50ce30fb75e61",
+      "git_blob_sha1": "d1a7d6efeaa9a0ad1dc6fa79d2634f7aa6ec3407"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_3_left_body.msh",
+      "bytes": 70864,
+      "sha256": "d91ad3bed3b30eee7bb6204a61e42ff88dd6a315fab757434623be220b7a0a7b",
+      "git_blob_sha1": "fa26f25a605d890f6dcae8ced9842b28cea338ab"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_3_right_body.msh",
+      "bytes": 70864,
+      "sha256": "7034f21e1d3c2b3a881b9c6b08649767d1c13846b835b145d5f7a51bbc1139cd",
+      "git_blob_sha1": "e66cb2de20df88babb161052bfd4bef5953be6e5"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_4_left_body.msh",
+      "bytes": 63952,
+      "sha256": "bdee58bee81a49ceed72cfcd56147cd7cfb80dfc254fc525fcc83da52fc590fd",
+      "git_blob_sha1": "72fb71ef455af283e8b335c562ec644d275199bc"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T2_4_right_body.msh",
+      "bytes": 63952,
+      "sha256": "7b4fb658a381d98bcc47d213dd711ef7ce3aeac86f94a173f02838b0d110e2ed",
+      "git_blob_sha1": "563fb5e0b5cf61ee05764b3f34fef0c4edfe5ed1"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_1_left_body.msh",
+      "bytes": 170656,
+      "sha256": "1c92f572c131d478c2a8fc041d9008c05ddc5a5b5f9b1fe8686c0933439bdb96",
+      "git_blob_sha1": "5cf0ad6f86cb32a611601a9a8442b75a0d3b03d1"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_1_right_body.msh",
+      "bytes": 170656,
+      "sha256": "4daa42edacd0fde1ea2f413093848d6ba39224c508a98c53badc10588562ff9b",
+      "git_blob_sha1": "45b35ea01a7e32d204c6fdef43c82e84876200c0"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_2_left_body.msh",
+      "bytes": 98512,
+      "sha256": "e35cbd491d5093d247915d1c676bc95761216af1baa0bf59f95ecf974b541e53",
+      "git_blob_sha1": "3a6e05926f20dec98b49c299bc27a1fc93e3d427"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_2_right_body.msh",
+      "bytes": 98512,
+      "sha256": "13a3a1d2f79313f20bbf8216e1b5053b1e5810cfbb521439993ac4735df3c57a",
+      "git_blob_sha1": "7ee5024e80a9664ad461a1ea342836bacebe47cb"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_3_left_body.msh",
+      "bytes": 70864,
+      "sha256": "4202ab74595f057614c130427706463e7b0f9d1db4c9e460db0df2b7dc18497c",
+      "git_blob_sha1": "9fca2447f26a1f5ba1580327ae169ffe5be9aede"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_3_right_body.msh",
+      "bytes": 70864,
+      "sha256": "3b1b1aa991253b125883743d6fa2578c821deddb77162c11f380f647fb7a53e3",
+      "git_blob_sha1": "416e429d7b584436948c79b6bd5247737f345d2b"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_4_left_body.msh",
+      "bytes": 70864,
+      "sha256": "f638da502ceca3846d9582397067f595bb176d0086de2c3297c4fc3cda062df4",
+      "git_blob_sha1": "ae0322491bb7e03401444af821954d44792e118e"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tarsus_T3_4_right_body.msh",
+      "bytes": 70864,
+      "sha256": "8d82d01c5802fc0b20abe7f226b9c11e9a4ea329bcfb46315f6426b7964c014d",
+      "git_blob_sha1": "fb4a36d598389551aa4cb385983ac647c5c5e7ef"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/thorax_black.msh",
+      "bytes": 2663080,
+      "sha256": "026d46e0c5f93c250a9420970ee7aee2597bfeabb00109ed29841be02ceb8b22",
+      "git_blob_sha1": "652ba9fc8158ec479c19f761b27edad4c7fe31bd"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/thorax_body.msh",
+      "bytes": 1977712,
+      "sha256": "86b793d23b8a1710fa15d5033e6d6c22c7f42b42994718632423d586cb880b1d",
+      "git_blob_sha1": "31965586bcb55d9f36bee80ac0445f9e984c807b"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T1_left_body.msh",
+      "bytes": 106936,
+      "sha256": "6c926463aa1ed1f5c4dd6739773708dcc962d2dfff659863df0cb78cd6ec5f5f",
+      "git_blob_sha1": "0c6104c166c51db85a8bf1b7de9254da2f6bbe79"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T1_right_body.msh",
+      "bytes": 106936,
+      "sha256": "1a2952f0b62653ba6665edfe1178d05036f5e3b5dd326e75951ed64534c57221",
+      "git_blob_sha1": "533335e263b2852f537fc2145c183b40cc810ab9"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T2_left_body.msh",
+      "bytes": 135016,
+      "sha256": "ac9426c67bfede73cc6588c0f52321b8f7beab40374f983cfa48abcaa06f80c8",
+      "git_blob_sha1": "ba38624c29ba054a12e5160a3b29f09e220b8f40"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T2_right_body.msh",
+      "bytes": 135016,
+      "sha256": "1cefaedbc4ee7439b1ed664a53fef69070922d8139a1cbc37a254af0ac8d9d79",
+      "git_blob_sha1": "61ab8cf526524c75909ecbbe344d6e5622d815ec"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T3_left_body.msh",
+      "bytes": 243880,
+      "sha256": "a7cd51b54b58749a1461a664a09b249cd4976aa540a6afac09637bd77c98ac19",
+      "git_blob_sha1": "c30f9d4f69deaa1d412079d6f365a8d368b95c77"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/tibia_T3_right_body.msh",
+      "bytes": 243880,
+      "sha256": "7b521afb0877e114b3d34ad2d64a52ad5e54eed90f1e1348a801f95e65924b65",
+      "git_blob_sha1": "8a5575a19d78dbe9247448f4e08e36370553d4e0"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/wing_left_brown.msh",
+      "bytes": 672640,
+      "sha256": "45bcf8e6cc5adab67555cad86d7394974da4fea82b216d239a3e123647a115c5",
+      "git_blob_sha1": "7c30f77473fc62c26a0b45a37878fc6e95576557"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/wing_left_membrane.msh",
+      "bytes": 54016,
+      "sha256": "64d91dc4ce7011cb1c05f749bd3009f56b51f312d89ff2e43ca32ef96f6a5c0d",
+      "git_blob_sha1": "a07ca11a4dbd4c3687a1c4e8dc26ed87c751b7d0"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/wing_right_brown.msh",
+      "bytes": 672640,
+      "sha256": "dd95e056908ece45a9a1ace75ef889032d4a5a28713988a91f3c9caa68c6af2b",
+      "git_blob_sha1": "ee5f18ec2032dd8756345b698428439440b8e689"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/assets/wing_right_membrane.msh",
+      "bytes": 54016,
+      "sha256": "abb176e80a82ec9d1dfe424a571c9c98e72c2e9c47b13c33241d9156b2c06086",
+      "git_blob_sha1": "3550adf8f7b11dc8907d82e2e4c8234042ab02d6"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/floor.xml",
+      "bytes": 571,
+      "sha256": "8060086138c9be55bcaa92c1a245e00dcb22834f85bdba39ff441049d2f24147",
+      "git_blob_sha1": "98b1861bd80d53914ec8c92e3c19f79f7c47d7a9"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/fruitfly.xml",
+      "bytes": 65787,
+      "sha256": "d14946fd0311025ecca70c8eeb5de80e1fe18700d3072be37ecbb18d33d80fd8",
+      "git_blob_sha1": "58fb7c74376005afa9aeb2908c28f8b5e977762b"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/fuse_fruitfly.py",
+      "bytes": 1444,
+      "sha256": "1858e09975669680a8bc91bcbfe717b5557ddf4e7ead6b0d38fc1e036faf11dd",
+      "git_blob_sha1": "d8b8440ae7b9fd327b8ce36572ef95d6e757d1d5"
+    },
+    {
+      "path": "flybody/fruitfly/build_fruitfly/make_fruitfly.py",
+      "bytes": 52899,
+      "sha256": "6d9fe6ba01219c52c0b484415b5f589742e1b13aee90858f28bf134eb5e9cf05",
+      "git_blob_sha1": "052a6844643ea3833d7917465ab0dc316763dff6"
+    },
+    {
+      "path": "flybody/fruitfly/fruitfly.py",
+      "bytes": 29784,
+      "sha256": "a9301c0a5b40ab120af0f83ebfcbf90ca416813ef0cdf6cbb96ac8a0f65fb810",
+      "git_blob_sha1": "aacf41c173219e3423ba86428e4a980e5989a978"
+    },
+    {
+      "path": "flybody/inverse_kinematics.py",
+      "bytes": 13193,
+      "sha256": "3e20b7689556638c016ceddcba4db4e2c183d07ea112ccb2e7edae813dbfc746",
+      "git_blob_sha1": "9336241d0147eb131412c01192eb4313f87df291"
+    },
+    {
+      "path": "flybody/loggers.py",
+      "bytes": 5352,
+      "sha256": "33b4c405e54f0d7f434190d3143e52882b723af922a9931b9614f754516c527d",
+      "git_blob_sha1": "ac250e3f1045d4c2012e03cecf7d67df8d400afb"
+    },
+    {
+      "path": "flybody/quaternions.py",
+      "bytes": 13440,
+      "sha256": "0492355d716062d35db3355b3ddaf594a72f433cd1e51ef6a5b474d2796e2c0a",
+      "git_blob_sha1": "aa760b5859a5d19d4658f12ad517f9c876da8abd"
+    },
+    {
+      "path": "flybody/tasks/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "flybody/tasks/arenas/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "flybody/tasks/arenas/ball.py",
+      "bytes": 2348,
+      "sha256": "7dc07d6c86493aa16459d953d5a2771a4c08d9997191a40aab0b382c557128f5",
+      "git_blob_sha1": "0a06da01da1e161817f7bca56a451fc0487e8826"
+    },
+    {
+      "path": "flybody/tasks/arenas/hills.py",
+      "bytes": 18781,
+      "sha256": "c48985671331caea06ce39d004ba4d8474bee8108188e94dc4b8e9e580cbd4ab",
+      "git_blob_sha1": "ffc509e87c28e56f1021012cdddfdcf650d0cad2"
+    },
+    {
+      "path": "flybody/tasks/base.py",
+      "bytes": 18781,
+      "sha256": "a31b8b06b052d19f6108ae11f1f88e0d6ac92096a3c3a4db364774c43775385a",
+      "git_blob_sha1": "4aad34974b846df6bde423c327b8862114cf912f"
+    },
+    {
+      "path": "flybody/tasks/constants.py",
+      "bytes": 825,
+      "sha256": "d17e819e3fc54d2e231267dc833d77dd119575082ca19f4e27228ad0471d1891",
+      "git_blob_sha1": "a2471ffe65e4f7426cb1038f77d50a93c2e656d8"
+    },
+    {
+      "path": "flybody/tasks/flight_imitation.py",
+      "bytes": 10412,
+      "sha256": "57d74f16eeaf78a980ee184f69327bc57b839c4d5e9ed4ac7087effcbec3486a",
+      "git_blob_sha1": "39a36a2a14366e40b3630a01303ec1ae2c4cf64e"
+    },
+    {
+      "path": "flybody/tasks/pattern_generators.py",
+      "bytes": 9196,
+      "sha256": "ea40725fc14708dfca05ec735f60a96ec8408ad227c1c687d3528690233b565a",
+      "git_blob_sha1": "37324f78c0dda64888aaeeb8694fc192ed748eb7"
+    },
+    {
+      "path": "flybody/tasks/rewards.py",
+      "bytes": 4037,
+      "sha256": "8b12d060071196c290d775a305bd01bd8962b9ae81f277ed40a0f64b56b619d3",
+      "git_blob_sha1": "7d6b78f994813514c99ada457f1c7591db5eccb7"
+    },
+    {
+      "path": "flybody/tasks/synthetic_trajectories.py",
+      "bytes": 2866,
+      "sha256": "4296d195c5debba580e422b3e30fba742d5b62a039a45e7b7c5a715d102e2430",
+      "git_blob_sha1": "dc600927258215b96963a8acbd7721b75bf2b328"
+    },
+    {
+      "path": "flybody/tasks/task_utils.py",
+      "bytes": 9748,
+      "sha256": "a8b9cb7f03c2bdf5f907fe41c9f66b67be9d39c8e8bc6b62a3f7ead39774c915",
+      "git_blob_sha1": "d846360b0b80fd8ad061155736cd1b4854056624"
+    },
+    {
+      "path": "flybody/tasks/template_task.py",
+      "bytes": 3423,
+      "sha256": "e1e95089ca7cbe4accf07b7e25ea0a05537a3b186bdb838f47888a908ef84bb7",
+      "git_blob_sha1": "013facee5270d9b777b66113d31ed19e4528c934"
+    },
+    {
+      "path": "flybody/tasks/trajectory_loaders.py",
+      "bytes": 11671,
+      "sha256": "6b6731fab9b57a9c0ad90a46d6f987f05668fe3586107da96d109a9be8338a46",
+      "git_blob_sha1": "ca069339d0ff6a99e3f8f514e17bcfc0c9897cff"
+    },
+    {
+      "path": "flybody/tasks/vision_flight.py",
+      "bytes": 11676,
+      "sha256": "f4c7cc68dde93583beccbd11f6c5146d583d9058b3879a7e8b081038d3a91f35",
+      "git_blob_sha1": "76b63d2d6b9129a25015728ad8471994e49e01e5"
+    },
+    {
+      "path": "flybody/tasks/walk_imitation.py",
+      "bytes": 8899,
+      "sha256": "6e155c1007de189845827f3c4db2d2572f7c377cef720776e1efd9c7b1a9d253",
+      "git_blob_sha1": "dcf9e04a8a33a9ebd9493f70eaec6a94e5811f2f"
+    },
+    {
+      "path": "flybody/tasks/walk_on_ball.py",
+      "bytes": 3523,
+      "sha256": "3f178f154caaf47ca877bea4185e85a06d97b5a9fea1b4bbb7ef46aa9573a36c",
+      "git_blob_sha1": "170f7d5df7e08b4ea72129901f80b389842d8361"
+    },
+    {
+      "path": "flybody/train_dmpo_ray.py",
+      "bytes": 8737,
+      "sha256": "1d86b6076a357424d520239f25048cf9f381f153877ce997b8413dd47520aec2",
+      "git_blob_sha1": "4100f31983a6b35cef2fd3e96f888159ae88f287"
+    },
+    {
+      "path": "flybody/utils.py",
+      "bytes": 2900,
+      "sha256": "74f8b9ce8099d867d49b9babb39d823ba5b1aed1e6ccc51768624a3472af2c63",
+      "git_blob_sha1": "a2c3630eea1ca431b505cb25d6a172a32a368755"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1368,
+      "sha256": "9ed12e3026c32b06dfff1cbdc914dcf0d2c600767cfb603c2d68e3f24ccebbed",
+      "git_blob_sha1": "712b1123564fb7fe1797172c92cf990a5f65f23f"
+    }
+  ],
+  "total_bytes": 191050092
+}

@@ -1,0 +1,225 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/reiserlab/male-drosophila-visual-system-connectome-code/dbafc73124b5c96e96429cdf2a89d067cae841bc/results/exchange/ME_assigned_columns.csv",
+    "commit": "dbafc73124b5c96e96429cdf2a89d067cae841bc",
+    "bytes": 205739,
+    "sha256": "649140bab99503d13136e7cbe60372d981e728505d5c8db0b82f0ef33cfd8c8a"
+  },
+  "malecns_metadata_sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+  "script_sha256": "acdc8275d3eccb36ac678a19d9eaee0636bfc762d0b484c61541bfaa7db677c5",
+  "source_cells": 13267,
+  "unique_right_columns": 892,
+  "checks": {
+    "every_bodyId_retained": true,
+    "every_cell_right_side": true,
+    "every_type_agrees": true,
+    "every_hex_pair_agrees": true
+  },
+  "nern_display_convention": "Docs label hex1\u2192q, hex2\u2192p and origin[18,19]. Centering gives p=hex2-19,q=hex1-18; this alone is not a Zhao registration.",
+  "geometric_alternatives": [
+    {
+      "rotation_steps_60deg": 0,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "status": "unresolved",
+      "reason": "No homologous male-to-template origin/anterior landmark proven"
+    },
+    {
+      "rotation_steps_60deg": 1,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 2,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 3,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 4,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 5,
+      "reflected": false,
+      "matrix_on_column_vector_pq": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 0,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "status": "unresolved",
+      "reason": "No homologous male-to-template origin/anterior landmark proven"
+    },
+    {
+      "rotation_steps_60deg": 1,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 2,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 3,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 4,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    },
+    {
+      "rotation_steps_60deg": 5,
+      "reflected": true,
+      "matrix_on_column_vector_pq": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "status": "conditionally_rejected",
+      "reason": "Would change the positive vertical diagonal if both source grids share that anatomical convention"
+    }
+  ],
+  "unresolved_translation_family": "With a common equator row imposed, integer(k,-k) shifts still preserve that row. The cross-specimen central-meridian origin is not verified; k is not selected. Without matched upper/lower equator rows there is an additional one-row phase ambiguity. This is not an exhaustive nonrigid registration model.",
+  "orientation_caveat": "Nern diagram places +p toward upper left and +q upper right; Zhao's plotted basis places +p upper right and +q upper left. A plotting reflection must not silently become an anatomical side swap.",
+  "selected_transform": null,
+  "rejection_of_automatic_selection": "Grid overlap, matched-facet count, visual attractiveness or useful neural output cannot resolve missing biological landmarks.",
+  "remaining_evidence": [
+    "Male right-eye upper and lower equator row identities tied to the source chirality/count audit",
+    "A homologous anterior/posterior landmark and central-meridian column in the male and female grids",
+    "Explicit handling of different eye/column counts and local lattice defects",
+    "A documented head-coordinate transform from female optical template to physical camera/body"
+  ],
+  "completed": true,
+  "registration_completed": false
+}

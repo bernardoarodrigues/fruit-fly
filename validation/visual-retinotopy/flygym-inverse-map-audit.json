@@ -1,0 +1,5080 @@
+{
+  "package_version": "2.1.0",
+  "distribution_source": {
+    "url": "https://github.com/NeLy-EPFL/flygym.git",
+    "vcs_info": {
+      "vcs": "git",
+      "commit_id": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60",
+      "requested_revision": "38c8ec61034cd59bc5ba0de20688d4a3c0000d60"
+    }
+  },
+  "raw_image_shape": [
+    512,
+    450,
+    3
+  ],
+  "facets": 721,
+  "pale_count": 216,
+  "yellow_count": 505,
+  "mask_pixel_count": 170288,
+  "invalid_mapped_pixel_count_within_facets": 3,
+  "facets_with_invalid_source_pixels": 2,
+  "minimum_facet_valid_fraction": 0.9913793103448276,
+  "index_texture_check": "Exact agreement for every destination pixel with Retina.correct_fisheye(encoded source row/column)",
+  "source_hashes": {
+    "flygym/vision/retina.py": "fbb43595de2d7736423424b5cb4ea8eabc369d500fb028c26065c0e2ec4746c6",
+    "flygym/simulation.py": "c2a6fded0ccedb2124c1ac421e1b52cb2c087bfa40fcb38f8a32722d21c012d2",
+    "flygym/compose/fly/base_fly.py": "9f7ec2c3786972467085cf6a92363cc72a95551226151ff1941fd96800ec677f",
+    "flygym/assets/model/neuromechfly/vision.yaml": "aeaf9c67603e85ac81d251a01e7a20821687c1a62be0626af49ef09919e10545",
+    "flygym/assets/model/neuromechfly/compound_eye.npz": "51afb29664ac1f4ef05535f417ae37ed8a625911c99995720ca382799eef36b3"
+  },
+  "facet_pixel_coverage": [
+    {
+      "facet_index_zero_based": 0,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 230,
+      "valid_fraction": 0.9913793103448276
+    },
+    {
+      "facet_index_zero_based": 1,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 2,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 230,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 3,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 229,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 4,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 212,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 5,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 198,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 6,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 7,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 8,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 172,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 9,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 10,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 194,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 11,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 212,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 12,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 229,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 13,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 230,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 14,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 15,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 231,
+      "valid_fraction": 0.9956896551724138
+    },
+    {
+      "facet_index_zero_based": 16,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 230,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 17,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 18,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 223,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 19,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 216,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 20,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 183,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 21,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 184,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 22,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 169,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 23,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 163,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 24,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 152,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 25,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 164,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 26,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 169,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 27,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 183,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 28,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 182,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 29,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 214,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 30,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 223,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 31,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 32,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 230,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 33,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 34,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 230,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 35,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 220,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 36,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 198,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 37,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 192,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 38,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 39,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 40,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 148,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 41,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 148,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 42,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 145,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 43,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 155,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 44,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 45,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 46,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 191,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 47,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 199,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 48,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 220,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 49,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 228,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 50,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 51,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 239,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 52,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 222,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 53,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 206,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 54,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 187,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 55,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 168,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 56,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 150,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 57,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 147,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 58,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 140,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 59,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 134,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 60,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 135,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 61,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 129,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 62,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 137,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 63,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 145,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 64,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 151,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 65,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 169,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 66,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 184,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 67,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 204,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 68,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 222,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 69,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 238,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 70,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 212,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 71,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 212,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 72,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 73,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 162,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 74,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 139,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 75,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 136,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 76,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 116,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 77,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 78,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 108,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 79,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 110,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 80,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 102,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 81,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 108,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 82,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 83,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 84,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 137,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 85,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 139,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 86,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 161,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 87,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 88,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 211,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 89,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 213,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 90,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 208,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 91,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 198,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 92,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 160,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 93,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 143,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 94,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 95,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 114,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 96,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 97,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 97,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 98,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 99,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 89,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 100,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 84,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 101,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 94,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 102,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 103,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 97,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 104,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 105,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 114,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 106,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 121,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 107,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 141,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 108,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 159,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 109,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 195,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 110,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 204,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 111,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 206,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 112,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 113,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 152,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 114,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 128,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 115,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 116,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 100,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 117,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 93,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 118,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 83,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 119,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 78,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 120,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 121,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 122,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 123,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 76,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 124,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 80,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 125,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 84,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 126,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 91,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 127,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 128,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 113,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 129,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 125,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 130,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 146,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 131,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 174,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 132,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 203,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 133,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 206,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 134,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 164,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 135,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 136,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 136,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 137,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 102,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 138,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 139,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 140,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 141,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 72,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 142,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 143,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 144,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 145,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 146,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 147,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 76,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 148,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 149,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 150,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 151,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 152,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 114,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 153,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 133,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 154,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 158,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 155,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 205,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 156,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 183,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 157,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 161,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 158,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 124,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 159,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 110,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 160,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 161,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 87,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 162,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 72,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 163,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 164,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 65,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 165,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 166,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 167,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 168,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 169,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 170,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 171,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 172,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 173,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 174,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 175,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 91,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 176,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 109,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 177,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 125,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 178,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 159,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 179,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 180,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 180,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 181,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 181,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 155,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 182,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 121,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 183,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 108,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 184,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 185,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 82,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 186,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 187,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 67,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 188,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 189,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 190,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 191,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 192,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 193,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 194,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 55,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 195,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 196,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 197,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 198,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 67,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 199,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 80,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 200,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 89,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 201,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 106,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 202,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 121,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 203,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 157,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 204,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 180,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 205,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 188,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 206,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 151,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 207,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 124,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 208,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 209,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 210,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 78,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 211,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 212,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 213,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 214,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 215,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 216,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 217,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 218,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 219,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 220,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 221,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 222,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 57,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 223,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 224,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 225,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 226,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 227,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 228,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 122,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 229,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 151,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 230,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 188,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 231,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 186,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 232,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 154,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 233,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 129,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 234,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 102,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 235,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 236,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 237,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 67,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 238,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 239,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 240,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 241,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 242,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 243,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 244,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 245,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 246,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 247,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 248,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 249,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 250,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 251,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 67,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 252,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 253,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 87,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 254,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 99,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 255,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 129,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 256,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 151,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 257,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 187,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 258,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 172,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 259,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 260,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 129,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 261,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 110,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 262,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 263,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 77,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 264,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 265,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 63,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 266,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 55,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 267,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 268,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 269,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 270,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 271,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 272,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 273,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 274,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 275,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 276,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 277,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 278,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 63,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 279,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 280,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 79,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 281,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 282,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 109,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 283,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 127,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 284,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 165,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 285,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 174,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 286,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 170,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 287,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 164,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 288,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 139,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 289,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 116,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 290,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 92,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 291,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 83,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 292,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 293,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 294,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 54,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 295,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 296,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 297,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 298,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 299,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 300,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 40,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 301,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 302,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 303,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 304,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 305,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 306,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 307,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 308,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 67,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 309,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 310,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 92,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 311,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 113,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 312,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 137,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 313,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 314,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 169,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 315,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 176,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 316,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 153,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 317,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 150,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 318,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 319,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 99,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 320,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 78,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 321,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 322,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 63,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 323,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 55,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 324,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 325,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 48,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 326,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 327,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 328,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 329,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 330,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 38,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 331,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 37,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 332,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 333,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 334,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 335,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 336,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 337,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 338,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 339,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 77,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 340,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 100,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 341,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 342,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 148,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 343,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 152,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 344,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 177,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 345,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 346,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 154,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 347,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 150,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 348,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 349,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 350,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 351,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 78,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 352,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 353,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 354,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 355,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 356,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 357,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 358,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 41,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 359,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 41,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 360,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 37,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 361,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 362,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 37,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 363,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 364,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 48,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 365,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 366,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 367,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 368,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 369,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 370,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 371,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 106,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 372,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 373,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 149,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 374,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 154,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 375,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 175,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 376,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 174,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 377,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 152,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 378,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 145,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 379,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 380,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 104,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 381,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 83,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 382,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 383,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 384,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 385,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 386,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 387,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 388,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 389,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 390,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 391,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 39,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 392,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 39,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 393,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 394,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 395,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 396,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 397,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 57,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 398,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 399,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 400,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 80,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 401,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 98,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 402,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 403,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 144,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 404,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 153,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 405,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 172,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 406,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 167,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 407,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 163,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 408,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 135,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 409,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 114,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 410,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 91,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 411,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 412,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 413,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 414,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 415,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 416,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 45,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 417,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 418,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 419,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 420,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 39,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 421,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 422,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 42,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 423,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 424,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 425,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 426,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 54,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 427,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 428,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 429,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 77,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 430,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 87,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 431,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 112,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 432,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 134,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 433,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 162,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 434,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 168,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 435,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 173,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 436,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 164,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 437,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 127,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 438,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 107,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 439,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 83,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 440,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 77,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 441,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 442,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 443,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 444,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 445,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 446,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 447,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 448,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 449,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 41,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 450,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 43,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 451,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 44,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 452,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 453,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 454,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 455,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 456,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 457,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 76,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 458,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 85,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 459,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 107,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 460,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 123,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 461,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 161,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 462,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 173,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 463,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 464,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 155,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 465,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 128,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 466,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 101,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 467,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 468,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 469,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 470,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 471,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 55,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 472,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 473,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 474,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 48,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 475,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 476,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 477,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 48,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 478,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 46,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 479,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 51,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 480,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 481,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 482,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 483,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 484,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 485,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 486,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 100,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 487,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 126,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 488,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 148,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 489,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 182,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 490,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 182,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 491,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 149,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 492,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 126,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 493,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 102,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 494,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 495,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 496,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 497,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 498,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 57,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 499,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 500,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 501,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 502,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 503,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 47,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 504,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 49,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 505,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 54,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 506,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 507,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 508,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 509,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 510,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 511,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 512,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 97,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 513,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 128,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 514,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 149,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 515,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 516,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 176,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 517,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 154,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 518,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 519,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 107,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 520,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 87,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 521,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 80,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 522,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 523,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 63,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 524,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 58,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 525,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 526,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 52,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 527,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 54,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 528,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 529,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 50,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 530,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 53,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 531,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 532,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 533,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 66,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 534,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 535,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 79,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 536,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 537,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 105,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 538,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 539,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 153,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 540,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 174,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 541,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 179,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 542,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 160,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 543,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 125,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 544,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 110,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 545,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 89,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 546,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 84,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 547,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 548,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 70,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 549,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 60,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 550,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 551,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 552,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 56,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 553,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 54,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 554,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 59,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 555,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 62,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 556,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 61,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 557,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 69,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 558,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 72,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 559,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 85,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 560,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 89,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 561,
+      "mask_pixels": 243,
+      "valid_source_pixels_counting_repeats": 243,
+      "unique_source_pixels": 108,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 562,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 121,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 563,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 156,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 564,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 176,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 565,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 202,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 566,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 158,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 567,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 134,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 568,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 569,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 99,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 570,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 571,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 80,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 572,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 573,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 574,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 575,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 64,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 576,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 63,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 577,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 65,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 578,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 68,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 579,
+      "mask_pixels": 239,
+      "valid_source_pixels_counting_repeats": 239,
+      "unique_source_pixels": 71,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 580,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 73,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 581,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 582,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 583,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 100,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 584,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 110,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 585,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 131,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 586,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 158,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 587,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 199,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 588,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 205,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 589,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 171,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 590,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 148,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 591,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 122,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 592,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 593,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 94,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 594,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 90,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 595,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 81,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 596,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 79,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 597,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 598,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 599,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 74,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 600,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 75,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 601,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 82,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 602,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 79,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 603,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 89,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 604,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 94,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 605,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 606,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 118,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 607,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 142,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 608,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 167,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 609,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 203,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 610,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 204,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 611,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 192,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 612,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 155,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 613,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 138,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 614,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 615,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 616,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 93,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 617,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 97,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 618,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 619,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 88,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 620,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 83,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 621,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 91,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 622,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 86,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 623,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 95,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 624,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 97,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 625,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 109,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 626,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 119,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 627,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 135,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 628,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 153,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 629,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 189,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 630,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 201,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 631,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 211,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 632,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 207,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 633,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 173,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 634,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 157,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 635,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 136,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 636,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 637,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 112,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 638,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 639,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 107,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 640,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 109,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 641,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 100,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 642,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 99,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 643,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 111,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 644,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 112,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 645,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 125,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 646,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 135,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 647,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 156,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 648,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 175,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 649,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 204,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 650,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 211,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 651,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 238,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 652,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 220,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 653,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 199,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 654,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 655,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 165,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 656,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 143,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 657,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 143,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 658,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 659,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 660,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 130,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 661,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 123,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 662,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 128,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 663,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 146,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 664,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 143,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 665,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 163,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 666,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 177,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 667,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 199,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 668,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 216,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 669,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 235,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 670,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 671,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 229,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 672,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 213,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 673,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 193,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 674,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 185,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 675,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 163,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 676,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 677,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 146,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 678,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 143,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 679,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 140,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 680,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 150,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 681,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 165,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 682,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 163,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 683,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 187,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 684,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 194,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 685,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 213,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 686,
+      "mask_pixels": 230,
+      "valid_source_pixels_counting_repeats": 230,
+      "unique_source_pixels": 227,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 687,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 688,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 233,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 689,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 690,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 220,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 691,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 211,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 692,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 184,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 693,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 183,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 694,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 166,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 695,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 160,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 696,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 150,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 697,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 161,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 698,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 165,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 699,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 178,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 700,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 183,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 701,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 212,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 702,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 221,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 703,
+      "mask_pixels": 241,
+      "valid_source_pixels_counting_repeats": 241,
+      "unique_source_pixels": 241,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 704,
+      "mask_pixels": 233,
+      "valid_source_pixels_counting_repeats": 233,
+      "unique_source_pixels": 233,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 705,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 232,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 706,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 242,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 707,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 228,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 708,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 222,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 709,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 207,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 710,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 191,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 711,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 177,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 712,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 175,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 713,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 168,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 714,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 174,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 715,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 191,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 716,
+      "mask_pixels": 231,
+      "valid_source_pixels_counting_repeats": 231,
+      "unique_source_pixels": 205,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 717,
+      "mask_pixels": 240,
+      "valid_source_pixels_counting_repeats": 240,
+      "unique_source_pixels": 223,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 718,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 228,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 719,
+      "mask_pixels": 242,
+      "valid_source_pixels_counting_repeats": 242,
+      "unique_source_pixels": 242,
+      "valid_fraction": 1.0
+    },
+    {
+      "facet_index_zero_based": 720,
+      "mask_pixels": 232,
+      "valid_source_pixels_counting_repeats": 232,
+      "unique_source_pixels": 232,
+      "valid_fraction": 1.0
+    }
+  ]
+}

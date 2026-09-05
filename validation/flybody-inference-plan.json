@@ -1,0 +1,20 @@
+{
+  "scope": "Compatibility and short physical smoke only; not biological validation or default replacement",
+  "policy": "Figshare v4 walking SavedModel, exact acquired member hashes",
+  "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "runtime_proposal": {"python": "3.10", "tensorflow": "2.15.1", "tensorflow_probability": "0.23.0", "numpy": "1.26.4", "dm_control": "1.0.27", "mujoco": "3.2.7", "compute": "CPU, single TensorFlow intra/inter-op thread"},
+  "runtime_caveat": "Newer TF/TFP/MuJoCo than original export; compatibility/parity must be tested, not assumed",
+  "checks": {
+    "loaded_graph_matches_acquired_hash": true,
+    "exact_all_12_observation_keys_shapes_float32_batch": true,
+    "flat_observation_dimension": 741,
+    "finite_mean_and_std_action_dimension": 59,
+    "same_observation_repeated_mean_max_abs_difference": 0,
+    "manual_deterministic_mean_path_abs_tolerance": 0.00001,
+    "manual_path_requirement": "Use actual checkpoint variables and graph operations/constants; no approximate architecture or synthetic weights",
+    "short_rollout": {"duration_s": 0.5, "speed_cm_s": 2.0, "yaw_rate_rad_s": 0.0, "seed": 11, "physics_dt_s": 0.0002, "control_dt_s": 0.002, "constant_command_no_external_target": true},
+    "rollout_requirements": ["finite physical state", "no MuJoCo warnings", "record height/uprightness", "record actual displacement/speed", "record action clipping", "record actual contacts", "record wall time excluding model build/load"]
+  },
+  "defaults_modified": false,
+  "brain_or_food_coordinates_used": false
+}

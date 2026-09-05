@@ -56,6 +56,9 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [CPG calibration: no candidate promoted](docs/cpg-calibration-experiment.md), [visual column/mapping audit](docs/visual-input-mapping.md), [wind transduction limits](docs/wind-transduction-boundary.md)
 - [Isolated circadian model reproduction](docs/circadian-lg1998.md), [independent numerical review](docs/circadian-independent-review.md)
 - [Calibrated camera ray footprints](docs/retina-ray-calibration.md), [circadian coupling limits](docs/circadian-coupling-boundary.md)
+- [FlyBody policy compatibility trial](docs/flybody-inference-trial.md), [physical feeding and circuit-replay audit](docs/feeding-motor-expansion.md)
+- [Independent feeding review](docs/feeding-independent-review.md), [muscle mechanics and timestep audit](docs/musculoskeletal-feasibility.md), [unresolved muscle identifiers](docs/muscle-identifier-boundary.md)
+- [Male column/female optics registration boundary](docs/visual-retinotopy-feasibility.md), [measured-template camera coverage](docs/visual-template-coverage.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 
