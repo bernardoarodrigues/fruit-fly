@@ -53,6 +53,8 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Measured wind calibration](docs/wind-calibration.md), [wind neural targets](docs/suver-neural-calibration.md), [slow-circuit reproduction](docs/navigation-memory-model-audit.md), [measured grooming and free behavior](docs/grooming-model-audit.md)
 - [Grooming neural/body controls](docs/grooming-loop.md), [measured joint replay](docs/grooming-replay.md), [free-running dataset timing and units](docs/freewalking-data-alignment.md)
 - [Measured walking comparison](docs/freewalking-benchmark.md), [implementation findings and open implications](research/10-implementation-findings.md)
+- [CPG calibration: no candidate promoted](docs/cpg-calibration-experiment.md), [visual column/mapping audit](docs/visual-input-mapping.md), [wind transduction limits](docs/wind-transduction-boundary.md)
+- [Isolated circadian model reproduction](docs/circadian-lg1998.md), [independent numerical review](docs/circadian-independent-review.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

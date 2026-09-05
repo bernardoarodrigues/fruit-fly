@@ -48,9 +48,13 @@ The [free-running data audit](freewalking-data-alignment.md) discovered that nat
 
 The [mixed graded/spiking backend](graded-model.md) now supports exact nonspiking cell populations without removing their graph edges. Independent equation/delay/checkpoint checks and a full-graph 16-candidate APN2 smoke assay pass. Release parameters remain explicit hypotheses; no wind physiology fit or body/viewer integration is claimed.
 
-The [walking benchmark](freewalking-benchmark.md) now derives aligned kinematics from 372 bouts and compares the actual physical controller and neural motor probe. It identifies fixed cadence, undersized excursions and reversing body yaw as separate calibration targets, while preserving the source's mixed-sex and curated-running limits.
+The [walking benchmark](freewalking-benchmark.md) now derives aligned kinematics from 372 bouts and compares the actual physical controller and neural motor probe. It identifies fixed cadence, undersized excursions and reversing body yaw as separate calibration targets, while preserving the source's mixed-sex and curated-running limits. The subsequent [20-trial CPG experiment](cpg-calibration-experiment.md) reduced excursion error but failed its combined speed/yaw promotion gates. No candidate changed the runtime defaults.
 
-Latest complete suite: **120 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+The [visual-column audit](visual-input-mapping.md) found released downstream column labels and tentative connectivity-based R1–R6 assignments, with incomplete and unequal eye coverage. Camera-to-anatomy registration and graded phototransduction remain unresolved; no visual neural adapter was installed. The [wind transduction review](wind-transduction-boundary.md) likewise separates measured deflections/voltages from the unidentified peripheral rate and release laws.
+
+An isolated [PER/TIM oscillator reproduction](circadian-lg1998.md) matches the published 24.135-hour model period and entrains under its specified light/dark forcing. [Independent equation and numerical review](circadian-independent-review.md) agrees. Biological-hour units and tentative concentration units are explicit. It is not coupled to the fly's neural/physical clock, light sensor, or sleep.
+
+Latest complete suite: **141 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 ## Compute and next gates
 

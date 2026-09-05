@@ -1,0 +1,153 @@
+{
+  "review": "local primary-source visual equation/caption audit; independently extended numerical checks",
+  "randomized_asymmetric_cases": 200,
+  "max_rhs_absolute_error": 5.684341886080802e-14,
+  "max_total_balance_error": 1.1723955140041653e-13,
+  "shifted_LD_48h_max_state_error_nm": 2.3298163398521865e-10,
+  "source_phase_note": "DD absolute phase is not identifiable from captions; LD time zero is lights-on in Figure4. Analyst initial state and burn-in are explicit.",
+  "curve_protocol": {
+    "step_h": 0.01,
+    "sample_h": 0.05,
+    "burn_in_h": 1200.0,
+    "observe_h": 120.0
+  },
+  "curves": {
+    "fig2_DD": {
+      "MP": {
+        "min_nm": 0.030908703817508498,
+        "max_nm": 2.5640772210103915,
+        "median_period_h": 24.149999999999864,
+        "peak_zeitgeber_times_h": null
+      },
+      "MT": {
+        "min_nm": 0.030908703817508498,
+        "max_nm": 2.5640772210103915,
+        "median_period_h": 24.149999999999864,
+        "peak_zeitgeber_times_h": null
+      },
+      "PER_total": {
+        "min_nm": 1.2674974386522946,
+        "max_nm": 5.103309199618436,
+        "median_period_h": 24.149999999999864,
+        "peak_zeitgeber_times_h": null
+      },
+      "TIM_total": {
+        "min_nm": 1.2674974386522946,
+        "max_nm": 5.103309199618436,
+        "median_period_h": 24.149999999999864,
+        "peak_zeitgeber_times_h": null
+      },
+      "CN": {
+        "min_nm": 0.5346443374719795,
+        "max_nm": 2.044728811824234,
+        "median_period_h": 24.149999999999977,
+        "peak_zeitgeber_times_h": null
+      }
+    },
+    "fig4_DD": {
+      "MP": {
+        "min_nm": 0.1197937893010623,
+        "max_nm": 0.9132339553020694,
+        "median_period_h": 25.049999999999955,
+        "peak_zeitgeber_times_h": null
+      },
+      "MT": {
+        "min_nm": 0.8689159387559074,
+        "max_nm": 2.9655213053099545,
+        "median_period_h": 25.024999999999977,
+        "peak_zeitgeber_times_h": null
+      },
+      "PER_total": {
+        "min_nm": 1.0729847064984814,
+        "max_nm": 1.6774686896359698,
+        "median_period_h": 25.049999999999955,
+        "peak_zeitgeber_times_h": null
+      },
+      "TIM_total": {
+        "min_nm": 1.6012847817393623,
+        "max_nm": 7.742202539119464,
+        "median_period_h": 25.049999999999955,
+        "peak_zeitgeber_times_h": null
+      },
+      "CN": {
+        "min_nm": 0.5908183500660835,
+        "max_nm": 1.1533182817582968,
+        "median_period_h": 25.049999999999955,
+        "peak_zeitgeber_times_h": null
+      }
+    },
+    "fig4_LD": {
+      "MP": {
+        "min_nm": 0.08845298727712075,
+        "max_nm": 1.0200369948701116,
+        "median_period_h": 24.0,
+        "peak_zeitgeber_times_h": [
+          16.25,
+          16.25,
+          16.25,
+          16.25,
+          16.25
+        ]
+      },
+      "MT": {
+        "min_nm": 0.7234867165509288,
+        "max_nm": 3.1299121087629356,
+        "median_period_h": 24.0,
+        "peak_zeitgeber_times_h": [
+          17.8,
+          17.8,
+          17.8,
+          17.8,
+          17.8
+        ]
+      },
+      "PER_total": {
+        "min_nm": 1.0601510344077538,
+        "max_nm": 1.816310498530504,
+        "median_period_h": 24.0,
+        "peak_zeitgeber_times_h": [
+          19.25,
+          19.25,
+          19.25,
+          19.25,
+          19.25
+        ]
+      },
+      "TIM_total": {
+        "min_nm": 1.3901846917741019,
+        "max_nm": 8.309423550849568,
+        "median_period_h": 24.0,
+        "peak_zeitgeber_times_h": [
+          21.7,
+          21.7,
+          21.7,
+          21.7,
+          21.7
+        ]
+      },
+      "CN": {
+        "min_nm": 0.5350254113104796,
+        "max_nm": 1.2448908488415804,
+        "median_period_h": 24.0,
+        "peak_zeitgeber_times_h": [
+          22.25,
+          22.25,
+          22.25,
+          22.25,
+          22.25
+        ]
+      }
+    }
+  },
+  "reviewed_files": {
+    "fruitfly/circadian.py": "85a875d94174a661278dadebcee4f5c5de39755acab16e7b3b665d325d2d686c",
+    "tests/test_circadian.py": "81cebe95dd198f4b72f025b485d6d0ffea9d2a4b9f215f1bf1c457235b2ccb79",
+    "tmp/circadian/leloup-goldbeter-1998.pdf": "efdb43c8d3d8a434721ddfe00afc8ba038bfb1b36e566a12b69265f55d12f1aa"
+  },
+  "test_result": {
+    "command": ".venv/bin/python -m pytest -q tests/test_circadian.py",
+    "passed": 21,
+    "failed": 0
+  },
+  "finding": "No concrete implementation defect found in reviewed revision. Published Figure4 approximate prose is not treated as an exact numerical acceptance target."
+}

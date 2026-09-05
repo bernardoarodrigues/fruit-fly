@@ -1,0 +1,4456 @@
+{
+  "plan": "validation/cpg-calibration-plan.json",
+  "plan_sha256": "1907c3451d29a43bc72a2958559192fd46b40d8bdedf457678aa00f02aad6933",
+  "script_sha256": "7bec756733a8e7ca50796f80a705f09ff845078c0f6326861364cedf9e73ac28",
+  "source_benchmark_sha256": "0705a1696a4ebf041dd547883ffc0010c7b6ecda541b76738deb9af8d85a008e",
+  "trials": [
+    {
+      "variant": "baseline",
+      "drive": 0.5,
+      "seed": 11,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 9.304507127090925,
+        "p05": 4.312567361876881,
+        "p25": 6.424991920885743,
+        "median": 9.305694558469288,
+        "p75": 12.079163779566963,
+        "p95": 13.653106872031303
+      },
+      "speed_absolute_error_mm_s": 0.8192107918549869,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 91.12947947224133,
+        "p05": 11.247492409608876,
+        "p25": 50.51111997031916,
+        "median": 92.94708433577355,
+        "p75": 136.34153777011488,
+        "p95": 158.65865999064349
+      },
+      "net_heading_rate_deg_s": -1.2767748149086475,
+      "tibia_rom_mae_deg": 31.18922636001875,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.07107843137255,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 28.00229139254425,
+            "p05": 27.825478043457814,
+            "p25": 27.871902138455642,
+            "median": 28.057403276987692,
+            "p75": 28.109696379511735,
+            "p95": 28.1275053965377
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 11.982931313539423,
+            "p05": 11.798317658841064,
+            "p25": 11.813341852368753,
+            "median": 11.99508236728829,
+            "p75": 12.124312106219215,
+            "p95": 12.179826611280282
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 29.824433244356268,
+            "p05": 29.492815418773798,
+            "p25": 29.606714796286294,
+            "median": 29.789676422190283,
+            "p75": 30.085838333124823,
+            "p95": 30.127945453269895
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 27.99543208978029,
+            "p05": 27.80257046567116,
+            "p25": 27.871847086410998,
+            "median": 28.085017205184123,
+            "p75": 28.104662051531022,
+            "p95": 28.148067499214577
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 11.985919241576338,
+            "p05": 11.773136332118765,
+            "p25": 11.81691084462286,
+            "median": 11.989598482894095,
+            "p75": 12.166476335544814,
+            "p95": 12.186235290930487
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 29.784907309325288,
+            "p05": 29.484278555374747,
+            "p25": 29.52955820740138,
+            "median": 29.755565633688196,
+            "p75": 30.085309769594044,
+            "p95": 30.141883953757734
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9984271988337666,
+        "thorax_min_mm": 1.0398802197128478,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 138.1716916386724,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 4.994555760169462,
+        "tibia_tracking_rms_deg": 1.8661160553528067,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/baseline-drive0.5-seed11.npz",
+      "trace_sha256": "9e79966c5d469ade56818f7c307716bd382bf9fd93ea4d2b19dbd384b8ac8fb4"
+    },
+    {
+      "variant": "baseline",
+      "drive": 0.5,
+      "seed": 12,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 9.266129331786637,
+        "p05": 4.478359579223189,
+        "p25": 7.02102546560009,
+        "median": 9.419923424998668,
+        "p75": 11.97644118743169,
+        "p95": 13.381917134756485
+      },
+      "speed_absolute_error_mm_s": 0.7049819253256064,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 92.63216202202833,
+        "p05": 15.843013245524373,
+        "p25": 51.591582597722734,
+        "median": 92.45037128630058,
+        "p75": 140.25091383254843,
+        "p95": 159.22830944801788
+      },
+      "net_heading_rate_deg_s": 3.0157824588097872,
+      "tibia_rom_mae_deg": 31.11939659462145,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 28.02132612882981,
+            "p05": 27.671940934002187,
+            "p25": 27.87639308201502,
+            "median": 28.106283929971166,
+            "p75": 28.17397328654691,
+            "p95": 28.23033781485474
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 11.943729633877561,
+            "p05": 11.605619688710313,
+            "p25": 11.71582446581288,
+            "median": 12.069404368353432,
+            "p75": 12.10340394607747,
+            "p95": 12.183893445416958
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 29.907596280545082,
+            "p05": 29.664734541953447,
+            "p25": 29.74845694089428,
+            "median": 29.8977871937337,
+            "p75": 30.086574830445567,
+            "p95": 30.153415908206007
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 28.050488006929815,
+            "p05": 27.821972950690284,
+            "p25": 27.896358823494545,
+            "median": 28.088173425217896,
+            "p75": 28.17039439235877,
+            "p95": 28.245175127794372
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 11.940497164012905,
+            "p05": 11.52721882284931,
+            "p25": 11.719988555048829,
+            "median": 12.055739003780435,
+            "p75": 12.116996274645816,
+            "p95": 12.167148741205413
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 29.91134248499132,
+            "p05": 29.667484680092876,
+            "p25": 29.692208949925007,
+            "median": 29.87393405955985,
+            "p75": 30.081598511606096,
+            "p95": 30.18234214975749
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9984235021678529,
+        "thorax_min_mm": 1.0301425725569284,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.34528060793514,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 4.8291056346743915,
+        "tibia_tracking_rms_deg": 1.8513026696295949,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/baseline-drive0.5-seed12.npz",
+      "trace_sha256": "c1284717a82e1379feb8ddc272cd9d4398f8cb95b6db4f685b9936c98d1e7fff"
+    },
+    {
+      "variant": "baseline",
+      "drive": 1.0,
+      "seed": 11,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.622077942124942,
+        "p05": 8.508270177754557,
+        "p25": 11.656221999600783,
+        "median": 18.550456866202175,
+        "p75": 26.45904538773083,
+        "p95": 32.24748091300413
+      },
+      "speed_absolute_error_mm_s": 1.6993538344463737,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 205.2821566819802,
+        "p05": 33.052917290245425,
+        "p25": 116.04574538586897,
+        "median": 218.07820180682234,
+        "p75": 304.44159938787624,
+        "p95": 335.71947083636496
+      },
+      "net_heading_rate_deg_s": -2.0908928635396418,
+      "tibia_rom_mae_deg": 12.034195804209622,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.170930110334474,
+            "p05": 53.55051635944298,
+            "p25": 53.738725145093476,
+            "median": 54.27898882967685,
+            "p75": 54.55781801090098,
+            "p95": 54.63013310912427
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.674938462703796,
+            "p05": 22.225101769653378,
+            "p25": 22.306866094634476,
+            "median": 22.54977114674515,
+            "p75": 23.229944727696587,
+            "p95": 23.289241845211755
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.368122626606684,
+            "p05": 61.01342435739871,
+            "p25": 61.04598168459584,
+            "median": 61.20119154329929,
+            "p75": 61.80740245608353,
+            "p95": 61.94459410251746
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.01373193257074,
+            "p05": 53.61944550870435,
+            "p25": 53.756922098992746,
+            "median": 54.14187899976295,
+            "p75": 54.22474990868938,
+            "p95": 54.2932360520131
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.7361362563875,
+            "p05": 22.28642406948532,
+            "p25": 22.364539347994672,
+            "median": 22.551050787494034,
+            "p75": 23.296519716968337,
+            "p95": 23.34887205696466
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.472786664773494,
+            "p05": 61.09414872237425,
+            "p25": 61.156331178907955,
+            "median": 61.28224088230408,
+            "p75": 62.025006209350316,
+            "p95": 62.12919990484949
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9920303776730022,
+        "thorax_min_mm": 1.0763186675689798,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 138.1326639425726,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 8.29424414567469,
+        "tibia_tracking_rms_deg": 2.986373320057445,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/baseline-drive1-seed11.npz",
+      "trace_sha256": "aeb7d35bdefd1b73926e31a25316ed76ff653a94dcbe9616e56e54165edf4e5d"
+    },
+    {
+      "variant": "baseline",
+      "drive": 1.0,
+      "seed": 12,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.565967686786212,
+        "p05": 8.491656700700164,
+        "p25": 12.777012758334841,
+        "median": 18.266796824351616,
+        "p75": 25.997069539201323,
+        "p95": 32.41217737115946
+      },
+      "speed_absolute_error_mm_s": 1.9830138762969334,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 206.95967513267047,
+        "p05": 24.238007278721366,
+        "p25": 122.57843773629105,
+        "median": 223.57137577773693,
+        "p75": 302.28907640678483,
+        "p95": 335.80523508997067
+      },
+      "net_heading_rate_deg_s": 4.382431718383011,
+      "tibia_rom_mae_deg": 11.705297146955454,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.07888274088088,
+            "p05": 53.538986024168494,
+            "p25": 53.66984636189672,
+            "median": 54.228360114760925,
+            "p75": 54.36532637423011,
+            "p95": 54.43507215495767
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.89714878677507,
+            "p05": 22.336649144129094,
+            "p25": 22.391610881241792,
+            "median": 23.11303729009735,
+            "p75": 23.155634011376026,
+            "p95": 23.18041277082481
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.85041170945715,
+            "p05": 61.45546664942764,
+            "p25": 61.62669680394767,
+            "median": 61.88602993198162,
+            "p75": 62.08892859949119,
+            "p95": 62.196841697808495
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.10974884853858,
+            "p05": 53.51116013258454,
+            "p25": 53.66575951551381,
+            "median": 54.26332686242874,
+            "p75": 54.406073152376464,
+            "p95": 54.47165904868528
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.732802277360875,
+            "p05": 22.19722881817064,
+            "p25": 22.236578750847936,
+            "median": 22.958239681493254,
+            "p75": 22.992201716870785,
+            "p95": 23.044846909069815
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.45036125437306,
+            "p05": 61.118972394161844,
+            "p25": 61.21700159780962,
+            "median": 61.52952025204547,
+            "p75": 61.57685106170799,
+            "p95": 61.688979892698256
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9918998790201846,
+        "thorax_min_mm": 1.0780121439089816,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.2858868219923,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.922063158965528,
+        "tibia_tracking_rms_deg": 2.9529099953453755,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/baseline-drive1-seed12.npz",
+      "trace_sha256": "fa929b2c822df617120b2a13192f00aa6e579072ab66c167a0fff9958e71e339"
+    },
+    {
+      "variant": "full_excursion",
+      "drive": 0.5,
+      "seed": 11,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.622077942124942,
+        "p05": 8.508270177754557,
+        "p25": 11.656221999600783,
+        "median": 18.550456866202175,
+        "p75": 26.45904538773083,
+        "p95": 32.24748091300413
+      },
+      "speed_absolute_error_mm_s": 8.4255515158779,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 205.2821566819802,
+        "p05": 33.052917290245425,
+        "p25": 116.04574538586897,
+        "median": 218.07820180682234,
+        "p75": 304.44159938787624,
+        "p95": 335.71947083636496
+      },
+      "net_heading_rate_deg_s": -2.0908928635396418,
+      "tibia_rom_mae_deg": 8.467096559843801,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.170930110334474,
+            "p05": 53.55051635944298,
+            "p25": 53.738725145093476,
+            "median": 54.27898882967685,
+            "p75": 54.55781801090098,
+            "p95": 54.63013310912427
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.674938462703796,
+            "p05": 22.225101769653378,
+            "p25": 22.306866094634476,
+            "median": 22.54977114674515,
+            "p75": 23.229944727696587,
+            "p95": 23.289241845211755
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.368122626606684,
+            "p05": 61.01342435739871,
+            "p25": 61.04598168459584,
+            "median": 61.20119154329929,
+            "p75": 61.80740245608353,
+            "p95": 61.94459410251746
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.01373193257074,
+            "p05": 53.61944550870435,
+            "p25": 53.756922098992746,
+            "median": 54.14187899976295,
+            "p75": 54.22474990868938,
+            "p95": 54.2932360520131
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.7361362563875,
+            "p05": 22.28642406948532,
+            "p25": 22.364539347994672,
+            "median": 22.551050787494034,
+            "p75": 23.296519716968337,
+            "p95": 23.34887205696466
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.472786664773494,
+            "p05": 61.09414872237425,
+            "p25": 61.156331178907955,
+            "median": 61.28224088230408,
+            "p75": 62.025006209350316,
+            "p95": 62.12919990484949
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9920303776730022,
+        "thorax_min_mm": 1.0763186675689798,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 138.1326639425726,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 8.29424414567469,
+        "tibia_tracking_rms_deg": 2.986373320057445,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/full_excursion-drive0.5-seed11.npz",
+      "trace_sha256": "aeb7d35bdefd1b73926e31a25316ed76ff653a94dcbe9616e56e54165edf4e5d"
+    },
+    {
+      "variant": "full_excursion",
+      "drive": 0.5,
+      "seed": 12,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.565967686786212,
+        "p05": 8.491656700700164,
+        "p25": 12.777012758334841,
+        "median": 18.266796824351616,
+        "p75": 25.997069539201323,
+        "p95": 32.41217737115946
+      },
+      "speed_absolute_error_mm_s": 8.141891474027341,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 206.95967513267047,
+        "p05": 24.238007278721366,
+        "p25": 122.57843773629105,
+        "median": 223.57137577773693,
+        "p75": 302.28907640678483,
+        "p95": 335.80523508997067
+      },
+      "net_heading_rate_deg_s": 4.382431718383011,
+      "tibia_rom_mae_deg": 8.138197902589633,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.07888274088088,
+            "p05": 53.538986024168494,
+            "p25": 53.66984636189672,
+            "median": 54.228360114760925,
+            "p75": 54.36532637423011,
+            "p95": 54.43507215495767
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.89714878677507,
+            "p05": 22.336649144129094,
+            "p25": 22.391610881241792,
+            "median": 23.11303729009735,
+            "p75": 23.155634011376026,
+            "p95": 23.18041277082481
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.85041170945715,
+            "p05": 61.45546664942764,
+            "p25": 61.62669680394767,
+            "median": 61.88602993198162,
+            "p75": 62.08892859949119,
+            "p95": 62.196841697808495
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.10974884853858,
+            "p05": 53.51116013258454,
+            "p25": 53.66575951551381,
+            "median": 54.26332686242874,
+            "p75": 54.406073152376464,
+            "p95": 54.47165904868528
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.732802277360875,
+            "p05": 22.19722881817064,
+            "p25": 22.236578750847936,
+            "median": 22.958239681493254,
+            "p75": 22.992201716870785,
+            "p95": 23.044846909069815
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.45036125437306,
+            "p05": 61.118972394161844,
+            "p25": 61.21700159780962,
+            "median": 61.52952025204547,
+            "p75": 61.57685106170799,
+            "p95": 61.688979892698256
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9918998790201846,
+        "thorax_min_mm": 1.0780121439089816,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.2858868219923,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.922063158965528,
+        "tibia_tracking_rms_deg": 2.9529099953453755,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/full_excursion-drive0.5-seed12.npz",
+      "trace_sha256": "fa929b2c822df617120b2a13192f00aa6e579072ab66c167a0fff9958e71e339"
+    },
+    {
+      "variant": "full_excursion",
+      "drive": 1.0,
+      "seed": 11,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.622077942124942,
+        "p05": 8.508270177754557,
+        "p25": 11.656221999600783,
+        "median": 18.550456866202175,
+        "p75": 26.45904538773083,
+        "p95": 32.24748091300413
+      },
+      "speed_absolute_error_mm_s": 1.6993538344463737,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 205.2821566819802,
+        "p05": 33.052917290245425,
+        "p25": 116.04574538586897,
+        "median": 218.07820180682234,
+        "p75": 304.44159938787624,
+        "p95": 335.71947083636496
+      },
+      "net_heading_rate_deg_s": -2.0908928635396418,
+      "tibia_rom_mae_deg": 12.034195804209622,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.170930110334474,
+            "p05": 53.55051635944298,
+            "p25": 53.738725145093476,
+            "median": 54.27898882967685,
+            "p75": 54.55781801090098,
+            "p95": 54.63013310912427
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.674938462703796,
+            "p05": 22.225101769653378,
+            "p25": 22.306866094634476,
+            "median": 22.54977114674515,
+            "p75": 23.229944727696587,
+            "p95": 23.289241845211755
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.368122626606684,
+            "p05": 61.01342435739871,
+            "p25": 61.04598168459584,
+            "median": 61.20119154329929,
+            "p75": 61.80740245608353,
+            "p95": 61.94459410251746
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.01373193257074,
+            "p05": 53.61944550870435,
+            "p25": 53.756922098992746,
+            "median": 54.14187899976295,
+            "p75": 54.22474990868938,
+            "p95": 54.2932360520131
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.7361362563875,
+            "p05": 22.28642406948532,
+            "p25": 22.364539347994672,
+            "median": 22.551050787494034,
+            "p75": 23.296519716968337,
+            "p95": 23.34887205696466
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.472786664773494,
+            "p05": 61.09414872237425,
+            "p25": 61.156331178907955,
+            "median": 61.28224088230408,
+            "p75": 62.025006209350316,
+            "p95": 62.12919990484949
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9920303776730022,
+        "thorax_min_mm": 1.0763186675689798,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 138.1326639425726,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 8.29424414567469,
+        "tibia_tracking_rms_deg": 2.986373320057445,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/full_excursion-drive1-seed11.npz",
+      "trace_sha256": "aeb7d35bdefd1b73926e31a25316ed76ff653a94dcbe9616e56e54165edf4e5d"
+    },
+    {
+      "variant": "full_excursion",
+      "drive": 1.0,
+      "seed": 12,
+      "cadence_command_hz": 12.0,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 19.565967686786212,
+        "p05": 8.491656700700164,
+        "p25": 12.777012758334841,
+        "median": 18.266796824351616,
+        "p75": 25.997069539201323,
+        "p95": 32.41217737115946
+      },
+      "speed_absolute_error_mm_s": 1.9830138762969334,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 206.95967513267047,
+        "p05": 24.238007278721366,
+        "p25": 122.57843773629105,
+        "median": 223.57137577773693,
+        "p75": 302.28907640678483,
+        "p95": 335.80523508997067
+      },
+      "net_heading_rate_deg_s": 4.382431718383011,
+      "tibia_rom_mae_deg": 11.705297146955454,
+      "legs": {
+        "LF": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 54.07888274088088,
+            "p05": 53.538986024168494,
+            "p25": 53.66984636189672,
+            "median": 54.228360114760925,
+            "p75": 54.36532637423011,
+            "p95": 54.43507215495767
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 22.89714878677507,
+            "p05": 22.336649144129094,
+            "p25": 22.391610881241792,
+            "median": 23.11303729009735,
+            "p75": 23.155634011376026,
+            "p95": 23.18041277082481
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 61.85041170945715,
+            "p05": 61.45546664942764,
+            "p25": 61.62669680394767,
+            "median": 61.88602993198162,
+            "p75": 62.08892859949119,
+            "p95": 62.196841697808495
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 11.990950226244344,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 54.10974884853858,
+            "p05": 53.51116013258454,
+            "p25": 53.66575951551381,
+            "median": 54.26332686242874,
+            "p75": 54.406073152376464,
+            "p95": 54.47165904868528
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 12,
+          "frequency_hz": {
+            "n": 12,
+            "mean": 12.009803921568627,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 12,
+            "mean": 22.732802277360875,
+            "p05": 22.19722881817064,
+            "p25": 22.236578750847936,
+            "median": 22.958239681493254,
+            "p75": 22.992201716870785,
+            "p95": 23.044846909069815
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 12,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 13,
+          "frequency_hz": {
+            "n": 13,
+            "mean": 12.047511312217194,
+            "p05": 11.764705882352942,
+            "p25": 11.764705882352942,
+            "median": 11.764705882352942,
+            "p75": 12.5,
+            "p95": 12.5
+          },
+          "tibia_rom_deg": {
+            "n": 13,
+            "mean": 61.45036125437306,
+            "p05": 61.118972394161844,
+            "p25": 61.21700159780962,
+            "median": 61.52952025204547,
+            "p75": 61.57685106170799,
+            "p95": 61.688979892698256
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 13,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9918998790201846,
+        "thorax_min_mm": 1.0780121439089816,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.2858868219923,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.922063158965528,
+        "tibia_tracking_rms_deg": 2.9529099953453755,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/full_excursion-drive1-seed12.npz",
+      "trace_sha256": "fa929b2c822df617120b2a13192f00aa6e579072ab66c167a0fff9958e71e339"
+    },
+    {
+      "variant": "cadence",
+      "drive": 0.5,
+      "seed": 11,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 11.514980481087939,
+        "p05": 5.362690534250167,
+        "p25": 8.269375113768522,
+        "median": 10.174453972645473,
+        "p75": 14.63051238889883,
+        "p95": 21.960944780431632
+      },
+      "speed_absolute_error_mm_s": 0.04954862232119872,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 132.49566318451429,
+        "p05": 7.469163589534126,
+        "p25": 37.41700214830375,
+        "median": 143.53626831534956,
+        "p75": 214.77967858432132,
+        "p95": 266.01268980385805
+      },
+      "net_heading_rate_deg_s": 5.677986226246663,
+      "tibia_rom_mae_deg": 8.794317508039889,
+      "legs": {
+        "LF": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 53.78576803771037,
+            "p05": 53.59849058607797,
+            "p25": 53.75863466956571,
+            "median": 53.82267979380831,
+            "p75": 53.83777590669125,
+            "p95": 53.90348500087386
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.589983445331224,
+            "p05": 21.450099607951323,
+            "p25": 21.505737683661337,
+            "median": 21.60653294768664,
+            "p75": 21.68035606340193,
+            "p95": 21.706594156291388
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 61.44420761301393,
+            "p05": 61.281245617872884,
+            "p25": 61.4036524677433,
+            "median": 61.457177950837604,
+            "p75": 61.51760538831212,
+            "p95": 61.563873520805046
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.771380264460504,
+            "p05": 53.614784170960895,
+            "p25": 53.72348075901053,
+            "median": 53.83433066547582,
+            "p75": 53.840468430323,
+            "p95": 53.84355842579341
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.275132275132275,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.275132275132275,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 21.61627003954063,
+            "p05": 21.445349401763902,
+            "p25": 21.542630468859336,
+            "median": 21.635459919837565,
+            "p75": 21.711852320278716,
+            "p95": 21.74249636031346
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.60962547179365,
+            "p05": 61.41009837721316,
+            "p25": 61.564855163785396,
+            "median": 61.68561522245989,
+            "p75": 61.69851447747838,
+            "p95": 61.699266733999394
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9906299875755928,
+        "thorax_min_mm": 1.0846149502458842,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 135.9826692936419,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.087936678953227,
+        "tibia_tracking_rms_deg": 2.390965327224384,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence-drive0.5-seed11.npz",
+      "trace_sha256": "94452fa6d5b94dc98b0e38f08c9904acf21baf765672e1f173c2dcd9338dffb3"
+    },
+    {
+      "variant": "cadence",
+      "drive": 0.5,
+      "seed": 12,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 11.439011409184767,
+        "p05": 5.273794045220036,
+        "p25": 8.113255436777191,
+        "median": 10.128356210610594,
+        "p75": 14.439258414894315,
+        "p95": 22.1955266747969
+      },
+      "speed_absolute_error_mm_s": 0.003450860286319468,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 132.59208072722686,
+        "p05": 7.482910043978476,
+        "p25": 37.156232959000434,
+        "median": 138.8549737961382,
+        "p75": 215.27110526613322,
+        "p95": 266.2241560702776
+      },
+      "net_heading_rate_deg_s": 6.467476801203718,
+      "tibia_rom_mae_deg": 8.810055587860164,
+      "legs": {
+        "LF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.75092607671119,
+            "p05": 53.597344844934774,
+            "p25": 53.7134355564109,
+            "median": 53.787116403722365,
+            "p75": 53.81526927820099,
+            "p95": 53.83185163314097
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.613696887550923,
+            "p05": 21.460154708547122,
+            "p25": 21.53149063480617,
+            "median": 21.57534790114025,
+            "p75": 21.727900610256317,
+            "p95": 21.756969193616882
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.61458177107219,
+            "p05": 61.41180737026014,
+            "p25": 61.55567375245806,
+            "median": 61.62613493370497,
+            "p75": 61.68051684443327,
+            "p95": 61.789350474349995
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.84874374415559,
+            "p05": 53.67763167424026,
+            "p25": 53.84481528577795,
+            "median": 53.886796708707294,
+            "p75": 53.90566054409665,
+            "p95": 53.93602358257885
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.582945133186907,
+            "p05": 21.432631527619172,
+            "p25": 21.513532421125042,
+            "median": 21.605477245887826,
+            "p75": 21.658579376847747,
+            "p95": 21.70290667340741
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.391316614995105,
+            "p05": 61.18612668484199,
+            "p25": 61.35789262325851,
+            "median": 61.46649482802147,
+            "p75": 61.46880300342299,
+            "p95": 61.47407758172133
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9908560171482309,
+        "thorax_min_mm": 1.084307024859741,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.82715382650795,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.179626755487099,
+        "tibia_tracking_rms_deg": 2.3851008897790944,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence-drive0.5-seed12.npz",
+      "trace_sha256": "04f554dee02e9d3b20e4bb0507b824fd3f0dce7c88b7b7c47467edaedf24afe7"
+    },
+    {
+      "variant": "cadence",
+      "drive": 1.0,
+      "seed": 11,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 15.882335433762952,
+        "p05": 5.978455543094573,
+        "p25": 10.677509813957048,
+        "median": 14.897149906808298,
+        "p75": 21.07393192830992,
+        "p95": 28.329892062317544
+      },
+      "speed_absolute_error_mm_s": 5.352660793840251,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 176.54603436217707,
+        "p05": 28.234504389861073,
+        "p25": 78.57837964356096,
+        "median": 170.53184106634006,
+        "p75": 275.3228816185682,
+        "p95": 323.29741715709974
+      },
+      "net_heading_rate_deg_s": -2.841134340704153,
+      "tibia_rom_mae_deg": 12.027996916298498,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 54.006354414665516,
+            "p05": 53.29986376907771,
+            "p25": 53.673563631136055,
+            "median": 54.186040168081796,
+            "p75": 54.36874003001413,
+            "p95": 54.45564472836833
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.494458278769923,
+            "p05": 21.986498109997232,
+            "p25": 22.155804978955516,
+            "median": 22.45414482110542,
+            "p75": 22.878850784809465,
+            "p95": 22.986298567546687
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 61.35789253341722,
+            "p05": 60.87552113348603,
+            "p25": 61.15028312338605,
+            "median": 61.43311169990146,
+            "p75": 61.63113962079048,
+            "p95": 61.74469669304352
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 54.03947278763163,
+            "p05": 53.36324917080864,
+            "p25": 53.80594413848028,
+            "median": 54.1399458735348,
+            "p75": 54.40109383823387,
+            "p95": 54.482364820626366
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 22.474683776029643,
+            "p05": 21.988657517961755,
+            "p25": 22.13943314314306,
+            "median": 22.52608244317438,
+            "p75": 22.790780173857513,
+            "p95": 22.955880793993064
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 61.28779133818789,
+            "p05": 60.863274826722545,
+            "p25": 61.08254231655181,
+            "median": 61.30299051095124,
+            "p75": 61.467336367192026,
+            "p95": 61.68065011621573
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.993237454274006,
+        "thorax_min_mm": 1.0823875053385923,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 136.9417131872659,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.544909388226245,
+        "tibia_tracking_rms_deg": 2.682593168533652,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence-drive1-seed11.npz",
+      "trace_sha256": "8e22d86c4b709e75aa423ac20b575e88c02b8bc0f2dd4ffcd31985c9161b722e"
+    },
+    {
+      "variant": "cadence",
+      "drive": 1.0,
+      "seed": 12,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 15.942667227787318,
+        "p05": 6.017271163062281,
+        "p25": 10.316815830308336,
+        "median": 15.05361470316132,
+        "p75": 20.86545940918674,
+        "p95": 28.023013072122104
+      },
+      "speed_absolute_error_mm_s": 5.196195997487228,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 176.63895415694589,
+        "p05": 22.703357069107874,
+        "p25": 80.11855414746645,
+        "median": 170.40734351951647,
+        "p75": 277.9589951060101,
+        "p95": 323.32407399062214
+      },
+      "net_heading_rate_deg_s": -2.255211989871071,
+      "tibia_rom_mae_deg": 11.87659888829252,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 54.1964540885586,
+            "p05": 53.50293160648506,
+            "p25": 54.00266780988456,
+            "median": 54.303140937751735,
+            "p75": 54.529291979296374,
+            "p95": 54.59262049371696
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.64820103762363,
+            "p05": 22.045698687545844,
+            "p25": 22.393540850313823,
+            "median": 22.742383981644096,
+            "p75": 22.984485238593003,
+            "p95": 23.05084264561763
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 61.50091114342154,
+            "p05": 60.98302929177348,
+            "p25": 61.22069272698171,
+            "median": 61.5887971705182,
+            "p75": 61.72592336048548,
+            "p95": 61.980440394906765
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 54.22701607866195,
+            "p05": 53.51482693594644,
+            "p25": 54.04575104656464,
+            "median": 54.36027419519988,
+            "p75": 54.58056741968382,
+            "p95": 54.617286011896184
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.619557683033307,
+            "p05": 22.015468027710455,
+            "p25": 22.37892777930215,
+            "median": 22.720046509654892,
+            "p75": 22.932144896130467,
+            "p95": 22.988611714239852
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 61.179903249093705,
+            "p05": 60.74739335937978,
+            "p25": 60.94570708697958,
+            "median": 61.23606089001617,
+            "p75": 61.41037877859087,
+            "p95": 61.51755789250121
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9929780915525367,
+        "thorax_min_mm": 1.0829471187673207,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 135.89917745474614,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.677315067230531,
+        "tibia_tracking_rms_deg": 2.6819015210933688,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence-drive1-seed12.npz",
+      "trace_sha256": "2c1f7c44b7ad792942589e3b86777faef6b08c0201d960b3e54877f4e94ba9c2"
+    },
+    {
+      "variant": "cadence_adhesion10",
+      "drive": 0.5,
+      "seed": 11,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 11.314882799726186,
+        "p05": 5.33428270807172,
+        "p25": 8.131765229701612,
+        "median": 10.584361945705929,
+        "p75": 14.098431808645545,
+        "p95": 20.758694951552343
+      },
+      "speed_absolute_error_mm_s": 0.4594565953816545,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 130.79940124720034,
+        "p05": 6.086054251690639,
+        "p25": 36.27424314020283,
+        "median": 140.58287984828232,
+        "p75": 221.37649563454747,
+        "p95": 252.09279461773338
+      },
+      "net_heading_rate_deg_s": 5.437047155479332,
+      "tibia_rom_mae_deg": 8.804350790079615,
+      "legs": {
+        "LF": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 53.56018751811902,
+            "p05": 53.37887234353106,
+            "p25": 53.520756815943614,
+            "median": 53.589929337479205,
+            "p75": 53.6243436214728,
+            "p95": 53.68654029404407
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.829824232960934,
+            "p05": 21.65639949498172,
+            "p25": 21.76264135722802,
+            "median": 21.84412399398996,
+            "p75": 21.931642004928243,
+            "p95": 21.93763140371908
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 61.46735433793215,
+            "p05": 61.16552009024221,
+            "p25": 61.40526544452886,
+            "median": 61.489931255241466,
+            "p75": 61.56367734489131,
+            "p95": 61.700056798240645
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.511162001196155,
+            "p05": 53.3942127462483,
+            "p25": 53.455790532708505,
+            "median": 53.54104105291701,
+            "p75": 53.553264231041624,
+            "p95": 53.61405035108682
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.275132275132275,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.275132275132275,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 21.765225371948375,
+            "p05": 21.588396963159106,
+            "p25": 21.70571249093058,
+            "median": 21.772876032658935,
+            "p75": 21.86904981730019,
+            "p95": 21.89472254487587
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.723541406239825,
+            "p05": 61.53853900710182,
+            "p25": 61.72814034913936,
+            "median": 61.743695135580886,
+            "p75": 61.7975796071432,
+            "p95": 61.80691811897851
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9915780375574599,
+        "thorax_min_mm": 1.0652784584734807,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 41.52748292289627,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 6.823697734808476,
+        "tibia_tracking_rms_deg": 2.34094991861806,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion10-drive0.5-seed11.npz",
+      "trace_sha256": "f4d945e0a164dcc7b5bd8f2e1e89f3352741995a1a58cdda3b6cdfcd76dcd383"
+    },
+    {
+      "variant": "cadence_adhesion10",
+      "drive": 0.5,
+      "seed": 12,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 11.24155952361195,
+        "p05": 5.389687898150175,
+        "p25": 8.039996045625841,
+        "median": 10.53397843899936,
+        "p75": 14.145591775078508,
+        "p95": 20.62403798976674
+      },
+      "speed_absolute_error_mm_s": 0.4090730886750862,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 130.6453665653122,
+        "p05": 4.285669463530115,
+        "p25": 37.432056283667215,
+        "median": 141.9988981600273,
+        "p75": 220.25175109954031,
+        "p95": 252.65747669358777
+      },
+      "net_heading_rate_deg_s": 7.160622288087564,
+      "tibia_rom_mae_deg": 8.813997328063456,
+      "legs": {
+        "LF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.48810391358758,
+            "p05": 53.36673066037893,
+            "p25": 53.41194714492012,
+            "median": 53.47428849397331,
+            "p75": 53.56793991305589,
+            "p95": 53.60952963258284
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.77450477705258,
+            "p05": 21.657193819238927,
+            "p25": 21.741375439802173,
+            "median": 21.765699112118178,
+            "p75": 21.84525771488175,
+            "p95": 21.85572277359845
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.80931865000375,
+            "p05": 61.57787097619053,
+            "p25": 61.76601442228082,
+            "median": 61.7892000964647,
+            "p75": 61.88617860135322,
+            "p95": 62.02142189488721
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 53.573445585587535,
+            "p05": 53.44121642118436,
+            "p25": 53.539444207903976,
+            "median": 53.58606459609669,
+            "p75": 53.62648826562378,
+            "p95": 53.6764012760167
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 21.773550176361848,
+            "p05": 21.608570228512082,
+            "p25": 21.65419544754978,
+            "median": 21.795561031491484,
+            "p75": 21.887208517314214,
+            "p95": 21.933682221851
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 61.432954963050214,
+            "p05": 61.127463443186805,
+            "p25": 61.406474065221545,
+            "median": 61.51290424982006,
+            "p75": 61.53724969711345,
+            "p95": 61.57937830012995
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9919331350101829,
+        "thorax_min_mm": 1.0705665953834194,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 41.722958141919406,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 6.93084731169219,
+        "tibia_tracking_rms_deg": 2.3346547631823285,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion10-drive0.5-seed12.npz",
+      "trace_sha256": "fea2a0d712b8b818ba2b531a533d611be3966b05964cc35940f04996c8543831"
+    },
+    {
+      "variant": "cadence_adhesion10",
+      "drive": 1.0,
+      "seed": 11,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 15.777895507532655,
+        "p05": 6.4059934230595665,
+        "p25": 10.872222122244466,
+        "median": 14.715381173795326,
+        "p75": 20.556029060246765,
+        "p95": 26.666417347171357
+      },
+      "speed_absolute_error_mm_s": 5.5344295268532235,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 177.10975218731377,
+        "p05": 29.256410377889736,
+        "p25": 80.75422615958898,
+        "median": 172.65946498052244,
+        "p75": 273.17913674218806,
+        "p95": 316.0160725397733
+      },
+      "net_heading_rate_deg_s": -2.425368477352991,
+      "tibia_rom_mae_deg": 12.141273112696917,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 53.506580509586364,
+            "p05": 52.904915805280325,
+            "p25": 53.13952699083754,
+            "median": 53.60096104076135,
+            "p75": 53.84685817883209,
+            "p95": 53.9509158441504
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.5585986909286,
+            "p05": 22.192735396270667,
+            "p25": 22.21262540020266,
+            "median": 22.542374660458783,
+            "p75": 22.867193405395295,
+            "p95": 23.037071657691094
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 61.470108596024055,
+            "p05": 61.015284612807925,
+            "p25": 61.164281861734565,
+            "median": 61.561370701148874,
+            "p75": 61.75530410002832,
+            "p95": 61.828749808239095
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 53.502370895577904,
+            "p05": 52.78306540658958,
+            "p25": 53.29955294518267,
+            "median": 53.63426969657942,
+            "p75": 53.86228827109867,
+            "p95": 53.94097927458031
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 22.589950607104516,
+            "p05": 22.217441716915076,
+            "p25": 22.285850210792567,
+            "median": 22.4944156392797,
+            "p75": 22.860603703604305,
+            "p95": 23.060755804501852
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 61.509053289302926,
+            "p05": 60.89225043533984,
+            "p25": 61.34929257539922,
+            "median": 61.52926660013045,
+            "p75": 61.82680381101303,
+            "p95": 61.93678216679986
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9934996549908376,
+        "thorax_min_mm": 1.069017961180017,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 41.75178115292133,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.62306887083075,
+        "tibia_tracking_rms_deg": 2.6110147591421127,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion10-drive1-seed11.npz",
+      "trace_sha256": "fefef133149398a787f94a2f4e809846c097aa0a9db86e164e337f7111578118"
+    },
+    {
+      "variant": "cadence_adhesion10",
+      "drive": 1.0,
+      "seed": 12,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 15.813691329346872,
+        "p05": 6.366004022589508,
+        "p25": 10.764765821723039,
+        "median": 14.767620858774773,
+        "p75": 20.436283293597437,
+        "p95": 26.53806057293772
+      },
+      "speed_absolute_error_mm_s": 5.482189841873776,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 177.28922773016046,
+        "p05": 20.96500405730762,
+        "p25": 86.66567524851484,
+        "median": 175.9158339923286,
+        "p75": 277.6078444222462,
+        "p95": 316.68651524346916
+      },
+      "net_heading_rate_deg_s": -2.759844915067758,
+      "tibia_rom_mae_deg": 11.987412464523501,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 53.637131891852206,
+            "p05": 53.01098769550882,
+            "p25": 53.419239753207876,
+            "median": 53.81058127911826,
+            "p75": 53.92187908498556,
+            "p95": 53.988571137120644
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.7412976810819,
+            "p05": 22.240942175946703,
+            "p25": 22.52346809093906,
+            "median": 22.857134502320847,
+            "p75": 23.021941048925083,
+            "p95": 23.07892940625792
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 61.639390124440546,
+            "p05": 60.93186778445612,
+            "p25": 61.48515487958873,
+            "median": 61.598244329298616,
+            "p75": 61.9975696811902,
+            "p95": 62.11773566775663
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 53.66675543052022,
+            "p05": 53.055139513739974,
+            "p25": 53.521548792032064,
+            "median": 53.793029279770636,
+            "p75": 53.968673538424646,
+            "p95": 53.98993974058933
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 22.685580931806914,
+            "p05": 22.192531223391093,
+            "p25": 22.51722112550076,
+            "median": 22.784980211464273,
+            "p75": 22.93096742983486,
+            "p95": 22.987864047841615
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 61.32489069410091,
+            "p05": 60.91981090680391,
+            "p25": 61.09178304669082,
+            "median": 61.441852625426435,
+            "p75": 61.56216017196718,
+            "p95": 61.592085663781326
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9933252025364825,
+        "thorax_min_mm": 1.0668546607199647,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 41.42172517218483,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 7.610636968454216,
+        "tibia_tracking_rms_deg": 2.6159283249575322,
+        "max_reflex_correction": 0.0,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion10-drive1-seed12.npz",
+      "trace_sha256": "899fbbd6672b001a088ae4d95b3b0c1234437d4e7197a02f4db6a4704a88b77f"
+    },
+    {
+      "variant": "cadence_adhesion0",
+      "drive": 0.5,
+      "seed": 11,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 10.132802696536073,
+        "p05": 2.563076789638081,
+        "p25": 5.766097778306861,
+        "median": 10.538313443181938,
+        "p75": 13.092050344522093,
+        "p95": 19.607504119576948
+      },
+      "speed_absolute_error_mm_s": 0.41340809285766333,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 153.14088052283253,
+        "p05": 31.716255105795696,
+        "p25": 104.69289502459701,
+        "median": 140.83443209647825,
+        "p75": 223.9244077211824,
+        "p95": 258.59390250317927
+      },
+      "net_heading_rate_deg_s": 1.5010129647260135,
+      "tibia_rom_mae_deg": 11.358657570972966,
+      "legs": {
+        "LF": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 51.101081894285784,
+            "p05": 50.79433140218216,
+            "p25": 50.94173233007048,
+            "median": 51.17752754355038,
+            "p75": 51.268214861654315,
+            "p95": 51.310179588757215
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 20.435928471930115,
+            "p05": 20.00087521799411,
+            "p25": 20.199835047424347,
+            "median": 20.4542211133038,
+            "p75": 20.71060531277326,
+            "p95": 20.817442504860136
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 9.469696969696969,
+            "p05": 9.242424242424242,
+            "p25": 9.523809523809524,
+            "median": 9.523809523809524,
+            "p75": 9.523809523809524,
+            "p95": 9.523809523809524
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 57.65907506886447,
+            "p05": 57.17025268624314,
+            "p25": 57.44183490605915,
+            "median": 57.739876145240544,
+            "p75": 57.93081611925705,
+            "p95": 57.99178644387928
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 16,
+            "phase_reversal_rejected": 8
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.331821617535903,
+            "p05": 7.142857142857143,
+            "p25": 7.275132275132275,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 51.06054448226745,
+            "p05": 50.716465238754104,
+            "p25": 50.92890127931549,
+            "median": 51.082221188986566,
+            "p75": 51.25454644124707,
+            "p95": 51.32266901297961
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 7.308201058201059,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 20.465693963105224,
+            "p05": 20.051919644093818,
+            "p25": 20.224647160677346,
+            "median": 20.55441208031462,
+            "p75": 20.71085689142741,
+            "p95": 20.770972019611982
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 8,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 9.59183673469388,
+            "p05": 9.523809523809524,
+            "p25": 9.523809523809524,
+            "median": 9.523809523809524,
+            "p75": 9.523809523809524,
+            "p95": 9.857142857142858
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 57.62151179589796,
+            "p05": 57.12531610197081,
+            "p25": 57.33586774188086,
+            "median": 57.647498051111455,
+            "p75": 57.948664062540146,
+            "p95": 58.01798026566959
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 15,
+            "phase_reversal_rejected": 8
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9896455442309396,
+        "thorax_min_mm": 0.7984965271209286,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 9.937899177392566,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 5.701187115976225,
+        "tibia_tracking_rms_deg": 2.8026258937819213,
+        "max_reflex_correction": 0.8610235622698519,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion0-drive0.5-seed11.npz",
+      "trace_sha256": "0fb4492310316132cfca19d7eb82aa265c378102d12d20a590d378d3f1e14b30"
+    },
+    {
+      "variant": "cadence_adhesion0",
+      "drive": 0.5,
+      "seed": 12,
+      "cadence_command_hz": 7.304846651371715,
+      "source_fitted_cadence_hz": 7.304846651371715,
+      "desired_speed_mm_s": 10.124905350324275,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 10.1336876044056,
+        "p05": 2.643635120391103,
+        "p25": 5.804948312993963,
+        "median": 10.600438230724183,
+        "p75": 13.223205097095203,
+        "p95": 19.746514694227226
+      },
+      "speed_absolute_error_mm_s": 0.4755328803999088,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 152.55914051821475,
+        "p05": 27.570352863062514,
+        "p25": 104.80879274105749,
+        "median": 138.31554864124877,
+        "p75": 223.57127183389986,
+        "p95": 258.1574953002276
+      },
+      "net_heading_rate_deg_s": 5.370213200970323,
+      "tibia_rom_mae_deg": 11.344610100980233,
+      "legs": {
+        "LF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 51.19967501541816,
+            "p05": 50.96715329825192,
+            "p25": 51.10167727291476,
+            "median": 51.264631936676864,
+            "p75": 51.32238660855442,
+            "p95": 51.32658925653018
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 56.000839252584555
+        },
+        "LM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 20.430552321943683,
+            "p05": 19.992882783866104,
+            "p25": 20.205338636346326,
+            "median": 20.423060399329675,
+            "p75": 20.72290039825607,
+            "p95": 20.772778359381313
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.317617292382806
+        },
+        "LH": {
+          "cycles": 8,
+          "frequency_hz": {
+            "n": 8,
+            "mean": 9.523809523809524,
+            "p05": 9.523809523809524,
+            "p25": 9.523809523809524,
+            "median": 9.523809523809524,
+            "p75": 9.523809523809524,
+            "p95": 9.523809523809524
+          },
+          "tibia_rom_deg": {
+            "n": 8,
+            "mean": 57.6158573603095,
+            "p05": 57.10779307368161,
+            "p25": 57.44426442463188,
+            "median": 57.68627299657214,
+            "p75": 57.84808405847953,
+            "p95": 57.98781106447119
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 17,
+            "phase_reversal_rejected": 9
+          },
+          "reference_tibia_rom_deg": 69.04385386900553
+        },
+        "RF": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600152,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 51.10968800898201,
+            "p05": 50.78543726305749,
+            "p25": 50.95563853710926,
+            "median": 51.095277741245624,
+            "p75": 51.30163656684343,
+            "p95": 51.3655466440189
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 55.66831618859753
+        },
+        "RM": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 7.294028722600151,
+            "p05": 7.142857142857143,
+            "p25": 7.142857142857143,
+            "median": 7.407407407407407,
+            "p75": 7.407407407407407,
+            "p95": 7.407407407407407
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 20.547580230944046,
+            "p05": 20.21901781282889,
+            "p25": 20.402915782136603,
+            "median": 20.575631767568673,
+            "p75": 20.715189704224194,
+            "p95": 20.783266407515146
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 7,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 35.730391077053504
+        },
+        "RH": {
+          "cycles": 7,
+          "frequency_hz": {
+            "n": 7,
+            "mean": 9.59183673469388,
+            "p05": 9.523809523809524,
+            "p25": 9.523809523809524,
+            "median": 9.523809523809524,
+            "p75": 9.523809523809524,
+            "p95": 9.857142857142858
+          },
+          "tibia_rom_deg": {
+            "n": 7,
+            "mean": 57.62391095880964,
+            "p05": 57.2446880674049,
+            "p25": 57.52973757551884,
+            "median": 57.69516610107078,
+            "p75": 57.80066816995536,
+            "p95": 57.871531432530276
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 15,
+            "phase_reversal_rejected": 8
+          },
+          "reference_tibia_rom_deg": 75.04668386872123
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9897309090263007,
+        "thorax_min_mm": 0.799625677665352,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 10.04026014884596,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 5.700721744322692,
+        "tibia_tracking_rms_deg": 2.7772830963169755,
+        "max_reflex_correction": 0.7843482969694463,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion0-drive0.5-seed12.npz",
+      "trace_sha256": "6a49ac33e8ff987c2e7c0baf519db7164bf4b88f9eb196016ddc1c4fee41bfeb"
+    },
+    {
+      "variant": "cadence_adhesion0",
+      "drive": 1.0,
+      "seed": 11,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 13.158508746415302,
+        "p05": 3.625669426764386,
+        "p25": 8.278097995217902,
+        "median": 14.144998365084588,
+        "p75": 17.86804348267048,
+        "p95": 21.822923898228716
+      },
+      "speed_absolute_error_mm_s": 6.104812335563961,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 193.33305664016814,
+        "p05": 28.25933999776757,
+        "p25": 122.95903079245477,
+        "median": 181.7850866289645,
+        "p75": 282.47083680255406,
+        "p95": 332.1015760807754
+      },
+      "net_heading_rate_deg_s": -4.420181545438851,
+      "tibia_rom_mae_deg": 15.012639938874857,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 51.46075281607891,
+            "p05": 50.56176563952857,
+            "p25": 50.978919569198524,
+            "median": 51.624734611596224,
+            "p75": 51.99859405136807,
+            "p95": 52.0769153252782
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 20.24832474085617,
+            "p05": 19.740786380686796,
+            "p25": 19.962502793248603,
+            "median": 20.300171899145155,
+            "p75": 20.56706582721844,
+            "p95": 20.68680353961794
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.047846889952153,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.263157894736842
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 57.06061652108365,
+            "p05": 56.38973644947891,
+            "p25": 56.62706700639809,
+            "median": 57.113990294466475,
+            "p75": 57.50964756492927,
+            "p95": 57.60056965028975
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 51.46602305542596,
+            "p05": 50.62098068076245,
+            "p25": 50.932697942720736,
+            "median": 51.70268063542953,
+            "p75": 51.94970472456862,
+            "p95": 52.05918339803268
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 20.2553312202627,
+            "p05": 19.72644642236978,
+            "p25": 19.958951908810384,
+            "median": 20.20643226053742,
+            "p75": 20.56270868516247,
+            "p95": 20.698091503755403
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.052631578947368,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.289473684210526
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 57.16012768384284,
+            "p05": 56.51898314235454,
+            "p25": 56.885070525861195,
+            "median": 57.18644768011613,
+            "p75": 57.50840430618382,
+            "p95": 57.70652555550827
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9914651045466857,
+        "thorax_min_mm": 0.798587481632504,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 9.858422299944733,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 6.521715094093736,
+        "tibia_tracking_rms_deg": 3.013479099790241,
+        "max_reflex_correction": 0.7228352918864256,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion0-drive1-seed11.npz",
+      "trace_sha256": "7393ec85d19cfa495e4e0fc5e1a0e2b62fdeaed9430e1fde42aea52da7f3f7ae"
+    },
+    {
+      "variant": "cadence_adhesion0",
+      "drive": 1.0,
+      "seed": 12,
+      "cadence_command_hz": 10.068573998117026,
+      "source_fitted_cadence_hz": 10.068573998117026,
+      "desired_speed_mm_s": 20.24981070064855,
+      "speed_mm_s": {
+        "n": 240,
+        "mean": 13.174518593215934,
+        "p05": 3.3745146362360297,
+        "p25": 8.390772608279718,
+        "median": 14.148067072184595,
+        "p75": 17.769088128869807,
+        "p95": 21.5406199582337
+      },
+      "speed_absolute_error_mm_s": 6.101743628463954,
+      "absolute_heading_rate_deg_s": {
+        "n": 240,
+        "mean": 193.808541576005,
+        "p05": 38.67615466216455,
+        "p25": 119.70265944061765,
+        "median": 186.08864303003247,
+        "p75": 287.22608944222213,
+        "p95": 332.11089470086597
+      },
+      "net_heading_rate_deg_s": -4.9322451056511065,
+      "tibia_rom_mae_deg": 14.929170113129715,
+      "legs": {
+        "LF": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 51.61532677410864,
+            "p05": 50.69204687357437,
+            "p25": 51.33951139589837,
+            "median": 51.752776616527264,
+            "p75": 52.037663978226846,
+            "p95": 52.104677088632855
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 60.00359008028731
+        },
+        "LM": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 20.315998042304123,
+            "p05": 19.71852600273114,
+            "p25": 20.066605398085528,
+            "median": 20.477187100116282,
+            "p75": 20.603632782887356,
+            "p95": 20.69295046274903
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 31.79943861093654
+        },
+        "LH": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 57.039739091412756,
+            "p05": 56.4170144851851,
+            "p25": 56.720566445066865,
+            "median": 56.92487755081941,
+            "p75": 57.36908858889619,
+            "p95": 57.67655218923132
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 76.23382368043553
+        },
+        "RF": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 51.57386293122183,
+            "p05": 50.56278408219622,
+            "p25": 51.28481824071462,
+            "median": 51.90807518728623,
+            "p75": 52.018115933451675,
+            "p95": 52.098271581156666
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 68.10615896908246
+        },
+        "RM": {
+          "cycles": 11,
+          "frequency_hz": {
+            "n": 11,
+            "mean": 10.095693779904307,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 11,
+            "mean": 20.363744532096856,
+            "p05": 19.78842130109473,
+            "p25": 20.161484607835984,
+            "median": 20.458567984545812,
+            "p75": 20.65342881053939,
+            "p95": 20.714731792994495
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 36.87941517818709
+        },
+        "RH": {
+          "cycles": 10,
+          "frequency_hz": {
+            "n": 10,
+            "mean": 10.105263157894736,
+            "p05": 10.0,
+            "p25": 10.0,
+            "median": 10.0,
+            "p75": 10.0,
+            "p95": 10.526315789473685
+          },
+          "tibia_rom_deg": {
+            "n": 10,
+            "mean": 57.04937384213581,
+            "p05": 56.46335465690542,
+            "p25": 56.62269533125113,
+            "median": 57.11379189646679,
+            "p75": 57.45674707453403,
+            "p95": 57.64566938649174
+          },
+          "quality": {
+            "boundary_frames": 6,
+            "candidate_cycles": 10,
+            "phase_reversal_rejected": 0
+          },
+          "reference_tibia_rom_deg": 75.18787049561115
+        }
+      },
+      "physical": {
+        "finite": true,
+        "upright_min_z": 0.9916219441642717,
+        "thorax_min_mm": 0.7983263656671251,
+        "no_leg_support_fraction": 0.0,
+        "mujoco_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_sum_ground_vertical_force_native": 10.100281099996169,
+        "weight_native": 10.048481099999997,
+        "max_position_actuator_force_native": 6.4999496830467365,
+        "tibia_tracking_rms_deg": 3.0329851759264046,
+        "max_reflex_correction": 0.6749660377940179,
+        "failure": null
+      },
+      "physical_pass": true,
+      "trace": "runs/cpg-calibration-20260905T014343977267Z/cadence_adhesion0-drive1-seed12.npz",
+      "trace_sha256": "02a6985efaab650264dd3c1c82fdd210e461a5fa8176ac7ede197d2052781841"
+    }
+  ],
+  "decisions": [
+    {
+      "variant": "baseline",
+      "role": "frozen baseline",
+      "tibia_rom_error_reduction_fraction": 0.0,
+      "all_physical_pass": true,
+      "guards": [
+        {
+          "drive": 0.5,
+          "speed_guard": true,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        },
+        {
+          "drive": 1.0,
+          "speed_guard": true,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        }
+      ],
+      "eligible_for_optional_discussion": false
+    },
+    {
+      "variant": "full_excursion",
+      "role": "mechanistic control; not eligible",
+      "tibia_rom_error_reduction_fraction": 0.531136887903938,
+      "all_physical_pass": true,
+      "guards": [
+        {
+          "drive": 0.5,
+          "speed_guard": false,
+          "heading_guard": false,
+          "source_coverage_guard": true
+        },
+        {
+          "drive": 1.0,
+          "speed_guard": true,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        }
+      ],
+      "eligible_for_optional_discussion": false
+    },
+    {
+      "variant": "cadence",
+      "role": "candidate",
+      "tibia_rom_error_reduction_fraction": 0.5176074634111698,
+      "all_physical_pass": true,
+      "guards": [
+        {
+          "drive": 0.5,
+          "speed_guard": true,
+          "heading_guard": false,
+          "source_coverage_guard": true
+        },
+        {
+          "drive": 1.0,
+          "speed_guard": false,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        }
+      ],
+      "eligible_for_optional_discussion": false
+    },
+    {
+      "variant": "cadence_adhesion10",
+      "role": "candidate",
+      "tibia_rom_error_reduction_fraction": 0.514840816025967,
+      "all_physical_pass": true,
+      "guards": [
+        {
+          "drive": 0.5,
+          "speed_guard": true,
+          "heading_guard": false,
+          "source_coverage_guard": true
+        },
+        {
+          "drive": 1.0,
+          "speed_guard": false,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        }
+      ],
+      "eligible_for_optional_discussion": false
+    },
+    {
+      "variant": "cadence_adhesion0",
+      "role": "candidate",
+      "tibia_rom_error_reduction_fraction": 0.38819023322268875,
+      "all_physical_pass": true,
+      "guards": [
+        {
+          "drive": 0.5,
+          "speed_guard": true,
+          "heading_guard": false,
+          "source_coverage_guard": true
+        },
+        {
+          "drive": 1.0,
+          "speed_guard": false,
+          "heading_guard": true,
+          "source_coverage_guard": true
+        }
+      ],
+      "eligible_for_optional_discussion": false
+    }
+  ],
+  "scope": "Exploratory split after pooled-data review; no valid claim of blinded biological generalization; source model-normalized mixed-sex running only"
+}

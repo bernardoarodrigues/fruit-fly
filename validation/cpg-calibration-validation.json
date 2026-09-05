@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "plan_sha256": "1907c3451d29a43bc72a2958559192fd46b40d8bdedf457678aa00f02aad6933",
+  "experiment_sha256": "2cba5d53422d36342f39ffc4308556607e3c602f8c1d539fd36b062a0135068c",
+  "complete_unique_trials": 20,
+  "frame_count_per_simulated_trace": [
+    301
+  ],
+  "all_trace_hashes_and_finite_arrays_checked": true,
+  "baseline_reproduction": [
+    {
+      "seed": 11,
+      "speed_difference_mm_s": 0.0,
+      "all_six_tibia_rom_match_atol": 1e-10
+    },
+    {
+      "seed": 12,
+      "speed_difference_mm_s": 0.0,
+      "all_six_tibia_rom_match_atol": 1e-10
+    }
+  ],
+  "runtime_body_and_installed_controller_hashes_unchanged": true,
+  "initial_unrun_draft": {
+    "path": "validation/cpg-calibration-plan-v0-unrun.json",
+    "status": "superseded before any physics execution; broad-bin midpoint corrected"
+  },
+  "source_arrays_redistributed": false
+}

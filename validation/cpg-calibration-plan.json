@@ -1,0 +1,862 @@
+{
+  "created_at": "2026-09-05T01:42:59.850626+00:00",
+  "benchmark_sha256": "0705a1696a4ebf041dd547883ffc0010c7b6ecda541b76738deb9af8d85a008e",
+  "script_sha256": "7bec756733a8e7ca50796f80a705f09ff845078c0f6326861364cedf9e73ac28",
+  "body_code_sha256": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+  "controller_code_sha256": "385f1b0169c60f0f241a63e0b4f4112aa1c4e65e4b9aec7e5b38cee8cdc6b1b7",
+  "split": {
+    "training_flies": [
+      "Session11/2026_03_03_14_10_44",
+      "session7/2025_10_13_12_33_18",
+      "Session10/2026_03_02_16_37_14",
+      "Session10/2026_03_02_17_05_38",
+      "Session5_2/2025_10_11_10_59_13",
+      "Session10/2026_03_02_13_39_54",
+      "Session7/2025_10_13_18_35_49",
+      "Session10/2026_03_02_13_11_00",
+      "Session11/2026_03_03_13_25_13",
+      "Session10/2026_03_02_12_54_26",
+      "Session10/2026_03_02_14_47_43",
+      "Session10/2026_03_02_16_24_53",
+      "session5/2025_10_11_10_29_50",
+      "Session6/2025_10_12_15_55_19"
+    ],
+    "evaluation_flies": [
+      "session1/2025_10_07_17_15_30",
+      "Session10/2026_03_02_17_19_29",
+      "Session10/2026_03_02_13_27_03",
+      "Session11/2026_03_03_14_32_16",
+      "Session11/2026_03_03_14_49_28",
+      "Session11/2026_03_03_14_27_48",
+      "Session11/2026_03_03_13_37_35",
+      "session6/2025_10_12_15_06_46"
+    ],
+    "method": "Sort fly IDs by SHA256; first14 fit, remaining8 comparison; exploratory after pooled data inspection, not a blinded biological holdout"
+  },
+  "fit": {
+    "formula": "f_hz = intercept + slope * desired_speed_mm_s; clip to observed fit-point frequency range",
+    "intercept_hz": 4.541119304626403,
+    "slope_hz_per_mm_s": 0.27296327729688813,
+    "frequency_clip_hz": [
+      5.882352941176471,
+      14.814814814814815
+    ],
+    "desired_speed_rule": "drive * training-animal-median root speed; engineering command mapping",
+    "training_speed_reference_mm_s": 20.24981070064855,
+    "points": [
+      {
+        "fly_id": "Session10/2026_03_02_12_54_26",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 6.6115702479338845,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_12_54_26",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 8.791208791208792,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_12_54_26",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 10.73873873873874,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_12_54_26",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 11.428571428571429,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_11_00",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 10.38961038961039,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_11_00",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 11.11111111111111,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_11_00",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.030755314337405,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_39_54",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 8.465845464725643,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_39_54",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 10.526315789473685,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_39_54",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 11.594202898550725,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_39_54",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.903225806451612,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_13_39_54",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 14.035087719298245,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_14_47_43",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 10.526315789473685,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_14_47_43",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 10.683760683760685,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_14_47_43",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.698412698412698,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_14_47_43",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 13.029661016949152,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_24_53",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 9.30232558139535,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_24_53",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 11.11111111111111,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_24_53",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.5,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_37_14",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 8.24742268041237,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_37_14",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 10.256410256410257,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_37_14",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 10.81081081081081,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_37_14",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.599206349206348,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_16_37_14",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 12.599206349206348,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session10/2026_03_02_17_05_38",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 10.555555555555555,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_17_05_38",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 11.594202898550725,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_17_05_38",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.5,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session10/2026_03_02_17_05_38",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 14.035087719298245,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "Session11/2026_03_03_13_25_13",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 9.63855421686747,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session11/2026_03_03_13_25_13",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 10.666666666666666,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session11/2026_03_03_13_25_13",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 11.428571428571429,
+        "weight": 0.3333333333333333
+      },
+      {
+        "fly_id": "Session11/2026_03_03_14_10_44",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.121212121212121,
+        "weight": 0.5
+      },
+      {
+        "fly_id": "Session11/2026_03_03_14_10_44",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 13.797204876598276,
+        "weight": 0.5
+      },
+      {
+        "fly_id": "Session5_2/2025_10_11_10_59_13",
+        "speed_mm_s": 7.5,
+        "frequency_hz": 6.359220238470759,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session5_2/2025_10_11_10_59_13",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 8.16326530612245,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session5_2/2025_10_11_10_59_13",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 9.303583502366465,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session5_2/2025_10_11_10_59_13",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 10.38961038961039,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session5_2/2025_10_11_10_59_13",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 13.333333333333334,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session6/2025_10_12_15_55_19",
+        "speed_mm_s": 7.5,
+        "frequency_hz": 5.882352941176471,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session6/2025_10_12_15_55_19",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 6.505785123966943,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session6/2025_10_12_15_55_19",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 9.044715447154472,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session6/2025_10_12_15_55_19",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 9.900687547746372,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session6/2025_10_12_15_55_19",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 14.814814814814815,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "Session7/2025_10_13_18_35_49",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 7.855217558721602,
+        "weight": 0.5
+      },
+      {
+        "fly_id": "Session7/2025_10_13_18_35_49",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 8.84004884004884,
+        "weight": 0.5
+      },
+      {
+        "fly_id": "session5/2025_10_11_10_29_50",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 8.51063829787234,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "session5/2025_10_11_10_29_50",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 9.523809523809524,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "session5/2025_10_11_10_29_50",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 11.11111111111111,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "session5/2025_10_11_10_29_50",
+        "speed_mm_s": 27.5,
+        "frequency_hz": 12.599206349206348,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "session5/2025_10_11_10_29_50",
+        "speed_mm_s": 35.0,
+        "frequency_hz": 14.285714285714286,
+        "weight": 0.2
+      },
+      {
+        "fly_id": "session7/2025_10_13_12_33_18",
+        "speed_mm_s": 7.5,
+        "frequency_hz": 6.349206349206349,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "session7/2025_10_13_12_33_18",
+        "speed_mm_s": 12.5,
+        "frequency_hz": 6.557377049180328,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "session7/2025_10_13_12_33_18",
+        "speed_mm_s": 17.5,
+        "frequency_hz": 8.333333333333334,
+        "weight": 0.25
+      },
+      {
+        "fly_id": "session7/2025_10_13_12_33_18",
+        "speed_mm_s": 22.5,
+        "frequency_hz": 9.523809523809524,
+        "weight": 0.25
+      }
+    ],
+    "fit_method": "Weighted least squares, bin midpoint and median LF frequency; equal total weight per contributing animal; bins require >=3 cycles and width<=10mm/s; exclude broad40-100bin rather than invent its typical speed"
+  },
+  "variants": [
+    {
+      "name": "baseline",
+      "amplitude": "drive",
+      "cadence": "12hz",
+      "adhesion_gain": 40,
+      "role": "frozen baseline"
+    },
+    {
+      "name": "full_excursion",
+      "amplitude": "one",
+      "cadence": "12hz",
+      "adhesion_gain": 40,
+      "role": "mechanistic control; not eligible"
+    },
+    {
+      "name": "cadence",
+      "amplitude": "one",
+      "cadence": "source_fit",
+      "adhesion_gain": 40,
+      "role": "candidate"
+    },
+    {
+      "name": "cadence_adhesion10",
+      "amplitude": "one",
+      "cadence": "source_fit",
+      "adhesion_gain": 10,
+      "role": "candidate"
+    },
+    {
+      "name": "cadence_adhesion0",
+      "amplitude": "one",
+      "cadence": "source_fit",
+      "adhesion_gain": 0,
+      "role": "candidate"
+    }
+  ],
+  "drives": [
+    0.5,
+    1.0
+  ],
+  "seeds": [
+    11,
+    12
+  ],
+  "duration_s": 1.5,
+  "startup_excluded_s": 0.3,
+  "sample_period_s": 0.005,
+  "body_config": {
+    "arena_half_size_mm": 40,
+    "initial_position_mm": [
+      -12,
+      0,
+      0.8
+    ],
+    "food_position_mm": [
+      -25,
+      25
+    ],
+    "water_position_mm": [
+      25,
+      25
+    ]
+  },
+  "source_comparison": {
+    "0.5": {
+      "target_speed_mm_s": 10.124905350324275,
+      "selection_halfwidth_mm_s": 2.5,
+      "animal_count": 4,
+      "per_animal": [
+        {
+          "fly_id": "Session10/2026_03_02_13_27_03",
+          "bouts": 1,
+          "metrics": {
+            "LF_frequency_hz": 11.430904266176771,
+            "LF_tibia_rom_deg": 70.90455065128651,
+            "LM_frequency_hz": 8.98876404494382,
+            "LM_tibia_rom_deg": 37.006085305213205,
+            "LH_frequency_hz": 11.583333333333332,
+            "LH_tibia_rom_deg": 75.52434461058962,
+            "RF_frequency_hz": 9.30232558139535,
+            "RF_tibia_rom_deg": 53.85212278451424,
+            "RM_frequency_hz": 10.57207442183968,
+            "RM_tibia_rom_deg": 43.06526991511022,
+            "RH_frequency_hz": 11.923890063424947,
+            "RH_tibia_rom_deg": 86.10062445542944
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_14_32_16",
+          "bouts": 1,
+          "metrics": {
+            "LF_frequency_hz": 10.38961038961039,
+            "LF_tibia_rom_deg": 64.39366428723538,
+            "LM_frequency_hz": 9.411764705882353,
+            "LM_tibia_rom_deg": 18.55018995434332,
+            "LH_frequency_hz": 9.743734159391721,
+            "LH_tibia_rom_deg": 67.33941644700882,
+            "RF_frequency_hz": 8.51063829787234,
+            "RF_tibia_rom_deg": 57.48450959268082,
+            "RM_frequency_hz": 11.594202898550725,
+            "RM_tibia_rom_deg": 24.216159506505647,
+            "RH_frequency_hz": 9.63855421686747,
+            "RH_tibia_rom_deg": 74.39412503409729
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_14_49_28",
+          "bouts": 1,
+          "metrics": {
+            "LF_frequency_hz": 9.195402298850574,
+            "LF_tibia_rom_deg": 47.60801421793372,
+            "LM_frequency_hz": 8.24742268041237,
+            "LM_tibia_rom_deg": 33.6291492795524,
+            "LH_frequency_hz": 8.333333333333334,
+            "LH_tibia_rom_deg": 53.97051216094537,
+            "RF_frequency_hz": 9.89010989010989,
+            "RF_tibia_rom_deg": 28.40073680010331,
+            "RM_frequency_hz": 8.945527236381809,
+            "RM_tibia_rom_deg": 38.398743054453945,
+            "RH_frequency_hz": 9.411764705882353,
+            "RH_tibia_rom_deg": 70.62677198038396
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_13_37_35",
+          "bouts": 1,
+          "metrics": {
+            "LF_frequency_hz": 10.323010323010323,
+            "LF_tibia_rom_deg": 46.643255120311295,
+            "LM_frequency_hz": 9.411764705882353,
+            "LM_tibia_rom_deg": 42.96569770984249,
+            "LH_frequency_hz": 10.38961038961039,
+            "LH_tibia_rom_deg": 70.74829129100225,
+            "RF_frequency_hz": 9.30232558139535,
+            "RF_tibia_rom_deg": 63.44926939862335,
+            "RM_frequency_hz": 10.38961038961039,
+            "RM_tibia_rom_deg": 33.06203909965306,
+            "RH_frequency_hz": 8.080808080808081,
+            "RH_tibia_rom_deg": 75.69924270334519
+          }
+        }
+      ],
+      "metrics": {
+        "LF_frequency_hz": {
+          "n": 4,
+          "mean": 10.334731819412013,
+          "p05": 9.364543502474536,
+          "p25": 10.041108316970385,
+          "median": 10.356310356310356,
+          "p75": 10.649933858751986,
+          "p95": 11.274710184691813
+        },
+        "LF_tibia_rom_deg": {
+          "n": 4,
+          "mean": 57.38737106919172,
+          "p05": 46.78796898495466,
+          "p25": 47.36682444352812,
+          "median": 56.000839252584555,
+          "p75": 66.02138587824817,
+          "p95": 69.92791769667885
+        },
+        "LM_frequency_hz": {
+          "n": 4,
+          "mean": 9.014929034280225,
+          "p05": 8.358623885092088,
+          "p25": 8.803428703810958,
+          "median": 9.200264375413088,
+          "p75": 9.411764705882353,
+          "p95": 9.411764705882353
+        },
+        "LM_tibia_rom_deg": {
+          "n": 4,
+          "mean": 33.037780562237856,
+          "p05": 20.81203385312468,
+          "p25": 29.85940944825013,
+          "median": 35.317617292382806,
+          "p75": 38.49598840637053,
+          "p95": 42.07175584914809
+        },
+        "LH_frequency_hz": {
+          "n": 4,
+          "mean": 10.012502803917194,
+          "p05": 8.544893457242091,
+          "p25": 9.391133952877125,
+          "median": 10.066672274501055,
+          "p75": 10.688041125541126,
+          "p95": 11.40427489177489
+        },
+        "LH_tibia_rom_deg": {
+          "n": 4,
+          "mean": 66.89564112738651,
+          "p05": 55.97584780385488,
+          "p25": 63.997190375492956,
+          "median": 69.04385386900553,
+          "p75": 71.9423046208991,
+          "p95": 74.80793661265152
+        },
+        "RF_frequency_hz": {
+          "n": 4,
+          "mean": 9.251349837693233,
+          "p05": 8.62939139040079,
+          "p25": 9.104403760514597,
+          "median": 9.30232558139535,
+          "p75": 9.449271658573984,
+          "p95": 9.80194224380271
+        },
+        "RF_tibia_rom_deg": {
+          "n": 4,
+          "mean": 50.79665964398043,
+          "p05": 32.21844469776495,
+          "p25": 47.48927628841151,
+          "median": 55.66831618859753,
+          "p75": 58.97569954416645,
+          "p95": 62.55455542773197
+        },
+        "RM_frequency_hz": {
+          "n": 4,
+          "mean": 10.37535373659565,
+          "p05": 9.162139709366096,
+          "p25": 10.028589601303244,
+          "median": 10.480842405725035,
+          "p75": 10.827606541017442,
+          "p95": 11.440883627044068
+        },
+        "RM_tibia_rom_deg": {
+          "n": 4,
+          "mean": 34.68555289393072,
+          "p05": 25.54304144547776,
+          "p25": 30.85056920136621,
+          "median": 35.730391077053504,
+          "p75": 39.56537476961802,
+          "p95": 42.36529088601178
+        },
+        "RH_frequency_hz": {
+          "n": 4,
+          "mean": 9.763754266745714,
+          "p05": 8.280451574569222,
+          "p25": 9.079025549613785,
+          "median": 9.525159461374912,
+          "p75": 10.20988817850684,
+          "p95": 11.581089686441326
+        },
+        "RH_tibia_rom_deg": {
+          "n": 4,
+          "mean": 76.70519104331397,
+          "p05": 71.19187493844096,
+          "p25": 73.45228677066896,
+          "median": 75.04668386872123,
+          "p75": 78.29958814136626,
+          "p95": 84.5404171926168
+        }
+      }
+    },
+    "1.0": {
+      "target_speed_mm_s": 20.24981070064855,
+      "selection_halfwidth_mm_s": 2.5,
+      "animal_count": 6,
+      "per_animal": [
+        {
+          "fly_id": "Session10/2026_03_02_17_19_29",
+          "bouts": 9,
+          "metrics": {
+            "LF_frequency_hz": 10.991906644080558,
+            "LF_tibia_rom_deg": 58.27752187607598,
+            "LM_frequency_hz": 11.128048780487806,
+            "LM_tibia_rom_deg": 31.740451709882134,
+            "LH_frequency_hz": 10.94632768361582,
+            "LH_tibia_rom_deg": 68.05307132375853,
+            "RF_frequency_hz": 10.81081081081081,
+            "RF_tibia_rom_deg": 67.01405270193243,
+            "RM_frequency_hz": 10.81081081081081,
+            "RM_tibia_rom_deg": 37.29489217030438,
+            "RH_frequency_hz": 11.267605633802816,
+            "RH_tibia_rom_deg": 72.73067515042298
+          }
+        },
+        {
+          "fly_id": "Session10/2026_03_02_13_27_03",
+          "bouts": 10,
+          "metrics": {
+            "LF_frequency_hz": 10.81081081081081,
+            "LF_tibia_rom_deg": 68.44434724809918,
+            "LM_frequency_hz": 10.935535077411508,
+            "LM_tibia_rom_deg": 35.379699296327644,
+            "LH_frequency_hz": 10.95890410958904,
+            "LH_tibia_rom_deg": 78.09794708324573,
+            "RF_frequency_hz": 10.921880784894483,
+            "RF_tibia_rom_deg": 69.80209323244932,
+            "RM_frequency_hz": 10.95890410958904,
+            "RM_tibia_rom_deg": 34.255897683076526,
+            "RH_frequency_hz": 11.151306622076445,
+            "RH_tibia_rom_deg": 77.64506584079933
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_14_32_16",
+          "bouts": 2,
+          "metrics": {
+            "LF_frequency_hz": 9.18859649122807,
+            "LF_tibia_rom_deg": 55.23388937023657,
+            "LM_frequency_hz": 9.226539962667571,
+            "LM_tibia_rom_deg": 31.858425511990944,
+            "LH_frequency_hz": 9.834680377449185,
+            "LH_tibia_rom_deg": 90.33906334016135,
+            "RF_frequency_hz": 8.403618328065171,
+            "RF_tibia_rom_deg": 69.19826523623247,
+            "RM_frequency_hz": 9.397728645644557,
+            "RM_tibia_rom_deg": 40.207084088869244,
+            "RH_frequency_hz": 8.677444822023135,
+            "RH_tibia_rom_deg": 67.47325869955026
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_14_49_28",
+          "bouts": 2,
+          "metrics": {
+            "LF_frequency_hz": 10.89696071163825,
+            "LF_tibia_rom_deg": 61.899094787239136,
+            "LM_frequency_hz": 10.645184236733531,
+            "LM_tibia_rom_deg": 24.96601652029055,
+            "LH_frequency_hz": 10.668388977212507,
+            "LH_tibia_rom_deg": 73.33406558764614,
+            "RF_frequency_hz": 10.666407867494824,
+            "RF_tibia_rom_deg": 62.04194947439042,
+            "RM_frequency_hz": 11.679454390451834,
+            "RM_tibia_rom_deg": 28.41505682530677,
+            "RH_frequency_hz": 11.071428571428573,
+            "RH_tibia_rom_deg": 84.23010714178245
+          }
+        },
+        {
+          "fly_id": "Session11/2026_03_03_13_37_35",
+          "bouts": 3,
+          "metrics": {
+            "LF_frequency_hz": 11.06060606060606,
+            "LF_tibia_rom_deg": 46.51990788031639,
+            "LM_frequency_hz": 10.95890410958904,
+            "LM_tibia_rom_deg": 32.60083228349525,
+            "LH_frequency_hz": 11.18881118881119,
+            "LH_tibia_rom_deg": 86.84120052279276,
+            "RF_frequency_hz": 10.468696544645912,
+            "RF_tibia_rom_deg": 70.69043275854307,
+            "RM_frequency_hz": 10.81081081081081,
+            "RM_tibia_rom_deg": 38.24412454039607,
+            "RH_frequency_hz": 10.528138528138527,
+            "RH_tibia_rom_deg": 66.9364839510759
+          }
+        },
+        {
+          "fly_id": "session6/2025_10_12_15_06_46",
+          "bouts": 23,
+          "metrics": {
+            "LF_frequency_hz": 10.766488413547236,
+            "LF_tibia_rom_deg": 61.72965828449863,
+            "LM_frequency_hz": 11.810862095492077,
+            "LM_tibia_rom_deg": 31.184374953535013,
+            "LH_frequency_hz": 11.940298507462687,
+            "LH_tibia_rom_deg": 74.36970027762533,
+            "RF_frequency_hz": 11.269841269841269,
+            "RF_tibia_rom_deg": 57.39127409541557,
+            "RM_frequency_hz": 11.594202898550725,
+            "RM_tibia_rom_deg": 36.4639381860698,
+            "RH_frequency_hz": 11.764705882352942,
+            "RH_tibia_rom_deg": 82.72242399099854
+          }
+        }
+      ],
+      "metrics": {
+        "LF_frequency_hz": {
+          "n": 6,
+          "mean": 10.619228188651832,
+          "p05": 9.583069471807862,
+          "p25": 10.777569012863129,
+          "median": 10.85388576122453,
+          "p75": 10.968170160969981,
+          "p95": 11.043431206474684
+        },
+        "LF_tibia_rom_deg": {
+          "n": 6,
+          "mean": 58.68406990774431,
+          "p05": 48.69840325279643,
+          "p25": 55.99479749669642,
+          "median": 60.00359008028731,
+          "p75": 61.85673566155401,
+          "p95": 66.80803413288416
+        },
+        "LM_frequency_hz": {
+          "n": 6,
+          "mean": 10.784179043730257,
+          "p05": 9.581201031184062,
+          "p25": 10.717771946903024,
+          "median": 10.947219593500275,
+          "p75": 11.085762612763114,
+          "p95": 11.64015876674101
+        },
+        "LM_tibia_rom_deg": {
+          "n": 6,
+          "mean": 31.288300045920256,
+          "p05": 26.520606128601667,
+          "p25": 31.323394142621794,
+          "median": 31.79943861093654,
+          "p75": 32.415230590619174,
+          "p95": 34.684982543119546
+        },
+        "LH_frequency_hz": {
+          "n": 6,
+          "mean": 10.922901807356737,
+          "p05": 10.043107527390015,
+          "p25": 10.737873653813335,
+          "median": 10.952615896602431,
+          "p75": 11.131334419005652,
+          "p95": 11.752426677799813
+        },
+        "LH_tibia_rom_deg": {
+          "n": 6,
+          "mean": 78.50584135587164,
+          "p05": 69.37331988973042,
+          "p25": 73.59297426014093,
+          "median": 76.23382368043553,
+          "p75": 84.65538716290601,
+          "p95": 89.4645976358192
+        },
+        "RF_frequency_hz": {
+          "n": 6,
+          "mean": 10.423542600958745,
+          "p05": 8.919887882210357,
+          "p25": 10.51812437535814,
+          "median": 10.738609339152816,
+          "p75": 10.894113291373564,
+          "p95": 11.182851148604573
+        },
+        "RF_tibia_rom_deg": {
+          "n": 6,
+          "mean": 66.0230112498272,
+          "p05": 58.55394294015928,
+          "p25": 63.28497528127592,
+          "median": 68.10615896908246,
+          "p75": 69.6511362333951,
+          "p95": 70.46834787701962
+        },
+        "RM_frequency_hz": {
+          "n": 6,
+          "mean": 10.875318610976294,
+          "p05": 9.75099918693612,
+          "p25": 10.81081081081081,
+          "median": 10.884857460199925,
+          "p75": 11.435378201310304,
+          "p95": 11.658141517476556
+        },
+        "RM_tibia_rom_deg": {
+          "n": 6,
+          "mean": 35.813498915670465,
+          "p05": 29.87526703974921,
+          "p25": 34.807907808824844,
+          "median": 36.87941517818709,
+          "p75": 38.00681644787315,
+          "p95": 39.71634420175095
+        },
+        "RH_frequency_hz": {
+          "n": 6,
+          "mean": 10.743438343303739,
+          "p05": 9.140118248551984,
+          "p25": 10.663961038961038,
+          "median": 11.111367596752508,
+          "p75": 11.238530880871224,
+          "p95": 11.64043082021541
+        },
+        "RH_tibia_rom_deg": {
+          "n": 6,
+          "mean": 75.28966912910491,
+          "p05": 67.0706776381945,
+          "p25": 68.78761281226843,
+          "median": 75.18787049561115,
+          "p75": 81.45308445344874,
+          "p95": 83.85318635408647
+        }
+      }
+    }
+  },
+  "source_reference_method": "For each evaluation animal, median of bout medians within desired speed +/-2.5mm/s; then equal-weight animal medians. Includes same-clock cycle ROM, not direct angle retargeting.",
+  "decision_rule": {
+    "primary": "Mean absolute tibia ROM error across six legs, two drives and seeds reduced >=20% versus paired baseline",
+    "physical": "All trials finite, upright_z>=0.5, thorax_z>=0.5mm, no MuJoCo warnings, <=1% sampled frames with no supporting leg force",
+    "guards": "At each drive: mean absolute desired-speed error <= baseline+2mm/s; mean absolute heading-motion median <=1.2*baseline+10deg/s; >=3 evaluation animals in reference band",
+    "promotion": "Only candidate roles eligible; passing supports discussion of optional controller, never default change or validated biology"
+  },
+  "scope": "20 fixed forward-only trials. No neural model or runtime source edits. No extra grid search after observing outcomes. Adhesion gains10/0 are diagnostic quarter/zero controls, not measured adhesive physiology."
+}
