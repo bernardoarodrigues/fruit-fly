@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T03:30:41.413801+00:00",
+  "git_head": "922d5e505bea35637e30fa174740e2b9e9337bb9",
+  "source_paths": {
+    "scripts/synaptic-depression-reference.py": {
+      "bytes": 20838,
+      "sha256": "c8994b9ad864555657d7a6a11d731c224511d81966ab0dca492b7d9556f1be9a"
+    },
+    "fruitfly/neural.py": {
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "fruitfly/data.py": {
+      "bytes": 11325,
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc"
+    },
+    "validation/orn-pn-transfer-depression-proposal.json": {
+      "bytes": 7393,
+      "sha256": "7bc74034bf0edd546dd3f15e8b291804886ccad11605614e84270c5c803fe11e"
+    },
+    "validation/orn-pn-transfer-plan.json": {
+      "bytes": 4816,
+      "sha256": "915d0f0ab01a606eb042038644e16121c714839101c21c9489bab896130436f7"
+    },
+    "validation/orn-pn-transfer-results.json": {
+      "bytes": 27887,
+      "sha256": "0da59e2dc7a0bd8ca42e434b4815abd81e47c5926f4e05822aeda10df218f198"
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf": {
+      "bytes": 1353000,
+      "sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6"
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf": {
+      "bytes": 5470888,
+      "sha256": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a"
+    },
+    "tmp/pdfs/orn-pn-transfer/abbott-1997.pdf": {
+      "bytes": 440778,
+      "sha256": "a30c88be90584306c25c263a1b564b9d772ec833e1e9bee6f3660bfea760f9b2"
+    }
+  },
+  "primary_reference": {
+    "doi": "10.1126/science.275.5297.221",
+    "url": "https://huguenardlab.stanford.edu/220/varela1997a.pdf",
+    "location": "Printed p223 notes6,7,10; PDF page5 visually checked",
+    "organism": "rat cortex"
+  },
+  "fixed_parameters": {
+    "per_event_retention_factor": 0.75,
+    "recovery_tau_seconds": 0.3,
+    "normalized_response_kernel_tau_seconds": 0.002
+  },
+  "equations": {
+    "between_events": "tau*da/dt=1-a",
+    "event": "amplitude=a_before; then a_after=f*a_before",
+    "periodic_steady_state": "A=(1-exp(-1/(r*tau)))/(1-f*exp(-1/(r*tau)))",
+    "finite_train": "a_n=A+(a_0-A)*(f*exp(-1/(r*tau)))**n, with first event index n=0",
+    "normalized_observation": "h(t)=sum_k a_k*exp(-(t-t_k)/kernel_tau) for t>=t_k; scale arbitrary, no pA or male voltage mapping"
+  },
+  "numeric_checks": {
+    "absolute_tolerance": 1e-12,
+    "periodic_rates_hz": [
+      7,
+      15,
+      20,
+      50,
+      100,
+      200
+    ],
+    "pulses_each": 256,
+    "checks": [
+      "Exact finite and asymptotic regular-train amplitudes",
+      "Read-before-decrement event order",
+      "Continuous exponential recovery",
+      "State bounds, finite values, monotonic train depression",
+      "Same-time events and rejected backward event cause expected state behavior",
+      "Read-only recovery queries do not create depression",
+      "Declared f=1 null control only, not a prediction parameter",
+      "Independent direct-sum response versus event-driven response",
+      "Independent integrated convolution versus interval-by-interval integration"
+    ]
+  },
+  "fly_scope": "Female VM2 published stimulation protocols, evaluated with unchanged rat-source reference parameters as predictions only; no data digitization, measurement fitting or match assertion",
+  "train_protocol": {
+    "baseline": "28 spikes at -4+j/7 seconds, j=0..27; recovered before first spike",
+    "test": "j/r seconds for j>=0 and j/r<.5",
+    "test_rates_hz": [
+      15,
+      20,
+      50,
+      100,
+      200
+    ],
+    "phase": "Test first event at0; no event at.5; explicit simulation convention, not documented exact experimental pulse phase",
+    "time_representation": "Retain Fraction numerator/denominator in event CSV; evaluate float64 seconds without timestep quantization",
+    "amplitude_normalization": "Divide by first test-train event amplitude",
+    "waveform_sample_grid": "-.2 to.7s inclusive,0.0001s grid, right-continuous after coincident events; grid does not drive scalar dynamics"
+  },
+  "charge_prediction": {
+    "rates_hz": [
+      20,
+      50,
+      100,
+      200
+    ],
+    "window_seconds": [
+      0.1,
+      0.5
+    ],
+    "normalization": "Same-window100Hz integral",
+    "primary": "Analytic integral of test-event responses only, unit peak per fully recovered event; no empirical baseline subtraction inferred",
+    "sensitivity": "Also include exact residual baseline response from all preceding events",
+    "scope": "These four displayed Fig9B frequencies only; no unextracted Fig9C/D point locations claimed"
+  },
+  "recovery_prediction": {
+    "high_frequency": "50Hz range endpoint and displayed200Hz, .5s train. Each under fully recovered initial condition and under7Hz/4s baseline, both explicit scenarios. Read-only isolated test-probe amplitudes at0..2s after nominal train end,1ms grid; not sequential probing and not measured probe times.",
+    "pause": "After28 regular7Hz events, report isolated probe efficacy0..30s after last event,10ms grid. Time origin is after last event, not an inferred author pause convention; normalize to fully recovered amplitude1. Baseline duration/history and normalization are scenario choices.",
+    "claim_limit": "Missing experimental history/probe times are not resolved by these conventions; no reproduction of measured S8B/D curves claimed and no use of measured7.5s as model parameter"
+  },
+  "not_in_scope": [
+    "Any fitted value",
+    "Absolute physiological current/voltage/charge prediction",
+    "Full brain or body",
+    "Runtime integration",
+    "Male or female biological validation",
+    "Stochastic quantal variance",
+    "Any reproduction of Abbott full spiking network"
+  ],
+  "provenance_limit": "Same author as earlier isolated ORN-PN audit; internal independent formulas are not a separate external replication"
+}

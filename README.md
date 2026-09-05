@@ -83,6 +83,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Native FlyBody bridge and parity](docs/flybody-bridge.md), [four full-graph trials](docs/flybody-loop.md), [independent saved-journal review](docs/flybody-loop-independent-review.md)
 - [Twelve-second rolling neural loop](docs/flybody-rolling-loop.md), [motion and voltage outcomes](docs/flybody-rolling-loop-outcomes.md), [independent spike/state review](docs/flybody-rolling-loop-independent-review.md), [optional FlyBody airflow](docs/flybody-airflow-runtime.md)
 - [Isolated olfactory synaptic transfer](docs/orn-pn-transfer-audit.md), [independent matrix-exponential review](docs/orn-pn-transfer-independent-review.md)
+- [Published scalar synaptic-depression reference](docs/synaptic-depression-reference.md), [independent high-precision review](docs/synaptic-depression-reference-independent-review.md); fixed-source predictions, no biological fit or neural integration
 - [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md), [executed excitation assay](docs/or42a-summary-experiment.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
 - [Full optical-template sampling through six views](docs/multiview-eye.md), including moving-head, cube-seam and lighting checks

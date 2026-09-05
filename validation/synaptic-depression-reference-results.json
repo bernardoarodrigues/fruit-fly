@@ -1,0 +1,633 @@
+{
+  "schema": 1,
+  "finished_utc": "2026-09-05T03:30:48.361799+00:00",
+  "plan_sha256": "86ade63439b8b20fb169ae7d9ea6395102f43f054319cc2e7a83f2f80c52f174",
+  "passed": true,
+  "checks": [
+    {
+      "name": "periodic_7:finite_train",
+      "pass": true,
+      "max_absolute_error": 3.6637359812630166e-15
+    },
+    {
+      "name": "periodic_7:steady_state",
+      "pass": true,
+      "max_absolute_error": 1.9984014443252818e-15
+    },
+    {
+      "name": "periodic_7:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_7:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "periodic_15:finite_train",
+      "pass": true,
+      "max_absolute_error": 5.051514762044462e-15
+    },
+    {
+      "name": "periodic_15:steady_state",
+      "pass": true,
+      "max_absolute_error": 7.216449660063518e-16
+    },
+    {
+      "name": "periodic_15:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_15:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "periodic_20:finite_train",
+      "pass": true,
+      "max_absolute_error": 1.6653345369377348e-15
+    },
+    {
+      "name": "periodic_20:steady_state",
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "periodic_20:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_20:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "periodic_50:finite_train",
+      "pass": true,
+      "max_absolute_error": 1.3877787807814457e-15
+    },
+    {
+      "name": "periodic_50:steady_state",
+      "pass": true,
+      "max_absolute_error": 6.38378239159465e-16
+    },
+    {
+      "name": "periodic_50:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_50:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "periodic_100:finite_train",
+      "pass": true,
+      "max_absolute_error": 8.465450562766819e-16
+    },
+    {
+      "name": "periodic_100:steady_state",
+      "pass": true,
+      "max_absolute_error": 4.579669976578771e-16
+    },
+    {
+      "name": "periodic_100:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_100:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "periodic_200:finite_train",
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "periodic_200:steady_state",
+      "pass": true,
+      "max_absolute_error": 2.3592239273284576e-16
+    },
+    {
+      "name": "periodic_200:event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "periodic_200:bounds_finite_monotonic",
+      "pass": true
+    },
+    {
+      "name": "first_event_recovered_amplitude",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "same_time_second_event_order",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "backward_event_rejected_without_mutation",
+      "pass": true
+    },
+    {
+      "name": "analytic_pause_recovery",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "read_only_queries_do_not_mutate_or_depress",
+      "pass": true
+    },
+    {
+      "name": "no_events_preserve_recovered_efficacy",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "explicit_static_null_control",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "fly_train_15:independent_full_train_amplitudes",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_15:independent_response_convolution",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_15:no_event_quantization",
+      "pass": true
+    },
+    {
+      "name": "fly_train_15:declared_event_counts",
+      "pass": true
+    },
+    {
+      "name": "fly_train_20:independent_full_train_amplitudes",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_20:independent_response_convolution",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_20:no_event_quantization",
+      "pass": true
+    },
+    {
+      "name": "fly_train_20:declared_event_counts",
+      "pass": true
+    },
+    {
+      "name": "charge_20_0.1:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_20_0.1:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_20_0.5:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "name": "charge_20_0.5:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "name": "fly_train_50:independent_full_train_amplitudes",
+      "pass": true,
+      "max_absolute_error": 1.942890293094024e-16
+    },
+    {
+      "name": "fly_train_50:independent_response_convolution",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_50:no_event_quantization",
+      "pass": true
+    },
+    {
+      "name": "fly_train_50:declared_event_counts",
+      "pass": true
+    },
+    {
+      "name": "charge_50_0.1:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_50_0.1:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_50_0.5:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "name": "charge_50_0.5:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "name": "fly_train_100:independent_full_train_amplitudes",
+      "pass": true,
+      "max_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "name": "fly_train_100:independent_response_convolution",
+      "pass": true,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "name": "fly_train_100:no_event_quantization",
+      "pass": true
+    },
+    {
+      "name": "fly_train_100:declared_event_counts",
+      "pass": true
+    },
+    {
+      "name": "charge_100_0.1:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_100_0.1:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_100_0.5:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "charge_100_0.5:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "fly_train_200:independent_full_train_amplitudes",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_200:independent_response_convolution",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "fly_train_200:no_event_quantization",
+      "pass": true
+    },
+    {
+      "name": "fly_train_200:declared_event_counts",
+      "pass": true
+    },
+    {
+      "name": "charge_200_0.1:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "name": "charge_200_0.1:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "name": "charge_200_0.5:independent_test_only_integral",
+      "pass": true,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "name": "charge_200_0.5:independent_full_history_integral",
+      "pass": true,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "name": "post_train_50_baselineFalse:recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_50_baselineFalse:normalized_deficit_recovery",
+      "pass": true,
+      "max_absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "name": "post_train_50_baselineTrue:recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_50_baselineTrue:normalized_deficit_recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_200_baselineFalse:recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_200_baselineFalse:normalized_deficit_recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_200_baselineTrue:recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "post_train_200_baselineTrue:normalized_deficit_recovery",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "7hz_pause_recovery",
+      "pass": true,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "7hz_pause_fraction_of_deficit_recovered",
+      "pass": true,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "all_saved_arrays_finite",
+      "pass": true
+    },
+    {
+      "name": "frozen_input_and_runtime_bytes_unchanged",
+      "pass": true
+    }
+  ],
+  "fixed_parameters": {
+    "per_event_retention_factor": 0.75,
+    "recovery_tau_seconds": 0.3,
+    "normalized_response_kernel_tau_seconds": 0.002
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "periodic_reference": [
+    {
+      "rate_hz": 7,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.7092785405161885,
+      "analytic_steady_state": 0.7092785405161866
+    },
+    {
+      "rate_hz": 15,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.4988462126809846,
+      "analytic_steady_state": 0.49884621268098533
+    },
+    {
+      "rate_hz": 20,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.42043824017326714,
+      "analytic_steady_state": 0.4204382401732667
+    },
+    {
+      "rate_hz": 50,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.21615131072035773,
+      "analytic_steady_state": 0.21615131072035837
+    },
+    {
+      "rate_hz": 100,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.11939308533379646,
+      "analytic_steady_state": 0.11939308533379692
+    },
+    {
+      "rate_hz": 200,
+      "pulses": 256,
+      "initial_amplitude": 1.0,
+      "last_amplitude": 0.06299074824023121,
+      "analytic_steady_state": 0.06299074824023145
+    }
+  ],
+  "train_predictions": [
+    {
+      "test_rate_hz": 15,
+      "test_events": 8,
+      "first_test_amplitude": 0.7092785406656722,
+      "last_test_time_s": 0.4666666666666667,
+      "last_test_amplitude": 0.5047750851598516,
+      "last_over_first_test_amplitude": 0.7116739845055935,
+      "status": "fixed_rat_source_model_prediction_not_a_fit_or_measured_fly_value"
+    },
+    {
+      "test_rate_hz": 20,
+      "test_events": 10,
+      "first_test_amplitude": 0.7092785406656722,
+      "last_test_time_s": 0.45,
+      "last_test_amplitude": 0.425277371805764,
+      "last_over_first_test_amplitude": 0.5995914826446499,
+      "status": "fixed_rat_source_model_prediction_not_a_fit_or_measured_fly_value"
+    },
+    {
+      "test_rate_hz": 50,
+      "test_events": 25,
+      "first_test_amplitude": 0.7092785406656722,
+      "last_test_time_s": 0.48,
+      "last_test_amplitude": 0.2162512090288803,
+      "last_over_first_test_amplitude": 0.30488897750370986,
+      "status": "fixed_rat_source_model_prediction_not_a_fit_or_measured_fly_value"
+    },
+    {
+      "test_rate_hz": 100,
+      "test_events": 50,
+      "first_test_amplitude": 0.7092785406656722,
+      "last_test_time_s": 0.49,
+      "last_test_amplitude": 0.11939317231430506,
+      "last_over_first_test_amplitude": 0.1683304449085012,
+      "status": "fixed_rat_source_model_prediction_not_a_fit_or_measured_fly_value"
+    },
+    {
+      "test_rate_hz": 200,
+      "test_events": 100,
+      "first_test_amplitude": 0.7092785406656722,
+      "last_test_time_s": 0.495,
+      "last_test_amplitude": 0.06299074824028454,
+      "last_over_first_test_amplitude": 0.08880960670425254,
+      "status": "fixed_rat_source_model_prediction_not_a_fit_or_measured_fly_value"
+    }
+  ],
+  "charge_predictions": [
+    {
+      "rate_hz": 20,
+      "window_s": 0.1,
+      "test_only_unit_amplitude_seconds": 0.0026261806153292087,
+      "with_baseline_tail_unit_amplitude_seconds": 0.0026261806153292087,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 0.40347262885976054
+    },
+    {
+      "rate_hz": 20,
+      "window_s": 0.5,
+      "test_only_unit_amplitude_seconds": 0.00997402270774212,
+      "with_baseline_tail_unit_amplitude_seconds": 0.00997402270774212,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 0.6143832914456476
+    },
+    {
+      "rate_hz": 50,
+      "window_s": 0.1,
+      "test_only_unit_amplitude_seconds": 0.004904908964838294,
+      "with_baseline_tail_unit_amplitude_seconds": 0.004904908964838294,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 0.7535645122081724
+    },
+    {
+      "rate_hz": 50,
+      "window_s": 0.5,
+      "test_only_unit_amplitude_seconds": 0.014112553325532712,
+      "with_baseline_tail_unit_amplitude_seconds": 0.014112553325532712,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 0.8693099280907699
+    },
+    {
+      "rate_hz": 100,
+      "window_s": 0.1,
+      "test_only_unit_amplitude_seconds": 0.006508943674199073,
+      "with_baseline_tail_unit_amplitude_seconds": 0.006508943674199073,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 1.0
+    },
+    {
+      "rate_hz": 100,
+      "window_s": 0.5,
+      "test_only_unit_amplitude_seconds": 0.01623420240526591,
+      "with_baseline_tail_unit_amplitude_seconds": 0.01623420240526591,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 1.0
+    },
+    {
+      "rate_hz": 200,
+      "window_s": 0.1,
+      "test_only_unit_amplitude_seconds": 0.0074228443070618565,
+      "with_baseline_tail_unit_amplitude_seconds": 0.0074228443070618565,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 1.1404069045005585
+    },
+    {
+      "rate_hz": 200,
+      "window_s": 0.5,
+      "test_only_unit_amplitude_seconds": 0.01751292512067631,
+      "with_baseline_tail_unit_amplitude_seconds": 0.01751292512067631,
+      "baseline_tail_difference": 0.0,
+      "normalized_to_same_window_100hz": 1.0787672029391244
+    }
+  ],
+  "recovery_predictions": [
+    {
+      "name": "recovery_50_baseline0",
+      "baseline": "fully_recovered",
+      "test_hz": 50,
+      "last_event_time_s": 0.48,
+      "anchor_nominal_train_end_s": 0.5,
+      "amplitude_at_anchor": 0.2162627246993603,
+      "probe_amplitude_after_300ms": 0.7116791691371719,
+      "probe_amplitude_after_1s": 0.9720409616549313,
+      "probe_amplitude_after_2s": 0.9990025894520824,
+      "probe_convention": "Independent single probes queried without depressing state; grid is not a measured experimental schedule"
+    },
+    {
+      "name": "recovery_50_baseline1",
+      "baseline": "7Hz4s",
+      "test_hz": 50,
+      "last_event_time_s": 0.48,
+      "anchor_nominal_train_end_s": 0.5,
+      "amplitude_at_anchor": 0.21622140239441978,
+      "probe_amplitude_after_300ms": 0.7116639675107225,
+      "probe_amplitude_after_1s": 0.9720394875232997,
+      "probe_amplitude_after_2s": 0.9990025368639204,
+      "probe_convention": "Independent single probes queried without depressing state; grid is not a measured experimental schedule"
+    },
+    {
+      "name": "recovery_200_baseline0",
+      "baseline": "fully_recovered",
+      "test_hz": 200,
+      "last_event_time_s": 0.495,
+      "anchor_nominal_train_end_s": 0.5,
+      "amplitude_at_anchor": 0.06299074824028825,
+      "probe_amplitude_after_300ms": 0.6552935600901659,
+      "probe_amplitude_after_1s": 0.9665731381864101,
+      "probe_amplitude_after_2s": 0.9988075303540425,
+      "probe_convention": "Independent single probes queried without depressing state; grid is not a measured experimental schedule"
+    },
+    {
+      "name": "recovery_200_baseline1",
+      "baseline": "7Hz4s",
+      "test_hz": 200,
+      "last_event_time_s": 0.495,
+      "anchor_nominal_train_end_s": 0.5,
+      "amplitude_at_anchor": 0.06299074824027062,
+      "probe_amplitude_after_300ms": 0.6552935600901595,
+      "probe_amplitude_after_1s": 0.9665731381864096,
+      "probe_amplitude_after_2s": 0.9988075303540425,
+      "probe_convention": "Independent single probes queried without depressing state; grid is not a measured experimental schedule"
+    },
+    {
+      "name": "pause7",
+      "baseline_events": 28,
+      "anchor_last_event_s": -0.14285714285714285,
+      "amplitude_immediately_after_last_event": 0.5319589056278012,
+      "probe_amplitude_after_300ms": 0.8278173037570853,
+      "probe_amplitude_after_1s": 0.9833031051131255,
+      "probe_amplitude_after_7p5s": 0.9999999999934999,
+      "scope": "Scenario normalized to fully recovered amplitude1; not the unresolved author recovery-ratio convention"
+    }
+  ],
+  "prediction_status": "Fixed rat-source scalar model under declared fly-protocol timing scenarios; no comparison with digitized or raw fly data",
+  "model_fitted": false,
+  "runtime_integrated": false,
+  "brain_simulated": false,
+  "uniform_recovery_property": {
+    "time_to_recover_fraction_1_minus_exp_minus1_s": 0.3,
+    "time_to_recover_99percent_of_current_deficit_s": 1.3815510557964272,
+    "scope": "Analytic consequence of a single recovery state, not a fitted fly measurement"
+  },
+  "artifacts": {
+    "validation/synaptic-depression-reference-events.csv": {
+      "bytes": 31580,
+      "sha256": "776b317e02ebb31728cdb3a66aacd69c524e3a0517829c7999fcf514d95365de"
+    },
+    "validation/synaptic-depression-reference-charge-predictions.csv": {
+      "bytes": 698,
+      "sha256": "c9c08722572c9bd002885eda2520a1cc11323af20385a025cea28ce0aa7b346e"
+    },
+    "validation/synaptic-depression-reference-arrays.npz": {
+      "bytes": 550403,
+      "sha256": "49e64860028ad2f87292c93dea382b178b3f5cfe6f1faafc42be9cd7adddf76e"
+    }
+  }
+}
