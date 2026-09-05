@@ -1,0 +1,24 @@
+{
+  "launched_utc": "2026-09-05T21:21:05.043072+00:00",
+  "pid": 26213,
+  "command": [
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+    "/Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_kc_gamma_intervention.py",
+    "run"
+  ],
+  "run_dir": "runs/20260905T211955222985Z-kc-gamma-intervention",
+  "parent_log": "runs/20260905T211955222985Z-kc-gamma-intervention-parent.log",
+  "plan": {
+    "path": "validation/kc-gamma-intervention-plan.json",
+    "bytes": 31787,
+    "sha256": "1136fe06fc96ad63ea676be69b7caefd7f8ce419f102488bf809d1b85f1e347b"
+  },
+  "preflight": {
+    "path": "validation/kc-gamma-intervention-launch-preflight.json",
+    "bytes": 1344,
+    "sha256": "7fbdf1b37ee524e716f43887681b6d43beca804eaa8c3f611507cecfde635e79"
+  },
+  "source_commit": "6af8d9ef0692fcf30bb06c81020af51dfc8f1048",
+  "remote_verified_before_launch": true,
+  "scope": "One fixed six-trial batch; no automatic restart. No individual outcomes inspected."
+}
