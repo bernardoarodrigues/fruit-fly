@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T20:48:37.842965+00:00",
+  "git_head": "d6d2f274f7568d5e3b90b2dd71c986594764ccd8",
+  "source_sha256": {
+    "scripts/assay_kc_synaptic_response.py": "ba3e318c7284e6aa682eb50b4f700e868a42ee4f10f1a9630ff0fbc52454d600",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "scripts/inhibitory_factorial_solver.py": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+    "research/21-pn-kc-physiology-calibration.md": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174",
+    "docs/pn-kc-apl-inventory.md": "132deb6b13b1d715c1778f0caebad69cf54b6980723c84975d68a3216428efc1",
+    "data/raw/pn-kc-physiology/turner2008-author.pdf": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d",
+    "data/raw/pn-kc-physiology/turner2008-author.txt": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+  },
+  "scope": "Five deterministic isolated effective-event arms, all completed before analysis. No full network, graph event/claw mapping, APL, recurrent assay, motor tuning or default promotion.",
+  "already_seen": "Source summary means and analytic preview 3.57559ms candidate rise have already been inspected. This is a prospective computational check, not blind validation.",
+  "targets": {
+    "epsc_rise_ms": 0.9,
+    "epsc_decay_ms": 2.8,
+    "epsp_rise_ms": 2.1,
+    "epsp_decay_ms": 11.5,
+    "epsp_peak_mv": 1.4,
+    "source_holding_mv": -58.0,
+    "source_clamp_mv": -60.0,
+    "intrinsic_tau_strict_lower_bound_ms": 200.0,
+    "input_resistance_strict_lower_bound_gohm": 10.0,
+    "threshold_distance_mv": 21.5
+  },
+  "source": "Turner et al. 2008 Fig3, female cohorts, not paired EPSP/EPSC cells; reported dispersion is not a confidence interval or hard cell bound.",
+  "equation": "q=exp(-t/td)-exp(-t/tr); du/dt=(A*q-u)/tm. tr=0 denotes q=exp(-t/td). u is baseline-subtracted mV, A is effective equilibrium-voltage gain, not pA/nS/contact.",
+  "identification": {
+    "epsc": "td=2.8 under asymptotic interpretation; Brent tr in [0.001,2.799] to match 10-90 rise0.9.",
+    "epsc_decay_anchored": "tm=11.5 under asymptotic interpretation; predict EPSP rise.",
+    "epsc_rise_anchored": "Same EPSC; Brent tm in [0.05,11.5] to match EPSP rise2.1; predict late decay.",
+    "intrinsic_boundary": "Same EPSC; tm=200 is the lower boundary diagnostic, not an estimate or strict-bound pass.",
+    "amplitude": "Each non-contact arm has continuous peak1.4mV by one linear gain. Control amplitude-only changes p0 but leaves tm20/td5/tr0.",
+    "current_contact": "Native float32(0.275) nominal single-contact weight, not the measured spontaneous event."
+  },
+  "arm_ids": [
+    "current_contact",
+    "current_amplitude_only",
+    "epsc_decay_anchored",
+    "epsc_rise_anchored",
+    "intrinsic_boundary"
+  ],
+  "recording": {
+    "duration_ms": 2000.0,
+    "timesteps_ms": [
+      0.1,
+      0.05,
+      0.025
+    ],
+    "primary_dt_ms": 0.1,
+    "event": "State initialized just after one accepted postsynaptic event at t=0. No presynaptic train, delay queue or release model is inferred.",
+    "current_control": "Unchanged LIFNetwork zero-edge 6-cell fixture: zero/contact/scaled event at native -52mV and held -58mV using constant current_mv=-6. Native thresholds/refractory retained; require no spikes/RNG changes.",
+    "h1_control": "Actual hybrid_step with h=0, native rest, same three initial p values at dt0.1; compare native LIF samples. H1 inhibition is not exercised.",
+    "candidates": "Exact matrix-exponential transitions, separate subthreshold testbed, no threshold/reset selection.",
+    "clamp": "Normalized input-current proxy only. At fixed -60mV baseline, q/peak(q) represents inward current magnitude without pA calibration; no current feedback into clamped voltage.",
+    "intrinsic": "Normalized -1mV asymptotic DC response and relaxation. No pA scale, no inferred Rin or capacitance."
+  },
+  "metrics": {
+    "primary": "Continuous baseline-to-peak and 10-90 rising crossings; asymptotic late poles are conditional decay summaries.",
+    "secondary": "Falling80-20 and50-10 equivalent exponential constants; descriptive, not a reproduction of unspecified source fitting windows.",
+    "sampling": "Save all traces at each dt, compute sampled peak and interpolated rise, compare common times; exact integrators need not have monotonic roundoff."
+  },
+  "numerical_tolerances": {
+    "trace_atol_mv": 1e-08,
+    "trace_rtol": 1e-10,
+    "root_target_ms": 1e-08,
+    "independent_ode_atol_mv": 2e-08,
+    "common_time_atol_mv": 1e-08,
+    "area_rtol": 0.0002
+  },
+  "conclusion_rule": "Numerical validity is separate from conditional central-summary compatibility. No pass/fail biological tolerance from unspecified dispersion; retain signed mean residuals and strict intrinsic failure. Threshold, Rin, capacitance and contact gain unidentified.",
+  "held_out": "Gruntman 2013 amplitudes and multi-claw responses excluded from parameter identification; already inspected, not blind. No new stochastic seed claim.",
+  "failure_policy": "Do not overwrite frozen artifacts. Retain failures and any subsequent correction separately. No automatic parameter installation.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "numba": "0.67.0"
+  }
+}

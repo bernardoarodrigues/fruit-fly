@@ -1,0 +1,186 @@
+{
+  "schema": "kc-synaptic-response-plot/v1",
+  "created_utc": "2026-09-05T20:51:00.115269+00:00",
+  "passed": true,
+  "inputs": [
+    {
+      "path": "scripts/plot_kc_synaptic_response.py",
+      "bytes": 13284,
+      "sha256": "9a35c79865fda1515c5b4214216e3c030e95d5ddfaea66a06dd51ef0d6e5f21d"
+    },
+    {
+      "path": "validation/kc-synaptic-response-results.json",
+      "bytes": 24659,
+      "sha256": "809216ec1d3b5e7072d3d24a6a7e367f13ff5a6dd1e4b9a4241fb07866cf0a82"
+    },
+    {
+      "path": "validation/kc-synaptic-response-plan.json",
+      "bytes": 5399,
+      "sha256": "1c0da89f8c897710306c9657bc0103a90ce406b053341d8e76cf24b6ac48f51a"
+    },
+    {
+      "path": "validation/kc-synaptic-response-arrays.npz",
+      "bytes": 18640163,
+      "sha256": "a46ff5f82decf45367dea2616fb5f29b40be9be139af63fec9d92fb5e22acabc"
+    },
+    {
+      "path": "scripts/assay_kc_synaptic_response.py",
+      "bytes": 17212,
+      "sha256": "ba3e318c7284e6aa682eb50b4f700e868a42ee4f10f1a9630ff0fbc52454d600"
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "research/21-pn-kc-physiology-calibration.md",
+      "bytes": 13958,
+      "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+    },
+    {
+      "path": "docs/pn-kc-apl-inventory.md",
+      "bytes": 8523,
+      "sha256": "132deb6b13b1d715c1778f0caebad69cf54b6980723c84975d68a3216428efc1"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.txt",
+      "bytes": 122695,
+      "sha256": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+    }
+  ],
+  "output": {
+    "path": "validation/kc-synaptic-response-figure.png",
+    "bytes": 452650,
+    "sha256": "8a35e161efd48f8bd5fe623f8cd2d2f188ad8df0997247c056fcadd913bfafc6"
+  },
+  "plot_only": true,
+  "model_execution": false,
+  "source_waveforms_plotted": false,
+  "source_summary_origin": "Printed Turner 2008 Fig3/results; no new digitization",
+  "primary_dt_ms": 0.1,
+  "plotted_points_per_arm": {
+    "epsc_normalized": 151,
+    "epsp_mv": 601,
+    "intrinsic_relaxation_mv": 6001
+  },
+  "epsp_normalization": "divide saved mV by continuous own-arm peak",
+  "unscaled_epsp_peaks_mv": {
+    "current_contact": 0.0433097870288506,
+    "current_amplitude_only": 1.4,
+    "epsc_decay_anchored": 1.4,
+    "epsc_rise_anchored": 1.4,
+    "intrinsic_boundary": 1.4
+  },
+  "current_normalized_curve_max_differences": {
+    "epsc_normalized": 2.220446049250313e-16,
+    "epsp_mv": 1.6693450400621666e-11,
+    "intrinsic_relaxation_mv": 0.0
+  },
+  "candidate_epsc_max_difference": 0.0,
+  "metrics": [
+    {
+      "family": "epsc",
+      "metric": "rise_10_90_ms",
+      "reported_mean_ms": 0.9,
+      "reported_dispersion_ms": 0.4,
+      "model_predictions_ms": {
+        "current_contact": 0.0,
+        "current_amplitude_only": 0.0,
+        "epsc_decay_anchored": 0.9000000000000058,
+        "epsc_rise_anchored": 0.9000000000000058,
+        "intrinsic_boundary": 0.9000000000000058
+      }
+    },
+    {
+      "family": "epsc",
+      "metric": "asymptotic_decay_ms",
+      "reported_mean_ms": 2.8,
+      "reported_dispersion_ms": 1.2,
+      "model_predictions_ms": {
+        "current_contact": 5.0,
+        "current_amplitude_only": 5.0,
+        "epsc_decay_anchored": 2.8,
+        "epsc_rise_anchored": 2.8,
+        "intrinsic_boundary": 2.8
+      }
+    },
+    {
+      "family": "epsp",
+      "metric": "rise_10_90_ms",
+      "reported_mean_ms": 2.1,
+      "reported_dispersion_ms": 0.5,
+      "model_predictions_ms": {
+        "current_contact": 5.120713751351091,
+        "current_amplitude_only": 5.120713751351091,
+        "epsc_decay_anchored": 3.5755913984881342,
+        "epsc_rise_anchored": 2.099999999999985,
+        "intrinsic_boundary": 5.907895764161181
+      }
+    },
+    {
+      "family": "epsp",
+      "metric": "asymptotic_decay_ms",
+      "reported_mean_ms": 11.5,
+      "reported_dispersion_ms": 5.3,
+      "model_predictions_ms": {
+        "current_contact": 20.0,
+        "current_amplitude_only": 20.0,
+        "epsc_decay_anchored": 11.5,
+        "epsc_rise_anchored": 2.8,
+        "intrinsic_boundary": 200.0
+      }
+    }
+  ],
+  "intrinsic_lower_boundary_ms": 200.0,
+  "intrinsic_strict_bound_satisfied": false,
+  "limitations": [
+    "Reported dispersion is not identified here as SD or SEM and is not a confidence interval.",
+    "Late-decay comparison is conditional on an asymptotic interpretation; source fit windows are unspecified.",
+    "EPSC is a normalized current proxy without pA amplitude; EPSP normalization hides absolute gain, separately disclosed.",
+    "Intrinsic lower-bound case equals 200 ms and does not satisfy the strict greater-than measurement.",
+    "No mapped PN spike/contact, APL, threshold fitting, network run or runtime promotion."
+  ],
+  "visual_correction": {
+    "reason": "Initial footer overlapped bottom Time (ms) labels. Footer moved from y=.09 to y=.035; numerical inputs and plotted quantities unchanged.",
+    "initial_artifacts": [
+      {
+        "path": "validation/kc-synaptic-response-plot-initial/plot_kc_synaptic_response.py",
+        "bytes": 12776,
+        "sha256": "eb92cfed81f12be480d3ae6ca46f28c97be0f972e05c10944313d490e7c4ab27"
+      },
+      {
+        "path": "validation/kc-synaptic-response-plot-initial/kc-synaptic-response-figure.png",
+        "bytes": 453729,
+        "sha256": "85827d4baf2df6ced9213cd961d146c648d866d4bde283df7a613b2d817c6a59"
+      },
+      {
+        "path": "validation/kc-synaptic-response-plot-initial/kc-synaptic-response-plot-receipt.json",
+        "bytes": 5249,
+        "sha256": "c988995512967f090d4b9b3dd389331b74d284082b8fa40f606f6912e3285b5c"
+      }
+    ]
+  },
+  "visual_review": {
+    "method": "view_image of the final saved PNG",
+    "passed": true,
+    "checked": [
+      "footer clear of bottom axis labels",
+      "all five arms labeled; shared curves disclosed",
+      "EPSP peak normalization and native contact amplitude disclosed",
+      "intrinsic strict-bound failure explicit",
+      "source summary dispersion distinguished from confidence interval",
+      "source recordings not implied"
+    ]
+  }
+}

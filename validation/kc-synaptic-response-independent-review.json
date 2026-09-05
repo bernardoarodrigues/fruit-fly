@@ -1,0 +1,935 @@
+{
+  "schema": 1,
+  "passed": true,
+  "completed_utc": "2026-09-05T20:51:46.898287+00:00",
+  "source_start": [
+    {
+      "path": "scripts/review_kc_synaptic_response.py",
+      "bytes": 20384,
+      "sha256": "1798e36c0094b4de507baab72704ad3997856ea0c51408d2f9fdd46ca5b94846"
+    },
+    {
+      "path": "validation/kc-synaptic-response-plan.json",
+      "bytes": 5399,
+      "sha256": "1c0da89f8c897710306c9657bc0103a90ce406b053341d8e76cf24b6ac48f51a"
+    },
+    {
+      "path": "validation/kc-synaptic-response-results.json",
+      "bytes": 24659,
+      "sha256": "809216ec1d3b5e7072d3d24a6a7e367f13ff5a6dd1e4b9a4241fb07866cf0a82"
+    },
+    {
+      "path": "validation/kc-synaptic-response-arrays.npz",
+      "bytes": 18640163,
+      "sha256": "a46ff5f82decf45367dea2616fb5f29b40be9be139af63fec9d92fb5e22acabc"
+    },
+    {
+      "path": "scripts/assay_kc_synaptic_response.py",
+      "bytes": 17212,
+      "sha256": "ba3e318c7284e6aa682eb50b4f700e868a42ee4f10f1a9630ff0fbc52454d600"
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "research/21-pn-kc-physiology-calibration.md",
+      "bytes": 13958,
+      "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+    },
+    {
+      "path": "docs/pn-kc-apl-inventory.md",
+      "bytes": 8523,
+      "sha256": "132deb6b13b1d715c1778f0caebad69cf54b6980723c84975d68a3216428efc1"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.txt",
+      "bytes": 122695,
+      "sha256": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+    }
+  ],
+  "source_end": [
+    {
+      "path": "scripts/review_kc_synaptic_response.py",
+      "bytes": 20384,
+      "sha256": "1798e36c0094b4de507baab72704ad3997856ea0c51408d2f9fdd46ca5b94846"
+    },
+    {
+      "path": "validation/kc-synaptic-response-plan.json",
+      "bytes": 5399,
+      "sha256": "1c0da89f8c897710306c9657bc0103a90ce406b053341d8e76cf24b6ac48f51a"
+    },
+    {
+      "path": "validation/kc-synaptic-response-results.json",
+      "bytes": 24659,
+      "sha256": "809216ec1d3b5e7072d3d24a6a7e367f13ff5a6dd1e4b9a4241fb07866cf0a82"
+    },
+    {
+      "path": "validation/kc-synaptic-response-arrays.npz",
+      "bytes": 18640163,
+      "sha256": "a46ff5f82decf45367dea2616fb5f29b40be9be139af63fec9d92fb5e22acabc"
+    },
+    {
+      "path": "scripts/assay_kc_synaptic_response.py",
+      "bytes": 17212,
+      "sha256": "ba3e318c7284e6aa682eb50b4f700e868a42ee4f10f1a9630ff0fbc52454d600"
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "research/21-pn-kc-physiology-calibration.md",
+      "bytes": 13958,
+      "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+    },
+    {
+      "path": "docs/pn-kc-apl-inventory.md",
+      "bytes": 8523,
+      "sha256": "132deb6b13b1d715c1778f0caebad69cf54b6980723c84975d68a3216428efc1"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.txt",
+      "bytes": 122695,
+      "sha256": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+    }
+  ],
+  "preflight": {
+    "passed": true,
+    "checks": 4,
+    "scope": "Independent ODE equal-pole limit, current exponential, stable divided difference, and manufactured sampled crossing interpolation."
+  },
+  "completed_arms": [
+    "current_contact",
+    "current_amplitude_only",
+    "epsc_decay_anchored",
+    "epsc_rise_anchored",
+    "intrinsic_boundary"
+  ],
+  "check_count": 1152,
+  "categories": {
+    "frozen_plan": {
+      "checked": 1,
+      "passed": 1
+    },
+    "completed_result": {
+      "checked": 1,
+      "passed": 1
+    },
+    "result_links": {
+      "checked": 1,
+      "passed": 1
+    },
+    "no_biological_promotion": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_source_pins": {
+      "checked": 7,
+      "passed": 7
+    },
+    "five_arm_schema": {
+      "checked": 1,
+      "passed": 1
+    },
+    "fixed_recording_grid": {
+      "checked": 1,
+      "passed": 1
+    },
+    "control_parameters": {
+      "checked": 1,
+      "passed": 1
+    },
+    "declared_identification": {
+      "checked": 1,
+      "passed": 1
+    },
+    "array_shape_dtype_finite": {
+      "checked": 74,
+      "passed": 74
+    },
+    "exact_time_grid": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_closed_form_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_closed_form": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_p_closed_form_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_p_closed_form": {
+      "checked": 3,
+      "passed": 3
+    },
+    "post_event_initial_state": {
+      "checked": 3,
+      "passed": 3
+    },
+    "first_interval_response": {
+      "checked": 3,
+      "passed": 3
+    },
+    "zero_native_hold_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "zero_native_hold": {
+      "checked": 3,
+      "passed": 3
+    },
+    "zero_source_hold_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "zero_source_hold": {
+      "checked": 3,
+      "passed": 3
+    },
+    "holding_affine_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "holding_affine": {
+      "checked": 3,
+      "passed": 3
+    },
+    "zero_event_p": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_subthreshold": {
+      "checked": 3,
+      "passed": 3
+    },
+    "native_reported_counters": {
+      "checked": 3,
+      "passed": 3
+    },
+    "positive_parameters": {
+      "checked": 5,
+      "passed": 5
+    },
+    "continuous_ODE_metric_keys": {
+      "checked": 25,
+      "passed": 25
+    },
+    "continuous_ODE_metric_shape": {
+      "checked": 130,
+      "passed": 130
+    },
+    "continuous_ODE_metric": {
+      "checked": 130,
+      "passed": 130
+    },
+    "continuous_ODE_metric_length": {
+      "checked": 10,
+      "passed": 10
+    },
+    "signed_mean_residuals_keys": {
+      "checked": 5,
+      "passed": 5
+    },
+    "signed_mean_residuals_shape": {
+      "checked": 25,
+      "passed": 25
+    },
+    "signed_mean_residuals": {
+      "checked": 25,
+      "passed": 25
+    },
+    "intrinsic_no_fit_claim": {
+      "checked": 5,
+      "passed": 5
+    },
+    "intrinsic_strict_bound_not_met": {
+      "checked": 5,
+      "passed": 5
+    },
+    "all_saved_EPSP_vs_ODE_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "all_saved_EPSP_vs_ODE": {
+      "checked": 15,
+      "passed": 15
+    },
+    "all_saved_clamp_vs_ODE_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "all_saved_clamp_vs_ODE": {
+      "checked": 15,
+      "passed": 15
+    },
+    "independent_closed_form_vs_ODE_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "independent_closed_form_vs_ODE": {
+      "checked": 15,
+      "passed": 15
+    },
+    "saved_vs_independent_closed_form_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "saved_vs_independent_closed_form": {
+      "checked": 15,
+      "passed": 15
+    },
+    "intrinsic_step_trace_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "intrinsic_step_trace": {
+      "checked": 15,
+      "passed": 15
+    },
+    "intrinsic_relaxation_trace_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "intrinsic_relaxation_trace": {
+      "checked": 15,
+      "passed": 15
+    },
+    "sampled_EPSP_metrics_keys": {
+      "checked": 15,
+      "passed": 15
+    },
+    "sampled_EPSP_metrics_shape": {
+      "checked": 45,
+      "passed": 45
+    },
+    "sampled_EPSP_metrics": {
+      "checked": 45,
+      "passed": 45
+    },
+    "sampled_EPSC_metrics_keys": {
+      "checked": 15,
+      "passed": 15
+    },
+    "sampled_EPSC_metrics_shape": {
+      "checked": 45,
+      "passed": 45
+    },
+    "sampled_EPSC_metrics": {
+      "checked": 45,
+      "passed": 45
+    },
+    "reported_closed_form_max_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "reported_closed_form_max": {
+      "checked": 15,
+      "passed": 15
+    },
+    "reported_sampled_area_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "reported_sampled_area": {
+      "checked": 15,
+      "passed": 15
+    },
+    "reported_infinite_area_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "reported_infinite_area": {
+      "checked": 15,
+      "passed": 15
+    },
+    "finite_voltage_area": {
+      "checked": 15,
+      "passed": 15
+    },
+    "declared_infinite_area_gate": {
+      "checked": 15,
+      "passed": 15
+    },
+    "normalized_current_discrete_area_shape": {
+      "checked": 15,
+      "passed": 15
+    },
+    "normalized_current_discrete_area": {
+      "checked": 15,
+      "passed": 15
+    },
+    "current_initial_condition": {
+      "checked": 15,
+      "passed": 15
+    },
+    "voltage_initial_condition": {
+      "checked": 15,
+      "passed": 15
+    },
+    "native_trace_extract": {
+      "checked": 6,
+      "passed": 6
+    },
+    "common_time_voltage_shape": {
+      "checked": 10,
+      "passed": 10
+    },
+    "common_time_voltage": {
+      "checked": 10,
+      "passed": 10
+    },
+    "common_time_current_shape": {
+      "checked": 10,
+      "passed": 10
+    },
+    "common_time_current": {
+      "checked": 10,
+      "passed": 10
+    },
+    "amplitude_identification_shape": {
+      "checked": 4,
+      "passed": 4
+    },
+    "amplitude_identification": {
+      "checked": 4,
+      "passed": 4
+    },
+    "current_rise_identification_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "current_rise_identification": {
+      "checked": 3,
+      "passed": 3
+    },
+    "voltage_rise_identification_shape": {
+      "checked": 1,
+      "passed": 1
+    },
+    "voltage_rise_identification": {
+      "checked": 1,
+      "passed": 1
+    },
+    "H1_native_voltage_shape": {
+      "checked": 1,
+      "passed": 1
+    },
+    "H1_native_voltage": {
+      "checked": 1,
+      "passed": 1
+    },
+    "H1_native_current_shape": {
+      "checked": 1,
+      "passed": 1
+    },
+    "H1_native_current": {
+      "checked": 1,
+      "passed": 1
+    },
+    "equal_pole_analytic_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "equal_pole_analytic": {
+      "checked": 3,
+      "passed": 3
+    },
+    "equal_pole_independent_ODE_shape": {
+      "checked": 3,
+      "passed": 3
+    },
+    "equal_pole_independent_ODE": {
+      "checked": 3,
+      "passed": 3
+    },
+    "all_saved_arrays_reviewed": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_inputs_unchanged": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "numerical_max_abs_differences": {
+    "native_closed_form": 4.789058039023075e-12,
+    "native_p_closed_form": 1.5987211554602254e-14,
+    "zero_native_hold": 0.0,
+    "zero_source_hold": 0.0,
+    "holding_affine": 1.9468870959826745e-12,
+    "continuous_ODE_metric": 4.241940132487798e-12,
+    "signed_mean_residuals": 1.5241141682054149e-12,
+    "all_saved_EPSP_vs_ODE": 6.763478666016454e-12,
+    "all_saved_clamp_vs_ODE": 7.614044154319516e-12,
+    "independent_closed_form_vs_ODE": 6.5845107144468784e-12,
+    "saved_vs_independent_closed_form": 4.789058039023075e-12,
+    "intrinsic_step_trace": 1.1102230246251565e-16,
+    "intrinsic_relaxation_trace": 0.0,
+    "sampled_EPSP_metrics": 0.0,
+    "sampled_EPSC_metrics": 0.0,
+    "reported_closed_form_max": 4.440892098500626e-16,
+    "reported_sampled_area": 0.0,
+    "reported_infinite_area": 0.0,
+    "normalized_current_discrete_area": 7.620570841027074e-13,
+    "common_time_voltage": 4.04298816647497e-12,
+    "common_time_current": 5.995204332975845e-15,
+    "amplitude_identification": 8.193445921733655e-14,
+    "current_rise_identification": 1.6542323066914832e-13,
+    "voltage_rise_identification": 1.7630341631047486e-13,
+    "H1_native_voltage": 0.0,
+    "H1_native_current": 0.0,
+    "equal_pole_analytic": 1.1879386363489175e-14,
+    "equal_pole_independent_ODE": 1.9356738434339604e-13
+  },
+  "references": [
+    {
+      "id": "current_contact",
+      "ode_method": "DOP853",
+      "ode_rtol": 3e-13,
+      "ode_atol": 3e-14,
+      "nfev": 1907,
+      "continuous": {
+        "epsc": {
+          "peak": 1.0,
+          "peak_time_ms": 0.0,
+          "rise_10_90_ms": 0.0,
+          "rise_crossings_ms": [
+            0.0,
+            0.0
+          ],
+          "asymptotic_decay_ms": 5.0,
+          "fall_crossings_ms": {
+            "0.9": 0.5268025782901206,
+            "0.8": 1.115717756571131,
+            "0.5": 3.465735902799747,
+            "0.2": 8.047189562171292,
+            "0.1": 11.5129254649711
+          },
+          "fall_80_20_equivalent_tau_ms": 5.000000000000511,
+          "fall_50_10_equivalent_tau_ms": 5.00000000000053
+        },
+        "epsp": {
+          "peak": 0.04330978702884142,
+          "peak_time_ms": 9.24196240747018,
+          "rise_10_90_ms": 5.120713751350329,
+          "rise_crossings_ms": [
+            0.3281352746952089,
+            5.448849026045538
+          ],
+          "asymptotic_decay_ms": 20.0,
+          "fall_crossings_ms": {
+            "0.9": 14.805309226264493,
+            "0.8": 18.085399820302083,
+            "0.5": 28.581793357472637,
+            "0.2": 47.16743704979378,
+            "0.1": 61.045195562297486
+          },
+          "fall_80_20_equivalent_tau_ms": 20.978255444967942,
+          "fall_50_10_equivalent_tau_ms": 20.170645884517203
+        }
+      },
+      "signed_mean_residuals": {
+        "epsp_peak_mv": -1.3566902129711584,
+        "epsp_rise_ms": 3.020713751350329,
+        "epsp_asymptotic_decay_ms": 8.5,
+        "epsc_rise_ms": -0.9,
+        "epsc_asymptotic_decay_ms": 2.2
+      },
+      "finite_EPSP_area_mv_ms": 1.3750000298022582,
+      "infinite_EPSP_area_mv_ms": 1.3750000298023224,
+      "unobserved_tail_area_mv_ms": 6.417089082333405e-14,
+      "grids": [
+        {
+          "dt_ms": 0.1,
+          "samples": 20001,
+          "max_ODE_EPSP_error_mv": 1.1739754543527387e-12,
+          "max_ODE_normalized_current_error": 5.9155543939494185e-12,
+          "sampled_peak_gap_mv": 3.826452207866815e-07
+        },
+        {
+          "dt_ms": 0.05,
+          "samples": 40001,
+          "max_ODE_EPSP_error_mv": 1.5719043683664959e-12,
+          "max_ODE_normalized_current_error": 5.915691565234593e-12,
+          "sampled_peak_gap_mv": 1.3980534452340265e-08
+        },
+        {
+          "dt_ms": 0.025,
+          "samples": 80001,
+          "max_ODE_EPSP_error_mv": 5.216991394172222e-12,
+          "max_ODE_normalized_current_error": 5.915805184668943e-12,
+          "sampled_peak_gap_mv": 1.397978127704036e-08
+        }
+      ]
+    },
+    {
+      "id": "current_amplitude_only",
+      "ode_method": "DOP853",
+      "ode_rtol": 3e-13,
+      "ode_atol": 3e-14,
+      "nfev": 2354,
+      "continuous": {
+        "epsc": {
+          "peak": 1.0,
+          "peak_time_ms": 0.0,
+          "rise_10_90_ms": 0.0,
+          "rise_crossings_ms": [
+            0.0,
+            0.0
+          ],
+          "asymptotic_decay_ms": 5.0,
+          "fall_crossings_ms": {
+            "0.9": 0.5268025782891227,
+            "0.8": 1.1157177565711398,
+            "0.5": 3.4657359027997465,
+            "0.2": 8.04718956216791,
+            "0.1": 11.512925464970502
+          },
+          "fall_80_20_equivalent_tau_ms": 4.999999999998065,
+          "fall_50_10_equivalent_tau_ms": 5.000000000000158
+        },
+        "epsp": {
+          "peak": 1.399999999999918,
+          "peak_time_ms": 9.241962407467103,
+          "rise_10_90_ms": 5.120713751352615,
+          "rise_crossings_ms": [
+            0.32813527469524545,
+            5.448849026047861
+          ],
+          "asymptotic_decay_ms": 20.0,
+          "fall_crossings_ms": {
+            "0.9": 14.805309226266338,
+            "0.8": 18.08539982030552,
+            "0.5": 28.581793357470055,
+            "0.2": 47.167437049792206,
+            "0.1": 61.04519556229709
+          },
+          "fall_80_20_equivalent_tau_ms": 20.978255444964326,
+          "fall_50_10_equivalent_tau_ms": 20.170645884518564
+        }
+      },
+      "signed_mean_residuals": {
+        "epsp_peak_mv": -8.193445921733655e-14,
+        "epsp_rise_ms": 3.020713751352615,
+        "epsp_asymptotic_decay_ms": 8.5,
+        "epsc_rise_ms": -0.9,
+        "epsc_asymptotic_decay_ms": 2.2
+      },
+      "finite_EPSP_area_mv_ms": 44.447229455109586,
+      "infinite_EPSP_area_mv_ms": 44.44722945510958,
+      "unobserved_tail_area_mv_ms": -7.105427357601002e-15,
+      "grids": [
+        {
+          "dt_ms": 0.1,
+          "samples": 20001,
+          "max_ODE_EPSP_error_mv": 1.3621037036774961e-12,
+          "max_ODE_normalized_current_error": 2.0789839052353652e-13,
+          "sampled_peak_gap_mv": 1.2369102582399094e-05
+        },
+        {
+          "dt_ms": 0.05,
+          "samples": 40001,
+          "max_ODE_EPSP_error_mv": 1.7600076357031522e-12,
+          "max_ODE_normalized_current_error": 2.0789839052353652e-13,
+          "sampled_peak_gap_mv": 4.519176048933815e-07
+        },
+        {
+          "dt_ms": 0.025,
+          "samples": 80001,
+          "max_ODE_EPSP_error_mv": 5.4050918701524666e-12,
+          "max_ODE_normalized_current_error": 2.0789839052353652e-13,
+          "sampled_peak_gap_mv": 4.5191679487466274e-07
+        }
+      ]
+    },
+    {
+      "id": "epsc_decay_anchored",
+      "ode_method": "DOP853",
+      "ode_rtol": 3e-13,
+      "ode_atol": 3e-14,
+      "nfev": 6113,
+      "continuous": {
+        "epsc": {
+          "peak": 0.36218130548589617,
+          "peak_time_ms": 1.6034872268264833,
+          "rise_10_90_ms": 0.899999999999866,
+          "rise_crossings_ms": [
+            0.058807366242448006,
+            0.958807366242314
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776270207,
+            "0.8": 3.0371274494126883,
+            "0.5": 4.637353445928897,
+            "0.2": 7.32439790689596,
+            "0.1": 9.283638862904526
+          },
+          "fall_80_20_equivalent_tau_ms": 3.0926119139804373,
+          "fall_50_10_equivalent_tau_ms": 2.886899445501831
+        },
+        "epsp": {
+          "peak": 1.4000000000000004,
+          "peak_time_ms": 6.482227904950335,
+          "rise_10_90_ms": 3.5755913984884256,
+          "rise_crossings_ms": [
+            0.6950157865895087,
+            4.270607185077934
+          ],
+          "asymptotic_decay_ms": 11.5,
+          "fall_crossings_ms": {
+            "0.9": 9.667957713226333,
+            "0.8": 11.541939248914929,
+            "0.5": 17.55006589496716,
+            "0.2": 28.222928235725945,
+            "0.1": 36.20117560309779
+          },
+          "fall_80_20_equivalent_tau_ms": 12.032790044197833,
+          "fall_50_10_equivalent_tau_ms": 11.588586029965484
+        }
+      },
+      "signed_mean_residuals": {
+        "epsp_peak_mv": 4.440892098500626e-16,
+        "epsp_rise_ms": 1.4755913984884255,
+        "epsp_asymptotic_decay_ms": 0.0,
+        "epsc_rise_ms": -1.340039190722564e-13,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "finite_EPSP_area_mv_ms": 25.895208308817157,
+      "infinite_EPSP_area_mv_ms": 25.895208308817125,
+      "unobserved_tail_area_mv_ms": -3.197442310920451e-14,
+      "grids": [
+        {
+          "dt_ms": 0.1,
+          "samples": 20001,
+          "max_ODE_EPSP_error_mv": 2.8806202765235355e-12,
+          "max_ODE_normalized_current_error": 5.7878366221568835e-12,
+          "sampled_peak_gap_mv": 6.653397169209541e-06
+        },
+        {
+          "dt_ms": 0.05,
+          "samples": 40001,
+          "max_ODE_EPSP_error_mv": 2.8806202765235367e-12,
+          "max_ODE_normalized_current_error": 5.7878366221568835e-12,
+          "sampled_peak_gap_mv": 6.653397174760656e-06
+        },
+        {
+          "dt_ms": 0.025,
+          "samples": 80001,
+          "max_ODE_EPSP_error_mv": 2.8806837814599627e-12,
+          "max_ODE_normalized_current_error": 5.787963457193824e-12,
+          "sampled_peak_gap_mv": 1.1043120438092302e-06
+        }
+      ]
+    },
+    {
+      "id": "epsc_rise_anchored",
+      "ode_method": "DOP853",
+      "ode_rtol": 3e-13,
+      "ode_atol": 3e-14,
+      "nfev": 6155,
+      "continuous": {
+        "epsc": {
+          "peak": 0.3621813054859473,
+          "peak_time_ms": 1.6034872268260878,
+          "rise_10_90_ms": 0.9000000000001654,
+          "rise_crossings_ms": [
+            0.05880736624243808,
+            0.9588073662426035
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776271503,
+            "0.8": 3.0371274494123295,
+            "0.5": 4.63735344592841,
+            "0.2": 7.324397906895401,
+            "0.1": 9.283638862904278
+          },
+          "fall_80_20_equivalent_tau_ms": 3.092611913980292,
+          "fall_50_10_equivalent_tau_ms": 2.88689944550198
+        },
+        "epsp": {
+          "peak": 1.3999999999999397,
+          "peak_time_ms": 3.670419024447466,
+          "rise_10_90_ms": 2.099999999999824,
+          "rise_crossings_ms": [
+            0.46576160204385336,
+            2.5657616020436773
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 5.082745471076256,
+            "0.8": 5.8394055005462535,
+            "0.5": 8.012079974859624,
+            "0.2": 11.326441443972204,
+            "0.1": 13.581318160371517
+          },
+          "fall_80_20_equivalent_tau_ms": 3.958059772380057,
+          "fall_50_10_equivalent_tau_ms": 3.460362243541923
+        }
+      },
+      "signed_mean_residuals": {
+        "epsp_peak_mv": -6.017408793468348e-14,
+        "epsp_rise_ms": -1.7630341631047486e-13,
+        "epsp_asymptotic_decay_ms": -8.7,
+        "epsc_rise_ms": 1.6542323066914832e-13,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "finite_EPSP_area_mv_ms": 10.319210627191488,
+      "infinite_EPSP_area_mv_ms": 10.319210627191495,
+      "unobserved_tail_area_mv_ms": 7.105427357601002e-15,
+      "grids": [
+        {
+          "dt_ms": 0.1,
+          "samples": 20001,
+          "max_ODE_EPSP_error_mv": 1.3642721346353407e-12,
+          "max_ODE_normalized_current_error": 7.538666848870835e-13,
+          "sampled_peak_gap_mv": 8.195928632881433e-05
+        },
+        {
+          "dt_ms": 0.05,
+          "samples": 40001,
+          "max_ODE_EPSP_error_mv": 1.3642721346353407e-12,
+          "max_ODE_normalized_current_error": 7.538666848870835e-13,
+          "sampled_peak_gap_mv": 3.9437785336327025e-05
+        },
+        {
+          "dt_ms": 0.025,
+          "samples": 80001,
+          "max_ODE_EPSP_error_mv": 1.3642721346353407e-12,
+          "max_ODE_normalized_current_error": 7.538666848870835e-13,
+          "sampled_peak_gap_mv": 1.975272695853292e-06
+        }
+      ]
+    },
+    {
+      "id": "intrinsic_boundary",
+      "ode_method": "DOP853",
+      "ode_rtol": 3e-13,
+      "ode_atol": 3e-14,
+      "nfev": 8279,
+      "continuous": {
+        "epsc": {
+          "peak": 0.3621813054859467,
+          "peak_time_ms": 1.6034872268260936,
+          "rise_10_90_ms": 0.8999999999999859,
+          "rise_crossings_ms": [
+            0.05880736624246274,
+            0.9588073662424487
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776271246,
+            "0.8": 3.0371274494122984,
+            "0.5": 4.637353445928532,
+            "0.2": 7.324397906895579,
+            "0.1": 9.28363886290429
+          },
+          "fall_80_20_equivalent_tau_ms": 3.0926119139804435,
+          "fall_50_10_equivalent_tau_ms": 2.8868994455019115
+        },
+        "epsp": {
+          "peak": 1.4000000000000001,
+          "peak_time_ms": 13.365095399964101,
+          "rise_10_90_ms": 5.907895764161416,
+          "rise_crossings_ms": [
+            0.8794301592194491,
+            6.787325923380865
+          ],
+          "asymptotic_decay_ms": 200.0,
+          "fall_crossings_ms": {
+            "0.9": 37.25670643610188,
+            "0.8": 60.813934865218656,
+            "0.5": 154.81466086950232,
+            "0.2": 338.07280724433326,
+            "0.1": 476.70224335632247
+          },
+          "fall_80_20_equivalent_tau_ms": 200.00000011190733,
+          "fall_50_10_equivalent_tau_ms": 200.00000000000009
+        }
+      },
+      "signed_mean_residuals": {
+        "epsp_peak_mv": 2.220446049250313e-16,
+        "epsp_rise_ms": 3.8078957641614157,
+        "epsp_asymptotic_decay_ms": 188.5,
+        "epsc_rise_ms": -1.4099832412739488e-14,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "finite_EPSP_area_mv_ms": 297.83749130063387,
+      "infinite_EPSP_area_mv_ms": 297.8512747838361,
+      "unobserved_tail_area_mv_ms": 0.013783483202246316,
+      "grids": [
+        {
+          "dt_ms": 0.1,
+          "samples": 20001,
+          "max_ODE_EPSP_error_mv": 6.599942814489168e-12,
+          "max_ODE_normalized_current_error": 7.613379405668611e-12,
+          "sampled_peak_gap_mv": 1.5160042694528642e-06
+        },
+        {
+          "dt_ms": 0.05,
+          "samples": 40001,
+          "max_ODE_EPSP_error_mv": 6.646905248430812e-12,
+          "max_ODE_normalized_current_error": 7.613917717929584e-12,
+          "sampled_peak_gap_mv": 2.8526050788180157e-07
+        },
+        {
+          "dt_ms": 0.025,
+          "samples": 80001,
+          "max_ODE_EPSP_error_mv": 6.763478666016454e-12,
+          "max_ODE_normalized_current_error": 7.614044154319516e-12,
+          "sampled_peak_gap_mv": 1.2243809810463802e-07
+        }
+      ]
+    }
+  ],
+  "H1_native_bitwise_observation": {
+    "voltage": true,
+    "current": true
+  },
+  "environment": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "wall_seconds": 0.33226829196792096,
+  "biological_validation": false,
+  "scope": "All five completed arms, all three saved timesteps, six native cells, actual H1 h=0 traces and equal-pole fixtures. Independent time-domain ODE and dense-output/root metrics; closed-form, exact area, holding and sampled-grid checks. No producer/kernel import, parameter fitting or neural simulation.",
+  "limits": [
+    "The event is an effective postsynaptic initial state; the assay contains no presynaptic emission, delayed queue, release probability or graph-contact-to-event calibration.",
+    "Native no-spike evidence includes all voltage samples and analytic subthreshold solutions. RNG/pending counts are producer counters corroborated by source inspection; raw RNG endpoint/state snapshots are not retained.",
+    "EPSC normalization discards absolute current amplitude. No pA/nS, input resistance or capacitance is identified.",
+    "Asymptotic poles and descriptive falling-window constants are distinct; the primary fitted decay window is unavailable.",
+    "Reported source dispersions are not confidence intervals. Numerical pass does not imply physiological acceptance, same-cell compatibility or male-VM7d calibration.",
+    "None of these five arms satisfies the strict >200ms intrinsic condition. Threshold/APL/spike sparseness were excluded from identification and remain uncalibrated."
+  ]
+}

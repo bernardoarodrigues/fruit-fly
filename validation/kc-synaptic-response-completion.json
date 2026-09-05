@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T20:52:37.602094+00:00",
+  "status": "complete_local_comparison",
+  "arm_count": 5,
+  "timestep_count": 3,
+  "producer_checks": 97,
+  "independent_checks": 1152,
+  "numerically_passed": true,
+  "biological_validation": false,
+  "h1_promoted": false,
+  "defaults_changed": false,
+  "overall_goal_complete": false,
+  "artifacts": [
+    {
+      "path": "scripts/assay_kc_synaptic_response.py",
+      "bytes": 17212,
+      "sha256": "ba3e318c7284e6aa682eb50b4f700e868a42ee4f10f1a9630ff0fbc52454d600"
+    },
+    {
+      "path": "scripts/review_kc_synaptic_response.py",
+      "bytes": 20384,
+      "sha256": "1798e36c0094b4de507baab72704ad3997856ea0c51408d2f9fdd46ca5b94846"
+    },
+    {
+      "path": "scripts/plot_kc_synaptic_response.py",
+      "bytes": 13284,
+      "sha256": "9a35c79865fda1515c5b4214216e3c030e95d5ddfaea66a06dd51ef0d6e5f21d"
+    },
+    {
+      "path": "docs/kc-synaptic-response.md",
+      "bytes": 8701,
+      "sha256": "d83f585f4e00fd86aaa97680967df1ba94afecd306e01142e5d8114f4238f697"
+    },
+    {
+      "path": "docs/pn-kc-waveform-candidate-review.md",
+      "bytes": 9483,
+      "sha256": "ec286b317b74e175374daa646268c7dcc094363afa6e5f7aec7d85a4c287c1a9"
+    },
+    {
+      "path": "validation/kc-synaptic-response-plan.json",
+      "bytes": 5399,
+      "sha256": "1c0da89f8c897710306c9657bc0103a90ce406b053341d8e76cf24b6ac48f51a"
+    },
+    {
+      "path": "validation/kc-synaptic-response-results.json",
+      "bytes": 24659,
+      "sha256": "809216ec1d3b5e7072d3d24a6a7e367f13ff5a6dd1e4b9a4241fb07866cf0a82"
+    },
+    {
+      "path": "validation/kc-synaptic-response-arrays.npz",
+      "bytes": 18640163,
+      "sha256": "a46ff5f82decf45367dea2616fb5f29b40be9be139af63fec9d92fb5e22acabc"
+    },
+    {
+      "path": "validation/kc-synaptic-response-independent-review.json",
+      "bytes": 27762,
+      "sha256": "94de14bf5a83f6f1ef1f1c724541f9383063d5642a1df2f07a5147908f17c832"
+    },
+    {
+      "path": "validation/kc-synaptic-response-figure.png",
+      "bytes": 452650,
+      "sha256": "8a35e161efd48f8bd5fe623f8cd2d2f188ad8df0997247c056fcadd913bfafc6"
+    },
+    {
+      "path": "validation/kc-synaptic-response-plot-receipt.json",
+      "bytes": 6588,
+      "sha256": "0d8a513899b8e11b3e35282397b23c2ce3f374e90c7583700d3d48fcc01d7656"
+    }
+  ],
+  "visual_review": "Root inspected corrected saved PNG after footer-only correction; five labels, normalization, strict somatic bound and source/model distinction visible.",
+  "findings": [
+    "With source EPSC rise and conditional decay fixed, matching EPSP late decay predicts 3.5755913985ms EPSP rise versus source2.1ms mean.",
+    "Matching EPSP rise instead yields2.8ms EPSP late decay versus source11.5ms mean.",
+    "Source >200ms somatic constraint is not met by any arm;200ms is only a boundary diagnostic.",
+    "Contact-to-event current scale, absolute pA/capacitance, male subclass transfer and receptor/compartment parameters remain unidentified."
+  ],
+  "next_step": "Source-supported mechanism separating somatic and synaptic responses; retain original Turner conductance equations as historical control and constrain spatial input partition with same-version MaleCNS contact data.",
+  "scope": "Completed deterministic local batch only; no full-network trial, behavioral improvement or model promotion."
+}

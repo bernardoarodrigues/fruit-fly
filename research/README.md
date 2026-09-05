@@ -49,6 +49,7 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [21 — PN–KC physiology](21-pn-kc-physiology-calibration.md) | Source-defined EPSP/EPSC and claw-integration assays, intrinsic time-constant mismatch, preparation and data limits |
 | [22 — APL local feedback](22-apl-local-feedback-constraints.md) | Nonspiking evidence, spatial calcium/release/suppression measurements and missing conversion laws |
 | [23 — KC contact locations](23-kc-contact-location-availability.md) | Verified local flat-graph schema and public same-version spatial data for a future compartment audit |
+| [KC waveform comparison](../docs/kc-synaptic-response.md) | Executed five-arm local assay, conditional timing tradeoff, separate somatic constraint and independent mathematical derivation |
 
 ## How to interpret the notes
 

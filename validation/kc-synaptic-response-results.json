@@ -1,0 +1,713 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T20:48:46.814824+00:00",
+  "wall_seconds": 6.281035749998409,
+  "plan_sha256": "1c0da89f8c897710306c9657bc0103a90ce406b053341d8e76cf24b6ac48f51a",
+  "arrays_sha256": "a46ff5f82decf45367dea2616fb5f29b40be9be139af63fec9d92fb5e22acabc",
+  "passed": true,
+  "numerical_passed": true,
+  "biological_validation": false,
+  "defaults_changed": false,
+  "h1_promoted": false,
+  "complete_batch_analyzed": true,
+  "checks": {
+    "native_no_spikes_0p1": true,
+    "native_rng_unchanged_0p1": true,
+    "native_empty_pending_0p1": true,
+    "held_zero_event_0p1": true,
+    "native_zero_event_0p1": true,
+    "holding_affine_0p1": true,
+    "closed_form_voltage_current_contact_0p1": true,
+    "closed_form_current_current_contact_0p1": true,
+    "finite_nonnegative_response_current_contact_0p1": true,
+    "response_area_current_contact_0p1": true,
+    "closed_form_voltage_current_amplitude_only_0p1": true,
+    "closed_form_current_current_amplitude_only_0p1": true,
+    "finite_nonnegative_response_current_amplitude_only_0p1": true,
+    "response_area_current_amplitude_only_0p1": true,
+    "closed_form_voltage_epsc_decay_anchored_0p1": true,
+    "closed_form_current_epsc_decay_anchored_0p1": true,
+    "finite_nonnegative_response_epsc_decay_anchored_0p1": true,
+    "response_area_epsc_decay_anchored_0p1": true,
+    "closed_form_voltage_epsc_rise_anchored_0p1": true,
+    "closed_form_current_epsc_rise_anchored_0p1": true,
+    "finite_nonnegative_response_epsc_rise_anchored_0p1": true,
+    "response_area_epsc_rise_anchored_0p1": true,
+    "closed_form_voltage_intrinsic_boundary_0p1": true,
+    "closed_form_current_intrinsic_boundary_0p1": true,
+    "finite_nonnegative_response_intrinsic_boundary_0p1": true,
+    "response_area_intrinsic_boundary_0p1": true,
+    "native_no_spikes_0p05": true,
+    "native_rng_unchanged_0p05": true,
+    "native_empty_pending_0p05": true,
+    "held_zero_event_0p05": true,
+    "native_zero_event_0p05": true,
+    "holding_affine_0p05": true,
+    "closed_form_voltage_current_contact_0p05": true,
+    "closed_form_current_current_contact_0p05": true,
+    "finite_nonnegative_response_current_contact_0p05": true,
+    "response_area_current_contact_0p05": true,
+    "common_times_current_contact_0p05": true,
+    "closed_form_voltage_current_amplitude_only_0p05": true,
+    "closed_form_current_current_amplitude_only_0p05": true,
+    "finite_nonnegative_response_current_amplitude_only_0p05": true,
+    "response_area_current_amplitude_only_0p05": true,
+    "common_times_current_amplitude_only_0p05": true,
+    "closed_form_voltage_epsc_decay_anchored_0p05": true,
+    "closed_form_current_epsc_decay_anchored_0p05": true,
+    "finite_nonnegative_response_epsc_decay_anchored_0p05": true,
+    "response_area_epsc_decay_anchored_0p05": true,
+    "common_times_epsc_decay_anchored_0p05": true,
+    "closed_form_voltage_epsc_rise_anchored_0p05": true,
+    "closed_form_current_epsc_rise_anchored_0p05": true,
+    "finite_nonnegative_response_epsc_rise_anchored_0p05": true,
+    "response_area_epsc_rise_anchored_0p05": true,
+    "common_times_epsc_rise_anchored_0p05": true,
+    "closed_form_voltage_intrinsic_boundary_0p05": true,
+    "closed_form_current_intrinsic_boundary_0p05": true,
+    "finite_nonnegative_response_intrinsic_boundary_0p05": true,
+    "response_area_intrinsic_boundary_0p05": true,
+    "common_times_intrinsic_boundary_0p05": true,
+    "native_no_spikes_0p025": true,
+    "native_rng_unchanged_0p025": true,
+    "native_empty_pending_0p025": true,
+    "held_zero_event_0p025": true,
+    "native_zero_event_0p025": true,
+    "holding_affine_0p025": true,
+    "closed_form_voltage_current_contact_0p025": true,
+    "closed_form_current_current_contact_0p025": true,
+    "finite_nonnegative_response_current_contact_0p025": true,
+    "response_area_current_contact_0p025": true,
+    "common_times_current_contact_0p025": true,
+    "closed_form_voltage_current_amplitude_only_0p025": true,
+    "closed_form_current_current_amplitude_only_0p025": true,
+    "finite_nonnegative_response_current_amplitude_only_0p025": true,
+    "response_area_current_amplitude_only_0p025": true,
+    "common_times_current_amplitude_only_0p025": true,
+    "closed_form_voltage_epsc_decay_anchored_0p025": true,
+    "closed_form_current_epsc_decay_anchored_0p025": true,
+    "finite_nonnegative_response_epsc_decay_anchored_0p025": true,
+    "response_area_epsc_decay_anchored_0p025": true,
+    "common_times_epsc_decay_anchored_0p025": true,
+    "closed_form_voltage_epsc_rise_anchored_0p025": true,
+    "closed_form_current_epsc_rise_anchored_0p025": true,
+    "finite_nonnegative_response_epsc_rise_anchored_0p025": true,
+    "response_area_epsc_rise_anchored_0p025": true,
+    "common_times_epsc_rise_anchored_0p025": true,
+    "closed_form_voltage_intrinsic_boundary_0p025": true,
+    "closed_form_current_intrinsic_boundary_0p025": true,
+    "finite_nonnegative_response_intrinsic_boundary_0p025": true,
+    "response_area_intrinsic_boundary_0p025": true,
+    "common_times_intrinsic_boundary_0p025": true,
+    "h1_excitation_voltage_vs_native": true,
+    "h1_excitation_current_vs_native": true,
+    "equal_pole_2.8": true,
+    "equal_pole_20.0": true,
+    "equal_pole_200.0": true,
+    "epsc_root": true,
+    "epsp_rise_root": true,
+    "all_planned_arms": true,
+    "all_sources_unchanged": true
+  },
+  "check_count": 97,
+  "errors": [],
+  "arms": [
+    {
+      "id": "current_contact",
+      "tau_m_ms": 20.0,
+      "tau_decay_ms": 5.0,
+      "tau_rise_ms": 0.0,
+      "gain_effective_mv": 0.2750000059604645,
+      "continuous": {
+        "epsc": {
+          "peak": 1.0,
+          "peak_time_ms": 0.0,
+          "rise_10_90_ms": 0.0,
+          "rise_crossings_ms": [
+            0.0,
+            0.0
+          ],
+          "asymptotic_decay_ms": 5.0,
+          "fall_crossings_ms": {
+            "0.9": 0.5268025782891314,
+            "0.8": 1.1157177565710485,
+            "0.5": 3.4657359027997265,
+            "0.2": 8.047189562170502,
+            "0.1": 11.512925464970229
+          },
+          "fall_80_20_equivalent_tau_ms": 5.0,
+          "fall_50_10_equivalent_tau_ms": 5.0
+        },
+        "epsp": {
+          "peak": 0.0433097870288506,
+          "peak_time_ms": 9.241962407465937,
+          "rise_10_90_ms": 5.120713751351091,
+          "rise_crossings_ms": [
+            0.3281352746952331,
+            5.448849026046324
+          ],
+          "asymptotic_decay_ms": 20.0,
+          "fall_crossings_ms": {
+            "0.9": 14.805309226264793,
+            "0.8": 18.08539982030425,
+            "0.5": 28.581793357468886,
+            "0.2": 47.167437049791076,
+            "0.1": 61.04519556229601
+          },
+          "fall_80_20_equivalent_tau_ms": 20.978255444964425,
+          "fall_50_10_equivalent_tau_ms": 20.170645884518617
+        }
+      },
+      "mean_residuals": {
+        "epsp_peak_mv": -1.3566902129711493,
+        "epsp_rise_ms": 3.020713751351091,
+        "epsp_asymptotic_decay_ms": 8.5,
+        "epsc_rise_ms": -0.9,
+        "epsc_asymptotic_decay_ms": 2.2
+      },
+      "intrinsic": {
+        "tau_ms": 20.0,
+        "strict_gt200_satisfied": false,
+        "resistance_gohm": null,
+        "capacitance_pf": null,
+        "native_rest_to_threshold_mv": 7.0,
+        "held_to_native_threshold_mv": 13.0,
+        "threshold_fitted": false,
+        "note": "No calibrated physical current unit; 200ms arm equals the boundary and does not satisfy strict >200."
+      },
+      "sampled": {
+        "0p1": {
+          "epsp": {
+            "peak": 0.04330940438362063,
+            "peak_time_ms": 9.200000000000001,
+            "rise_10_90_ms": 5.120825670797876
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 7.460698725481052e-13,
+          "epsp_area_mv_ms": 1.3749885726409885,
+          "infinite_expected_area_mv_ms": 1.3750000298023224
+        },
+        "0p05": {
+          "epsp": {
+            "peak": 0.043309773048306965,
+            "peak_time_ms": 9.25,
+            "rise_10_90_ms": 5.120642340978577
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 1.1439738045737613e-12,
+          "epsp_area_mv_ms": 1.374997166699102,
+          "infinite_expected_area_mv_ms": 1.3750000298023224
+        },
+        "0p025": {
+          "epsp": {
+            "peak": 0.04330977304906014,
+            "peak_time_ms": 9.25,
+            "rise_10_90_ms": 5.120705900145606
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 4.789058039023075e-12,
+          "epsp_area_mv_ms": 1.374999321600906,
+          "infinite_expected_area_mv_ms": 1.3750000298023224
+        }
+      }
+    },
+    {
+      "id": "current_amplitude_only",
+      "tau_m_ms": 20.0,
+      "tau_decay_ms": 5.0,
+      "tau_rise_ms": 0.0,
+      "gain_effective_mv": 8.889445891021916,
+      "continuous": {
+        "epsc": {
+          "peak": 1.0,
+          "peak_time_ms": 0.0,
+          "rise_10_90_ms": 0.0,
+          "rise_crossings_ms": [
+            0.0,
+            0.0
+          ],
+          "asymptotic_decay_ms": 5.0,
+          "fall_crossings_ms": {
+            "0.9": 0.5268025782891314,
+            "0.8": 1.1157177565710485,
+            "0.5": 3.4657359027997265,
+            "0.2": 8.047189562170502,
+            "0.1": 11.512925464970229
+          },
+          "fall_80_20_equivalent_tau_ms": 5.0,
+          "fall_50_10_equivalent_tau_ms": 5.0
+        },
+        "epsp": {
+          "peak": 1.4,
+          "peak_time_ms": 9.241962407465937,
+          "rise_10_90_ms": 5.120713751351091,
+          "rise_crossings_ms": [
+            0.3281352746952331,
+            5.448849026046324
+          ],
+          "asymptotic_decay_ms": 20.0,
+          "fall_crossings_ms": {
+            "0.9": 14.805309226264793,
+            "0.8": 18.08539982030425,
+            "0.5": 28.581793357468886,
+            "0.2": 47.167437049791076,
+            "0.1": 61.04519556229601
+          },
+          "fall_80_20_equivalent_tau_ms": 20.978255444964425,
+          "fall_50_10_equivalent_tau_ms": 20.170645884518617
+        }
+      },
+      "mean_residuals": {
+        "epsp_peak_mv": 0.0,
+        "epsp_rise_ms": 3.020713751351091,
+        "epsp_asymptotic_decay_ms": 8.5,
+        "epsc_rise_ms": -0.9,
+        "epsc_asymptotic_decay_ms": 2.2
+      },
+      "intrinsic": {
+        "tau_ms": 20.0,
+        "strict_gt200_satisfied": false,
+        "resistance_gohm": null,
+        "capacitance_pf": null,
+        "native_rest_to_threshold_mv": 7.0,
+        "held_to_native_threshold_mv": 13.0,
+        "threshold_fitted": false,
+        "note": "No calibrated physical current unit; 200ms arm equals the boundary and does not satisfy strict >200."
+      },
+      "sampled": {
+        "0p1": {
+          "epsp": {
+            "peak": 1.3999876308973356,
+            "peak_time_ms": 9.200000000000001,
+            "rise_10_90_ms": 5.120825670803066
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 7.460698725481052e-13,
+          "epsp_area_mv_ms": 44.44685906579264,
+          "infinite_expected_area_mv_ms": 44.44722945510958
+        },
+        "0p05": {
+          "epsp": {
+            "peak": 1.399999548082313,
+            "peak_time_ms": 9.25,
+            "rise_10_90_ms": 5.1206423410006146
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 1.1439738045737613e-12,
+          "epsp_area_mv_ms": 44.447136858278796,
+          "infinite_expected_area_mv_ms": 44.44722945510958
+        },
+        "0p025": {
+          "epsp": {
+            "peak": 1.399999548083123,
+            "peak_time_ms": 9.25,
+            "rise_10_90_ms": 5.12070590009864
+          },
+          "epsc": {
+            "peak": 1.0,
+            "peak_time_ms": 0.0,
+            "rise_10_90_ms": 0.0
+          },
+          "max_closed_form_error_mv": 4.789058039023075e-12,
+          "epsp_area_mv_ms": 44.44720631323466,
+          "infinite_expected_area_mv_ms": 44.44722945510958
+        }
+      }
+    },
+    {
+      "id": "epsc_decay_anchored",
+      "tau_m_ms": 11.5,
+      "tau_decay_ms": 2.8,
+      "tau_rise_ms": 1.0019853605174098,
+      "gain_effective_mv": 14.402112051917955,
+      "continuous": {
+        "epsc": {
+          "peak": 0.36218130548594996,
+          "peak_time_ms": 1.6034872268260683,
+          "rise_10_90_ms": 0.9000000000000058,
+          "rise_crossings_ms": [
+            0.05880736624242761,
+            0.9588073662424335
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776263217,
+            "0.8": 3.03712744941231,
+            "0.5": 4.637353445928413,
+            "0.2": 7.324397906895554,
+            "0.1": 9.283638862904283
+          },
+          "fall_80_20_equivalent_tau_ms": 3.0926119139804165,
+          "fall_50_10_equivalent_tau_ms": 2.8868994455019807
+        },
+        "epsp": {
+          "peak": 1.4,
+          "peak_time_ms": 6.482227904950353,
+          "rise_10_90_ms": 3.5755913984881342,
+          "rise_crossings_ms": [
+            0.6950157865896996,
+            4.270607185077834
+          ],
+          "asymptotic_decay_ms": 11.5,
+          "fall_crossings_ms": {
+            "0.9": 9.667957713226382,
+            "0.8": 11.541939248914955,
+            "0.5": 17.55006589496688,
+            "0.2": 28.222928235725973,
+            "0.1": 36.20117560309786
+          },
+          "fall_80_20_equivalent_tau_ms": 12.032790044197833,
+          "fall_50_10_equivalent_tau_ms": 11.588586029965702
+        }
+      },
+      "mean_residuals": {
+        "epsp_peak_mv": 0.0,
+        "epsp_rise_ms": 1.4755913984881341,
+        "epsp_asymptotic_decay_ms": 0.0,
+        "epsc_rise_ms": 5.773159728050814e-15,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "intrinsic": {
+        "tau_ms": 11.5,
+        "strict_gt200_satisfied": false,
+        "resistance_gohm": null,
+        "capacitance_pf": null,
+        "native_rest_to_threshold_mv": null,
+        "held_to_native_threshold_mv": null,
+        "threshold_fitted": false,
+        "note": "No calibrated physical current unit; 200ms arm equals the boundary and does not satisfy strict >200."
+      },
+      "sampled": {
+        "0p1": {
+          "epsp": {
+            "peak": 1.3999933466028311,
+            "peak_time_ms": 6.5,
+            "rise_10_90_ms": 3.576395943781237
+          },
+          "epsc": {
+            "peak": 0.9999978293228918,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9010264828520079
+          },
+          "max_closed_form_error_mv": 2.6645352591003757e-15,
+          "epsp_area_mv_ms": 25.895208148103983,
+          "infinite_expected_area_mv_ms": 25.895208308817125
+        },
+        "0p05": {
+          "epsp": {
+            "peak": 1.3999933466028256,
+            "peak_time_ms": 6.5,
+            "rise_10_90_ms": 3.575830001617737
+          },
+          "epsc": {
+            "peak": 0.9999978293228895,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9001601203579906
+          },
+          "max_closed_form_error_mv": 1.0436096431476471e-14,
+          "epsp_area_mv_ms": 25.895208298770232,
+          "infinite_expected_area_mv_ms": 25.895208308817125
+        },
+        "0p025": {
+          "epsp": {
+            "peak": 1.3999988956879565,
+            "peak_time_ms": 6.4750000000000005,
+            "rise_10_90_ms": 3.575650395297944
+          },
+          "epsc": {
+            "peak": 0.999997829322897,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9000575639886835
+          },
+          "max_closed_form_error_mv": 2.4868995751603507e-14,
+          "epsp_area_mv_ms": 25.895208308189908,
+          "infinite_expected_area_mv_ms": 25.895208308817125
+        }
+      }
+    },
+    {
+      "id": "epsc_rise_anchored",
+      "tau_m_ms": 2.1528763831960736,
+      "tau_decay_ms": 2.8,
+      "tau_rise_ms": 1.0019853605174098,
+      "gain_effective_mv": 5.739225032206093,
+      "continuous": {
+        "epsc": {
+          "peak": 0.36218130548594996,
+          "peak_time_ms": 1.6034872268260683,
+          "rise_10_90_ms": 0.9000000000000058,
+          "rise_crossings_ms": [
+            0.05880736624242761,
+            0.9588073662424335
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776263217,
+            "0.8": 3.03712744941231,
+            "0.5": 4.637353445928413,
+            "0.2": 7.324397906895554,
+            "0.1": 9.283638862904283
+          },
+          "fall_80_20_equivalent_tau_ms": 3.0926119139804165,
+          "fall_50_10_equivalent_tau_ms": 2.8868994455019807
+        },
+        "epsp": {
+          "peak": 1.4,
+          "peak_time_ms": 3.6704190244471357,
+          "rise_10_90_ms": 2.099999999999985,
+          "rise_crossings_ms": [
+            0.46576160204395023,
+            2.5657616020439353
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 5.08274547107593,
+            "0.8": 5.8394055005459,
+            "0.5": 8.012079974859445,
+            "0.2": 11.326441443972493,
+            "0.1": 13.581318160374215
+          },
+          "fall_80_20_equivalent_tau_ms": 3.958059772380521,
+          "fall_50_10_equivalent_tau_ms": 3.460362243543711
+        }
+      },
+      "mean_residuals": {
+        "epsp_peak_mv": 0.0,
+        "epsp_rise_ms": -1.509903313490213e-14,
+        "epsp_asymptotic_decay_ms": -8.7,
+        "epsc_rise_ms": 5.773159728050814e-15,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "intrinsic": {
+        "tau_ms": 2.1528763831960736,
+        "strict_gt200_satisfied": false,
+        "resistance_gohm": null,
+        "capacitance_pf": null,
+        "native_rest_to_threshold_mv": null,
+        "held_to_native_threshold_mv": null,
+        "threshold_fitted": false,
+        "note": "No calibrated physical current unit; 200ms arm equals the boundary and does not satisfy strict >200."
+      },
+      "sampled": {
+        "0p1": {
+          "epsp": {
+            "peak": 1.399918040713611,
+            "peak_time_ms": 3.7,
+            "rise_10_90_ms": 2.1024031798010165
+          },
+          "epsc": {
+            "peak": 0.9999978293228918,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9010264828520079
+          },
+          "max_closed_form_error_mv": 2.6645352591003757e-15,
+          "epsp_area_mv_ms": 10.319210195556181,
+          "infinite_expected_area_mv_ms": 10.319210627191495
+        },
+        "0p05": {
+          "epsp": {
+            "peak": 1.3999605622146034,
+            "peak_time_ms": 3.6500000000000004,
+            "rise_10_90_ms": 2.1004942048216346
+          },
+          "epsc": {
+            "peak": 0.9999978293228895,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9001601203579906
+          },
+          "max_closed_form_error_mv": 7.216449660063518e-15,
+          "epsp_area_mv_ms": 10.319210600207336,
+          "infinite_expected_area_mv_ms": 10.319210627191495
+        },
+        "0p025": {
+          "epsp": {
+            "peak": 1.3999980247272439,
+            "peak_time_ms": 3.6750000000000003,
+            "rise_10_90_ms": 2.1001626960179887
+          },
+          "epsc": {
+            "peak": 0.999997829322897,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9000575639886835
+          },
+          "max_closed_form_error_mv": 1.1102230246251565e-14,
+          "epsp_area_mv_ms": 10.319210625504974,
+          "infinite_expected_area_mv_ms": 10.319210627191495
+        }
+      }
+    },
+    {
+      "id": "intrinsic_boundary",
+      "tau_m_ms": 200.0,
+      "tau_decay_ms": 2.8,
+      "tau_rise_ms": 1.0019853605174098,
+      "gain_effective_mv": 165.6556449782567,
+      "continuous": {
+        "epsc": {
+          "peak": 0.36218130548594996,
+          "peak_time_ms": 1.6034872268260683,
+          "rise_10_90_ms": 0.9000000000000058,
+          "rise_crossings_ms": [
+            0.05880736624242761,
+            0.9588073662424335
+          ],
+          "asymptotic_decay_ms": 2.8,
+          "fall_crossings_ms": {
+            "0.9": 2.5160294776263217,
+            "0.8": 3.03712744941231,
+            "0.5": 4.637353445928413,
+            "0.2": 7.324397906895554,
+            "0.1": 9.283638862904283
+          },
+          "fall_80_20_equivalent_tau_ms": 3.0926119139804165,
+          "fall_50_10_equivalent_tau_ms": 2.8868994455019807
+        },
+        "epsp": {
+          "peak": 1.4,
+          "peak_time_ms": 13.365095399964124,
+          "rise_10_90_ms": 5.907895764161181,
+          "rise_crossings_ms": [
+            0.8794301592196836,
+            6.787325923380865
+          ],
+          "asymptotic_decay_ms": 200.0,
+          "fall_crossings_ms": {
+            "0.9": 37.25670643610192,
+            "0.8": 60.813934865218584,
+            "0.5": 154.814660869502,
+            "0.2": 338.072807244333,
+            "0.1": 476.7022433563221
+          },
+          "fall_80_20_equivalent_tau_ms": 200.00000011190718,
+          "fall_50_10_equivalent_tau_ms": 200.00000000000003
+        }
+      },
+      "mean_residuals": {
+        "epsp_peak_mv": 0.0,
+        "epsp_rise_ms": 3.8078957641611813,
+        "epsp_asymptotic_decay_ms": 188.5,
+        "epsc_rise_ms": 5.773159728050814e-15,
+        "epsc_asymptotic_decay_ms": 0.0
+      },
+      "intrinsic": {
+        "tau_ms": 200.0,
+        "strict_gt200_satisfied": false,
+        "resistance_gohm": null,
+        "capacitance_pf": null,
+        "native_rest_to_threshold_mv": null,
+        "held_to_native_threshold_mv": null,
+        "threshold_fitted": false,
+        "note": "No calibrated physical current unit; 200ms arm equals the boundary and does not satisfy strict >200."
+      },
+      "sampled": {
+        "0p1": {
+          "epsp": {
+            "peak": 1.3999984839957307,
+            "peak_time_ms": 13.4,
+            "rise_10_90_ms": 5.908508944933251
+          },
+          "epsc": {
+            "peak": 0.9999978293228918,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9010264828520079
+          },
+          "max_closed_form_error_mv": 2.042810365310288e-14,
+          "epsp_area_mv_ms": 297.83749120010606,
+          "infinite_expected_area_mv_ms": 297.8512747838361
+        },
+        "0p05": {
+          "epsp": {
+            "peak": 1.3999997147394923,
+            "peak_time_ms": 13.350000000000001,
+            "rise_10_90_ms": 5.908131674873337
+          },
+          "epsc": {
+            "peak": 0.9999978293228895,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9001601203579906
+          },
+          "max_closed_form_error_mv": 7.216449660063518e-14,
+          "epsp_area_mv_ms": 297.83749129433477,
+          "infinite_expected_area_mv_ms": 297.8512747838361
+        },
+        "0p025": {
+          "epsp": {
+            "peak": 1.399999877561902,
+            "peak_time_ms": 13.375,
+            "rise_10_90_ms": 5.907946173439153
+          },
+          "epsc": {
+            "peak": 0.999997829322897,
+            "peak_time_ms": 1.6,
+            "rise_10_90_ms": 0.9000575639886835
+          },
+          "max_closed_form_error_mv": 1.942890293094024e-13,
+          "epsp_area_mv_ms": 297.8374913003298,
+          "infinite_expected_area_mv_ms": 297.8512747838361
+        }
+      }
+    }
+  ],
+  "native_records": {
+    "0p1": {
+      "spikes": 0,
+      "rng_unchanged": true,
+      "pending_events": 0,
+      "refractory_ticks": [
+        22,
+        22,
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    "0p05": {
+      "spikes": 0,
+      "rng_unchanged": true,
+      "pending_events": 0,
+      "refractory_ticks": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ]
+    },
+    "0p025": {
+      "spikes": 0,
+      "rng_unchanged": true,
+      "pending_events": 0,
+      "refractory_ticks": [
+        88,
+        88,
+        88,
+        88,
+        88,
+        88
+      ]
+    }
+  },
+  "limits": "Numerical validity is separate from conditional central-summary compatibility. No pass/fail biological tolerance from unspecified dispersion; retain signed mean residuals and strict intrinsic failure. Threshold, Rin, capacitance and contact gain unidentified."
+}
