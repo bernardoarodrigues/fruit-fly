@@ -63,6 +63,16 @@ class QuantizedRunner(FakeRunner):
         return super().advance(sim_seconds)
 
 
+class FiniteRunner(QuantizedRunner):
+    """A short bounded fixture whose last chunk must be shortened."""
+
+    def advance(self, sim_seconds):
+        if self.t + sim_seconds > .036 + 1e-10:
+            raise RuntimeError("Fixture trial horizon crossed")
+        state = super().advance(sim_seconds)
+        return state | {"physics": {"horizon_s": .036}}
+
+
 def wait_for(service, predicate, timeout=10):
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
@@ -102,6 +112,30 @@ class ViewerValidationTests(unittest.TestCase):
 
 
 class ViewerWorkerTests(unittest.TestCase):
+    def test_finite_trial_pauses_and_keeps_reset_and_camera_available(self):
+        service = SimulationService({"coupling_s": .002,
+            "viewer": {"step_seconds": .01, "fps": 30, "speed": 0}}, runner_factory=FiniteRunner)
+        service.start()
+        try:
+            ended = wait_for(service, lambda s: s.get("trial_complete") is True)
+            self.assertEqual(ended["status"], "paused")
+            self.assertAlmostEqual(ended["telemetry"]["t_s"], .036)
+            self.assertTrue(ended["worker_alive"])
+            self.assertIsNone(ended["error"])
+            service.command({"type": "camera", "camera": "side"})
+            wait_for(service, lambda s: s["camera"] == "side")
+            self.assertAlmostEqual(service.snapshot()["telemetry"]["t_s"], .036)
+            service.command({"type": "reset"})
+            reset = wait_for(service, lambda s: s["telemetry"].get("t_s") == 0)
+            self.assertEqual(reset["status"], "paused")
+            self.assertFalse(reset["trial_complete"])
+            service.command({"type": "pause", "paused": False})
+            again = wait_for(service, lambda s: s.get("trial_complete") is True)
+            self.assertTrue(again["worker_alive"])
+            self.assertAlmostEqual(again["telemetry"]["t_s"], .036)
+        finally:
+            service.close()
+
     def test_chunks_respect_runtime_coupling_interval(self):
         # Covers an interval above the requested chunk and a non-divisor of it.
         for interval in (.02, .003):

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "purpose": "Read-only baseline, offset and held-out-odor evidence; no runtime calibration",
+  "files": [
+    {
+      "path": "data/raw/or42a-primary/PMC6782632.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6782632/",
+      "bytes": 200522,
+      "sha256": "25c69dab0a4d6456f979ea64ed9571fab9abcb18d59b847d5737ea1d0ae91630"
+    },
+    {
+      "path": "data/raw/or42a-primary/figure5.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5eb9/6782632/4234fa2387d3/ns1193075005.jpg",
+      "bytes": 97940,
+      "sha256": "726dfee6bde61914bbe818e2af15b5daba5b74a5b05116fb62ef765f8406597d"
+    },
+    {
+      "path": "data/raw/or42a-primary/figure6.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/5eb9/6782632/665c2b53ea5e/ns1193075006.jpg",
+      "bytes": 133352,
+      "sha256": "26ddef551f184deb8619b0cacca7183fb7bbef970ee975a16fb5800dbadf9fab"
+    },
+    {
+      "path": "data/raw/or42a-primary/Or42a-1999-reintroduction.csv",
+      "url": "https://raw.githubusercontent.com/ropensci/DoOR.data/7c24180d0202fc0dc5f81191c1093f11e9987467/data/Or42a.csv",
+      "bytes": 63552,
+      "sha256": "f02402164bb3d3e0a515a471ece4e4e3db1128eac59946bbca704bae1bc0271b"
+    },
+    {
+      "path": "data/raw/or42a-primary/door-1999-reintroduction-commit.json",
+      "url": "https://api.github.com/repos/ropensci/DoOR.data/commits/7c24180d0202fc0dc5f81191c1093f11e9987467",
+      "bytes": 32374,
+      "sha256": "0b3570c5e27f26a73a43912fa77d398826b1f939146c572582d90f2f66ea4b3d"
+    },
+    {
+      "path": "data/raw/or42a-primary/door-data-tree.json",
+      "url": "https://api.github.com/repos/ropensci/DoOR.data/git/trees/db323a496577c4b4a72b5c2fcd1859e07521ffb5?recursive=1",
+      "bytes": 45102,
+      "sha256": "e28a3da618851382d18254b23d50dbdb6ca837b14046e9d4978f4c5c2854a36d"
+    },
+    {
+      "path": "data/raw/door/data/Or42a.csv",
+      "bytes": 67696,
+      "sha256": "a43be99d43301de1b33d26de6223372a196c149d0e2c974a884e8322b452e033"
+    },
+    {
+      "path": "data/raw/door/data/door_dataset_info.csv",
+      "bytes": 11105,
+      "sha256": "6ab8bc1c843ffe4763e563eb763029c421898dce7889c31dc2c21b544c9be269"
+    },
+    {
+      "path": "data/raw/door/functions/R/import_new_data.R",
+      "bytes": 15000,
+      "sha256": "84e3a87acc6ec3d0b80f41cc957cda8d69c491ab64a9fb7d04c5841bd70694ad"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "validation/door/source-provenance.json",
+      "bytes": 21744,
+      "sha256": "ee4dd7b3aa095784aff2e232deac9f719b3b44d75003e797a7c04f1c590f6d75"
+    }
+  ],
+  "acquisition_limitations": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6782632/pdf/ns004520.pdf",
+      "outcome": "Received 1817-byte HTML challenge instead of PDF; not treated as paper",
+      "response_sha256": "f72b440e34899a58782a64fa2a849c7a460ec0207b3f2c250dd136ccdaa27ed5"
+    },
+    {
+      "url": "https://www.jneurosci.org/content/jneuro/19/11/4520.full.pdf",
+      "outcome": "web 403; no publisher PDF acquired"
+    }
+  ],
+  "primary_paper": {
+    "title": "Odor Coding in a Model Olfactory Organ: The Drosophila Maxillary Palp",
+    "authors": "Marien de Bruyne, Peter J. Clyne, John R. Carlson",
+    "year": 1999,
+    "doi": "10.1523/JNEUROSCI.19-11-04520.1999",
+    "local_copy": "data/raw/or42a-primary/PMC6782632.html",
+    "copyright": "Copyright 1999 Society for Neuroscience; local research copy, not redistributed"
+  },
+  "door_reintroduction_commit": "7c24180d0202fc0dc5f81191c1093f11e9987467",
+  "door_current_commit": "db323a496577c4b4a72b5c2fcd1859e07521ffb5",
+  "manual_figure5_measurement": {
+    "image_wh": [
+      786,
+      1199
+    ],
+    "pixel_coordinates": "0-based unscaled source JPEG, x rightward, y downward",
+    "axis_tick_x": [
+      239.5,
+      347,
+      455,
+      562.5,
+      670
+    ],
+    "axis_tick_rates_hz": [
+      0,
+      50,
+      100,
+      150,
+      200
+    ],
+    "ethyl_acetate_mean_bar_x": 537,
+    "ethyl_acetate_sd_cap_x": 606,
+    "ethyl_acetate_bar_y_interval": [
+      140,
+      160
+    ],
+    "isoamyl_acetate_mean_bar_x": 340,
+    "isoamyl_acetate_sd_cap_x": 367,
+    "isoamyl_acetate_bar_y_interval": [
+      200,
+      224
+    ],
+    "point_reading_bound_pixels": 1.5,
+    "manual_method": "Visual native-scale screenshot then black vertical-edge column counts (<80/255 luminance) in named row windows. Fit rate = a*x+b to 5 tick midpoints; endpoint perturbations define sensitivity only, not a statistical confidence interval. No values fitted to DoOR or neural behavior."
+  }
+}

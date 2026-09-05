@@ -1,0 +1,388 @@
+{
+  "scope": "Independent saved-journal arithmetic and source review; no neural, policy or physics reruns",
+  "passed_saved_journal_checks": true,
+  "all_declared_sources_match_revision": false,
+  "frozen_source_revision": "928e062",
+  "source_hashes": {
+    "fruitfly/__init__.py": {
+      "sha256": "2d9a7a3452cb46c2b5ffda7f5618e7696a9796253391dbc499781825f67f6abc",
+      "declared_sha256": "2d9a7a3452cb46c2b5ffda7f5618e7696a9796253391dbc499781825f67f6abc",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/body.py": {
+      "sha256": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+      "declared_sha256": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/circadian.py": {
+      "sha256": "85a875d94174a661278dadebcee4f5c5de39755acab16e7b3b665d325d2d686c",
+      "declared_sha256": "85a875d94174a661278dadebcee4f5c5de39755acab16e7b3b665d325d2d686c",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/conductance.py": {
+      "sha256": "c9e20a3e0124456d2cd7622dbac8418d862227f9c63b014e73befb7bd3a38b5c",
+      "declared_sha256": "c9e20a3e0124456d2cd7622dbac8418d862227f9c63b014e73befb7bd3a38b5c",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/data.py": {
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "declared_sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/flybody_bridge.py": {
+      "sha256": "27717f05b27861ac07991500ba9ba16f81c4409961cb04a5883051528f1da6c4",
+      "declared_sha256": "27717f05b27861ac07991500ba9ba16f81c4409961cb04a5883051528f1da6c4",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/flybody_worker.py": {
+      "sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+      "declared_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/graded.py": {
+      "sha256": "7bc09c71ce7fb3e59ab1c6a913feae53dd644ddf8915a23566c18382e5019906",
+      "declared_sha256": "7bc09c71ce7fb3e59ab1c6a913feae53dd644ddf8915a23566c18382e5019906",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/grooming.py": {
+      "sha256": "dc4ca4d18fe8ce84dcd8e19ee78f288e9d892ae1e48463ee85edca5540a36e6b",
+      "declared_sha256": "dc4ca4d18fe8ce84dcd8e19ee78f288e9d892ae1e48463ee85edca5540a36e6b",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/illumination.py": {
+      "sha256": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+      "declared_sha256": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/morphology.py": {
+      "sha256": "b0c21707a0f1eac304d5a5a59deecfe3a6e0672d1503cfe1c583de2435536cde",
+      "declared_sha256": "b0c21707a0f1eac304d5a5a59deecfe3a6e0672d1503cfe1c583de2435536cde",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/multiview.py": {
+      "sha256": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+      "declared_sha256": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "declared_sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/physiology.py": {
+      "sha256": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+      "declared_sha256": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/proprioception.py": {
+      "sha256": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+      "declared_sha256": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/sensors.py": {
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+      "declared_sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/simulation.py": {
+      "sha256": "efbfa793c801563677c7de421452b26c9a3c3f783db7ff62f8a8a134904ac3d1",
+      "declared_sha256": "efbfa793c801563677c7de421452b26c9a3c3f783db7ff62f8a8a134904ac3d1",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/viewer.py": {
+      "sha256": "91279549a2ae342d0f9dc71e88b319b49ea08205bfc440a1c92639a0a58855a4",
+      "declared_sha256": "91279549a2ae342d0f9dc71e88b319b49ea08205bfc440a1c92639a0a58855a4",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "fruitfly/wind.py": {
+      "sha256": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+      "declared_sha256": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "scripts/check_flybody_loop.py": {
+      "sha256": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+      "declared_sha256": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "configs/male-flybody-probe.json": {
+      "sha256": "2345fb46747fbe490a6fbe6b009864653ec647c69817009e80e76d9b4088158c",
+      "declared_sha256": "2345fb46747fbe490a6fbe6b009864653ec647c69817009e80e76d9b4088158c",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "validation/flybody-source-manifest.json": {
+      "sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "declared_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "validation/flybody-walking-acquisition.json": {
+      "sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "declared_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "validation/flybody-inference-requirements.lock": {
+      "sha256": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+      "declared_sha256": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "validation/flybody-stance-plan.json": {
+      "sha256": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+      "declared_sha256": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "validation/flybody-stance-experiment.json": {
+      "sha256": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+      "declared_sha256": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "docs/flybody-integration-plan.md": {
+      "sha256": "b9ac20ebe92116537ef3741493abe471c015b5eeda1433f0083b3d1637be5bf6",
+      "declared_sha256": "71a0cbb5dfc965331ca4788c385e1ba14d401e75a06faa1d6dd4ee3b7a636968",
+      "matches_plan": false,
+      "read_from": "928e062"
+    },
+    "validation/flybody-bridge-validation.json": {
+      "sha256": "fb43801758b481fcdd3afd1a8279edf61fa2506b30e6312c9c343f15d5bcbcfd",
+      "declared_sha256": "fb43801758b481fcdd3afd1a8279edf61fa2506b30e6312c9c343f15d5bcbcfd",
+      "matches_plan": true,
+      "read_from": "928e062"
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "declared_sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "matches_plan": true,
+      "read_from": "local ignored data"
+    }
+  },
+  "reviewer_script_sha256": "66d54d383127ed3a60f61b589ad786af793cfe10da287daf384b1dfee8db6d6b",
+  "dataset_rows_sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+  "artifact_hashes": {
+    "plan.json": "6ab6b5f8bbcb4cc3343e97824c182e4c30e9d5d1902d21804cf56eb25f16d403",
+    "results.json": "b4ee064b8f14350e0c033d717805b872f06999e610cdf0ef57e72081b9df8d28",
+    "summary.json": "30bbc8aea8390e2e80f28f0417945b0e4696add114f7a38b4c2059b1278ea5a1",
+    "archival.json": "4e6b622af47b77cc92d83cb30b55e9dba1d6e85b2e521b10331cad00a7a7c3d9"
+  },
+  "conditions": [
+    {
+      "condition": "locomotor_feedback",
+      "ticks_checked": 1000,
+      "event_counts": {
+        "condition_start": 1,
+        "initial": 1,
+        "coupling_start": 1000,
+        "encoder": 3000,
+        "neural_start": 1000,
+        "neural_complete": 1000,
+        "physical_complete": 1000,
+        "intervention_start": 2,
+        "intervention_complete": 2,
+        "condition_end": 1
+      },
+      "maximum_errors": {
+        "encoder_rate_error_hz": 0.0,
+        "motor_filtered_rate_error_hz": 0.0,
+        "clock_error_s": 1.8762769116165146e-13,
+        "resource_balance_abs": 1.1102230246251565e-15
+      },
+      "totals": {
+        "odor": 1085,
+        "sweet": 0,
+        "club": 3296,
+        "motor_forward": 78,
+        "motor_turn_left": 0,
+        "motor_turn_right": 0,
+        "motor_feeding": 120,
+        "motor_escape": 0,
+        "behavior_rest": 340,
+        "spikes": 1709316,
+        "behavior_walk": 660,
+        "muted_spikes": 524219
+      },
+      "archived_journal_sha256": "eb84a249c5957e7ea017f7aa66ec4b352ed7be8f1cfdb2e1147c6f2b9697ecf7",
+      "archive_files_verified": 9,
+      "frames_verified": 2,
+      "complete_native_trajectory_sha256": "1cf45ed63f00d6150885c4351b3043efcf892252b09b88eda567a95aa751678f",
+      "source_output_blocked_cell_count": 0,
+      "all_saved_tick_checks_pass": true
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "ticks_checked": 1000,
+      "event_counts": {
+        "condition_start": 1,
+        "initial": 1,
+        "coupling_start": 1000,
+        "encoder": 3000,
+        "neural_start": 1000,
+        "neural_complete": 1000,
+        "physical_complete": 1000,
+        "intervention_start": 2,
+        "intervention_complete": 2,
+        "condition_end": 1
+      },
+      "maximum_errors": {
+        "encoder_rate_error_hz": 0.0,
+        "motor_filtered_rate_error_hz": 0.0,
+        "clock_error_s": 1.8762769116165146e-13,
+        "resource_balance_abs": 2.220446049250313e-15
+      },
+      "totals": {
+        "odor": 1080,
+        "sweet": 0,
+        "club": 3330,
+        "motor_forward": 85,
+        "motor_turn_left": 1,
+        "motor_turn_right": 0,
+        "motor_feeding": 104,
+        "motor_escape": 0,
+        "behavior_rest": 327,
+        "spikes": 1648677,
+        "behavior_walk": 673,
+        "muted_spikes": 526843
+      },
+      "archived_journal_sha256": "3fba228f945b7f838df7cb1ed263cd1f565caf8199355f4ac5603dccfbfaa388",
+      "archive_files_verified": 9,
+      "frames_verified": 2,
+      "complete_native_trajectory_sha256": "8bd1bbe8e875fc56dbd3ba85b173b784dc289131e45112c4644fd85e94c54a5e",
+      "source_output_blocked_cell_count": 296,
+      "all_saved_tick_checks_pass": true
+    },
+    {
+      "condition": "on_food_feedback",
+      "ticks_checked": 250,
+      "event_counts": {
+        "condition_start": 1,
+        "initial": 1,
+        "coupling_start": 250,
+        "encoder": 750,
+        "neural_start": 250,
+        "neural_complete": 250,
+        "physical_complete": 250,
+        "condition_end": 1
+      },
+      "maximum_errors": {
+        "encoder_rate_error_hz": 0.0,
+        "motor_filtered_rate_error_hz": 0.0,
+        "clock_error_s": 2.2426505097428162e-14,
+        "resource_balance_abs": 7.771561172376096e-15
+      },
+      "totals": {
+        "odor": 4633,
+        "sweet": 2694,
+        "club": 17,
+        "motor_forward": 0,
+        "motor_turn_left": 0,
+        "motor_turn_right": 1,
+        "motor_feeding": 28,
+        "motor_escape": 0,
+        "behavior_rest": 16,
+        "spikes": 421545,
+        "behavior_feed": 234
+      },
+      "archived_journal_sha256": "fa7acfed78a782d0d8e3952d75df59def3265b9892917479e5822b45de3532e5",
+      "archive_files_verified": 9,
+      "frames_verified": 2,
+      "complete_native_trajectory_sha256": "59c588eeea70941b032cb0976c74d074a16880063641cd26835c30229c4f494b",
+      "source_output_blocked_cell_count": 0,
+      "all_saved_tick_checks_pass": true
+    },
+    {
+      "condition": "on_food_sweet_block",
+      "ticks_checked": 250,
+      "event_counts": {
+        "condition_start": 1,
+        "initial": 1,
+        "coupling_start": 250,
+        "encoder": 750,
+        "neural_start": 250,
+        "neural_complete": 250,
+        "physical_complete": 250,
+        "condition_end": 1
+      },
+      "maximum_errors": {
+        "encoder_rate_error_hz": 0.0,
+        "motor_filtered_rate_error_hz": 0.0,
+        "clock_error_s": 2.2426505097428162e-14,
+        "resource_balance_abs": 7.771561172376096e-15
+      },
+      "totals": {
+        "odor": 4638,
+        "sweet": 2641,
+        "club": 17,
+        "motor_forward": 0,
+        "motor_turn_left": 0,
+        "motor_turn_right": 0,
+        "motor_feeding": 28,
+        "motor_escape": 0,
+        "behavior_rest": 16,
+        "spikes": 426321,
+        "behavior_feed": 234
+      },
+      "archived_journal_sha256": "c23607ddd4f5bea14cb5d28658ce830d61cc5d7ff26436a647a3d9dba714469b",
+      "archive_files_verified": 9,
+      "frames_verified": 2,
+      "complete_native_trajectory_sha256": "59c588eeea70941b032cb0976c74d074a16880063641cd26835c30229c4f494b",
+      "source_output_blocked_cell_count": 54,
+      "all_saved_tick_checks_pass": true
+    }
+  ],
+  "paired_mechanisms": {
+    "locomotor": {
+      "first_ordered_input_difference_tick": 21,
+      "first_non_sensory_spike_event_difference_tick": 4,
+      "first_downstream_difference_with_identical_input_history_tick": 4
+    },
+    "on_food": {
+      "first_ordered_input_difference_tick": null,
+      "first_non_sensory_spike_event_difference_tick": 4,
+      "first_downstream_difference_with_identical_input_history_tick": 4
+    }
+  },
+  "summary_slices": {
+    "path": "Euclidean planar displacement chords of every completed2ms interval including initial pose; not native inertial-center velocity",
+    "mute": "speed[425:600],175 intervals with start times0.850 through1.198s and end times0.852 through1.200s",
+    "restore": "speed[750:1000],250 intervals with start times1.500 through1.998s and end times1.502 through2.000s",
+    "first_feed": "End time of first interval commanded feed, not neural spike time, contact onset, or first swallowed nutrient"
+  },
+  "source_review": {
+    "output_block": "neural.py checks ablated[source] only at synaptic delivery; source thresholds/spikes and supplied Poisson drives remain enabled. Full blocked mask is asserted by producer each tick; journal retains count and named groups, not full mask.",
+    "no_double_counting": "Exactly one neural start/complete and one physical completion per tick; unique input indices and all-neuron IDs, summed per-neuron counts equal fullbatch and cumulative telemetry totals. Motor/source group totals checked separately, never added to fullgraph totals.",
+    "passive_capture": "Capture wrapper calls each original encoder/brain advance once; recorded states do not create additional input or RNG draws.",
+    "physical_feedback": "Actual prior native tibia velocity and tarsal floor contacts agree with input observations; independently calculated encoder transfer and filtered motor decoder agree with delivered commands.",
+    "odor": "Bilateral sampled concentrations and transfer are retained. Source converts actual cached antenna origins from mm to m and queries PuffField; producer separately checks pure sample equality. Puff birth/state arrays are not journaled, so spatial plume sampling cannot be independently recomputed from these journals alone."
+  },
+  "limits": [
+    "Ordered spike event timestamps are represented by hashes and per-neuron counts; hashes compare saved event equality but cannot be recomputed without original ID/time arrays.",
+    "Complete voltage, synaptic and blocked-mask arrays are not journaled; their finite/mask assertions are producer evidence, not an independent full-state check.",
+    "Reset/render/advance0 state equality is a producer assertion; journals retain only the resulting initial state.",
+    "Source output block preserves the input mechanism, not all later sensory-source spikes; recurrent feedback can change them.",
+    "The matched-prefix divergence demonstrates graph transmission of the collective blocked inputs; it does not isolate odor versus club contribution.",
+    "On-food MN9 count and abstract intake are unchanged by sweet-source block despite downstream spike differences; no sweet necessity claim.",
+    "No natural navigation, physiological firing/voltage, male-body mechanics, swallowing, full-cycle reproduction or persistent-viewer validation."
+  ]
+}

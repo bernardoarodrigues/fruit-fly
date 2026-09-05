@@ -126,7 +126,7 @@ assay, status, warnings, provenance?
 
 Neural activity history is sampled per rendered update, not a complete spike
 recording. Warnings and optional provenance come directly from the simulation.
-The UI distinguishes loading, paused, running, stopped, and worker error states.
+The UI distinguishes loading, paused, running, stopped, and worker error states. A runtime-declared finite horizon is handled as a normal **Trial complete** state: the final update is shortened to the remaining whole coupling intervals, then the worker pauses. Resume is disabled at that endpoint, while Reset and camera controls remain available. A physical or neural failure still appears as an error.
 An exception displays its type/message in the browser and full traceback in the
 server terminal. A crashed worker does not restart or reset an experiment silently.
 
@@ -174,3 +174,5 @@ that separate assay reset, the renderer showed playback at simulation time
 100 Hz imposed-input label and the sensory-mapping limits were visible; the
 real 800-pixel frame loaded, no UI error was displayed, and the desktop page had
 no horizontal overflow. Existing port-8766/8767/8768 experiments were untouched.
+
+The optional native FlyBody/full-MaleCNS viewer was inspected on port 8771 after the horizon handling fix. It reached native time 1.9999999999998124 s (1,000 control ticks), displayed **Trial complete**, kept its worker alive, and rendered the Side camera without advancing time. Reset returned the same service to paused time zero, initial voltages and resources. The [inspection receipt](../validation/flybody-viewer/inspection.json) preserves endpoint/reset snapshots and the actual MuJoCo endpoint frame. These controls do not establish biological calibration.

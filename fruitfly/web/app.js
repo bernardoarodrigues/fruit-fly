@@ -69,14 +69,15 @@ function update(data) {
   setText("body-adapter", bodyLabels[telemetry.body_backend] || "Body adapter not reported");
   $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
-  setText("status-label", labels[data.status] || data.status);
+  setText("status-label", ready && data.trial_complete ? "Trial complete" : labels[data.status] || data.status);
   $("status-dot").className = `dot ${data.status === "running" ? "live" : data.status === "error" ? "error" : ""}`;
-  setText("frame-label", ready ? "LIVE ARENA / MALE 01" : (data.status === "error" ? "SIMULATION STOPPED" : "WAITING FOR SIMULATION"));
+  setText("frame-label", ready ? data.trial_complete ? "TRIAL COMPLETE / MALE 01" : "LIVE ARENA / MALE 01" : (data.status === "error" ? "SIMULATION STOPPED" : "WAITING FOR SIMULATION"));
   setText("frame-age", data.frame_age_seconds === null ? "" : `${number(data.frame_age_seconds, 1)}s since update`);
   for (const control of document.querySelectorAll(".transport button, .transport select, .sidebar input")) control.disabled = !ready;
-  setText("pause-label", data.paused ? "Resume" : "Pause");
+  $("pause").disabled = !ready || data.trial_complete === true;
+  setText("pause-label", data.trial_complete ? "Trial complete" : data.paused ? "Resume" : "Pause");
   setText("pause-icon", data.paused ? "▶" : "Ⅱ");
-  $("pause").setAttribute("aria-label", data.paused ? "Resume simulation" : "Pause simulation");
+  $("pause").setAttribute("aria-label", data.trial_complete ? "Trial complete; use Reset to start again" : data.paused ? "Resume simulation" : "Pause simulation");
   for (const camera of document.querySelectorAll("[data-camera]")) {
     const selected = camera.dataset.camera === data.camera;
     camera.classList.toggle("selected", selected);
@@ -146,7 +147,7 @@ function update(data) {
   const windReference = telemetry.wind_reference;
   const hasWind = Array.isArray(wind.relative_velocity_head_mm_s);
   const reference = wind.antenna_reference || {};
-  setText("wind-status", hasWind ? windReference ? "Female reference enabled" : "Local airflow available" : "Not reported");
+  setText("wind-status", hasWind ? windReference ? "Female reference enabled" : "Local airflow available" : wind.enabled === false ? "Disabled" : "Not reported");
   setText("wind-azimuth", hasWind
     ? `Source azimuth · L ${number(wind.source_azimuth_deg?.[0], 1)}° · R ${number(wind.source_azimuth_deg?.[1], 1)}°`
     : "No wind directions reported.");
@@ -170,7 +171,7 @@ function update(data) {
     ? exclusions.length ? exclusions.join(" · ")
       : `Assay gate ${number(windReference.nominal_speed_mm_s, 1)} mm/s ±${number(windReference.speed_tolerance_fraction * 100, 0)}% · frontal ±90° · elevation ±${number(windReference.elevation_tolerance_deg, 0)}°`
     : hasWind ? "Source angle: negative left, positive right, zero anterior." : "");
-  setText("wind-limit", windReference
+  setText("wind-limit", wind.enabled === false ? "Wind sensing is disabled for this body; odor advection still uses the configured airflow." : windReference
     ? "Measured female reference; neural pathway unmapped. Predicts steady arista angles only; no male mechanics or joint actuation is validated."
     : "Airflow geometry only; neural pathway unmapped.");
   setText("neural-subtitle", neural.ablated ? `${neural.ablation_target || "Motor readout"} muted` : neural.neurons ? "Spiking network telemetry" : "Waiting for neural telemetry");

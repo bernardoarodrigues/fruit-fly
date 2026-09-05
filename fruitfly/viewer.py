@@ -84,6 +84,24 @@ def _json_safe(value: Any) -> Any:
     return str(value)
 
 
+def _bounded_step(telemetry: dict, quantum: float, interval: float | None):
+    """Respect a declared finite trial without crossing its coupling grid."""
+    horizon = (telemetry.get("physics") or {}).get("horizon_s")
+    if horizon is None:
+        return quantum, False, None
+    current = telemetry.get("t_s")
+    if (not isinstance(horizon, (int, float)) or not math.isfinite(horizon) or horizon <= 0
+            or not isinstance(current, (int, float)) or not math.isfinite(current)
+            or interval is None):
+        raise ValueError("Finite trial requires a valid horizon, clock and coupling interval")
+    if current > horizon + 1e-9:
+        raise RuntimeError("Runtime clock exceeds its declared trial horizon")
+    ticks = round(max(0., horizon - current) / interval)
+    if not math.isclose(current + ticks * interval, horizon, abs_tol=1e-9, rel_tol=0):
+        raise ValueError("Trial horizon cuts a coupling interval")
+    return min(quantum, ticks * interval), ticks == 0, float(horizon)
+
+
 def _simulation_worker(
     config: dict[str, Any], commands: Any, updates: Any,
     runner_factory: Callable[..., Any] | None = None,
@@ -100,6 +118,8 @@ def _simulation_worker(
     needs_frame = True
     stopping = False
     pending_command = None
+    trial_complete = False
+    trial_limit_s = None
     try:
         if runner_factory is None:
             from .simulation import SimulationRunner
@@ -141,11 +161,20 @@ def _simulation_worker(
                 needs_frame = True
             if stopping:
                 break
+            if not telemetry:
+                telemetry = runner.advance(0.0)
             if not paused:
-                telemetry = runner.advance(quantum)
+                step, trial_complete, trial_limit_s = _bounded_step(telemetry, quantum, interval)
+                if step > 0:
+                    telemetry = runner.advance(step)
+                    _, trial_complete, trial_limit_s = _bounded_step(telemetry, quantum, interval)
+                if trial_complete:
+                    paused = True
+                    needs_frame = True
             elif needs_frame:
                 # advance(0) retrieves state without advancing a paused simulation.
                 telemetry = runner.advance(0.0)
+                _, trial_complete, trial_limit_s = _bounded_step(telemetry, quantum, interval)
             now = time.monotonic()
             if needs_frame or (not paused and now - last_frame >= frame_period):
                 frame = _jpeg(runner.render(camera))
@@ -153,6 +182,7 @@ def _simulation_worker(
                 _publish(updates, {
                     "status": "paused" if paused else "running",
                     "paused": paused, "camera": camera, "speed": speed,
+                    "trial_complete": trial_complete, "trial_limit_s": trial_limit_s,
                     "telemetry": _json_safe(telemetry), "frame": frame,
                     "frame_sequence": sequence, "error": None,
                 })

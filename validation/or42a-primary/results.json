@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "source_manifest_sha256": "44cf8922ecc47474aeb15de7479a6a1cffdaeebaf6b7219e01a0566422fc3790",
+  "script_sha256": "09dffc305ade7c9e575a69870f1a48528b608fa71aac969258267a36651d5e94",
+  "source_files_verified": 11,
+  "historical_value_count_unchanged": 18,
+  "source_metadata": {
+    "dataset": "Bruyne.1999.WT",
+    "study": "de Bruyne et.al. 1999",
+    "other.dataset.in.this.study": null,
+    "other.dataset.in.this.study.2": null,
+    "SFR.reported": "yes",
+    "SFR.substracted": "yes",
+    "technique": "electrophysiology",
+    "data.type": "spikes",
+    "control": "paraffin oil",
+    "solvents": "paraffin oil",
+    "solvents.subtracted": "no",
+    "concentration": "10^-2",
+    "comment": "Updated with original Data in DoOR v2.0.",
+    "link": "http://www.jneurosci.org/content/19/11/4520.long",
+    "DOI": null
+  },
+  "primary_baseline": {
+    "unit": "pb1A",
+    "figure": 6,
+    "mean_hz": 11,
+    "sd_hz": 1,
+    "n": 17,
+    "extraction": "verbatim numeric figure label, visually inspected; caption identifies SD"
+  },
+  "primary_response": {
+    "unit": "pb1A",
+    "figure": 5,
+    "odor": "ethyl acetate",
+    "delta_mean_hz": 138,
+    "delta_sd_hz": 32,
+    "n": 13,
+    "extraction": "explicit numbers in Results text, corroborated against figure"
+  },
+  "digitization": {
+    "slope_hz_per_pixel": 0.4644678833294644,
+    "intercept_hz": -111.23999333824048,
+    "maximum_tick_residual_hz": 0.09289357666582987,
+    "estimates": [
+      {
+        "odor": "ethyl acetate",
+        "InChIKey": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+        "figure": "de Bruyne 1999 Fig.5",
+        "n": 13,
+        "response_measure": "500ms rate minus 500ms prestimulus rate",
+        "delta_mean_hz": 138.1792600096819,
+        "delta_sd_hz": 32.04828394973305,
+        "endpoint_sensitivity_min_hz": 136.78585635969358,
+        "endpoint_sensitivity_max_hz": 139.5726636596704,
+        "uncertainty_type": "manual raster reading sensitivity, not biological CI",
+        "source_exact_text_mean_hz": 138.0,
+        "source_exact_text_sd_hz": 32.0
+      },
+      {
+        "odor": "isoamyl acetate",
+        "InChIKey": "MLFHJEHSLIIPHL-UHFFFAOYSA-N",
+        "figure": "de Bruyne 1999 Fig.5",
+        "n": 13,
+        "response_measure": "500ms rate minus 500ms prestimulus rate",
+        "delta_mean_hz": 46.67908699377742,
+        "delta_sd_hz": 12.54063284989554,
+        "endpoint_sensitivity_min_hz": 45.26126666974986,
+        "endpoint_sensitivity_max_hz": 48.084503220157714,
+        "uncertainty_type": "manual raster reading sensitivity, not biological CI",
+        "source_exact_text_mean_hz": null,
+        "source_exact_text_sd_hz": null
+      }
+    ]
+  },
+  "offset_comparison": [
+    {
+      "InChIKey": "XEKOWRVHYACXOJ-UHFFFAOYSA-N",
+      "door_stored": 147.647,
+      "primary_delta_reference_hz": 138,
+      "stored_minus_primary_delta": 9.646999999999991,
+      "stored_minus_sfr_minus_primary_delta": -1.3530000000000086
+    },
+    {
+      "InChIKey": "MLFHJEHSLIIPHL-UHFFFAOYSA-N",
+      "door_stored": 58.469,
+      "primary_delta_reference_hz": 46.67908699377742,
+      "stored_minus_primary_delta": 11.789913006222584,
+      "stored_minus_sfr_minus_primary_delta": 0.7899130062225836
+    }
+  ],
+  "exact_offset_restoration_verified": false,
+  "exact_pre_import_original_trials_available": false,
+  "suggested_primary_summary_boundary": {
+    "status": "PROPOSAL_ONLY_NOT_EXECUTED",
+    "baseline_hz": 11,
+    "ethyl_acetate_total_rate_hz": 149,
+    "isoamyl_acetate_total_rate_hz": 57.67908699377742,
+    "caveat": "Combines Fig.6 baseline (n17) with Fig.5 delta (n13); not a reported matched-cohort total rate. Isoamyl value is raster-estimated. DoOR totals are not substituted.",
+    "exact_MaleCNS_cells": 36,
+    "side_counts": {
+      "L": 18,
+      "R": 18
+    },
+    "input_organ": "maxillary palp",
+    "neural_run_performed": false,
+    "concentration_encoder_calibrated": false
+  },
+  "checks": {
+    "source_hashes": true,
+    "historical_current_equality": true,
+    "bar_edge_evidence": true,
+    "digitized_EA_agrees_with_explicit_text": true,
+    "exact_male_population": true,
+    "original_offset_reconciled": false
+  },
+  "output_sha256": {
+    "door-study-comparison.csv": "04d892c094f5af25c56dc603cc181ca74ab253ea41a5620fb23d9c072c136cee",
+    "figure5-estimates.csv": "2edaee6a16992252a3ff0176d418f2fb868326a22bc8a21b600d4e7585b88619",
+    "male-vm7d-population.csv": "3270bfb69b5986d7b878a2e705adf621391aadb241cadc2a2b838c6b71664d41"
+  }
+}

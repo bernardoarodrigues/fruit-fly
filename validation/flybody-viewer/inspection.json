@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-09-05T03:00:29.679809+00:00",
+  "config": "configs/male-flybody-probe.json",
+  "url": "http://127.0.0.1:8771/",
+  "method": "Actual in-app browser Resume, endpoint Side camera, Reset; AX and screenshot inspection plus read-only localhost state/frame snapshots. No API control used.",
+  "checks": {
+    "endpoint_trial_complete": true,
+    "endpoint_paused": true,
+    "endpoint_worker_alive": true,
+    "endpoint_no_error": true,
+    "endpoint_native_time_2s": true,
+    "endpoint_native_tick_1000": true,
+    "endpoint_side_camera": true,
+    "reset_time_zero": true,
+    "reset_paused": true,
+    "reset_trial_complete_false": true,
+    "reset_alive": true,
+    "reset_error_none": true
+  },
+  "ui_observed": [
+    "Trial complete label at 2.00 s",
+    "Resume disabled with Reset instruction",
+    "Reset and camera enabled at endpoint",
+    "Side camera renders the actual native body",
+    "Reset gives paused 0.00 s and initial -52 mV voltages",
+    "Female-derived body and direct DN stimulation caveats visible",
+    "Wind and eye neural capabilities correctly disabled"
+  ],
+  "files_sha256": {
+    "fruitfly/viewer.py": "a699ef6fd324761885d96ac737c540ebdb2e4445b373189d1ad67fcca173846e",
+    "fruitfly/web/app.js": "afd5e6a57426a07ceb45fb9c4a6fac41018409014752f394a65b6714bbb122af",
+    "tests/test_viewer.py": "faa5096aa1e9a353402018cd030f544958fae1df6a8db97070c1e91896bb2143",
+    "validation/flybody-viewer/endpoint-state.json": "b880038eba6eae9187ed26ba388bef99959e77d2fae574d4b8f0c0160c654caf",
+    "validation/flybody-viewer/reset-state.json": "7774ed72dbff580ecf8f035b5664f8d6cd11dacf192c79775b63d7efcd99f4fa",
+    "validation/flybody-viewer/endpoint-side.jpg": "bdd73b9055f0b38ca8b22a49988c5324f1d738ab66726de48f66d018a4b014ff"
+  },
+  "suite": {
+    "command": ".venv/bin/python -m pytest -q",
+    "tests_passed": 168,
+    "subtests_passed": 37,
+    "warnings": 22,
+    "wall_seconds": 21.39
+  },
+  "limits": [
+    "One full-graph viewer trial and reset; no extended duration/biological validation",
+    "No browser video captured; endpoint native frame and machine-readable states retained",
+    "Initial overshoot-attempt viewer failure is preserved separately in validation/flybody-loop/viewer-initial-limit.json"
+  ]
+}

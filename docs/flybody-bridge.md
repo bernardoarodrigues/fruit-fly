@@ -4,6 +4,24 @@ The optional Python 3.12 bridge now runs the pinned Python 3.10 FlyBody policy a
 
 The initial backend deliberately stops at **2 simulated seconds**. Advancing beyond that horizon raises an explicit error without moving or resetting the body. The source's finite reference and episode bookkeeping have not yet been replaced by a persistent task. Existing defaults and viewers remain separate from this optional backend.
 
+## Install and watch
+
+The main Python 3.12 environment and processed graph must already be installed as described in the repository README. Create the separate policy environment and materialize only the pinned assets:
+
+```sh
+uv venv --python 3.10.21 tmp/flybody-env
+uv pip sync --python tmp/flybody-env/bin/python --require-hashes validation/flybody-inference-requirements.lock
+.venv/bin/python -m scripts.materialize_flybody_source
+.venv/bin/python -m scripts.acquire_flybody_walking
+.venv/bin/python -m fruitfly.viewer --config configs/male-flybody-probe.json --port 8771 --paused
+```
+
+The source materializer verifies all 223 manifest entries (191,050,092 bytes) by size, SHA-256 and Git blob SHA-1. `--from-local /path/to/existing/flybody` copies a previously downloaded matching checkout. Existing differing files fail explicitly. Source and policy assets remain in ignored local storage with their separate license notices.
+
+Open [the local FlyBody viewer](http://127.0.0.1:8771). Resume runs the direct-DN calibration for 2 simulated seconds. At the declared horizon the viewer pauses normally and displays **Trial complete**. Reset starts a fresh paused trial; cameras remain usable at the endpoint. This lifecycle was checked against the actual full graph, with the [saved inspection](../validation/flybody-viewer/inspection.json). The earlier viewer failure when it tried another chunk beyond the horizon is retained in the [initial receipt](../validation/flybody-loop/viewer-initial-limit.json).
+
+The four full-loop trials were executed against runtime source committed at `928e062`. Their frozen plan includes the former viewer source; later viewer lifecycle edits do not retroactively change that experiment. The independent review separately flags one unrecovered pre-run documentation hash, while all declared runtime/configuration/data-receipt hashes match that commit.
+
 ## Verified parity
 
 The [predeclared bridge check](../validation/flybody-bridge-plan.json) compared two complete 2 s runs with the frozen native `neutral_zero` stance traces: zero-start and 20 mm/s → hold at 0.6 s → resume at 1.2 s. Both passed with **maximum absolute difference 0** for all 1,001 native qpos, qvel, root pose, actuator length and actuator activation samples, and all 1,000 applied 59-channel action vectors. This includes visual resource sites added to the native arena; they change no collision geometry, inertia, bodies or actuators.
