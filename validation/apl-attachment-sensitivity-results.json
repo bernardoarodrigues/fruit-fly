@@ -1,0 +1,1089 @@
+{
+  "status": "passed_declared_attachment_sensitivity",
+  "completed_utc": "2026-09-05T23:31:04.173877+00:00",
+  "wall_seconds": 7.996665082988329,
+  "plan": {
+    "path": "validation/apl-attachment-sensitivity-plan.json",
+    "bytes": 2369,
+    "sha256": "c77584893598c56e9d49c797c74f8c70717168158affd4546961559453304398"
+  },
+  "arrays": {
+    "path": "validation/apl-attachment-sensitivity-arrays.npz",
+    "bytes": 9738853,
+    "sha256": "d59074c6897bc955c5c796d48479e165fc3655fe83c8cd77352cdc965ed70af6"
+  },
+  "cells": [
+    {
+      "body_id": 10540,
+      "unique_contacts": 140331,
+      "changed_unique_contacts": 21648,
+      "expanded_nodes": 165775,
+      "cohorts": {
+        "all_retained_contacts": {
+          "contacts": 220214,
+          "changed_contacts": 30225,
+          "changed_fraction": 0.13725285404197735,
+          "moved_path_quantiles_um": [
+            10.000381705538521,
+            38.207515751221855,
+            182.17822465615828,
+            338.0907927393039
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.0,
+            0.2568022635235303,
+            0.48664514066859765,
+            0.5119999999999707
+          ]
+        },
+        "KC_to_APL": {
+          "contacts": 108338,
+          "changed_contacts": 17641,
+          "changed_fraction": 0.16283298565600252,
+          "moved_path_quantiles_um": [
+            10.000381705538521,
+            37.30567663523874,
+            177.27666879059797,
+            334.39924136696607
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.0,
+            0.25486784971563203,
+            0.48599783616318337,
+            0.5119999999999707
+          ]
+        },
+        "APL_to_KC": {
+          "contacts": 95542,
+          "changed_contacts": 10253,
+          "changed_fraction": 0.10731406083188545,
+          "moved_path_quantiles_um": [
+            10.001002748759198,
+            40.07193351024447,
+            186.29920556987608,
+            334.2472413669661
+          ],
+          "moved_extra_residual_quantiles_um": [
+            2.220446049250313e-16,
+            0.2606704247525595,
+            0.48816211820430744,
+            0.5117926794386207
+          ]
+        },
+        "CA_input": {
+          "contacts": 14728,
+          "changed_contacts": 1823,
+          "changed_fraction": 0.1237778381314503,
+          "moved_path_quantiles_um": [
+            10.008380654827384,
+            45.86583528125592,
+            307.55488128657663,
+            334.39924136696607
+          ],
+          "moved_extra_residual_quantiles_um": [
+            2.5091040356528538e-14,
+            0.2609318294784251,
+            0.4923929042645977,
+            0.5119936125290954
+          ]
+        },
+        "gL_input": {
+          "contacts": 32786,
+          "changed_contacts": 5693,
+          "changed_fraction": 0.17364118831208442,
+          "moved_path_quantiles_um": [
+            10.003816967857777,
+            38.320925433359996,
+            146.84986020470933,
+            247.52481412652355
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.0,
+            0.24887937659657666,
+            0.48312645849016983,
+            0.5119895883413597
+          ]
+        },
+        "aL_input": {
+          "contacts": 13350,
+          "changed_contacts": 2315,
+          "changed_fraction": 0.17340823970037453,
+          "moved_path_quantiles_um": [
+            10.016139045752741,
+            40.8165882141694,
+            147.77500532965374,
+            219.03974850834805
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.0,
+            0.2565977951249545,
+            0.4843809969917203,
+            0.5119999999999707
+          ]
+        }
+      },
+      "reference_points": [
+        {
+          "unique_contact_index": 99588,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 69285,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 83637,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 89094,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 28584,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 71269,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 19381,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 66260,
+          "eligible_segments": 0
+        }
+      ],
+      "control_max_errors": [
+        3.0531133177191805e-16,
+        3.885780586188048e-16
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "contact_mean": 0.031898449781223685,
+          "control_mean": 0.031898449781223685,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "contact_mean": 0.07585237078911906,
+          "control_mean": 0.07585237078911906,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "contact_mean": 0.06328531106630919,
+          "control_mean": 0.06328531106630919,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03190825293551131,
+          "control_mean": 0.031898449781223685,
+          "relative_mean_change": 0.0003073238466089201,
+          "contact_mean_absolute_change": 0.000800180689835752,
+          "contact_rms_change": 0.007375540826060805,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0003472226966939559,
+            0.18984359849582202
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.07574052703494158,
+          "control_mean": 0.07585237078911906,
+          "relative_mean_change": -0.0014744925308719514,
+          "contact_mean_absolute_change": 0.0009004388094188745,
+          "contact_rms_change": 0.00542949067079176,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0030701825453200993,
+            0.09868696796702778
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.06355453796032312,
+          "control_mean": 0.06328531106630919,
+          "relative_mean_change": 0.004254176671926846,
+          "contact_mean_absolute_change": 0.0013154980034644004,
+          "contact_rms_change": 0.010537313970823062,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.001890828354284349,
+            0.22127178965616734
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03188473903321069,
+          "control_mean": 0.031898449781223685,
+          "relative_mean_change": -0.0004298249008032329,
+          "contact_mean_absolute_change": 7.212939703131336e-05,
+          "contact_rms_change": 0.00019014807401122172,
+          "contact_absolute_change_quantiles": [
+            2.16399418384583e-08,
+            1.5610627796965558e-06,
+            0.00047629674475807267,
+            0.0011326693804006721
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.07581278238279604,
+          "control_mean": 0.07585237078911906,
+          "relative_mean_change": -0.0005219138955205871,
+          "contact_mean_absolute_change": 0.0002083879273059735,
+          "contact_rms_change": 0.00033373099048366976,
+          "contact_absolute_change_quantiles": [
+            6.459565606020679e-08,
+            7.86018819703832e-05,
+            0.0008077194276947253,
+            0.0012392918193706304
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.06320364962825742,
+          "control_mean": 0.06328531106630919,
+          "relative_mean_change": -0.0012903695450940944,
+          "contact_mean_absolute_change": 0.00013981319849066216,
+          "contact_rms_change": 0.0002483487115972783,
+          "contact_absolute_change_quantiles": [
+            4.59370385896829e-07,
+            3.658692920995542e-05,
+            0.0006279166773806993,
+            0.001065688475539367
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03189466724965758,
+          "control_mean": 0.031898449781223685,
+          "relative_mean_change": -0.00011858041980239431,
+          "contact_mean_absolute_change": 0.0008654854214099404,
+          "contact_rms_change": 0.007375564067431621,
+          "contact_absolute_change_quantiles": [
+            1.5941068556325766e-09,
+            2.100477737534967e-06,
+            0.0008420256691915453,
+            0.1897142444429904
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.07570304771064394,
+          "control_mean": 0.07585237078911906,
+          "relative_mean_change": -0.0019686013360118437,
+          "contact_mean_absolute_change": 0.0010866650519939596,
+          "contact_rms_change": 0.005428510348601876,
+          "contact_absolute_change_quantiles": [
+            1.3491089911887855e-07,
+            0.00010856379281422301,
+            0.0029914452948434783,
+            0.0987118451349723
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.06347357288225072,
+          "control_mean": 0.06328531106630919,
+          "relative_mean_change": 0.0029748106277660558,
+          "contact_mean_absolute_change": 0.0014406607280752018,
+          "contact_rms_change": 0.01053853828803565,
+          "contact_absolute_change_quantiles": [
+            7.91988858696302e-08,
+            4.702437438239672e-05,
+            0.0019327244315613518,
+            0.22094621359957142
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "contact_mean": 0.039531660594877685,
+          "control_mean": 0.039531660594877685,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "contact_mean": 0.09531881569601641,
+          "control_mean": 0.09531881569601641,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "contact_mean": 0.08154046790117957,
+          "control_mean": 0.08154046790117957,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03953008168914216,
+          "control_mean": 0.039531660594877685,
+          "relative_mean_change": -3.9940283604655846e-05,
+          "contact_mean_absolute_change": 0.0009577338598438748,
+          "contact_rms_change": 0.008805172033252363,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.00045045020019741575,
+            0.2203538844696733
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.09514472643134278,
+          "control_mean": 0.09531881569601641,
+          "relative_mean_change": -0.001826389295780051,
+          "contact_mean_absolute_change": 0.0010573429010939297,
+          "contact_rms_change": 0.0064566104200137284,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0032952530939101,
+            0.11978731780256976
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.08180182065923197,
+          "control_mean": 0.08154046790117957,
+          "relative_mean_change": 0.0032051908062282752,
+          "contact_mean_absolute_change": 0.0014783307206675197,
+          "contact_rms_change": 0.012134444204852284,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0018895949912291264,
+            0.2629941623695417
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03951015586189006,
+          "control_mean": 0.039531660594877685,
+          "relative_mean_change": -0.0005439875953607842,
+          "contact_mean_absolute_change": 7.760255476589882e-05,
+          "contact_rms_change": 0.00019887029524153646,
+          "contact_absolute_change_quantiles": [
+            3.515047796140468e-07,
+            4.061434187703668e-06,
+            0.0005058443605513996,
+            0.0011446900246107894
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.0952467415520298,
+          "control_mean": 0.09531881569601641,
+          "relative_mean_change": -0.0007561376362087424,
+          "contact_mean_absolute_change": 0.00021788226598224846,
+          "contact_rms_change": 0.0003537891617573072,
+          "contact_absolute_change_quantiles": [
+            6.395024138017291e-08,
+            7.887219101176957e-05,
+            0.000892259632921194,
+            0.00129125903020616
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.08142329045585203,
+          "control_mean": 0.08154046790117957,
+          "relative_mean_change": -0.0014370465162101276,
+          "contact_mean_absolute_change": 0.00016556646295668185,
+          "contact_rms_change": 0.00026329017161615305,
+          "contact_absolute_change_quantiles": [
+            3.5947929763469055e-07,
+            5.424130924172772e-05,
+            0.0006434609674721425,
+            0.0010493584054101224
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.03950867619116992,
+          "control_mean": 0.039531660594877685,
+          "relative_mean_change": -0.0005814176121592407,
+          "contact_mean_absolute_change": 0.0010275865520986947,
+          "contact_rms_change": 0.008804022858972606,
+          "contact_absolute_change_quantiles": [
+            2.2947703182119028e-08,
+            5.095456545823815e-06,
+            0.0009091637606256087,
+            0.22023313020119795
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.09507484371208759,
+          "control_mean": 0.09531881569601641,
+          "relative_mean_change": -0.0025595364582253755,
+          "contact_mean_absolute_change": 0.0012521809547075078,
+          "contact_rms_change": 0.006453356922908738,
+          "contact_absolute_change_quantiles": [
+            6.395024138017291e-08,
+            0.00010150876761608196,
+            0.0032743084621587315,
+            0.11971674164969334
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.08168525725278065,
+          "control_mean": 0.08154046790117957,
+          "relative_mean_change": 0.0017756747701835884,
+          "contact_mean_absolute_change": 0.0016259720967898596,
+          "contact_rms_change": 0.012131216489981365,
+          "contact_absolute_change_quantiles": [
+            2.5019791459815477e-07,
+            6.680579414075627e-05,
+            0.0018809643937278547,
+            0.2625686376972334
+          ]
+        }
+      ]
+    },
+    {
+      "body_id": 10977,
+      "unique_contacts": 135011,
+      "changed_unique_contacts": 20863,
+      "expanded_nodes": 162170,
+      "cohorts": {
+        "all_retained_contacts": {
+          "contacts": 219012,
+          "changed_contacts": 29937,
+          "changed_fraction": 0.13669114021149525,
+          "moved_path_quantiles_um": [
+            10.00016631558247,
+            40.20726409519984,
+            241.36431646750302,
+            428.9731200115242
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.0,
+            0.2583542112564362,
+            0.4883662174736203,
+            0.5119861288061991
+          ]
+        },
+        "KC_to_APL": {
+          "contacts": 102014,
+          "changed_contacts": 16672,
+          "changed_fraction": 0.16342854902268317,
+          "moved_path_quantiles_um": [
+            10.00016631558247,
+            39.658807531559454,
+            232.85328657400345,
+            428.8771200115242
+          ],
+          "moved_extra_residual_quantiles_um": [
+            4.440892098500626e-16,
+            0.25600806788477043,
+            0.48779222232483826,
+            0.5119861288061991
+          ]
+        },
+        "APL_to_KC": {
+          "contacts": 100658,
+          "changed_contacts": 10902,
+          "changed_fraction": 0.10830733771781677,
+          "moved_path_quantiles_um": [
+            10.005960378132778,
+            40.94774646897324,
+            245.02259385724884,
+            424.1429465568234
+          ],
+          "moved_extra_residual_quantiles_um": [
+            2.4868995751603507e-14,
+            0.26324619213438716,
+            0.48959551838122706,
+            0.5113878996690677
+          ]
+        },
+        "CA_input": {
+          "contacts": 12574,
+          "changed_contacts": 1910,
+          "changed_fraction": 0.15190074757435978,
+          "moved_path_quantiles_um": [
+            10.03899473731795,
+            44.55341354827658,
+            347.05612620385074,
+            401.44361821984853
+          ],
+          "moved_extra_residual_quantiles_um": [
+            3.1530333899354446e-14,
+            0.2610364294497701,
+            0.48741514306962513,
+            0.511130195513537
+          ]
+        },
+        "gL_input": {
+          "contacts": 27548,
+          "changed_contacts": 4251,
+          "changed_fraction": 0.1543124727747931,
+          "moved_path_quantiles_um": [
+            10.00016631558247,
+            41.888970598358476,
+            164.01643385178556,
+            244.0477567461563
+          ],
+          "moved_extra_residual_quantiles_um": [
+            2.9976021664879227e-14,
+            0.257311002052101,
+            0.48830918159492964,
+            0.5119861288061991
+          ]
+        },
+        "aL_input": {
+          "contacts": 11389,
+          "changed_contacts": 2027,
+          "changed_fraction": 0.17797875142681535,
+          "moved_path_quantiles_um": [
+            10.000648566475089,
+            38.97567513206934,
+            329.78307056466076,
+            360.33440786627193
+          ],
+          "moved_extra_residual_quantiles_um": [
+            0.00023714626268578343,
+            0.24660999299931907,
+            0.48836759733089136,
+            0.5118643426084417
+          ]
+        }
+      },
+      "reference_points": [
+        {
+          "unique_contact_index": 119932,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 42375,
+          "eligible_segments": 2
+        },
+        {
+          "unique_contact_index": 56808,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 31758,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 93587,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 101267,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 116718,
+          "eligible_segments": 0
+        },
+        {
+          "unique_contact_index": 117045,
+          "eligible_segments": 1
+        }
+      ],
+      "control_max_errors": [
+        2.3592239273284576e-16,
+        3.0531133177191805e-16
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "contact_mean": 0.024495881931823556,
+          "control_mean": 0.024495881931823556,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "contact_mean": 0.06840571318884933,
+          "control_mean": 0.06840571318884933,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "contact_mean": 0.04396374717660964,
+          "control_mean": 0.04396374717660964,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.024426741005696025,
+          "control_mean": 0.024495881931823556,
+          "relative_mean_change": -0.0028225530446286395,
+          "contact_mean_absolute_change": 0.0006417843853377135,
+          "contact_rms_change": 0.0051931812968303934,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0002835401196809455,
+            0.15001036787295305
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.06834581145024546,
+          "control_mean": 0.06840571318884933,
+          "relative_mean_change": -0.0008756832698827433,
+          "contact_mean_absolute_change": 0.0008609666605591268,
+          "contact_rms_change": 0.005307474351759767,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0021087019612473362,
+            0.08498421481095274
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.043952598126776696,
+          "control_mean": 0.04396374717660964,
+          "relative_mean_change": -0.00025359644136246917,
+          "contact_mean_absolute_change": 0.001347476866748012,
+          "contact_rms_change": 0.00961448329865377,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.001707941230665616,
+            0.21010935756681742
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.02447052247332808,
+          "control_mean": 0.024495881931823556,
+          "relative_mean_change": -0.0010352539486455647,
+          "contact_mean_absolute_change": 0.0001020852124821692,
+          "contact_rms_change": 0.00024726558348700794,
+          "contact_absolute_change_quantiles": [
+            1.4025398960526266e-08,
+            6.360205077621944e-07,
+            0.0005944153617157832,
+            0.001610314719984296
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.06836905936345489,
+          "control_mean": 0.06840571318884933,
+          "relative_mean_change": -0.0005358298844608811,
+          "contact_mean_absolute_change": 7.974936951048029e-05,
+          "contact_rms_change": 0.0001558637576659282,
+          "contact_absolute_change_quantiles": [
+            9.439512282938267e-09,
+            1.5108798638086007e-05,
+            0.00038892935703632383,
+            0.0007532764230261113
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.043881494366399806,
+          "control_mean": 0.04396374717660964,
+          "relative_mean_change": -0.0018709235561612525,
+          "contact_mean_absolute_change": 0.00021540262066616683,
+          "contact_rms_change": 0.0003832473337655211,
+          "contact_absolute_change_quantiles": [
+            6.715923247802014e-07,
+            9.237915995727753e-05,
+            0.000844201698282624,
+            0.0021179478720199096
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.024401749270015104,
+          "control_mean": 0.024495881931823556,
+          "relative_mean_change": -0.0038427953755835187,
+          "contact_mean_absolute_change": 0.0007332602332844329,
+          "contact_rms_change": 0.005193779754306105,
+          "contact_absolute_change_quantiles": [
+            1.4025398960526266e-08,
+            9.25790699274863e-07,
+            0.0010078130108450156,
+            0.14948177979125546
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.06830888256945869,
+          "control_mean": 0.06840571318884933,
+          "relative_mean_change": -0.0014155340961553575,
+          "contact_mean_absolute_change": 0.0009331757564335206,
+          "contact_rms_change": 0.00530267129450751,
+          "contact_absolute_change_quantiles": [
+            6.501251621250648e-09,
+            2.2423903237953763e-05,
+            0.0021571813221931413,
+            0.08490817132118349
+          ]
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.043869594889792404,
+          "control_mean": 0.04396374717660964,
+          "relative_mean_change": -0.002141589215291617,
+          "contact_mean_absolute_change": 0.0015321730156471968,
+          "contact_rms_change": 0.009576633581843208,
+          "contact_absolute_change_quantiles": [
+            6.219516759248256e-08,
+            0.00011451427585199014,
+            0.0018758987506623873,
+            0.20904084254412758
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "contact_mean": 0.02873397837081163,
+          "control_mean": 0.02873397837081163,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "contact_mean": 0.08073923225071826,
+          "control_mean": 0.08073923225071826,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "contact_mean": 0.056228666999374316,
+          "control_mean": 0.056228666999374316,
+          "relative_mean_change": 0.0,
+          "contact_mean_absolute_change": 0.0,
+          "contact_rms_change": 0.0,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.028646367939294974,
+          "control_mean": 0.02873397837081163,
+          "relative_mean_change": -0.003049018496013578,
+          "contact_mean_absolute_change": 0.0007387691036609494,
+          "contact_rms_change": 0.0059279663216487595,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0004000348515533353,
+            0.1605573375684955
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.08067210490122736,
+          "control_mean": 0.08073923225071826,
+          "relative_mean_change": -0.0008314093114292209,
+          "contact_mean_absolute_change": 0.000977567390672051,
+          "contact_rms_change": 0.0059309209682168,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.002796498855177694,
+            0.0895547849043622
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.05621240038634011,
+          "control_mean": 0.056228666999374316,
+          "relative_mean_change": -0.00028929394741628034,
+          "contact_mean_absolute_change": 0.0014996946539152913,
+          "contact_rms_change": 0.010733659408020076,
+          "contact_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0019205738877555306,
+            0.23223380814407432
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.0287055047870639,
+          "control_mean": 0.02873397837081163,
+          "relative_mean_change": -0.0009909377455596946,
+          "contact_mean_absolute_change": 0.00010844942416450802,
+          "contact_rms_change": 0.0002607256236961804,
+          "contact_absolute_change_quantiles": [
+            1.618929700407802e-08,
+            4.1574847886062527e-07,
+            0.0006439336423651326,
+            0.0016302614682062594
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.08068705692259061,
+          "control_mean": 0.08073923225071826,
+          "relative_mean_change": -0.0006462202658260585,
+          "contact_mean_absolute_change": 8.704233041891706e-05,
+          "contact_rms_change": 0.0001623161594533138,
+          "contact_absolute_change_quantiles": [
+            3.961507391569974e-08,
+            3.0106383893252486e-05,
+            0.0004084408123729566,
+            0.0007628653083638359
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.05611589069004202,
+          "control_mean": 0.056228666999374316,
+          "relative_mean_change": -0.002005672824033966,
+          "contact_mean_absolute_change": 0.00025332100593096165,
+          "contact_rms_change": 0.00043445488141124935,
+          "contact_absolute_change_quantiles": [
+            1.0558680869632298e-06,
+            0.00012386031978452866,
+            0.0009706576904933428,
+            0.0022636351503998453
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "contact_mean": 0.028618334351290613,
+          "control_mean": 0.02873397837081163,
+          "relative_mean_change": -0.004024643508414805,
+          "contact_mean_absolute_change": 0.0008369158990590625,
+          "contact_rms_change": 0.005929447926432551,
+          "contact_absolute_change_quantiles": [
+            1.618929700407802e-08,
+            5.848508513144057e-07,
+            0.0010699623321538815,
+            0.16002398413186741
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "contact_mean": 0.08061963047509557,
+          "control_mean": 0.08073923225071826,
+          "relative_mean_change": -0.001481334071288809,
+          "contact_mean_absolute_change": 0.0010558728697729718,
+          "contact_rms_change": 0.005925449635702192,
+          "contact_absolute_change_quantiles": [
+            6.202401575672312e-08,
+            3.5514977909864576e-05,
+            0.0027575537624843632,
+            0.08915247341426943
+          ]
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "contact_mean": 0.05609869917421481,
+          "control_mean": 0.056228666999374316,
+          "relative_mean_change": -0.0023114157260912815,
+          "contact_mean_absolute_change": 0.00171719935900728,
+          "contact_rms_change": 0.010692055996310712,
+          "contact_absolute_change_quantiles": [
+            9.393133235981177e-08,
+            0.0001506011065452728,
+            0.0021191177527268776,
+            0.23090705995332003
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "48 static probes including 12 controls; deterministic same-component reassignment is a stress test, not estimated anatomical uncertainty.",
+  "physiological_fit": false,
+  "neural_network_run": false,
+  "runtime_changed": false
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Read-only next-step source leads for Fig. 5/6 timing. Repository tree inventories and runAPL.m inspected; no author code executed or copied into implementation.",
+  "records": [
+    {
+      "path": "data/raw/apl-attachment-sensitivity-source-leads/amin-tree.json",
+      "url": "https://api.github.com/repos/aclinlab/amin-et-al-2020/git/trees/d16f97f26e605ec0591043db636b7ff8e9801e0f?recursive=1",
+      "bytes": 9319,
+      "sha256": "71b0d8393c6bfb1fa700c3f99d860ac6a9f90280cdca1f99ea3c5bb7a1f2d78c"
+    },
+    {
+      "path": "data/raw/apl-attachment-sensitivity-source-leads/calcium-imaging-tree.json",
+      "url": "https://api.github.com/repos/aclinlab/calcium-imaging/git/trees/a963384aba0e6f9b62b84aae20d0f8f60548a581?recursive=1",
+      "bytes": 14310,
+      "sha256": "6bf0bc14ec9f338f1a1ec95c29bac30c4a933672eb687ba921f6c69b6483e3e8"
+    },
+    {
+      "path": "data/raw/apl-attachment-sensitivity-source-leads/runAPL.m",
+      "url": "https://raw.githubusercontent.com/aclinlab/amin-et-al-2020/d16f97f26e605ec0591043db636b7ff8e9801e0f/runAPL.m",
+      "bytes": 3951,
+      "sha256": "ccc7bd29aa207165bd6939e919ac31af9ddc4b4fa58cc92fd142a1215908a833"
+    }
+  ],
+  "findings": [
+    "Primary XML Fig. 4 traces use 1.5 mM ATP /100 ms, unlike Fig. 5/6 0.75 mM /10 ms. Do not pool protocols.",
+    "Fig. 5/6 display time courses, but listed Fig. 7 source workbook is the already inspected spatial summary. Raw trace export is not identified here.",
+    "Amin repository runAPL.m documents connectome and spatial processing; calcium-imaging tree contains software with no .mat/.csv/.xlsx/.h5/.hdf5 files. Amin MAT contents were not inspected in this access step.",
+    "Available plotted calcium and downstream KC inhibition time courses may constrain a reporter-level candidate; they do not uniquely identify electrical or GABA-release kinetics."
+  ]
+}

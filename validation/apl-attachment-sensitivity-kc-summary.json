@@ -1,0 +1,769 @@
+{
+  "status": "saved_summary_reproduced",
+  "summary_scalar_checks": 432,
+  "scope": "Equal-weight summary across KCs of each KC mean per retained APL contact. No electrical conductance, release law or empirical error probability implied.",
+  "inputs": [
+    {
+      "path": "validation/apl-attachment-sensitivity-results.json",
+      "sha256": "80bbc1fa952854bccf264d440ceb03f69361c6f70d509175b937a552300fdce9"
+    },
+    {
+      "path": "validation/apl-attachment-sensitivity-arrays.npz",
+      "sha256": "d59074c6897bc955c5c796d48479e165fc3655fe83c8cd77352cdc965ed70af6"
+    },
+    {
+      "path": "validation/male-apl-geometry-arrays.npz",
+      "sha256": "3738c62a7294da9f109447a164b9767491976628e3d55df35be1bc0363df058b"
+    },
+    {
+      "path": "validation/apl-spatial-operator-arrays.npz",
+      "sha256": "bbbaf0a61bcf3be7d3fec7b328aecf2bd87aa8813cea16982aa7586ee7f5c78e"
+    }
+  ],
+  "cells": [
+    {
+      "body_id": 10540,
+      "postsynaptic_kcs": 2259,
+      "contact_count_quantiles": [
+        1.0,
+        44.0,
+        70.0,
+        206.0
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.031525890775942485,
+          "max_change_kc_alternative": 0.031525890775942485
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.042217637545301445,
+          "max_change_kc_alternative": 0.042217637545301445
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.08816896085234566,
+          "max_change_kc_alternative": 0.08816896085234566
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0001252127332999134,
+            0.0024035430139915754,
+            0.0161313005512065
+          ],
+          "max_change_kc_body_id": 117446,
+          "max_change_kc_contacts": 6,
+          "max_change_kc_control": 0.08453390643128827,
+          "max_change_kc_alternative": 0.10066520698249477
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0002317728882499509,
+            0.0016824188856160807,
+            0.025270747156770107
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.09888098623932214,
+          "max_change_kc_alternative": 0.07361023908255203
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00022733564583236193,
+            0.003636847100621148,
+            0.023458704604980455
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.04885368979829748,
+          "max_change_kc_alternative": 0.025394985193317027
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            3.6456336765383623e-08,
+            2.285969076969499e-05,
+            0.00011304447942943602,
+            0.0002606090330789096
+          ],
+          "max_change_kc_body_id": 55670,
+          "max_change_kc_contacts": 50,
+          "max_change_kc_control": 0.06600178612190205,
+          "max_change_kc_alternative": 0.06574117708882314
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            7.770152547353915e-07,
+            0.0001128096110294477,
+            0.00028648003855631237,
+            0.00046157586984603427
+          ],
+          "max_change_kc_body_id": 37904,
+          "max_change_kc_contacts": 64,
+          "max_change_kc_control": 0.12139342237935882,
+          "max_change_kc_alternative": 0.12093184650951279
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            1.1738592303744966e-07,
+            7.28006138496079e-05,
+            0.00018998114927561773,
+            0.00034975966035880046
+          ],
+          "max_change_kc_body_id": 525662,
+          "max_change_kc_contacts": 46,
+          "max_change_kc_control": 0.16646331260793246,
+          "max_change_kc_alternative": 0.16611355294757366
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            2.7692460234651772e-08,
+            0.00012952272292063305,
+            0.002388601614484558,
+            0.016027869325230995
+          ],
+          "max_change_kc_body_id": 117446,
+          "max_change_kc_contacts": 6,
+          "max_change_kc_control": 0.08453390643128827,
+          "max_change_kc_alternative": 0.10056177575651927
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            2.0988866637761117e-07,
+            0.00026075998430810654,
+            0.001693861827791303,
+            0.025247700150769187
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.09888098623932214,
+          "max_change_kc_alternative": 0.07363328608855295
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            5.160448793284367e-08,
+            0.00023855289861550444,
+            0.003600270729973893,
+            0.023468526626491536
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.04885368979829748,
+          "max_change_kc_alternative": 0.025385163171805947
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.03867100460274674,
+          "max_change_kc_alternative": 0.03867100460274674
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.055407011562193666,
+          "max_change_kc_alternative": 0.055407011562193666
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 13173,
+          "max_change_kc_contacts": 25,
+          "max_change_kc_control": 0.10835992166096853,
+          "max_change_kc_alternative": 0.10835992166096853
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00014827843491734688,
+            0.002839197667329091,
+            0.018176937831237083
+          ],
+          "max_change_kc_body_id": 117446,
+          "max_change_kc_contacts": 6,
+          "max_change_kc_control": 0.09712463410548144,
+          "max_change_kc_alternative": 0.11530157193671853
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0002826724508201983,
+            0.0018975454928645487,
+            0.03373706994564986
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.11736073273377462,
+          "max_change_kc_alternative": 0.08362366278812476
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00020810859610916055,
+            0.004060238141138149,
+            0.035302045973803375
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.07113669687025881,
+          "max_change_kc_alternative": 0.03583465089645543
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            1.8208974788061494e-08,
+            2.641793173578655e-05,
+            0.0001189361142759984,
+            0.0002812204823401804
+          ],
+          "max_change_kc_body_id": 55670,
+          "max_change_kc_contacts": 50,
+          "max_change_kc_control": 0.07713335431830574,
+          "max_change_kc_alternative": 0.07685213383596556
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            4.571891437654685e-08,
+            0.00010423768033682862,
+            0.0003378272303684579,
+            0.0005349791631908962
+          ],
+          "max_change_kc_body_id": 37904,
+          "max_change_kc_contacts": 64,
+          "max_change_kc_control": 0.15276675616507504,
+          "max_change_kc_alternative": 0.15223177700188414
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            6.113499015358848e-08,
+            9.68608015884248e-05,
+            0.00023863538101351334,
+            0.00040954454459116163
+          ],
+          "max_change_kc_body_id": 525662,
+          "max_change_kc_contacts": 46,
+          "max_change_kc_control": 0.2002902604867972,
+          "max_change_kc_alternative": 0.19988071594220605
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            2.220552218837324e-08,
+            0.00015574933473939262,
+            0.0028299909208988143,
+            0.0180260067678447
+          ],
+          "max_change_kc_body_id": 117446,
+          "max_change_kc_contacts": 6,
+          "max_change_kc_control": 0.09712463410548144,
+          "max_change_kc_alternative": 0.11515064087332615
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            2.3281700714528064e-07,
+            0.0003325737981789839,
+            0.0019321108945687003,
+            0.03374895562728414
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.11736073273377462,
+          "max_change_kc_alternative": 0.08361177710649048
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            2.025141625366933e-07,
+            0.0002451763426115153,
+            0.004082604378544915,
+            0.03532943596009358
+          ],
+          "max_change_kc_body_id": 142848,
+          "max_change_kc_contacts": 3,
+          "max_change_kc_control": 0.07113669687025881,
+          "max_change_kc_alternative": 0.03580726091016523
+        }
+      ]
+    },
+    {
+      "body_id": 10977,
+      "postsynaptic_kcs": 2374,
+      "contact_count_quantiles": [
+        1.0,
+        46.0,
+        72.0,
+        160.0
+      ],
+      "cases": [
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.013868973161146204,
+          "max_change_kc_alternative": 0.013868973161146204
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.06630893957109102,
+          "max_change_kc_alternative": 0.06630893957109102
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.08195791389969051,
+          "max_change_kc_alternative": 0.08195791389969051
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00013995751587936311,
+            0.0017143360350593735,
+            0.009797927524514999
+          ],
+          "max_change_kc_body_id": 123140,
+          "max_change_kc_contacts": 21,
+          "max_change_kc_control": 0.027230145095494013,
+          "max_change_kc_alternative": 0.03702807262000901
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00021009338815545023,
+            0.001535761769867663,
+            0.005165343592068043
+          ],
+          "max_change_kc_body_id": 172288,
+          "max_change_kc_contacts": 30,
+          "max_change_kc_control": 0.04222811934589084,
+          "max_change_kc_alternative": 0.04739346293795888
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00018037504452619868,
+            0.0032413017873021434,
+            0.010147487911721105
+          ],
+          "max_change_kc_body_id": 99838,
+          "max_change_kc_contacts": 20,
+          "max_change_kc_control": 0.05600326820117583,
+          "max_change_kc_alternative": 0.04585578028945472
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            2.4373635894303636e-08,
+            3.492036405378443e-05,
+            0.00015822657867513214,
+            0.00036875186737650445
+          ],
+          "max_change_kc_body_id": 545375,
+          "max_change_kc_contacts": 9,
+          "max_change_kc_control": 0.1248991890277236,
+          "max_change_kc_alternative": 0.12453043716034709
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            1.2660132109321154e-09,
+            1.5010288569192176e-05,
+            0.00011966138841229892,
+            0.00019750067312115926
+          ],
+          "max_change_kc_body_id": 89858,
+          "max_change_kc_contacts": 52,
+          "max_change_kc_control": 0.09288112868533711,
+          "max_change_kc_alternative": 0.09268362801221595
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            1.4356199506959655e-08,
+            6.412130698768732e-05,
+            0.0003715215144064407,
+            0.0005705496809883248
+          ],
+          "max_change_kc_body_id": 901937,
+          "max_change_kc_contacts": 28,
+          "max_change_kc_control": 0.08914737762415936,
+          "max_change_kc_alternative": 0.08857682794317104
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            8.089778943606851e-08,
+            0.00015483549416712115,
+            0.0017628188489906033,
+            0.009675115420420204
+          ],
+          "max_change_kc_body_id": 123140,
+          "max_change_kc_contacts": 21,
+          "max_change_kc_control": 0.027230145095494013,
+          "max_change_kc_alternative": 0.036905260515914216
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            3.286730219931311e-08,
+            0.00020841252341097932,
+            0.0015442592198373951,
+            0.005165055422302542
+          ],
+          "max_change_kc_body_id": 172288,
+          "max_change_kc_contacts": 30,
+          "max_change_kc_control": 0.04222811934589084,
+          "max_change_kc_alternative": 0.04739317476819338
+        },
+        {
+          "metric": "constant_diameter",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            1.4356199506959655e-08,
+            0.00027292050193397643,
+            0.0032110961714301766,
+            0.010203148753032874
+          ],
+          "max_change_kc_body_id": 99838,
+          "max_change_kc_contacts": 20,
+          "max_change_kc_control": 0.05600326820117583,
+          "max_change_kc_alternative": 0.045800119448142954
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.017573169616372085,
+          "max_change_kc_alternative": 0.017573169616372085
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.08093733653549122,
+          "max_change_kc_alternative": 0.08093733653549122
+        },
+        {
+          "metric": "source_radius",
+          "variant": "nearest_control",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_change_kc_body_id": 11862,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.09914859442833418,
+          "max_change_kc_alternative": 0.09914859442833418
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00016069742427630984,
+            0.0020184360149400078,
+            0.010381950354669288
+          ],
+          "max_change_kc_body_id": 123140,
+          "max_change_kc_contacts": 21,
+          "max_change_kc_control": 0.03177730081018765,
+          "max_change_kc_alternative": 0.042159251164856935
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.0002389491254052474,
+            0.0017169493332215048,
+            0.0055494925120092645
+          ],
+          "max_change_kc_body_id": 172288,
+          "max_change_kc_contacts": 30,
+          "max_change_kc_control": 0.05212525749640233,
+          "max_change_kc_alternative": 0.057674750008411595
+        },
+        {
+          "metric": "source_radius",
+          "variant": "output_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            0.0,
+            0.00022098391343847515,
+            0.0034849517972296708,
+            0.011262304282414995
+          ],
+          "max_change_kc_body_id": 99838,
+          "max_change_kc_contacts": 20,
+          "max_change_kc_control": 0.06519692715655886,
+          "max_change_kc_alternative": 0.05393462287414387
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            7.248286733600902e-08,
+            3.8722354801217634e-05,
+            0.00017146448922078606,
+            0.0003998833604938745
+          ],
+          "max_change_kc_body_id": 545375,
+          "max_change_kc_contacts": 9,
+          "max_change_kc_control": 0.14093214249458721,
+          "max_change_kc_alternative": 0.14053225913409334
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            1.8106080959534587e-07,
+            2.937061200491281e-05,
+            0.00013478453038548303,
+            0.00021403392751784267
+          ],
+          "max_change_kc_body_id": 89858,
+          "max_change_kc_contacts": 52,
+          "max_change_kc_control": 0.106171242067592,
+          "max_change_kc_alternative": 0.10595720814007416
+        },
+        {
+          "metric": "source_radius",
+          "variant": "source_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            1.2608010470371855e-07,
+            8.818067674706831e-05,
+            0.00044173026428082627,
+            0.000656207162780087
+          ],
+          "max_change_kc_body_id": 79299,
+          "max_change_kc_contacts": 36,
+          "max_change_kc_control": 0.12180933203633597,
+          "max_change_kc_alternative": 0.12115312487355588
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "CA",
+          "kc_absolute_change_quantiles": [
+            7.248286733600902e-08,
+            0.00017370866531608766,
+            0.0020650850289320494,
+            0.010250744689940923
+          ],
+          "max_change_kc_body_id": 123140,
+          "max_change_kc_contacts": 21,
+          "max_change_kc_control": 0.03177730081018765,
+          "max_change_kc_alternative": 0.04202804550012857
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "gL",
+          "kc_absolute_change_quantiles": [
+            1.8106080959534587e-07,
+            0.000248097046583233,
+            0.0017564977120749523,
+            0.005537416486579488
+          ],
+          "max_change_kc_body_id": 172288,
+          "max_change_kc_contacts": 30,
+          "max_change_kc_control": 0.05212525749640233,
+          "max_change_kc_alternative": 0.05766267398298182
+        },
+        {
+          "metric": "source_radius",
+          "variant": "both_alternative",
+          "source_region": "aL",
+          "kc_absolute_change_quantiles": [
+            2.0896917385035407e-07,
+            0.0003099325072538888,
+            0.0034816113229362944,
+            0.011348829309943069
+          ],
+          "max_change_kc_body_id": 99838,
+          "max_change_kc_contacts": 20,
+          "max_change_kc_control": 0.06519692715655886,
+          "max_change_kc_alternative": 0.053848097846615796
+        }
+      ]
+    }
+  ]
+}
