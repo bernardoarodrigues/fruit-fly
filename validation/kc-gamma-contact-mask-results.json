@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "passed": true,
+  "completed_utc": "2026-09-05T21:15:15.000910+00:00",
+  "plan": {
+    "path": "validation/kc-gamma-contact-mask-plan.json",
+    "bytes": 4318,
+    "sha256": "9d9b0bfe6abf8cea00263cd06018c66346ae82febbf6c8e8aab8cb3ae52db903"
+  },
+  "arrays": {
+    "path": "validation/kc-gamma-contact-mask-arrays.npz",
+    "bytes": 1338184,
+    "sha256": "d71093e031f3508203c379658708b28e6db42e8c37159e4f7b0920978c1f1538"
+  },
+  "source_start": [
+    {
+      "path": "scripts/prepare_kc_gamma_contact_mask.py",
+      "bytes": 8032,
+      "sha256": "12257b084fc57c166552cedcf8f99403d3fac4e51a69c856f2f83f6c857e2eb5"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-independent-review.json",
+      "bytes": 13330,
+      "sha256": "33b478c9a0f7470dfeaaf244db2f70d98a6de50c9943b3e6c384256a0be06ef0"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "research/24-kc-spatial-mechanism-constraints.md",
+      "bytes": 7846,
+      "sha256": "8b056efb00413a953108f700005671c9963a03623895fcff8686076a5794c2f8"
+    },
+    {
+      "path": "validation/kc-spatial-mechanism-source-review.json",
+      "bytes": 20462,
+      "sha256": "ce28681fb594db1f9d9a5e0b43c572d44c6f7aa3b8af0f5010842eba55381c9c"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "bytes": 103578335,
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    }
+  ],
+  "source_end": [
+    {
+      "path": "scripts/prepare_kc_gamma_contact_mask.py",
+      "bytes": 8032,
+      "sha256": "12257b084fc57c166552cedcf8f99403d3fac4e51a69c856f2f83f6c857e2eb5"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-independent-review.json",
+      "bytes": 13330,
+      "sha256": "33b478c9a0f7470dfeaaf244db2f70d98a6de50c9943b3e6c384256a0be06ef0"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "research/24-kc-spatial-mechanism-constraints.md",
+      "bytes": 7846,
+      "sha256": "8b056efb00413a953108f700005671c9963a03623895fcff8686076a5794c2f8"
+    },
+    {
+      "path": "validation/kc-spatial-mechanism-source-review.json",
+      "bytes": 20462,
+      "sha256": "ce28681fb594db1f9d9a5e0b43c572d44c6f7aa3b8af0f5010842eba55381c9c"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "bytes": 103578335,
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    }
+  ],
+  "edges": 270710,
+  "selected_contacts": 414095,
+  "pair_total_contacts": 461087,
+  "retained_contacts_on_selected_pairs": 46992,
+  "fully_selected_edges": 242204,
+  "mixed_edges": 28506,
+  "gamma_cells": 1557,
+  "gamma_cells_receiving_selected_contacts": 1557,
+  "source_cells": 1717,
+  "all_KC_to_KC_gamma_roi_contacts": 451534,
+  "target_types": {
+    "KCg": 492,
+    "KCg-d": 48040,
+    "KCg-m": 361716,
+    "KCg-s1": 1612,
+    "KCg-s2": 1295,
+    "KCg-s3": 549,
+    "KCg-s4": 391
+  },
+  "source_types": {
+    "KCa'b'-ap1": 593,
+    "KCa'b'-ap2": 27,
+    "KCa'b'-m": 10,
+    "KCab-m": 1,
+    "KCab-p": 16,
+    "KCab-s": 7,
+    "KCg": 429,
+    "KCg-d": 49613,
+    "KCg-m": 359055,
+    "KCg-s1": 2075,
+    "KCg-s2": 1299,
+    "KCg-s3": 581,
+    "KCg-s4": 389
+  },
+  "representative_indices": [
+    27565,
+    8904,
+    8303,
+    8285,
+    3986,
+    10679,
+    7784,
+    12810,
+    13593,
+    31112,
+    59832,
+    119908,
+    60438
+  ],
+  "independent_raw_pair_check": {
+    "passed": true,
+    "pairs": 270710,
+    "contacts": 414095,
+    "method": "Raw body IDs and literal primary_post labels, Python Counter; exact equality with aggregate route"
+  },
+  "arithmetic_checks": {
+    "positive_original": true,
+    "selected_bounded_by_total": true,
+    "full_pairs_exact_zero": true,
+    "mixed_pairs_strict_positive": true
+  },
+  "network_run": false,
+  "physiological_acceptance": false
+}

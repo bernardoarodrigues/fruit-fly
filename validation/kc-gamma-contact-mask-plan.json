@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T21:15:11.767045+00:00",
+  "inputs": [
+    {
+      "path": "scripts/prepare_kc_gamma_contact_mask.py",
+      "bytes": 8032,
+      "sha256": "12257b084fc57c166552cedcf8f99403d3fac4e51a69c856f2f83f6c857e2eb5"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-arrays.npz",
+      "bytes": 4379707,
+      "sha256": "01af4f632d16116441e72f3362bd606c722a5e4f2ce63c276d52006320bbc6bb"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-results.json",
+      "bytes": 148503,
+      "sha256": "d1bb03121cfa97efdf5641d2fd712094349000c3afc7bc6e40fd0648bd1f59e6"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-independent-review.json",
+      "bytes": 13330,
+      "sha256": "33b478c9a0f7470dfeaaf244db2f70d98a6de50c9943b3e6c384256a0be06ef0"
+    },
+    {
+      "path": "validation/kc-apl-contact-location-plan.json",
+      "bytes": 5673,
+      "sha256": "6bd090686794cb71fe727014f0fc34c4e864d4d226646e8832fb05bb41cdff33"
+    },
+    {
+      "path": "research/24-kc-spatial-mechanism-constraints.md",
+      "bytes": 7846,
+      "sha256": "8b056efb00413a953108f700005671c9963a03623895fcff8686076a5794c2f8"
+    },
+    {
+      "path": "validation/kc-spatial-mechanism-source-review.json",
+      "bytes": 20462,
+      "sha256": "ce28681fb594db1f9d9a5e0b43c572d44c6f7aa3b8af0f5010842eba55381c9c"
+    },
+    {
+      "path": "data/raw/pn-kc-apl-compartment/kc-apl-partners-selected.parquet",
+      "bytes": 103578335,
+      "sha256": "33ecb419aaa4829ab2cf7dbe0fa0df51983dca5f4c951d43f33fe8caa5ecd329"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    }
+  ],
+  "source_selector": "Exact class Kenyon_Cell, any annotated KC subtype; direct adult lateral experiment stimulated a mixed alpha/beta and gamma subset. This is a declared model diagnostic, not a receptor map.",
+  "target_selector": {
+    "exact_class": "Kenyon_Cell",
+    "exact_types": [
+      "KCg",
+      "KCg-d",
+      "KCg-m",
+      "KCg-s1",
+      "KCg-s2",
+      "KCg-s3",
+      "KCg-s4"
+    ]
+  },
+  "postsynaptic_primary_rois": [
+    "gL(L)",
+    "gL(R)"
+  ],
+  "retained_contacts": "Preserve graph contacts. Remove only the implemented fast positive contribution allocated to these contacts; leave every other contact on a mixed-ROI pair intact. Do not include PED, calyx, unspecified ROI or non-gamma targets.",
+  "arithmetic": "Let W be the original stored float32 pair weight cast to float64, c the integer selected contacts and N all contacts on that pair. removed=float64(W)*float64(c/N); retained=float64(W)-removed. Fully selected pairs use exactly zero. Unaffected pair weights bypass this calculation and remain bitwise original. This allocates the original rounded pair weight, without installing a new per-contact gain or float32 rounding.",
+  "independent_check": "Re-read audited raw selected partner rows, select by body IDs and literal strings, count body pairs with Counter, and join directly to full CSR. Do not use sparse edge-ROI aggregates for this check.",
+  "limitations": [
+    "Gamma subtype/ROI label transfer is a hypothesis, not measured receptor identity at each synapse.",
+    "Source sex and local-to-soma voltage transfer remain unresolved.",
+    "No simulation, sign reversal, GPCR kinetics, body integration, or promotion."
+  ]
+}

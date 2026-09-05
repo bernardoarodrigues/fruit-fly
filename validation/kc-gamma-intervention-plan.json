@@ -1,0 +1,781 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T21:19:55.106638+00:00",
+  "inputs": [
+    {
+      "path": "scripts/experiment_kc_gamma_intervention.py",
+      "bytes": 21810,
+      "sha256": "ea81b9be3571097b8f5374a93afbcf3c722598a266e5d20fb58179a2fc9cc3b0"
+    },
+    {
+      "path": "scripts/kc_gamma_intervention_kernel.py",
+      "bytes": 7522,
+      "sha256": "fa68b82faded20bf9e55159ba215f0492497dcac0784b97cffe81efc59082789"
+    },
+    {
+      "path": "scripts/navigation_mbon_intervention_kernel.py",
+      "bytes": 17716,
+      "sha256": "5cfb8c0e51e7bc968a23c2be41133634e284a39ca6f63e5d010f0656b17241a4"
+    },
+    {
+      "path": "scripts/inhibitory_recurrent_panel_kernel.py",
+      "bytes": 29863,
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff"
+    },
+    {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    {
+      "path": "scripts/inhibitory_recurrent_panel_archive.py",
+      "bytes": 17406,
+      "sha256": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+    },
+    {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    {
+      "path": "validation/kc-gamma-contact-mask-arrays.npz",
+      "bytes": 1338184,
+      "sha256": "d71093e031f3508203c379658708b28e6db42e8c37159e4f7b0920978c1f1538"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-plan.json",
+      "bytes": 33875,
+      "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-plan.json",
+      "bytes": 142367,
+      "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+    },
+    {
+      "path": "validation/kc-gamma-contact-mask-plan.json",
+      "bytes": 4318,
+      "sha256": "9d9b0bfe6abf8cea00263cd06018c66346ae82febbf6c8e8aab8cb3ae52db903"
+    },
+    {
+      "path": "validation/kc-gamma-checkpoint-parity-plan.json",
+      "bytes": 14988,
+      "sha256": "e2d0063d25a1f192b5431be0c96f15a29edf00f381073bbd96c82241c29ddf27"
+    },
+    {
+      "path": "docs/kc-gamma-intervention-plan.md",
+      "bytes": 7167,
+      "sha256": "f195958e5587a6148a8f10f6c683448330d745ad194d5c67749e9ce059a7fc65"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "validation/kc-gamma-contact-mask-results.json",
+      "bytes": 6999,
+      "sha256": "5b000abce2091189f67f2cd540e5f3a5408d83d748c910a3343d2909677b564a"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-kernel-checks.json",
+      "bytes": 21113,
+      "sha256": "64b04de4e6d7c95f34ab56a4523cc04bb1ffe2d457cc6a19e00f00336c1a8927"
+    },
+    {
+      "path": "validation/kc-gamma-checkpoint-parity-results.json",
+      "bytes": 1935,
+      "sha256": "dc36415beabe00503232cd1e0acf8f857a9b2fb5c6af73c6eb338078f9766fd0"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.json",
+      "bytes": 14071,
+      "sha256": "8e5eebcb1c904a663ea25eb8abdb721945d37dbba55602351d8be0173c75f641"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.npz",
+      "bytes": 988546,
+      "sha256": "f659af08045d06ac27784e767f409cccca0fb0e1e28567c0c33bae4385477086"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.complete.json",
+      "bytes": 576,
+      "sha256": "4d4eb02e6a25524aa760f936bf667b12fde5b5c6a0fa74c5eafbf47335704018"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.json",
+      "bytes": 1121,
+      "sha256": "ddcc3b53d2598ac5a79dd2b848d1bb91d970574c34a9632d037816f02e0a00fd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.npz",
+      "bytes": 8388039,
+      "sha256": "7a888d1b264c2d97d29e5b8657f90f7f6de0cdf93bd049e16e3c9e07f774bdc4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.complete.json",
+      "bytes": 582,
+      "sha256": "11683fa0ba11b86114875a63546acdccbfffafe47ff6181e50a726f12fdeeef4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.json",
+      "bytes": 1121,
+      "sha256": "4f04b4d262b1b8b6c59dc93d2332679c76c7b4073e7034d50bbb6145b0bf6dfe"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.npz",
+      "bytes": 8388150,
+      "sha256": "76fb68b96ef0f0cb6e1cf3b0584b5e77b46166ad300cc549419326d353219124"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.complete.json",
+      "bytes": 582,
+      "sha256": "46b441c83bb448e5feaec6af5cc138021b60565ea91b0758a2dc9c015934624d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.json",
+      "bytes": 1121,
+      "sha256": "d3945ae1a902315a3f32f446fc66c3c8734acf663a2c483d4ed689d79002f480"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.npz",
+      "bytes": 8388243,
+      "sha256": "b6cc12da5e20f3bfdfcad63aeed0c7246331627fce99df4c1ba6565e6b61d795"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.complete.json",
+      "bytes": 582,
+      "sha256": "34bb77b903f058ae9ba56d1ce10adf0e0a51acde89a11f3c3f2eda1727484ee7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "579fbe8f79360f2cf01f1a22bf86c3fa792e52a0c33d6db929739f87bd7cdd5e"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2990152,
+      "sha256": "899eed00ab8adf13c67869aacc1efddf2164bdfa6ec7ce797754f370b8db9556"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "b2eac015362587dd8783812e8343a1183c872a4d2fbedf7802a329c506292336"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.json",
+      "bytes": 53086,
+      "sha256": "a257c1bfaeaacc5383f67b7f7f6e4e9c42dfdb2dc0c7877dde133601bd0cb7df"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.npz",
+      "bytes": 118239,
+      "sha256": "1025b91cde6a0f3f7a133703e9925b4e2c02028ce56e3cae13873a527a2c26e6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "9774ce1acfcee1866e7efb6ad2718afabf625b219f9b3ee552d506168a6fe7b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "05e4568a9cc4225d10ba0b57c5fc537c00c96b9278573f7e860ae8caf70c6ca9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2965560,
+      "sha256": "7537ca01f507e216ed22350d218742ffdff18af9e6905280fd45edd79d17f9ae"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "0982eb9ee7ef4036c85b4573adc96558145fa1a9472ad78553dec27a08758467"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.json",
+      "bytes": 53061,
+      "sha256": "3fe64edd3225d96bd6b8cd44298d8bdacfc67f723a148bb124ec8fdb821d7f16"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.npz",
+      "bytes": 116412,
+      "sha256": "64d2d212955012f22799277a2b6c52b93305f2221873338d86a492fb2c51b137"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "6c25cc2d65a2d9f6864336b1a4b0080f22b532e6c066c66535a05d5b7caac57e"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.json",
+      "bytes": 8171,
+      "sha256": "e2788bafb0fa32206af6ca5119b0751c4c2d95d9c7168a22bc093e384ba0c908"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.npz",
+      "bytes": 2968834,
+      "sha256": "d2b4b5bd2488647d2e9fcf34b1f3f62676ddc461fd2293fd4dd0693fe02e0cfa"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/checkpoint-05000.complete.json",
+      "bytes": 652,
+      "sha256": "1b80df5a0ec562e490dd6d75fb721b415a220cf80fc5c3d3e9f860dbe4c6c459"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.json",
+      "bytes": 53126,
+      "sha256": "45876384d35255b01ef5660b3f2a6314f8446b6383e7472554b4c11d2ab4f1c2"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.npz",
+      "bytes": 118694,
+      "sha256": "1f31f7e1a5bf78261958ed3d8df5e12cf634118375f6d8d7e8aeff5c54f7129f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/chunk-0099.complete.json",
+      "bytes": 640,
+      "sha256": "e5d0c1d5c8dbfc19c0810b6c24c6678be97cade22f29b2258650e6b53c01e5cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "4b5df8e4a5414b53c7f520309f03071fe3ada0c7198c99e7ec52b3c6605c678a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2990152,
+      "sha256": "899eed00ab8adf13c67869aacc1efddf2164bdfa6ec7ce797754f370b8db9556"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "345f207c7c757b0aed4ec8dd5f008b6af6d4b9beb92ae23ef47878a7288152cc"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.json",
+      "bytes": 53086,
+      "sha256": "0ce5d003bdbfb3f212f17543e2964b2023d971f1dfe35cf5268e96017d50ed86"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.npz",
+      "bytes": 118239,
+      "sha256": "1025b91cde6a0f3f7a133703e9925b4e2c02028ce56e3cae13873a527a2c26e6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "939a5eb27dac622d1cbaf782eb631d7644f687fd3a1e45d2fe152429e3ffd48c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8172,
+      "sha256": "79ee1d4184a2b3c7efbb0f6cc01b6430f7e65411be76d3e7a3a5a34fca442c7f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2965560,
+      "sha256": "7537ca01f507e216ed22350d218742ffdff18af9e6905280fd45edd79d17f9ae"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "bd63b9fa4cdb50ed5d4e1549ebee93220a22eaf9cda79e6c2e8779aae2fe9172"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.json",
+      "bytes": 53061,
+      "sha256": "74918753cb1bf331d414c62b946f3e529909c0a9fd6067411708956314838a79"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.npz",
+      "bytes": 116412,
+      "sha256": "64d2d212955012f22799277a2b6c52b93305f2221873338d86a492fb2c51b137"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "1fc268c24331200540b0c8edf6adb370e1ddefb1c8be227897a0801de3e9bc67"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.json",
+      "bytes": 8171,
+      "sha256": "814249620a0bf7ee4fa08621ad1cae1c92afb9030ed04be90196054dc0bdb4a3"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.npz",
+      "bytes": 2968834,
+      "sha256": "d2b4b5bd2488647d2e9fcf34b1f3f62676ddc461fd2293fd4dd0693fe02e0cfa"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/checkpoint-05000.complete.json",
+      "bytes": 644,
+      "sha256": "67c25e04cc3fe8b47d8fd9ac6265ff83d66acc8af207468d48b75dd36af109da"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.json",
+      "bytes": 53126,
+      "sha256": "b566450cd47882fca8cdc60fef989bc389da76fc8d57cabb4885c60a22d2bde7"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.npz",
+      "bytes": 118694,
+      "sha256": "1f31f7e1a5bf78261958ed3d8df5e12cf634118375f6d8d7e8aeff5c54f7129f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/chunk-0099.complete.json",
+      "bytes": 632,
+      "sha256": "ed083fb3bb8164f960f25f3e89aaf29395e33db738d3801b54cc6fef85483656"
+    }
+  ],
+  "prior_run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "run_dir": "runs/20260905T211955222985Z-kc-gamma-intervention",
+  "trials": [
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate"
+    }
+  ],
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "neurons": 166700,
+  "threads": 4,
+  "chunk_ticks": 50,
+  "start_tick": 5000,
+  "end_tick": 30000,
+  "window_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "checkpoint_ticks": [
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "selected_indices": [
+    0,
+    6,
+    246,
+    306,
+    332,
+    406,
+    502,
+    704,
+    904,
+    1749,
+    2550,
+    3103,
+    3477,
+    3513,
+    3548,
+    3986,
+    6367,
+    7264,
+    7784,
+    8285,
+    8303,
+    8528,
+    8904,
+    10679,
+    12810,
+    13593,
+    23793,
+    27565,
+    31112,
+    49930,
+    59832,
+    60438,
+    73366,
+    76669,
+    76746,
+    78551,
+    85145,
+    89584,
+    89973,
+    92605,
+    93836,
+    94688,
+    96467,
+    96525,
+    96797,
+    97258,
+    97436,
+    97908,
+    97936,
+    99940,
+    100767,
+    102690,
+    104035,
+    108965,
+    111263,
+    112198,
+    119908,
+    122339,
+    126321,
+    126322,
+    127463,
+    130136,
+    131044,
+    131221,
+    131223,
+    131224,
+    131957,
+    132657,
+    132723,
+    133624,
+    143464,
+    164119,
+    164244
+  ],
+  "event_indices": [
+    246,
+    502,
+    904,
+    1749,
+    2550,
+    3477,
+    3513,
+    3986,
+    7264,
+    7784,
+    8285,
+    8303,
+    8528,
+    8904,
+    10679,
+    12810,
+    13593,
+    27565,
+    31112,
+    59832,
+    60438,
+    119908,
+    127463,
+    130136,
+    131044
+  ],
+  "mask": {
+    "path": "validation/kc-gamma-contact-mask-arrays.npz",
+    "bytes": 1338184,
+    "sha256": "d71093e031f3508203c379658708b28e6db42e8c37159e4f7b0920978c1f1538"
+  },
+  "delivery_window_ticks": [
+    5000,
+    15000
+  ],
+  "condition_rates_hz": {
+    "constant_baseline": [
+      11.0,
+      11.0,
+      11.0,
+      0.0
+    ],
+    "ethyl_acetate": [
+      11.0,
+      149.0,
+      11.0,
+      0.0
+    ]
+  },
+  "reference_targets": [
+    246,
+    502,
+    904,
+    1749,
+    2550,
+    3103,
+    3477,
+    3513,
+    3986,
+    7264,
+    7784,
+    8285,
+    8303,
+    8528,
+    8904,
+    10679,
+    12810,
+    13593,
+    27565,
+    31112,
+    49930,
+    59832,
+    60438,
+    119908,
+    127463,
+    130136,
+    131044
+  ],
+  "reference_tolerances_mv": {
+    "hybrid_lower_bound": 1e-10,
+    "production_vs_quad": 1e-08,
+    "order32_vs64": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "quad_error_estimate": 1e-09
+  },
+  "source_derivation": {
+    "base_sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff",
+    "solver_sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+    "checkpoint_helper": {
+      "base_path": "/Users/bernardo/Documents/Code/fruit-fly/scripts/inhibitory_recurrent_panel_kernel.py",
+      "base_sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff",
+      "solver_sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "patches": [
+        {
+          "label": "run_arguments",
+          "replacement_count": 1,
+          "old": "selected_column, log_events, event_mask):",
+          "new": "selected_column, log_events, event_mask, edge_suppressed, window_start, window_end):"
+        },
+        {
+          "label": "separate_telemetry_allocation",
+          "replacement_count": 1,
+          "old": "edge_counts = np.zeros((nsteps, 4, 3), np.int64)",
+          "new": "edge_counts = np.zeros((nsteps, 4, 3), np.int64)\n    suppressed_counts = np.zeros((nsteps, 3), np.int64)\n    suppressed_events = np.empty((128, 5), np.int64)\n    nsuppressed = 0"
+        },
+        {
+          "label": "delivery_only",
+          "replacement_count": 1,
+          "old": "                        if hybrid and weight < 0.:\n                            h[target] += -weight * (1. / 23.)\n                        else:\n                            s[target] += weight\n                        edge_counts[k, 1, sign] += 1\n                        disposition = 0",
+          "new": "                        if edge_suppressed[edge] and window_start <= tick < window_end:\n                            suppressed_counts[k, sign] += 1\n                            disposition = 3\n                            suppressed_events = _append_event(suppressed_events, nsuppressed, tick, source, edge, target, disposition)\n                            nsuppressed += 1\n                        else:\n                            if hybrid and weight < 0.:\n                                h[target] += -weight * (1. / 23.)\n                            else:\n                                s[target] += weight\n                            edge_counts[k, 1, sign] += 1\n                            disposition = 0"
+        },
+        {
+          "label": "run_return",
+          "replacement_count": 1,
+          "old": "ref_found, ref_ticks, ref_cells, ref_values,\n            tick_ref_found, tick_ref_ticks, tick_ref_cells, tick_ref_values)",
+          "new": "ref_found, ref_ticks, ref_cells, ref_values,\n            tick_ref_found, tick_ref_ticks, tick_ref_cells, tick_ref_values,\n            suppressed_counts, suppressed_events[:nsuppressed])"
+        },
+        {
+          "label": "advance_call",
+          "replacement_count": 1,
+          "old": "bool(log_selected_events),event_mask)",
+          "new": "bool(log_selected_events),event_mask,self._edge_suppressed,self._window_start,self._window_end)"
+        },
+        {
+          "label": "advance_unpack",
+          "replacement_count": 1,
+          "old": "rf,rt,ri,rv,tf,ttick,ti,tv) = values",
+          "new": "rf,rt,ri,rv,tf,ttick,ti,tv,suppressed_counts,suppressed_events) = values"
+        },
+        {
+          "label": "advance_sidecar",
+          "replacement_count": 1,
+          "old": "return result",
+          "new": "complete_suppressed = suppressed_events[:, 0] < self.tick\n    self.last_edge_intervention = self._telemetry(\n        start, self.tick, len(u), suppressed_counts[:done],\n        suppressed_events[complete_suppressed],\n        {\"counts\": suppressed_counts[done].copy(),\n         \"events\": suppressed_events[~complete_suppressed],\n         \"validity\": \"Only operations through failure.phase completed\"} if code else None)\n    if len(suppressed_events):\n        result[\"schema\"][\"dispositions\"] = dict(DISPOSITIONS, edge_suppressed=3)\n    return result"
+        }
+      ],
+      "derived_run_sha256": "2e00eb3eda2de156ab7d64bc9bb7529fda4d36984d219f63ce498c6561c38ce5",
+      "derived_advance_sha256": "05183da9894bbeec2267d6d02bc63e65e75c3c65aad83df60b91447ddd7c3641",
+      "derived_numba_cache": false
+    },
+    "patches": [
+      {
+        "label": "arguments",
+        "old": "selected_column, log_events, event_mask):",
+        "new": "selected_column, log_events, event_mask, modified, retained, window_start, window_end):",
+        "replacement_count": 1
+      },
+      {
+        "label": "telemetry",
+        "old": "edge_counts = np.zeros((nsteps, 4, 3), np.int64)",
+        "new": "edge_counts = np.zeros((nsteps, 4, 3), np.int64)\n    changed_counts = np.zeros((nsteps, 2), np.int64)\n    removed_sum = np.zeros(nsteps, np.float64)",
+        "replacement_count": 1
+      },
+      {
+        "label": "eligible_positive_delivery",
+        "old": "                        else:\n                            s[target] += weight\n                        edge_counts[k, 1, sign] += 1\n                        disposition = 0",
+        "new": "                        else:\n                            if modified[edge] and window_start <= tick < window_end:\n                                s[target] += retained[edge]\n                                changed_counts[k, 0 if retained[edge] == 0. else 1] += 1\n                                removed_sum[k] += weight - retained[edge]\n                            else:\n                                s[target] += weight\n                        edge_counts[k, 1, sign] += 1\n                        disposition = 3 if modified[edge] and window_start <= tick < window_end else 0",
+        "replacement_count": 1
+      },
+      {
+        "label": "return",
+        "old": "ref_found, ref_ticks, ref_cells, ref_values,\n            tick_ref_found, tick_ref_ticks, tick_ref_cells, tick_ref_values)",
+        "new": "ref_found, ref_ticks, ref_cells, ref_values,\n            tick_ref_found, tick_ref_ticks, tick_ref_cells, tick_ref_values, changed_counts, removed_sum)",
+        "replacement_count": 1
+      },
+      {
+        "label": "advance_call",
+        "old": "bool(log_selected_events),event_mask)",
+        "new": "bool(log_selected_events),event_mask,self._modified,self._retained,self._window_start,self._window_end)",
+        "replacement_count": 1
+      },
+      {
+        "label": "unpack",
+        "old": "rf,rt,ri,rv,tf,ttick,ti,tv) = values",
+        "new": "rf,rt,ri,rv,tf,ttick,ti,tv,changed_counts,removed_sum) = values",
+        "replacement_count": 1
+      },
+      {
+        "label": "sidecar",
+        "old": "return result",
+        "new": "self.last_contact_intervention = dict(start_tick=start,end_tick=self.tick,counts=changed_counts[:done],removed_weight_sum=removed_sum[:done],partial=dict(counts=changed_counts[done].copy(),removed_weight_sum=float(removed_sum[done]),validity=\"Only operations through failure.phase completed\") if code else None)\n    if np.any(changed_counts):\n        result[\"schema\"][\"dispositions\"] = dict(DISPOSITIONS, contact_weight_modified=3)\n    return result",
+        "replacement_count": 1
+      }
+    ],
+    "derived_run_sha256": "8003c67b411c35d96141adebc7317b89cfecfe489107ae1e3cc5631e52fe0536",
+    "derived_advance_sha256": "59677d2f97a521ffa8a3381c0fc529fe8201ecc55d80e32f184bedd1567b59da",
+    "derived_numba_cache": false
+  },
+  "reference_review": "After all six complete, evaluate all saved global reference intervals plus each declared reference target first available interval per chunk using adaptive quadrature, independent ODE and order64 under original panel tolerances. Check threshold margins. Independent spike, state and contact-delivery reconstruction is also required.",
+  "prefix": "Reuse exact checkpoint at5000 and its archived prefix and pending source queue. All six inactive 50-tick probes match historical original outputs. No claim of a resimulated full prefix.",
+  "observation": "Original48 plus13 exact-type/side first-ID gamma representatives, two APLs and ten MBON12-14 cells (deduplicated). Representatives selected by anatomy only, never outcome. Full population spikes and six checkpoints retained.",
+  "intervention": "Apply archived float64 retained weights only on270710 positive KC-to-gamma-KC pairs at deliveries in[5000,15000), removing the allocated fast term for414095 literal gL contacts. Preserve46992 other contacts on the affected pairs, original graph and all other deliveries. Existing p/h and queues persist. Restore original delivery after15000.",
+  "measures": [
+    "All gamma and other KC subtype mean rates, fraction active, ISIs and22tick occupancy by window",
+    "Matched EA-minus-constant pulse contrasts across all3 seeds and saved controls",
+    "Representative gamma, APL, MBON and original navigation-cell continuous v/p/h; full population post-input persistence",
+    "Actual source arrival reconstruction and per-tick zero/partial modification counts and removed p-weight sums",
+    "Recovery/restoration after15000 compared to independently diverged control history"
+  ],
+  "analysis": "Wait for complete fixed six-trial batch, then analyze together. No per-trial outcome-based changes, gain sweeps, extra runs or model promotion. These are reused historical seeds/conditions, not held-out animals.",
+  "budgets": {
+    "trial_wall_seconds": 3600,
+    "global_wall_seconds": 21600,
+    "trial_output_bytes": 4294967296,
+    "worker_peak_rss_bytes": 8589934592,
+    "min_free_bytes": 10737418240
+  },
+  "failure": "Stop and retain partial output and traceback; never restart/resume automatically. Parent enforces bounded waits; forced stops guarantee only durable archives.",
+  "terminal_passed_semantics": "All six completed and online invariants passed; not independent numerical or physiological acceptance.",
+  "limits": [
+    "An intervention on a model assumption, not a biological synaptic ablation or identified mAChR-B mechanism.",
+    "Other loops, APL nonspiking physiology and local-to-soma transfer remain unresolved.",
+    "No body integration, decoder or runtime changes; H1 unpromoted."
+  ]
+}

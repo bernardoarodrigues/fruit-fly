@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "experiment_plan": {
+    "path": "validation/kc-gamma-intervention-plan.json",
+    "bytes": 31787,
+    "sha256": "1136fe06fc96ad63ea676be69b7caefd7f8ce419f102488bf809d1b85f1e347b"
+  },
+  "gates": [
+    {
+      "path": "validation/kc-gamma-contact-mask-results.json",
+      "bytes": 6999,
+      "sha256": "5b000abce2091189f67f2cd540e5f3a5408d83d748c910a3343d2909677b564a"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-kernel-checks.json",
+      "bytes": 21113,
+      "sha256": "64b04de4e6d7c95f34ab56a4523cc04bb1ffe2d457cc6a19e00f00336c1a8927"
+    },
+    {
+      "path": "validation/kc-gamma-checkpoint-parity-results.json",
+      "bytes": 1935,
+      "sha256": "dc36415beabe00503232cd1e0acf8f857a9b2fb5c6af73c6eb338078f9766fd0"
+    },
+    {
+      "path": "validation/kc-gamma-runner-checks.json",
+      "bytes": 157892,
+      "sha256": "10cc1f14c8e35452349e69944a21226f603b9973e82a2abe1b44c4ffc4b0413a"
+    }
+  ],
+  "verified_unique_pins": 96,
+  "source_review": "Root agent reviewed the generated kernel anchors and complete diff of the runner against the previously reviewed MBON worker. Separate numerical/raw-count routes are not a separate person review.",
+  "runtime_defaults_changed": false,
+  "scientific_results_available": false,
+  "run_dir": "runs/20260905T211955222985Z-kc-gamma-intervention"
+}

@@ -4,6 +4,8 @@ A research simulator coupling the **166,700-neuron male CNS** to one articulated
 
 **Working:** full retained MaleCNS import, persistent sparse spiking engine, physical body with bilateral odor/contact sensing and finite resources, a live browser viewer, and neural-to-motor positive/negative controls. **Not yet validated:** odor-guided foraging, a biologically calibrated male neural model, male articulated morphology, or the full behavioral repertoire. The default body uses a declared NeuroMechFly/CPG surrogate. An optional FlyBody body and learned motor policy now run the same full male graph through three reviewed 12-second trials with lossless spike records. See [current evidence](docs/STATUS.md) and the [single-fly plan](docs/PLAN.md).
 
+The next bounded neural comparison is the [contact-aware γ-KC intervention](docs/kc-gamma-intervention-plan.md), prepared with a fixed six-trial plan. It tests a fast synaptic model assumption; H1 remains experimental.
+
 ## Install and watch
 
 Python 3.12 and uv were used on Apple Silicon. From the repository root:

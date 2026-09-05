@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "checks": 344,
+  "trials": [
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 26,
+        "name": "26-H1-seed11-constant_baseline"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 29,
+        "name": "29-H1-seed12-constant_baseline"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 32,
+        "name": "32-H1-seed13-constant_baseline"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 35,
+        "name": "35-H1-seed11-ethyl_acetate"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 38,
+        "name": "38-H1-seed12-ethyl_acetate"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 41,
+        "name": "41-H1-seed13-ethyl_acetate"
+      },
+      "passed": true,
+      "original_output_fields": 25,
+      "probe_ticks": 50
+    }
+  ],
+  "error": null,
+  "plan": {
+    "path": "validation/kc-gamma-checkpoint-parity-plan.json",
+    "bytes": 14988,
+    "sha256": "e2d0063d25a1f192b5431be0c96f15a29edf00f381073bbd96c82241c29ddf27"
+  },
+  "completed_utc": "2026-09-05T21:17:30.069649+00:00"
+}
