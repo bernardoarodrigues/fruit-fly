@@ -1,0 +1,1074 @@
+{
+  "passed": true,
+  "reviewer_role": "Author of earlier standalone reference task/experiment; independent of root-authored runtime integration and primary bridge checker. This is saved-data review, not independent biological replication.",
+  "script_sha256": "858ddc0b1d58eef90963ea46b40e48102ff6659cf494a1668a8f8551f08c8003",
+  "plan_sha256": "22ac32806f690bf7f6f864023470574bff321d212233e1164484e5ed55174604",
+  "results_sha256": "78a9ae5389c692b9039f546b3f526ccaea759553706cd138bb3811c0a2c9eb75",
+  "source_hash_checks": {
+    "fruitfly/__init__.py": true,
+    "fruitfly/body.py": true,
+    "fruitfly/circadian.py": true,
+    "fruitfly/conductance.py": true,
+    "fruitfly/data.py": true,
+    "fruitfly/flybody_bridge.py": true,
+    "fruitfly/flybody_persistent_task.py": true,
+    "fruitfly/flybody_worker.py": true,
+    "fruitfly/graded.py": true,
+    "fruitfly/grooming.py": true,
+    "fruitfly/illumination.py": true,
+    "fruitfly/morphology.py": true,
+    "fruitfly/multiview.py": true,
+    "fruitfly/neural.py": true,
+    "fruitfly/physiology.py": true,
+    "fruitfly/proprioception.py": true,
+    "fruitfly/sensors.py": true,
+    "fruitfly/simulation.py": true,
+    "fruitfly/viewer.py": true,
+    "fruitfly/wind.py": true,
+    "scripts/check_flybody_rolling_bridge.py": true,
+    "validation/flybody-persistent-plan.json": true,
+    "validation/flybody-persistent-experiment.json": true,
+    "validation/flybody-persistent-independent-review.json": true,
+    "validation/flybody-source-manifest.json": true,
+    "validation/flybody-walking-acquisition.json": true
+  },
+  "cases": [
+    {
+      "name": "bounded_parity",
+      "passed": true,
+      "checks": [
+        {
+          "name": "reference_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "journal_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "initial_equals_sample0",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "ieee_bit_parity:qpos",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qvel",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qacc",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:act",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:ctrl",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_action",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:canonical_action",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:target_pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_time_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:velocity_world_mm_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:angular_velocity_world_rad_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:up_z",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_hash",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:counters",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_shape",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_origin",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:clock",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:warnings",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:terminated",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:command",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:continuous_target",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:action_order",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_inventory",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_residual",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_force_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_support_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_ground_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "exact_journal_sequence",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "complete_interval_count",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "explicit_native_reset_exact",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "primary_report_success",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_residual_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_clock_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_actor_order_shape",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_mode_horizon",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_storage_preview",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_native_clock_units",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_source_versions",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_current_worker_provenance",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_rolling_task_provenance",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "samples": 1001,
+      "control_intervals": 1000,
+      "actor_float32_values_checked": 741741,
+      "contact_force_rows": 4636,
+      "individual_force_values_checked": 72967,
+      "max_resource_residual": 1.9984014443252818e-15,
+      "max_native_clock_error_s": 1.8762769116165146e-13,
+      "journal_sha256": "508de6adae5f8a825dfc543110aaf1f5e22cfc2ffc4d051a762c0db7d16ab30c",
+      "reference_sha256": "58776e8572cf63f04f8d16dbe479f00b1d6d6a956cb5b76db6e7a9a15ec13e6a",
+      "resource_residual_array_sha256": "b523397deecd1a0461462b7ff495e8361dc1ed62a3408f62bb24389567faa3cc"
+    },
+    {
+      "name": "rolling_parity",
+      "passed": true,
+      "checks": [
+        {
+          "name": "reference_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "journal_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "initial_equals_sample0",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "ieee_bit_parity:qpos",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qvel",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qacc",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:act",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:ctrl",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_action",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:canonical_action",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:target_pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_time_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:velocity_world_mm_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:angular_velocity_world_rad_s",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:up_z",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_hash",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:counters",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_shape",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_origin",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:clock",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:warnings",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:terminated",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:command",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:continuous_target",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:action_order",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_inventory",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_residual",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_force_finite",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_support_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_ground_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 1001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "exact_journal_sequence",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "complete_interval_count",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "explicit_native_reset_exact",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "primary_report_success",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_residual_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_clock_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_actor_order_shape",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_mode_horizon",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_storage_preview",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_native_clock_units",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_source_versions",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_current_worker_provenance",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_rolling_task_provenance",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "samples": 1001,
+      "control_intervals": 1000,
+      "actor_float32_values_checked": 741741,
+      "contact_force_rows": 4636,
+      "individual_force_values_checked": 72967,
+      "max_resource_residual": 1.9984014443252818e-15,
+      "max_native_clock_error_s": 1.8762769116165146e-13,
+      "journal_sha256": "e8a4f624cce22ba5b5935bbfa706757cef4dbbae8d11b39450ad0121bb9393fd",
+      "reference_sha256": "c504c64c22cad26c322939957edb6f9f8c35c58c1296b7768b85c32e389b66f7",
+      "resource_residual_array_sha256": "b523397deecd1a0461462b7ff495e8361dc1ed62a3408f62bb24389567faa3cc"
+    },
+    {
+      "name": "rolling_switch12",
+      "passed": true,
+      "checks": [
+        {
+          "name": "reference_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "journal_sha256",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "initial_equals_sample0",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "ieee_bit_parity:qpos",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qvel",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:qacc",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:act",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:ctrl",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_action",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:canonical_action",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:target_pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:native_time_s",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:pose_cm_quat",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:velocity_world_mm_s",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:angular_velocity_world_rad_s",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "ieee_bit_parity:up_z",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_hash",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:actor_finite",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:counters",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_shape",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:buffer_origin",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:clock",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_finite",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:warnings",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:terminated",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:command",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:continuous_target",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:action_order",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_inventory",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:resource_residual",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:native_force_finite",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_support_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "every_sample:contact_ground_aggregate",
+          "passed": true,
+          "detail": {
+            "samples": 6001,
+            "failing_ticks": []
+          }
+        },
+        {
+          "name": "exact_journal_sequence",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "complete_interval_count",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "explicit_native_reset_exact",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "primary_report_success",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_residual_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "recomputed_clock_maximum",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_actor_order_shape",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_mode_horizon",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_storage_preview",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_native_clock_units",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_source_versions",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_current_worker_provenance",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "metadata_rolling_task_provenance",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "samples": 6001,
+      "control_intervals": 6000,
+      "actor_float32_values_checked": 4446741,
+      "contact_force_rows": 29594,
+      "individual_force_values_checked": 442841,
+      "max_resource_residual": 3.3306690738754696e-15,
+      "max_native_clock_error_s": 8.032685627767933e-12,
+      "journal_sha256": "f29eddd4cb6b1afe27e7e96db159ac61a09ec5d31f6b65c5fbf246c980ce49ae",
+      "reference_sha256": "600b7b1310d04ce8fdce18580599372a71238ae6ead3ccfccb8a63efe047bde9",
+      "resource_residual_array_sha256": "4f99e90205b9a5c7617f94424f324de1d63b9cb89a464fbe3b6d413d16439499"
+    }
+  ],
+  "initial_checker_interruption": {
+    "passed": true,
+    "checks": {
+      "prior_hash": true,
+      "explicit_keyboard_interrupt": true,
+      "interrupted_during_npz_decompression": true,
+      "completed_prefix_count": true,
+      "partial_case_not_passed": true,
+      "finite_unterminated_native_state": true
+    },
+    "classification": "Operational checker interruption; not a source physics/guard failure.",
+    "completed_checked_samples": 2178,
+    "recorded_samples": 2179,
+    "last_recorded_tick": 2178,
+    "last_native_time_s": 4.356000000000344,
+    "journal_sha256": "976f4ab046b8c48ac075e237687eb3993bf0235ff10a3e1cb46d67d22a9d1bd6",
+    "prior_results_sha256": "7862b2af7f51c7cd9ed99a00a0546581cc362314ecda674ca8a8f0487ad554d8"
+  },
+  "simulations_run": 0,
+  "runtime_imported": false,
+  "limitations": [
+    "Actual bridge actor values are represented by SHA256; reference retains all741float32 values. The source hash calculation is reviewed, but bridge raw actor arrays are not retransmitted.",
+    "Reference buffer shapes/counters are recorded each tick; full66/1100row buffer values are not transmitted. Actor-reference rows are covered by actor hash and standalone reference.",
+    "Journals include native actuator forces from preceding stage and refreshed contact forces, permitting finiteness/aggregation checks. Standalone reference NPZ omits forces, so no force-parity claim.",
+    "Resource journals retain patch inventories and computed balance residuals, not complete energy/hydration/crop/spent ledgers. Reported residuals are verified each tick; full independent conservation reconstruction is unavailable.",
+    "Initial rendering and zero-duration advance rely on completed source assertions; frames and per-render states are not retained. Native reset state is retained and checked exactly. Host reserve reset is not independently journaled.",
+    "Bounded overrun rejection is asserted by primary checker, but its exception is not a separate journal event. The source guard is reviewed; no new failure-injection test is performed.",
+    "Host time is an accessor to native time, not an independent clock. Saved counters/native time agree; no brain or long neural coupling was executed by this bridge experiment."
+  ]
+}

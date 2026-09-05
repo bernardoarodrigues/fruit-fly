@@ -1,0 +1,50 @@
+{
+  "plan_sha256": "d7350b660c6c051ae95941f46bc8a9df042fca0c3f482b651417364028b2a7c5",
+  "complete": true,
+  "cases": [
+    {
+      "name": "bounded_parity",
+      "passed": true,
+      "failure": null,
+      "checks": {
+        "samples": 1001,
+        "max_resource_residual": 1.9984014443252818e-15,
+        "max_clock_error_s": 1.8762769116165146e-13
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T030630808113Z/bounded_parity.jsonl",
+      "journal_sha256": "7102c3ff256235f8a649b49a6196339a5cbe824e4bae5ce12b01aa1818e41c6e",
+      "wall_s": 30.218920584011357
+    },
+    {
+      "name": "rolling_parity",
+      "passed": true,
+      "failure": null,
+      "checks": {
+        "samples": 1001,
+        "max_resource_residual": 1.9984014443252818e-15,
+        "max_clock_error_s": 1.8762769116165146e-13
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T030630808113Z/rolling_parity.jsonl",
+      "journal_sha256": "d0d239c16e486e082e9e81e98f413e396da1adbdf01403b9764cb42310b24e5b",
+      "wall_s": 28.495704083004966
+    },
+    {
+      "name": "rolling_switch12",
+      "passed": false,
+      "failure": {
+        "type": "KeyboardInterrupt",
+        "message": "",
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/check_flybody_rolling_bridge.py\", line 107, in run_case\n    np.testing.assert_array_equal(state[key], trace[key][tick], err_msg=key + ':' + str(tick))\n                                              ~~~~~^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py\", line 257, in __getitem__\n    return format.read_array(\n           ^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/numpy/lib/_format_impl.py\", line 871, in read_array\n    data = _read_bytes(fp, read_size, \"array data\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/numpy/lib/_format_impl.py\", line 1015, in _read_bytes\n    r = fp.read(size - len(data))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/zipfile/__init__.py\", line 1008, in read\n    data = self._read1(n)\n           ^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/zipfile/__init__.py\", line 1084, in _read1\n    data = self._decompressor.decompress(data, n)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n"
+      },
+      "checks": {
+        "samples": 2178,
+        "max_resource_residual": 2.886579864025407e-15,
+        "max_clock_error_s": 4.076738946423575e-13
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T030630808113Z/rolling_switch12.jsonl",
+      "journal_sha256": "976f4ab046b8c48ac075e237687eb3993bf0235ff10a3e1cb46d67d22a9d1bd6",
+      "wall_s": 177.0110072499956
+    }
+  ],
+  "passed": false
+}

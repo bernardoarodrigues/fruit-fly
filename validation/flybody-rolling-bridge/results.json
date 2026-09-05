@@ -1,0 +1,46 @@
+{
+  "plan_sha256": "22ac32806f690bf7f6f864023470574bff321d212233e1164484e5ed55174604",
+  "complete": true,
+  "cases": [
+    {
+      "name": "bounded_parity",
+      "passed": true,
+      "failure": null,
+      "checks": {
+        "samples": 1001,
+        "max_resource_residual": 1.9984014443252818e-15,
+        "max_clock_error_s": 1.8762769116165146e-13
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T031039860921Z/bounded_parity.jsonl",
+      "journal_sha256": "508de6adae5f8a825dfc543110aaf1f5e22cfc2ffc4d051a762c0db7d16ab30c",
+      "wall_s": 17.278189917036798
+    },
+    {
+      "name": "rolling_parity",
+      "passed": true,
+      "failure": null,
+      "checks": {
+        "samples": 1001,
+        "max_resource_residual": 1.9984014443252818e-15,
+        "max_clock_error_s": 1.8762769116165146e-13
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T031039860921Z/rolling_parity.jsonl",
+      "journal_sha256": "e8a4f624cce22ba5b5935bbfa706757cef4dbbae8d11b39450ad0121bb9393fd",
+      "wall_s": 16.32689816597849
+    },
+    {
+      "name": "rolling_switch12",
+      "passed": true,
+      "failure": null,
+      "checks": {
+        "samples": 6001,
+        "max_resource_residual": 3.3306690738754696e-15,
+        "max_clock_error_s": 8.032685627767933e-12
+      },
+      "journal": "runs/flybody-rolling-bridge-20260905T031039860921Z/rolling_switch12.jsonl",
+      "journal_sha256": "f29eddd4cb6b1afe27e7e96db159ac61a09ec5d31f6b65c5fbf246c980ce49ae",
+      "wall_s": 57.09126608300721
+    }
+  ],
+  "passed": true
+}

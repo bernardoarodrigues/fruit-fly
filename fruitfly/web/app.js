@@ -66,7 +66,10 @@ function update(data) {
     nmf: "NeuroMechFly body · CPG/reflex motor surrogate",
     flybody: "FlyBody body · learned motor surrogate with an engineering posture hold · bounded trial",
   };
-  setText("body-adapter", bodyLabels[telemetry.body_backend] || "Body adapter not reported");
+  const bodyLabel = telemetry.body_backend === "flybody" && telemetry.body_metadata?.reference_mode === "rolling"
+    ? "FlyBody body · learned motor surrogate with an engineering posture hold · rolling reference"
+    : bodyLabels[telemetry.body_backend] || "Body adapter not reported";
+  setText("body-adapter", bodyLabel);
   $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", ready && data.trial_complete ? "Trial complete" : labels[data.status] || data.status);

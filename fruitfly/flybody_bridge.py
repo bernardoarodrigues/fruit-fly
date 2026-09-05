@@ -1,4 +1,4 @@
-"""Optional, bounded FlyBody adapter; host biology plus isolated native physics.
+"""Optional FlyBody adapter with bounded or rolling references; host biology plus isolated native physics.
 
 The source body is female-derived. Its pretrained motor policy and engineering
 posture hold are not a male VNC or a biological descending-neuron controller.
@@ -34,7 +34,8 @@ class FlyBodyWorkerError(RuntimeError):
 @dataclass(frozen=True)
 class FlyBodyConfig:
     physics_dt_s: float = .0002
-    horizon_s: float = 2.
+    horizon_s: float | None = 2.
+    reference_mode: str = "bounded"
     source_path: str = "data/raw/flybody/source"
     worker_python: str = "tmp/flybody-env/bin/python"
     initial_position_mm: tuple[float, float, float] = (0., 0., 1.278)
@@ -66,8 +67,13 @@ class FlyBodyConfig:
             object.__setattr__(self, "physiology", PhysiologyConfig(**self.physiology))
         if not isinstance(self.physiology, PhysiologyConfig):
             raise ValueError("physiology must be a PhysiologyConfig or mapping")
-        if self.physics_dt_s != .0002 or self.horizon_s != 2.:
-            raise ValueError("First FlyBody backend fixes physics to0.2ms and horizon to2s")
+        if self.physics_dt_s != .0002:
+            raise ValueError("FlyBody physics step is fixed to 0.2 ms")
+        if self.reference_mode not in ("bounded", "rolling"):
+            raise ValueError("FlyBody reference mode must be bounded or rolling")
+        if (self.reference_mode == "bounded" and self.horizon_s != 2.
+                or self.reference_mode == "rolling" and self.horizon_s is not None):
+            raise ValueError("Bounded FlyBody requires a 2 s horizon; rolling requires explicit null")
         if tuple(self.initial_position_mm) != (0., 0., 1.278) or self.initial_heading_rad != 0.:
             raise ValueError("First FlyBody backend preserves source initial pose")
         if self.drive_limit != 1.2 or self.intended_sex != "male" or self.body_profile != PROFILE:
@@ -311,7 +317,7 @@ class FlyBodyRuntime:
         ticks = round(duration_s / self.control_timestep_s)
         if not math.isclose(duration_s, ticks * self.control_timestep_s, abs_tol=1e-12):
             raise ValueError("FlyBody duration must contain complete2ms policy ticks")
-        if self.time_s + duration_s > self.config.horizon_s + 1e-10:
+        if self.config.horizon_s is not None and self.time_s + duration_s > self.config.horizon_s + 1e-10:
             raise RuntimeError("Bounded FlyBody horizon is2s; reset explicitly, no automatic recentering")
         drive, speed, yaw = map_drive(drive_left, drive_right, behavior)
         for _ in range(ticks):
@@ -335,21 +341,21 @@ class FlyBodyRuntime:
         physics.update(nq=self._metadata["nq"], nv=self._metadata["nv"], nu=self._metadata["nu"],
             timestep_s=self.timestep, control_timestep_s=self.control_timestep_s,
             max_abs_qacc=max(abs(v) for v in state["qacc"] if v is not None),
-            initialization_settling_s=0., horizon_s=2., last_error=self._last_error)
+            initialization_settling_s=0., horizon_s=self.config.horizon_s, last_error=self._last_error)
         return {"observation": self.observe(), "config": asdict(self.config), "seed": self.seed,
             "illumination": self._illumination_snapshot(),
             "wind_reference": None, "resources": {"food": asdict(self.food), "water": asdict(self.water)},
             "resource_balance": self.physiology.balance_residuals(self.food, self.water),
             "stimuli": self._stimuli.copy(), "physics": physics,
             "backend": {"name": "flybody", **self._metadata, "profile": PROFILE, "intended_sex": "male",
-                "worker_log": str(self.log_path), "finite_horizon": True,
+                "worker_log": str(self.log_path), "finite_horizon": self.config.horizon_s is not None,
                 "controller": "Frozen pretrained mean policy; native neutral-zero position hold with adhesion1",
                 "command_map": "speed=20*clip((L+R)/2,0,1); yaw=2*clip((R-L)/1.2,-1,1)",
                 "physiology_sampling_s": .002, "force_units": "g mm/s^2 (native dyne multiplied by10)"},
             "capabilities": {"walk": True, "engineering_stance": True, "abstract_feeding": True,
                 "odor": True, "tarsal_taste": True, "club_proprioception": True,
                 "grooming": False, "compound_vision": False, "head_frame_wind": False,
-                "world_illumination": False, "persistent_reference": False},
+                "world_illumination": False, "persistent_reference": self.config.reference_mode == "rolling"},
             "field": {"puffs": len(self.field.births), "retired_arbitrary_mass": self.field.retired_mass}}
 
     def _illumination_snapshot(self):

@@ -76,13 +76,30 @@ class Worker:
         self.provenance["versions"] = versions
         self.provenance["python"] = sys.version
         self.config = config
+        self.reference_mode = config.get("reference_mode", "bounded")
+        if self.reference_mode not in ("bounded", "rolling"):
+            raise ValueError("Unknown FlyBody reference mode")
+        if self.reference_mode == "rolling" and "horizon_s" not in config:
+            raise ValueError("Rolling worker requires an explicit null horizon")
+        expected_horizon = 2. if self.reference_mode == "bounded" else None
+        if config.get("horizon_s", expected_horizon) != expected_horizon:
+            raise ValueError("Reference mode and trial horizon disagree")
+        if self.reference_mode == "rolling":
+            self.provenance["rolling_task_sha256"] = digest(ROOT / "fruitfly/flybody_persistent_task.py")
         self.env = None
         self.camera = None
         self.state = None
         self.reset(seed)
 
     def reset(self, seed):
-        from flybody.fly_envs import walk_imitation
+        if self.reference_mode == "rolling":
+            # The worker is launched by file path, so make its package root
+            # explicit without importing the primary environment's body stack.
+            if str(ROOT) not in sys.path:
+                sys.path.insert(0, str(ROOT))
+            from fruitfly.flybody_persistent_task import rolling_walk_imitation as walk_imitation
+        else:
+            from flybody.fly_envs import walk_imitation
         from flybody.tasks.synthetic_trajectories import constant_speed_trajectory
         self.close()
         self.env = walk_imitation(random_state=np.random.RandomState(int(seed)))
@@ -162,7 +179,11 @@ class Worker:
         return self.state
 
     def _policy(self, observation):
-        batch = {key: self.tf.convert_to_tensor(np.asarray(value, np.float32)[None]) for key, value in observation.items()}
+        values = {key: np.asarray(value, np.float32) for key, value in observation.items()}
+        actor = np.concatenate([value.ravel() for value in values.values()]).astype('<f4', copy=False)
+        self.actor_input_sha256 = hashlib.sha256(actor.tobytes()).hexdigest()
+        self.actor_observation_shapes = {key: list(value.shape) for key, value in values.items()}
+        batch = {key: self.tf.convert_to_tensor(value[None]) for key, value in values.items()}
         action = self.policy(batch).mean().numpy()[0]
         if action.shape != (59,) or not np.isfinite(action).all():
             raise RuntimeError("Invalid original policy action")
@@ -171,8 +192,8 @@ class Worker:
     def advance(self, speed_mm_s, yaw_rad_s, behavior):
         if self.failed:
             raise RuntimeError("Source task failed; reset explicitly before advancing")
-        if self.tick >= MAX_TICKS:
-            raise RuntimeError("Bounded FlyBody horizon reached (2 s); persistent reference not implemented")
+        if self.reference_mode == "bounded" and self.tick >= MAX_TICKS:
+            raise RuntimeError("Bounded FlyBody horizon reached (2 s)")
         if behavior not in ("walk", "rest", "feed"):
             raise ValueError("FlyBody supports only walk, rest and abstract feed")
         if not math.isfinite(speed_mm_s) or not 0 <= speed_mm_s <= 20 or not math.isfinite(yaw_rad_s) or abs(yaw_rad_s) > 2:
@@ -183,13 +204,17 @@ class Worker:
         self.command = {"speed_mm_s": speed_mm_s, "yaw_rad_s": yaw_rad_s, "policy_enabled": on, "behavior": behavior}
         from flybody.tasks.synthetic_trajectories import constant_speed_trajectory
         heading = 2 * np.arctan2(self.target[6], self.target[3])
-        preview, pvel = constant_speed_trajectory(65, speed=speed_mm_s / 10,
+        reference_frames = 66 if self.reference_mode == "rolling" else 65
+        preview, pvel = constant_speed_trajectory(reference_frames, speed=speed_mm_s / 10,
             yaw_speed=yaw_rad_s, init_pos=self.target[:3], init_heading=heading)
         # Source helper returns yaw per step; reference qvel is rad/s. This
         # correction is already frozen in the independent motor comparison.
         pvel[:, 3:] = [0, 0, yaw_rad_s]
-        self.env.task._ref_qpos[self.tick:self.tick + 65] = preview
-        self.env.task._ref_qvel[self.tick:self.tick + 65] = pvel
+        if self.reference_mode == "rolling":
+            self.env.task.install_preview(preview, pvel, self.tick)
+        else:
+            self.env.task._ref_qpos[self.tick:self.tick + 65] = preview
+            self.env.task._ref_qvel[self.tick:self.tick + 65] = pvel
         observation = dict(self.step_result.observation)
         for key in ("walker/ref_displacement", "walker/ref_root_quat"):
             observation[key] = self.env.task.observables[key](self.env.physics)
@@ -249,6 +274,11 @@ class Worker:
         spatial = np.empty(6)
         mujoco.mj_objectVelocity(m.ptr, d.ptr, mujoco.mjtObj.mjOBJ_BODY, self.root_id, spatial, 0)
         state = {"native_time_s": float(d.time), "tick": self.tick,
+            "actor_input_sha256": self.actor_input_sha256,
+            "reference_qpos_shape": list(self.env.task._ref_qpos.shape),
+            "reference_qvel_shape": list(self.env.task._ref_qvel.shape),
+            "source_control_tick": self.env.task._step_counter,
+            "reference_buffer_origin": getattr(self.env.task, "_rolling_origin", None),
             "qpos": d.qpos.tolist(), "qvel": d.qvel.tolist(), "qacc": d.qacc.tolist(),
             "act": d.act.tolist(), "ctrl": d.ctrl.tolist(), "warnings": [int(w.number) for w in d.warning],
             "native_action": self.native.tolist(), "canonical_action": self.canonical.tolist(),
@@ -277,8 +307,10 @@ class Worker:
     def metadata(self):
         return {**self.provenance, "nq": self.m.nq, "nv": self.m.nv, "nu": self.m.nu,
             "physics_timestep_s": PHYSICS_DT, "control_timestep_s": CONTROL_DT,
-            "horizon_s": 2., "initialization_settling_s": 0.,
-            "reference_frames": 1100, "preview_frames": 65,
+            "horizon_s": 2. if self.reference_mode == "bounded" else None,
+            "reference_mode": self.reference_mode, "initialization_settling_s": 0.,
+            "reference_frames": len(self.env.task._ref_qpos), "preview_frames": 65,
+            "actor_observation_shapes": self.actor_observation_shapes,
             "gravity_cm_s2": self.m.opt.gravity.tolist(), "body_weight_dyne": float(self.env.task.walker.weight),
             "original_lighting": {"mode": "source_native_flybody", "nlight": self.m.nlight,
                 "light_diffuse": self.diffuse.tolist(), "light_ambient": self.ambient.tolist(),

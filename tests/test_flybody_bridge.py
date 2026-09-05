@@ -8,12 +8,20 @@ from fruitfly.flybody_bridge import FlyBodyConfig, FlyBodyRuntime, map_drive, LE
 class FlyBodyBoundaryTests(unittest.TestCase):
     def test_unsupported_clocks_and_capabilities_rejected(self):
         for values in ({"physics_dt_s": .0001}, {"horizon_s": 3}, {"enable_vision": True},
+                       {"reference_mode": "unknown"}, {"reference_mode": "rolling"},
+                       {"reference_mode": "bounded", "horizon_s": None},
                        {"enable_grooming": True}, {"world_illumination": {}},
                        {"initial_position_mm": [1, 0, 1.278]}):
             with self.subTest(values=values), self.assertRaises(ValueError):
                 FlyBodyConfig(**values)
         with self.assertRaises(TypeError):
             FlyBodyConfig(unsupported_control=True)
+
+    def test_rolling_mode_requires_explicit_unbounded_horizon(self):
+        config = FlyBodyConfig(reference_mode="rolling", horizon_s=None)
+        self.assertIsNone(config.horizon_s)
+        self.assertEqual(config.reference_mode, "rolling")
+        self.assertEqual(FlyBodyConfig().horizon_s, 2.)
 
     def test_drive_map_and_policy_mute(self):
         np.testing.assert_array_equal(map_drive(.5, .5, "walk")[1:], [10, 0])

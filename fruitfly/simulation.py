@@ -192,7 +192,7 @@ class SimulationRunner:
             return self.snapshot()
         if self._failure is not None:
             raise RuntimeError("A body step failed; reset explicitly before advancing")
-        if self.body_backend == "flybody" and (
+        if self.body_backend == "flybody" and self.body.config.horizon_s is not None and (
                 self.body.time_s + sim_seconds > self.body.config.horizon_s + 1e-10):
             raise RuntimeError("Requested duration exceeds the bounded FlyBody horizon; no neural or physical step taken")
         started = time.perf_counter()

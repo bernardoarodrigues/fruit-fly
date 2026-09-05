@@ -1,0 +1,462 @@
+{
+  "created_at": "2026-09-05T03:10:39.797838+00:00",
+  "seed": 11,
+  "amendment": {
+    "prior_plan": "validation/flybody-rolling-bridge-initial-checker/plan.json",
+    "prior_results": "validation/flybody-rolling-bridge-initial-checker/results.json",
+    "reason": "Load each immutable NPZ reference array once instead of decompressing it on every tick. Root interrupted the slow third comparison with SIGINT; two comparisons had already passed. Physics, schedules and gates unchanged."
+  },
+  "cases": [
+    {
+      "name": "bounded_parity",
+      "config": {
+        "physics_dt_s": 0.0002,
+        "horizon_s": 2.0,
+        "reference_mode": "bounded",
+        "source_path": "data/raw/flybody/source",
+        "worker_python": "tmp/flybody-env/bin/python",
+        "initial_position_mm": [
+          0.0,
+          0.0,
+          1.278
+        ],
+        "initial_heading_rad": 0.0,
+        "food_position_mm": [
+          6.0,
+          0.0
+        ],
+        "food_radius_mm": 3.0,
+        "food_amount": 1.5,
+        "water_position_mm": [
+          5.0,
+          7.0
+        ],
+        "water_radius_mm": 2.0,
+        "water_amount": 1.5,
+        "wind_mm_s": [
+          -2.0,
+          0.0
+        ],
+        "odor_emission_interval_s": 0.1,
+        "odor_prehistory_s": 3.0,
+        "odor_puff_lifetime_s": 8.0,
+        "drive_limit": 1.2,
+        "intended_sex": "male",
+        "body_profile": "female-derived FlyBody morphology surrogate",
+        "width": 800,
+        "height": 560,
+        "enable_grooming": false,
+        "enable_vision": false,
+        "world_illumination": null,
+        "wind_reference_path": null,
+        "wind_reference_allow_sex_transfer": false,
+        "physiology": {
+          "energy_capacity": 1.0,
+          "hydration_capacity": 1.0,
+          "crop_capacity": 0.3,
+          "initial_energy": 0.55,
+          "initial_hydration": 0.75,
+          "food_intake_per_s": 0.08,
+          "water_intake_per_s": 0.12,
+          "assimilation_per_s": 0.04,
+          "basal_energy_per_s": 0.0005,
+          "locomotion_energy_per_mm": 8e-05,
+          "basal_water_loss_per_s": 0.0003,
+          "locomotion_water_loss_per_mm": 4e-05,
+          "stationary_threshold_mm_s": 1.0
+        }
+      },
+      "reference": "runs/flybody-persistent-20260905T025638072453Z/bounded_parity.npz",
+      "reference_sha256": "58776e8572cf63f04f8d16dbe479f00b1d6d6a956cb5b76db6e7a9a15ec13e6a",
+      "actor_keys": [
+        "walker/accelerometer",
+        "walker/actuator_activation",
+        "walker/appendages_pos",
+        "walker/force",
+        "walker/gyro",
+        "walker/joints_pos",
+        "walker/joints_vel",
+        "walker/touch",
+        "walker/velocimeter",
+        "walker/world_zaxis",
+        "walker/ref_displacement",
+        "walker/ref_root_quat"
+      ],
+      "actor_shapes": {
+        "walker/accelerometer": [
+          3
+        ],
+        "walker/actuator_activation": [
+          59
+        ],
+        "walker/appendages_pos": [
+          21
+        ],
+        "walker/force": [
+          18
+        ],
+        "walker/gyro": [
+          3
+        ],
+        "walker/joints_pos": [
+          85
+        ],
+        "walker/joints_vel": [
+          85
+        ],
+        "walker/touch": [
+          6
+        ],
+        "walker/velocimeter": [
+          3
+        ],
+        "walker/world_zaxis": [
+          3
+        ],
+        "walker/ref_displacement": [
+          65,
+          3
+        ],
+        "walker/ref_root_quat": [
+          65,
+          4
+        ]
+      },
+      "source": {
+        "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+        "source_manifest_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+        "policy_receipt_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+        "worker_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+        "code_license": "Apache-2.0",
+        "policy_collection_license": "GPL-3.0-or-later",
+        "versions": {
+          "tensorflow": "2.15.1",
+          "tensorflow-probability": "0.23.0",
+          "dm-control": "1.0.27",
+          "mujoco": "3.2.7",
+          "numpy": "1.26.4"
+        },
+        "python": "3.10.21 (main, Aug 14 2026, 15:25:49) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "name": "rolling_parity",
+      "config": {
+        "physics_dt_s": 0.0002,
+        "horizon_s": null,
+        "reference_mode": "rolling",
+        "source_path": "data/raw/flybody/source",
+        "worker_python": "tmp/flybody-env/bin/python",
+        "initial_position_mm": [
+          0.0,
+          0.0,
+          1.278
+        ],
+        "initial_heading_rad": 0.0,
+        "food_position_mm": [
+          6.0,
+          0.0
+        ],
+        "food_radius_mm": 3.0,
+        "food_amount": 1.5,
+        "water_position_mm": [
+          5.0,
+          7.0
+        ],
+        "water_radius_mm": 2.0,
+        "water_amount": 1.5,
+        "wind_mm_s": [
+          -2.0,
+          0.0
+        ],
+        "odor_emission_interval_s": 0.1,
+        "odor_prehistory_s": 3.0,
+        "odor_puff_lifetime_s": 8.0,
+        "drive_limit": 1.2,
+        "intended_sex": "male",
+        "body_profile": "female-derived FlyBody morphology surrogate",
+        "width": 800,
+        "height": 560,
+        "enable_grooming": false,
+        "enable_vision": false,
+        "world_illumination": null,
+        "wind_reference_path": null,
+        "wind_reference_allow_sex_transfer": false,
+        "physiology": {
+          "energy_capacity": 1.0,
+          "hydration_capacity": 1.0,
+          "crop_capacity": 0.3,
+          "initial_energy": 0.55,
+          "initial_hydration": 0.75,
+          "food_intake_per_s": 0.08,
+          "water_intake_per_s": 0.12,
+          "assimilation_per_s": 0.04,
+          "basal_energy_per_s": 0.0005,
+          "locomotion_energy_per_mm": 8e-05,
+          "basal_water_loss_per_s": 0.0003,
+          "locomotion_water_loss_per_mm": 4e-05,
+          "stationary_threshold_mm_s": 1.0
+        }
+      },
+      "reference": "runs/flybody-persistent-20260905T025638072453Z/rolling_parity.npz",
+      "reference_sha256": "c504c64c22cad26c322939957edb6f9f8c35c58c1296b7768b85c32e389b66f7",
+      "actor_keys": [
+        "walker/accelerometer",
+        "walker/actuator_activation",
+        "walker/appendages_pos",
+        "walker/force",
+        "walker/gyro",
+        "walker/joints_pos",
+        "walker/joints_vel",
+        "walker/touch",
+        "walker/velocimeter",
+        "walker/world_zaxis",
+        "walker/ref_displacement",
+        "walker/ref_root_quat"
+      ],
+      "actor_shapes": {
+        "walker/accelerometer": [
+          3
+        ],
+        "walker/actuator_activation": [
+          59
+        ],
+        "walker/appendages_pos": [
+          21
+        ],
+        "walker/force": [
+          18
+        ],
+        "walker/gyro": [
+          3
+        ],
+        "walker/joints_pos": [
+          85
+        ],
+        "walker/joints_vel": [
+          85
+        ],
+        "walker/touch": [
+          6
+        ],
+        "walker/velocimeter": [
+          3
+        ],
+        "walker/world_zaxis": [
+          3
+        ],
+        "walker/ref_displacement": [
+          65,
+          3
+        ],
+        "walker/ref_root_quat": [
+          65,
+          4
+        ]
+      },
+      "source": {
+        "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+        "source_manifest_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+        "policy_receipt_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+        "worker_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+        "code_license": "Apache-2.0",
+        "policy_collection_license": "GPL-3.0-or-later",
+        "versions": {
+          "tensorflow": "2.15.1",
+          "tensorflow-probability": "0.23.0",
+          "dm-control": "1.0.27",
+          "mujoco": "3.2.7",
+          "numpy": "1.26.4"
+        },
+        "python": "3.10.21 (main, Aug 14 2026, 15:25:49) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "name": "rolling_switch12",
+      "config": {
+        "physics_dt_s": 0.0002,
+        "horizon_s": null,
+        "reference_mode": "rolling",
+        "source_path": "data/raw/flybody/source",
+        "worker_python": "tmp/flybody-env/bin/python",
+        "initial_position_mm": [
+          0.0,
+          0.0,
+          1.278
+        ],
+        "initial_heading_rad": 0.0,
+        "food_position_mm": [
+          6.0,
+          0.0
+        ],
+        "food_radius_mm": 3.0,
+        "food_amount": 1.5,
+        "water_position_mm": [
+          5.0,
+          7.0
+        ],
+        "water_radius_mm": 2.0,
+        "water_amount": 1.5,
+        "wind_mm_s": [
+          -2.0,
+          0.0
+        ],
+        "odor_emission_interval_s": 0.1,
+        "odor_prehistory_s": 3.0,
+        "odor_puff_lifetime_s": 8.0,
+        "drive_limit": 1.2,
+        "intended_sex": "male",
+        "body_profile": "female-derived FlyBody morphology surrogate",
+        "width": 800,
+        "height": 560,
+        "enable_grooming": false,
+        "enable_vision": false,
+        "world_illumination": null,
+        "wind_reference_path": null,
+        "wind_reference_allow_sex_transfer": false,
+        "physiology": {
+          "energy_capacity": 1.0,
+          "hydration_capacity": 1.0,
+          "crop_capacity": 0.3,
+          "initial_energy": 0.55,
+          "initial_hydration": 0.75,
+          "food_intake_per_s": 0.08,
+          "water_intake_per_s": 0.12,
+          "assimilation_per_s": 0.04,
+          "basal_energy_per_s": 0.0005,
+          "locomotion_energy_per_mm": 8e-05,
+          "basal_water_loss_per_s": 0.0003,
+          "locomotion_water_loss_per_mm": 4e-05,
+          "stationary_threshold_mm_s": 1.0
+        }
+      },
+      "reference": "runs/flybody-persistent-20260905T025638072453Z/rolling_switch12.npz",
+      "reference_sha256": "600b7b1310d04ce8fdce18580599372a71238ae6ead3ccfccb8a63efe047bde9",
+      "actor_keys": [
+        "walker/accelerometer",
+        "walker/actuator_activation",
+        "walker/appendages_pos",
+        "walker/force",
+        "walker/gyro",
+        "walker/joints_pos",
+        "walker/joints_vel",
+        "walker/touch",
+        "walker/velocimeter",
+        "walker/world_zaxis",
+        "walker/ref_displacement",
+        "walker/ref_root_quat"
+      ],
+      "actor_shapes": {
+        "walker/accelerometer": [
+          3
+        ],
+        "walker/actuator_activation": [
+          59
+        ],
+        "walker/appendages_pos": [
+          21
+        ],
+        "walker/force": [
+          18
+        ],
+        "walker/gyro": [
+          3
+        ],
+        "walker/joints_pos": [
+          85
+        ],
+        "walker/joints_vel": [
+          85
+        ],
+        "walker/touch": [
+          6
+        ],
+        "walker/velocimeter": [
+          3
+        ],
+        "walker/world_zaxis": [
+          3
+        ],
+        "walker/ref_displacement": [
+          65,
+          3
+        ],
+        "walker/ref_root_quat": [
+          65,
+          4
+        ]
+      },
+      "source": {
+        "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+        "source_manifest_sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+        "policy_receipt_sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+        "worker_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+        "code_license": "Apache-2.0",
+        "policy_collection_license": "GPL-3.0-or-later",
+        "versions": {
+          "tensorflow": "2.15.1",
+          "tensorflow-probability": "0.23.0",
+          "dm-control": "1.0.27",
+          "mujoco": "3.2.7",
+          "numpy": "1.26.4"
+        },
+        "python": "3.10.21 (main, Aug 14 2026, 15:25:49) [Clang 22.1.3 ]"
+      }
+    }
+  ],
+  "source_hashes": {
+    "fruitfly/__init__.py": "2d9a7a3452cb46c2b5ffda7f5618e7696a9796253391dbc499781825f67f6abc",
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/circadian.py": "85a875d94174a661278dadebcee4f5c5de39755acab16e7b3b665d325d2d686c",
+    "fruitfly/conductance.py": "c9e20a3e0124456d2cd7622dbac8418d862227f9c63b014e73befb7bd3a38b5c",
+    "fruitfly/data.py": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+    "fruitfly/flybody_bridge.py": "0a2ec29d9f767e065f03e553674257b6712b927178dd752ed6a3cad35128ca3e",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fruitfly/flybody_worker.py": "b7093722b2a26fa98f0b00f506a3c508e2eaf558e8a83ec932e4b97cc367f16b",
+    "fruitfly/graded.py": "7bc09c71ce7fb3e59ab1c6a913feae53dd644ddf8915a23566c18382e5019906",
+    "fruitfly/grooming.py": "dc4ca4d18fe8ce84dcd8e19ee78f288e9d892ae1e48463ee85edca5540a36e6b",
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/morphology.py": "b0c21707a0f1eac304d5a5a59deecfe3a6e0672d1503cfe1c583de2435536cde",
+    "fruitfly/multiview.py": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "fruitfly/proprioception.py": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/simulation.py": "480b83f238267c1ebd6a11190998ed1192766b8f60526d36e569deb50b16bf2f",
+    "fruitfly/viewer.py": "a699ef6fd324761885d96ac737c540ebdb2e4445b373189d1ad67fcca173846e",
+    "fruitfly/wind.py": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+    "scripts/check_flybody_rolling_bridge.py": "594ed74646b1de5dcaf50afe9d1df9f3d83d981960d249f865f588cce3e35a70",
+    "validation/flybody-persistent-plan.json": "d0140c002dab792b13457f0f6d43815d9f611336ddaacb0381faab5735ec00f4",
+    "validation/flybody-persistent-experiment.json": "1074a63c91a2cae2be6744474605b62431305082af1648c37d5f5312a8339433",
+    "validation/flybody-persistent-independent-review.json": "ccac393d2e5cc257d02ac4a0a717d6b0d0147684c521a3165f419bb3489064c5",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7"
+  },
+  "comparison_fields": [
+    "qpos",
+    "qvel",
+    "qacc",
+    "act",
+    "ctrl",
+    "native_action",
+    "canonical_action",
+    "target_pose_cm_quat",
+    "native_time_s"
+  ],
+  "gates": [
+    "Bitwise physical/action/target/native-clock parity at every saved reference sample",
+    "SHA256 of actual 741 float32 actor-input values equals independent saved reference at every sample",
+    "Native reference storage is 1100 bounded or 66 rolling; actor sees65frames",
+    "All native warning counters zero, finite state and no source termination",
+    "Resource residuals <=1e-8 in host normalized units at every2ms tick",
+    "Native and host time agree at every tick; no automatic reset/recenter",
+    "Initial zero-step/render preserve exact native state; explicit reset restores exact initial state",
+    "Horizon metadata matches explicit mode; bounded overrun rejected without state change"
+  ],
+  "limits": [
+    "Body/RPC regression only; no neural simulation or new biological claims",
+    "Force finiteness includes native worker assertion; saved native reference lacks rawforces",
+    "Renderer changes no physics; initial-only render checks",
+    "Whole reference arrays are not transmitted; current shapes and buffer counters are checked each2ms"
+  ]
+}
