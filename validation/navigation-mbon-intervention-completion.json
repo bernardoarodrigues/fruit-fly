@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T20:21:10.628329+00:00",
+  "passed": true,
+  "execution_plan": {
+    "path": "validation/navigation-mbon-intervention-plan.json",
+    "bytes": 142367,
+    "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+  },
+  "parent_terminal": {
+    "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/terminal.json",
+    "bytes": 454,
+    "sha256": "25883a809cac9dd4aa4a2db6ef20ae38f6d77aeae5076a3fed56602d720a6d4e"
+  },
+  "parent_results": {
+    "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/results.json",
+    "bytes": 4631,
+    "sha256": "e76a210217b204d711de4afbf839127356dee72264e85b1d8e4f0db716525d29"
+  },
+  "parent_results_snapshot": {
+    "passed": true,
+    "complete": true,
+    "started_utc": "2026-09-05T18:52:10.874723+00:00",
+    "plan": {
+      "path": "validation/navigation-mbon-intervention-plan.json",
+      "bytes": 142367,
+      "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+    },
+    "trials": [
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 11,
+          "condition": "constant_baseline",
+          "ordinal": 26,
+          "name": "26-H1-seed11-constant_baseline"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/terminal.json",
+          "bytes": 301,
+          "sha256": "b05716aa234fe31278b0a51a3015953909d216b5ff1351a1f7a0a6031ec5c857"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/result.json",
+          "bytes": 367611,
+          "sha256": "ae0363eb24d678529a518fe1e3660896a45a459cb30a3b6c4e3d5d097ed0e3b6"
+        }
+      },
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 12,
+          "condition": "constant_baseline",
+          "ordinal": 29,
+          "name": "29-H1-seed12-constant_baseline"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/terminal.json",
+          "bytes": 301,
+          "sha256": "f050564f59bc3436eb79b5f82c7b629cf5bdb7756255aa632ec94b0c75ecc035"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/result.json",
+          "bytes": 367613,
+          "sha256": "31407fdc52cac95e1ba5eadc7f0298d10b343990aa79b8d8ae77247a7fca45c2"
+        }
+      },
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 13,
+          "condition": "constant_baseline",
+          "ordinal": 32,
+          "name": "32-H1-seed13-constant_baseline"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/terminal.json",
+          "bytes": 301,
+          "sha256": "37f0fc3dcf92cadc94ad0c409e5e44e43b3fcdeca1c693e7afe3dc7e43ab4565"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/result.json",
+          "bytes": 367613,
+          "sha256": "defd5c0c195dc881ddbe5005f3c86af80f62c651e39dc69f7ca08f6547ce7aa7"
+        }
+      },
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 11,
+          "condition": "ethyl_acetate",
+          "ordinal": 35,
+          "name": "35-H1-seed11-ethyl_acetate"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/terminal.json",
+          "bytes": 297,
+          "sha256": "5e29aa43bb988b95b0c722b5a00ca06492ae8bbd7b823da5ec0c61fe77cd8794"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/result.json",
+          "bytes": 361533,
+          "sha256": "d605a8c36a14724295fcecf3e48ba716d5942c7387dc6648013aecef687e8f8e"
+        }
+      },
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 12,
+          "condition": "ethyl_acetate",
+          "ordinal": 38,
+          "name": "38-H1-seed12-ethyl_acetate"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/terminal.json",
+          "bytes": 297,
+          "sha256": "308a530052fccbf3970304b945e1cfd2c03a55ff92d8c6646b198b825fe871b1"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/result.json",
+          "bytes": 361533,
+          "sha256": "b28721abdef818c033933f6a795e148f3c0e7f79a5cf385a4a0ffa5a1a7c7df7"
+        }
+      },
+      {
+        "spec": {
+          "arm": "H1",
+          "seed": 13,
+          "condition": "ethyl_acetate",
+          "ordinal": 41,
+          "name": "41-H1-seed13-ethyl_acetate"
+        },
+        "terminal": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/terminal.json",
+          "bytes": 297,
+          "sha256": "16fbb9682d6f89ebef27c31f54274be9a5262e28bf7de0f593276a8d066e9003"
+        },
+        "result": {
+          "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/result.json",
+          "bytes": 361532,
+          "sha256": "98caff47c32dc0a9da98b2d3858d62f46f42427710eb86dae34a2d1f8733a140"
+        }
+      }
+    ],
+    "errors": [],
+    "completed_utc": "2026-09-05T20:05:37.578193+00:00",
+    "wall_seconds": 4406.650111416995,
+    "independent_reference_review": "pending"
+  },
+  "reviews_and_figures": [
+    {
+      "path": "validation/navigation-mbon-intervention-independent-review.json",
+      "bytes": 66407,
+      "sha256": "1d0b37600b196bb4a9482a5e84f37c6fb866cb800673e652811fbed1dcb08dd5"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-numerics-results.json",
+      "bytes": 11194,
+      "sha256": "6e9fe560dee39098e1a1d430aaecf8feaf4f54424091ffb2141040b32a0841bd"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-analysis-source-review.json",
+      "bytes": 3864,
+      "sha256": "1134df9de30f5eb784dd0401d2cf0eb67ccdd8c9196569247e20a419256088a9"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-analysis-results.json",
+      "bytes": 576974,
+      "sha256": "ac370e74e94ffe2c0acdae57378d674af63ddf53a2a71e3c76fc4ff42453e7d9"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-analysis-independent-review.json",
+      "bytes": 48662,
+      "sha256": "2fb0317e5e90ed323c096023d40ca121cb586584b49283ecd6e9846a41bba00b"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-figure.json",
+      "bytes": 879,
+      "sha256": "6716780caca8ac4404a20e14f0d637358f66304603e11b7eeac54294f9aa5a57"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-cell-types.json",
+      "bytes": 1061,
+      "sha256": "2402eef1d2a6c7c9cec1595abf4cadcb53e663b380ebb12ae8dc8ce2b03c5528"
+    },
+    {
+      "path": "validation/kc-mbon-calibration-source-review.json",
+      "bytes": 24558,
+      "sha256": "4876c06680694bf28541b65c611e687bd9186c8194d59275bb26e4a401f5126b"
+    }
+  ],
+  "documents": [
+    {
+      "path": "docs/navigation-mbon-intervention-results.md",
+      "bytes": 8762,
+      "sha256": "50e26a033f3eefb095fc03c2fd7eef45b46e75914d9493f7d7ddc48b029ddf7a"
+    },
+    {
+      "path": "docs/pn-kc-apl-calibration-plan.md",
+      "bytes": 5200,
+      "sha256": "dcb027bc55309f6ceda6dd494e08a71a2babc9910e629215b53e3e8ecff654f3"
+    },
+    {
+      "path": "research/20-kc-mbon-functional-calibration.md",
+      "bytes": 17207,
+      "sha256": "884cb77cb7bec24d2382165fb05d4e68e8ba1c4c48c1635e74c4331433218268"
+    }
+  ],
+  "completion_trigger": {
+    "id": "fruit-fly-status-every-10-minutes",
+    "name": "Analyze completed MBON intervention",
+    "kind": "heartbeat",
+    "status": "PAUSED",
+    "target_thread_id": "01a06edf-1ca7-7d53-afba-7a3689752b2e"
+  },
+  "decision": "KC input contributes causally to MBON saturation, but selective silence/high firing, negligible odor contrast and recurrent persistence reject physiological repair or H1 promotion.",
+  "runtime_defaults_changed": false,
+  "body_experiment_run": false,
+  "scope": "This closes only the six-branch intervention milestone. The overall single-fly goal remains active. Raw run archives and downloaded sources are retained locally; compact outputs, references and notes are versioned.",
+  "visual_review": "Both six-run plots inspected at full available resolution; titles, axes, legends and timing annotations readable."
+}

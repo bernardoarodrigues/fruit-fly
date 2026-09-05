@@ -45,6 +45,7 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [17 — BANC comparative circuits](17-banc-comparative-circuit-insights.md) | Female CNS metadata, exact-type/motor crosswalks, annotation conflicts and limits on physiological inference |
 | [18 — Navigation anatomy](18-navigation-ladder-anatomy.md) | Verified route contacts, exact/family and cognate/pooled selections, full DN population, missing angle/mirror registration |
 | [19 — Navigation assay evidence](19-navigation-ladder-assay-evidence.md) | Primary still-air/wind/state protocols, hDelta driver corrections, calcium-versus-spike limits and bounded causal interventions |
+| [20 — KC–MBON functional calibration](20-kc-mbon-functional-calibration.md) | Direct KC/MBON activity audit, exact-type physiological targets, connectome limits, intervention interpretation and prospective calibration gates |
 
 ## How to interpret the notes
 

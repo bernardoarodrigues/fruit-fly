@@ -1,0 +1,656 @@
+{
+  "schema": "kc-mbon-calibration-source-review/v1",
+  "review_date": "2026-09-05",
+  "reviewer_role": "persistent_body; source and spreadsheet review only; no interpretation of intervention outcomes",
+  "status": "completed_with_documentation_corrections",
+  "passed": true,
+  "passed_meaning": "All44 listed retrieval-copy/numeric/text-presence checks pass, and documented narrow source corrections were applied. This is not physiological model acceptance or a review of the whole research note.",
+  "reviewed_note": {
+    "path": "research/20-kc-mbon-functional-calibration.md",
+    "bytes": 17207,
+    "sha256": "884cb77cb7bec24d2382165fb05d4e68e8ba1c4c48c1635e74c4331433218268"
+  },
+  "sources": {
+    "huang_fulltext": {
+      "path": "data/raw/kc-mbon-calibration/PMC11525173.xml",
+      "bytes": 319153,
+      "sha256": "ecab3ebe9fe9917dd911a765e2ccc9d3aedf2a365327a57b51d0df1a474316d9",
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11525173/fullTextXML",
+      "role": "Full article XML; methods, Fig.1 and Extended Data Fig.4; includes supplementary source-file links."
+    },
+    "huang_fig1": {
+      "path": "data/raw/kc-mbon-calibration/41586_2024_7819_MOESM6_ESM.xlsx",
+      "bytes": 21360,
+      "sha256": "f04361b7d0c2932f39779b251398e8a438fb6f596a96a30e59626af518f0954d",
+      "retrieval_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07819-w/MediaObjects/41586_2024_7819_MOESM6_ESM.xlsx",
+      "role": "Official Source Data Fig.1 workbook."
+    },
+    "huang_ed4": {
+      "path": "data/raw/kc-mbon-calibration/41586_2024_7819_MOESM14_ESM.xlsx",
+      "bytes": 24943,
+      "sha256": "f6a80e3eff80a2731c7b45c7c36bb200bc42127440eaf1390ec9a39454e31862",
+      "retrieval_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-07819-w/MediaObjects/41586_2024_7819_MOESM14_ESM.xlsx",
+      "role": "Official Source Data Extended Data Fig.4 workbook."
+    },
+    "hafez_fulltext": {
+      "path": "data/raw/kc-mbon-calibration/PMC10069864.xml",
+      "bytes": 360200,
+      "sha256": "22e6924b2d64c5091fb13352fb62eff1e60393cf6e1a85a7d1af3d668c976bb1",
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10069864/fullTextXML",
+      "role": "Main article body/tables used; peer-review material is also present but is not substituted for the main methods."
+    },
+    "hafez_pdf": {
+      "path": "data/raw/kc-mbon-calibration/hafez-2023.pdf",
+      "bytes": 7371113,
+      "sha256": "b9835426afd85fc1c26cda895e194ed5c83ca126f702c8dfedfde0f4656e551d",
+      "retrieval_url": "https://cdn.elifesciences.org/articles/77578/elife-77578-v4.pdf",
+      "role": "Official23-page paper; Table1/page5 and Table2/page8 rendered and visually inspected."
+    },
+    "shiu_fulltext": {
+      "path": "data/raw/kc-mbon-calibration/PMC11446845.xml",
+      "bytes": 186265,
+      "sha256": "c768deaabdca930274b4a4aa5fa4c6d082b827522839c9ed1889a6d6339369a4",
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11446845/fullTextXML",
+      "role": "Main article Computational model methods."
+    },
+    "murthy_fulltext": {
+      "path": "data/raw/kc-mbon-calibration/murthy-ncbi.xml",
+      "bytes": 146566,
+      "sha256": "e294453fe8836a28cb43d07d020bab84b1361514a923a0e73a41ab2ccf217ff1",
+      "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2654402",
+      "role": "Full text including50-cell response definition and recording preparation."
+    },
+    "honegger_metadata": {
+      "path": "data/raw/kc-mbon-calibration/honegger-ncbi.xml",
+      "bytes": 8698,
+      "sha256": "470ce4ce5a58aeebc07e5d12e3d49c18f4bd322f412dbedba8c226813acd7f25",
+      "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3180869",
+      "role": "Metadata/abstract only; zero body paragraphs. Does not substantiate detailed5% result by itself."
+    }
+  },
+  "source_access_limits": [
+    "Honegger detailed results/methods verified in the indexed primary PMC page at https://pmc.ncbi.nlm.nih.gov/articles/PMC3180869/ using queries containing itsPMCID and on average/Live-fly preparation; direct page returnedrecaptcha, authorPDF repeatedSSLtimeouts, EuropePMC fullTextXML404. Retained NCBIXML is metadata/abstract only.",
+    "Turner primary abstract verified at https://repository.cshl.edu/id/eprint/26143/ and https://journals.physiology.org/doi/abs/10.1152/jn.01283.2007; full-text journal route403 and no retained fullpaper. No exact Turner spike distribution,sex,or method threshold is claimed independently verified here. Murthy fulltext directly supports the qualitative few-spike claim.",
+    "Initial springer-cdn hostname failedDNS; corrected official static-content.springer.com workbook URLs succeeded. Murthy EuropePMC XML404; officialNCBIefetch fulltext succeeded. HafezPoppler emittedInvalidFontWeight warnings; inspected tables remain legible."
+  ],
+  "huang_numeric_verification": {
+    "method": "Parse XLSX zip sharedStrings and sheet cells with stdlib XML; use all declared per-fly rows, arithmetic mean and sample SD(ddof=1)/sqrt(n); compare cached workbook means/SEM with absolute tolerance1e-12 and printed3-decimal values. No plot digitization, waveform reanalysis, or missing-data imputation.",
+    "rows": [
+      {
+        "cell_type": "MBON12",
+        "source": "huang_fig1",
+        "sheet": "Panel e",
+        "observable": "spontaneous_spike_rate",
+        "units": "spikes/s",
+        "header": "MBON-γ2α'1",
+        "raw_cells": {
+          "C3": "25.2",
+          "C4": "22.8",
+          "C5": "20.12",
+          "C6": "19.079999999999998",
+          "C7": "18.96",
+          "C8": "21.48",
+          "C9": "15.84",
+          "C10": "20.399999999999999",
+          "C11": "22.08",
+          "C12": "19.96",
+          "C13": "21.6",
+          "C14": "22",
+          "C15": "29.56",
+          "C16": "22.92",
+          "C17": "20.48",
+          "C18": "20.92",
+          "C19": "26.52",
+          "C20": "19.88",
+          "C21": "20.16",
+          "C22": "20.88"
+        },
+        "n": 20,
+        "mean": 21.542,
+        "sem": 0.6572124546342041,
+        "workbook_mean": {
+          "value": "21.542000000000002",
+          "formula": null
+        },
+        "workbook_sem": {
+          "value": "0.65721245463419964",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "20",
+          "formula": null
+        },
+        "digitized": false
+      },
+      {
+        "cell_type": "MBON13",
+        "source": "huang_fig1",
+        "sheet": "Panel e",
+        "observable": "spontaneous_spike_rate",
+        "units": "spikes/s",
+        "header": "MBON-α'2",
+        "raw_cells": {
+          "E3": "11.68",
+          "E4": "23",
+          "E5": "10.28",
+          "E6": "13.52",
+          "E7": "17.399999999999999",
+          "E8": "15.12",
+          "E9": "16",
+          "E10": "11.72",
+          "E11": "14.6",
+          "E12": "9.08",
+          "E13": "23.56",
+          "E14": "13.84",
+          "E15": "21.28",
+          "E16": "20.52",
+          "E17": "21.32",
+          "E18": "13.24",
+          "E19": "16.559999999999999",
+          "E20": "23.48",
+          "E21": "13.8",
+          "E22": "19.04"
+        },
+        "n": 20,
+        "mean": 16.451999999999998,
+        "sem": 1.0127320007105325,
+        "workbook_mean": {
+          "value": "16.452000000000005",
+          "formula": null
+        },
+        "workbook_sem": {
+          "value": "1.0127320007105272",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "20",
+          "formula": null
+        },
+        "digitized": false
+      },
+      {
+        "cell_type": "MBON14",
+        "source": "huang_fig1",
+        "sheet": "Panel e",
+        "observable": "spontaneous_spike_rate",
+        "units": "spikes/s",
+        "header": "MBON-α3",
+        "raw_cells": {
+          "F3": "11.9",
+          "F4": "11.574999999999999",
+          "F5": "14.975",
+          "F6": "13.725",
+          "F7": "11.125",
+          "F8": "11.9",
+          "F9": "15.574999999999999",
+          "F10": "14.4",
+          "F11": "14.625",
+          "F12": "12.225",
+          "F13": "16.475000000000001",
+          "F14": "15.324999999999999",
+          "F15": "22.2",
+          "F16": "21.975000000000001",
+          "F17": "16.375",
+          "F18": "20.675000000000001",
+          "F19": "20.425000000000001",
+          "F20": "16.149999999999999",
+          "F21": "12.125",
+          "F22": "15.725"
+        },
+        "n": 20,
+        "mean": 15.47375,
+        "sem": 0.7746783606762229,
+        "workbook_mean": {
+          "value": "15.473749999999999",
+          "formula": null
+        },
+        "workbook_sem": {
+          "value": "0.77467836067622531",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "20",
+          "formula": null
+        },
+        "digitized": false
+      },
+      {
+        "cell_type": "MBON12",
+        "source": "huang_ed4",
+        "sheet": "Panel g",
+        "observable": "1_percent_EtA_baseline_subtracted_spike_rate",
+        "units": "spikes/s",
+        "header": "Odor-induced changes in spike rate in MBON-γ2α'1 (∆ spike/s)",
+        "odor_header": "1% EtA",
+        "raw_cells": {
+          "E21": "-11.4682133505189",
+          "E22": "1.6168698170720599",
+          "E23": "2.3821953577261898",
+          "E24": "11.2741393422891",
+          "E25": "11.749384622792",
+          "E26": "3.6203668929655302",
+          "E27": "13.5757375081945",
+          "E28": "4.0810209002321596",
+          "E29": "21.2133149627591",
+          "E30": "16.323279888295001",
+          "E31": "4.9077234191489998",
+          "E32": "17.937460045852401"
+        },
+        "n": 12,
+        "mean": 8.101106617234011,
+        "sem": 2.6021305562801627,
+        "workbook_mean": {
+          "value": "8.1011066172340112",
+          "formula": "AVERAGE(E21:E32)"
+        },
+        "workbook_sem": {
+          "value": "2.6021305562801627",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "12",
+          "formula": null
+        },
+        "reported_five_odor_test": "Friedman ANOVA: p = 7.00E-02",
+        "negative_individual_responses": 1,
+        "digitized": false
+      },
+      {
+        "cell_type": "MBON13",
+        "source": "huang_ed4",
+        "sheet": "Panel g",
+        "observable": "1_percent_EtA_baseline_subtracted_spike_rate",
+        "units": "spikes/s",
+        "header": "Odor-induced changes in spike rate in MBON-α'2 (∆ spike/s)",
+        "odor_header": "1% EtA",
+        "raw_cells": {
+          "E57": "12.2201661499943",
+          "E58": "5.3909139731181703",
+          "E59": "-1.1425830657377201",
+          "E60": "12.684441678981599",
+          "E61": "10.5039315251651",
+          "E62": "-2.6482360915122598",
+          "E63": "19.088581724982198",
+          "E64": "-4.4057208043051999",
+          "E65": "28.591757686196502",
+          "E66": "18.802122245802899",
+          "E67": "18.919306510813101",
+          "E68": "1.8744556420996601"
+        },
+        "n": 12,
+        "mean": 9.98992809796653,
+        "sem": 2.9855754501325027,
+        "workbook_mean": {
+          "value": "9.9899280979665281",
+          "formula": "AVERAGE(E57:E68)"
+        },
+        "workbook_sem": {
+          "value": "2.9855754501325027",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "12",
+          "formula": null
+        },
+        "reported_five_odor_test": "Friedman ANOVA: p = 5.40E-01",
+        "negative_individual_responses": 3,
+        "digitized": false
+      },
+      {
+        "cell_type": "MBON14",
+        "source": "huang_ed4",
+        "sheet": "Panel g",
+        "observable": "1_percent_EtA_baseline_subtracted_spike_rate",
+        "units": "spikes/s",
+        "header": "Odor-induced changes in spike rate in MBON-α3 (∆ spike/s)",
+        "odor_header": "1% EtA",
+        "raw_cells": {
+          "E75": "14.320185779842101",
+          "E76": "8.5465534802239507",
+          "E77": "8.6050570932269004",
+          "E78": "4.5720441338237601",
+          "E79": "8.5207065263687394",
+          "E80": "1.38887098745531",
+          "E81": "10.3989622106913",
+          "E82": "19.458701392978401",
+          "E83": "7.5661203643003301",
+          "E84": "19.070674118601399",
+          "E85": "9.3065004425974998",
+          "E86": "5.6712007911200004"
+        },
+        "n": 12,
+        "mean": 9.78546477676914,
+        "sem": 1.569161077795926,
+        "workbook_mean": {
+          "value": "9.7854647767691407",
+          "formula": "AVERAGE(E75:E86)"
+        },
+        "workbook_sem": {
+          "value": "1.5691610777959255",
+          "formula": null
+        },
+        "workbook_n": {
+          "value": "12",
+          "formula": null
+        },
+        "reported_five_odor_test": "Friedman ANOVA: p = 8.20E-01",
+        "negative_individual_responses": 0,
+        "digitized": false
+      }
+    ]
+  },
+  "physiology_scope": {
+    "huang": {
+      "source_locations": [
+        "Methods Fly stocks/Par46",
+        "Mounting/Par47",
+        "High-speed imaging/Par49",
+        "Odour delivery/Par50",
+        "Analyses of voltage imaging/Par64",
+        "Fig.1e",
+        "Extended Data Fig.4g"
+      ],
+      "preparation": "Female3–8days at surgery, awake/head-fixed, rightbrain laser-window voltage imaging1000Hz; behavior tested in separate flies.",
+      "stimulus": "1%EtA is v/v dilution in mineral oil,200ml/min total airflow;15s trial with odor5–10s, >=2min between odors. Response is5s odor mean minus preceding5s baseline.",
+      "normalization": "Optical signals are denoised/photobleach-corrected; spikes detected above cell-specific thresholds after40ms median subtraction, rates use100ms sliding window. These are inferred spikes from voltage imaging, not unitary synaptic currents.",
+      "uncertainty": "SEM across20spontaneous or12odor flies, not a confidence interval or within-cell tolerance. Cohorts differ. Friedman five-odor p values MBON12=.070,MBON13=.540,MBON14=.820 do not prove equivalence. Positive population EAmeans include negativeindividualresponses (1,3,0 respectively)."
+    },
+    "honegger": {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3180869/",
+      "locations": [
+        "Methods Fly stocks/Data analysis",
+        "Results MB population responses to odors are sparse and correlated with net ORN output;Fig.5"
+      ],
+      "direct_reported": "GCaMP3/OK107female2–5days;8flies933neurons for monomolecular panel: mean odor recruitment approximately5%, no per-odor mean above10%, individualflies up to17%. Values are author-reported, not digitized here.",
+      "criterion": "Peakcalcium2.33SDabovebaseline in0.5–4.5s afteronset and reliability acrossatleast half presentations; prose also saysmorethanhalf. Odorvalve1s. Singletrials can recruitabout20%; otherconcentration experimentmeansremainbelow20%.",
+      "limit": "5–10% is an assay-dependent prospective range, not universal pertrial anyspike membership or allKCsubtypes. No exact spike count is inferred fromcalcium."
+    },
+    "turner": {
+      "source": "https://repository.cshl.edu/id/eprint/26143/",
+      "verified_scope": "Primary abstract: in-vivo wholecell KCresponses are selective/sparse,rapidEPSPs,estimatedlowPNconvergence around10,andhighthreshold.",
+      "limit": "Few-spike code is qualitatively corroborated by retainedMurthyfulltext; no quantitativeTurnertrialspike statistic or sexverified inthisreview."
+    },
+    "murthy": {
+      "source_locations": [
+        "Results Odor response physiology",
+        "Fig.3A caption",
+        "Methods Fly stocks and Electrophysiology"
+      ],
+      "direct_reported": "24-hourfemalein-vivowholecell;50KCs,27GFP+L-LP,5otherGFP+,18GFP−. Odor1s;firsttrialexcluded.20/50no classifiedresponse; responding meansspikes>=3trials,nonresponding<=2. Few-spike responses directlydescribed.",
+      "limit": "Thresholded responseabsence is not literalzero spikes; sampling is weightedtowardNP7175/L-LPcells, not a census."
+    },
+    "hafez": {
+      "source_locations": [
+        "Results/Fig.1",
+        "Table1(PDFp5)",
+        "Table2(PDFp8)",
+        "Fig.4D",
+        "Fig.5/Table3",
+        "Methods Electrophysiology/Model reconstruction/Synaptic inputs"
+      ],
+      "reported_intrinsic": {
+        "rest_mV_mean": -56.7,
+        "rest_sem_mV": 2.0,
+        "spontaneous_Hz_mean": 12.1,
+        "tau_m_ms_mean": 16.06,
+        "tau_m_table_sem_ms": 2.2,
+        "tau_m_prose_sem_ms": 2.3,
+        "input_R_Mohm_mean": 926,
+        "input_R_sem_Mohm": 55,
+        "calculated_C_pF_mean": 16.76,
+        "calculated_C_sem_pF": 1.9,
+        "n": 5
+      },
+      "preparation": "Exvivo2–3dayflies;sexnotstated ininspectedmethods;MB082Clabels2alpha3cells,recordedcell cannotbedistinguished. Capacitance calculated tau/R; passive fitting used105currentsteptraces from3selectedcells.",
+      "reported_model_outputs": {
+        "contacts": 12770,
+        "KCs": 948,
+        "contacts_per_KC_rounded": 13.47,
+        "single_KC_mean_somatic_depolarization_mV": 0.37,
+        "synchronous_50_random_KCs_mean_somatic_depolarization_mV": 15.24,
+        "random_trials": 1000,
+        "50_KC_model_range_mV": [
+          13.34,
+          17.58
+        ]
+      },
+      "model_assumptions": "CompositeTakemuraalpha3Adendrite+hemibrainaxon+confocalsoma; passiveNEURONmodel. Synapsesalpha-functiontime-to-peak.44ms and reversal8.9mVborrowedfromKCrecordings. Percontactgmax1.5627e-5uS chosenagainstmonosynapticdepolarizationtarget. Outputsare not measuredunitaryEPSPs or maleMBON12/13constraints."
+    },
+    "shiu": {
+      "source_location": "Methods Computational model",
+      "direct_reported": "SinglefreeWsyn=.275mV chosen so100Hzsugar-GRNactivation drivesroughly80%maximalMN9firing. ContactcountmultipliedbyNTsignandWsyn; shared acrosssourceFlyWireLIFgraph.",
+      "interpretation": "This scales effectivecurrent-like state increments, not measured percontact membrane EPSP or KC→MBONconductance. FemaleFlyWire physiological assumption doesnotvalidateMaleCNStransfer."
+    }
+  },
+  "corrections_applied": [
+    {
+      "location": "Huang preparation paragraph",
+      "before": "behaving female flies",
+      "after": "awake, head-fixed female flies; separate imaging/behavior cohorts because imaging illumination disrupted normal odor-driven behavior"
+    },
+    {
+      "location": "Hafez kinetics paragraph",
+      "before": "synaptic decay was0.44ms",
+      "after": "alpha-function time to maximum conductance0.44ms; cannot substitute this for a pure exponential decay constant"
+    },
+    {
+      "location": "Hafez intrinsic paragraph",
+      "before": "capacitance reported among direct recording constraints",
+      "after": "capacitance calculated from membrane time constant/input resistance;5 cells, sex not specified in inspected methods, subtype identity unresolved"
+    },
+    {
+      "location": "Honegger recruitment bullet",
+      "before": "any tested odor without denominator/response criterion",
+      "after": "the monomolecular panel;8 female flies933cells; reliable baseline-significant calcium responses; individual flies up to17%"
+    },
+    {
+      "location": "Murthy recruitment bullet",
+      "before": "20of50did not spike to any tested odor",
+      "after": "20of50had no classified spiking response; response requires spikes on>=3trials, not literally no spikes"
+    },
+    {
+      "location": "Shiu parameter paragraph",
+      "before": "single free parameter without fitting target",
+      "after": "chosen against100Hz sugar-GRN activation producing roughly80% of maximalMN9rate"
+    },
+    {
+      "location": "Huang table context",
+      "before": "workbook numbers without retained raw files/explicit assay distinction",
+      "after": "retained official workbooks, per-fly recomputation, liquid dilution/baseline definition, isolatedOr42a/VM7d comparison limit"
+    }
+  ],
+  "excluded": [
+    "No intervention outputs, causal conclusions, incoming-edge statistics, live numerical audits, or model-density values were independently reviewed in this task.",
+    "No new simulation, fit, parameter promotion, fullgraph load, or source-model execution.",
+    "Other research20 citations (MaleCNSdetector precision/recall, APL/claw experiments, valence/action pathways) were outside this bounded source review."
+  ],
+  "checks": [
+    {
+      "name": "huang_fulltext_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "huang_fig1_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "huang_ed4_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "hafez_fulltext_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "hafez_pdf_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "shiu_fulltext_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "murthy_fulltext_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "honegger_metadata_exact_copy",
+      "passed": true
+    },
+    {
+      "name": "MBON12_spontaneous_n",
+      "passed": true
+    },
+    {
+      "name": "MBON12_spontaneous_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON12_spontaneous_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON12_spontaneous_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON12_spontaneous_display_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON13_spontaneous_n",
+      "passed": true
+    },
+    {
+      "name": "MBON13_spontaneous_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON13_spontaneous_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON13_spontaneous_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON13_spontaneous_display_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON14_spontaneous_n",
+      "passed": true
+    },
+    {
+      "name": "MBON14_spontaneous_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON14_spontaneous_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON14_spontaneous_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON14_spontaneous_display_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON12_EA_n",
+      "passed": true
+    },
+    {
+      "name": "MBON12_EA_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON12_EA_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON12_EA_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON12_EA_display_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON13_EA_n",
+      "passed": true
+    },
+    {
+      "name": "MBON13_EA_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON13_EA_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON13_EA_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON13_EA_display_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON14_EA_n",
+      "passed": true
+    },
+    {
+      "name": "MBON14_EA_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON14_EA_sem",
+      "passed": true
+    },
+    {
+      "name": "MBON14_EA_display_mean",
+      "passed": true
+    },
+    {
+      "name": "MBON14_EA_display_sem",
+      "passed": true
+    },
+    {
+      "name": "Huang_separate_cohorts",
+      "passed": true
+    },
+    {
+      "name": "Huang_1000Hz",
+      "passed": true
+    },
+    {
+      "name": "Hafez_alpha_rise",
+      "passed": true
+    },
+    {
+      "name": "Hafez_model_output_15_24",
+      "passed": true
+    },
+    {
+      "name": "Shiu_free_parameter",
+      "passed": true
+    },
+    {
+      "name": "Murthy_20_of_50",
+      "passed": true
+    }
+  ],
+  "checks_total": 44,
+  "checks_passed": 44,
+  "reproduction": "Workbook paths, sheet names, raw exactcellstrings andcachedformula records retained above; recompute mean with sum(values)/n andSEM with sqrt(sum((x-mean)^2)/(n-1))/sqrt(n). StandardIEEE64floating differences<1e-12. The reviewer temporary builder is not required to recover calculations.",
+  "internal_correction": {
+    "description": "Before finalization, a manual prose tally of negative MBON12 EA responses was corrected from2to1. The automatically counted raw-row field was already1; all means/SEMs and44checks were unchanged. Initial receipt retained in tmp; no source or data change.",
+    "initial_receipt": {
+      "path": "tmp/kc-mbon-source-review/source-review-initial.json",
+      "bytes": 24044,
+      "sha256": "98c3967334fe7d4057919e3915654b91db6bbafcb2bd02d7159027dc413fa69d"
+    }
+  }
+}

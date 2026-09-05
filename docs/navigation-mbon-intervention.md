@@ -1,6 +1,6 @@
 # One KC-to-MBON delivery intervention
 
-Status: the [six-trial execution plan](../validation/navigation-mbon-intervention-plan.json) is running in `runs/20260905T185111580463Z-navigation-mbon-intervention`, launched after source/plan commit `db9ae70`. The [launch receipt](../validation/navigation-mbon-intervention-launch.json) verifies the parent, first worker and initial durable output. A quiet ten-minute heartbeat waits for the complete batch; no active-intervention outcome has been interpreted. The [completed input audit](navigation-ladder-mbon-inputs.md) and its independent review satisfy the predeclared class-selection gate.
+Status: the [six-trial execution plan](../validation/navigation-mbon-intervention-plan.json) completed in `runs/20260905T185111580463Z-navigation-mbon-intervention`. All independent state/delivery, numerical and combined outcome reviews pass. The [combined results](navigation-mbon-intervention-results.md) show a large reversible effect without physiological repair: MBON12/14 become silent, MBON13 retains high firing, odor contrast remains negligible, and saturation returns after restoration. The quiet completion heartbeat is paused. The [launch receipt](../validation/navigation-mbon-intervention-launch.json) remains the historical launch record after source/plan commit `db9ae70`.
 
 ## Intervention and controls
 

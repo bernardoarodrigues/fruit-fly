@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T20:14:40.686342+00:00",
+  "passed": true,
+  "reviewed_source": {
+    "path": "scripts/analyze_navigation_mbon_intervention.py",
+    "bytes": 16777,
+    "sha256": "a1eacd999919dc91bc770e98ad1268a943de7425712d03e670ef4a6d34915696"
+  },
+  "source_start": [
+    {
+      "path": "scripts/analyze_navigation_mbon_intervention.py",
+      "bytes": 16777,
+      "sha256": "a1eacd999919dc91bc770e98ad1268a943de7425712d03e670ef4a6d34915696"
+    },
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    }
+  ],
+  "source_end": [
+    {
+      "path": "scripts/analyze_navigation_mbon_intervention.py",
+      "bytes": 16777,
+      "sha256": "a1eacd999919dc91bc770e98ad1268a943de7425712d03e670ef4a6d34915696"
+    },
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    }
+  ],
+  "source_unchanged": true,
+  "source_inspection": {
+    "passed": true,
+    "items_reviewed": 14,
+    "findings": [
+      "Independent reconstructed array file is required to equal its passing review array_artifact record.",
+      "Both review plan records and the numerical rows artifact are rehashed against their receipt records.",
+      "Both review plans must contain the exact current execution plan and parent result records, and identical six trial specifications.",
+      "Every input from both review plans is freshly rehashed and included in the reducer plan.",
+      "Independent review source_start and source_end must equal its own frozen review-plan input records.",
+      "Original control array is bound to the original producer artifact list; original independent review binds that exact producer result and has unchanged source pins.",
+      "Parent completion and exact six-case coverage remain required before preparing the reducer.",
+      "All reducer-plan inputs are checked again before and after the reduction.",
+      "Spike prefix excludes5000; archived branch starts5000; no spike or state row is duplicated at the join.",
+      "Pulse5000..10000, washout10000..15000 and restored/inputoff15000..30000 are half-open and retain exact state-row clock definitions.",
+      "ISI assignment uses the second spike, carrying preceding spikes across window and branch boundaries.",
+      "Per-seed EA-minus-constant and intervention-minus-control contrasts use the same target/window order.",
+      "All58 selection identities, independent MBON stream/count/p-h comparisons and full checkpoint count comparisons remain explicit.",
+      "Source inspection found no remaining concrete guard, binning, state-clock or pairing defect."
+    ],
+    "method": "Bounded read-only source inspection; these are inspected source properties, not execution of prepare or analyze."
+  },
+  "fixture": {
+    "command": [
+      "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+      "/Users/bernardo/Documents/Code/fruit-fly/scripts/analyze_navigation_mbon_intervention.py",
+      "fixture"
+    ],
+    "returncode": 0,
+    "stdout": {
+      "passed": true,
+      "checks": 6,
+      "scope": "Half-open windows, carried ISIs, silent/first spikes and bins."
+    },
+    "stderr": ""
+  },
+  "scope": "Prospective outcome-reducer source and manufactured-fixture review only. No model, saved-outcome reduction, refitting or repeated raw audit.",
+  "limitations": [
+    "This receipt does not report scientific outcomes or execute the prospective prerequisite guards against a completed numerical receipt. Reducer.prepare must still run those guards.",
+    "Saved-data numerical/state reviews and their recorded limitations remain authoritative; a source review is not physiological acceptance."
+  ]
+}
