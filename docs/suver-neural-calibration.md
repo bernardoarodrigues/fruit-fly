@@ -139,14 +139,16 @@ was transient depolarization followed by hyperpolarization, which cannot justify
 a single measured static positive gain. No release parameter or neuronal
 time constant has been fitted here.
 
-A future optional mixed backend can accept an explicit `GradedPopulationSpec`
+An [optional mixed backend](graded-model.md) now accepts an explicit `GradedPopulationSpec`
 containing exact candidate IDs, membrane parameters and a separately labelled
 release hypothesis. It should preserve incoming graph conductances, exclude
 those cells from spike threshold/reset/refractory updates, and propagate a
 nonnegative continuous release state through their actual outgoing contacts.
-Required explicit release parameters are basal drive, voltage sensitivity,
-saturation, adaptation/decay and delay; state and specification must be validated
-and checkpointed. This is a design proposal, not an enabled runtime mode.
+Its explicit release parameters are basal drive, voltage sensitivity, saturation
+and first-order release decay; it uses the configured common graph delay. State
+and specification are validated and checkpointed. The implementation's numerical
+and full-graph smoke checks pass, but its illustrative parameters are not fitted
+to these recordings and it is not enabled in a body/viewer configuration.
 
 The first model comparison should stimulate the peripheral wind pathway and
 compare predicted candidate APN2 ΔVm against held-out recordings, with the female

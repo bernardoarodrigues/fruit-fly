@@ -251,7 +251,18 @@ class ConductanceNetwork(LIFNetwork):
         p = self.parameters
         poisson_indices = selected if drive.rates_hz is not None else np.empty(0, dtype=np.int32)
         start_ms = self.time_ms
-        indices, ticks, total, work = _conductance_kernel(
+        indices, ticks, total, work = self._run_dynamics(
+            steps, poisson_indices, probabilities, input_weights, record, event_arrays)
+        self.tick += steps
+        self.synaptic_mv[:] = (self.excitatory_g * (p.excitatory_reversal_mv-p.resting_mv)
+                               + self.inhibitory_g * (p.inhibitory_reversal_mv-p.resting_mv))
+        return SpikeBatch(indices, ticks*p.dt_ms, self.neuron_ids[indices], start_ms,
+                          self.time_ms, int(total), int(work))
+
+    def _run_dynamics(self, steps, poisson_indices, probabilities, input_weights, record, event_arrays):
+        """Integration hook; validation and public recording semantics are shared."""
+        p = self.parameters
+        return _conductance_kernel(
             steps, self.tick, p.dt_ms, p.resting_mv, p.reset_mv, p.threshold_mv,
             p.membrane_tau_ms, p.excitatory_reversal_mv, p.inhibitory_reversal_mv,
             np.exp(-p.dt_ms / (2*p.excitatory_tau_ms)), np.exp(-p.dt_ms / (2*p.inhibitory_tau_ms)),
@@ -263,11 +274,6 @@ class ConductanceNetwork(LIFNetwork):
             input_weights, self._rng_state, self.indptr, self.targets, self.weights,
             self.ablated, self.delay_ticks, self._pending, self._pending_count, record, *event_arrays,
         )
-        self.tick += steps
-        self.synaptic_mv[:] = (self.excitatory_g * (p.excitatory_reversal_mv-p.resting_mv)
-                               + self.inhibitory_g * (p.inhibitory_reversal_mv-p.resting_mv))
-        return SpikeBatch(indices, ticks*p.dt_ms, self.neuron_ids[indices], start_ms,
-                          self.time_ms, int(total), int(work))
 
     def step(self, *, drive=None, outputs=None, events=None):
         return self.advance(self.parameters.dt_ms, drive=drive, outputs=outputs, events=events)

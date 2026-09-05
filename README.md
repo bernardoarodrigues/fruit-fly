@@ -47,8 +47,10 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Neural engine](docs/neural-engine.md), [original Shiu replication](docs/replication.md), [male motor diagnosis](docs/motor-calibration.md)
 - [Body and units](docs/body-runtime.md), [sensory mapping evidence](docs/sensory-mapping-evidence.md), [viewer](docs/viewer.md)
 - [Conductance dynamics](docs/conductance-model.md), [proprioceptive mapping](docs/proprioception-mapping.md), [navigation calibration](docs/navigation-calibration.md), [internal state and learning](docs/internal-state-learning-plan.md)
+- [Experimental nonspiking/graded transmission](docs/graded-model.md), with independent equation checks and an unchanged full-graph assay
 - [Measured wind calibration](docs/wind-calibration.md), [wind neural targets](docs/suver-neural-calibration.md), [slow-circuit reproduction](docs/navigation-memory-model-audit.md), [measured grooming and free behavior](docs/grooming-model-audit.md)
 - [Grooming neural/body controls](docs/grooming-loop.md), [measured joint replay](docs/grooming-replay.md), [free-running dataset timing and units](docs/freewalking-data-alignment.md)
+- [Measured walking comparison](docs/freewalking-benchmark.md), [implementation findings and open implications](research/10-implementation-findings.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

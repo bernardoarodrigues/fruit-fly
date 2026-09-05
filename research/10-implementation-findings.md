@@ -1,0 +1,18 @@
+# Findings from implementation and data reconstruction
+
+These entries distinguish observations about released data and implemented models from biological hypotheses. Novelty in the scientific literature has not been established. None is evidence of a complete digital organism.
+
+| Finding | Evidence class | Practical consequence | Record |
+|---|---|---|---|
+| Native free-running poses and stored velocities have different clocks despite equal row counts | Reproduced locally from author code and all 372 released bouts | Derive velocities on the native 800 Hz grid before fitting motion; preserve the unchanged export | [Timing/unit audit](../docs/freewalking-data-alignment.md) |
+| The running export omits per-animal sex labels, some scaling provenance, and an exact explanation for its one-frame CSV mismatch | Observed in source; unresolved provenance | Use mixed-sex labels and relative within-bout time; do not assign exact absolute video frames or male morphology | [Audit](../docs/freewalking-data-alignment.md) |
+| Current fixed-frequency gait changes excursion strongly with motor drive, while the measured running reference shows a within-animal speed–frequency association | Reproduced locally; descriptive comparison | Evaluate cadence and joint excursion separately before tuning descending-neuron gains | [Walking benchmark](../docs/freewalking-benchmark.md) |
+| Much of the unit-drive CPG's large absolute heading motion reverses rather than accumulating into a turn | Reproduced locally | Investigate gait/contact mechanics before interpreting this motion as steering | [Walking benchmark](../docs/freewalking-benchmark.md) |
+| Coarse odor-puff emission strongly aliases concentration at the measured fast-wind speed | Reproduced locally by a resolution comparison | Scale emission resolution with wind/advection while preserving source flux | [Airflow/odor geometry](../docs/airflow-geometry.md) |
+| A fused MuJoCo head-body lookup returned an invalid ID; retained head geometry provides the required airflow orientation | Reproduced locally and corrected | Validate named model indices and use the actual moving sensor/head frame; the antenna IDs used by earlier odor sensing were valid | [Geometry correction](../docs/airflow-geometry.md) |
+| A measured grooming template can be gated through full-graph descending-neuron activity with physical contacts and intervention controls | Reproduced locally; engineering motor interface | Use a bounded calibration assay, retaining female-template, rigid-antenna and uncalibrated-dynamics limits | [Grooming loop](../docs/grooming-loop.md) |
+| Nonspiking cells need separate continuous release state; treating them as ordinary LIF spikers discards the measured communication mode | Observed nonspiking physiology; implemented model hypothesis | A mixed backend now represents voltage and nonnegative delayed release separately from spike records | [Graded model](../docs/graded-model.md), [reconstructed wind recordings](../docs/suver-neural-calibration.md) |
+
+The measured wind dataset now supplies antennal deflection, APN2/APN3/WPN voltage and spiking targets. Its voltage-to-release mapping, peripheral transduction, male transfer and candidate-cell correspondence remain incompletely identified. Matching a behavioral endpoint cannot by itself identify those missing mechanisms.
+
+Further outcomes belong in the corresponding reproducible assay record, with negative results and superseded assumptions retained. Candidate mechanisms should be compared through independent interventions and held-out measurements, not promoted to biological facts because a simulation animates correctly.
