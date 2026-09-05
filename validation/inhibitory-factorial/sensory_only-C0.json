@@ -1,0 +1,161 @@
+{
+  "arm": "C0",
+  "condition": "sensory_only",
+  "checks": [
+    {
+      "name": "finite_states_prethreshold_diagnostics",
+      "pass": true
+    },
+    {
+      "name": "all_events_partitioned",
+      "pass": true
+    },
+    {
+      "name": "own_threshold_and_availability",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:all_voltage",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:all_signed_state",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:spikes",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:accepted_jumps",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:accepted_ticks",
+      "pass": true
+    },
+    {
+      "name": "C0_bitwise:accepted_edges",
+      "pass": true
+    },
+    {
+      "name": "C0_final_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "C0_every_edge_disposition",
+      "pass": true
+    },
+    {
+      "name": "C0_no_direct_target_drive_provenance",
+      "pass": true
+    },
+    {
+      "name": "package0_rejects_unavailable",
+      "pass": true
+    }
+  ],
+  "tolerances_mv": {
+    "32_vs_64": 1e-08,
+    "production_vs_quad": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "quad_error_estimate": 1e-09,
+    "subdivision": 1e-08,
+    "bounds": 1e-10,
+    "tail": 1.01e-13
+  },
+  "archive_sha256": "7a87fe91a106071d15363c13f149aef802ebfe86e7c6012cf75a89c50eeba621",
+  "cells": [
+    {
+      "target_id": 67052,
+      "minimum_voltage_mv": -529.721519776896,
+      "maximum_voltage_mv": -48.18337395355148,
+      "mean_voltage_mv": -434.7117473532457,
+      "endpoint_voltage_mv": -336.91774336408105,
+      "minimum_pre_threshold_mv": -529.721519776896,
+      "maximum_pre_threshold_mv": -48.18337395355148,
+      "spike_count": 0,
+      "rate_hz": 0.0,
+      "first_spike_ms": null,
+      "last_spike_ms": null,
+      "min_signed_or_positive_state_mv": -880.6348031475861,
+      "max_signed_or_positive_state_mv": 53.777986679942536,
+      "max_h": 0.0,
+      "max_stiffness": 0.005,
+      "pre_threshold_below_minus75_fraction": 0.9986333333333334,
+      "closest_threshold_margin_mv": 3.183373953551481,
+      "event_counts": {
+        "accepted": 637370,
+        "source_blocked": 0,
+        "target_unavailable": 0,
+        "pending": 108
+      },
+      "windows": [
+        {
+          "start_ms": 0,
+          "end_ms": 500,
+          "spikes": 0,
+          "mean_post_voltage_mv": -408.10699646717944
+        },
+        {
+          "start_ms": 500,
+          "end_ms": 11000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -435.8310903807621
+        },
+        {
+          "start_ms": 11000,
+          "end_ms": 12000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -436.2610210073567
+        }
+      ]
+    },
+    {
+      "target_id": 13314,
+      "minimum_voltage_mv": -471.54952766399794,
+      "maximum_voltage_mv": -45.12346916746416,
+      "mean_voltage_mv": -377.8994658250764,
+      "endpoint_voltage_mv": -333.6620649562421,
+      "minimum_pre_threshold_mv": -471.54952766399794,
+      "maximum_pre_threshold_mv": -44.96504458952824,
+      "spike_count": 1,
+      "rate_hz": 0.08333333333333333,
+      "first_spike_ms": 11.700000000000001,
+      "last_spike_ms": 11.700000000000001,
+      "min_signed_or_positive_state_mv": -824.7119617051403,
+      "max_signed_or_positive_state_mv": 126.89733538491701,
+      "max_h": 0.0,
+      "max_stiffness": 0.005,
+      "pre_threshold_below_minus75_fraction": 0.9984666666666666,
+      "closest_threshold_margin_mv": 0.03495541047175976,
+      "event_counts": {
+        "accepted": 594450,
+        "source_blocked": 0,
+        "target_unavailable": 6,
+        "pending": 84
+      },
+      "windows": [
+        {
+          "start_ms": 0,
+          "end_ms": 500,
+          "spikes": 1,
+          "mean_post_voltage_mv": -356.85474008748673
+        },
+        {
+          "start_ms": 500,
+          "end_ms": 11000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -378.52300729768774
+        },
+        {
+          "start_ms": 11000,
+          "end_ms": 12000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -381.8746432314519
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

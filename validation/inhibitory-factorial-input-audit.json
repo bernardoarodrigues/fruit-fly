@@ -1,0 +1,2251 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T04:55:54.344343+00:00",
+  "method": "Read-only verification of retained source arrays, graph/weight identities, constant masks and baseline delivery bookkeeping; no state recurrence",
+  "full_spike_or_journal_decompression": false,
+  "model_execution": false,
+  "duplicate_event_arrays_written": false,
+  "inputs": {
+    "validation/negative-voltage-replay-plan.json": {
+      "sha256": "5e474e043a4c302a4694ac7b0e87db0bfce6f9de1d4a4213ae484e27399914a1",
+      "bytes": 8867,
+      "expected": null
+    },
+    "validation/negative-voltage-replay-independent-review.json": {
+      "sha256": "3428c55e600dfbf8661241be727147d9d81eb498db5e77398fa9500ceef01db6",
+      "bytes": 65629,
+      "expected": null
+    },
+    "scripts/audit_inhibitory_factorial_inputs.py": {
+      "sha256": "b0891e8397ad05a3371d6de33587baa089f1852ff84ae6944d8b94988085122b",
+      "bytes": 20655,
+      "expected": null
+    },
+    "validation/negative-voltage-replay-results.json": {
+      "sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "bytes": 74092,
+      "expected": {
+        "sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+        "bytes": 74092
+      }
+    },
+    "scripts/negative-voltage-replay.py": {
+      "sha256": "7e302ce4d5808192b0bb68ab14f430c6736632b17eedc852727a20642159b082",
+      "bytes": 28139,
+      "expected": {
+        "sha256": "7e302ce4d5808192b0bb68ab14f430c6736632b17eedc852727a20642159b082",
+        "bytes": 28139
+      }
+    },
+    "validation/flybody-rolling-loop/plan.json": {
+      "sha256": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+      "bytes": 50851,
+      "expected": {
+        "sha256": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+        "bytes": 50851
+      }
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869,
+      "expected": {
+        "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+        "bytes": 3869
+      }
+    },
+    "data/processed/malecns_v1/neurons.feather": {
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+      "bytes": 22185954,
+      "expected": {
+        "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+        "bytes": 22185954
+      }
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728,
+      "expected": {
+        "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+        "bytes": 1333728
+      }
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736,
+      "expected": {
+        "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+        "bytes": 1333736
+      }
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880,
+      "expected": {
+        "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+        "bytes": 102331880
+      }
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880,
+      "expected": {
+        "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+        "bytes": 102331880
+      }
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880,
+      "expected": {
+        "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+        "bytes": 102331880
+      }
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828,
+      "expected": {
+        "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+        "bytes": 166828
+      }
+    },
+    "scripts/review_negative_voltage_replay.py": {
+      "sha256": "69c57ac71c31095a25305b9ccddf38e0efc0877f851e3d51ea1025a587790267",
+      "bytes": 29356,
+      "expected": null
+    },
+    "validation/negative-voltage-replay-incoming-edges.csv": {
+      "sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "bytes": 326262,
+      "expected": {
+        "sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+        "bytes": 326262
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json": {
+      "sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "bytes": 34544,
+      "expected": {
+        "sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+        "bytes": 34544
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz": {
+      "sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "bytes": 2136255,
+      "expected": {
+        "sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+        "bytes": 2136255
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/events.jsonl.gz": {
+      "sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+      "bytes": 122230029,
+      "expected": {
+        "sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+        "bytes": 122230029
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/spikes.bin.gz": {
+      "sha256": "b70007557b5408e0028523a4e8385e4e2cbf0241be8a6b99dda681831f3a4c8e",
+      "bytes": 33536690,
+      "expected": {
+        "sha256": "b70007557b5408e0028523a4e8385e4e2cbf0241be8a6b99dda681831f3a4c8e",
+        "bytes": 33536690
+      }
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-arrays.npz": {
+      "sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "bytes": 9139140,
+      "expected": {
+        "sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+        "bytes": 9139140
+      }
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv": {
+      "sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "bytes": 465024,
+      "expected": {
+        "sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+        "bytes": 465024
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json": {
+      "sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "bytes": 34696,
+      "expected": {
+        "sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+        "bytes": 34696
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz": {
+      "sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "bytes": 2131046,
+      "expected": {
+        "sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+        "bytes": 2131046
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/events.jsonl.gz": {
+      "sha256": "fce2d3dd3df05d783c7c60f6f7ae5ca3a2afe0b8219a747057eced4b21b1d24f",
+      "bytes": 122226211,
+      "expected": {
+        "sha256": "fce2d3dd3df05d783c7c60f6f7ae5ca3a2afe0b8219a747057eced4b21b1d24f",
+        "bytes": 122226211
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/spikes.bin.gz": {
+      "sha256": "a0736ccc38e722e28a291a22ef0fd1ad6e3d8804f1b27c9810c0c74375456937",
+      "bytes": 33275849,
+      "expected": {
+        "sha256": "a0736ccc38e722e28a291a22ef0fd1ad6e3d8804f1b27c9810c0c74375456937",
+        "bytes": 33275849
+      }
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz": {
+      "sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "bytes": 9059468,
+      "expected": {
+        "sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+        "bytes": 9059468
+      }
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv": {
+      "sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "bytes": 459506,
+      "expected": {
+        "sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+        "bytes": 459506
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json": {
+      "sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "bytes": 33834,
+      "expected": {
+        "sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+        "bytes": 33834
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz": {
+      "sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "bytes": 2136866,
+      "expected": {
+        "sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+        "bytes": 2136866
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/events.jsonl.gz": {
+      "sha256": "a14143cf81e9d8aa5c0ec64d8e2bd2115d015a5af4b39e3822ec2099bd3b0cce",
+      "bytes": 116874590,
+      "expected": {
+        "sha256": "a14143cf81e9d8aa5c0ec64d8e2bd2115d015a5af4b39e3822ec2099bd3b0cce",
+        "bytes": 116874590
+      }
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/spikes.bin.gz": {
+      "sha256": "e3e8688a068d99a651d36196b79b4d603939f98baa07f2abd06073ebed7ddf93",
+      "bytes": 33527902,
+      "expected": {
+        "sha256": "e3e8688a068d99a651d36196b79b4d603939f98baa07f2abd06073ebed7ddf93",
+        "bytes": 33527902
+      }
+    },
+    "validation/negative-voltage-replay-sensory_only-arrays.npz": {
+      "sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "bytes": 9171625,
+      "expected": {
+        "sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+        "bytes": 9171625
+      }
+    },
+    "validation/negative-voltage-replay-sensory_only-edge-balance.csv": {
+      "sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "bytes": 465337,
+      "expected": {
+        "sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+        "bytes": 465337
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "source receipt: validation/negative-voltage-replay-results.json",
+      "passed": true
+    },
+    {
+      "name": "original producer and independent review passed",
+      "passed": true
+    },
+    {
+      "name": "original plan hash agrees with both receipts",
+      "passed": true
+    },
+    {
+      "name": "original graph and clock agree",
+      "passed": true
+    },
+    {
+      "name": "source receipt: scripts/negative-voltage-replay.py",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/flybody-rolling-loop/plan.json",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/weights.npy",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/contact_counts.npy",
+      "passed": true
+    },
+    {
+      "name": "source receipt: data/processed/malecns_v1/signs.npy",
+      "passed": true
+    },
+    {
+      "name": "original reviewer source hash",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-incoming-edges.csv",
+      "passed": true
+    },
+    {
+      "name": "graph identities and target order",
+      "passed": true
+    },
+    {
+      "name": "graph CSR shapes",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: row",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: source_index",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: source_id",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: target_slot",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: target_index",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: target_id",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: contacts",
+      "passed": true
+    },
+    {
+      "name": "complete ordered edge column: source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "source annotation: source_type",
+      "passed": true
+    },
+    {
+      "name": "source annotation: source_class",
+      "passed": true
+    },
+    {
+      "name": "source annotation: source_superclass",
+      "passed": true
+    },
+    {
+      "name": "source annotation: source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "target type annotations",
+      "passed": true
+    },
+    {
+      "name": "unique source/target edges",
+      "passed": true
+    },
+    {
+      "name": "float32 weight hex bytes match graph",
+      "passed": true
+    },
+    {
+      "name": "decimal weight round trip and exact float64 promotion",
+      "passed": true
+    },
+    {
+      "name": "weights match original sign/contact normalization",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: original condition design",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: original completion",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: odor",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: sweet",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: club",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: motor_forward",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: motor_turn_left",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: motor_turn_right",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: motor_feeding",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: group identity: motor_escape",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: summary source receipt: events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: summary source receipt: spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: summary source receipt: brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: checkpoint clock/graph/parameters",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: entire reconstructed source-output mask",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: final target no-direct-drive and refractory evidence",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-locomotor_feedback-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: row",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: target_slot",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: target_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: target_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: target_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_class",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_superclass",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: contacts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: weight_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: balance inventory: weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: source array shape/type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: source IDs in complete incoming set",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: source ticks range and nondecreasing order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: compact array target order and clock",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: source count against original receipts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: retained endpoint against checkpoint: voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: retained endpoint against checkpoint: synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: saved emitted decisions agree with target records",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: ordered baseline accepted ticks and edges",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: per-edge disposition: accepted_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: per-edge disposition: source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: per-edge disposition: target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: per-edge disposition: beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: each potential delivery classified once",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 0",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 1",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 2",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 3",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 4",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 5",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 6",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 7",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 8",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 9",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 10",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 11",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 12",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 13",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 14",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 15",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 16",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 17",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: pending source order, ring slot 18",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: full-archive proof retained in prior independent review",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: prior all-interval target exclusion",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback: delivery totals match prior independent review",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: original condition design",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: original completion",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: odor",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: sweet",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: club",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: motor_forward",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: motor_turn_left",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: motor_turn_right",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: motor_feeding",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: group identity: motor_escape",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: summary source receipt: events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: summary source receipt: spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: summary source receipt: brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: checkpoint clock/graph/parameters",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: entire reconstructed source-output mask",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: final target no-direct-drive and refractory evidence",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: row",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: target_slot",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: target_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: target_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: target_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_class",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_superclass",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: contacts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: weight_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: balance inventory: weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: source array shape/type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: source IDs in complete incoming set",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: source ticks range and nondecreasing order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: compact array target order and clock",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: source count against original receipts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: retained endpoint against checkpoint: voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: retained endpoint against checkpoint: synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: saved emitted decisions agree with target records",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: ordered baseline accepted ticks and edges",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: per-edge disposition: accepted_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: per-edge disposition: source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: per-edge disposition: target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: per-edge disposition: beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: each potential delivery classified once",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 0",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 1",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 2",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 3",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 4",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 5",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 6",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 7",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 8",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 9",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 10",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 11",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 12",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 13",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 14",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 15",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 16",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 17",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: pending source order, ring slot 18",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: full-archive proof retained in prior independent review",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: prior all-interval target exclusion",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block: delivery totals match prior independent review",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: original condition design",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: original completion",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: odor",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: sweet",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: club",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: motor_forward",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: motor_turn_left",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: motor_turn_right",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: motor_feeding",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: group identity: motor_escape",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: summary source receipt: events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: summary source receipt: spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: summary source receipt: brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: checkpoint clock/graph/parameters",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: entire reconstructed source-output mask",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: final target no-direct-drive and refractory evidence",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-sensory_only-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "source receipt: validation/negative-voltage-replay-sensory_only-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: row",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_id",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: target_slot",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: target_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: target_id",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: target_type",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_type",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_class",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_superclass",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: contacts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: weight_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: balance inventory: weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: source array shape/type",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: source IDs in complete incoming set",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: source ticks range and nondecreasing order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: compact array target order and clock",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: source count against original receipts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: retained endpoint against checkpoint: voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: retained endpoint against checkpoint: synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: saved emitted decisions agree with target records",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: ordered baseline accepted ticks and edges",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: per-edge disposition: accepted_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: per-edge disposition: source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: per-edge disposition: target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: per-edge disposition: beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: each potential delivery classified once",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 0",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 1",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 2",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 3",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 4",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 5",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 6",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 7",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 8",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 9",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 10",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 11",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 12",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 13",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 14",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 15",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 16",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 17",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: pending source order, ring slot 18",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: full-archive proof retained in prior independent review",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: prior all-interval target exclusion",
+      "passed": true
+    },
+    {
+      "name": "sensory_only: delivery totals match prior independent review",
+      "passed": true
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "locomotor_feedback",
+      "group_counts": {
+        "odor": 105,
+        "sweet": 54,
+        "club": 137,
+        "motor_forward": 2,
+        "motor_turn_left": 2,
+        "motor_turn_right": 2,
+        "motor_feeding": 2,
+        "motor_escape": 2
+      },
+      "source_output_mask": {
+        "blocked_groups": [],
+        "count": 0,
+        "blocked_indices": [],
+        "blocked_neuron_ids": [],
+        "shape": [
+          166700
+        ],
+        "dtype": "|b1",
+        "c_order_bytes_sha256": "b9b3dfccfe945d099e90449bb347a68cb1a479358bc9e1030324b085cae19823"
+      },
+      "raw_source_indices": {
+        "shape": [
+          1162471
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "59851e592917c54bd17267beb41587989c8515bd2620913374db4a9c58960415"
+      },
+      "raw_source_spike_ticks": {
+        "shape": [
+          1162471
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "c4fc645e8d33b930f06f0fc4fdeafe348f451debb9c727c5c64b4bd793406b2f"
+      },
+      "source_event_count": 1162471,
+      "minimum_spike_tick": 43,
+      "maximum_spike_tick": 119999,
+      "equal_tick_adjacent_events": 1042634,
+      "potential_edge_deliveries": 1225720,
+      "delivery_counts": {
+        "accepted_events": 1225512,
+        "source_blocked_events": 0,
+        "target_unavailable_events": 8,
+        "beyond_horizon_events": 200
+      },
+      "zero_weight_potential_deliveries": 87423,
+      "baseline_unavailable_tick_edge_pairs": [
+        [
+          144,
+          2322
+        ],
+        [
+          144,
+          2433
+        ],
+        [
+          145,
+          2668
+        ],
+        [
+          149,
+          2474
+        ],
+        [
+          149,
+          2497
+        ],
+        [
+          155,
+          2282
+        ],
+        [
+          157,
+          2397
+        ],
+        [
+          160,
+          2659
+        ]
+      ],
+      "future_relevant_source_events": 187,
+      "input_list_union_count_from_prior_receipt": 244,
+      "selected_targets_in_any_input_list_from_prior_receipt": false,
+      "inherited_full_archive_check_names": [
+        "locomotor_feedback:all-ordered-drives-and-block-metadata",
+        "locomotor_feedback:all-6000-spike-blocks-order-hashes-clocks",
+        "locomotor_feedback:source-indices-from-original",
+        "locomotor_feedback:source-ticks-from-original"
+      ],
+      "per_target_delivery_counts": [
+        {
+          "target_id": 67052,
+          "potential": 633034,
+          "accepted_events": 632929,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 105
+        },
+        {
+          "target_id": 13314,
+          "potential": 592686,
+          "accepted_events": 592583,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 8,
+          "beyond_horizon_events": 95
+        }
+      ]
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "group_counts": {
+        "odor": 105,
+        "sweet": 54,
+        "club": 137,
+        "motor_forward": 2,
+        "motor_turn_left": 2,
+        "motor_turn_right": 2,
+        "motor_feeding": 2,
+        "motor_escape": 2
+      },
+      "source_output_mask": {
+        "blocked_groups": [
+          "odor",
+          "sweet",
+          "club"
+        ],
+        "count": 296,
+        "blocked_indices": [
+          44502,
+          66376,
+          69002,
+          69071,
+          70295,
+          70581,
+          71399,
+          79492,
+          87435,
+          89199,
+          91799,
+          91845,
+          92350,
+          94158,
+          97761,
+          102372,
+          106007,
+          106756,
+          106987,
+          107573,
+          109198,
+          109403,
+          110176,
+          110266,
+          110659,
+          110852,
+          110888,
+          112037,
+          112298,
+          113014,
+          113209,
+          113639,
+          113725,
+          113804,
+          114408,
+          115000,
+          115257,
+          115415,
+          115424,
+          115504,
+          115755,
+          115866,
+          115958,
+          116031,
+          116256,
+          116466,
+          116635,
+          116731,
+          116967,
+          117040,
+          117058,
+          117137,
+          117190,
+          117348,
+          117646,
+          118140,
+          119257,
+          119342,
+          119558,
+          119601,
+          119757,
+          119990,
+          120385,
+          120967,
+          121237,
+          121361,
+          121441,
+          121507,
+          121652,
+          121768,
+          122078,
+          122850,
+          123099,
+          123379,
+          123488,
+          123541,
+          123742,
+          123821,
+          123946,
+          124162,
+          124219,
+          124307,
+          124777,
+          124802,
+          124872,
+          124933,
+          125166,
+          125190,
+          125280,
+          125283,
+          125457,
+          133119,
+          135628,
+          137276,
+          138385,
+          141887,
+          141983,
+          142641,
+          143236,
+          147946,
+          149556,
+          149761,
+          149872,
+          150199,
+          150313,
+          150535,
+          150580,
+          150672,
+          150673,
+          150728,
+          150769,
+          150998,
+          151087,
+          151234,
+          151675,
+          151788,
+          152185,
+          152247,
+          152295,
+          152302,
+          152768,
+          152972,
+          153026,
+          153112,
+          153339,
+          153528,
+          153631,
+          153814,
+          153847,
+          153878,
+          154005,
+          154133,
+          154283,
+          154453,
+          154493,
+          154621,
+          154641,
+          154671,
+          154686,
+          154712,
+          154735,
+          154823,
+          154858,
+          154867,
+          154995,
+          155441,
+          155691,
+          155713,
+          155753,
+          155786,
+          155805,
+          155875,
+          155898,
+          155991,
+          156025,
+          156136,
+          156161,
+          156473,
+          156508,
+          156810,
+          156822,
+          156848,
+          156901,
+          156908,
+          156941,
+          156957,
+          156975,
+          156986,
+          157100,
+          157264,
+          157327,
+          157429,
+          157661,
+          157736,
+          157838,
+          157991,
+          158144,
+          158156,
+          158163,
+          158200,
+          158243,
+          158285,
+          158470,
+          158593,
+          158625,
+          158711,
+          158718,
+          158844,
+          158965,
+          159000,
+          159253,
+          159280,
+          159287,
+          159355,
+          159432,
+          159462,
+          159544,
+          159553,
+          159559,
+          159678,
+          159769,
+          159853,
+          159859,
+          159878,
+          159897,
+          159955,
+          160114,
+          160130,
+          160172,
+          160306,
+          160325,
+          160423,
+          160477,
+          160478,
+          160526,
+          160574,
+          160626,
+          160692,
+          161158,
+          161502,
+          161514,
+          161598,
+          161600,
+          161601,
+          161637,
+          161688,
+          161733,
+          161780,
+          161927,
+          161931,
+          162032,
+          162456,
+          162548,
+          162549,
+          162551,
+          162552,
+          162664,
+          162679,
+          162749,
+          162872,
+          163015,
+          163092,
+          163105,
+          163195,
+          163197,
+          163208,
+          163316,
+          163319,
+          163320,
+          163363,
+          163415,
+          163419,
+          163662,
+          163688,
+          163717,
+          163718,
+          163731,
+          163751,
+          163787,
+          163844,
+          163845,
+          163857,
+          163869,
+          164059,
+          164121,
+          164190,
+          164395,
+          164409,
+          164415,
+          164504,
+          164550,
+          164570,
+          164571,
+          164585,
+          164767,
+          164788,
+          165237,
+          165241,
+          165257,
+          165384,
+          165565,
+          165597,
+          165721,
+          165726,
+          165768,
+          165823,
+          165895,
+          165911,
+          166050,
+          166238,
+          166264,
+          166416,
+          166521,
+          166583,
+          166635,
+          166694
+        ],
+        "blocked_neuron_ids": [
+          60498,
+          87710,
+          91221,
+          91302,
+          92929,
+          93294,
+          94367,
+          105395,
+          116618,
+          119181,
+          123123,
+          123191,
+          123968,
+          126824,
+          132720,
+          141372,
+          149131,
+          150947,
+          151556,
+          153046,
+          157520,
+          158137,
+          160357,
+          160643,
+          161922,
+          162611,
+          162704,
+          166688,
+          167640,
+          170403,
+          171201,
+          173031,
+          173387,
+          173751,
+          176260,
+          179108,
+          180317,
+          181166,
+          181207,
+          181625,
+          182888,
+          183425,
+          183849,
+          184230,
+          185253,
+          186397,
+          187330,
+          187949,
+          189075,
+          189518,
+          189605,
+          190032,
+          190294,
+          191144,
+          192631,
+          195280,
+          202140,
+          202705,
+          204248,
+          204564,
+          205597,
+          207430,
+          210364,
+          214985,
+          217507,
+          218745,
+          219573,
+          220183,
+          221747,
+          222974,
+          226920,
+          240470,
+          246478,
+          254321,
+          258551,
+          260128,
+          268855,
+          272883,
+          279476,
+          292378,
+          296449,
+          302181,
+          350383,
+          353891,
+          363119,
+          373875,
+          416090,
+          419997,
+          436473,
+          437025,
+          486852,
+          526151,
+          532745,
+          536451,
+          541552,
+          551768,
+          552278,
+          556859,
+          564451,
+          804744,
+          806695,
+          806934,
+          807064,
+          807459,
+          807595,
+          807860,
+          807915,
+          808015,
+          808016,
+          808082,
+          808136,
+          808417,
+          808529,
+          808697,
+          809227,
+          809375,
+          809833,
+          809904,
+          809969,
+          809976,
+          810550,
+          810811,
+          810876,
+          810980,
+          811266,
+          811516,
+          811643,
+          811874,
+          811918,
+          811959,
+          812117,
+          812275,
+          812454,
+          812659,
+          812705,
+          812871,
+          812898,
+          812934,
+          812951,
+          812984,
+          813009,
+          813126,
+          813172,
+          813185,
+          813349,
+          813907,
+          814221,
+          814251,
+          814297,
+          814336,
+          814362,
+          814466,
+          814498,
+          814612,
+          814658,
+          814806,
+          814843,
+          815267,
+          815325,
+          815749,
+          815766,
+          815798,
+          815864,
+          815872,
+          815926,
+          815949,
+          815974,
+          815989,
+          816151,
+          816396,
+          816498,
+          816665,
+          817031,
+          817173,
+          817331,
+          817565,
+          817825,
+          817839,
+          817849,
+          817913,
+          817993,
+          818080,
+          818466,
+          818714,
+          818772,
+          818992,
+          819005,
+          819335,
+          819619,
+          819719,
+          820681,
+          820780,
+          820809,
+          821083,
+          821461,
+          821654,
+          822246,
+          822321,
+          822336,
+          823267,
+          824332,
+          825449,
+          825524,
+          825749,
+          826042,
+          827154,
+          830558,
+          830907,
+          832415,
+          844312,
+          846679,
+          863321,
+          881126,
+          881519,
+          900877,
+          902023,
+          902359,
+          902550,
+          903986,
+          905037,
+          905052,
+          905239,
+          905242,
+          905243,
+          905335,
+          905526,
+          905633,
+          905796,
+          906269,
+          906290,
+          906558,
+          908214,
+          908529,
+          908533,
+          908535,
+          908537,
+          908806,
+          908862,
+          909028,
+          909318,
+          909726,
+          910015,
+          910042,
+          910391,
+          910401,
+          910446,
+          910819,
+          910829,
+          910830,
+          911075,
+          911316,
+          911351,
+          912365,
+          912510,
+          912703,
+          912704,
+          912794,
+          912926,
+          913195,
+          913890,
+          913891,
+          914116,
+          914315,
+          919643,
+          922590,
+          925639,
+          932861,
+          933183,
+          933250,
+          935121,
+          935860,
+          936153,
+          936168,
+          936408,
+          941022,
+          942680,
+          211747785,
+          212945075,
+          222256845,
+          325265593,
+          499769368,
+          526888712,
+          648510281,
+          651813160,
+          688942939,
+          742571852,
+          802014155,
+          821459348,
+          936218495,
+          1050190015,
+          1050291683,
+          1052290937,
+          1057442452,
+          1065618685,
+          1085548045,
+          1338931584
+        ],
+        "shape": [
+          166700
+        ],
+        "dtype": "|b1",
+        "c_order_bytes_sha256": "371699e390075a0a36a355ec179fe8a8cff44860258ef5fdc6a6dea96aa79831"
+      },
+      "raw_source_indices": {
+        "shape": [
+          1150881
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "89cb87db142fb9e116f514be88bb07ade3eb38c943ccad1d2051beec4e0db48f"
+      },
+      "raw_source_spike_ticks": {
+        "shape": [
+          1150881
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "210d8c2852bc17776bed5644b1a57586b6a14bbb47953184c11ef064d1bc686d"
+      },
+      "source_event_count": 1150881,
+      "minimum_spike_tick": 43,
+      "maximum_spike_tick": 119999,
+      "equal_tick_adjacent_events": 1031888,
+      "potential_edge_deliveries": 1213516,
+      "delivery_counts": {
+        "accepted_events": 1208502,
+        "source_blocked_events": 4850,
+        "target_unavailable_events": 0,
+        "beyond_horizon_events": 164
+      },
+      "zero_weight_potential_deliveries": 86408,
+      "baseline_unavailable_tick_edge_pairs": [],
+      "future_relevant_source_events": 157,
+      "input_list_union_count_from_prior_receipt": 244,
+      "selected_targets_in_any_input_list_from_prior_receipt": false,
+      "inherited_full_archive_check_names": [
+        "locomotor_sensory_block:all-ordered-drives-and-block-metadata",
+        "locomotor_sensory_block:all-6000-spike-blocks-order-hashes-clocks",
+        "locomotor_sensory_block:source-indices-from-original",
+        "locomotor_sensory_block:source-ticks-from-original"
+      ],
+      "per_target_delivery_counts": [
+        {
+          "target_id": 67052,
+          "potential": 626429,
+          "accepted_events": 622094,
+          "source_blocked_events": 4251,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 84
+        },
+        {
+          "target_id": 13314,
+          "potential": 587087,
+          "accepted_events": 586408,
+          "source_blocked_events": 599,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 80
+        }
+      ]
+    },
+    {
+      "condition": "sensory_only",
+      "group_counts": {
+        "odor": 105,
+        "sweet": 54,
+        "club": 137,
+        "motor_forward": 2,
+        "motor_turn_left": 2,
+        "motor_turn_right": 2,
+        "motor_feeding": 2,
+        "motor_escape": 2
+      },
+      "source_output_mask": {
+        "blocked_groups": [],
+        "count": 0,
+        "blocked_indices": [],
+        "blocked_neuron_ids": [],
+        "shape": [
+          166700
+        ],
+        "dtype": "|b1",
+        "c_order_bytes_sha256": "b9b3dfccfe945d099e90449bb347a68cb1a479358bc9e1030324b085cae19823"
+      },
+      "raw_source_indices": {
+        "shape": [
+          1168156
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "2564a2866f81457ab7766380231b2a9c95a1df86876b34dbc845ced80ca5835a"
+      },
+      "raw_source_spike_ticks": {
+        "shape": [
+          1168156
+        ],
+        "dtype": "<i4",
+        "c_order_bytes_sha256": "fa09b0dd2c894d2a74e911024148b24942b435ce18eea2b6986a645ddb51b3f5"
+      },
+      "source_event_count": 1168156,
+      "minimum_spike_tick": 25,
+      "maximum_spike_tick": 119999,
+      "equal_tick_adjacent_events": 1048288,
+      "potential_edge_deliveries": 1232018,
+      "delivery_counts": {
+        "accepted_events": 1231820,
+        "source_blocked_events": 0,
+        "target_unavailable_events": 6,
+        "beyond_horizon_events": 192
+      },
+      "zero_weight_potential_deliveries": 87581,
+      "baseline_unavailable_tick_edge_pairs": [
+        [
+          121,
+          2433
+        ],
+        [
+          123,
+          2322
+        ],
+        [
+          123,
+          2668
+        ],
+        [
+          126,
+          2497
+        ],
+        [
+          128,
+          2474
+        ],
+        [
+          135,
+          2397
+        ]
+      ],
+      "future_relevant_source_events": 184,
+      "input_list_union_count_from_prior_receipt": 242,
+      "selected_targets_in_any_input_list_from_prior_receipt": false,
+      "inherited_full_archive_check_names": [
+        "sensory_only:all-ordered-drives-and-block-metadata",
+        "sensory_only:all-6000-spike-blocks-order-hashes-clocks",
+        "sensory_only:source-indices-from-original",
+        "sensory_only:source-ticks-from-original"
+      ],
+      "per_target_delivery_counts": [
+        {
+          "target_id": 67052,
+          "potential": 637478,
+          "accepted_events": 637370,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 108
+        },
+        {
+          "target_id": 13314,
+          "potential": 594540,
+          "accepted_events": 594450,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 6,
+          "beyond_horizon_events": 84
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Raw selected-source order and exclusion of direct target inputs across all 6000 intervals rely on the retained independent full-archive review and matching compressed-file hashes; not re-read here.",
+    "The whole mask is reconstructed from the original constant condition design and group IDs and exactly matches the final checkpoint. Earlier journals recorded total blocked count and all-sensory flag, not a full membership bitset each interval.",
+    "Baseline acceptance is reconstructed from saved target spikes only for input accounting. Changed arms must recompute their own threshold, refractory and acceptance decisions.",
+    "Source events remain exogenous, including any target self/cross events. This does not support recurrent intervention predictions or physiological calibration.",
+    "Beyond-horizon events are pending before any future mask/availability decision; motor readout muting is not neural output blocking."
+  ],
+  "graph": {
+    "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+    "neurons": 166700,
+    "directed_pairs": 25582938,
+    "targets": [
+      {
+        "slot": 0,
+        "id": 67052,
+        "graph_index": 49930,
+        "incoming_edges": 2260,
+        "contacts": 27830,
+        "zero_weight_edges": 34
+      },
+      {
+        "slot": 1,
+        "id": 13314,
+        "graph_index": 3103,
+        "incoming_edges": 435,
+        "contacts": 7247,
+        "zero_weight_edges": 19
+      }
+    ],
+    "unique_relevant_sources": 2595,
+    "source_mapping": {
+      "shape": [
+        166700,
+        2
+      ],
+      "dtype": "<i4",
+      "c_order_bytes_sha256": "ef8e4f2e3210079be26b98985a2f944b54630d90b462e7f03c304cb3cbfdd7b4"
+    },
+    "weight_float32_bytes_sha256": "27f3fe71bbae80f81496457be7469f600194cb06117caafe97fffe7fecfe2ed6",
+    "self_or_cross_target_edges": [],
+    "edge_inventory_order": "Target-major [67052, 13314]; increasing original CSR edge index within each target",
+    "potential_delivery_order": "Original source-event order, then target slot 0 followed by 1 where an edge exists; each target retains its original source order"
+  },
+  "clock": {
+    "dt_ms": 0.1,
+    "neural_ticks": 120000,
+    "delay_ticks": 18,
+    "refractory_ticks": 22,
+    "sample_count": 120001,
+    "seed": 11
+  },
+  "sufficient_for_conditional_factorial": true,
+  "passed": true,
+  "check_count": 258,
+  "completed_utc": "2026-09-05T04:55:55.334732+00:00"
+}

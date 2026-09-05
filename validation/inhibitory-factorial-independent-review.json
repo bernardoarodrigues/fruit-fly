@@ -1,0 +1,3519 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:08:34.023314+00:00",
+  "method": "Independent vectorized saved-state conditional arithmetic and direct time-domain H quadrature; no producer imports, recurrent simulation, or two-cell replay",
+  "independence": "Reviewer previously authored the original negative-voltage replay and source-reviewed this driver; did not author the factorial driver or interval solver. Baseline parity is a cross-artifact check, not independent biological validation.",
+  "checks": [
+    {
+      "name": "frozen_plan_digest",
+      "pass": true
+    },
+    {
+      "name": "completed_12_trials",
+      "pass": true
+    },
+    {
+      "name": "declared_targets_histories_arms_clock",
+      "pass": true
+    },
+    {
+      "name": "pinned:scripts/inhibitory_factorial_replay.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:scripts/inhibitory_factorial_solver.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:fruitfly/neural.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:docs/inhibitory-factorial-design-review.md",
+      "pass": true
+    },
+    {
+      "name": "pinned:docs/inhibitory-factorial-driver-review.md",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-solver-plan.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-solver-results.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-input-audit.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-plan.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-results.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-independent-review.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-incoming-edges.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/neuron_ids.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/indptr.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/targets.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/weights.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/contact_counts.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/signs.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_feedback-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-sensory_only-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-sensory_only-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-expected-invalid-input.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/controls.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-events.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-events.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-events.npz",
+      "pass": true
+    },
+    {
+      "name": "producer_reported_gates",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_row_identity_unique",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_complete_graph_join",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_source_target_ids",
+      "pass": true
+    },
+    {
+      "name": "incoming_exact_float32_weights",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "incoming_contacts_and_model_sign",
+      "pass": true
+    },
+    {
+      "name": "prior_input_audit_passed",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:every_source_event_identity_order",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:every_source_edge_order",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:every_18_tick_delivery",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:source_mask_design",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:source_mask_original_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:original_target_current_refractory",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:prior_no_direct_target_inputs",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(120000, 2)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(120000, 2, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(1225512,)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:baseline_bitwise:(1225512,)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:original_target0_timestamps",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:original_target1_timestamps",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:checkpoint_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:checkpoint_synaptic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C0:checkpoint_last_spike",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C0:original_per_edge_dispositions",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:C1:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:C1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H0:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H0:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 1.4210854715202004e-14,
+      "max_quadrature_estimate_mv": 5.335295311164054e-14
+    },
+    {
+      "name": "locomotor_feedback:H0:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_feedback:H1:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:H1:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 1.4210854715202004e-14,
+      "max_quadrature_estimate_mv": 5.335295311164054e-14
+    },
+    {
+      "name": "locomotor_feedback:H1:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:all_arms_spike_timestamps_identical",
+      "pass": true
+    },
+    {
+      "name": "locomotor_feedback:same_package_dispositions_identical",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:every_source_event_identity_order",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:every_source_edge_order",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:every_18_tick_delivery",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:source_mask_design",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:source_mask_original_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:original_target_current_refractory",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:prior_no_direct_target_inputs",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(120000, 2)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(120000, 2, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(1208502,)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:baseline_bitwise:(1208502,)",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:original_target0_timestamps",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:original_target1_timestamps",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:checkpoint_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:checkpoint_synaptic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C0:checkpoint_last_spike",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C0:original_per_edge_dispositions",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:C1:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:C1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H0:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 7.105427357601002e-15,
+      "max_quadrature_estimate_mv": 5.299470787608645e-14
+    },
+    {
+      "name": "locomotor_sensory_block:H0:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:finite",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:H1:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 7.105427357601002e-15,
+      "max_quadrature_estimate_mv": 5.299470787608645e-14
+    },
+    {
+      "name": "locomotor_sensory_block:H1:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:all_arms_spike_timestamps_identical",
+      "pass": true
+    },
+    {
+      "name": "locomotor_sensory_block:same_package_dispositions_identical",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:every_source_event_identity_order",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:every_source_edge_order",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:every_18_tick_delivery",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:source_mask_design",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:source_mask_original_checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:original_target_current_refractory",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:prior_no_direct_target_inputs",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:finite",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(120001, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(120000, 2)",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(120000, 2, 2)",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(1231820,)",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:baseline_bitwise:(1231820,)",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:original_target0_timestamps",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:original_target1_timestamps",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:checkpoint_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:checkpoint_synaptic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C0:checkpoint_last_spike",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C0:original_per_edge_dispositions",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:finite",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:C1:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:C1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:finite",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H0:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H0:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 7.105427357601002e-15,
+      "max_quadrature_estimate_mv": 5.146328847904961e-14
+    },
+    {
+      "name": "sensory_only:H0:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:exact_keys",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:archive_digest",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:finite",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "sensory_only:H1:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:every_cell_summary_and_window",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:outer_report_consistency",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:exact_reference_selection",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:references_match_actual_own_input_states",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:reference_error_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:all_stored_reference_tolerances",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:H1:independent_time_quadrature",
+      "pass": true,
+      "intervals": 248,
+      "max_error_mv": 7.105427357601002e-15,
+      "max_quadrature_estimate_mv": 5.146328847904961e-14
+    },
+    {
+      "name": "sensory_only:H1:diagnostic_summary_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:all_arms_spike_timestamps_identical",
+      "pass": true
+    },
+    {
+      "name": "sensory_only:same_package_dispositions_identical",
+      "pass": true
+    },
+    {
+      "name": "all_24_factorial_contrasts_exact",
+      "pass": true
+    },
+    {
+      "name": "control:C0:input_protocol",
+      "pass": true
+    },
+    {
+      "name": "control:C0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "control:C0:finite",
+      "pass": true
+    },
+    {
+      "name": "control:C0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "control:C0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "control:C0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "control:C0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "control:C0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "control:C0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "control:C0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "control:C0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C0:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "control:C0:exact_expected_spikes",
+      "pass": true
+    },
+    {
+      "name": "control:C0:explicit_release_boundary",
+      "pass": true
+    },
+    {
+      "name": "control:C0:blocked_target_rest",
+      "pass": true
+    },
+    {
+      "name": "control:C0:control_report_summary",
+      "pass": true
+    },
+    {
+      "name": "control:C1:input_protocol",
+      "pass": true
+    },
+    {
+      "name": "control:C1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "control:C1:finite",
+      "pass": true
+    },
+    {
+      "name": "control:C1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "control:C1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "control:C1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "control:C1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "control:C1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "control:C1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "control:C1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "control:C1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:all_C_analytic_voltage_transitions",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:C1:C_h_and_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "control:C1:exact_expected_spikes",
+      "pass": true
+    },
+    {
+      "name": "control:C1:explicit_release_boundary",
+      "pass": true
+    },
+    {
+      "name": "control:C1:blocked_target_rest",
+      "pass": true
+    },
+    {
+      "name": "control:C1:control_report_summary",
+      "pass": true
+    },
+    {
+      "name": "control:H0:input_protocol",
+      "pass": true
+    },
+    {
+      "name": "control:H0:array_schema",
+      "pass": true
+    },
+    {
+      "name": "control:H0:finite",
+      "pass": true
+    },
+    {
+      "name": "control:H0:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "control:H0:own_availability",
+      "pass": true
+    },
+    {
+      "name": "control:H0:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "control:H0:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "control:H0:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "control:H0:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "control:H0:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "control:H0:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H0:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H0:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H0:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "control:H0:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "control:H0:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "control:H0:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "control:H0:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H0:exact_expected_spikes",
+      "pass": true
+    },
+    {
+      "name": "control:H0:explicit_release_boundary",
+      "pass": true
+    },
+    {
+      "name": "control:H0:blocked_target_rest",
+      "pass": true
+    },
+    {
+      "name": "control:H0:control_report_summary",
+      "pass": true
+    },
+    {
+      "name": "control:H0:all_active_intervals_independent_time_quadrature",
+      "pass": true,
+      "intervals": 107,
+      "max_error_mv": 1.8758328224066645e-12
+    },
+    {
+      "name": "control:H1:input_protocol",
+      "pass": true
+    },
+    {
+      "name": "control:H1:array_schema",
+      "pass": true
+    },
+    {
+      "name": "control:H1:finite",
+      "pass": true
+    },
+    {
+      "name": "control:H1:initial_state",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:own_last_spike_trace",
+      "pass": true
+    },
+    {
+      "name": "control:H1:own_availability",
+      "pass": true
+    },
+    {
+      "name": "control:H1:own_strict_threshold",
+      "pass": true
+    },
+    {
+      "name": "control:H1:delivery_eligibility",
+      "pass": true
+    },
+    {
+      "name": "control:H1:post_reset_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:held_refractory_voltage",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:no_solver_failure",
+      "pass": true
+    },
+    {
+      "name": "control:H1:every_event_disposition",
+      "pass": true
+    },
+    {
+      "name": "control:H1:every_edge_disposition_count",
+      "pass": true
+    },
+    {
+      "name": "control:H1:every_signed_increment",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:every_conditional_synaptic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:H_zero_h_C_analytic_transition",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:H_nonnegative_and_lower_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H1:H_upper_bound_excess_arithmetic",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "control:H1:H_upper_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H1:inactive_diagnostics_zero",
+      "pass": true
+    },
+    {
+      "name": "control:H1:H_stored_32_64_bounds",
+      "pass": true
+    },
+    {
+      "name": "control:H1:H_stored_inverse_bounds",
+      "pass": true
+    },
+    {
+      "name": "control:H1:H_cutoff_arithmetic",
+      "pass": true
+    },
+    {
+      "name": "control:H1:H_tail_arithmetic_and_bound",
+      "pass": true
+    },
+    {
+      "name": "control:H1:exact_expected_spikes",
+      "pass": true
+    },
+    {
+      "name": "control:H1:explicit_release_boundary",
+      "pass": true
+    },
+    {
+      "name": "control:H1:blocked_target_rest",
+      "pass": true
+    },
+    {
+      "name": "control:H1:control_report_summary",
+      "pass": true
+    },
+    {
+      "name": "control:H1:all_active_intervals_independent_time_quadrature",
+      "pass": true,
+      "intervals": 86,
+      "max_error_mv": 1.8758328224066645e-12
+    },
+    {
+      "name": "expected_invalid:prefix_shapes",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:failure_tick_target",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:retained_exact_input_state",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:no_partial_failed_step",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:unprocessed_not_pending",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:processed_edge_counts",
+      "pass": true
+    },
+    {
+      "name": "expected_invalid:exact_accepted_increment",
+      "pass": true
+    },
+    {
+      "name": "control_report_all_reported_booleans",
+      "pass": true
+    },
+    {
+      "name": "all_reviewed_inputs_unchanged_at_end",
+      "pass": true
+    }
+  ],
+  "inputs": {
+    "scripts/review_inhibitory_factorial.py": {
+      "sha256": "6728cdf190422221ceedf95413c718c47f857898eb170de9a8231a0c175bca84",
+      "bytes": 29564
+    },
+    "validation/inhibitory-factorial-independent-review-initial.json": {
+      "sha256": "aab15d5ad230b2e6a62e946de5199842386784e363e673abbca9d95d9d9c7300",
+      "bytes": 22930
+    },
+    "validation/inhibitory-factorial-independent-review-initial.py": {
+      "sha256": "300165428c293b591fa5f71243297335b3d791d6f149dc8dd4831ebb5b947e39",
+      "bytes": 28916
+    },
+    "validation/inhibitory-factorial-plan.json": {
+      "sha256": "add6680e275f4540a3f21ff2d9422313a918fc63ca29bc5dbc59b4501cb1e9fc",
+      "bytes": 9839
+    },
+    "validation/inhibitory-factorial/results.json": {
+      "sha256": "877190eb44dc35d85ff5a4117988da358078f473ba129c76c2e80c1ed15b1d12",
+      "bytes": 73737
+    },
+    "scripts/inhibitory_factorial_replay.py": {
+      "sha256": "05342f151a45a18235824c931633f627a6d9211b07b9fd37ae2bc0c4733ebbcb",
+      "bytes": 32700
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "bytes": 13805
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091
+    },
+    "docs/inhibitory-factorial-design-review.md": {
+      "sha256": "f494a728841dd0f53540f98d777b6fe8b12fa0e53f8d7e9ff6da4536f527664f",
+      "bytes": 10855
+    },
+    "docs/inhibitory-factorial-driver-review.md": {
+      "sha256": "08c1c5477150a46e948359717b1bf1d6e15071531015587541726d755fbae5f6",
+      "bytes": 6106
+    },
+    "validation/inhibitory-factorial-solver-plan.json": {
+      "sha256": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687",
+      "bytes": 15650
+    },
+    "validation/inhibitory-factorial-solver-results.json": {
+      "sha256": "7f0a65072d1a0cd7121c7405e7671a3c44013a85af951e0d864bb4617c284e38",
+      "bytes": 131009
+    },
+    "validation/inhibitory-factorial-input-audit.json": {
+      "sha256": "bfeb0327aef6e007bbb1bcf90f84c91c70d346a12abf905ca83f32cf32c1f546",
+      "bytes": 60050
+    },
+    "validation/negative-voltage-replay-plan.json": {
+      "sha256": "5e474e043a4c302a4694ac7b0e87db0bfce6f9de1d4a4213ae484e27399914a1",
+      "bytes": 8867
+    },
+    "validation/negative-voltage-replay-results.json": {
+      "sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "bytes": 74092
+    },
+    "validation/negative-voltage-replay-independent-review.json": {
+      "sha256": "3428c55e600dfbf8661241be727147d9d81eb498db5e77398fa9500ceef01db6",
+      "bytes": 65629
+    },
+    "validation/negative-voltage-replay-incoming-edges.csv": {
+      "sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "bytes": 326262
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-arrays.npz": {
+      "sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "bytes": 9139140
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json": {
+      "sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "bytes": 34544
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz": {
+      "sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "bytes": 2136255
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv": {
+      "sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "bytes": 465024
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz": {
+      "sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "bytes": 9059468
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json": {
+      "sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "bytes": 34696
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz": {
+      "sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "bytes": 2131046
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv": {
+      "sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "bytes": 459506
+    },
+    "validation/negative-voltage-replay-sensory_only-arrays.npz": {
+      "sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "bytes": 9171625
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json": {
+      "sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "bytes": 33834
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz": {
+      "sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "bytes": 2136866
+    },
+    "validation/negative-voltage-replay-sensory_only-edge-balance.csv": {
+      "sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "bytes": 465337
+    },
+    "validation/inhibitory-factorial/control-C0.npz": {
+      "sha256": "55557051d794635be1f8343ffc6d3bb3b836fbd49e7832ccae411b647010e009",
+      "bytes": 3569
+    },
+    "validation/inhibitory-factorial/control-C1.npz": {
+      "sha256": "85ac0b2486d9fbebe26b3f602547e651d888385c26946de698dc9d102872685f",
+      "bytes": 3978
+    },
+    "validation/inhibitory-factorial/control-H0.npz": {
+      "sha256": "b6c47e4a745a2ac1c404f6f10c1758214352f3423c7e07f4e1e3294b316fb3ef",
+      "bytes": 4510
+    },
+    "validation/inhibitory-factorial/control-H1.npz": {
+      "sha256": "3b7494bdffa18f3c97ee7ba7e28fead0a63636f6882a7f4a522f279157bad8ee",
+      "bytes": 4448
+    },
+    "validation/inhibitory-factorial/control-expected-invalid-input.npz": {
+      "sha256": "ce55f42dc6413fc3221fb6e1f314003e8cc0db878f9845437f36336f8b640d6d",
+      "bytes": 2442
+    },
+    "validation/inhibitory-factorial/controls.json": {
+      "sha256": "486c1c737f750f4bb8922fb9a10774cb029aba7d0b1a2ae6a559be774c123365",
+      "bytes": 4596
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.json": {
+      "sha256": "292e96180d4c097ffa1d8cbf7529174c810f902f360aa8cef4061c8a307b1dc3",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.npz": {
+      "sha256": "6a7dc0550b83b8c3c0fd12d2d073bfd5595829cdb059533ba465f622604c8eb9",
+      "bytes": 6672841
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.json": {
+      "sha256": "c6f7f3ec9c04f9f2ebfa279bf014c5d58a9eba52ded1ffd07cccc99a514414c9",
+      "bytes": 3471
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.npz": {
+      "sha256": "b1a6d207b9ae12b1e4bdfc3d06c276812b69f10d6c3ac49ce488f67f03e41e91",
+      "bytes": 6673037
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.json": {
+      "sha256": "96f9e498812be4e3260c00f0e7777b6805bd07941c1919879983df6d8464ff42",
+      "bytes": 147555
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.npz": {
+      "sha256": "5d7b11619888000593712bd787b8628b6332bce6fcee8772995bb708190248c2",
+      "bytes": 12917029
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.json": {
+      "sha256": "d864d4337bb80c220803e2a3e8c5c4595f3e0d6c56c807da6074e04049a85583",
+      "bytes": 147547
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.npz": {
+      "sha256": "895a0c7147ef089d19dc1688883bc710bf5b24d77a244b591721f77a87cf2187",
+      "bytes": 12917406
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-events.npz": {
+      "sha256": "caf1c28d9188721275b31ef425abb2cc3b5193691994e69d1e8a8dfca936ece4",
+      "bytes": 3779003
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.json": {
+      "sha256": "bb3ca8668b92a9a14bea8f9e4dd8f2279bc9f6859e67f067d885fe9c79bb09d6",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.json": {
+      "sha256": "75e5ee7e66912ec22a613a08d2f1a617e07831e2abf8fdc6300342234cc0a087",
+      "bytes": 3469
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.json": {
+      "sha256": "51aa5eb9d09dfb80a07677817cb44b7fd46c7b117578db8fe7982a4cabcecc1b",
+      "bytes": 147231
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.json": {
+      "sha256": "42e9969542c68e01f58476375205e001e6a69703d618f1a899b69ef4660e1825",
+      "bytes": 147244
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-events.npz": {
+      "sha256": "d06b89948573b0efb4c989d961d01ad6f55f5eddac425637aa58039ef524a4c6",
+      "bytes": 3740897
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.json": {
+      "sha256": "178e89fdc7d5cf458e4d2d9540bb994cfbd569e2fb38aed56dc4a52405646ccb",
+      "bytes": 4156
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.npz": {
+      "sha256": "7a87fe91a106071d15363c13f149aef802ebfe86e7c6012cf75a89c50eeba621",
+      "bytes": 6676954
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.json": {
+      "sha256": "78d4107b55c981f5ccbbf68c2ffb41d643a312cd4fb2e51587eb219160460bb8",
+      "bytes": 3497
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.npz": {
+      "sha256": "2715ff2cd17fce563454dc1ac63be96719aa27dfb2c34a8a732a2a20483950a3",
+      "bytes": 6677112
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.json": {
+      "sha256": "466f6a562e3a22acac4c7842d13da58e183e38c17f479f9b43fa9c8e60a6a211",
+      "bytes": 147182
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.npz": {
+      "sha256": "21fc942b15616883ffbf5674435b03715da274482206234e28ed5745e76b7a9b",
+      "bytes": 12921555
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.json": {
+      "sha256": "1798c94ab765b8398f26c6385f13c5d041e283ebf5c508e6ce8926125ffc761b",
+      "bytes": 147192
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.npz": {
+      "sha256": "277cc9d05bad5b8f3e313a8f6cb417b79285753f5664d60a393907bbb14c9040",
+      "bytes": 12921965
+    },
+    "validation/inhibitory-factorial/sensory_only-events.npz": {
+      "sha256": "8749dc7ae4aed477a90279bc858e8833f63c091696a8316a10719362d39d68e2",
+      "bytes": 3802163
+    }
+  },
+  "trials": [
+    {
+      "label": "locomotor_feedback:C0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1225720,
+      "event_counts": [
+        1225512,
+        0,
+        8,
+        200
+      ],
+      "spike_ticks": [
+        [],
+        [
+          140
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -536.7385192000661,
+        -472.70615265366564
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "locomotor_feedback:C1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1225720,
+      "event_counts": [
+        1225520,
+        0,
+        0,
+        200
+      ],
+      "spike_ticks": [
+        [],
+        [
+          140
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -536.7385192000661,
+        -472.70615265366564
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "locomotor_feedback:H0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1225720,
+      "event_counts": [
+        1225512,
+        0,
+        8,
+        200
+      ],
+      "spike_ticks": [
+        [],
+        [
+          140
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -68.47447135063086,
+        -62.708227187941304
+      ],
+      "maximum_stored_32_64_difference_mv": 1.4210854715202004e-14,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 1.4210854715202004e-14,
+        "max_quadrature_error_estimate_mv": 5.335295311164054e-14
+      }
+    },
+    {
+      "label": "locomotor_feedback:H1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1225720,
+      "event_counts": [
+        1225520,
+        0,
+        0,
+        200
+      ],
+      "spike_ticks": [
+        [],
+        [
+          140
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -68.47447135063086,
+        -65.9595869614401
+      ],
+      "maximum_stored_32_64_difference_mv": 1.4210854715202004e-14,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 1.4210854715202004e-14,
+        "max_quadrature_error_estimate_mv": 5.335295311164054e-14
+      }
+    },
+    {
+      "label": "locomotor_sensory_block:C0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1213516,
+      "event_counts": [
+        1208502,
+        4850,
+        0,
+        164
+      ],
+      "spike_ticks": [
+        [],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -526.9291269864417,
+        -466.85976698825937
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "locomotor_sensory_block:C1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1213516,
+      "event_counts": [
+        1208502,
+        4850,
+        0,
+        164
+      ],
+      "spike_ticks": [
+        [],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -526.9291269864417,
+        -466.85976698825937
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "locomotor_sensory_block:H0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1213516,
+      "event_counts": [
+        1208502,
+        4850,
+        0,
+        164
+      ],
+      "spike_ticks": [
+        [],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -71.52059235701357,
+        -73.27301613845569
+      ],
+      "maximum_stored_32_64_difference_mv": 1.4210854715202004e-14,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 7.105427357601002e-15,
+        "max_quadrature_error_estimate_mv": 5.299470787608645e-14
+      }
+    },
+    {
+      "label": "locomotor_sensory_block:H1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1213516,
+      "event_counts": [
+        1208502,
+        4850,
+        0,
+        164
+      ],
+      "spike_ticks": [
+        [],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -71.52059235701357,
+        -73.27301613845569
+      ],
+      "maximum_stored_32_64_difference_mv": 1.4210854715202004e-14,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 7.105427357601002e-15,
+        "max_quadrature_error_estimate_mv": 5.299470787608645e-14
+      }
+    },
+    {
+      "label": "sensory_only:C0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1232018,
+      "event_counts": [
+        1231820,
+        0,
+        6,
+        192
+      ],
+      "spike_ticks": [
+        [],
+        [
+          117
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -529.721519776896,
+        -471.54952766399794
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "sensory_only:C1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1232018,
+      "event_counts": [
+        1231826,
+        0,
+        0,
+        192
+      ],
+      "spike_ticks": [
+        [],
+        [
+          117
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -529.721519776896,
+        -471.54952766399794
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "sensory_only:H0",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1232018,
+      "event_counts": [
+        1231820,
+        0,
+        6,
+        192
+      ],
+      "spike_ticks": [
+        [],
+        [
+          117
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -68.47507638144462,
+        -63.07823748503055
+      ],
+      "maximum_stored_32_64_difference_mv": 7.105427357601002e-15,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 7.105427357601002e-15,
+        "max_quadrature_error_estimate_mv": 5.146328847904961e-14
+      }
+    },
+    {
+      "label": "sensory_only:H1",
+      "poststate_rows": 120001,
+      "target_intervals": 240000,
+      "expanded_source_events": 1232018,
+      "event_counts": [
+        1231826,
+        0,
+        0,
+        192
+      ],
+      "spike_ticks": [
+        [],
+        [
+          117
+        ]
+      ],
+      "minimum_post_voltage_mv": [
+        -68.47507638144462,
+        -66.32527091766511
+      ],
+      "maximum_stored_32_64_difference_mv": 7.105427357601002e-15,
+      "independent_H_references": {
+        "intervals": 248,
+        "max_independent_time_quadrature_error_mv": 7.105427357601002e-15,
+        "max_quadrature_error_estimate_mv": 5.146328847904961e-14
+      }
+    }
+  ],
+  "controls": [
+    {
+      "label": "control:C0",
+      "poststate_rows": 65,
+      "target_intervals": 128,
+      "expanded_source_events": 25,
+      "event_counts": [
+        7,
+        5,
+        9,
+        4
+      ],
+      "spike_ticks": [
+        [
+          19
+        ],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -52.0,
+        -52.0
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "control:C1",
+      "poststate_rows": 65,
+      "target_intervals": 128,
+      "expanded_source_events": 25,
+      "event_counts": [
+        16,
+        5,
+        0,
+        4
+      ],
+      "spike_ticks": [
+        [
+          19,
+          41,
+          63
+        ],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -52.0,
+        -52.0
+      ],
+      "maximum_stored_32_64_difference_mv": 0.0
+    },
+    {
+      "label": "control:H0",
+      "poststate_rows": 65,
+      "target_intervals": 128,
+      "expanded_source_events": 25,
+      "event_counts": [
+        7,
+        5,
+        9,
+        4
+      ],
+      "spike_ticks": [
+        [
+          19
+        ],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -52.0,
+        -52.0
+      ],
+      "maximum_stored_32_64_difference_mv": 7.105427357601002e-15
+    },
+    {
+      "label": "control:H1",
+      "poststate_rows": 65,
+      "target_intervals": 128,
+      "expanded_source_events": 25,
+      "event_counts": [
+        16,
+        5,
+        0,
+        4
+      ],
+      "spike_ticks": [
+        [
+          19,
+          41,
+          63
+        ],
+        []
+      ],
+      "minimum_post_voltage_mv": [
+        -52.0,
+        -52.0
+      ],
+      "maximum_stored_32_64_difference_mv": 2.2737367544323206e-13
+    }
+  ],
+  "errors": [],
+  "full_graph_rerun": false,
+  "replay_rerun": false,
+  "limits": [
+    "One original seed, three conditional source histories, two selected cells. Altered target outputs never feed back into the sources; self/cross-target original spikes remain exogenous.",
+    "All C local voltage transitions and all arms' synaptic/reset/event transitions are independently checked. H voltage integration is independently checked only at the 1488 archived reference intervals plus the saved mixed controls, not every H interval.",
+    "Stored 32/64 absolute differences, residual maxima, inverse iteration counts and subdivision errors lack their raw internal solver operands. Their finite bounds and summary arithmetic can be checked; every internal solver computation cannot be reconstructed from this archive.",
+    "No-input, excitation-only and moderate single-impulse controls have reported booleans but no separate retained raw trajectories. They are source-inspected reported results; four mixed controls and the expected invalid prefix do retain arrays.",
+    "The fixed source mask matches design and full final checkpoints. Its constancy throughout the original source runs relies additionally on the prior frozen journal/input audits, not per-interval full masks in these replay archives.",
+    "Passing numerical/integrity checks does not establish physiological accuracy, a measured inhibitory reversal potential for these cells, behavior, generality, or grounds for default promotion. H lower bound is an engineering prior."
+  ],
+  "prior_review_attempt": {
+    "receipt": "validation/inhibitory-factorial-independent-review-initial.json",
+    "script": "validation/inhibitory-factorial-independent-review-initial.py",
+    "checks_completed": 73,
+    "error": [
+      {
+        "type": "KeyError",
+        "message": "'pass'",
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 374, in <module>\n    run()\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 265, in run\n    check(\"prior_input_audit_passed\", audit[\"passed\"] and all(c[\"pass\"] for c in audit[\"checks\"]))\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 265, in <genexpr>\n    check(\"prior_input_audit_passed\", audit[\"passed\"] and all(c[\"pass\"] for c in audit[\"checks\"]))\n                                                              ~^^^^^^^^\nKeyError: 'pass'\n"
+      }
+    ],
+    "cause": "Reviewer used pass instead of passed for the prior input-audit schema. Stopped before inspecting trial arrays; no producer failure or data changes. Corrected the schema key only."
+  },
+  "contrasts": [
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -536.7385192000661,
+        "C1": -536.7385192000661,
+        "H0": -68.47447135063086,
+        "H1": -68.47447135063086
+      },
+      "H0-C0": 468.2640478494352,
+      "H1-C1": 468.2640478494352,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -437.94435133874566,
+        "C1": -437.94435133874566,
+        "H0": -59.03296378891361,
+        "H1": -59.03296378891361
+      },
+      "H0-C0": 378.91138754983206,
+      "H1-C1": 378.91138754983206,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -445.2935240127306,
+        "C1": -445.2935240127306,
+        "H0": -61.19235538766987,
+        "H1": -61.19235538766987
+      },
+      "H0-C0": 384.1011686250607,
+      "H1-C1": 384.1011686250607,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -472.70615265366564,
+        "C1": -472.70615265366564,
+        "H0": -62.708227187941304,
+        "H1": -65.9595869614401
+      },
+      "H0-C0": 409.99792546572434,
+      "H1-C1": 406.74656569222554,
+      "C1-C0": 0.0,
+      "H1-H0": -3.251359773498791,
+      "interaction": -3.251359773498791
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -383.5048084714794,
+        "C1": -383.59033383753786,
+        "H0": -58.19671785660526,
+        "H1": -58.19986401697888
+      },
+      "H0-C0": 325.3080906148741,
+      "H1-C1": 325.39046982055896,
+      "C1-C0": -0.08552536605844807,
+      "H1-H0": -0.0031461603736175903,
+      "interaction": 0.08237920568484469
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -376.27775761225035,
+        "C1": -376.27775761225035,
+        "H0": -58.930728955699244,
+        "H1": -58.930728955699244
+      },
+      "H0-C0": 317.3470286565511,
+      "H1-C1": 317.3470286565511,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 1,
+        "C1": 1,
+        "H0": 1,
+        "H1": 1
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -526.9291269864417,
+        "C1": -526.9291269864417,
+        "H0": -71.52059235701357,
+        "H1": -71.52059235701357
+      },
+      "H0-C0": 455.4085346294281,
+      "H1-C1": 455.4085346294281,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -437.4241581412114,
+        "C1": -437.4241581412114,
+        "H0": -59.10871595007245,
+        "H1": -59.10871595007245
+      },
+      "H0-C0": 378.31544219113897,
+      "H1-C1": 378.31544219113897,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -453.4512350594275,
+        "C1": -453.4512350594275,
+        "H0": -61.114547924497195,
+        "H1": -61.114547924497195
+      },
+      "H0-C0": 392.33668713493034,
+      "H1-C1": 392.33668713493034,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -466.85976698825937,
+        "C1": -466.85976698825937,
+        "H0": -73.27301613845569,
+        "H1": -73.27301613845569
+      },
+      "H0-C0": 393.5867508498037,
+      "H1-C1": 393.5867508498037,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -386.9192038774718,
+        "C1": -386.9192038774718,
+        "H0": -58.335612867328,
+        "H1": -58.335612867328
+      },
+      "H0-C0": 328.5835910101438,
+      "H1-C1": 328.5835910101438,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -429.3094623019002,
+        "C1": -429.3094623019002,
+        "H0": -60.90599258240891,
+        "H1": -60.90599258240891
+      },
+      "H0-C0": 368.40346971949134,
+      "H1-C1": 368.40346971949134,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -529.721519776896,
+        "C1": -529.721519776896,
+        "H0": -68.47507638144462,
+        "H1": -68.47507638144462
+      },
+      "H0-C0": 461.24644339545137,
+      "H1-C1": 461.24644339545137,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -434.7117473532457,
+        "C1": -434.7117473532457,
+        "H0": -58.961001389796365,
+        "H1": -58.961001389796365
+      },
+      "H0-C0": 375.75074596344933,
+      "H1-C1": 375.75074596344933,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -336.91774336408105,
+        "C1": -336.91774336408105,
+        "H0": -54.321398295331726,
+        "H1": -54.321398295331726
+      },
+      "H0-C0": 282.5963450687493,
+      "H1-C1": 282.5963450687493,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -471.54952766399794,
+        "C1": -471.54952766399794,
+        "H0": -63.07823748503055,
+        "H1": -66.32527091766511
+      },
+      "H0-C0": 408.47129017896737,
+      "H1-C1": 405.2242567463328,
+      "C1-C0": 0.0,
+      "H1-H0": -3.2470334326345593,
+      "interaction": -3.2470334326345665
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -377.8994658250764,
+        "C1": -377.9797420539823,
+        "H0": -58.09330804159196,
+        "H1": -58.09628082455223
+      },
+      "H0-C0": 319.8061577834844,
+      "H1-C1": 319.88346122943005,
+      "C1-C0": -0.08027622890591601,
+      "H1-H0": -0.0029727829602705924,
+      "interaction": 0.07730344594563121
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -333.6620649562421,
+        "C1": -333.6620649562421,
+        "H0": -54.530997096955,
+        "H1": -54.530997096955
+      },
+      "H0-C0": 279.1310678592871,
+      "H1-C1": 279.1310678592871,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 1,
+        "C1": 1,
+        "H0": 1,
+        "H1": 1
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    }
+  ],
+  "reported_only_controls": [
+    "C0:no_input_passive",
+    "C1:no_input_passive",
+    "H0:no_input_passive",
+    "H1:no_input_passive",
+    "package0:excitation_only_bitwise",
+    "package0:single_impulse_analytic",
+    "package1:excitation_only_bitwise",
+    "package1:single_impulse_analytic"
+  ],
+  "expected_invalid_control": {
+    "failure_tick": 19,
+    "target_slot": 0,
+    "completed_macro_ticks": 19,
+    "state_rows": 20,
+    "accepted_events": 1,
+    "unprocessed_events": 24,
+    "physical_or_recorded_trial_failure": false,
+    "meaning": "Deliberate infinite synthetic weight tests solver rejection and complete-prefix retention; its nonfinite input is expected, not a failed recorded-source trial."
+  },
+  "completed_utc": "2026-09-05T05:08:36.288988+00:00",
+  "check_count": 565,
+  "passed": true
+}

@@ -1,0 +1,61 @@
+{
+  "reason": "First overlay assumed raster extent (0,585,783,0); actual PDF page has a nonzero origin. Correction changes raster registration only, without new geometry or numerical extraction.",
+  "source_pdf_media_and_crop_box": [
+    9,
+    9,
+    594,
+    792
+  ],
+  "rotation": 0,
+  "pdfplumber_bbox": [
+    9,
+    -9,
+    594,
+    774
+  ],
+  "imshow_extent": [
+    9,
+    594,
+    774,
+    -9
+  ],
+  "source_box_verified_with": "pypdf and pdfplumber read-only inspection",
+  "inputs": [
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/source-geometry.json",
+      "bytes": 9333519,
+      "sha256": "357077dd4ccb2a20fcdcd9fbcc8a537a268bb92269908da7a6ab31c113513239"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/source-page.png",
+      "bytes": 1010354,
+      "sha256": "dbbc879c15c66c56a1ce6c42006f8b8c3681cf15c50dab76f90186b207c1dbeb"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-plan.json",
+      "bytes": 4979,
+      "sha256": "8da8c3f16dbf1cdb2ddf247bb91917e547d0a47694eb15dfa0d4dae634e734d9"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-results.json",
+      "bytes": 10271,
+      "sha256": "e33c3a08c5e448baa0f3db07a681a8a2442fb2d40156b5abc158c216f6835b71"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-overlay.png",
+      "bytes": 377076,
+      "sha256": "f6b4ea6df94b13ac687a3a84a5a877023f596fd29aec3a0709c8efdb4fadc6d0"
+    },
+    {
+      "path": "scripts/plot_ln_inhibitory_transfer_frame.py",
+      "bytes": 3816,
+      "sha256": "7d4ae6d1fdeddd44e27cc46d6120874aa27030bbfe29d9654fa82dcd69b069de"
+    }
+  ],
+  "output": {
+    "path": "validation/ln-inhibitory-transfer-phase2-overlay-corrected.png",
+    "bytes": 358192,
+    "sha256": "8d9acd23fc35d84b99c5a0e1cc122b20c4a876c3f144b421f544258201463ffe"
+  },
+  "numerical_extraction_repeated": false
+}

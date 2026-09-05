@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T05:06:40.772416+00:00",
+  "inputs": [
+    {
+      "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf",
+      "bytes": 2104843,
+      "sha256": "3991919a050c83687014e9204f76cc1f48e6dd91949204156a81ab16f294ecfe"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-extraction-plan.json",
+      "bytes": 5281,
+      "sha256": "7ab0617c680e3d6949e167e8096d5301e997c7ce87d6c2d5fbefa63325da2f1d"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-layout.json",
+      "bytes": 49014,
+      "sha256": "8ed1b54ce6138b44277932c82c4a98662ef71bfcbeedf0e176ecc29adebc94c2"
+    },
+    {
+      "path": "docs/ln-inhibitory-transfer-phase2-review.md",
+      "bytes": 9633,
+      "sha256": "276cdb67266a7a1288515231521a7dbf37b1744d3b81429c29fb99afd07f2b60"
+    },
+    {
+      "path": "scripts/extract_ln_inhibitory_transfer.py",
+      "bytes": 19734,
+      "sha256": "428a1aa227f4a907d14626aa6b9064c0dc437a0a7cfc42fcf225be4996416174"
+    }
+  ],
+  "runtime": {
+    "pdfplumber": "0.11.9",
+    "numpy": "2.3.5"
+  },
+  "amendment": "F replaces D as primary onset geometry of the same n=9 current dataset; D is an independently calibrated graphical check. E is one n=5 mean represented by a union of pieces. Old plan retained unchanged; figure9 means PDF page 9, Figure 6.",
+  "selection": {
+    "F_mean": [
+      235
+    ],
+    "D_mean": [
+      234
+    ],
+    "E_mean": [
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149
+    ],
+    "F_SEM_artwork": [
+      231
+    ],
+    "D_SEM_artwork": [
+      233
+    ],
+    "D_control_artwork": [
+      232
+    ]
+  },
+  "page_index": 8,
+  "windows_s": {
+    "baseline": [
+      -0.15,
+      -0.05
+    ],
+    "early": [
+      0.05,
+      0.15
+    ],
+    "late": [
+      0.25,
+      0.35
+    ]
+  },
+  "bin_width_s": 0.001,
+  "curve_enclosure_tolerance_pt": 0.001,
+  "maximum_subdivision_depth": 24,
+  "full_display_bin_ranges_s": {
+    "D_mean": [
+      -1.0,
+      3.5
+    ],
+    "E_mean": [
+      -0.2,
+      0.4
+    ],
+    "F_mean": [
+      -0.2,
+      0.4
+    ]
+  },
+  "calibration": {
+    "D_bars": [
+      135,
+      136
+    ],
+    "F_bars": [
+      141,
+      140
+    ],
+    "D_light_on_x_pt": [
+      183.431,
+      183.86
+    ],
+    "EF_light_on_x_pt": [
+      390.498,
+      391.143
+    ],
+    "bar_endpoint_rule": "Nominal rectangle-axis endpoints, each expanded by half the perpendicular ink thickness. Time/current scale ranges use shortest and longest allowed lengths. The light origin ranges are the retained command ink bounds.",
+    "E_rate_anchor_rectangles_and_values": [
+      [
+        137,
+        20
+      ],
+      [
+        139,
+        60
+      ]
+    ],
+    "E_intermediate_check": [
+      138,
+      40
+    ],
+    "E_endpoint_axis_check": "Curve142 overall ink extent contains the extrapolated 0/80 anchors within the tick half-thickness; not used to fit anchors",
+    "shared_scale_rule": "Integrate graphical y-coordinate enclosures first. Differences cancel the same vertical origin before dividing by a shared positive scale interval; no double baseline subtraction."
+  },
+  "geometry_rule": "Retain transformed native PDF paths and full decoded page content. Flatten cubic curves only through recursive de Casteljau subdivision whose control-point distance to the chord segment is at most 0.001 pt; expand queried strips and y extents by this tolerance. Unsupported operators or depth overflow yield unresolved/failure. Union attributable boundary extents over each entire bin; no midpoint, reconstructed centerline, smoothing, fit or neural gap interpolation.",
+  "coverage_rule": "All admitted time-anchor/scale positions in each required window must be supported by the selected filled contours. Unsupported bins make that window unavailable. Full-display edge failures are retained, not extrapolated.",
+  "uncertainty": "Ink, anchor and finite-bin enclosures are graphical sensitivity ranges, not biological confidence intervals or bounds on original recording error. E SEM and D control mean remain unavailable unless independently identifiable; this run does not derive them. Gray/control geometry retained only.",
+  "decision": "Late-minus-early F current >0 and E rate <0 are graphically resolved only if the entire interval has the required sign. Zero overlap is unresolved, opposite sign is a retained negative result. D/F disagreements are retained; never pool the same dataset twice.",
+  "bounded_attempt": "One vector attribution/extraction attempt. If vector attribution or coverage fails, retain unresolved output; no segmentation tuning or repeated fallback search. Original PDF render and overlays are verification evidence, not a second extraction.",
+  "prohibitions": [
+    "no model fit",
+    "no pA/nS conversion",
+    "no causal latency or time constant",
+    "no current/rate ratio across different cohorts",
+    "no model simulation",
+    "no fabricated SEM/control mean"
+  ],
+  "source_render_dpi": 300
+}

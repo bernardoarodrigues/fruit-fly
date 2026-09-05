@@ -1,0 +1,408 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:06:47.683217+00:00",
+  "plan": {
+    "path": "validation/ln-inhibitory-transfer-phase2-plan.json",
+    "bytes": 4979,
+    "sha256": "8da8c3f16dbf1cdb2ddf247bb91917e547d0a47694eb15dfa0d4dae634e734d9"
+  },
+  "checks": [
+    {
+      "name": "input receipt: data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf",
+      "passed": true
+    },
+    {
+      "name": "input receipt: validation/ln-inhibitory-transfer-extraction-plan.json",
+      "passed": true
+    },
+    {
+      "name": "input receipt: validation/ln-inhibitory-transfer-layout.json",
+      "passed": true
+    },
+    {
+      "name": "input receipt: docs/ln-inhibitory-transfer-phase2-review.md",
+      "passed": true
+    },
+    {
+      "name": "input receipt: scripts/extract_ln_inhibitory_transfer.py",
+      "passed": true
+    },
+    {
+      "name": "parser version",
+      "passed": true
+    },
+    {
+      "name": "rate intermediate 40 tick overlaps anchor interval",
+      "passed": true
+    },
+    {
+      "name": "rate endpoint 0/80 ink checks",
+      "passed": true
+    },
+    {
+      "name": "F_mean filled nonstroked artwork",
+      "passed": true
+    },
+    {
+      "name": "E_mean filled nonstroked artwork",
+      "passed": true
+    },
+    {
+      "name": "D_mean filled nonstroked artwork",
+      "passed": true
+    }
+  ],
+  "signals": {
+    "F_mean": {
+      "units": "pA",
+      "source_curve_indices": [
+        235
+      ],
+      "windows": {
+        "baseline": {
+          "window_s": [
+            -0.15,
+            -0.05
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            395.5331710860964,
+            397.42958708996105
+          ]
+        },
+        "early": {
+          "window_s": [
+            0.05,
+            0.15
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            377.3311614634559,
+            379.45325016130585
+          ]
+        },
+        "late": {
+          "window_s": [
+            0.25,
+            0.35
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999998,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            367.13604855097765,
+            369.0082049287895
+          ]
+        }
+      },
+      "differences": {
+        "early_minus_baseline": {
+          "units": "pA",
+          "graphical_interval": [
+            2.8768097534332133,
+            3.739588106341962
+          ],
+          "direction": "positive"
+        },
+        "late_minus_baseline": {
+          "units": "pA",
+          "graphical_interval": [
+            4.745501032482244,
+            5.636528876669677
+          ],
+          "direction": "positive"
+        },
+        "late_minus_early": {
+          "units": "pA",
+          "graphical_interval": [
+            1.4890348434123817,
+            2.2917845159302064
+          ],
+          "direction": "positive"
+        }
+      },
+      "full_display_bins": 600,
+      "unsupported_full_display_bins": 2,
+      "flattened_boundary_segments": 2627,
+      "attribution_visual_review": "pending overlay inspection"
+    },
+    "E_mean": {
+      "units": "spikes/s",
+      "source_curve_indices": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "windows": {
+        "baseline": {
+          "window_s": [
+            -0.15,
+            -0.05
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            331.5910000000003,
+            332.4520000000004
+          ],
+          "plotted_rate_graphical_interval_spikes_per_s": [
+            -0.9522651523116501,
+            0.8308870904494086
+          ]
+        },
+        "early": {
+          "window_s": [
+            0.05,
+            0.15
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            290.73115955208107,
+            293.1564547964226
+          ],
+          "plotted_rate_graphical_interval_spikes_per_s": [
+            40.01196184981188,
+            42.970552420750394
+          ]
+        },
+        "late": {
+          "window_s": [
+            0.25,
+            0.35
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999998,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            301.5542468894162,
+            305.6675737685999
+          ],
+          "plotted_rate_graphical_interval_spikes_per_s": [
+            27.04372215455663,
+            31.752011516541884
+          ]
+        }
+      },
+      "differences": {
+        "early_minus_baseline": {
+          "units": "spikes/s",
+          "graphical_interval": [
+            39.4008308805067,
+            43.73137969662685
+          ],
+          "direction": "positive"
+        },
+        "late_minus_baseline": {
+          "units": "spikes/s",
+          "graphical_interval": [
+            26.575168962624325,
+            32.3867246811174
+          ],
+          "direction": "positive"
+        },
+        "late_minus_early": {
+          "units": "spikes/s",
+          "graphical_interval": [
+            -15.656204294927019,
+            -8.608921590540826
+          ],
+          "direction": "negative"
+        }
+      },
+      "full_display_bins": 600,
+      "unsupported_full_display_bins": 9,
+      "flattened_boundary_segments": 2336,
+      "attribution_visual_review": "pending overlay inspection"
+    },
+    "D_mean": {
+      "units": "pA",
+      "source_curve_indices": [
+        234
+      ],
+      "windows": {
+        "baseline": {
+          "window_s": [
+            -0.15,
+            -0.05
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            395.04803732929594,
+            398.0104988261409
+          ]
+        },
+        "early": {
+          "window_s": [
+            0.05,
+            0.15
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999999,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            376.24297295329836,
+            384.26178834700136
+          ]
+        },
+        "late": {
+          "window_s": [
+            0.25,
+            0.35
+          ],
+          "bins": 100,
+          "coverage_s": 0.09999999999999998,
+          "complete": true,
+          "mean_y_ink_enclosure_pt": [
+            366.8111807809333,
+            369.735028403761
+          ]
+        }
+      },
+      "differences": {
+        "early_minus_baseline": {
+          "units": "pA",
+          "graphical_interval": [
+            1.9431190488366445,
+            4.079369504201418
+          ],
+          "direction": "positive"
+        },
+        "late_minus_baseline": {
+          "units": "pA",
+          "graphical_interval": [
+            4.560082926633446,
+            5.846945919760644
+          ],
+          "direction": "positive"
+        },
+        "late_minus_early": {
+          "units": "pA",
+          "graphical_interval": [
+            1.1723919078575245,
+            3.2703522095553836
+          ],
+          "direction": "positive"
+        }
+      },
+      "full_display_bins": 4500,
+      "unsupported_full_display_bins": 59,
+      "flattened_boundary_segments": 19845,
+      "attribution_visual_review": "pending overlay inspection"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/calibration.json",
+      "bytes": 887,
+      "sha256": "0c3ef90b7678292fa874f4ef23b83772cbfdef1d01dabc8a91dbd83a93eccab7"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/decoded-page-content.bin",
+      "bytes": 1882069,
+      "sha256": "6f56785c71adf204e6ffdd56a156b1183c7575b4a7429b9a928ad8f73bf6cc98"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/ink-bins.json",
+      "bytes": 880365,
+      "sha256": "0f0403a2251c609299313ef5dcf490071d7f0b60df9d0c2d6d3350bbaa632580"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/source-geometry.json",
+      "bytes": 9333519,
+      "sha256": "357077dd4ccb2a20fcdcd9fbcc8a537a268bb92269908da7a6ab31c113513239"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/phase2/source-page.png",
+      "bytes": 1010354,
+      "sha256": "dbbc879c15c66c56a1ce6c42006f8b8c3681cf15c50dab76f90186b207c1dbeb"
+    }
+  ],
+  "model_fit_or_simulation": false,
+  "calibration": {
+    "F_mean": {
+      "origin_x_pt": [
+        390.498,
+        391.143
+      ],
+      "x_pt_per_s": [
+        217.3700500000001,
+        221.66994999999986
+      ],
+      "y_pt_per_unit": [
+        5.3745025000000055,
+        5.589497499999993
+      ],
+      "units": "pA"
+    },
+    "D_mean": {
+      "origin_x_pt": [
+        183.431,
+        183.86
+      ],
+      "x_pt_per_s": [
+        28.352010000000007,
+        29.211990000000014
+      ],
+      "y_pt_per_unit": [
+        5.336002500000006,
+        5.550997499999994
+      ],
+      "units": "pA"
+    },
+    "E_mean": {
+      "origin_x_pt": [
+        390.498,
+        391.143
+      ],
+      "x_pt_per_s": [
+        217.3700500000001,
+        221.66994999999986
+      ],
+      "y_pt_per_unit": [
+        0.9540252499999994,
+        0.9754754999999988
+      ],
+      "y20_ink_pt": [
+        312.46301,
+        312.892
+      ],
+      "y60_ink_pt": [
+        273.87298000000004,
+        274.302
+      ],
+      "units": "spikes/s"
+    }
+  },
+  "graphical_direction_test": {
+    "current": "positive",
+    "rate": "negative",
+    "both_expected_directions_resolved": true,
+    "not_statistical_significance": true
+  },
+  "D_F_same_cohort_consistency": {
+    "early_minus_baseline": true,
+    "late_minus_baseline": true,
+    "late_minus_early": true
+  },
+  "unavailable": {
+    "E_SEM": "Not separately identifiable; no derived SEM",
+    "D_control_mean": "Overlapping raster/vector artwork, retained without selecting a mean",
+    "absolute_holding_current": null,
+    "conductance_nS": null
+  },
+  "completed_extraction": true,
+  "completed_utc": "2026-09-05T05:06:51.812889+00:00"
+}

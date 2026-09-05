@@ -1,0 +1,125 @@
+{
+  "arm": "C1",
+  "condition": "locomotor_feedback",
+  "checks": [
+    {
+      "name": "finite_states_prethreshold_diagnostics",
+      "pass": true
+    },
+    {
+      "name": "all_events_partitioned",
+      "pass": true
+    },
+    {
+      "name": "own_threshold_and_availability",
+      "pass": true
+    },
+    {
+      "name": "package1_accepts_all_unblocked_in_horizon",
+      "pass": true
+    }
+  ],
+  "tolerances_mv": {
+    "32_vs_64": 1e-08,
+    "production_vs_quad": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "quad_error_estimate": 1e-09,
+    "subdivision": 1e-08,
+    "bounds": 1e-10,
+    "tail": 1.01e-13
+  },
+  "archive_sha256": "b1a6d207b9ae12b1e4bdfc3d06c276812b69f10d6c3ac49ce488f67f03e41e91",
+  "cells": [
+    {
+      "target_id": 67052,
+      "minimum_voltage_mv": -536.7385192000661,
+      "maximum_voltage_mv": -47.613049711605086,
+      "mean_voltage_mv": -437.94435133874566,
+      "endpoint_voltage_mv": -445.2935240127306,
+      "minimum_pre_threshold_mv": -536.7385192000661,
+      "maximum_pre_threshold_mv": -47.613049711605086,
+      "spike_count": 0,
+      "rate_hz": 0.0,
+      "first_spike_ms": null,
+      "last_spike_ms": null,
+      "min_signed_or_positive_state_mv": -892.5539060005285,
+      "max_signed_or_positive_state_mv": 76.14318432792439,
+      "max_h": 0.0,
+      "max_stiffness": 0.005,
+      "pre_threshold_below_minus75_fraction": 0.9985416666666667,
+      "closest_threshold_margin_mv": 2.613049711605086,
+      "event_counts": {
+        "accepted": 632929,
+        "source_blocked": 0,
+        "target_unavailable": 0,
+        "pending": 105
+      },
+      "windows": [
+        {
+          "start_ms": 0,
+          "end_ms": 500,
+          "spikes": 0,
+          "mean_post_voltage_mv": -408.6159979237056
+        },
+        {
+          "start_ms": 500,
+          "end_ms": 11000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -440.6001174942825
+        },
+        {
+          "start_ms": 11000,
+          "end_ms": 12000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -424.7229834131293
+        }
+      ]
+    },
+    {
+      "target_id": 13314,
+      "minimum_voltage_mv": -472.70615265366564,
+      "maximum_voltage_mv": -45.036315022814875,
+      "mean_voltage_mv": -383.59033383753786,
+      "endpoint_voltage_mv": -376.27775761225035,
+      "minimum_pre_threshold_mv": -472.70615265366564,
+      "maximum_pre_threshold_mv": -44.883300615023046,
+      "spike_count": 1,
+      "rate_hz": 0.08333333333333333,
+      "first_spike_ms": 14.0,
+      "last_spike_ms": 14.0,
+      "min_signed_or_positive_state_mv": -858.9535847835372,
+      "max_signed_or_positive_state_mv": 145.56010230268097,
+      "max_h": 0.0,
+      "max_stiffness": 0.005,
+      "pre_threshold_below_minus75_fraction": 0.998425,
+      "closest_threshold_margin_mv": 0.03631502281487542,
+      "event_counts": {
+        "accepted": 592591,
+        "source_blocked": 0,
+        "target_unavailable": 0,
+        "pending": 95
+      },
+      "windows": [
+        {
+          "start_ms": 0,
+          "end_ms": 500,
+          "spikes": 1,
+          "mean_post_voltage_mv": -379.38731771169614
+        },
+        {
+          "start_ms": 500,
+          "end_ms": 11000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -383.6251811463905
+        },
+        {
+          "start_ms": 11000,
+          "end_ms": 12000,
+          "spikes": 0,
+          "mean_post_voltage_mv": -385.3259451575058
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

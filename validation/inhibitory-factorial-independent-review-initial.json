@@ -1,0 +1,593 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T05:08:18.156856+00:00",
+  "method": "Independent vectorized saved-state conditional arithmetic and direct time-domain H quadrature; no producer imports, recurrent simulation, or two-cell replay",
+  "independence": "Reviewer previously authored the original negative-voltage replay and source-reviewed this driver; did not author the factorial driver or interval solver. Baseline parity is a cross-artifact check, not independent biological validation.",
+  "checks": [
+    {
+      "name": "frozen_plan_digest",
+      "pass": true
+    },
+    {
+      "name": "completed_12_trials",
+      "pass": true
+    },
+    {
+      "name": "declared_targets_histories_arms_clock",
+      "pass": true
+    },
+    {
+      "name": "pinned:scripts/inhibitory_factorial_replay.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:scripts/inhibitory_factorial_solver.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:fruitfly/neural.py",
+      "pass": true
+    },
+    {
+      "name": "pinned:docs/inhibitory-factorial-design-review.md",
+      "pass": true
+    },
+    {
+      "name": "pinned:docs/inhibitory-factorial-driver-review.md",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-solver-plan.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-solver-results.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial-input-audit.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-plan.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-results.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-independent-review.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-incoming-edges.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/neuron_ids.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/indptr.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/targets.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/weights.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/contact_counts.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:data/processed/malecns_v1/signs.npy",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_feedback-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-sensory_only-arrays.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/negative-voltage-replay-sensory_only-edge-balance.csv",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/control-expected-invalid-input.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/controls.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_feedback-events.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/locomotor_sensory_block-events.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-C1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H0.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H0.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H1.json",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-H1.npz",
+      "pass": true
+    },
+    {
+      "name": "pinned:validation/inhibitory-factorial/sensory_only-events.npz",
+      "pass": true
+    },
+    {
+      "name": "producer_reported_gates",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_row_identity_unique",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_complete_graph_join",
+      "pass": true
+    },
+    {
+      "name": "incoming_inventory_source_target_ids",
+      "pass": true
+    },
+    {
+      "name": "incoming_exact_float32_weights",
+      "pass": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "incoming_contacts_and_model_sign",
+      "pass": true
+    }
+  ],
+  "inputs": {
+    "scripts/review_inhibitory_factorial.py": {
+      "sha256": "300165428c293b591fa5f71243297335b3d791d6f149dc8dd4831ebb5b947e39",
+      "bytes": 28916
+    },
+    "validation/inhibitory-factorial-plan.json": {
+      "sha256": "add6680e275f4540a3f21ff2d9422313a918fc63ca29bc5dbc59b4501cb1e9fc",
+      "bytes": 9839
+    },
+    "validation/inhibitory-factorial/results.json": {
+      "sha256": "877190eb44dc35d85ff5a4117988da358078f473ba129c76c2e80c1ed15b1d12",
+      "bytes": 73737
+    },
+    "scripts/inhibitory_factorial_replay.py": {
+      "sha256": "05342f151a45a18235824c931633f627a6d9211b07b9fd37ae2bc0c4733ebbcb",
+      "bytes": 32700
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "bytes": 13805
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091
+    },
+    "docs/inhibitory-factorial-design-review.md": {
+      "sha256": "f494a728841dd0f53540f98d777b6fe8b12fa0e53f8d7e9ff6da4536f527664f",
+      "bytes": 10855
+    },
+    "docs/inhibitory-factorial-driver-review.md": {
+      "sha256": "08c1c5477150a46e948359717b1bf1d6e15071531015587541726d755fbae5f6",
+      "bytes": 6106
+    },
+    "validation/inhibitory-factorial-solver-plan.json": {
+      "sha256": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687",
+      "bytes": 15650
+    },
+    "validation/inhibitory-factorial-solver-results.json": {
+      "sha256": "7f0a65072d1a0cd7121c7405e7671a3c44013a85af951e0d864bb4617c284e38",
+      "bytes": 131009
+    },
+    "validation/inhibitory-factorial-input-audit.json": {
+      "sha256": "bfeb0327aef6e007bbb1bcf90f84c91c70d346a12abf905ca83f32cf32c1f546",
+      "bytes": 60050
+    },
+    "validation/negative-voltage-replay-plan.json": {
+      "sha256": "5e474e043a4c302a4694ac7b0e87db0bfce6f9de1d4a4213ae484e27399914a1",
+      "bytes": 8867
+    },
+    "validation/negative-voltage-replay-results.json": {
+      "sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "bytes": 74092
+    },
+    "validation/negative-voltage-replay-independent-review.json": {
+      "sha256": "3428c55e600dfbf8661241be727147d9d81eb498db5e77398fa9500ceef01db6",
+      "bytes": 65629
+    },
+    "validation/negative-voltage-replay-incoming-edges.csv": {
+      "sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "bytes": 326262
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-arrays.npz": {
+      "sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "bytes": 9139140
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json": {
+      "sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "bytes": 34544
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz": {
+      "sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "bytes": 2136255
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv": {
+      "sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "bytes": 465024
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz": {
+      "sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "bytes": 9059468
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json": {
+      "sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "bytes": 34696
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz": {
+      "sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "bytes": 2131046
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv": {
+      "sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "bytes": 459506
+    },
+    "validation/negative-voltage-replay-sensory_only-arrays.npz": {
+      "sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "bytes": 9171625
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json": {
+      "sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "bytes": 33834
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz": {
+      "sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "bytes": 2136866
+    },
+    "validation/negative-voltage-replay-sensory_only-edge-balance.csv": {
+      "sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "bytes": 465337
+    },
+    "validation/inhibitory-factorial/control-C0.npz": {
+      "sha256": "55557051d794635be1f8343ffc6d3bb3b836fbd49e7832ccae411b647010e009",
+      "bytes": 3569
+    },
+    "validation/inhibitory-factorial/control-C1.npz": {
+      "sha256": "85ac0b2486d9fbebe26b3f602547e651d888385c26946de698dc9d102872685f",
+      "bytes": 3978
+    },
+    "validation/inhibitory-factorial/control-H0.npz": {
+      "sha256": "b6c47e4a745a2ac1c404f6f10c1758214352f3423c7e07f4e1e3294b316fb3ef",
+      "bytes": 4510
+    },
+    "validation/inhibitory-factorial/control-H1.npz": {
+      "sha256": "3b7494bdffa18f3c97ee7ba7e28fead0a63636f6882a7f4a522f279157bad8ee",
+      "bytes": 4448
+    },
+    "validation/inhibitory-factorial/control-expected-invalid-input.npz": {
+      "sha256": "ce55f42dc6413fc3221fb6e1f314003e8cc0db878f9845437f36336f8b640d6d",
+      "bytes": 2442
+    },
+    "validation/inhibitory-factorial/controls.json": {
+      "sha256": "486c1c737f750f4bb8922fb9a10774cb029aba7d0b1a2ae6a559be774c123365",
+      "bytes": 4596
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.json": {
+      "sha256": "292e96180d4c097ffa1d8cbf7529174c810f902f360aa8cef4061c8a307b1dc3",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.npz": {
+      "sha256": "6a7dc0550b83b8c3c0fd12d2d073bfd5595829cdb059533ba465f622604c8eb9",
+      "bytes": 6672841
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.json": {
+      "sha256": "c6f7f3ec9c04f9f2ebfa279bf014c5d58a9eba52ded1ffd07cccc99a514414c9",
+      "bytes": 3471
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.npz": {
+      "sha256": "b1a6d207b9ae12b1e4bdfc3d06c276812b69f10d6c3ac49ce488f67f03e41e91",
+      "bytes": 6673037
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.json": {
+      "sha256": "96f9e498812be4e3260c00f0e7777b6805bd07941c1919879983df6d8464ff42",
+      "bytes": 147555
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.npz": {
+      "sha256": "5d7b11619888000593712bd787b8628b6332bce6fcee8772995bb708190248c2",
+      "bytes": 12917029
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.json": {
+      "sha256": "d864d4337bb80c220803e2a3e8c5c4595f3e0d6c56c807da6074e04049a85583",
+      "bytes": 147547
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.npz": {
+      "sha256": "895a0c7147ef089d19dc1688883bc710bf5b24d77a244b591721f77a87cf2187",
+      "bytes": 12917406
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-events.npz": {
+      "sha256": "caf1c28d9188721275b31ef425abb2cc3b5193691994e69d1e8a8dfca936ece4",
+      "bytes": 3779003
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.json": {
+      "sha256": "bb3ca8668b92a9a14bea8f9e4dd8f2279bc9f6859e67f067d885fe9c79bb09d6",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.json": {
+      "sha256": "75e5ee7e66912ec22a613a08d2f1a617e07831e2abf8fdc6300342234cc0a087",
+      "bytes": 3469
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.json": {
+      "sha256": "51aa5eb9d09dfb80a07677817cb44b7fd46c7b117578db8fe7982a4cabcecc1b",
+      "bytes": 147231
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.json": {
+      "sha256": "42e9969542c68e01f58476375205e001e6a69703d618f1a899b69ef4660e1825",
+      "bytes": 147244
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-events.npz": {
+      "sha256": "d06b89948573b0efb4c989d961d01ad6f55f5eddac425637aa58039ef524a4c6",
+      "bytes": 3740897
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.json": {
+      "sha256": "178e89fdc7d5cf458e4d2d9540bb994cfbd569e2fb38aed56dc4a52405646ccb",
+      "bytes": 4156
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.npz": {
+      "sha256": "7a87fe91a106071d15363c13f149aef802ebfe86e7c6012cf75a89c50eeba621",
+      "bytes": 6676954
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.json": {
+      "sha256": "78d4107b55c981f5ccbbf68c2ffb41d643a312cd4fb2e51587eb219160460bb8",
+      "bytes": 3497
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.npz": {
+      "sha256": "2715ff2cd17fce563454dc1ac63be96719aa27dfb2c34a8a732a2a20483950a3",
+      "bytes": 6677112
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.json": {
+      "sha256": "466f6a562e3a22acac4c7842d13da58e183e38c17f479f9b43fa9c8e60a6a211",
+      "bytes": 147182
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.npz": {
+      "sha256": "21fc942b15616883ffbf5674435b03715da274482206234e28ed5745e76b7a9b",
+      "bytes": 12921555
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.json": {
+      "sha256": "1798c94ab765b8398f26c6385f13c5d041e283ebf5c508e6ce8926125ffc761b",
+      "bytes": 147192
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.npz": {
+      "sha256": "277cc9d05bad5b8f3e313a8f6cb417b79285753f5664d60a393907bbb14c9040",
+      "bytes": 12921965
+    },
+    "validation/inhibitory-factorial/sensory_only-events.npz": {
+      "sha256": "8749dc7ae4aed477a90279bc858e8833f63c091696a8316a10719362d39d68e2",
+      "bytes": 3802163
+    }
+  },
+  "trials": [],
+  "controls": [],
+  "errors": [
+    {
+      "type": "KeyError",
+      "message": "'pass'",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 374, in <module>\n    run()\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 265, in run\n    check(\"prior_input_audit_passed\", audit[\"passed\"] and all(c[\"pass\"] for c in audit[\"checks\"]))\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_factorial.py\", line 265, in <genexpr>\n    check(\"prior_input_audit_passed\", audit[\"passed\"] and all(c[\"pass\"] for c in audit[\"checks\"]))\n                                                              ~^^^^^^^^\nKeyError: 'pass'\n"
+    }
+  ],
+  "full_graph_rerun": false,
+  "replay_rerun": false,
+  "limits": [
+    "One original seed, three conditional source histories, two selected cells. Altered target outputs never feed back into the sources; self/cross-target original spikes remain exogenous.",
+    "All C local voltage transitions and all arms' synaptic/reset/event transitions are independently checked. H voltage integration is independently checked only at the 1488 archived reference intervals plus the saved mixed controls, not every H interval.",
+    "Stored 32/64 absolute differences, residual maxima, inverse iteration counts and subdivision errors lack their raw internal solver operands. Their finite bounds and summary arithmetic can be checked; every internal solver computation cannot be reconstructed from this archive.",
+    "No-input, excitation-only and moderate single-impulse controls have reported booleans but no separate retained raw trajectories. They are source-inspected reported results; four mixed controls and the expected invalid prefix do retain arrays.",
+    "The fixed source mask matches design and full final checkpoints. Its constancy throughout the original source runs relies additionally on the prior frozen journal/input audits, not per-interval full masks in these replay archives.",
+    "Passing numerical/integrity checks does not establish physiological accuracy, a measured inhibitory reversal potential for these cells, behavior, generality, or grounds for default promotion. H lower bound is an engineering prior."
+  ],
+  "completed_utc": "2026-09-05T05:08:18.452324+00:00",
+  "check_count": 73,
+  "passed": false
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "relocated_utc": "2026-09-05T05:10:11.724573+00:00",
+  "reason": "Keep original-figure verification overlays only in ignored raw research storage. Existing numerical and executed overlay receipts remain unchanged.",
+  "relocations": [
+    {
+      "original_recorded_path": "validation/ln-inhibitory-transfer-phase2-overlay.png",
+      "current_ignored_path": "data/raw/ln-inhibitory-transfer/phase2/overlay-original-frame-error.png",
+      "sha256": "f6b4ea6df94b13ac687a3a84a5a877023f596fd29aec3a0709c8efdb4fadc6d0",
+      "bytes": 377076
+    },
+    {
+      "original_recorded_path": "validation/ln-inhibitory-transfer-phase2-overlay-corrected.png",
+      "current_ignored_path": "data/raw/ln-inhibitory-transfer/phase2/overlay-corrected.png",
+      "sha256": "8d9acd23fc35d84b99c5a0e1cc122b20c4a876c3f144b421f544258201463ffe",
+      "bytes": 358192
+    }
+  ],
+  "preserved_receipts": [
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-overlay-receipt.json",
+      "sha256": "d76169c7afef879b469e5d4d76e346e28abb98780de102022c2e6044464b2791",
+      "bytes": 951
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-overlay-corrected-receipt.json",
+      "sha256": "6cfb39ccaec420a80e0938ea25a96e5090c80c3d4da867e386f0e2c3d225cc08",
+      "bytes": 1871
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-phase2-validation.json",
+      "sha256": "6b3db7a916f0f942b8721c6e55dc37800c91b5d2d933c99394a5ca3720fc9389",
+      "bytes": 8371
+    }
+  ],
+  "verification_rule": "Resolve each original_recorded_path through this relocation table before checking its unchanged bytes/hash. Original paths in earlier receipts are historical acquisition/output locations, not current locations.",
+  "source_or_numerical_data_changed": false
+}

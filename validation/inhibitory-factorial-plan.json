@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T05:02:33.257827+00:00",
+  "git_head": "ab2bd6376a64e934529c496b120f24bbef729532",
+  "inputs": {
+    "scripts/inhibitory_factorial_replay.py": {
+      "sha256": "05342f151a45a18235824c931633f627a6d9211b07b9fd37ae2bc0c4733ebbcb",
+      "bytes": 32700
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "bytes": 13805
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091
+    },
+    "docs/inhibitory-factorial-design-review.md": {
+      "sha256": "f494a728841dd0f53540f98d777b6fe8b12fa0e53f8d7e9ff6da4536f527664f",
+      "bytes": 10855
+    },
+    "docs/inhibitory-factorial-driver-review.md": {
+      "sha256": "08c1c5477150a46e948359717b1bf1d6e15071531015587541726d755fbae5f6",
+      "bytes": 6106
+    },
+    "validation/inhibitory-factorial-solver-plan.json": {
+      "sha256": "14df7dad75cec57c86f3608c6ffec842b0cf7e83d707758f2d6220198fe6d687",
+      "bytes": 15650
+    },
+    "validation/inhibitory-factorial-solver-results.json": {
+      "sha256": "7f0a65072d1a0cd7121c7405e7671a3c44013a85af951e0d864bb4617c284e38",
+      "bytes": 131009
+    },
+    "validation/inhibitory-factorial-input-audit.json": {
+      "sha256": "bfeb0327aef6e007bbb1bcf90f84c91c70d346a12abf905ca83f32cf32c1f546",
+      "bytes": 60050
+    },
+    "validation/negative-voltage-replay-plan.json": {
+      "sha256": "5e474e043a4c302a4694ac7b0e87db0bfce6f9de1d4a4213ae484e27399914a1",
+      "bytes": 8867
+    },
+    "validation/negative-voltage-replay-results.json": {
+      "sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "bytes": 74092
+    },
+    "validation/negative-voltage-replay-independent-review.json": {
+      "sha256": "3428c55e600dfbf8661241be727147d9d81eb498db5e77398fa9500ceef01db6",
+      "bytes": 65629
+    },
+    "validation/negative-voltage-replay-incoming-edges.csv": {
+      "sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "bytes": 326262
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-arrays.npz": {
+      "sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "bytes": 9139140
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json": {
+      "sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "bytes": 34544
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz": {
+      "sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "bytes": 2136255
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv": {
+      "sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "bytes": 465024
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz": {
+      "sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "bytes": 9059468
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json": {
+      "sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "bytes": 34696
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz": {
+      "sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "bytes": 2131046
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv": {
+      "sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "bytes": 459506
+    },
+    "validation/negative-voltage-replay-sensory_only-arrays.npz": {
+      "sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "bytes": 9171625
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json": {
+      "sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "bytes": 33834
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz": {
+      "sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "bytes": 2136866
+    },
+    "validation/negative-voltage-replay-sensory_only-edge-balance.csv": {
+      "sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "bytes": 465337
+    }
+  },
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "conditions": [
+    "locomotor_feedback",
+    "locomotor_sensory_block",
+    "sensory_only"
+  ],
+  "targets": [
+    67052,
+    13314
+  ],
+  "arms": [
+    "C0",
+    "C1",
+    "H0",
+    "H1"
+  ],
+  "neural_ticks": 120000,
+  "parameters": {
+    "dt_ms": 0.1,
+    "tau_m_ms": 20.0,
+    "tau_s_ms": 5.0,
+    "rest_reset_mv": -52.0,
+    "threshold_strict_greater_mv": -45.0,
+    "refractory_ticks": 22,
+    "delay_ticks": 18,
+    "inhibitory_reversal_mv": -75.0,
+    "negative_jump_h": "-float64(float32_weight)*(1/23)",
+    "gains": 1,
+    "initial_synaptic_states": 0,
+    "initial_last_spike_tick": -1152921504606846976
+  },
+  "arm_semantics": {
+    "C0": "original signed current + freeze/reject/reset",
+    "C1": "same signed current + always decay/receive/retain",
+    "H0": "inhibition driving force only + freeze/reject/reset",
+    "H1": "inhibition driving force only + always decay/receive/retain"
+  },
+  "primary_baseline_gate": "C0 bitwise all120001x2 v/s, spikes, accepted ticks/edges/jumps, finalv/s/last/refractory/current, allperedge dispositions; no altered arm until allthree pass",
+  "source_boundary": "Retained raw source-index/tick arrays, not accepted-only. Original exogenous histories including target self/cross sources; fixed source-output masks established by prior journal/checkpoint audit. No direct target inputs or RNG, no source spike regeneration.",
+  "event_order": "Ordered recorded source event then targetslot0/1. Threshold before delayed delivery; reset after. Savepoststate tick+1, spikestamp tick*.1. Pending precedence before future mask, then in-horizon blocked/unavailable/accepted. All weights includingzero preserved.",
+  "production_solver": "Exact signed-current coefficient with canonical original operation order; H positive32point attenuation quadrature; compare64 from same own preceding state on EVERY available H step; no clamps or macroclock refinement",
+  "reference_selection": "For each H arm/history/target, available ticks divisibleby1000 plus first/lastavailable, maxprecedingh, maxprecedingp, maximumstiffness(same ash), closest abs(prethreshold+45). argmax/argminfirstties; sortedunique. Adaptivequad+Brent and independent DOP853/Radau plus2/4internal subdivisions of each selected event-free interval, thresholds onlymacroclock.",
+  "tolerances_mv": {
+    "32_vs_64": 1e-08,
+    "production_vs_quad": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "quad_error_estimate": 1e-09,
+    "subdivision": 1e-08,
+    "bounds": 1e-10,
+    "tail": 1.01e-13
+  },
+  "synthetic_boundary_control": "Two targets; no-input pass; deliveries at18(positive1e5),19(firing),20(refractory),40(lastrefractory),41(release),62 and beyondhorizon80. Sharedpositive23,negative-23,zero andblockededges. Check knownfirstfire19, availability at19/20/40/41, beforearrival threshold18, reset retention/decay and disposition precedence; excitation-only C/H exact equality acrosspackages; moderate23mV singleimpulse vs analytic passive response within1e-10mV.",
+  "summaries": "Everytarget: min/maxprethreshold/poststate, meanandendpointv, spikes/rate/first/last, maxp/s/h andstiffness, lowerboundfractions, thresholdmargin, early[0,500), middle[500,11000), late[11000,12000)spikes andmeanv, accepted/rejected/pending events. Within eachhistory H0-C0,H1-C1 anddifferenceofdifferences for min/mean/endv andspikecount; C1-C0,H1-H0also shown. No pooling asreplicate seeds.",
+  "failure_policy": "Retain rawtraces, checks and exceptionreceipt. Caught H interval-solver failure returns all completedmacroticks plusfailinginputstate, failing tick/target and unprocessed disposition4; no partialfailingstep is representedascompleted. Processkill/allocationfailures cannotpromise a prefix. Stopbeforealteredarms if C0 mismatch orsyntheticfailure. Do not silentlytune gains,changeinputs, solver,tolerances ordropfailedtrials. Failednumerics disqualifyinterpretation.",
+  "claim_limit": "Conditional two-cell fixed-source factorial, one original seed. No physiology fit, seed robustness, recurrent test, body benchmark or default promotion. Lowerbound prior is engineering, no universal0mVupperbound."
+}

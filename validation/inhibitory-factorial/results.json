@@ -1,0 +1,2442 @@
+{
+  "plan_sha256": "add6680e275f4540a3f21ff2d9422313a918fc63ca29bc5dbc59b4501cb1e9fc",
+  "complete": true,
+  "checks": [
+    {
+      "name": "synthetic_boundary_controls",
+      "pass": true
+    },
+    {
+      "name": "frozen_inputs_unchanged_after",
+      "pass": true
+    }
+  ],
+  "trials": [
+    {
+      "arm": "C0",
+      "condition": "locomotor_feedback",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_voltage",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_signed_state",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:spikes",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_jumps",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_ticks",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_edges",
+          "pass": true
+        },
+        {
+          "name": "C0_final_checkpoint",
+          "pass": true
+        },
+        {
+          "name": "C0_every_edge_disposition",
+          "pass": true
+        },
+        {
+          "name": "C0_no_direct_target_drive_provenance",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "6a7dc0550b83b8c3c0fd12d2d073bfd5595829cdb059533ba465f622604c8eb9",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -536.7385192000661,
+          "maximum_voltage_mv": -47.613049711605086,
+          "mean_voltage_mv": -437.94435133874566,
+          "endpoint_voltage_mv": -445.2935240127306,
+          "minimum_pre_threshold_mv": -536.7385192000661,
+          "maximum_pre_threshold_mv": -47.613049711605086,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -892.5539060005285,
+          "max_signed_or_positive_state_mv": 76.14318432792439,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9985416666666667,
+          "closest_threshold_margin_mv": 2.613049711605086,
+          "event_counts": {
+            "accepted": 632929,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 105
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -408.6159979237056
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -440.6001174942825
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -424.7229834131293
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -472.70615265366564,
+          "maximum_voltage_mv": -45.036315022814875,
+          "mean_voltage_mv": -383.5048084714794,
+          "endpoint_voltage_mv": -376.27775761225035,
+          "minimum_pre_threshold_mv": -472.70615265366564,
+          "maximum_pre_threshold_mv": -44.883300615023046,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 14.0,
+          "last_spike_ms": 14.0,
+          "min_signed_or_positive_state_mv": -858.9535847835372,
+          "max_signed_or_positive_state_mv": 145.56010230268097,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.998275,
+          "closest_threshold_margin_mv": 0.03631502281487542,
+          "event_counts": {
+            "accepted": 592583,
+            "source_blocked": 0,
+            "target_unavailable": 8,
+            "pending": 95
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -377.3347089263793
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -383.6251811463864
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -385.3259451575058
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "C0",
+      "condition": "locomotor_sensory_block",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_voltage",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_signed_state",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:spikes",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_jumps",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_ticks",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_edges",
+          "pass": true
+        },
+        {
+          "name": "C0_final_checkpoint",
+          "pass": true
+        },
+        {
+          "name": "C0_every_edge_disposition",
+          "pass": true
+        },
+        {
+          "name": "C0_no_direct_target_drive_provenance",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -526.9291269864417,
+          "maximum_voltage_mv": -51.709743305552095,
+          "mean_voltage_mv": -437.4241581412114,
+          "endpoint_voltage_mv": -453.4512350594275,
+          "minimum_pre_threshold_mv": -526.9291269864417,
+          "maximum_pre_threshold_mv": -51.709743305552095,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -896.1584688740351,
+          "max_signed_or_positive_state_mv": 33.54894964550488,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9944333333333333,
+          "closest_threshold_margin_mv": 6.709743305552095,
+          "event_counts": {
+            "accepted": 622094,
+            "source_blocked": 4251,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -333.12703954979315
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -442.2100059482471
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -439.32131546304527
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -466.85976698825937,
+          "maximum_voltage_mv": -51.62339511787596,
+          "mean_voltage_mv": -386.9192038774718,
+          "endpoint_voltage_mv": -429.3094623019002,
+          "minimum_pre_threshold_mv": -466.85976698825937,
+          "maximum_pre_threshold_mv": -51.62339511787596,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -854.5418963295646,
+          "max_signed_or_positive_state_mv": 247.9287338864079,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9944583333333333,
+          "closest_threshold_margin_mv": 6.623395117875958,
+          "event_counts": {
+            "accepted": 586408,
+            "source_blocked": 599,
+            "target_unavailable": 0,
+            "pending": 80
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -305.38523933434067
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -389.9241194311599
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -396.13457283531136
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "C0",
+      "condition": "sensory_only",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_voltage",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:all_signed_state",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:spikes",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_jumps",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_ticks",
+          "pass": true
+        },
+        {
+          "name": "C0_bitwise:accepted_edges",
+          "pass": true
+        },
+        {
+          "name": "C0_final_checkpoint",
+          "pass": true
+        },
+        {
+          "name": "C0_every_edge_disposition",
+          "pass": true
+        },
+        {
+          "name": "C0_no_direct_target_drive_provenance",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "7a87fe91a106071d15363c13f149aef802ebfe86e7c6012cf75a89c50eeba621",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -529.721519776896,
+          "maximum_voltage_mv": -48.18337395355148,
+          "mean_voltage_mv": -434.7117473532457,
+          "endpoint_voltage_mv": -336.91774336408105,
+          "minimum_pre_threshold_mv": -529.721519776896,
+          "maximum_pre_threshold_mv": -48.18337395355148,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -880.6348031475861,
+          "max_signed_or_positive_state_mv": 53.777986679942536,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9986333333333334,
+          "closest_threshold_margin_mv": 3.183373953551481,
+          "event_counts": {
+            "accepted": 637370,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 108
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -408.10699646717944
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -435.8310903807621
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -436.2610210073567
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -471.54952766399794,
+          "maximum_voltage_mv": -45.12346916746416,
+          "mean_voltage_mv": -377.8994658250764,
+          "endpoint_voltage_mv": -333.6620649562421,
+          "minimum_pre_threshold_mv": -471.54952766399794,
+          "maximum_pre_threshold_mv": -44.96504458952824,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 11.700000000000001,
+          "last_spike_ms": 11.700000000000001,
+          "min_signed_or_positive_state_mv": -824.7119617051403,
+          "max_signed_or_positive_state_mv": 126.89733538491701,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9984666666666666,
+          "closest_threshold_margin_mv": 0.03495541047175976,
+          "event_counts": {
+            "accepted": 594450,
+            "source_blocked": 0,
+            "target_unavailable": 6,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -356.85474008748673
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -378.52300729768774
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -381.8746432314519
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "C1",
+      "condition": "locomotor_feedback",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "b1a6d207b9ae12b1e4bdfc3d06c276812b69f10d6c3ac49ce488f67f03e41e91",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -536.7385192000661,
+          "maximum_voltage_mv": -47.613049711605086,
+          "mean_voltage_mv": -437.94435133874566,
+          "endpoint_voltage_mv": -445.2935240127306,
+          "minimum_pre_threshold_mv": -536.7385192000661,
+          "maximum_pre_threshold_mv": -47.613049711605086,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -892.5539060005285,
+          "max_signed_or_positive_state_mv": 76.14318432792439,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9985416666666667,
+          "closest_threshold_margin_mv": 2.613049711605086,
+          "event_counts": {
+            "accepted": 632929,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 105
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -408.6159979237056
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -440.6001174942825
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -424.7229834131293
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -472.70615265366564,
+          "maximum_voltage_mv": -45.036315022814875,
+          "mean_voltage_mv": -383.59033383753786,
+          "endpoint_voltage_mv": -376.27775761225035,
+          "minimum_pre_threshold_mv": -472.70615265366564,
+          "maximum_pre_threshold_mv": -44.883300615023046,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 14.0,
+          "last_spike_ms": 14.0,
+          "min_signed_or_positive_state_mv": -858.9535847835372,
+          "max_signed_or_positive_state_mv": 145.56010230268097,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.998425,
+          "closest_threshold_margin_mv": 0.03631502281487542,
+          "event_counts": {
+            "accepted": 592591,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 95
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -379.38731771169614
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -383.6251811463905
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -385.3259451575058
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "C1",
+      "condition": "locomotor_sensory_block",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -526.9291269864417,
+          "maximum_voltage_mv": -51.709743305552095,
+          "mean_voltage_mv": -437.4241581412114,
+          "endpoint_voltage_mv": -453.4512350594275,
+          "minimum_pre_threshold_mv": -526.9291269864417,
+          "maximum_pre_threshold_mv": -51.709743305552095,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -896.1584688740351,
+          "max_signed_or_positive_state_mv": 33.54894964550488,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9944333333333333,
+          "closest_threshold_margin_mv": 6.709743305552095,
+          "event_counts": {
+            "accepted": 622094,
+            "source_blocked": 4251,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -333.12703954979315
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -442.2100059482471
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -439.32131546304527
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -466.85976698825937,
+          "maximum_voltage_mv": -51.62339511787596,
+          "mean_voltage_mv": -386.9192038774718,
+          "endpoint_voltage_mv": -429.3094623019002,
+          "minimum_pre_threshold_mv": -466.85976698825937,
+          "maximum_pre_threshold_mv": -51.62339511787596,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -854.5418963295646,
+          "max_signed_or_positive_state_mv": 247.9287338864079,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9944583333333333,
+          "closest_threshold_margin_mv": 6.623395117875958,
+          "event_counts": {
+            "accepted": 586408,
+            "source_blocked": 599,
+            "target_unavailable": 0,
+            "pending": 80
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -305.38523933434067
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -389.9241194311599
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -396.13457283531136
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "C1",
+      "condition": "sensory_only",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "2715ff2cd17fce563454dc1ac63be96719aa27dfb2c34a8a732a2a20483950a3",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -529.721519776896,
+          "maximum_voltage_mv": -48.18337395355148,
+          "mean_voltage_mv": -434.7117473532457,
+          "endpoint_voltage_mv": -336.91774336408105,
+          "minimum_pre_threshold_mv": -529.721519776896,
+          "maximum_pre_threshold_mv": -48.18337395355148,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": -880.6348031475861,
+          "max_signed_or_positive_state_mv": 53.777986679942536,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9986333333333334,
+          "closest_threshold_margin_mv": 3.183373953551481,
+          "event_counts": {
+            "accepted": 637370,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 108
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -408.10699646717944
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -435.8310903807621
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -436.2610210073567
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -471.54952766399794,
+          "maximum_voltage_mv": -45.12346916746416,
+          "mean_voltage_mv": -377.9797420539823,
+          "endpoint_voltage_mv": -333.6620649562421,
+          "minimum_pre_threshold_mv": -471.54952766399794,
+          "maximum_pre_threshold_mv": -44.96504458952824,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 11.700000000000001,
+          "last_spike_ms": 11.700000000000001,
+          "min_signed_or_positive_state_mv": -824.7119617051403,
+          "max_signed_or_positive_state_mv": 126.89733538491701,
+          "max_h": 0.0,
+          "max_stiffness": 0.005,
+          "pre_threshold_below_minus75_fraction": 0.9986166666666667,
+          "closest_threshold_margin_mv": 0.03495541047175976,
+          "event_counts": {
+            "accepted": 594456,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -358.7813695811567
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -378.52300729769115
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -381.8746432314519
+            }
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "arm": "H0",
+      "condition": "locomotor_feedback",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 1.4210854715202004e-14
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "5d7b11619888000593712bd787b8628b6332bce6fcee8772995bb708190248c2",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -68.47447135063086,
+          "maximum_voltage_mv": -47.62736171689249,
+          "mean_voltage_mv": -59.03296378891361,
+          "endpoint_voltage_mv": -61.19235538766987,
+          "minimum_pre_threshold_mv": -68.47447135063086,
+          "maximum_pre_threshold_mv": -47.62736171689249,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 962.6195736877816,
+          "max_h": 73.3963912073787,
+          "max_stiffness": 0.3719819560368935,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 2.627361716892487,
+          "event_counts": {
+            "accepted": 632929,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 105
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.862788031461704
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.05590738999915
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.87714385624144
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -62.708227187941304,
+          "maximum_voltage_mv": -45.036315022814875,
+          "mean_voltage_mv": -58.19671785660526,
+          "endpoint_voltage_mv": -58.930728955699244,
+          "minimum_pre_threshold_mv": -62.708227187941304,
+          "maximum_pre_threshold_mv": -44.883300615023046,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 14.0,
+          "last_spike_ms": 14.0,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1078.2004442666848,
+          "max_h": 71.89394112265731,
+          "max_stiffness": 0.36446970561328657,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 0.03631502281487542,
+          "event_counts": {
+            "accepted": 592583,
+            "source_blocked": 0,
+            "target_unavailable": 8,
+            "pending": 95
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -58.36066139531243
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.18702000367641
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.216573543004586
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 9.983854021289318e-14,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.3683364801006246,
+        "production32_64_error_mv": 1.4210854715202004e-14,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    },
+    {
+      "arm": "H0",
+      "condition": "locomotor_sensory_block",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 1.4210854715202004e-14
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -71.52059235701357,
+          "maximum_voltage_mv": -51.710047886756556,
+          "mean_voltage_mv": -59.10871595007245,
+          "endpoint_voltage_mv": -61.114547924497195,
+          "minimum_pre_threshold_mv": -71.52059235701357,
+          "maximum_pre_threshold_mv": -51.710047886756556,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 963.1536235148917,
+          "max_h": 73.08424825216998,
+          "max_stiffness": 0.37042124126084996,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 6.710047886756556,
+          "event_counts": {
+            "accepted": 622094,
+            "source_blocked": 4251,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.105423853402655
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.11119371898283
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.08434542484826
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -73.27301613845569,
+          "maximum_voltage_mv": -46.554318510038094,
+          "mean_voltage_mv": -58.335612867328,
+          "endpoint_voltage_mv": -60.90599258240891,
+          "minimum_pre_threshold_mv": -73.27301613845569,
+          "maximum_pre_threshold_mv": -46.554318510038094,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1061.8579937142429,
+          "max_h": 71.47845964506945,
+          "max_stiffness": 0.36239229822534724,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 1.5543185100380938,
+          "event_counts": {
+            "accepted": 586408,
+            "source_blocked": 599,
+            "target_unavailable": 0,
+            "pending": 80
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.632347150554835
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.31317803448976
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.42281147051624
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 1.0036242670263817e-13,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.36679126894285397,
+        "production32_64_error_mv": 1.4210854715202004e-14,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    },
+    {
+      "arm": "H0",
+      "condition": "sensory_only",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 7.105427357601002e-15
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package0_rejects_unavailable",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "21fc942b15616883ffbf5674435b03715da274482206234e28ed5745e76b7a9b",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -68.47507638144462,
+          "maximum_voltage_mv": -48.194693125179334,
+          "mean_voltage_mv": -58.961001389796365,
+          "endpoint_voltage_mv": -54.321398295331726,
+          "minimum_pre_threshold_mv": -68.47507638144462,
+          "maximum_pre_threshold_mv": -48.194693125179334,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 999.9346967231966,
+          "max_h": 72.75365909903735,
+          "max_stiffness": 0.36876829549518675,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 3.1946931251793345,
+          "event_counts": {
+            "accepted": 637370,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 108
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.85344063034621
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.96781959146497
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.943190652001
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -63.07823748503055,
+          "maximum_voltage_mv": -45.12346916746416,
+          "mean_voltage_mv": -58.09330804159196,
+          "endpoint_voltage_mv": -54.530997096955,
+          "minimum_pre_threshold_mv": -63.07823748503055,
+          "maximum_pre_threshold_mv": -44.96504458952824,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 11.700000000000001,
+          "last_spike_ms": 11.700000000000001,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1043.4021234369786,
+          "max_h": 70.99988040207757,
+          "max_stiffness": 0.3599994020103878,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 0.03495541047175976,
+          "event_counts": {
+            "accepted": 594450,
+            "source_blocked": 0,
+            "target_unavailable": 6,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -57.940405454325095
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.0949349584077
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.15267670866007
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 9.986976523546076e-14,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.3651547429872483,
+        "production32_64_error_mv": 7.105427357601002e-15,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    },
+    {
+      "arm": "H1",
+      "condition": "locomotor_feedback",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 1.4210854715202004e-14
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "895a0c7147ef089d19dc1688883bc710bf5b24d77a244b591721f77a87cf2187",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -68.47447135063086,
+          "maximum_voltage_mv": -47.62736171689249,
+          "mean_voltage_mv": -59.03296378891361,
+          "endpoint_voltage_mv": -61.19235538766987,
+          "minimum_pre_threshold_mv": -68.47447135063086,
+          "maximum_pre_threshold_mv": -47.62736171689249,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 962.6195736877816,
+          "max_h": 73.3963912073787,
+          "max_stiffness": 0.3719819560368935,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 2.627361716892487,
+          "event_counts": {
+            "accepted": 632929,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 105
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.862788031461704
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.05590738999915
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.87714385624144
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -65.9595869614401,
+          "maximum_voltage_mv": -45.036315022814875,
+          "mean_voltage_mv": -58.19986401697888,
+          "endpoint_voltage_mv": -58.930728955699244,
+          "minimum_pre_threshold_mv": -65.9595869614401,
+          "maximum_pre_threshold_mv": -44.883300615023046,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 14.0,
+          "last_spike_ms": 14.0,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1078.2004442666848,
+          "max_h": 71.89394112265731,
+          "max_stiffness": 0.36446970561328657,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 0.03631502281487542,
+          "event_counts": {
+            "accepted": 592591,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 95
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -58.43616924427929
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.18702000367641
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.216573543004586
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 9.983854021289318e-14,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.3683364801006246,
+        "production32_64_error_mv": 1.4210854715202004e-14,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    },
+    {
+      "arm": "H1",
+      "condition": "locomotor_sensory_block",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 1.4210854715202004e-14
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -71.52059235701357,
+          "maximum_voltage_mv": -51.710047886756556,
+          "mean_voltage_mv": -59.10871595007245,
+          "endpoint_voltage_mv": -61.114547924497195,
+          "minimum_pre_threshold_mv": -71.52059235701357,
+          "maximum_pre_threshold_mv": -51.710047886756556,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 963.1536235148917,
+          "max_h": 73.08424825216998,
+          "max_stiffness": 0.37042124126084996,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 6.710047886756556,
+          "event_counts": {
+            "accepted": 622094,
+            "source_blocked": 4251,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.105423853402655
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.11119371898283
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -59.08434542484826
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -73.27301613845569,
+          "maximum_voltage_mv": -46.554318510038094,
+          "mean_voltage_mv": -58.335612867328,
+          "endpoint_voltage_mv": -60.90599258240891,
+          "minimum_pre_threshold_mv": -73.27301613845569,
+          "maximum_pre_threshold_mv": -46.554318510038094,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1061.8579937142429,
+          "max_h": 71.47845964506945,
+          "max_stiffness": 0.36239229822534724,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 1.5543185100380938,
+          "event_counts": {
+            "accepted": 586408,
+            "source_blocked": 599,
+            "target_unavailable": 0,
+            "pending": 80
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.632347150554835
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.31317803448976
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.42281147051624
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 1.0036242670263817e-13,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.36679126894285397,
+        "production32_64_error_mv": 1.4210854715202004e-14,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    },
+    {
+      "arm": "H1",
+      "condition": "sensory_only",
+      "checks": [
+        {
+          "name": "finite_states_prethreshold_diagnostics",
+          "pass": true
+        },
+        {
+          "name": "all_events_partitioned",
+          "pass": true
+        },
+        {
+          "name": "own_threshold_and_availability",
+          "pass": true
+        },
+        {
+          "name": "H_nonnegative_synapses",
+          "pass": true
+        },
+        {
+          "name": "H_lower_bound_all_states_and_prethreshold",
+          "pass": true
+        },
+        {
+          "name": "H_interval_upper_bound",
+          "pass": true
+        },
+        {
+          "name": "H_every_available_step32_vs64",
+          "pass": true,
+          "max_error_mv": 7.105427357601002e-15
+        },
+        {
+          "name": "H_tail_bound",
+          "pass": true
+        },
+        {
+          "name": "H_inverse_residual_iterations",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:production_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:ode_quad",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:quad_error_estimate",
+          "pass": true
+        },
+        {
+          "name": "selected_steps:subdivision",
+          "pass": true
+        },
+        {
+          "name": "package1_accepts_all_unblocked_in_horizon",
+          "pass": true
+        }
+      ],
+      "tolerances_mv": {
+        "32_vs_64": 1e-08,
+        "production_vs_quad": 1e-08,
+        "ode_vs_quad": 2e-08,
+        "quad_error_estimate": 1e-09,
+        "subdivision": 1e-08,
+        "bounds": 1e-10,
+        "tail": 1.01e-13
+      },
+      "archive_sha256": "277cc9d05bad5b8f3e313a8f6cb417b79285753f5664d60a393907bbb14c9040",
+      "cells": [
+        {
+          "target_id": 67052,
+          "minimum_voltage_mv": -68.47507638144462,
+          "maximum_voltage_mv": -48.194693125179334,
+          "mean_voltage_mv": -58.961001389796365,
+          "endpoint_voltage_mv": -54.321398295331726,
+          "minimum_pre_threshold_mv": -68.47507638144462,
+          "maximum_pre_threshold_mv": -48.194693125179334,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "first_spike_ms": null,
+          "last_spike_ms": null,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 999.9346967231966,
+          "max_h": 72.75365909903735,
+          "max_stiffness": 0.36876829549518675,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 3.1946931251793345,
+          "event_counts": {
+            "accepted": 637370,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 108
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.85344063034621
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.96781959146497
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.943190652001
+            }
+          ]
+        },
+        {
+          "target_id": 13314,
+          "minimum_voltage_mv": -66.32527091766511,
+          "maximum_voltage_mv": -45.12346916746416,
+          "mean_voltage_mv": -58.09628082455223,
+          "endpoint_voltage_mv": -54.530997096955,
+          "minimum_pre_threshold_mv": -66.32527091766511,
+          "maximum_pre_threshold_mv": -44.96504458952824,
+          "spike_count": 1,
+          "rate_hz": 0.08333333333333333,
+          "first_spike_ms": 11.700000000000001,
+          "last_spike_ms": 11.700000000000001,
+          "min_signed_or_positive_state_mv": 0.0,
+          "max_signed_or_positive_state_mv": 1043.4021234369786,
+          "max_h": 70.99988040207757,
+          "max_stiffness": 0.3599994020103878,
+          "pre_threshold_below_minus75_fraction": 0.0,
+          "closest_threshold_margin_mv": 0.03495541047175976,
+          "event_counts": {
+            "accepted": 594456,
+            "source_blocked": 0,
+            "target_unavailable": 0,
+            "pending": 84
+          },
+          "windows": [
+            {
+              "start_ms": 0,
+              "end_ms": 500,
+              "spikes": 1,
+              "mean_post_voltage_mv": -58.01175224537153
+            },
+            {
+              "start_ms": 500,
+              "end_ms": 11000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.0949349584077
+            },
+            {
+              "start_ms": 11000,
+              "end_ms": 12000,
+              "spikes": 0,
+              "mean_post_voltage_mv": -58.15267670866007
+            }
+          ]
+        }
+      ],
+      "max_diagnostics": {
+        "tail_bound_mv": 0.0,
+        "inverse_residual": 9.986976523546076e-14,
+        "inverse_iterations": 3.0,
+        "attenuation_cutoff": 0.3651547429872483,
+        "production32_64_error_mv": 7.105427357601002e-15,
+        "upper_bound_excess_mv": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "error": null,
+  "claim_limit": "Conditional two-cell fixed-source factorial, one original seed. No physiology fit, seed robustness, recurrent test, body benchmark or default promotion. Lowerbound prior is engineering, no universal0mVupperbound.",
+  "contrasts": [
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -536.7385192000661,
+        "C1": -536.7385192000661,
+        "H0": -68.47447135063086,
+        "H1": -68.47447135063086
+      },
+      "H0-C0": 468.2640478494352,
+      "H1-C1": 468.2640478494352,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -437.94435133874566,
+        "C1": -437.94435133874566,
+        "H0": -59.03296378891361,
+        "H1": -59.03296378891361
+      },
+      "H0-C0": 378.91138754983206,
+      "H1-C1": 378.91138754983206,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -445.2935240127306,
+        "C1": -445.2935240127306,
+        "H0": -61.19235538766987,
+        "H1": -61.19235538766987
+      },
+      "H0-C0": 384.1011686250607,
+      "H1-C1": 384.1011686250607,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -472.70615265366564,
+        "C1": -472.70615265366564,
+        "H0": -62.708227187941304,
+        "H1": -65.9595869614401
+      },
+      "H0-C0": 409.99792546572434,
+      "H1-C1": 406.74656569222554,
+      "C1-C0": 0.0,
+      "H1-H0": -3.251359773498791,
+      "interaction": -3.251359773498791
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -383.5048084714794,
+        "C1": -383.59033383753786,
+        "H0": -58.19671785660526,
+        "H1": -58.19986401697888
+      },
+      "H0-C0": 325.3080906148741,
+      "H1-C1": 325.39046982055896,
+      "C1-C0": -0.08552536605844807,
+      "H1-H0": -0.0031461603736175903,
+      "interaction": 0.08237920568484469
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -376.27775761225035,
+        "C1": -376.27775761225035,
+        "H0": -58.930728955699244,
+        "H1": -58.930728955699244
+      },
+      "H0-C0": 317.3470286565511,
+      "H1-C1": 317.3470286565511,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_feedback",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 1,
+        "C1": 1,
+        "H0": 1,
+        "H1": 1
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -526.9291269864417,
+        "C1": -526.9291269864417,
+        "H0": -71.52059235701357,
+        "H1": -71.52059235701357
+      },
+      "H0-C0": 455.4085346294281,
+      "H1-C1": 455.4085346294281,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -437.4241581412114,
+        "C1": -437.4241581412114,
+        "H0": -59.10871595007245,
+        "H1": -59.10871595007245
+      },
+      "H0-C0": 378.31544219113897,
+      "H1-C1": 378.31544219113897,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -453.4512350594275,
+        "C1": -453.4512350594275,
+        "H0": -61.114547924497195,
+        "H1": -61.114547924497195
+      },
+      "H0-C0": 392.33668713493034,
+      "H1-C1": 392.33668713493034,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -466.85976698825937,
+        "C1": -466.85976698825937,
+        "H0": -73.27301613845569,
+        "H1": -73.27301613845569
+      },
+      "H0-C0": 393.5867508498037,
+      "H1-C1": 393.5867508498037,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -386.9192038774718,
+        "C1": -386.9192038774718,
+        "H0": -58.335612867328,
+        "H1": -58.335612867328
+      },
+      "H0-C0": 328.5835910101438,
+      "H1-C1": 328.5835910101438,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -429.3094623019002,
+        "C1": -429.3094623019002,
+        "H0": -60.90599258240891,
+        "H1": -60.90599258240891
+      },
+      "H0-C0": 368.40346971949134,
+      "H1-C1": 368.40346971949134,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -529.721519776896,
+        "C1": -529.721519776896,
+        "H0": -68.47507638144462,
+        "H1": -68.47507638144462
+      },
+      "H0-C0": 461.24644339545137,
+      "H1-C1": 461.24644339545137,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -434.7117473532457,
+        "C1": -434.7117473532457,
+        "H0": -58.961001389796365,
+        "H1": -58.961001389796365
+      },
+      "H0-C0": 375.75074596344933,
+      "H1-C1": 375.75074596344933,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -336.91774336408105,
+        "C1": -336.91774336408105,
+        "H0": -54.321398295331726,
+        "H1": -54.321398295331726
+      },
+      "H0-C0": 282.5963450687493,
+      "H1-C1": 282.5963450687493,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 67052,
+      "metric": "spike_count",
+      "values": {
+        "C0": 0,
+        "C1": 0,
+        "H0": 0,
+        "H1": 0
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "minimum_voltage_mv",
+      "values": {
+        "C0": -471.54952766399794,
+        "C1": -471.54952766399794,
+        "H0": -63.07823748503055,
+        "H1": -66.32527091766511
+      },
+      "H0-C0": 408.47129017896737,
+      "H1-C1": 405.2242567463328,
+      "C1-C0": 0.0,
+      "H1-H0": -3.2470334326345593,
+      "interaction": -3.2470334326345665
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "mean_voltage_mv",
+      "values": {
+        "C0": -377.8994658250764,
+        "C1": -377.9797420539823,
+        "H0": -58.09330804159196,
+        "H1": -58.09628082455223
+      },
+      "H0-C0": 319.8061577834844,
+      "H1-C1": 319.88346122943005,
+      "C1-C0": -0.08027622890591601,
+      "H1-H0": -0.0029727829602705924,
+      "interaction": 0.07730344594563121
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "endpoint_voltage_mv",
+      "values": {
+        "C0": -333.6620649562421,
+        "C1": -333.6620649562421,
+        "H0": -54.530997096955,
+        "H1": -54.530997096955
+      },
+      "H0-C0": 279.1310678592871,
+      "H1-C1": 279.1310678592871,
+      "C1-C0": 0.0,
+      "H1-H0": 0.0,
+      "interaction": 0.0
+    },
+    {
+      "condition": "sensory_only",
+      "target_id": 13314,
+      "metric": "spike_count",
+      "values": {
+        "C0": 1,
+        "C1": 1,
+        "H0": 1,
+        "H1": 1
+      },
+      "H0-C0": 0,
+      "H1-C1": 0,
+      "C1-C0": 0,
+      "H1-H0": 0,
+      "interaction": 0
+    }
+  ],
+  "passed": true,
+  "completed_utc": "2026-09-05T05:02:51.175981+00:00",
+  "artifacts": {
+    "validation/inhibitory-factorial/control-C0.npz": {
+      "sha256": "55557051d794635be1f8343ffc6d3bb3b836fbd49e7832ccae411b647010e009",
+      "bytes": 3569
+    },
+    "validation/inhibitory-factorial/control-C1.npz": {
+      "sha256": "85ac0b2486d9fbebe26b3f602547e651d888385c26946de698dc9d102872685f",
+      "bytes": 3978
+    },
+    "validation/inhibitory-factorial/control-H0.npz": {
+      "sha256": "b6c47e4a745a2ac1c404f6f10c1758214352f3423c7e07f4e1e3294b316fb3ef",
+      "bytes": 4510
+    },
+    "validation/inhibitory-factorial/control-H1.npz": {
+      "sha256": "3b7494bdffa18f3c97ee7ba7e28fead0a63636f6882a7f4a522f279157bad8ee",
+      "bytes": 4448
+    },
+    "validation/inhibitory-factorial/control-expected-invalid-input.npz": {
+      "sha256": "ce55f42dc6413fc3221fb6e1f314003e8cc0db878f9845437f36336f8b640d6d",
+      "bytes": 2442
+    },
+    "validation/inhibitory-factorial/controls.json": {
+      "sha256": "486c1c737f750f4bb8922fb9a10774cb029aba7d0b1a2ae6a559be774c123365",
+      "bytes": 4596
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.json": {
+      "sha256": "292e96180d4c097ffa1d8cbf7529174c810f902f360aa8cef4061c8a307b1dc3",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C0.npz": {
+      "sha256": "6a7dc0550b83b8c3c0fd12d2d073bfd5595829cdb059533ba465f622604c8eb9",
+      "bytes": 6672841
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.json": {
+      "sha256": "c6f7f3ec9c04f9f2ebfa279bf014c5d58a9eba52ded1ffd07cccc99a514414c9",
+      "bytes": 3471
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-C1.npz": {
+      "sha256": "b1a6d207b9ae12b1e4bdfc3d06c276812b69f10d6c3ac49ce488f67f03e41e91",
+      "bytes": 6673037
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.json": {
+      "sha256": "96f9e498812be4e3260c00f0e7777b6805bd07941c1919879983df6d8464ff42",
+      "bytes": 147555
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H0.npz": {
+      "sha256": "5d7b11619888000593712bd787b8628b6332bce6fcee8772995bb708190248c2",
+      "bytes": 12917029
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.json": {
+      "sha256": "d864d4337bb80c220803e2a3e8c5c4595f3e0d6c56c807da6074e04049a85583",
+      "bytes": 147547
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-H1.npz": {
+      "sha256": "895a0c7147ef089d19dc1688883bc710bf5b24d77a244b591721f77a87cf2187",
+      "bytes": 12917406
+    },
+    "validation/inhibitory-factorial/locomotor_feedback-events.npz": {
+      "sha256": "caf1c28d9188721275b31ef425abb2cc3b5193691994e69d1e8a8dfca936ece4",
+      "bytes": 3779003
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.json": {
+      "sha256": "bb3ca8668b92a9a14bea8f9e4dd8f2279bc9f6859e67f067d885fe9c79bb09d6",
+      "bytes": 4127
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C0.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.json": {
+      "sha256": "75e5ee7e66912ec22a613a08d2f1a617e07831e2abf8fdc6300342234cc0a087",
+      "bytes": 3469
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-C1.npz": {
+      "sha256": "7ab3ac631ff2ed127f87dd83aa80f8133470ae4f8f819f462094a25835ef8129",
+      "bytes": 6653094
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.json": {
+      "sha256": "51aa5eb9d09dfb80a07677817cb44b7fd46c7b117578db8fe7982a4cabcecc1b",
+      "bytes": 147231
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H0.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.json": {
+      "sha256": "42e9969542c68e01f58476375205e001e6a69703d618f1a899b69ef4660e1825",
+      "bytes": 147244
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-H1.npz": {
+      "sha256": "5d41146768784d3510d38b79c4d0fee365e9cf51855068384923984df480a7f4",
+      "bytes": 12879079
+    },
+    "validation/inhibitory-factorial/locomotor_sensory_block-events.npz": {
+      "sha256": "d06b89948573b0efb4c989d961d01ad6f55f5eddac425637aa58039ef524a4c6",
+      "bytes": 3740897
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.json": {
+      "sha256": "178e89fdc7d5cf458e4d2d9540bb994cfbd569e2fb38aed56dc4a52405646ccb",
+      "bytes": 4156
+    },
+    "validation/inhibitory-factorial/sensory_only-C0.npz": {
+      "sha256": "7a87fe91a106071d15363c13f149aef802ebfe86e7c6012cf75a89c50eeba621",
+      "bytes": 6676954
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.json": {
+      "sha256": "78d4107b55c981f5ccbbf68c2ffb41d643a312cd4fb2e51587eb219160460bb8",
+      "bytes": 3497
+    },
+    "validation/inhibitory-factorial/sensory_only-C1.npz": {
+      "sha256": "2715ff2cd17fce563454dc1ac63be96719aa27dfb2c34a8a732a2a20483950a3",
+      "bytes": 6677112
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.json": {
+      "sha256": "466f6a562e3a22acac4c7842d13da58e183e38c17f479f9b43fa9c8e60a6a211",
+      "bytes": 147182
+    },
+    "validation/inhibitory-factorial/sensory_only-H0.npz": {
+      "sha256": "21fc942b15616883ffbf5674435b03715da274482206234e28ed5745e76b7a9b",
+      "bytes": 12921555
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.json": {
+      "sha256": "1798c94ab765b8398f26c6385f13c5d041e283ebf5c508e6ce8926125ffc761b",
+      "bytes": 147192
+    },
+    "validation/inhibitory-factorial/sensory_only-H1.npz": {
+      "sha256": "277cc9d05bad5b8f3e313a8f6cb417b79285753f5664d60a393907bbb14c9040",
+      "bytes": 12921965
+    },
+    "validation/inhibitory-factorial/sensory_only-events.npz": {
+      "sha256": "8749dc7ae4aed477a90279bc858e8833f63c091696a8316a10719362d39d68e2",
+      "bytes": 3802163
+    }
+  }
+}

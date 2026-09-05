@@ -1,0 +1,298 @@
+{
+  "checks": [
+    {
+      "name": "C0:first_fire19_before_delivery",
+      "pass": true
+    },
+    {
+      "name": "C0:refractory_release41",
+      "pass": true
+    },
+    {
+      "name": "C0:explicit_firing_refractory_eligibility",
+      "pass": true
+    },
+    {
+      "name": "C0:reset_voltage",
+      "pass": true
+    },
+    {
+      "name": "C0:blocked_target_at_rest",
+      "pass": true
+    },
+    {
+      "name": "C0:all_dispositions",
+      "pass": true
+    },
+    {
+      "name": "C0:clear_then_freeze",
+      "pass": true
+    },
+    {
+      "name": "C0:no_input_passive",
+      "pass": true
+    },
+    {
+      "name": "C1:first_fire19_before_delivery",
+      "pass": true
+    },
+    {
+      "name": "C1:refractory_release41",
+      "pass": true
+    },
+    {
+      "name": "C1:explicit_firing_refractory_eligibility",
+      "pass": true
+    },
+    {
+      "name": "C1:reset_voltage",
+      "pass": true
+    },
+    {
+      "name": "C1:blocked_target_at_rest",
+      "pass": true
+    },
+    {
+      "name": "C1:all_dispositions",
+      "pass": true
+    },
+    {
+      "name": "C1:retained_firing_input",
+      "pass": true
+    },
+    {
+      "name": "C1:refractory_decay_receive",
+      "pass": true
+    },
+    {
+      "name": "C1:no_input_passive",
+      "pass": true
+    },
+    {
+      "name": "H0:first_fire19_before_delivery",
+      "pass": true
+    },
+    {
+      "name": "H0:refractory_release41",
+      "pass": true
+    },
+    {
+      "name": "H0:explicit_firing_refractory_eligibility",
+      "pass": true
+    },
+    {
+      "name": "H0:reset_voltage",
+      "pass": true
+    },
+    {
+      "name": "H0:blocked_target_at_rest",
+      "pass": true
+    },
+    {
+      "name": "H0:all_dispositions",
+      "pass": true
+    },
+    {
+      "name": "H0:clear_then_freeze",
+      "pass": true
+    },
+    {
+      "name": "H0:no_input_passive",
+      "pass": true
+    },
+    {
+      "name": "H1:first_fire19_before_delivery",
+      "pass": true
+    },
+    {
+      "name": "H1:refractory_release41",
+      "pass": true
+    },
+    {
+      "name": "H1:explicit_firing_refractory_eligibility",
+      "pass": true
+    },
+    {
+      "name": "H1:reset_voltage",
+      "pass": true
+    },
+    {
+      "name": "H1:blocked_target_at_rest",
+      "pass": true
+    },
+    {
+      "name": "H1:all_dispositions",
+      "pass": true
+    },
+    {
+      "name": "H1:retained_firing_input",
+      "pass": true
+    },
+    {
+      "name": "H1:refractory_decay_receive",
+      "pass": true
+    },
+    {
+      "name": "H1:refractory_h_decay_receive",
+      "pass": true
+    },
+    {
+      "name": "H1:no_input_passive",
+      "pass": true
+    },
+    {
+      "name": "package0:excitation_only_bitwise",
+      "pass": true
+    },
+    {
+      "name": "package0:single_impulse_analytic",
+      "pass": true
+    },
+    {
+      "name": "package1:excitation_only_bitwise",
+      "pass": true
+    },
+    {
+      "name": "package1:single_impulse_analytic",
+      "pass": true
+    },
+    {
+      "name": "synthetic_failure_prefix",
+      "pass": true
+    }
+  ],
+  "arms": {
+    "C0": {
+      "spike_ticks": [
+        19
+      ],
+      "event_disposition": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "C1": {
+      "spike_ticks": [
+        19,
+        41,
+        63
+      ],
+      "event_disposition": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "H0": {
+      "spike_ticks": [
+        19
+      ],
+      "event_disposition": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "H1": {
+      "spike_ticks": [
+        19,
+        41,
+        63
+      ],
+      "event_disposition": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  }
+}
