@@ -1,0 +1,90 @@
+{
+  "specimen": "M5H",
+  "sex": "Male",
+  "genotype": "OregonR",
+  "scan_file": "/Users/bernardo/Documents/Code/fruit-fly/data/raw/morphology/OregonR/Processed_microCT_scans/M1E.nii.gz",
+  "paired_trace_file": "/Users/bernardo/Documents/Code/fruit-fly/data/raw/morphology/OregonR/Centrelines/M5H.swc",
+  "nifti_shape": [
+    707,
+    707,
+    1075
+  ],
+  "nifti_units": [
+    "mm",
+    "unknown"
+  ],
+  "nifti_zooms": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "nifti_spatial_calibration_valid": false,
+  "inferred_voxel_pitch_mm": 0.002951345,
+  "trace_lattice_max_error_voxels": 1.1368683772161603e-13,
+  "calibration_basis": "Exact lattice in paired M5H.swc; mm interpretation agrees with reported 2.95 micrometre scanner sampling",
+  "downsample_stride": 3,
+  "threshold_method": "Otsu on downsampled uint8 volume",
+  "closing_radius_downsampled_voxels": 2,
+  "opening_radius_downsampled_voxels": 3,
+  "sensitivity": [
+    {
+      "threshold_uint8": 45,
+      "volume_mm3": 0.9137257533671929,
+      "scanner_axis_extent_mm": [
+        1.000505955,
+        1.266127005,
+        2.26663296
+      ],
+      "principal_axis_extent_mm": [
+        2.2753534231632777,
+        1.410778434637292,
+        0.9951711850177026
+      ],
+      "trace_inside_fraction": 1.0,
+      "mirrored_y_trace_inside_fraction": 0.5097493036211699
+    },
+    {
+      "threshold_uint8": 65,
+      "volume_mm3": 0.5172557072100721,
+      "scanner_axis_extent_mm": [
+        0.8942575349999999,
+        1.248418935,
+        2.24892489
+      ],
+      "principal_axis_extent_mm": [
+        2.2544753868526333,
+        1.3118149671681485,
+        0.8990466650013305
+      ],
+      "trace_inside_fraction": 0.9721448467966574,
+      "mirrored_y_trace_inside_fraction": 0.25719591457753016
+    },
+    {
+      "threshold_uint8": 85,
+      "volume_mm3": 0.30854042820112265,
+      "scanner_axis_extent_mm": [
+        0.84998736,
+        1.159878585,
+        1.98330384
+      ],
+      "principal_axis_extent_mm": [
+        1.9804365474806933,
+        1.1586784873132303,
+        0.8007182212469379
+      ],
+      "trace_inside_fraction": 0.861652739090065,
+      "mirrored_y_trace_inside_fraction": 0.1532033426183844
+    }
+  ],
+  "mesh_vertices": 224828,
+  "mesh_faces": 449920,
+  "mesh_sha256": "ae058e524d740543f85ab45afdb1ef6fc53923f8500f9518981020b92795878b",
+  "body_physics_ready": false,
+  "limitations": [
+    "Stained tissue envelope is not external cuticle",
+    "Fixed legs and wings overlap the body",
+    "Thresholding changes tissue extent and volume",
+    "No segment articulation, densities or inertias",
+    "No global female-to-male scaling ratio is justified by this extraction"
+  ]
+}

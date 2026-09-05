@@ -1,0 +1,859 @@
+{
+  "source_repository": "https://github.com/philshiu/Drosophila_brain_model",
+  "source_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+  "source_license": "MIT; reference code remains in its own checkout",
+  "release": "630",
+  "notebook_declared_release": "630",
+  "source_file_sha256": {
+    "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+    "figures.ipynb": "33cd73c0b4b4a291c51b7bab639c4fa28978e49e111ff0d6adbca5687addb84c",
+    "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+    "2023_03_23_completeness_630_final.csv": "e6b71e17671a9bdb05f55e4bc6774640a1418cb7a05125e0fc994ad40f9bfdfb",
+    "2023_03_23_connectivity_630_final.parquet": "94db8c650533bc36ffa3223f2e62325d5648b8d6bd31c3a4e1c804628c7557b3"
+  },
+  "graph_sha256": "a5c41aaa7defd25726959e0ad84a1425b6eefc110806b00adfed1084acf1bf9a",
+  "neuron_count": 127400,
+  "edge_count": 14687178,
+  "load_wall_seconds": 0.208098458009772,
+  "parameters": {
+    "dt_ms": 0.1,
+    "resting_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_tau_ms": 20.0,
+    "synapse_tau_ms": 5.0,
+    "refractory_ms": 2.2,
+    "delay_ms": 1.8,
+    "poisson_weight_mv": 68.75
+  },
+  "sugar_grn_ids": [
+    720575940624963786,
+    720575940630233916,
+    720575940637568838,
+    720575940638202345,
+    720575940617000768,
+    720575940630797113,
+    720575940632889389,
+    720575940621754367,
+    720575940621502051,
+    720575940640649691,
+    720575940639332736,
+    720575940616885538,
+    720575940639198653,
+    720575940620900446,
+    720575940617937543,
+    720575940632425919,
+    720575940633143833,
+    720575940612670570,
+    720575940628853239,
+    720575940629176663,
+    720575940611875570
+  ],
+  "readout": {
+    "name": "MN9",
+    "source_id": 720575940660219265
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python_version": "3.12.14",
+  "numpy_version": "2.5.2",
+  "scope": "Selected source-notebook sugar-GRN activation conditions; not all figures or biological predictive-accuracy replication",
+  "published_default_duration_ms": 1000,
+  "published_default_trials": 30,
+  "duration_ms": 1000.0,
+  "trials_per_rate": 30,
+  "rates_hz": [
+    0.0,
+    100.0,
+    200.0
+  ],
+  "conditions": [
+    {
+      "input_rate_hz": 0.0,
+      "mn9_mean_hz": 0.0,
+      "mn9_std_hz": 0.0,
+      "mn9_sem_hz": 0.0,
+      "trials": [
+        {
+          "seed": 1000,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1898758329916745
+        },
+        {
+          "seed": 1001,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1947259589796886
+        },
+        {
+          "seed": 1002,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1916945000411943
+        },
+        {
+          "seed": 1003,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.186546124983579
+        },
+        {
+          "seed": 1004,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.193475459003821
+        },
+        {
+          "seed": 1005,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1950987500022165
+        },
+        {
+          "seed": 1006,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.210329457942862
+        },
+        {
+          "seed": 1007,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1905413329950534
+        },
+        {
+          "seed": 1008,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2019443330354989
+        },
+        {
+          "seed": 1009,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1921194159658626
+        },
+        {
+          "seed": 1010,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.187859874975402
+        },
+        {
+          "seed": 1011,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2079111670027487
+        },
+        {
+          "seed": 1012,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2058055409579538
+        },
+        {
+          "seed": 1013,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2169562079943717
+        },
+        {
+          "seed": 1014,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2089631249546073
+        },
+        {
+          "seed": 1015,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.205951499985531
+        },
+        {
+          "seed": 1016,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2041137079941109
+        },
+        {
+          "seed": 1017,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.20861375000095
+        },
+        {
+          "seed": 1018,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2948314589448273
+        },
+        {
+          "seed": 1019,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.236129708995577
+        },
+        {
+          "seed": 1020,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2226130830240436
+        },
+        {
+          "seed": 1021,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2241186670144089
+        },
+        {
+          "seed": 1022,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2208008750458248
+        },
+        {
+          "seed": 1023,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2189238329883665
+        },
+        {
+          "seed": 1024,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2287980419932865
+        },
+        {
+          "seed": 1025,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2135012499638833
+        },
+        {
+          "seed": 1026,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2251651660189964
+        },
+        {
+          "seed": 1027,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.1984528339817189
+        },
+        {
+          "seed": 1028,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2246821250300854
+        },
+        {
+          "seed": 1029,
+          "mn9_spikes": 0,
+          "mn9_rate_hz": 0.0,
+          "network_spikes": 0,
+          "traversed_edges": 0,
+          "wall_seconds": 1.2014086249982938
+        }
+      ]
+    },
+    {
+      "input_rate_hz": 100.0,
+      "mn9_mean_hz": 68.16666666666667,
+      "mn9_std_hz": 4.654129299904536,
+      "mn9_sem_hz": 0.8497238677011469,
+      "trials": [
+        {
+          "seed": 1000,
+          "mn9_spikes": 65,
+          "mn9_rate_hz": 65.0,
+          "network_spikes": 9193,
+          "traversed_edges": 1388468,
+          "wall_seconds": 1.2229379169875756
+        },
+        {
+          "seed": 1001,
+          "mn9_spikes": 69,
+          "mn9_rate_hz": 69.0,
+          "network_spikes": 9883,
+          "traversed_edges": 1497600,
+          "wall_seconds": 1.2285154999699444
+        },
+        {
+          "seed": 1002,
+          "mn9_spikes": 74,
+          "mn9_rate_hz": 74.0,
+          "network_spikes": 10035,
+          "traversed_edges": 1520280,
+          "wall_seconds": 1.243575000029523
+        },
+        {
+          "seed": 1003,
+          "mn9_spikes": 60,
+          "mn9_rate_hz": 60.0,
+          "network_spikes": 9546,
+          "traversed_edges": 1452080,
+          "wall_seconds": 1.2278807500260882
+        },
+        {
+          "seed": 1004,
+          "mn9_spikes": 67,
+          "mn9_rate_hz": 67.0,
+          "network_spikes": 10406,
+          "traversed_edges": 1578084,
+          "wall_seconds": 1.2361086659948342
+        },
+        {
+          "seed": 1005,
+          "mn9_spikes": 69,
+          "mn9_rate_hz": 69.0,
+          "network_spikes": 9879,
+          "traversed_edges": 1504994,
+          "wall_seconds": 1.2316344170249067
+        },
+        {
+          "seed": 1006,
+          "mn9_spikes": 74,
+          "mn9_rate_hz": 74.0,
+          "network_spikes": 9737,
+          "traversed_edges": 1472972,
+          "wall_seconds": 1.2248315420001745
+        },
+        {
+          "seed": 1007,
+          "mn9_spikes": 66,
+          "mn9_rate_hz": 66.0,
+          "network_spikes": 9696,
+          "traversed_edges": 1479314,
+          "wall_seconds": 1.2407478330424055
+        },
+        {
+          "seed": 1008,
+          "mn9_spikes": 73,
+          "mn9_rate_hz": 73.0,
+          "network_spikes": 9620,
+          "traversed_edges": 1465673,
+          "wall_seconds": 1.2748025420005433
+        },
+        {
+          "seed": 1009,
+          "mn9_spikes": 78,
+          "mn9_rate_hz": 78.0,
+          "network_spikes": 10369,
+          "traversed_edges": 1575174,
+          "wall_seconds": 1.2970262079616077
+        },
+        {
+          "seed": 1010,
+          "mn9_spikes": 64,
+          "mn9_rate_hz": 64.0,
+          "network_spikes": 9840,
+          "traversed_edges": 1498063,
+          "wall_seconds": 1.2520501670078374
+        },
+        {
+          "seed": 1011,
+          "mn9_spikes": 55,
+          "mn9_rate_hz": 55.0,
+          "network_spikes": 8944,
+          "traversed_edges": 1349030,
+          "wall_seconds": 1.2647861669538543
+        },
+        {
+          "seed": 1012,
+          "mn9_spikes": 64,
+          "mn9_rate_hz": 64.0,
+          "network_spikes": 10109,
+          "traversed_edges": 1555431,
+          "wall_seconds": 1.2885339579661377
+        },
+        {
+          "seed": 1013,
+          "mn9_spikes": 70,
+          "mn9_rate_hz": 70.0,
+          "network_spikes": 9836,
+          "traversed_edges": 1493502,
+          "wall_seconds": 1.2579319579526782
+        },
+        {
+          "seed": 1014,
+          "mn9_spikes": 68,
+          "mn9_rate_hz": 68.0,
+          "network_spikes": 9669,
+          "traversed_edges": 1460160,
+          "wall_seconds": 1.288703084050212
+        },
+        {
+          "seed": 1015,
+          "mn9_spikes": 70,
+          "mn9_rate_hz": 70.0,
+          "network_spikes": 9464,
+          "traversed_edges": 1448621,
+          "wall_seconds": 1.2526946250000037
+        },
+        {
+          "seed": 1016,
+          "mn9_spikes": 69,
+          "mn9_rate_hz": 69.0,
+          "network_spikes": 9711,
+          "traversed_edges": 1475857,
+          "wall_seconds": 1.2534055829746649
+        },
+        {
+          "seed": 1017,
+          "mn9_spikes": 67,
+          "mn9_rate_hz": 67.0,
+          "network_spikes": 9736,
+          "traversed_edges": 1464183,
+          "wall_seconds": 1.2355535840033554
+        },
+        {
+          "seed": 1018,
+          "mn9_spikes": 64,
+          "mn9_rate_hz": 64.0,
+          "network_spikes": 9449,
+          "traversed_edges": 1447053,
+          "wall_seconds": 1.276180499990005
+        },
+        {
+          "seed": 1019,
+          "mn9_spikes": 65,
+          "mn9_rate_hz": 65.0,
+          "network_spikes": 10017,
+          "traversed_edges": 1535293,
+          "wall_seconds": 1.351784874976147
+        },
+        {
+          "seed": 1020,
+          "mn9_spikes": 71,
+          "mn9_rate_hz": 71.0,
+          "network_spikes": 10189,
+          "traversed_edges": 1558415,
+          "wall_seconds": 1.252365207998082
+        },
+        {
+          "seed": 1021,
+          "mn9_spikes": 72,
+          "mn9_rate_hz": 72.0,
+          "network_spikes": 10180,
+          "traversed_edges": 1551416,
+          "wall_seconds": 1.2380641250056215
+        },
+        {
+          "seed": 1022,
+          "mn9_spikes": 64,
+          "mn9_rate_hz": 64.0,
+          "network_spikes": 9540,
+          "traversed_edges": 1428795,
+          "wall_seconds": 1.2583420839509927
+        },
+        {
+          "seed": 1023,
+          "mn9_spikes": 68,
+          "mn9_rate_hz": 68.0,
+          "network_spikes": 9497,
+          "traversed_edges": 1426153,
+          "wall_seconds": 1.2554957080283202
+        },
+        {
+          "seed": 1024,
+          "mn9_spikes": 67,
+          "mn9_rate_hz": 67.0,
+          "network_spikes": 9921,
+          "traversed_edges": 1512550,
+          "wall_seconds": 1.2521190829575062
+        },
+        {
+          "seed": 1025,
+          "mn9_spikes": 71,
+          "mn9_rate_hz": 71.0,
+          "network_spikes": 9821,
+          "traversed_edges": 1489052,
+          "wall_seconds": 1.2453050420153886
+        },
+        {
+          "seed": 1026,
+          "mn9_spikes": 65,
+          "mn9_rate_hz": 65.0,
+          "network_spikes": 9523,
+          "traversed_edges": 1440717,
+          "wall_seconds": 1.255986500007566
+        },
+        {
+          "seed": 1027,
+          "mn9_spikes": 74,
+          "mn9_rate_hz": 74.0,
+          "network_spikes": 9799,
+          "traversed_edges": 1496435,
+          "wall_seconds": 1.26363029202912
+        },
+        {
+          "seed": 1028,
+          "mn9_spikes": 70,
+          "mn9_rate_hz": 70.0,
+          "network_spikes": 9953,
+          "traversed_edges": 1510612,
+          "wall_seconds": 1.2686640410101973
+        },
+        {
+          "seed": 1029,
+          "mn9_spikes": 72,
+          "mn9_rate_hz": 72.0,
+          "network_spikes": 10000,
+          "traversed_edges": 1521639,
+          "wall_seconds": 1.2667997920070775
+        }
+      ]
+    },
+    {
+      "input_rate_hz": 200.0,
+      "mn9_mean_hz": 92.63333333333334,
+      "mn9_std_hz": 5.169428257142866,
+      "mn9_sem_hz": 0.943804155280588,
+      "trials": [
+        {
+          "seed": 1000,
+          "mn9_spikes": 89,
+          "mn9_rate_hz": 89.0,
+          "network_spikes": 16647,
+          "traversed_edges": 2554066,
+          "wall_seconds": 1.2713759999605827
+        },
+        {
+          "seed": 1001,
+          "mn9_spikes": 91,
+          "mn9_rate_hz": 91.0,
+          "network_spikes": 16760,
+          "traversed_edges": 2558044,
+          "wall_seconds": 1.2643721670028754
+        },
+        {
+          "seed": 1002,
+          "mn9_spikes": 89,
+          "mn9_rate_hz": 89.0,
+          "network_spikes": 16936,
+          "traversed_edges": 2598148,
+          "wall_seconds": 1.2703026669914834
+        },
+        {
+          "seed": 1003,
+          "mn9_spikes": 95,
+          "mn9_rate_hz": 95.0,
+          "network_spikes": 17041,
+          "traversed_edges": 2613348,
+          "wall_seconds": 1.262542249984108
+        },
+        {
+          "seed": 1004,
+          "mn9_spikes": 89,
+          "mn9_rate_hz": 89.0,
+          "network_spikes": 17351,
+          "traversed_edges": 2674325,
+          "wall_seconds": 1.2582288340199739
+        },
+        {
+          "seed": 1005,
+          "mn9_spikes": 92,
+          "mn9_rate_hz": 92.0,
+          "network_spikes": 16857,
+          "traversed_edges": 2574876,
+          "wall_seconds": 1.2673310420359485
+        },
+        {
+          "seed": 1006,
+          "mn9_spikes": 94,
+          "mn9_rate_hz": 94.0,
+          "network_spikes": 17126,
+          "traversed_edges": 2635783,
+          "wall_seconds": 1.2672291659982875
+        },
+        {
+          "seed": 1007,
+          "mn9_spikes": 98,
+          "mn9_rate_hz": 98.0,
+          "network_spikes": 16841,
+          "traversed_edges": 2613575,
+          "wall_seconds": 1.3034818750456907
+        },
+        {
+          "seed": 1008,
+          "mn9_spikes": 88,
+          "mn9_rate_hz": 88.0,
+          "network_spikes": 16641,
+          "traversed_edges": 2546128,
+          "wall_seconds": 1.3160283329780214
+        },
+        {
+          "seed": 1009,
+          "mn9_spikes": 96,
+          "mn9_rate_hz": 96.0,
+          "network_spikes": 17254,
+          "traversed_edges": 2650168,
+          "wall_seconds": 1.3102177919936366
+        },
+        {
+          "seed": 1010,
+          "mn9_spikes": 93,
+          "mn9_rate_hz": 93.0,
+          "network_spikes": 16639,
+          "traversed_edges": 2537826,
+          "wall_seconds": 1.2631220420007594
+        },
+        {
+          "seed": 1011,
+          "mn9_spikes": 89,
+          "mn9_rate_hz": 89.0,
+          "network_spikes": 16961,
+          "traversed_edges": 2592244,
+          "wall_seconds": 1.2606123750447296
+        },
+        {
+          "seed": 1012,
+          "mn9_spikes": 98,
+          "mn9_rate_hz": 98.0,
+          "network_spikes": 17010,
+          "traversed_edges": 2584623,
+          "wall_seconds": 1.2618412500014529
+        },
+        {
+          "seed": 1013,
+          "mn9_spikes": 94,
+          "mn9_rate_hz": 94.0,
+          "network_spikes": 16925,
+          "traversed_edges": 2595301,
+          "wall_seconds": 1.261747458949685
+        },
+        {
+          "seed": 1014,
+          "mn9_spikes": 85,
+          "mn9_rate_hz": 85.0,
+          "network_spikes": 16751,
+          "traversed_edges": 2579701,
+          "wall_seconds": 1.2625038340338506
+        },
+        {
+          "seed": 1015,
+          "mn9_spikes": 104,
+          "mn9_rate_hz": 104.0,
+          "network_spikes": 16950,
+          "traversed_edges": 2602213,
+          "wall_seconds": 1.2600251660333015
+        },
+        {
+          "seed": 1016,
+          "mn9_spikes": 95,
+          "mn9_rate_hz": 95.0,
+          "network_spikes": 17710,
+          "traversed_edges": 2710669,
+          "wall_seconds": 1.2985285419854335
+        },
+        {
+          "seed": 1017,
+          "mn9_spikes": 94,
+          "mn9_rate_hz": 94.0,
+          "network_spikes": 17075,
+          "traversed_edges": 2620974,
+          "wall_seconds": 1.2786769170197658
+        },
+        {
+          "seed": 1018,
+          "mn9_spikes": 99,
+          "mn9_rate_hz": 99.0,
+          "network_spikes": 17217,
+          "traversed_edges": 2643061,
+          "wall_seconds": 1.2570465420139953
+        },
+        {
+          "seed": 1019,
+          "mn9_spikes": 97,
+          "mn9_rate_hz": 97.0,
+          "network_spikes": 16707,
+          "traversed_edges": 2574458,
+          "wall_seconds": 1.266289292019792
+        },
+        {
+          "seed": 1020,
+          "mn9_spikes": 96,
+          "mn9_rate_hz": 96.0,
+          "network_spikes": 16914,
+          "traversed_edges": 2582822,
+          "wall_seconds": 1.2887018339824863
+        },
+        {
+          "seed": 1021,
+          "mn9_spikes": 106,
+          "mn9_rate_hz": 106.0,
+          "network_spikes": 17339,
+          "traversed_edges": 2665049,
+          "wall_seconds": 1.276550667011179
+        },
+        {
+          "seed": 1022,
+          "mn9_spikes": 91,
+          "mn9_rate_hz": 91.0,
+          "network_spikes": 16666,
+          "traversed_edges": 2558289,
+          "wall_seconds": 1.271852417034097
+        },
+        {
+          "seed": 1023,
+          "mn9_spikes": 90,
+          "mn9_rate_hz": 90.0,
+          "network_spikes": 16824,
+          "traversed_edges": 2583262,
+          "wall_seconds": 1.2590184999862686
+        },
+        {
+          "seed": 1024,
+          "mn9_spikes": 86,
+          "mn9_rate_hz": 86.0,
+          "network_spikes": 17006,
+          "traversed_edges": 2603250,
+          "wall_seconds": 1.2653596659656614
+        },
+        {
+          "seed": 1025,
+          "mn9_spikes": 85,
+          "mn9_rate_hz": 85.0,
+          "network_spikes": 17154,
+          "traversed_edges": 2636573,
+          "wall_seconds": 1.266812290996313
+        },
+        {
+          "seed": 1026,
+          "mn9_spikes": 87,
+          "mn9_rate_hz": 87.0,
+          "network_spikes": 16931,
+          "traversed_edges": 2600013,
+          "wall_seconds": 1.2601427920162678
+        },
+        {
+          "seed": 1027,
+          "mn9_spikes": 88,
+          "mn9_rate_hz": 88.0,
+          "network_spikes": 17111,
+          "traversed_edges": 2635147,
+          "wall_seconds": 1.259582666971255
+        },
+        {
+          "seed": 1028,
+          "mn9_spikes": 91,
+          "mn9_rate_hz": 91.0,
+          "network_spikes": 17121,
+          "traversed_edges": 2611186,
+          "wall_seconds": 1.2612790419952944
+        },
+        {
+          "seed": 1029,
+          "mn9_spikes": 90,
+          "mn9_rate_hz": 90.0,
+          "network_spikes": 16767,
+          "traversed_edges": 2580459,
+          "wall_seconds": 1.2599943749955855
+        }
+      ]
+    }
+  ],
+  "numerical_parity": {
+    "kind": "full_graph_numerical_parity_fixed_external_event_replay",
+    "duration_ms": 100.0,
+    "rate_hz": 150,
+    "seed": 1000,
+    "external_voltage_event_count": 321,
+    "engine_spikes": 1309,
+    "brian2_spikes": 1309,
+    "all_spike_indices_equal": true,
+    "all_spike_ticks_equal": true,
+    "max_final_voltage_error_mv": 2.6022618868637437e-06,
+    "max_final_synaptic_error_mv": 2.2956134841933817e-06,
+    "engine_wall_seconds": 0.18830458301817998,
+    "brian2_build_wall_seconds": 0.4880829160101712,
+    "brian2_run_wall_seconds": 0.8855531250010245,
+    "brian2_version": "2.10.1",
+    "parameter_precision_difference": "engine edge weights float32, original Brian2 weights float64",
+    "passed": true
+  },
+  "completed": true,
+  "interpretation": {
+    "quiet_control_mn9_zero": true,
+    "response_comparison_to_published_figure_data": "Not quantified; published numerical source figure values were not imported. Report measured rates without claiming an empirical acceptance threshold.",
+    "missing_783_sugar_grn": "720575940620900446; source ID does not exist in supplied v783 completeness table; crosswalk not established"
+  },
+  "numerical_parity_1000_ms": {
+    "kind": "full_graph_numerical_parity_fixed_external_event_replay",
+    "duration_ms": 1000,
+    "rate_hz": 150,
+    "seed": 1000,
+    "external_voltage_event_count": 3232,
+    "engine_spikes": 13749,
+    "brian2_spikes": 13749,
+    "all_spike_indices_equal": true,
+    "all_spike_ticks_equal": true,
+    "max_final_voltage_error_mv": 1.898881734518909e-06,
+    "max_final_synaptic_error_mv": 3.023303221993956e-06,
+    "engine_wall_seconds": 1.9935827080043964,
+    "brian2_build_wall_seconds": 0.44197695900220424,
+    "brian2_run_wall_seconds": 7.164448333031032,
+    "brian2_version": "2.10.1",
+    "parameter_precision_difference": "engine edge weights float32, original Brian2 weights float64",
+    "passed": true
+  }
+}

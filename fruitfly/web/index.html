@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101619">
+  <title>Fruit fly · Live lab</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Fruit fly lab home"><span class="brand-icon" aria-hidden="true">↟</span> FRUIT FLY <span class="brand-divider">/</span> <span class="brand-light">LIVE LAB</span></a>
+    <div class="connection"><span id="status-dot" class="dot"></span><span id="status-label" role="status">Connecting</span></div>
+  </header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">EMBODIED NEURAL SIMULATION</p><h1>One fly. A world to explore.</h1><p class="subtitle">Male circuit model · articulated body · physical arena</p><p class="morphology-note">Female-derived body geometry; male morphology is not yet reconstructed.</p></div><span class="specimen">D. melanogaster <span>01 / ♂</span></span></div>
+    <div class="assay-bar" id="assay-bar"><strong id="assay-label">Loading assay</strong><span id="assay-description">The experiment mode will appear here.</span></div>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section class="workspace" aria-label="Simulation and controls">
+      <div class="main-column">
+        <div class="viewport-card">
+          <div class="viewport-top"><div class="live-label"><span class="dot live"></span> <span id="frame-label">WAITING FOR SIMULATION</span></div><span id="frame-age">—</span></div>
+          <div class="viewport" id="viewport"><img id="simulation-image" alt="Live MuJoCo rendering of a single fruit fly and its arena" hidden><div id="loading" class="loading"><div class="loader"></div><strong>Preparing the arena</strong><span>Loading the body, neural model, and renderer.</span></div><div class="viewport-caption"><span>MuJoCo · live render</span><span id="coordinates">x — &nbsp; y — mm</span></div></div>
+          <div class="transport"><button id="pause" class="button primary" disabled><span id="pause-icon" aria-hidden="true">Ⅱ</span> <span id="pause-label">Pause</span></button><button id="reset" class="button quiet" disabled aria-label="Reset simulation">↺ <span>Reset</span></button><div class="camera-select" role="group" aria-label="Camera angle"><button data-camera="overview" class="camera">Arena</button><button data-camera="follow" class="camera selected" aria-pressed="true">Follow</button><button data-camera="side" class="camera">Side</button></div><label class="speed-label" for="speed">Speed <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1× target</option><option value="2">2× target</option><option value="0">Maximum</option></select></label></div>
+        </div>
+        <div class="metrics" aria-label="Simulation metrics"><div class="metric"><span class="metric-label">SIMULATED TIME</span><strong id="time">0.00 <small>s</small></strong></div><div class="metric"><span class="metric-label">ACTUAL SPEED</span><strong id="realtime">— <small>× realtime</small></strong></div><div class="metric"><span class="metric-label">BEHAVIOR</span><strong id="behavior" class="behavior">Awaiting state</strong></div><div class="metric"><span class="metric-label">ACTIVE NEURONS</span><strong id="active-neurons">—</strong></div></div>
+        <section class="panel neural-panel"><div class="panel-title"><h2>Neural activity</h2><span id="neural-subtitle">Waiting for neural telemetry</span></div><div class="neural-summary"><span><strong id="neuron-count">—</strong> neurons</span><span><strong id="edge-count">—</strong> connections</span><span><strong id="spike-count">—</strong> spikes / update</span><span id="backend" class="pill">—</span></div><svg id="activity-chart" viewBox="0 0 800 96" role="img" aria-label="Recent active neuron counts"><path id="chart-fill" class="chart-fill"></path><path id="chart-line" class="chart-line"></path></svg><div class="chart-caption"><span>Recent active neurons · one sample per rendered update</span><span id="chart-range">—</span></div><div id="output-rates" class="output-rates"></div></section>
+      </div>
+      <aside class="sidebar" aria-label="Experiment controls">
+        <section class="panel"><div class="panel-title"><h2>Stimulus field</h2><span class="panel-index">01</span></div><p class="panel-copy">Change the sensory inputs while the fly explores.</p><div class="control"><div class="control-heading"><label for="odor">Food odor</label><output id="odor-value" for="odor">1.00×</output></div><input id="odor" type="range" min="0" max="2" step="0.05" value="1"><div class="range-labels"><span>Off</span><span>2× intensity</span></div></div><div class="control"><div class="control-heading"><label for="light">Ambient light</label><output id="light-value" for="light">1.00×</output></div><input id="light" type="range" min="0" max="2" step="0.05" value="1"><div class="range-labels"><span>Dark</span><span>Bright</span></div></div><div class="sensor-grid"><div><span>LEFT ODOR</span><strong id="odor-left">—</strong></div><div><span>RIGHT ODOR</span><strong id="odor-right">—</strong></div><div><span>FOOD CONTACT</span><strong id="food-contact">—</strong></div><div><span>WATER CONTACT</span><strong id="water-contact">—</strong></div></div></section>
+        <section class="panel"><div class="panel-title"><h2>Internal state</h2><span class="panel-index">02</span></div><div id="physiology" class="physiology"><div class="state-row"><span>Energy</span><strong id="energy-value">—</strong><meter id="energy" min="0" max="1" value="0"></meter></div><div class="state-row"><span>Hydration</span><strong id="hydration-value">—</strong><meter id="hydration" min="0" max="1" value="0"></meter></div><div class="state-row"><span>Crop fullness</span><strong id="crop-value">—</strong><meter id="crop" min="0" max="1" value="0"></meter></div></div><p class="footnote">Normalized model variables, not measured physiology.</p></section>
+        <section class="panel intervention"><div class="panel-title"><h2>Motor output intervention</h2><span class="panel-index">03</span></div><label class="toggle-row" for="ablation"><span><span id="intervention-label">Mute motor readout</span><small id="intervention-target">Target: motor readout</small></span><input id="ablation" type="checkbox" role="switch"></label><p class="footnote" id="ablation-note">Mutes the motor readout only. Neural spikes continue to be simulated.</p></section>
+        <section class="panel provenance"><div class="panel-title"><h2>Model & evidence</h2></div><p id="provenance">Male connectome drives a simplified spiking network coupled to a simulated body. Wiring, neural dynamics, sensory mappings, and body mechanics have different levels of evidence.</p><details><summary>Current approximations</summary><p id="warnings">Loading model limitations…</p></details></section>
+      </aside>
+    </section>
+    <footer><span>Local experiment · 127.0.0.1 <span class="footer-separator">/</span> No video is prerecorded</span><span>Space pause / resume <span class="footer-separator">·</span> 1–3 camera</span></footer>
+  </main>
+</body>
+</html>

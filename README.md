@@ -1,28 +1,45 @@
 # Embodied digital Drosophila
 
-A research workspace for two adult *Drosophila melanogaster* with sex-specific neural models, bodies, sensory inputs, internal state, and reproductive behavior in a shared 3D environment.
+A research simulator coupling the **166,700-neuron male CNS** to one articulated MuJoCo fly. Current scope: one male; a second fly and paired reproduction are deferred. Research, source audits, negative results and hypotheses are retained here.
 
-**Current status:** sourced research and an executed two-body MuJoCo/sensory prototype. A whole-brain/whole-CNS controller, sex-specific body geometry, biological feeding, and reproduction have **not** been implemented. Prototype movement uses a documented CPG/reflex controller.
+**Working:** full retained MaleCNS import, persistent sparse spiking engine, physical body with bilateral odor/contact sensing and finite resources, a live browser viewer, and neural-to-motor positive/negative controls. **Not yet validated:** odor-guided foraging, a biologically calibrated male neural model, male articulated morphology, or the full behavioral repertoire. The body and gait controller are declared NeuroMechFly/CPG surrogates. See [current evidence](docs/STATUS.md) and the [single-fly plan](docs/PLAN.md).
 
-Start with the [research overview](research/README.md), then the [system architecture](research/04-system-architecture.md) and [implementation/validation roadmap](research/05-build-roadmap-and-validation.md). [Candidate insights](research/06-hypotheses-and-open-questions.md) distinguish hypotheses from established findings. [Paper access and downloads](research/09-access-and-downloads.md) records what is available without institutional access.
+## Install and watch
 
-## Run the existing prototype
-
-The local `.venv` is installed. From this directory:
+Python 3.12 and uv were used on Apple Silicon. From the repository root:
 
 ```sh
-.venv/bin/python prototype/arena_smoke.py --seconds 1
-.venv/bin/python prototype/stimulus_smoke.py --seconds 1
+uv venv --python 3.12
+uv pip install -e '.[test]'
+.venv/bin/python -m fruitfly.data build
+.venv/bin/python -m fruitfly.data verify
+.venv/bin/python -m fruitfly.viewer --config configs/male-sensory.json --port 8765
 ```
 
-The second command adds a food patch, a water marker, bilateral odor sampling and tarsal food-contact sensing. It saves a rendered arena, sensory traces and metrics in `prototype/output/`. It does not connect those sensory signals to a neural controller or consume food.
+Open [the local viewer](http://127.0.0.1:8765). It shows actual current simulation frames, neural counts, sensory readings and resource state, with pause/reset, three cameras, odor/light controls and a motor-readout mute. The server binds to loopback.
 
-See [prototype setup and limitations](prototype/README.md) for clean installation, pinned dependencies, physical units and measured results.
+The data command downloads about **1.11 GB** from the authors' public release, verifies pinned SHA-256 checksums, and builds 25,582,938 directed neuron-pair edges representing 124,177,617 contacts. All selected neurons, including 217 isolated neurons, remain present. Raw/processed data are ignored by Git; the [provenance manifest](data/malecns-manifest.json) is tracked. Transmitter-to-sign and contact-to-weight rules are explicitly recorded assumptions.
 
-![Two physical fly bodies and stimulus markers](prototype/output/arena-food.png)
+The sensory assay currently rests: transferred Shiu dynamics over-suppress the walking readouts. This is a calibration failure, not evidence that the biological fly would remain still. A separately labeled **direct DNg97 stimulation** assay demonstrates motor coupling:
 
-The image shows two copies of female-derived NeuroMechFly anatomy, not a validated male/female pair. Yellow marks food geometry; blue marks water geometry. Odor is sampled numerically and is not visible in the scene.
+```sh
+.venv/bin/python -m fruitfly.viewer --config configs/male-motor-calibration.json --port 8766
+```
 
-## Research provenance
+That assay is motor calibration, not emergent foraging. Light currently changes the physical scene; validated visual-to-neural mapping remains pending.
 
-Checked on 2026-09-04 (America/Los_Angeles). The supplied 2024/2026 PDFs are retained unchanged; [metadata and hashes](research/provided-papers.json) identify the exact files. Domain-specific JSON source registries preserve access/review depth, data versions, commit IDs and known contradictions. The survey is broad and targeted, not an exhaustive systematic review of every fly system.
+## Validate and investigate
+
+```sh
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/validate_loop.py
+```
+
+Runs write configuration, graph hash, exact input/output IDs, dependency versions, telemetry, interventions and final state to `runs/`. Fixed coupling boundaries preserve behavior across browser update chunks. Missing graph data and invalid timing fail explicitly.
+
+- [Neural engine](docs/neural-engine.md), [original Shiu replication](docs/replication.md), [male motor diagnosis](docs/motor-calibration.md)
+- [Body and units](docs/body-runtime.md), [sensory mapping evidence](docs/sensory-mapping-evidence.md), [viewer](docs/viewer.md)
+- [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
+- [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
+
+The supplied PDFs remain unchanged; [metadata and hashes](research/provided-papers.json) identify them. The [earlier two-body prototype](prototype/README.md) remains as historical scaffolding. See [third-party attribution](THIRD_PARTY.md).
