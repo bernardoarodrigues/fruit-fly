@@ -1,0 +1,7 @@
+# KC contact locations: available data and an unresolved join
+
+2026-09-05. The retained flat-connectome file contains only `body_pre`, `body_post` and `weight` across 2,318 record batches. This is verified local schema evidence, not a claim that the source project lacks spatial data. The [availability receipt](../validation/malecns-compartment-availability.json) records its checksum and live remote object metadata.
+
+The official MaleCNS v1.0 release also offers a synaptic-partner table with both partner coordinates/body IDs and `primary_post` neuropil, plus a synaptic-point table containing locations, kind and ROI annotations. Live object headers report 6,777,179,098 and 13,061,489,098 bytes respectively. The point coordinates use 8 nm voxel units. Native SWC skeletons are separately available. These are documented public resources; this audit downloaded only the documentation and checked object headers, not the large data files. [Official download documentation](https://male-cns.janelia.org/download/)
+
+Potential next use: retain the exact current KC/PN/APL IDs, join synapse partners and neuropils at the same version/confidence threshold, and partition the current directed contacts by location. Verify summed contacts against the retained flat graph before interpreting the partition. A neuropil label alone does not identify a claw or prove an axonal versus somatic electrical effect. Synapse positions, morphology, and any inferred compartment map must remain distinct. No compartment model or new transmission rule is justified by availability alone.

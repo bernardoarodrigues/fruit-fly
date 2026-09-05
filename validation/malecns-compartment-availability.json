@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T20:36:37.938246+00:00",
+  "passed": true,
+  "documentation": {
+    "url": "https://male-cns.janelia.org/download/",
+    "artifact": {
+      "path": "data/raw/pn-kc-apl-compartment/malecns-download.html",
+      "bytes": 44208,
+      "sha256": "51144922891ccdc5cda2490d55b39ef69222134ed6944bbff2766379e403ad3c"
+    }
+  },
+  "local_flat_connections": {
+    "artifact": {
+      "path": "data/raw/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+    },
+    "fields": [
+      {
+        "name": "body_pre",
+        "type": "int64"
+      },
+      {
+        "name": "body_post",
+        "type": "int64"
+      },
+      {
+        "name": "weight",
+        "type": "int64"
+      }
+    ],
+    "record_batches": 2318
+  },
+  "public_remote_tables": [
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/syn-partners-male-cns-v1.0-minconf-0.5.feather",
+      "status": 200,
+      "content_length": 6777179098,
+      "etag": "\"58efcf712f8c4d4de5f2ad51e97def76\"",
+      "generation": "1780494942562468",
+      "last_modified": "Wed, 03 Jun 2026 13:55:42 GMT",
+      "scope": "HEAD metadata only; data not downloaded or schema-verified"
+    },
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/syn-points-male-cns-v1.0-minconf-0.5.feather",
+      "status": 200,
+      "content_length": 13061489098,
+      "etag": "\"c69d08758de07582035cc8843574493a\"",
+      "generation": "1780494991007477",
+      "last_modified": "Wed, 03 Jun 2026 13:56:31 GMT",
+      "scope": "HEAD metadata only; data not downloaded or schema-verified"
+    }
+  ],
+  "limits": [
+    "Public documentation plus live object headers confirm availability only. Remote data contents have not been downloaded or checked.",
+    "Existing local flat weights contain body_pre,body_post,weight only. They cannot locate a contact on a KC claw, soma or axon.",
+    "A neuropil label is not an electrophysiological compartment or a claw identity. A future join must retain graph version, confidence and body/coordinate identities."
+  ]
+}

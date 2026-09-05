@@ -2,7 +2,7 @@
 
 Evidence snapshot: 2026-09-05. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
-Latest: the six-run [KC-to-MBON intervention and combined review](navigation-mbon-intervention-results.md) are complete. Delivery/state reconstruction and 44,998 numerical reference intervals pass. Suppression makes MBON12/14 silent after the transient while MBON13 retains 252–290 Hz washout firing; odor contrast remains negligible, and restoration returns near-ceiling activity. Whole-network persistence remains. The trigger is paused; H1 and the negative local depression fit remain unpromoted. Next is a bounded [PN→KC/APL calibration inventory](pn-kc-apl-calibration-plan.md), informed by [reviewed primary physiology](../research/20-kc-mbon-functional-calibration.md). The Eon body integration remains cancelled.
+Latest: the [full KC/PN/APL inventory](pn-kc-apl-inventory.md) is complete, with 492,343 independent checks across all twelve saved histories. Almost all 4,064 KCs remain active near 313 Hz; KC sources supply about 65.3% of positive input increments, and the model's fast dopamine inputs about 15.7%. APL supplies about 82.2% of inhibitory increments while its spiking H1 approximation remains near ceiling. The prior [KC-to-MBON intervention](navigation-mbon-intervention-results.md) reduced MBON activity without restoring physiology; its trigger is paused. Next is the [source-defined local KC EPSP/EPSC compatibility calculation](../research/21-pn-kc-physiology-calibration.md), keeping intrinsic and graded-APL constraints separate. H1 and the negative depression fit remain unpromoted; Eon body integration remains cancelled.
 
 | Gate | Current evidence | Remaining work |
 |---|---|---|

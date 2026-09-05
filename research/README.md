@@ -46,6 +46,9 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [18 — Navigation anatomy](18-navigation-ladder-anatomy.md) | Verified route contacts, exact/family and cognate/pooled selections, full DN population, missing angle/mirror registration |
 | [19 — Navigation assay evidence](19-navigation-ladder-assay-evidence.md) | Primary still-air/wind/state protocols, hDelta driver corrections, calcium-versus-spike limits and bounded causal interventions |
 | [20 — KC–MBON functional calibration](20-kc-mbon-functional-calibration.md) | Direct KC/MBON activity audit, exact-type physiological targets, connectome limits, intervention interpretation and prospective calibration gates |
+| [21 — PN–KC physiology](21-pn-kc-physiology-calibration.md) | Source-defined EPSP/EPSC and claw-integration assays, intrinsic time-constant mismatch, preparation and data limits |
+| [22 — APL local feedback](22-apl-local-feedback-constraints.md) | Nonspiking evidence, spatial calcium/release/suppression measurements and missing conversion laws |
+| [23 — KC contact locations](23-kc-contact-location-availability.md) | Verified local flat-graph schema and public same-version spatial data for a future compartment audit |
 
 ## How to interpret the notes
 

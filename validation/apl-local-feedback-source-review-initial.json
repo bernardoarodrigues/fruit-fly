@@ -1,0 +1,359 @@
+{
+  "schema": "apl-local-feedback-source-review/v1",
+  "review_date": "2026-09-05",
+  "passed": false,
+  "checks_passed": 29,
+  "checks_total": 31,
+  "checks": [
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/amin-2020.pdf",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/elife-56954-supp2.xlsx",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/lin-2014.pdf",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/PMC4000970.xml",
+      "passed": true
+    },
+    {
+      "name": "source hash and size: data/raw/apl-local-feedback/PMC7541083.xml",
+      "passed": true
+    },
+    {
+      "name": "Lin DOI",
+      "passed": true
+    },
+    {
+      "name": "Amin DOI",
+      "passed": true
+    },
+    {
+      "name": "Amin non-spiking and somatic caveat",
+      "passed": true
+    },
+    {
+      "name": "Lin both sexes and age",
+      "passed": true
+    },
+    {
+      "name": "Lin calcium caption values",
+      "passed": false
+    },
+    {
+      "name": "Lin release caption values",
+      "passed": false
+    },
+    {
+      "name": "Lin mono versus indirect caveat",
+      "passed": true
+    },
+    {
+      "name": "Amin local stimulus protocol",
+      "passed": true
+    },
+    {
+      "name": "Amin inhibitory effect denominator",
+      "passed": true
+    },
+    {
+      "name": "Amin segment size",
+      "passed": true
+    },
+    {
+      "name": "Amin spatial spread uncertainty",
+      "passed": true
+    },
+    {
+      "name": "Amin unmeasured membrane properties",
+      "passed": true
+    },
+    {
+      "name": "Amin reporter not voltage",
+      "passed": true
+    },
+    {
+      "name": "Amin broadening versus zero caveat",
+      "passed": true
+    },
+    {
+      "name": "Amin author fit and omission",
+      "passed": true
+    },
+    {
+      "name": "literal workbook sheets: elife-56954-fig7-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "literal workbook sheets: elife-56954-fig8-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "literal workbook sheets: elife-56954-supp2.xlsx",
+      "passed": true
+    },
+    {
+      "name": "note local link: ../data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "note local link: ../data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+      "passed": true
+    },
+    {
+      "name": "note local link: ../data/raw/apl-local-feedback/elife-56954-supp2.xlsx",
+      "passed": true
+    },
+    {
+      "name": "note local link: ../validation/apl-local-feedback-source-review.json",
+      "passed": true
+    },
+    {
+      "name": "PDF visual inspection: Lin page 4 Fig 3 caption and reporter separation",
+      "passed": true,
+      "verification": "manual inspection of pdftoppm rendering"
+    },
+    {
+      "name": "PDF visual inspection: Amin page 11 Fig 7 labels, normalization and n",
+      "passed": true,
+      "verification": "manual inspection of pdftoppm rendering"
+    }
+  ],
+  "scope": "Primary-source documentation and source-file integrity only. No neural/model execution, fitting, new digitization, or current intervention-outcome interpretation.",
+  "reviewed_note": {
+    "path": "research/22-apl-local-feedback-constraints.md",
+    "bytes": 5920,
+    "sha256": "172f0d07e375f320cccac541e1be0ca91949d7a723a2fe0c2c1f5cee0c2d96bb"
+  },
+  "sources": [
+    {
+      "path": "data/raw/apl-local-feedback/amin-2020.pdf",
+      "url": "https://cdn.elifesciences.org/articles/56954/elife-56954-v2.pdf",
+      "bytes": 4369103,
+      "sha256": "11d2b9feca23aa0823b70e023cda2959bea37029b394635adf4be33dfd81a213"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/56954/elife-56954-fig7-data1-v2.xlsx",
+      "bytes": 91095,
+      "sha256": "ba1d7c4dfaa2007aa3e71f668b72ee81845ea20094012f44450117a3a2165e9c"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/56954/elife-56954-fig8-data1-v2.xlsx",
+      "bytes": 333149,
+      "sha256": "673b933de6b2aaa4382d7e857bfb45154fff21766fbc826fea750465a10986b3"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-supp2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/56954/elife-56954-supp2-v2.xlsx",
+      "bytes": 19006,
+      "sha256": "20832cdcb3fac335c358c566a79b4279faecc02cd987ead9eeb5da16304ef899"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/lin-2014.pdf",
+      "url": "https://www.aclinlab.org/uploads/3/9/2/6/39268489/nat_neurosci_2014_lin.pdf",
+      "bytes": 4365375,
+      "sha256": "f43cf89f7aed2f6c699ee72dd7ecd8f47b08c141c017286954c6d057636c16d6"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC4000970.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4000970/fullTextXML",
+      "bytes": 165482,
+      "sha256": "dc7b376b22256b11ce7976cd44a89217941858efac2c79a2c6c0b8334bfb104a"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7541083/fullTextXML",
+      "bytes": 370261,
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    }
+  ],
+  "retrieval_manifest": {
+    "path": "data/raw/apl-local-feedback/retrieval-attempts.json",
+    "bytes": 1312,
+    "sha256": "89c60a7e2996db65e69e69921a108ea35f362b1415cd8f19f0d05a8c17238460"
+  },
+  "source_access": "Official EuropePMC full-text archival XML and eLife PDF/source workbooks; Lin published PDF from corresponding-author lab website. Direct PMC browser access presented a recaptcha; archival fulltext succeeded. No institutional login used.",
+  "evidence": {
+    "electrical": {
+      "source": "Amin introduction, citing Papadopoulou 2011",
+      "classification": "author-stated prior somatic electrophysiology, not a new electrical experiment in Amin or Lin",
+      "finding": "Adult APL described as non-spiking; active conductances elsewhere not ruled out.",
+      "primary_cited_study_doi": "10.1126/science.1201835",
+      "cited_study_independently_retrieved_in_this_review": false,
+      "calibrated_APL_voltage_to_release_law_available_here": false
+    },
+    "lin_fig3": {
+      "measurement": "reported maximum fluorescence fraction ΔF/F, not percent or mV",
+      "window": "temperature 30 degrees C to maximum",
+      "uncertainty": "SEM",
+      "values": [
+        {
+          "reporter": "GCaMP3",
+          "condition": "KC dTRPA1 activation",
+          "mean": 1.9,
+          "sem": 0.44,
+          "n_flies": 5
+        },
+        {
+          "reporter": "GCaMP3",
+          "condition": "driver-negative control",
+          "mean": -0.27,
+          "sem": 0.05,
+          "n_flies": 4
+        },
+        {
+          "reporter": "synapto-pHluorin",
+          "condition": "KC dTRPA1 activation",
+          "mean": 0.68,
+          "sem": 0.09,
+          "n_flies": 5
+        },
+        {
+          "reporter": "synapto-pHluorin",
+          "condition": "driver-negative control",
+          "mean": 0.06,
+          "sem": 0.007,
+          "n_flies": 5
+        }
+      ],
+      "digitized": false,
+      "direct_GABA_concentration_or_conductance": false
+    },
+    "amin_fig5_7": {
+      "measurement": "APL or KC GCaMP6f ΔF/F, separate reporter cohorts",
+      "ATP_mM": 0.75,
+      "GABA_comparison_mM": 7.5,
+      "puff_ms": 10,
+      "puff_psi": 12.5,
+      "backbone_segment_um": 20,
+      "dye_half_strength_spread_um_approx": [
+        10,
+        25
+      ],
+      "inhibitory_effect": "(KC_R_odor_plus_ATP - KC_R_odor) / max_time(KC_R_odor)",
+      "fig7_additional_normalization": "largest absolute segment/data-point response across matching conditions, columns 2+3 or 4+5",
+      "time_windows": "Figure 6 gray windows; precise numeric window endpoints not newly extracted",
+      "cohort_n_neurons_and_flies": {
+        "APL_H_V_each": [
+          10,
+          6
+        ],
+        "APL_calyx": [
+          6,
+          4
+        ],
+        "KC_APL_H_V_each": [
+          10,
+          9
+        ],
+        "KC_APL_calyx": [
+          9,
+          8
+        ],
+        "KC_GABA_H_V_each": [
+          13,
+          8
+        ],
+        "KC_GABA_calyx": [
+          11,
+          6
+        ]
+      },
+      "distance_definition": "normalized mushroom-body backbone; different from APL neurite geodesic distances used in anatomical model",
+      "release_evidence": "GABA puff comparison and calcium localization support local release indirectly, without measuring its concentration or transfer function"
+    },
+    "author_model": {
+      "source": "Amin Fig 8, discussion and methods",
+      "space_constant_um_approx": 50,
+      "Rm_over_Ra_m_approx": 0.025,
+      "classification": "phenomenological author fit to spatial reporter profiles and hemibrain anatomy; no independent measurement of APL Rm/Ra",
+      "direct_MaleCNS_parameter": false,
+      "known_model_limit": "static distance attenuation omits dynamic feedback; simple backbone alternative has 25 um preferred at vertical site, 50 um at horizontal/calyx",
+      "two_mV_statement": "Release modulation in other insect nonspiking interneurons, cited to Burrows/Siegler; not an APL threshold"
+    },
+    "lin_population_behavior": {
+      "neural_observation": "fluorescence pixel-map population sparseness and odor-vector correlation",
+      "not": "spike recruitment fraction",
+      "behavior": "post-training minus pre-training proportion of time in CS-minus; separate behavioral cohort/task",
+      "not_motor_gain": true
+    },
+    "preparation": {
+      "Lin": "male and female, 1-7 days; exposed superfused brain for imaging; temperature/transgene controls",
+      "Amin": "head opened and superfused for volumetric imaging; sex and age not located in inspected main-text methods, not asserted absent from every supplement",
+      "cross_cohort_warning": "No sex-specific biological transfer or equivalence of different reporters/preparations"
+    }
+  },
+  "workbooks": {
+    "elife-56954-fig7-data1.xlsx": {
+      "sheet_names": [
+        "Fig 7",
+        "Fig 7-supp1"
+      ],
+      "numerical_reduction_performed": false
+    },
+    "elife-56954-fig8-data1.xlsx": {
+      "sheet_names": [
+        "Hstim",
+        "Vstim",
+        "Cstim",
+        "KC-KC inhibition (K-M)",
+        "voronoi indices"
+      ],
+      "numerical_reduction_performed": false
+    },
+    "elife-56954-supp2.xlsx": {
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "numerical_reduction_performed": false
+    }
+  },
+  "workbook_caption_mismatch": "Published Fig 7 source-data caption names figure supplement 2, but workbook literal second sheet is Fig 7-supp1. Preserved without relabeling.",
+  "missing_laws": [
+    "local KC input to APL voltage and unitary synaptic kinetics",
+    "APL voltage to calcium",
+    "APL calcium/voltage to vesicle release or GABA concentration",
+    "KC GABA receptor efficacy, kinetics and reversal including possible selective calcium effects",
+    "APL local membrane capacitance/resistivities and active conductances",
+    "appropriate MaleCNS subcellular geometry/transfer of hemibrain findings"
+  ],
+  "future_assay_only": "Freeze three stimulus sites, finite input footprints, reporter normalization and comparison windows; reserve a site to check simultaneous APL-calcium and KC-suppression predictions. Data already inspected; no blind validation claim.",
+  "rendered_pages": [
+    {
+      "path": "tmp/apl-local-feedback/lin-fig3.png",
+      "bytes": 795839,
+      "sha256": "822857a834fd55ef6fe2caaaa2b383fad141979f23a381ea8f69546b940aebdb",
+      "source_page_one_based": 4
+    },
+    {
+      "path": "tmp/apl-local-feedback/amin-fig7.png",
+      "bytes": 454562,
+      "sha256": "c50dc4569bb19b5184ff1d2d840c16d4b56826a1025d57263babf3aa330db497",
+      "source_page_one_based": 11
+    }
+  ],
+  "render_warnings": [
+    "Lin Poppler emitted Invalid Font Weight and insufficient arguments for Marked Content; inspected Figure 3 caption and plotted labels remain legible and agree with archival XML."
+  ],
+  "limitations": [
+    "Checks confirm source/documentation consistency, not biological model validity.",
+    "No quantitative reduction of source workbooks, electrophysiological parameter fit, calcium-to-rate/conductance conversion or new experiments.",
+    "Existing optional graded backend not evidence of APL-specific physiological parameters.",
+    "No current intervention results interpreted."
+  ]
+}

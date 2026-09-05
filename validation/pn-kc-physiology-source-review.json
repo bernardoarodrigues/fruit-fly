@@ -1,0 +1,709 @@
+{
+  "schema": "pn-kc-physiology-source-review-v1",
+  "created_utc": "2026-09-05T20:31:00.653594+00:00",
+  "status": "source_review_complete_no_fit_or_simulation",
+  "scope": "Two primary studies and their directly associated public full-text/supplement. No exhaustive source search, raw waveform extraction, current-trial analysis, model run or physiological promotion.",
+  "source_plan": {
+    "path": "docs/pn-kc-apl-calibration-plan.md",
+    "bytes": 5200,
+    "sha256": "dcb027bc55309f6ceda6dd494e08a71a2babc9910e629215b53e3e8ecff654f3"
+  },
+  "report": {
+    "path": "research/21-pn-kc-physiology-calibration.md",
+    "bytes": 13958,
+    "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+  },
+  "acquisition": [
+    {
+      "url": "https://www.bazhlab.ucsd.edu/wp-content/uploads/2014/04/JNeurophys2008.pdf",
+      "time_utc": "2026-09-05T20:25:13.978151+00:00",
+      "status": 200,
+      "final_url": "https://www.bazhlab.ucsd.edu/wp-content/uploads/2014/04/JNeurophys2008.pdf",
+      "content_type": "application/pdf",
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d",
+      "is_pdf": true,
+      "content_class": "primary_article_full_pdf",
+      "content_verification": "Olfactory Representations by Drosophila Mushroom Body Neurons; published paper from coauthor institutional lab",
+      "is_primary_full_article": true
+    },
+    {
+      "url": "https://www.nature.com/articles/nn.3547",
+      "time_utc": "2026-09-05T20:25:14.435267+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/nn.3547?error=cookies_not_supported&code=286ee9c8-b88f-4e0d-8dd6-81ee1513d4a1",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-journal.html",
+      "bytes": 356441,
+      "sha256": "f8870a6922cfc7fc9078cdf487be11be352724063c7c40099c99e219ef01852c",
+      "is_pdf": false,
+      "content_class": "primary_journal_subscription_preview",
+      "content_verification": "Article metadata and supplementary captions; NOT full main article",
+      "is_primary_full_article": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3908930/",
+      "time_utc": "2026-09-05T20:25:16.320098+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3908930/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-pmc.html",
+      "bytes": 225287,
+      "sha256": "0eb8b6583f4f4052ff35f64888faffe0e378b210457d299e72285273061891d1",
+      "is_pdf": false,
+      "content_class": "primary_author_manuscript_full_html",
+      "content_verification": "Full results, methods, figure captions and supplemental link present",
+      "is_primary_full_article": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3908930/pdf/nihms524698.pdf",
+      "time_utc": "2026-09-05T20:25:52.042978+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3908930/pdf/nihms524698.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "is_pdf": false,
+      "bytes": 1817,
+      "sha256": "58a7106293501c3efdfb138d15c6d8ee16c83fa7b1902308232567c1a966e5b5",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-author.pdf.html",
+      "content_class": "download_challenge_not_article",
+      "content_verification": "Preparing to download; JavaScript proof-of-work interstitial, not a PDF",
+      "is_primary_full_article": false
+    },
+    {
+      "url": "https://media.springernature.com/original/springer-static/esm/art:10.1038%2Fnn.3547/MediaObjects/41593_2013_BFnn3547_MOESM1_ESM.pdf",
+      "time_utc": "2026-09-05T20:25:52.271331+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art:10.1038%2Fnn.3547/MediaObjects/41593_2013_BFnn3547_MOESM1_ESM.pdf",
+      "content_type": "application/pdf",
+      "is_pdf": true,
+      "bytes": 4544776,
+      "sha256": "09858365366bf33b8c2615765e000f7b5e07a90028435b25eea0d4e8f4818283",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supplement.pdf",
+      "content_class": "primary_journal_supplement_full_pdf",
+      "content_verification": "Supplementary Figures 1–6 and movie captions, eight pages",
+      "is_primary_full_article": false
+    },
+    {
+      "url": "https://www.janelia.org/publication/integration-olfactory-code-across-dendritic-claws-single-mushroom-body-neurons-0",
+      "time_utc": "2026-09-05T20:26:55.805265+00:00",
+      "status": 200,
+      "final_url": "https://www.janelia.org/publication/integration-olfactory-code-across-dendritic-claws-single-mushroom-body-neurons-0",
+      "content_type": "text/html; charset=utf-8",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia.html",
+      "bytes": 54640,
+      "sha256": "480d517466f87a846df565dc4b0cb16c7399f696862ab51b2b2977f3affb06bb",
+      "is_pdf": false,
+      "content_class": "primary_author_institution_publication_landing",
+      "content_verification": "Metadata, abstract and exact public author PDF link; not full article",
+      "is_primary_full_article": false
+    },
+    {
+      "url": "https://www.janelia.org/sites/default/files/Labs/nihms524698.pdf",
+      "time_utc": "2026-09-05T20:26:57.507474+00:00",
+      "status": 200,
+      "final_url": "https://www.janelia.org/sites/default/files/Labs/nihms524698.pdf",
+      "content_type": "application/pdf",
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia.pdf",
+      "bytes": 1488097,
+      "sha256": "4b3b27ced595e4de7da2895def583669a55a21e71f32c052ce5f54a325b17515",
+      "is_pdf": true,
+      "content_class": "primary_author_manuscript_full_pdf",
+      "content_verification": "Full 26-page NIH author manuscript with methods and figures",
+      "is_primary_full_article": true
+    }
+  ],
+  "source_files_and_read_only_derivatives": [
+    {
+      "path": "data/raw/pn-kc-physiology/acquisition-phase1.json",
+      "bytes": 1900,
+      "sha256": "aeb66def16c38f771384bdcb2c753ae8e1cf2f268ae83cc6ebe61e3ca7c2e4dd"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/acquisition-phase2.json",
+      "bytes": 1103,
+      "sha256": "2024b266426657d21ba5cd2a25a806b992aacc2eca66badfffbbbfa2dc44d8af"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/acquisition-phase3.json",
+      "bytes": 1060,
+      "sha256": "e9f9ae9fa603ad785e69c5f647cca4c3566234294e41a39447b66bca955cc5b1"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-author.pdf.html",
+      "bytes": 1817,
+      "sha256": "58a7106293501c3efdfb138d15c6d8ee16c83fa7b1902308232567c1a966e5b5"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia-image-inventory.txt",
+      "bytes": 744,
+      "sha256": "ca0d7d0efd9adc95b094eef6bb2296a530c5c9706f75e2aeb2b23b35974fee0a"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia.html",
+      "bytes": 54640,
+      "sha256": "480d517466f87a846df565dc4b0cb16c7399f696862ab51b2b2977f3affb06bb"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia.pdf",
+      "bytes": 1488097,
+      "sha256": "4b3b27ced595e4de7da2895def583669a55a21e71f32c052ce5f54a325b17515"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-janelia.txt",
+      "bytes": 116599,
+      "sha256": "46d2bda374faf3514fb13bd08fff41eb3b043ec78881c314006613845eca1bbb"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-journal.html",
+      "bytes": 356441,
+      "sha256": "f8870a6922cfc7fc9078cdf487be11be352724063c7c40099c99e219ef01852c"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-journal.txt",
+      "bytes": 45411,
+      "sha256": "0110dff7b1a138f2faab2bae32bf16b9a2db5a385ced59e5fe17605e9c555619"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-main-23.png",
+      "bytes": 572346,
+      "sha256": "cfffa3afd91ee323368dc4358962c37198059af97b93b933f2d9516ca2fd0215"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-main-24-continuation.png",
+      "bytes": 108543,
+      "sha256": "b029bb473f77374f58cd199e107a976d0d99f56d265e2a64f44e92899809783d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-main-24.png",
+      "bytes": 140809,
+      "sha256": "c0d9eb272839d211c5e52c8daefb6860963a21305783dfc94100f709052d5617"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-main-25.png",
+      "bytes": 356608,
+      "sha256": "dc82a496caa0cbf7af1d41033e5480cfa4f64818a0712a0c5d7dd96bb7833109"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-main-26.png",
+      "bytes": 299138,
+      "sha256": "5b90e20825e6cf4f496f2b57c2a58deae02239b489ec288620523146c47d9a7d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-pmc.html",
+      "bytes": 225287,
+      "sha256": "0eb8b6583f4f4052ff35f64888faffe0e378b210457d299e72285273061891d1"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-pmc.txt",
+      "bytes": 93057,
+      "sha256": "952140dbc4eb576851103689b9044652538f4552dbadebd89bdd0c0f82c961a3"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supp-6.png",
+      "bytes": 275708,
+      "sha256": "ee416197e89fb823041d52570781bc8266f45c92a24f270bc7dad37a47c20dca"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supp-7.png",
+      "bytes": 148159,
+      "sha256": "f34131ab85d5bf2d69ae7b8ac6cdbcb9a7ad9d38e17d281254f48bf3ea8af65c"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supplement-image-inventory.txt",
+      "bytes": 744,
+      "sha256": "cb3df7a9b344045d7fd57ace2d8094d885103b8709fc0346ca9a9383f7031485"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supplement.pdf",
+      "bytes": 4544776,
+      "sha256": "09858365366bf33b8c2615765e000f7b5e07a90028435b25eea0d4e8f4818283"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/gruntman2013-supplement.txt",
+      "bytes": 4368,
+      "sha256": "1f7e4cf20b26b40f222f38af883897f20cd96fefe0b81ded84fe140b4e905148"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author-image-inventory.txt",
+      "bytes": 4021,
+      "sha256": "570a24b3b99728fff3c433c355c1c797a92c117a8bb5425d39210d6ad3f5891a"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "bytes": 2514280,
+      "sha256": "b91b357db8110c073e7f3e6ee0e1132cac466c722f6b97997dfe89e755f7618d"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-author.txt",
+      "bytes": 122695,
+      "sha256": "890c8aa1fd1a02da65271e9bcde6bd605418912c07eb0b9d1970119605bb0e74"
+    },
+    {
+      "path": "data/raw/pn-kc-physiology/turner2008-fig3.png",
+      "bytes": 615509,
+      "sha256": "c9e5b11efb1a3c4ab1515a49fb23c1dc0d9485f48e7c0a4acd585df574c10fa4"
+    }
+  ],
+  "methods": {
+    "download": "Python urllib.request ordinary HTTPS; no login, no bypass",
+    "html_text": "stdlib HTMLParser, ignores script/style; raw HTML retained",
+    "pdf_text": "pdftotext -layout",
+    "layout": "pdftoppm renders inspected; pdfimages -list retained; no value/trace digitization",
+    "software": {
+      "python": "Python 3.12.14",
+      "pdftotext": "pdftotext version 26.08.0"
+    }
+  },
+  "protocols": {
+    "Turner2008": {
+      "sex": "female",
+      "strain": "Canton-S",
+      "KC_age_days": [
+        1,
+        2
+      ],
+      "PN_age_days": [
+        4,
+        12
+      ],
+      "prep": "in-vivo somatic whole cell, dye confirmed; KC head tilted for posterior access",
+      "subtypes": "Study includes alpha/beta, alpha-prime/beta-prime and gamma; Fig3 per-cell subclass mapping unavailable",
+      "odor_protocol": "500 ms, six trials, 22 s interstimulus, nominal final 1:1000 dilution; used for odor responses, not imposed PN spikes"
+    },
+    "Gruntman2013_ephys": {
+      "sex": "female",
+      "age_days": [
+        4,
+        7
+      ],
+      "driver": "Mz19-Gal4 x UAS-ChR2-YFP",
+      "reported_PNs": 13,
+      "PN_glomeruli": [
+        "DA1",
+        "DC3",
+        "VA1d"
+      ],
+      "prep": "antennae and perineural sheath removed; retinal fed; KC somatic whole cell and separate PN cell-attached recordings",
+      "light_nm": 470,
+      "light_durations_ms": [
+        1,
+        2,
+        5,
+        10,
+        25,
+        50,
+        100,
+        250
+      ],
+      "order": "randomly interleaved",
+      "LED_driver_current_ampere": 1,
+      "LED_current_is_neuronal_current": false,
+      "terminal_PN_cell_attached_seal_test": {
+        "current_pa": 500,
+        "duration_ms": 500,
+        "is_assay_stimulation": false
+      },
+      "response_window": "onset through offset + 200 ms; subtract equal preceding baseline window",
+      "subclass": "Randomly selected KCs, not demonstrated alpha-prime/beta-prime-enriched; no exact MaleCNS IDs"
+    },
+    "Gruntman2013_imaging_separate": {
+      "sex": "female",
+      "age_days": [
+        2,
+        5
+      ],
+      "MARCM_enrichment": "alpha-prime/beta-prime developmental labeling",
+      "calcium_to_KC_spikes_mapping_established": false
+    }
+  },
+  "measurements": [
+    {
+      "id": "T_hold",
+      "mean": -58,
+      "dispersion": 2,
+      "unit": "mV",
+      "dispersion_type": "SD explicitly stated",
+      "protocol": "KC current clamp holding condition, not unforced rest",
+      "source": "Turner2008 p736"
+    },
+    {
+      "id": "T_Rin",
+      "relation": ">",
+      "value": 10,
+      "unit": "Gohm",
+      "n": null,
+      "source": "Turner2008 pp736,740; soma"
+    },
+    {
+      "id": "T_tau_soma",
+      "relation": ">",
+      "value": 200,
+      "unit": "ms",
+      "n": null,
+      "protocol": "Hyperpolarizing somatic current injection; exact pulse protocol absent",
+      "source": "Turner2008 p740"
+    },
+    {
+      "id": "T_EPSP_amplitude",
+      "mean": 1.4,
+      "dispersion": 0.8,
+      "median": 1.2,
+      "unit": "mV",
+      "dispersion_type": "reported ±, not separately specified in inspected paragraph/caption",
+      "n_events": null,
+      "source": "Turner2008 Fig3C pp739–740",
+      "caveat": "Spontaneous pooled events, not an identified PN pair; multiple quanta/coincidence possible"
+    },
+    {
+      "id": "T_mini_EPSP_amplitude",
+      "mean": 1,
+      "dispersion": 0.5,
+      "unit": "mV",
+      "dispersion_type": "reported ±, not separately specified",
+      "protocol": "1 uM TTX",
+      "source": "Turner2008 p739"
+    },
+    {
+      "id": "T_EPSP_rise",
+      "mean": 2.1,
+      "dispersion": 0.5,
+      "unit": "ms",
+      "measurement": "10–90% rise",
+      "n_cells": 7,
+      "n_events_methods": 49,
+      "n_events_results": 50,
+      "dispersion_type": "reported ±, not separately specified",
+      "source": "Turner2008 Methods p736; Results p740"
+    },
+    {
+      "id": "T_EPSP_decay",
+      "mean": 11.5,
+      "dispersion": 5.3,
+      "unit": "ms",
+      "measurement": "single-exponential falling phase",
+      "n_cells": 7,
+      "n_events_methods": 49,
+      "n_events_results": 50,
+      "dispersion_type": "reported ±, not separately specified",
+      "source": "Turner2008 Fig3D/p740"
+    },
+    {
+      "id": "T_EPSC_rise",
+      "mean": 0.9,
+      "dispersion": 0.4,
+      "unit": "ms",
+      "measurement": "10–90% rise",
+      "n_cells": 5,
+      "n_flies": 5,
+      "n_events": 50,
+      "events_per_cell": 10,
+      "hold_mv": -60,
+      "dispersion_type": "reported ±, not separately specified",
+      "source": "Turner2008 Fig3D/p740"
+    },
+    {
+      "id": "T_EPSC_decay",
+      "mean": 2.8,
+      "dispersion": 1.2,
+      "unit": "ms",
+      "measurement": "single-exponential falling phase",
+      "n_cells": 5,
+      "n_events": 50,
+      "hold_mv": -60,
+      "dispersion_type": "reported ±, not separately specified",
+      "source": "Turner2008 Fig3D/p740"
+    },
+    {
+      "id": "T_threshold_distance",
+      "mean": 21.5,
+      "dispersion": 5.6,
+      "unit": "mV",
+      "n_cells": 17,
+      "measurement": "Peak second voltage derivative; odor responses containing at most four spikes",
+      "dispersion_type": "reported ±, not separately specified",
+      "source": "Turner2008 Fig3G/p740",
+      "model_threshold_mv": -36.3,
+      "model_threshold_is_derived_from_mean_hold_mv": -57.8
+    },
+    {
+      "id": "T_baseline_KC_spikes",
+      "mean": 0.1,
+      "dispersion": 0.4,
+      "unit": "spikes/s",
+      "n_explicit_for_summary": null,
+      "source": "Turner2008 p736"
+    },
+    {
+      "id": "T_spontaneous_EPSPs",
+      "mean": 32.6,
+      "dispersion": 12.7,
+      "unit": "events/s",
+      "n_cells": 27,
+      "source": "Turner2008 Fig3E"
+    },
+    {
+      "id": "T_spontaneous_PN_spikes",
+      "mean": 4.6,
+      "dispersion": 4.2,
+      "unit": "spikes/s",
+      "n_cells": 37,
+      "source": "Turner2008 Fig3F"
+    },
+    {
+      "id": "G_PN_25ms_count",
+      "mean": 7,
+      "light_duration_ms": 25,
+      "n_PN_rate_cohort": 8,
+      "derived_mean_window_rate_hz": 280.0,
+      "derivation": "7/(25/1000), not constant instantaneous firing or supplied spike times",
+      "source": "Gruntman2013 Linear additivity results; actual Fig3F image"
+    },
+    {
+      "id": "G_plateau",
+      "approx_onset_ms": 30,
+      "continued_PN_rate_lower_hz": 100,
+      "unit": "ms / spikes/s",
+      "source": "Gruntman2013 Fig4A and Linear additivity results",
+      "caveat": "Rough time in prose, not confidence interval; exact PN train unavailable"
+    },
+    {
+      "id": "G_connected_cohort",
+      "n_screened": 80,
+      "n_connected_filled": 39,
+      "connected_claws": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "cell_counts": [
+        17,
+        14,
+        6,
+        2
+      ],
+      "n_reliably_spiking": 2,
+      "spike_threshold_spikes_per_trial": 0.5,
+      "comparison": ">",
+      "source": "Gruntman2013 Figs3–5"
+    },
+    {
+      "id": "G_spiking_search",
+      "n_screened": 191,
+      "n_spiking_filled": 13,
+      "connected_claws": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "cell_counts": [
+        2,
+        3,
+        1,
+        6,
+        1
+      ],
+      "source": "Gruntman2013 Fig5B–D",
+      "caveat": "Separate cohort; denominator by claw count modeled from first cohort"
+    },
+    {
+      "id": "G_one_claw_EPSPs",
+      "n_cells": 16,
+      "n_events": 270,
+      "mean_events_per_cell": 17,
+      "reported_dispersion_events": 8,
+      "reported_outlier_mv": 6.7,
+      "duration_ms": 25,
+      "measurement": "First identifiable EPSP in selected trials; manually base-to-peak",
+      "source": "Gruntman2013 Supplementary Fig6",
+      "grand_mean_amplitude_mv": null,
+      "boxplot_summary_definition_in_caption": null
+    },
+    {
+      "id": "G_temporal_summation",
+      "current_pulse_ms": 3,
+      "light_pulse_ms": 10,
+      "n_cells": 7,
+      "displayed_offset_axis_ms": [
+        -50,
+        50
+      ],
+      "source": "Gruntman2013 Fig4D–E",
+      "current_amplitude_pa": null
+    },
+    {
+      "id": "G_intrinsic_IV",
+      "n_cells": 5,
+      "source": "Gruntman2013 Supplementary Fig5C–D",
+      "ordinate": "Vmax minus Vbase (mV)",
+      "abscissa": "injected current (pA)",
+      "exclusion": "Trials with current-evoked spikes",
+      "values_digitized": false
+    },
+    {
+      "id": "G_holding_effect",
+      "current_injection_duration_ms": 750,
+      "light_duration_ms": 250,
+      "n_pdf": 6,
+      "n_journal_inline": 4,
+      "source": "Gruntman2013 Supplementary Fig5A–B",
+      "sample_size_resolved": false
+    }
+  ],
+  "corrections_and_limits": [
+    "Turner EPSP waveform methods 49 events versus results 50, both seven cells; not resolved.",
+    "Turner one positive 58 mV printing conflicts with negative axes, earlier -58 holding and -57.8 mean; negative convention supported.",
+    "Gruntman author-PDF/PMC Fig3 caption letters differ from figure: actual F=PN mean rate,C=PN raster,B=anatomy,E=connectivity,G=KC overlay.",
+    "Gruntman Supplement Fig5B n6 PDF vs n4 journal inline unresolved.",
+    "Claws can contact multiple labeled boutons; neither graph edge count nor contact count enumerates independent claws.",
+    "No direct PN-KC paired spike train and postsynaptic response set acquired; spontaneous EPSPs not exact single-PN or single-contact transmissions.",
+    "No absolute EPSC amplitude axis in Turner Fig3D; no nS/pA-per-contact calibration.",
+    "No APL manipulation reported in these physiology assays; remaining network inhibition not independently isolated.",
+    "Printed dispersions and graph error bars do not define simulation pass tolerances.",
+    "A fast synaptic response and a >200ms somatic intrinsic time constant are distinct constraints; the original paper used an effective point-model approximation.",
+    "No raw-data files linked in inspected main/supplement/Janelia landing sources; absence limited to this search."
+  ],
+  "first_local_reproduction": {
+    "name": "single-effective-input KC EPSP/EPSC compatibility",
+    "input": "one prescribed effective excitatory event at source holding voltages; engineering stand-in for spontaneous event, not measured identified PN spike",
+    "measure": [
+      "EPSP baseline-to-peak amplitude",
+      "EPSP 10–90% rise and decay",
+      "normalized EPSC 10–90% rise and decay",
+      "independent somatic intrinsic constraint mismatch"
+    ],
+    "fit_if_later_authorized_only": [
+      "effective excitatory-event amplitude",
+      "effective temporal response"
+    ],
+    "not_fit": [
+      "spike threshold",
+      "APL strength",
+      "odor recruitment",
+      "refractory behavior",
+      "whole-network gain"
+    ],
+    "hold_separate": [
+      "somatic resistance >10Gohm",
+      "somatic time constant >200ms",
+      "17-cell source threshold distance"
+    ],
+    "reserved_evaluation": "Gruntman single-claw and multi-claw responses after separate extraction; already-read sources, not blind external validation",
+    "unsupported": [
+      "per-contact physiological conductance",
+      "exact presynaptic times/synchrony",
+      "release/depression",
+      "KC subclass pairing",
+      "male VM7d specificity",
+      "intrinsic capacitor/compartment parameters",
+      "APL calibration"
+    ]
+  },
+  "source_presence_checks": [
+    {
+      "check": "Turner female age and acquisition protocol",
+      "passed": true
+    },
+    {
+      "check": "Turner somatic resistance and distinct long current-injection constant",
+      "passed": true
+    },
+    {
+      "check": "Turner EPSP kinetics",
+      "passed": true
+    },
+    {
+      "check": "Turner EPSC kinetics and voltage-clamp condition",
+      "passed": true
+    },
+    {
+      "check": "Turner EPSP methods denominator",
+      "passed": true
+    },
+    {
+      "check": "Turner EPSP results denominator discrepancy",
+      "passed": true
+    },
+    {
+      "check": "Turner threshold definition and cohort",
+      "passed": true
+    },
+    {
+      "check": "Gruntman electrophysiology sex driver and age",
+      "passed": true
+    },
+    {
+      "check": "Gruntman source stimulation durations",
+      "passed": true
+    },
+    {
+      "check": "Gruntman mean PN spikes and plateau",
+      "passed": true
+    },
+    {
+      "check": "Gruntman connected cohort",
+      "passed": true
+    },
+    {
+      "check": "Gruntman spike measurement interval",
+      "passed": true
+    },
+    {
+      "check": "Gruntman separate spiking screen",
+      "passed": true
+    },
+    {
+      "check": "Gruntman EPSP supplement",
+      "passed": true
+    },
+    {
+      "check": "Supplement PDF holding-voltage sample denominator",
+      "passed": true
+    },
+    {
+      "check": "Journal inline holding-voltage denominator differs",
+      "passed": true
+    },
+    {
+      "check": "Temporal current/light input durations",
+      "passed": true
+    },
+    {
+      "check": "No direct calcium-spike transfer established",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/turner2008-author.pdf",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-journal.html",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-pmc.html",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-author.pdf.html",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-supplement.pdf",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-janelia.html",
+      "passed": true
+    },
+    {
+      "check": "Acquired hash data/raw/pn-kc-physiology/gruntman2013-janelia.pdf",
+      "passed": true
+    }
+  ],
+  "source_presence_checks_passed": 25,
+  "scientific_validation_claim": false
+}

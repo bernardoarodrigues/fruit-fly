@@ -1,0 +1,1933 @@
+{
+  "schema": "pn-kc-apl-identity-review/v1",
+  "passed": true,
+  "checks": [
+    {
+      "name": "manifest_signs.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_contact_counts.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_weights.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_targets.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "manifest_neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "raw_source_body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "passed": true
+    },
+    {
+      "name": "raw_source_body-neurotransmitters-male-cns-v1.0.feather",
+      "passed": true
+    },
+    {
+      "name": "graph_id_order",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_bodyId",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_type",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_class",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_subclass",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_superclass",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_supertype",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_instance",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_rootSide",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_somaSide",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_flywireType",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_hemibrainType",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_status",
+      "passed": true
+    },
+    {
+      "name": "raw_annotation_statusLabel",
+      "passed": true
+    },
+    {
+      "name": "raw_nt_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "raw_nt_predicted_nt",
+      "passed": true
+    },
+    {
+      "name": "raw_nt_ground_truth",
+      "passed": true
+    },
+    {
+      "name": "raw_nt_cell_type",
+      "passed": true
+    },
+    {
+      "name": "model_sign_column_and_array",
+      "passed": true
+    },
+    {
+      "name": "model_sign_declared_rule",
+      "passed": true
+    },
+    {
+      "name": "KC_class_equals_primary_type_prefix",
+      "passed": true
+    },
+    {
+      "name": "no_cross_namespace_KC_prefix_outside_class_flywireType",
+      "passed": true
+    },
+    {
+      "name": "no_cross_namespace_KC_prefix_outside_class_hemibrainType",
+      "passed": true
+    },
+    {
+      "name": "no_cross_namespace_KC_prefix_outside_class_cell_type",
+      "passed": true
+    },
+    {
+      "name": "all_raw_KCs_retained",
+      "passed": true
+    },
+    {
+      "name": "all_raw_APLs_retained",
+      "passed": true
+    },
+    {
+      "name": "all_raw_ALPNs_retained",
+      "passed": true
+    },
+    {
+      "name": "prior_MBON_anatomical_audit_passed",
+      "passed": true
+    },
+    {
+      "name": "prior_edge_table_hash",
+      "passed": true
+    },
+    {
+      "name": "edge_table_unique_ids",
+      "passed": true
+    },
+    {
+      "name": "edge_table_CSR_source_row",
+      "passed": true
+    },
+    {
+      "name": "edge_table_graph_targets",
+      "passed": true
+    },
+    {
+      "name": "edge_table_graph_body_ids",
+      "passed": true
+    },
+    {
+      "name": "edge_table_weights_contacts",
+      "passed": true
+    },
+    {
+      "name": "edge_table_class_annotations",
+      "passed": true
+    },
+    {
+      "name": "edge_table_complete_all_MBON12_14_incoming",
+      "passed": true
+    },
+    {
+      "name": "KC_subset_and_complement_counts",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_scripts/review_pn_kc_apl_identities.py",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_validation/navigation-ladder-anatomy.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_validation/navigation-ladder-mbon-input-results.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_validation/navigation-ladder-mbon-input-independent-review.json",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_validation/navigation-ladder-mbon-input-edges.csv",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/signs.npy",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/weights.npy",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_data/processed/malecns_v1/contact_counts.npy",
+      "passed": true
+    }
+  ],
+  "scope": "Exact retained MaleCNS annotation identities and direct adjacency only. No spikes, model execution, fit, or physiological promotion.",
+  "inputs": [
+    {
+      "path": "scripts/review_pn_kc_apl_identities.py",
+      "bytes": 14052,
+      "sha256": "f8635c316feb537979441e931773db83d9ed020cba83010b5bf8d9c87866d337"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "path": "data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-results.json",
+      "bytes": 47318,
+      "sha256": "94599739999cd8d8b04e5898de012ceaf63a721bdf437dea291b6b3ad4b174d6"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-independent-review.json",
+      "bytes": 38677,
+      "sha256": "36d74000d8056d67a3535d9df2cf8aaa918eed5c794c30da61be18350b5bcb8b"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-edges.csv",
+      "bytes": 828657,
+      "sha256": "70de6ffa36066ec62484afc540f86ccda7e30556c06d402d614471a2c61ec87d"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/signs.npy",
+      "bytes": 166828,
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    }
+  ],
+  "groups": {
+    "KC_all": {
+      "predicate": "class == 'Kenyon_Cell'",
+      "count": 4064,
+      "index_sha256": "9e990d10a63b0f74cd7bbbdc5369082f24d5246487af944ba289bc6bf48d4b75",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "58d08c3b674b12479639b8c3b2bd19f85dfb647dff641f47887ecba5c816c777",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "KCg-m": 1342,
+          "KCab-s": 657,
+          "KCab-m": 536,
+          "KCab-c": 488,
+          "KCa'b'-ap2": 291,
+          "KCg-d": 206,
+          "KCa'b'-m": 205,
+          "KCa'b'-ap1": 199,
+          "KCab-p": 129,
+          "KCg-s1": 2,
+          "KCg-s2": 2,
+          "KCg-s3": 2,
+          "KCg-s4": 2,
+          "KC": 2,
+          "KCg": 1
+        },
+        "class": {
+          "Kenyon_Cell": 4064
+        },
+        "subclass": {
+          "<missing>": 4064
+        },
+        "superclass": {
+          "cb_intrinsic": 4064
+        },
+        "rootSide": {
+          "<missing>": 4064
+        },
+        "somaSide": {
+          "R": 2045,
+          "L": 2019
+        },
+        "consensus_nt": {
+          "acetylcholine": 4064
+        },
+        "model_sign": {
+          "1": 4064
+        },
+        "status": {
+          "Traced": 4064
+        },
+        "statusLabel": {
+          "Roughly traced": 3116,
+          "Prelim Roughly traced": 946,
+          "Reviewed": 1,
+          "RT Orphan": 1,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "RT Hard to trace": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "APL": {
+      "predicate": "type == 'APL'",
+      "count": 2,
+      "index_sha256": "979ef88dff30d41168ce9b377a006ccb3cd034b2dce86d54923ca0f4b87cb6a6",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "c4b473fd1e06e315ac29f840a0b58138b226addbcf6a53d21f24d2bee31bc228",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "APL": 2
+        },
+        "class": {
+          "<missing>": 2
+        },
+        "subclass": {
+          "<missing>": 2
+        },
+        "superclass": {
+          "cb_intrinsic": 2
+        },
+        "rootSide": {
+          "<missing>": 2
+        },
+        "somaSide": {
+          "R": 1,
+          "L": 1
+        },
+        "consensus_nt": {
+          "gaba": 2
+        },
+        "model_sign": {
+          "-1": 2
+        },
+        "status": {
+          "Traced": 2
+        },
+        "statusLabel": {
+          "Roughly traced": 2,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "Prelim Roughly traced": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "ALPN_all": {
+      "predicate": "class == 'ALPN'",
+      "count": 686,
+      "index_sha256": "56c4eb47cb535fcf990017b13a29d026f91a28397e6c206bd24a99598d2588ff",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "df813ecbdf482fc234a18577c748ce95b037cfee8e5fda8834c0d02a5af4b4c1",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "DA1_lPN": 13,
+          "VM5d_adPN": 12,
+          "M_lPNm11D": 12,
+          "M_vPNml53": 12,
+          "DL3_lPN": 11,
+          "DA2_lPN": 10,
+          "DL2d_adPN": 9,
+          "VP1l+_lvPN": 9,
+          "M_adPNm5": 9,
+          "VA1v_adPN": 8,
+          "DL2v_adPN": 8,
+          "VP1m+VP2_lvPN2": 8,
+          "M_lvPNm48": 8,
+          "M_vPNml83": 8,
+          "M_vPNml84": 8,
+          "VM7d_adPN": 7,
+          "VC3_adPN": 7,
+          "M_vPNml63": 7,
+          "DM5_lPN": 7,
+          "DM6_adPN": 7,
+          "M_lPNm13": 7,
+          "M_lvPNm45": 7,
+          "VA7m_lPN": 6,
+          "VA5_lPN": 6,
+          "DC3_adPN": 6,
+          "VC5_lvPN": 6,
+          "VA1d_adPN": 6,
+          "D_adPN": 6,
+          "M_vPNml65": 6,
+          "VP3+_l2PN": 6,
+          "VC4_adPN": 6,
+          "CB2004": 6,
+          "M_lPNm11A": 6,
+          "VL2a_vPN": 6,
+          "VM4_lvPN": 6,
+          "M_VPNml66": 6,
+          "VM6_lvPN": 6,
+          "M_vPNml87": 6,
+          "M_vPNml76": 6,
+          "M_adPNm8": 6,
+          "CB2589": 6,
+          "CB2703": 6,
+          "VM5v_adPN": 5,
+          "M_lvPNm37": 5,
+          "M_lvPNm33": 5,
+          "M_vPNml60": 5,
+          "M_lvPNm41": 5,
+          "M_lvPNm35": 5,
+          "CB3447": 5,
+          "M_vPNml68": 5,
+          "CB1296_a": 5,
+          "DL1_adPN": 4,
+          "VM3_adPN": 4,
+          "DM2_lPN": 4,
+          "DC2_adPN": 4,
+          "VA3_adPN": 4,
+          "M_l2PNm16": 4,
+          "M_lvPNm40": 4,
+          "M_lvPNm24": 4,
+          "VA1v_vPN": 4,
+          "M_l2PN10t19": 4,
+          "M_vPNml50": 4,
+          "M_lvPNm25": 4,
+          "M_l2PN3t18": 4,
+          "<missing>": 4,
+          "DA3_adPN": 4,
+          "VP2+Z_lvPN": 4,
+          "CB0650": 4,
+          "VP1m+_lvPN": 4,
+          "M_lvPNm26": 4,
+          "M_lvPNm47": 4,
+          "M_vPNml72": 4,
+          "VL2p_vPN": 4,
+          "M_lvPNm46": 4,
+          "M_vPNml67": 4,
+          "M_lvPNm43": 4,
+          "M_vPNml75": 4,
+          "M_vPNml80": 4,
+          "DP1m_vPN": 4,
+          "M_vPNml77": 4,
+          "DL2d_vPN": 4,
+          "M_vPNml69": 4,
+          "CB2711": 4,
+          "VM7v_adPN": 3,
+          "VM2_adPN": 3,
+          "M_lvPNm42": 3,
+          "M_adPNm7": 3,
+          "DP1l_vPN": 3,
+          "CB3228": 3,
+          "M_vPNml86": 3,
+          "VL2a_adPN": 2,
+          "DP1m_adPN": 2,
+          "DM3_adPN": 2,
+          "DM1_lPN": 2,
+          "VA7l_adPN": 2,
+          "V_ilPN": 2,
+          "VL2p_adPN": 2,
+          "VA2_adPN": 2,
+          "MZ_lv2PN": 2,
+          "VP1d+VP4_l2PN2": 2,
+          "DP1l_adPN": 2,
+          "VM6_adPN": 2,
+          "DC1_adPN": 2,
+          "VL1_ilPN": 2,
+          "M_l2PNl20": 2,
+          "DM4_adPN": 2,
+          "VC2_lPN": 2,
+          "DL5_adPN": 2,
+          "VC1_lPN": 2,
+          "VA6_adPN": 2,
+          "VP1m+VP5_ilPN": 2,
+          "VA4_lPN": 2,
+          "VP1d+VP4_l2PN1": 2,
+          "M_smPN6t2": 2,
+          "DA4m_adPN": 2,
+          "M_spPN4t9": 2,
+          "VP1m_l2PN": 2,
+          "M_spPN5t10": 2,
+          "VP4+VL1_l2PN": 2,
+          "DL4_adPN": 2,
+          "VM1_lPN": 2,
+          "M_l2PNl21": 2,
+          "M_imPNl92": 2,
+          "DC4_adPN": 2,
+          "M_l2PNm14": 2,
+          "VP4+_vPN": 2,
+          "DA1_vPN": 2,
+          "VP5+Z_adPN": 2,
+          "M_lv2PN9t49_a": 2,
+          "DA4l_adPN": 2,
+          "VP1l+VP3_ilPN": 2,
+          "M_l2PNl22": 2,
+          "V_l2PN": 2,
+          "M_l2PNl23": 2,
+          "VM4_adPN": 2,
+          "M_vPNml55": 2,
+          "M_smPNm1": 2,
+          "M_ilPNm90": 2,
+          "VP2_l2PN": 2,
+          "VP3+VP1l_ivPN": 2,
+          "VP4_vPN": 2,
+          "VA1d_vPN": 2,
+          "M_adPNm3": 2,
+          "M_l2PNm17": 2,
+          "VP5+VP3_l2PN": 2,
+          "VP2+VC5_l2PN": 2,
+          "VP1m+VP2_lvPN1": 2,
+          "M_lvPNm39": 2,
+          "VP1d_il2PN": 2,
+          "M_l2PNm15": 2,
+          "VP3+_vPN": 2,
+          "M_vPNml79": 2,
+          "M_vPNml51": 2,
+          "M_lv2PN9t49_b": 2,
+          "VL1_vPN": 2,
+          "M_vPNml52": 2,
+          "M_lPNm11B": 2,
+          "M_lvPNm29": 2,
+          "M_lvPNm44": 2,
+          "M_lPNm12": 2,
+          "M_adPNm4": 2,
+          "M_lPNm11C": 2,
+          "M_vPNml73": 2,
+          "CB2561": 2,
+          "M_lvPNm28": 2,
+          "M_lvPNm32": 2,
+          "M_lvPNm31": 2,
+          "M_lvPNm30": 2,
+          "M_lvPNm38": 2,
+          "DC4_vPN": 2,
+          "CB2772": 2,
+          "M_vPNml57": 2,
+          "M_vPNml88": 2,
+          "DM4_vPN": 2,
+          "DM3_vPN": 2,
+          "VP2+_adPN": 2,
+          "M_vPNml54": 2,
+          "VP2_adPN": 1,
+          "M_lvPNm27": 1,
+          "M_vPNml78": 1,
+          "CB3383": 1
+        },
+        "class": {
+          "ALPN": 686
+        },
+        "subclass": {
+          "<missing>": 619,
+          "BI": 67
+        },
+        "superclass": {
+          "cb_intrinsic": 686
+        },
+        "rootSide": {
+          "<missing>": 686
+        },
+        "somaSide": {
+          "R": 343,
+          "L": 343
+        },
+        "consensus_nt": {
+          "acetylcholine": 469,
+          "gaba": 209,
+          "glutamate": 8
+        },
+        "model_sign": {
+          "1": 469,
+          "-1": 217
+        },
+        "status": {
+          "Traced": 686
+        },
+        "statusLabel": {
+          "Roughly traced": 412,
+          "Prelim Roughly traced": 274,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "ALPN_direct_to_KC": {
+      "predicate": "class == 'ALPN' AND any retained outgoing CSR target has class == 'Kenyon_Cell'",
+      "count": 314,
+      "index_sha256": "cbc157edd036bed41e0ca48038d48727c5f4fa91ebd8a7d12fd0b02d06b7ba08",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "e50edca7c1fb7fa447a6d9de132605faf9836a98912ef3962f237763502a093b",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "DA1_lPN": 13,
+          "VM5d_adPN": 12,
+          "M_lPNm11D": 11,
+          "DA2_lPN": 10,
+          "DL2d_adPN": 9,
+          "VA1v_adPN": 8,
+          "DL3_lPN": 8,
+          "DL2v_adPN": 8,
+          "VP1m+VP2_lvPN2": 8,
+          "VM7d_adPN": 7,
+          "VC3_adPN": 7,
+          "DM5_lPN": 7,
+          "DM6_adPN": 7,
+          "VA7m_lPN": 6,
+          "VA5_lPN": 6,
+          "DC3_adPN": 6,
+          "VC5_lvPN": 6,
+          "VA1d_adPN": 6,
+          "D_adPN": 6,
+          "VC4_adPN": 6,
+          "M_lPNm13": 6,
+          "VM5v_adPN": 5,
+          "DL1_adPN": 4,
+          "VM3_adPN": 4,
+          "DM2_lPN": 4,
+          "DC2_adPN": 4,
+          "VA3_adPN": 4,
+          "M_l2PNm16": 4,
+          "DA3_adPN": 4,
+          "VP1m+_lvPN": 4,
+          "VM4_lvPN": 4,
+          "M_adPNm5": 4,
+          "VM7v_adPN": 3,
+          "VM2_adPN": 3,
+          "M_adPNm8": 3,
+          "M_lPNm11A": 3,
+          "VL2a_adPN": 2,
+          "DP1m_adPN": 2,
+          "DM3_adPN": 2,
+          "DM1_lPN": 2,
+          "VA7l_adPN": 2,
+          "V_ilPN": 2,
+          "VL2p_adPN": 2,
+          "VA2_adPN": 2,
+          "DP1l_adPN": 2,
+          "VM6_adPN": 2,
+          "DC1_adPN": 2,
+          "VL1_ilPN": 2,
+          "DM4_adPN": 2,
+          "VC2_lPN": 2,
+          "DL5_adPN": 2,
+          "VC1_lPN": 2,
+          "VA6_adPN": 2,
+          "VP1m+VP5_ilPN": 2,
+          "VA4_lPN": 2,
+          "VP1d+VP4_l2PN1": 2,
+          "DA4m_adPN": 2,
+          "VP1m_l2PN": 2,
+          "DL4_adPN": 2,
+          "VM1_lPN": 2,
+          "DC4_adPN": 2,
+          "VP5+Z_adPN": 2,
+          "DA4l_adPN": 2,
+          "VP1l+VP3_ilPN": 2,
+          "VM4_adPN": 2,
+          "M_ilPNm90": 2,
+          "VP3+VP1l_ivPN": 2,
+          "VP4_vPN": 2,
+          "VP1m+VP2_lvPN1": 2,
+          "VP1d_il2PN": 2,
+          "M_l2PNm15": 2,
+          "VP3+_vPN": 2,
+          "M_lPNm11B": 2,
+          "M_adPNm4": 2,
+          "M_lPNm11C": 2,
+          "M_lvPNm45": 2,
+          "M_lvPNm46": 2,
+          "VP2+_adPN": 2,
+          "VP2_adPN": 1,
+          "M_spPN4t9": 1,
+          "DA1_vPN": 1,
+          "M_smPNm1": 1,
+          "VP2+Z_lvPN": 1,
+          "CB0650": 1,
+          "M_adPNm7": 1,
+          "M_l2PNm17": 1,
+          "M_lvPNm48": 1,
+          "M_lvPNm25": 1
+        },
+        "class": {
+          "ALPN": 314
+        },
+        "subclass": {
+          "<missing>": 289,
+          "BI": 25
+        },
+        "superclass": {
+          "cb_intrinsic": 314
+        },
+        "rootSide": {
+          "<missing>": 314
+        },
+        "somaSide": {
+          "L": 158,
+          "R": 156
+        },
+        "consensus_nt": {
+          "acetylcholine": 303,
+          "gaba": 6,
+          "glutamate": 5
+        },
+        "model_sign": {
+          "1": 303,
+          "-1": 11
+        },
+        "status": {
+          "Traced": 314
+        },
+        "statusLabel": {
+          "Roughly traced": 248,
+          "Prelim Roughly traced": 66,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "SEZPN_all": {
+      "predicate": "class == 'SEZPN'",
+      "count": 27,
+      "index_sha256": "adf8eaf73b722d9db9ee42859e9ee8cdc330a25d33343b6da17f74a6d202ece7",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "1b743b4bcd7693df5fbe70eadbe1c667ea59646ee87d9b701a04290f7985404a",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "Z_lvPNm1": 9,
+          "CL113": 4,
+          "CL114": 2,
+          "CL115": 2,
+          "Z_vPNml1": 2,
+          "GNG526": 2,
+          "GNG639": 2,
+          "GNG640": 2,
+          "GNG564": 2
+        },
+        "class": {
+          "SEZPN": 27
+        },
+        "subclass": {
+          "<missing>": 16,
+          "BI": 11
+        },
+        "superclass": {
+          "cb_intrinsic": 27
+        },
+        "rootSide": {
+          "<missing>": 27
+        },
+        "somaSide": {
+          "R": 14,
+          "L": 13
+        },
+        "consensus_nt": {
+          "acetylcholine": 15,
+          "gaba": 12
+        },
+        "model_sign": {
+          "1": 15,
+          "-1": 12
+        },
+        "status": {
+          "Traced": 27
+        },
+        "statusLabel": {
+          "Roughly traced": 26,
+          "Prelim Roughly traced": 1,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "SEZPN_direct_to_KC": {
+      "predicate": "class == 'SEZPN' AND direct_to_KC",
+      "count": 0,
+      "index_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {},
+        "class": {},
+        "subclass": {},
+        "superclass": {},
+        "rootSide": {},
+        "somaSide": {},
+        "consensus_nt": {},
+        "model_sign": {},
+        "status": {},
+        "statusLabel": {
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "Prelim Roughly traced": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Roughly traced": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "visual_projection_direct_to_KC": {
+      "predicate": "superclass == 'visual_projection' AND direct_to_KC",
+      "count": 252,
+      "index_sha256": "1247fff874ad619a75e37ba139f31f38373c5088702d549a3470e533cd18a46e",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "50af458d8a24295e64460faedb407ba8bb934b64b61e8d5fc43dba8897ecf1d9",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "MeVPLo2": 14,
+          "aMe5": 10,
+          "MeVP5": 10,
+          "MeVP12": 8,
+          "MeVP1": 7,
+          "aMe12": 6,
+          "aMe26": 6,
+          "MeVP21": 6,
+          "LC24": 6,
+          "LoVP8": 5,
+          "LT43": 4,
+          "aMe9": 4,
+          "LoVP71": 4,
+          "MeVP20": 4,
+          "LoVP38": 4,
+          "5thsLNv_LNd6": 3,
+          "MeVPMe4": 3,
+          "MeVP46": 3,
+          "aMe10": 3,
+          "OCG02c": 3,
+          "MeVP22": 3,
+          "MeVP3": 3,
+          "MeVP16": 3,
+          "MeVP14": 3,
+          "LC40": 3,
+          "MeVP10": 3,
+          "LoVP2": 3,
+          "LC30": 3,
+          "LT79": 2,
+          "MeVP47": 2,
+          "MeVP52": 2,
+          "MeVPMe3": 2,
+          "LoVP100": 2,
+          "MeVP36": 2,
+          "MeVP29": 2,
+          "MeVPaMe1": 2,
+          "aMe20": 2,
+          "MeVP38": 2,
+          "MeVP41": 2,
+          "LT75": 2,
+          "MeVP43": 2,
+          "MeVP30": 2,
+          "MeVP45": 2,
+          "MeVP25": 2,
+          "MeVP50": 2,
+          "LPT51": 2,
+          "LoVP42": 2,
+          "MeVP32": 2,
+          "LT67": 2,
+          "LoVP70": 2,
+          "LoVP67": 2,
+          "aMe6a": 2,
+          "LoVP107": 2,
+          "LoVP72": 2,
+          "LoVP74": 2,
+          "LoVP65": 2,
+          "LoVP57": 2,
+          "LoVP39": 2,
+          "LoVP44": 2,
+          "MeVP34": 2,
+          "LoVP41": 2,
+          "LoVP43": 2,
+          "LoVP66": 2,
+          "LoVP51": 2,
+          "LC28": 2,
+          "LoVP10": 2,
+          "LoVP3": 2,
+          "LoVP1": 2,
+          "LoVP5": 2,
+          "LoVP9": 2,
+          "vCal2": 1,
+          "LoVP102": 1,
+          "MeVPMe11": 1,
+          "vCal3": 1,
+          "MeVP49": 1,
+          "MeVP33": 1,
+          "LoVP88": 1,
+          "LoVP64": 1,
+          "aMe3": 1,
+          "LoVP73": 1,
+          "MeVP42": 1,
+          "LT72": 1,
+          "LoVP46": 1,
+          "MeVP35": 1,
+          "MeVP63": 1,
+          "MeVP40": 1,
+          "LoVP34": 1,
+          "LoVP98": 1,
+          "LC33": 1,
+          "LC44": 1,
+          "LC13": 1,
+          "LoVP14": 1,
+          "LPT101": 1,
+          "MeVP11": 1,
+          "MeTu4a": 1,
+          "LoVP35": 1,
+          "LC27": 1,
+          "aMe8": 1,
+          "LoVP106": 1,
+          "LoVP28": 1,
+          "LoVP6": 1
+        },
+        "class": {
+          "<missing>": 252
+        },
+        "subclass": {
+          "<missing>": 252
+        },
+        "superclass": {
+          "visual_projection": 252
+        },
+        "rootSide": {
+          "<missing>": 252
+        },
+        "somaSide": {
+          "R": 128,
+          "L": 124
+        },
+        "consensus_nt": {
+          "acetylcholine": 204,
+          "glutamate": 39,
+          "gaba": 8,
+          "unclear": 1
+        },
+        "model_sign": {
+          "1": 204,
+          "-1": 47,
+          "0": 1
+        },
+        "status": {
+          "Traced": 252
+        },
+        "statusLabel": {
+          "Roughly traced": 153,
+          "Prelim Roughly traced": 99,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    }
+  },
+  "kc_type_by_soma_side": {
+    "KC": {
+      "R": 1,
+      "L": 1
+    },
+    "KCa'b'-ap1": {
+      "R": 102,
+      "L": 97
+    },
+    "KCa'b'-ap2": {
+      "R": 158,
+      "L": 133
+    },
+    "KCa'b'-m": {
+      "L": 110,
+      "R": 95
+    },
+    "KCab-c": {
+      "L": 277,
+      "R": 211
+    },
+    "KCab-m": {
+      "L": 310,
+      "R": 226
+    },
+    "KCab-p": {
+      "R": 65,
+      "L": 64
+    },
+    "KCab-s": {
+      "R": 423,
+      "L": 234
+    },
+    "KCg": {
+      "L": 1
+    },
+    "KCg-d": {
+      "R": 107,
+      "L": 99
+    },
+    "KCg-m": {
+      "L": 689,
+      "R": 653
+    },
+    "KCg-s1": {
+      "R": 1,
+      "L": 1
+    },
+    "KCg-s2": {
+      "L": 1,
+      "R": 1
+    },
+    "KCg-s3": {
+      "L": 1,
+      "R": 1
+    },
+    "KCg-s4": {
+      "R": 1,
+      "L": 1
+    }
+  },
+  "kc_literal_prefix_counts": {
+    "KCab": 1810,
+    "KCa'b'": 695,
+    "KCg": 1557
+  },
+  "kc_unspecified_type_count": 2,
+  "kc_supertype_counts": {
+    "11862": 1810,
+    "14292": 1346,
+    "17488": 695,
+    "19102": 206,
+    "<missing>": 7
+  },
+  "APL_records": [
+    {
+      "index": 502,
+      "bodyId": 10540,
+      "type": "APL",
+      "instance": "APL_R",
+      "class": null,
+      "superclass": "cb_intrinsic",
+      "subclass": null,
+      "rootSide": null,
+      "somaSide": "R",
+      "consensus_nt": "gaba",
+      "predicted_nt": "gaba",
+      "ground_truth": "gaba",
+      "model_sign": -1,
+      "status": "Traced",
+      "statusLabel": "Roughly traced",
+      "flywireType": "APL",
+      "hemibrainType": "APL"
+    },
+    {
+      "index": 904,
+      "bodyId": 10977,
+      "type": "APL",
+      "instance": "APL_L",
+      "class": null,
+      "superclass": "cb_intrinsic",
+      "subclass": null,
+      "rootSide": null,
+      "somaSide": "L",
+      "consensus_nt": "gaba",
+      "predicted_nt": "gaba",
+      "ground_truth": "gaba",
+      "model_sign": -1,
+      "status": "Traced",
+      "statusLabel": "Roughly traced",
+      "flywireType": "APL",
+      "hemibrainType": "APL"
+    }
+  ],
+  "PN_name_ambiguity": {
+    "type_contains_PN_count": 808,
+    "ALPN_with_PN_in_type": 638,
+    "ALPN_with_CB_prefix": 44,
+    "ALPN_missing_primary_type": 4,
+    "non_ALPN_PN_name": {
+      "predicate": "type contains literal 'PN' AND class != 'ALPN'; candidates only",
+      "count": 170,
+      "index_sha256": "88d3bcba3c915a009d6b4d793482ab91a5e46ee1afb7b144f9eef86bbaeb7073",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "4494f24ca315184b00cc2b4d019c479816165ff2caf66c4413b1bc7bf0680b8d",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "WEDPN8C": 13,
+          "WEDPN8B": 11,
+          "WEDPN1A": 10,
+          "Z_lvPNm1": 9,
+          "WEDPN17_c": 9,
+          "WEDPN6B": 8,
+          "WEDPN7B": 8,
+          "WEDPN6A": 8,
+          "WEDPN7A": 7,
+          "WEDPN17_a1": 7,
+          "WEDPN3": 6,
+          "WEDPN16_d": 6,
+          "WEDPN2A": 6,
+          "WEDPN17_b": 6,
+          "WEDPN14": 6,
+          "WEDPN6C": 5,
+          "WEDPN8D": 5,
+          "WEDPN7C": 5,
+          "LPN_a": 4,
+          "WEDPN17_a2": 4,
+          "WEDPN18": 3,
+          "WEDPN4": 2,
+          "WEDPN9": 2,
+          "Z_vPNml1": 2,
+          "WEDPN12": 2,
+          "WEDPN11": 2,
+          "WEDPN5": 2,
+          "LPN_b": 2,
+          "WEDPN2B_b": 2,
+          "WEDPN10A": 2,
+          "WEDPN10B": 2,
+          "WEDPN2B_a": 2,
+          "WEDPN1B": 2
+        },
+        "class": {
+          "<missing>": 159,
+          "SEZPN": 11
+        },
+        "subclass": {
+          "<missing>": 159,
+          "BI": 11
+        },
+        "superclass": {
+          "cb_intrinsic": 170
+        },
+        "rootSide": {
+          "<missing>": 170
+        },
+        "somaSide": {
+          "L": 85,
+          "R": 85
+        },
+        "consensus_nt": {
+          "acetylcholine": 107,
+          "gaba": 59,
+          "glutamate": 4
+        },
+        "model_sign": {
+          "1": 107,
+          "-1": 63
+        },
+        "status": {
+          "Traced": 170
+        },
+        "statusLabel": {
+          "Prelim Roughly traced": 99,
+          "Roughly traced": 71,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "non_ALPN_PN_name_direct_to_KC": {
+      "predicate": "type contains literal 'PN' AND class != 'ALPN' AND direct_to_KC; candidates only",
+      "count": 2,
+      "index_sha256": "73dc809f1de4beba66d19880402197ea38fa484a8ac8ae0cc774d12436ed7d2c",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "cbd6df9f3a2d4db52c395f91024f6654b988119bdd4621a826ea2879897ad19d",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "WEDPN12": 2
+        },
+        "class": {
+          "<missing>": 2
+        },
+        "subclass": {
+          "<missing>": 2
+        },
+        "superclass": {
+          "cb_intrinsic": 2
+        },
+        "rootSide": {
+          "<missing>": 2
+        },
+        "somaSide": {
+          "L": 1,
+          "R": 1
+        },
+        "consensus_nt": {
+          "glutamate": 2
+        },
+        "model_sign": {
+          "-1": 2
+        },
+        "status": {
+          "Traced": 2
+        },
+        "statusLabel": {
+          "Roughly traced": 2,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "Prelim Roughly traced": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "ALPN_missing_type_records": [
+      {
+        "bodyId": 15125,
+        "instance": null,
+        "flywireType": "VP5+_l2PN,VP5+VP2_l2PN",
+        "hemibrainType": null,
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 15970,
+        "instance": null,
+        "flywireType": "VP5+_l2PN,VP5+VP2_l2PN",
+        "hemibrainType": null,
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 17800,
+        "instance": null,
+        "flywireType": "VP5+_l2PN,VP5+VP2_l2PN",
+        "hemibrainType": null,
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 21756,
+        "instance": null,
+        "flywireType": "VP5+_l2PN,VP5+VP2_l2PN",
+        "hemibrainType": null,
+        "somaSide": "L"
+      }
+    ]
+  },
+  "previous_KC_MBON_subset": {
+    "selected": {
+      "predicate": "KC_all AND any retained edge to exact MBON12/13/14",
+      "count": 3957,
+      "index_sha256": "5c8b85d16338825afe4d3f6fcad7bcea4a83c5301836b9d50c3d34cb6512a20c",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "c56cabeb071028ef41b18e043946bf4f4ec0680083ef35666b6d5294a46f9fff",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "KCg-m": 1327,
+          "KCab-s": 656,
+          "KCab-m": 528,
+          "KCab-c": 481,
+          "KCa'b'-ap2": 291,
+          "KCa'b'-m": 205,
+          "KCa'b'-ap1": 199,
+          "KCg-d": 147,
+          "KCab-p": 115,
+          "KCg-s1": 2,
+          "KCg-s2": 2,
+          "KCg-s4": 2,
+          "KCg": 1,
+          "KCg-s3": 1
+        },
+        "class": {
+          "Kenyon_Cell": 3957
+        },
+        "subclass": {
+          "<missing>": 3957
+        },
+        "superclass": {
+          "cb_intrinsic": 3957
+        },
+        "rootSide": {
+          "<missing>": 3957
+        },
+        "somaSide": {
+          "R": 1983,
+          "L": 1974
+        },
+        "consensus_nt": {
+          "acetylcholine": 3957
+        },
+        "model_sign": {
+          "1": 3957
+        },
+        "status": {
+          "Traced": 3957
+        },
+        "statusLabel": {
+          "Roughly traced": 3038,
+          "Prelim Roughly traced": 918,
+          "Reviewed": 1,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "RT Hard to trace": 0,
+          "RT Orphan": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "complement": {
+      "predicate": "KC_all without retained edge to exact MBON12/13/14",
+      "count": 107,
+      "index_sha256": "e17e7d942580b82b3ca1760097cb71c9cd1385722bef5426e9182e6f84419d8c",
+      "index_encoding": "ascending graph indices, contiguous little-endian int32 bytes",
+      "body_ids_sha256": "7ba1e578a73bc9fdb5c9468275c0553c6a9c011bc6e915ceb2aeb18ad6f009aa",
+      "body_id_encoding": "graph order, contiguous little-endian int64 bytes",
+      "metadata": {
+        "type": {
+          "KCg-d": 59,
+          "KCg-m": 15,
+          "KCab-p": 14,
+          "KCab-m": 8,
+          "KCab-c": 7,
+          "KC": 2,
+          "KCg-s3": 1,
+          "KCab-s": 1
+        },
+        "class": {
+          "Kenyon_Cell": 107
+        },
+        "subclass": {
+          "<missing>": 107
+        },
+        "superclass": {
+          "cb_intrinsic": 107
+        },
+        "rootSide": {
+          "<missing>": 107
+        },
+        "somaSide": {
+          "R": 62,
+          "L": 45
+        },
+        "consensus_nt": {
+          "acetylcholine": 107
+        },
+        "model_sign": {
+          "1": 107
+        },
+        "status": {
+          "Traced": 107
+        },
+        "statusLabel": {
+          "Roughly traced": 78,
+          "Prelim Roughly traced": 28,
+          "RT Orphan": 1,
+          "Unimportant": 0,
+          "Glia": 0,
+          "Hard to trace": 0,
+          "Orphan-artifact": 0,
+          "Orphan": 0,
+          "Orphan hotknife": 0,
+          "Putative Leaves": 0,
+          "Out of scope": 0,
+          "Not examined": 0,
+          "": 0,
+          "0.5assign": 0,
+          "Anchor": 0,
+          "Cleaved Anchor": 0,
+          "Will be merged": 0,
+          "Partially traced": 0,
+          "Sensory Anchor": 0,
+          "Cervical Anchor": 0,
+          "Soma Anchor": 0,
+          "Examined Soma Anchor": 0,
+          "Primary Anchor": 0,
+          "Leaves": 0,
+          "PRT Orphan": 0,
+          "Reviewed": 0,
+          "RT Hard to trace": 0,
+          "Traced in ROI": 0,
+          "Traced": 0,
+          "Finalized": 0
+        }
+      }
+    },
+    "selected_edge_count": 8236,
+    "complement_indices": [
+      26229,
+      30246,
+      31112,
+      32293,
+      33482,
+      33720,
+      33729,
+      35330,
+      37017,
+      37624,
+      37797,
+      38334,
+      38728,
+      40144,
+      40673,
+      40968,
+      41810,
+      42017,
+      43078,
+      43096,
+      44370,
+      45733,
+      45810,
+      45976,
+      47024,
+      47659,
+      50568,
+      52226,
+      52921,
+      53083,
+      55391,
+      55734,
+      55804,
+      55980,
+      57216,
+      58341,
+      59841,
+      59953,
+      61286,
+      61310,
+      61667,
+      62664,
+      63225,
+      65030,
+      65223,
+      65375,
+      65789,
+      65813,
+      66497,
+      68240,
+      69404,
+      69725,
+      69915,
+      70326,
+      71509,
+      72087,
+      72229,
+      73794,
+      78663,
+      78836,
+      80139,
+      80643,
+      82312,
+      83643,
+      84538,
+      84812,
+      86656,
+      87829,
+      88001,
+      88590,
+      89191,
+      91123,
+      93421,
+      93520,
+      96013,
+      96238,
+      97701,
+      97862,
+      99178,
+      99252,
+      99539,
+      99590,
+      99760,
+      100127,
+      100761,
+      101480,
+      102185,
+      102335,
+      104041,
+      105591,
+      106480,
+      107590,
+      108579,
+      109523,
+      109917,
+      115282,
+      115468,
+      121851,
+      132315,
+      133394,
+      134807,
+      137461,
+      138936,
+      139984,
+      140454,
+      142043,
+      142517
+    ],
+    "complement_body_ids": [
+      39316,
+      43867,
+      44850,
+      46196,
+      47567,
+      47847,
+      47858,
+      49709,
+      51679,
+      52402,
+      52594,
+      53217,
+      53680,
+      55316,
+      55946,
+      56284,
+      57302,
+      57550,
+      58782,
+      58802,
+      60344,
+      61981,
+      62076,
+      62274,
+      63543,
+      64310,
+      67853,
+      69885,
+      70747,
+      70952,
+      73850,
+      74269,
+      74362,
+      74568,
+      76076,
+      77454,
+      79372,
+      79522,
+      81177,
+      81203,
+      81656,
+      82895,
+      83612,
+      85923,
+      86180,
+      86372,
+      86909,
+      86940,
+      87868,
+      90189,
+      91751,
+      92168,
+      92430,
+      92967,
+      94518,
+      95291,
+      95484,
+      97591,
+      104293,
+      104513,
+      106301,
+      107027,
+      109321,
+      111197,
+      112442,
+      112835,
+      115470,
+      117192,
+      117446,
+      118280,
+      119167,
+      122110,
+      125644,
+      125813,
+      129866,
+      130231,
+      132622,
+      132912,
+      135219,
+      135362,
+      135897,
+      135993,
+      136310,
+      137008,
+      138198,
+      139591,
+      140961,
+      141289,
+      144747,
+      148145,
+      150259,
+      153080,
+      155716,
+      158447,
+      159580,
+      180422,
+      181464,
+      223880,
+      524455,
+      526900,
+      531096,
+      537082,
+      542818,
+      545375,
+      546905,
+      552553,
+      556005
+    ],
+    "label": "3,957 is a target-dependent presynaptic subset, not the full retained KC population."
+  },
+  "selection_recommendations": [
+    "Use class == 'Kenyon_Cell' for all retained KCs; the primary type prefix is equivalent in this pinned dataset only.",
+    "Use type == 'APL' for APL; its class is missing. Preserve both soma-side cells and do not filter by rootSide or statusLabel == 'Traced'.",
+    "Use class == 'ALPN' for the anatomical ALPN population, retaining its4 unnamed primary types and44 CB-prefixed cells.",
+    "For direct upstream ALPNs, intersect ALPN_all with retained CSR adjacency into KC_all. Keep all ALPNs and directly connected ALPNs as separate cohorts.",
+    "Do not silently merge all PN-name matches, visual_projection or SEZPN into olfactory ALPNs. These are separate annotation namespaces/scopes."
+  ],
+  "limits": [
+    "KC subclass is missing for every cell. Exact type names and literal prefixes are available; no functional subclass or unknown numeric supertype semantics were invented.",
+    "ALPN subclass BI occurs67times and is otherwise missing; its abbreviation is retained without assigning physiological meaning.",
+    "rootSide is missing for all KC/APL/ALPN cells. somaSide is an annotation of the soma, not inferred projection laterality or a mirror pairing.",
+    "APL consensus_nt and ground_truth columns both say gaba, but these are source annotation fields, not new physiological measurements. model_sign−1 follows the existing declared transmitter-to-effect rule.",
+    "Direct contact presence uses the already retained minconf0.5 graph and>=1contact. It does not establish a strong/effective olfactory connection, independent synapse verification, or functional drive.",
+    "The314 direct ALPNs and252 visual_projection sources include any retained edge; no stronger biological threshold was introduced. No raw contact-file rescan was needed: all compiled graph array hashes were checked against the manifest.",
+    "No saved trial activity was analyzed. This review does not claim sparsity, response calibration, APL spiking/compartmental validity, or causal effects."
+  ],
+  "check_count": 61,
+  "checks_passed": 61
+}

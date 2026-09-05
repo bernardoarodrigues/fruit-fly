@@ -1,0 +1,943 @@
+{
+  "schema": 1,
+  "passed": true,
+  "completed_utc": "2026-09-05T20:37:08.433399+00:00",
+  "source_start": [
+    {
+      "path": "scripts/review_pn_kc_apl_inventory.py",
+      "bytes": 26476,
+      "sha256": "d4cfa695ddef7c5ae2d2f1a6e89fc22ab9af24962b36ced872eeccd419ecc0c1"
+    },
+    {
+      "path": "scripts/review_inhibitory_recurrent_panel_trial.py",
+      "bytes": 18286,
+      "sha256": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-arrays.npz",
+      "bytes": 16204143,
+      "sha256": "cd0b5bc4aeb2d4981c7b1c5b36831b87f58496e82c237c2eb8ced5c6e0ef2451"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-cells.csv",
+      "bytes": 433119,
+      "sha256": "246ad950b8be6a3ed05b3acd8b5452424d04ba00464f282466380e73e7d52b94"
+    },
+    {
+      "path": "scripts/analyze_pn_kc_apl_inventory.py",
+      "bytes": 21451,
+      "sha256": "c91bdcff70dc55e52aa9e7854673230f78f5d91ff4f826f25f9d1b66bbc8d022"
+    },
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-plan.json",
+      "bytes": 142367,
+      "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+    },
+    {
+      "path": "validation/pn-kc-apl-identity-review.json",
+      "bytes": 48661,
+      "sha256": "fe75732c23125380beb6b2a7a4bd6206064407f28cbad06fd9da899700979262"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-completion.json",
+      "bytes": 8647,
+      "sha256": "019e2b6083275ee9fc26323852922fa953b0d47befdc67fcfc6672fcbe9661e9"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-independent-review.json",
+      "bytes": 66407,
+      "sha256": "1d0b37600b196bb4a9482a5e84f37c6fb866cb800673e652811fbed1dcb08dd5"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-results.json",
+      "bytes": 47318,
+      "sha256": "94599739999cd8d8b04e5898de012ceaf63a721bdf437dea291b6b3ad4b174d6"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-arrays.npz",
+      "bytes": 26837757,
+      "sha256": "2322d1dd1ef826e1400c9b9d3a04b365b6c034821cdbb2a5ef3c63a99c1112a0"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-independent-review.json",
+      "bytes": 38677,
+      "sha256": "36d74000d8056d67a3535d9df2cf8aaa918eed5c794c30da61be18350b5bcb8b"
+    },
+    {
+      "path": "docs/pn-kc-apl-calibration-plan.md",
+      "bytes": 5200,
+      "sha256": "dcb027bc55309f6ceda6dd494e08a71a2babc9910e629215b53e3e8ecff654f3"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/signs.npy",
+      "bytes": 166828,
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/results.json",
+      "bytes": 13458870,
+      "sha256": "021bbc028ceec91611d97010fec48deae7940eb3b155649ba279a7ccf5f1916c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/results.json",
+      "bytes": 4631,
+      "sha256": "e76a210217b204d711de4afbf839127356dee72264e85b1d8e4f0db716525d29"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/terminal.json",
+      "bytes": 454,
+      "sha256": "25883a809cac9dd4aa4a2db6ef20ae38f6d77aeae5076a3fed56602d720a6d4e"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 367611,
+      "sha256": "ae0363eb24d678529a518fe1e3660896a45a459cb30a3b6c4e3d5d097ed0e3b6"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "b05716aa234fe31278b0a51a3015953909d216b5ff1351a1f7a0a6031ec5c857"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 367613,
+      "sha256": "31407fdc52cac95e1ba5eadc7f0298d10b343990aa79b8d8ae77247a7fca45c2"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "f050564f59bc3436eb79b5f82c7b629cf5bdb7756255aa632ec94b0c75ecc035"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 367613,
+      "sha256": "defd5c0c195dc881ddbe5005f3c86af80f62c651e39dc69f7ca08f6547ce7aa7"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "37f0fc3dcf92cadc94ad0c409e5e44e43b3fcdeca1c693e7afe3dc7e43ab4565"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 361533,
+      "sha256": "d605a8c36a14724295fcecf3e48ba716d5942c7387dc6648013aecef687e8f8e"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "5e29aa43bb988b95b0c722b5a00ca06492ae8bbd7b823da5ec0c61fe77cd8794"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 361533,
+      "sha256": "b28721abdef818c033933f6a795e148f3c0e7f79a5cf385a4a0ffa5a1a7c7df7"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "308a530052fccbf3970304b945e1cfd2c03a55ff92d8c6646b198b825fe871b1"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 361532,
+      "sha256": "98caff47c32dc0a9da98b2d3858d62f46f42427710eb86dae34a2d1f8733a140"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "16fbb9682d6f89ebef27c31f54274be9a5262e28bf7de0f593276a8d066e9003"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-H1-batch-review.json",
+      "bytes": 34164,
+      "sha256": "5c35177d8a7bfd894d1e58e4f2949ce918b652ddc39643289d884b0516c4806c"
+    },
+    {
+      "path": "scripts/review_pn_kc_apl_identities.py",
+      "bytes": 14052,
+      "sha256": "f8635c316feb537979441e931773db83d9ed020cba83010b5bf8d9c87866d337"
+    },
+    {
+      "path": "data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "path": "data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-edges.csv",
+      "bytes": 828657,
+      "sha256": "70de6ffa36066ec62484afc540f86ccda7e30556c06d402d614471a2c61ec87d"
+    }
+  ],
+  "source_end": [
+    {
+      "path": "scripts/review_pn_kc_apl_inventory.py",
+      "bytes": 26476,
+      "sha256": "d4cfa695ddef7c5ae2d2f1a6e89fc22ab9af24962b36ced872eeccd419ecc0c1"
+    },
+    {
+      "path": "scripts/review_inhibitory_recurrent_panel_trial.py",
+      "bytes": 18286,
+      "sha256": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-arrays.npz",
+      "bytes": 16204143,
+      "sha256": "cd0b5bc4aeb2d4981c7b1c5b36831b87f58496e82c237c2eb8ced5c6e0ef2451"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-cells.csv",
+      "bytes": 433119,
+      "sha256": "246ad950b8be6a3ed05b3acd8b5452424d04ba00464f282466380e73e7d52b94"
+    },
+    {
+      "path": "scripts/analyze_pn_kc_apl_inventory.py",
+      "bytes": 21451,
+      "sha256": "c91bdcff70dc55e52aa9e7854673230f78f5d91ff4f826f25f9d1b66bbc8d022"
+    },
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-plan.json",
+      "bytes": 142367,
+      "sha256": "dbe66e07151e24bbbaafb3d23f52f64a8aa2c74420f0ad75dc732e3dfb8710bc"
+    },
+    {
+      "path": "validation/pn-kc-apl-identity-review.json",
+      "bytes": 48661,
+      "sha256": "fe75732c23125380beb6b2a7a4bd6206064407f28cbad06fd9da899700979262"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-completion.json",
+      "bytes": 8647,
+      "sha256": "019e2b6083275ee9fc26323852922fa953b0d47befdc67fcfc6672fcbe9661e9"
+    },
+    {
+      "path": "validation/navigation-mbon-intervention-independent-review.json",
+      "bytes": 66407,
+      "sha256": "1d0b37600b196bb4a9482a5e84f37c6fb866cb800673e652811fbed1dcb08dd5"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-results.json",
+      "bytes": 47318,
+      "sha256": "94599739999cd8d8b04e5898de012ceaf63a721bdf437dea291b6b3ad4b174d6"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-arrays.npz",
+      "bytes": 26837757,
+      "sha256": "2322d1dd1ef826e1400c9b9d3a04b365b6c034821cdbb2a5ef3c63a99c1112a0"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-independent-review.json",
+      "bytes": 38677,
+      "sha256": "36d74000d8056d67a3535d9df2cf8aaa918eed5c794c30da61be18350b5bcb8b"
+    },
+    {
+      "path": "docs/pn-kc-apl-calibration-plan.md",
+      "bytes": 5200,
+      "sha256": "dcb027bc55309f6ceda6dd494e08a71a2babc9910e629215b53e3e8ecff654f3"
+    },
+    {
+      "path": "data/processed/malecns_v1/manifest.json",
+      "bytes": 3869,
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+    },
+    {
+      "path": "data/processed/malecns_v1/neurons.feather",
+      "bytes": 22185954,
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    {
+      "path": "data/processed/malecns_v1/contact_counts.npy",
+      "bytes": 102331880,
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952"
+    },
+    {
+      "path": "data/processed/malecns_v1/signs.npy",
+      "bytes": 166828,
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/results.json",
+      "bytes": 13458870,
+      "sha256": "021bbc028ceec91611d97010fec48deae7940eb3b155649ba279a7ccf5f1916c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/results.json",
+      "bytes": 4631,
+      "sha256": "e76a210217b204d711de4afbf839127356dee72264e85b1d8e4f0db716525d29"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/terminal.json",
+      "bytes": 454,
+      "sha256": "25883a809cac9dd4aa4a2db6ef20ae38f6d77aeae5076a3fed56602d720a6d4e"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 367611,
+      "sha256": "ae0363eb24d678529a518fe1e3660896a45a459cb30a3b6c4e3d5d097ed0e3b6"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "b05716aa234fe31278b0a51a3015953909d216b5ff1351a1f7a0a6031ec5c857"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 367613,
+      "sha256": "31407fdc52cac95e1ba5eadc7f0298d10b343990aa79b8d8ae77247a7fca45c2"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "f050564f59bc3436eb79b5f82c7b629cf5bdb7756255aa632ec94b0c75ecc035"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 367613,
+      "sha256": "defd5c0c195dc881ddbe5005f3c86af80f62c651e39dc69f7ca08f6547ce7aa7"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 301,
+      "sha256": "37f0fc3dcf92cadc94ad0c409e5e44e43b3fcdeca1c693e7afe3dc7e43ab4565"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 361533,
+      "sha256": "d605a8c36a14724295fcecf3e48ba716d5942c7387dc6648013aecef687e8f8e"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "5e29aa43bb988b95b0c722b5a00ca06492ae8bbd7b823da5ec0c61fe77cd8794"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 361533,
+      "sha256": "b28721abdef818c033933f6a795e148f3c0e7f79a5cf385a4a0ffa5a1a7c7df7"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "308a530052fccbf3970304b945e1cfd2c03a55ff92d8c6646b198b825fe871b1"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 361532,
+      "sha256": "98caff47c32dc0a9da98b2d3858d62f46f42427710eb86dae34a2d1f8733a140"
+    },
+    {
+      "path": "runs/20260905T185111580463Z-navigation-mbon-intervention/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 297,
+      "sha256": "16fbb9682d6f89ebef27c31f54274be9a5262e28bf7de0f593276a8d066e9003"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-H1-batch-review.json",
+      "bytes": 34164,
+      "sha256": "5c35177d8a7bfd894d1e58e4f2949ce918b652ddc39643289d884b0516c4806c"
+    },
+    {
+      "path": "scripts/review_pn_kc_apl_identities.py",
+      "bytes": 14052,
+      "sha256": "f8635c316feb537979441e931773db83d9ed020cba83010b5bf8d9c87866d337"
+    },
+    {
+      "path": "data/raw/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "path": "data/raw/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "validation/navigation-ladder-mbon-input-edges.csv",
+      "bytes": 828657,
+      "sha256": "70de6ffa36066ec62484afc540f86ccda7e30556c06d402d614471a2c61ec87d"
+    }
+  ],
+  "preflight": {
+    "passed": true,
+    "checks": 4,
+    "scope": "Synthetic packed pending queues versus explicitly shifted emissions; delay/window endpoints, empty source, exact integer aggregation."
+  },
+  "completed": [
+    {
+      "ordinal": 26,
+      "arm": "control"
+    },
+    {
+      "ordinal": 26,
+      "arm": "intervention"
+    },
+    {
+      "ordinal": 29,
+      "arm": "control"
+    },
+    {
+      "ordinal": 29,
+      "arm": "intervention"
+    },
+    {
+      "ordinal": 32,
+      "arm": "control"
+    },
+    {
+      "ordinal": 32,
+      "arm": "intervention"
+    },
+    {
+      "ordinal": 35,
+      "arm": "control"
+    },
+    {
+      "ordinal": 35,
+      "arm": "intervention"
+    },
+    {
+      "ordinal": 38,
+      "arm": "control"
+    },
+    {
+      "ordinal": 38,
+      "arm": "intervention"
+    },
+    {
+      "ordinal": 41,
+      "arm": "control"
+    },
+    {
+      "ordinal": 41,
+      "arm": "intervention"
+    }
+  ],
+  "check_count": 492343,
+  "categories": {
+    "fixed_plan": {
+      "checked": 1,
+      "passed": 1
+    },
+    "fixed_result": {
+      "checked": 1,
+      "passed": 1
+    },
+    "result_plan_link": {
+      "checked": 1,
+      "passed": 1
+    },
+    "independent_decoder_pin": {
+      "checked": 1,
+      "passed": 1
+    },
+    "producer_input_and_artifact_pin": {
+      "checked": 55,
+      "passed": 55
+    },
+    "contract": {
+      "checked": 1,
+      "passed": 1
+    },
+    "twelve_complete_results": {
+      "checked": 1,
+      "passed": 1
+    },
+    "graph_manifest": {
+      "checked": 7,
+      "passed": 7
+    },
+    "execution_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "metadata_graph_order": {
+      "checked": 1,
+      "passed": 1
+    },
+    "disjoint_targets": {
+      "checked": 1,
+      "passed": 1
+    },
+    "direct_CSR_rows": {
+      "checked": 1,
+      "passed": 1
+    },
+    "edge_domain": {
+      "checked": 1,
+      "passed": 1
+    },
+    "graph_scope": {
+      "checked": 1,
+      "passed": 1
+    },
+    "all_group_definitions": {
+      "checked": 1,
+      "passed": 1
+    },
+    "KC_denominators": {
+      "checked": 1,
+      "passed": 1
+    },
+    "exact_labels": {
+      "checked": 1,
+      "passed": 1
+    },
+    "array_exact": {
+      "checked": 166,
+      "passed": 166
+    },
+    "cell_metadata_CSV": {
+      "checked": 1,
+      "passed": 1
+    },
+    "static_population": {
+      "checked": 4,
+      "passed": 4
+    },
+    "static_source_group": {
+      "checked": 8,
+      "passed": 8
+    },
+    "artifact_hash_and_size": {
+      "checked": 492,
+      "passed": 492
+    },
+    "authoritative_trial_complete": {
+      "checked": 12,
+      "passed": 12
+    },
+    "authoritative_archive_pin": {
+      "checked": 288,
+      "passed": 288
+    },
+    "archive_no_incomplete_evidence": {
+      "checked": 96,
+      "passed": 96
+    },
+    "archive_header_transaction": {
+      "checked": 96,
+      "passed": 96
+    },
+    "archive_marker_payload_paths": {
+      "checked": 96,
+      "passed": 96
+    },
+    "array_descriptor_and_bytes": {
+      "checked": 1092,
+      "passed": 1092
+    },
+    "all_payload_arrays_referenced": {
+      "checked": 96,
+      "passed": 96
+    },
+    "archive_all_checks_passed": {
+      "checked": 96,
+      "passed": 96
+    },
+    "full_counts": {
+      "checked": 12,
+      "passed": 12
+    },
+    "target_not_exogenous": {
+      "checked": 12,
+      "passed": 12
+    },
+    "checkpoint_identity": {
+      "checked": 96,
+      "passed": 96
+    },
+    "checkpoint_parameters": {
+      "checked": 96,
+      "passed": 96
+    },
+    "checkpoint_unblocked": {
+      "checked": 96,
+      "passed": 96
+    },
+    "checkpoint_prefix_counts": {
+      "checked": 96,
+      "passed": 96
+    },
+    "checkpoint_state_domain": {
+      "checked": 288,
+      "passed": 288
+    },
+    "pending_domain": {
+      "checked": 96,
+      "passed": 96
+    },
+    "pending_slot_order_horizon": {
+      "checked": 1824,
+      "passed": 1824
+    },
+    "delayed_arrival_conservation": {
+      "checked": 12,
+      "passed": 12
+    },
+    "contact_product_no_overflow": {
+      "checked": 168,
+      "passed": 168
+    },
+    "independent_integer_rollup_conservation": {
+      "checked": 168,
+      "passed": 168
+    },
+    "independent_positive_rollup_conservation_shape": {
+      "checked": 168,
+      "passed": 168
+    },
+    "independent_positive_rollup_conservation": {
+      "checked": 168,
+      "passed": 168
+    },
+    "independent_negative_rollup_conservation_shape": {
+      "checked": 168,
+      "passed": 168
+    },
+    "independent_negative_rollup_conservation": {
+      "checked": 168,
+      "passed": 168
+    },
+    "nominal_float_dtype": {
+      "checked": 72,
+      "passed": 72
+    },
+    "nominal_float_shape": {
+      "checked": 72,
+      "passed": 72
+    },
+    "nominal_float": {
+      "checked": 72,
+      "passed": 72
+    },
+    "population_metric_keys": {
+      "checked": 336,
+      "passed": 336
+    },
+    "population_metric": {
+      "checked": 233304,
+      "passed": 233304
+    },
+    "population_metric_length": {
+      "checked": 3828,
+      "passed": 3828
+    },
+    "population_metric_shape": {
+      "checked": 227736,
+      "passed": 227736
+    },
+    "nominal_group_totals_keys": {
+      "checked": 36,
+      "passed": 36
+    },
+    "nominal_group_totals_length": {
+      "checked": 3288,
+      "passed": 3288
+    },
+    "nominal_group_totals": {
+      "checked": 10080,
+      "passed": 10080
+    },
+    "nominal_group_totals_shape": {
+      "checked": 2520,
+      "passed": 2520
+    },
+    "reused_prefix_counts": {
+      "checked": 6,
+      "passed": 6
+    },
+    "reused_prefix_states": {
+      "checked": 18,
+      "passed": 18
+    },
+    "all_payload_fields_reviewed": {
+      "checked": 1,
+      "passed": 1
+    },
+    "paired_contrast_keys": {
+      "checked": 21,
+      "passed": 21
+    },
+    "paired_contrast": {
+      "checked": 2199,
+      "passed": 2199
+    },
+    "paired_contrast_length": {
+      "checked": 312,
+      "passed": 312
+    },
+    "paired_contrast_shape": {
+      "checked": 2184,
+      "passed": 2184
+    },
+    "paired_seed_coverage": {
+      "checked": 1,
+      "passed": 1
+    },
+    "source_and_artifacts_unchanged": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "numerical_max_abs_differences": {
+    "independent_positive_rollup_conservation": 0.0,
+    "independent_negative_rollup_conservation": 7.916241884231567e-09,
+    "nominal_float": 7.275957614183426e-12,
+    "population_metric": 1.0800249583553523e-12,
+    "nominal_group_totals": 1.1641532182693481e-10,
+    "paired_contrast": 0.0
+  },
+  "decoded_archives": 96,
+  "decoded_arrays": 1092,
+  "wall_seconds": 8.134617125033401,
+  "scope": "All twelve histories: direct retained CSR identity/contact/weight inventory; all full final counts and target boundary v/p/h; every valid pending source at eight boundaries; independently shifted nominal input totals, all populations/rollups and paired contrasts.",
+  "limits": [
+    "No network integration, parameter fitting, producer import, or new source research.",
+    "Full final checkpoint counts rely on earlier certified raw-stream audits; this bounded review does not rescan every original spike.",
+    "Pending queues independently check the producer raw-timestamp boundary tails; all unsaved per-tick KC/APL states and receptor currents remain unknown.",
+    "Nominal p/h increments are un-decayed algebraic inventories. Regrouped floating sums use the predeclared atol1e-7/rtol1e-12; integer contact/event counts and saved boundary states are exact.",
+    "Class/type/soma metadata are literal annotations, not inferred compartments, claws, physiological ensemble identity, or calibrated response criteria.",
+    "Reused branch prefix is not independent evidence; all twelve histories were previously inspected and are not held-out biology."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T20:41:01.125127+00:00",
+  "passed": true,
+  "artifacts": [
+    {
+      "path": "validation/pn-kc-apl-inventory-plan.json",
+      "bytes": 564020,
+      "sha256": "e6d6738e5f18fd45dfd1184b454797c1c80ee67c2c57c8588c336b3e98813ad9"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-results.json",
+      "bytes": 7297495,
+      "sha256": "7bf856c127a2e7eca93d683e184e3e3f3be77c93839bf03442cf3e6a69c64a69"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-independent-review.json",
+      "bytes": 32155,
+      "sha256": "b0c1e66525ec72ee12954856a6c7c0de1443a9e423ecf346da4a6f173982f0ba"
+    },
+    {
+      "path": "validation/pn-kc-apl-identity-review.json",
+      "bytes": 48661,
+      "sha256": "fe75732c23125380beb6b2a7a4bd6206064407f28cbad06fd9da899700979262"
+    },
+    {
+      "path": "validation/pn-kc-apl-inventory-figure.json",
+      "bytes": 1193,
+      "sha256": "0869f2bef24bd3d2c707285b29c37695af359e71e0a9360055921e0576cff894"
+    },
+    {
+      "path": "validation/pn-kc-physiology-source-review.json",
+      "bytes": 24866,
+      "sha256": "f2788a16cfc1738e9d11033798fdbbcc4ab3ff0044f9c4c6853b420a17f1edcc"
+    },
+    {
+      "path": "validation/apl-local-feedback-source-review.json",
+      "bytes": 13749,
+      "sha256": "6bbfb8e6154e7c7b2091cdd3b28e3afa36d5e5a0cbed67f5c3e20e199f97a2cc"
+    },
+    {
+      "path": "validation/malecns-compartment-availability.json",
+      "bytes": 2245,
+      "sha256": "5752e23d420788220d00cc653513a855c235e77b42796d91e52c1945e463702d"
+    },
+    {
+      "path": "docs/pn-kc-apl-inventory.md",
+      "bytes": 8523,
+      "sha256": "132deb6b13b1d715c1778f0caebad69cf54b6980723c84975d68a3216428efc1"
+    },
+    {
+      "path": "research/21-pn-kc-physiology-calibration.md",
+      "bytes": 13958,
+      "sha256": "59d7a1496c57df8a645d762304ce21946acce2d74150b798c326e6ed6132c174"
+    },
+    {
+      "path": "research/22-apl-local-feedback-constraints.md",
+      "bytes": 5920,
+      "sha256": "172f0d07e375f320cccac541e1be0ca91949d7a723a2fe0c2c1f5cee0c2d96bb"
+    },
+    {
+      "path": "research/23-kc-contact-location-availability.md",
+      "bytes": 1573,
+      "sha256": "cb2041b47625d220ce1649ed2fbc8393d3ece883f7fd7c3079044ce125166abb"
+    }
+  ],
+  "scope": "Complete saved-data inventory of twelve previously examined H1 histories plus primary physiology/source availability audits. No fit or network/body simulation.",
+  "validation": {
+    "identity_checks": 61,
+    "producer_checks": 2634,
+    "independent_checks": 492343,
+    "independent_boundary_archives": 96,
+    "figure_visually_inspected": true,
+    "source_files_rehashed": true
+  },
+  "interpretation": "Near-universal KC activity is not a selected-MBON-subset artifact. Nominal KC\u2192KC positive input dominates; fast DAN input is comparable to ALPN input. Spiking APL is uncalibrated. These are mechanism hypotheses and model-accounting results, not a physiological repair.",
+  "next_step": "Freeze and execute a local effective KC EPSP/EPSC compatibility calculation, separating synaptic timing from somatic intrinsic constraints and excluding threshold/APL fitting.",
+  "runtime_defaults_changed": false,
+  "H1_promoted": false,
+  "overall_goal_complete": false
+}
