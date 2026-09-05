@@ -1,0 +1,69 @@
+{
+  "purpose": "Scalar held-input numerical reference before any reporter fit or electrical integration",
+  "reference_dt_s": 0.03333333333333333,
+  "tau_s": [
+    0.05,
+    0.2,
+    1.5
+  ],
+  "modulations": [
+    0.001,
+    0.1,
+    0.5,
+    0.9,
+    1.0
+  ],
+  "state_drive_pairs": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      2.0,
+      0.0
+    ],
+    [
+      0.3,
+      2.0
+    ]
+  ],
+  "reference_steps": 30,
+  "subdivisions": [
+    2,
+    10,
+    333
+  ],
+  "ode_rtol": 1e-11,
+  "ode_atol": 1e-13,
+  "comparison_atol": 1e-09,
+  "illustrative_calcium": [
+    0.0,
+    0.47,
+    0.5,
+    0.53,
+    1.0
+  ],
+  "naive_dt_s": [
+    0.03333333333333333,
+    0.0033333333333333335,
+    0.0001
+  ],
+  "source_pins": [
+    {
+      "path": "scripts/kc_reporter_inhibition_reference.py",
+      "sha256": "2ee57264ad99df00c5d031b969d0510aaea1237165781c17f73db38fe293ae8d"
+    },
+    {
+      "path": "scripts/check_kc_reporter_inhibition_reference.py",
+      "sha256": "77f0c676dd451a495bb622f6eff6c4eef976daf3f23ea311e0e3b81a221cbd19"
+    },
+    {
+      "path": "data/raw/kc-reporter-data/author-code/codes/fit_functions.py",
+      "sha256": "ca238b5d6acaa40ba7bcee650ab6697872263dd69b1ebc082b27779ae67cbc5b"
+    },
+    {
+      "path": "data/raw/kc-reporter-data/author-code/codes/KC_population_calcium_rate_model_functions.py",
+      "sha256": "bc36f741ab7773b5f9dc298ab9610ce915067a2cc82ea73e947174ee155b3f05"
+    }
+  ]
+}

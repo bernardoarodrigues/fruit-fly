@@ -1,0 +1,67 @@
+{
+  "recorded_utc": "2026-09-05T23:10:24.286646+00:00",
+  "attempts": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9613607/supplementaryFiles",
+      "outcome": "XML error: manuscript not in API open access set",
+      "files": [
+        {
+          "path": "data/raw/kc-reporter-source-join/europepmc-supplements.response",
+          "bytes": 164,
+          "sha256": "b0125681bae38770443da0d3e1c013e01b20679670dda76a4bbe51047ae3130c"
+        },
+        {
+          "path": "data/raw/kc-reporter-source-join/europepmc-supplements.headers",
+          "bytes": 487,
+          "sha256": "a7e4ebe02a64ca8de198b0b853f2f68d9afc3a2fadaee03235967993ef694084"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9613607",
+      "outcome": "HTML 404 error",
+      "files": [
+        {
+          "path": "data/raw/kc-reporter-source-join/oa.xml",
+          "bytes": 1584,
+          "sha256": "070f2f6fcf07d7d5aa794a602fc071acac4be09b1c6b122612f780ef13219496"
+        },
+        {
+          "path": "data/raw/kc-reporter-source-join/oa.headers",
+          "bytes": 396,
+          "sha256": "1b6a91e918cc0ee27706b21b3dbb3a0640c6e27334d90e1065868d0b47f82538"
+        }
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC9613607",
+      "outcome": "HTML error page, not OA XML",
+      "files": [
+        {
+          "path": "data/raw/kc-reporter-source-join/pmc-oa.xml",
+          "bytes": 48716,
+          "sha256": "b250e21a01f72add44f90de61f7f6c1ca8fda9b4fad342d26920d72768993655"
+        },
+        {
+          "path": "data/raw/kc-reporter-source-join/pmc-oa.headers",
+          "bytes": 647,
+          "sha256": "91056aade782046ed7412e176fdf6a62d5b72ceb73732772fc2d8fc5247df766"
+        }
+      ]
+    }
+  ],
+  "browser_observations": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9613607/",
+      "outcome": "Article readable; Data S1 link click gives ERR_BLOCKED_BY_CLIENT"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0960982222014518",
+      "outcome": "Human CAPTCHA required; handed off to user"
+    }
+  ],
+  "source_workbook_acquired": false,
+  "cohort_join_resolved": false,
+  "credentials_requested": false,
+  "access_controls_bypassed": false
+}
