@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "plan": {
+    "path": "validation/kc-gamma-intervention-analysis-review-plan.json",
+    "bytes": 5665,
+    "sha256": "07de7598c7b5be2cfc483a614c37d760e8b376bd4f717f41812e2067d92634ea"
+  },
+  "checks": 4778,
+  "trials": [
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 26,
+        "name": "26-H1-seed11-constant_baseline"
+      },
+      "arm": "control",
+      "spikes": 6204186,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 26,
+        "name": "26-H1-seed11-constant_baseline"
+      },
+      "arm": "intervention",
+      "spikes": 5884392,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 29,
+        "name": "29-H1-seed12-constant_baseline"
+      },
+      "arm": "control",
+      "spikes": 6234443,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 29,
+        "name": "29-H1-seed12-constant_baseline"
+      },
+      "arm": "intervention",
+      "spikes": 5912957,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 32,
+        "name": "32-H1-seed13-constant_baseline"
+      },
+      "arm": "control",
+      "spikes": 6202367,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 32,
+        "name": "32-H1-seed13-constant_baseline"
+      },
+      "arm": "intervention",
+      "spikes": 5876715,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 35,
+        "name": "35-H1-seed11-ethyl_acetate"
+      },
+      "arm": "control",
+      "spikes": 6211775,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 35,
+        "name": "35-H1-seed11-ethyl_acetate"
+      },
+      "arm": "intervention",
+      "spikes": 5884801,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 38,
+        "name": "38-H1-seed12-ethyl_acetate"
+      },
+      "arm": "control",
+      "spikes": 6236369,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 38,
+        "name": "38-H1-seed12-ethyl_acetate"
+      },
+      "arm": "intervention",
+      "spikes": 5915604,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 41,
+        "name": "41-H1-seed13-ethyl_acetate"
+      },
+      "arm": "control",
+      "spikes": 6215664,
+      "passed": true
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 41,
+        "name": "41-H1-seed13-ethyl_acetate"
+      },
+      "arm": "intervention",
+      "spikes": 5892168,
+      "passed": true
+    }
+  ],
+  "error": null,
+  "completed_utc": "2026-09-05T22:53:26.912533+00:00",
+  "wall_seconds": 18.22280637494987,
+  "archive_checks": {
+    "manifest-file": 19800,
+    "bundle-complete": 6600,
+    "marker-payloads": 6600,
+    "array-descriptor": 6600,
+    "packed-spikes": 6600,
+    "original-spike-bytes": 6600
+  },
+  "interpretation": "Independent reduction by root agent, not a separate reviewer. No biological acceptance or network simulation."
+}

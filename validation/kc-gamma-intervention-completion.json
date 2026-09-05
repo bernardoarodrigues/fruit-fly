@@ -1,0 +1,75 @@
+{
+  "completed_utc": "2026-09-05T22:59:16.353599+00:00",
+  "passed": true,
+  "run_dir": "runs/20260905T211955222985Z-kc-gamma-intervention",
+  "terminal": {
+    "path": "runs/20260905T211955222985Z-kc-gamma-intervention/terminal.json",
+    "bytes": 439,
+    "sha256": "03d074a5485fb618d9a267c83be6367846b42e548ea771b7b30da83294ac285b"
+  },
+  "parent_result": {
+    "path": "runs/20260905T211955222985Z-kc-gamma-intervention/results.json",
+    "bytes": 4539,
+    "sha256": "03fa6035d5dcf171178da590fa296ebd224b2423525c58f159219f0e4b97d8e9"
+  },
+  "experiment_plan": {
+    "path": "validation/kc-gamma-intervention-plan.json",
+    "bytes": 31787,
+    "sha256": "1136fe06fc96ad63ea676be69b7caefd7f8ce419f102488bf809d1b85f1e347b"
+  },
+  "artifacts": [
+    {
+      "path": "validation/kc-gamma-intervention-independent-review.json",
+      "bytes": 101470,
+      "sha256": "54703f95597ad9148c65112707032891b56a0b05b6a262c36fffd52bc756bcab"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-numerics-results.json",
+      "bytes": 11245,
+      "sha256": "9e13b8aac9c87cae9510799c928b8bf8cf94309e2475a1ae2669faf34fd86c25"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-analysis-results.json",
+      "bytes": 1107285,
+      "sha256": "cf6f687f841542655d523d2a1c720a794ac721660028e3906a4bb1648ebac313"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-analysis-review.json",
+      "bytes": 3831,
+      "sha256": "30afdd3bc4cdc719282476cfaa631892c7b5ec69d6262cf2e4c8416ec6a002a3"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-findings.json",
+      "bytes": 23479,
+      "sha256": "126625193941e72b93fd628d288ddde105b8c51df8b350bc73c687e4b0e565df"
+    },
+    {
+      "path": "validation/kc-gamma-intervention-plot.json",
+      "bytes": 1227,
+      "sha256": "e7cb90e1e142ac18759ce0c207ac8df2cf3c0a681417bcaeefc01ab903de2745"
+    },
+    {
+      "path": "docs/kc-gamma-intervention-results.md",
+      "bytes": 9950,
+      "sha256": "cda9a9104f72f0e58a2d004962b45696dce74593da4ea6fe0a733a84b3be7804"
+    },
+    {
+      "path": "research/26-kc-gamma-recurrent-findings.md",
+      "bytes": 3359,
+      "sha256": "189635f0b45aaa6c4dd8de2ce67438ca0fbde69f00ce70ade1ded86e709c446f"
+    }
+  ],
+  "verified_unique_pins": 126,
+  "reviewed_all_six_together": true,
+  "independent_calculations_by_same_root_agent": true,
+  "visual_inspection_passed": true,
+  "heartbeat": {
+    "id": "fruit-fly-status-every-10-minutes",
+    "status": "PAUSED"
+  },
+  "runtime_defaults_changed": false,
+  "H1_promoted": false,
+  "overall_goal_complete": false,
+  "next_step": "Inspect public gamma-KC reporter datasets and exact protocols; retain unresolved APL graded release, local voltage and receptor mappings. No new simulation or gain sweep launched.",
+  "large_local_artifact": "validation/kc-gamma-intervention-independent-review-arrays.npz is169647779bytes, excluded from Git; exact identity retained in the review receipt."
+}

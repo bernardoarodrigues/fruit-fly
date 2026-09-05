@@ -1,0 +1,347 @@
+{
+  "schema": 1,
+  "passed": true,
+  "plan": {
+    "path": "validation/kc-gamma-intervention-numerics-plan.json",
+    "bytes": 9840,
+    "sha256": "d1a95ec6ad5b4dd67523213659a653eb6ea50b9eafbe303bfc2c3d427e59ba35"
+  },
+  "trials": [
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 26,
+        "name": "26-H1-seed11-constant_baseline"
+      },
+      "completed_chunks": 500,
+      "intervals": 15000,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 6.963318810448982e-13,
+        "quad_error_estimate": 2.6127153891140923e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 15000,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13500,
+        "saved_threshold_flag": 13500
+      }
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "constant_baseline",
+        "ordinal": 29,
+        "name": "29-H1-seed12-constant_baseline"
+      },
+      "completed_chunks": 500,
+      "intervals": 15000,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 7.105427357601002e-13,
+        "quad_error_estimate": 2.595652018211933e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 15000,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13501,
+        "saved_threshold_flag": 13501
+      }
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "constant_baseline",
+        "ordinal": 32,
+        "name": "32-H1-seed13-constant_baseline"
+      },
+      "completed_chunks": 500,
+      "intervals": 14997,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500,
+        "deduplicated": 3
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 6.536993168992922e-13,
+        "quad_error_estimate": 2.5958258726964364e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 14997,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13622,
+        "saved_threshold_flag": 13622
+      }
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 11,
+        "condition": "ethyl_acetate",
+        "ordinal": 35,
+        "name": "35-H1-seed11-ethyl_acetate"
+      },
+      "completed_chunks": 500,
+      "intervals": 15000,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 7.176481631177012e-13,
+        "quad_error_estimate": 2.619820782871854e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 15000,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13500,
+        "saved_threshold_flag": 13500
+      }
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 12,
+        "condition": "ethyl_acetate",
+        "ordinal": 38,
+        "name": "38-H1-seed12-ethyl_acetate"
+      },
+      "completed_chunks": 500,
+      "intervals": 15000,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 6.536993168992922e-13,
+        "quad_error_estimate": 2.595269687537389e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 15000,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13501,
+        "saved_threshold_flag": 13501
+      }
+    },
+    {
+      "spec": {
+        "arm": "H1",
+        "seed": 13,
+        "condition": "ethyl_acetate",
+        "ordinal": 41,
+        "name": "41-H1-seed13-ethyl_acetate"
+      },
+      "completed_chunks": 500,
+      "intervals": 14998,
+      "numerical_failures": 0,
+      "method_errors": 0,
+      "threshold_ambiguities_observed": 0,
+      "threshold_ambiguities_conservative": 0,
+      "threshold_decision_disagreements": 0,
+      "selection_counts": {
+        "global:0": 500,
+        "global:1": 500,
+        "global:2": 500,
+        "target_first_available": 13500,
+        "deduplicated": 2
+      },
+      "target_absence_counts": {},
+      "max_errors_mv": {
+        "production_vs_quad": 1.7053025658242404e-13,
+        "order32_vs64": 2.2737367544323206e-13,
+        "ode_vs_quad": 6.252776074688882e-13,
+        "quad_error_estimate": 2.5898314701971096e-12
+      },
+      "archive_checks": {
+        "manifest_file": 1503,
+        "complete_bundle": 501,
+        "marker_payloads": 501,
+        "array_descriptor": 5001,
+        "selected_column_identity": 1,
+        "checkpoint_identity": 1,
+        "chunk_identity": 500,
+        "selected_array_shape": 3000,
+        "global_reference_shapes": 500,
+        "reference_schema": 500,
+        "unique_valid_interval": 14998,
+        "saved_global_margin": 1500,
+        "selected_interval_identity": 13659,
+        "saved_threshold_flag": 13659
+      }
+    }
+  ],
+  "limitations": [
+    "Only intervention branch ticks5000..29999. Reused prebranch prefix is not re-evaluated. Selected-column identity is checked against each branch-start checkpoint. No whole-network oracle or own-history event/state audit.",
+    "Import only the pinned isolated scalar helper: adaptive attenuation quadrature with independent Brent inversion, time-domain DOP853/Radau ODE, and64-point quadrature. This evaluates saved event-free intervals, never advances a network or generates a spike train.",
+    "Trial result manifests pin each selected archive .npz/.json/completion marker. Validate loaded array descriptors and payload hashes. Other archive arrays are not decoded; independent spike/state/contact-weight audit is separate."
+  ],
+  "coverage_complete": true,
+  "numerical_tolerances_passed": true,
+  "threshold_gate_resolved": true,
+  "completed_utc": "2026-09-05T22:45:25.276444+00:00",
+  "totals": {
+    "intervals": 89995,
+    "method_errors": 0,
+    "numerical_failures": 0,
+    "threshold_ambiguities_observed": 0,
+    "threshold_ambiguities_conservative": 0,
+    "threshold_decision_disagreements": 0,
+    "chunks": 3000,
+    "archive_checks": 333609,
+    "checked_files": 9018
+  },
+  "max_errors_mv": {
+    "production_vs_quad": 1.7053025658242404e-13,
+    "order32_vs64": 2.2737367544323206e-13,
+    "ode_vs_quad": 7.176481631177012e-13,
+    "quad_error_estimate": 2.619820782871854e-12
+  },
+  "worst_intervals": {
+    "production_vs_quad": {
+      "trial": "26-H1-seed11-constant_baseline",
+      "tick": 17707,
+      "index": 904,
+      "error_mv": 1.7053025658242404e-13
+    },
+    "order32_vs64": {
+      "trial": "26-H1-seed11-constant_baseline",
+      "tick": 22811,
+      "index": 904,
+      "error_mv": 2.2737367544323206e-13
+    },
+    "ode_vs_quad": {
+      "trial": "35-H1-seed11-ethyl_acetate",
+      "tick": 17474,
+      "index": 233,
+      "error_mv": 7.176481631177012e-13
+    },
+    "quad_error_estimate": {
+      "trial": "35-H1-seed11-ethyl_acetate",
+      "tick": 28015,
+      "index": 502,
+      "error_mv": 2.619820782871854e-12
+    }
+  },
+  "minimum_threshold_margin": {
+    "trial": "32-H1-seed13-constant_baseline",
+    "tick": 14354,
+    "index": 142539,
+    "margin_mv": 1.3555521150010463e-09
+  },
+  "checked_file_receipts_sha256": "e825aa8454902e1ac04ce1f177e2bc52223cb1b60706d69955521789fa34200d",
+  "rows_artifact": {
+    "path": "validation/kc-gamma-intervention-numerics-rows.jsonl.gz",
+    "bytes": 14504279,
+    "sha256": "e447520e10d32bb7cdd7701603a11425da7590ddd9b5d3b44c7656cc4683ecad"
+  }
+}
