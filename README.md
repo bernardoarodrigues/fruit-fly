@@ -62,6 +62,8 @@ For a small [physical habitat](docs/flybody-habitat.md) with food and water regi
 
 Open [the 30 × 24 mm habitat](http://127.0.0.1:8774). This sensory assay currently rests; the new walls do not supply an avoidance behavior. A separately labeled straight-command trial contacts a wall and stops at 0.768 s under the original physical guard. [Actual browser checks](docs/flybody-habitat-viewer.md) verify pause/reset and distinguish the last image from the failed state. The enclosure is open above its 6 mm walls, and odor advection has no wall-flow model.
 
+The [independent scene review](docs/flybody-habitat-scene-independent-review.md) checks the final render correction, retained physical/controller states and saved UI evidence, while preserving the earlier failed outcomes.
+
 ## Validate and investigate
 
 ```sh

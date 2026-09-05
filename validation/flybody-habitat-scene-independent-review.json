@@ -1,0 +1,1402 @@
+{
+  "schema": 1,
+  "passed": true,
+  "check_count": 756,
+  "checks": {
+    "scene:plan_binding": true,
+    "visual:plan_binding": true,
+    "render-diagnostic:plan_binding": true,
+    "original:plan_binding": true,
+    "scene:predeclared_plan": true,
+    "pin:62129a3:scripts/validate_flybody_habitat_scene.py": true,
+    "pin:62129a3:scripts/validate_flybody_habitat_visual.py": true,
+    "pin:62129a3:scripts/validate_flybody_habitat.py": true,
+    "pin:62129a3:fruitfly/flybody_worker.py": true,
+    "pin:62129a3:fruitfly/flybody_habitat.py": true,
+    "pin:62129a3:fruitfly/flybody_bridge.py": true,
+    "pin:62129a3:fruitfly/flybody_persistent_task.py": true,
+    "pin:62129a3:validation/flybody-habitat-scene-design-plan.json": true,
+    "pin:62129a3:validation/flybody-habitat-results.json": true,
+    "pin:62129a3:validation/flybody-habitat-visual-results.json": true,
+    "pin:62129a3:validation/flybody-habitat-render-diagnostic-results.json": true,
+    "pin:ef6e230:scripts/validate_flybody_habitat_visual.py": true,
+    "pin:ef6e230:scripts/validate_flybody_habitat.py": true,
+    "pin:ef6e230:fruitfly/flybody_worker.py": true,
+    "pin:ef6e230:fruitfly/flybody_habitat.py": true,
+    "pin:ef6e230:fruitfly/flybody_bridge.py": true,
+    "pin:ef6e230:fruitfly/flybody_persistent_task.py": true,
+    "pin:ef6e230:validation/flybody-habitat-visual-design-plan.json": true,
+    "pin:ef6e230:validation/flybody-habitat-results.json": true,
+    "pin:ef6e230:scripts/diagnose_flybody_habitat_render.py": true,
+    "pin:ef6e230:validation/flybody-habitat-visual-results.json": true,
+    "pin:fd19b56:scripts/validate_flybody_habitat.py": true,
+    "pin:fd19b56:fruitfly/flybody_worker.py": true,
+    "pin:fd19b56:fruitfly/flybody_bridge.py": true,
+    "pin:fd19b56:fruitfly/flybody_habitat.py": true,
+    "pin:fd19b56:fruitfly/flybody_persistent_task.py": true,
+    "pin:fd19b56:fruitfly/flybody_airflow.py": true,
+    "pin:fd19b56:configs/male-flybody-rolling-habitat.json": true,
+    "pin:fd19b56:tests/test_flybody_habitat.py": true,
+    "pin:fd19b56:validation/flybody-habitat-design-plan.json": true,
+    "pin:fd19b56:validation/flybody-source-manifest.json": true,
+    "pin:fd19b56:validation/flybody-walking-acquisition.json": true,
+    "pin:fd19b56:validation/flybody-stance-actuator-audit.json": true,
+    "pin:62129a3:fruitfly/simulation.py": true,
+    "pin:62129a3:fruitfly/viewer.py": true,
+    "pin:62129a3:fruitfly/web/app.js": true,
+    "pin:62129a3:configs/male-flybody-rolling-habitat.json": true,
+    "pin:62129a3:validation/flybody-habitat-scene-execution-plan.json": true,
+    "pin:62129a3:validation/flybody-habitat-scene-results.json": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/2-side.png": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/0-overview.png": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/3-overview.png": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/1-follow.png": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/parity-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-scene-14229a078298/parity-actor.npz": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/paused-arrays.npz": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/2-side.png": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/0-overview.png": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/3-overview.png": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/1-follow.png": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/parity-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-visual-eb42dfe25a0b/parity-actor.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/frozen_default-arrays.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/frozen_default-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/frozen_default.json": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/frozen_default.log": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-arrays.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-follow.png": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-overview.png": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-side.png": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-initial-overview.png": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.json": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.log": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/new_default-arrays.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/new_default-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/new_default.json": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/new_default.log": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-arrays.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-initial-overview.png": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.json": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.log": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-arrays.npz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-states.jsonl.gz": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.json": true,
+    "artifact:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.log": true,
+    "artifact:validation/flybody-habitat-viewer-final/final-state.json": true,
+    "size:validation/flybody-habitat-viewer-final/final-state.json": true,
+    "artifact:validation/flybody-habitat-viewer-final/follow.jpg": true,
+    "size:validation/flybody-habitat-viewer-final/follow.jpg": true,
+    "artifact:validation/flybody-habitat-viewer-final/follow.json": true,
+    "size:validation/flybody-habitat-viewer-final/follow.json": true,
+    "artifact:validation/flybody-habitat-viewer-final/overview.jpg": true,
+    "size:validation/flybody-habitat-viewer-final/overview.jpg": true,
+    "artifact:validation/flybody-habitat-viewer-final/overview.json": true,
+    "size:validation/flybody-habitat-viewer-final/overview.json": true,
+    "artifact:validation/flybody-habitat-viewer-final/side.jpg": true,
+    "size:validation/flybody-habitat-viewer-final/side.jpg": true,
+    "artifact:validation/flybody-habitat-viewer-final/side.json": true,
+    "size:validation/flybody-habitat-viewer-final/side.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/follow-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8774/follow-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8774/follow.json": true,
+    "size:validation/flybody-habitat-viewer/8774/follow.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/initial-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8774/initial-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8774/initial.json": true,
+    "size:validation/flybody-habitat-viewer/8774/initial.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/paused-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8774/paused-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8774/paused.json": true,
+    "size:validation/flybody-habitat-viewer/8774/paused.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/reset-comparison.json": true,
+    "size:validation/flybody-habitat-viewer/8774/reset-comparison.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/reset-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8774/reset-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8774/reset.json": true,
+    "size:validation/flybody-habitat-viewer/8774/reset.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/running.json": true,
+    "size:validation/flybody-habitat-viewer/8774/running.json": true,
+    "artifact:validation/flybody-habitat-viewer/8774/side-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8774/side-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8774/side.json": true,
+    "size:validation/flybody-habitat-viewer/8774/side.json": true,
+    "artifact:validation/flybody-habitat-viewer/8775/failed.json": true,
+    "size:validation/flybody-habitat-viewer/8775/failed.json": true,
+    "artifact:validation/flybody-habitat-viewer/8775/failure-journal.jsonl": true,
+    "size:validation/flybody-habitat-viewer/8775/failure-journal.jsonl": true,
+    "artifact:validation/flybody-habitat-viewer/8775/initial-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8775/initial-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8775/initial.json": true,
+    "size:validation/flybody-habitat-viewer/8775/initial.json": true,
+    "artifact:validation/flybody-habitat-viewer/8775/last-frame.jpg": true,
+    "size:validation/flybody-habitat-viewer/8775/last-frame.jpg": true,
+    "artifact:validation/flybody-habitat-viewer/8775/manifest.json": true,
+    "size:validation/flybody-habitat-viewer/8775/manifest.json": true,
+    "producer_final_26_of_26": true,
+    "prior_visual_26_of_27_retained": true,
+    "prior_physical_failure_retained": true,
+    "worker_only_render_function_changed": true,
+    "habitat_old_functions_only_bind_changed": true,
+    "habitat_only_new_callback": true,
+    "public_field_inventory_matches_independent_C_header": true,
+    "camera_sequence": true,
+    "render0:all_records_have_all_20_fields": true,
+    "render0:resource500_original_position": true,
+    "render0:resource501_original_position": true,
+    "render0:every_survivor_field_exact": true,
+    "render0:removal_exact_against_prior_ID_evidence": true,
+    "render0:no_reference_ID_retained": true,
+    "render0:only_two_resources_and_segid_changed": true,
+    "render0:counts": true,
+    "render0:native_hashes_equal": true,
+    "render0:nine_array_inventory": true,
+    "render0:raw_paused_qpos": true,
+    "render0:raw_paused_qvel": true,
+    "render0:raw_paused_qacc": true,
+    "render0:raw_paused_act": true,
+    "render0:raw_paused_ctrl": true,
+    "render0:raw_paused_sensordata": true,
+    "render0:raw_paused_xpos": true,
+    "render0:raw_paused_xmat": true,
+    "render0:raw_paused_cvel": true,
+    "render0:full_model_serialization_hashes_equal": true,
+    "render0:paused_clock_and_actor": true,
+    "render1:all_records_have_all_20_fields": true,
+    "render1:resource500_original_position": true,
+    "render1:resource501_original_position": true,
+    "render1:every_survivor_field_exact": true,
+    "render1:removal_exact_against_prior_ID_evidence": true,
+    "render1:no_reference_ID_retained": true,
+    "render1:only_two_resources_and_segid_changed": true,
+    "render1:counts": true,
+    "render1:native_hashes_equal": true,
+    "render1:nine_array_inventory": true,
+    "render1:raw_paused_qpos": true,
+    "render1:raw_paused_qvel": true,
+    "render1:raw_paused_qacc": true,
+    "render1:raw_paused_act": true,
+    "render1:raw_paused_ctrl": true,
+    "render1:raw_paused_sensordata": true,
+    "render1:raw_paused_xpos": true,
+    "render1:raw_paused_xmat": true,
+    "render1:raw_paused_cvel": true,
+    "render1:full_model_serialization_hashes_equal": true,
+    "render1:paused_clock_and_actor": true,
+    "render2:all_records_have_all_20_fields": true,
+    "render2:resource500_original_position": true,
+    "render2:resource501_original_position": true,
+    "render2:every_survivor_field_exact": true,
+    "render2:removal_exact_against_prior_ID_evidence": true,
+    "render2:no_reference_ID_retained": true,
+    "render2:only_two_resources_and_segid_changed": true,
+    "render2:counts": true,
+    "render2:native_hashes_equal": true,
+    "render2:nine_array_inventory": true,
+    "render2:raw_paused_qpos": true,
+    "render2:raw_paused_qvel": true,
+    "render2:raw_paused_qacc": true,
+    "render2:raw_paused_act": true,
+    "render2:raw_paused_ctrl": true,
+    "render2:raw_paused_sensordata": true,
+    "render2:raw_paused_xpos": true,
+    "render2:raw_paused_xmat": true,
+    "render2:raw_paused_cvel": true,
+    "render2:full_model_serialization_hashes_equal": true,
+    "render2:paused_clock_and_actor": true,
+    "render3:all_records_have_all_20_fields": true,
+    "render3:resource500_original_position": true,
+    "render3:resource501_original_position": true,
+    "render3:every_survivor_field_exact": true,
+    "render3:removal_exact_against_prior_ID_evidence": true,
+    "render3:no_reference_ID_retained": true,
+    "render3:only_two_resources_and_segid_changed": true,
+    "render3:counts": true,
+    "render3:native_hashes_equal": true,
+    "render3:nine_array_inventory": true,
+    "render3:raw_paused_qpos": true,
+    "render3:raw_paused_qvel": true,
+    "render3:raw_paused_qacc": true,
+    "render3:raw_paused_act": true,
+    "render3:raw_paused_ctrl": true,
+    "render3:raw_paused_sensordata": true,
+    "render3:raw_paused_xpos": true,
+    "render3:raw_paused_xmat": true,
+    "render3:raw_paused_cvel": true,
+    "render3:full_model_serialization_hashes_equal": true,
+    "render3:paused_clock_and_actor": true,
+    "parity:101_by_741_float32": true,
+    "parity:all_actual_actor_values": true,
+    "parity:101_rows": true,
+    "parity:row0:all_original_fields": true,
+    "parity:row0:actor_hash": true,
+    "parity:row0:clock_and_counter": true,
+    "parity:row0:finite_and_not_terminated": true,
+    "parity:row1:all_original_fields": true,
+    "parity:row1:actor_hash": true,
+    "parity:row1:clock_and_counter": true,
+    "parity:row1:finite_and_not_terminated": true,
+    "parity:row2:all_original_fields": true,
+    "parity:row2:actor_hash": true,
+    "parity:row2:clock_and_counter": true,
+    "parity:row2:finite_and_not_terminated": true,
+    "parity:row3:all_original_fields": true,
+    "parity:row3:actor_hash": true,
+    "parity:row3:clock_and_counter": true,
+    "parity:row3:finite_and_not_terminated": true,
+    "parity:row4:all_original_fields": true,
+    "parity:row4:actor_hash": true,
+    "parity:row4:clock_and_counter": true,
+    "parity:row4:finite_and_not_terminated": true,
+    "parity:row5:all_original_fields": true,
+    "parity:row5:actor_hash": true,
+    "parity:row5:clock_and_counter": true,
+    "parity:row5:finite_and_not_terminated": true,
+    "parity:row6:all_original_fields": true,
+    "parity:row6:actor_hash": true,
+    "parity:row6:clock_and_counter": true,
+    "parity:row6:finite_and_not_terminated": true,
+    "parity:row7:all_original_fields": true,
+    "parity:row7:actor_hash": true,
+    "parity:row7:clock_and_counter": true,
+    "parity:row7:finite_and_not_terminated": true,
+    "parity:row8:all_original_fields": true,
+    "parity:row8:actor_hash": true,
+    "parity:row8:clock_and_counter": true,
+    "parity:row8:finite_and_not_terminated": true,
+    "parity:row9:all_original_fields": true,
+    "parity:row9:actor_hash": true,
+    "parity:row9:clock_and_counter": true,
+    "parity:row9:finite_and_not_terminated": true,
+    "parity:row10:all_original_fields": true,
+    "parity:row10:actor_hash": true,
+    "parity:row10:clock_and_counter": true,
+    "parity:row10:finite_and_not_terminated": true,
+    "parity:row11:all_original_fields": true,
+    "parity:row11:actor_hash": true,
+    "parity:row11:clock_and_counter": true,
+    "parity:row11:finite_and_not_terminated": true,
+    "parity:row12:all_original_fields": true,
+    "parity:row12:actor_hash": true,
+    "parity:row12:clock_and_counter": true,
+    "parity:row12:finite_and_not_terminated": true,
+    "parity:row13:all_original_fields": true,
+    "parity:row13:actor_hash": true,
+    "parity:row13:clock_and_counter": true,
+    "parity:row13:finite_and_not_terminated": true,
+    "parity:row14:all_original_fields": true,
+    "parity:row14:actor_hash": true,
+    "parity:row14:clock_and_counter": true,
+    "parity:row14:finite_and_not_terminated": true,
+    "parity:row15:all_original_fields": true,
+    "parity:row15:actor_hash": true,
+    "parity:row15:clock_and_counter": true,
+    "parity:row15:finite_and_not_terminated": true,
+    "parity:row16:all_original_fields": true,
+    "parity:row16:actor_hash": true,
+    "parity:row16:clock_and_counter": true,
+    "parity:row16:finite_and_not_terminated": true,
+    "parity:row17:all_original_fields": true,
+    "parity:row17:actor_hash": true,
+    "parity:row17:clock_and_counter": true,
+    "parity:row17:finite_and_not_terminated": true,
+    "parity:row18:all_original_fields": true,
+    "parity:row18:actor_hash": true,
+    "parity:row18:clock_and_counter": true,
+    "parity:row18:finite_and_not_terminated": true,
+    "parity:row19:all_original_fields": true,
+    "parity:row19:actor_hash": true,
+    "parity:row19:clock_and_counter": true,
+    "parity:row19:finite_and_not_terminated": true,
+    "parity:row20:all_original_fields": true,
+    "parity:row20:actor_hash": true,
+    "parity:row20:clock_and_counter": true,
+    "parity:row20:finite_and_not_terminated": true,
+    "parity:row21:all_original_fields": true,
+    "parity:row21:actor_hash": true,
+    "parity:row21:clock_and_counter": true,
+    "parity:row21:finite_and_not_terminated": true,
+    "parity:row22:all_original_fields": true,
+    "parity:row22:actor_hash": true,
+    "parity:row22:clock_and_counter": true,
+    "parity:row22:finite_and_not_terminated": true,
+    "parity:row23:all_original_fields": true,
+    "parity:row23:actor_hash": true,
+    "parity:row23:clock_and_counter": true,
+    "parity:row23:finite_and_not_terminated": true,
+    "parity:row24:all_original_fields": true,
+    "parity:row24:actor_hash": true,
+    "parity:row24:clock_and_counter": true,
+    "parity:row24:finite_and_not_terminated": true,
+    "parity:row25:all_original_fields": true,
+    "parity:row25:actor_hash": true,
+    "parity:row25:clock_and_counter": true,
+    "parity:row25:finite_and_not_terminated": true,
+    "parity:row26:all_original_fields": true,
+    "parity:row26:actor_hash": true,
+    "parity:row26:clock_and_counter": true,
+    "parity:row26:finite_and_not_terminated": true,
+    "parity:row27:all_original_fields": true,
+    "parity:row27:actor_hash": true,
+    "parity:row27:clock_and_counter": true,
+    "parity:row27:finite_and_not_terminated": true,
+    "parity:row28:all_original_fields": true,
+    "parity:row28:actor_hash": true,
+    "parity:row28:clock_and_counter": true,
+    "parity:row28:finite_and_not_terminated": true,
+    "parity:row29:all_original_fields": true,
+    "parity:row29:actor_hash": true,
+    "parity:row29:clock_and_counter": true,
+    "parity:row29:finite_and_not_terminated": true,
+    "parity:row30:all_original_fields": true,
+    "parity:row30:actor_hash": true,
+    "parity:row30:clock_and_counter": true,
+    "parity:row30:finite_and_not_terminated": true,
+    "parity:row31:all_original_fields": true,
+    "parity:row31:actor_hash": true,
+    "parity:row31:clock_and_counter": true,
+    "parity:row31:finite_and_not_terminated": true,
+    "parity:row32:all_original_fields": true,
+    "parity:row32:actor_hash": true,
+    "parity:row32:clock_and_counter": true,
+    "parity:row32:finite_and_not_terminated": true,
+    "parity:row33:all_original_fields": true,
+    "parity:row33:actor_hash": true,
+    "parity:row33:clock_and_counter": true,
+    "parity:row33:finite_and_not_terminated": true,
+    "parity:row34:all_original_fields": true,
+    "parity:row34:actor_hash": true,
+    "parity:row34:clock_and_counter": true,
+    "parity:row34:finite_and_not_terminated": true,
+    "parity:row35:all_original_fields": true,
+    "parity:row35:actor_hash": true,
+    "parity:row35:clock_and_counter": true,
+    "parity:row35:finite_and_not_terminated": true,
+    "parity:row36:all_original_fields": true,
+    "parity:row36:actor_hash": true,
+    "parity:row36:clock_and_counter": true,
+    "parity:row36:finite_and_not_terminated": true,
+    "parity:row37:all_original_fields": true,
+    "parity:row37:actor_hash": true,
+    "parity:row37:clock_and_counter": true,
+    "parity:row37:finite_and_not_terminated": true,
+    "parity:row38:all_original_fields": true,
+    "parity:row38:actor_hash": true,
+    "parity:row38:clock_and_counter": true,
+    "parity:row38:finite_and_not_terminated": true,
+    "parity:row39:all_original_fields": true,
+    "parity:row39:actor_hash": true,
+    "parity:row39:clock_and_counter": true,
+    "parity:row39:finite_and_not_terminated": true,
+    "parity:row40:all_original_fields": true,
+    "parity:row40:actor_hash": true,
+    "parity:row40:clock_and_counter": true,
+    "parity:row40:finite_and_not_terminated": true,
+    "parity:row41:all_original_fields": true,
+    "parity:row41:actor_hash": true,
+    "parity:row41:clock_and_counter": true,
+    "parity:row41:finite_and_not_terminated": true,
+    "parity:row42:all_original_fields": true,
+    "parity:row42:actor_hash": true,
+    "parity:row42:clock_and_counter": true,
+    "parity:row42:finite_and_not_terminated": true,
+    "parity:row43:all_original_fields": true,
+    "parity:row43:actor_hash": true,
+    "parity:row43:clock_and_counter": true,
+    "parity:row43:finite_and_not_terminated": true,
+    "parity:row44:all_original_fields": true,
+    "parity:row44:actor_hash": true,
+    "parity:row44:clock_and_counter": true,
+    "parity:row44:finite_and_not_terminated": true,
+    "parity:row45:all_original_fields": true,
+    "parity:row45:actor_hash": true,
+    "parity:row45:clock_and_counter": true,
+    "parity:row45:finite_and_not_terminated": true,
+    "parity:row46:all_original_fields": true,
+    "parity:row46:actor_hash": true,
+    "parity:row46:clock_and_counter": true,
+    "parity:row46:finite_and_not_terminated": true,
+    "parity:row47:all_original_fields": true,
+    "parity:row47:actor_hash": true,
+    "parity:row47:clock_and_counter": true,
+    "parity:row47:finite_and_not_terminated": true,
+    "parity:row48:all_original_fields": true,
+    "parity:row48:actor_hash": true,
+    "parity:row48:clock_and_counter": true,
+    "parity:row48:finite_and_not_terminated": true,
+    "parity:row49:all_original_fields": true,
+    "parity:row49:actor_hash": true,
+    "parity:row49:clock_and_counter": true,
+    "parity:row49:finite_and_not_terminated": true,
+    "parity:row50:all_original_fields": true,
+    "parity:row50:actor_hash": true,
+    "parity:row50:clock_and_counter": true,
+    "parity:row50:finite_and_not_terminated": true,
+    "parity:row51:all_original_fields": true,
+    "parity:row51:actor_hash": true,
+    "parity:row51:clock_and_counter": true,
+    "parity:row51:finite_and_not_terminated": true,
+    "parity:row52:all_original_fields": true,
+    "parity:row52:actor_hash": true,
+    "parity:row52:clock_and_counter": true,
+    "parity:row52:finite_and_not_terminated": true,
+    "parity:row53:all_original_fields": true,
+    "parity:row53:actor_hash": true,
+    "parity:row53:clock_and_counter": true,
+    "parity:row53:finite_and_not_terminated": true,
+    "parity:row54:all_original_fields": true,
+    "parity:row54:actor_hash": true,
+    "parity:row54:clock_and_counter": true,
+    "parity:row54:finite_and_not_terminated": true,
+    "parity:row55:all_original_fields": true,
+    "parity:row55:actor_hash": true,
+    "parity:row55:clock_and_counter": true,
+    "parity:row55:finite_and_not_terminated": true,
+    "parity:row56:all_original_fields": true,
+    "parity:row56:actor_hash": true,
+    "parity:row56:clock_and_counter": true,
+    "parity:row56:finite_and_not_terminated": true,
+    "parity:row57:all_original_fields": true,
+    "parity:row57:actor_hash": true,
+    "parity:row57:clock_and_counter": true,
+    "parity:row57:finite_and_not_terminated": true,
+    "parity:row58:all_original_fields": true,
+    "parity:row58:actor_hash": true,
+    "parity:row58:clock_and_counter": true,
+    "parity:row58:finite_and_not_terminated": true,
+    "parity:row59:all_original_fields": true,
+    "parity:row59:actor_hash": true,
+    "parity:row59:clock_and_counter": true,
+    "parity:row59:finite_and_not_terminated": true,
+    "parity:row60:all_original_fields": true,
+    "parity:row60:actor_hash": true,
+    "parity:row60:clock_and_counter": true,
+    "parity:row60:finite_and_not_terminated": true,
+    "parity:row61:all_original_fields": true,
+    "parity:row61:actor_hash": true,
+    "parity:row61:clock_and_counter": true,
+    "parity:row61:finite_and_not_terminated": true,
+    "parity:row62:all_original_fields": true,
+    "parity:row62:actor_hash": true,
+    "parity:row62:clock_and_counter": true,
+    "parity:row62:finite_and_not_terminated": true,
+    "parity:row63:all_original_fields": true,
+    "parity:row63:actor_hash": true,
+    "parity:row63:clock_and_counter": true,
+    "parity:row63:finite_and_not_terminated": true,
+    "parity:row64:all_original_fields": true,
+    "parity:row64:actor_hash": true,
+    "parity:row64:clock_and_counter": true,
+    "parity:row64:finite_and_not_terminated": true,
+    "parity:row65:all_original_fields": true,
+    "parity:row65:actor_hash": true,
+    "parity:row65:clock_and_counter": true,
+    "parity:row65:finite_and_not_terminated": true,
+    "parity:row66:all_original_fields": true,
+    "parity:row66:actor_hash": true,
+    "parity:row66:clock_and_counter": true,
+    "parity:row66:finite_and_not_terminated": true,
+    "parity:row67:all_original_fields": true,
+    "parity:row67:actor_hash": true,
+    "parity:row67:clock_and_counter": true,
+    "parity:row67:finite_and_not_terminated": true,
+    "parity:row68:all_original_fields": true,
+    "parity:row68:actor_hash": true,
+    "parity:row68:clock_and_counter": true,
+    "parity:row68:finite_and_not_terminated": true,
+    "parity:row69:all_original_fields": true,
+    "parity:row69:actor_hash": true,
+    "parity:row69:clock_and_counter": true,
+    "parity:row69:finite_and_not_terminated": true,
+    "parity:row70:all_original_fields": true,
+    "parity:row70:actor_hash": true,
+    "parity:row70:clock_and_counter": true,
+    "parity:row70:finite_and_not_terminated": true,
+    "parity:row71:all_original_fields": true,
+    "parity:row71:actor_hash": true,
+    "parity:row71:clock_and_counter": true,
+    "parity:row71:finite_and_not_terminated": true,
+    "parity:row72:all_original_fields": true,
+    "parity:row72:actor_hash": true,
+    "parity:row72:clock_and_counter": true,
+    "parity:row72:finite_and_not_terminated": true,
+    "parity:row73:all_original_fields": true,
+    "parity:row73:actor_hash": true,
+    "parity:row73:clock_and_counter": true,
+    "parity:row73:finite_and_not_terminated": true,
+    "parity:row74:all_original_fields": true,
+    "parity:row74:actor_hash": true,
+    "parity:row74:clock_and_counter": true,
+    "parity:row74:finite_and_not_terminated": true,
+    "parity:row75:all_original_fields": true,
+    "parity:row75:actor_hash": true,
+    "parity:row75:clock_and_counter": true,
+    "parity:row75:finite_and_not_terminated": true,
+    "parity:row76:all_original_fields": true,
+    "parity:row76:actor_hash": true,
+    "parity:row76:clock_and_counter": true,
+    "parity:row76:finite_and_not_terminated": true,
+    "parity:row77:all_original_fields": true,
+    "parity:row77:actor_hash": true,
+    "parity:row77:clock_and_counter": true,
+    "parity:row77:finite_and_not_terminated": true,
+    "parity:row78:all_original_fields": true,
+    "parity:row78:actor_hash": true,
+    "parity:row78:clock_and_counter": true,
+    "parity:row78:finite_and_not_terminated": true,
+    "parity:row79:all_original_fields": true,
+    "parity:row79:actor_hash": true,
+    "parity:row79:clock_and_counter": true,
+    "parity:row79:finite_and_not_terminated": true,
+    "parity:row80:all_original_fields": true,
+    "parity:row80:actor_hash": true,
+    "parity:row80:clock_and_counter": true,
+    "parity:row80:finite_and_not_terminated": true,
+    "parity:row81:all_original_fields": true,
+    "parity:row81:actor_hash": true,
+    "parity:row81:clock_and_counter": true,
+    "parity:row81:finite_and_not_terminated": true,
+    "parity:row82:all_original_fields": true,
+    "parity:row82:actor_hash": true,
+    "parity:row82:clock_and_counter": true,
+    "parity:row82:finite_and_not_terminated": true,
+    "parity:row83:all_original_fields": true,
+    "parity:row83:actor_hash": true,
+    "parity:row83:clock_and_counter": true,
+    "parity:row83:finite_and_not_terminated": true,
+    "parity:row84:all_original_fields": true,
+    "parity:row84:actor_hash": true,
+    "parity:row84:clock_and_counter": true,
+    "parity:row84:finite_and_not_terminated": true,
+    "parity:row85:all_original_fields": true,
+    "parity:row85:actor_hash": true,
+    "parity:row85:clock_and_counter": true,
+    "parity:row85:finite_and_not_terminated": true,
+    "parity:row86:all_original_fields": true,
+    "parity:row86:actor_hash": true,
+    "parity:row86:clock_and_counter": true,
+    "parity:row86:finite_and_not_terminated": true,
+    "parity:row87:all_original_fields": true,
+    "parity:row87:actor_hash": true,
+    "parity:row87:clock_and_counter": true,
+    "parity:row87:finite_and_not_terminated": true,
+    "parity:row88:all_original_fields": true,
+    "parity:row88:actor_hash": true,
+    "parity:row88:clock_and_counter": true,
+    "parity:row88:finite_and_not_terminated": true,
+    "parity:row89:all_original_fields": true,
+    "parity:row89:actor_hash": true,
+    "parity:row89:clock_and_counter": true,
+    "parity:row89:finite_and_not_terminated": true,
+    "parity:row90:all_original_fields": true,
+    "parity:row90:actor_hash": true,
+    "parity:row90:clock_and_counter": true,
+    "parity:row90:finite_and_not_terminated": true,
+    "parity:row91:all_original_fields": true,
+    "parity:row91:actor_hash": true,
+    "parity:row91:clock_and_counter": true,
+    "parity:row91:finite_and_not_terminated": true,
+    "parity:row92:all_original_fields": true,
+    "parity:row92:actor_hash": true,
+    "parity:row92:clock_and_counter": true,
+    "parity:row92:finite_and_not_terminated": true,
+    "parity:row93:all_original_fields": true,
+    "parity:row93:actor_hash": true,
+    "parity:row93:clock_and_counter": true,
+    "parity:row93:finite_and_not_terminated": true,
+    "parity:row94:all_original_fields": true,
+    "parity:row94:actor_hash": true,
+    "parity:row94:clock_and_counter": true,
+    "parity:row94:finite_and_not_terminated": true,
+    "parity:row95:all_original_fields": true,
+    "parity:row95:actor_hash": true,
+    "parity:row95:clock_and_counter": true,
+    "parity:row95:finite_and_not_terminated": true,
+    "parity:row96:all_original_fields": true,
+    "parity:row96:actor_hash": true,
+    "parity:row96:clock_and_counter": true,
+    "parity:row96:finite_and_not_terminated": true,
+    "parity:row97:all_original_fields": true,
+    "parity:row97:actor_hash": true,
+    "parity:row97:clock_and_counter": true,
+    "parity:row97:finite_and_not_terminated": true,
+    "parity:row98:all_original_fields": true,
+    "parity:row98:actor_hash": true,
+    "parity:row98:clock_and_counter": true,
+    "parity:row98:finite_and_not_terminated": true,
+    "parity:row99:all_original_fields": true,
+    "parity:row99:actor_hash": true,
+    "parity:row99:clock_and_counter": true,
+    "parity:row99:finite_and_not_terminated": true,
+    "parity:row100:all_original_fields": true,
+    "parity:row100:actor_hash": true,
+    "parity:row100:clock_and_counter": true,
+    "parity:row100:finite_and_not_terminated": true,
+    "diagnostic:image0:hash": true,
+    "diagnostic:image1:hash": true,
+    "diagnostic:image2:hash": true,
+    "diagnostic:image3:hash": true,
+    "diagnostic:image4:hash": true,
+    "diagnostic:pair0-1:recomputed": true,
+    "diagnostic:pair0-2:recomputed": true,
+    "diagnostic:pair0-3:recomputed": true,
+    "diagnostic:pair0-4:recomputed": true,
+    "diagnostic:later_four_images_identical": true,
+    "diagnostic:zero_steps_reported": true,
+    "UI:overview:paused_zero": true,
+    "UI:overview:camera": true,
+    "UI:overview:seven_scientific_groups_exact": true,
+    "UI:overview:runtime_source_hashes": true,
+    "UI:overview:metadata_only_declared_changes": true,
+    "UI:follow:paused_zero": true,
+    "UI:follow:camera": true,
+    "UI:follow:seven_scientific_groups_exact": true,
+    "UI:follow:runtime_source_hashes": true,
+    "UI:follow:metadata_only_declared_changes": true,
+    "UI:side:paused_zero": true,
+    "UI:side:camera": true,
+    "UI:side:seven_scientific_groups_exact": true,
+    "UI:side:runtime_source_hashes": true,
+    "UI:side:metadata_only_declared_changes": true,
+    "UI:final-state:paused_zero": true,
+    "UI:final-state:camera": true,
+    "UI:final-state:seven_scientific_groups_exact": true,
+    "UI:final-state:runtime_source_hashes": true,
+    "UI:final-state:metadata_only_declared_changes": true,
+    "UI:final_plan_binding": true,
+    "UI:prior_plan_binding": true,
+    "UI:failure_journal_matches_API": true,
+    "UI:four_distinct_clock_roles": true,
+    "UI:physical_failure_retained_at_384": true,
+    "UI:actual_failure_same_saved_native_state": true,
+    "input_still_stable:validation/flybody-habitat-scene-execution-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-scene-results.json": true,
+    "input_still_stable:validation/flybody-habitat-visual-execution-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-visual-results.json": true,
+    "input_still_stable:validation/flybody-habitat-render-diagnostic-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-render-diagnostic-results.json": true,
+    "input_still_stable:validation/flybody-habitat-results.json": true,
+    "input_still_stable:validation/flybody-habitat-execution-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/inspection.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/inspection.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-scene-design-plan.json": true,
+    "input_still_stable:validation/flybody-habitat-visual-design-plan.json": true,
+    "input_still_stable:tests/test_flybody_habitat.py": true,
+    "input_still_stable:validation/flybody-habitat-design-plan.json": true,
+    "input_still_stable:validation/flybody-source-manifest.json": true,
+    "input_still_stable:validation/flybody-walking-acquisition.json": true,
+    "input_still_stable:validation/flybody-stance-actuator-audit.json": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/2-side.png": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/0-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/3-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/1-follow.png": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/parity-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-scene-14229a078298/parity-actor.npz": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/paused-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/2-side.png": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/0-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/3-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/1-follow.png": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/parity-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-visual-eb42dfe25a0b/parity-actor.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/frozen_default-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/frozen_default-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/frozen_default.json": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/frozen_default.log": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-follow.png": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-side.png": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-initial-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.json": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.log": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/new_default-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/new_default-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/new_default.json": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/new_default.log": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-initial-overview.png": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/offset_geometry-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.json": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/offset_geometry.log": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-arrays.npz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-states.jsonl.gz": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.json": true,
+    "input_still_stable:runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.log": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/final-state.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/follow.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/follow.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/overview.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/overview.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/side.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer-final/side.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/follow-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/follow.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/initial-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/initial.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/paused-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/paused.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/reset-comparison.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/reset-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/reset.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/running.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/side-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8774/side.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/failed.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/failure-journal.jsonl": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/initial-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/initial.json": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/last-frame.jpg": true,
+    "input_still_stable:validation/flybody-habitat-viewer/8775/manifest.json": true,
+    "input_still_stable:tmp/flybody-env/lib/python3.10/site-packages/mujoco/include/mujoco/mjvisualize.h": true,
+    "input_still_stable:runs/flybody-habitat-render-diagnostic-ba463c8321ee/0-worker.png": true,
+    "input_still_stable:runs/flybody-habitat-render-diagnostic-ba463c8321ee/1-source.png": true,
+    "input_still_stable:runs/flybody-habitat-render-diagnostic-ba463c8321ee/2-worker.png": true,
+    "input_still_stable:runs/flybody-habitat-render-diagnostic-ba463c8321ee/3-source.png": true,
+    "input_still_stable:runs/flybody-habitat-render-diagnostic-ba463c8321ee/4-worker.png": true
+  },
+  "failed_checks": [],
+  "reviewer_script_sha256": "3affa49da9326b39f5eb1f56b15a45072636da6a29c53347e688147b2a415cfb",
+  "runtime_source_commit": "62129a3",
+  "prior_visual_source_commit": "ef6e230",
+  "original_contact_source_commit": "fd19b56",
+  "source_sha256": {
+    "62129a3:scripts/validate_flybody_habitat_scene.py": "e8d0d44a9923772e152ee111754912e58eb830fa88d1fac8dba1ecb09162164c",
+    "62129a3:scripts/validate_flybody_habitat_visual.py": "b9e9f864cb1e6242b0d1054788798fcabf30da04305525e1c62b72931f2a651d",
+    "62129a3:scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "62129a3:fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "62129a3:fruitfly/flybody_habitat.py": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+    "62129a3:fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "62129a3:fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "ef6e230:scripts/validate_flybody_habitat_visual.py": "b9e9f864cb1e6242b0d1054788798fcabf30da04305525e1c62b72931f2a651d",
+    "ef6e230:scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "ef6e230:fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "ef6e230:fruitfly/flybody_habitat.py": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+    "ef6e230:fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "ef6e230:fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "ef6e230:scripts/diagnose_flybody_habitat_render.py": "41636acf19a4200b79dd5cf63b09702cef70096a4e02339a84d5ba10254c0af4",
+    "fd19b56:scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "fd19b56:fruitfly/flybody_worker.py": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+    "fd19b56:fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fd19b56:fruitfly/flybody_habitat.py": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+    "fd19b56:fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fd19b56:fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "fd19b56:configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+    "62129a3:fruitfly/simulation.py": "8f7e9201ec8c810635ce4a75829bf16d900fe600c01220ebed3e1bca3e013057",
+    "62129a3:fruitfly/viewer.py": "ac1f427205b5239c6d0dccb82454071bcf565732b57a3899d1a98f851ba4f982",
+    "62129a3:fruitfly/web/app.js": "2197b38674943a501fc8ac327a5174f80f70da46491e4d765ac770778f23a5b2",
+    "62129a3:configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724"
+  },
+  "input_artifacts": {
+    "validation/flybody-habitat-scene-execution-plan.json": {
+      "sha256": "14229a078298ce3ba43761a05aed602ff7d2463ffa727d4ea3b7afb85795edf2",
+      "bytes": 2527
+    },
+    "validation/flybody-habitat-scene-results.json": {
+      "sha256": "76bee313d61c249ae4271da1ca53b8e6731b57b001d94125869cd91365489cbc",
+      "bytes": 1674424
+    },
+    "validation/flybody-habitat-visual-execution-plan.json": {
+      "sha256": "eb42dfe25a0b82383b5a2af83e47c058a73c2a35186afc0f39ed9d643f78050e",
+      "bytes": 3756
+    },
+    "validation/flybody-habitat-visual-results.json": {
+      "sha256": "f0a9a07476022869b455e5c3dbb8d8d09fb05c4f280ec77341a9000424b02c10",
+      "bytes": 442114
+    },
+    "validation/flybody-habitat-render-diagnostic-plan.json": {
+      "sha256": "ba463c8321eee1ccbe5e1cde17cfa5bef27c756b2aa4ff8fa8b16b7c0a7f90f9",
+      "bytes": 1144
+    },
+    "validation/flybody-habitat-render-diagnostic-results.json": {
+      "sha256": "d8083b7b919c3d4ae28d4e258f81ad89326d7b2c0272dc6a8a94cabd5c48c546",
+      "bytes": 926578
+    },
+    "validation/flybody-habitat-results.json": {
+      "sha256": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+      "bytes": 485729
+    },
+    "validation/flybody-habitat-execution-plan.json": {
+      "sha256": "a9a5c7dc77124d6008d78ceb9c98b7785c02ff15ce47d3db926d262fd94c4397",
+      "bytes": 6112
+    },
+    "validation/flybody-habitat-viewer-final/inspection.json": {
+      "sha256": "308ae2ac054387a60f42366f8e938ddeb2a94dab14cb795d1a8c5deee08705f3",
+      "bytes": 2929
+    },
+    "validation/flybody-habitat-viewer/inspection.json": {
+      "sha256": "3e786bc103e3d90b76dba1fc6c31b90aad69c3ef7492ba1a9fdd6db3239bb7cc",
+      "bytes": 5901
+    },
+    "validation/flybody-habitat-viewer-final-plan.json": {
+      "sha256": "b09ecc40042a88f1b194151d11714809a722ad7366d58be42e7212b8729568f8",
+      "bytes": 1845
+    },
+    "validation/flybody-habitat-viewer-plan.json": {
+      "sha256": "5cd524da9a1edd06b5a01128bfcf1420652c0cbf0d193e2743db9865cf2c5f82",
+      "bytes": 2541
+    },
+    "validation/flybody-habitat-scene-design-plan.json": {
+      "sha256": "02938d6824a7210e8a079d85dabb44f9506f07b685fa45dd69e2711cf06f7bd4",
+      "bytes": 1608
+    },
+    "validation/flybody-habitat-visual-design-plan.json": {
+      "sha256": "39739bed4081a983e01622906e068d5e62c82e7fee8fc2f3e2f0b86602c46ea1",
+      "bytes": 1632
+    },
+    "tests/test_flybody_habitat.py": {
+      "sha256": "d1125189b993e100fb3937ff6520a63f18442cb0ecc49ed55317b222107b8be3",
+      "bytes": 2333
+    },
+    "validation/flybody-habitat-design-plan.json": {
+      "sha256": "a34c821ab71052fc9da0b6fc909aa1908798669406af50ecc3148d4d9819604b",
+      "bytes": 1483
+    },
+    "validation/flybody-source-manifest.json": {
+      "sha256": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+      "bytes": 56679
+    },
+    "validation/flybody-walking-acquisition.json": {
+      "sha256": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+      "bytes": 1677
+    },
+    "validation/flybody-stance-actuator-audit.json": {
+      "sha256": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+      "bytes": 34646
+    },
+    "runs/flybody-habitat-scene-14229a078298/2-side.png": {
+      "sha256": "950c00572d8a2f26534cc51514fed3a8abd37a3efa108c166872d808b55c1155",
+      "bytes": 191322
+    },
+    "runs/flybody-habitat-scene-14229a078298/0-overview.png": {
+      "sha256": "e2ac76b473f4425aef527b133748e440eda265beac5eb50cc1c6211f28dc85de",
+      "bytes": 104679
+    },
+    "runs/flybody-habitat-scene-14229a078298/3-overview.png": {
+      "sha256": "03071c4999f78783ef35c39df4a3b09636f3644ff7cec9c9eb1b110c01ee4b79",
+      "bytes": 104690
+    },
+    "runs/flybody-habitat-scene-14229a078298/1-follow.png": {
+      "sha256": "0aa237acca3647f739a710b480db456e53d53a031fd97bcb67f720644b47d372",
+      "bytes": 174476
+    },
+    "runs/flybody-habitat-scene-14229a078298/parity-states.jsonl.gz": {
+      "sha256": "2dc3c12d0ae5a5f60afe879754c82bbf693cca5a2fbc8ee5c8eb4ec8e0b886c2",
+      "bytes": 651182
+    },
+    "runs/flybody-habitat-scene-14229a078298/parity-actor.npz": {
+      "sha256": "5dd4f06fa535c76d4bcf74e064448638bd0d8c2a9fb361adf82bce53fd6deb0c",
+      "bytes": 183628
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/paused-arrays.npz": {
+      "sha256": "1e8a4a701038fbb93ab0b7cc1237dab471f99f855484c4c138265d7a552ea56e",
+      "bytes": 21944
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/2-side.png": {
+      "sha256": "fe920d848f38011dda00789ce96b4f95374728198208956ea8eaacc5a744c1af",
+      "bytes": 191863
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/0-overview.png": {
+      "sha256": "48fd58ce82d1fadfa749e0717c14eaf59b47b0fc5727991bd6d443cc7f9587a7",
+      "bytes": 104754
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/3-overview.png": {
+      "sha256": "6b6517e82c1cd23a4364a62d1b431a29214675a7a5bb4286a0c5dfe7a0e9faa1",
+      "bytes": 104764
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/1-follow.png": {
+      "sha256": "cd591fe007c23bf1dd974b116fa6ea265b9cc89238b7529af9bc3d84ba983bd8",
+      "bytes": 174943
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/parity-states.jsonl.gz": {
+      "sha256": "9182e581bc1b693d81d0272ed1bd3437f9f3bb6666fdbc9b5f6cbf6b4161891f",
+      "bytes": 651182
+    },
+    "runs/flybody-habitat-visual-eb42dfe25a0b/parity-actor.npz": {
+      "sha256": "5dd4f06fa535c76d4bcf74e064448638bd0d8c2a9fb361adf82bce53fd6deb0c",
+      "bytes": 183628
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default-arrays.npz": {
+      "sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "bytes": 6614264
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default-states.jsonl.gz": {
+      "sha256": "686b769184e04b0d70e83bbe32eec19014eecaae0b7938ac752941adc2dc039b",
+      "bytes": 6313187
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default.json": {
+      "sha256": "6ca27ff6b628b585a7d524cb80bfda980e3b82620787794bcb20dce9ae5ea6a8",
+      "bytes": 40548
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/frozen_default.log": {
+      "sha256": "07b8a32b94adf0c26f0ddb2d2ba342fd3bb631a6a2a397ab8e20fa9324af2b0f",
+      "bytes": 225
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-arrays.npz": {
+      "sha256": "f39708b3ea145ceeec4f992bcbb982940450df5827efd1dce741197b49adbf60",
+      "bytes": 2718234
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-follow.png": {
+      "sha256": "483fb2e84b1ed069753d3db99ee108d23f6599095153f116019245c2eea2b3cc",
+      "bytes": 176285
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-overview.png": {
+      "sha256": "131b395eb0aa81cf6ed14073d4771ccc471669f0e121873aa56764a80b0b69d0",
+      "bytes": 106803
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-endpoint-side.png": {
+      "sha256": "b5788b7ff060c16042263e80e563b00bd1f3bcd6990e4c912e77e6c9b7b03fee",
+      "bytes": 203503
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-initial-overview.png": {
+      "sha256": "59f4f5498be2167847eeef0d08be04a97ea1960a9de72777e309007f426dc910",
+      "bytes": 110493
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push-states.jsonl.gz": {
+      "sha256": "822865ea8e488be4d57712980515a598d863df8a49c3d1f4e8c5a7b32c44692c",
+      "bytes": 2497608
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.json": {
+      "sha256": "d68fcc1fa7f0a339c8ff2712af6b279cc15704e75ac2c889911167bc1a876e85",
+      "bytes": 245944
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/habitat_wall_push.log": {
+      "sha256": "51e841e3866995760b0c84f6bc17837c09559fc3bf825675fefd22f89273352e",
+      "bytes": 132
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default-arrays.npz": {
+      "sha256": "88c77b0c99247cba508844af85b86a0eb763a59843ddbc25c9f4449d99f6ffbf",
+      "bytes": 6614264
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default-states.jsonl.gz": {
+      "sha256": "9aba10d91350ce8b63abef74c52d4e812ab2ade8ee844e43f19ec30808a27fa4",
+      "bytes": 6313184
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default.json": {
+      "sha256": "f51c3f975e0e86b504e1abf5f0ccf32137b94094a90ec7ffd40fee9b6709fdcf",
+      "bytes": 40454
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/new_default.log": {
+      "sha256": "b414a27f70de6f4eef472ddc52f39b069ad5a38a8a78fc85c41171ce59b620a3",
+      "bytes": 210
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-arrays.npz": {
+      "sha256": "265c1678705f1b91e552c2febebdf1323392fde9543e20a62240d0fecb57fc08",
+      "bytes": 6781
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-initial-overview.png": {
+      "sha256": "4e103f741b44f2103c3f8fac39d9d94fb64a81da800d3639b994ee6f739478dc",
+      "bytes": 112407
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry-states.jsonl.gz": {
+      "sha256": "92cab4a591f3bbca14176c66ba9011e7661dcd637ab1375d0f3176f4be50fd92",
+      "bytes": 3977
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry.json": {
+      "sha256": "10bddb947c7bb7bd7b975226495e89173dc9bca924cd444bbeeba4410b84eb6e",
+      "bytes": 41329
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/offset_geometry.log": {
+      "sha256": "6120e8d40f4c89c364455409bda5e320b7e53aafd57e587d30bdd8af774e2efc",
+      "bytes": 94
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-arrays.npz": {
+      "sha256": "17698b77e0c87719353389c357a12a206f19faa88cab813ac3811cde8ec5ed47",
+      "bytes": 1774154
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix-states.jsonl.gz": {
+      "sha256": "edd57d96e966f3ab131078a9ada8e738004105a05e74e26ae25a177161a7e1f1",
+      "bytes": 1619965
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.json": {
+      "sha256": "1600971d2248cb35776e2e2559f8c49d1c6d09e9a58466aa660d55d22544f5c9",
+      "bytes": 40652
+    },
+    "runs/flybody-habitat-a9a5c7dc7712/rolling_prefix.log": {
+      "sha256": "6b7108a21850084e7230118addcd44386a63f24c2aa44dec1705df543ddba3d9",
+      "bytes": 127
+    },
+    "validation/flybody-habitat-viewer-final/final-state.json": {
+      "sha256": "aa3e2d30270214fd6aeed4862c71bdf2c2cdbcb20d7086bccede6a346aab55e4",
+      "bytes": 23925
+    },
+    "validation/flybody-habitat-viewer-final/follow.jpg": {
+      "sha256": "c62b1628e1cadd6c3327941069d6a456db8ce581918bef8334f2901ee39d6a9f",
+      "bytes": 43008
+    },
+    "validation/flybody-habitat-viewer-final/follow.json": {
+      "sha256": "0cc96abae451605431228078cfe7d8196e84547aeecada3e0ab2d2369f33b8f1",
+      "bytes": 23922
+    },
+    "validation/flybody-habitat-viewer-final/overview.jpg": {
+      "sha256": "8aedd3f705962f7df4c1f98009cdffa74890f7cd6f399d7f2dcd72934cc93334",
+      "bytes": 37009
+    },
+    "validation/flybody-habitat-viewer-final/overview.json": {
+      "sha256": "3f870ddf7a75d1f0fa292e8a149e82ce97fc0eee77afae20a16ee56007f50dd8",
+      "bytes": 23922
+    },
+    "validation/flybody-habitat-viewer-final/side.jpg": {
+      "sha256": "286b315910b3f5115eefd604e072f837286380384d5278d241af997dd19cf068",
+      "bytes": 45523
+    },
+    "validation/flybody-habitat-viewer-final/side.json": {
+      "sha256": "3f537dca9e63036847346d385db3caf943ad3264e8434eb8fefc24f3942e7d7a",
+      "bytes": 23921
+    },
+    "validation/flybody-habitat-viewer/8774/follow-frame.jpg": {
+      "sha256": "9b23c476a957b12a4159ce53a8021b17488fe017cf8365722fb7763d3e3ef54e",
+      "bytes": 43244
+    },
+    "validation/flybody-habitat-viewer/8774/follow.json": {
+      "sha256": "f193ec1095ad23a2f0e38189a76a84c8b0b2d9f003b7769c8f49c629f236e20c",
+      "bytes": 23832
+    },
+    "validation/flybody-habitat-viewer/8774/initial-frame.jpg": {
+      "sha256": "0119adc2cb2142d16a2649c5a1c4e1c357cb5f6bdd7fe4405f66018c0ee3a69a",
+      "bytes": 37038
+    },
+    "validation/flybody-habitat-viewer/8774/initial.json": {
+      "sha256": "0c5ffa9252a12ed5fc0283988a1e76577a9681d8d7d9ecd7ab841c4a8b95e849",
+      "bytes": 23834
+    },
+    "validation/flybody-habitat-viewer/8774/paused-frame.jpg": {
+      "sha256": "32160a805973dab32cb18baa30a85c92121870fa07a0724a7992dcfe31fc93a8",
+      "bytes": 45929
+    },
+    "validation/flybody-habitat-viewer/8774/paused.json": {
+      "sha256": "01a4cb226bf6b6f434eed049b0d230c474efd5d8ce895fc3164682d4a280ce0b",
+      "bytes": 25050
+    },
+    "validation/flybody-habitat-viewer/8774/reset-comparison.json": {
+      "sha256": "9db1e9b603d2c42d1a7c70d8158eecd2481d7bab292500b0670e436efc4e8c08",
+      "bytes": 159
+    },
+    "validation/flybody-habitat-viewer/8774/reset-frame.jpg": {
+      "sha256": "f232f7bc6addad320c0324f30745d2342c7b873a11f74993bb9947386cffa06f",
+      "bytes": 45804
+    },
+    "validation/flybody-habitat-viewer/8774/reset.json": {
+      "sha256": "9a86fecb27edc36d4a81f7a16729c4cf61091d66138c2604fdd905089adb49c4",
+      "bytes": 23829
+    },
+    "validation/flybody-habitat-viewer/8774/running.json": {
+      "sha256": "952985845ada2fbb0c829e9ab2c70f1467dc18fb0ee402a167e10c809fbbbe30",
+      "bytes": 25065
+    },
+    "validation/flybody-habitat-viewer/8774/side-frame.jpg": {
+      "sha256": "18bcb764ef00655ff3b1dd30ff5bcd5f1e9531508799f513a59218ec0225271b",
+      "bytes": 45804
+    },
+    "validation/flybody-habitat-viewer/8774/side.json": {
+      "sha256": "d43d83a3af761897c5af2c3bfaa1ae3af3a70b2a28e74ebc9c89e03d1ebc2df7",
+      "bytes": 23828
+    },
+    "validation/flybody-habitat-viewer/8775/failed.json": {
+      "sha256": "e8ecb7a2fe6105d05722b4abe011a79b086ab047403f35a7a9428a0820332f87",
+      "bytes": 56475
+    },
+    "validation/flybody-habitat-viewer/8775/failure-journal.jsonl": {
+      "sha256": "a41030641adab7814266c6e4791f6709fd05c94d145564457f8b1c334d90d22a",
+      "bytes": 21409
+    },
+    "validation/flybody-habitat-viewer/8775/initial-frame.jpg": {
+      "sha256": "0119adc2cb2142d16a2649c5a1c4e1c357cb5f6bdd7fe4405f66018c0ee3a69a",
+      "bytes": 37038
+    },
+    "validation/flybody-habitat-viewer/8775/initial.json": {
+      "sha256": "274787e3469559c72ee4debebda4be59b0ab55d947912260c4e1f19fdf41a01c",
+      "bytes": 23920
+    },
+    "validation/flybody-habitat-viewer/8775/last-frame.jpg": {
+      "sha256": "d2460c3cf2124ef5fe5349731844eaa4579a8d6c656110a07cc7f878c53fdfd7",
+      "bytes": 37109
+    },
+    "validation/flybody-habitat-viewer/8775/manifest.json": {
+      "sha256": "b1f58065c45b6d0de4eeb2ba6bbbbbd7ff0e20ab3c5fda766525c4d69af2ef73",
+      "bytes": 28567
+    },
+    "tmp/flybody-env/lib/python3.10/site-packages/mujoco/include/mujoco/mjvisualize.h": {
+      "sha256": "a3499958047be3a30b6676471c9591e8388e7468a7ebc5a08c61db43a7740a8e",
+      "bytes": 24744
+    },
+    "runs/flybody-habitat-render-diagnostic-ba463c8321ee/0-worker.png": {
+      "sha256": "1578d9d343b4022fbb7eb317aaefedddcaee5312c89fc79f9c06f9669a23dea2",
+      "bytes": 193241
+    },
+    "runs/flybody-habitat-render-diagnostic-ba463c8321ee/1-source.png": {
+      "sha256": "42e7b3de35c71759d72233319c657fe3eb2c61658f6a5c60e300bf7ad31f2004",
+      "bytes": 193242
+    },
+    "runs/flybody-habitat-render-diagnostic-ba463c8321ee/2-worker.png": {
+      "sha256": "42e7b3de35c71759d72233319c657fe3eb2c61658f6a5c60e300bf7ad31f2004",
+      "bytes": 193242
+    },
+    "runs/flybody-habitat-render-diagnostic-ba463c8321ee/3-source.png": {
+      "sha256": "42e7b3de35c71759d72233319c657fe3eb2c61658f6a5c60e300bf7ad31f2004",
+      "bytes": 193242
+    },
+    "runs/flybody-habitat-render-diagnostic-ba463c8321ee/4-worker.png": {
+      "sha256": "42e7b3de35c71759d72233319c657fe3eb2c61658f6a5c60e300bf7ad31f2004",
+      "bytes": 193242
+    }
+  },
+  "public_geom_fields": [
+    "type",
+    "dataid",
+    "objtype",
+    "objid",
+    "category",
+    "matid",
+    "texcoord",
+    "segid",
+    "size",
+    "pos",
+    "mat",
+    "rgba",
+    "emission",
+    "specular",
+    "shininess",
+    "reflectance",
+    "label",
+    "camdist",
+    "modelrbound",
+    "transparent"
+  ],
+  "scenes": [
+    {
+      "camera": "overview",
+      "before": 228,
+      "after": 92,
+      "removed_by_kind": {
+        "ghost": 33,
+        "trajectory": 103
+      },
+      "survivor_field_comparisons": 1840,
+      "changes": [
+        {
+          "original_index": 226,
+          "retained_index": 90,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        },
+        {
+          "original_index": 227,
+          "retained_index": 91,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        }
+      ]
+    },
+    {
+      "camera": "follow",
+      "before": 228,
+      "after": 92,
+      "removed_by_kind": {
+        "ghost": 33,
+        "trajectory": 103
+      },
+      "survivor_field_comparisons": 1840,
+      "changes": [
+        {
+          "original_index": 226,
+          "retained_index": 90,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        },
+        {
+          "original_index": 227,
+          "retained_index": 91,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        }
+      ]
+    },
+    {
+      "camera": "side",
+      "before": 228,
+      "after": 92,
+      "removed_by_kind": {
+        "ghost": 33,
+        "trajectory": 103
+      },
+      "survivor_field_comparisons": 1840,
+      "changes": [
+        {
+          "original_index": 226,
+          "retained_index": 90,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        },
+        {
+          "original_index": 227,
+          "retained_index": 91,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        }
+      ]
+    },
+    {
+      "camera": "overview",
+      "before": 228,
+      "after": 92,
+      "removed_by_kind": {
+        "ghost": 33,
+        "trajectory": 103
+      },
+      "survivor_field_comparisons": 1840,
+      "changes": [
+        {
+          "original_index": 226,
+          "retained_index": 90,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        },
+        {
+          "original_index": 227,
+          "retained_index": 91,
+          "changed_fields": [
+            "segid",
+            "pos"
+          ]
+        }
+      ]
+    }
+  ],
+  "actor_shape": [
+    101,
+    741
+  ],
+  "actor_values_compared": 74841,
+  "native_rows_compared": 101,
+  "native_original_fields_per_row": 42,
+  "pixel_comparisons": [
+    {
+      "reference": 0,
+      "other": 1,
+      "pixels_exact": false,
+      "different_pixels": 3,
+      "maximum_channel_difference": 1,
+      "pose_exact": true,
+      "scene_fields_exact": true
+    },
+    {
+      "reference": 0,
+      "other": 2,
+      "pixels_exact": false,
+      "different_pixels": 3,
+      "maximum_channel_difference": 1,
+      "pose_exact": true,
+      "scene_fields_exact": true
+    },
+    {
+      "reference": 0,
+      "other": 3,
+      "pixels_exact": false,
+      "different_pixels": 3,
+      "maximum_channel_difference": 1,
+      "pose_exact": true,
+      "scene_fields_exact": true
+    },
+    {
+      "reference": 0,
+      "other": 4,
+      "pixels_exact": false,
+      "different_pixels": 3,
+      "maximum_channel_difference": 1,
+      "pose_exact": true,
+      "scene_fields_exact": true
+    }
+  ],
+  "final_ui": [
+    {
+      "camera": "overview",
+      "path": "overview.json",
+      "metadata_differences": {
+        "final_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T041346906108Z/flybody-worker.log",
+        "prior_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T040847919713Z/flybody-worker.log",
+        "final_module_hash": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+        "prior_module_hash": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+        "new_reference_filter": "Removed from MjvScene, including shadow/reflection passes"
+      }
+    },
+    {
+      "camera": "follow",
+      "path": "follow.json",
+      "metadata_differences": {
+        "final_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T041346906108Z/flybody-worker.log",
+        "prior_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T040847919713Z/flybody-worker.log",
+        "final_module_hash": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+        "prior_module_hash": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+        "new_reference_filter": "Removed from MjvScene, including shadow/reflection passes"
+      }
+    },
+    {
+      "camera": "side",
+      "path": "side.json",
+      "metadata_differences": {
+        "final_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T041346906108Z/flybody-worker.log",
+        "prior_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T040847919713Z/flybody-worker.log",
+        "final_module_hash": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+        "prior_module_hash": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+        "new_reference_filter": "Removed from MjvScene, including shadow/reflection passes"
+      }
+    },
+    {
+      "camera": "overview",
+      "path": "final-state.json",
+      "metadata_differences": {
+        "final_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T041346906108Z/flybody-worker.log",
+        "prior_worker_log": "/Users/bernardo/Documents/Code/fruit-fly/runs/20260905T040847919713Z/flybody-worker.log",
+        "final_module_hash": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+        "prior_module_hash": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+        "new_reference_filter": "Removed from MjvScene, including shadow/reflection passes"
+      }
+    }
+  ],
+  "failure_clocks_s": {
+    "last_image": 0.74999999999995,
+    "last_completed_advance": 0.7599999999999489,
+    "failure_neural": 0.768,
+    "failure_physical": 0.7679999999999481
+  },
+  "physics_or_neural_steps_run_by_reviewer": 0,
+  "visual_inspection": {
+    "method": "Independent offline inspection of saved final overview/follow/side JPGs and prior v1 follow JPG using the image viewer; no live browser inspection.",
+    "result": "Final three views show smooth resource regions, one fly and its floor reflection, with no visible dotted reference tracks. Prior v1 follow shows dotted tracks extending toward the food region.",
+    "paths": [
+      "validation/flybody-habitat-viewer-final/overview.jpg",
+      "validation/flybody-habitat-viewer-final/follow.jpg",
+      "validation/flybody-habitat-viewer-final/side.jpg",
+      "validation/flybody-habitat-viewer/8774/follow-frame.jpg"
+    ]
+  },
+  "limits": [
+    "Scene ID classification is corroborated by the prior saved edit list and pinned name-selection source; full compiled native ID/name inventory is not archived.",
+    "Final render native arrays and full MJB serialization are retained as hashes, not final per-render raw arrays or MJB bytes. Prior paused raw arrays corroborate all nine hash values; full model byte equality itself is producer evidence.",
+    "Cached observation equality is hash evidence. Final habitat-null native/model invariance and absent callback are producer booleans plus inspected source, not separate raw before/after records.",
+    "Diagnostic model/native invariance is retained only as booleans; its pixels, camera poses and seven scene fields can be recomputed. The original failed default pixel pair was not saved, so the repeat diagnostic does not establish that original mismatch magnitude.",
+    "Saved browser snapshots and frames are reviewed offline; this reviewer did not operate or inspect the live browser. Final saved state does not establish present server state.",
+    "The final UI has seven exact scientific telemetry groups; body metadata differs in the log path, module hash and added display filter declaration.",
+    "Four paused scene records and 100 walking intervals cover these conditions only. The original 64/65 contact, 29/31 shallow-probe and 26/27 alpha-render receipts remain failures, with native physical termination at .768 s. No obstacle avoidance, indefinite containment or physiological validation follows."
+  ]
+}

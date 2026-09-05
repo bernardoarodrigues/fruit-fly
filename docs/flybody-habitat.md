@@ -51,6 +51,8 @@ Inspection of final overview, follow and side images confirms smooth discs and r
 
 The [actual browser inspection](flybody-habitat-viewer.md) additionally checks all three final views at commit `62129a3`, after a separately retained full-graph pause/reset and wall-failure demonstration at `ef6e230`. Port 8774 is left in the final sensory habitat, paused at t=0. The source sensory assay remains at rest.
 
+The [independent final-scene review](flybody-habitat-scene-independent-review.md) passes 756 saved-data/source checks, including 7,360 surviving geometry fields and 74,841 actual actor values. It reproduces the final UI state comparisons and preserves both earlier contact failures, the v1 pixel failure and the scope of hash-only model evidence. It runs no physics or neural simulation.
+
 The original screenshots, physical trial, both failed aggregate-force gates, failed exact-pixel gate and v1 shadow flaw remain retained. These visual addenda add no native wall trial or successful avoidance claim. Their execution plans pin renderer/runtime versions independently of commit `fd19b56`.
 
 ## Reproduction and claim boundary
