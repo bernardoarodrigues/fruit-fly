@@ -1,0 +1,351 @@
+{
+  "completed_utc": "2026-09-05T23:13:03.979383+00:00",
+  "status": "completed_published_profile_reduction",
+  "plan": {
+    "path": "validation/apl-spatial-reference-plan.json",
+    "bytes": 1863,
+    "sha256": "0df06b561603af4f3957b88f943f162a6a0f0d001e8dc5a54eb4b3513fe5f601"
+  },
+  "data": {
+    "path": "validation/apl-spatial-reference-data.json",
+    "bytes": 1392212,
+    "sha256": "f7b60900981e4e289a0a8b834bb87896c987c8a83956ac6c8263c244814c9c91"
+  },
+  "source_pins": [
+    {
+      "path": "scripts/analyze_apl_spatial_reference.py",
+      "sha256": "f4fc7dd4a3d72cbc9033849be2709ccd49955142b10f81a1aec9ef0dd33fbec2"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+      "sha256": "ba1d7c4dfaa2007aa3e71f668b72ee81845ea20094012f44450117a3a2165e9c"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+      "sha256": "673b933de6b2aaa4382d7e857bfb45154fff21766fbc826fea750465a10986b3"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    }
+  ],
+  "numeric_cells_checked": 7550,
+  "formula_caches_checked": 74,
+  "fig7_extracted_observations": 5640,
+  "comparisons": [
+    {
+      "site": "Hstim",
+      "model": "connectome",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.21898649228673225,
+        "mae": 0.17632570654285715,
+        "bias": -0.1467136346
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.21708990739243547,
+        "mae": 0.17227692424074076,
+        "bias": -0.15062775116666666
+      }
+    },
+    {
+      "site": "Hstim",
+      "model": "connectome",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.1349177379141888,
+        "mae": 0.10616824779999998,
+        "bias": 0.013672108257142858
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.12196055378515291,
+        "mae": 0.09388928127777776,
+        "bias": 0.00788506364814815
+      }
+    },
+    {
+      "site": "Hstim",
+      "model": "connectome",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.16050054919412804,
+        "mae": 0.13713743237142856,
+        "bias": 0.09198199397142857
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.15627636040111356,
+        "mae": 0.13843373657407407,
+        "bias": 0.09380954512962962
+      }
+    },
+    {
+      "site": "Hstim",
+      "model": "backbone",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.19508631086143088,
+        "mae": 0.15408192877163057,
+        "bias": -0.0989807286899569
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.2030635258873031,
+        "mae": 0.157142599797025,
+        "bias": -0.11985657193116915
+      }
+    },
+    {
+      "site": "Hstim",
+      "model": "backbone",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.11844735799524121,
+        "mae": 0.0877604483454528,
+        "bias": 0.013472737550232273
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.11409188306923047,
+        "mae": 0.08214227689585536,
+        "bias": -0.0042951962767607
+      }
+    },
+    {
+      "site": "Hstim",
+      "model": "backbone",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.13986385971350454,
+        "mae": 0.1250402484972209,
+        "bias": 0.09642669712775252
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.13336684814216912,
+        "mae": 0.12091930756091575,
+        "bias": 0.08545082689600403
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "connectome",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.1535114213558734,
+        "mae": 0.07957815779257878,
+        "bias": -0.07281904773530667
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.12683054307167255,
+        "mae": 0.06294260154034209,
+        "bias": -0.055346256668516114
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "connectome",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.1316623573707205,
+        "mae": 0.07316335412502413,
+        "bias": -0.03685846087816381
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.10809194585959142,
+        "mae": 0.056278608984515914,
+        "bias": -0.026906744075923514
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "connectome",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.13335146496359795,
+        "mae": 0.0883497835659564,
+        "bias": 0.010263690550407621
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.10992898941486802,
+        "mae": 0.06984340887027167,
+        "bias": 0.014665507775928337
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "backbone",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.07017444074634872,
+        "mae": 0.04352130122607206,
+        "bias": -0.027780464176071107
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.06095813786916814,
+        "mae": 0.03768760429180234,
+        "bias": -0.023973925092420627
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "backbone",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.09896258080907334,
+        "mae": 0.07820855291122462,
+        "bias": 0.07132887385694402
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.0868024384615161,
+        "mae": 0.06792547629649309,
+        "bias": 0.05951994643455574
+      }
+    },
+    {
+      "site": "Vstim",
+      "model": "backbone",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.19375502196421265,
+        "mae": 0.1642267024376808,
+        "bias": 0.16370233164887005
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.17660213770614897,
+        "mae": 0.14782403135976613,
+        "bias": 0.14714429144834476
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "connectome",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.22243093869098865,
+        "mae": 0.14167438747630265,
+        "bias": -0.11404656599002198
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.25215223336378184,
+        "mae": 0.1742834995904479,
+        "bias": -0.13891094044045108
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "connectome",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.1702088429520269,
+        "mae": 0.10199257859160425,
+        "bias": -0.06815798770430767
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.19301266526144972,
+        "mae": 0.12609484873698337,
+        "bias": -0.08430807858859922
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "connectome",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.13540265497828716,
+        "mae": 0.0956981888918399,
+        "bias": 0.002096435152835189
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.15204070645462417,
+        "mae": 0.11207498083106927,
+        "bias": -0.006864526736747363
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "backbone",
+      "length_um": 25,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.2090635675774397,
+        "mae": 0.12448804197980778,
+        "bias": 0.0012937062599353215
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.2371468528673903,
+        "mae": 0.1534701764293965,
+        "bias": 0.009101084999376625
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "backbone",
+      "length_um": 50,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.19842324087377078,
+        "mae": 0.11194383755807913,
+        "bias": 0.08541068791727204
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.22516938950181628,
+        "mae": 0.13661306493447245,
+        "bias": 0.1033511332457096
+      }
+    },
+    {
+      "site": "Cstim",
+      "model": "backbone",
+      "length_um": 75,
+      "unique_segments": {
+        "n": 35,
+        "rmse": 0.23033152457485598,
+        "mae": 0.1798823244680683,
+        "bias": 0.16524430188480416
+      },
+      "both_paths": {
+        "n": 54,
+        "rmse": 0.25515624247204766,
+        "mae": 0.20155677018584195,
+        "bias": 0.1825815557260551
+      }
+    }
+  ],
+  "reader_warnings": [
+    "Unknown extension is not supported and will be removed"
+  ],
+  "source_workbooks_unmodified": true,
+  "fitted": false,
+  "simulation_run": false,
+  "physiology_promoted": false,
+  "scope": "All three sites and six published model variants; descriptive normalized-profile error only."
+}

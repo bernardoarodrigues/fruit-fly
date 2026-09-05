@@ -1,0 +1,74 @@
+{
+  "purpose": "Reduce all already-inspected published spatial profiles without refitting",
+  "fig7": "data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+  "fig8": "data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+  "sites": [
+    "Hstim",
+    "Vstim",
+    "Cstim"
+  ],
+  "length_um": [
+    25,
+    50,
+    75
+  ],
+  "columns": {
+    "Hstim": {
+      "connectome": [
+        14,
+        16,
+        18
+      ],
+      "backbone": [
+        21,
+        23,
+        25
+      ]
+    },
+    "Vstim": {
+      "connectome": [
+        9,
+        11,
+        13
+      ],
+      "backbone": [
+        16,
+        18,
+        20
+      ]
+    },
+    "Cstim": {
+      "connectome": [
+        9,
+        11,
+        13
+      ],
+      "backbone": [
+        16,
+        18,
+        20
+      ]
+    }
+  },
+  "score": "RMSE, MAE, signed bias on exported normalized profiles, no scaling or offset fit",
+  "duplicate_policy": "Report 54 path entries and 35 unique segments separately; verify exact shared prefix 0..180 um before removing its second copy",
+  "independence": "Spatial bins are correlated; no inferential p-values or confidence intervals; previously inspected data, no blind holdout",
+  "source_pins": [
+    {
+      "path": "scripts/analyze_apl_spatial_reference.py",
+      "sha256": "f4fc7dd4a3d72cbc9033849be2709ccd49955142b10f81a1aec9ef0dd33fbec2"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig7-data1.xlsx",
+      "sha256": "ba1d7c4dfaa2007aa3e71f668b72ee81845ea20094012f44450117a3a2165e9c"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/elife-56954-fig8-data1.xlsx",
+      "sha256": "673b933de6b2aaa4382d7e857bfb45154fff21766fbc826fea750465a10986b3"
+    },
+    {
+      "path": "data/raw/apl-local-feedback/PMC7541083.xml",
+      "sha256": "677b06e501d3e91328c7c1839fc1e72a35776c89c8d6253a9e09cd16159f1bff"
+    }
+  ]
+}
