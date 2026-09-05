@@ -51,6 +51,10 @@ Speed-window inclusion is based on each interval's **end** time, including both 
 
 The moving trial's maximum root-reference error is 0.4330 mm, maximum source linear speed 4.5005 cm/s, maximum angular speed 31.1428 rad/s, and maximum mixed-unit acceleration norm 572,897. All remain below the unchanged source guard thresholds. The respective 12-second trial wall times are 40.39 and 41.04 seconds, including actor inference and diagnostics but excluding process initialization; concurrent work was running, so these are not isolated performance benchmarks.
 
+![Saved native position, speed and reference error](../validation/flybody-persistent-motion.png)
+
+The [plot script](../scripts/plot_flybody_persistent.py) reads the hashed saved trace without rerunning or smoothing the simulation.
+
 ## Guard audit and evidence limits
 
 Before each rollout, the experiment checks the initial baseline and isolated injections above each physical guard threshold, then restores the physical arrays. Both bounded and rolling tasks return false for the baseline and true for all four above-threshold cases. The strict `>` comparison is confirmed in source code; exact threshold-boundary equivalence was not tested empirically.

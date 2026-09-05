@@ -73,7 +73,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Engineering posture holds and restart experiment](docs/flybody-stance-experiment.md), [independent actuator/trace review](docs/flybody-stance-independent-review.md)
 - [Optional fixed arena illumination](docs/world-illumination.md)
 - [Native FlyBody bridge and parity](docs/flybody-bridge.md), [four full-graph trials](docs/flybody-loop.md), [independent saved-journal review](docs/flybody-loop-independent-review.md)
-- [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md)
+- [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md), [executed excitation assay](docs/or42a-summary-experiment.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
 - [Full optical-template sampling through six views](docs/multiview-eye.md), including moving-head, cube-seam and lighting checks
 - [Ten-second full-brain runs and feeding/restart interaction](docs/extended-loop.md), [independent saved-data review](docs/extended-loop-independent-review.md)

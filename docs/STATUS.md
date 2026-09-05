@@ -66,7 +66,7 @@ The [FlyMimic muscle audit](musculoskeletal-feasibility.md) compiles the source-
 
 An isolated [proboscis geometry audit](proboscis-mechanics.md) verifies source mesh transforms and a two-pitch diagnostic Jacobian. The source has no NeuroMechFly oral-motion limits, extension trajectory or identified mouth aperture; generic hinge defaults and an arbitrary distal mesh vertex cannot supply them. No physical swallowing claim or runtime oral controller was added.
 
-Latest complete suite: **168 tests passed, 37 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+Latest complete suite: **169 tests passed, 40 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 The [ten-second loop experiment](extended-loop.md) completes three full-graph conditions with finite, upright bodies and conserved resources. It retains one failed gate: after releasing motor mute, the fly requests feeding at the food patch rather than locomotion. Its [47-check independent review](extended-loop-independent-review.md) confirms that outcome and the actual mute release. No sampled wall interactions occur, and the current-based voltage failure remains. This is bounded engineering robustness evidence, not a completed natural-behavior milestone.
 
@@ -79,6 +79,8 @@ The [DoOR odor audit](door-odor-audit.md) now records chemical identities, missi
 The [optional native FlyBody bridge](flybody-bridge.md) reproduces two original 2 s motor traces exactly. Four [actual full-graph trials](flybody-loop.md) complete with synchronized clocks, finite states and conserved resources. Their [independent journal review](flybody-loop-independent-review.md) checks all 2,500 ticks. Sensory-output blocking changes downstream activity under initially identical input, but blocking sweet output in the on-food pair leaves MN9 counts and intake unchanged. One frozen pre-run documentation digest is unrecovered; runtime, configuration and data-receipt hashes match the recorded source revision. The optional viewer now pauses normally at 2 s with working Reset and camera controls. Longer rolling-reference operation remains a separate experiment.
 
 The [primary Or42a audit](or42a-primary-assay.md) distinguishes a measured male spontaneous rate from baseline-subtracted odor responses and separately identifies all 36 male VM7d sensory cells. Exact original DoOR offset preprocessing remains unresolved. Any proposed numerical rate replay must distinguish imposed excitation events from actual source spikes and must not treat liquid dilution as airborne concentration.
+
+The [Or42a primary-summary excitation experiment](or42a-summary-experiment.md) completes all 15 fixed full-graph trials. Its [independent review](or42a-summary-independent-review.md) reconstructs 9.69 million ordered spikes, exact excitation RNG streams and delayed edge counts from the saved traces. Pulse-window source rates are close to the imposed summary rates, but requested events, applied increments and actual source spikes differ. Source-output blocking removes all downstream activity; the unblocked model retains implausible voltages and no walking-group pulse response. Brief startup turning commands remain explicitly unrealized because no body ran.
 
 ## Compute and next gates
 

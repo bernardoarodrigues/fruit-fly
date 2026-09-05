@@ -12,7 +12,7 @@ Snapshot: 2026-09-04. Recommendation: build a **modular, experimentally testable
 4. **MuJoCo is the practical initial engine.** Current FlyGym 2.1.0 + NeuroMechFly ran on this Mac. Original FlyBody is the flight reference. The old sensory-rich FlyGym API and current 2.x API differ; the code must be pinned. Neither already supplies sex-specific reproduction or a complete muscle model. See [body audit](02-body-physics-and-software.md).
 5. **Food needs several distinct mechanisms.** Airborne identity-bearing plumes, contact taste, ingestion, water/energy/protein balance, gut feedback and learning have separate roles. Reproduction additionally requires courtship/sound/pheromones, receptivity, copulation, transfer/storage and egg production/laying. See [behavior survey](03-behavior-senses-and-reproduction.md).
 
-## Recommended first scientific build
+## Initial research proposal (historical; implementation now focuses on one male)
 
 - **Body/world:** pinned FlyGym/NeuroMechFly in MuJoCo, two bodies in a 50 × 30 mm walking arena; textured floor, food/water, controllable odor and visual stimuli. The larger architecture can expand arena dimensions when assays require it.
 - **Neural baseline:** replicate Shiu with compatible FlyWire data; then a persistent sensor-to-brain-to-motor loop. Import MaleCNS and BANC as separately validated configurations, retaining missing-data uncertainty.
@@ -36,6 +36,7 @@ An already-executed prototype is in [../prototype](../prototype/README.md): two 
 | [08 — Bibliography](08-bibliography.md) | Consolidated linked source index; detailed records remain in domain JSON registries |
 | [09 — Access and downloads](09-access-and-downloads.md) | Every supplied reference accounted for; open-access alternatives and optional methods requests |
 | [10 — Implementation findings](10-implementation-findings.md) | Reproduced data/model issues, negative results and practical consequences; no biological novelty claim |
+| [11 — Current mechanism findings](11-current-mechanism-findings.md) | Native-body feedback, rolling references, afferent event semantics and discriminating next tests |
 
 ## How to interpret the notes
 
