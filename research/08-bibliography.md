@@ -143,3 +143,8 @@ Detailed records: [sources-core.json](sources-core.json).
 ## Supplied papers
 
 Both PDFs are also indexed in [provided-papers.json](provided-papers.json) with exact hashes and metadata. The preprint and final article are versions of related work, not independent experimental replication.
+
+## Physiological calibration sources
+
+- **PHYS:P01** — [Kazama and Wilson (2008): identified ORN–PN physiology](https://doi.org/10.1016/j.neuron.2008.02.030), with [primary supplement](https://kazamalab.riken.jp/pdf/Neuron_Kazama%26Wilson_2008_supplement.pdf). Local copies and hashes: [acquisition receipt](../validation/orn-pn-physiology-sources.json). Assay/sex/compartment limits: [transfer audit](../docs/orn-pn-transfer-audit.md).
+- **PHYS:P02** — [Abbott et al. (1997): primary PDF with scalar depression equations](https://huguenardlab.stanford.edu/220/varela1997a.pdf). Local copy/hash: [receipt](../validation/synaptic-depression-reference-paper-acquisition.json). Fixed-source reproduction, normalized prediction conventions and independent review: [reference report](../docs/synaptic-depression-reference.md).
