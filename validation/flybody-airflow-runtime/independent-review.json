@@ -1,0 +1,540 @@
+{
+  "created_utc": "2026-09-05T03:38:07.441658+00:00",
+  "review_kind": "Saved-evidence and source review; no model execution",
+  "reviewer_sha256": "f70d28819788eb5308720336c7899ee3aedee980d4a3ddefdea321abd85627a4",
+  "frozen_revision": "6a1577b9c1817d74dd757d04c4a8e494f06deaa4",
+  "numpy_version": "2.5.2",
+  "checks": [
+    {
+      "name": "frozen_runtime_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "producer_completed_gate_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "declared_scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "configuration_only_opt_in_differs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "producer_retains_failure_clock_artifacts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:scripts/check_flybody_airflow_runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:scripts/check_flybody_rolling_loop.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:scripts/check_flybody_loop.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/flybody_airflow.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/flybody_bridge.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/flybody_worker.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/flybody_persistent_task.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/simulation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/neural.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/sensors.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/proprioception.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/wind.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/body.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/physiology.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git_source_identity:fruitfly/data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:pyproject.toml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:uv.lock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-airflow-module/plan.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-airflow-module/result.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-rolling-loop/plan.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-rolling-loop/results.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-source-manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:validation/flybody-walking-acquisition.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:data/processed/malecns_v1/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_receipt_identity:data/processed/malecns_v1/neurons.feather",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neural_encoder_physiology_and_wind_source_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_worker_method:_policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_worker_method:advance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "module_sample_only_native_call_is_read_jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "installed_jacobian_API_takes_const_model_and_data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "disabled_by_default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "module_plan_and_exact_module_bytes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_zero_step_module_state_and_actor_bytes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "module_source_chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior_independent_geometry_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_native_upstream_source_files",
+      "passed": true,
+      "detail": {
+        "files": 223,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "saved_probe_unchanged:neutral_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_probe_unchanged:root_translation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_probe_unchanged:antenna_rotation_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "saved_probe_unchanged:root_head_antenna_motion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_distinct_module_probes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/actual-state-before-cleanup.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/brain-final-or-failure.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/events.jsonl.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/final-follow.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/final-overview.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/initial.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/progress.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/runner/final.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/runner/flybody-worker.log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/runner/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/runner/telemetry.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_file_hash:runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/spikes.bin.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_closed_journal_digest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_event_stage_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_airflow_metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_2s_journal_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "previous_rolling_actor_journal_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1001_native_geometry_and_actor_samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1000_original_input_RNG_neural_prefix_and_lossless_blocks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failure_state_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "checkpoint_graph_clock_rng_and_voltages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending_checkpoint_arrays_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_model_imported_or_simulated",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "evidence": [
+    {
+      "path": "validation/flybody-airflow-runtime/plan.json",
+      "sha256": "1c5f1b6946f993fe880ce14a37ca46ffa78d0be51da87cf3e6ff148347db3e7d",
+      "bytes": 47167
+    },
+    {
+      "path": "validation/flybody-airflow-runtime/result.json",
+      "sha256": "8207aec1baae506b77a52310727dd11e5a9522dcaefeaa92f38aa961b23090e1",
+      "bytes": 40236
+    },
+    {
+      "path": "scripts/review_flybody_airflow.py",
+      "sha256": "d65b83b10f6f850d7c6376ff6219e2452776a8c2e982172cdd37db363f89c267",
+      "bytes": 21594
+    },
+    {
+      "path": "scripts/review_flybody_airflow_runtime.py",
+      "sha256": "f70d28819788eb5308720336c7899ee3aedee980d4a3ddefdea321abd85627a4",
+      "bytes": 21688
+    },
+    {
+      "path": "tmp/flybody-env/lib/python3.10/site-packages/mujoco/include/mujoco/mujoco.h",
+      "sha256": "5000ece36eee31541447b426e83fdf7a216472a8527244be7d2f3abe44ed68d7",
+      "bytes": 72003
+    },
+    {
+      "path": "validation/flybody-airflow-module/plan.json",
+      "sha256": "cf3cbc9a5f64ff08e5c207687da34defb5adaf0e41a98c75e891f7a1739fc430",
+      "bytes": 1162
+    },
+    {
+      "path": "validation/flybody-airflow-module/result.json",
+      "sha256": "60a8113c8bd97c5434545496789c4721b198442036f04e3b33393b7bcfd63b44",
+      "bytes": 520258
+    },
+    {
+      "path": "validation/flybody-airflow-geometry.json",
+      "sha256": "f7e1d8ee5518bdc2923f0643f02205715df13fc0bffa5c62592f48717e1fdec8",
+      "bytes": 57808
+    },
+    {
+      "path": "validation/flybody-airflow-independent-review.json",
+      "sha256": "1adaa61231793d4a2a4268663f592b208d2dde68981d334926c6aeac320c278a",
+      "bytes": 34466
+    },
+    {
+      "path": "data/raw/flybody/source/flybody/fruitfly/assets/fruitfly.xml",
+      "sha256": "d14946fd0311025ecca70c8eeb5de80e1fe18700d3072be37ecbb18d33d80fd8",
+      "bytes": 65787
+    },
+    {
+      "path": "runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/events.jsonl.gz",
+      "sha256": "ac4e34236c6f6c2f33e9669c7851843cfc521dd8c7331421318f993c8599a519",
+      "bytes": 20836724
+    },
+    {
+      "path": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_feedback/events.jsonl.gz",
+      "sha256": "49aef51decfc56f201252227430b593aaeaa3f28a95d86e49ed18432f6f2cd79",
+      "bytes": 19786742
+    },
+    {
+      "path": "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/events.jsonl.gz",
+      "sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+      "bytes": 122230029
+    },
+    {
+      "path": "runs/flybody-airflow-runtime-1c5f1b6946f9/locomotor_feedback/brain-final-or-failure.npz",
+      "sha256": "5142d5418acdeff7b0f3aa2ac8e781e47ee4373553c5fc02291247a6ed78fed4",
+      "bytes": 2134247
+    }
+  ],
+  "passed": true,
+  "live_source_drift_from_frozen_plan": {
+    "scripts/check_flybody_airflow_runtime.py": false,
+    "scripts/check_flybody_rolling_loop.py": false,
+    "scripts/check_flybody_loop.py": false,
+    "fruitfly/flybody_airflow.py": false,
+    "fruitfly/flybody_bridge.py": false,
+    "fruitfly/flybody_worker.py": false,
+    "fruitfly/flybody_persistent_task.py": false,
+    "fruitfly/simulation.py": false,
+    "fruitfly/neural.py": false,
+    "fruitfly/sensors.py": false,
+    "fruitfly/proprioception.py": false,
+    "fruitfly/wind.py": false,
+    "fruitfly/body.py": false,
+    "fruitfly/physiology.py": false,
+    "fruitfly/data.py": false,
+    "pyproject.toml": false,
+    "uv.lock": false,
+    "validation/flybody-airflow-module/plan.json": false,
+    "validation/flybody-airflow-module/result.json": false,
+    "validation/flybody-rolling-loop/plan.json": false,
+    "validation/flybody-rolling-loop/results.json": false,
+    "validation/flybody-source-manifest.json": false,
+    "validation/flybody-walking-acquisition.json": false,
+    "data/processed/malecns_v1/manifest.json": false,
+    "data/processed/malecns_v1/neurons.feather": false
+  },
+  "frozen_source_hashes": {
+    "scripts/check_flybody_airflow_runtime.py": "fe578fadef095874cf47ec768c6c754395abb634cc47a90556a8612a27e96408",
+    "scripts/check_flybody_rolling_loop.py": "dcaf13600b46d009339ad3ce9f14f10bfc8aa62bc3f9eeac9ef7191a3a59a7b1",
+    "scripts/check_flybody_loop.py": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+    "fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "fruitfly/flybody_bridge.py": "5a5a0a41da0c1dcc83948374832bb26d2a3ad6fb449b0c138c9e1022259a1f06",
+    "fruitfly/flybody_worker.py": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fruitfly/simulation.py": "480b83f238267c1ebd6a11190998ed1192766b8f60526d36e569deb50b16bf2f",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/proprioception.py": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+    "fruitfly/wind.py": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "fruitfly/data.py": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+    "pyproject.toml": "4912536f8a2c0fd45c3d1c77f124a9394ee387344447c9d0f605ddc74cda2e2c",
+    "uv.lock": "f7316f55c13ab07504818a1e06449a69820d5da95dfb31bf339d310cf2108940",
+    "validation/flybody-airflow-module/plan.json": "cf3cbc9a5f64ff08e5c207687da34defb5adaf0e41a98c75e891f7a1739fc430",
+    "validation/flybody-airflow-module/result.json": "60a8113c8bd97c5434545496789c4721b198442036f04e3b33393b7bcfd63b44",
+    "validation/flybody-rolling-loop/plan.json": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+    "validation/flybody-rolling-loop/results.json": "ba0774f38f8d65853b0a85fb372cf56f2a65196b22f27127be577c3d0e9bb800",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "data/processed/malecns_v1/manifest.json": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+    "data/processed/malecns_v1/neurons.feather": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8"
+  },
+  "module_analytical_probe_errors": [
+    {
+      "case": "neutral_zero",
+      "errors": {
+        "position_mm": 1.1102230246251565e-16,
+        "velocity_mm_s": 0.0,
+        "head_rotation": 6.661338147750939e-16
+      }
+    },
+    {
+      "case": "root_translation",
+      "errors": {
+        "position_mm": 1.1102230246251565e-16,
+        "velocity_mm_s": 0.0,
+        "head_rotation": 6.661338147750939e-16
+      }
+    },
+    {
+      "case": "antenna_rotation_only",
+      "errors": {
+        "position_mm": 1.1102230246251565e-16,
+        "velocity_mm_s": 0.0,
+        "head_rotation": 6.661338147750939e-16
+      }
+    },
+    {
+      "case": "root_head_antenna_motion",
+      "errors": {
+        "position_mm": 2.220446049250313e-16,
+        "velocity_mm_s": 4.440892098500626e-16,
+        "head_rotation": 3.3306690738754696e-16
+      }
+    }
+  ],
+  "runtime_geometry_max_abs_errors": {
+    "position_mm": 5.329070518200751e-15,
+    "velocity_mm_s": 7.105427357601002e-14,
+    "head_rotation": 2.4424906541753444e-15,
+    "relative_flow_mm_s": 1.0658141036401503e-13,
+    "horizontal_speed_mm_s": 1.0658141036401503e-13,
+    "source_azimuth_deg": 2.5579538487363607e-13
+  },
+  "matched_native_actor_prefix_sha256": "a3d198c50ea80634cccb5fe9bbf01ae0b093ab138ee72dfa95bee3eb22c4f1e1",
+  "samples": {
+    "native_geometry": 1001,
+    "actor_input_hashes": 1001,
+    "neural_intervals": 1000,
+    "lossless_spikes": 1709316
+  },
+  "scope_limits": [
+    "One seed, one 2 s native/neural path; no general or indefinite behavioral guarantee",
+    "Proximal antenna body origins only, not distal arista/sensillum or near-body flow",
+    "No wind force, antenna deflection, measured female response, neural wind transduction or steering",
+    "Module no-mutation bytes cover nine named native arrays and saved actor observations, not every MuJoCo field",
+    "Failures are retained by the unchanged reviewed recorder; no new failing simulation was generated"
+  ]
+}

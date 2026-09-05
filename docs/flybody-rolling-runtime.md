@@ -1,6 +1,6 @@
 # Optional rolling FlyBody runtime
 
-The real Python 3.12 host / Python 3.10 policy-and-physics bridge now reproduces the saved standalone rolling trajectory through **12 simulated seconds**. All three planned bridge comparisons pass. The [source review](flybody-rolling-runtime-review.md), [frozen plan](../validation/flybody-rolling-bridge/plan.json), [results](../validation/flybody-rolling-bridge/results.json), and [independent saved-journal review](flybody-rolling-bridge-review.md) retain the evidence. Longer full-neural trials and their browser inspection remain a separate next gate.
+The real Python 3.12 host / Python 3.10 policy-and-physics bridge reproduces the saved standalone rolling trajectory through **12 simulated seconds**. All three planned bridge comparisons pass. The [source review](flybody-rolling-runtime-review.md), [frozen plan](../validation/flybody-rolling-bridge/plan.json), [results](../validation/flybody-rolling-bridge/results.json), and [independent saved-journal review](flybody-rolling-bridge-review.md) retain the evidence. Subsequent [full-neural trials and browser inspection](flybody-rolling-loop.md) also pass their engineering checks; their sensory-only negative behavior and physiological limits remain explicit.
 
 ## Explicit configuration
 
