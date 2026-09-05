@@ -1,0 +1,42 @@
+# Nagel–Wilson 2016: inhibitory population-transfer source
+
+**The original PDF is recovered, and Figure 6C–F provides a usable population-level timing constraint.** Its postsynaptic outward current builds while the separately measured presynaptic population firing rate is already declining. This does not identify a unitary inhibitory synapse, release-facilitation constant, receptor kinetic parameter or exact MaleCNS connection. No neural trace has been digitized or fitted in this audit.
+
+The [author's article PDF](https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/nagelwilson2016.pdf), linked from the [publication listing](https://wilson.hms.harvard.edu/publications?page=1), was downloaded through Chrome after direct HTTP returned an access-denied page. The original is retained under ignored `data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf`: **2,104,843 bytes, 14 pages, SHA-256 `3991919a050c83687014e9204f76cc1f48e6dd91949204156a81ab16f294ecfe`**. Figure 6 is on PDF page 9, printed page 4333. The [acquisition receipt](../validation/ln-inhibitory-transfer-acquisition.json) records the failed and successful methods, source hash and derivatives. No institutional login or CAPTCHA was used.
+
+## The measured populations and signals
+
+All experiments used adult females 1–3 days after eclosion. The optogenetic genotype was `UAS-H134R-ChR2/+;NP3056-Gal4,UAS-CD8:GFP`; the genetic negative control retained `UAS-H134R-ChR2` but lacked Gal4. The authors describe approximately 50 expressing GABAergic LNs per antennal lobe and another approximately 50 nonexpressing LNs. These are historical population descriptions, not an exact modern cell inventory.
+
+| Panel | Signal and aggregation | Interpretation limit |
+|---|---|---|
+| C | Example ChR-positive LN voltage, mV | A representative recording; not the population firing dataset. |
+| D | Mean outward current ± SEM across 9 ChR-negative LNs; separate no-Gal4 control across 6 cells | Population stimulation; no paired unitary connection, absolute holding-current axis or per-cell identifiers. |
+| E | Mean firing rate ± SEM across 5 ChR-positive LNs, spikes/s | A different cohort from the postsynaptic recordings. |
+| F | Expanded onset portion of D, pA | Repeated display of the same postsynaptic data; not another replicate or independent cohort. |
+
+Figure 6A–B concerns electrically stimulated **excitatory ORN input** and its depression fit. Its `f=0.75, τ=1566 ms` LN parameters and PN comparison cannot become inhibitory release parameters. [Article, Figure 6 and adjoining results, pp. 4333–4334](https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/nagelwilson2016.pdf).
+
+## Timing, scaling and preprocessing
+
+The shutter was TTL-controlled; illumination came from a 100 W mercury lamp through a 30% neutral-density filter, a 460–500 nm bandpass and a 40× objective. Actual irradiance, photon-onset delay/jitter and a sampled light waveform are not supplied. The illustrated command is therefore a figure reference, not a measured photon clock.
+
+After freezing the plan below, a **layout-only** audit measured the command and scale-bar artwork. It implies a roughly **2 s light pulse** and a C/D display extending approximately **−1 to +3.5 s** relative to light onset. E/F display approximately **−0.2 to +0.4 s** around that onset. D has 1 s and 4 pA bars; F has 200 ms and 4 pA bars. The command-edge ink bounds give 1.983–2.015 s for the C/D pulse using the nominal scale-bar width. This is graphical precision, not biological timing uncertainty. The exact acquisition duration is not separately stated in the optogenetic methods.
+
+Recordings were low-pass filtered at 2 kHz and digitized at 10 kHz. General analysis specifies 1 ms spike-count bins, averaging 1–6 trials per stimulus and smoothing with a 100 ms zero-centered Hanning window. Such smoothing is acausal and can shift apparent activity toward earlier times; it is not a synaptic delay. The methods describe 10 or 15 Hz filtering of voltage traces after spike detection, plus 1 kHz downsampling; display traces were downsampled without that filtering. They do not individually specify every Figure 6 current/SEM preprocessing step, the exact repeat count per cell or any Figure 6 firing-rate baseline subtraction. Preserve E's labeled plotted scale without assuming its displayed zero proves zero spontaneous firing in every source cell.
+
+The standard whole-cell voltage-clamp internal replaces 140 mM KOH with CsOH; it contains 1 mM KCl. **Figure 6's holding voltage is not explicitly specified in the recovered caption or optogenetic methods.** The −40/−60 mV settings elsewhere are explicitly attached to Figure 5. They must not be silently transferred to Figure 6 or used to convert its pA trace to conductance. Native chloride regulation, receptor isolation and local dendritic voltage are not established. [Methods, pp. 4326 and 4328](https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/nagelwilson2016.pdf).
+
+## Recoverability and frozen extraction boundary
+
+The [prospective extraction plan](../validation/ln-inhibitory-transfer-extraction-plan.json) was frozen before accessing command-path coordinates: **SHA-256 `7ab0617c680e3d6949e167e8096d5301e997c7ce87d6c2d5fbefa63325da2f1d`**. Phase 1 permits source/layout inspection only. Phase 2 requires root review before any trace extraction. The plan's phrase `figure9 whole-cell holding voltage` is a clerical shorthand error: the source fields and intended target are **PDF page 9 / Figure 6**, not Figure 9. The frozen file is retained unchanged.
+
+The [inventory script](../validation/ln-inhibitory-transfer-inventory.py) and [layout receipt](../validation/ln-inhibitory-transfer-layout.json) retain page coordinates, object styles/counts, scale bars and light-command geometry. They export **no voltage, current or firing-rate trace vertices or samples**. The page contains vector artwork, with candidate D/F black mean and gray-envelope shapes and seven green E trace shapes. These are filled outline polygons, not original sample centerlines; recovering a plotted mean requires accounting for line width and overlaps. Three raster images overlap D's control region. E's SEM is not separately identifiable in the vector inventory despite the caption's mean±SEM description. Consequently a lossless extraction of the original recordings is impossible from this figure, and even clean recovery of every plotted mean/envelope remains unproved.
+
+The prospective comparison fixes baseline `[−0.15,−0.05) s`, early `[0.05,0.15) s` and late `[0.25,0.35) s` windows; all lie within the expanded display. These are declared analysis windows, not windows reported by the authors. They exclude the shutter transition and nominal half-width of the PSTH smoothing. Future extraction must retain all displayed mean/envelope artwork, calibrate each panel independently, preserve raster/vector ambiguity and compare early-to-late changes in each signal's own units. It must not divide mean current by a different cohort's mean rate to invent a per-spike gain. SEM is not a simultaneous confidence band, and mean traces cannot supply missing individual trials.
+
+## What a later model comparison could test
+
+A declared inhibitory model could be asked whether its aggregate current continues building over the prespecified interval while the input-rate summary falls. This is a descriptive timing constraint after accounting for displayed smoothing, not a mechanism-identification result. The authors discuss facilitating release and delayed receptor access as alternatives; network recruitment and the lack of paired recordings also limit inference from a population input/output comparison. No kernel, time constant, gain, reversal, behavioral target or success threshold is selected here.
+
+The broad NP3056 source population and unidentified nonexpressing target LNs cannot be equated with `lLN2F_b`, `il3LN6`, Patchy subtypes or target `67052`. No exact LN→PN constraint follows from this LN→LN experiment. The remaining gaps are the original traces, trial/cell identities, exact Figure 6 recording and filtering details, light timing/irradiance, receptor-specific isolation and the anatomical identity join. The [structured notes](../validation/ln-inhibitory-transfer-notes.json) retain these boundaries. Existing research and experiment outputs remain unchanged.

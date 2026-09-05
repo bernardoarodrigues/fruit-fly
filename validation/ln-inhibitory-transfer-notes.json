@@ -1,0 +1,145 @@
+{
+  "created_utc": "2026-09-05T04:30:56.247659+00:00",
+  "source": {
+    "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf",
+    "bytes": 2104843,
+    "sha256": "3991919a050c83687014e9204f76cc1f48e6dd91949204156a81ab16f294ecfe"
+  },
+  "frozen_plan": {
+    "path": "validation/ln-inhibitory-transfer-extraction-plan.json",
+    "bytes": 5281,
+    "sha256": "7ab0617c680e3d6949e167e8096d5301e997c7ce87d6c2d5fbefa63325da2f1d"
+  },
+  "layout": {
+    "path": "validation/ln-inhibitory-transfer-layout.json",
+    "bytes": 49014,
+    "sha256": "8ed1b54ce6138b44277932c82c4a98662ef71bfcbeedf0e176ecc29adebc94c2"
+  },
+  "target": "Figure6C-F / printed4333 / PDFpage9",
+  "scope": "population inhibitory LN transfer, not unitary release kinetics",
+  "protocol": {
+    "sex": "female",
+    "age_days_post_eclosion": [
+      1,
+      3
+    ],
+    "genotype": "UAS-H134R-ChR2/+;NP3056-Gal4,UAS-CD8:GFP",
+    "negative_control": "UAS-H134R-ChR2 without Gal4",
+    "source_population_approx_GABA_LNs_per_lobe": 50,
+    "nonexpressing_population_approx_GABA_LNs_per_lobe": 50,
+    "modern_source_target_mapping_verified": false,
+    "lamp_W": 100,
+    "neutral_density_filter_percent_as_reported": 30,
+    "bandpass_nm": [
+      460,
+      500
+    ],
+    "objective_magnification": 40,
+    "shutter_control": "TTL",
+    "actual_irradiance": null,
+    "photon_clock": null,
+    "Figure6_voltage_clamp_hold_mV": null,
+    "Figure5_hold_values_mV_NOT_Figure6_assignment": [
+      -40,
+      -60
+    ],
+    "whole_cell_voltage_clamp_internal": "140mM CsOH replacing KOH; 1mM KCl present",
+    "receptor_isolation_for_Figure6_stated": false
+  },
+  "panels": {
+    "C": {
+      "signal": "example ChR+ LN voltage",
+      "units": "mV",
+      "population_representation": false
+    },
+    "D": {
+      "signal": "ChR-negative LN outward current",
+      "units": "pA",
+      "n_cells": 9,
+      "control_n_cells": 6,
+      "aggregation": "mean\u00b1SEM across cells",
+      "absolute_holding_current_recoverable": false
+    },
+    "E": {
+      "signal": "ChR+ LN firing rate",
+      "units": "spikes/s",
+      "n_cells": 5,
+      "aggregation": "mean\u00b1SEM across cells",
+      "separate_SEM_shape_identified": false
+    },
+    "F": {
+      "signal": "onset-expanded D",
+      "units": "pA",
+      "independent_dataset": false
+    }
+  },
+  "methods_filters": {
+    "recording_lowpass_Hz": 2000,
+    "digitization_Hz": 10000,
+    "general_display_downsample_Hz": 1000,
+    "PSTH_bin_ms": 1,
+    "general_trials_per_stimulus": [
+      1,
+      6
+    ],
+    "PSTH_Hanning_window_ms": 100,
+    "PSTH_centered_lag_ms": 0,
+    "exact_Figure6_repeat_counts": null,
+    "exact_Figure6_current_SEM_pipeline": null,
+    "E_recording_mode_individually_stated": false,
+    "general_voltage_analysis_post_spike_detection_lowpass_Hz": [
+      10,
+      15
+    ],
+    "general_display_voltage_traces_filtered": false,
+    "Figure6_rate_baseline_subtraction_explicitly_stated": false
+  },
+  "timing": {
+    "light_duration_s_approx_from_artwork": 2,
+    "C_D_display_s_approx": [
+      -1,
+      3.5
+    ],
+    "E_F_display_s_approx": [
+      -0.2,
+      0.4
+    ],
+    "not_sampled_stimulus_clock": true,
+    "detail_receipt": "validation/ln-inhibitory-transfer-layout.json"
+  },
+  "future_analysis_windows_s": {
+    "baseline": [
+      -0.15,
+      -0.05
+    ],
+    "early": [
+      0.05,
+      0.15
+    ],
+    "late": [
+      0.25,
+      0.35
+    ]
+  },
+  "windows_are_declared_not_author_reported": true,
+  "phase2_extraction_executed": false,
+  "neural_trace_digitization_executed": false,
+  "calibration_only_geometry_accessed": true,
+  "qualitative_constraint": "Across different recorded cell cohorts, the mean outward current builds while mean presynaptic rate decays after rapid onset; this does not identify a causal kernel or release-facilitation parameter.",
+  "alternative_mechanisms_in_article": [
+    "facilitating neurotransmitter release",
+    "delayed GABA access to receptors"
+  ],
+  "forbidden_inferences": [
+    "Figure6A/B excitatory depression parameters describe GABA synapses",
+    "F is an independent replication of D",
+    "D/E are paired pre/postsynaptic measurements",
+    "SEM is a simultaneous confidence band",
+    "publication vectors are original acquisition samples",
+    "ratio of current and separate-cohort rate identifies per-spike gain",
+    "Figure5 holding potential applies to Figure6",
+    "historical NP3056 population identifies exact MaleCNS types"
+  ],
+  "frozen_plan_erratum": "The string figure9 whole-cell holding voltage means PDFpage9/Figure6, as identified by the frozen source fields; Figure9 is not targeted. Plan retained unchanged; clarify in any future phase2 plan revision.",
+  "fits_parameters_neural_or_body_simulations": false
+}

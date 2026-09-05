@@ -1,0 +1,702 @@
+{
+  "created_at_utc": "2026-09-05T04:37:13.001236+00:00",
+  "scope": "Upstream stored output transcription only. Neither the notebook nor HTML nor upstream model was executed. No claim of biological validation, local reproduction, backend parity or verified generating execution order.",
+  "repo": "eonsystemspbc/drosophila_brain_model_lif",
+  "commit": "c976c7a90b2ac5a472c028b5862974217e93573f",
+  "notebook_path": "data/raw/eon-public-code/drosophila_brain_model_lif/source/results/eon_1/demo_notebook.ipynb",
+  "notebook_sha256": "44b79bb1e093c716b202a6d673e01d67eb5f3f5140709f86689718bc87f2f90f",
+  "script_sha256": "d201f2b6a1a6a3b01216d806b3826fd3126c0cfe69655e8dc61c019c5fa70280",
+  "representation": "Every table cell remains a text string, including six-digit rounding, FlyWire IDs and literal NaN. No NaN-to-zero conversion. Header/index rows and table HTML retained exactly; HTML scripts outside table are not copied or executed.",
+  "checks": {
+    "three_requested_tables": true,
+    "row_counts": [
+      4,
+      6,
+      6
+    ],
+    "baseline_text_agrees_across_tables": true,
+    "literal_NaN_preserved": true
+  },
+  "tables": [
+    {
+      "cell_index_zero_based": 11,
+      "output_index": 0,
+      "execution_count": null,
+      "source_cell": "relevant_neurons = [neuron for neuron in output_neurons if neuron in df_rate.index]\ndisplay(df_rate.loc[relevant_neurons])",
+      "output_type": "display_data",
+      "html_output_sha256": "44667ff3c1cdbab88a35ab340d82ae72ba23b69e153f872b1c4c99218ebe2290",
+      "table_html_sha256": "53a79a2a3905a95756aabfb5ceefbd9547326ee462755651a8ab8b33085bae36",
+      "table_html": "<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>exp_name</th>\n      <th>name</th>\n      <th>P9s_100Hz</th>\n    </tr>\n    <tr>\n      <th>flyid</th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>720575940626730883</th>\n      <td>P9_oDN1_left</td>\n      <td>14.833333</td>\n    </tr>\n    <tr>\n      <th>720575940620300308</th>\n      <td>P9_oDN1_right</td>\n      <td>10.733333</td>\n    </tr>\n    <tr>\n      <th>720575940629327659</th>\n      <td>DNa02_right</td>\n      <td>6.433333</td>\n    </tr>\n    <tr>\n      <th>720575940604737708</th>\n      <td>DNa02_left</td>\n      <td>17.033333</td>\n    </tr>\n  </tbody>\n</table>",
+      "raw_rows": [
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "exp_name"
+            },
+            {
+              "tag": "th",
+              "text": "name"
+            },
+            {
+              "tag": "th",
+              "text": "P9s_100Hz"
+            }
+          ]
+        },
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "flyid"
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940626730883"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_left"
+            },
+            {
+              "tag": "td",
+              "text": "14.833333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940620300308"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_right"
+            },
+            {
+              "tag": "td",
+              "text": "10.733333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940629327659"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_right"
+            },
+            {
+              "tag": "td",
+              "text": "6.433333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940604737708"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_left"
+            },
+            {
+              "tag": "td",
+              "text": "17.033333"
+            }
+          ]
+        }
+      ],
+      "data_rows": [
+        {
+          "flyid": "720575940626730883",
+          "name": "P9_oDN1_left",
+          "rates_Hz_as_printed": {
+            "P9s_100Hz": "14.833333"
+          }
+        },
+        {
+          "flyid": "720575940620300308",
+          "name": "P9_oDN1_right",
+          "rates_Hz_as_printed": {
+            "P9s_100Hz": "10.733333"
+          }
+        },
+        {
+          "flyid": "720575940629327659",
+          "name": "DNa02_right",
+          "rates_Hz_as_printed": {
+            "P9s_100Hz": "6.433333"
+          }
+        },
+        {
+          "flyid": "720575940604737708",
+          "name": "DNa02_left",
+          "rates_Hz_as_printed": {
+            "P9s_100Hz": "17.033333"
+          }
+        }
+      ]
+    },
+    {
+      "cell_index_zero_based": 18,
+      "output_index": 0,
+      "execution_count": null,
+      "source_cell": "relevant_neurons = [neuron for neuron in output_neurons if neuron in df_rate.index]\ndisplay(df_rate.loc[relevant_neurons])",
+      "output_type": "display_data",
+      "html_output_sha256": "b6696eb32b88dd12b37579e7dd5fd0187d79064e06ccbfd41734a92c1bb292d6",
+      "table_html_sha256": "b8f31d294755cf68f881b436adeee7bdfa53f2194b2ebe9a1017f0fadc1bfac7",
+      "table_html": "<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>exp_name</th>\n      <th>name</th>\n      <th>P9_legs</th>\n      <th>P9s_100Hz</th>\n    </tr>\n    <tr>\n      <th>flyid</th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>720575940626730883</th>\n      <td>P9_oDN1_left</td>\n      <td>8.800000</td>\n      <td>14.833333</td>\n    </tr>\n    <tr>\n      <th>720575940620300308</th>\n      <td>P9_oDN1_right</td>\n      <td>8.633333</td>\n      <td>10.733333</td>\n    </tr>\n    <tr>\n      <th>720575940629327659</th>\n      <td>DNa02_right</td>\n      <td>22.466667</td>\n      <td>6.433333</td>\n    </tr>\n    <tr>\n      <th>720575940604737708</th>\n      <td>DNa02_left</td>\n      <td>20.933333</td>\n      <td>17.033333</td>\n    </tr>\n    <tr>\n      <th>720575940610236514</th>\n      <td>MDN_4</td>\n      <td>0.200000</td>\n      <td>NaN</td>\n    </tr>\n    <tr>\n      <th>720575940660219265</th>\n      <td>MN9_left</td>\n      <td>0.533333</td>\n      <td>NaN</td>\n    </tr>\n  </tbody>\n</table>",
+      "raw_rows": [
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "exp_name"
+            },
+            {
+              "tag": "th",
+              "text": "name"
+            },
+            {
+              "tag": "th",
+              "text": "P9_legs"
+            },
+            {
+              "tag": "th",
+              "text": "P9s_100Hz"
+            }
+          ]
+        },
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "flyid"
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940626730883"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_left"
+            },
+            {
+              "tag": "td",
+              "text": "8.800000"
+            },
+            {
+              "tag": "td",
+              "text": "14.833333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940620300308"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_right"
+            },
+            {
+              "tag": "td",
+              "text": "8.633333"
+            },
+            {
+              "tag": "td",
+              "text": "10.733333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940629327659"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_right"
+            },
+            {
+              "tag": "td",
+              "text": "22.466667"
+            },
+            {
+              "tag": "td",
+              "text": "6.433333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940604737708"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_left"
+            },
+            {
+              "tag": "td",
+              "text": "20.933333"
+            },
+            {
+              "tag": "td",
+              "text": "17.033333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940610236514"
+            },
+            {
+              "tag": "td",
+              "text": "MDN_4"
+            },
+            {
+              "tag": "td",
+              "text": "0.200000"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940660219265"
+            },
+            {
+              "tag": "td",
+              "text": "MN9_left"
+            },
+            {
+              "tag": "td",
+              "text": "0.533333"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            }
+          ]
+        }
+      ],
+      "data_rows": [
+        {
+          "flyid": "720575940626730883",
+          "name": "P9_oDN1_left",
+          "rates_Hz_as_printed": {
+            "P9_legs": "8.800000",
+            "P9s_100Hz": "14.833333"
+          }
+        },
+        {
+          "flyid": "720575940620300308",
+          "name": "P9_oDN1_right",
+          "rates_Hz_as_printed": {
+            "P9_legs": "8.633333",
+            "P9s_100Hz": "10.733333"
+          }
+        },
+        {
+          "flyid": "720575940629327659",
+          "name": "DNa02_right",
+          "rates_Hz_as_printed": {
+            "P9_legs": "22.466667",
+            "P9s_100Hz": "6.433333"
+          }
+        },
+        {
+          "flyid": "720575940604737708",
+          "name": "DNa02_left",
+          "rates_Hz_as_printed": {
+            "P9_legs": "20.933333",
+            "P9s_100Hz": "17.033333"
+          }
+        },
+        {
+          "flyid": "720575940610236514",
+          "name": "MDN_4",
+          "rates_Hz_as_printed": {
+            "P9_legs": "0.200000",
+            "P9s_100Hz": "NaN"
+          }
+        },
+        {
+          "flyid": "720575940660219265",
+          "name": "MN9_left",
+          "rates_Hz_as_printed": {
+            "P9_legs": "0.533333",
+            "P9s_100Hz": "NaN"
+          }
+        }
+      ]
+    },
+    {
+      "cell_index_zero_based": 38,
+      "output_index": 0,
+      "execution_count": null,
+      "source_cell": "relevant_neurons = [neuron for neuron in output_neurons if neuron in df_rate.index]\ndisplay(df_rate.loc[relevant_neurons])",
+      "output_type": "display_data",
+      "html_output_sha256": "893f7af02da0f8d3be3f11445d21f9db3e6a976b18826785ed020e24a79d901a",
+      "table_html_sha256": "a2959173c8ede1863020ac383dba30270fb83c808c316b94ad3fa7e98e8db08d",
+      "table_html": "<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th>exp_name</th>\n      <th>name</th>\n      <th>P9_left_leg</th>\n      <th>P9_legs</th>\n      <th>P9_right_leg</th>\n      <th>P9s_100Hz</th>\n    </tr>\n    <tr>\n      <th>flyid</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>720575940626730883</th>\n      <td>P9_oDN1_left</td>\n      <td>16.766667</td>\n      <td>8.800000</td>\n      <td>6.133333</td>\n      <td>14.833333</td>\n    </tr>\n    <tr>\n      <th>720575940620300308</th>\n      <td>P9_oDN1_right</td>\n      <td>12.066667</td>\n      <td>8.633333</td>\n      <td>11.733333</td>\n      <td>10.733333</td>\n    </tr>\n    <tr>\n      <th>720575940629327659</th>\n      <td>DNa02_right</td>\n      <td>6.333333</td>\n      <td>22.466667</td>\n      <td>30.033333</td>\n      <td>6.433333</td>\n    </tr>\n    <tr>\n      <th>720575940604737708</th>\n      <td>DNa02_left</td>\n      <td>28.966667</td>\n      <td>20.933333</td>\n      <td>11.166667</td>\n      <td>17.033333</td>\n    </tr>\n    <tr>\n      <th>720575940610236514</th>\n      <td>MDN_4</td>\n      <td>NaN</td>\n      <td>0.200000</td>\n      <td>NaN</td>\n      <td>NaN</td>\n    </tr>\n    <tr>\n      <th>720575940660219265</th>\n      <td>MN9_left</td>\n      <td>NaN</td>\n      <td>0.533333</td>\n      <td>0.266667</td>\n      <td>NaN</td>\n    </tr>\n  </tbody>\n</table>",
+      "raw_rows": [
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "exp_name"
+            },
+            {
+              "tag": "th",
+              "text": "name"
+            },
+            {
+              "tag": "th",
+              "text": "P9_left_leg"
+            },
+            {
+              "tag": "th",
+              "text": "P9_legs"
+            },
+            {
+              "tag": "th",
+              "text": "P9_right_leg"
+            },
+            {
+              "tag": "th",
+              "text": "P9s_100Hz"
+            }
+          ]
+        },
+        {
+          "section": "thead",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "flyid"
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            },
+            {
+              "tag": "th",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940626730883"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_left"
+            },
+            {
+              "tag": "td",
+              "text": "16.766667"
+            },
+            {
+              "tag": "td",
+              "text": "8.800000"
+            },
+            {
+              "tag": "td",
+              "text": "6.133333"
+            },
+            {
+              "tag": "td",
+              "text": "14.833333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940620300308"
+            },
+            {
+              "tag": "td",
+              "text": "P9_oDN1_right"
+            },
+            {
+              "tag": "td",
+              "text": "12.066667"
+            },
+            {
+              "tag": "td",
+              "text": "8.633333"
+            },
+            {
+              "tag": "td",
+              "text": "11.733333"
+            },
+            {
+              "tag": "td",
+              "text": "10.733333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940629327659"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_right"
+            },
+            {
+              "tag": "td",
+              "text": "6.333333"
+            },
+            {
+              "tag": "td",
+              "text": "22.466667"
+            },
+            {
+              "tag": "td",
+              "text": "30.033333"
+            },
+            {
+              "tag": "td",
+              "text": "6.433333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940604737708"
+            },
+            {
+              "tag": "td",
+              "text": "DNa02_left"
+            },
+            {
+              "tag": "td",
+              "text": "28.966667"
+            },
+            {
+              "tag": "td",
+              "text": "20.933333"
+            },
+            {
+              "tag": "td",
+              "text": "11.166667"
+            },
+            {
+              "tag": "td",
+              "text": "17.033333"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940610236514"
+            },
+            {
+              "tag": "td",
+              "text": "MDN_4"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            },
+            {
+              "tag": "td",
+              "text": "0.200000"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            }
+          ]
+        },
+        {
+          "section": "tbody",
+          "cells": [
+            {
+              "tag": "th",
+              "text": "720575940660219265"
+            },
+            {
+              "tag": "td",
+              "text": "MN9_left"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            },
+            {
+              "tag": "td",
+              "text": "0.533333"
+            },
+            {
+              "tag": "td",
+              "text": "0.266667"
+            },
+            {
+              "tag": "td",
+              "text": "NaN"
+            }
+          ]
+        }
+      ],
+      "data_rows": [
+        {
+          "flyid": "720575940626730883",
+          "name": "P9_oDN1_left",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "16.766667",
+            "P9_legs": "8.800000",
+            "P9_right_leg": "6.133333",
+            "P9s_100Hz": "14.833333"
+          }
+        },
+        {
+          "flyid": "720575940620300308",
+          "name": "P9_oDN1_right",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "12.066667",
+            "P9_legs": "8.633333",
+            "P9_right_leg": "11.733333",
+            "P9s_100Hz": "10.733333"
+          }
+        },
+        {
+          "flyid": "720575940629327659",
+          "name": "DNa02_right",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "6.333333",
+            "P9_legs": "22.466667",
+            "P9_right_leg": "30.033333",
+            "P9s_100Hz": "6.433333"
+          }
+        },
+        {
+          "flyid": "720575940604737708",
+          "name": "DNa02_left",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "28.966667",
+            "P9_legs": "20.933333",
+            "P9_right_leg": "11.166667",
+            "P9s_100Hz": "17.033333"
+          }
+        },
+        {
+          "flyid": "720575940610236514",
+          "name": "MDN_4",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "NaN",
+            "P9_legs": "0.200000",
+            "P9_right_leg": "NaN",
+            "P9s_100Hz": "NaN"
+          }
+        },
+        {
+          "flyid": "720575940660219265",
+          "name": "MN9_left",
+          "rates_Hz_as_printed": {
+            "P9_left_leg": "NaN",
+            "P9_legs": "0.533333",
+            "P9_right_leg": "0.266667",
+            "P9s_100Hz": "NaN"
+          }
+        }
+      ]
+    }
+  ]
+}

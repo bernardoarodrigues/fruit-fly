@@ -2,6 +2,8 @@
 
 Read-only source inspection on 2026-09-04. No whole-brain runner was executed in this audit. Source observations below are narrower than a formal correctness review. Repositories were inspected in temporary directories; stable links pin the revisions.
 
+**Follow-up:** the [2026-09-05 expanded Eon audit](15-eon-public-code-audit.md) found additional useful notebook protocols in another public repository. The [integration insights](16-eon-integration-insights.md) revise the next experiment around P9 locomotor context and taste modulation. The original entrypoint inspection below remains its dated record.
+
 ## Shiu original model
 
 - Repository: [philshiu/Drosophila_brain_model](https://github.com/philshiu/Drosophila_brain_model/tree/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960), commit `91bdd1e7dcf193f3e7ca5a8933497fcef63b7960`.

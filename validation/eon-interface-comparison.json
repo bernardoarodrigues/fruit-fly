@@ -1,0 +1,1938 @@
+{
+  "purpose": "Current interface identities, static source classes and saved assay comparison; no new simulation",
+  "inputs": {
+    "scripts/audit_eon_interface_comparison.py": {
+      "sha256": "4190518f226d0c8d8a30f917ee551f48a0fa4ae91ef2c17f90153f17fc6c613a",
+      "bytes": 6281
+    },
+    "fruitfly/sensors.py": {
+      "sha256": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+      "bytes": 8867
+    },
+    "fruitfly/data.py": {
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "bytes": 11325
+    },
+    "fruitfly/body.py": {
+      "sha256": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+      "bytes": 37350
+    },
+    "fruitfly/simulation.py": {
+      "sha256": "8f7e9201ec8c810635ce4a75829bf16d900fe600c01220ebed3e1bca3e013057",
+      "bytes": 27743
+    },
+    "validation/taste-contact/results.json": {
+      "sha256": "96b60488bfab21049276c7bbece521a6f9ce28f2117e75f4de9462254193d8d1",
+      "bytes": 56944
+    },
+    "validation/motor-connectivity.json": {
+      "sha256": "c410a7b125e5460a4ee30448f1d6a92f82d500095188b6dab0929336216f9ac9",
+      "bytes": 202483
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869
+    }
+  },
+  "graph": {
+    "dataset": "male-cns:v1.0",
+    "neurons": 166700,
+    "edges": 25582938,
+    "retained_synaptic_contacts": 124177617
+  },
+  "readouts": {
+    "forward": [
+      {
+        "bodyId": 13805,
+        "type": "DNg97",
+        "synonyms": "Sapkal 2024: oDN1",
+        "flywireType": "DNg97",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 230783,
+        "type": "DNg97",
+        "synonyms": "Sapkal 2024: oDN1",
+        "flywireType": "DNg97",
+        "somaSide": "R",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "turn_left": [
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "synonyms": null,
+        "flywireType": "DNa01",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "synonyms": null,
+        "flywireType": "DNa02",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "turn_right": [
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "synonyms": null,
+        "flywireType": "DNa02",
+        "somaSide": "R",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "synonyms": null,
+        "flywireType": "DNa01",
+        "somaSide": "R",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "feeding": [
+      {
+        "bodyId": 10331,
+        "type": "MN9",
+        "synonyms": null,
+        "flywireType": "CB0701",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "cb_motor",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 16949,
+        "type": "MN9",
+        "synonyms": null,
+        "flywireType": "CB0701",
+        "somaSide": "R",
+        "rootSide": null,
+        "superclass": "cb_motor",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "escape": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "synonyms": "Kennedy and Broadie 2018: GF",
+        "flywireType": "DNp01",
+        "somaSide": "R",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "synonyms": "Kennedy and Broadie 2018: GF",
+        "flywireType": "DNp01",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "grooming_left": [
+      {
+        "bodyId": 13624,
+        "type": "DNg62",
+        "synonyms": "Hampel 2015: aDN1",
+        "flywireType": "DNg62",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 14537,
+        "type": "DNge078",
+        "synonyms": "Hampel 2015: aDN2",
+        "flywireType": "DNge078",
+        "somaSide": "L",
+        "rootSide": null,
+        "superclass": "descending_neuron",
+        "entryNerve": null,
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ]
+  },
+  "sweet_tarsal_inputs": {
+    "LF": [
+      {
+        "bodyId": 87710,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "sensory_ascending",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 92929,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "sensory_ascending",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 814336,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 815749,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 817031,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 817173,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 817565,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 817849,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 818080,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 863321,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 1057442452,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "LM": [
+      {
+        "bodyId": 91302,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 219573,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 810811,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 815872,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 816396,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 827154,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 844312,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 881126,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 941022,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 1338931584,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "LH": [
+      {
+        "bodyId": 162704,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 816151,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 820780,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 822246,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 909028,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 913195,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 1050291683,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "L",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "RF": [
+      {
+        "bodyId": 91221,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 526151,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 811874,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 815267,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 821083,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 881519,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 914315,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 935121,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 1050190015,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "ProLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "RM": [
+      {
+        "bodyId": 93294,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 94367,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 809227,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 809833,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 810550,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 825524,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 912794,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MesoLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ],
+    "RH": [
+      {
+        "bodyId": 123191,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 151556,
+        "type": "LgAG2",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "sensory_ascending",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 812898,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 814362,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 815989,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 819335,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 819719,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 820809,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 911351,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      },
+      {
+        "bodyId": 933183,
+        "type": "LgLG4",
+        "synonyms": null,
+        "flywireType": null,
+        "somaSide": null,
+        "rootSide": "R",
+        "superclass": "vnc_sensory",
+        "entryNerve": "MetaLN",
+        "consensus_nt": "acetylcholine",
+        "model_sign": 1
+      }
+    ]
+  },
+  "incoming_counts_by_source_superclass": {
+    "10001": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 65,
+        "contacts": 797,
+        "positive_rule_contacts": 391,
+        "negative_rule_contacts": 381,
+        "zero_rule_contacts": 25
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 345,
+        "contacts": 8596,
+        "positive_rule_contacts": 3767,
+        "negative_rule_contacts": 4826,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 4,
+        "contacts": 30,
+        "positive_rule_contacts": 29,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 33,
+        "contacts": 1128,
+        "positive_rule_contacts": 1054,
+        "negative_rule_contacts": 73,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "efferent_ascending",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 5,
+        "contacts": 37,
+        "positive_rule_contacts": 15,
+        "negative_rule_contacts": 22,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 152,
+        "contacts": 4819,
+        "positive_rule_contacts": 4819,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_efferent",
+        "neuron_pair_edges": 2,
+        "contacts": 42,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 42
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 87,
+        "contacts": 599,
+        "positive_rule_contacts": 39,
+        "negative_rule_contacts": 560,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 2,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 2,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "10010": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 55,
+        "contacts": 781,
+        "positive_rule_contacts": 374,
+        "negative_rule_contacts": 401,
+        "zero_rule_contacts": 6
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 369,
+        "contacts": 10318,
+        "positive_rule_contacts": 4201,
+        "negative_rule_contacts": 6113,
+        "zero_rule_contacts": 4
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 24,
+        "contacts": 679,
+        "positive_rule_contacts": 679,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 49,
+        "contacts": 1701,
+        "positive_rule_contacts": 1579,
+        "negative_rule_contacts": 119,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 6,
+        "contacts": 40,
+        "positive_rule_contacts": 16,
+        "negative_rule_contacts": 24,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 169,
+        "contacts": 6433,
+        "positive_rule_contacts": 6433,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_efferent",
+        "neuron_pair_edges": 3,
+        "contacts": 54,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 54
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 83,
+        "contacts": 675,
+        "positive_rule_contacts": 76,
+        "negative_rule_contacts": 599,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 1,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "10331": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 18,
+        "contacts": 72,
+        "positive_rule_contacts": 19,
+        "negative_rule_contacts": 52,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 165,
+        "contacts": 4423,
+        "positive_rule_contacts": 1893,
+        "negative_rule_contacts": 2428,
+        "zero_rule_contacts": 102
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 24,
+        "contacts": 59,
+        "positive_rule_contacts": 36,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 23
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 2,
+        "contacts": 144,
+        "positive_rule_contacts": 144,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_sensory_tbc",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 68,
+        "contacts": 1313,
+        "positive_rule_contacts": 864,
+        "negative_rule_contacts": 440,
+        "zero_rule_contacts": 9
+      }
+    ],
+    "10360": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 58,
+        "contacts": 1525,
+        "positive_rule_contacts": 1358,
+        "negative_rule_contacts": 167,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 838,
+        "contacts": 19536,
+        "positive_rule_contacts": 12312,
+        "negative_rule_contacts": 7143,
+        "zero_rule_contacts": 81
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 2,
+        "contacts": 4,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 4
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 83,
+        "contacts": 1785,
+        "positive_rule_contacts": 1644,
+        "negative_rule_contacts": 133,
+        "zero_rule_contacts": 8
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 8,
+        "contacts": 15,
+        "positive_rule_contacts": 4,
+        "negative_rule_contacts": 10,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 97,
+        "contacts": 735,
+        "positive_rule_contacts": 477,
+        "negative_rule_contacts": 258,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 102,
+        "contacts": 548,
+        "positive_rule_contacts": 56,
+        "negative_rule_contacts": 491,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 5,
+        "contacts": 5,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 3,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_sensory",
+        "neuron_pair_edges": 8,
+        "contacts": 15,
+        "positive_rule_contacts": 15,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "10442": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 60,
+        "contacts": 964,
+        "positive_rule_contacts": 360,
+        "negative_rule_contacts": 602,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 469,
+        "contacts": 8971,
+        "positive_rule_contacts": 5491,
+        "negative_rule_contacts": 3450,
+        "zero_rule_contacts": 30
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 1,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 109,
+        "contacts": 1470,
+        "positive_rule_contacts": 677,
+        "negative_rule_contacts": 781,
+        "zero_rule_contacts": 12
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 8,
+        "contacts": 11,
+        "positive_rule_contacts": 5,
+        "negative_rule_contacts": 6,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 23,
+        "contacts": 526,
+        "positive_rule_contacts": 61,
+        "negative_rule_contacts": 465,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 82,
+        "contacts": 497,
+        "positive_rule_contacts": 95,
+        "negative_rule_contacts": 400,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 3,
+        "contacts": 3,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 2,
+        "zero_rule_contacts": 1
+      }
+    ],
+    "10760": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 55,
+        "contacts": 1193,
+        "positive_rule_contacts": 456,
+        "negative_rule_contacts": 734,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 491,
+        "contacts": 9278,
+        "positive_rule_contacts": 5620,
+        "negative_rule_contacts": 3631,
+        "zero_rule_contacts": 27
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 127,
+        "contacts": 1942,
+        "positive_rule_contacts": 877,
+        "negative_rule_contacts": 1050,
+        "zero_rule_contacts": 15
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 5,
+        "contacts": 5,
+        "positive_rule_contacts": 1,
+        "negative_rule_contacts": 4,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 22,
+        "contacts": 487,
+        "positive_rule_contacts": 59,
+        "negative_rule_contacts": 428,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 72,
+        "contacts": 432,
+        "positive_rule_contacts": 76,
+        "negative_rule_contacts": 355,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 2,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 2
+      }
+    ],
+    "13624": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 82,
+        "contacts": 977,
+        "positive_rule_contacts": 561,
+        "negative_rule_contacts": 415,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 109,
+        "contacts": 1161,
+        "positive_rule_contacts": 581,
+        "negative_rule_contacts": 566,
+        "zero_rule_contacts": 14
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 19,
+        "contacts": 28,
+        "positive_rule_contacts": 27,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "cb_sensory_tbc",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 1,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 85,
+        "contacts": 1551,
+        "positive_rule_contacts": 938,
+        "negative_rule_contacts": 607,
+        "zero_rule_contacts": 6
+      },
+      {
+        "source_superclass": "sensory_descending",
+        "neuron_pair_edges": 1,
+        "contacts": 2,
+        "positive_rule_contacts": 2,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 1,
+        "contacts": 3,
+        "positive_rule_contacts": 3,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 35,
+        "contacts": 118,
+        "positive_rule_contacts": 2,
+        "negative_rule_contacts": 115,
+        "zero_rule_contacts": 1
+      }
+    ],
+    "13805": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 93,
+        "contacts": 1815,
+        "positive_rule_contacts": 1149,
+        "negative_rule_contacts": 666,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 558,
+        "contacts": 11210,
+        "positive_rule_contacts": 6705,
+        "negative_rule_contacts": 4301,
+        "zero_rule_contacts": 204
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 153,
+        "contacts": 2804,
+        "positive_rule_contacts": 1216,
+        "negative_rule_contacts": 1569,
+        "zero_rule_contacts": 19
+      },
+      {
+        "source_superclass": "efferent_ascending",
+        "neuron_pair_edges": 1,
+        "contacts": 2,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 2,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "sensory_descending",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 1,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 5,
+        "contacts": 9,
+        "positive_rule_contacts": 3,
+        "negative_rule_contacts": 6,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 80,
+        "contacts": 1313,
+        "positive_rule_contacts": 681,
+        "negative_rule_contacts": 632,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 93,
+        "contacts": 387,
+        "positive_rule_contacts": 24,
+        "negative_rule_contacts": 361,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 1,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "14537": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 65,
+        "contacts": 669,
+        "positive_rule_contacts": 453,
+        "negative_rule_contacts": 213,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "cb_endocrine",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 53,
+        "contacts": 401,
+        "positive_rule_contacts": 333,
+        "negative_rule_contacts": 58,
+        "zero_rule_contacts": 10
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 2,
+        "contacts": 2,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 67,
+        "contacts": 455,
+        "positive_rule_contacts": 452,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "cb_sensory_tbc",
+        "neuron_pair_edges": 1,
+        "contacts": 3,
+        "positive_rule_contacts": 3,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 66,
+        "contacts": 1031,
+        "positive_rule_contacts": 442,
+        "negative_rule_contacts": 577,
+        "zero_rule_contacts": 12
+      },
+      {
+        "source_superclass": "sensory_descending",
+        "neuron_pair_edges": 1,
+        "contacts": 16,
+        "positive_rule_contacts": 16,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 17,
+        "contacts": 24,
+        "positive_rule_contacts": 12,
+        "negative_rule_contacts": 11,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 1,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "16949": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 14,
+        "contacts": 22,
+        "positive_rule_contacts": 17,
+        "negative_rule_contacts": 5,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 66,
+        "contacts": 338,
+        "positive_rule_contacts": 107,
+        "negative_rule_contacts": 212,
+        "zero_rule_contacts": 19
+      },
+      {
+        "source_superclass": "cb_motor",
+        "neuron_pair_edges": 11,
+        "contacts": 34,
+        "positive_rule_contacts": 20,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 14
+      },
+      {
+        "source_superclass": "cb_sensory",
+        "neuron_pair_edges": 3,
+        "contacts": 10,
+        "positive_rule_contacts": 9,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 43,
+        "contacts": 152,
+        "positive_rule_contacts": 104,
+        "negative_rule_contacts": 48,
+        "zero_rule_contacts": 0
+      }
+    ],
+    "230783": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 78,
+        "contacts": 1829,
+        "positive_rule_contacts": 1086,
+        "negative_rule_contacts": 743,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 523,
+        "contacts": 11164,
+        "positive_rule_contacts": 6703,
+        "negative_rule_contacts": 4248,
+        "zero_rule_contacts": 213
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 167,
+        "contacts": 2578,
+        "positive_rule_contacts": 1136,
+        "negative_rule_contacts": 1417,
+        "zero_rule_contacts": 25
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 5,
+        "contacts": 6,
+        "positive_rule_contacts": 3,
+        "negative_rule_contacts": 3,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 73,
+        "contacts": 1197,
+        "positive_rule_contacts": 522,
+        "negative_rule_contacts": 675,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 99,
+        "contacts": 411,
+        "positive_rule_contacts": 23,
+        "negative_rule_contacts": 386,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 1,
+        "contacts": 1,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 1
+      }
+    ],
+    "523769": [
+      {
+        "source_superclass": "ascending_neuron",
+        "neuron_pair_edges": 59,
+        "contacts": 1660,
+        "positive_rule_contacts": 1509,
+        "negative_rule_contacts": 151,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "cb_intrinsic",
+        "neuron_pair_edges": 779,
+        "contacts": 19252,
+        "positive_rule_contacts": 12319,
+        "negative_rule_contacts": 6846,
+        "zero_rule_contacts": 87
+      },
+      {
+        "source_superclass": "descending_neuron",
+        "neuron_pair_edges": 88,
+        "contacts": 1853,
+        "positive_rule_contacts": 1703,
+        "negative_rule_contacts": 140,
+        "zero_rule_contacts": 10
+      },
+      {
+        "source_superclass": "visual_centrifugal",
+        "neuron_pair_edges": 5,
+        "contacts": 7,
+        "positive_rule_contacts": 4,
+        "negative_rule_contacts": 3,
+        "zero_rule_contacts": 0
+      },
+      {
+        "source_superclass": "visual_projection",
+        "neuron_pair_edges": 82,
+        "contacts": 595,
+        "positive_rule_contacts": 362,
+        "negative_rule_contacts": 231,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_intrinsic",
+        "neuron_pair_edges": 109,
+        "contacts": 553,
+        "positive_rule_contacts": 66,
+        "negative_rule_contacts": 485,
+        "zero_rule_contacts": 2
+      },
+      {
+        "source_superclass": "vnc_motor",
+        "neuron_pair_edges": 4,
+        "contacts": 4,
+        "positive_rule_contacts": 0,
+        "negative_rule_contacts": 1,
+        "zero_rule_contacts": 3
+      },
+      {
+        "source_superclass": "vnc_sensory",
+        "neuron_pair_edges": 12,
+        "contacts": 33,
+        "positive_rule_contacts": 33,
+        "negative_rule_contacts": 0,
+        "zero_rule_contacts": 0
+      }
+    ]
+  },
+  "previously_named_odor_assay_inhibitors": [
+    {
+      "bodyId": 10215,
+      "type": "CB0677",
+      "synonyms": null,
+      "flywireType": "CB0677",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 10243,
+      "type": "VES104",
+      "synonyms": null,
+      "flywireType": "CB0283",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 10816,
+      "type": "MBON31",
+      "synonyms": null,
+      "flywireType": "MBON31",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 10872,
+      "type": "CB0677",
+      "synonyms": null,
+      "flywireType": "CB0677",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 11142,
+      "type": "PS059",
+      "synonyms": null,
+      "flywireType": "PS059",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 11455,
+      "type": "MBON32",
+      "synonyms": null,
+      "flywireType": "MBON32",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 11495,
+      "type": "PS059",
+      "synonyms": null,
+      "flywireType": "PS059",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 11805,
+      "type": "MBON31",
+      "synonyms": null,
+      "flywireType": "MBON31",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 11982,
+      "type": "GNG127",
+      "synonyms": null,
+      "flywireType": "CB0013",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 514988,
+      "type": "PS059",
+      "synonyms": null,
+      "flywireType": "PS059",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 516820,
+      "type": "GNG127",
+      "synonyms": null,
+      "flywireType": "CB0013",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 519131,
+      "type": "MBON32",
+      "synonyms": null,
+      "flywireType": "MBON32",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 519399,
+      "type": "PS059",
+      "synonyms": null,
+      "flywireType": "PS059",
+      "somaSide": "L",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    },
+    {
+      "bodyId": 519705,
+      "type": "VES104",
+      "synonyms": null,
+      "flywireType": "CB0283",
+      "somaSide": "R",
+      "rootSide": null,
+      "superclass": "cb_intrinsic",
+      "entryNerve": null,
+      "consensus_nt": "gaba",
+      "model_sign": -1
+    }
+  ],
+  "saved_taste_contact_assay": [
+    {
+      "condition": "taste",
+      "duration_s": 0.5,
+      "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+      "final_behavior": "walk",
+      "final_motor": {
+        "behavior": "walk",
+        "left": 0.06685179283448273,
+        "right": -0.06667659300768328
+      },
+      "final_smoothed_readout_rates_hz": {
+        "forward": 0.0035039965359891564,
+        "turn_left": 0.07544699341230889,
+        "turn_right": 3.413656639466459,
+        "feeding": 3.979573496702744,
+        "escape": 0.5236151688543289
+      },
+      "xy_net_displacement_mm": 0.585958199994218,
+      "food_ingested_normalized": 0.009432000000000001,
+      "sampled_minimum_voltage_mv": -284.04967153027957
+    },
+    {
+      "condition": "no-taste",
+      "duration_s": 0.5,
+      "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+      "final_behavior": "rest",
+      "final_motor": {
+        "behavior": "rest",
+        "left": 0.0,
+        "right": 0.0
+      },
+      "final_smoothed_readout_rates_hz": {
+        "forward": 0.0,
+        "turn_left": 0.0,
+        "turn_right": 0.0,
+        "feeding": 0.0,
+        "escape": 0.0
+      },
+      "xy_net_displacement_mm": 0.0010430642587505468,
+      "food_ingested_normalized": 0.0,
+      "sampled_minimum_voltage_mv": -52.0
+    },
+    {
+      "condition": "muted",
+      "duration_s": 0.5,
+      "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+      "final_behavior": "rest",
+      "final_motor": {
+        "behavior": "rest",
+        "left": 0.0,
+        "right": 0.0
+      },
+      "final_smoothed_readout_rates_hz": {
+        "forward": 0.0017519982679945782,
+        "turn_left": 14.152034367594506,
+        "turn_right": 0.06663328697429949,
+        "feeding": 0.015906136264087104,
+        "escape": 0.0
+      },
+      "xy_net_displacement_mm": 0.0010430642587505468,
+      "food_ingested_normalized": 0.0,
+      "sampled_minimum_voltage_mv": -257.0944351904452
+    },
+    {
+      "condition": "sweet-synapses-blocked",
+      "duration_s": 0.5,
+      "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+      "final_behavior": "rest",
+      "final_motor": {
+        "behavior": "rest",
+        "left": 0.0,
+        "right": 0.0
+      },
+      "final_smoothed_readout_rates_hz": {
+        "forward": 0.0,
+        "turn_left": 0.0,
+        "turn_right": 0.0,
+        "feeding": 0.0,
+        "escape": 0.0
+      },
+      "xy_net_displacement_mm": 0.0010430642587505468,
+      "food_ingested_normalized": 0.0,
+      "sampled_minimum_voltage_mv": -52.0
+    }
+  ],
+  "interpretation_limits": [
+    "Same named output types do not prove the same specimen, stimulus, numerical dynamics or motor gain as Eon.",
+    "A central-brain-intrinsic presynaptic cell can receive upstream activity influenced by the VNC; these counts cannot test its causal contribution.",
+    "Whole-neuron superclasses do not locate individual input synapses; no brain-only or VNC-removal graph is constructed.",
+    "Final readout rates are exponentially smoothed snapshots, not whole-trial firing rates.",
+    "Net displacement from an on-food start is not successful food approach or a distance traveled measure.",
+    "Muting motor outputs changes future physical contacts and afferents; these closed-loop conditions are not matched neural inputs.",
+    "No literal Eon replication, parameter change, new biological fit or new behavior is claimed."
+  ]
+}

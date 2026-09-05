@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-09-05T04:27:37.270978+00:00",
+  "stage": "prospective; no trace values digitized",
+  "source": {
+    "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf",
+    "bytes": 2104843,
+    "sha256": "3991919a050c83687014e9204f76cc1f48e6dd91949204156a81ab16f294ecfe",
+    "doi": "10.1523/JNEUROSCI.3887-15.2016",
+    "pdf_page_1based": 9,
+    "printed_page": 4333
+  },
+  "scientific_scope": "Population stimulation of NP3056-Gal4 ChR+ LNs and average postsynaptic outward current in ChR-negative LNs; no unitary synapse, fitted model or exact MaleCNS subtype assignment",
+  "phase1_authorized_now": {
+    "actions": [
+      "Inspect Figure6 vector/raster object inventory without exporting neural-trace vertices",
+      "Read text, axes, scale bars and light-command geometry",
+      "Record visible time windows relative to illustrated shutter command if scale calibration is unambiguous",
+      "Keep reported protocol facts and geometry-inferred values separate"
+    ],
+    "no_mean_or_errorband_trace_digitization": true,
+    "no_presynaptic_peak_or_latency_measurement": true
+  },
+  "phase2_future_trace_extraction_requires_root_review": true,
+  "future_data_units": {
+    "C": "example whole-cell voltage, mV; context only, no spike detection from publication plot",
+    "D": "across-cell mean outward current and SEM, pA, n=9; separate no-Gal4 control n=6",
+    "E": "across-cell mean firing rate and SEM, spikes/s, n=5",
+    "F": "onset expansion of D, same data; consistency check only"
+  },
+  "future_primary_traces": [
+    "D black mean",
+    "D gray SEM envelope if separable",
+    "D blue control mean/envelope if separable",
+    "E green mean",
+    "E SEM envelope only if recoverable"
+  ],
+  "excluded": "A/B ORN-evoked EPSCs and their depression fits; F is not an independent cohort; do not turn C example spikes into the n=5 E dataset",
+  "coordinates": {
+    "retain": "PDF point units, page box, transforms, object index/style, native path vertices and source hash if phase2 proceeds",
+    "prefer": "native vector centerlines and SEM filled bounds; never fit smooth curves",
+    "raster_fallback": "Only if vector attribution fails; preserve lossless rendered page, fixed crop and calibration anchors; report line-width/pixel intervals, not exact biological samples",
+    "time_zero": "illustrated light-command rising edge, explicitly not measured photon onset or spike onset",
+    "time_units": "D/C share 1s scale bar; E/F share expanded 200ms bar after geometry/visual confirmation",
+    "current_scale": "4pA bar in D and separately F; vertical origin must be baseline subtraction, because no absolute holding-current axis exists",
+    "rate_scale": "E y-axis labeled 0,20,40,60,80 spikes/s",
+    "never_assume": "figure9 whole-cell holding voltage from Figure5 settings"
+  },
+  "future_alignment_and_measurement": {
+    "same_recording_required": false,
+    "warning": "E and D/F are different cell cohorts; aggregate comparison cannot identify a causal kernel or per-spike gain",
+    "retain_all_displayed_trace": true,
+    "interpolation": "Only linear interpolation for explicit matched display-time comparison after retaining original vertices; no extrapolation",
+    "windows_to_freeze_before_phase2": [
+      "baseline [-0.15,-0.05) s",
+      "early [0.05,0.15) s",
+      "late [0.25,0.35) s"
+    ],
+    "window_rationale": "Predetermined onset-region summaries after visual layout inspection, not optimized from trace values; exclude shutter transition and the nominal 50ms half-width of reported acausal PSTH smoothing",
+    "window_gate": "If layout inventory shows any window outside panel support, stop and version a revised plan before extracting traces",
+    "allowed_summaries": "signed early-to-late differences for each cohort separately, with extraction uncertainty; no amplitude normalization that invents shared units",
+    "uncertainty": "Do not treat SEM envelopes as simultaneous confidence bands, recover individual trials from means, or estimate inferential p-values from digitized means alone"
+  },
+  "aggregation_and_filters_to_preserve": [
+    "D n=9 and control n=6; E n=5, mean\u00b1SEM across cells",
+    "General PSTH: 1ms bins, 1\u20136 trials per stimulus, 100ms zero-centered Hanning; exact Figure6 repeat counts not specified",
+    "General recording lowpass2kHz, digitization10kHz; display downsampling1kHz; exact current/SEM preprocessing not individually stated"
+  ],
+  "identity_limits": [
+    "female1\u20133days",
+    "broad NP3056 population, approximately50expressing GABAergicLNs/lobe",
+    "no exact lLN2F_b/il3LN6/Patchy/target67052 identity",
+    "no specific receptor isolation or native reversal established"
+  ],
+  "failure_preservation": "Never overwrite frozen plan or extraction evidence; preserve ambiguous path classification, unavailable SEM, unsupported window, clipping and source/geometry failures. A revised plan must be a separately named version with reason and prior hash.",
+  "prohibitions": [
+    "no model fits",
+    "no neural or body model run",
+    "no choice of inhibitory kernel/gain/reversal",
+    "no mechanistic selection between release facilitation and delayed receptor access",
+    "no second paper acquisition in this task"
+  ]
+}

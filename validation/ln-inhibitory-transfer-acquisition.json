@@ -1,0 +1,96 @@
+{
+  "paper_doi": "10.1523/JNEUROSCI.3887-15.2016",
+  "attempts": [
+    {
+      "url": "https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/nagelwilson2016.pdf",
+      "method": "stdlib urllib.request public GET",
+      "attempt_utc": "2026-09-05T04:25:50.617754+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "path": "data/raw/ln-inhibitory-transfer/direct-pdf-response.html",
+      "bytes": 483,
+      "sha256": "73abda3066ac4bf890da87bbf9ca58b74ca1e750a72ad8e8852b6f04ab684364",
+      "starts_pdf": false,
+      "is_primary_article": false,
+      "classification": "Access Denied HTML; not source article"
+    },
+    {
+      "url": "https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/nagelwilson2016.pdf",
+      "parent_url": "https://wilson.hms.harvard.edu/publications?page=1",
+      "publication_url_observed": "https://wilson.hms.harvard.edu/publications/mechanisms-underlying-population-response-dynamics-inhibitory-interneurons",
+      "method": "Chrome public author attachment locator.downloadMedia",
+      "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pdf",
+      "bytes": 2104843,
+      "sha256": "3991919a050c83687014e9204f76cc1f48e6dd91949204156a81ab16f294ecfe",
+      "pdf_pages": 14,
+      "pdf_metadata": {
+        "/Creator": "XPP",
+        "/Title": "Mechanisms Underlying Population Response Dynamics in Inhibitory Interneurons of the Drosophila Antennal Lobe",
+        "/Producer": "",
+        "/Author": "",
+        "/Keywords": "",
+        "/Subject": "",
+        "/ModDate": "D:20160407142143Z00'00'",
+        "/CreationDate": "D:20160407142143Z00'00'"
+      },
+      "starts_pdf": true,
+      "is_primary_article": true,
+      "login_or_captcha_used": false,
+      "acquired_utc": "2026-09-05T04:26:24.338969+00:00",
+      "text_derivative": {
+        "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pypdf.txt",
+        "bytes": 75690,
+        "sha256": "58ba9881acecd9853aba39d58daf3ecad03edd91c3c6915ea340f559c2de6ec5",
+        "method": "pypdf page.extract_text()"
+      }
+    }
+  ],
+  "retained_derivatives": [
+    {
+      "path": "data/raw/ln-inhibitory-transfer/nagelwilson2016.pypdf.txt",
+      "bytes": 75690,
+      "sha256": "58ba9881acecd9853aba39d58daf3ecad03edd91c3c6915ea340f559c2de6ec5"
+    },
+    {
+      "path": "data/raw/ln-inhibitory-transfer/nagel-page-09.png",
+      "bytes": 443334,
+      "sha256": "b29b975cdd2949e9a31c8817f5cb1a1d6fbe104f49477e82f96fb704148dc498"
+    }
+  ],
+  "source_inspection": {
+    "method": "pypdf text extraction of full PDF; Poppler page9 rendering; local image inspection; pdfplumber layout-only inventory after frozen plan",
+    "relevant_text_pages_1based": [
+      2,
+      4,
+      9,
+      10
+    ],
+    "visually_inspected_pages_1based": [
+      9
+    ],
+    "no_neural_trace_digitization": true
+  },
+  "artifacts": [
+    {
+      "path": "validation/ln-inhibitory-transfer-extraction-plan.json",
+      "bytes": 5281,
+      "sha256": "7ab0617c680e3d6949e167e8096d5301e997c7ce87d6c2d5fbefa63325da2f1d"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-inventory.py",
+      "bytes": 5949,
+      "sha256": "a5ec48f3e5b068f02a2b963931c7f44a86f3af9027720686d1b4fb0d673b3499"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-layout.json",
+      "bytes": 49014,
+      "sha256": "8ed1b54ce6138b44277932c82c4a98662ef71bfcbeedf0e176ecc29adebc94c2"
+    },
+    {
+      "path": "validation/ln-inhibitory-transfer-notes.json",
+      "bytes": 4767,
+      "sha256": "e784ddd8e96e52018aa7db7298440154149e4eb7941d3c1ccb2ccc8ace20daf5"
+    }
+  ]
+}
