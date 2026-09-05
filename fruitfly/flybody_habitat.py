@@ -10,6 +10,12 @@ from dataclasses import asdict, dataclass
 import math
 from typing import Mapping
 
+# Public MjvGeom fields in the pinned MuJoCo 3.2.7 renderer. Native model/data
+# fields are never assigned by the scene callback.
+SCENE_GEOM_FIELDS = ("type", "dataid", "objtype", "objid", "category", "matid",
+    "texcoord", "segid", "size", "pos", "mat", "rgba", "emission", "specular",
+    "shininess", "reflectance", "label", "camdist", "modelrbound", "transparent")
+
 
 @dataclass(frozen=True)
 class FlyBodyHabitatConfig:
@@ -126,7 +132,8 @@ class NativeHabitat:
         self.visual_resource_ids = {}
         self.metadata["display"] = {"resource_marker_lift_mm":.05,
             "scope":"Camera MjvScene only; compiled native model/data and planar sensing unchanged",
-            "reference_ghost_visible":False,"reference_trajectory_visible":False}
+            "reference_ghost_visible":False,"reference_trajectory_visible":False,
+            "reference_filter":"Removed from MjvScene, including shadow/reflection passes"}
         for gid in self.wall_ids:
             self.metadata["walls"].append({"geom":model.id2name(gid,"geom"), "compiled_geom_id":int(gid),
                 "center_mm":(model.geom_pos[gid]*10).tolist(), "half_size_mm":(model.geom_size[gid]*10).tolist(),
@@ -149,25 +156,35 @@ class NativeHabitat:
         Reference ghosts and trajectory dots remain in native task state.
         """
         import mujoco
-        edits = []
-        for index in range(scene.ngeom):
-            geom = scene.geoms[index]
-            change = None
-            before = {"position_cm":geom.pos.tolist(),"rgba":geom.rgba.tolist()}
-            if geom.objtype==mujoco.mjtObj.mjOBJ_SITE and geom.objid in self.visual_resource_ids:
-                geom.pos[2] += .005  # cm: 0.05 mm, renderer only.
-                change = "resource_marker_lift"
-            elif geom.objtype==mujoco.mjtObj.mjOBJ_SITE and geom.objid in self.visual_trajectory_ids:
-                geom.rgba[3] = 0.
-                change = "hide_reference_trajectory"
-            elif geom.objtype==mujoco.mjtObj.mjOBJ_GEOM and geom.objid in self.visual_ghost_ids:
-                geom.rgba[3] = 0.
-                change = "hide_reference_ghost"
-            if change:
-                edits.append({"scene_geom_index":index,"native_object_type":int(geom.objtype),
-                    "native_object_id":int(geom.objid),"change":change,"before":before,
-                    "after":{"position_cm":geom.pos.tolist(),"rgba":geom.rgba.tolist()}})
-        self.last_render_scene_edits = edits
+        import numpy as np
+        removed = []
+        destination = 0
+        original_count = scene.ngeom
+        for index in range(original_count):
+            source = scene.geoms[index]
+            is_site = source.objtype==mujoco.mjtObj.mjOBJ_SITE
+            is_ghost = source.objtype==mujoco.mjtObj.mjOBJ_GEOM and source.objid in self.visual_ghost_ids
+            is_trajectory = is_site and source.objid in self.visual_trajectory_ids
+            if is_ghost or is_trajectory:
+                removed.append({"original_scene_index":index,"native_object_type":int(source.objtype),
+                    "native_object_id":int(source.objid),"kind":"ghost" if is_ghost else "trajectory"})
+                continue
+            target = scene.geoms[destination]
+            if destination!=index:
+                for field in SCENE_GEOM_FIELDS:
+                    value = getattr(source,field)
+                    if isinstance(value,np.ndarray):
+                        getattr(target,field)[:] = value
+                    else:
+                        setattr(target,field,value)
+            if is_site and source.objid in self.visual_resource_ids:
+                target.pos[2] += .005  # cm: 0.05 mm, renderer only.
+            if target.segid!=-1:
+                target.segid = destination
+            destination += 1
+        scene.ngeom = destination
+        self.last_render_scene_filter = {"original_count":original_count,"retained_count":destination,
+            "removed":removed,"resource_marker_lift_mm":.05}
 
     def sample(self, model, diagnostic, root_position_cm):
         import numpy as np

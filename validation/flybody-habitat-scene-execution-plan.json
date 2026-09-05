@@ -1,0 +1,33 @@
+{
+  "source_sha256": {
+    "scripts/validate_flybody_habitat_scene.py": "e8d0d44a9923772e152ee111754912e58eb830fa88d1fac8dba1ecb09162164c",
+    "scripts/validate_flybody_habitat_visual.py": "b9e9f864cb1e6242b0d1054788798fcabf30da04305525e1c62b72931f2a651d",
+    "scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_habitat.py": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "validation/flybody-habitat-scene-design-plan.json": "02938d6824a7210e8a079d85dabb44f9506f07b685fa45dd69e2711cf06f7bd4",
+    "validation/flybody-habitat-results.json": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e",
+    "validation/flybody-habitat-visual-results.json": "f0a9a07476022869b455e5c3dbb8d8d09fb05c4f280ec77341a9000424b02c10",
+    "validation/flybody-habitat-render-diagnostic-results.json": "d8083b7b919c3d4ae28d4e258f81ad89326d7b2c0272dc6a8a94cabd5c48c546"
+  },
+  "seed": 11,
+  "cameras": [
+    "overview",
+    "follow",
+    "side",
+    "overview"
+  ],
+  "parity_intervals": 100,
+  "scope": "Remove source reference ghost/trajectory visual geoms from disposable scene, retain marker lift. No compiled/native/controller/neural edits.",
+  "gates": [
+    "Final scenes contain no ghost geom or traj site IDs; removed list matches every such source scene entry",
+    "Every surviving public MjvGeom field equals original except specified resource Z lift and compact segmentation indices",
+    "Whole compiled MJB bytes and nine native arrays, actor hash, cached observations and time equal before/after all four renders",
+    "Reset plus 100 native intervals and 741-value actor samples equal retained original habitat trial",
+    "Default habitat-null worker still has no scene callback; its paused render preserves model/native data"
+  ],
+  "manual_visual_check": "Inspect overview/follow/side PNGs for reference dots/ghost shadow/reflection artifacts and smooth resource markers; retain source floor reflection of the actual fly.",
+  "retained_failures": "Original 64/65 physical/probe receipt, 29/31 shallow probe receipt, 26/27 v1 renderer receipt and close-view alpha-shadow flaw remain unchanged."
+}

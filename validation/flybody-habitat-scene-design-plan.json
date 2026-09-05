@@ -1,0 +1,14 @@
+{
+  "prepared_utc": "2026-09-05T04:11:37.203095+00:00",
+  "phase": "before_scene_removal_edits",
+  "prior_runtime_commit": "ef6e230",
+  "sources_sha256": {
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_habitat.py": "51694a5ca2ce37ccccb4e72a36c3eb8e4dc08dbc0628657bdf1aebe5bae86bbf",
+    "validation/flybody-habitat-visual-results.json": "f0a9a07476022869b455e5c3dbb8d8d09fb05c4f280ec77341a9000424b02c10",
+    "validation/flybody-habitat-render-diagnostic-results.json": "d8083b7b919c3d4ae28d4e258f81ad89326d7b2c0272dc6a8a94cabd5c48c546"
+  },
+  "retained_failure": "V1 alpha=0 hides direct reference shapes but close follow/side views retain reference-site dots in shadows/reflections. Initial v1 no-dots claim is retracted.",
+  "change": "Filter ghost geom/traj site native IDs out of the disposable MjvScene entirely. Compact surviving MjvGeom fields and scene.ngeom, preserve native object IDs and update display-only segmentation indices. Keep 0.05 mm marker display lift. No MjModel, MjData, actor or controller edits.",
+  "verification": "Freeze execution plan after implementation; save four close/overview scenes and images. Require no ghost/traj IDs in final scene and all surviving public MjvGeom fields exact except specified marker Z and segmentation indices. Preserve full compiled MJB bytes and paused native/actor/cached observations/time, then compare reset plus 100 direct-control intervals with original retained wall trial. Default callback remains absent; original failed pixel gate is not rerun or changed."
+}

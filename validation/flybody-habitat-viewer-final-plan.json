@@ -1,0 +1,17 @@
+{
+  "prepared_utc": "2026-09-05T04:13:33.806970+00:00",
+  "source_sha256": {
+    "fruitfly/flybody_worker.py": "86f1948a1463cf58db1461ca40f57cc0bf1f1e0754c03ae9e30b2e9872ccdbd7",
+    "fruitfly/flybody_habitat.py": "088e312a0b155c29f2bb70d7957d3e4e5e44c175329c3c81ee51a3847ebd3806",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/simulation.py": "8f7e9201ec8c810635ce4a75829bf16d900fe600c01220ebed3e1bca3e013057",
+    "fruitfly/viewer.py": "ac1f427205b5239c6d0dccb82454071bcf565732b57a3899d1a98f851ba4f982",
+    "fruitfly/web/app.js": "2197b38674943a501fc8ac327a5174f80f70da46491e4d765ac770778f23a5b2",
+    "configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+    "validation/flybody-habitat-scene-execution-plan.json": "14229a078298ce3ba43761a05aed602ff7d2463ffa727d4ea3b7afb85795edf2",
+    "validation/flybody-habitat-scene-results.json": "76bee313d61c249ae4271da1ca53b8e6731b57b001d94125869cd91365489cbc"
+  },
+  "prior_ui_plan_sha256": "5cd524da9a1edd06b5a01128bfcf1420652c0cbf0d193e2743db9865cf2c5f82",
+  "protocol": "Stop only own paused 8774 viewer; restart same sensory configuration with scene removal. Inspect overview/follow/side via actual browser. Save paused t=0 state/frame for each camera; verify primary pose/senses/physiology/neural/physics/stimuli match earlier reset. Preserve real fly floor reflection; require reference trajectory/shadow artifacts absent by visual inspection. Leave overview paused and available to user. No additional neural evolution or wall-contact trial.",
+  "limits": "A display-only addendum; previous physical and viewer-control evidence remains tied to ef6e230. Original failed contact gates, v0 depth artifacts, v1 shadows and v1 exact-pixel failure remain retained."
+}
