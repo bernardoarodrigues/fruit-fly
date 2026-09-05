@@ -37,10 +37,23 @@ class SimulationRunner:
             raise FileExistsError(f"Experiment directory is not empty: {self.run_dir}")
         self._trace = None
         self._closed = True
+        self._failure = None
         self.seed = int(self.config.get("seed", 1))
         self.coupling_s = float(self.config.get("coupling_s", .005))
         if not np.isfinite(self.coupling_s) or not .0001 <= self.coupling_s <= .02:
             raise ValueError("Coupling interval must be in [0.0001, 0.02] seconds")
+        self.body_backend = self.config.get("body_backend", "nmf")
+        if self.body_backend not in ("nmf", "flybody"):
+            raise ValueError("body_backend must be nmf or flybody")
+        if self.body_backend == "flybody":
+            # The first bridge exchanges one complete native policy step.
+            # Five milliseconds cannot be rounded to a whole 2 ms policy tick.
+            if not np.isclose(self.coupling_s, .002, atol=1e-12, rtol=0):
+                raise ValueError("The optional FlyBody bridge requires coupling_s=0.002")
+            if self.config.get("assay") in ("grooming_probe", "grooming_sensory_probe"):
+                raise ValueError("The optional FlyBody bridge does not support grooming")
+            from .flybody_bridge import FlyBodyConfig
+            FlyBodyConfig(**(self.config.get("body") or {}))
         graph_path = Path(self.config.get("connectome", "data/processed/malecns_v1"))
         if not (graph_path / "manifest.json").exists():
             raise FileNotFoundError("MaleCNS graph missing. Run: python -m fruitfly.data build")
@@ -100,9 +113,17 @@ class SimulationRunner:
         self.brain.reset(seed=self.seed)
         self.body = None
         try:
-            self.body = BodyRuntime(seed=self.seed, config=self.config.get("body"))
-            self._require_multiple(self.coupling_s, self.body.timestep, "Coupling interval", "body timestep")
             self.run_dir.mkdir(parents=True, exist_ok=True)
+            if self.body_backend == "flybody":
+                from .flybody_bridge import FlyBodyRuntime
+                self.body = FlyBodyRuntime(seed=self.seed, config=self.config.get("body"),
+                                           log_path=self.run_dir / "flybody-worker.log")
+            else:
+                self.body = BodyRuntime(seed=self.seed, config=self.config.get("body"))
+            self._require_multiple(self.coupling_s, self.body.timestep, "Coupling interval", "body timestep")
+            if hasattr(self.body, "control_timestep_s"):
+                self._require_multiple(self.coupling_s, self.body.control_timestep_s,
+                                       "Coupling interval", "body control timestep")
             self._trace = (self.run_dir / "telemetry.jsonl").open("x", buffering=1)
             self._write_manifest()
             self._closed = False
@@ -114,6 +135,7 @@ class SimulationRunner:
             raise
 
     def _write_manifest(self):
+        body_state = self.body.snapshot()
         dependencies = {}
         for name in ("flygym", "mujoco", "numpy", "scipy", "numba", "pyarrow", "pandas"):
             try:
@@ -126,8 +148,13 @@ class SimulationRunner:
                     "dependencies": dependencies,
                     "connectome": self.graph.manifest, "graph_sha256": self.brain.graph_sha256,
                     "neural_parameters": asdict(self.brain.parameters),
-                    "body_config": self.body.snapshot()["config"],
-                    "wind_reference": self.body.snapshot()["wind_reference"],
+                    "body_backend": self.body_backend,
+                    "body_config": body_state["config"],
+                    "body_metadata": body_state.get("backend"),
+                    "body_capabilities": body_state.get("capabilities"),
+                    "body_physics_timestep_s": self.body.timestep,
+                    "body_control_timestep_s": getattr(self.body, "control_timestep_s", None),
+                    "wind_reference": body_state["wind_reference"],
                     "coupling_s": self.coupling_s, "sensory_parameters": asdict(self.sensors.parameters),
                     "sensory_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.sensors.groups.items()},
                     "taste_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.taste.groups.items()} if self.taste else {},
@@ -163,6 +190,11 @@ class SimulationRunner:
         count = self._require_multiple(sim_seconds, self.coupling_s, "Duration", "coupling interval")
         if count == 0:
             return self.snapshot()
+        if self._failure is not None:
+            raise RuntimeError("A body step failed; reset explicitly before advancing")
+        if self.body_backend == "flybody" and (
+                self.body.time_s + sim_seconds > self.body.config.horizon_s + 1e-10):
+            raise RuntimeError("Requested duration exceeds the bounded FlyBody horizon; no neural or physical step taken")
         started = time.perf_counter()
         recent_active = set()
         self.last_spikes = 0
@@ -189,7 +221,16 @@ class SimulationRunner:
             action = self.motor.decode(batch, duration, observation, muted=self.ablated)
             if self.assay == "controller_only":
                 action = {"behavior": "rest" if self.ablated else "walk", "left": 1.0, "right": 1.0}
-            self.body.advance(duration, action["left"], action["right"], action["behavior"])
+            try:
+                self.body.advance(duration, action["left"], action["right"], action["behavior"])
+                if self.body_backend == "flybody" and not np.isclose(
+                        self.body.time_s, self.brain.time_ms / 1000, atol=1e-9, rtol=0):
+                    raise RuntimeError("FlyBody and neural clocks diverged; experiment stopped")
+            except Exception as error:
+                self._failure = str(error)
+                self._record_failure(error, "body advance", pending_action=action,
+                                     pending_neural_spikes=int(batch.total_spikes))
+                raise
             if action["behavior"] != self.last_action["behavior"]:
                 self.events.append({"t_s": self.body.time_s, "behavior": action["behavior"]})
                 self.events = self.events[-20:]
@@ -216,6 +257,9 @@ class SimulationRunner:
                     "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete."]
         if self.taste is None:
             warnings.append("Tarsal taste input is disabled in this assay.")
+        if self.body_backend == "flybody":
+            warnings.append("Optional FlyBody learned motor surrogate: native physics/policy in an isolated process; rest/feed/motor mute retain an engineering neutral posture hold with maximum adhesion. No proboscis actuation or natural stance claim.")
+            warnings.append("FlyBody feedback and resource bookkeeping are sampled every 2 ms. This bounded integration retains source task termination; indefinite operation is not yet supported.")
         if self.proprioceptor:
             warnings.append("Optional FeCO club adapter encodes bidirectional tibia movement with configured, uncalibrated gain; hook/claw and vibration are unmapped.")
         if self.body.wind_reference is not None:
@@ -240,6 +284,8 @@ class SimulationRunner:
             "behavior": observation["motor"]["mode"],
             "requested_behavior": self.last_action["behavior"], "assay": self.assay,
             "pose": observation["pose"], "physiology": observation["physiology"],
+            "body_backend": self.body_backend, "body_metadata": world.get("backend"),
+            "body_capabilities": world.get("capabilities"), "physics": world.get("physics"),
             "senses": {"odor": observation["antenna_odor"], "odor_rates_hz": self.sensors.last_rates.tolist(),
                        "taste_food": observation["taste_food"], "taste_water": observation["taste_water"],
                        "sweet_event_rates_hz": self.taste.last_rates.copy() if self.taste else {},
@@ -254,6 +300,10 @@ class SimulationRunner:
                                       "maximum": float(self.brain.voltage_mv.max()),
                                       "mean": float(self.brain.voltage_mv.mean())},
                        "ablated": self.ablated, "ablation_target": "motor readout",
+                       "ablation_description": (
+                           "Mutes locomotor output while neural spikes continue. FlyBody retains an engineering posture hold with maximum foot adhesion."
+                           if self.body_backend == "flybody" else
+                           "Mutes the motor readout only. Neural spikes continue to be simulated."),
                        "blocked_synaptic_outputs": sorted(self.outgoing_blocks),
                        "backend": f"Numba CPU sparse-event {self.neural_model} LIF",
                        "model": self.neural_model, "graph_sha256": self.brain.graph_sha256},
@@ -287,6 +337,7 @@ class SimulationRunner:
             self.wall_s = 0.0
             self.last_action = {"behavior": "rest", "left": 0.0, "right": 0.0}
             self.events = []
+            self._failure = None
         elif kind == "stimulus":
             self.body.set_stimulus(str(command["name"]), float(command["value"]))
         elif kind == "ablation":
@@ -318,12 +369,42 @@ class SimulationRunner:
     def render(self, camera="follow"):
         return self.body.render(camera)
 
+    def _record_failure(self, error, stage, **details):
+        """Retain cached failure state even when ordinary observation is invalid."""
+        def safe(value):
+            if isinstance(value, dict):
+                return {str(k): safe(v) for k, v in value.items()}
+            if isinstance(value, (list, tuple)):
+                return [safe(v) for v in value]
+            if hasattr(value, "tolist"):
+                return safe(value.tolist())
+            return None if isinstance(value, float) and not np.isfinite(value) else value
+
+        try:
+            brain = getattr(self, "brain", None)
+            record = {"stage": stage, "error": type(error).__name__ + ": " + str(error),
+                      "brain_t_s": brain.time_ms / 1000 if brain is not None else None,
+                      "completed_interval_spikes": getattr(self, "total_spikes", None),
+                      "pending_interval_in_completed_totals": False, **details}
+            diagnostics = getattr(self.body, "diagnostics", None)
+            if diagnostics is not None:
+                record["cached_body_diagnostics"] = diagnostics()
+            else:
+                record["body_t_s"] = getattr(self.body, "time_s", None)
+            with (self.run_dir / "failures.jsonl").open("a") as handle:
+                handle.write(json.dumps(safe(record), allow_nan=False) + "\n")
+        except Exception as recording_error:
+            error.add_note("Failure receipt could not be written: " + str(recording_error))
+
     def close(self):
         if self._closed:
             return
         try:
             state = self.snapshot()
             (self.run_dir / "final.json").write_text(json.dumps(state, indent=2) + "\n")
+        except Exception as error:
+            self._record_failure(error, "final snapshot")
+            raise
         finally:
             self._closed = True
             try:

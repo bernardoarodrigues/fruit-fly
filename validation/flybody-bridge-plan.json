@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-09-05T02:46:17.088923+00:00",
+  "seed": 11,
+  "source_trials": [
+    {
+      "assay": "zero_start",
+      "trace": "runs/flybody-stance-20260905T022318Z/neutral_zero-zero_start.npz",
+      "trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159"
+    },
+    {
+      "assay": "walk_stop_resume",
+      "trace": "runs/flybody-stance-20260905T022318Z/neutral_zero-walk_stop_resume.npz",
+      "trace_sha256": "1152bc4cc0a746169399e4e7539529e019b80a62e1883277f2a374b6712d24cf"
+    }
+  ],
+  "files": {
+    "fruitfly/flybody_bridge.py": "27717f05b27861ac07991500ba9ba16f81c4409961cb04a5883051528f1da6c4",
+    "fruitfly/flybody_worker.py": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+    "scripts/check_flybody_bridge.py": "a2495d94dde1b8b29b4ba627dbf480c95435726f55b3e2d98a7b3ab60b915f65",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7"
+  },
+  "duration_s": 2.0,
+  "control_s": 0.002,
+  "config": {
+    "width": 800,
+    "height": 560
+  },
+  "tolerance_absolute": 1e-10,
+  "rules": [
+    "Compare all1001 qpos/qvel/pose/actuator-length/activation samples and1000 native actions to frozen trace.",
+    "No fit; physical arrays all finite, warningszero, native clock exact to1e-10.",
+    "Render follow/side/overview during trace: worker asserts qpos/qvel/qacc/act/ctrl/sensordata/time unchanged.",
+    "Cached observe/snapshot/diagnostics and advance0 cannot advance worker, host field or physiology.",
+    "Partial2ms ticks and beyond2s errors must preserve state; reset returns native clock0 and initialqpos.",
+    "Actual tarsal-plane contact controls taste; preserve each leg's positive/negative contact condition.",
+    "Resource balances within1e-10. Source failures retained in trace, never substituted."
+  ]
+}

@@ -1,4 +1,6 @@
 from pathlib import Path
+import json
+from types import SimpleNamespace
 import numpy as np
 import pytest
 from fruitfly.simulation import SimulationRunner
@@ -17,6 +19,20 @@ def test_existing_experiment_is_never_overwritten(tmp_path):
     assert manifest.read_text() == '{"prior_experiment": true}'
 
 
+def test_backend_and_policy_clock_fail_before_graph_or_worker_allocation(tmp_path):
+    # The deliberately missing graph must not mask invalid backend timing.
+    missing_graph = str(tmp_path / "no-graph")
+    with pytest.raises(ValueError, match="body_backend"):
+        SimulationRunner({"body_backend": "unknown", "connectome": missing_graph})
+    for interval in (.005, .001, .004):
+        with pytest.raises(ValueError, match="coupling_s=0.002"):
+            SimulationRunner({"body_backend": "flybody", "coupling_s": interval,
+                              "connectome": missing_graph})
+    with pytest.raises(ValueError, match="does not support grooming"):
+        SimulationRunner({"body_backend": "flybody", "coupling_s": .002,
+                          "assay": "grooming_probe", "connectome": missing_graph})
+
+
 def test_close_releases_resources_even_when_snapshot_fails(tmp_path):
     class Resource:
         closed = False
@@ -25,12 +41,30 @@ def test_close_releases_resources_even_when_snapshot_fails(tmp_path):
             self.closed = True
 
     runner = object.__new__(SimulationRunner)
+    runner.run_dir = tmp_path
     runner._closed = False
     runner._trace, runner.body = Resource(), Resource()
+    runner.body.diagnostics = lambda: {"finite": False, "qpos": [float("nan")], "native_time_s": .002}
+    runner.brain = SimpleNamespace(time_ms=2.)
     runner.snapshot = lambda: (_ for _ in ()).throw(OSError("recording failure"))
     with pytest.raises(OSError, match="recording failure"):
         runner.close()
     assert runner._trace.closed and runner.body.closed and runner._closed
+    failure = json.loads((tmp_path / "failures.jsonl").read_text())
+    assert failure["stage"] == "final snapshot" and failure["brain_t_s"] == .002
+    assert failure["cached_body_diagnostics"] == {"finite": False, "qpos": [None], "native_time_s": .002}
+
+
+def test_finite_body_horizon_rejects_entire_chunk_before_any_neural_access():
+    runner = object.__new__(SimulationRunner)
+    runner._closed, runner._failure = False, None
+    runner.coupling_s, runner.body_backend = .002, "flybody"
+    runner.body = SimpleNamespace(time_s=1.998, config=SimpleNamespace(horizon_s=2.))
+    # No brain/encoder/motor exists: any premature access fails this test.
+    for duration in (.004, .01):
+        with pytest.raises(RuntimeError, match="no neural or physical step"):
+            runner.advance(duration)
+    assert runner.body.time_s == 1.998
 
 
 @pytest.mark.skipif(not Path("data/processed/malecns_v1/manifest.json").exists(),

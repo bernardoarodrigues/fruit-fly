@@ -1,0 +1,156 @@
+{
+  "scope": "Post hoc descriptive summaries only; no new gates, fits or simulation.",
+  "script_sha256": "ee6acaeacff63c77192bd5d4b699edc1f22017b3a1c765569aef537af90bb99b",
+  "plan_sha256": "6ab6b5f8bbcb4cc3343e97824c182e4c30e9d5d1902d21804cf56eb25f16d403",
+  "results_sha256": "b4ee064b8f14350e0c033d717805b872f06999e610cdf0ef57e72081b9df8d28",
+  "conditions": [
+    {
+      "condition": "locomotor_feedback",
+      "completed_ticks": 1000,
+      "all_condition_gates_pass": true,
+      "path_length_mm_2ms_chords": 17.19226796752259,
+      "net_planar_displacement_mm": 15.227303736080957,
+      "muted_steady_speed_median_mm_s_0p85_to1p2": 0.0022891933972553377,
+      "after_restore_speed_median_mm_s_1p5_to2": 11.655812760321488,
+      "minimum_upright_z": 0.9899381907205802,
+      "maximum_qacc_abs_native": 240128.83303225107,
+      "maximum_clock_error_s": 1.8762769116165146e-13,
+      "maximum_resource_residual": 1.1102230246251565e-15,
+      "minimum_neural_voltage_mv": -516.1287468675737,
+      "total_graph_spikes": 1709316,
+      "first_feed_completed_interval_end_s": null,
+      "muted_neural_spikes": 524219,
+      "sweet_input_ever_positive": false,
+      "source_spikes_by_group": {
+        "odor": 1085,
+        "sweet": 0,
+        "club": 3296
+      },
+      "feeding_motor_spikes": 120,
+      "food_ingested": 0.0,
+      "requested_behavior_counts": {
+        "rest": 340,
+        "walk": 660,
+        "feed": 0
+      },
+      "positive_intake_required_for_success": false
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "completed_ticks": 1000,
+      "all_condition_gates_pass": true,
+      "path_length_mm_2ms_chords": 17.361370685143672,
+      "net_planar_displacement_mm": 16.030604980120923,
+      "muted_steady_speed_median_mm_s_0p85_to1p2": 0.008186972298442192,
+      "after_restore_speed_median_mm_s_1p5_to2": 13.384927221200973,
+      "minimum_upright_z": 0.9727436970686411,
+      "maximum_qacc_abs_native": 214758.5900468135,
+      "maximum_clock_error_s": 1.8762769116165146e-13,
+      "maximum_resource_residual": 2.220446049250313e-15,
+      "minimum_neural_voltage_mv": -501.08324745676396,
+      "total_graph_spikes": 1648677,
+      "first_feed_completed_interval_end_s": null,
+      "muted_neural_spikes": 526843,
+      "sweet_input_ever_positive": false,
+      "source_spikes_by_group": {
+        "odor": 1080,
+        "sweet": 0,
+        "club": 3330
+      },
+      "feeding_motor_spikes": 104,
+      "food_ingested": 0.0,
+      "requested_behavior_counts": {
+        "rest": 327,
+        "walk": 673,
+        "feed": 0
+      },
+      "positive_intake_required_for_success": false
+    },
+    {
+      "condition": "on_food_feedback",
+      "completed_ticks": 250,
+      "all_condition_gates_pass": true,
+      "path_length_mm_2ms_chords": 0.007406778377543939,
+      "net_planar_displacement_mm": 0.0037990028432391652,
+      "muted_steady_speed_median_mm_s_0p85_to1p2": null,
+      "after_restore_speed_median_mm_s_1p5_to2": null,
+      "minimum_upright_z": 0.9998511388891367,
+      "maximum_qacc_abs_native": 4556.165046547869,
+      "maximum_clock_error_s": 2.2426505097428162e-14,
+      "maximum_resource_residual": 7.771561172376096e-15,
+      "minimum_neural_voltage_mv": -451.74485812326816,
+      "total_graph_spikes": 421545,
+      "first_feed_completed_interval_end_s": 0.034,
+      "muted_neural_spikes": 0,
+      "sweet_input_ever_positive": true,
+      "source_spikes_by_group": {
+        "odor": 4633,
+        "sweet": 2694,
+        "club": 17
+      },
+      "feeding_motor_spikes": 28,
+      "food_ingested": 0.037440000000000084,
+      "requested_behavior_counts": {
+        "rest": 16,
+        "walk": 0,
+        "feed": 234
+      },
+      "positive_intake_required_for_success": false
+    },
+    {
+      "condition": "on_food_sweet_block",
+      "completed_ticks": 250,
+      "all_condition_gates_pass": true,
+      "path_length_mm_2ms_chords": 0.007406778377543939,
+      "net_planar_displacement_mm": 0.0037990028432391652,
+      "muted_steady_speed_median_mm_s_0p85_to1p2": null,
+      "after_restore_speed_median_mm_s_1p5_to2": null,
+      "minimum_upright_z": 0.9998511388891367,
+      "maximum_qacc_abs_native": 4556.165046547869,
+      "maximum_clock_error_s": 2.2426505097428162e-14,
+      "maximum_resource_residual": 7.771561172376096e-15,
+      "minimum_neural_voltage_mv": -406.1160791958003,
+      "total_graph_spikes": 426321,
+      "first_feed_completed_interval_end_s": 0.034,
+      "muted_neural_spikes": 0,
+      "sweet_input_ever_positive": true,
+      "source_spikes_by_group": {
+        "odor": 4638,
+        "sweet": 2641,
+        "club": 17
+      },
+      "feeding_motor_spikes": 28,
+      "food_ingested": 0.037440000000000084,
+      "requested_behavior_counts": {
+        "rest": 16,
+        "walk": 0,
+        "feed": 234
+      },
+      "positive_intake_required_for_success": false
+    }
+  ],
+  "paired_mechanisms": {
+    "locomotor": {
+      "comparison_available": true,
+      "paired_neural_intervals": 1000,
+      "first_ordered_input_difference_tick": 21,
+      "first_non_sensory_spike_event_difference_tick": 4,
+      "first_downstream_difference_with_identical_input_history_tick": 4,
+      "physical_feedback_reaches_downstream_under_paired_input_history": true,
+      "entire_closed_loop_input_equality_required": false,
+      "interpretation": "Afferent-output block can change physical feedback and later input/RNG assignment. A matched-prefix downstream difference supports graph transmission, not natural navigation."
+    },
+    "on_food": {
+      "comparison_available": true,
+      "paired_neural_intervals": 250,
+      "first_ordered_input_difference_tick": null,
+      "first_non_sensory_spike_event_difference_tick": 4,
+      "first_downstream_difference_with_identical_input_history_tick": 4,
+      "physical_feedback_reaches_downstream_under_paired_input_history": true,
+      "entire_closed_loop_input_equality_required": false,
+      "interpretation": "Afferent-output block can change physical feedback and later input/RNG assignment. A matched-prefix downstream difference supports graph transmission, not natural navigation."
+    }
+  },
+  "sampling": "2ms displacement chords; steady mute slice uses intervals0.85\u20131.2s,post-restore1.5\u20132s; no smoothing.",
+  "biological_behavior_validated": false
+}

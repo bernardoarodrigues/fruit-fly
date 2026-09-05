@@ -1,0 +1,51 @@
+{
+  "kind": "read-only interface audit and proposed implementation boundary; no runtime changes",
+  "inspected_at": "2026-09-05T02:34:18.547742+00:00",
+  "files": {
+    "fruitfly/simulation.py": "360103f900eb12069de60baa4ec671fb511c76832a1114c65b55a21916dab57c",
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/viewer.py": "91279549a2ae342d0f9dc71e88b319b49ea08205bfc440a1c92639a0a58855a4",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/proprioception.py": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "fruitfly/wind.py": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/web/app.js": "8992ccb5b05fc9ef00e23039a60d87381dedc576f89b4af35d5591ba49b5aede"
+  },
+  "body_required_methods": [
+    "observe()",
+    "advance(duration_s,drive_left,drive_right,behavior)",
+    "snapshot()",
+    "reset(seed=)",
+    "set_stimulus(name,value)",
+    "render(camera)",
+    "close()"
+  ],
+  "body_required_properties": [
+    "time_s",
+    "timestep",
+    "wind_reference"
+  ],
+  "proposed_extra_property": "control_timestep_s=0.002",
+  "source_physics_dt_s": 0.0002,
+  "source_control_dt_s": 0.002,
+  "existing_default_coupling_s": 0.005,
+  "first_optional_coupling_s": 0.002,
+  "default_coupling_valid_for_source_control": false,
+  "host_python": "3.12 main .venv",
+  "worker_python": "3.10.21 isolated tmp/flybody-env",
+  "first_supported_modes": [
+    "walk",
+    "rest",
+    "feed"
+  ],
+  "first_unsupported_features": [
+    "grooming templates",
+    "flight/takeoff/landing",
+    "FlyGym ommatidial vision",
+    "unvalidated world-illumination translation"
+  ],
+  "neutral_zero_hold": "Native position targets0, all6adhesiontargets1; originalfilters/gains; locomotor-policy output mute only, no force-free claim",
+  "dependencies_unchanged": true,
+  "runtime_changed": false
+}

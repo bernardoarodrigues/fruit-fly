@@ -1,0 +1,55 @@
+{
+  "kind": "Initial bounded FlyBody live UI inspection before finite-horizon pause fix",
+  "checked_at": "2026-09-05T02:50:17.579365+00:00",
+  "url": "http://127.0.0.1:8771/",
+  "source_sha256": {
+    "fruitfly/viewer.py": "91279549a2ae342d0f9dc71e88b319b49ea08205bfc440a1c92639a0a58855a4",
+    "fruitfly/simulation.py": "efbfa793c801563677c7de421452b26c9a3c3f783db7ff62f8a8a134904ac3d1",
+    "fruitfly/web/app.js": "b163bf407bc10cee14b3048f5c9439b83f260a50c0916c4d7ca80d66bbd3d73b",
+    "fruitfly/web/index.html": "c5a6b536d48758eee3c36c150c07d19572387a60edc5190bf6ab56d0bd9f3041"
+  },
+  "initial_paused_frame_inspected": true,
+  "full_graph_and_body_label_visible": true,
+  "native_lighting_label_visible": true,
+  "rendered_walk_observed": true,
+  "known_defect": "Reaching declared2s horizon emitsworkererror, exitsworker anddisablesReset; needsnormalfinite-trialpause handling inviewer. This isnotabiological/sourcephysicalfailure.",
+  "final_status": "error",
+  "error": "RuntimeError: Requested duration exceeds the bounded FlyBody horizon; no neural or physical step taken",
+  "t_s": 1.9999999999998124,
+  "brain_t_s": 2.0,
+  "physics": {
+    "native_time_s": 1.9999999999998124,
+    "tick": 1000,
+    "finite": true,
+    "warnings": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "up_z": 0.999347570123073,
+    "source_terminated": false,
+    "contact_count": 8,
+    "nq": 116,
+    "nv": 114,
+    "nu": 59,
+    "timestep_s": 0.0002,
+    "control_timestep_s": 0.002,
+    "max_abs_qacc": 88817.89137524934,
+    "initialization_settling_s": 0.0,
+    "horizon_s": 2.0,
+    "last_error": null
+  },
+  "motor_muted": true,
+  "frame_sequence": 102,
+  "checks": {
+    "two_seconds_reached": true,
+    "brain_did_not_step_past_body": true,
+    "full_graph": true
+  },
+  "successful_viewer_lifecycle_claim": false
+}

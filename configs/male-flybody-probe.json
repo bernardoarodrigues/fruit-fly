@@ -1,0 +1,13 @@
+{
+  "seed": 11,
+  "connectome": "data/processed/malecns_v1",
+  "neural_model": "shiu",
+  "body_backend": "flybody",
+  "coupling_s": 0.002,
+  "assay": "motor_probe",
+  "probe_hz": 40,
+  "enable_taste": true,
+  "proprioception": {"max_rate_hz": 30, "half_speed_rad_s": 5},
+  "body": {"food_position_mm": [6, 10]},
+  "viewer": {"camera": "follow", "fps": 8, "step_seconds": 0.01}
+}

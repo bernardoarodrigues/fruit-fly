@@ -1,0 +1,103 @@
+{
+  "operation": "Post-run relocation of intact raw directories and deterministic gzip copies; no simulation.",
+  "archiver_sha256": "ee6acaeacff63c77192bd5d4b699edc1f22017b3a1c765569aef537af90bb99b",
+  "plan_sha256": "6ab6b5f8bbcb4cc3343e97824c182e4c30e9d5d1902d21804cf56eb25f16d403",
+  "original_results": {
+    "path": "runs/flybody-loop-6ab6b5f8bbcb/results-original.json",
+    "sha256": "4f3ea136bd4b4f34c2395d230bed0b09ebcc015894ef12b558233906581bf735"
+  },
+  "path_mapping": {
+    "validation/flybody-loop/locomotor_feedback": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_feedback",
+    "validation/flybody-loop/locomotor_sensory_block": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_sensory_block",
+    "validation/flybody-loop/on_food_feedback": "runs/flybody-loop-6ab6b5f8bbcb/on_food_feedback",
+    "validation/flybody-loop/on_food_sweet_block": "runs/flybody-loop-6ab6b5f8bbcb/on_food_sweet_block"
+  },
+  "journals": [
+    {
+      "path": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_feedback/events.jsonl",
+      "sha256": "eb84a249c5957e7ea017f7aa66ec4b352ed7be8f1cfdb2e1147c6f2b9697ecf7",
+      "records": 7007,
+      "original_execution_path": "validation/flybody-loop/locomotor_feedback/events.jsonl",
+      "gzip_path": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_feedback/events.jsonl.gz",
+      "gzip_sha256": "49aef51decfc56f201252227430b593aaeaa3f28a95d86e49ed18432f6f2cd79",
+      "raw_bytes": 71837008,
+      "gzip_bytes": 19786742,
+      "all_original_file_hashes": {
+        "final.png": "d85240d828d2e75395d7b1c47dcc8551239e76182689c889fdb30a909d5d0fae",
+        "condition.json": "7124b0fe644094bd21686236096dc28a7ff148fac26d693dbbff985808159ed7",
+        "initial.png": "0170e2f114d4c0dcf95816a92733fa7a900ddd97b578fef10dca12febffefd42",
+        "events.jsonl": "eb84a249c5957e7ea017f7aa66ec4b352ed7be8f1cfdb2e1147c6f2b9697ecf7",
+        "progress.json": "d00f97a3b2d49255dbc83fe7a1ee5dc1ae28baad201322a1a0184e9c38322359",
+        "runner/manifest.json": "4692f1ef4cce212c80d3b7a028363f97614a84c6edc99d398d4ba14e202eb4ca",
+        "runner/flybody-worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runner/final.json": "241970164cc38704afa80e5ec3b2858679fc9f2118fb0e47e9292f789329d35a",
+        "runner/telemetry.jsonl": "a39416e5b1389a88eda4c3cfeec5890732f68cbaabc8a9d096e61da8b43a9d97"
+      }
+    },
+    {
+      "path": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_sensory_block/events.jsonl",
+      "sha256": "3fba228f945b7f838df7cb1ed263cd1f565caf8199355f4ac5603dccfbfaa388",
+      "records": 7007,
+      "original_execution_path": "validation/flybody-loop/locomotor_sensory_block/events.jsonl",
+      "gzip_path": "runs/flybody-loop-6ab6b5f8bbcb/locomotor_sensory_block/events.jsonl.gz",
+      "gzip_sha256": "c7026f5eff0d508fb66fcc606cfba58ea0296aca07a6098926432a32806725e2",
+      "raw_bytes": 71507969,
+      "gzip_bytes": 19651682,
+      "all_original_file_hashes": {
+        "final.png": "ddb1b94b0aee6fd481ee16b5048a4bde89ea76602e4f402004571dfba76d2175",
+        "condition.json": "2c32e6bae0331df704e1ddffbbe4a72acfb69760893e9f442f2c4bf61ab4aa4f",
+        "initial.png": "0170e2f114d4c0dcf95816a92733fa7a900ddd97b578fef10dca12febffefd42",
+        "events.jsonl": "3fba228f945b7f838df7cb1ed263cd1f565caf8199355f4ac5603dccfbfaa388",
+        "progress.json": "d00f97a3b2d49255dbc83fe7a1ee5dc1ae28baad201322a1a0184e9c38322359",
+        "runner/manifest.json": "4aa77922ee640c1c734197c6cbfba44e87ad45b0f3e881a9c65b754299da524d",
+        "runner/flybody-worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runner/final.json": "8020de6d1f1d7ce7950475057228ac4d4b7a4b8e91ca793b8156dde73f5b77e0",
+        "runner/telemetry.jsonl": "2e7c34fe4e9cea6fcd56fe0bc5c22a565d1b8d793da8b95ebc161f94fa75004c"
+      }
+    },
+    {
+      "path": "runs/flybody-loop-6ab6b5f8bbcb/on_food_feedback/events.jsonl",
+      "sha256": "fa7acfed78a782d0d8e3952d75df59def3265b9892917479e5822b45de3532e5",
+      "records": 1753,
+      "original_execution_path": "validation/flybody-loop/on_food_feedback/events.jsonl",
+      "gzip_path": "runs/flybody-loop-6ab6b5f8bbcb/on_food_feedback/events.jsonl.gz",
+      "gzip_sha256": "2336ac433b41289ae79b6c10d971ba50cc9dde54c6394d4cb1c5f29f33d1729f",
+      "raw_bytes": 18248168,
+      "gzip_bytes": 4882455,
+      "all_original_file_hashes": {
+        "final.png": "7084f3aee0e9e454f7fbbd9e4f6db51a469e4ac47349a7649556bb924ef5d6f0",
+        "condition.json": "42aef0f6d986a18888e33c7a2b317b08615b6a278a08594a8811b8158812352a",
+        "initial.png": "dc90a49d77f2d3de178451514cd5796022c96101da65569482a3f7645890aa5f",
+        "events.jsonl": "fa7acfed78a782d0d8e3952d75df59def3265b9892917479e5822b45de3532e5",
+        "progress.json": "2a4c9a0d9aae2790f1073713009af48e015d61f76605832d17073c11d58f2e56",
+        "runner/manifest.json": "a7d0d1ad1cfa26f0ce9d6d86be82bac9fb4822a21bb3bb751fe0244b50e2f84e",
+        "runner/flybody-worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runner/final.json": "8d81eded36cc66f55e1dea6ae478a8832881219a4b011914bd053bc469a40f5a",
+        "runner/telemetry.jsonl": "4c3d3e38939804f2425bb37de9970dc145ecca9baa5194e8bb9a1379aa55c485"
+      }
+    },
+    {
+      "path": "runs/flybody-loop-6ab6b5f8bbcb/on_food_sweet_block/events.jsonl",
+      "sha256": "c23607ddd4f5bea14cb5d28658ce830d61cc5d7ff26436a647a3d9dba714469b",
+      "records": 1753,
+      "original_execution_path": "validation/flybody-loop/on_food_sweet_block/events.jsonl",
+      "gzip_path": "runs/flybody-loop-6ab6b5f8bbcb/on_food_sweet_block/events.jsonl.gz",
+      "gzip_sha256": "5a7361a9c3c1034892eab5953d2a613a43e41b821fc503c544ba5b498870d073",
+      "raw_bytes": 18288597,
+      "gzip_bytes": 4895565,
+      "all_original_file_hashes": {
+        "final.png": "7084f3aee0e9e454f7fbbd9e4f6db51a469e4ac47349a7649556bb924ef5d6f0",
+        "condition.json": "f21d3f2380774c9cb02aa78c4d188482dfd6b88a181e7f90caca710a53333de9",
+        "initial.png": "dc90a49d77f2d3de178451514cd5796022c96101da65569482a3f7645890aa5f",
+        "events.jsonl": "c23607ddd4f5bea14cb5d28658ce830d61cc5d7ff26436a647a3d9dba714469b",
+        "progress.json": "2a4c9a0d9aae2790f1073713009af48e015d61f76605832d17073c11d58f2e56",
+        "runner/manifest.json": "ad7dbb1575a98da69b87e04cd0ec9c638b4f6ad2d2ec671f3f09cdb084b5d32b",
+        "runner/flybody-worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runner/final.json": "e02354bb37267297f33b54677d1cc772e5d6057bbec32109e9426590fa28906a",
+        "runner/telemetry.jsonl": "714c9432a58dc2f816f9b720c9b0abfb66ae86112c12db0d32fb3ee39fe254a7"
+      }
+    }
+  ],
+  "original_files_preserved": true,
+  "historical_path_note": "Paths inside byte-preserved manifests/telemetry/condition files identify their original execution location; resolve through path_mapping."
+}

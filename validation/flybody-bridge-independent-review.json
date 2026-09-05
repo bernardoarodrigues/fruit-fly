@@ -1,0 +1,94 @@
+{
+  "review_scope": "Read-only source review and independent calculations on saved arrays; no new physics, policy inference, or fullbrain run",
+  "passed_saved_array_checks": true,
+  "producer_metric_helpers_imported": false,
+  "trials": [
+    {
+      "assay": "zero_start",
+      "all_samples": 1001,
+      "action_samples": 1000,
+      "max_absolute_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "pose_cm_quat": 0.0,
+        "actuator_length": 0.0,
+        "actuator_activation": 0.0,
+        "tibia_rad": 0.0,
+        "claw_positions_mm": 0.0,
+        "up_z": 0.0,
+        "support_dyne_by_leg": 0.0,
+        "native_action": 0.0,
+        "shadow_canonical_action": 0.0,
+        "native_action_vs_ctrl": 0.0,
+        "reference_target_before_next_action": 0.0
+      },
+      "native_time_error_s": 1.8762769116165146e-13,
+      "contact_sum_error_dyne": 0.0,
+      "ground_force_conversion_error_g_mm_s2": 0.0,
+      "active_tarsal_contact_entries": 6006,
+      "native_trace": "runs/flybody-stance-20260905T022318Z/neutral_zero-zero_start.npz",
+      "native_trace_sha256": "34194e84a5c0cea273103094cc9d3388958de8f9ae37b1037cde3ec35bd6b159",
+      "bridge_trace": "runs/flybody-bridge-20260905T024617187365Z/zero_start.jsonl",
+      "bridge_trace_sha256": "175ad4ee238cc0d28112c500244b9f47ba56240df37274c8567c2ed0c224d363"
+    },
+    {
+      "assay": "walk_stop_resume",
+      "all_samples": 1001,
+      "action_samples": 1000,
+      "max_absolute_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "pose_cm_quat": 0.0,
+        "actuator_length": 0.0,
+        "actuator_activation": 0.0,
+        "tibia_rad": 0.0,
+        "claw_positions_mm": 0.0,
+        "up_z": 0.0,
+        "support_dyne_by_leg": 0.0,
+        "native_action": 0.0,
+        "shadow_canonical_action": 0.0,
+        "native_action_vs_ctrl": 0.0,
+        "reference_target_before_next_action": 0.0
+      },
+      "native_time_error_s": 1.8762769116165146e-13,
+      "contact_sum_error_dyne": 0.0,
+      "ground_force_conversion_error_g_mm_s2": 0.0,
+      "active_tarsal_contact_entries": 4432,
+      "native_trace": "runs/flybody-stance-20260905T022318Z/neutral_zero-walk_stop_resume.npz",
+      "native_trace_sha256": "1152bc4cc0a746169399e4e7539529e019b80a62e1883277f2a374b6712d24cf",
+      "bridge_trace": "runs/flybody-bridge-20260905T024617187365Z/walk_stop_resume.jsonl",
+      "bridge_trace_sha256": "10abda189638de8a908db6065d33aa4addc5670da748f066bb870d9406b1458f"
+    }
+  ],
+  "files": {
+    "validation/flybody-bridge-plan.json": "2d322d2cdfe3e525c0ceb66a01ceacfc9b47e0f77ab6581d8bd8f5ced9ab0f11",
+    "validation/flybody-bridge-validation.json": "fb43801758b481fcdd3afd1a8279edf61fa2506b30e6312c9c343f15d5bcbcfd",
+    "fruitfly/flybody_bridge.py": "27717f05b27861ac07991500ba9ba16f81c4409961cb04a5883051528f1da6c4",
+    "fruitfly/flybody_worker.py": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+    "fruitfly/simulation.py": "efbfa793c801563677c7de421452b26c9a3c3f783db7ff62f8a8a134904ac3d1",
+    "tests/test_flybody_bridge.py": "9686fbf2f544481ee76d62af1163028dfcd0a4284225c3a441794cb22facf7f0",
+    "tests/test_simulation.py": "28adb1ebd81e3f78e3b2c7f02afffe60d9bb1f7bd545ed8dc476a67476fb2183",
+    "scripts/review_flybody_bridge.py": "5b2bbf89a67edc61d83ea92805d45cd575a21bb3015f592cb38cb4ec6ec0ad1f",
+    "data/raw/flybody/source/flybody/fly_envs.py": "0c520d4ae2daa051b838dafa7ef595fc260a035c1b7516fd4c0afdb4c231e781",
+    "data/raw/flybody/source/flybody/tasks/base.py": "a31b8b06b052d19f6108ae11f1f88e0d6ac92096a3c3a4db364774c43775385a",
+    "data/raw/flybody/source/flybody/tasks/walk_imitation.py": "6e155c1007de189845827f3c4db2d2572f7c377cef720776e1efd9c7b1a9d253",
+    "data/raw/flybody/source/flybody/tasks/synthetic_trajectories.py": "4296d195c5debba580e422b3e30fba742d5b62a039a45e7b7c5a715d102e2430",
+    "data/raw/flybody/source/flybody/tasks/task_utils.py": "a8b9cb7f03c2bdf5f907fe41c9f66b67be9d39c8e8bc6b62a3f7ead39774c915"
+  },
+  "primary_velocity_point_source": "https://github.com/google-deepmind/mujoco/blob/3.2.7/src/engine/engine_support.c#L1171-L1181",
+  "velocity_point_limit": "mjOBJ_BODY samples thorax inertial-center velocity; public pose is the free-joint attachment origin. They are not interchangeable derivative measurements.",
+  "reported_defects_addressed_by_owners": [
+    "Whole-duration horizon guard before neural/sensor mutation",
+    "Cached body failure receipt when normal snapshot is invalid",
+    "Partial native-step failures preserve original worker error without a full host physiology tick",
+    "EOF/timeout/framing failure makes the transport terminal"
+  ],
+  "unvalidated": [
+    "Physical rest robustness beyond the two saved schedules",
+    "Natural male behavior or a biological DN-to-motor law",
+    "Physiological receptor positions, thermal/light/wind transduction",
+    "Continuous contact occupancy between 2ms samples",
+    "Independent contact solve; saved diagnostic force consistency is checked",
+    "Arbitrary forced worker kill, fragmented write, or exhausted disk during this review"
+  ]
+}

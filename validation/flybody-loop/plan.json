@@ -1,0 +1,165 @@
+{
+  "scope": "Predeclared full-MaleCNS/FlyBody locomotor and on-food mechanism assays.\n\nNo gain fitting, forced walking outcome, natural behavior or male-body claim.\nEvery actual ordered drive and completed neural/physical tick is journaled;\npartial source failures remain results. Run only after bridge/runner readiness.\n",
+  "config": {
+    "seed": 11,
+    "connectome": "data/processed/malecns_v1",
+    "neural_model": "shiu",
+    "body_backend": "flybody",
+    "coupling_s": 0.002,
+    "assay": "motor_probe",
+    "probe_hz": 40,
+    "enable_taste": true,
+    "proprioception": {
+      "max_rate_hz": 30,
+      "half_speed_rad_s": 5
+    },
+    "body": {
+      "food_position_mm": [
+        6.0,
+        10.0
+      ],
+      "food_radius_mm": 3.0
+    },
+    "viewer": {
+      "camera": "follow",
+      "fps": 8,
+      "step_seconds": 0.01
+    }
+  },
+  "coupling_s": 0.002,
+  "seed": 11,
+  "physics_dt_s": 0.0002,
+  "neural_dt_ms": 0.1,
+  "expected_neurons": 166700,
+  "expected_edges": 25582938,
+  "conditions": [
+    {
+      "name": "locomotor_feedback",
+      "duration_s": 2.0,
+      "assay": "motor_probe",
+      "motor_mute": true,
+      "outgoing_blocks": [],
+      "food_position_mm": [
+        6.0,
+        10.0
+      ]
+    },
+    {
+      "name": "locomotor_sensory_block",
+      "duration_s": 2.0,
+      "assay": "motor_probe",
+      "motor_mute": true,
+      "outgoing_blocks": [
+        "odor",
+        "sweet",
+        "club"
+      ],
+      "food_position_mm": [
+        6.0,
+        10.0
+      ]
+    },
+    {
+      "name": "on_food_feedback",
+      "duration_s": 0.5,
+      "assay": "sensory",
+      "motor_mute": false,
+      "outgoing_blocks": [],
+      "food_position_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "on_food_sweet_block",
+      "duration_s": 0.5,
+      "assay": "sensory",
+      "motor_mute": false,
+      "outgoing_blocks": [
+        "sweet"
+      ],
+      "food_position_mm": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "sensory_outgoing_groups": [
+    "odor",
+    "sweet",
+    "club"
+  ],
+  "interventions_locomotor_pair": [
+    {
+      "before_tick": 300,
+      "t_s": 0.6,
+      "motor_readout_muted": true
+    },
+    {
+      "before_tick": 600,
+      "t_s": 1.2,
+      "motor_readout_muted": false
+    }
+  ],
+  "sensory_block_schedule": "Block declared source groups before tick0 in each paired condition. Preserve actual odor/sweet/club inputs throughout. Direct40Hz DNg97 probe exists only in locomotor pair.",
+  "source_sha256": {
+    "fruitfly/__init__.py": "2d9a7a3452cb46c2b5ffda7f5618e7696a9796253391dbc499781825f67f6abc",
+    "fruitfly/body.py": "f38d1238ea58abdd6a0bfde1aaaaa186c8840c4b9bb1f1c82f9fbd954db5bdb1",
+    "fruitfly/circadian.py": "85a875d94174a661278dadebcee4f5c5de39755acab16e7b3b665d325d2d686c",
+    "fruitfly/conductance.py": "c9e20a3e0124456d2cd7622dbac8418d862227f9c63b014e73befb7bd3a38b5c",
+    "fruitfly/data.py": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+    "fruitfly/flybody_bridge.py": "27717f05b27861ac07991500ba9ba16f81c4409961cb04a5883051528f1da6c4",
+    "fruitfly/flybody_worker.py": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+    "fruitfly/graded.py": "7bc09c71ce7fb3e59ab1c6a913feae53dd644ddf8915a23566c18382e5019906",
+    "fruitfly/grooming.py": "dc4ca4d18fe8ce84dcd8e19ee78f288e9d892ae1e48463ee85edca5540a36e6b",
+    "fruitfly/illumination.py": "ea7d7ca1e3863d698cc81be4eb8261cdd128ec3c6cce4c8e5f1aa8fdf58ad926",
+    "fruitfly/morphology.py": "b0c21707a0f1eac304d5a5a59deecfe3a6e0672d1503cfe1c583de2435536cde",
+    "fruitfly/multiview.py": "9f543d56cf9d62b80237d662a587abe671f9fd4cdae7cb4df2f511b8998a3f22",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "fruitfly/proprioception.py": "9bed208d38eda03f8d37052f4f16979bd8b52c5f45e18cf37fe6fc0a9f0c5889",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/simulation.py": "efbfa793c801563677c7de421452b26c9a3c3f783db7ff62f8a8a134904ac3d1",
+    "fruitfly/viewer.py": "91279549a2ae342d0f9dc71e88b319b49ea08205bfc440a1c92639a0a58855a4",
+    "fruitfly/wind.py": "11ab78bbb1c24dedbdfa4b55bcf6ab7909783ad9d99d2f255ecb1e1fcd137d8d",
+    "scripts/check_flybody_loop.py": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+    "configs/male-flybody-probe.json": "2345fb46747fbe490a6fbe6b009864653ec647c69817009e80e76d9b4088158c",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "validation/flybody-inference-requirements.lock": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97",
+    "validation/flybody-stance-plan.json": "0708e313180371593699c54d7ed3f8c898406b1743ee5a9e492891cdd53b92c7",
+    "validation/flybody-stance-experiment.json": "3ad235422fb0161b04a27764d8044492af84329480dc2d4a9183c9f719152908",
+    "docs/flybody-integration-plan.md": "71a0cbb5dfc965331ca4788c385e1ba14d401e75a06faa1d6dd4ee3b7a636968",
+    "validation/flybody-bridge-validation.json": "fb43801758b481fcdd3afd1a8279edf61fa2506b30e6312c9c343f15d5bcbcfd",
+    "data/processed/malecns_v1/manifest.json": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7"
+  },
+  "hash_conventions": {
+    "spike_events": "SHA256:little-endian uint64 event count,then ordered int64 neuron IDs,then ordered float64 absolute milliseconds; all events recorded.",
+    "drives": "SHA256 of compact sorted-key JSON containing ordered indices/IDs/rates/current/weight/refractory declaration; no sorting of input arrays."
+  },
+  "gates": {
+    "completion": "Locomotor trials each complete1000 intervals; on-food trials each250. Preserve and fail incomplete/source-terminated conditions.",
+    "clocks": "At each tick brain/body/native time agrees with tick*.002 within1e-9; native tick agrees.",
+    "finite": "Every retained qpos/qvel/qacc/act/ctrl and brain voltage/synaptic array finite; zero native warning counters.",
+    "mechanism": "Exact ordered encoder composition and source IDs; actual physical antenna/tarsal/tibia mappings; exact original neutral53-zero/six-adhesion1 command whenever not walking.",
+    "mute": "Ticks300\u2013599 request rest with zero left/right while full-graph spikes continue; no requirement for forced postmute walking.",
+    "sensory_block": "Only declared sensory-source outgoing mask changes; native inputs still delivered; report downstream differences within identical-input-history prefix.",
+    "transmission_evidence": "Require a non-sensory spike-event difference in the locomotor pair while all prior/current ordered inputs and RNG states match. Absence fails this evidence criterion,not necessarily interface plumbing.",
+    "resources": "Finite normalized ledger residuals below1e-8.",
+    "lifecycle": "Before trial, same-seed reset reproduces initial native state; advance0 and initial render preserve native/neural clocks and state."
+  },
+  "not_gates": [
+    "No forced trajectory, minimum walking distance, regained walking, natural navigation, feeding or biological stance claim.",
+    "No requirement of positive food intake or differential MN9 recruitment; report those endpoints separately from input/control plumbing.",
+    "No requirement that closed-loop afferent drives or afferent spikes stay identical after the output block alters feedback."
+  ],
+  "failure_retention": "Flush ordered encoder/neural-start/neural-complete/physical events each tick to condition JSONL; save any failed completed-step native cache and latest neural time before cleanup; retain partial condition results.",
+  "claim_limits": [
+    "Fullgraph Shiu current-based pathology remains, including potentially implausible hyperpolarization.",
+    "Female-derived FlyBody morphology; pretrained motor policy and engineering neutral hold.",
+    "2ms physical sensory/physiology sampling, not all0.2ms substeps; contact between snapshots may be missed.",
+    "Two selected2s locomotor and two0.5s on-food trials,one seed,one floor; no persistent-viewer or robustness claim.",
+    "On-food assays retain odor and club input: not taste-only activation. Zero taste in off-path-food locomotor trials is reported explicitly if observed.",
+    "No training,gain tuning,new sensory calibration,world-to-motor shortcut or prerecorded physical replay."
+  ]
+}

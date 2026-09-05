@@ -62,6 +62,11 @@ function update(data) {
   const assay = assays[telemetry.assay] || ["Assay not reported", "The runtime has not identified its experiment mode."];
   setText("assay-label", assay[0]);
   setText("assay-description", assay[1]);
+  const bodyLabels = {
+    nmf: "NeuroMechFly body · CPG/reflex motor surrogate",
+    flybody: "FlyBody body · learned motor surrogate with an engineering posture hold · bounded trial",
+  };
+  setText("body-adapter", bodyLabels[telemetry.body_backend] || "Body adapter not reported");
   $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", labels[data.status] || data.status);
@@ -117,7 +122,7 @@ function update(data) {
   }
   const vision = telemetry.vision || {};
   const illumination = telemetry.illumination || {};
-  const lightModes = {fixed_world_directional: "Fixed arena light", legacy_camera_headlight: "Camera-attached light"};
+  const lightModes = {fixed_world_directional: "Fixed arena light", legacy_camera_headlight: "Camera-attached light", source_native_flybody: "Source FlyBody lighting"};
   setText("lighting-mode", lightModes[illumination.mode] || "Lighting source not reported");
   setText("vision-status", vision.enabled === true ? "Camera enabled" : vision.enabled === false ? "Disabled" : "Not reported");
   setText("vision-values", Array.isArray(vision.mean_by_eye)
