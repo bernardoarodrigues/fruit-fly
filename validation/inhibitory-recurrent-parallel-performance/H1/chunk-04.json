@@ -1,0 +1,256 @@
+{
+  "status": "complete",
+  "start_tick": 200,
+  "end_tick": 250,
+  "completed_ticks": 50,
+  "requested_ticks": 50,
+  "coherent_state": true,
+  "failure": null,
+  "spike_indices": {
+    "array": "root__spike_indices",
+    "shape": [
+      28
+    ],
+    "dtype": "int32"
+  },
+  "spike_ticks": {
+    "array": "root__spike_ticks",
+    "shape": [
+      28
+    ],
+    "dtype": "int64"
+  },
+  "candidate": {
+    "array": "root__candidate",
+    "shape": [
+      50,
+      36
+    ],
+    "dtype": "bool"
+  },
+  "applied": {
+    "array": "root__applied",
+    "shape": [
+      50,
+      36
+    ],
+    "dtype": "bool"
+  },
+  "selected_v": {
+    "array": "root__selected_v",
+    "shape": [
+      51,
+      48
+    ],
+    "dtype": "float64"
+  },
+  "selected_s": {
+    "array": "root__selected_s",
+    "shape": [
+      51,
+      48
+    ],
+    "dtype": "float64"
+  },
+  "selected_h": {
+    "array": "root__selected_h",
+    "shape": [
+      51,
+      48
+    ],
+    "dtype": "float64"
+  },
+  "selected_prethreshold_v": {
+    "array": "root__selected_prethreshold_v",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "float64"
+  },
+  "selected_available": {
+    "array": "root__selected_available",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "bool"
+  },
+  "selected_fired": {
+    "array": "root__selected_fired",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "bool"
+  },
+  "selected_delivery_available": {
+    "array": "root__selected_delivery_available",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "bool"
+  },
+  "selected_direct_available": {
+    "array": "root__selected_direct_available",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "bool"
+  },
+  "selected_synaptic_available": {
+    "array": "root__selected_synaptic_available",
+    "shape": [
+      50,
+      48
+    ],
+    "dtype": "bool"
+  },
+  "per_tick": {
+    "phase_min_mv": {
+      "array": "root__per_tick__phase_min_mv",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "phase_max_mv": {
+      "array": "root__per_tick__phase_max_mv",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "phase_min_index": {
+      "array": "root__per_tick__phase_min_index",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "int32"
+    },
+    "phase_max_index": {
+      "array": "root__per_tick__phase_max_index",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "int32"
+    },
+    "phase_nonfinite_count": {
+      "array": "root__per_tick__phase_nonfinite_count",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "int64"
+    },
+    "phase_below_reversal_count": {
+      "array": "root__per_tick__phase_below_reversal_count",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "int64"
+    },
+    "state_invalid_count": {
+      "array": "root__per_tick__state_invalid_count",
+      "shape": [
+        50,
+        2
+      ],
+      "dtype": "int64"
+    },
+    "work": {
+      "array": "root__per_tick__work",
+      "shape": [
+        50,
+        3
+      ],
+      "dtype": "int64"
+    },
+    "solver": {
+      "array": "root__per_tick__solver",
+      "shape": [
+        50,
+        4
+      ],
+      "dtype": "float64"
+    },
+    "edge_counts": {
+      "array": "root__per_tick__edge_counts",
+      "shape": [
+        50,
+        4,
+        3
+      ],
+      "dtype": "int64"
+    },
+    "phase_reached": {
+      "array": "root__per_tick__phase_reached",
+      "shape": [
+        50
+      ],
+      "dtype": "int8"
+    }
+  },
+  "selected_events": {
+    "array": "root__selected_events",
+    "shape": [
+      357,
+      5
+    ],
+    "dtype": "int64"
+  },
+  "partial": null,
+  "schema": {
+    "phases": [
+      "prethreshold",
+      "postexternal",
+      "postreset"
+    ],
+    "edge_counts": [
+      "visited_unblocked",
+      "accepted",
+      "target_unavailable",
+      "source_blocked"
+    ],
+    "signs": [
+      "negative",
+      "zero",
+      "positive"
+    ],
+    "work": [
+      "available_cell_updates",
+      "hybrid_quadrature_calls",
+      "inverse_iterations_max"
+    ],
+    "solver": [
+      "inverse_residual_max",
+      "tail_bound_max_mv",
+      "h_max_before",
+      "stiffness_max_before"
+    ],
+    "event_columns": [
+      "tick",
+      "source_index",
+      "edge_index",
+      "target_index",
+      "disposition"
+    ],
+    "dispositions": {
+      "accepted": 0,
+      "target_unavailable": 1,
+      "source_blocked": 2
+    },
+    "selected_delivery_available": "Compatibility alias for selected_direct_available, not package1 synaptic eligibility",
+    "selected_synaptic_available": "Target eligibility only; the independent presynaptic outgoing block still applies"
+  },
+  "logical_rng_before": 14966786807645541108,
+  "logical_rng_completed_prefix": 11351544895969189643,
+  "checkpoint_digest": "48a7ed583cdc98d47646e82d924370534d5e791bcf140d5bcaa60cfbee5ae8db"
+}

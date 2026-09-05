@@ -1,0 +1,348 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T05:37:31.161372+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "executable": "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.5.2",
+    "numba": "0.67.0",
+    "scipy": "1.18.1"
+  },
+  "sources": {
+    "scripts/probe_inhibitory_recurrent_parallel.py": {
+      "bytes": 10706,
+      "sha256": "0827e7d55168e0844450512d70885607953d67145c7306b00f6e60442c7f106e"
+    },
+    "scripts/inhibitory_recurrent_parallel.py": {
+      "bytes": 24826,
+      "sha256": "1d787238144c74df46512bd266bbaefb7fbf50caebd67c87343f292406cd23c6"
+    },
+    "scripts/inhibitory_recurrent_kernel.py": {
+      "bytes": 22085,
+      "sha256": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f"
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    "scripts/probe_inhibitory_recurrent_v2.py": {
+      "bytes": 20751,
+      "sha256": "ac9d61bfb32733ea50dce70a54e2902d7855e58c90c14503eb0d78cb8ece0b24"
+    },
+    "fruitfly/neural.py": {
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "validation/inhibitory-recurrent-parallel-checks.json": {
+      "bytes": 5781,
+      "sha256": "9c968800bf79edace82542566f525b407c801b1ab6077232a7b8e295cc0159a8"
+    },
+    "validation/inhibitory-recurrent-parallel-independent-review.json": {
+      "bytes": 19718,
+      "sha256": "ed545c36cba3cb2bc48544617bc7351011f12eb6a1b1ba80be14506622424531"
+    },
+    "validation/inhibitory-recurrent-performance-plan-v2.json": {
+      "bytes": 6567,
+      "sha256": "b8dce6c73dad3f0502ef5c13cc866257a84dc33f9adf5c7b5dd3b62ac17e6360"
+    },
+    "validation/inhibitory-recurrent-performance-v2/results.json": {
+      "bytes": 69536,
+      "sha256": "d9a8269b2e24538bb652367c3ac11bcf4c8a5f33b91d4c0f75377fb8b28dac82"
+    },
+    "validation/inhibitory-recurrent-performance-v2/selection.npz": {
+      "bytes": 1116,
+      "sha256": "d93ee9ac4a07247c80cc31d3df6651d94931702d6c205b70026ca9668fd85a42"
+    },
+    "validation/inhibitory-recurrent-performance-v2/input-stream.npz": {
+      "bytes": 140906,
+      "sha256": "2e2abd7f9547ac66e133613fcaf33bca51253b8d62cd048ca3cac93170bf1f77"
+    },
+    "validation/inhibitory-recurrent-performance-v2/scalar-grid.npz": {
+      "bytes": 2496,
+      "sha256": "c5cdc465a07de41808018e6c2c0bad97fe2343f1170586b6c947a8ac3a50841b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/final.npz": {
+      "bytes": 221758,
+      "sha256": "cca31f5267e25d935afbefbf350955f8479322af2b4d42c5019c41da20bd4e6a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-04.npz": {
+      "bytes": 51388,
+      "sha256": "f2778b01331929e1ce425dfdf58844e3ce3166afc5ef9c3f06d7ac9ae82da681"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-05.npz": {
+      "bytes": 52270,
+      "sha256": "a4a8e683c7ac8354f53705f580d4781c45e06b09c74ae9735fc4bb8dbdbb2d27"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-07.npz": {
+      "bytes": 53904,
+      "sha256": "0434da68d9026a8a760f42422bd4010fbb39871551b606301163faef34b3a0f2"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-06.npz": {
+      "bytes": 51218,
+      "sha256": "0a62c11dc2d5e565962cbd4b6384b9b7d971f3590cabc63353b446e3f8ce6a87"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-02.npz": {
+      "bytes": 38608,
+      "sha256": "f91d01053581169d3cb2c08f6b53689bff920f75fc1edade6b3dfac3a4039947"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-03.npz": {
+      "bytes": 47238,
+      "sha256": "9cfc322e4e290e4470f05c82b8e0f96154e3eda38dbf0c3b7c6da441a4fcd839"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-01.npz": {
+      "bytes": 13148,
+      "sha256": "25d964839c546f5c58dd19253d9d6a2be8d2c765989297b2548770e2f7b28b8f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-08.npz": {
+      "bytes": 51141,
+      "sha256": "6cfff6768e609e58cfe0f94bc96999030271efed040e55d5424030dcaa20720e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C0/chunk-09.npz": {
+      "bytes": 49763,
+      "sha256": "9ed269ebab901181531047f81c5644392a5c414153f3864edd5ddc28dc558f19"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/final.npz": {
+      "bytes": 493668,
+      "sha256": "6f9485d14bee4039963b8707003dabd77240e0ed1299310ef1d0811cf3e6079f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-04.npz": {
+      "bytes": 52372,
+      "sha256": "30bc7d252c3d532903f30110e240581f3b28f37a7d8306ed3b0e867424112840"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-05.npz": {
+      "bytes": 53864,
+      "sha256": "11437b1acbad1f132f8440fdf22d1ef75356fef0c8d97f837e25aa732b8f958e"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-07.npz": {
+      "bytes": 54886,
+      "sha256": "78c8e0b985ac4c9e70405c5ce83c1eea8b451f50a0a4b8e98b1dd753a91b39c5"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-06.npz": {
+      "bytes": 54307,
+      "sha256": "0ec3e24c8a5ed974ca6fad023c3cb4af8676f6d7056da5abf826df754ecde281"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-02.npz": {
+      "bytes": 39252,
+      "sha256": "729478ada1371ed240964bfda9fe7f1b96721d8c26b2dee0695fdf2e6f0459a1"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-03.npz": {
+      "bytes": 49087,
+      "sha256": "602cfde814c8fcc34103805f1724eb417e73fc976de39eae5dd94f8ce0d0ceb4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-01.npz": {
+      "bytes": 13142,
+      "sha256": "70b2808293aaf088e835214cb65925f9629ab39eb7303129d5933de0ac5e7554"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-08.npz": {
+      "bytes": 65166,
+      "sha256": "b518762cde743df71adefa8499b1b44815f4e4e115a1728acfc7afca1e7d1d6b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/C1/chunk-09.npz": {
+      "bytes": 81107,
+      "sha256": "be68f089dc409945d66c39c73f5dd5c1aa45ef4e23b05d4eb78bdd4e56af4e68"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/final.npz": {
+      "bytes": 292101,
+      "sha256": "224ed7e436cf0fe3e296254dde63920602fe0ad0989c54408263a4d9f2d59724"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-04.npz": {
+      "bytes": 55166,
+      "sha256": "a3b0415fe9d519839770199b18becc315017025f574ecbbe68b7fa7186725782"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-05.npz": {
+      "bytes": 69335,
+      "sha256": "f6bc3837f1047258f46621d5fff2888032ebf0c4559ffdfc56eb0c6aac20a56f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-07.npz": {
+      "bytes": 68891,
+      "sha256": "d0471945fdbd800c7c1f77f797fe620a63d2fa59a924e87778384464035430b8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-06.npz": {
+      "bytes": 68912,
+      "sha256": "678ca386a12dd4a6b1f4a4b53a326217768d1fe94d2b52cc5bd71728f35872a7"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-02.npz": {
+      "bytes": 39252,
+      "sha256": "729478ada1371ed240964bfda9fe7f1b96721d8c26b2dee0695fdf2e6f0459a1"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-03.npz": {
+      "bytes": 49087,
+      "sha256": "602cfde814c8fcc34103805f1724eb417e73fc976de39eae5dd94f8ce0d0ceb4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-01.npz": {
+      "bytes": 13142,
+      "sha256": "70b2808293aaf088e835214cb65925f9629ab39eb7303129d5933de0ac5e7554"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-08.npz": {
+      "bytes": 67887,
+      "sha256": "88c39d51cd75b3ddb387157132a8bf9b3d5e42fecf3024ea69c71a580efcea4f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H1/chunk-09.npz": {
+      "bytes": 69706,
+      "sha256": "3d2d8d871fa6d5589b54e64344153a61141ffa47144b12d365929dffbd644948"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/final.npz": {
+      "bytes": 233594,
+      "sha256": "559994ea295dc3b38771efe607573fa93b706bcecd4758cfd7d2324107e9e17a"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-04.npz": {
+      "bytes": 54031,
+      "sha256": "43e0dc58637096f3a61492063e9829be73b720149259bbe0b61ef965926bedd4"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-05.npz": {
+      "bytes": 67140,
+      "sha256": "fb14244459e291f7c11eeefa094662ab98c53654b7dca3d9f4afe64990a1d7d8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-07.npz": {
+      "bytes": 67504,
+      "sha256": "245d4b28663bd6bb000e217a61ea9d088c9c961dbacd0fefe60e777b7b3f9c38"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-06.npz": {
+      "bytes": 64759,
+      "sha256": "3be796210ad3118ddb14afe44f6757c905231b721fc6d66cd7a96c5c693f01ac"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-02.npz": {
+      "bytes": 38608,
+      "sha256": "f91d01053581169d3cb2c08f6b53689bff920f75fc1edade6b3dfac3a4039947"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-03.npz": {
+      "bytes": 47238,
+      "sha256": "9cfc322e4e290e4470f05c82b8e0f96154e3eda38dbf0c3b7c6da441a4fcd839"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-01.npz": {
+      "bytes": 13148,
+      "sha256": "25d964839c546f5c58dd19253d9d6a2be8d2c765989297b2548770e2f7b28b8f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-00.npz": {
+      "bytes": 6149,
+      "sha256": "2e3677bff679a4289ef50b6c77565953bf3da9505bb5e1870b6f29340e112b94"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/initial.npz": {
+      "bytes": 11226,
+      "sha256": "75606b9fbb82a70413d29bdbda07b6dc52682700371ab3ee740d77b12059cec8"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-08.npz": {
+      "bytes": 67142,
+      "sha256": "0d01bec7aa8000f098c1f907d603a934652e8d28641df96d91db8cff772c127f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/H0/chunk-09.npz": {
+      "bytes": 65195,
+      "sha256": "4daef8b38112bd0ea65a934da0be3f23060a75917b27eed6148941aeb93d1c4f"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/final.npz": {
+      "bytes": 443172,
+      "sha256": "51aa25d0b3cbe7ca41624cbfd1ed3764b24eed1940d51ecf136ef5e2ca72cc3b"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-04.npz": {
+      "bytes": 1048,
+      "sha256": "fa91749f59af340c2a892588ef9d96d60182c78cc36777e607f466ffe8b65c03"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-05.npz": {
+      "bytes": 991,
+      "sha256": "abfd624ba34be933d419190b920337109c9bfbc5a9c85f783fa0094d1b052107"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-07.npz": {
+      "bytes": 980,
+      "sha256": "0376a1c6657d2aec2d3273ff9b55752e42e2ed98cf68068fe486d6973fc416fa"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-06.npz": {
+      "bytes": 1052,
+      "sha256": "64caa89d81baca62b911ca3e94002b6acf192c67f073d4219b59b5f661bbdef3"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-02.npz": {
+      "bytes": 900,
+      "sha256": "5a1c948e006bb4570f473a0bd114c061f1c8b571e2986b926a28df69fda6ab4d"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-03.npz": {
+      "bytes": 995,
+      "sha256": "86103a016edf526b8e8ce8bdae18d97b5df0e42a55a71d2cb4e68568b094c8cc"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-01.npz": {
+      "bytes": 898,
+      "sha256": "bc7218b325acc1b9b90021d482df9e43af9195bb711f7873ddd81a0f64489b44"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-00.npz": {
+      "bytes": 872,
+      "sha256": "437ab6ad80478a18c5d48798c446469a82169323dfab0e3a521450ee3a315cfc"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/initial.npz": {
+      "bytes": 22107,
+      "sha256": "b6e4f90e08fc3b918468441929170d92aa49d85d94e86e8c22e25e8af25f8136"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-08.npz": {
+      "bytes": 939,
+      "sha256": "979221b167d5821e7623c3fd993107a8a61cc8f3fa8278ba9d31efdab034f542"
+    },
+    "validation/inhibitory-recurrent-performance-v2/reference/chunk-09.npz": {
+      "bytes": 958,
+      "sha256": "c258c6c6bd5c58be2a93d8b29da384eece5ac1ef55d80d38f91a61a1c1e66e52"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    }
+  },
+  "purpose": "Exact matched four-thread performance comparison; unchanged neural equations and input. No scientific stimulus/seed panel or model promotion.",
+  "arms": [
+    "C0",
+    "C1",
+    "H0",
+    "H1"
+  ],
+  "seed": 11,
+  "threads": 4,
+  "duration_ms": 50,
+  "chunk_ms": 5,
+  "dt_ms": 0.1,
+  "input": "Reuse every saved serial uniform/probability/selection/RNG-boundary value; no new generator",
+  "equality": "Every saved numeric chunk array compared by dtype, shape and bytes; final complete canonical arrays and each 5ms state digest compared to serial. Global intermediate arrays were not archived by serial, so their digests are producer summaries.",
+  "timing": "Fresh construction and warmup separate from kernel calls. Serial timings are the prior same-protocol run, not paired simultaneous measurements or a timing-confidence study. Four-thread mode is fixed before results.",
+  "budget": {
+    "wall_seconds": 600,
+    "output_bytes": 2147483648,
+    "peak_rss_bytes": 8589934592
+  },
+  "enforcement": "Execution timer after preflight hashes; check before/after each5mschunk and arm-final archive; one operation can overshoot; final hashes/report outside enforcement.",
+  "failure": "Retain failure/result and any partial checkpoint, mark uncaught execution state incoherent and do not resume. No tuning after failed parity; a numerical mismatch blocks scientific panel use.",
+  "limits": [
+    "50ms baseline does not represent later inhibitory load or establish stability.",
+    "Parallel speed does not establish physiology or justify H1 promotion."
+  ]
+}

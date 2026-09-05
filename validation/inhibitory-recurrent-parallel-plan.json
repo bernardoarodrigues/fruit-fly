@@ -1,0 +1,55 @@
+{
+  "frozen_utc": "2026-09-05T05:31:34.555452+00:00",
+  "source_sha256": {
+    "scripts/check_inhibitory_recurrent_parallel.py": "8fa0c9bc6ec5db9196c60ce3b4231e8d1a7d055a934d9b1dddf2554a4ca60951",
+    "scripts/inhibitory_recurrent_parallel.py": "1d787238144c74df46512bd266bbaefb7fbf50caebd67c87343f292406cd23c6",
+    "scripts/inhibitory_recurrent_kernel.py": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f",
+    "scripts/inhibitory_factorial_solver.py": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+  },
+  "scope": "128-cell deterministic synthetic graph and detached interval arrays only; no anatomical graph or body",
+  "fixture": {
+    "cells": 128,
+    "steps": 300,
+    "dt_ms": 0.1,
+    "inputs": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112
+    ],
+    "rng": "NumPy default_rng seed11; caller-supplied draws",
+    "edges": "Five outgoing per cell; offsets1,2,3,7,11 modulo128; weights46,-23,0,70000,-69 float32",
+    "probabilities": [
+      0.05,
+      0.1,
+      0.3,
+      1.0,
+      0.0,
+      0.02,
+      0.5,
+      0.01
+    ],
+    "initial_s": "100 at each third cell, otherwise0",
+    "initial_h": "H only: repeating0,.1,3,100,1e8; C allzero"
+  },
+  "comparisons": [
+    "all four arms whole300ticks; complete output and checkpoint bytes",
+    "all four arms chunked0:7,7:71,71:300; per-chunk all output/checkpoint bytes and full/chunk final bytes",
+    "all four arms source block changed after2ticks before delayed delivery",
+    "H0/H1 failures: multiple invalid available cells, unavailable invalid state, postdelivery infinite-edge corruption, lower-bound violation; completed prefix and partial evidence exact",
+    "four worker IDs and optimized parfor evidence; detached valid/invalid/unavailable interval scratch leaves all native arrays unchanged",
+    "one-thread versus four-thread H outputs and checkpoints exact"
+  ],
+  "parity": "dtype,shape,raw bytes for every recursively contained array; exact scalar/schema equality",
+  "failure": "Retain failures and raw arrays; no full graph or parameter revision",
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "numpy": "2.5.2",
+    "numba": "0.67.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+  }
+}

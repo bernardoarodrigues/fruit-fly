@@ -1,0 +1,830 @@
+{
+  "schema": 1,
+  "completed_utc": "2026-09-05T05:37:18.017916+00:00",
+  "passed": true,
+  "scope": "Independent source inspection plus saved synthetic arrays; no kernel import, producer execution, full graph, or timing run.",
+  "reviewer_role": "Separate reviewer; authored earlier input/source/data reviews, not serial/parallel kernels or their synthetic/probe producers.",
+  "script_sha256": "23830b413188eb6e030d07b93e2cbca62cc252924b5fc4b0d2356f58f625ed79",
+  "inputs": {
+    "scripts/inhibitory_recurrent_parallel.py": "1d787238144c74df46512bd266bbaefb7fbf50caebd67c87343f292406cd23c6",
+    "scripts/inhibitory_recurrent_kernel.py": "52892eabb7124dfe6140f7c0cbc4d9047301978c6706053e3230d72280ec2b0f",
+    "scripts/inhibitory_factorial_solver.py": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+    "scripts/check_inhibitory_recurrent_parallel.py": "8fa0c9bc6ec5db9196c60ce3b4231e8d1a7d055a934d9b1dddf2554a4ca60951",
+    "scripts/probe_inhibitory_recurrent_parallel.py": "0827e7d55168e0844450512d70885607953d67145c7306b00f6e60442c7f106e",
+    "validation/inhibitory-recurrent-parallel-plan.json": "a0df93152521b691de5bb9e3f2f63e967ac520f3b64c9bdd2fda28ff81c82268",
+    "validation/inhibitory-recurrent-parallel-checks.json": "9c968800bf79edace82542566f525b407c801b1ab6077232a7b8e295cc0159a8",
+    "validation/inhibitory-recurrent-parallel-arrays.npz": "27150ce07c5e5117313129ae94b50ac01ab00444ed98beb0ee1b6fb1d99b004b",
+    "validation/inhibitory-recurrent-parallel-arrays.json": "1da2644b0d387efd70f6eadbc854e063501b72046e8cc5c70528070e4326c44d",
+    "validation/inhibitory-recurrent-parallel-compiler.txt": "30e352ac93f9d01692220efb89ec9ee4c958116a5db0a14f5de1cae1007b7044",
+    "scripts/probe_inhibitory_recurrent_v2.py": "ac9d61bfb32733ea50dce70a54e2902d7855e58c90c14503eb0d78cb8ece0b24",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "validation/inhibitory-recurrent-performance-v2/results.json": "d9a8269b2e24538bb652367c3ac11bcf4c8a5f33b91d4c0f75377fb8b28dac82"
+  },
+  "checks": [
+    {
+      "name": "frozen:scripts/inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/check_inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:scripts/probe_inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/inhibitory-recurrent-parallel-plan.json",
+      "passed": true
+    },
+    {
+      "name": "frozen:validation/inhibitory-recurrent-parallel-checks.json",
+      "passed": true
+    },
+    {
+      "name": "plan_link",
+      "passed": true
+    },
+    {
+      "name": "producer_passed_103",
+      "passed": true
+    },
+    {
+      "name": "plan_sources_match_receipt",
+      "passed": true
+    },
+    {
+      "name": "artifact:validation/inhibitory-recurrent-parallel-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "artifact:validation/inhibitory-recurrent-parallel-arrays.json",
+      "passed": true
+    },
+    {
+      "name": "artifact:validation/inhibitory-recurrent-parallel-compiler.txt",
+      "passed": true
+    },
+    {
+      "name": "original_API_and_other_functions_AST_unchanged",
+      "passed": true
+    },
+    {
+      "name": "all_2737_arrays_described_once",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:full_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:full_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk0_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk0_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk7_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk7_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk71_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:chunk71_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:full_chunk_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:block_prefix",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:delivery_block_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C0:delivery_block_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:full_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:full_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk0_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk0_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk7_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk7_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk71_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:chunk71_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:full_chunk_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:block_prefix",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:delivery_block_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:C1:delivery_block_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:full_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:full_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:thread_mask_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:thread_mask_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk0_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk0_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk7_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk7_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk71_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:chunk71_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:full_chunk_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:block_prefix",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:delivery_block_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:delivery_block_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:full_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:full_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:thread_mask_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:thread_mask_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk0_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk0_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk7_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk7_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk71_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:chunk71_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:full_chunk_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:block_prefix",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:delivery_block_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:delivery_block_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_multiple_invalid_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_multiple_invalid_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_unavailable_invalid_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_unavailable_invalid_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_postdelivery_infinite_edge_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_postdelivery_infinite_edge_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_lower_bound_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H0:failure_lower_bound_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_multiple_invalid_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_multiple_invalid_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_unavailable_invalid_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_unavailable_invalid_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_postdelivery_infinite_edge_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_postdelivery_infinite_edge_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_lower_bound_output",
+      "passed": true
+    },
+    {
+      "name": "raw_pair:H1:failure_lower_bound_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "fixture_ids_inputs",
+      "passed": true
+    },
+    {
+      "name": "fixture_CSR",
+      "passed": true
+    },
+    {
+      "name": "C0:complete_clock",
+      "passed": true
+    },
+    {
+      "name": "C0:candidate",
+      "passed": true
+    },
+    {
+      "name": "C0:refractory_and_threshold",
+      "passed": true
+    },
+    {
+      "name": "C0:delivery_masks",
+      "passed": true
+    },
+    {
+      "name": "C0:applied",
+      "passed": true
+    },
+    {
+      "name": "C0:ordered_spikes",
+      "passed": true
+    },
+    {
+      "name": "C0:all_delayed_edge_records",
+      "passed": true
+    },
+    {
+      "name": "C0:edge_count_accounting",
+      "passed": true
+    },
+    {
+      "name": "C0:pending",
+      "passed": true
+    },
+    {
+      "name": "C0:reset_voltage",
+      "passed": true
+    },
+    {
+      "name": "C0:reset_synapses",
+      "passed": true
+    },
+    {
+      "name": "C0:final_state",
+      "passed": true
+    },
+    {
+      "name": "C0:whole_chunk_recorded_arrays",
+      "passed": true
+    },
+    {
+      "name": "C0:delivery_time_block",
+      "passed": true
+    },
+    {
+      "name": "C1:complete_clock",
+      "passed": true
+    },
+    {
+      "name": "C1:candidate",
+      "passed": true
+    },
+    {
+      "name": "C1:refractory_and_threshold",
+      "passed": true
+    },
+    {
+      "name": "C1:delivery_masks",
+      "passed": true
+    },
+    {
+      "name": "C1:applied",
+      "passed": true
+    },
+    {
+      "name": "C1:ordered_spikes",
+      "passed": true
+    },
+    {
+      "name": "C1:all_delayed_edge_records",
+      "passed": true
+    },
+    {
+      "name": "C1:edge_count_accounting",
+      "passed": true
+    },
+    {
+      "name": "C1:pending",
+      "passed": true
+    },
+    {
+      "name": "C1:reset_voltage",
+      "passed": true
+    },
+    {
+      "name": "C1:final_state",
+      "passed": true
+    },
+    {
+      "name": "C1:whole_chunk_recorded_arrays",
+      "passed": true
+    },
+    {
+      "name": "C1:delivery_time_block",
+      "passed": true
+    },
+    {
+      "name": "H0:complete_clock",
+      "passed": true
+    },
+    {
+      "name": "H0:candidate",
+      "passed": true
+    },
+    {
+      "name": "H0:refractory_and_threshold",
+      "passed": true
+    },
+    {
+      "name": "H0:delivery_masks",
+      "passed": true
+    },
+    {
+      "name": "H0:applied",
+      "passed": true
+    },
+    {
+      "name": "H0:ordered_spikes",
+      "passed": true
+    },
+    {
+      "name": "H0:all_delayed_edge_records",
+      "passed": true
+    },
+    {
+      "name": "H0:edge_count_accounting",
+      "passed": true
+    },
+    {
+      "name": "H0:pending",
+      "passed": true
+    },
+    {
+      "name": "H0:reset_voltage",
+      "passed": true
+    },
+    {
+      "name": "H0:reset_synapses",
+      "passed": true
+    },
+    {
+      "name": "H0:final_state",
+      "passed": true
+    },
+    {
+      "name": "H0:whole_chunk_recorded_arrays",
+      "passed": true
+    },
+    {
+      "name": "H0:delivery_time_block",
+      "passed": true
+    },
+    {
+      "name": "H1:complete_clock",
+      "passed": true
+    },
+    {
+      "name": "H1:candidate",
+      "passed": true
+    },
+    {
+      "name": "H1:refractory_and_threshold",
+      "passed": true
+    },
+    {
+      "name": "H1:delivery_masks",
+      "passed": true
+    },
+    {
+      "name": "H1:applied",
+      "passed": true
+    },
+    {
+      "name": "H1:ordered_spikes",
+      "passed": true
+    },
+    {
+      "name": "H1:all_delayed_edge_records",
+      "passed": true
+    },
+    {
+      "name": "H1:edge_count_accounting",
+      "passed": true
+    },
+    {
+      "name": "H1:pending",
+      "passed": true
+    },
+    {
+      "name": "H1:reset_voltage",
+      "passed": true
+    },
+    {
+      "name": "H1:final_state",
+      "passed": true
+    },
+    {
+      "name": "H1:whole_chunk_recorded_arrays",
+      "passed": true
+    },
+    {
+      "name": "H1:delivery_time_block",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_clock:multiple_invalid",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_phase:multiple_invalid",
+      "passed": true
+    },
+    {
+      "name": "H0:first_error_and_earlier_spike",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_clock:unavailable_invalid",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_phase:unavailable_invalid",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_clock:postdelivery_infinite_edge",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_phase:postdelivery_infinite_edge",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_clock:lower_bound",
+      "passed": true
+    },
+    {
+      "name": "H0:failure_phase:lower_bound",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_clock:multiple_invalid",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_phase:multiple_invalid",
+      "passed": true
+    },
+    {
+      "name": "H1:first_error_and_earlier_spike",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_clock:unavailable_invalid",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_phase:unavailable_invalid",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_clock:postdelivery_infinite_edge",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_phase:postdelivery_infinite_edge",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_clock:lower_bound",
+      "passed": true
+    },
+    {
+      "name": "H1:failure_phase:lower_bound",
+      "passed": true
+    },
+    {
+      "name": "scratch_native_bitwise",
+      "passed": true
+    },
+    {
+      "name": "scratch_four_workers",
+      "passed": true
+    },
+    {
+      "name": "scratch_status",
+      "passed": true
+    },
+    {
+      "name": "scratch_unavailable_unwritten",
+      "passed": true
+    },
+    {
+      "name": "runtime",
+      "passed": true
+    },
+    {
+      "name": "compiler_optimized_parallel_listing",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/inhibitory_recurrent_kernel.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/inhibitory_factorial_solver.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/check_inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/probe_inhibitory_recurrent_parallel.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-parallel-plan.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-parallel-checks.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-parallel-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-parallel-arrays.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-parallel-compiler.txt",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/probe_inhibitory_recurrent_v2.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-performance-v2/results.json",
+      "passed": true
+    }
+  ],
+  "check_count": 176,
+  "errors": [],
+  "details": {
+    "recursive_saved_pairs": 68,
+    "saved_arrays": 2737,
+    "paired_array_leaves": 1358,
+    "whole_fixture": {
+      "C0": {
+        "spikes": 1307,
+        "delayed_edges": 6055,
+        "pending_spikes": 96
+      },
+      "C1": {
+        "spikes": 3507,
+        "delayed_edges": 16415,
+        "pending_spikes": 224
+      },
+      "H0": {
+        "spikes": 615,
+        "delayed_edges": 2890,
+        "pending_spikes": 37
+      },
+      "H1": {
+        "spikes": 1420,
+        "delayed_edges": 6705,
+        "pending_spikes": 79
+      }
+    },
+    "expected_invalid_cases": [
+      {
+        "arm": "H0",
+        "fixture": "multiple_invalid",
+        "code": 1,
+        "phase": 0,
+        "cell": 5
+      },
+      {
+        "arm": "H0",
+        "fixture": "unavailable_invalid",
+        "code": 2,
+        "phase": 1,
+        "cell": 5
+      },
+      {
+        "arm": "H0",
+        "fixture": "postdelivery_infinite_edge",
+        "code": 4,
+        "phase": 4,
+        "cell": 1
+      },
+      {
+        "arm": "H0",
+        "fixture": "lower_bound",
+        "code": 5,
+        "phase": 1,
+        "cell": 5
+      },
+      {
+        "arm": "H1",
+        "fixture": "multiple_invalid",
+        "code": 1,
+        "phase": 0,
+        "cell": 5
+      },
+      {
+        "arm": "H1",
+        "fixture": "unavailable_invalid",
+        "code": 2,
+        "phase": 1,
+        "cell": 5
+      },
+      {
+        "arm": "H1",
+        "fixture": "postdelivery_infinite_edge",
+        "code": 4,
+        "phase": 4,
+        "cell": 1
+      },
+      {
+        "arm": "H1",
+        "fixture": "lower_bound",
+        "code": 5,
+        "phase": 1,
+        "cell": 5
+      }
+    ]
+  },
+  "source_review": {
+    "blockers": [],
+    "corrected_before_freeze": "Probe uncaught-return failure now separates confirmed pre-call prefix/RNG from possibly advanced mutable tick.",
+    "conclusion": "Narrow independent H precomputation preserves serial commit, first failure, edge and reset order. API and original non-run functions are structurally unchanged."
+  },
+  "limits": [
+    "Saved metadata normalizes original tuples/lists and NumPy scalars; exact original Python container types were checked by producer, not recoverable here.",
+    "Continuation denial is source/producer receipt evidence, not a saved operation that this reviewer re-executed.",
+    "No new independent H numerical integration: this review checks concurrency parity against frozen serial results.",
+    "Full-graph 50ms parity/speed remain a separately frozen upcoming test. Intermediate all-cell state hashes are producer digests, not retained full arrays.",
+    "One/four-thread and failure coverage apply to saved synthetic fixtures; not exhaustive concurrency/fault testing.",
+    "Resource limits checked between operations permit overshoot; process kill or allocation failure can prevent archival. Four-thread setting is process runtime state.",
+    "No physiological claim, long-run stability result, scientific stimulus contrast, or H1 promotion."
+  ]
+}

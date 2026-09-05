@@ -1,0 +1,90 @@
+ 
+================================================================================
+ Parallel Accelerator Optimizing:  Function _h_intervals, 
+/Users/bernardo/Documents/Code/fruit-
+fly/scripts/inhibitory_recurrent_parallel.py (67)  
+================================================================================
+
+
+Parallel loop listing for  Function _h_intervals, /Users/bernardo/Documents/Code/fruit-fly/scripts/inhibitory_recurrent_parallel.py (67) 
+---------------------------------------------------------------------------------------|loop #ID
+@njit(cache=True, parallel=True)                                                       | 
+def _h_intervals(tick, a, b, coefficient, v, s, h, last, refractory,                   | 
+                 scratch, status, worker_ids):                                         | 
+    """Read native state; write only independent scratch, never commit state."""       | 
+    for cell in prange(len(v)):--------------------------------------------------------| #0
+        worker_ids[cell] = get_thread_id()                                             | 
+        if tick - last[cell] >= refractory[cell]:                                      | 
+            result = _safe_h_interval(v[cell], s[cell], h[cell], a, b, coefficient)    | 
+            scratch[cell, 0] = result[0]                                               | 
+            scratch[cell, 1] = result[1]                                               | 
+            scratch[cell, 2] = result[2]                                               | 
+            scratch[cell, 3] = result[3]                                               | 
+            scratch[cell, 4] = result[4]                                               | 
+            scratch[cell, 5] = result[5]                                               | 
+            scratch[cell, 6] = result[6]                                               | 
+            status[cell] = result[7]                                                   | 
+        else:                                                                          | 
+            status[cell] = 2  # No interval evaluated; row must not be read.           | 
+--------------------------------- Fusing loops ---------------------------------
+Attempting fusion of parallel loops (combines loops with similar properties)...
+----------------------------- Before Optimisation ------------------------------
+--------------------------------------------------------------------------------
+------------------------------ After Optimisation ------------------------------
+Parallel structure is already optimal.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ 
+---------------------------Loop invariant code motion---------------------------
+Allocation hoisting:
+No allocation hoisting found
+
+Instruction hoisting:
+loop #0:
+  Has the following hoisted:
+    $104load_global.1 = global(_safe_h_interval: CPUDispatcher(<function _safe_h_interval at 0x107934f40>))
+    $const156.17.1 = const(int, 0)
+    $const166.21.1 = const(int, 0)
+    $const176.24.2 = const(int, 1)
+    $const186.28.2 = const(int, 1)
+    $const196.31.3 = const(int, 2)
+    $const206.35.3 = const(int, 2)
+    $const216.38.4 = const(int, 3)
+    $const226.42.4 = const(int, 3)
+    $const236.45.5 = const(int, 4)
+    $const246.49.5 = const(int, 4)
+    $const256.52.6 = const(int, 5)
+    $const266.56.6 = const(int, 5)
+    $const276.59.7 = const(int, 6)
+    $const286.63.7 = const(int, 6)
+    $const296.66.8 = const(int, 7)
+    $50load_global.2 = global(get_thread_id: <function get_thread_id at 0x1078636a0>)
+    $bool102 = global(bool: <class 'bool'>)
+    $const312.1.3 = const(int, 2)
+  Failed to hoist the following:
+    dependency: $118binary_subscr.5 = getitem(value=v, index=$parfor__index_24.42, fn=<built-in function getitem>)
+    dependency: $126binary_subscr.8 = getitem(value=s, index=$parfor__index_24.42, fn=<built-in function getitem>)
+    dependency: $134binary_subscr.11 = getitem(value=h, index=$parfor__index_24.42, fn=<built-in function getitem>)
+    dependency: result = call $push_global_to_block.39($118binary_subscr.5, $126binary_subscr.8, $134binary_subscr.11, a, b, coefficient, func=$push_global_to_block.39, args=[Var($118binary_subscr.5, inhibitory_recurrent_parallel.py:74), Var($126binary_subscr.8, inhibitory_recurrent_parallel.py:74), Var($134binary_subscr.11, inhibitory_recurrent_parallel.py:74), Var(a, inhibitory_recurrent_parallel.py:67), Var(b, inhibitory_recurrent_parallel.py:67), Var(coefficient, inhibitory_recurrent_parallel.py:67)], kws=(), vararg=None, varkwarg=None, target=None)
+    dependency: $158binary_subscr.18 = static_getitem(value=result, index=0, index_var=$const156.17.1, fn=<built-in function getitem>)
+    dependency: $168build_tuple.22 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const166.21.1, inhibitory_recurrent_parallel.py:75)])
+    dependency: $178binary_subscr.25 = static_getitem(value=result, index=1, index_var=$const176.24.2, fn=<built-in function getitem>)
+    dependency: $188build_tuple.29 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const186.28.2, inhibitory_recurrent_parallel.py:76)])
+    dependency: $198binary_subscr.32 = static_getitem(value=result, index=2, index_var=$const196.31.3, fn=<built-in function getitem>)
+    dependency: $208build_tuple.36 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const206.35.3, inhibitory_recurrent_parallel.py:77)])
+    dependency: $218binary_subscr.39 = static_getitem(value=result, index=3, index_var=$const216.38.4, fn=<built-in function getitem>)
+    dependency: $228build_tuple.43 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const226.42.4, inhibitory_recurrent_parallel.py:78)])
+    dependency: $238binary_subscr.46 = static_getitem(value=result, index=4, index_var=$const236.45.5, fn=<built-in function getitem>)
+    dependency: $248build_tuple.50 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const246.49.5, inhibitory_recurrent_parallel.py:79)])
+    dependency: $258binary_subscr.53 = static_getitem(value=result, index=5, index_var=$const256.52.6, fn=<built-in function getitem>)
+    dependency: $268build_tuple.57 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const266.56.6, inhibitory_recurrent_parallel.py:80)])
+    dependency: $278binary_subscr.60 = static_getitem(value=result, index=6, index_var=$const276.59.7, fn=<built-in function getitem>)
+    dependency: $288build_tuple.64 = build_tuple(items=[Var($parfor__index_24.42, <string>:2), Var($const286.63.7, inhibitory_recurrent_parallel.py:81)])
+    dependency: $298binary_subscr.67 = static_getitem(value=result, index=7, index_var=$const296.66.8, fn=<built-in function getitem>)
+    not pure: $60call.4 = call $push_global_to_block.40(func=$push_global_to_block.40, args=[], kws=(), vararg=None, varkwarg=None, target=None)
+    dependency: $82binary_subscr.10 = getitem(value=last, index=$parfor__index_24.42, fn=<built-in function getitem>)
+    dependency: $binop_sub86.11 = tick - $82binary_subscr.10
+    dependency: $94binary_subscr.14 = getitem(value=refractory, index=$parfor__index_24.42, fn=<built-in function getitem>)
+    dependency: $98compare_op.15 = $binop_sub86.11 >= $94binary_subscr.14
+    dependency: $102pred = call $push_global_to_block.41($98compare_op.15, func=$push_global_to_block.41, args=(Var($98compare_op.15, inhibitory_recurrent_parallel.py:73),), kws=(), vararg=None, varkwarg=None, target=None)
+--------------------------------------------------------------------------------
