@@ -1,0 +1,1202 @@
+{
+  "source": {
+    "path": "data/raw/salman-current-clamp/ALL CC pre DRUGS.pzf",
+    "bytes": 381637,
+    "sha256": "55639979681a5a844cff00f24dd386bc99a3fcca5e54f90137741e158ce5d671"
+  },
+  "method": "ASCII printable runs >=4 bytes, with byte offsets; no binary Prism table parser",
+  "axis_label_strings": [
+    {
+      "byte_offset": 369328,
+      "text": "input pA-"
+    },
+    {
+      "byte_offset": 369796,
+      "text": "Output change mV-"
+    }
+  ],
+  "equations": [
+    {
+      "byte_offset": 251417,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 251666,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 253798,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 254049,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 256176,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 256423,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 284020,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 284269,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 286401,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 286652,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 288779,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 289026,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 307023,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 307272,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 309404,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 309655,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 311782,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 312029,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 330026,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 330275,
+      "text": "Y = 0.02176*X + 0.1204"
+    },
+    {
+      "byte_offset": 332407,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 332658,
+      "text": "Y = 0.03983*X + 0.01478"
+    },
+    {
+      "byte_offset": 334785,
+      "text": "Y = 0.03754*X + 1.033"
+    },
+    {
+      "byte_offset": 335032,
+      "text": "Y = 0.03754*X + 1.033"
+    }
+  ],
+  "global_test_report_prefixes": [
+    {
+      "byte_offset": 347550,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    },
+    {
+      "byte_offset": 348142,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    },
+    {
+      "byte_offset": 349038,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    },
+    {
+      "byte_offset": 349630,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    },
+    {
+      "byte_offset": 350374,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    },
+    {
+      "byte_offset": 350966,
+      "prefix": "Are the slopes equal?F = 27.93. DFn = 2, DFd = 504P<0.0001If the over"
+    }
+  ],
+  "report_blocks": [
+    {
+      "group": "Keystone LNs",
+      "byte_offset": 249893,
+      "fields": {
+        "slope": "0.02176",
+        "intercept": "0.1204",
+        "x_intercept": "-5.533",
+        "inverse_slope": "45.95",
+        "slope_SE": "0.001279",
+        "intercept_SE": "0.4872",
+        "slope_CI95": "0.01924 to 0.02429",
+        "intercept_CI95": "-0.8414 to 1.082",
+        "x_intercept_CI95": "-54.08 to 36.04",
+        "R_squared": "0.6326",
+        "Sy_x": "4.791",
+        "F": "289.3",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.02176*X + 0.1204"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 251230,
+          "text": "0.02176"
+        },
+        {
+          "byte_offset": 251241,
+          "text": "0.1204"
+        },
+        {
+          "byte_offset": 251251,
+          "text": "-5.533"
+        },
+        {
+          "byte_offset": 251261,
+          "text": "45.95"
+        },
+        {
+          "byte_offset": 251270,
+          "text": "0.001279"
+        },
+        {
+          "byte_offset": 251282,
+          "text": "0.4872"
+        },
+        {
+          "byte_offset": 251292,
+          "text": "0.01924 to 0.02429"
+        },
+        {
+          "byte_offset": 251314,
+          "text": "-0.8414 to 1.082"
+        },
+        {
+          "byte_offset": 251334,
+          "text": "-54.08 to 36.04"
+        },
+        {
+          "byte_offset": 251353,
+          "text": "0.6326"
+        },
+        {
+          "byte_offset": 251363,
+          "text": "4.791"
+        },
+        {
+          "byte_offset": 251372,
+          "text": "289.3"
+        },
+        {
+          "byte_offset": 251381,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 251391,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 251402,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 251417,
+          "text": "Y = 0.02176*X + 0.1204"
+        }
+      ]
+    },
+    {
+      "group": "R32 LNs",
+      "byte_offset": 252278,
+      "fields": {
+        "slope": "0.03983",
+        "intercept": "0.01478",
+        "x_intercept": "-0.3710",
+        "inverse_slope": "25.11",
+        "slope_SE": "0.002090",
+        "intercept_SE": "0.7960",
+        "slope_CI95": "0.03570 to 0.04396",
+        "intercept_CI95": "-1.557 to 1.586",
+        "x_intercept_CI95": "-42.87 to 36.70",
+        "R_squared": "0.6837",
+        "Sy_x": "7.829",
+        "F": "363.1",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03983*X + 0.01478"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 253610,
+          "text": "0.03983"
+        },
+        {
+          "byte_offset": 253621,
+          "text": "0.01478"
+        },
+        {
+          "byte_offset": 253632,
+          "text": "-0.3710"
+        },
+        {
+          "byte_offset": 253643,
+          "text": "25.11"
+        },
+        {
+          "byte_offset": 253652,
+          "text": "0.002090"
+        },
+        {
+          "byte_offset": 253664,
+          "text": "0.7960"
+        },
+        {
+          "byte_offset": 253674,
+          "text": "0.03570 to 0.04396"
+        },
+        {
+          "byte_offset": 253696,
+          "text": "-1.557 to 1.586"
+        },
+        {
+          "byte_offset": 253715,
+          "text": "-42.87 to 36.70"
+        },
+        {
+          "byte_offset": 253734,
+          "text": "0.6837"
+        },
+        {
+          "byte_offset": 253744,
+          "text": "7.829"
+        },
+        {
+          "byte_offset": 253753,
+          "text": "363.1"
+        },
+        {
+          "byte_offset": 253762,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 253772,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 253783,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 253798,
+          "text": "Y = 0.03983*X + 0.01478"
+        }
+      ]
+    },
+    {
+      "group": "ABAF LNs",
+      "byte_offset": 254657,
+      "fields": {
+        "slope": "0.03754",
+        "intercept": "1.033",
+        "x_intercept": "-27.50",
+        "inverse_slope": "26.64",
+        "slope_SE": "0.002096",
+        "intercept_SE": "0.7981",
+        "slope_CI95": "0.03341 to 0.04168",
+        "intercept_CI95": "-0.5431 to 2.608",
+        "x_intercept_CI95": "-75.33 to 13.50",
+        "R_squared": "0.6563",
+        "Sy_x": "7.849",
+        "F": "320.9",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03754*X + 1.033"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 255990,
+          "text": "0.03754"
+        },
+        {
+          "byte_offset": 256001,
+          "text": "1.033"
+        },
+        {
+          "byte_offset": 256010,
+          "text": "-27.50"
+        },
+        {
+          "byte_offset": 256020,
+          "text": "26.64"
+        },
+        {
+          "byte_offset": 256029,
+          "text": "0.002096"
+        },
+        {
+          "byte_offset": 256041,
+          "text": "0.7981"
+        },
+        {
+          "byte_offset": 256051,
+          "text": "0.03341 to 0.04168"
+        },
+        {
+          "byte_offset": 256073,
+          "text": "-0.5431 to 2.608"
+        },
+        {
+          "byte_offset": 256093,
+          "text": "-75.33 to 13.50"
+        },
+        {
+          "byte_offset": 256112,
+          "text": "0.6563"
+        },
+        {
+          "byte_offset": 256122,
+          "text": "7.849"
+        },
+        {
+          "byte_offset": 256131,
+          "text": "320.9"
+        },
+        {
+          "byte_offset": 256140,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 256150,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 256161,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 256176,
+          "text": "Y = 0.03754*X + 1.033"
+        }
+      ]
+    },
+    {
+      "group": "Keystone LNs",
+      "byte_offset": 282496,
+      "fields": {
+        "slope": "0.02176",
+        "intercept": "0.1204",
+        "x_intercept": "-5.533",
+        "inverse_slope": "45.95",
+        "slope_SE": "0.001279",
+        "intercept_SE": "0.4872",
+        "slope_CI95": "0.01924 to 0.02429",
+        "intercept_CI95": "-0.8414 to 1.082",
+        "x_intercept_CI95": "-54.08 to 36.04",
+        "R_squared": "0.6326",
+        "Sy_x": "4.791",
+        "F": "289.3",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.02176*X + 0.1204"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 283833,
+          "text": "0.02176"
+        },
+        {
+          "byte_offset": 283844,
+          "text": "0.1204"
+        },
+        {
+          "byte_offset": 283854,
+          "text": "-5.533"
+        },
+        {
+          "byte_offset": 283864,
+          "text": "45.95"
+        },
+        {
+          "byte_offset": 283873,
+          "text": "0.001279"
+        },
+        {
+          "byte_offset": 283885,
+          "text": "0.4872"
+        },
+        {
+          "byte_offset": 283895,
+          "text": "0.01924 to 0.02429"
+        },
+        {
+          "byte_offset": 283917,
+          "text": "-0.8414 to 1.082"
+        },
+        {
+          "byte_offset": 283937,
+          "text": "-54.08 to 36.04"
+        },
+        {
+          "byte_offset": 283956,
+          "text": "0.6326"
+        },
+        {
+          "byte_offset": 283966,
+          "text": "4.791"
+        },
+        {
+          "byte_offset": 283975,
+          "text": "289.3"
+        },
+        {
+          "byte_offset": 283984,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 283994,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 284005,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 284020,
+          "text": "Y = 0.02176*X + 0.1204"
+        }
+      ]
+    },
+    {
+      "group": "R32 LNs",
+      "byte_offset": 284881,
+      "fields": {
+        "slope": "0.03983",
+        "intercept": "0.01478",
+        "x_intercept": "-0.3710",
+        "inverse_slope": "25.11",
+        "slope_SE": "0.002090",
+        "intercept_SE": "0.7960",
+        "slope_CI95": "0.03570 to 0.04396",
+        "intercept_CI95": "-1.557 to 1.586",
+        "x_intercept_CI95": "-42.87 to 36.70",
+        "R_squared": "0.6837",
+        "Sy_x": "7.829",
+        "F": "363.1",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03983*X + 0.01478"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 286213,
+          "text": "0.03983"
+        },
+        {
+          "byte_offset": 286224,
+          "text": "0.01478"
+        },
+        {
+          "byte_offset": 286235,
+          "text": "-0.3710"
+        },
+        {
+          "byte_offset": 286246,
+          "text": "25.11"
+        },
+        {
+          "byte_offset": 286255,
+          "text": "0.002090"
+        },
+        {
+          "byte_offset": 286267,
+          "text": "0.7960"
+        },
+        {
+          "byte_offset": 286277,
+          "text": "0.03570 to 0.04396"
+        },
+        {
+          "byte_offset": 286299,
+          "text": "-1.557 to 1.586"
+        },
+        {
+          "byte_offset": 286318,
+          "text": "-42.87 to 36.70"
+        },
+        {
+          "byte_offset": 286337,
+          "text": "0.6837"
+        },
+        {
+          "byte_offset": 286347,
+          "text": "7.829"
+        },
+        {
+          "byte_offset": 286356,
+          "text": "363.1"
+        },
+        {
+          "byte_offset": 286365,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 286375,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 286386,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 286401,
+          "text": "Y = 0.03983*X + 0.01478"
+        }
+      ]
+    },
+    {
+      "group": "ABAF LNs",
+      "byte_offset": 287260,
+      "fields": {
+        "slope": "0.03754",
+        "intercept": "1.033",
+        "x_intercept": "-27.50",
+        "inverse_slope": "26.64",
+        "slope_SE": "0.002096",
+        "intercept_SE": "0.7981",
+        "slope_CI95": "0.03341 to 0.04168",
+        "intercept_CI95": "-0.5431 to 2.608",
+        "x_intercept_CI95": "-75.33 to 13.50",
+        "R_squared": "0.6563",
+        "Sy_x": "7.849",
+        "F": "320.9",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03754*X + 1.033"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 288593,
+          "text": "0.03754"
+        },
+        {
+          "byte_offset": 288604,
+          "text": "1.033"
+        },
+        {
+          "byte_offset": 288613,
+          "text": "-27.50"
+        },
+        {
+          "byte_offset": 288623,
+          "text": "26.64"
+        },
+        {
+          "byte_offset": 288632,
+          "text": "0.002096"
+        },
+        {
+          "byte_offset": 288644,
+          "text": "0.7981"
+        },
+        {
+          "byte_offset": 288654,
+          "text": "0.03341 to 0.04168"
+        },
+        {
+          "byte_offset": 288676,
+          "text": "-0.5431 to 2.608"
+        },
+        {
+          "byte_offset": 288696,
+          "text": "-75.33 to 13.50"
+        },
+        {
+          "byte_offset": 288715,
+          "text": "0.6563"
+        },
+        {
+          "byte_offset": 288725,
+          "text": "7.849"
+        },
+        {
+          "byte_offset": 288734,
+          "text": "320.9"
+        },
+        {
+          "byte_offset": 288743,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 288753,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 288764,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 288779,
+          "text": "Y = 0.03754*X + 1.033"
+        }
+      ]
+    },
+    {
+      "group": "Keystone LNs",
+      "byte_offset": 305499,
+      "fields": {
+        "slope": "0.02176",
+        "intercept": "0.1204",
+        "x_intercept": "-5.533",
+        "inverse_slope": "45.95",
+        "slope_SE": "0.001279",
+        "intercept_SE": "0.4872",
+        "slope_CI95": "0.01924 to 0.02429",
+        "intercept_CI95": "-0.8414 to 1.082",
+        "x_intercept_CI95": "-54.08 to 36.04",
+        "R_squared": "0.6326",
+        "Sy_x": "4.791",
+        "F": "289.3",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.02176*X + 0.1204"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 306836,
+          "text": "0.02176"
+        },
+        {
+          "byte_offset": 306847,
+          "text": "0.1204"
+        },
+        {
+          "byte_offset": 306857,
+          "text": "-5.533"
+        },
+        {
+          "byte_offset": 306867,
+          "text": "45.95"
+        },
+        {
+          "byte_offset": 306876,
+          "text": "0.001279"
+        },
+        {
+          "byte_offset": 306888,
+          "text": "0.4872"
+        },
+        {
+          "byte_offset": 306898,
+          "text": "0.01924 to 0.02429"
+        },
+        {
+          "byte_offset": 306920,
+          "text": "-0.8414 to 1.082"
+        },
+        {
+          "byte_offset": 306940,
+          "text": "-54.08 to 36.04"
+        },
+        {
+          "byte_offset": 306959,
+          "text": "0.6326"
+        },
+        {
+          "byte_offset": 306969,
+          "text": "4.791"
+        },
+        {
+          "byte_offset": 306978,
+          "text": "289.3"
+        },
+        {
+          "byte_offset": 306987,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 306997,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 307008,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 307023,
+          "text": "Y = 0.02176*X + 0.1204"
+        }
+      ]
+    },
+    {
+      "group": "R32 LNs",
+      "byte_offset": 307884,
+      "fields": {
+        "slope": "0.03983",
+        "intercept": "0.01478",
+        "x_intercept": "-0.3710",
+        "inverse_slope": "25.11",
+        "slope_SE": "0.002090",
+        "intercept_SE": "0.7960",
+        "slope_CI95": "0.03570 to 0.04396",
+        "intercept_CI95": "-1.557 to 1.586",
+        "x_intercept_CI95": "-42.87 to 36.70",
+        "R_squared": "0.6837",
+        "Sy_x": "7.829",
+        "F": "363.1",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03983*X + 0.01478"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 309216,
+          "text": "0.03983"
+        },
+        {
+          "byte_offset": 309227,
+          "text": "0.01478"
+        },
+        {
+          "byte_offset": 309238,
+          "text": "-0.3710"
+        },
+        {
+          "byte_offset": 309249,
+          "text": "25.11"
+        },
+        {
+          "byte_offset": 309258,
+          "text": "0.002090"
+        },
+        {
+          "byte_offset": 309270,
+          "text": "0.7960"
+        },
+        {
+          "byte_offset": 309280,
+          "text": "0.03570 to 0.04396"
+        },
+        {
+          "byte_offset": 309302,
+          "text": "-1.557 to 1.586"
+        },
+        {
+          "byte_offset": 309321,
+          "text": "-42.87 to 36.70"
+        },
+        {
+          "byte_offset": 309340,
+          "text": "0.6837"
+        },
+        {
+          "byte_offset": 309350,
+          "text": "7.829"
+        },
+        {
+          "byte_offset": 309359,
+          "text": "363.1"
+        },
+        {
+          "byte_offset": 309368,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 309378,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 309389,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 309404,
+          "text": "Y = 0.03983*X + 0.01478"
+        }
+      ]
+    },
+    {
+      "group": "ABAF LNs",
+      "byte_offset": 310263,
+      "fields": {
+        "slope": "0.03754",
+        "intercept": "1.033",
+        "x_intercept": "-27.50",
+        "inverse_slope": "26.64",
+        "slope_SE": "0.002096",
+        "intercept_SE": "0.7981",
+        "slope_CI95": "0.03341 to 0.04168",
+        "intercept_CI95": "-0.5431 to 2.608",
+        "x_intercept_CI95": "-75.33 to 13.50",
+        "R_squared": "0.6563",
+        "Sy_x": "7.849",
+        "F": "320.9",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03754*X + 1.033"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 311596,
+          "text": "0.03754"
+        },
+        {
+          "byte_offset": 311607,
+          "text": "1.033"
+        },
+        {
+          "byte_offset": 311616,
+          "text": "-27.50"
+        },
+        {
+          "byte_offset": 311626,
+          "text": "26.64"
+        },
+        {
+          "byte_offset": 311635,
+          "text": "0.002096"
+        },
+        {
+          "byte_offset": 311647,
+          "text": "0.7981"
+        },
+        {
+          "byte_offset": 311657,
+          "text": "0.03341 to 0.04168"
+        },
+        {
+          "byte_offset": 311679,
+          "text": "-0.5431 to 2.608"
+        },
+        {
+          "byte_offset": 311699,
+          "text": "-75.33 to 13.50"
+        },
+        {
+          "byte_offset": 311718,
+          "text": "0.6563"
+        },
+        {
+          "byte_offset": 311728,
+          "text": "7.849"
+        },
+        {
+          "byte_offset": 311737,
+          "text": "320.9"
+        },
+        {
+          "byte_offset": 311746,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 311756,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 311767,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 311782,
+          "text": "Y = 0.03754*X + 1.033"
+        }
+      ]
+    },
+    {
+      "group": "Keystone LNs",
+      "byte_offset": 328502,
+      "fields": {
+        "slope": "0.02176",
+        "intercept": "0.1204",
+        "x_intercept": "-5.533",
+        "inverse_slope": "45.95",
+        "slope_SE": "0.001279",
+        "intercept_SE": "0.4872",
+        "slope_CI95": "0.01924 to 0.02429",
+        "intercept_CI95": "-0.8414 to 1.082",
+        "x_intercept_CI95": "-54.08 to 36.04",
+        "R_squared": "0.6326",
+        "Sy_x": "4.791",
+        "F": "289.3",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.02176*X + 0.1204"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 329839,
+          "text": "0.02176"
+        },
+        {
+          "byte_offset": 329850,
+          "text": "0.1204"
+        },
+        {
+          "byte_offset": 329860,
+          "text": "-5.533"
+        },
+        {
+          "byte_offset": 329870,
+          "text": "45.95"
+        },
+        {
+          "byte_offset": 329879,
+          "text": "0.001279"
+        },
+        {
+          "byte_offset": 329891,
+          "text": "0.4872"
+        },
+        {
+          "byte_offset": 329901,
+          "text": "0.01924 to 0.02429"
+        },
+        {
+          "byte_offset": 329923,
+          "text": "-0.8414 to 1.082"
+        },
+        {
+          "byte_offset": 329943,
+          "text": "-54.08 to 36.04"
+        },
+        {
+          "byte_offset": 329962,
+          "text": "0.6326"
+        },
+        {
+          "byte_offset": 329972,
+          "text": "4.791"
+        },
+        {
+          "byte_offset": 329981,
+          "text": "289.3"
+        },
+        {
+          "byte_offset": 329990,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 330000,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 330011,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 330026,
+          "text": "Y = 0.02176*X + 0.1204"
+        }
+      ]
+    },
+    {
+      "group": "R32 LNs",
+      "byte_offset": 330887,
+      "fields": {
+        "slope": "0.03983",
+        "intercept": "0.01478",
+        "x_intercept": "-0.3710",
+        "inverse_slope": "25.11",
+        "slope_SE": "0.002090",
+        "intercept_SE": "0.7960",
+        "slope_CI95": "0.03570 to 0.04396",
+        "intercept_CI95": "-1.557 to 1.586",
+        "x_intercept_CI95": "-42.87 to 36.70",
+        "R_squared": "0.6837",
+        "Sy_x": "7.829",
+        "F": "363.1",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03983*X + 0.01478"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 332219,
+          "text": "0.03983"
+        },
+        {
+          "byte_offset": 332230,
+          "text": "0.01478"
+        },
+        {
+          "byte_offset": 332241,
+          "text": "-0.3710"
+        },
+        {
+          "byte_offset": 332252,
+          "text": "25.11"
+        },
+        {
+          "byte_offset": 332261,
+          "text": "0.002090"
+        },
+        {
+          "byte_offset": 332273,
+          "text": "0.7960"
+        },
+        {
+          "byte_offset": 332283,
+          "text": "0.03570 to 0.04396"
+        },
+        {
+          "byte_offset": 332305,
+          "text": "-1.557 to 1.586"
+        },
+        {
+          "byte_offset": 332324,
+          "text": "-42.87 to 36.70"
+        },
+        {
+          "byte_offset": 332343,
+          "text": "0.6837"
+        },
+        {
+          "byte_offset": 332353,
+          "text": "7.829"
+        },
+        {
+          "byte_offset": 332362,
+          "text": "363.1"
+        },
+        {
+          "byte_offset": 332371,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 332381,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 332392,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 332407,
+          "text": "Y = 0.03983*X + 0.01478"
+        }
+      ]
+    },
+    {
+      "group": "ABAF LNs",
+      "byte_offset": 333266,
+      "fields": {
+        "slope": "0.03754",
+        "intercept": "1.033",
+        "x_intercept": "-27.50",
+        "inverse_slope": "26.64",
+        "slope_SE": "0.002096",
+        "intercept_SE": "0.7981",
+        "slope_CI95": "0.03341 to 0.04168",
+        "intercept_CI95": "-0.5431 to 2.608",
+        "x_intercept_CI95": "-75.33 to 13.50",
+        "R_squared": "0.6563",
+        "Sy_x": "7.849",
+        "F": "320.9",
+        "df": "1, 168",
+        "p": "<0.0001",
+        "significance_label": "Significant",
+        "equation": "Y = 0.03754*X + 1.033"
+      },
+      "ordered_report_strings": [
+        {
+          "byte_offset": 334599,
+          "text": "0.03754"
+        },
+        {
+          "byte_offset": 334610,
+          "text": "1.033"
+        },
+        {
+          "byte_offset": 334619,
+          "text": "-27.50"
+        },
+        {
+          "byte_offset": 334629,
+          "text": "26.64"
+        },
+        {
+          "byte_offset": 334638,
+          "text": "0.002096"
+        },
+        {
+          "byte_offset": 334650,
+          "text": "0.7981"
+        },
+        {
+          "byte_offset": 334660,
+          "text": "0.03341 to 0.04168"
+        },
+        {
+          "byte_offset": 334682,
+          "text": "-0.5431 to 2.608"
+        },
+        {
+          "byte_offset": 334702,
+          "text": "-75.33 to 13.50"
+        },
+        {
+          "byte_offset": 334721,
+          "text": "0.6563"
+        },
+        {
+          "byte_offset": 334731,
+          "text": "7.849"
+        },
+        {
+          "byte_offset": 334740,
+          "text": "320.9"
+        },
+        {
+          "byte_offset": 334749,
+          "text": "1, 168"
+        },
+        {
+          "byte_offset": 334759,
+          "text": "<0.0001"
+        },
+        {
+          "byte_offset": 334770,
+          "text": "Significant"
+        },
+        {
+          "byte_offset": 334785,
+          "text": "Y = 0.03754*X + 1.033"
+        }
+      ]
+    }
+  ],
+  "binary_table_or_analysis_settings_verified": false,
+  "new_regression_performed": false
+}

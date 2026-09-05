@@ -86,6 +86,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Published scalar synaptic-depression reference](docs/synaptic-depression-reference.md), [independent high-precision review](docs/synaptic-depression-reference-independent-review.md); fixed-source predictions, no biological fit or neural integration
 - [Recorded-input reconstruction of extreme-voltage cells](docs/negative-voltage-replay.md), with exact endpoint states and signed incoming-edge accounting; [381-check independent review](docs/negative-voltage-replay-independent-review.md)
 - [Published VM2 recovery curves as numerical data](docs/orn-pn-recovery-digitization.md), with separate protocols and graph-extraction limits; [inhibitory physiology and source signaling](research/13-antennal-lobe-inhibitory-constraints.md)
+- [Public inhibitory-source data inventory](docs/salman-source-inventory.md), [current-clamp workbook and published-current discrepancy](docs/salman-current-clamp-data.md); exact arithmetic does not resolve missing specimen/current metadata
 - [Viewer failure-state reporting](docs/viewer-failure-reporting.md), with [independent clock and cleanup review](docs/viewer-failure-independent-review.md)
 - [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md), [executed excitation assay](docs/or42a-summary-experiment.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)

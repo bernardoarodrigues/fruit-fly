@@ -1,0 +1,1272 @@
+{
+  "source": {
+    "path": "data/raw/salman-current-clamp/Current Clamp analysis.xlsx",
+    "bytes": 274638,
+    "sha256": "5e5fd1c48d372369ffdd5f269170d7ac612eedab39bf68233f9f59191cc96fb0"
+  },
+  "script": {
+    "path": "validation/salman-current-clamp-extract.py",
+    "bytes": 13401,
+    "sha256": "6f8673946098adae931cae7d984cb8bd6a100d57d903eae71f19c05b9987420e"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "openpyxl": "3.1.5"
+  },
+  "source_core_properties": {
+    "creator": "dackslab",
+    "lastModifiedBy": "Julius Juliukas",
+    "created": "2023-10-19T17:27:44Z",
+    "modified": "2024-02-01T00:02:09Z"
+  },
+  "native_package": {
+    "external_links": [],
+    "table_parts": [],
+    "chart_parts": []
+  },
+  "sheet_count": 24,
+  "group_sheet_names": {
+    "KS": [
+      "N1 KS",
+      "N2 KS",
+      "N3 KS",
+      "N4 KS",
+      "N5 KS",
+      "N6 KS",
+      "Prep 7 KS"
+    ],
+    "R32": [
+      "Prep R32",
+      "Prep 4 R32",
+      "Prep 5 Cell 1 R32",
+      "Prep5 cell 2 R32",
+      "Prep 6 R32",
+      "Prep 7 Cell 1 R32",
+      "Prep 7 Cell 2 R32",
+      "Prep 8 Cell 1 R32",
+      "Prep 9 Cell 1 R32",
+      "Prep 10 Cell 2 R32"
+    ],
+    "ABAF": [
+      "ABAF N4 Cell1",
+      "ABAF N5 Cell 1",
+      "ABAF N6 Cells 1",
+      "ABAF N7 Cell 1",
+      "ABAF N8 Cell 1",
+      "ABAF N9 Pre 5HT",
+      "ABAF n10 Pre 5HT"
+    ]
+  },
+  "sheets": [
+    {
+      "sheet": "N1 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG41",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        6.19999980926513,
+        12.1999998092651
+      ],
+      "M1_M31_numeric_range": [
+        399.600006103515,
+        405.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "N2 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG41",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        10.6000003814697,
+        16.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        478.600006103515,
+        484.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "N3 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        16.3999996185302,
+        22.3999996185302
+      ],
+      "M1_M31_numeric_range": [
+        359,
+        365
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "N4 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        7.80000019073486,
+        13.8000001907348
+      ],
+      "M1_M31_numeric_range": [
+        402.399993896484,
+        408.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "N5 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG41",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        10.6000003814697,
+        16.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        441.799987792968,
+        447.799987792968
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "N6 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG41",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        6.59999990463256,
+        12.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        502.399993896484,
+        508.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 7 KS",
+      "group_label_in_sheet_name": "KS",
+      "declared_dimension": "A1:AG41",
+      "nonempty_cells": 1153,
+      "formulas": 361,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1153
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [
+        "A33",
+        "B33",
+        "C33",
+        "D33",
+        "E33",
+        "F33",
+        "G33",
+        "H33",
+        "I33",
+        "J33",
+        "K33",
+        "L33",
+        "A34",
+        "B34",
+        "C34",
+        "D34",
+        "E34",
+        "F34",
+        "G34",
+        "H34",
+        "I34",
+        "J34",
+        "K34",
+        "L34",
+        "A35",
+        "B35",
+        "C35",
+        "D35",
+        "E35",
+        "F35",
+        "G35",
+        "H35",
+        "I35",
+        "J35",
+        "K35",
+        "L35",
+        "A36",
+        "B36",
+        "C36",
+        "D36",
+        "E36",
+        "F36",
+        "G36",
+        "H36",
+        "I36",
+        "J36",
+        "K36",
+        "L36",
+        "A37",
+        "B37",
+        "C37",
+        "D37",
+        "E37",
+        "F37",
+        "G37",
+        "H37",
+        "I37",
+        "J37",
+        "K37",
+        "L37",
+        "A38",
+        "B38",
+        "C38",
+        "D38",
+        "E38",
+        "F38",
+        "G38",
+        "H38",
+        "I38",
+        "J38",
+        "K38",
+        "L38",
+        "A39",
+        "B39",
+        "C39",
+        "D39",
+        "E39",
+        "F39",
+        "G39",
+        "H39",
+        "I39",
+        "J39",
+        "K39",
+        "L39",
+        "A40",
+        "B40",
+        "C40",
+        "D40",
+        "E40",
+        "F40",
+        "G40",
+        "H40",
+        "I40",
+        "J40",
+        "K40",
+        "L40",
+        "A41",
+        "B41",
+        "C41",
+        "D41",
+        "E41",
+        "F41",
+        "G41",
+        "H41",
+        "I41",
+        "J41",
+        "K41",
+        "L41"
+      ],
+      "A1_A31_numeric_range": [
+        19.6000003814697,
+        25.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        453.600006103515,
+        459.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        16.6000003814697,
+        22.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        483.200012207031,
+        489.200012207031
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 4 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        16.6000003814697,
+        22.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        365.600006103515,
+        371.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 5 Cell 1 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        22.6000003814697,
+        28.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        466.200012207031,
+        472.200012207031
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep5 cell 2 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        9.19999980926513,
+        15.1999998092651
+      ],
+      "M1_M31_numeric_range": [
+        457.600006103515,
+        463.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 6 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        15.3999996185302,
+        21.3999996185302
+      ],
+      "M1_M31_numeric_range": [
+        435,
+        441
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 7 Cell 1 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        20.3999996185302,
+        26.3999996185302
+      ],
+      "M1_M31_numeric_range": [
+        419.799987792968,
+        425.799987792968
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 7 Cell 2 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        15.3999996185302,
+        21.3999996185302
+      ],
+      "M1_M31_numeric_range": [
+        428.799987792968,
+        434.799987792968
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 8 Cell 1 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        14.1999998092651,
+        20.2000007629394
+      ],
+      "M1_M31_numeric_range": [
+        455.399993896484,
+        461.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 9 Cell 1 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        6.19999980926513,
+        12.1999998092651
+      ],
+      "M1_M31_numeric_range": [
+        447.200012207031,
+        453.200012207031
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "Prep 10 Cell 2 R32",
+      "group_label_in_sheet_name": "R32",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        6.19999980926513,
+        12.1999998092651
+      ],
+      "M1_M31_numeric_range": [
+        413.399993896484,
+        419.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N4 Cell1",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        15.6000003814697,
+        21.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        445,
+        451
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N5 Cell 1",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        21,
+        27
+      ],
+      "M1_M31_numeric_range": [
+        490.399993896484,
+        496.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N6 Cells 1",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        6.40000009536743,
+        12.3999996185302
+      ],
+      "M1_M31_numeric_range": [
+        465,
+        471
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N7 Cell 1",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        7.59999990463256,
+        13.6000003814697
+      ],
+      "M1_M31_numeric_range": [
+        430.399993896484,
+        436.399993896484
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        9.19999980926513,
+        15.1999998092651
+      ],
+      "M1_M31_numeric_range": [
+        508.399993896484,
+        514.400024414062
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF N9 Pre 5HT",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        7.80000019073486,
+        13.8000001907348
+      ],
+      "M1_M31_numeric_range": [
+        462.799987792968,
+        468.799987792968
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    },
+    {
+      "sheet": "ABAF n10 Pre 5HT",
+      "group_label_in_sheet_name": "ABAF",
+      "declared_dimension": "A1:AG32",
+      "nonempty_cells": 1033,
+      "formulas": 351,
+      "text_labels": [],
+      "hidden": "visible",
+      "merged_ranges": [],
+      "native_table_count": 0,
+      "chart_count": 0,
+      "comment_count": 0,
+      "number_formats": {
+        "General": 1033
+      },
+      "missing_in_raw_blocks_B1_K31_N1_W31": 0,
+      "extra_nonempty_after_row32": [],
+      "A1_A31_numeric_range": [
+        13.1999998092651,
+        19.2000007629394
+      ],
+      "M1_M31_numeric_range": [
+        474.600006103515,
+        480.600006103515
+      ],
+      "time_units": null,
+      "sex": null,
+      "age": null,
+      "exact_cell_or_animal_id": null
+    }
+  ],
+  "formula_audit": {
+    "formulas": 8434,
+    "cache_missing": [],
+    "literal_error_cells": [],
+    "maximum_absolute_cache_error": "2.9322580645161290322580645161290323E-14",
+    "tolerance": "1e-10 in unlabelled workbook numeric units",
+    "all_caches_match_within_tolerance": true
+  },
+  "descriptive_group_means_by_column": {
+    "KS": [
+      {
+        "column_ordinal": 1,
+        "mean_cached_summary": -3.1130601733510943
+      },
+      {
+        "column_ordinal": 2,
+        "mean_cached_summary": -1.3504239271313363
+      },
+      {
+        "column_ordinal": 3,
+        "mean_cached_summary": -0.023879653297811054
+      },
+      {
+        "column_ordinal": 4,
+        "mean_cached_summary": 1.770089848250288
+      },
+      {
+        "column_ordinal": 5,
+        "mean_cached_summary": 2.690258114019297
+      },
+      {
+        "column_ordinal": 6,
+        "mean_cached_summary": 4.640922019009217
+      },
+      {
+        "column_ordinal": 7,
+        "mean_cached_summary": 6.009670556415611
+      },
+      {
+        "column_ordinal": 8,
+        "mean_cached_summary": 6.990592710433468
+      },
+      {
+        "column_ordinal": 9,
+        "mean_cached_summary": 8.118069556451612
+      },
+      {
+        "column_ordinal": 10,
+        "mean_cached_summary": 9.283756660426267
+      }
+    ],
+    "R32": [
+      {
+        "column_ordinal": 1,
+        "mean_cached_summary": -8.39314085437405
+      },
+      {
+        "column_ordinal": 2,
+        "mean_cached_summary": -4.188458854921402
+      },
+      {
+        "column_ordinal": 3,
+        "mean_cached_summary": -0.33148982140325745
+      },
+      {
+        "column_ordinal": 4,
+        "mean_cached_summary": 3.960768164357831
+      },
+      {
+        "column_ordinal": 5,
+        "mean_cached_summary": 8.451459318591702
+      },
+      {
+        "column_ordinal": 6,
+        "mean_cached_summary": 12.745085482443535
+      },
+      {
+        "column_ordinal": 7,
+        "mean_cached_summary": 16.40939015419253
+      },
+      {
+        "column_ordinal": 8,
+        "mean_cached_summary": 19.759265136718756
+      },
+      {
+        "column_ordinal": 9,
+        "mean_cached_summary": 22.739847986159795
+      },
+      {
+        "column_ordinal": 10,
+        "mean_cached_summary": 25.549630937268663
+      }
+    ],
+    "ABAF": [
+      {
+        "column_ordinal": 1,
+        "mean_cached_summary": -7.145669822868664
+      },
+      {
+        "column_ordinal": 2,
+        "mean_cached_summary": -3.4357308242727536
+      },
+      {
+        "column_ordinal": 3,
+        "mean_cached_summary": -0.34161405079925117
+      },
+      {
+        "column_ordinal": 4,
+        "mean_cached_summary": 3.727926087269585
+      },
+      {
+        "column_ordinal": 5,
+        "mean_cached_summary": 8.413963493663594
+      },
+      {
+        "column_ordinal": 6,
+        "mean_cached_summary": 11.888382731494815
+      },
+      {
+        "column_ordinal": 7,
+        "mean_cached_summary": 15.231281051987327
+      },
+      {
+        "column_ordinal": 8,
+        "mean_cached_summary": 19.17571318314372
+      },
+      {
+        "column_ordinal": 9,
+        "mean_cached_summary": 22.591080204133068
+      },
+      {
+        "column_ordinal": 10,
+        "mean_cached_summary": 27.061666321644587
+      }
+    ]
+  },
+  "statistical_independence_of_sheets_established": false,
+  "largest_adjacent_changes": [
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "G30",
+      "cell": "G31",
+      "previous": -85.6781005859375,
+      "value": -49.6368370056152,
+      "absolute_change": 36.0412635803223
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "K30",
+      "cell": "K31",
+      "previous": -85.015869140625,
+      "value": -49.3469200134277,
+      "absolute_change": 35.6689491271973
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "J30",
+      "cell": "J31",
+      "previous": -85.36376953125,
+      "value": -49.7894248962402,
+      "absolute_change": 35.5743446350098
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "C30",
+      "cell": "C31",
+      "previous": -85.809326171875,
+      "value": -50.3845176696777,
+      "absolute_change": 35.4248085021973
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "D30",
+      "cell": "D31",
+      "previous": -85.3790283203125,
+      "value": -49.9877891540527,
+      "absolute_change": 35.3912391662598
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "H30",
+      "cell": "H31",
+      "previous": -84.368896484375,
+      "value": -49.3469200134277,
+      "absolute_change": 35.0219764709473
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "E30",
+      "cell": "E31",
+      "previous": -85.113525390625,
+      "value": -50.2777061462402,
+      "absolute_change": 34.8358192443848
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "F30",
+      "cell": "F31",
+      "previous": -85.3973388671875,
+      "value": -50.5981407165527,
+      "absolute_change": 34.7991981506348
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "B30",
+      "cell": "B31",
+      "previous": -85.2813720703125,
+      "value": -50.7354698181152,
+      "absolute_change": 34.5459022521973
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "I30",
+      "cell": "I31",
+      "previous": -84.2681884765625,
+      "value": -49.7741661071777,
+      "absolute_change": 34.4940223693848
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "P22",
+      "cell": "P23",
+      "previous": -52.1728515625,
+      "value": -52.3590087890625,
+      "absolute_change": 0.1861572265625
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "J11",
+      "cell": "J12",
+      "previous": -51.507568359375,
+      "value": -51.66015625,
+      "absolute_change": 0.152587890625
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "P25",
+      "cell": "P26",
+      "previous": -52.581787109375,
+      "value": -52.7252197265625,
+      "absolute_change": 0.1434326171875
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "P24",
+      "cell": "P25",
+      "previous": -52.4505615234375,
+      "value": -52.581787109375,
+      "absolute_change": 0.1312255859375
+    },
+    {
+      "sheet": "ABAF N5 Cell 1",
+      "previous_cell": "U10",
+      "cell": "U11",
+      "previous": -22.0794677734375,
+      "value": -22.2015380859375,
+      "absolute_change": 0.1220703125
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "P21",
+      "cell": "P22",
+      "previous": -52.0538330078125,
+      "value": -52.1728515625,
+      "absolute_change": 0.1190185546875
+    },
+    {
+      "sheet": "ABAF N5 Cell 1",
+      "previous_cell": "C12",
+      "cell": "C13",
+      "previous": -49.1943359375,
+      "value": -49.3072509765625,
+      "absolute_change": 0.1129150390625
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "O12",
+      "cell": "O13",
+      "previous": -57.4554443359375,
+      "value": -57.342529296875,
+      "absolute_change": 0.1129150390625
+    },
+    {
+      "sheet": "ABAF N8 Cell 1",
+      "previous_cell": "N25",
+      "cell": "N26",
+      "previous": -63.56201171875,
+      "value": -63.6749267578125,
+      "absolute_change": 0.1129150390625
+    },
+    {
+      "sheet": "Prep R32",
+      "previous_cell": "K23",
+      "cell": "K24",
+      "previous": -84.7015380859375,
+      "value": -84.808349609375,
+      "absolute_change": 0.1068115234375
+    }
+  ],
+  "preserved_anomaly": {
+    "range": "Prep R32!B31:K31",
+    "exactly_equals": "Prep 4 R32!B31:K31",
+    "values": [
+      -50.7354698181152,
+      -50.3845176696777,
+      -49.9877891540527,
+      -50.2777061462402,
+      -50.5981407165527,
+      -49.6368370056152,
+      -49.3469200134277,
+      -49.7741661071777,
+      -49.7894248962402,
+      -49.3469200134277
+    ],
+    "included_in_summary": "Prep R32!X32:AG32",
+    "corrected_or_excluded": false
+  },
+  "current_axis_mapping": {
+    "workbook_headers_available": false,
+    "assigned_currents": null,
+    "published_methods_caption_pA": [
+      -100,
+      -50,
+      0,
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350
+    ],
+    "published_figure3D_visually_read_pA": [
+      -200,
+      -100,
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "discrepancy_resolved": false,
+    "image_source": {
+      "path": "data/raw/salman-current-clamp/published-figure3.jpg",
+      "bytes": 3764561,
+      "sha256": "ec3e61316d76cb73db3bbed97ffbc66f1ebb9b3e2030751ceb4d941866c18d10"
+    }
+  },
+  "published_cohort_match": {
+    "published_cells_per_group": 17,
+    "workbook_sheets_by_group": {
+      "KS": 7,
+      "R32": 10,
+      "ABAF": 7
+    },
+    "exact_match_established": false
+  },
+  "derived_files": [
+    {
+      "path": "validation/salman-current-clamp-summary-values.csv",
+      "bytes": 30563,
+      "sha256": "37b49871d6796e563c598ac4726a757acd7cfe5b03344cbb46aa532332d5158a"
+    },
+    {
+      "path": "validation/salman-current-clamp-prism-text.json",
+      "bytes": 27744,
+      "sha256": "c6ba14dfc9256ee33222672bb845805f4cc699178731727299b0a79b116e52f9"
+    },
+    {
+      "path": "data/raw/salman-current-clamp/xlsx-cells-and-formula-checks.json.gz",
+      "bytes": 697658,
+      "sha256": "42f5ac292bc0d7fb140570917cf307991b0ad5fe4b002349262c3aa706114049"
+    }
+  ],
+  "source_unchanged": true,
+  "model_fit": false,
+  "simulation": false,
+  "RAR_downloads": 0
+}
