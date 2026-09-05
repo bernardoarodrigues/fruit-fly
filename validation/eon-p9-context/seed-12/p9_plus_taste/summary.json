@@ -1,0 +1,494 @@
+{
+  "seed": 12,
+  "condition": "p9_plus_taste",
+  "config": {
+    "p9_hz": 100.0,
+    "taste_hz": 200.0,
+    "outgoing_block": null
+  },
+  "plan_sha256": "0d7511333583899f05c6ba983b72973c76365251cad25c4ebbb104bc0df52919",
+  "complete": true,
+  "checks": {
+    "clock": true,
+    "finite_sampled_state": true,
+    "ordered_spikes": true,
+    "spike_grid": true,
+    "rng_shadow": true,
+    "drive_contract": true,
+    "arrival_partition": true,
+    "complete_500ms": true,
+    "total_count_reconciles": true,
+    "last_spike_ticks_from_complete_stream": true,
+    "delayed_unblocked_edge_visits_each_ms": true,
+    "pending_ring_counts_and_order": true,
+    "source_counts_reconcile": true
+  },
+  "passed": true,
+  "error": null,
+  "wall_seconds": 2.009708583005704,
+  "neural_ticks": 5000,
+  "total_spikes": 304677,
+  "selected_states_shape": [
+    501,
+    25
+  ],
+  "voltage_min_sampled_mv": -474.38887503292653,
+  "voltage_max_sampled_mv": 18.71055578965082,
+  "initial_rng": 9986919024197907781,
+  "final_rng": 2674732209715462279,
+  "expected_rng_draws": 65000,
+  "source_ids": [
+    10783,
+    11177,
+    87710,
+    91221,
+    91302,
+    92929,
+    93294,
+    94367,
+    123191,
+    151556,
+    162704,
+    219573,
+    526151
+  ],
+  "actual_source_spikes": [
+    48,
+    57,
+    77,
+    101,
+    115,
+    109,
+    97,
+    90,
+    105,
+    108,
+    100,
+    89,
+    105
+  ],
+  "candidate_events": [
+    49,
+    57,
+    77,
+    104,
+    116,
+    110,
+    98,
+    92,
+    106,
+    112,
+    101,
+    90,
+    107
+  ],
+  "applied_events_inferred": [
+    48,
+    56,
+    77,
+    101,
+    115,
+    109,
+    97,
+    90,
+    105,
+    108,
+    100,
+    89,
+    105
+  ],
+  "windows": [
+    {
+      "start_ms": 0.0,
+      "end_ms": 50.0,
+      "duration_s": 0.05,
+      "groups": {
+        "p9": {
+          "count": 12,
+          "per_cell_counts": [
+            4,
+            8
+          ],
+          "mean_rate_hz": 120.0
+        },
+        "taste": {
+          "count": 91,
+          "per_cell_counts": [
+            6,
+            11,
+            10,
+            12,
+            10,
+            6,
+            7,
+            11,
+            7,
+            5,
+            6
+          ],
+          "mean_rate_hz": 165.45454545454547
+        },
+        "forward": {
+          "count": 2,
+          "per_cell_counts": [
+            1,
+            1
+          ],
+          "mean_rate_hz": 20.0
+        },
+        "turn_left": {
+          "count": 1,
+          "per_cell_counts": [
+            0,
+            1
+          ],
+          "mean_rate_hz": 10.0
+        },
+        "turn_right": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "feeding": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "escape": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_L": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa02_L": {
+          "count": 1,
+          "per_cell_counts": [
+            1
+          ],
+          "mean_rate_hz": 20.0
+        },
+        "DNa02_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNg97_L": {
+          "count": 1,
+          "per_cell_counts": [
+            1
+          ],
+          "mean_rate_hz": 20.0
+        },
+        "DNg97_R": {
+          "count": 1,
+          "per_cell_counts": [
+            1
+          ],
+          "mean_rate_hz": 20.0
+        },
+        "MN9_L": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "MN9_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        }
+      }
+    },
+    {
+      "start_ms": 50.0,
+      "end_ms": 500.0,
+      "duration_s": 0.45,
+      "groups": {
+        "p9": {
+          "count": 93,
+          "per_cell_counts": [
+            44,
+            49
+          ],
+          "mean_rate_hz": 103.33333333333333
+        },
+        "taste": {
+          "count": 1005,
+          "per_cell_counts": [
+            71,
+            90,
+            105,
+            97,
+            87,
+            84,
+            98,
+            97,
+            93,
+            84,
+            99
+          ],
+          "mean_rate_hz": 203.030303030303
+        },
+        "forward": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "turn_left": {
+          "count": 2,
+          "per_cell_counts": [
+            0,
+            2
+          ],
+          "mean_rate_hz": 2.2222222222222223
+        },
+        "turn_right": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "feeding": {
+          "count": 12,
+          "per_cell_counts": [
+            12,
+            0
+          ],
+          "mean_rate_hz": 13.333333333333332
+        },
+        "escape": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_L": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa02_L": {
+          "count": 2,
+          "per_cell_counts": [
+            2
+          ],
+          "mean_rate_hz": 4.444444444444445
+        },
+        "DNa02_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNg97_L": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNg97_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "MN9_L": {
+          "count": 12,
+          "per_cell_counts": [
+            12
+          ],
+          "mean_rate_hz": 26.666666666666664
+        },
+        "MN9_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        }
+      }
+    },
+    {
+      "start_ms": 0.0,
+      "end_ms": 500.0,
+      "duration_s": 0.5,
+      "groups": {
+        "p9": {
+          "count": 105,
+          "per_cell_counts": [
+            48,
+            57
+          ],
+          "mean_rate_hz": 105.0
+        },
+        "taste": {
+          "count": 1096,
+          "per_cell_counts": [
+            77,
+            101,
+            115,
+            109,
+            97,
+            90,
+            105,
+            108,
+            100,
+            89,
+            105
+          ],
+          "mean_rate_hz": 199.27272727272728
+        },
+        "forward": {
+          "count": 2,
+          "per_cell_counts": [
+            1,
+            1
+          ],
+          "mean_rate_hz": 2.0
+        },
+        "turn_left": {
+          "count": 3,
+          "per_cell_counts": [
+            0,
+            3
+          ],
+          "mean_rate_hz": 3.0
+        },
+        "turn_right": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "feeding": {
+          "count": 12,
+          "per_cell_counts": [
+            12,
+            0
+          ],
+          "mean_rate_hz": 12.0
+        },
+        "escape": {
+          "count": 0,
+          "per_cell_counts": [
+            0,
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_L": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa01_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNa02_L": {
+          "count": 3,
+          "per_cell_counts": [
+            3
+          ],
+          "mean_rate_hz": 6.0
+        },
+        "DNa02_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        },
+        "DNg97_L": {
+          "count": 1,
+          "per_cell_counts": [
+            1
+          ],
+          "mean_rate_hz": 2.0
+        },
+        "DNg97_R": {
+          "count": 1,
+          "per_cell_counts": [
+            1
+          ],
+          "mean_rate_hz": 2.0
+        },
+        "MN9_L": {
+          "count": 12,
+          "per_cell_counts": [
+            12
+          ],
+          "mean_rate_hz": 24.0
+        },
+        "MN9_R": {
+          "count": 0,
+          "per_cell_counts": [
+            0
+          ],
+          "mean_rate_hz": 0.0
+        }
+      }
+    }
+  ],
+  "artifacts": {
+    "validation/eon-p9-context/seed-12/p9_plus_taste/final-or-failure.npz": "0f679a0b1bdbd2918fad7b375323bbd2d45ae7dfaa339769cd558f9bdcce349d",
+    "validation/eon-p9-context/seed-12/p9_plus_taste/initial.npz": "7c6baa6f189210266296c8257ce968d3e79d4e0230fbbc0b8432ca81b99f896f",
+    "validation/eon-p9-context/seed-12/p9_plus_taste/inputs.npz": "58912709c9167fc067c027e1e76f1c601c90837cbb40616898401bf2e65f5cd4",
+    "validation/eon-p9-context/seed-12/p9_plus_taste/samples.jsonl": "1a00c1a5621333d6732833f3f70366bbed9df04f2a91dd73a632115bbd1523eb",
+    "validation/eon-p9-context/seed-12/p9_plus_taste/spikes.npz": "7ddb3cb33c6fef194f915dccf6cc0bf155668d2038615eeda886731bf7edac33",
+    "validation/eon-p9-context/seed-12/p9_plus_taste/states.npz": "ba729a3167769eda3e98d8e981b22aa5be09ffc03f07348654e8be38604ba781"
+  }
+}

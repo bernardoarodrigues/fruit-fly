@@ -18,6 +18,8 @@ Evidence: [connectome notes](01-connectomes-and-neural-models.md), [body notes](
 
 H8–H9 were added after the [expanded Eon source comparison](16-eon-integration-insights.md). They concern transfer between simulations; neither establishes the mechanism of the embodied video or a new biological result.
 
+Initial H8 probe: the [fixed male P9/taste panel](../docs/eon-p9-context-assay.md) shows sensory modulation under imposed P9 context, with seed-dependent direction. It does not restore sustained oDN1 output during 50–500 ms and retains implausible voltages. H8 is not established as an explanation of the source embodiment. A matched source-graph control remains a discriminating next step; the unresolved ascending-cell correspondence still limits H9.
+
 ## Questions that must remain explicit
 
 1. Which untraced fragments and absent peripheral neurons matter for each selected assay? Can their uncertainty be marginalized rather than hidden in fitted gains?

@@ -4,6 +4,12 @@ User scope update: 2026-09-04. Focus on **one male Drosophila** to accelerate te
 
 This is the active implementation plan. The research roadmap records the broader two-animal program and remains the source of scientific validation requirements. This scope update does not turn a body animation or a small substitute graph into completion.
 
+## Current scientific priority: 2026-09-05 UTC
+
+The user explicitly cancelled the proposed embodied Eon integration benchmark. Finish the independent review and commit of the existing bounded Eon neural results, then make the inhibitory C0/C1/H0/H1 factorial the primary scientific focus. Do not continue copying Eon's stimulation or fitting motor gains as the main path to realism. No embodied P9/taste benchmark is required or authorized by the latest steering.
+
+H1 must not be selected because its voltage plot looks better. Before promotion it must satisfy numerical bound and accuracy checks, relevant physiological amplitude/timing comparisons, meaningful stimulus contrasts, seed robustness, and improved recurrent full-network behavior without uncontrolled persistence. Conditional fixed-input replay cannot satisfy the recurrent gate. Record failed and unresolved criteria explicitly; see [operational promotion gates](inhibitory-promotion-gates.md).
+
 ## Required milestones and evidence
 
 | Milestone | Required implementation | Completion evidence |

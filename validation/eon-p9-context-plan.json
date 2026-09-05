@@ -1,0 +1,421 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T04:43:19.098947+00:00",
+  "git_head": "7d135b253552f9ea933359330dacfc31d4ce83bc",
+  "purpose": "Eon-inspired P9 locomotor-context \u00d7 known male LgAG2 activation; neural-only, not natural walking or an embodied-demo reproduction",
+  "source_recipe": {
+    "commit": "c976c7a9",
+    "notebook_cells": [
+      9,
+      14,
+      16,
+      35,
+      36
+    ],
+    "difference": "Use only eleven verified male LgAG2 cells; omit Eon's two separately named ascending-leg inputs and do not substitute LgLG4. Source displayed means use another graph, duration and trial count."
+  },
+  "seeds": [
+    11,
+    12
+  ],
+  "duration_ms": 500.0,
+  "sample_interval_ms": 1.0,
+  "neural_ticks": 5000,
+  "conditions": {
+    "no_events": {
+      "p9_hz": 0.0,
+      "taste_hz": 0.0,
+      "outgoing_block": null
+    },
+    "taste_only": {
+      "p9_hz": 0.0,
+      "taste_hz": 200.0,
+      "outgoing_block": null
+    },
+    "p9_only": {
+      "p9_hz": 100.0,
+      "taste_hz": 0.0,
+      "outgoing_block": null
+    },
+    "p9_plus_taste": {
+      "p9_hz": 100.0,
+      "taste_hz": 200.0,
+      "outgoing_block": null
+    },
+    "p9_only_p9_outputs_blocked": {
+      "p9_hz": 100.0,
+      "taste_hz": 0.0,
+      "outgoing_block": "p9"
+    },
+    "p9_plus_taste_taste_outputs_blocked": {
+      "p9_hz": 100.0,
+      "taste_hz": 200.0,
+      "outgoing_block": "taste"
+    }
+  },
+  "condition_order": [
+    "no_events",
+    "taste_only",
+    "p9_only",
+    "p9_plus_taste",
+    "p9_only_p9_outputs_blocked",
+    "p9_plus_taste_taste_outputs_blocked"
+  ],
+  "parameters": {
+    "dt_ms": 0.1,
+    "resting_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_tau_ms": 20.0,
+    "synapse_tau_ms": 5.0,
+    "refractory_ms": 2.2,
+    "delay_ms": 1.8,
+    "poisson_weight_mv": 68.75
+  },
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "neurons": 166700,
+  "edges": 25582938,
+  "source_indices": [
+    725,
+    1087,
+    66376,
+    69002,
+    69071,
+    70295,
+    70581,
+    71399,
+    91845,
+    106987,
+    110888,
+    121441,
+    133119
+  ],
+  "source_ids": [
+    10783,
+    11177,
+    87710,
+    91221,
+    91302,
+    92929,
+    93294,
+    94367,
+    123191,
+    151556,
+    162704,
+    219573,
+    526151
+  ],
+  "source_types": [
+    "DNp09",
+    "DNp09",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2",
+    "LgAG2"
+  ],
+  "taste_root_sides": [
+    "L",
+    "R",
+    "L",
+    "L",
+    "R",
+    "R",
+    "R",
+    "R",
+    "L",
+    "L",
+    "R"
+  ],
+  "taste_entry_nerves": [
+    "ProLN",
+    "ProLN",
+    "MesoLN",
+    "ProLN",
+    "MesoLN",
+    "MesoLN",
+    "MetaLN",
+    "MetaLN",
+    "MetaLN",
+    "MesoLN",
+    "ProLN"
+  ],
+  "groups": {
+    "p9": {
+      "indices": [
+        725,
+        1087
+      ],
+      "ids": [
+        10783,
+        11177
+      ]
+    },
+    "taste": {
+      "indices": [
+        66376,
+        69002,
+        69071,
+        70295,
+        70581,
+        71399,
+        91845,
+        106987,
+        110888,
+        121441,
+        133119
+      ],
+      "ids": [
+        87710,
+        91221,
+        91302,
+        92929,
+        93294,
+        94367,
+        123191,
+        151556,
+        162704,
+        219573,
+        526151
+      ]
+    },
+    "forward": {
+      "indices": [
+        3548,
+        122339
+      ],
+      "ids": [
+        13805,
+        230783
+      ]
+    },
+    "turn_left": {
+      "indices": [
+        406,
+        131957
+      ],
+      "ids": [
+        10442,
+        523769
+      ]
+    },
+    "turn_right": {
+      "indices": [
+        332,
+        704
+      ],
+      "ids": [
+        10360,
+        10760
+      ]
+    },
+    "feeding": {
+      "indices": [
+        306,
+        6367
+      ],
+      "ids": [
+        10331,
+        16949
+      ]
+    },
+    "escape": {
+      "indices": [
+        0,
+        6
+      ],
+      "ids": [
+        10001,
+        10010
+      ]
+    },
+    "DNa01_L": {
+      "indices": [
+        406
+      ],
+      "ids": [
+        10442
+      ]
+    },
+    "DNa01_R": {
+      "indices": [
+        704
+      ],
+      "ids": [
+        10760
+      ]
+    },
+    "DNa02_L": {
+      "indices": [
+        131957
+      ],
+      "ids": [
+        523769
+      ]
+    },
+    "DNa02_R": {
+      "indices": [
+        332
+      ],
+      "ids": [
+        10360
+      ]
+    },
+    "DNg97_L": {
+      "indices": [
+        3548
+      ],
+      "ids": [
+        13805
+      ]
+    },
+    "DNg97_R": {
+      "indices": [
+        122339
+      ],
+      "ids": [
+        230783
+      ]
+    },
+    "MN9_L": {
+      "indices": [
+        306
+      ],
+      "ids": [
+        10331
+      ]
+    },
+    "MN9_R": {
+      "indices": [
+        6367
+      ],
+      "ids": [
+        16949
+      ]
+    }
+  },
+  "selected_indices": [
+    0,
+    6,
+    306,
+    332,
+    406,
+    704,
+    725,
+    1087,
+    3103,
+    3548,
+    6367,
+    49930,
+    66376,
+    69002,
+    69071,
+    70295,
+    70581,
+    71399,
+    91845,
+    106987,
+    110888,
+    121441,
+    122339,
+    131957,
+    133119
+  ],
+  "selected_ids": [
+    10001,
+    10010,
+    10331,
+    10360,
+    10442,
+    10760,
+    10783,
+    11177,
+    13314,
+    13805,
+    16949,
+    67052,
+    87710,
+    91221,
+    91302,
+    92929,
+    93294,
+    94367,
+    123191,
+    151556,
+    162704,
+    219573,
+    230783,
+    523769,
+    526151
+  ],
+  "drive": {
+    "order": "Two ascending-numeric-ID DNp09, then eleven ascending-numeric-ID LgAG2; identical13-cell union every step and condition",
+    "current_mv": null,
+    "poisson_weight_mv": null,
+    "disable_refractory": true,
+    "other_inputs": [],
+    "zero_rate_convention": "All13 listed cells receive zero refractory even at zero rate; no-events is a common-eligibility control, not an untouched-physiology claim",
+    "event_accounting": "Reconstruct candidate Bernoulli arrivals with frozen _uniform on a separate RNG copy; same-tick source spikes identify arrivals rejected by source API. Applied events are inferred from pinned ordering, not newly instrumented kernel writes."
+  },
+  "samples": "Initial and every1ms selected voltage/synaptic/refractory/last-spike states, global voltage extrema/mean, actual group counts; all network ordered spike indices and integer0.1ms ticks; full initial/final checkpoint; candidate/applied external-event masks and RNG per1ms",
+  "analysis_windows_ms": [
+    [
+      0.0,
+      50.0
+    ],
+    [
+      50.0,
+      500.0
+    ],
+    [
+      0.0,
+      500.0
+    ]
+  ],
+  "checks": [
+    "exact graph/source hashes and thirteen IDs",
+    "all5000ticks and500one_ms samples",
+    "full ordered spike stream and selected/all-cell count reconciliation",
+    "all13source refractory0/current0",
+    "RNG shadow/endpoints equal eachsample and acrossconditions",
+    "external candidate events partition by same-tick threshold firing",
+    "outgoing mask exact and delayed edge-visit counts reconstructed",
+    "final last-spike/pending queues from ordered spikes",
+    "noevents no network spikes",
+    "P9-output block leaves no nonP9 spikes with onlyP9 input",
+    "source files unchanged after panel"
+  ],
+  "not_success_gates": [
+    "DN recruitment, effect direction, physiological voltage range or model rate",
+    "matching source author1s/30trial means",
+    "body movement, navigation, feeding or inhibition-model selection"
+  ],
+  "limits": [
+    "No body or decoder action is run",
+    "No source/weight/neural parameter change or search",
+    "Source spike count is not configured input-event rate",
+    "1ms selected states are sampled; every0.1ms interior membrane state is not retained",
+    "No additional experiment after this panel; retain all failures"
+  ],
+  "source_sha256": {
+    "scripts/assay_eon_p9_context.py": "bd87ebd609970f7e32aa7996a8f0dc1a2fe35f6a52974153a63e8fd261ef7271",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/data.py": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "data/processed/malecns_v1/manifest.json": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+    "data/processed/malecns_v1/neurons.feather": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+    "data/processed/malecns_v1/neuron_ids.npy": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+    "data/processed/malecns_v1/indptr.npy": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+    "data/processed/malecns_v1/targets.npy": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+    "data/processed/malecns_v1/weights.npy": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+    "data/processed/malecns_v1/contact_counts.npy": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+    "data/processed/malecns_v1/signs.npy": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+    "data/raw/eon-public-code/drosophila_brain_model_lif/source/results/eon_1/demo_notebook.ipynb": "44b79bb1e093c716b202a6d673e01d67eb5f3f5140709f86689718bc87f2f90f"
+  }
+}
