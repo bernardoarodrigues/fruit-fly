@@ -73,6 +73,26 @@ class FiniteRunner(QuantizedRunner):
         return state | {"physics": {"horizon_s": .036}}
 
 
+class PartialFailureRunner(FakeRunner):
+    """Transport fixture with distinct completed, neural and partial body clocks."""
+
+    def advance(self, sim_seconds):
+        if self.t >= .02 and sim_seconds > 0:
+            self.t += .005
+            raise RuntimeError("Deliberate partial-step fixture failure")
+        return super().advance(sim_seconds)
+
+    def failure_diagnostics(self):
+        return {"stage": "body advance", "brain_t_s": .03,
+                "cached_body_diagnostics": {"native_time_s": self.t, "finite": False,
+                                            "qpos": np.array([float("nan")])}}
+
+    def render(self, camera):
+        if self.t > .02:
+            raise AssertionError("Must not render the failed physical state")
+        return super().render(camera)
+
+
 def wait_for(service, predicate, timeout=10):
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
@@ -195,6 +215,30 @@ class ViewerWorkerTests(unittest.TestCase):
             self.assertIn("Deliberate test-only initialization failure", error["error"])
             wait_for(service, lambda state: not state["worker_alive"])
             self.assertIsNone(service.image()[0])
+        finally:
+            service.close()
+
+    def test_partial_failure_retains_distinct_clocks_and_last_image_age(self):
+        service = SimulationService({"viewer": {"step_seconds": .01, "fps": 30, "speed": .1}},
+                                    runner_factory=PartialFailureRunner)
+        service.start()
+        try:
+            failed = wait_for(service, lambda state: state["status"] == "error")
+            self.assertEqual(failed["telemetry_basis"], "last_completed_advance")
+            self.assertAlmostEqual(failed["telemetry"]["t_s"], .02)
+            self.assertAlmostEqual(failed["frame_t_s"], .02)
+            record = failed["failure_diagnostics"]
+            self.assertAlmostEqual(record["brain_t_s"], .03)
+            self.assertAlmostEqual(record["cached_body_diagnostics"]["native_time_s"], .025)
+            self.assertEqual(record["cached_body_diagnostics"]["qpos"], [None])
+            self.assertGreater(failed["updated_at"], failed["frame_updated_at"])
+            self.assertGreater(failed["frame_age_seconds"], .05)
+            self.assertIn("partial-step fixture failure", failed["error"])
+            self.assertNotIn("Must not render", failed["error"])
+            self.assertIsNotNone(service.image()[0])
+            wait_for(service, lambda state: not state["worker_alive"])
+            with self.assertRaises(RuntimeError):
+                service.command({"type": "pause", "paused": False})
         finally:
             service.close()
 

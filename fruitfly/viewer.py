@@ -184,6 +184,7 @@ def _simulation_worker(
                     "paused": paused, "camera": camera, "speed": speed,
                     "trial_complete": trial_complete, "trial_limit_s": trial_limit_s,
                     "telemetry": _json_safe(telemetry), "frame": frame,
+                    "telemetry_basis": "completed_advance", "frame_t_s": telemetry.get("t_s"),
                     "frame_sequence": sequence, "error": None,
                 })
                 last_frame = time.monotonic()
@@ -197,8 +198,20 @@ def _simulation_worker(
                 except queue.Empty:
                     pass
     except BaseException as exc:
+        failure = None
+        # A failed body step can leave native and neural clocks beyond the last
+        # completed advance. Read only its cached receipt; do not render or
+        # reconstruct an observation from potentially invalid physical state.
+        diagnostics = getattr(runner, "failure_diagnostics", None)
+        if diagnostics is not None:
+            try:
+                failure = diagnostics()
+            except Exception as diagnostic_error:
+                exc.add_note("Failure diagnostics unavailable: " + str(diagnostic_error))
         _publish(updates, {"status": "error", "error": f"{type(exc).__name__}: {exc}",
-                           "traceback": traceback.format_exc(), "telemetry": _json_safe(telemetry)})
+                           "traceback": traceback.format_exc(), "telemetry": _json_safe(telemetry),
+                           "telemetry_basis": "last_completed_advance" if telemetry else "unavailable",
+                           "failure_diagnostics": _json_safe(failure)})
     finally:
         if runner is not None:
             try:
@@ -247,6 +260,8 @@ class SimulationService:
             "status": "initializing", "paused": viewer["paused"],
             "camera": viewer["camera"], "speed": viewer["speed"],
             "telemetry": {}, "frame_sequence": 0, "error": None, "updated_at": None,
+            "frame_t_s": None, "frame_updated_at": None,
+            "telemetry_basis": "unavailable", "failure_diagnostics": None,
             "observed_realtime_factor": None,
         }
         self.frame: bytes | None = None
@@ -273,6 +288,7 @@ class SimulationService:
                 trace = packet.pop("traceback", None)
                 if frame is not None:
                     self.frame = frame
+                    self.state["frame_updated_at"] = time.time()
                     wall_time = time.monotonic()
                     sim_time = packet.get("telemetry", {}).get("t_s")
                     running = packet.get("status") == "running" and isinstance(sim_time, (int, float))
@@ -292,7 +308,7 @@ class SimulationService:
         with self.lock:
             state = dict(self.state)
         state["worker_alive"] = self.process.is_alive()
-        state["frame_age_seconds"] = None if state["updated_at"] is None else time.time() - state["updated_at"]
+        state["frame_age_seconds"] = None if state["frame_updated_at"] is None else time.time() - state["frame_updated_at"]
         return state
 
     def image(self) -> tuple[bytes | None, int]:

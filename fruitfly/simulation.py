@@ -38,6 +38,7 @@ class SimulationRunner:
         self._trace = None
         self._closed = True
         self._failure = None
+        self._failure_record = None
         self.seed = int(self.config.get("seed", 1))
         self.coupling_s = float(self.config.get("coupling_s", .005))
         if not np.isfinite(self.coupling_s) or not .0001 <= self.coupling_s <= .02:
@@ -338,6 +339,7 @@ class SimulationRunner:
             self.last_action = {"behavior": "rest", "left": 0.0, "right": 0.0}
             self.events = []
             self._failure = None
+            self._failure_record = None
         elif kind == "stimulus":
             self.body.set_stimulus(str(command["name"]), float(command["value"]))
         elif kind == "ablation":
@@ -369,6 +371,10 @@ class SimulationRunner:
     def render(self, camera="follow"):
         return self.body.render(camera)
 
+    def failure_diagnostics(self):
+        """Return the retained failure record without observing or advancing physics."""
+        return copy.deepcopy(getattr(self, "_failure_record", None))
+
     def _record_failure(self, error, stage, **details):
         """Retain cached failure state even when ordinary observation is invalid."""
         def safe(value):
@@ -391,8 +397,9 @@ class SimulationRunner:
                 record["cached_body_diagnostics"] = diagnostics()
             else:
                 record["body_t_s"] = getattr(self.body, "time_s", None)
+            self._failure_record = safe(record)
             with (self.run_dir / "failures.jsonl").open("a") as handle:
-                handle.write(json.dumps(safe(record), allow_nan=False) + "\n")
+                handle.write(json.dumps(self._failure_record, allow_nan=False) + "\n")
         except Exception as recording_error:
             error.add_note("Failure receipt could not be written: " + str(recording_error))
 

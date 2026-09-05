@@ -53,6 +53,10 @@ def test_close_releases_resources_even_when_snapshot_fails(tmp_path):
     failure = json.loads((tmp_path / "failures.jsonl").read_text())
     assert failure["stage"] == "final snapshot" and failure["brain_t_s"] == .002
     assert failure["cached_body_diagnostics"] == {"finite": False, "qpos": [None], "native_time_s": .002}
+    assert runner.failure_diagnostics() == failure
+    caller_copy = runner.failure_diagnostics()
+    caller_copy["cached_body_diagnostics"]["native_time_s"] = 999
+    assert runner.failure_diagnostics() == failure
 
 
 def test_finite_body_horizon_rejects_entire_chunk_before_any_neural_access():
@@ -77,7 +81,9 @@ def test_full_graph_reset_chunking_and_paused_observation(tmp_path):
         paused = runner.advance(0)
         assert paused["t_s"] == first["t_s"]
         assert paused["neural"]["spikes"] == first["neural"]["spikes"]
+        runner._failure_record = {"test_only_previous_record": True}
         runner.control({"type": "reset"})
+        assert runner.failure_diagnostics() is None
         for _ in range(4):
             second = runner.advance(.01)
         np.testing.assert_array_equal(runner.body.data.qpos, qpos)

@@ -74,7 +74,7 @@ function update(data) {
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", ready && data.trial_complete ? "Trial complete" : labels[data.status] || data.status);
   $("status-dot").className = `dot ${data.status === "running" ? "live" : data.status === "error" ? "error" : ""}`;
-  setText("frame-label", ready ? data.trial_complete ? "TRIAL COMPLETE / MALE 01" : "LIVE ARENA / MALE 01" : (data.status === "error" ? "SIMULATION STOPPED" : "WAITING FOR SIMULATION"));
+  setText("frame-label", ready ? data.trial_complete ? "TRIAL COMPLETE / MALE 01" : "LIVE ARENA / MALE 01" : (data.status === "error" ? "LAST FRAME / SIMULATION STOPPED" : "WAITING FOR SIMULATION"));
   setText("frame-age", data.frame_age_seconds === null ? "" : `${number(data.frame_age_seconds, 1)}s since update`);
   for (const control of document.querySelectorAll(".transport button, .transport select, .sidebar input")) control.disabled = !ready;
   $("pause").disabled = !ready || data.trial_complete === true;
@@ -216,7 +216,18 @@ function update(data) {
     chip.append(Object.assign(document.createElement("strong"), {textContent: `${number(rate, 1)} Hz`}));
     $("output-rates").append(chip);
   }
-  showError(data.error || commandError);
+  let errorText = data.error || commandError;
+  if (data.status === "error" && data.telemetry_basis === "last_completed_advance") {
+    errorText += `\nDisplayed telemetry is the last completed advance at ${number(telemetry.t_s, 4)} s.`;
+    if (data.frame_t_s != null) errorText += ` Last image: ${number(data.frame_t_s, 4)} s.`;
+    const failure = data.failure_diagnostics;
+    if (failure) {
+      const bodyTime = failure.cached_body_diagnostics?.native_time_s ?? failure.body_t_s;
+      errorText += `\nFailure clocks — neural: ${number(failure.brain_t_s, 4)} s; physical: ${number(bodyTime, 4)} s.`;
+      errorText += " Failure diagnostics are retained in the run record and state API.";
+    }
+  }
+  showError(errorText);
   if (data.status === "error" && !frameURL) {
     $("loading").querySelector(".loader").hidden = true;
     $("loading").querySelector("strong").textContent = "The simulation could not start";
