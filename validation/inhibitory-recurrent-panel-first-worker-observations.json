@@ -1,0 +1,55 @@
+{
+  "scope": "Read-only polling of PID existence and atomic active-worker record; no signals sent and no worker launched",
+  "poll_seconds": 0.02,
+  "observations": [
+    {
+      "utc": "2026-09-05T06:06:54.187680+00:00",
+      "monotonic": 328556.349111375,
+      "first_pid": 1747,
+      "first_pid_exists": true,
+      "active_worker": {
+        "arm": "C0",
+        "seed": 11,
+        "condition": "no_input",
+        "ordinal": 0,
+        "name": "00-C0-seed11-no_input",
+        "pid": 1747,
+        "started_utc": "2026-09-05T06:05:46.938913+00:00"
+      }
+    },
+    {
+      "utc": "2026-09-05T06:06:55.847506+00:00",
+      "monotonic": 328558.008945125,
+      "first_pid": 1747,
+      "first_pid_exists": false,
+      "active_worker": {
+        "arm": "C0",
+        "seed": 11,
+        "condition": "no_input",
+        "ordinal": 0,
+        "name": "00-C0-seed11-no_input",
+        "pid": 1747,
+        "started_utc": "2026-09-05T06:05:46.938913+00:00"
+      }
+    },
+    {
+      "utc": "2026-09-05T06:06:55.980864+00:00",
+      "monotonic": 328558.142305375,
+      "first_pid": 1747,
+      "first_pid_exists": false,
+      "active_worker": {
+        "arm": "C0",
+        "seed": 11,
+        "condition": "constant_baseline",
+        "ordinal": 1,
+        "name": "01-C0-seed11-constant_baseline",
+        "pid": 2826,
+        "started_utc": "2026-09-05T06:06:55.967558+00:00"
+      }
+    }
+  ],
+  "elapsed_seconds": 1.7932896669954062,
+  "first_worker": "00-C0-seed11-no_input",
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "prior_tool_observation": "ps at parent elapsed00:49 showed child1747 PPID1743 and both alive; task transcript retains that tool output"
+}
