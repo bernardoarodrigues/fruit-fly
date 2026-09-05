@@ -22,6 +22,7 @@ import numpy as np
 
 from .physiology import Physiology, PhysiologyConfig, ResourcePatch
 from .wind import local_airflow
+from .flybody_habitat import FlyBodyHabitatConfig, settings as habitat_settings
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGS = ("LF", "LM", "LH", "RF", "RM", "RH")
@@ -37,6 +38,7 @@ class FlyBodyConfig:
     physics_dt_s: float = .0002
     horizon_s: float | None = 2.
     reference_mode: str = "bounded"
+    habitat: FlyBodyHabitatConfig | None = None
     source_path: str = "data/raw/flybody/source"
     worker_python: str = "tmp/flybody-env/bin/python"
     initial_position_mm: tuple[float, float, float] = (0., 0., 1.278)
@@ -78,6 +80,10 @@ class FlyBodyConfig:
         if (self.reference_mode == "bounded" and self.horizon_s != 2.
                 or self.reference_mode == "rolling" and self.horizon_s is not None):
             raise ValueError("Bounded FlyBody requires a 2 s horizon; rolling requires explicit null")
+        if self.habitat is not None:
+            object.__setattr__(self,"habitat",habitat_settings(self.habitat))
+            if self.reference_mode!="rolling":
+                raise ValueError("Finite habitat requires explicit rolling mode and null horizon")
         if tuple(self.initial_position_mm) != (0., 0., 1.278) or self.initial_heading_rad != 0.:
             raise ValueError("First FlyBody backend preserves source initial pose")
         if self.drive_limit != 1.2 or self.intended_sex != "male" or self.body_profile != PROFILE:
@@ -94,6 +100,9 @@ class FlyBodyConfig:
         for name in ("food_amount", "water_amount", "odor_prehistory_s"):
             if not math.isfinite(getattr(self, name)) or getattr(self, name) < 0:
                 raise ValueError(name + " must be nonnegative and finite")
+        if self.habitat is not None:
+            self.habitat.validate_regions({kind:{"position_mm":getattr(self,kind+"_position_mm"),
+                "radius_mm":getattr(self,kind+"_radius_mm")} for kind in ("food","water")})
         if self.odor_prehistory_s > self.odor_puff_lifetime_s or self.odor_puff_lifetime_s / self.odor_emission_interval_s > 100_000:
             raise ValueError("Invalid puff lifetime/prehistory/resolution")
         if any(not isinstance(v, int) or not 64 <= v <= 2048 for v in (self.width, self.height)):

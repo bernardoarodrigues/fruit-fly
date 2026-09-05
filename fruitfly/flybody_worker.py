@@ -90,6 +90,10 @@ class Worker:
             raise ValueError("enable_wind must be an explicit boolean")
         if config.get("enable_wind", False):
             self.provenance["airflow_module_sha256"] = digest(ROOT / "fruitfly/flybody_airflow.py")
+        if config.get("habitat") is not None:
+            if self.reference_mode!="rolling":
+                raise ValueError("Finite habitat requires rolling reference mode")
+            self.provenance["habitat_module_sha256"] = digest(ROOT / "fruitfly/flybody_habitat.py")
         self.env = None
         self.camera = None
         self.state = None
@@ -107,20 +111,29 @@ class Worker:
         from flybody.tasks.synthetic_trajectories import constant_speed_trajectory
         self.close()
         self.env = walk_imitation(random_state=np.random.RandomState(int(seed)))
-        # Sites are strictly visual: no bodies, inertia, collision geoms or
-        # actuators are added. Preserve all native physics IDs and dynamics.
+        # Default resource sites are strictly visual. The explicit habitat
+        # option adds static wall collisions before the native model compiles.
         arena = self.env.task._arena.mjcf_model
         getattr(arena.visual, "global").offwidth = self.config["width"]
         getattr(arena.visual, "global").offheight = self.config["height"]
-        for kind, color in (("food", (.95, .65, .15, .5)), ("water", (.15, .55, .95, .5))):
-            xy = np.asarray(self.config[kind + "_position_mm"]) / 10
-            arena.worldbody.add("site", name="resource_" + kind, type="cylinder",
-                pos=(*xy, .0001), size=(self.config[kind + "_radius_mm"] / 10, .0001),
-                rgba=color, group=0)
+        self.habitat = None
+        if self.config.get("habitat") is not None:
+            from fruitfly.flybody_habitat import NativeHabitat
+            self.habitat = NativeHabitat(self.config["habitat"], {kind:{"position_mm":self.config[kind+"_position_mm"],
+                "radius_mm":self.config[kind+"_radius_mm"]} for kind in ("food","water")})
+            self.habitat.install(arena,self.env.task._arena.ground_geoms)
+        else:
+            for kind, color in (("food", (.95, .65, .15, .5)), ("water", (.15, .55, .95, .5))):
+                xy = np.asarray(self.config[kind + "_position_mm"]) / 10
+                arena.worldbody.add("site", name="resource_" + kind, type="cylinder",
+                    pos=(*xy, .0001), size=(self.config[kind + "_radius_mm"] / 10, .0001),
+                    rgba=color, group=0)
         qref, vref = constant_speed_trajectory(1100, speed=2.)
         self.env.task._traj_generator.set_next_trajectory(qref, vref)
         self.step_result = self.env.reset()
         self.m, self.d = self.env.physics.model, self.env.physics.data
+        if self.habitat is not None:
+            self.habitat.bind(self.m)
         if self.env.physics.timestep() != PHYSICS_DT or self.env.control_timestep() != CONTROL_DT:
             raise ValueError("Source clock changed")
         spec = self.env.action_spec()
@@ -317,10 +330,17 @@ class Worker:
         if self.airflow_reader is not None:
             state["airflow_geometry"] = self.airflow_reader.sample(diagnostic)
             state["finite"] = state["finite"] and all(np.isfinite(a).all() for a in state["airflow_geometry"].values())
+        if self.habitat is not None:
+            state["habitat"] = self.habitat.sample(m,diagnostic,position)
+            state["finite"] = state["finite"] and all(np.isfinite([
+                contact["dist_mm"], *contact["position_mm"], *contact["force_world_dyne_on_fly"],
+                *contact["local_force_torque_dyne_dyne_cm"],
+                *np.asarray(contact["frame_world_rows"]).ravel()]).all()
+                for contact in state["habitat"]["wall_contacts"])
         return state
 
     def metadata(self):
-        return {**self.provenance, "nq": self.m.nq, "nv": self.m.nv, "nu": self.m.nu,
+        metadata = {**self.provenance, "nq": self.m.nq, "nv": self.m.nv, "nu": self.m.nu,
             "physics_timestep_s": PHYSICS_DT, "control_timestep_s": CONTROL_DT,
             "horizon_s": 2. if self.reference_mode == "bounded" else None,
             "reference_mode": self.reference_mode, "initialization_settling_s": 0.,
@@ -335,6 +355,9 @@ class Worker:
             "antenna_bodies": [self.m.id2name(i, "body") for i in self.antenna_ids],
             "airflow_geometry": self.airflow_reader.metadata if self.airflow_reader is not None else {"enabled": False},
             "action_names": self.names, "action_minimum": self.lo.tolist(), "action_maximum": self.hi.tolist()}
+        if self.habitat is not None:
+            metadata["habitat"] = self.habitat.metadata
+        return metadata
 
     def light(self, value):
         if not math.isfinite(value) or not 0 <= value <= 10:
@@ -354,6 +377,8 @@ class Worker:
         position = np.asarray(self.state["pose_cm_quat"][:3])
         lookat = [0., 0., 0.] if name == "overview" else position
         distance = 5. if name == "overview" else (1.1 if name == "follow" else .7)
+        if self.habitat is not None and name=="overview":
+            lookat,distance = self.habitat.overview_pose()
         self.camera.set_pose(lookat=lookat, distance=distance,
             azimuth=135 if name != "side" else 90, elevation=-55 if name == "overview" else (-36 if name == "follow" else -12))
         before = {key: getattr(self.d, key).copy() for key in ("qpos", "qvel", "qacc", "act", "ctrl", "sensordata")}

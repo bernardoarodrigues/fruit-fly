@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T04:00:58.140259+00:00",
+  "source_sha256": {
+    "scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "fruitfly/flybody_worker.py": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/flybody_habitat.py": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+    "tests/test_flybody_habitat.py": "d1125189b993e100fb3937ff6520a63f18442cb0ecc49ed55317b222107b8be3",
+    "validation/flybody-habitat-design-plan.json": "a34c821ab71052fc9da0b6fc909aa1908798669406af50ecc3148d4d9819604b",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "validation/flybody-stance-actuator-audit.json": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+    "scripts/validate_flybody_habitat_contacts.py": "3288b89d9f789d4f5ce48a128013a814f8041c538adfd27248bacb6646fe9ad8",
+    "validation/flybody-habitat-execution-plan.json": "a9a5c7dc77124d6008d78ceb9c98b7785c02ff15ce47d3db926d262fd94c4397",
+    "validation/flybody-habitat-results.json": "f37f7820622b87ec1870a82dd71b521cc8bee4aa7fd10cc0d1f2f0c31ecfa04e"
+  },
+  "reason": "Initial detached positive-x pose produced penetration up to 1.543 mm across a 1 mm wall and contacts on multiple box faces. Its net inward-force gate failed. Preserve that result; test a defined shallow contact boundary separately.",
+  "physics_steps": 0,
+  "policy_advances": 0,
+  "seed": 11,
+  "bisection_iterations": 40,
+  "additional_translation_mm": 0.01,
+  "maximum_penetration_mm": 0.02,
+  "inner_plane_distance_tolerance_mm": 0.02,
+  "protocol": "For each wall use source reset as no-contact lower bound and the saved original deep-overlap pose as contact upper bound. On fresh MjData copies bisect the scalar root XY translation 40 times by presence of target-wall active contact. Translate 0.01 mm beyond first contact along the same inward-to-outward axis and mj_forward a fresh copy. Never assign the probe pose to live data.",
+  "gates": [
+    "Both initial bisection brackets valid",
+    "Four shallow probes have active contacts and net force inward",
+    "Every target contact depth is at most 0.02 mm and point lies within 0.02 mm of inner wall plane",
+    "Raw local force and frame reconstruct world force exactly; contact normals point toward habitat interior",
+    "Nine named live native arrays, native clock, actual actor hash and cached observation bytes remain identical",
+    "No policy, native integration or neural steps; source files unchanged"
+  ],
+  "limits": "Static source-pose collision geometry/solver probes only. No dynamic reliability or avoidance claim; original controller termination remains unchanged."
+}

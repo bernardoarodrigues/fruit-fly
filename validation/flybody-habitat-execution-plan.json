@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T03:57:35.281882+00:00",
+  "source_sha256": {
+    "scripts/validate_flybody_habitat.py": "2590c39deee5696d0ff2954d54727d3cee93ebb15c054089f0ca44e2e40bd4da",
+    "fruitfly/flybody_worker.py": "9885f40c602f5c601bd19815f3e1f67d4bcc86da8e0629cef1b85d30cbeae511",
+    "fruitfly/flybody_bridge.py": "5b0a709f172fc51d19e859bab06a6ad7dc60df49baad10614defef1d02f41887",
+    "fruitfly/flybody_habitat.py": "24f8c0a08446155f667866e20e711cc7e988309bf2fed5cea9973997f8ec16a1",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "configs/male-flybody-rolling-habitat.json": "0e4eaf66e707e343f1fff76293fb8d793d96267e00a6bb93fd39e31551754724",
+    "tests/test_flybody_habitat.py": "d1125189b993e100fb3937ff6520a63f18442cb0ecc49ed55317b222107b8be3",
+    "validation/flybody-habitat-design-plan.json": "a34c821ab71052fc9da0b6fc909aa1908798669406af50ecc3148d4d9819604b",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "validation/flybody-stance-actuator-audit.json": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d"
+  },
+  "baseline": {
+    "path": "tmp/flybody-habitat-baseline/c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb/flybody_worker.py",
+    "sha256": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+    "loading_note": "Standalone comparison imports these unchanged bytes and sets module ROOT to the actual workspace solely for asset lookup."
+  },
+  "seed": 11,
+  "config": {
+    "physics_dt_s": 0.0002,
+    "horizon_s": 2.0,
+    "reference_mode": "bounded",
+    "habitat": null,
+    "source_path": "/Users/bernardo/Documents/Code/fruit-fly/data/raw/flybody/source",
+    "worker_python": "tmp/flybody-env/bin/python",
+    "initial_position_mm": [
+      0.0,
+      0.0,
+      1.278
+    ],
+    "initial_heading_rad": 0.0,
+    "food_position_mm": [
+      6.0,
+      0.0
+    ],
+    "food_radius_mm": 3.0,
+    "food_amount": 1.5,
+    "water_position_mm": [
+      5.0,
+      7.0
+    ],
+    "water_radius_mm": 2.0,
+    "water_amount": 1.5,
+    "wind_mm_s": [
+      -2.0,
+      0.0
+    ],
+    "odor_emission_interval_s": 0.1,
+    "odor_prehistory_s": 3.0,
+    "odor_puff_lifetime_s": 8.0,
+    "drive_limit": 1.2,
+    "intended_sex": "male",
+    "body_profile": "female-derived FlyBody morphology surrogate",
+    "width": 800,
+    "height": 560,
+    "enable_grooming": false,
+    "enable_vision": false,
+    "enable_wind": false,
+    "world_illumination": null,
+    "wind_reference_path": null,
+    "wind_reference_allow_sex_transfer": false,
+    "physiology": {
+      "energy_capacity": 1.0,
+      "hydration_capacity": 1.0,
+      "crop_capacity": 0.3,
+      "initial_energy": 0.55,
+      "initial_hydration": 0.75,
+      "food_intake_per_s": 0.08,
+      "water_intake_per_s": 0.12,
+      "assimilation_per_s": 0.04,
+      "basal_energy_per_s": 0.0005,
+      "locomotion_energy_per_mm": 8e-05,
+      "basal_water_loss_per_s": 0.0003,
+      "locomotion_water_loss_per_mm": 4e-05,
+      "stationary_threshold_mm_s": 1.0
+    }
+  },
+  "cases": [
+    "frozen_default",
+    "new_default",
+    "rolling_prefix",
+    "habitat_wall_push",
+    "offset_geometry"
+  ],
+  "commands": {
+    "frozen_default": "1000 ticks: walk 20 mm/s yaw 0 for [0,.6) and [1.2,2); rest otherwise",
+    "new_default": "Same 1000 ticks and original bounded mode",
+    "rolling_prefix": "250 ticks: walk 20 mm/s yaw 0; rolling, no habitat",
+    "habitat_wall_push": "At most 600 ticks: walk 20 mm/s yaw 0; 30x24 mm centered habitat; stop only at source exception/termination or 1.2 s",
+    "offset_geometry": "Zero policy/control steps; center (1,-1) mm, same dimensions; compiled geometry and overview render"
+  },
+  "physical_clocks_s": {
+    "physics": 0.0002,
+    "control": 0.002
+  },
+  "gates": {
+    "legacy": "Every sampled old state field and actual float32 actor value is exactly equal for reset plus all 1000 control steps",
+    "precontact": "Exact old fields and actual float32 actor equality for reset plus all 250 rolling control steps; no habitat wall contacts in this prefix",
+    "contact": "Actual active wall contact and nonzero force during bounded positive-x trial; retain all outcomes including native physical failure",
+    "containment": "Root XY inside inner rectangle at every saved positive-x trial sample; does not establish full mesh containment or zero soft penetration",
+    "geometry": "Four compiled collidable walls with copied compiled floor friction/solref/solimp, correct mm/cm sizes; same-center resource footprints and offset visible plane",
+    "detached": "Four separately labeled translated-root contact probes at reset; mj_forward on copies only; no policy steps. Save qpos, qvel and diagnostic contacts",
+    "reset_render": "Explicit reset after retaining trial endpoint; exact initial native state/actor; three render cameras with sampled native arrays/observations/time unchanged"
+  },
+  "guard_policy": "Keep strict native qacc norm 1e14, speed 50 cm/s, angular speed 200 rad/s, reference error .3 cm. No gains, steering, recentering or parameter changes.",
+  "limits": [
+    "Finite-height open top over original infinite collision plane; no indefinite containment or avoidance claim",
+    "Source female-derived body and learned walking controller, no male morphology claim",
+    "Food/water are noncolliding planar regions; no liquid physics or wall-based ingestion",
+    "Odor puffs retain unbounded uniform advection without wall-flow/odor-boundary coupling",
+    "Diagnostics at .002 s endpoints; raw force arrays are the worker preceding force stage plus detached endpoint floor/wall forces, not every .0002 s substep"
+  ],
+  "lightweight_test_command": ".venv/bin/python -m pytest tests/test_flybody_habitat.py tests/test_flybody_bridge.py -q"
+}

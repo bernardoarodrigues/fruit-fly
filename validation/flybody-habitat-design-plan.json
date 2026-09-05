@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T03:49:54.953130+00:00",
+  "phase": "design_before_runtime_edits",
+  "git_head": "eb45f8a7e70a52909937247f5982bfd76757f2b8",
+  "source_sha256": {
+    "fruitfly/flybody_worker.py": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+    "fruitfly/flybody_bridge.py": "5a5a0a41da0c1dcc83948374832bb26d2a3ad6fb449b0c138c9e1022259a1f06",
+    "fruitfly/flybody_persistent_task.py": "4da2841caf18dc6cc2321f03d146c041f546a8f5c8ae819ba2c0c86d6e4f9678",
+    "fruitfly/flybody_airflow.py": "37de4818304eb77185e7ec820032c78beb3c490760d4206f6353e25f98f6345f",
+    "tests/test_flybody_bridge.py": "b8e1751c7d86991bfb4cd7921360c012ed7199e05b4cecbfe230ab03dc8676b5",
+    "configs/male-flybody-rolling-probe.json": "d1c2068e4e0860e2b92ee9f84a7aeee01af226ea754956e6c4668c3bf8602870",
+    "docs/flybody-habitat-design.md": "679d1363adc100971f78ab10cc9ae4f56a4e0335163911cbfd194de68c1f70f0"
+  },
+  "frozen_baseline_worker": {
+    "path": "tmp/flybody-habitat-baseline/c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb/flybody_worker.py",
+    "sha256": "c1ccd777e8072db4ba7d4f715c52cf51bd65c22a413872ebbdcda4405b71d0cb",
+    "loading_note": "Standalone comparison imports these unchanged bytes and sets module ROOT to the actual workspace solely for asset lookup."
+  },
+  "design_document": "docs/flybody-habitat-design.md",
+  "execution_plan_required_before_controller_trials": true,
+  "no_runtime_edit_has_occurred": true
+}
