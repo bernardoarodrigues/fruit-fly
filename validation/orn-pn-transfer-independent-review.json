@@ -1,0 +1,365 @@
+{
+  "passed": true,
+  "method": "Saved-data review using direct CSR lookup, independent alias tokenization, scipy.linalg.expm and bounded extremum optimization; no producer/runtime imports or simulation",
+  "script_sha256": "bf7f0072dd2c0451a535d4c7a5d1a7cf67c356481041e494710511118233c81d",
+  "plan_sha256": "915d0f0ab01a606eb042038644e16121c714839101c21c9489bab896130436f7",
+  "result_sha256": "0da59e2dc7a0bd8ca42e434b4815abd81e47c5926f4e05822aeda10df218f198",
+  "checks": [
+    {
+      "name": "matching producer plan",
+      "passed": true
+    },
+    {
+      "name": "source/artifact scripts/audit_orn_pn_transfer.py",
+      "passed": true
+    },
+    {
+      "name": "source/artifact fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "source/artifact fruitfly/data.py",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/contact_counts.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/weights.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/processed/malecns_v1/signs.npy",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-physiology-sources.json",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/raw/orn-pn-physiology/kazama-wilson-2008.pdf",
+      "passed": true
+    },
+    {
+      "name": "source/artifact data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-transfer-candidates.csv",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-transfer-neurons.csv",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-transfer-pairs.csv",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-transfer-edges.csv",
+      "passed": true
+    },
+    {
+      "name": "source/artifact validation/orn-pn-transfer-traces.npz",
+      "passed": true
+    },
+    {
+      "name": "independent exact population IDs",
+      "passed": true
+    },
+    {
+      "name": "174 ORNs, 14 adPNs, 2 separate other PNs",
+      "passed": true
+    },
+    {
+      "name": "complete alias candidates via independent tokenization",
+      "passed": true
+    },
+    {
+      "name": "optic case collisions excluded",
+      "passed": true
+    },
+    {
+      "name": "unknown ORN root sides retained",
+      "passed": true
+    },
+    {
+      "name": "Cartesian product complete with unique pairs",
+      "passed": true
+    },
+    {
+      "name": "Cartesian product identity sets",
+      "passed": true
+    },
+    {
+      "name": "every pair direct CSR contact lookup including absent edges",
+      "passed": true
+    },
+    {
+      "name": "every pair actual float32 weight bytes",
+      "passed": true
+    },
+    {
+      "name": "every pair graph indices",
+      "passed": true
+    },
+    {
+      "name": "core anatomical totals",
+      "passed": true
+    },
+    {
+      "name": "independently optimized impulse extremum",
+      "passed": true
+    },
+    {
+      "name": "all core passive peaks and no crossing",
+      "passed": true
+    },
+    {
+      "name": "complete 601-sample clock",
+      "passed": true
+    },
+    {
+      "name": "real_minimum passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "real_minimum passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "real_minimum actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "real_minimum source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "real_minimum actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "real_median_nearest passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "real_median_nearest passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "real_median_nearest actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "real_median_nearest source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "real_median_nearest actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "real_maximum passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "real_maximum passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "real_maximum actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "real_maximum source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "real_maximum actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "real_largest_subthreshold passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "real_largest_subthreshold passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "real_largest_subthreshold actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "real_largest_subthreshold source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "real_largest_subthreshold actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_1 passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_1 passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_1 actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_1 source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_1 actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_161 passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_161 passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_161 actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_161 source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_161 actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_162 passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_162 passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_162 actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_162 source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_162 actual ordered spike stamps",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_-1 passive voltage arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_-1 passive synaptic arrays",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_-1 actual PN reset and passive trajectory",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_-1 source initialization and reset",
+      "passed": true
+    },
+    {
+      "name": "synthetic_contacts_-1 actual ordered spike stamps",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "case": "real_minimum",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 7.815970093361102e-14,
+      "max_synaptic_error_mv": 5.658667978636345e-15
+    },
+    {
+      "case": "real_median_nearest",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 3.552713678800501e-14,
+      "max_synaptic_error_mv": 9.053868765818152e-14
+    },
+    {
+      "case": "real_maximum",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 1.7053025658242404e-13,
+      "max_synaptic_error_mv": 4.382050278195493e-13
+    },
+    {
+      "case": "real_largest_subthreshold",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 1.7053025658242404e-13,
+      "max_synaptic_error_mv": 4.382050278195493e-13
+    },
+    {
+      "case": "synthetic_contacts_1",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 7.815970093361102e-14,
+      "max_synaptic_error_mv": 2.8293339893181724e-15
+    },
+    {
+      "case": "synthetic_contacts_161",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 1.6342482922482304e-13,
+      "max_synaptic_error_mv": 4.555245070037017e-13
+    },
+    {
+      "case": "synthetic_contacts_162",
+      "predicted_crossing_sample": 105,
+      "max_voltage_error_mv": 2.842170943040401e-14,
+      "max_synaptic_error_mv": 4.085620730620576e-14
+    },
+    {
+      "case": "synthetic_contacts_-1",
+      "predicted_crossing_sample": null,
+      "max_voltage_error_mv": 7.815970093361102e-14,
+      "max_synaptic_error_mv": 2.8293339893181724e-15
+    }
+  ],
+  "pair_count": 2784,
+  "core_edges": 616,
+  "core_contacts": 25884,
+  "optimized_peak_ms": 9.241963098260186,
+  "core_passive_peak_mv": {
+    "min": 0.08661957405770099,
+    "median": 1.4075680479294252,
+    "max": 6.713016843971105
+  },
+  "limits": "Does not establish per-contact release sites, female-to-male physiological equivalence, somatic voltage mapping, recurrent response or biological behavior. An engine construction count/edge traversal summary is producer evidence; saved arrays independently verify its specified isolated input response."
+}

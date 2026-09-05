@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-05T03:23:13.404612+00:00",
+  "git_head": "e2d6290cefea27ee3c1352bb2aff4018e1f81295",
+  "sources": {
+    "scripts/audit_orn_pn_transfer.py": {
+      "sha256": "421c0cfcffe49d6fcfd3d4044180d0eea9990a27fee8f8ee44cac1586f8db781",
+      "bytes": 20579
+    },
+    "fruitfly/neural.py": {
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091
+    },
+    "fruitfly/data.py": {
+      "sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "bytes": 11325
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869
+    },
+    "data/processed/malecns_v1/neurons.feather": {
+      "sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+      "bytes": 22185954
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828
+    },
+    "validation/orn-pn-physiology-sources.json": {
+      "sha256": "9c6e7869e9e9249c892b2afffe8ec291568a10a177c02b40e4a7cac0075be458",
+      "bytes": 845
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf": {
+      "sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6",
+      "bytes": 1353000
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf": {
+      "sha256": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a",
+      "bytes": 5470888
+    }
+  },
+  "parameters": {
+    "dt_ms": 0.1,
+    "resting_mv": -52.0,
+    "reset_mv": -52.0,
+    "threshold_mv": -45.0,
+    "membrane_tau_ms": 20.0,
+    "synapse_tau_ms": 5.0,
+    "refractory_ms": 2.2,
+    "delay_ms": 1.8,
+    "poisson_weight_mv": 68.75
+  },
+  "glomeruli": [
+    "DM6",
+    "VM2",
+    "DL5",
+    "DM4"
+  ],
+  "population_rule": "Exact case-sensitive ORN_{g} and {g}_adPN. Retain other matching ALPN classes separately. Retain case-insensitive alias candidates with inclusion/exclusion reasons; do not merge optic Dm4/Dm6 with antennal DM4/DM6.",
+  "edges": "Enumerate Cartesian product of selected ORNs and all selected ALPNs; retain zero-contact pairs, cross-glomerulus pairs, unknown root sides, and other PN classes separately. No strength filter.",
+  "impulse": "Closed-form unthresholded passive response for tau_m=20 ms, tau_s=5 ms, actual float32 graph weights; threshold crossing is a separate prediction, not an unthresholded runtime run.",
+  "isolated_cases": "Deterministic real same-glomerulus adPN minimum, median-nearest, maximum, largest subthreshold, smallest threshold-crossing edge by continuous peak. Also synthetic 1-,161-,162-contact positive numerical controls and -1-contact sign control. One forced presynaptic spike at stamp 0, no drive/incoming PN/feedback; 60 ms at unchanged 0.1 ms dt.",
+  "initialization": "Set only the isolated presynaptic initial voltage to threshold+1 mV; default resting PN, no changes to parameters, thresholds, refractory behavior or engine source.",
+  "sample_clock": "Initial state at time0; kernel spike stamp=tick*dt; delivery occurs in synapses slot at stamp1.8ms and its post-step state sample is1.9ms. Compare closed form relative to the post-delivery boundary, without altering delay.",
+  "checks": {
+    "closed_form_voltage_absolute_tolerance_mv": 2e-11,
+    "closed_form_synaptic_absolute_tolerance_mv": 2e-11,
+    "actual_source_spikes": 1,
+    "edge_visits": 1,
+    "no_parameter_changes": true,
+    "crossing": "First sampled passive > threshold predicts PN spike at sample_time-dt. Before crossing use closed form; at and after crossing require native reset and zero synaptic state. No biological fit acceptance threshold."
+  },
+  "claim_limit": "Numerical/anatomical audit only. Female pooled somatic unitary measurements cannot directly calibrate male point-neuron voltage or per-contact release-site strength. No runtime promotion."
+}

@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "finished_utc": "2026-09-05T03:23:22.333115+00:00",
+  "plan_sha256": "915d0f0ab01a606eb042038644e16121c714839101c21c9489bab896130436f7",
+  "passed": true,
+  "checks": [
+    {
+      "name": "no_unresolved_exact_case_candidates",
+      "pass": true
+    },
+    {
+      "name": "ORN_annotation_and_sign",
+      "pass": true
+    },
+    {
+      "name": "core_PN_annotation_and_sign",
+      "pass": true
+    },
+    {
+      "name": "all_selected_edge_float32_weights_match_contact_rule",
+      "pass": true
+    },
+    {
+      "name": "all_selected_direct_weights_positive",
+      "pass": true
+    },
+    {
+      "name": "real_minimum:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 7.815970093361102e-14
+    },
+    {
+      "name": "real_minimum:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 6.106226635438361e-16
+    },
+    {
+      "name": "real_minimum:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "real_minimum:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "real_minimum:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "real_minimum:finite",
+      "pass": true
+    },
+    {
+      "name": "real_median_nearest:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 3.552713678800501e-14
+    },
+    {
+      "name": "real_median_nearest:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 9.769962616701378e-15
+    },
+    {
+      "name": "real_median_nearest:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "real_median_nearest:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "real_median_nearest:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "real_median_nearest:finite",
+      "pass": true
+    },
+    {
+      "name": "real_maximum:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 7.105427357601002e-14
+    },
+    {
+      "name": "real_maximum:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 4.973799150320701e-14
+    },
+    {
+      "name": "real_maximum:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "real_maximum:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "real_maximum:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "real_maximum:finite",
+      "pass": true
+    },
+    {
+      "name": "real_largest_subthreshold:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 7.105427357601002e-14
+    },
+    {
+      "name": "real_largest_subthreshold:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 4.973799150320701e-14
+    },
+    {
+      "name": "real_largest_subthreshold:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "real_largest_subthreshold:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "real_largest_subthreshold:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "real_largest_subthreshold:finite",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_1:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 7.815970093361102e-14
+    },
+    {
+      "name": "synthetic_contacts_1:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 3.0531133177191805e-16
+    },
+    {
+      "name": "synthetic_contacts_1:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "synthetic_contacts_1:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "synthetic_contacts_1:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_1:finite",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_161:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 4.263256414560601e-14
+    },
+    {
+      "name": "synthetic_contacts_161:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 4.263256414560601e-14
+    },
+    {
+      "name": "synthetic_contacts_161:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "synthetic_contacts_161:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "synthetic_contacts_161:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_161:finite",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_162:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 2.842170943040401e-14
+    },
+    {
+      "name": "synthetic_contacts_162:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 4.085620730620576e-14
+    },
+    {
+      "name": "synthetic_contacts_162:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [
+        10.4
+      ],
+      "predicted_PN_stamps_ms": [
+        10.4
+      ]
+    },
+    {
+      "name": "synthetic_contacts_162:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "synthetic_contacts_162:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_162:finite",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_162:reset_at_and_after_threshold",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_-1:passive_voltage_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 7.815970093361102e-14
+    },
+    {
+      "name": "synthetic_contacts_-1:passive_synaptic_before_any_crossing",
+      "pass": true,
+      "max_error_mv": 3.0531133177191805e-16
+    },
+    {
+      "name": "synthetic_contacts_-1:spike_stamps",
+      "pass": true,
+      "actual_pre_stamps_ms": [
+        0.0
+      ],
+      "actual_PN_stamps_ms": [],
+      "predicted_PN_stamps_ms": []
+    },
+    {
+      "name": "synthetic_contacts_-1:one_edge_delivery",
+      "pass": true,
+      "traversals": 1
+    },
+    {
+      "name": "synthetic_contacts_-1:unchanged_parameters_and_clock",
+      "pass": true
+    },
+    {
+      "name": "synthetic_contacts_-1:finite",
+      "pass": true
+    },
+    {
+      "name": "runtime_sources_unchanged_after_audit",
+      "pass": true
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "graph": {
+    "dataset": "male-cns:v1.0",
+    "sex": "male",
+    "neurons": 166700,
+    "edges": 25582938,
+    "retained_synaptic_contacts": 124177617,
+    "weight_scale_mv": 0.275,
+    "license": "MaleCNS data CC BY 4.0; attribution Berg et al., Cell 2026, DOI 10.1016/j.cell.2026.08.015"
+  },
+  "selection": {
+    "ORNs": 174,
+    "adPNs": 14,
+    "other_PNs": 2,
+    "candidate_decisions": {
+      "included_exact_olfactory_type": 174,
+      "case_collision_not_exact_antennal_glomerulus": 161,
+      "included_exact_adPN_type": 14,
+      "retained_other_PN_class": 2
+    },
+    "excluded_candidate_types": {
+      "Dm4": 99,
+      "Dm6": 62
+    },
+    "all_PN_candidate_types": {
+      "DM6_adPN": 7,
+      "VM2_adPN": 3,
+      "DM4_adPN": 2,
+      "DL5_adPN": 2,
+      "DM4_vPN": 2
+    },
+    "pair_count": 2784,
+    "direct_edges": 641,
+    "edge_relation_counts": {
+      "same_glomerulus_adPN": 616,
+      "same_glomerulus_other_PN": 25
+    },
+    "edge_relation_contact_totals": {
+      "same_glomerulus_adPN": 25884,
+      "same_glomerulus_other_PN": 65
+    }
+  },
+  "same_glomerulus_adPN_summary": {
+    "DM6": {
+      "ORNs": 58,
+      "ORN_root_sides": {
+        "R": 29,
+        "L": 22,
+        "unknown": 7
+      },
+      "adPNs": 7,
+      "adPN_ids_by_soma_side": {
+        "L": [
+          15184,
+          17350,
+          18015
+        ],
+        "R": [
+          15005,
+          18417,
+          19953,
+          519572
+        ]
+      },
+      "potential_pairs": 406,
+      "direct_edges": 362,
+      "absent_pairs": 44,
+      "contacts": {
+        "n": 362,
+        "min": 2.0,
+        "median": 28.0,
+        "mean": 27.42265193370166,
+        "max": 61.0,
+        "q25": 21.0,
+        "q75": 34.0
+      },
+      "weight_mv": {
+        "n": 362,
+        "min": 0.550000011920929,
+        "median": 7.700000286102295,
+        "mean": 7.541229481690497,
+        "max": 16.774999618530273,
+        "q25": 5.775000095367432,
+        "q75": 9.350000381469727
+      },
+      "passive_peak_mv": {
+        "n": 362,
+        "min": 0.0866195740577012,
+        "median": 1.2126740555821034,
+        "mean": 1.1876692207587074,
+        "max": 2.641896891420595,
+        "q25": 0.9095055229122909,
+        "q75": 1.4725327871423504
+      },
+      "passive_threshold_crossing_edges": 0,
+      "contact_total": 9927,
+      "annotation_side_groups": [
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "L",
+          "direct_edges": 63,
+          "contacts": {
+            "n": 63,
+            "min": 14.0,
+            "median": 34.0,
+            "mean": 33.63492063492063,
+            "max": 61.0,
+            "q25": 27.0,
+            "q75": 40.0
+          }
+        },
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "R",
+          "direct_edges": 72,
+          "contacts": {
+            "n": 72,
+            "min": 7.0,
+            "median": 22.0,
+            "mean": 21.944444444444443,
+            "max": 44.0,
+            "q25": 15.0,
+            "q75": 28.0
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "L",
+          "direct_edges": 81,
+          "contacts": {
+            "n": 81,
+            "min": 11.0,
+            "median": 27.0,
+            "mean": 26.88888888888889,
+            "max": 52.0,
+            "q25": 23.0,
+            "q75": 30.0
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "R",
+          "direct_edges": 116,
+          "contacts": {
+            "n": 116,
+            "min": 4.0,
+            "median": 31.0,
+            "mean": 30.724137931034484,
+            "max": 53.0,
+            "q25": 25.75,
+            "q75": 37.0
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "L",
+          "direct_edges": 6,
+          "contacts": {
+            "n": 6,
+            "min": 15.0,
+            "median": 28.5,
+            "mean": 29.833333333333332,
+            "max": 47.0,
+            "q25": 22.0,
+            "q75": 37.25
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "R",
+          "direct_edges": 24,
+          "contacts": {
+            "n": 24,
+            "min": 2.0,
+            "median": 12.0,
+            "mean": 12.791666666666666,
+            "max": 28.0,
+            "q25": 8.0,
+            "q75": 16.25
+          }
+        }
+      ]
+    },
+    "VM2": {
+      "ORNs": 41,
+      "ORN_root_sides": {
+        "R": 20,
+        "L": 17,
+        "unknown": 4
+      },
+      "adPNs": 3,
+      "adPN_ids_by_soma_side": {
+        "L": [
+          14665,
+          15992
+        ],
+        "R": [
+          16083
+        ]
+      },
+      "potential_pairs": 123,
+      "direct_edges": 107,
+      "absent_pairs": 16,
+      "contacts": {
+        "n": 107,
+        "min": 12.0,
+        "median": 40.0,
+        "mean": 39.55140186915888,
+        "max": 77.0,
+        "q25": 28.5,
+        "q75": 49.5
+      },
+      "weight_mv": {
+        "n": 107,
+        "min": 3.3000001907348633,
+        "median": 11.0,
+        "mean": 10.876635778730162,
+        "max": 21.17500114440918,
+        "q25": 7.837500333786011,
+        "q75": 13.612500190734863
+      },
+      "passive_peak_mv": {
+        "n": 107,
+        "min": 0.5197174631204938,
+        "median": 1.7323914436054506,
+        "mean": 1.7129627962077307,
+        "max": 3.3348537091736445,
+        "q25": 1.2343289561368862,
+        "q75": 2.1438344415006036
+      },
+      "passive_threshold_crossing_edges": 0,
+      "contact_total": 4232,
+      "annotation_side_groups": [
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "L",
+          "direct_edges": 34,
+          "contacts": {
+            "n": 34,
+            "min": 12.0,
+            "median": 32.5,
+            "mean": 32.38235294117647,
+            "max": 54.0,
+            "q25": 24.0,
+            "q75": 43.75
+          }
+        },
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "R",
+          "direct_edges": 12,
+          "contacts": {
+            "n": 12,
+            "min": 38.0,
+            "median": 50.0,
+            "mean": 48.5,
+            "max": 56.0,
+            "q25": 46.0,
+            "q75": 52.0
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "L",
+          "direct_edges": 38,
+          "contacts": {
+            "n": 38,
+            "min": 17.0,
+            "median": 33.5,
+            "mean": 35.36842105263158,
+            "max": 77.0,
+            "q25": 27.25,
+            "q75": 39.75
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "R",
+          "direct_edges": 19,
+          "contacts": {
+            "n": 19,
+            "min": 37.0,
+            "median": 55.0,
+            "mean": 54.526315789473685,
+            "max": 74.0,
+            "q25": 46.5,
+            "q75": 61.0
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "R",
+          "direct_edges": 4,
+          "contacts": {
+            "n": 4,
+            "min": 32.0,
+            "median": 43.0,
+            "mean": 42.25,
+            "max": 51.0,
+            "q25": 38.0,
+            "q75": 47.25
+          }
+        }
+      ]
+    },
+    "DL5": {
+      "ORNs": 43,
+      "ORN_root_sides": {
+        "L": 23,
+        "R": 19,
+        "unknown": 1
+      },
+      "adPNs": 2,
+      "adPN_ids_by_soma_side": {
+        "L": [
+          10767
+        ],
+        "R": [
+          525105
+        ]
+      },
+      "potential_pairs": 86,
+      "direct_edges": 85,
+      "absent_pairs": 1,
+      "contacts": {
+        "n": 85,
+        "min": 18.0,
+        "median": 81.0,
+        "mean": 81.69411764705882,
+        "max": 151.0,
+        "q25": 55.0,
+        "q75": 108.0
+      },
+      "weight_mv": {
+        "n": 85,
+        "min": 4.950000286102295,
+        "median": 22.274999618530273,
+        "mean": 22.465882778167725,
+        "max": 41.525001525878906,
+        "q25": 15.125,
+        "q75": 29.700000762939453
+      },
+      "passive_peak_mv": {
+        "n": 85,
+        "min": 0.7795761946807408,
+        "median": 3.50809261322332,
+        "mean": 3.5381548270855285,
+        "max": 6.5397779399214455,
+        "q25": 2.3820382349574944,
+        "q75": 4.677457017890151
+      },
+      "passive_threshold_crossing_edges": 0,
+      "contact_total": 6944,
+      "annotation_side_groups": [
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "L",
+          "direct_edges": 23,
+          "contacts": {
+            "n": 23,
+            "min": 28.0,
+            "median": 93.0,
+            "mean": 92.91304347826087,
+            "max": 151.0,
+            "q25": 82.0,
+            "q75": 107.5
+          }
+        },
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "R",
+          "direct_edges": 22,
+          "contacts": {
+            "n": 22,
+            "min": 18.0,
+            "median": 51.5,
+            "mean": 51.63636363636363,
+            "max": 107.0,
+            "q25": 38.5,
+            "q75": 59.75
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "L",
+          "direct_edges": 19,
+          "contacts": {
+            "n": 19,
+            "min": 47.0,
+            "median": 62.0,
+            "mean": 67.26315789473684,
+            "max": 111.0,
+            "q25": 57.0,
+            "q75": 72.5
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "R",
+          "direct_edges": 19,
+          "contacts": {
+            "n": 19,
+            "min": 62.0,
+            "median": 121.0,
+            "mean": 116.89473684210526,
+            "max": 143.0,
+            "q25": 106.0,
+            "q75": 128.5
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "L",
+          "direct_edges": 1,
+          "contacts": {
+            "n": 1,
+            "min": 125.0,
+            "median": 125.0,
+            "mean": 125.0,
+            "max": 125.0,
+            "q25": 125.0,
+            "q75": 125.0
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "R",
+          "direct_edges": 1,
+          "contacts": {
+            "n": 1,
+            "min": 47.0,
+            "median": 47.0,
+            "mean": 47.0,
+            "max": 47.0,
+            "q25": 47.0,
+            "q75": 47.0
+          }
+        }
+      ]
+    },
+    "DM4": {
+      "ORNs": 32,
+      "ORN_root_sides": {
+        "L": 16,
+        "R": 15,
+        "unknown": 1
+      },
+      "adPNs": 2,
+      "adPN_ids_by_soma_side": {
+        "L": [
+          10670
+        ],
+        "R": [
+          10613
+        ]
+      },
+      "potential_pairs": 64,
+      "direct_edges": 62,
+      "absent_pairs": 2,
+      "contacts": {
+        "n": 62,
+        "min": 6.0,
+        "median": 78.0,
+        "mean": 77.11290322580645,
+        "max": 155.0,
+        "q25": 59.25,
+        "q75": 98.0
+      },
+      "weight_mv": {
+        "n": 62,
+        "min": 1.6500000953674316,
+        "median": 21.450000762939453,
+        "mean": 21.20604879625382,
+        "max": 42.625,
+        "q25": 16.293750286102295,
+        "q75": 26.950000762939453
+      },
+      "passive_peak_mv": {
+        "n": 62,
+        "min": 0.2598587315602469,
+        "median": 3.3781634351860634,
+        "mean": 3.3397434079372523,
+        "max": 6.713016843971121,
+        "q25": 2.5661048708988616,
+        "q75": 4.244359156988788
+      },
+      "passive_threshold_crossing_edges": 0,
+      "contact_total": 4781,
+      "annotation_side_groups": [
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "L",
+          "direct_edges": 15,
+          "contacts": {
+            "n": 15,
+            "min": 48.0,
+            "median": 72.0,
+            "mean": 79.13333333333334,
+            "max": 140.0,
+            "q25": 58.0,
+            "q75": 98.0
+          }
+        },
+        {
+          "ORN_root_side": "L",
+          "PN_soma_side": "R",
+          "direct_edges": 16,
+          "contacts": {
+            "n": 16,
+            "min": 6.0,
+            "median": 42.5,
+            "mean": 47.0,
+            "max": 94.0,
+            "q25": 30.0,
+            "q75": 68.25
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "L",
+          "direct_edges": 15,
+          "contacts": {
+            "n": 15,
+            "min": 63.0,
+            "median": 91.0,
+            "mean": 95.86666666666666,
+            "max": 155.0,
+            "q25": 79.5,
+            "q75": 114.0
+          }
+        },
+        {
+          "ORN_root_side": "R",
+          "PN_soma_side": "R",
+          "direct_edges": 15,
+          "contacts": {
+            "n": 15,
+            "min": 35.0,
+            "median": 98.0,
+            "mean": 91.86666666666666,
+            "max": 116.0,
+            "q25": 87.0,
+            "q75": 102.5
+          }
+        },
+        {
+          "ORN_root_side": "unknown",
+          "PN_soma_side": "R",
+          "direct_edges": 1,
+          "contacts": {
+            "n": 1,
+            "min": 26.0,
+            "median": 26.0,
+            "mean": 26.0,
+            "max": 26.0,
+            "q25": 26.0,
+            "q75": 26.0
+          }
+        }
+      ]
+    }
+  },
+  "all_core_edges": {
+    "edges": 616,
+    "contacts": {
+      "n": 616,
+      "min": 2.0,
+      "median": 32.5,
+      "mean": 42.01948051948052,
+      "max": 155.0,
+      "q25": 24.0,
+      "q75": 50.0
+    },
+    "passive_peak_mv": {
+      "n": 616,
+      "min": 0.0866195740577012,
+      "median": 1.4075680479294286,
+      "mean": 1.8198547543884072,
+      "max": 6.713016843971121,
+      "q25": 1.0394349262409877,
+      "q75": 2.165489304506813
+    },
+    "passive_threshold_crossing_edges": 0
+  },
+  "analytical": {
+    "equations": "dg/dt=-g/tau_s; du/dt=(-u+g)/tau_m; g(0+)=signed weight; u(0)=0; u(t)=w*tau_s/(tau_m-tau_s)*(exp(-t/tau_m)-exp(-t/tau_s)).",
+    "time_to_extremum_after_delivery_ms": 9.241962407465937,
+    "extremum_factor_per_weight": 0.15749013123685915,
+    "positive_peak_per_nominal_contact_mv": 0.04330978609013627,
+    "positive_peak_per_actual_float32_one_contact_mv": 0.0433097870288506,
+    "threshold_gap_mv": 7.0,
+    "continuous_threshold_nominal_contact_equivalent": 161.6262889276712,
+    "measurement_6p19mv_nominal_contact_equivalent_noncalibrating": 142.92381835175496,
+    "postdelivery_state_sample_ms": 1.9000000000000001,
+    "interpretation": "Contact-equivalent arithmetic is dimensional context only, not a fitted contact number, release-site estimate, somatic prediction or gain recommendation."
+  },
+  "isolated_cases": [
+    {
+      "name": "real_minimum",
+      "origin": "actual_male_same_glomerulus_adPN_edge",
+      "pre_id": 103329548,
+      "post_id": 19953,
+      "contacts": 2,
+      "weight_mv": 0.550000011920929,
+      "passive_continuous_extremum_delta_mv": 0.0866195740577012,
+      "passive_sampled_positive_peak_delta_mv": 0.08661880876741179,
+      "actual_saved_positive_peak_delta_mv": 0.08661880876744732,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 7.815970093361102e-14,
+      "max_precross_synaptic_error_mv": 6.106226635438361e-16
+    },
+    {
+      "name": "real_median_nearest",
+      "origin": "actual_male_same_glomerulus_adPN_edge",
+      "pre_id": 184538,
+      "post_id": 519572,
+      "contacts": 32,
+      "weight_mv": 8.800000190734863,
+      "passive_continuous_extremum_delta_mv": 1.3859131849232191,
+      "passive_sampled_positive_peak_delta_mv": 1.38590094027861,
+      "actual_saved_positive_peak_delta_mv": 1.385900940278617,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 3.552713678800501e-14,
+      "max_precross_synaptic_error_mv": 9.769962616701378e-15
+    },
+    {
+      "name": "real_maximum",
+      "origin": "actual_male_same_glomerulus_adPN_edge",
+      "pre_id": 123968,
+      "post_id": 10670,
+      "contacts": 155,
+      "weight_mv": 42.625,
+      "passive_continuous_extremum_delta_mv": 6.713016843971121,
+      "passive_sampled_positive_peak_delta_mv": 6.712957533975079,
+      "actual_saved_positive_peak_delta_mv": 6.712957533975121,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 7.105427357601002e-14,
+      "max_precross_synaptic_error_mv": 4.973799150320701e-14
+    },
+    {
+      "name": "real_largest_subthreshold",
+      "origin": "actual_male_same_glomerulus_adPN_edge",
+      "pre_id": 123968,
+      "post_id": 10670,
+      "contacts": 155,
+      "weight_mv": 42.625,
+      "passive_continuous_extremum_delta_mv": 6.713016843971121,
+      "passive_sampled_positive_peak_delta_mv": 6.712957533975079,
+      "actual_saved_positive_peak_delta_mv": 6.712957533975121,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 7.105427357601002e-14,
+      "max_precross_synaptic_error_mv": 4.973799150320701e-14
+    },
+    {
+      "name": "synthetic_contacts_1",
+      "origin": "synthetic_numerical_control_not_additional_anatomy",
+      "pre_id": -1,
+      "post_id": -2,
+      "contacts": 1,
+      "weight_mv": 0.2750000059604645,
+      "passive_continuous_extremum_delta_mv": 0.0433097870288506,
+      "passive_sampled_positive_peak_delta_mv": 0.043309404383705896,
+      "actual_saved_positive_peak_delta_mv": 0.04330940438364195,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 7.815970093361102e-14,
+      "max_precross_synaptic_error_mv": 3.0531133177191805e-16
+    },
+    {
+      "name": "synthetic_contacts_161",
+      "origin": "synthetic_numerical_control_not_additional_anatomy",
+      "pre_id": -1,
+      "post_id": -2,
+      "contacts": 161,
+      "weight_mv": 44.275001525878906,
+      "passive_continuous_extremum_delta_mv": 6.972875800822808,
+      "passive_sampled_positive_peak_delta_mv": 6.972814194953827,
+      "actual_saved_positive_peak_delta_mv": 6.972814194953855,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 4.263256414560601e-14,
+      "max_precross_synaptic_error_mv": 4.263256414560601e-14
+    },
+    {
+      "name": "synthetic_contacts_162",
+      "origin": "synthetic_numerical_control_not_additional_anatomy",
+      "pre_id": -1,
+      "post_id": -2,
+      "contacts": 162,
+      "weight_mv": 44.54999923706055,
+      "passive_continuous_extremum_delta_mv": 7.01618522644664,
+      "passive_sampled_positive_peak_delta_mv": 7.016123237935709,
+      "actual_saved_positive_peak_delta_mv": 6.995630857191671,
+      "predicted_crossing_sample_index": 105,
+      "actual_PN_spike_stamps_ms": [
+        10.4
+      ],
+      "max_precross_voltage_error_mv": 2.842170943040401e-14,
+      "max_precross_synaptic_error_mv": 4.085620730620576e-14
+    },
+    {
+      "name": "synthetic_contacts_-1",
+      "origin": "synthetic_numerical_control_not_additional_anatomy",
+      "pre_id": -1,
+      "post_id": -2,
+      "contacts": 1,
+      "weight_mv": -0.2750000059604645,
+      "passive_continuous_extremum_delta_mv": -0.0433097870288506,
+      "passive_sampled_positive_peak_delta_mv": 0.0,
+      "actual_saved_positive_peak_delta_mv": 0.0,
+      "predicted_crossing_sample_index": null,
+      "actual_PN_spike_stamps_ms": [],
+      "max_precross_voltage_error_mv": 7.815970093361102e-14,
+      "max_precross_synaptic_error_mv": 3.0531133177191805e-16
+    }
+  ],
+  "isolated_neurons_per_case": 2,
+  "isolated_duration_ms_per_case": 60,
+  "full_graph_simulated": false,
+  "parameters_changed": false,
+  "artifacts": {
+    "validation/orn-pn-transfer-candidates.csv": {
+      "sha256": "3aa978ed11c20ba2a5f5c5e2617447a033a9717f6e7510250dee1a5b8d0ce267",
+      "bytes": 40188
+    },
+    "validation/orn-pn-transfer-neurons.csv": {
+      "sha256": "d333809f693225f734cf2801ee00566b9e9e7c51295d6d014ef143dd60709efa",
+      "bytes": 21979
+    },
+    "validation/orn-pn-transfer-pairs.csv": {
+      "sha256": "a3c8034ba367553107f32f7f1b1b968595e19dbdd9bc7350552278124bf2ea93",
+      "bytes": 315592
+    },
+    "validation/orn-pn-transfer-edges.csv": {
+      "sha256": "a60c7abcff76093986b6f9cd1fb13fabead766f499d38876116718cdaccfe9d5",
+      "bytes": 88811
+    },
+    "validation/orn-pn-transfer-traces.npz": {
+      "sha256": "30d9d0773eeab2f4d8471763ffde2dce9292522f1dd4a3c63e7b9e5a9807c2a8",
+      "bytes": 138307
+    }
+  }
+}

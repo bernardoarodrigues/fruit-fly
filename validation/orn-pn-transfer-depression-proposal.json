@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "proposal_only_not_executed_not_a_runtime_configuration",
+  "audit_plan_sha256": "915d0f0ab01a606eb042038644e16121c714839101c21c9489bab896130436f7",
+  "sources": {
+    "kazama_wilson_2008": {
+      "doi": "10.1016/j.neuron.2008.02.030",
+      "paper_sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6",
+      "supplement_sha256": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a",
+      "methods_read": ["Paper PDF pages 8 and 9: Figure 8/9 captions, visually checked", "Paper PDF page 11: experimental procedures", "Supplement PDF page 4: train variance analysis", "Supplement PDF page 14: Figure S8, visually checked"],
+      "dynamic_depression_equation_found": false,
+      "measured_recovery_constant": {"value_seconds": 7.5, "scope": "VM2 Figure S8D after pause in 7 Hz stimulation; not Figure S8B high-frequency-train recovery; evaluation observation, not candidate parameter"}
+    },
+    "abbott_1997_reference": {
+      "doi": "10.1126/science.275.5297.221",
+      "url": "https://huguenardlab.stanford.edu/220/varela1997a.pdf",
+      "accessed_utc_date": "2026-09-05",
+      "pdf_bytes": 440778,
+      "pdf_sha256": "a30c88be90584306c25c263a1b564b9d772ec833e1e9bee6f3660bfea760f9b2",
+      "temporary_local_copy": "tmp/pdfs/orn-pn-transfer/abbott-1997.pdf",
+      "locations": "Printed p223, notes6/7/10; PDF page5 visually checked",
+      "scope": "Rat visual cortex reference; no Drosophila parameter transfer"
+    }
+  },
+  "stage_1_source_numerical_reproduction": {
+    "model": "One scalar efficacy per independent source synapse, with no brain graph",
+    "between_events": "a(t+delta)=1-(1-a(t))*exp(-delta/tau)",
+    "event_order": "Emit amplitude a_pre, then assign a_post=f*a_pre",
+    "published_reference_parameters": {"f": 0.75, "recovery_tau_ms": 300.0},
+    "regular_rate_steady_state": "A(r)=(1-exp(-1/(r*tau)))/(1-f*exp(-1/(r*tau))); r and tau in reciprocal units",
+    "optional_published_response_kernel": {"conductance_decay_tau_ms": 2.0, "scope": "Abbott source model only; normalized waveform, no pA or male voltage prediction"},
+    "initial_state": "a=1 after an explicitly fully recovered reset",
+    "numerical_checks": ["Float64 recurrence agrees with analytic regular-rate steady state after verified convergence", "Interrupted train recovery agrees with closed form", "Event amplitude is read before per-spike decrement", "For 0<=f<=1 and initial 0<=a<=1 all states remain bounded", "f=1 gives static amplitudes", "Missing events do not cause depression", "Exact event times and no rounded 7 Hz period"],
+    "proposed_numeric_absolute_tolerance": 1e-12,
+    "explicitly_excluded": ["Reproducing Abbott full spiking network", "Fitting f or tau to female fly data", "Importing Abbott parameters into fruitfly runtime", "Adjusting existing contact weight or PN threshold"]
+  },
+  "stage_2_fly_protocol_comparison": {
+    "preparation_scope": "Adult female 2-7 days; minimal antennal-nerve single-ORN input; somatic PN voltage clamp; VM2 for Figures8D-G,9B-D,S8A-D",
+    "amplitude_protocol": {
+      "source": "Figure8D-F",
+      "baseline_hz": 7,
+      "baseline_seconds": 4,
+      "test_hz": [15, 20, 50],
+      "test_seconds": 0.5,
+      "experiments_n": 6,
+      "normalization": "Each train amplitude divided by its first test-train response, consistent with Figure8F percent initial axis",
+      "proposed_phase_convention_not_explicit_author_detail": "Baseline events -4+j/7 seconds for j=0..27; test events j/r from0 inclusive to.5 exclusive. Record this as a simulation convention and assess timing sensitivity; do not claim exact experimental pulse phase.",
+      "readouts": ["Pre-event efficacy", "Response waveform with explicitly declared kernel", "Amplitude normalized to first test event", "Residual versus digitized mean and SEM"]
+    },
+    "charge_protocol": {
+      "source": "Figure9B-D",
+      "baseline": "7Hz for4s",
+      "displayed_trace_frequencies_hz": [20, 50, 100, 200],
+      "all_charge_curve_frequencies": "Digitize before running; all low-frequency positions are not labeled individually",
+      "integration_windows_seconds": [0.1, 0.5],
+      "normalization_frequency_hz": 100,
+      "experiments_n": 4,
+      "readout": "Normalized integrated response, no absolute pA or charge in coulombs claim",
+      "unresolved_methods": ["Exact baseline subtraction for charge integral", "Stimulus phase and sampling at window boundaries", "Pulse-specific amplitude extraction when responses overlap"]
+    },
+    "recovery_protocols": [
+      {"source": "FigureS8A-B", "displayed_train_hz": 200, "displayed_train_seconds": 0.5, "curve_train_range_hz": [50, 200], "readout": "Amplitude versus time after train", "printed_fitted_tau": null, "needs_extraction": ["Probe times", "High-frequency protocol assignments/pooling", "Baseline history", "Normalization", "Means and uncertainty"]},
+      {"source": "FigureS8C-D", "baseline_hz": 7, "readout": "Recovery ratio versus pause duration", "printed_fitted_tau_seconds": 7.5, "needs_extraction": ["Exact tested pause durations", "Baseline train length", "Recovery-ratio definition/reference", "Means and uncertainty"], "use": "Temporal evaluation only, do not fix a parameter to this value and then claim a held-out prediction"}
+    ],
+    "stochastic_assay_boundary": "Figure8G and supplement Eq6 compare inverse CV squared with mean amplitude, using 1/CV^2=N*p/(1-p). Deterministic efficacy alone cannot reproduce this. Need separately justified stochastic release and quantal observation model; anatomical contacts are not established N and 1-f is not established p."
+  },
+  "evaluation": {
+    "first_comparison": "No fit. Use published reference f=.75,tau=.3s and report descriptive errors on the fly temporal curves; success is not assumed.",
+    "possible_later_fit_only_if_separately_scoped": {"development": "Figure8F20Hz normalized amplitude curve", "reserved_evaluation": ["Figure8F15Hz", "Figure8F50Hz", "Figure9C/D normalized charge curves", "FigureS8B post-train recovery", "FigureS8D7Hz-pause recovery"], "no_gain_fit": true},
+    "disclosure": "Figures already inspected to form this proposal. Reserved evaluation is a prospective model-fitting split, not unseen evidence. Multiple panels may share cells and normalization references; they are not independent biological replicates.",
+    "metrics": ["Normalized amplitude residuals at digitized pulse times", "Time-course RMSE with extraction uncertainty", "Charge-ratio residuals at both windows", "Recovery-curve residuals in both protocols"],
+    "no_biological_pass_threshold": "Aggregate printed figures and SEM do not justify an independent trial likelihood or automatic biological acceptance threshold.",
+    "fit_failure_action": "Preserve mismatches. A new timescale/mechanism requires a separately specified model comparison and evidence; do not adjust the full-brain gain."
+  },
+  "before_execution": ["Archive digitization inputs and outputs with source/page/coordinates/uncertainty", "Resolve or explicitly fix every unspecified stimulus and analysis convention", "Freeze model, initialization, extraction procedure, development/evaluation split, and comparison metrics", "Retain sex, glomerulus and recording-compartment labels throughout"],
+  "no_runtime_edits": true,
+  "no_full_graph_run": true,
+  "no_parameter_promotion": true
+}
