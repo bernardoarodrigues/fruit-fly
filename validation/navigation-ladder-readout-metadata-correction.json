@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-05T17:44:15.109756+00:00",
+  "reason": "Initial reduction finished before anatomy convenience side partitions were amended to include 10 midline DNs. Initial cohort membership, body IDs and numerical readout counts remain valid; preserve initial artifacts and regenerate against final metadata. No neural simulation is rerun. Archived plans retain their original paths and are historical receipts.",
+  "cohort_membership_equal": true,
+  "artifacts": [
+    {
+      "original_path": "validation/navigation-ladder-readout-plan.json",
+      "preserved_path": "validation/navigation-ladder-readout-plan-initial-v0.json",
+      "sha256": "8128a1d4848780dba28d404657445442453111f2d025372c25a266306767e290"
+    },
+    {
+      "original_path": "validation/navigation-ladder-readouts.json",
+      "preserved_path": "validation/navigation-ladder-readouts-initial-v0.json",
+      "sha256": "b60a144d2dd6dda300da649518697d3a2748a5adf6a42bd9e878647a3ee62d07"
+    },
+    {
+      "original_path": "validation/navigation-ladder-readouts.npz",
+      "preserved_path": "validation/navigation-ladder-readouts-initial-v0.npz",
+      "sha256": "6123b8dfa77cab6fbbbd4e43aab287bc66757000b22132735f55e2f5a85b0d00"
+    }
+  ],
+  "old_anatomy_sha256": "c8107260c5b81b98e16f6c2f2b38fd91a6d588adcd48fb2ebdbf97a431bfe0d6",
+  "final_anatomy_sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+}

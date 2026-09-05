@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T18:00:26.005269+00:00",
+  "scope": "Independent saved-native-raster and coordinate audit of Fig.8F; no new point selection, fitting, biological or network simulation.",
+  "source_start": {
+    "scripts/extract_orn_pn_depression.py": {
+      "path": "scripts/extract_orn_pn_depression.py",
+      "bytes": 20853,
+      "sha256": "c6623293d9a34870acfb29afaf688f821fea49be9976a95568e7483f84bf00d5"
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf": {
+      "path": "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf",
+      "bytes": 1353000,
+      "sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6"
+    },
+    "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf": {
+      "path": "data/raw/orn-pn-physiology/kazama-wilson-2008-supplement.pdf",
+      "bytes": 5470888,
+      "sha256": "b2903a4914cff0f556fa643e7aed111d74722ba840093b3a0ac6d81ccd07132a"
+    },
+    "validation/orn-pn-depression-fig8f-embedded.jpg": {
+      "path": "validation/orn-pn-depression-fig8f-embedded.jpg",
+      "bytes": 154959,
+      "sha256": "9a1768a2215234e65a06b9dc84b966cf4a1750496f7094fdd9efa512f73b65a9"
+    },
+    "validation/orn-pn-depression-fig8f-calibration.csv": {
+      "path": "validation/orn-pn-depression-fig8f-calibration.csv",
+      "bytes": 379,
+      "sha256": "94bbd2af4cc5c3a026ac0e23f7f6266a7dc62ded209380480cc2b7b665aca1d4"
+    },
+    "validation/orn-pn-depression-fig8f-native-panel.png": {
+      "path": "validation/orn-pn-depression-fig8f-native-panel.png",
+      "bytes": 28355,
+      "sha256": "e324d86ed1cff071d3dcc41b4a3ab9695d14e812e23555db3603df136ed12eac"
+    },
+    "validation/orn-pn-depression-fig8f-results.json": {
+      "path": "validation/orn-pn-depression-fig8f-results.json",
+      "bytes": 100058,
+      "sha256": "5a664d8f890e995b5bd79402bff7ea53977d14205098ee2922e6cbd4bacaabce"
+    },
+    "validation/orn-pn-depression-fig8f-geometry.json": {
+      "path": "validation/orn-pn-depression-fig8f-geometry.json",
+      "bytes": 45062,
+      "sha256": "b811a90afd2e677a0b30043beb27346a19e49c92aa8d9c369bd09730621ae614"
+    },
+    "validation/orn-pn-depression-fig8f-plot-receipt-v2.json": {
+      "path": "validation/orn-pn-depression-fig8f-plot-receipt-v2.json",
+      "bytes": 670,
+      "sha256": "89c649b59e874979ae76d85517536ac9fb2673277094a201d3d035bfce721eef"
+    },
+    "validation/orn-pn-depression-fig8f-points.csv": {
+      "path": "validation/orn-pn-depression-fig8f-points.csv",
+      "bytes": 24175,
+      "sha256": "a7eb118d67232d86fb4aba1a817549e5e5c7afadf542207a03ab60037ca70fba"
+    },
+    "validation/orn-pn-depression-fig8f-overlay.png": {
+      "path": "validation/orn-pn-depression-fig8f-overlay.png",
+      "bytes": 244504,
+      "sha256": "ce7893324adad4e031348840a26ff5fc08ce48f57fb32ae6f3e37dbe4437312f"
+    },
+    "validation/orn-pn-depression-fig8f-plot-receipt.json": {
+      "path": "validation/orn-pn-depression-fig8f-plot-receipt.json",
+      "bytes": 442,
+      "sha256": "0696d3fa0167c74fc1efc162ae7e722cf06f61c149cfee75a36472b7e815bbde"
+    },
+    "validation/orn-pn-depression-fig8f-overlay-v2.png": {
+      "path": "validation/orn-pn-depression-fig8f-overlay-v2.png",
+      "bytes": 253400,
+      "sha256": "9f98b1b6e25eeeaa3928bcffdbe8e2bfa1310e9fdddd863542906faaf2e0d1a9"
+    },
+    "validation/orn-pn-depression-fig8f-plan.json": {
+      "path": "validation/orn-pn-depression-fig8f-plan.json",
+      "bytes": 7193,
+      "sha256": "596822e1862ac13d07f54eecd188e0f78bd7faf9a5c8b67755e175b2fd0e17dc"
+    },
+    "validation/orn-pn-depression-fig8f-plot-v2.py": {
+      "path": "validation/orn-pn-depression-fig8f-plot-v2.py",
+      "bytes": 3645,
+      "sha256": "f65e8a7f98f70de756f4b2dae022a5f41e60e08082e9a61346b2a11adc412951"
+    },
+    "tmp/pdfs/orn-pn-depression/figure8-native.png": {
+      "path": "tmp/pdfs/orn-pn-depression/figure8-native.png",
+      "bytes": 144877,
+      "sha256": "3cde6e879a4229a143d903f2ac494e8d13beb472eddb337c81a36f5bb753e94a"
+    }
+  },
+  "method": "Independently authored inline Python; no imports of producer extraction or model modules. Frozen pixel masks, tick ROIs, series IDs and bar columns are validated against retained JPEG and embedded PDF image; numerical transforms independently recomputed.",
+  "environment": {
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "pdfplumber": "0.11.9"
+  },
+  "quantitative_summary": {
+    "rows": 43,
+    "unique_marker_components": 41,
+    "independent_noninitial_mean_estimates": 40,
+    "resolved_drawn_sem_spans": 37,
+    "unresolved_sem_frequency_ordinal_component": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        20,
+        1,
+        3
+      ],
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        50,
+        7,
+        38
+      ],
+      [
+        50,
+        23,
+        24
+      ]
+    ],
+    "series": {
+      "15": {
+        "rows": 8,
+        "individual_means": 7,
+        "resolved_sem": 7,
+        "last_plotted_time_ms": 469.5817490494297,
+        "minimum_mean_percent_initial": 66.24365482233502,
+        "maximum_mean_percent_initial": 90.60913705583756
+      },
+      "20": {
+        "rows": 10,
+        "individual_means": 9,
+        "resolved_sem": 8,
+        "last_plotted_time_ms": 450.5703422053232,
+        "minimum_mean_percent_initial": 35.53299492385786,
+        "maximum_mean_percent_initial": 86.29441624365482
+      },
+      "50": {
+        "rows": 25,
+        "individual_means": 24,
+        "resolved_sem": 22,
+        "last_plotted_time_ms": 480.0380228136882,
+        "minimum_mean_percent_initial": -5.583756345177664,
+        "maximum_mean_percent_initial": 77.66497461928934
+      }
+    },
+    "axis_ticks": {
+      "x": [
+        [
+          0,
+          97.5
+        ],
+        [
+          250,
+          229.5
+        ],
+        [
+          500,
+          360.5
+        ]
+      ],
+      "y": [
+        [
+          0,
+          996.5
+        ],
+        [
+          50,
+          897.5
+        ],
+        [
+          100,
+          799.5
+        ]
+      ]
+    },
+    "middle_tick_residual_pixels": {
+      "x": 0.5,
+      "y": -0.5
+    },
+    "maximum_arithmetic_difference": 5.684341886080802e-14,
+    "maximum_bar_minus_marker_x_pixels": 0.5,
+    "maximum_bar_midpoint_minus_marker_y_pixels": 1.5,
+    "maximum_absolute_nominal_period_deviation_ms_diagnostic_only": {
+      "15": 2.9150823827629893,
+      "20": 0.9505703422053386,
+      "50": 0.9125475285171092
+    },
+    "shared_initial_plotted_ordinate_percent_initial": 100.50761421319797
+  },
+  "visual_review": {
+    "inspected": [
+      "tmp/pdfs/orn-pn-depression/figure8-native.png",
+      "tmp/pdfs/orn-pn-depression/page8.png",
+      "validation/orn-pn-depression-fig8f-overlay-v2.png"
+    ],
+    "observations": [
+      "Native legend attributes circles to15Hz, squares to20Hz, triangles to50Hz. Ordered8/10/25 series positions are consistent with marker shapes and unsnapped event spacing.",
+      "ID1 is the legend triangle, correctly excluded. ID0 is a shared overlapped initial drawing, reused only as geometry; frequency-specific means and SEM remain null.",
+      "Resolved bar columns follow the matching marker series; negative50Hz ordinates are preserved. Three noninitial obscured stems remain null, not zero.",
+      "V2 overlay is legible and corresponds to native positions; initial overlay footer collision is retained in the separately pinned original artifact."
+    ]
+  },
+  "normalization_review": {
+    "primary_source": "Kazama & Wilson2008, Fig.8F axis/caption and main/supplemental methods",
+    "axis_denominator_label": "% initial",
+    "explicit_protocol": "Fig8D/E:7Hz4s baseline followed by500ms20/50Hz;15Hz also in Fig8F legend. AllD-G areVM2. Fig8F n=6cells.",
+    "denominator_first_test_event_explicitly_defined": false,
+    "per_trial_per_cell_normalization_and_pooling_explicitly_defined": false,
+    "interpretation": "Shared initial drawing near100% at test-coordinate0 is consistent with initial-test-response normalization, but neither caption nor searched main/supplemental methods specifies the exact operation. Supplemental Analysis of trains concerns Fig8G and does not resolve Fig8F denominator.",
+    "comparison_boundary": "Any scalar comparison normalized by the first test event after the7Hz baseline is conditional on matching this biological convention and event alignment. Exclude the three unresolved initial means. No fit, SEM weighting, pass/fail physiological acceptance, or pooling of different protocols is supported.",
+    "sem_basis": "Mean+/-SEM is stated paper-wide, with n=6 in panelF; half drawn bar span is a raster estimate. No per-cell/per-trial amplitudes or covariance are recovered."
+  },
+  "limits": [
+    "Saved selectors were checked, not independently reselected or optimized. Manual identity assignment has native-raster rather than original source-data precision.",
+    "Marker interior bbox centers and bar extrema can be biased by JPEG compression and glyph shape. The separately retained +/-1.5px marker/end and +/-1px anchor sensitivity is a declared perturbation, not a confidence interval or certified total error.",
+    "Event ordinals8/10/25 describe the drawn series; unsnapped native x coordinates do not determine the exact preceding baseline-to-test pulse phase.",
+    "Initial overlap leaves three frequency-specific means unresolved; a shared ordinate near100% is not three independent measurements.",
+    "This is female VM2 voltage-clamp physiology, not ORN firing, PN spike-rate transfer, male amplitude calibration, or validation of the current network."
+  ],
+  "completed_utc": "2026-09-05T18:00:28.827362+00:00",
+  "wall_seconds": 2.822127624996938,
+  "passed": true,
+  "check_count": 1887,
+  "checks_by_category": {
+    "hashes": 10,
+    "producer_receipt": 1,
+    "embedded_image": 5,
+    "pdf_source": 4,
+    "primary_text": 2,
+    "saved_masks": 253,
+    "axis_calibration": 19,
+    "series_identity": 12,
+    "marker_conversion": 83,
+    "sensitivity": 160,
+    "alternate_anchors": 86,
+    "null_policy": 17,
+    "bar_pixel_attribution": 74,
+    "bar_conversion": 37,
+    "csv_roundtrip": 1119,
+    "plot_provenance": 4,
+    "source_stability": 1
+  },
+  "failed_checks": [],
+  "source_end_identical": true
+}

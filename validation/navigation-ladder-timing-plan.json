@@ -1,0 +1,1128 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T17:50:52.969220+00:00",
+  "inputs": [
+    {
+      "path": "scripts/analyze_navigation_ladder_timing.py",
+      "bytes": 17938,
+      "sha256": "aa538180d209a00d6fc2299f53c07c2869de8d0d6369c9cd4a8edb606dc30d7b"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-panel-plan.json",
+      "bytes": 33875,
+      "sha256": "c7af957eb89a04a3edbbcc2a9d9b2b2d6936a07c4b3fe019448287467e9183d5"
+    },
+    {
+      "path": "validation/navigation-ladder-readouts.json",
+      "bytes": 2556731,
+      "sha256": "0bd0f559b206d247cdaea268490cd21d7a4ff7a808c3437ae137f7b916886291"
+    },
+    {
+      "path": "validation/navigation-ladder-anatomy.json",
+      "bytes": 2675723,
+      "sha256": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9"
+    },
+    {
+      "path": "validation/navigation-ladder-readout-plan.json",
+      "bytes": 88367,
+      "sha256": "0935e1c627e7c3ef661685698707af89572b8ffa3e51c3fc96330f10e2d2d2f4"
+    },
+    {
+      "path": "validation/navigation-ladder-readouts.npz",
+      "bytes": 1294404,
+      "sha256": "6123b8dfa77cab6fbbbd4e43aab287bc66757000b22132735f55e2f5a85b0d00"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/terminal.json",
+      "bytes": 674,
+      "sha256": "59b2a948dc6c641ac38d7e1ecb5707656a7fbd724a4bd453ffed981e6605049a"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/results.json",
+      "bytes": 13458870,
+      "sha256": "021bbc028ceec91611d97010fec48deae7940eb3b155649ba279a7ccf5f1916c"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/artifact-manifest.json",
+      "bytes": 26369780,
+      "sha256": "c8410ecea4923be0f090daff7e7a14a4ba375e51cfaafd3851d1a040f69bf9e6"
+    },
+    {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "7d2dd7f712f853203ae3351122e54dc03d8bef79d168d04a6dabba847670f1cd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/26-H1-seed11-constant_baseline/result.json",
+      "bytes": 485022,
+      "sha256": "7bb2c585df1075a82bbea5f4135df9ae4e1de6e04a024a7e6562d98d601b7ae5"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/terminal.json",
+      "bytes": 681,
+      "sha256": "09a439aa8713fa6b289025592b6cf57ad6837da93e06f104912ba1b1ff1753dd"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/29-H1-seed12-constant_baseline/result.json",
+      "bytes": 485081,
+      "sha256": "c7639be1b288680b59df614df2af30e8048e2897c7b681395916feafe6617806"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/terminal.json",
+      "bytes": 680,
+      "sha256": "9f2ced6d6d961ce74b3743b0be08c021325ef8321cec82edac523ef05339aa66"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/32-H1-seed13-constant_baseline/result.json",
+      "bytes": 484982,
+      "sha256": "5970beb4c75a49283885d5dfbf176b3bcb683eb0f79e57d66c92f4dae687c8e0"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/terminal.json",
+      "bytes": 677,
+      "sha256": "8f973fa591463402e0af1ab5e14d1572eee8681b93e399b7412ca78d730191e1"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/35-H1-seed11-ethyl_acetate/result.json",
+      "bytes": 477707,
+      "sha256": "5b258f3e3a458be310bd1297d5186cd515b3394e32fb379fa04ee30abe77ce33"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/terminal.json",
+      "bytes": 678,
+      "sha256": "2f7b4b9de0666e27ff16bafe60c0d3e80762a19d7f930ccec76f66dbe6e3dad9"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/38-H1-seed12-ethyl_acetate/result.json",
+      "bytes": 477760,
+      "sha256": "7d79ef27a07e95dfcdef6b8f07d264a9b853f829095a355702972f2ccecf55b6"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/terminal.json",
+      "bytes": 674,
+      "sha256": "6017d044231357032b8dce3b81dca5424cd4ed390d77669df1f5aa9c9405217d"
+    },
+    {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/41-H1-seed13-ethyl_acetate/result.json",
+      "bytes": 477672,
+      "sha256": "6f33377b2dd94ebd9fb46b1fe2ec89e7a29ef374773a6f7e408bf3d0d1f7e29b"
+    }
+  ],
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "trials": [
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate"
+    }
+  ],
+  "cohorts": {
+    "ORN_VM7d": {
+      "indices": [
+        23793,
+        73366,
+        76669,
+        76746,
+        78551,
+        85145,
+        89584,
+        89973,
+        92605,
+        93836,
+        94688,
+        96467,
+        96525,
+        96797,
+        97258,
+        97436,
+        97908,
+        97936,
+        99940,
+        100767,
+        102690,
+        104035,
+        108965,
+        111263,
+        112198,
+        126321,
+        126322,
+        131221,
+        131223,
+        131224,
+        132657,
+        132723,
+        133624,
+        143464,
+        164119,
+        164244
+      ],
+      "body_ids": [
+        36550,
+        97032,
+        101539,
+        101657,
+        104136,
+        113302,
+        119792,
+        120384,
+        124378,
+        126302,
+        127708,
+        130608,
+        130700,
+        131182,
+        131890,
+        132188,
+        132980,
+        133027,
+        136640,
+        138213,
+        141991,
+        144724,
+        156821,
+        163983,
+        167295,
+        512833,
+        512834,
+        521423,
+        521428,
+        521430,
+        525099,
+        525228,
+        527468,
+        569149,
+        922423,
+        927197
+      ],
+      "count": 36,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "ORN_VM7d"
+        ]
+      },
+      "index_sha256": "738ccb4f1ba9579cbf57e2615fd405788788939ba05939b2092bdadb0bfef6bb",
+      "metadata_counts": {
+        "type": {
+          "ORN_VM7d": 36
+        },
+        "superclass": {
+          "cb_sensory": 36
+        },
+        "rootSide": {
+          "R": 18,
+          "L": 18
+        },
+        "somaSide": {
+          "<missing>": 36
+        },
+        "consensus_nt": {
+          "acetylcholine": 36
+        },
+        "model_sign": {
+          "1": 36
+        }
+      },
+      "root_side_indices": {
+        "L": [
+          73366,
+          76669,
+          76746,
+          85145,
+          92605,
+          94688,
+          96467,
+          96525,
+          96797,
+          97258,
+          97908,
+          97936,
+          99940,
+          102690,
+          104035,
+          108965,
+          133624,
+          164244
+        ],
+        "R": [
+          23793,
+          78551,
+          89584,
+          89973,
+          93836,
+          97436,
+          100767,
+          111263,
+          112198,
+          126321,
+          126322,
+          131221,
+          131223,
+          131224,
+          132657,
+          132723,
+          143464,
+          164119
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "soma_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          23793,
+          73366,
+          76669,
+          76746,
+          78551,
+          85145,
+          89584,
+          89973,
+          92605,
+          93836,
+          94688,
+          96467,
+          96525,
+          96797,
+          97258,
+          97436,
+          97908,
+          97936,
+          99940,
+          100767,
+          102690,
+          104035,
+          108965,
+          111263,
+          112198,
+          126321,
+          126322,
+          131221,
+          131223,
+          131224,
+          132657,
+          132723,
+          133624,
+          143464,
+          164119,
+          164244
+        ]
+      },
+      "current_select_side_indices": {
+        "L": [
+          73366,
+          76669,
+          76746,
+          85145,
+          92605,
+          94688,
+          96467,
+          96525,
+          96797,
+          97258,
+          97908,
+          97936,
+          99940,
+          102690,
+          104035,
+          108965,
+          133624,
+          164244
+        ],
+        "R": [
+          23793,
+          78551,
+          89584,
+          89973,
+          93836,
+          97436,
+          100767,
+          111263,
+          112198,
+          126321,
+          126322,
+          131221,
+          131223,
+          131224,
+          132657,
+          132723,
+          143464,
+          164119
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "VM7d_adPN": {
+      "indices": [
+        3016,
+        4107,
+        4523,
+        7385,
+        8055,
+        125773,
+        133646
+      ],
+      "body_ids": [
+        13225,
+        14430,
+        14895,
+        18084,
+        18834,
+        511807,
+        527523
+      ],
+      "count": 7,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "VM7d_adPN"
+        ]
+      },
+      "index_sha256": "40f38fa97ba3abc877e8af93b18c8dfb553391dae8dcd7d9b68860bd1369b9a2",
+      "metadata_counts": {
+        "type": {
+          "VM7d_adPN": 7
+        },
+        "superclass": {
+          "cb_intrinsic": 7
+        },
+        "rootSide": {
+          "<missing>": 7
+        },
+        "somaSide": {
+          "R": 4,
+          "L": 3
+        },
+        "consensus_nt": {
+          "acetylcholine": 7
+        },
+        "model_sign": {
+          "1": 7
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          3016,
+          4107,
+          4523,
+          7385,
+          8055,
+          125773,
+          133646
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          4107,
+          4523,
+          8055
+        ],
+        "R": [
+          3016,
+          7385,
+          125773,
+          133646
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          4107,
+          4523,
+          8055
+        ],
+        "R": [
+          3016,
+          7385,
+          125773,
+          133646
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "MBON12": {
+      "indices": [
+        3477,
+        3513,
+        130136,
+        131044
+      ],
+      "body_ids": [
+        13728,
+        13768,
+        519368,
+        521086
+      ],
+      "count": 4,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "MBON12"
+        ]
+      },
+      "index_sha256": "e32fc543077447edbbc1eda06c11eb24ae331f1f96046e8107217cade98bd0c2",
+      "metadata_counts": {
+        "type": {
+          "MBON12": 4
+        },
+        "superclass": {
+          "cb_intrinsic": 4
+        },
+        "rootSide": {
+          "<missing>": 4
+        },
+        "somaSide": {
+          "L": 2,
+          "R": 2
+        },
+        "consensus_nt": {
+          "acetylcholine": 4
+        },
+        "model_sign": {
+          "1": 4
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          3477,
+          3513,
+          130136,
+          131044
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          3477,
+          3513
+        ],
+        "R": [
+          130136,
+          131044
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          3477,
+          3513
+        ],
+        "R": [
+          130136,
+          131044
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "MBON13": {
+      "indices": [
+        2550,
+        127463
+      ],
+      "body_ids": [
+        12726,
+        514853
+      ],
+      "count": 2,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "MBON13"
+        ]
+      },
+      "index_sha256": "1445f07d6c44eaf4a434fe5d528f53be1b504dbe680726885c6f7e26a006f1ef",
+      "metadata_counts": {
+        "type": {
+          "MBON13": 2
+        },
+        "superclass": {
+          "cb_intrinsic": 2
+        },
+        "rootSide": {
+          "<missing>": 2
+        },
+        "somaSide": {
+          "L": 1,
+          "R": 1
+        },
+        "consensus_nt": {
+          "acetylcholine": 2
+        },
+        "model_sign": {
+          "1": 2
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          2550,
+          127463
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          2550
+        ],
+        "R": [
+          127463
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          2550
+        ],
+        "R": [
+          127463
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "MBON14": {
+      "indices": [
+        246,
+        1749,
+        7264,
+        8528
+      ],
+      "body_ids": [
+        10267,
+        11873,
+        17946,
+        19366
+      ],
+      "count": 4,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "MBON14"
+        ]
+      },
+      "index_sha256": "aed2e712b2ec18d2c806699769084a67e2a996061ccc2e98cc5104929d4018e9",
+      "metadata_counts": {
+        "type": {
+          "MBON14": 4
+        },
+        "superclass": {
+          "cb_intrinsic": 4
+        },
+        "rootSide": {
+          "<missing>": 4
+        },
+        "somaSide": {
+          "R": 2,
+          "L": 2
+        },
+        "consensus_nt": {
+          "acetylcholine": 4
+        },
+        "model_sign": {
+          "1": 4
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          246,
+          1749,
+          7264,
+          8528
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          1749,
+          8528
+        ],
+        "R": [
+          246,
+          7264
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          1749,
+          8528
+        ],
+        "R": [
+          246,
+          7264
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "MBON12_14": {
+      "indices": [
+        246,
+        1749,
+        2550,
+        3477,
+        3513,
+        7264,
+        8528,
+        127463,
+        130136,
+        131044
+      ],
+      "body_ids": [
+        10267,
+        11873,
+        12726,
+        13728,
+        13768,
+        17946,
+        19366,
+        514853,
+        519368,
+        521086
+      ],
+      "count": 10,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "MBON12",
+          "MBON13",
+          "MBON14"
+        ]
+      },
+      "index_sha256": "e90eec90153ea9bca84c86c3eece395fb748b507b682870a357c6f57aa065fc9",
+      "metadata_counts": {
+        "type": {
+          "MBON14": 4,
+          "MBON12": 4,
+          "MBON13": 2
+        },
+        "superclass": {
+          "cb_intrinsic": 10
+        },
+        "rootSide": {
+          "<missing>": 10
+        },
+        "somaSide": {
+          "R": 5,
+          "L": 5
+        },
+        "consensus_nt": {
+          "acetylcholine": 10
+        },
+        "model_sign": {
+          "1": 10
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          246,
+          1749,
+          2550,
+          3477,
+          3513,
+          7264,
+          8528,
+          127463,
+          130136,
+          131044
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          1749,
+          2550,
+          3477,
+          3513,
+          8528
+        ],
+        "R": [
+          246,
+          7264,
+          127463,
+          130136,
+          131044
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          1749,
+          2550,
+          3477,
+          3513,
+          8528
+        ],
+        "R": [
+          246,
+          7264,
+          127463,
+          130136,
+          131044
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    },
+    "FB5AB": {
+      "indices": [
+        2840,
+        2903
+      ],
+      "body_ids": [
+        13033,
+        13101
+      ],
+      "count": 2,
+      "availability": "mapped",
+      "selector": {
+        "field": "type",
+        "operator": "isin",
+        "values": [
+          "FB5AB"
+        ]
+      },
+      "index_sha256": "7cdaa16e1137eed227aa014b00a50a40a44c2be4b2a7003dc55313046f0540da",
+      "metadata_counts": {
+        "type": {
+          "FB5AB": 2
+        },
+        "superclass": {
+          "cb_intrinsic": 2
+        },
+        "rootSide": {
+          "<missing>": 2
+        },
+        "somaSide": {
+          "L": 1,
+          "R": 1
+        },
+        "consensus_nt": {
+          "acetylcholine": 2
+        },
+        "model_sign": {
+          "1": 2
+        }
+      },
+      "root_side_indices": {
+        "L": [],
+        "R": [],
+        "M": [],
+        "unknown": [],
+        "missing": [
+          2840,
+          2903
+        ]
+      },
+      "soma_side_indices": {
+        "L": [
+          2840
+        ],
+        "R": [
+          2903
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "current_select_side_indices": {
+        "L": [
+          2840
+        ],
+        "R": [
+          2903
+        ],
+        "M": [],
+        "unknown": [],
+        "missing": []
+      },
+      "mirror_mapping": null,
+      "column_angle_mapping": null,
+      "identity_limit": "Annotated population; no automatic functional equivalence or mirror pairing."
+    }
+  },
+  "bin_edges_ticks": [
+    0,
+    250,
+    500,
+    750,
+    1000,
+    1250,
+    1500,
+    1750,
+    2000,
+    2250,
+    2500,
+    2750,
+    3000,
+    3250,
+    3500,
+    3750,
+    4000,
+    4250,
+    4500,
+    4750,
+    5000,
+    5250,
+    5500,
+    5750,
+    6000,
+    6250,
+    6500,
+    6750,
+    7000,
+    7250,
+    7500,
+    7750,
+    8000,
+    8250,
+    8500,
+    8750,
+    9000,
+    9250,
+    9500,
+    9750,
+    10000,
+    10250,
+    10500,
+    10750,
+    11000,
+    11250,
+    11500,
+    11750,
+    12000,
+    12250,
+    12500,
+    12750,
+    13000,
+    13250,
+    13500,
+    13750,
+    14000,
+    14250,
+    14500,
+    14750,
+    15000,
+    15250,
+    15500,
+    15750,
+    16000,
+    16250,
+    16500,
+    16750,
+    17000,
+    17250,
+    17500,
+    17750,
+    18000,
+    18250,
+    18500,
+    18750,
+    19000,
+    19250,
+    19500,
+    19750,
+    20000,
+    20250,
+    20500,
+    20750,
+    21000,
+    21250,
+    21500,
+    21750,
+    22000,
+    22250,
+    22500,
+    22750,
+    23000,
+    23250,
+    23500,
+    23750,
+    24000,
+    24250,
+    24500,
+    24750,
+    25000,
+    25250,
+    25500,
+    25750,
+    26000,
+    26250,
+    26500,
+    26750,
+    27000,
+    27250,
+    27500,
+    27750,
+    28000,
+    28250,
+    28500,
+    28750,
+    29000,
+    29250,
+    29500,
+    29750,
+    30000
+  ],
+  "coarse_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "dt_s": 0.0001,
+  "neurons": 166700,
+  "early_pulse_ticks": [
+    5000,
+    6000
+  ],
+  "late_pulse_ticks": [
+    9000,
+    10000
+  ],
+  "boundaries_ticks": [
+    5000,
+    10000,
+    15000
+  ],
+  "selection": "Post-hoc H1 EA versus constant diagnostic, seeds11/12/13, chosen after Stage0. No cross-arm, biological or promotion claim.",
+  "method": "Independently read packed tick<int64/index<int32> spike records from all600 chunks per trial. Validate final-manifest and completion-marker hashes; reduce only55 selected cells. Check exact per-cell coarse counts against final checkpoint and Stage0 NPZ, and cohort totals against Stage0 JSON.",
+  "timing": "Integer emission stamp k denotes thresholder output after that tick integration. Nominal graph synapse slot is k+18 (1.8ms) after integration of that later tick, conditional on outgoing transmission. Post-step state clock would be k+1. Exported spikes are not measured afferent arrivals or evoked latencies; ongoing baseline already exists.",
+  "metrics": [
+    "25ms per-cell counts and cohort rates",
+    "Exact selected emitted spike indices/ticks/body IDs",
+    "100ms early/late pulse counts and matched EA-minus-constant contrasts",
+    "First/last spike in each coarse window and around each boundary (descriptive, not evoked latency)",
+    "MBON spikes strictly after final mapped VM7d PN spike (descriptive order, not autonomous recurrence proof)"
+  ],
+  "limits": [
+    "No neural/producer imports, propagation, solver or fitting.",
+    "No synaptic depression, receptor mechanism or unique causal localization inferred from spike timing.",
+    "Selected emitted spikes and counts only; no reconstruction of unsaved all-neuron voltage or actual edge arrivals.",
+    "Coarse PFL3 pulse counts are already zero; no hidden pulse burst is inferred or sought.",
+    "All analyses are reuse of the same six simulations, not six new observations."
+  ],
+  "manufactured_checks": {
+    "passed": true,
+    "checks": 4,
+    "scope": "Manufactured integer half-open binning/early/late/empty checks only"
+  },
+  "outputs": [
+    "validation/navigation-ladder-timing-results.json",
+    "validation/navigation-ladder-timing-arrays.npz"
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T17:54:34.624989+00:00",
+  "script": {
+    "path": "scripts/extract_orn_pn_depression.py",
+    "bytes": 20853,
+    "sha256": "c6623293d9a34870acfb29afaf688f821fea49be9976a95568e7483f84bf00d5"
+  },
+  "source_pdf": {
+    "path": "data/raw/orn-pn-physiology/kazama-wilson-2008.pdf",
+    "bytes": 1353000,
+    "sha256": "fb1d77bef1a95ca5274e57eeb7aae3be45f4d80dc972b40718fc62d4da2ddbe6"
+  },
+  "selected_geometry_sha256": "7b5f8167164910f13ae8e25886055c7c259b349deac05d59ab59bfdd6830f13d",
+  "parser": {
+    "pdfplumber": "0.11.9",
+    "Pillow": "12.3.0"
+  },
+  "series_component_ids": {
+    "15": [
+      0,
+      2,
+      4,
+      7,
+      8,
+      9,
+      11,
+      12
+    ],
+    "20": [
+      0,
+      3,
+      5,
+      10,
+      14,
+      13,
+      17,
+      16,
+      18,
+      19
+    ],
+    "50": [
+      0,
+      6,
+      15,
+      20,
+      21,
+      29,
+      33,
+      38,
+      39,
+      40,
+      35,
+      32,
+      22,
+      37,
+      36,
+      31,
+      34,
+      25,
+      27,
+      41,
+      30,
+      23,
+      26,
+      24,
+      28
+    ]
+  },
+  "bar_column_search_y_inclusive": {
+    "2": [
+      133,
+      802,
+      836
+    ],
+    "4": [
+      168,
+      811,
+      842
+    ],
+    "7": [
+      203,
+      827,
+      862
+    ],
+    "8": [
+      238,
+      840,
+      861
+    ],
+    "9": [
+      274,
+      834,
+      874
+    ],
+    "11": [
+      309,
+      849,
+      869
+    ],
+    "12": [
+      344,
+      848,
+      885
+    ],
+    "5": [
+      150,
+      830,
+      854
+    ],
+    "10": [
+      176,
+      843,
+      874
+    ],
+    "14": [
+      203,
+      872,
+      936
+    ],
+    "13": [
+      229,
+      881,
+      907
+    ],
+    "17": [
+      255,
+      880,
+      936
+    ],
+    "16": [
+      281,
+      882,
+      931
+    ],
+    "18": [
+      308,
+      895,
+      932
+    ],
+    "19": [
+      334,
+      898,
+      954
+    ],
+    "6": [
+      108,
+      806,
+      880
+    ],
+    "15": [
+      119,
+      876,
+      934
+    ],
+    "20": [
+      129,
+      906,
+      969
+    ],
+    "21": [
+      140,
+      935,
+      993
+    ],
+    "29": [
+      150,
+      967,
+      1014
+    ],
+    "33": [
+      160,
+      981,
+      1013
+    ],
+    "39": [
+      181,
+      991,
+      1021
+    ],
+    "40": [
+      192,
+      990,
+      1021
+    ],
+    "35": [
+      202,
+      989,
+      1014
+    ],
+    "32": [
+      213,
+      985,
+      1006
+    ],
+    "22": [
+      223,
+      964,
+      995
+    ],
+    "37": [
+      234,
+      988,
+      1018
+    ],
+    "36": [
+      245,
+      991,
+      1014
+    ],
+    "31": [
+      255,
+      978,
+      1012
+    ],
+    "34": [
+      266,
+      990,
+      1007
+    ],
+    "25": [
+      276,
+      976,
+      996
+    ],
+    "27": [
+      287,
+      978,
+      1001
+    ],
+    "41": [
+      297,
+      995,
+      1020
+    ],
+    "30": [
+      308,
+      984,
+      1004
+    ],
+    "23": [
+      318,
+      966,
+      996
+    ],
+    "26": [
+      329,
+      977,
+      998
+    ],
+    "28": [
+      350,
+      973,
+      1005
+    ]
+  },
+  "unresolved_component_reasons": {
+    "0": "overlapping_initial_markers_and_bars_cannot_be_resolved_by_frequency",
+    "3": "20Hz_marker_obscures_any_separate_error_stem",
+    "38": "50Hz_marker_obscures_short_error_stem",
+    "24": "50Hz_marker_obscures_any_separate_error_stem"
+  },
+  "component_roi": [
+    88,
+    785,
+    365,
+    1025
+  ],
+  "component_rule": "4-connected white pixels >=160; areas2..35px, width/height1..9px. Center=interior bbox midpoint; preserve pixel masks. Exclude legend ID1. First ID0 is shared, not three independent means.",
+  "error_rule": "At each fixed column and search interval, retain all dark pixels<128; exactly two contiguous runs of at least3px must bracket the marker center. Use extreme run pixel centers as drawn upper/lower endpoints. No recentering, symmetrizing or zero substitution.",
+  "ticks": {
+    "x": [
+      [
+        0,
+        [
+          93,
+          1023,
+          102,
+          1032
+        ]
+      ],
+      [
+        250,
+        [
+          225,
+          1023,
+          235,
+          1032
+        ]
+      ],
+      [
+        500,
+        [
+          356,
+          1023,
+          366,
+          1032
+        ]
+      ]
+    ],
+    "y": [
+      [
+        0,
+        [
+          85,
+          990,
+          93,
+          1002
+        ]
+      ],
+      [
+        50,
+        [
+          85,
+          893,
+          93,
+          903
+        ]
+      ],
+      [
+        100,
+        [
+          85,
+          794,
+          93,
+          805
+        ]
+      ]
+    ]
+  },
+  "tick_rule": "Dark pixels<128 within fixed native-pixel ROIs; use midpoint of coordinates tied for maximum dark-pixel count along tick direction.",
+  "calibration": "First/last labeled ticks define affine axes; holdout middle ticks and independently use lower/middle and middle/upper anchor pairs to quantify raster calibration differences. No least squares.",
+  "sensitivity": {
+    "marker_center_pixels": 1.5,
+    "error_endpoint_pixels": 1.5,
+    "anchor_pixels": 1.0,
+    "interpretation": "Declared raster-placement sensitivity only, not a certified error enclosure, SEM or confidence interval. Evaluate all independent anchor/point-offset corners; never add to biological SEM."
+  },
+  "timing": "Retain plotted x coordinates and ordinal; never snap to nominal periods or infer baseline-to-test pulse phase.",
+  "biological_context": {
+    "glomerulus": "VM2",
+    "sex": "female",
+    "age_days": [
+      2,
+      7
+    ],
+    "caption_n_cells": 6,
+    "frequencies_hz": [
+      15,
+      20,
+      50
+    ],
+    "baseline": "7Hz for4s;500ms test; D/E examples20/50Hz;15Hz is explicitly in panelF legend",
+    "measure": "somatic PN voltage-clamp uEPSC amplitude as percent initial",
+    "normalization_limit": "Axis says percent initial; exact per-cell/per-trial normalization and pooling operation not recovered from this panel.",
+    "error_convention": "General main-paper Data Analysis: mean +/- SEM across experiments; Fig8F caption n=6cells, no point-level covariance/individual measurements."
+  },
+  "initial_shared_policy": "Store shared marker pixel geometry and its common plotted ordinate, but individual first-point means/SEM are null. Do not count reused initial marker as independent frequency observations.",
+  "source_access_notes": [
+    "Local PDF raster inspected natively. Initial decoding as raw uncompressed bytes failed (JPEG stream); standard JPEG decoding succeeded before any extraction plan/numeric reduction.",
+    "Initial prepare stopped before plan creation because bundled Python lacked SciPy. Four-connected component traversal is implemented directly with a standard-library queue; no numerical reduction had run.",
+    "One official higher-resolution check: https://pmc.ncbi.nlm.nih.gov/articles/PMC2429849/ returned a browser verification page; no alternate figure downloaded."
+  ],
+  "allowed_outputs": [
+    "-geometry.json",
+    "-embedded.jpg",
+    "-native-panel.png",
+    "-calibration.csv",
+    "-points.csv",
+    "-results.json",
+    "-overlay.png",
+    "-plot-receipt.json"
+  ],
+  "no_model": true,
+  "no_fitting": true,
+  "no_other_panel_digitization": true
+}

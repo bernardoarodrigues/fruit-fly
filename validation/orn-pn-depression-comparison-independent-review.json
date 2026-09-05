@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "passed": true,
+  "scope": "One saved-data recount. No producer/model imports, model execution, refit, redigitization or new source acquisition.",
+  "numerical_tolerance_absolute_percentage_points": 1e-12,
+  "method": "Join exact (frequency, ordinal) keys. Read saved normalized amplitudes only. Independently recompute all signed residuals and unweighted metrics with Python scalar arithmetic and math.fsum. Distance to each marker interval gives a conservative Cartesian RMSE envelope; shared anchor dependence is not modeled.",
+  "limits": [
+    "Source initial denominator and exact experimental phase remain conditional.",
+    "Forty plotted means are dependent observations from a shared six-cell cohort, not forty biological replicates.",
+    "Graphical envelopes are not SEM or confidence intervals and need not be jointly attainable.",
+    "Female VM2 normalized shape does not calibrate male VM7d, absolute currents, gains, or runtime mechanisms.",
+    "No statistical or biological acceptance threshold."
+  ],
+  "compared_noninitial_means": 40,
+  "retained_initial_missing_means": 3,
+  "noninitial_missing_SEM": 3,
+  "negative_means_preserved": 8,
+  "recomputed_summaries": [
+    {
+      "frequency_hz": 15,
+      "means": 7,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 3.0060972966805632,
+          "mae_percentage_points": 2.281300553303043,
+          "mean_signed_error_percentage_points": -0.08931966868188315,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            2.123141801976494,
+            4.054278612562162
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 24.789154058274043,
+          "mae_percentage_points": 23.38651196519217,
+          "mean_signed_error_percentage_points": 23.38651196519217,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            23.595677162471276,
+            25.989791062302285
+          ]
+        }
+      }
+    },
+    {
+      "frequency_hz": 20,
+      "means": 9,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 14.755181183770352,
+          "mae_percentage_points": 12.232785617607918,
+          "mean_signed_error_percentage_points": 11.231107449232749,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            13.719631355871039,
+            15.823195068708522
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 47.33591373505038,
+          "mae_percentage_points": 44.21883812746757,
+          "mean_signed_error_percentage_points": 44.21883812746757,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            46.152666517690186,
+            48.52349672003399
+          ]
+        }
+      }
+    },
+    {
+      "frequency_hz": 50,
+      "means": 24,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 30.598854090576552,
+          "mae_percentage_points": 29.406990952171096,
+          "mean_signed_error_percentage_points": 29.406990952171096,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            29.37123999004284,
+            31.841693555146165
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 93.98589735182674,
+          "mae_percentage_points": 92.12140439932318,
+          "mean_signed_error_percentage_points": 92.12140439932318,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            92.73325659810693,
+            95.24974449743338
+          ]
+        }
+      }
+    }
+  ],
+  "visual_review": {
+    "path": "validation/orn-pn-depression-comparison-figure.png",
+    "viewed": true,
+    "assessment": "Three panels, conditional-normalization footer, omitted unresolved bars and unclipped negative markers are legible. Asymmetric drawn endpoints verified by source and saved rows; no pixel-level redigitization."
+  },
+  "created_utc": "2026-09-05T18:02:10.561831+00:00",
+  "input_artifacts": [
+    {
+      "path": "scripts/compare_orn_pn_depression.py",
+      "bytes": 8838,
+      "sha256": "c8f3a55959a1140ea5799c66c5d6bb2fefb1a865f4f921f777e2c92e48a9c2d1"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-points.csv",
+      "bytes": 24175,
+      "sha256": "a7eb118d67232d86fb4aba1a817549e5e5c7afadf542207a03ab60037ca70fba"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-arrays.npz",
+      "bytes": 550403,
+      "sha256": "49e64860028ad2f87292c93dea382b178b3f5cfe6f1faafc42be9cd7adddf76e"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-plan.json",
+      "bytes": 7193,
+      "sha256": "596822e1862ac13d07f54eecd188e0f78bd7faf9a5c8b67755e175b2fd0e17dc"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-results.json",
+      "bytes": 100058,
+      "sha256": "5a664d8f890e995b5bd79402bff7ea53977d14205098ee2922e6cbd4bacaabce"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-independent-review.json",
+      "bytes": 10325,
+      "sha256": "de3f41c6252b571ac4c339339de8639b47e1ba5d06715472d8c07b340167523a"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-plan.json",
+      "bytes": 5932,
+      "sha256": "86ade63439b8b20fb169ae7d9ea6395102f43f054319cc2e7a83f2f80c52f174"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-results.json",
+      "bytes": 18838,
+      "sha256": "d43cf02babe679387545bb76694b5f3718a4225f7dd1713b7aa5f66b37ee5e38"
+    },
+    {
+      "path": "validation/orn-pn-depression-comparison-rows.csv",
+      "bytes": 9367,
+      "sha256": "f6c82569231d8e611cf150ed70219105ea20cb0b27c9b57d1865feb0f9b4cfc8"
+    },
+    {
+      "path": "validation/orn-pn-depression-comparison-figure.png",
+      "bytes": 116238,
+      "sha256": "47e05e9bb0581a0a2fe6e19951dbe246c32d71b24b79eae5b4aee4223a4e17b5"
+    },
+    {
+      "path": "validation/orn-pn-depression-comparison-plan.json",
+      "bytes": 3082,
+      "sha256": "114ff8e8e488a27a99e29e88080fc4d30d11081026700250317f3b9d4895f092"
+    },
+    {
+      "path": "validation/orn-pn-depression-comparison-results.json",
+      "bytes": 3871,
+      "sha256": "83ebe866d7f02f512449228d3b9ef762638a76e9da13e630e37407a26b5bc8a0"
+    }
+  ],
+  "check_categories": {
+    "frozen-plan-hash": 1,
+    "producer-publication": 1,
+    "pinned-input-or-output": 10,
+    "upstream-reference-passed": 1,
+    "row-key-coverage": 1,
+    "ordered-row-coverage": 1,
+    "saved-reference-array": 3,
+    "ordinal-coverage": 3,
+    "row-source-values": 43,
+    "row-error-values": 43,
+    "row-prediction-values": 43,
+    "initial-missingness": 43,
+    "initial-residual-excluded": 3,
+    "finite-enclosed-mean": 40,
+    "signed-residuals": 40,
+    "asymmetric-endpoints-valid": 37,
+    "missing-error-preserved": 3,
+    "40-noninitial-means": 1,
+    "summary-counts": 3,
+    "scalar-metric-recount": 24,
+    "asymmetric-plot-source": 1,
+    "uncertainty-labels": 1,
+    "inputs-unchanged-at-end": 12
+  },
+  "checks": 358
+}

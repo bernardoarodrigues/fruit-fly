@@ -1,0 +1,8320 @@
+{
+  "completed_utc": "2026-09-05T17:45:43.459534+00:00",
+  "passed": true,
+  "check_count": 4031,
+  "categories": {
+    "exact_final_plan": {
+      "checked": 1,
+      "passed": 1
+    },
+    "exact_final_reduction": {
+      "checked": 1,
+      "passed": 1
+    },
+    "final_corrected_anatomy": {
+      "checked": 1,
+      "passed": 1
+    },
+    "final_anatomy_plan_pin": {
+      "checked": 1,
+      "passed": 1
+    },
+    "artifact_hash_and_size": {
+      "checked": 367,
+      "passed": 367
+    },
+    "cohort_definitions_exact": {
+      "checked": 1,
+      "passed": 1
+    },
+    "selected_identity": {
+      "checked": 1,
+      "passed": 1
+    },
+    "array_shapes": {
+      "checked": 1,
+      "passed": 1
+    },
+    "fixed_windows": {
+      "checked": 1,
+      "passed": 1
+    },
+    "archive_no_incomplete_evidence": {
+      "checked": 60,
+      "passed": 60
+    },
+    "archive_header_transaction": {
+      "checked": 60,
+      "passed": 60
+    },
+    "archive_marker_payload_paths": {
+      "checked": 60,
+      "passed": 60
+    },
+    "array_descriptor_and_bytes": {
+      "checked": 660,
+      "passed": 660
+    },
+    "all_payload_arrays_referenced": {
+      "checked": 60,
+      "passed": 60
+    },
+    "checkpoint_trial_identity": {
+      "checked": 60,
+      "passed": 60
+    },
+    "all_selected_counts_exact": {
+      "checked": 60,
+      "passed": 60
+    },
+    "selected_final_state_exact": {
+      "checked": 180,
+      "passed": 180
+    },
+    "independent_cohort_count_metrics": {
+      "checked": 2040,
+      "passed": 2040
+    },
+    "matched_contrasts_exact": {
+      "checked": 408,
+      "passed": 408
+    },
+    "full_60_trial_contrast_population": {
+      "checked": 1,
+      "passed": 1
+    },
+    "preserved_initial_artifact_hash": {
+      "checked": 3,
+      "passed": 3
+    },
+    "initial_final_numeric_archive_bitwise": {
+      "checked": 1,
+      "passed": 1
+    },
+    "initial_final_cohort_membership_identical": {
+      "checked": 1,
+      "passed": 1
+    },
+    "midline_population_partition_complete": {
+      "checked": 1,
+      "passed": 1
+    },
+    "review_inputs_unchanged": {
+      "checked": 1,
+      "passed": 1
+    }
+  },
+  "failures": [],
+  "error": null,
+  "input_sha256": {
+    "validation/navigation-ladder-readout-plan.json": "0935e1c627e7c3ef661685698707af89572b8ffa3e51c3fc96330f10e2d2d2f4",
+    "validation/navigation-ladder-readouts.json": "0bd0f559b206d247cdaea268490cd21d7a4ff7a808c3437ae137f7b916886291",
+    "validation/navigation-ladder-readouts.npz": "6123b8dfa77cab6fbbbd4e43aab287bc66757000b22132735f55e2f5a85b0d00",
+    "validation/navigation-ladder-anatomy.json": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9",
+    "validation/navigation-ladder-readout-metadata-correction.json": "66fa5f4a7b8442533f70721677e8a6e83ffc1c588b57eb10f36623835834b4a8",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+  },
+  "final_input_sha256": {
+    "validation/navigation-ladder-readout-plan.json": "0935e1c627e7c3ef661685698707af89572b8ffa3e51c3fc96330f10e2d2d2f4",
+    "validation/navigation-ladder-readouts.json": "0bd0f559b206d247cdaea268490cd21d7a4ff7a808c3437ae137f7b916886291",
+    "validation/navigation-ladder-readouts.npz": "6123b8dfa77cab6fbbbd4e43aab287bc66757000b22132735f55e2f5a85b0d00",
+    "validation/navigation-ladder-anatomy.json": "6020e73f80a552b960df5f042de619543bc6717a2c3d6ac1611b90a9b08908e9",
+    "validation/navigation-ladder-readout-metadata-correction.json": "66fa5f4a7b8442533f70721677e8a6e83ffc1c588b57eb10f36623835834b4a8",
+    "scripts/review_inhibitory_recurrent_panel_trial.py": "1e2d91757813372de3fa3d5df100690ab7ac6d3805fe7f7035e3ebc5f6424da8"
+  },
+  "completed_checkpoint_trials": 60,
+  "selected_count_values_compared": 692580,
+  "selected_final_state_values_compared": 296820,
+  "decoded_archives": 60,
+  "decoded_arrays": 660,
+  "findings": {
+    "VM7d_adPN": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          90.0,
+          92.0,
+          91.42857142857143
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            62.285714285714285,
+            62.0,
+            61.142857142857146
+          ],
+          [
+            60.0,
+            62.57142857142857,
+            61.714285714285715
+          ],
+          [
+            60.57142857142857,
+            60.0,
+            60.57142857142857
+          ]
+        ],
+        "pulse_counts": [
+          315,
+          322,
+          320
+        ],
+        "off_counts": [
+          [
+            218,
+            217,
+            214
+          ],
+          [
+            210,
+            219,
+            216
+          ],
+          [
+            212,
+            210,
+            212
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          322
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          218.0,
+          216.0,
+          219.42857142857142
+        ],
+        "pulse_minus_matched_constant_hz": [
+          128.0,
+          124.0,
+          127.99999999999999
+        ],
+        "off_mean_rate_hz": [
+          [
+            63.142857142857146,
+            62.0,
+            61.42857142857143
+          ],
+          [
+            62.285714285714285,
+            61.714285714285715,
+            63.714285714285715
+          ],
+          [
+            62.857142857142854,
+            62.857142857142854,
+            62.857142857142854
+          ]
+        ],
+        "pulse_counts": [
+          763,
+          756,
+          768
+        ],
+        "off_counts": [
+          [
+            221,
+            217,
+            215
+          ],
+          [
+            218,
+            216,
+            223
+          ],
+          [
+            220,
+            220,
+            220
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          768
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          163.71428571428572,
+          161.14285714285714,
+          162.28571428571428
+        ],
+        "pulse_minus_matched_constant_hz": [
+          73.71428571428572,
+          69.14285714285714,
+          70.85714285714285
+        ],
+        "off_mean_rate_hz": [
+          [
+            61.42857142857143,
+            63.142857142857146,
+            62.0
+          ],
+          [
+            63.142857142857146,
+            62.0,
+            61.42857142857143
+          ],
+          [
+            63.42857142857143,
+            61.142857142857146,
+            63.142857142857146
+          ]
+        ],
+        "pulse_counts": [
+          573,
+          564,
+          568
+        ],
+        "off_counts": [
+          [
+            215,
+            221,
+            217
+          ],
+          [
+            221,
+            217,
+            215
+          ],
+          [
+            222,
+            214,
+            221
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          573
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          138.0,
+          138.85714285714286,
+          136.85714285714286
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            88.0,
+            88.28571428571429,
+            88.0
+          ],
+          [
+            89.71428571428571,
+            88.0,
+            88.0
+          ],
+          [
+            88.57142857142857,
+            87.71428571428571,
+            87.71428571428571
+          ]
+        ],
+        "pulse_counts": [
+          483,
+          486,
+          479
+        ],
+        "off_counts": [
+          [
+            308,
+            309,
+            308
+          ],
+          [
+            314,
+            308,
+            308
+          ],
+          [
+            310,
+            307,
+            307
+          ]
+        ],
+        "all_window_count_range": [
+          10,
+          486
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          378.57142857142856,
+          375.42857142857144,
+          379.42857142857144
+        ],
+        "pulse_minus_matched_constant_hz": [
+          240.57142857142856,
+          236.57142857142858,
+          242.57142857142858
+        ],
+        "off_mean_rate_hz": [
+          [
+            88.0,
+            87.71428571428571,
+            88.28571428571429
+          ],
+          [
+            88.85714285714286,
+            88.57142857142857,
+            88.28571428571429
+          ],
+          [
+            88.28571428571429,
+            88.0,
+            87.71428571428571
+          ]
+        ],
+        "pulse_counts": [
+          1325,
+          1314,
+          1328
+        ],
+        "off_counts": [
+          [
+            308,
+            307,
+            309
+          ],
+          [
+            311,
+            310,
+            309
+          ],
+          [
+            309,
+            308,
+            307
+          ]
+        ],
+        "all_window_count_range": [
+          10,
+          1328
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          288.57142857142856,
+          282.0,
+          284.85714285714283
+        ],
+        "pulse_minus_matched_constant_hz": [
+          150.57142857142856,
+          143.14285714285714,
+          147.99999999999997
+        ],
+        "off_mean_rate_hz": [
+          [
+            88.0,
+            88.28571428571429,
+            88.28571428571429
+          ],
+          [
+            89.14285714285714,
+            88.0,
+            88.85714285714286
+          ],
+          [
+            88.57142857142857,
+            88.0,
+            88.0
+          ]
+        ],
+        "pulse_counts": [
+          1010,
+          987,
+          997
+        ],
+        "off_counts": [
+          [
+            308,
+            309,
+            309
+          ],
+          [
+            312,
+            308,
+            311
+          ],
+          [
+            310,
+            308,
+            308
+          ]
+        ],
+        "all_window_count_range": [
+          10,
+          1010
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          59.142857142857146,
+          59.42857142857143,
+          58.857142857142854
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            24.0,
+            24.857142857142858,
+            22.857142857142858
+          ],
+          [
+            24.857142857142858,
+            24.571428571428573,
+            24.571428571428573
+          ],
+          [
+            23.428571428571427,
+            22.571428571428573,
+            25.428571428571427
+          ]
+        ],
+        "pulse_counts": [
+          207,
+          208,
+          206
+        ],
+        "off_counts": [
+          [
+            84,
+            87,
+            80
+          ],
+          [
+            87,
+            86,
+            86
+          ],
+          [
+            82,
+            79,
+            89
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          208
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          214.0,
+          212.28571428571428,
+          215.14285714285714
+        ],
+        "pulse_minus_matched_constant_hz": [
+          154.85714285714286,
+          152.85714285714283,
+          156.28571428571428
+        ],
+        "off_mean_rate_hz": [
+          [
+            24.285714285714285,
+            24.285714285714285,
+            22.857142857142858
+          ],
+          [
+            24.857142857142858,
+            23.428571428571427,
+            22.857142857142858
+          ],
+          [
+            22.857142857142858,
+            22.571428571428573,
+            22.0
+          ]
+        ],
+        "pulse_counts": [
+          749,
+          743,
+          753
+        ],
+        "off_counts": [
+          [
+            85,
+            85,
+            80
+          ],
+          [
+            87,
+            82,
+            80
+          ],
+          [
+            80,
+            79,
+            77
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          753
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          150.85714285714286,
+          149.71428571428572,
+          151.71428571428572
+        ],
+        "pulse_minus_matched_constant_hz": [
+          91.71428571428572,
+          90.28571428571429,
+          92.85714285714286
+        ],
+        "off_mean_rate_hz": [
+          [
+            24.571428571428573,
+            22.0,
+            23.142857142857142
+          ],
+          [
+            25.714285714285715,
+            22.285714285714285,
+            23.428571428571427
+          ],
+          [
+            25.142857142857142,
+            21.714285714285715,
+            20.857142857142858
+          ]
+        ],
+        "pulse_counts": [
+          528,
+          524,
+          531
+        ],
+        "off_counts": [
+          [
+            86,
+            77,
+            81
+          ],
+          [
+            90,
+            78,
+            82
+          ],
+          [
+            88,
+            76,
+            73
+          ]
+        ],
+        "all_window_count_range": [
+          9,
+          531
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          41.714285714285715,
+          38.285714285714285,
+          36.857142857142854
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5714285714285714,
+            0.0,
+            0.0
+          ],
+          [
+            0.2857142857142857,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          146,
+          134,
+          129
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          146
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          368.57142857142856,
+          365.14285714285717,
+          369.7142857142857
+        ],
+        "pulse_minus_matched_constant_hz": [
+          326.85714285714283,
+          326.8571428571429,
+          332.8571428571429
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8571428571428571,
+            0.0,
+            0.0
+          ],
+          [
+            0.2857142857142857,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          1290,
+          1278,
+          1294
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1294
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 7,
+        "pulse_mean_rate_hz": [
+          241.14285714285714,
+          232.0,
+          234.85714285714286
+        ],
+        "pulse_minus_matched_constant_hz": [
+          199.42857142857142,
+          193.71428571428572,
+          198.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.5714285714285714,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          844,
+          812,
+          822
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          844
+        ]
+      }
+    ],
+    "MBON12_14": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          267.8,
+          275.4,
+          281.4
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            282.4,
+            281.6,
+            282.6
+          ],
+          [
+            281.4,
+            281.2,
+            282.2
+          ],
+          [
+            281.2,
+            282.4,
+            282.6
+          ]
+        ],
+        "pulse_counts": [
+          1339,
+          1377,
+          1407
+        ],
+        "off_counts": [
+          [
+            1412,
+            1408,
+            1413
+          ],
+          [
+            1407,
+            1406,
+            1411
+          ],
+          [
+            1406,
+            1412,
+            1413
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1413
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          261.6,
+          279.8,
+          281.8
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -6.199999999999989,
+          4.400000000000034,
+          0.4000000000000341
+        ],
+        "off_mean_rate_hz": [
+          [
+            281.8,
+            282.2,
+            281.8
+          ],
+          [
+            282.6,
+            281.6,
+            283.2
+          ],
+          [
+            281.4,
+            281.4,
+            282.4
+          ]
+        ],
+        "pulse_counts": [
+          1308,
+          1399,
+          1409
+        ],
+        "off_counts": [
+          [
+            1409,
+            1411,
+            1409
+          ],
+          [
+            1413,
+            1408,
+            1416
+          ],
+          [
+            1407,
+            1407,
+            1412
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1416
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          271.8,
+          278.8,
+          281.8
+        ],
+        "pulse_minus_matched_constant_hz": [
+          4.0,
+          3.400000000000034,
+          0.4000000000000341
+        ],
+        "off_mean_rate_hz": [
+          [
+            282.4,
+            281.8,
+            281.8
+          ],
+          [
+            282.2,
+            281.6,
+            282.4
+          ],
+          [
+            281.6,
+            281.6,
+            282.6
+          ]
+        ],
+        "pulse_counts": [
+          1359,
+          1394,
+          1409
+        ],
+        "off_counts": [
+          [
+            1412,
+            1409,
+            1409
+          ],
+          [
+            1411,
+            1408,
+            1412
+          ],
+          [
+            1408,
+            1408,
+            1413
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1413
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.6,
+          455.0,
+          454.8
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.6,
+            454.8,
+            454.2
+          ],
+          [
+            454.6,
+            454.2,
+            455.0
+          ],
+          [
+            454.8,
+            454.2,
+            454.6
+          ]
+        ],
+        "pulse_counts": [
+          2273,
+          2275,
+          2274
+        ],
+        "off_counts": [
+          [
+            2273,
+            2274,
+            2271
+          ],
+          [
+            2273,
+            2271,
+            2275
+          ],
+          [
+            2274,
+            2271,
+            2273
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2275
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.6,
+          455.0,
+          454.8
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.6,
+            454.8,
+            454.2
+          ],
+          [
+            454.6,
+            454.2,
+            455.0
+          ],
+          [
+            454.8,
+            454.2,
+            454.6
+          ]
+        ],
+        "pulse_counts": [
+          2273,
+          2275,
+          2274
+        ],
+        "off_counts": [
+          [
+            2273,
+            2274,
+            2271
+          ],
+          [
+            2273,
+            2271,
+            2275
+          ],
+          [
+            2274,
+            2271,
+            2273
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2275
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.6,
+          455.0,
+          454.8
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.6,
+            454.8,
+            454.2
+          ],
+          [
+            454.6,
+            454.2,
+            455.0
+          ],
+          [
+            454.8,
+            454.2,
+            454.6
+          ]
+        ],
+        "pulse_counts": [
+          2273,
+          2275,
+          2274
+        ],
+        "off_counts": [
+          [
+            2273,
+            2274,
+            2271
+          ],
+          [
+            2273,
+            2271,
+            2275
+          ],
+          [
+            2274,
+            2271,
+            2273
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2275
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          216.6,
+          217.6,
+          228.2
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            220.6,
+            221.6,
+            218.6
+          ],
+          [
+            222.4,
+            217.2,
+            222.0
+          ],
+          [
+            226.8,
+            225.4,
+            223.0
+          ]
+        ],
+        "pulse_counts": [
+          1083,
+          1088,
+          1141
+        ],
+        "off_counts": [
+          [
+            1103,
+            1108,
+            1093
+          ],
+          [
+            1112,
+            1086,
+            1110
+          ],
+          [
+            1134,
+            1127,
+            1115
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1141
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          222.4,
+          226.2,
+          227.2
+        ],
+        "pulse_minus_matched_constant_hz": [
+          5.800000000000011,
+          8.599999999999994,
+          -1.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            224.2,
+            228.6,
+            226.4
+          ],
+          [
+            225.6,
+            221.4,
+            226.6
+          ],
+          [
+            225.8,
+            226.0,
+            225.6
+          ]
+        ],
+        "pulse_counts": [
+          1112,
+          1131,
+          1136
+        ],
+        "off_counts": [
+          [
+            1121,
+            1143,
+            1132
+          ],
+          [
+            1128,
+            1107,
+            1133
+          ],
+          [
+            1129,
+            1130,
+            1128
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1143
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          225.2,
+          226.6,
+          226.4
+        ],
+        "pulse_minus_matched_constant_hz": [
+          8.599999999999994,
+          9.0,
+          -1.799999999999983
+        ],
+        "off_mean_rate_hz": [
+          [
+            221.8,
+            224.2,
+            224.6
+          ],
+          [
+            223.6,
+            227.0,
+            226.2
+          ],
+          [
+            224.6,
+            227.2,
+            222.0
+          ]
+        ],
+        "pulse_counts": [
+          1126,
+          1133,
+          1132
+        ],
+        "off_counts": [
+          [
+            1109,
+            1121,
+            1123
+          ],
+          [
+            1118,
+            1135,
+            1131
+          ],
+          [
+            1123,
+            1136,
+            1110
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1136
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.4,
+          454.4,
+          454.4
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.4,
+            454.8,
+            454.6
+          ],
+          [
+            454.4,
+            454.4,
+            454.2
+          ],
+          [
+            454.6,
+            454.8,
+            454.4
+          ]
+        ],
+        "pulse_counts": [
+          2272,
+          2272,
+          2272
+        ],
+        "off_counts": [
+          [
+            2272,
+            2274,
+            2273
+          ],
+          [
+            2272,
+            2272,
+            2271
+          ],
+          [
+            2273,
+            2274,
+            2272
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2276
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.4,
+          454.4,
+          454.4
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.4,
+            454.8,
+            454.6
+          ],
+          [
+            454.4,
+            454.4,
+            454.2
+          ],
+          [
+            454.6,
+            454.8,
+            454.4
+          ]
+        ],
+        "pulse_counts": [
+          2272,
+          2272,
+          2272
+        ],
+        "off_counts": [
+          [
+            2272,
+            2274,
+            2273
+          ],
+          [
+            2272,
+            2272,
+            2271
+          ],
+          [
+            2273,
+            2274,
+            2272
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2276
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 10,
+        "pulse_mean_rate_hz": [
+          454.4,
+          454.4,
+          454.4
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            454.4,
+            454.8,
+            454.6
+          ],
+          [
+            454.4,
+            454.4,
+            454.2
+          ],
+          [
+            454.6,
+            454.8,
+            454.4
+          ]
+        ],
+        "pulse_counts": [
+          2272,
+          2272,
+          2272
+        ],
+        "off_counts": [
+          [
+            2272,
+            2274,
+            2273
+          ],
+          [
+            2272,
+            2272,
+            2271
+          ],
+          [
+            2273,
+            2274,
+            2272
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2276
+        ]
+      }
+    ],
+    "DN_all": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          5.270928462709285,
+          5.280060882800609,
+          5.318112633181126
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            5.2724505327245055,
+            5.260273972602739,
+            5.380517503805175
+          ],
+          [
+            5.287671232876712,
+            5.287671232876712,
+            5.295281582952816
+          ],
+          [
+            5.200913242009133,
+            5.222222222222222,
+            5.366818873668189
+          ]
+        ],
+        "pulse_counts": [
+          3463,
+          3469,
+          3494
+        ],
+        "off_counts": [
+          [
+            3464,
+            3456,
+            3535
+          ],
+          [
+            3474,
+            3474,
+            3479
+          ],
+          [
+            3417,
+            3431,
+            3526
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          3578
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          5.220700152207002,
+          5.313546423135464,
+          5.3622526636225265
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.05022831050228316,
+          0.033485540334854846,
+          0.044140030441400135
+        ],
+        "off_mean_rate_hz": [
+          [
+            5.436834094368341,
+            5.237442922374429,
+            5.258751902587519
+          ],
+          [
+            5.470319634703197,
+            5.528158295281583,
+            5.569254185692542
+          ],
+          [
+            5.4261796042617965,
+            5.334855403348554,
+            5.273972602739726
+          ]
+        ],
+        "pulse_counts": [
+          3430,
+          3491,
+          3523
+        ],
+        "off_counts": [
+          [
+            3572,
+            3441,
+            3455
+          ],
+          [
+            3594,
+            3632,
+            3659
+          ],
+          [
+            3565,
+            3505,
+            3465
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          3659
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          5.273972602739726,
+          5.342465753424658,
+          5.270928462709285
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.003044140030441511,
+          0.062404870624048314,
+          -0.04718417047184165
+        ],
+        "off_mean_rate_hz": [
+          [
+            5.313546423135464,
+            5.365296803652968,
+            5.4961948249619486
+          ],
+          [
+            5.293759512937595,
+            5.2724505327245055,
+            5.343987823439878
+          ],
+          [
+            5.23896499238965,
+            5.281582952815829,
+            5.2663622526636225
+          ]
+        ],
+        "pulse_counts": [
+          3465,
+          3510,
+          3463
+        ],
+        "off_counts": [
+          [
+            3491,
+            3525,
+            3611
+          ],
+          [
+            3478,
+            3464,
+            3511
+          ],
+          [
+            3442,
+            3470,
+            3460
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          3611
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          17.69254185692542,
+          17.706240487062406,
+          17.35007610350076
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            17.48097412480974,
+            17.447488584474886,
+            17.605783866057838
+          ],
+          [
+            17.76255707762557,
+            17.621004566210047,
+            17.576864535768646
+          ],
+          [
+            17.251141552511417,
+            17.51902587519026,
+            17.331811263318112
+          ]
+        ],
+        "pulse_counts": [
+          11624,
+          11633,
+          11399
+        ],
+        "off_counts": [
+          [
+            11485,
+            11463,
+            11567
+          ],
+          [
+            11670,
+            11577,
+            11548
+          ],
+          [
+            11334,
+            11510,
+            11387
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          11670
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          17.6468797564688,
+          17.642313546423136,
+          17.709284627092845
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.04566210045662089,
+          -0.06392694063926996,
+          0.3592085235920841
+        ],
+        "off_mean_rate_hz": [
+          [
+            17.744292237442924,
+            17.4337899543379,
+            17.423135464231354
+          ],
+          [
+            17.47184170471842,
+            17.523592085235922,
+            17.526636225266362
+          ],
+          [
+            17.473363774733638,
+            17.50076103500761,
+            17.40639269406393
+          ]
+        ],
+        "pulse_counts": [
+          11594,
+          11591,
+          11635
+        ],
+        "off_counts": [
+          [
+            11658,
+            11454,
+            11447
+          ],
+          [
+            11479,
+            11513,
+            11515
+          ],
+          [
+            11480,
+            11498,
+            11436
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          11658
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          17.750380517503807,
+          17.557077625570777,
+          17.529680365296805
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.057838660578386936,
+          -0.14916286149162872,
+          0.17960426179604383
+        ],
+        "off_mean_rate_hz": [
+          [
+            17.365296803652967,
+            17.579908675799086,
+            17.595129375951295
+          ],
+          [
+            17.64992389649924,
+            17.36986301369863,
+            17.652968036529682
+          ],
+          [
+            17.58447488584475,
+            17.430745814307457,
+            17.49923896499239
+          ]
+        ],
+        "pulse_counts": [
+          11662,
+          11535,
+          11517
+        ],
+        "off_counts": [
+          [
+            11409,
+            11550,
+            11560
+          ],
+          [
+            11596,
+            11412,
+            11598
+          ],
+          [
+            11553,
+            11452,
+            11497
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          11665
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          4.5038051750380514,
+          4.386605783866058,
+          4.49923896499239
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            4.439878234398782,
+            4.450532724505328,
+            4.421613394216134
+          ],
+          [
+            4.407914764079147,
+            4.359208523592085,
+            4.3302891933028915
+          ],
+          [
+            4.468797564687976,
+            4.371385083713851,
+            4.225266362252664
+          ]
+        ],
+        "pulse_counts": [
+          2959,
+          2882,
+          2956
+        ],
+        "off_counts": [
+          [
+            2917,
+            2924,
+            2905
+          ],
+          [
+            2896,
+            2864,
+            2845
+          ],
+          [
+            2936,
+            2872,
+            2776
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2959
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          4.447488584474886,
+          4.2404870624048705,
+          4.474885844748859
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.05631659056316529,
+          -0.1461187214611872,
+          -0.0243531202435312
+        ],
+        "off_mean_rate_hz": [
+          [
+            4.517503805175038,
+            4.331811263318112,
+            4.505327245053272
+          ],
+          [
+            4.30289193302892,
+            4.409436834094368,
+            4.3561643835616435
+          ],
+          [
+            4.296803652968037,
+            4.471841704718417,
+            4.476407914764079
+          ]
+        ],
+        "pulse_counts": [
+          2922,
+          2786,
+          2940
+        ],
+        "off_counts": [
+          [
+            2968,
+            2846,
+            2960
+          ],
+          [
+            2827,
+            2897,
+            2862
+          ],
+          [
+            2823,
+            2938,
+            2941
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2968
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          4.353120243531203,
+          4.462709284627093,
+          4.345509893455099
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.15068493150684859,
+          0.07610350076103511,
+          -0.15372907153729098
+        ],
+        "off_mean_rate_hz": [
+          [
+            4.319634703196347,
+            4.2404870624048705,
+            4.327245053272451
+          ],
+          [
+            4.359208523592085,
+            4.471841704718417,
+            4.383561643835616
+          ],
+          [
+            4.3942161339421615,
+            4.359208523592085,
+            4.3622526636225265
+          ]
+        ],
+        "pulse_counts": [
+          2860,
+          2932,
+          2855
+        ],
+        "off_counts": [
+          [
+            2838,
+            2786,
+            2843
+          ],
+          [
+            2864,
+            2938,
+            2880
+          ],
+          [
+            2887,
+            2864,
+            2866
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2966
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          12.467275494672755,
+          12.531202435312025,
+          12.331811263318112
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            12.368340943683409,
+            12.547945205479452,
+            12.54185692541857
+          ],
+          [
+            12.287671232876713,
+            12.484018264840183,
+            12.26027397260274
+          ],
+          [
+            12.360730593607306,
+            12.619482496194825,
+            12.3896499238965
+          ]
+        ],
+        "pulse_counts": [
+          8191,
+          8233,
+          8102
+        ],
+        "off_counts": [
+          [
+            8126,
+            8244,
+            8240
+          ],
+          [
+            8073,
+            8202,
+            8055
+          ],
+          [
+            8121,
+            8291,
+            8140
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          8291
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          12.427701674277017,
+          12.362252663622527,
+          12.4337899543379
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.03957382039573787,
+          -0.16894977168949765,
+          0.10197869101978796
+        ],
+        "off_mean_rate_hz": [
+          [
+            12.345509893455098,
+            12.528158295281584,
+            12.350076103500761
+          ],
+          [
+            12.354642313546423,
+            12.423135464231354,
+            12.318112633181126
+          ],
+          [
+            12.391171993911719,
+            12.662100456621005,
+            12.353120243531203
+          ]
+        ],
+        "pulse_counts": [
+          8165,
+          8122,
+          8169
+        ],
+        "off_counts": [
+          [
+            8111,
+            8231,
+            8114
+          ],
+          [
+            8117,
+            8162,
+            8093
+          ],
+          [
+            8141,
+            8319,
+            8116
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          8319
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 1314,
+        "pulse_mean_rate_hz": [
+          12.421613394216134,
+          12.598173515981735,
+          12.441400304414003
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -0.04566210045662089,
+          0.06697108066970969,
+          0.10958904109589085
+        ],
+        "off_mean_rate_hz": [
+          [
+            12.514459665144596,
+            12.385083713850838,
+            12.345509893455098
+          ],
+          [
+            12.105022831050228,
+            12.391171993911719,
+            12.554033485540335
+          ],
+          [
+            12.407914764079148,
+            12.251141552511415,
+            12.36986301369863
+          ]
+        ],
+        "pulse_counts": [
+          8161,
+          8277,
+          8174
+        ],
+        "off_counts": [
+          [
+            8222,
+            8137,
+            8111
+          ],
+          [
+            7953,
+            8141,
+            8248
+          ],
+          [
+            8152,
+            8049,
+            8127
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          8277
+        ]
+      }
+    ],
+    "DNb05": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          247.0,
+          244.0,
+          246.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            244.0,
+            248.0,
+            247.0
+          ],
+          [
+            244.0,
+            244.0,
+            242.0
+          ],
+          [
+            244.0,
+            247.0,
+            246.0
+          ]
+        ],
+        "pulse_counts": [
+          247,
+          244,
+          246
+        ],
+        "off_counts": [
+          [
+            244,
+            248,
+            247
+          ],
+          [
+            244,
+            244,
+            242
+          ],
+          [
+            244,
+            247,
+            246
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          248
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          245.0,
+          248.0,
+          245.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -2.0,
+          4.0,
+          -1.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            244.0,
+            247.0,
+            244.0
+          ],
+          [
+            251.0,
+            252.0,
+            251.0
+          ],
+          [
+            247.0,
+            243.0,
+            246.0
+          ]
+        ],
+        "pulse_counts": [
+          245,
+          248,
+          245
+        ],
+        "off_counts": [
+          [
+            244,
+            247,
+            244
+          ],
+          [
+            251,
+            252,
+            251
+          ],
+          [
+            247,
+            243,
+            246
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          254
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          243.0,
+          244.0,
+          248.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -4.0,
+          0.0,
+          2.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            247.0,
+            248.0,
+            246.0
+          ],
+          [
+            247.0,
+            244.0,
+            247.0
+          ],
+          [
+            248.0,
+            245.0,
+            248.0
+          ]
+        ],
+        "pulse_counts": [
+          243,
+          244,
+          248
+        ],
+        "off_counts": [
+          [
+            247,
+            248,
+            246
+          ],
+          [
+            247,
+            244,
+            247
+          ],
+          [
+            248,
+            245,
+            248
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          248
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          440.0,
+          438.0,
+          440.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            440.0,
+            438.0,
+            439.0
+          ],
+          [
+            439.0,
+            439.0,
+            440.0
+          ],
+          [
+            438.0,
+            439.0,
+            439.0
+          ]
+        ],
+        "pulse_counts": [
+          440,
+          438,
+          440
+        ],
+        "off_counts": [
+          [
+            440,
+            438,
+            439
+          ],
+          [
+            439,
+            439,
+            440
+          ],
+          [
+            438,
+            439,
+            439
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          440
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          441.0,
+          439.0,
+          440.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            440.0,
+            439.0,
+            438.0
+          ],
+          [
+            439.0,
+            439.0,
+            440.0
+          ],
+          [
+            438.0,
+            439.0,
+            438.0
+          ]
+        ],
+        "pulse_counts": [
+          441,
+          439,
+          440
+        ],
+        "off_counts": [
+          [
+            440,
+            439,
+            438
+          ],
+          [
+            439,
+            439,
+            440
+          ],
+          [
+            438,
+            439,
+            438
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          441
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          440.0,
+          439.0,
+          440.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            440.0,
+            438.0,
+            439.0
+          ],
+          [
+            440.0,
+            438.0,
+            440.0
+          ],
+          [
+            438.0,
+            440.0,
+            437.0
+          ]
+        ],
+        "pulse_counts": [
+          440,
+          439,
+          440
+        ],
+        "off_counts": [
+          [
+            440,
+            438,
+            439
+          ],
+          [
+            440,
+            438,
+            440
+          ],
+          [
+            438,
+            440,
+            437
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          440
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          239.0,
+          236.0,
+          236.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            235.0,
+            238.0,
+            236.0
+          ],
+          [
+            236.0,
+            236.0,
+            234.0
+          ],
+          [
+            236.0,
+            235.0,
+            236.0
+          ]
+        ],
+        "pulse_counts": [
+          239,
+          236,
+          236
+        ],
+        "off_counts": [
+          [
+            235,
+            238,
+            236
+          ],
+          [
+            236,
+            236,
+            234
+          ],
+          [
+            236,
+            235,
+            236
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          240
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          237.0,
+          234.0,
+          237.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -2.0,
+          -2.0,
+          1.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            236.0,
+            236.0,
+            235.0
+          ],
+          [
+            230.0,
+            233.0,
+            239.0
+          ],
+          [
+            237.0,
+            235.0,
+            235.0
+          ]
+        ],
+        "pulse_counts": [
+          237,
+          234,
+          237
+        ],
+        "off_counts": [
+          [
+            236,
+            236,
+            235
+          ],
+          [
+            230,
+            233,
+            239
+          ],
+          [
+            237,
+            235,
+            235
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          239
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          236.0,
+          235.0,
+          238.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -3.0,
+          -1.0,
+          2.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            234.0,
+            235.0,
+            237.0
+          ],
+          [
+            236.0,
+            238.0,
+            234.0
+          ],
+          [
+            234.0,
+            232.0,
+            235.0
+          ]
+        ],
+        "pulse_counts": [
+          236,
+          235,
+          238
+        ],
+        "off_counts": [
+          [
+            234,
+            235,
+            237
+          ],
+          [
+            236,
+            238,
+            234
+          ],
+          [
+            234,
+            232,
+            235
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          238
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          434.0,
+          434.0,
+          433.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            434.0,
+            433.0,
+            435.0
+          ],
+          [
+            434.0,
+            433.0,
+            433.0
+          ],
+          [
+            433.0,
+            434.0,
+            433.0
+          ]
+        ],
+        "pulse_counts": [
+          434,
+          434,
+          433
+        ],
+        "off_counts": [
+          [
+            434,
+            433,
+            435
+          ],
+          [
+            434,
+            433,
+            433
+          ],
+          [
+            433,
+            434,
+            433
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          435
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          433.0,
+          434.0,
+          433.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            434.0,
+            434.0,
+            433.0
+          ],
+          [
+            434.0,
+            433.0,
+            432.0
+          ],
+          [
+            433.0,
+            434.0,
+            433.0
+          ]
+        ],
+        "pulse_counts": [
+          433,
+          434,
+          433
+        ],
+        "off_counts": [
+          [
+            434,
+            434,
+            433
+          ],
+          [
+            434,
+            433,
+            432
+          ],
+          [
+            433,
+            434,
+            433
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          434
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          433.0,
+          434.0,
+          434.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            434.0,
+            433.0,
+            435.0
+          ],
+          [
+            434.0,
+            434.0,
+            432.0
+          ],
+          [
+            433.0,
+            434.0,
+            433.0
+          ]
+        ],
+        "pulse_counts": [
+          433,
+          434,
+          434
+        ],
+        "off_counts": [
+          [
+            434,
+            433,
+            435
+          ],
+          [
+            434,
+            434,
+            432
+          ],
+          [
+            433,
+            434,
+            433
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          435
+        ]
+      }
+    ],
+    "DNg34": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          85.0,
+          84.0,
+          83.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            82.0,
+            83.0,
+            85.0
+          ],
+          [
+            82.0,
+            83.0,
+            85.0
+          ],
+          [
+            84.0,
+            85.0,
+            81.0
+          ]
+        ],
+        "pulse_counts": [
+          85,
+          84,
+          83
+        ],
+        "off_counts": [
+          [
+            82,
+            83,
+            85
+          ],
+          [
+            82,
+            83,
+            85
+          ],
+          [
+            84,
+            85,
+            81
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          85
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          86.0,
+          82.0,
+          83.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          1.0,
+          -2.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            83.0,
+            83.0,
+            85.0
+          ],
+          [
+            86.0,
+            86.0,
+            82.0
+          ],
+          [
+            82.0,
+            83.0,
+            80.0
+          ]
+        ],
+        "pulse_counts": [
+          86,
+          82,
+          83
+        ],
+        "off_counts": [
+          [
+            83,
+            83,
+            85
+          ],
+          [
+            86,
+            86,
+            82
+          ],
+          [
+            82,
+            83,
+            80
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          86
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          83.0,
+          86.0,
+          84.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -2.0,
+          2.0,
+          1.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            85.0,
+            85.0,
+            85.0
+          ],
+          [
+            85.0,
+            82.0,
+            83.0
+          ],
+          [
+            83.0,
+            82.0,
+            83.0
+          ]
+        ],
+        "pulse_counts": [
+          83,
+          86,
+          84
+        ],
+        "off_counts": [
+          [
+            85,
+            85,
+            85
+          ],
+          [
+            85,
+            82,
+            83
+          ],
+          [
+            83,
+            82,
+            83
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          86
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          260.0,
+          259.0,
+          261.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            260.0,
+            260.0,
+            261.0
+          ],
+          [
+            262.0,
+            260.0,
+            260.0
+          ],
+          [
+            261.0,
+            260.0,
+            260.0
+          ]
+        ],
+        "pulse_counts": [
+          260,
+          259,
+          261
+        ],
+        "off_counts": [
+          [
+            260,
+            260,
+            261
+          ],
+          [
+            262,
+            260,
+            260
+          ],
+          [
+            261,
+            260,
+            260
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          262
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          260.0,
+          260.0,
+          261.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            260.0,
+            261.0,
+            260.0
+          ],
+          [
+            260.0,
+            260.0,
+            260.0
+          ],
+          [
+            261.0,
+            261.0,
+            260.0
+          ]
+        ],
+        "pulse_counts": [
+          260,
+          260,
+          261
+        ],
+        "off_counts": [
+          [
+            260,
+            261,
+            260
+          ],
+          [
+            260,
+            260,
+            260
+          ],
+          [
+            261,
+            261,
+            260
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          261
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          260.0,
+          261.0,
+          261.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            261.0,
+            261.0,
+            261.0
+          ],
+          [
+            261.0,
+            260.0,
+            262.0
+          ],
+          [
+            259.0,
+            261.0,
+            261.0
+          ]
+        ],
+        "pulse_counts": [
+          260,
+          261,
+          261
+        ],
+        "off_counts": [
+          [
+            261,
+            261,
+            261
+          ],
+          [
+            261,
+            260,
+            262
+          ],
+          [
+            259,
+            261,
+            261
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          262
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          56.0,
+          49.0,
+          54.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            51.0,
+            55.0,
+            52.0
+          ],
+          [
+            51.0,
+            52.0,
+            51.0
+          ],
+          [
+            52.0,
+            55.0,
+            53.0
+          ]
+        ],
+        "pulse_counts": [
+          56,
+          49,
+          54
+        ],
+        "off_counts": [
+          [
+            51,
+            55,
+            52
+          ],
+          [
+            51,
+            52,
+            51
+          ],
+          [
+            52,
+            55,
+            53
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          56
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          53.0,
+          49.0,
+          51.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -3.0,
+          0.0,
+          -3.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            54.0,
+            53.0,
+            61.0
+          ],
+          [
+            53.0,
+            54.0,
+            47.0
+          ],
+          [
+            54.0,
+            55.0,
+            53.0
+          ]
+        ],
+        "pulse_counts": [
+          53,
+          49,
+          51
+        ],
+        "off_counts": [
+          [
+            54,
+            53,
+            61
+          ],
+          [
+            53,
+            54,
+            47
+          ],
+          [
+            54,
+            55,
+            53
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          61
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          52.0,
+          51.0,
+          51.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          -4.0,
+          2.0,
+          -3.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            55.0,
+            52.0,
+            52.0
+          ],
+          [
+            52.0,
+            49.0,
+            54.0
+          ],
+          [
+            56.0,
+            54.0,
+            50.0
+          ]
+        ],
+        "pulse_counts": [
+          52,
+          51,
+          51
+        ],
+        "off_counts": [
+          [
+            55,
+            52,
+            52
+          ],
+          [
+            52,
+            49,
+            54
+          ],
+          [
+            56,
+            54,
+            50
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          56
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          245.0,
+          243.0,
+          245.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            245.0,
+            246.0,
+            245.0
+          ],
+          [
+            246.0,
+            242.0,
+            246.0
+          ],
+          [
+            243.0,
+            245.0,
+            244.0
+          ]
+        ],
+        "pulse_counts": [
+          245,
+          243,
+          245
+        ],
+        "off_counts": [
+          [
+            245,
+            246,
+            245
+          ],
+          [
+            246,
+            242,
+            246
+          ],
+          [
+            243,
+            245,
+            244
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          246
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          245.0,
+          244.0,
+          245.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            245.0,
+            245.0,
+            247.0
+          ],
+          [
+            245.0,
+            243.0,
+            245.0
+          ],
+          [
+            245.0,
+            244.0,
+            246.0
+          ]
+        ],
+        "pulse_counts": [
+          245,
+          244,
+          245
+        ],
+        "off_counts": [
+          [
+            245,
+            245,
+            247
+          ],
+          [
+            245,
+            243,
+            245
+          ],
+          [
+            245,
+            244,
+            246
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          247
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          245.0,
+          246.0,
+          245.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          3.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            243.0,
+            243.0,
+            244.0
+          ],
+          [
+            246.0,
+            246.0,
+            245.0
+          ],
+          [
+            244.0,
+            246.0,
+            244.0
+          ]
+        ],
+        "pulse_counts": [
+          245,
+          246,
+          245
+        ],
+        "off_counts": [
+          [
+            243,
+            243,
+            244
+          ],
+          [
+            246,
+            246,
+            245
+          ],
+          [
+            244,
+            246,
+            244
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          246
+        ]
+      }
+    ],
+    "DNa01": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            1.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          1,
+          0
+        ],
+        "off_counts": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          3
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            2.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            1.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          2,
+          0
+        ],
+        "off_counts": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      }
+    ],
+    "DNa02": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          1,
+          0
+        ],
+        "off_counts": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      }
+    ],
+    "DNg97": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      }
+    ],
+    "DNp09": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 2,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      }
+    ],
+    "PFL3": [
+      {
+        "arm": "C0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          1,
+          6,
+          11
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          2,
+          7,
+          12
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          3,
+          8,
+          13
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          24,
+          27,
+          30
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          33,
+          36,
+          39
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "C1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          42,
+          45,
+          48
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          0
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          25,
+          28,
+          31
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.08333333333333333
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          10
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          34,
+          37,
+          40
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          10
+        ]
+      },
+      {
+        "arm": "H0",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          43,
+          46,
+          49
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          10
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "constant_baseline",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          26,
+          29,
+          32
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.08333333333333333
+          ],
+          [
+            0.0,
+            0.08333333333333333,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "ethyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          35,
+          38,
+          41
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.08333333333333333,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.08333333333333333
+          ],
+          [
+            0.08333333333333333,
+            0.0,
+            0.08333333333333333
+          ]
+        ],
+        "pulse_counts": [
+          0,
+          0,
+          0
+        ],
+        "off_counts": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          1
+        ]
+      },
+      {
+        "arm": "H1",
+        "condition": "isoamyl_acetate",
+        "seeds": [
+          11,
+          12,
+          13
+        ],
+        "ordinals": [
+          44,
+          47,
+          50
+        ],
+        "count": 24,
+        "pulse_mean_rate_hz": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "pulse_minus_matched_constant_hz": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "off_mean_rate_hz": [
+          [
+            0.0,
+            0.0,
+            0.08333333333333333
+          ],
+          [
+            0.0,
+            0.0,
+            0.08333333333333333
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "pulse_counts": [
+          1,
+          1,
+          1
+        ],
+        "off_counts": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "all_window_count_range": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  "wall_seconds": 1.249282042030245,
+  "scope": "Independent archive decoding and direct NumPy aggregation from all60 final checkpoints; no producer reducer, kernel or model imports. Every selected count and final v/s/h value compared; all34 cohort metrics and408 matched contrasts recomputed.",
+  "limits": [
+    "These are post-hoc coarse windows from existing trials, not new simulation or biological replicates.",
+    "Counts cannot locate a transmission bottleneck, infer latency/depression or prove the proposed anatomical route carried activity.",
+    "Side/column metadata remain uncalibrated; no wind, hunger, reflection, clamp, body or bump behavior is tested.",
+    "Per-window finite counts have boundary quantization; 454.545Hz is the long-run22tick refractory ceiling for non-source cells, not an exact finite-window maximum."
+  ]
+}

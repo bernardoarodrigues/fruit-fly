@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "completed_utc": "2026-09-05T18:00:46.080366+00:00",
+  "plan": {
+    "path": "validation/orn-pn-depression-comparison-plan.json",
+    "bytes": 3082,
+    "sha256": "114ff8e8e488a27a99e29e88080fc4d30d11081026700250317f3b9d4895f092"
+  },
+  "summaries": [
+    {
+      "frequency_hz": 15,
+      "compared_means": 7,
+      "missing_initial_means": 1,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 3.0060972966805632,
+          "mae_percentage_points": 2.281300553303043,
+          "mean_signed_error_percentage_points": -0.08931966868188315,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            2.123141801976494,
+            4.054278612562162
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 24.789154058274043,
+          "mae_percentage_points": 23.386511965192167,
+          "mean_signed_error_percentage_points": 23.386511965192167,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            23.595677162471276,
+            25.989791062302285
+          ]
+        }
+      }
+    },
+    {
+      "frequency_hz": 20,
+      "compared_means": 9,
+      "missing_initial_means": 1,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 14.755181183770352,
+          "mae_percentage_points": 12.232785617607918,
+          "mean_signed_error_percentage_points": 11.231107449232749,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            13.719631355871039,
+            15.823195068708522
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 47.33591373505038,
+          "mae_percentage_points": 44.21883812746757,
+          "mean_signed_error_percentage_points": 44.21883812746757,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            46.152666517690186,
+            48.52349672003399
+          ]
+        }
+      }
+    },
+    {
+      "frequency_hz": 50,
+      "compared_means": 24,
+      "missing_initial_means": 1,
+      "metrics": {
+        "reference": {
+          "rmse_percentage_points": 30.598854090576552,
+          "mae_percentage_points": 29.406990952171096,
+          "mean_signed_error_percentage_points": 29.406990952171096,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            29.37123999004284,
+            31.841693555146165
+          ]
+        },
+        "static": {
+          "rmse_percentage_points": 93.98589735182674,
+          "mae_percentage_points": 92.12140439932318,
+          "mean_signed_error_percentage_points": 92.12140439932318,
+          "conservative_cartesian_graphical_rmse_envelope": [
+            92.73325659810693,
+            95.24974449743338
+          ]
+        }
+      }
+    }
+  ],
+  "limits": [
+    "A conditional normalized-shape comparison, not absolute EPSC/EPSP calibration, a fit or a biological pass/fail.",
+    "Comparison assumes the source initial-amplitude denominator corresponds to the reference first-test-event denominator; exact experimental baseline/test phase and preprocessing are not recovered.",
+    "Shared6-cell cohort and normalization make plotted points dependent; graphical envelopes and SEM are distinct uncertainties.",
+    "Initial means and unresolved SEM stay missing. Negative graphical means remain as drawn; no clipping or sign interpretation.",
+    "FemaleVM2 does not calibrate maleVM7d or other cell classes. No runtime, neural simulation, causal intervention or promotion."
+  ],
+  "artifacts": [
+    {
+      "path": "validation/orn-pn-depression-comparison-rows.csv",
+      "bytes": 9367,
+      "sha256": "f6c82569231d8e611cf150ed70219105ea20cb0b27c9b57d1865feb0f9b4cfc8"
+    },
+    {
+      "path": "validation/orn-pn-depression-comparison-figure.png",
+      "bytes": 116238,
+      "sha256": "47e05e9bb0581a0a2fe6e19951dbe246c32d71b24b79eae5b4aee4223a4e17b5"
+    }
+  ]
+}

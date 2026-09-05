@@ -1,0 +1,29 @@
+# Kazama-Wilson Fig. 8F: VM2 depression digitization
+
+The bounded extraction passed **177 checks** and retains **43 frequency-specific rows**: 8 at 15 Hz, 10 at 20 Hz, and 25 at 50 Hz. It resolves 40 individual mean estimates and 37 separate drawn SEM spans. One initial marker is shared by all three series: its common pixel geometry is retained, while the three individual initial means and SEMs remain null. This is a figure-summary extraction, not a release of cell-level recordings.
+
+The [independent review](../validation/orn-pn-depression-fig8f-independent-review.json) passes 1,887 checks of source pixels, masks, series attribution, missingness, axes and conversions. A subsequent [conditional comparison with saved reference predictions](orn-pn-depression-comparison.md) uses these observations without changing the extraction or fitting parameters.
+
+The source is [Kazama and Wilson, Neuron 2008](https://doi.org/10.1016/j.neuron.2008.02.030), local PDF page 8, Fig. 8F. The page contains one 830-by-1090-pixel grayscale JPEG for all of Fig. 8; the page's ten vector curves are publisher-logo shapes. Consequently, no precise vector marker or bar endpoints exist for this panel in the local PDF. A bounded check of the [official PMC article](https://pmc.ncbi.nlm.nih.gov/articles/PMC2429849/) returned a browser-verification page, so no alternative image was obtained. The original embedded JPEG bytes and decoded pixel hash are retained.
+
+The paper describes female flies aged 2-7 days. Fig. 8D-F uses VM2 PN uEPSCs with 7 Hz conditioning for four seconds, followed by a 500 ms test. D/E illustrate 20/50 Hz, and the F legend explicitly includes 15 Hz. The F caption gives n=6 cells; the general Data Analysis section specifies mean +/- SEM across experiments. Point-level sample sizes, covariance, raw amplitudes and the precise per-cell/per-trial normalization operation are not supplied by this figure. The ordinate is preserved as **percent initial**, without inventing its normalization procedure.
+
+The [frozen plan](../validation/orn-pn-depression-fig8f-plan.json) pins the source, parser, script, connected marker-interior components, selected error-stem columns, axis tick regions and unresolved cases before numerical conversion. The method uses native pixels rather than an enlarged rendering. A white-interior bounding-box midpoint estimates each marker center; black vertical runs identify the separated upper/lower stems. Endpoint spans are retained without recentering or symmetrizing around the marker. SEM is the half-span of the drawn error bar under the paper's general error convention. Marker-to-bar midpoint disagreement reaches 1.5 pixels and remains in the data.
+
+Axis calibration uses native x=97.5 and 360.5 for 0/500 ms, and y=996.5 and 799.5 for 0/100 percent. Independent middle-tick checks use x=229.5 at 250 ms and y=897.5 at 50 percent; each differs by 0.5 native pixel from the endpoint-anchored prediction. Recalibration using either half-axis is retained for every marker; the largest changes are 1.91 ms and 0.539 percentage point. Coordinates are never snapped to nominal stimulus periods, and no first-pulse or baseline-to-test phase is assigned.
+
+| Test frequency | Rows | Resolved means | Resolved SEM | Unresolved SEM ordinals (zero-based) |
+| --- | ---: | ---: | ---: | --- |
+| 15 Hz | 8 | 7 | 7 | 0 |
+| 20 Hz | 10 | 9 | 8 | 0, 1 |
+| 50 Hz | 25 | 24 | 22 | 0, 7, 23 |
+
+The last plotted marker estimates are 66.24 +/- 7.87 percent at 469.58 ms (15 Hz), 35.53 +/- 12.69 percent at 450.57 ms (20 Hz), and 4.06 +/- 6.60 percent at 480.04 ms (50 Hz). These are their actual source coordinates, not a common 500 ms endpoint. Negative plotted means in the 50 Hz series are preserved rather than clipped or interpreted as negative synaptic conductance.
+
+The declared raster sensitivity varies marker/bar positions by +/-1.5 native pixels and calibration anchors by +/-1 pixel, retaining every corner combination. These sensitivity envelopes are separate from biological SEM and are neither certified total extraction-error bounds nor statistical confidence intervals. JPEG artifacts and symbol-center conventions remain limitations. Null SEM means unresolved, never zero uncertainty; no errors are imputed from neighboring points.
+
+Use the [points CSV](../validation/orn-pn-depression-fig8f-points.csv) or [results JSON](../validation/orn-pn-depression-fig8f-results.json). Each row retains frequency, event ordinal, raw pixel component and marker center, unsnapped time, mean status, bar endpoints/run pixels, SEM availability, asymmetric extents from the marker, alternate calibration results and sensitivity envelopes. The [geometry archive](../validation/orn-pn-depression-fig8f-geometry.json) retains component masks and source metadata; the [calibration CSV](../validation/orn-pn-depression-fig8f-calibration.csv) preserves all six tick measurements.
+
+The [final overlay](../validation/orn-pn-depression-fig8f-overlay-v2.png) was visually inspected: colored centers and bar-end caps align with source ink, and unresolved SEMs are ringed on the reconstruction. The first overlay had an overlapping footer and xlabel; that image and its receipt are preserved. A [separate layout-only script](../validation/orn-pn-depression-fig8f-plot-v2.py) produced the final image without changing the frozen extraction. Preparation also encountered a mistaken raw-byte decode of the JPEG stream and unavailable bundled SciPy; both were resolved before plan creation, using standard JPEG decoding and a standard-library component traversal. The first frozen numerical extraction passed without retry.
+
+No fit, parameter selection, model/runtime change, pulse-phase inference, Fig. 9 or S8 digitization, or whole-brain run was performed. Any later ordinal comparison must retain the missing initial means, missing SEM, raster uncertainty and normalization/phase limits.

@@ -1,0 +1,754 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T17:41:42.681933+00:00",
+  "scope": "Bounded primary-source protocol/observable audit; no new simulation, gain choice, waveform extraction, figure digitization or fit. Full text plus selected supplementary tables/figures read. The first rung is proposed saved-data analysis, not claimed executed here.",
+  "report": {
+    "path": "research/19-navigation-ladder-assay-evidence.md",
+    "bytes": 13478,
+    "sha256": "f9df03357604475a0d4aab10a3667235f530d6984ddb68db80323350d80232b0"
+  },
+  "acquisition_receipts": [
+    {
+      "path": "validation/navigation-ladder-assay-acquisition.json",
+      "bytes": 4100,
+      "sha256": "42f6b741a9aaa44ceb030a3c45d2173cfa91123893e42e1a07e7ba185179cde5"
+    },
+    {
+      "path": "validation/navigation-ladder-assay-supplement-acquisition.json",
+      "bytes": 1479,
+      "sha256": "7100970d6b7a8b752f9457b2494e690a9a089ec045a59ae203377bee2abd3dfe"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tao2023",
+      "requested_url": "https://www.nature.com/articles/s41467-023-42613-8",
+      "accessed_utc": "2026-09-05T17:34:45.782875+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41467-023-42613-8?error=cookies_not_supported&code=3a90d4b0-f63c-4aef-86e1-3234c08467b3",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Sensorimotor transformation underlying odor-modulated locomotion in walking Drosophila | Nature CommunicationsClose bannerClose banner",
+      "is_primary_article": true,
+      "bytes": 639178,
+      "sha256": "518f04a4f5315a4be42ddef2d610bc7cfa3fea272a35d13c3329d21a7150d12e",
+      "raw_path": "data/raw/navigation-ladder-assays/tao2023.html",
+      "text_path": "data/raw/navigation-ladder-assays/tao2023.txt",
+      "text_sha256": "50cc14267484a0e98e3aadb173162e9fd6842639ff65ccd156a9f43d3765f714",
+      "text_bytes": 164627
+    },
+    {
+      "id": "matheson2022",
+      "requested_url": "https://www.nature.com/articles/s41467-022-32247-7",
+      "accessed_utc": "2026-09-05T17:34:48.133738+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41467-022-32247-7?error=cookies_not_supported&code=b3614003-ceb1-47f4-b4a7-38919ca0ed76",
+      "content_type": "text/html; charset=utf-8",
+      "title": "A neural circuit for wind-guided olfactory navigation | Nature CommunicationsClose bannerClose banner",
+      "is_primary_article": true,
+      "bytes": 598946,
+      "sha256": "1bff2bf0a2b713be9b0751104846bb14dbf4d654e61d8f76ac9076dee4603d66",
+      "raw_path": "data/raw/navigation-ladder-assays/matheson2022.html",
+      "text_path": "data/raw/navigation-ladder-assays/matheson2022.txt",
+      "text_sha256": "2b295dfc0528bf4577c59e928414fedb26f4d9652a8b7a598d839ca201c5545a",
+      "text_bytes": 144564
+    },
+    {
+      "id": "matheson2024-addendum",
+      "requested_url": "https://www.nature.com/articles/s41467-024-46225-8",
+      "accessed_utc": "2026-09-05T17:34:49.835287+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41467-024-46225-8?error=cookies_not_supported&code=fea02c78-8637-4add-a731-0979b5f1b262",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Addendum: A neural circuit for wind-guided olfactory navigation | Nature CommunicationsClose bannerClose banner",
+      "is_primary_article": true,
+      "bytes": 216702,
+      "sha256": "18e7caa32eb1d8f34acfa0abd6e14501d94622cd97e2175832b6e8967ea49ed1",
+      "raw_path": "data/raw/navigation-ladder-assays/matheson2024-addendum.html",
+      "text_path": "data/raw/navigation-ladder-assays/matheson2024-addendum.txt",
+      "text_sha256": "5bd26b5bae6ebe62738f23bead828c2868caf02958cd27f00deef24a52a4a1f4",
+      "text_bytes": 26371
+    },
+    {
+      "id": "kathman2026",
+      "requested_url": "https://www.nature.com/articles/s41467-026-75945-2",
+      "accessed_utc": "2026-09-05T17:34:51.537197+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s41467-026-75945-2?error=cookies_not_supported&code=c112bd57-d7a9-400e-8a53-3b418648fa8b",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Neural dynamics for working memory and evidence integration during olfactory navigation in Drosophila | Nature CommunicationsClose bannerClose banner",
+      "is_primary_article": true,
+      "bytes": 538173,
+      "sha256": "9e95cc3d2743759a8544339714ad44d962ed6bbfb17c7bcfe42c33dbf2f2e5e5",
+      "raw_path": "data/raw/navigation-ladder-assays/kathman2026.html",
+      "text_path": "data/raw/navigation-ladder-assays/kathman2026.txt",
+      "text_sha256": "9f26338b4fdb738c4f91ea2de8ffa8eec1aa926ed9a81776d4ad5dd5e7e5aebc",
+      "text_bytes": 121732
+    },
+    {
+      "source_id": "matheson2022-supplement",
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-32247-7/MediaObjects/41467_2022_32247_MOESM1_ESM.pdf",
+      "accessed_utc": "2026-09-05T17:36:17.873966+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-32247-7/MediaObjects/41467_2022_32247_MOESM1_ESM.pdf",
+      "content_type": "application/pdf",
+      "path": "data/raw/navigation-ladder-assays/matheson2022-supplement.pdf",
+      "bytes": 6185570,
+      "sha256": "eacf0430bf29aa8187f2db165c4063388c66bc719ee0a9a808305f63df163fc8",
+      "pdf_magic": true
+    },
+    {
+      "source_id": "kathman2026-supplement",
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-75945-2/MediaObjects/41467_2026_75945_MOESM1_ESM.pdf",
+      "accessed_utc": "2026-09-05T17:36:18.780482+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-75945-2/MediaObjects/41467_2026_75945_MOESM1_ESM.pdf",
+      "content_type": "application/pdf",
+      "path": "data/raw/navigation-ladder-assays/kathman2026-supplement.pdf",
+      "bytes": 2415114,
+      "sha256": "5ff8281d2abb12f45095dbc40d8df48eacd812f5d5998bc6eb117d20c5687e79",
+      "pdf_magic": true
+    }
+  ],
+  "additional_local_derivatives": [
+    {
+      "path": "data/raw/navigation-ladder-assays/matheson2022-supplement.txt",
+      "bytes": 34049,
+      "sha256": "517fa29bdad8abd0ff3f5d1f375249e837bbe7b4c80f33b6a610c0cc33ef2790"
+    },
+    {
+      "path": "data/raw/navigation-ladder-assays/kathman2026-supplement.txt",
+      "bytes": 14421,
+      "sha256": "0d93a2caaf493db090c369cce3945035e131029c47deae2e3dee8bb15ec86472"
+    },
+    {
+      "path": "data/raw/navigation-ladder-assays/matheson2022-table-s1.png",
+      "bytes": 289480,
+      "sha256": "6265a358cf62cad45033188a301e21f2ac0f5c13046782c253bf8952c2dc57d8"
+    },
+    {
+      "path": "data/raw/navigation-ladder-assays/kathman2026-table-s1.png",
+      "bytes": 250095,
+      "sha256": "9e2315d911145cfb11ead3c7ebe1f3abd028a2a9eda785b97f79704a155fd67e"
+    }
+  ],
+  "visual_inspection": {
+    "method": "Poppler pdftoppm -scale-to1600, then view_image; read-only research copies remain ignored. No chart digitization.",
+    "pages_1_based": {
+      "matheson2022-supplement": [
+        13
+      ],
+      "kathman2026-supplement": [
+        6
+      ]
+    },
+    "verified": [
+      "Matheson Fig1/S1 genotype, sex and age rows",
+      "Kathman SS63158 split identifiers and table context"
+    ]
+  },
+  "protocols": {
+    "tao2023": {
+      "source_locators": [
+        "Results Figs1-6",
+        "Methods: Experimental model and subject details",
+        "Electrophysiology data collection",
+        "Spike sorting and spike rate analysis",
+        "Neural response to kinematic mapping",
+        "Definition of speed, curvature, and turn probability as a function of time since entry and exit"
+      ],
+      "sex": "female",
+      "pre_starvation_food_age_days": {
+        "control": [
+          3,
+          5
+        ],
+        "retinal": [
+          4,
+          5
+        ]
+      },
+      "starvation_h": [
+        15,
+        21
+      ],
+      "arena_diameter_mm": 80,
+      "light_zone_radius_mm_methods": 12.5,
+      "light_zone_diameter_mm_results": 20,
+      "geometry_discrepancy": true,
+      "light_wavelength_nm": 617,
+      "baseline_s": 180,
+      "light_zone_enabled_s": 180,
+      "stimulus_encounter": "position-dependent, aligned to first head entry; not a uniform fixed-duration odor pulse",
+      "tracking_hz": 30,
+      "sensory_recording": {
+        "genotype": "Orco-Gal4 > UAS-Chrimson",
+        "classes_in_spike_sorting": [
+          "ab1A",
+          "ab1B",
+          "ab2A"
+        ],
+        "replay_traces": 6,
+        "replay_trace_duration_s": 60,
+        "recording_stimulus_hz": 10000,
+        "rate_kernel_bandwidth_ms": 150,
+        "filter_analysis_hz": 100,
+        "kinematic_history_ms": 200,
+        "simultaneous_with_behavior": false,
+        "light_to_Hz_waveform_extracted": false
+      },
+      "behavior": [
+        "Or42a alone does not increase time inside in this assay; not proof of no behavioral effect in every assay",
+        "Ensemble and state determine speed/curvature integration",
+        "Effects change with time after first encounter; no universal positive ON speed criterion",
+        "Turn/curved-walk/stop state distributions are distinct"
+      ],
+      "analysis_limits": [
+        "Methods 0–55 spikes/s f grid and −150..150 spikes/s² derivative grid cover modeled state samples, not measured maximum rates of every ORN",
+        "150 ms rate smoothing and 200 ms history are analysis operations, not direct intrinsic time constants",
+        "Entry/exit traces use ±10s around derivative peaks; no numerical onset/offset trace digitized here",
+        "Results/Methods zone size differs; paper also has inconsistent aggregate control-count typography; no cohort total adopted from that phrase"
+      ],
+      "data_link": "https://doi.org/10.6084/m9.figshare.22776428",
+      "code_link": "https://doi.org/10.5281/zenodo.8190933"
+    },
+    "matheson2022": {
+      "source_locators": [
+        "Fig1; FigS1; TableS1 page13",
+        "Methods: Fly stocks, Behavioral experiments, Calcium imaging, Modeling"
+      ],
+      "activation_sex": "genetically blind norpA male",
+      "activation_age_days": [
+        3,
+        10
+      ],
+      "starvation_h_approx": 24,
+      "subjective_ZT": [
+        1,
+        4
+      ],
+      "sex_exception": "Main text says activation males/all other flies female, but Table S1 labels Fig1 vinegar comparison norpA males too; prefer exact panel-specific row and retain inconsistency.",
+      "wind_speed_mm_s_approx": 120,
+      "trial_duration_s": 70,
+      "stimulus_on_s": 30,
+      "stimulus_duration_s": 10,
+      "vinegar_liquid_percent": 1,
+      "opto_wavelength_nm": 626,
+      "opto_irradiance_uW_mm2": 26,
+      "opto_conditions": [
+        "wind+light",
+        "light only",
+        "wind only",
+        "blank"
+      ],
+      "baseline_trial_window_s": [
+        10,
+        25
+      ],
+      "windows_relative_s": {
+        "peripheral_MB_LH_upwind_from_ON": [
+          0,
+          5
+        ],
+        "FB_upwind_from_ON": [
+          0,
+          10
+        ],
+        "ON_groundspeed": [
+          2,
+          5
+        ],
+        "OFF_curvature": [
+          0,
+          2
+        ],
+        "OFF_upwind": [
+          0,
+          2
+        ]
+      },
+      "measurements": {
+        "groundspeed": "distance/time mm/s",
+        "upwind_velocity": "signed upwind displacement/time mm/s",
+        "angular_velocity": "absolute unwrapped orientation derivative",
+        "curvature": "absolute angular velocity / groundspeed; retain degrees/mm if angular rate is degrees/s",
+        "movement_threshold_mm_s": 1,
+        "tracking_hz": 50,
+        "lowpass_hz": 2.5
+      },
+      "controls": [
+        "Broad Orco and Orco+IR8a activation evoke upwind movement with wind",
+        "Orco+IR8a without wind evokes OFF search but not upwind movement",
+        "Tested singles Or59a,Or42a,Ir75a,Ir64a,Or92a,Or42b did not significantly increase upwind or OFF curvature under stated multiple-comparison procedure"
+      ],
+      "measured_per_cell_ORN_Hz": null,
+      "JO_per_cell_Hz": null,
+      "central_imaging": {
+        "sex": "female per Methods",
+        "age_days": [
+          5,
+          21
+        ],
+        "odor_liquid_percent": 10,
+        "wind_cm_s": [
+          25,
+          40
+        ],
+        "indicator": "GCaMP6f",
+        "output_units": "deltaF/F",
+        "hz_conversion": null
+      },
+      "model_limits": [
+        "Published artificial sinusoidal inputs, fitted coupling constants and activation levels are model choices, not per-cell measured rates",
+        "Single MB/LH line silencing did not abolish upwind response; route not uniquely obligatory"
+      ],
+      "data_link": "https://zenodo.org/record/6863832",
+      "code_link": "https://doi.org/10.5281/zenodo.6762105"
+    },
+    "matheson2024_addendum": {
+      "published": "2024-03-01",
+      "driver": "VT062617",
+      "correction": "Additionally or perhaps predominantly hDeltaK; functional Fig5E-I and Fig6 may arise from hDeltaK rather than hDeltaC.",
+      "anatomy_not_relabelled": "FB5AB/PFNa direct to hDeltaC; indirect to hDeltaK. No exact type-pure functional assignment imported."
+    },
+    "kathman2026": {
+      "published": "2026-07-25",
+      "version_of_record": "2026-08-27",
+      "imaging": {
+        "sex": "female",
+        "age_days": [
+          7,
+          12
+        ],
+        "starvation_h_approx": 24,
+        "ZT_range": [
+          0,
+          9
+        ],
+        "preparation": "head-fixed walking ball, closed-loop wind, open-loop0.5%vinegar",
+        "wind_cm_s_candidates": [
+          8,
+          25,
+          33
+        ],
+        "wind_selection": "chosen per fly during acclimation for suitable behavior; sometimes adjusted later",
+        "trial_duration_s_including_trigger": 65,
+        "pretrigger_s": 3,
+        "without_wind_s": 10,
+        "wind_preodor_s": 15,
+        "odor_s": 15,
+        "wind_postodor_s": 15,
+        "final_no_wind_s": 7,
+        "indicator": "GCaMP7f",
+        "volume_rate_hz": [
+          4,
+          8
+        ],
+        "spatial_ROIs": 8,
+        "units": "deltaF/F; no Hz/pA/nS conversion"
+      },
+      "bump_measure": {
+        "amplitude": "maximum deltaF/F across columns",
+        "F0": "mean lowest3% fluorescence values across trials for each ROI",
+        "threshold": "0.5SD above entire-experiment mean deltaF/F",
+        "minimum_duration_s": 3,
+        "merge_gaps_less_than_s": 3,
+        "selected_events": "began during odor and ended after odor OFF",
+        "events": 82,
+        "flies": 14,
+        "duration_distribution_tau_s": 5.59,
+        "reported_tau_uncertainty_s": 0.55,
+        "uncertainty_definition": "95% curve-fit confidence interval; not SEM across14flies",
+        "fit": "A*exp(-x/tau)+C, nonlinear least-squares on distribution",
+        "not_a": "single bump amplitude decay or receptor time constant"
+      },
+      "kinematics": {
+        "straightness": "(displacement/pathlength)^2 in sliding1.5s window",
+        "persistent_walk": "time until more than45degree heading deviation from stated goal; behavioral duration distinct from neural bump duration",
+        "bump_offset_angular_speed_window_s": [
+          0,
+          2.5
+        ],
+        "bump_offset_goal_deviation_window_s": [
+          0,
+          5
+        ],
+        "comparison": "paired bump midpoint windows",
+        "ON_groundspeed_increase": "not significant in Supplementary Fig1a; upwind velocity and straightness increase"
+      },
+      "free_walking": {
+        "sex": "female",
+        "age_days": [
+          3,
+          7
+        ],
+        "starvation_h": [
+          18,
+          24
+        ],
+        "wind_cm_s_approx": 12,
+        "vinegar_percent": 1,
+        "pulse_s": 0.5,
+        "pulse_hz": 1,
+        "wild_type_pulse_numbers": [
+          1,
+          4,
+          7,
+          10
+        ],
+        "silencing_pulse_numbers": [
+          1,
+          5,
+          10
+        ],
+        "peak_upwind_window_from_first_ON_s": [
+          2,
+          6
+        ],
+        "post_odor_window_from_last_OFF_s": [
+          0,
+          10
+        ],
+        "upwind_orientation": "heading within ±45degrees of upwind",
+        "silencing_blue_nm": 470,
+        "blue_uW_mm2": 61,
+        "high_blue_uW_mm2": 76,
+        "exact_light_ON_OFF_relative_to_pulses": "not separately resolved from full text in this audit; retain as gap before exact intervention reproduction"
+      },
+      "specific_hDeltaK": {
+        "line": "SS63158",
+        "split": "VT062617AD;VT037223DB",
+        "cohort_n_1_5_10_pulses": [
+          23,
+          24,
+          24
+        ],
+        "control_n": [
+          26,
+          28,
+          29
+        ],
+        "corrected_test_threshold": 0.017,
+        "reported_p_1_5_10": [
+          0.5399,
+          0.065,
+          0.0079
+        ],
+        "significant_pulse_number": 10,
+        "source": "Supplementary Table2 and FigS4; main Fig5g sample-size caption repeats control counts"
+      },
+      "model_optimum": {
+        "tau_s": 6.4,
+        "claim": "specific behavioral-state model and recorded boundary-layer plume, not universal neural target"
+      },
+      "data_link": "https://doi.org/10.5281/zenodo.20053990",
+      "code_link": "https://github.com/nagellab/Kathmanetal2025"
+    }
+  },
+  "engineering_boundaries": {
+    "existing_VM7d": "11/149/57.679Hz are cross-summary declared input-event rates; actual output spikes are separate. EA primary delta and baseline use different summaries; IA includes graphical uncertainty.",
+    "broad_ensemble_rate_Hz": null,
+    "physical_wind_to_JO_rate": null,
+    "APN2_voltage_to_release": null,
+    "male_fed_hungry_gain": null,
+    "calcium_to_rate_or_conductance": null,
+    "missing_does_not_imply_no_artificial_test": "A fixed declared intervention may be tested without claiming physiological encoding or sweeping gains."
+  },
+  "first_rung": {
+    "kind": "saved-data observational stage audit only",
+    "trials": 60,
+    "arm_count": 4,
+    "condition_count": 5,
+    "seeds": [
+      11,
+      12,
+      13
+    ],
+    "window_edges_s": [
+      0,
+      0.05,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ],
+    "selection": "exact graph-ID stage catalogue prepared by independent anatomy audit; exact types and wider families separate",
+    "measurements": [
+      "per-neuron and cohort counts/rates",
+      "active fraction/distribution",
+      "matched pulse contrasts",
+      "off vs own recovery and constant control"
+    ],
+    "nonclaims": [
+      "No count-only latency/depression inference",
+      "No body speed/search or wind memory from3s neural trials",
+      "No uniform positive rate required",
+      "No H1 promotion"
+    ],
+    "next_decision": "After trustworthy stage counts, freeze ONE prospective intervention at one candidate boundary, with a declared waveform/control/observable; no automatic cascade of clamping."
+  },
+  "claim_corrections": [
+    "H1 is not a gain weakening arm; equation and bundled handling were independently varied with fixed gains.",
+    "Contact counts and named pathways form a measurement map, not a single necessary serial route.",
+    "Successful downstream clamp shows conditional sufficiency of imposed activity; it does not uniquely localize the defect.",
+    "Tao does not specify universally increased ON speed; ensemble, state and history matter.",
+    "Localized navigation persistence and diffuse network firing are different observables; neither total spikes nor a universal no-persistence rule identifies useful memory.",
+    "A functioning directly driven actuator route does not validate every decoder transformation or uniquely localize the principal biological deficit."
+  ],
+  "local_prior_evidence": [
+    {
+      "path": "docs/navigation-calibration.md",
+      "bytes": 3363,
+      "sha256": "d3387625697f1f8711f9bccb8bcadcb2bf7341597dcbfbbf4fc253f328ce9773"
+    },
+    {
+      "path": "docs/wind-transduction-boundary.md",
+      "bytes": 7356,
+      "sha256": "12cfb7b307c6e0299d1aca0cf0fb4324365e1b52f3d1a5892034e4abbcb638a2"
+    },
+    {
+      "path": "docs/internal-state-learning-plan.md",
+      "bytes": 16830,
+      "sha256": "23ab8e115c6b07bb04baee7443b215170bebce8e85a02b806b3eae6ae50df775"
+    },
+    {
+      "path": "docs/or42a-primary-assay.md",
+      "bytes": 8328,
+      "sha256": "0db692b0d002c6ab5a97eb9cfb40b8c49810f6832394ceeb316aa45f5b1ecb07"
+    },
+    {
+      "path": "docs/inhibitory-recurrent-panel-results.md",
+      "bytes": 13692,
+      "sha256": "b14d6ff35d8499782183d687d114c707665667d8ce97a97e5e01d70e6daf3407"
+    }
+  ],
+  "checks": [
+    {
+      "name": "tao2023 HTML hash",
+      "passed": true
+    },
+    {
+      "name": "tao2023 text hash",
+      "passed": true
+    },
+    {
+      "name": "tao2023 readable primary article",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor 15–21",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor 1.25",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor 150",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor 200",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor Or42a",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor ab1A",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor ab1B",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor ab2A",
+      "passed": true
+    },
+    {
+      "name": "tao2023 anchor 314 retinal flies",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 HTML hash",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 text hash",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 readable primary article",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor norpA",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor ~12",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor 26",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor 70",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor 10–25",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor 0–2",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor 0–5",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor did not abolish",
+      "passed": true
+    },
+    {
+      "name": "matheson2022 anchor Three 70",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum HTML hash",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum text hash",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum readable primary article",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum anchor predominantly",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum anchor Figure 5E–I",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum anchor Figure 6",
+      "passed": true
+    },
+    {
+      "name": "matheson2024-addendum anchor indirect",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 HTML hash",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 text hash",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 readable primary article",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 5.59",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 82 bumps",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 0.5 standard deviations",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 3 s",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 8, 25, or 33",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 15 s",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 10 s interval",
+      "passed": true
+    },
+    {
+      "name": "kathman2026 anchor 95% confidence interval",
+      "passed": true
+    },
+    {
+      "name": "matheson2022-supplement PDF content/hash",
+      "passed": true
+    },
+    {
+      "name": "kathman2026-supplement PDF content/hash",
+      "passed": true
+    },
+    {
+      "name": "Kathman supplement anchor SS63158",
+      "passed": true
+    },
+    {
+      "name": "Kathman supplement anchor N1 pulse = 23",
+      "passed": true
+    },
+    {
+      "name": "Kathman supplement anchor N5 pulses = 24",
+      "passed": true
+    },
+    {
+      "name": "Kathman supplement anchor N10 pulses = 24",
+      "passed": true
+    },
+    {
+      "name": "Kathman supplement anchor p = 0.0079",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor 3-10 days",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor or59a",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor or42a",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor or42b",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor ir64a",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor ir75a",
+      "passed": true
+    },
+    {
+      "name": "Matheson supplement anchor or92a",
+      "passed": true
+    }
+  ],
+  "all_source_checks_passed": true,
+  "checks_scope": "Hashes/readable-document markers and stated text anchors only; not independent re-analysis of biological datasets or statistical tests."
+}

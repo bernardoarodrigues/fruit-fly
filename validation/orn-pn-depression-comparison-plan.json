@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-09-05T18:00:45.671614+00:00",
+  "inputs": [
+    {
+      "path": "scripts/compare_orn_pn_depression.py",
+      "bytes": 8838,
+      "sha256": "c8f3a55959a1140ea5799c66c5d6bb2fefb1a865f4f921f777e2c92e48a9c2d1"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-points.csv",
+      "bytes": 24175,
+      "sha256": "a7eb118d67232d86fb4aba1a817549e5e5c7afadf542207a03ab60037ca70fba"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-arrays.npz",
+      "bytes": 550403,
+      "sha256": "49e64860028ad2f87292c93dea382b178b3f5cfe6f1faafc42be9cd7adddf76e"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-plan.json",
+      "bytes": 7193,
+      "sha256": "596822e1862ac13d07f54eecd188e0f78bd7faf9a5c8b67755e175b2fd0e17dc"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-results.json",
+      "bytes": 100058,
+      "sha256": "5a664d8f890e995b5bd79402bff7ea53977d14205098ee2922e6cbd4bacaabce"
+    },
+    {
+      "path": "validation/orn-pn-depression-fig8f-independent-review.json",
+      "bytes": 10325,
+      "sha256": "de3f41c6252b571ac4c339339de8639b47e1ba5d06715472d8c07b340167523a"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-plan.json",
+      "bytes": 5932,
+      "sha256": "86ade63439b8b20fb169ae7d9ea6395102f43f054319cc2e7a83f2f80c52f174"
+    },
+    {
+      "path": "validation/synaptic-depression-reference-results.json",
+      "bytes": 18838,
+      "sha256": "d43cf02babe679387545bb76694b5f3718a4225f7dd1713b7aa5f66b37ee5e38"
+    }
+  ],
+  "method": "Match by frequency and ordinal test event. Retain all43 source rows; exclude three unresolved shared initial means from residuals. Compare40 noninitial estimates against100*saved normalized efficacy and a static100-percent null. No parameter search or gain fit.",
+  "metrics": "Per-frequency unweighted RMSE, MAE and signed residual in percentage points. Raster sensitivity bounds form a conservative Cartesian envelope over individual marker intervals, not confidence intervals or necessarily attainable joint calibrations: axis anchors couple the points. Do not use SEM as independent point weights.",
+  "reference": "Previously frozen Abbott rat-cortex reference f=.75, recovery=.3s, normalized to first test event after declared7Hz/4s baseline; predictions predate this extraction.",
+  "limits": [
+    "A conditional normalized-shape comparison, not absolute EPSC/EPSP calibration, a fit or a biological pass/fail.",
+    "Comparison assumes the source initial-amplitude denominator corresponds to the reference first-test-event denominator; exact experimental baseline/test phase and preprocessing are not recovered.",
+    "Shared6-cell cohort and normalization make plotted points dependent; graphical envelopes and SEM are distinct uncertainties.",
+    "Initial means and unresolved SEM stay missing. Negative graphical means remain as drawn; no clipping or sign interpretation.",
+    "FemaleVM2 does not calibrate maleVM7d or other cell classes. No runtime, neural simulation, causal intervention or promotion."
+  ]
+}

@@ -1,0 +1,49 @@
+# Staged navigation ladder
+
+This direction follows the user's 2026-09-05 diagnosis and supersedes the proposed next synapse-handling decomposition. No new global excitation/inhibition gain sweep is planned. The completed inhibitory factorial remains valid evidence: it shows that lower-bounded inhibition alone is insufficient under the tested single-class input. H1 did not weaken inhibitory gain, and neither a navigation mismatch nor the factorial establishes a unique primary cause of failed natural locomotion.
+
+The ladder separates sensory encoding, local circuit transformations, distributed navigation signals and the body interface. Its purpose is to test the boundaries between them with explicit interventions, rather than to reward any stimulation that makes the fly move.
+
+## Start with what is already recorded
+
+Stage 0 re-scores the complete, independently audited 60-trial panel at the named navigation populations. It is explicitly post-hoc: its cohorts were requested after viewing the factorial. It reuses actual per-neuron spike counts, not requested external rates. No new simulation or independent evidence unit is created.
+
+The [anatomical audit](../research/18-navigation-ladder-anatomy.md) distinguishes exact cell types from families, strict cognate from pooled ORN→PN edges, and the annotated descending-neuron population from a name-prefix selection. ORN root side, PN soma side and instance column tokens are retained with their original meanings. Unresolved mirror pairs and circular heading coordinates remain unassigned.
+
+The [readout script](../scripts/analyze_navigation_ladder_readouts.py) pins the anatomy manifest and existing terminal checkpoints before reduction. It retains every selected neuron in addition to population means, distinguishes missing cohorts from recorded silence, and compares all three seeds and four model arms against matched constant, no-input and source-output-blocked controls. Its seven windows cannot establish precise response latency, event depression or the first causal transmission failure. Final voltage snapshots are not complete membrane traces.
+
+**Executed:** the [Stage 0 report](navigation-ladder-readouts.md) covers 34 cohorts and 1,649 distinct cells. An independent reader confirms every selected checkpoint count. Immediate VM7d PNs respond strongly, C1/H1 MBON12–14 fire near the refractory limit with no half-second pulse-count contrast, and DNb05/DNg34 retain substantial off activity while DNg97/DNp09 remain silent. The [six-trial exact-spike diagnostic](navigation-ladder-timing.md) additionally confirms sustained PN firing and identical complete MBON12/13/14 output spike sequences between matched H1 EA/control trials. This supports testing local temporal transfer and saturation before selecting a new clamp; it does not support raising sensory gain or substituting whichever DN happens to fire. No new neural simulation or promotion is implied by this saved-data analysis.
+
+**First local target:** the [VM2 figure extraction](orn-pn-depression-digitization.md) and [fixed-reference comparison](orn-pn-depression-comparison.md) are complete. The fixed reference captures the 15 Hz shape more closely than the stronger 20/50 Hz depression. Next, define a bounded local calibration on the designated 20 Hz curve, retain 15/50 Hz for evaluation without refitting, and examine normalization/phase and identifiability limits before any runtime transfer. No absolute gain fit or full-network sweep follows from this comparison.
+
+## Separate behavioral experiments
+
+| Assay | Stimulus and controls | Valid behavioral outcomes | Claims excluded |
+| --- | --- | --- | --- |
+| Still-air odor/history | Declared broad or measured class-combination ensemble; odor on/off, neither, component controls and matched total-drive controls where applicable; no physical wind | Speed, forward versus lateral velocity, path turning, path curvature, stopping, and on/off history contrasts | Upwind orientation; a universal positive speed response to every attractive input |
+| Wind-guided navigation | Odor-only, wind-only, both and neither; reflected physical wind directions with matched odor history; fixed preparation/state | Upwind velocity and heading relative to the actual physical airflow; reflected yaw and lateral displacement; offset search | Direction from resource coordinates, imposed motor commands, or a wind parameter used only for plume transport |
+| State modulation | Paired fed/hungry conditions only after specifying which peripheral/central mechanism and observable are manipulated; same stimulus realization | Changes at identified sensory-terminal or LH/MB value/state boundaries, then behavior | Biological hunger validation from the existing global external-rate multiplier |
+
+The [primary-source audit](../research/19-navigation-ladder-assay-evidence.md) governs preparation, sex, timing and targets. Matheson optogenetic and Tao near-source assays are different experiments. A still-air near-source decrease in speed is not automatically a failure merely because a wind-tunnel assay increases upwind speed. Numerical conditions chosen to bridge incomplete measurements must be labeled engineering declarations, never measured male rates.
+
+## Prospective causal rungs
+
+| Rung | Required intervention and observation | Gate before the next biological claim |
+| --- | --- | --- |
+| 1. ORN→PN temporal transfer | Exact event-time local replay with cognate ORNs/PNs; record actual ORN spikes, each PN voltage/spike train, unitary response, temporal summation, depression and recovery separately | Reproduce a declared local protocol and normalization; compare compatible measured relative amplitudes/timing. Do not fit whole-brain locomotion through a scalar synaptic gain |
+| 2. LH/MB value and state | Preserve exact versus family LHAD1b2 identities and relevant MBONs; compare source-driven versus deliberately clamped PN outputs, with sham and output-block controls | A downstream response under a declared clamp supports conditional sufficiency, not unique localization of an upstream defect; maintain measured/sign-specific inhibition and state limits |
+| 3. Odor/wind convergence in FB | Record FB5AB, PFNa, hDeltaC and hDeltaK separately. Test bilateral wind or a clearly labeled central wind surrogate only after registering tuning and reflection | Correctly signed reflected responses require a verified coordinate mapping. Physiological JO transduction, a declared central surrogate and physical wind must remain separate experiments |
+| 4. Structured persistence and PFL output | Preserve spatially resolved FB activity, PFL2/PFL3 and full DN readouts through a seconds-long post-input period | Localized persistence must be distinguished from broad sustained firing; count means or a first circular moment alone do not establish a bump, memory or goal direction |
+| 5. Population-to-body decoding | Keep DNa01 and DNa02 separate; track DNg97, DNp09, DNb05, DNg34 and every annotated DN. Use paired causal interventions and independent kinematic evaluation | An engineering decoder fit needs independent evaluation and anatomical baseline comparisons; movement from a command clamp is not natural odor navigation |
+
+The clamp ladder must specify whether it clamps emitted spike times, membrane/current drive, a graded signal or an observation. A Bernoulli external activation rate does **not** clamp the resulting spike train. Preserve original incoming/outgoing pathways and state explicitly which are replaced or blocked. Use the same declared imposed waveform for its paired controls and keep the achieved signal in the evidence.
+
+A successful downstream clamp can bypass several upstream mechanisms, activate alternative routes, or drive an otherwise inadequate decoder above threshold. It therefore narrows a causal hypothesis only together with no-clamp, sham, targeted-output-block and timing controls. The first successful clamp is not by itself a proof of the uniquely broken boundary.
+
+## Measurement conventions and execution
+
+The new [observational metrics](navigation-ladder-metrics.md) support arbitrary named per-neuron spike cohorts, complete and partial exposures, distinct heading and trajectory curvature, physical upwind projection and reflected geometry. Curvature below the stated speed floor, zero-wind direction and missing annotations remain undefined. Apparent airflow caused by sensor motion is not silently interpreted as an environmental wind direction. Circular coordinates require explicit supplied provenance; no angle is invented from neuron ordering or soma side.
+
+Future runs will be frozen as bounded batches with exact inputs, ordered conditions, seeds, time windows, source/graph pins, resource budgets and failure retention before execution. Results will be analyzed together after batch completion using the user's requested quiet trigger. No repeated per-trial interpretive loop or automatic rerun of a failed trial is planned. A proxy assay may report an engineering result without passing a physiological promotion gate.
+
+No wind encoder, hunger mechanism, learned decoder, hDelta model, synaptic-depression parameter or runtime neural model is promoted by this plan. The Eon body integration remains cancelled. The paired-animal stage remains deferred.

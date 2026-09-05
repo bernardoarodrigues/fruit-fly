@@ -2,6 +2,8 @@
 
 The standalone implementation passes **79 numerical checks** with fixed reference parameters. A subsequent [independent review](synaptic-depression-reference-independent-review.md) passes 219 checks across all 56 saved arrays using 80-digit closed expressions. The saved fly-protocol outputs are **predictions from that reference model**, not fitted fly data or evidence of a physiological match. No graph was loaded, no brain or body ran, and no runtime integration or parameter promotion occurred.
 
+Later update: the [Fig. 8F extraction](orn-pn-depression-digitization.md) and [conditional model-data comparison](orn-pn-depression-comparison.md) now supply a separate quantitative evaluation of these unchanged predictions. The fixed reference retains too much amplitude at higher frequencies. The original prediction record below remains unchanged in scope; its first-test-event normalization and event phase are declared conventions, not fully recovered experimental operations.
+
 The [execution plan](../validation/synaptic-depression-reference-plan.json), SHA-256 `86ade63439b8b20fb169ae7d9ea6395102f43f054319cc2e7a83f2f80c52f174`, was frozen before any run. [Results](../validation/synaptic-depression-reference-results.json), [exact-event inventory](../validation/synaptic-depression-reference-events.csv), [array archive](../validation/synaptic-depression-reference-arrays.npz), and [normalized area table](../validation/synaptic-depression-reference-charge-predictions.csv) preserve the output. The [research script](../scripts/synaptic-depression-reference.py) imports no `fruitfly` module. All earlier files remain unchanged.
 
 ## Equation, source and units
