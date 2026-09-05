@@ -1,0 +1,1076 @@
+{
+  "status": "fitted_from_primary_mat_not_runtime_validated",
+  "dataset_doi": "10.5061/dryad.k06kh8f",
+  "raw_measurements_available": true,
+  "runtime_usable": false,
+  "archive_sha256": "4812e1f0a5d905b9269a40dc91a4894673c9a7ac1ca4591246adc07b61ac37e6",
+  "archive_md5": "e1ff6c0c61077b7777ccd83395f92477",
+  "archive_bytes": 9477291049,
+  "analysis_reference_commit": "dc5180e4af6352f03f9a86b9f03185dba7926244",
+  "paper_doi": "10.1016/j.neuron.2019.03.012",
+  "license": "CC0-1.0",
+  "measurements": {
+    "all_anterior.mat": {
+      "sha256": "8dadc64b566ac480d87a25c2d59cc98610f0b68d90a471dee0cd5f5244b7c2f4",
+      "fields": {
+        "traces": {
+          "cellType": {
+            "shape": [],
+            "dtype": "<U12"
+          },
+          "rightDeflect_indvAvgs": {
+            "shape": [
+              17,
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 85,
+            "minimum": -15.396188886654482,
+            "maximum": 12.871712890647487
+          },
+          "rightDeflect_crossFlyAvgs": {
+            "shape": [
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 5,
+            "minimum": -7.93987876462442,
+            "maximum": 5.672457488602873
+          },
+          "leftDeflect_indvAvgs": {
+            "shape": [
+              17,
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 85,
+            "minimum": -24.45052687663793,
+            "maximum": 16.51914939400767
+          },
+          "leftDeflect_crossFlyAvgs": {
+            "shape": [
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 5,
+            "minimum": -7.654119647174,
+            "maximum": 5.511042216093653
+          },
+          "rMinLDeflect_indvAvgs": {
+            "shape": [
+              17,
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 85,
+            "minimum": -17.28861601275359,
+            "maximum": 23.25101521685532
+          },
+          "rMinLDeflect_crossFlyAvgs": {
+            "shape": [
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 5,
+            "minimum": -7.991616107396841,
+            "maximum": 9.629203217546745
+          },
+          "rightDeflect_indv": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "leftDeflect_indv": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "rMinLDeflect_indv": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "rightPreStim_indv": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "leftPreStim_indv": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "rightDeflect_indv_byDirs": {
+            "shape": [
+              18
+            ],
+            "dtype": "object"
+          },
+          "leftDeflect_indv_byDirs": {
+            "shape": [
+              18
+            ],
+            "dtype": "object"
+          },
+          "rMinLDeflect_indv_byDirs": {
+            "shape": [
+              18
+            ],
+            "dtype": "object"
+          },
+          "numDirsAll": {
+            "shape": [
+              18
+            ],
+            "dtype": "object"
+          },
+          "exptListRet": {
+            "shape": [
+              17
+            ],
+            "dtype": "<U13"
+          },
+          "dirsAll": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "trialNumsAll": {
+            "shape": [
+              17
+            ],
+            "dtype": "object"
+          },
+          "rightPreStim_avg": {
+            "shape": [
+              17,
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 85,
+            "minimum": -82.69699677659693,
+            "maximum": -52.001738347115996
+          },
+          "leftPreStim_avg": {
+            "shape": [
+              17,
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 85,
+            "minimum": -97.25673022054926,
+            "maximum": -46.53103532998719
+          }
+        }
+      }
+    },
+    "Anemometer_2018_03_23.mat": {
+      "sha256": "9ec520489dd10246486cddb0e9ca7e4c8e4747566aae749a20e1deb006bd12e7",
+      "fields": {
+        "traces": {
+          "condition": {
+            "shape": [],
+            "dtype": "<U21"
+          },
+          "numFlies": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 6.0,
+            "maximum": 6.0
+          },
+          "exptNotes": {
+            "shape": [
+              6,
+              5
+            ],
+            "dtype": "object"
+          },
+          "expt": {
+            "shape": [],
+            "dtype": "<U2"
+          },
+          "avgVmTrace": {
+            "shape": [
+              11,
+              10000
+            ],
+            "dtype": "float64",
+            "finite_values": 50000,
+            "minimum": -0.28374811196721617,
+            "maximum": 69.73777303217507
+          },
+          "avgSRTrace": {
+            "shape": [
+              11,
+              10000
+            ],
+            "dtype": "float64",
+            "finite_values": 50000,
+            "minimum": -0.032606089847861085,
+            "maximum": 5.961097111131039
+          },
+          "indvVmTrace": {
+            "shape": [
+              6
+            ],
+            "dtype": "object"
+          },
+          "indvSRTrace": {
+            "shape": [
+              6
+            ],
+            "dtype": "object"
+          },
+          "errorVm": {
+            "shape": [
+              11,
+              10000
+            ],
+            "dtype": "float64",
+            "finite_values": 50000,
+            "minimum": 0.020508356805735647,
+            "maximum": 10.74633427085541
+          },
+          "avgVm": {
+            "shape": [],
+            "dtype": "float64",
+            "finite_values": 1,
+            "minimum": -106.13532772550315,
+            "maximum": -106.13532772550315
+          },
+          "avgSR": {
+            "shape": [],
+            "dtype": "float64",
+            "finite_values": 1,
+            "minimum": 0.09633415546885989,
+            "maximum": 0.09633415546885989
+          },
+          "samplerate": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 10000.0,
+            "maximum": 10000.0
+          },
+          "DSAMP": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 10.0,
+            "maximum": 10.0
+          },
+          "SCALE_SR": {
+            "shape": [],
+            "dtype": "float64",
+            "finite_values": 1,
+            "minimum": 0.3,
+            "maximum": 0.3
+          },
+          "preStim": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "stimOn": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "postStim": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 4.0,
+            "maximum": 4.0
+          }
+        }
+      }
+    },
+    "antTracking_2017_01_05_E1.mat": {
+      "sha256": "c9f1585686da72e954d35bfd4fb18e822b6a2a5e651ab730b3ea62dfd23bed12",
+      "fields": {
+        "antTraces": {
+          "date": {
+            "shape": [],
+            "dtype": "<U10"
+          },
+          "expt": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "trackFilename": {
+            "shape": [],
+            "dtype": "<U53"
+          },
+          "samplerate": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 60.0,
+            "maximum": 60.0
+          },
+          "DSAMP": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "preStim": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "stim": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "postStim": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "IS_LEFT": {
+            "shape": [],
+            "dtype": "int64",
+            "finite_values": 1,
+            "minimum": 0.0,
+            "maximum": 0.0
+          },
+          "vm_avg": {
+            "shape": [
+              5
+            ],
+            "dtype": "float64",
+            "finite_values": 5,
+            "minimum": -5.81927127076609,
+            "maximum": 2.750222989013189
+          },
+          "numTraces": {
+            "shape": [
+              5
+            ],
+            "dtype": "uint8",
+            "finite_values": 5,
+            "minimum": 10.0,
+            "maximum": 10.0
+          },
+          "numRight": {
+            "shape": [
+              5
+            ],
+            "dtype": "uint8",
+            "finite_values": 5,
+            "minimum": 8.0,
+            "maximum": 8.0
+          },
+          "numLeft": {
+            "shape": [
+              5
+            ],
+            "dtype": "uint8",
+            "finite_values": 5,
+            "minimum": 7.0,
+            "maximum": 7.0
+          },
+          "rightTraces_all": {
+            "shape": [
+              5,
+              600,
+              10
+            ],
+            "dtype": "float64",
+            "finite_values": 30000,
+            "minimum": -11.366409127694887,
+            "maximum": 9.206133945022454
+          },
+          "leftTraces_all": {
+            "shape": [
+              5,
+              600,
+              10
+            ],
+            "dtype": "float64",
+            "finite_values": 30000,
+            "minimum": -18.86978642569636,
+            "maximum": 14.96612531724007
+          },
+          "avgLeftAngles": {
+            "shape": [
+              5,
+              600
+            ],
+            "dtype": "float64",
+            "finite_values": 3000,
+            "minimum": -10.928003015291518,
+            "maximum": 7.335004119491205
+          },
+          "errLeftAngles": {
+            "shape": [
+              5,
+              600
+            ],
+            "dtype": "float64",
+            "finite_values": 3000,
+            "minimum": 0.11009634383435485,
+            "maximum": 6.528234815014241
+          },
+          "avgRightAngles": {
+            "shape": [
+              5,
+              600
+            ],
+            "dtype": "float64",
+            "finite_values": 3000,
+            "minimum": -7.207984938199527,
+            "maximum": 5.36433372379145
+          },
+          "errRightAngles": {
+            "shape": [
+              5,
+              600
+            ],
+            "dtype": "float64",
+            "finite_values": 3000,
+            "minimum": 0.6074135309287334,
+            "maximum": 4.505088969460211
+          }
+        }
+      }
+    }
+  },
+  "wind_angle_deg": [
+    -90.0,
+    -45.0,
+    0.0,
+    45.0,
+    90.0
+  ],
+  "angle_convention": "wind source: negative left, positive right, zero anterior",
+  "paired_flies_per_angle": [
+    17,
+    17,
+    17,
+    17,
+    17
+  ],
+  "curves": {
+    "left": {
+      "mean_deg": [
+        5.511042216093653,
+        -3.9003043650041413,
+        -7.654119647174002,
+        -7.647420149558396,
+        -3.9567457289438757
+      ],
+      "sd_deg": [
+        5.2702354182967746,
+        3.7376619557221513,
+        4.90236116752122,
+        3.8918256475054473,
+        5.6952992809948615
+      ],
+      "sem_deg": [
+        1.278219841265228,
+        0.9065161786055946,
+        1.1889972299186062,
+        0.943906365950165,
+        1.3813129708850664
+      ],
+      "coefficients": [
+        0.6944102437543808,
+        -8.748024293508967,
+        -4.039132975395664
+      ],
+      "basis": [
+        "1",
+        "cos(wind_angle_rad)",
+        "sin(wind_angle_rad)"
+      ],
+      "fitted_mean_deg": [
+        4.733543219150045,
+        -2.635278739153997,
+        -8.053614049754586,
+        -8.347475373186938,
+        -3.344722731641284
+      ],
+      "residual_deg": [
+        0.7774989969436081,
+        -1.2650256258501442,
+        0.3994944025805838,
+        0.7000552236285422,
+        -0.6120229973025917
+      ],
+      "r_squared_five_means": 0.972168534788405,
+      "leave_one_fly_out": {
+        "folds": 17,
+        "training_flies_per_fold": 16,
+        "rmse_deg": 4.932810314059954,
+        "mae_deg": 3.3230192405797063,
+        "rmse_by_heldout_fly_deg": [
+          5.296128994466809,
+          2.916302832072663,
+          1.2852210735350251,
+          1.009363112449637,
+          1.6313259373226463,
+          1.3256000091469966,
+          5.812702355493655,
+          3.3350520591821375,
+          3.104057261920876,
+          1.9318386081500902,
+          3.8563456710664075,
+          11.51748270381535,
+          2.775193071888355,
+          4.857302802237178,
+          8.53623014970943,
+          7.134243328266794,
+          3.0250363745087414
+        ],
+        "interpretation": "Predict five observations in one unseen female from other 16 females' mean fit; within this preparation/speed only"
+      }
+    },
+    "right": {
+      "mean_deg": [
+        -2.4805738913031865,
+        -7.939878764624418,
+        -7.3487079216023155,
+        -4.151371488763924,
+        5.672457488602874
+      ],
+      "sd_deg": [
+        1.7402640301712249,
+        3.205730706823302,
+        4.503673181204788,
+        3.777269178798465,
+        3.838207546368602
+      ],
+      "sem_deg": [
+        0.42207602428582586,
+        0.777503900677555,
+        1.0923011899628734,
+        0.9161223412103618,
+        0.9309020662776789
+      ],
+      "coefficients": [
+        1.411040068452267,
+        -9.652532519553047,
+        3.6106368550805303
+      ],
+      "basis": [
+        "1",
+        "cos(wind_angle_rad)",
+        "sin(wind_angle_rad)"
+      ],
+      "fitted_mean_deg": [
+        -2.199596786628264,
+        -7.967436936376876,
+        -8.241492451100779,
+        -2.8612253271178516,
+        5.021676923532796
+      ],
+      "residual_deg": [
+        -0.28097710467492254,
+        0.02755817175245756,
+        0.8927845294984635,
+        -1.290146161646072,
+        0.650780565070078
+      ],
+      "r_squared_five_means": 0.97525426549973,
+      "leave_one_fly_out": {
+        "folds": 17,
+        "training_flies_per_fold": 16,
+        "rmse_deg": 3.681862716282366,
+        "mae_deg": 2.6976895500373863,
+        "rmse_by_heldout_fly_deg": [
+          3.409220205448935,
+          1.1028434563449847,
+          1.945653893192166,
+          0.9730799966565158,
+          4.6137530674365665,
+          1.498609800379273,
+          4.424724058948088,
+          1.7411855372883052,
+          5.615168507924526,
+          5.400570424712181,
+          6.673231513611799,
+          3.8470882926651533,
+          3.9035856006236633,
+          3.5090002812247962,
+          1.168824051357125,
+          1.9916226401877946,
+          3.718575540754116
+        ],
+        "interpretation": "Predict five observations in one unseen female from other 16 females' mean fit; within this preparation/speed only"
+      }
+    },
+    "right_minus_left": {
+      "mean_deg": [
+        -7.991616107396841,
+        -4.03957439962028,
+        0.3054117255716853,
+        3.496048660794472,
+        9.629203217546747
+      ],
+      "sd_deg": [
+        4.704085359980048,
+        4.088989312515075,
+        6.752399545149475,
+        5.191243858663219,
+        4.966388125713676
+      ],
+      "sem_deg": [
+        1.1409082830070243,
+        0.9917255786777291,
+        1.6376974441778784,
+        1.2590615739769087,
+        1.2045260482429887
+      ],
+      "coefficients": [
+        0.27989461937915694,
+        0.09506058157844872
+      ],
+      "basis": [
+        "1",
+        "wind_angle_deg"
+      ],
+      "fitted_mean_deg": [
+        -8.27555772268123,
+        -3.997831551651036,
+        0.27989461937915694,
+        4.55762079040935,
+        8.835346961439543
+      ],
+      "residual_deg": [
+        0.2839416152843883,
+        -0.04174284796924388,
+        0.025517106192528338,
+        -1.0615721296148783,
+        0.7938562561072047
+      ],
+      "r_squared_five_means": 0.9900440197116781,
+      "leave_one_fly_out": {
+        "folds": 17,
+        "training_flies_per_fold": 16,
+        "rmse_deg": 5.2523236431861395,
+        "mae_deg": 4.21957612823637,
+        "rmse_by_heldout_fly_deg": [
+          5.580888763680519,
+          2.6072756220626325,
+          2.449132636236403,
+          1.6260669088382116,
+          3.11326405662444,
+          2.3314767652602613,
+          5.0202003598953215,
+          2.9410745575700195,
+          4.6123932331463635,
+          5.214190617107156,
+          7.567793695565883,
+          8.438136523291629,
+          3.2313242953455132,
+          6.842199147223546,
+          7.858231876596047,
+          7.2755258589842455,
+          4.953024219327178
+        ],
+        "interpretation": "Predict five observations in one unseen female from other 16 females' mean fit; within this preparation/speed only"
+      }
+    }
+  },
+  "per_fly_measurements": {
+    "experiment_ids": [
+      "2017_05_04_E2",
+      "2017_05_04_E3",
+      "2017_01_04_E1",
+      "2017_01_04_E2",
+      "2017_01_04_E4",
+      "2017_01_05_E1",
+      "2017_05_02_E1",
+      "2017_05_02_E3",
+      "2017_05_02_E6",
+      "2017_05_03_E1",
+      "2017_05_03_E4",
+      "2017_04_25_E6",
+      "2017_04_26_E2",
+      "2017_04_28_E1",
+      "2017_05_11_E4",
+      "2017_05_11_E7",
+      "2017_05_11_E8"
+    ],
+    "left_deg": [
+      [
+        5.713620315147551,
+        -9.019269652281004,
+        1.4463615960564056,
+        -6.978551299755885,
+        -1.7555531070559312
+      ],
+      [
+        6.56280253653248,
+        -7.886725140461522,
+        -10.228910061923543,
+        -9.122524792770996,
+        -1.7157497084134548
+      ],
+      [
+        5.915843911419702,
+        -2.440970823393871,
+        -6.418360917463114,
+        -6.624303490831785,
+        -2.711963026278179
+      ],
+      [
+        3.954474206017354,
+        -2.7725580739985127,
+        -6.571020114801763,
+        -7.162036426873361,
+        -2.78334555006358
+      ],
+      [
+        5.166693987670227,
+        0.2383361790665532,
+        -6.565505348798031,
+        -9.329639317652969,
+        -4.062378584859988
+      ],
+      [
+        7.419091361398617,
+        -2.5735600196943205,
+        -7.908656821562846,
+        -8.554551230658067,
+        -2.5710968791227105
+      ],
+      [
+        13.307238325706141,
+        -6.789193000334021,
+        -15.58945992964409,
+        -10.25317003580272,
+        -4.729710139072084
+      ],
+      [
+        9.460080185379393,
+        -6.6406411839736705,
+        -9.486350956137366,
+        -5.006910622449945,
+        -2.1736201251153036
+      ],
+      [
+        4.109147794053349,
+        -2.516987543943337,
+        -7.756560578941586,
+        -2.0447340393658493,
+        -1.3379867086246975
+      ],
+      [
+        2.3961155021726426,
+        -5.651644190266479,
+        -6.830583911534715,
+        -7.387875582983038,
+        -3.2372851685119057
+      ],
+      [
+        2.1011495043631556,
+        -6.0808585665428065,
+        -1.9865701466492027,
+        -5.515843856240858,
+        -1.1538982967183784
+      ],
+      [
+        -6.738589477208639,
+        0.6517429682178104,
+        -8.966230788301734,
+        -10.113564234639774,
+        -24.45052687663793
+      ],
+      [
+        -0.32063197893369494,
+        -1.0786141991291345,
+        -8.176681156379848,
+        -8.370944772743213,
+        -5.984508978411312
+      ],
+      [
+        5.858296791160169,
+        1.2916775622755297,
+        -5.247560892521665,
+        0.35288590733057107,
+        -0.8222462335150965
+      ],
+      [
+        2.1875897988303197,
+        -11.255454030722804,
+        -19.954061278444634,
+        -17.45145910638078,
+        -7.526853456945663
+      ],
+      [
+        16.51914939400767,
+        0.9139626507444589,
+        -1.9243901013797615,
+        -5.252393683113437,
+        2.0198203507072137
+      ],
+      [
+        10.075645515875674,
+        -4.694417140633264,
+        -7.955492593530525,
+        -11.190525957560633,
+        -2.267774903406874
+      ]
+    ],
+    "right_deg": [
+      [
+        -0.2776460029436265,
+        -6.964318443667871,
+        -7.274842040698012,
+        -6.537728405329183,
+        10.987774914506687
+      ],
+      [
+        -0.6285294924803964,
+        -7.557649803207283,
+        -9.710583031380516,
+        -2.817969847717009,
+        4.120298066037691
+      ],
+      [
+        -2.511781913472717,
+        -7.449696919191155,
+        -7.793912998278155,
+        -1.1641441713154943,
+        1.2765716324490508
+      ],
+      [
+        -1.9848933530857826,
+        -7.750506141470154,
+        -7.357148444480866,
+        -1.1298034271108435,
+        4.300091808956288
+      ],
+      [
+        -2.2763943927253187,
+        -2.334024732969951,
+        -0.23552544654890822,
+        -2.3720372856791627,
+        5.196060687261166
+      ],
+      [
+        -2.1385137475796823,
+        -9.91710705884592,
+        -8.964598053870233,
+        -0.6351389439367203,
+        6.091961960071157
+      ],
+      [
+        -3.3385071088721445,
+        -11.154925383563704,
+        -11.984449280603148,
+        -10.119696991539353,
+        8.412760710373872
+      ],
+      [
+        -1.9472610019014454,
+        -8.933385973951653,
+        -5.157614204268903,
+        -4.204107814102452,
+        6.637739161272672
+      ],
+      [
+        -1.53087689240499,
+        -4.1021992744817055,
+        1.7341740610279757,
+        0.9791404146023993,
+        8.44646098261576
+      ],
+      [
+        -4.038661587129482,
+        -12.297094827109683,
+        -12.865564885862767,
+        -10.20565336843713,
+        10.988404095556346
+      ],
+      [
+        -3.9950020833074973,
+        -14.427119128839948,
+        -11.865231986746121,
+        -12.09150993203102,
+        12.871712890647487
+      ],
+      [
+        -5.921534772805274,
+        -8.429042963642962,
+        -4.675190693135101,
+        -3.529637700720977,
+        -1.1995116597826125
+      ],
+      [
+        -5.124337103371805,
+        -5.428378995084313,
+        -3.620888805041209,
+        -0.5579240398204561,
+        -0.06846547789681286
+      ],
+      [
+        -0.21239806405484388,
+        -7.499720974204692,
+        -15.396188886654482,
+        -2.6416431522850843,
+        3.457046582293549
+      ],
+      [
+        -0.9918744213500568,
+        -9.193822882173182,
+        -7.958419064782434,
+        -4.554798780349833,
+        4.315437891549687
+      ],
+      [
+        -0.769466618745921,
+        -9.150524727777867,
+        -8.688898085670713,
+        -6.686698143072188,
+        5.269585050720426
+      ],
+      [
+        -4.482077595923189,
+        -2.388420768433104,
+        -3.113152820245779,
+        -2.3039637201422103,
+        5.327848009616433
+      ]
+    ],
+    "angle_order_deg": [
+      -90.0,
+      -45.0,
+      0.0,
+      45.0,
+      90.0
+    ],
+    "source_fields": [
+      "leftDeflect_indvAvgs",
+      "rightDeflect_indvAvgs"
+    ]
+  },
+  "deflection_sign": "negative headward, positive away from head; arista angles, not mapped joint angles",
+  "anemometer": {
+    "units": "cm/s",
+    "calibration": "Values already converted in deposited MAT; source plotting labels cm/s",
+    "sample_rate_hz_after_DSAMP": 1000.0,
+    "matlab_rows": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "analysis_window_s_from_trial_start": [
+      4.0,
+      5.0
+    ],
+    "analysis_window_description": "Our explicit final 1 s of 4 s wind; publication's exact averaging window not recovered",
+    "per_mount_per_direction_cm_s": [
+      [
+        59.763935019935914,
+        57.20146848508338,
+        58.9019060928016,
+        58.4985298953953,
+        60.59593282936506
+      ],
+      [
+        55.87136080624633,
+        55.05776028230525,
+        59.080301966515165,
+        56.37136421307181,
+        54.70171240034917
+      ],
+      [
+        60.694326594119715,
+        55.37592450904139,
+        59.29740226467659,
+        58.046594237198285,
+        58.56274493445625
+      ],
+      [
+        61.788649411792626,
+        58.43259746996866,
+        55.2753276274821,
+        57.61227481747241,
+        59.53548424497279
+      ],
+      [
+        58.31872109327583,
+        56.87422033358706,
+        59.82239970648625,
+        57.53630818876784,
+        56.032121242191955
+      ],
+      [
+        61.258834303457576,
+        60.56723256797533,
+        57.818512861280865,
+        59.30172795066378,
+        58.7888096239735
+      ]
+    ],
+    "direction_means_cm_s": [
+      59.61597120480466,
+      57.25153394132685,
+      58.36597508654043,
+      57.89446655042824,
+      58.03613421255147
+    ],
+    "mount_means_cm_s": [
+      58.992354464516254,
+      56.21649993369755,
+      58.39539850789845,
+      58.52886671433771,
+      57.71675411286178,
+      59.54702346147021
+    ],
+    "mean_cm_s": 58.232816199130326,
+    "sd_across_six_mount_means_cm_s": 1.161892368404571,
+    "paper_nominal_cm_s": 59.57,
+    "paper_reported_sd_cm_s": 1.4,
+    "difference_from_paper_nominal_cm_s": -1.3371838008696741,
+    "paper_nominal_exactly_reproduced": false
+  },
+  "velocity_m_s": 0.5823281619913032,
+  "velocity_basis": "Our explicit final 1s steady-state average of deposited calibrated anemometer traces; paper nominal 0.5957m/s differs",
+  "paper_nominal_velocity_m_s": 0.5957,
+  "preparation": "Tethered adult female Drosophila, 2-7 days old; Fig 2 anterior mount; 4 s wind",
+  "analysis": "Per-fly paired averages from source; SD ddof=1 and SEM explicitly distinguished; OLS on five means",
+  "valid_angle_domain_deg": [
+    -90,
+    90
+  ],
+  "velocity_scaling_validated": false,
+  "male_transfer_validated": false,
+  "runtime_input_mapping_validated": false,
+  "limitations": [
+    "Single nominal wind speed; no validated speed-response law",
+    "Five azimuths only; no rear wind, elevation, flight or free-walking validation",
+    "Cosine and linear fits are our derived summaries, not original measured points",
+    "Female measurements do not establish male stiffness or motor gains",
+    "Arista angle is not neural firing rate or a calibrated MuJoCo joint angle"
+  ]
+}

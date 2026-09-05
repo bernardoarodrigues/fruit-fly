@@ -99,6 +99,7 @@ class SimulationRunner:
                     "connectome": self.graph.manifest, "graph_sha256": self.brain.graph_sha256,
                     "neural_parameters": asdict(self.brain.parameters),
                     "body_config": self.body.snapshot()["config"],
+                    "wind_reference": self.body.snapshot()["wind_reference"],
                     "coupling_s": self.coupling_s, "sensory_parameters": asdict(self.sensors.parameters),
                     "sensory_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.sensors.groups.items()},
                     "taste_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.taste.groups.items()} if self.taste else {},
@@ -177,6 +178,8 @@ class SimulationRunner:
             warnings.append("Tarsal taste input is disabled in this assay.")
         if self.proprioceptor:
             warnings.append("Optional FeCO club adapter encodes bidirectional tibia movement with configured, uncalibrated gain; hook/claw and vibration are unmapped.")
+        if self.body.wind_reference is not None:
+            warnings.append("Wind deflection is a quasistatic female-derived reference; it does not actuate antennae or drive neural inputs.")
         if self.neural_model == "shiu":
             warnings.append("Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence.")
         else:
@@ -209,6 +212,7 @@ class SimulationRunner:
                        "model": self.neural_model, "graph_sha256": self.brain.graph_sha256},
             "resources": world["resources"], "resource_balance": world["resource_balance"],
             "stimuli": world["stimuli"], "vision": observation["vision"],
+            "wind": observation["wind"], "wind_reference": world["wind_reference"],
             "events": list(self.events), "warnings": warnings, "run_dir": str(self.run_dir),
         }
 

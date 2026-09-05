@@ -1,0 +1,15 @@
+{
+  "seed": 1,
+  "assay": "sensory",
+  "neural_model": "conductance",
+  "neural_parameters": {"dt_ms": 0.2, "voltage_method": "pade22"},
+  "coupling_s": 0.005,
+  "body": {
+    "wind_mm_s": [-595.7, 0],
+    "odor_emission_interval_s": 0.001,
+    "odor_prehistory_s": 0.1,
+    "odor_puff_lifetime_s": 0.2,
+    "wind_reference_path": "data/wind-calibration.json",
+    "wind_reference_allow_sex_transfer": true
+  }
+}

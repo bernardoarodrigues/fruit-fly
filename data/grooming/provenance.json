@@ -1,0 +1,178 @@
+{
+  "dataset_doi": "10.7910/DVN/N8ITTG",
+  "dataset_version": "1.0",
+  "paper_doi": "10.1038/s41467-026-72152-x",
+  "data_license": "CC0-1.0",
+  "source_sex": "female",
+  "source_age_days": [
+    3,
+    5
+  ],
+  "code_repository": "https://github.com/NeLy-EPFL/antennal-grooming",
+  "code_commit": "65787ac7fa35aa5520addb6d3e4ac27887bbaf60",
+  "code_license": "Apache-2.0",
+  "sources": {
+    "Fig1_panelC.pkl": {
+      "file_id": 10810237,
+      "md5": "d1a737c166123ba8731ccb6e5ff0b2d5",
+      "sha256": "89826e646018a5184f13b2ccbdcb4f7713ed26deab98f84fcddf8e237a55892e"
+    },
+    "Fig1_panelF-G.pkl": {
+      "file_id": 10810262,
+      "md5": "ff686a720654bd7c5b461ab36b5946c4",
+      "sha256": "49bcde5b66447c9c1fffb88441c1dffa93e71905948cb4e90f34dabcc55a8340"
+    }
+  },
+  "transformations": [
+    "Figure 1C cropped to 2 <= time < 5 seconds",
+    "added time relative to each snippet start",
+    "converted degrees to radians in a separate array"
+  ],
+  "unchanged": [
+    "source angle signs and zero references",
+    "source frame IDs",
+    "source stimulus values",
+    "author container labels"
+  ],
+  "limitations": [
+    "female tethered recording",
+    "inverse-kinematics-derived joint angles",
+    "no validated mapping to current body joints",
+    "author example names are not per-frame behavior annotations",
+    "no neural-to-motor mapping or force validation"
+  ],
+  "examples": {
+    "figure1c_2to5s": {
+      "source": "Fig1_panelC.pkl",
+      "recording_metadata": {
+        "Date": "220809",
+        "Genotype": "aJO-GAL4xUAS-CsChr",
+        "Fly": "3",
+        "Exp_Type": "Beh",
+        "Trial": "1"
+      },
+      "file": "data/grooming/figure1c_2to5s.npz",
+      "samples": 300,
+      "sample_rate_hz": 100,
+      "first_source_time_s": 2.0,
+      "last_source_time_s": 4.99,
+      "first_frame": 200,
+      "last_frame": 499,
+      "joint_names": [
+        "Angle_head_roll",
+        "Angle_head_pitch",
+        "Angle_head_yaw",
+        "Angle_antenna_yaw_L",
+        "Angle_antenna_pitch_L",
+        "Angle_antenna_yaw_R",
+        "Angle_antenna_pitch_R",
+        "Angle_RF_ThC_yaw",
+        "Angle_RF_ThC_pitch",
+        "Angle_RF_ThC_roll",
+        "Angle_RF_CTr_pitch",
+        "Angle_RF_CTr_roll",
+        "Angle_RF_FTi_pitch",
+        "Angle_RF_TiTa_pitch",
+        "Angle_LF_ThC_yaw",
+        "Angle_LF_ThC_pitch",
+        "Angle_LF_ThC_roll",
+        "Angle_LF_CTr_pitch",
+        "Angle_LF_CTr_roll",
+        "Angle_LF_FTi_pitch",
+        "Angle_LF_TiTa_pitch"
+      ],
+      "angles_finite": true,
+      "source_degrees_min": -149.99999999993116,
+      "source_degrees_max": 169.99994856571558,
+      "sha256": "c4e50a3ee8761b8e605a1b6436b01d60b379bf22d71a448730eb016f0592d4b1"
+    },
+    "unilateral_left": {
+      "source": "Fig1_panelF-G.pkl",
+      "recording_metadata": {
+        "Date": "220713",
+        "Genotype": "aJO-GAL4xUAS-CsChr",
+        "Fly": "1",
+        "Exp_Type": "Beh",
+        "Trial": "2"
+      },
+      "file": "data/grooming/unilateral_left.npz",
+      "samples": 51,
+      "sample_rate_hz": 100,
+      "first_source_time_s": 49.39,
+      "last_source_time_s": 49.89,
+      "first_frame": 4939,
+      "last_frame": 4989,
+      "joint_names": [
+        "Angle_head_roll",
+        "Angle_head_pitch",
+        "Angle_head_yaw",
+        "Angle_antenna_yaw_L",
+        "Angle_antenna_pitch_L",
+        "Angle_antenna_yaw_R",
+        "Angle_antenna_pitch_R",
+        "Angle_RF_ThC_yaw",
+        "Angle_RF_ThC_pitch",
+        "Angle_RF_ThC_roll",
+        "Angle_RF_CTr_pitch",
+        "Angle_RF_CTr_roll",
+        "Angle_RF_FTi_pitch",
+        "Angle_RF_TiTa_pitch",
+        "Angle_LF_ThC_yaw",
+        "Angle_LF_ThC_pitch",
+        "Angle_LF_ThC_roll",
+        "Angle_LF_CTr_pitch",
+        "Angle_LF_CTr_roll",
+        "Angle_LF_FTi_pitch",
+        "Angle_LF_TiTa_pitch"
+      ],
+      "angles_finite": true,
+      "source_degrees_min": -133.27461125781727,
+      "source_degrees_max": 126.74367445439896,
+      "sha256": "3b7b3d61135c213b18224e30fac4f8ce9b7baba6211980dd7ab6f57525a10783"
+    },
+    "bilateral": {
+      "source": "Fig1_panelF-G.pkl",
+      "recording_metadata": {
+        "Date": "220713",
+        "Genotype": "aJO-GAL4xUAS-CsChr",
+        "Fly": "1",
+        "Exp_Type": "Beh",
+        "Trial": "2"
+      },
+      "file": "data/grooming/bilateral.npz",
+      "samples": 600,
+      "sample_rate_hz": 100,
+      "first_source_time_s": 2.0,
+      "last_source_time_s": 7.99,
+      "first_frame": 200,
+      "last_frame": 799,
+      "joint_names": [
+        "Angle_head_roll",
+        "Angle_head_pitch",
+        "Angle_head_yaw",
+        "Angle_antenna_yaw_L",
+        "Angle_antenna_pitch_L",
+        "Angle_antenna_yaw_R",
+        "Angle_antenna_pitch_R",
+        "Angle_RF_ThC_yaw",
+        "Angle_RF_ThC_pitch",
+        "Angle_RF_ThC_roll",
+        "Angle_RF_CTr_pitch",
+        "Angle_RF_CTr_roll",
+        "Angle_RF_FTi_pitch",
+        "Angle_RF_TiTa_pitch",
+        "Angle_LF_ThC_yaw",
+        "Angle_LF_ThC_pitch",
+        "Angle_LF_ThC_roll",
+        "Angle_LF_CTr_pitch",
+        "Angle_LF_CTr_roll",
+        "Angle_LF_FTi_pitch",
+        "Angle_LF_TiTa_pitch"
+      ],
+      "angles_finite": true,
+      "source_degrees_min": -156.7991127393195,
+      "source_degrees_max": 140.03873970408617,
+      "sha256": "bcece09cc51320f1bf738da46579714ae5b8fdec0d5b8cc2d37080a8def77fb8"
+    }
+  }
+}

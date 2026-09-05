@@ -12,5 +12,7 @@ Dependencies and research artifacts retain their respective licenses. Preserve u
 | User-provided PDFs | Preserved unchanged; each retains its stated publication license; hashes in research/provided-papers.json. |
 | [Lanz et al. model](https://github.com/nagellab/Lanzetal2025) | GPL-3.0 author notebook, downloaded separately and checksum-verified for a bounded reproduction. No model code imported into the full-brain runtime. Pin and protocol in docs/navigation-memory-model-audit.md. |
 | [Suver et al. wind data](https://doi.org/10.5061/dryad.k06kh8f) | CC0 primary dataset; local acquisition and measured-fit provenance in docs/wind-calibration.md. The paper has a separate publication license. |
+| [Özdil et al. grooming data](https://doi.org/10.7910/DVN/N8ITTG) | CC0 measured kinematic examples; source hashes and numeric transformations in data/grooming/provenance.json. Author analysis code is Apache-2.0 and is inspected separately. |
+| [Ispizua, Abe et al. free behavior data](https://doi.org/10.64898/2026.05.03.722293) | Public single-fly HDF5 acquired separately, with observed checksum and original source identity. An explicit data license was not identified; bulk data remain local. The associated code package declares BSD-3-Clause, separate from data terms. |
 
 Morphology acquisition has separate specimen, license and checksum provenance. Biological measurements, model approximations and project hypotheses are distinguished in the research notes.

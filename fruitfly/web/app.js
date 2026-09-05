@@ -113,6 +113,37 @@ function update(data) {
     chip.append(Object.assign(document.createElement("strong"), {textContent: `${number(rate, 1)} Hz`}));
     $("club-rates").append(chip);
   }
+  const wind = telemetry.wind || {};
+  const windReference = telemetry.wind_reference;
+  const hasWind = Array.isArray(wind.relative_velocity_head_mm_s);
+  const reference = wind.antenna_reference || {};
+  setText("wind-status", hasWind ? windReference ? "Female reference enabled" : "Local airflow available" : "Not reported");
+  setText("wind-azimuth", hasWind
+    ? `Source azimuth · L ${number(wind.source_azimuth_deg?.[0], 1)}° · R ${number(wind.source_azimuth_deg?.[1], 1)}°`
+    : "No wind directions reported.");
+  setText("wind-speed", hasWind
+    ? `Relative horizontal flow · L ${number(wind.horizontal_speed_mm_s?.[0], 1)} · R ${number(wind.horizontal_speed_mm_s?.[1], 1)} mm/s`
+    : "No relative air speeds reported.");
+  const deflections = reference.estimated_steady_arista_deflection_deg;
+  const deflection = (value) => typeof value === "number" && Number.isFinite(value) ? `${number(value)}°` : "Unavailable";
+  setText("wind-reference-values", windReference
+    ? `Steady arista reference · L ${deflection(deflections?.[0])} · R ${deflection(deflections?.[1])}`
+    : "Antenna reference disabled.");
+  const exclusionNames = {
+    undefined_horizontal_direction: "direction undefined",
+    outside_measured_azimuths: "outside frontal angles",
+    outside_declared_speed_tolerance: "speed outside assay range",
+    outside_declared_elevation_tolerance: "elevation outside assay range",
+  };
+  const exclusions = (reference.excluded_because || []).flatMap((reasons, i) => reasons?.length
+    ? [`${i === 0 ? "L" : "R"}: ${reasons.map(reason => exclusionNames[reason] || reason.replaceAll("_", " ")).join(", ")}`] : []);
+  setText("wind-reference-domain", windReference
+    ? exclusions.length ? exclusions.join(" · ")
+      : `Assay gate ${number(windReference.nominal_speed_mm_s, 1)} mm/s ±${number(windReference.speed_tolerance_fraction * 100, 0)}% · frontal ±90° · elevation ±${number(windReference.elevation_tolerance_deg, 0)}°`
+    : hasWind ? "Source angle: negative left, positive right, zero anterior." : "");
+  setText("wind-limit", windReference
+    ? "Measured female reference; neural pathway unmapped. Predicts steady arista angles only; no male mechanics or joint actuation is validated."
+    : "Airflow geometry only; neural pathway unmapped.");
   setText("neural-subtitle", neural.ablated ? `${neural.ablation_target || "Motor readout"} muted` : neural.neurons ? "Spiking network telemetry" : "Waiting for neural telemetry");
   if (typeof neural.ablated === "boolean") $("ablation").checked = neural.ablated;
   if (neural.ablation_target) {

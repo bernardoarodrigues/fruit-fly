@@ -35,6 +35,11 @@ The neural panel reports model voltage minimum, mean and maximum. A separate
 sensory panel shows optional compound-eye sample timing/intensity and FeCO club
 input rates, explicitly distinguishing rendered eye samples from an implemented
 neural vision pathway.
+The wind readout shows source azimuth and relative horizontal air speed at the
+left and right antennae. An optional measured female reference shows predicted
+steady arista deflections only when the runtime's domain gates pass; otherwise
+it shows unavailable with the exclusion reason. Its caption explicitly states
+that the neural pathway is unmapped. There are no wind controls in this viewer.
 
 ## Runtime API
 
@@ -88,6 +93,10 @@ physiology: {energy, hydration, crop, capacities?: {energy, hydration, crop}}
 stimuli: {odor, light}                           # source gain controls
 senses: {odor: [left, right], taste_food, taste_water, club_event_rates_hz?}
 vision: {enabled, sample_t_s, shape, mean_by_eye}
+wind: {relative_velocity_head_mm_s, source_azimuth_deg, horizontal_speed_mm_s,
+       antenna_reference?: {estimated_steady_arista_deflection_deg, excluded_because}}
+wind_reference?: {nominal_speed_mm_s, speed_tolerance_fraction,
+                  elevation_tolerance_deg, ...provenance}
 neural: {neurons, edges, active_neurons, spikes, output_rates,
          voltage_mv?: {minimum, maximum, mean},
          ablated, backend, ablation_target?, ablation_description?}
@@ -118,3 +127,10 @@ lifecycle, control delivery, frame generation, bounded state publication, HTTP
 validation, and visible error propagation. These tests do not validate fly biology
 or real MuJoCo rendering. A real-runtime browser check is separately required for
 the integrated simulation.
+
+The wind integration was inspected with the real full-graph conductance runner
+in a separate paused viewer on port 8767 using `configs/male-wind-reference.json`.
+The rendered dashboard showed left/right source azimuth 0.0°, relative flow
+596.0 mm/s, steady reference angles −8.05°/−8.24°, and the female-reference and
+unmapped-pathway caveats. The existing running port-8766 experiment was not reset
+or controlled by that check.

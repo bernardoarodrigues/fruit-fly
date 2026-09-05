@@ -21,7 +21,7 @@ from flygym_demo.complex_terrain import (
 )
 
 from .physiology import Physiology, PhysiologyConfig, ResourcePatch
-from .wind import local_airflow
+from .wind import local_airflow, MeasuredAntennaReference
 
 
 @dataclass(frozen=True)
@@ -40,6 +40,8 @@ class BodyConfig:
     odor_emission_interval_s: float = .1
     odor_prehistory_s: float = 3.0
     odor_puff_lifetime_s: float = 8.0
+    wind_reference_path: str | None = None
+    wind_reference_allow_sex_transfer: bool = False
     drive_limit: float = 1.2
     intended_sex: str = "male"
     body_profile: str = "female-derived NeuroMechFly morphology surrogate"
@@ -160,6 +162,10 @@ class BodyRuntime:
         self.seed = int(seed)
         self._renderer = None
         self._closed = False
+        self.wind_reference = (MeasuredAntennaReference(self.config.wind_reference_path,
+            intended_sex=self.config.intended_sex,
+            allow_sex_transfer=self.config.wind_reference_allow_sex_transfer)
+            if self.config.wind_reference_path else None)
         self._build()
         self.reset(seed)
 
@@ -221,17 +227,25 @@ class BodyRuntime:
         body_ids = self.sim._internal_bodyids_by_fly[self.fly.name]
         id_for = lambda name: body_ids[body_order.index(BodySegment(name))]
         self._thorax_id = id_for("c_thorax")
-        self._head_id = id_for("c_head")
+        # Fixed head bodies may be fused by MuJoCo's compiler. Its named geom
+        # survives fusion; a missing body ID (-1) must never index the last leg.
+        self._head_geom_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_GEOM, "fly/c_head")
         self._antenna_ids = [id_for(side + "_funiculus") for side in ("l", "r")]
+        if min(self._thorax_id, self._head_geom_id, *self._antenna_ids) < 0:
+            raise RuntimeError("Required thorax, head or antenna frame is missing after compilation")
+        if len(set(self._antenna_ids)) != 2:
+            raise RuntimeError("Left and right antenna frames must be distinct")
         # Imported head mesh axes are not forward/left/up. Define that basis
         # from the neutral keyframe's thorax, then let it follow head rotation.
         reference = mujoco.MjData(self.model)
         mujoco.mj_resetDataKeyframe(self.model, reference, self.sim._neutral_keyframe_id)
         mujoco.mj_forward(self.model, reference)
-        self._head_anatomical_basis = (reference.xmat[self._head_id].reshape(3, 3).T
+        self._head_anatomical_basis = (reference.geom_xmat[self._head_geom_id].reshape(3, 3).T
                                       @ reference.xmat[self._thorax_id].reshape(3, 3))
         self._antenna_jacobian = np.empty((3, self.model.nv))
         self._tarsus5_ids = [id_for(leg + "_tarsus5") for leg in self.controller.legs]
+        if min(self._tarsus5_ids) < 0:
+            raise RuntimeError("Required distal leg frame is missing after compilation")
         geom_map = self.sim._internal_geomid_by_bodyseg_by_fly[self.fly.name]
         self._stumble_map = np.full(self.model.ngeom, -1, dtype=int)
         for index, segment in enumerate(BodySegment(f"{leg}_{link}")
@@ -441,9 +455,12 @@ class BodyRuntime:
             # includes base translation, rotation and antennal joint motion.
             mujoco.mj_jacBody(self.model, self.data, self._antenna_jacobian, None, body_id)
             velocities[index] = self._antenna_jacobian @ self.data.qvel
-        head_to_world = (self.data.xmat[self._head_id].reshape(3, 3)
+        head_to_world = (self.data.geom_xmat[self._head_geom_id].reshape(3, 3)
                          @ self._head_anatomical_basis)
-        return local_airflow((*self.config.wind_mm_s, 0), velocities, head_to_world)
+        observation = local_airflow((*self.config.wind_mm_s, 0), velocities, head_to_world)
+        if self.wind_reference is not None:
+            observation["antenna_reference"] = self.wind_reference.evaluate(observation)
+        return observation
 
     def _sample_vision(self):
         self._vision = self.sim.get_ommatidia_readouts(self.fly.name)
@@ -474,6 +491,7 @@ class BodyRuntime:
     def snapshot(self) -> dict:
         """Observer/evaluator state. Never pass this privileged world data to brain."""
         return {"observation": self.observe(), "config": asdict(self.config),
+                "wind_reference": self.wind_reference.provenance if self.wind_reference else None,
                 "stimuli": self._stimuli.copy(),
                 "resources": {"food": asdict(self.food), "water": asdict(self.water)},
                 "resource_balance": self.physiology.balance_residuals(self.food, self.water),

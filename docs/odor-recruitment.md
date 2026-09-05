@@ -1,0 +1,11 @@
+# Broad odor recruitment diagnostic
+
+Executed 2026-09-05, with [complete results](../validation/odor-recruitment.json) and [reproduction script](../scripts/assess_odor_recruitment.py). This is a fixed brain-only diagnostic, not a fitted motor policy or a reproduction of upwind navigation.
+
+The prior assay stimulates only 106 DM1/DM4 ORNs. This comparison also recruits all 2,635 neurons with `ORN_` type annotations (53 types), using the unchanged full MaleCNS conductance model at 0.2 ms with Padé integration. All named ORNs are not an exact Orco-GAL4 expression map. [Matheson et al. 2022](https://www.nature.com/articles/s41467-022-32247-7) motivates examining recruitment breadth, but the present assay lacks wind, behavior and a matched experimental activation map.
+
+Two seeds (11, 12) each receive 50 ms baseline, 100 ms input and 100 ms after input. Frozen conditions are no input; DM1/DM4 at 100 external events/s per cell; broad ORNs at 100 events/s; broad ORNs at 4.02277 events/s to match total expected input-event count; and broad 100 events/s with actual ORN outgoing synapses blocked. Event rates are not imposed neuronal firing rates. The final report retains exact selected IDs and every phase, including failures.
+
+Broad recruitment did not restore reliable DNg97/DNa01/DNa02 readouts. In the equal-total condition one seed produced only brief spikes in several of those cells; the other did not. DNb05 instead reached approximately 350–460 Hz in most active conditions, and substantial activity continued after stimulus offset. This rate and persistence are calibration concerns, not evidence of a robust turn command or memory. The two low-rate broad trials differed strongly during onset (66,279 versus 5,924 total spikes), then both entered sustained activity.
+
+No-input and blocked-ORN controls produced zero descending spikes; the blocked sensory cells still fired. These establish route dependence in the implemented model. They do not validate the dynamics, output semantics or biological circuit. Recruiting more odor types alone did not resolve the current motor-calibration problem; no runtime input map, motor decoder or parameter set was selected from these outcomes.
