@@ -1,0 +1,828 @@
+{
+  "passed": true,
+  "plan_sha256": "d0140c002dab792b13457f0f6d43815d9f611336ddaacb0381faab5735ec00f4",
+  "result_sha256": "1074a63c91a2cae2be6744474605b62431305082af1648c37d5f5312a8339433",
+  "checker_sha256": "37ddb288a0ca7f8b5601f49b2383fb311a54b74c2e949ed4433df150b7ec5e60",
+  "checks": [
+    {
+      "name": "plan_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:scripts/flybody_persistent_task.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:scripts/experiment_flybody_persistent.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:fruitfly/flybody_worker.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:validation/flybody-source-manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:validation/flybody-walking-acquisition.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:validation/flybody-stance-actuator-audit.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged:validation/flybody-inference-requirements.lock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_trials_finished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:has_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:trace_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:complete_without_failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:native_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:task_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:uninterrupted_ticks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:warnings_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:no_source_termination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:physical_guard_probes",
+      "passed": true,
+      "detail": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      }
+    },
+    {
+      "name": "bounded_parity:guards_preserved_in_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:actor_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:native_clocks_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:off_neutral_stance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:continuous_integrated_target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:actual_actor_current_command_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bounded_parity:actual_actor_current_target_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:has_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:trace_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:complete_without_failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:native_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:task_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:uninterrupted_ticks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:warnings_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:no_source_termination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:physical_guard_probes",
+      "passed": true,
+      "detail": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      }
+    },
+    {
+      "name": "rolling_parity:guards_preserved_in_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:actor_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:native_clocks_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:off_neutral_stance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:continuous_integrated_target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:actual_actor_current_command_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:actual_actor_current_target_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:fixed_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_parity:actor_preview_causal_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:has_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:trace_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:complete_without_failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:native_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:task_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:uninterrupted_ticks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:warnings_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:no_source_termination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:physical_guard_probes",
+      "passed": true,
+      "detail": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      }
+    },
+    {
+      "name": "rolling_rest12:guards_preserved_in_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:actor_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:native_clocks_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:off_neutral_stance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:continuous_integrated_target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:actual_actor_current_command_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:actual_actor_current_target_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:fixed_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:actor_preview_causal_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_rest12:crosses_original_10s_limit",
+      "passed": true,
+      "detail": 11.99999999999871
+    },
+    {
+      "name": "rolling_switch12:has_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:trace_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:complete_without_failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:native_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:task_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:uninterrupted_ticks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:warnings_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:no_source_termination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:physical_guard_probes",
+      "passed": true,
+      "detail": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      }
+    },
+    {
+      "name": "rolling_switch12:guards_preserved_in_trace",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:actor_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:native_clocks_config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:off_neutral_stance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:continuous_integrated_target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:actual_actor_current_command_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:actual_actor_current_target_error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:fixed_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:actor_preview_causal_storage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:crosses_original_10s_limit",
+      "passed": true,
+      "detail": 11.99999999999871
+    },
+    {
+      "name": "parity:actor",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:canonical_action",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:native_action",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:qpos",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:qvel",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:qacc",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:act",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:ctrl",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:target_pose_cm_quat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:native_time_s",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "parity:actor_keys_and_shapes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parity:all_exposed_numeric_model_arrays",
+      "passed": true,
+      "detail": 380
+    },
+    {
+      "name": "parity:cached_displacement:first64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parity:cached_quaternion:first64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "parity:source_and_weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rolling_switch12:stop:0.85",
+      "passed": true,
+      "detail": {
+        "kind": "stop",
+        "window_s": [
+          0.85,
+          1.2
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.003244278615365058,
+        "net_displacement_mm": 0.001145140916075877,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:stop:3.25",
+      "passed": true,
+      "detail": {
+        "kind": "stop",
+        "window_s": [
+          3.25,
+          3.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.008041536789510499,
+        "net_displacement_mm": 0.002708311054117731,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:stop:6.25",
+      "passed": true,
+      "detail": {
+        "kind": "stop",
+        "window_s": [
+          6.25,
+          6.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.005792153509028263,
+        "net_displacement_mm": 0.002007997680979394,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:stop:9.25",
+      "passed": true,
+      "detail": {
+        "kind": "stop",
+        "window_s": [
+          9.25,
+          10.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.006518889736792106,
+        "net_displacement_mm": 0.008863153467966373,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:resume:1.5",
+      "passed": true,
+      "detail": {
+        "kind": "resume",
+        "window_s": [
+          1.5,
+          3.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.66219056636181,
+        "net_displacement_mm": 30.011188367450902,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:resume:3.9",
+      "passed": true,
+      "detail": {
+        "kind": "resume",
+        "window_s": [
+          3.9,
+          6.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.404625865929624,
+        "net_displacement_mm": 41.91650266911732,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:resume:6.9",
+      "passed": true,
+      "detail": {
+        "kind": "resume",
+        "window_s": [
+          6.9,
+          9.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.27313266581671,
+        "net_displacement_mm": 41.92020733256713,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    },
+    {
+      "name": "rolling_switch12:resume:10.9",
+      "passed": true,
+      "detail": {
+        "kind": "resume",
+        "window_s": [
+          10.9,
+          12.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.61074718255034,
+        "net_displacement_mm": 21.96375270516922,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    }
+  ],
+  "parity": {
+    "actor": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "canonical_action": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "native_action": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "qpos": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "qvel": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "qacc": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "act": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "ctrl": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "target_pose_cm_quat": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "native_time_s": {
+      "bitwise_equal": true,
+      "max_absolute_error": 0.0
+    },
+    "cached_displacement": {
+      "first64_bitwise_equal": true,
+      "final_row_different_samples": 700,
+      "final_row_max_absolute_difference": 1.4304200607345452
+    },
+    "cached_quaternion": {
+      "first64_bitwise_equal": true,
+      "final_row_different_samples": 0,
+      "final_row_max_absolute_difference": 0.0
+    }
+  },
+  "windows": {
+    "rolling_rest12": [
+      {
+        "kind": "stop",
+        "window_s": [
+          0.3,
+          12.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.0005409607727980876,
+        "net_displacement_mm": 0.006990408750597427,
+        "passed": true,
+        "diagnostic_only": true
+      }
+    ],
+    "rolling_switch12": [
+      {
+        "kind": "stop",
+        "window_s": [
+          0.85,
+          1.2
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.003244278615365058,
+        "net_displacement_mm": 0.001145140916075877,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "stop",
+        "window_s": [
+          3.25,
+          3.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.008041536789510499,
+        "net_displacement_mm": 0.002708311054117731,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "stop",
+        "window_s": [
+          6.25,
+          6.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.005792153509028263,
+        "net_displacement_mm": 0.002007997680979394,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "stop",
+        "window_s": [
+          9.25,
+          10.6
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 0.006518889736792106,
+        "net_displacement_mm": 0.008863153467966373,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "resume",
+        "window_s": [
+          1.5,
+          3.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.66219056636181,
+        "net_displacement_mm": 30.011188367450902,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "resume",
+        "window_s": [
+          3.9,
+          6.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.404625865929624,
+        "net_displacement_mm": 41.91650266911732,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "resume",
+        "window_s": [
+          6.9,
+          9.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.27313266581671,
+        "net_displacement_mm": 41.92020733256713,
+        "passed": true,
+        "diagnostic_only": false
+      },
+      {
+        "kind": "resume",
+        "window_s": [
+          10.9,
+          12.0
+        ],
+        "complete": true,
+        "median_raw_chord_speed_mm_s": 19.61074718255034,
+        "net_displacement_mm": 21.96375270516922,
+        "passed": true,
+        "diagnostic_only": false
+      }
+    ]
+  },
+  "runtime_promoted": false,
+  "full_brain_tested": false
+}

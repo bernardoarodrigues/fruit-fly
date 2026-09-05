@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-09-05T02:56:38.008100+00:00",
+  "files": {
+    "scripts/flybody_persistent_task.py": "42036ba7866fe4bfded91f01286c0dfd74216fb683719b8e042462c6b3d646cb",
+    "scripts/experiment_flybody_persistent.py": "666129b3b00fb8fd34a94c84e99ed670f4d1eda6dc362f20ebc5810d245c7410",
+    "fruitfly/flybody_worker.py": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "validation/flybody-walking-acquisition.json": "b67e939aec74a566eb95bf036ae711dc38b0a1530a86387230c946cdc7a8e5a7",
+    "validation/flybody-stance-actuator-audit.json": "26f361bf88b593fe4021ae0fda18e5c3d881a19fcd2637060af88c40dccccd1d",
+    "validation/flybody-inference-requirements.lock": "ba69e4a21f4439862029d9efdb62fa011c83ce3f4f9b79ac80ed67e9ada63b97"
+  },
+  "config": {
+    "source_path": "/Users/bernardo/Documents/Code/fruit-fly/data/raw/flybody/source",
+    "width": 800,
+    "height": 560,
+    "food_position_mm": [
+      6.0,
+      0.0
+    ],
+    "food_radius_mm": 3.0,
+    "water_position_mm": [
+      5.0,
+      7.0
+    ],
+    "water_radius_mm": 2.0
+  },
+  "seed": 11,
+  "amendment": {
+    "prior_plan": "validation/flybody-persistent-initialization-v0-plan.json",
+    "prior_results": "validation/flybody-persistent-initialization-v0-experiment.json",
+    "reason": "Initialize rolling origin before Composer construction-time observable shape probe. Original rolling trials failed before reset/physics; bounded parity completed. Commands, thresholds, controller and physical guards unchanged."
+  },
+  "cases": [
+    "bounded_parity",
+    "rolling_parity",
+    "rolling_rest12",
+    "rolling_switch12"
+  ],
+  "control_dt_s": 0.002,
+  "physics_dt_s": 0.0002,
+  "parity": {
+    "duration_s": 2.0,
+    "schedule": "walk 0-.6 s, rest .6-1.2 s, walk 1.2-2 s; on-speed 20 mm/s, yaw 0",
+    "gate": "Bitwise equality of all actual float32 actor inputs, mean/native actions, qpos/qvel/qacc/act/ctrl, target and native clock against untouched bounded worker.",
+    "cached_reference": "Compare separately: first 64 post-step rows must match. Last cached row may differ because rolling fills it causally; next actor refresh must replace it before inference."
+  },
+  "long_schedules": {
+    "rolling_rest12": "rest for 12 s",
+    "rolling_switch12": "walk [0,.6),[1.2,3),[3.6,6),[6.6,9),[10.6,12); rest otherwise. On-speed 20 mm/s, yaw 0."
+  },
+  "guards": {
+    "linear_cm_s": 50.0,
+    "angular_rad_s": 200.0,
+    "reference_error_cm": 0.3,
+    "qacc_norm_mixed_units": 100000000000000.0,
+    "check": "Original source guard equations and strict > thresholds. At reset compare isolated above-threshold diagnostic injections on source and rolling tasks, restoring each array. No injected state enters rollout."
+  },
+  "long_gates": {
+    "completion": "6000 uninterrupted control ticks / 60000 native physics steps. No LAST, reset, target recenter, pose/velocity clamp, physical-guard relaxation or finite-reference cutoff.",
+    "physical": "All sampled native qpos/qvel/qacc/act/ctrl/forces finite and warnings zero; native time and task counter agree within 1e-10 s.",
+    "storage": "Reference qpos(66,7), qvel(66,6) throughout; every actual actor still gets 65 reference rows / 741 total values.",
+    "stop": "Every stop window [.85,1.2],[3.25,3.6],[6.25,6.6],[9.25,10.6] s median raw root speed <=1 mm/s and net displacement <=.5 mm.",
+    "resume": "Each resumed walking window [1.5,3],[3.9,6],[6.9,9],[10.9,12] s median raw root speed 16-24 mm/s.",
+    "stance": "Every off action has original native adhesion 1 and all 53 position targets 0; unchanged learned weights, body, filters, gains, clocks."
+  },
+  "limitations": [
+    "Two chosen deterministic 12 s schedules, one seed, flat source floor; no reliability population, biological stance, turning or full-brain claim.",
+    "Task initialization still creates original finite static trajectory-site visualization. Those sites are not policy inputs and are not an updated persistent path display.",
+    "Finite/warnings diagnostics are sampled each 2 ms, not recorded each .2 ms substep; preserve any native exception and its true partial state."
+  ],
+  "scope": "Standalone prototype only; no runtime promotion or edits to bounded worker/bridge."
+}

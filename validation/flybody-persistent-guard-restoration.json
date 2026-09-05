@@ -1,0 +1,57 @@
+{
+  "script_sha256": "fb050fa23f651eb08e5ad5dd9328c5d9ccd907f0e920d576692bf83decf0c709",
+  "experiment_sha256": "666129b3b00fb8fd34a94c84e99ed670f4d1eda6dc362f20ebc5810d245c7410",
+  "worker_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+  "task_sha256": "42036ba7866fe4bfded91f01286c0dfd74216fb683719b8e042462c6b3d646cb",
+  "rows": [
+    {
+      "rolling": false,
+      "guards": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      },
+      "numeric_data_arrays_checked": 144,
+      "numeric_model_arrays_checked": 380,
+      "data_arrays_identical": true,
+      "model_arrays_identical": true,
+      "reference_arrays_identical": true,
+      "cached_observations_identical": true,
+      "full_worker_state_identical": true,
+      "task_scalar_differences": {
+        "reached_traj_end_present": [
+          false,
+          true
+        ],
+        "reached_traj_end": [
+          null,
+          false
+        ]
+      },
+      "physics_steps": 0
+    },
+    {
+      "rolling": true,
+      "guards": {
+        "baseline": false,
+        "qacc_above": true,
+        "velocimeter_above": true,
+        "gyro_above": true,
+        "reference_above": true
+      },
+      "numeric_data_arrays_checked": 144,
+      "numeric_model_arrays_checked": 380,
+      "data_arrays_identical": true,
+      "model_arrays_identical": true,
+      "reference_arrays_identical": true,
+      "cached_observations_identical": true,
+      "full_worker_state_identical": true,
+      "task_scalar_differences": {},
+      "physics_steps": 0
+    }
+  ],
+  "strict_boundary_equivalence_tested": false,
+  "scope": "Initialization-only numerical side-effect audit. No physics step, fitting, new trajectory, or threshold change."
+}

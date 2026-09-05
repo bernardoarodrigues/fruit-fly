@@ -1,0 +1,356 @@
+{
+  "scope": "Independent source inspection and saved-array calculations only; no physics, policy, or neural reruns",
+  "passed_saved_array_checks": true,
+  "artifact_hashes": {
+    "validation/flybody-persistent-plan.json": "d0140c002dab792b13457f0f6d43815d9f611336ddaacb0381faab5735ec00f4",
+    "validation/flybody-persistent-experiment.json": "1074a63c91a2cae2be6744474605b62431305082af1648c37d5f5312a8339433",
+    "validation/flybody-persistent-validation.json": "83d226ef6e6d33c3f98e7a01d29b61b235db945366e4da353fece07ae1caf0e9",
+    "validation/flybody-persistent-guard-restoration.json": "1ef1190150ffa53e8fa64739e1592f047c44f3fa2e126999ed0ef601d95fd6bb",
+    "validation/flybody-persistent-initialization-v0-plan.json": "3c03f3dd341093432a523fa4446151cbb5ec2ce57e64e3b358d778c56c21ef3e",
+    "validation/flybody-persistent-initialization-v0-experiment.json": "a601de2569aaa042ae94970c85f6bdea4c756cfec55dbe3b6e6be90421387d6c",
+    "scripts/review_flybody_persistent.py": "c0b0ea85afd67f13218331875c30ebfb9b42e56286742e15bfef68aa56b7cd14",
+    "scripts/flybody_persistent_task.py": "42036ba7866fe4bfded91f01286c0dfd74216fb683719b8e042462c6b3d646cb",
+    "scripts/experiment_flybody_persistent.py": "666129b3b00fb8fd34a94c84e99ed670f4d1eda6dc362f20ebc5810d245c7410",
+    "scripts/check_flybody_persistent.py": "37ddb288a0ca7f8b5601f49b2383fb311a54b74c2e949ed4433df150b7ec5e60",
+    "scripts/audit_flybody_persistent_guard_restoration.py": "fb050fa23f651eb08e5ad5dd9328c5d9ccd907f0e920d576692bf83decf0c709"
+  },
+  "trials": [
+    {
+      "case": "bounded_parity",
+      "trace_sha256": "58776e8572cf63f04f8d16dbe479f00b1d6d6a956cb5b76db6e7a9a15ec13e6a",
+      "completed_control_steps": 1000,
+      "clock_error_s": 1.8762769116165146e-13,
+      "guard_maxima": {
+        "linear_cm_s": 4.372976577996809,
+        "angular_rad_s": 27.7605478522312,
+        "reference_error_cm": 0.04330038707648905,
+        "qacc_norm_mixed_units": 489201.12040704244
+      },
+      "all_actual_actor_reference_rows_exact_float32": true,
+      "reference_error_reconstruction_error_cm": 9.71445146547012e-17,
+      "actual_actor_reference_rows_checked": 65000,
+      "target_final_x_cm": 2.800000000000002,
+      "all_saved_array_checks_pass": true
+    },
+    {
+      "case": "rolling_parity",
+      "trace_sha256": "c504c64c22cad26c322939957edb6f9f8c35c58c1296b7768b85c32e389b66f7",
+      "completed_control_steps": 1000,
+      "clock_error_s": 1.8762769116165146e-13,
+      "guard_maxima": {
+        "linear_cm_s": 4.372976577996809,
+        "angular_rad_s": 27.7605478522312,
+        "reference_error_cm": 0.04330038707648905,
+        "qacc_norm_mixed_units": 489201.12040704244
+      },
+      "all_actual_actor_reference_rows_exact_float32": true,
+      "reference_error_reconstruction_error_cm": 9.71445146547012e-17,
+      "actual_actor_reference_rows_checked": 65000,
+      "target_final_x_cm": 2.800000000000002,
+      "all_saved_array_checks_pass": true
+    },
+    {
+      "case": "rolling_rest12",
+      "trace_sha256": "1fa96a8d939cdd5b42b62a5804afe39e033973d6914aa5c686acb37b5db5be25",
+      "completed_control_steps": 6000,
+      "clock_error_s": 8.032685627767933e-12,
+      "guard_maxima": {
+        "linear_cm_s": 0.6587196936359189,
+        "angular_rad_s": 1.8552781563006624,
+        "reference_error_cm": 0.002359404591870518,
+        "qacc_norm_mixed_units": 140858.75624314498
+      },
+      "all_actual_actor_reference_rows_exact_float32": true,
+      "reference_error_reconstruction_error_cm": 1.951563910473908e-18,
+      "actual_actor_reference_rows_checked": 390000,
+      "target_final_x_cm": 0.0,
+      "all_saved_array_checks_pass": true
+    },
+    {
+      "case": "rolling_switch12",
+      "trace_sha256": "600b7b1310d04ce8fdce18580599372a71238ae6ead3ccfccb8a63efe047bde9",
+      "completed_control_steps": 6000,
+      "clock_error_s": 8.032685627767933e-12,
+      "guard_maxima": {
+        "linear_cm_s": 4.500482982039633,
+        "angular_rad_s": 31.142770205191386,
+        "reference_error_cm": 0.04330038707648905,
+        "qacc_norm_mixed_units": 572896.7897614866
+      },
+      "all_actual_actor_reference_rows_exact_float32": true,
+      "reference_error_reconstruction_error_cm": 9.71445146547012e-17,
+      "actual_actor_reference_rows_checked": 390000,
+      "target_final_x_cm": 17.199999999999083,
+      "all_saved_array_checks_pass": true
+    }
+  ],
+  "frozen_source_files_verified": 223,
+  "source_commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+  "two_second_bitwise_parity_keys": [
+    "actor",
+    "canonical_action",
+    "native_action",
+    "qpos",
+    "qvel",
+    "qacc",
+    "act",
+    "ctrl",
+    "target_pose_cm_quat",
+    "native_time_s",
+    "pose_cm_quat",
+    "velocity_world_mm_s",
+    "angular_velocity_world_rad_s"
+  ],
+  "parity_actual_actor_shape": [
+    1000,
+    741
+  ],
+  "initial_unused_policy_evaluation_also_matches": true,
+  "compiled_model_arrays_match": 380,
+  "cached_final_row_differences": {
+    "cached_displacement": {
+      "final_row_different_samples": 700,
+      "final_row_max_difference": 1.4304200607345452
+    },
+    "cached_quaternion": {
+      "final_row_different_samples": 0,
+      "final_row_max_difference": 0.0
+    }
+  },
+  "windows": [
+    {
+      "case": "rolling_rest12",
+      "kind": "stop",
+      "window_s": [
+        0.3,
+        12.0
+      ],
+      "speed_array_slice": [
+        149,
+        6000
+      ],
+      "speed_sample_count": 5851,
+      "median_chord_speed_mm_s": 0.0005409607727980876,
+      "net_displacement_mm": 0.006990408750597427,
+      "diagnostic_only": true
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "stop",
+      "window_s": [
+        0.85,
+        1.2
+      ],
+      "speed_array_slice": [
+        424,
+        600
+      ],
+      "speed_sample_count": 176,
+      "median_chord_speed_mm_s": 0.003244278615365058,
+      "net_displacement_mm": 0.001145140916075877,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "stop",
+      "window_s": [
+        3.25,
+        3.6
+      ],
+      "speed_array_slice": [
+        1624,
+        1800
+      ],
+      "speed_sample_count": 176,
+      "median_chord_speed_mm_s": 0.008041536789510499,
+      "net_displacement_mm": 0.002708311054117731,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "stop",
+      "window_s": [
+        6.25,
+        6.6
+      ],
+      "speed_array_slice": [
+        3124,
+        3300
+      ],
+      "speed_sample_count": 176,
+      "median_chord_speed_mm_s": 0.005792153509028263,
+      "net_displacement_mm": 0.002007997680979394,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "stop",
+      "window_s": [
+        9.25,
+        10.6
+      ],
+      "speed_array_slice": [
+        4624,
+        5300
+      ],
+      "speed_sample_count": 676,
+      "median_chord_speed_mm_s": 0.006518889736792106,
+      "net_displacement_mm": 0.008863153467966373,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "resume",
+      "window_s": [
+        1.5,
+        3.0
+      ],
+      "speed_array_slice": [
+        749,
+        1500
+      ],
+      "speed_sample_count": 751,
+      "median_chord_speed_mm_s": 19.66219056636181,
+      "net_displacement_mm": 30.011188367450902,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "resume",
+      "window_s": [
+        3.9,
+        6.0
+      ],
+      "speed_array_slice": [
+        1949,
+        3000
+      ],
+      "speed_sample_count": 1051,
+      "median_chord_speed_mm_s": 19.404625865929624,
+      "net_displacement_mm": 41.91650266911732,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "resume",
+      "window_s": [
+        6.9,
+        9.0
+      ],
+      "speed_array_slice": [
+        3449,
+        4500
+      ],
+      "speed_sample_count": 1051,
+      "median_chord_speed_mm_s": 19.27313266581671,
+      "net_displacement_mm": 41.92020733256713,
+      "diagnostic_only": false
+    },
+    {
+      "case": "rolling_switch12",
+      "kind": "resume",
+      "window_s": [
+        10.9,
+        12.0
+      ],
+      "speed_array_slice": [
+        5449,
+        6000
+      ],
+      "speed_sample_count": 551,
+      "median_chord_speed_mm_s": 19.61074718255034,
+      "net_displacement_mm": 21.96375270516922,
+      "diagnostic_only": false
+    }
+  ],
+  "guard_restoration_producer_receipt_reviewed": {
+    "script_sha256": "fb050fa23f651eb08e5ad5dd9328c5d9ccd907f0e920d576692bf83decf0c709",
+    "experiment_sha256": "666129b3b00fb8fd34a94c84e99ed670f4d1eda6dc362f20ebc5810d245c7410",
+    "worker_sha256": "e7f698c602aef693207ed04ed209f36047a81c41797674dc090bf6792e0f6c09",
+    "task_sha256": "42036ba7866fe4bfded91f01286c0dfd74216fb683719b8e042462c6b3d646cb",
+    "rows": [
+      {
+        "rolling": false,
+        "guards": {
+          "baseline": false,
+          "qacc_above": true,
+          "velocimeter_above": true,
+          "gyro_above": true,
+          "reference_above": true
+        },
+        "numeric_data_arrays_checked": 144,
+        "numeric_model_arrays_checked": 380,
+        "data_arrays_identical": true,
+        "model_arrays_identical": true,
+        "reference_arrays_identical": true,
+        "cached_observations_identical": true,
+        "full_worker_state_identical": true,
+        "task_scalar_differences": {
+          "reached_traj_end_present": [
+            false,
+            true
+          ],
+          "reached_traj_end": [
+            null,
+            false
+          ]
+        },
+        "physics_steps": 0
+      },
+      {
+        "rolling": true,
+        "guards": {
+          "baseline": false,
+          "qacc_above": true,
+          "velocimeter_above": true,
+          "gyro_above": true,
+          "reference_above": true
+        },
+        "numeric_data_arrays_checked": 144,
+        "numeric_model_arrays_checked": 380,
+        "data_arrays_identical": true,
+        "model_arrays_identical": true,
+        "reference_arrays_identical": true,
+        "cached_observations_identical": true,
+        "full_worker_state_identical": true,
+        "task_scalar_differences": {},
+        "physics_steps": 0
+      }
+    ],
+    "strict_boundary_equivalence_tested": false,
+    "scope": "Initialization-only numerical side-effect audit. No physics step, fitting, new trajectory, or threshold change."
+  },
+  "initialization_failures_retained": [
+    {
+      "case": "rolling_parity",
+      "log_sha256": "678ad5590519476c474c441a1eabaf011d3a33d42e76b7cbbde1b129be92b4cc",
+      "failure": "Trial process exit 1"
+    },
+    {
+      "case": "rolling_rest12",
+      "log_sha256": "678ad5590519476c474c441a1eabaf011d3a33d42e76b7cbbde1b129be92b4cc",
+      "failure": "Trial process exit 1"
+    },
+    {
+      "case": "rolling_switch12",
+      "log_sha256": "678ad5590519476c474c441a1eabaf011d3a33d42e76b7cbbde1b129be92b4cc",
+      "failure": "Trial process exit 1"
+    }
+  ],
+  "source_review": {
+    "physical_guards": "Source and rolling task use strict > for velocimeter norm50cm/s, gyro norm200rad/s, root reference error.3cm, and base qacc Euclidean norm1e14 mixed units. Only finite trajectory/time termination is removed.",
+    "causality": "Every step installs66 current-command poses/velocities at the absolute counter; actor gets first65 rows at offset0. After native before_step increments the counter, post-step observables get rows1..65. Next actor explicitly refreshes both reference observables; unused cached row64 never becomes a future-command leak.",
+    "target": "Target starts at the source initial reference and advances preview[1] from previous target each tick. It is never assigned actual fly pose during advance, so error can accumulate and physical guard remains meaningful.",
+    "storage": "Recorded qpos reference shape is66x7 throughout. qvel is allocated66x6 and assigned in place by source, but its per-tick shape/values are not saved. Static500 trajectory visualization sites remain from initialization.",
+    "guard_probe_side_effect": "Probe restores qacc, sensordata, reference qpos and any existing reached flag. Source initially lacks _reached_traj_end; check_termination creates False and probe leaves it present. _should_terminate and all audited numerical state remain unchanged. Exact whole-object restoration is therefore false for bounded source task.",
+    "physical_failure_path": "Worker retains failed native cache and source exception and stops after LAST/nonfinite state. These completed trials and predicate probes do not exercise an actual failing native step or independently prove partial-failure recovery."
+  },
+  "limits": [
+    "All source actuator/contact forces are not retained in NPZ; finite includes worker-side actuator_force/support/ground checks. Actor force sensor values are retained and finite, but are not the complete native force arrays.",
+    "Guard-restoration receipt stores comparison booleans/counts, not before/after arrays/hashes per array; its numerical restoration is source-reviewed producer evidence.",
+    "Only above-threshold predicate probes were executed; exact boundary empirical equivalence and source LAST handling were not tested here.",
+    "Guards and finite/warning evidence sampled every2ms, not at all0.2ms substeps.",
+    "One seed, straight20mm/s/rest schedules, flat floor; no turning, obstacles, fullbrain, biological stance, indefinite stability, or live runtime promotion.",
+    "The saved speed windows include a2ms interval preceding the nominal lower bound because selection uses interval end time; reported drift starts at the nominal lower bound."
+  ]
+}
