@@ -1,0 +1,76 @@
+{
+  "format": "inhibitory-recurrent-panel",
+  "version": 1,
+  "transaction": "37edc93f6d264d97a482f7e044731117",
+  "tree": {
+    "kind": "dict",
+    "items": [
+      [
+        "spike_indices",
+        {
+          "kind": "spike_component",
+          "component": "index"
+        }
+      ],
+      [
+        "spike_ticks",
+        {
+          "kind": "spike_component",
+          "component": "tick"
+        }
+      ],
+      [
+        "partial",
+        {
+          "kind": "scalar",
+          "value": null
+        }
+      ]
+    ],
+    "spikes": {
+      "array": {
+        "key": "array_0",
+        "shape": [
+          0
+        ],
+        "dtype": [
+          [
+            "tick",
+            "<i8"
+          ],
+          [
+            "index",
+            "<i4"
+          ]
+        ],
+        "itemsize": 12,
+        "count": 0,
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "header": {
+        "version": 1,
+        "count": 0,
+        "shape": [
+          0
+        ],
+        "dtype": [
+          [
+            "tick",
+            "<i8"
+          ],
+          [
+            "index",
+            "<i4"
+          ]
+        ],
+        "itemsize": 12,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_index_dtype": "<i4",
+        "original_tick_dtype": "<i8",
+        "original_index_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_tick_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  }
+}

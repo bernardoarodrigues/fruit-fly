@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-09-05T06:01:33.830358+00:00",
+  "sources": {
+    "scripts/check_inhibitory_recurrent_panel_dispatch.py": "0f867022029a42904e3738527707fe15e6714d719ba6e658f393e1138002734b",
+    "scripts/experiment_inhibitory_recurrent_panel.py": "597eef47d93f3b57896fa7c38864ea8003153f8e54d1de720f2efc23f2bf2512",
+    "scripts/inhibitory_recurrent_panel_archive.py": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+  },
+  "scope": "Parent orchestration with fake Popen objects and tiny saved reports only. No worker, kernel, graph or source-input execution.",
+  "cases": [
+    "successful sixty-trial order and single live worker",
+    "C0 resource limit before prefix",
+    "C0 resource limit after prefix",
+    "C0 correctness failure",
+    "missing child result",
+    "global budget before dispatch",
+    "global budget after final child",
+    "interrupt child then reap",
+    "parent publication failure after launching child signals and reaps",
+    "corrupted C0 checkpoint payload blocks altered dispatch despite unchanged completion marker",
+    "prepared plan and source hash guards reject modifications without source input loading",
+    "failed prerequisite stops prepare before input generation"
+  ],
+  "exclusions": "Source checking, metrics, disk-free and child computation are mocked. Real archive JSON writes and parent dispatch/gate/finalization paths are exercised."
+}

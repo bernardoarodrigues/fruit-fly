@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-09-05T05:47:25.546352+00:00",
+  "source_sha256": {
+    "scripts/check_inhibitory_recurrent_panel_archive.py": "a4896139db56a132987ee61f90ff54f0a991d431c8cffffe0d78b7e3fb84b164",
+    "scripts/inhibitory_recurrent_panel_archive.py": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+  },
+  "scope": "Tiny synthetic filesystem fixtures only; no neural graph or execution.",
+  "checks": [
+    "Finite/nonfinite nested roundtrip and exact arrays including endian/structured/scalar/empty values.",
+    "Root and partial spike packing: exact 12-byte little-endian records, version/count/hash and restored original dtypes.",
+    "Immutable overwrite refusal, explicit progress replacement and retained unexpected targets/temporaries.",
+    "Injected payload and completion replacement failures retain evidence and deny loading.",
+    "Truncated temporary is never completed; checksum, packed-count and packed-endian corruption rejected.",
+    "Spy verifies flush/fsync/replace ordering and completion last; publication lock blocks competing writer.",
+    "Reject object arrays and integer overflow without coercion; preserve failed publication."
+  ],
+  "failure_policy": "Retain all deliberate invalid fixtures and any unexpected test failure. Do not overwrite or remove them."
+}

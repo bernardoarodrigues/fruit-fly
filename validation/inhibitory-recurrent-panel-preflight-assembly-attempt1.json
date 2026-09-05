@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-05T06:03:31.503438+00:00",
+  "passed": false,
+  "stage": "aggregate receipt assembly; no component test execution",
+  "error": {
+    "type": "TypeError",
+    "message": "string indices must be integers, not 'str'",
+    "location": "inline assembler line16: iterating checks as a list"
+  },
+  "gate_written": false,
+  "reason": "One component exposes checks as a name-to-boolean mapping rather than a list of check records. Component results were not changed."
+}

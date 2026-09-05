@@ -1,0 +1,996 @@
+{
+  "schema": 1,
+  "frozen_utc": "2026-09-05T06:05:02.869629+00:00",
+  "run_dir": "runs/20260905T060501089987Z-inhibitory-recurrent-panel",
+  "environment": {
+    "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "executable": "/Users/bernardo/Documents/Code/fruit-fly/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "numba": "0.67.0"
+  },
+  "sources": {
+    "scripts/experiment_inhibitory_recurrent_panel.py": {
+      "path": "scripts/experiment_inhibitory_recurrent_panel.py",
+      "bytes": 40524,
+      "sha256": "597eef47d93f3b57896fa7c38864ea8003153f8e54d1de720f2efc23f2bf2512"
+    },
+    "scripts/inhibitory_recurrent_panel_kernel.py": {
+      "path": "scripts/inhibitory_recurrent_panel_kernel.py",
+      "bytes": 29863,
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff"
+    },
+    "scripts/inhibitory_recurrent_panel_archive.py": {
+      "path": "scripts/inhibitory_recurrent_panel_archive.py",
+      "bytes": 17406,
+      "sha256": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+    },
+    "scripts/inhibitory_recurrent_panel_metrics.py": {
+      "path": "scripts/inhibitory_recurrent_panel_metrics.py",
+      "bytes": 24793,
+      "sha256": "d4cec767d98b7996522a288cf5d78f9180a09227e8a46fe2fb55b454186f9b26"
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "path": "scripts/inhibitory_factorial_solver.py",
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    },
+    "validation/inhibitory-recurrent-panel-kernel-checks.json": {
+      "path": "validation/inhibitory-recurrent-panel-kernel-checks.json",
+      "bytes": 12924,
+      "sha256": "6cd10b15b36fa867a8f5212a760c6e3ad15f488ff5b8572b4d62719e1be659c6"
+    },
+    "validation/inhibitory-recurrent-panel-archive-checks.json": {
+      "path": "validation/inhibitory-recurrent-panel-archive-checks.json",
+      "bytes": 15150,
+      "sha256": "0557d6e3880997a33be446c5bc6119c9a10bf8f51b0915d93e7d86c4e017f7ed"
+    },
+    "validation/inhibitory-recurrent-panel-metrics-checks.json": {
+      "path": "validation/inhibitory-recurrent-panel-metrics-checks.json",
+      "bytes": 3252,
+      "sha256": "bb81bf2cfc9a5bf31696bea76a280362014f7b74f16b87981a713e86e56247dc"
+    },
+    "validation/inhibitory-recurrent-panel-preflight-review.json": {
+      "path": "validation/inhibitory-recurrent-panel-preflight-review.json",
+      "bytes": 5694,
+      "sha256": "206403f73f4d964a47b4750b85f91ac438aeec8064fd48c5d720d45ad02cc071"
+    },
+    "validation/inhibitory-recurrent-parallel-performance/results.json": {
+      "path": "validation/inhibitory-recurrent-parallel-performance/results.json",
+      "bytes": 132442,
+      "sha256": "0bc69e23b06a1f0265f9609c31f4cc3c5aa98080d3cff95b8d21f33f2c8340f9"
+    },
+    "validation/inhibitory-recurrent-parallel-performance-independent-review.json": {
+      "path": "validation/inhibitory-recurrent-parallel-performance-independent-review.json",
+      "bytes": 223283,
+      "sha256": "fe75746428b343542759e1d10a3b1faa340209a3ea1db9303ed591a74d4719f2"
+    },
+    "validation/inhibitory-recurrent-input-audit.json": {
+      "path": "validation/inhibitory-recurrent-input-audit.json",
+      "bytes": 88861,
+      "sha256": "17270ce9ba3a3eb1fa39e32d601835528cdc2c6f0729ba071cfd49a7f8852b5d"
+    },
+    "validation/or42a-summary-plan.json": {
+      "path": "validation/or42a-summary-plan.json",
+      "bytes": 10824,
+      "sha256": "32a0f8f33d61b532c871a025b975945c7d79530d123b4ee5f7753ea54a0dd41e"
+    },
+    "validation/or42a-summary-experiment.json": {
+      "path": "validation/or42a-summary-experiment.json",
+      "bytes": 93796,
+      "sha256": "09f8a0135d80b8ecffbc3ffe733fbcb8becba28617d7d2c1b784d073c156dada"
+    },
+    "fruitfly/neural.py": {
+      "path": "fruitfly/neural.py",
+      "bytes": 21091,
+      "sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "path": "data/processed/malecns_v1/neuron_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "path": "data/processed/malecns_v1/indptr.npy",
+      "bytes": 1333736,
+      "sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "path": "data/processed/malecns_v1/targets.npy",
+      "bytes": 102331880,
+      "sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "path": "data/processed/malecns_v1/weights.npy",
+      "bytes": 102331880,
+      "sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/trace.npz",
+      "bytes": 11008,
+      "sha256": "bf92ff63786b99fee1efa36af89e72ecd80ba7cf726e9fa842f959eb6e42ece5"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/samples.jsonl",
+      "bytes": 203423,
+      "sha256": "5dbb628eff97141e373436240263b351877a929bd5c01e6bd9354864df8f5d9c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz",
+      "bytes": 4595398,
+      "sha256": "f1f9042bdf1c3e0cb2e4d987b72c41375b62fe298dad29c7ffbc9cb3ab30fd0b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl",
+      "bytes": 229364,
+      "sha256": "1295ca2dbcce62e3c6f7ca20428b58ec96bed80c86d94af586bd21b3344aece2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/trace.npz",
+      "bytes": 4581880,
+      "sha256": "8dd1cea1aadf8dfb2d7658ddff10c99c70a80f6df25f2a732f9e1b5cba6738a8"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/samples.jsonl",
+      "bytes": 229831,
+      "sha256": "23857d445e6aaeb304550b4d4d42fe88cb7ddeea8cccb7af9d32da3f8a8481c3"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/trace.npz",
+      "bytes": 4615262,
+      "sha256": "16dcb8c7428159538587e18508d66a201a9430afdcc3f78da5b80a4cca0b017c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/samples.jsonl",
+      "bytes": 230866,
+      "sha256": "14a37979feb397e828d2a7493c7d51ebfe5b12a49a312944168b36fc347403a1"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "bytes": 35527,
+      "sha256": "6d85d732ff75b7a0ae6bdbd4a1e4bdd73f223f498e059157945fd2b4b95f72a2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "bytes": 204223,
+      "sha256": "b0410d23f7527cf5fdd98353a68bee997f21a834b03fe4b3508b6211ff6263ac"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/trace.npz",
+      "bytes": 11008,
+      "sha256": "fc44d2554ec350e24dd9e8384f508decf189be00b7604f9da758f520e3e10acf"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/samples.jsonl",
+      "bytes": 203388,
+      "sha256": "67d2f79474b2d4658440b3d54ed9499f2aa492b5b689df03da3841fda29c58b7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/trace.npz",
+      "bytes": 4732507,
+      "sha256": "07617c61bd263bcecc7702667efff293f16fadc792fb6e4c186b48195be83325"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/samples.jsonl",
+      "bytes": 229742,
+      "sha256": "de3c4a851ab49c3a48abd5b143ec976938a265b3849d101399c9f389e28f9943"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/trace.npz",
+      "bytes": 4791832,
+      "sha256": "bad74967cb3ff5300f731f0f86a7f9000717ca5a790e6f22aee88769aa97140d"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/samples.jsonl",
+      "bytes": 230306,
+      "sha256": "f1d64a7c962fe48180d7b87e73015f9c6759c9cdcb0b08bb374e28f0cb5c2db7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/trace.npz",
+      "bytes": 4747355,
+      "sha256": "e27c8358ef7411ed1b3e3b2803ba0035b4d4e556cf4f05fee06431c78e6e4811"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/samples.jsonl",
+      "bytes": 231377,
+      "sha256": "c360db127658bd8cff008838613878b26ef68f29f8fc8b6e326a7649cc3e7370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "bytes": 34980,
+      "sha256": "2c46eb6a3a9b7550e1023deeb18a14fd98fb468b8d37ec286f13647ca6fb0bc9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "bytes": 204188,
+      "sha256": "bd97333c913558961afeb25cac0bced0dab679166891e0abae096e8287cb3991"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/trace.npz",
+      "bytes": 11007,
+      "sha256": "e51aa493cf3d81744ce09c8f57630eac356ceaa1658b89e0772af4f438b50946"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/samples.jsonl",
+      "bytes": 203406,
+      "sha256": "88ee9b3e690fa917daf13763d4b3f27beed401ba8701c3dde080390abc87e7ca"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/trace.npz",
+      "bytes": 4888866,
+      "sha256": "73816d2b5a295c43ff3320b89dd260d0e4b901a6ed056398415da282ace4f86e"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/samples.jsonl",
+      "bytes": 230377,
+      "sha256": "1dd51b26ab199c495f6e5b133b40498039486ec0634623786a157bd3d8c8d95b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/trace.npz",
+      "bytes": 4915776,
+      "sha256": "2deae03a58f4984990126caf338df440a7de70012dfc19bdef88fd31a2909370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/samples.jsonl",
+      "bytes": 230856,
+      "sha256": "57cfdb55d371a067ae364cee37576a623fa447d5a4ffa870a608e768ede68626"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/trace.npz",
+      "bytes": 4898720,
+      "sha256": "5ba8e2ee34fe848ecaff8d674df603762ee93834b991f2a03bfdf004126bc3ec"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/samples.jsonl",
+      "bytes": 231936,
+      "sha256": "e1ad6fad0e5804654f6197b267bdf43f7d4681a59405a56119d9305e007c31c9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "bytes": 35470,
+      "sha256": "ae22b2da244e4b8fcf4935f866852e162a45e26350c9347373567fa8df21787a"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "path": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "bytes": 204206,
+      "sha256": "917a8044e390e87106c9d640d639c7ea387d24ca411df336d8bd7f56edee0853"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.npz": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.npz",
+      "bytes": 8388039,
+      "sha256": "7a888d1b264c2d97d29e5b8657f90f7f6de0cdf93bd049e16e3c9e07f774bdc4"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.json",
+      "bytes": 1121,
+      "sha256": "ddcc3b53d2598ac5a79dd2b848d1bb91d970574c34a9632d037816f02e0a00fd"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.complete.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed11.complete.json",
+      "bytes": 582,
+      "sha256": "11683fa0ba11b86114875a63546acdccbfffafe47ff6181e50a726f12fdeeef4"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.npz": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.npz",
+      "bytes": 8388150,
+      "sha256": "76fb68b96ef0f0cb6e1cf3b0584b5e77b46166ad300cc549419326d353219124"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.json",
+      "bytes": 1121,
+      "sha256": "4f04b4d262b1b8b6c59dc93d2332679c76c7b4073e7034d50bbb6145b0bf6dfe"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.complete.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed12.complete.json",
+      "bytes": 582,
+      "sha256": "46b441c83bb448e5feaec6af5cc138021b60565ea91b0758a2dc9c015934624d"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.npz": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.npz",
+      "bytes": 8388243,
+      "sha256": "b6cc12da5e20f3bfdfcad63aeed0c7246331627fce99df4c1ba6565e6b61d795"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.json",
+      "bytes": 1121,
+      "sha256": "d3945ae1a902315a3f32f446fc66c3c8734acf663a2c483d4ed689d79002f480"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.complete.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/input-seed13.complete.json",
+      "bytes": 582,
+      "sha256": "34bb77b903f058ae9ba56d1ce10adf0e0a51acde89a11f3c3f2eda1727484ee7"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.npz": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.npz",
+      "bytes": 988546,
+      "sha256": "f659af08045d06ac27784e767f409cccca0fb0e1e28567c0c33bae4385477086"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.json",
+      "bytes": 14071,
+      "sha256": "8e5eebcb1c904a663ea25eb8abdb721945d37dbba55602351d8be0173c75f641"
+    },
+    "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.complete.json": {
+      "path": "runs/20260905T060501089987Z-inhibitory-recurrent-panel/selection.complete.json",
+      "bytes": 576,
+      "sha256": "4d4eb02e6a25524aa760f936bf667b12fde5b5c6a0fa74c5eafbf47335704018"
+    }
+  },
+  "order": [
+    {
+      "arm": "C0",
+      "seed": 11,
+      "condition": "no_input",
+      "ordinal": 0,
+      "name": "00-C0-seed11-no_input"
+    },
+    {
+      "arm": "C0",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 1,
+      "name": "01-C0-seed11-constant_baseline"
+    },
+    {
+      "arm": "C0",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 2,
+      "name": "02-C0-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "ordinal": 3,
+      "name": "03-C0-seed11-isoamyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 4,
+      "name": "04-C0-seed11-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "C0",
+      "seed": 12,
+      "condition": "no_input",
+      "ordinal": 5,
+      "name": "05-C0-seed12-no_input"
+    },
+    {
+      "arm": "C0",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 6,
+      "name": "06-C0-seed12-constant_baseline"
+    },
+    {
+      "arm": "C0",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 7,
+      "name": "07-C0-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "ordinal": 8,
+      "name": "08-C0-seed12-isoamyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 9,
+      "name": "09-C0-seed12-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "C0",
+      "seed": 13,
+      "condition": "no_input",
+      "ordinal": 10,
+      "name": "10-C0-seed13-no_input"
+    },
+    {
+      "arm": "C0",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 11,
+      "name": "11-C0-seed13-constant_baseline"
+    },
+    {
+      "arm": "C0",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 12,
+      "name": "12-C0-seed13-ethyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "ordinal": 13,
+      "name": "13-C0-seed13-isoamyl_acetate"
+    },
+    {
+      "arm": "C0",
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 14,
+      "name": "14-C0-seed13-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "C1",
+      "seed": 11,
+      "condition": "no_input",
+      "ordinal": 15,
+      "name": "15-C1-seed11-no_input"
+    },
+    {
+      "arm": "H0",
+      "seed": 11,
+      "condition": "no_input",
+      "ordinal": 16,
+      "name": "16-H0-seed11-no_input"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "no_input",
+      "ordinal": 17,
+      "name": "17-H1-seed11-no_input"
+    },
+    {
+      "arm": "C1",
+      "seed": 12,
+      "condition": "no_input",
+      "ordinal": 18,
+      "name": "18-C1-seed12-no_input"
+    },
+    {
+      "arm": "H0",
+      "seed": 12,
+      "condition": "no_input",
+      "ordinal": 19,
+      "name": "19-H0-seed12-no_input"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "no_input",
+      "ordinal": 20,
+      "name": "20-H1-seed12-no_input"
+    },
+    {
+      "arm": "C1",
+      "seed": 13,
+      "condition": "no_input",
+      "ordinal": 21,
+      "name": "21-C1-seed13-no_input"
+    },
+    {
+      "arm": "H0",
+      "seed": 13,
+      "condition": "no_input",
+      "ordinal": 22,
+      "name": "22-H0-seed13-no_input"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "no_input",
+      "ordinal": 23,
+      "name": "23-H1-seed13-no_input"
+    },
+    {
+      "arm": "C1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 24,
+      "name": "24-C1-seed11-constant_baseline"
+    },
+    {
+      "arm": "H0",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 25,
+      "name": "25-H0-seed11-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "constant_baseline",
+      "ordinal": 26,
+      "name": "26-H1-seed11-constant_baseline"
+    },
+    {
+      "arm": "C1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 27,
+      "name": "27-C1-seed12-constant_baseline"
+    },
+    {
+      "arm": "H0",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 28,
+      "name": "28-H0-seed12-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "constant_baseline",
+      "ordinal": 29,
+      "name": "29-H1-seed12-constant_baseline"
+    },
+    {
+      "arm": "C1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 30,
+      "name": "30-C1-seed13-constant_baseline"
+    },
+    {
+      "arm": "H0",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 31,
+      "name": "31-H0-seed13-constant_baseline"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "constant_baseline",
+      "ordinal": 32,
+      "name": "32-H1-seed13-constant_baseline"
+    },
+    {
+      "arm": "C1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 33,
+      "name": "33-C1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 34,
+      "name": "34-H0-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "ordinal": 35,
+      "name": "35-H1-seed11-ethyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 36,
+      "name": "36-C1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 37,
+      "name": "37-H0-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "ordinal": 38,
+      "name": "38-H1-seed12-ethyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 39,
+      "name": "39-C1-seed13-ethyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 40,
+      "name": "40-H0-seed13-ethyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "ordinal": 41,
+      "name": "41-H1-seed13-ethyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "ordinal": 42,
+      "name": "42-C1-seed11-isoamyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "ordinal": 43,
+      "name": "43-H0-seed11-isoamyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "ordinal": 44,
+      "name": "44-H1-seed11-isoamyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "ordinal": 45,
+      "name": "45-C1-seed12-isoamyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "ordinal": 46,
+      "name": "46-H0-seed12-isoamyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "ordinal": 47,
+      "name": "47-H1-seed12-isoamyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "ordinal": 48,
+      "name": "48-C1-seed13-isoamyl_acetate"
+    },
+    {
+      "arm": "H0",
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "ordinal": 49,
+      "name": "49-H0-seed13-isoamyl_acetate"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "ordinal": 50,
+      "name": "50-H1-seed13-isoamyl_acetate"
+    },
+    {
+      "arm": "C1",
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 51,
+      "name": "51-C1-seed11-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H0",
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 52,
+      "name": "52-H0-seed11-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H1",
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 53,
+      "name": "53-H1-seed11-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "C1",
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 54,
+      "name": "54-C1-seed12-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H0",
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 55,
+      "name": "55-H0-seed12-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H1",
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 56,
+      "name": "56-H1-seed12-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "C1",
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 57,
+      "name": "57-C1-seed13-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H0",
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 58,
+      "name": "58-H0-seed13-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "arm": "H1",
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "ordinal": 59,
+      "name": "59-H1-seed13-ethyl_acetate_source_outputs_blocked"
+    }
+  ],
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "condition_order": [
+    "no_input",
+    "constant_baseline",
+    "ethyl_acetate",
+    "isoamyl_acetate",
+    "ethyl_acetate_source_outputs_blocked"
+  ],
+  "condition_rates_hz": {
+    "no_input": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "constant_baseline": [
+      11.0,
+      11.0,
+      11.0,
+      0.0
+    ],
+    "ethyl_acetate": [
+      11.0,
+      149.0,
+      11.0,
+      0.0
+    ],
+    "isoamyl_acetate": [
+      11.0,
+      57.67908699377742,
+      11.0,
+      0.0
+    ],
+    "ethyl_acetate_source_outputs_blocked": [
+      11.0,
+      149.0,
+      11.0,
+      0.0
+    ]
+  },
+  "schedule_boundaries_ticks": [
+    0,
+    5000,
+    10000,
+    15000,
+    30000
+  ],
+  "window_edges_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "checkpoint_ticks": [
+    0,
+    500,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "audit_ranges_ticks": [
+    [
+      0,
+      500
+    ],
+    [
+      5000,
+      5500
+    ],
+    [
+      15000,
+      15500
+    ],
+    [
+      29500,
+      30000
+    ]
+  ],
+  "threads": 4,
+  "dt_ms": 0.1,
+  "chunk_ticks": 50,
+  "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
+  "neurons": 166700,
+  "edges": 25582938,
+  "old_trials": [
+    {
+      "seed": 11,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-no_input"
+    },
+    {
+      "seed": 11,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline"
+    },
+    {
+      "seed": 11,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate"
+    },
+    {
+      "seed": 11,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate"
+    },
+    {
+      "seed": 11,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "seed": 12,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-no_input"
+    },
+    {
+      "seed": 12,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline"
+    },
+    {
+      "seed": 12,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate"
+    },
+    {
+      "seed": 12,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate"
+    },
+    {
+      "seed": 12,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked"
+    },
+    {
+      "seed": 13,
+      "condition": "no_input",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-no_input"
+    },
+    {
+      "seed": 13,
+      "condition": "constant_baseline",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline"
+    },
+    {
+      "seed": 13,
+      "condition": "ethyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate"
+    },
+    {
+      "seed": 13,
+      "condition": "isoamyl_acetate",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate"
+    },
+    {
+      "seed": 13,
+      "condition": "ethyl_acetate_source_outputs_blocked",
+      "run_dir": "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked"
+    }
+  ],
+  "input_semantics": "All36sources always listed with refractory0, no direct current, direct68.75mV voltage events afterthreshold; same-tickspike rejects directevent inallarms; source-output block is delivery mask only.",
+  "c0_gate": "EveryC0first1500ms mustmatch originalspikes,candidates/applied,RNG,3windowcounts,fullendpointv/s. All15durableprefixgates beforealteredarms. No intermediatefulloldcheckpoint claim.",
+  "tolerances_mv": {
+    "hybrid_lower_bound": 1e-10,
+    "production_vs_quad": 1e-08,
+    "order32_vs64": 1e-08,
+    "ode_vs_quad": 2e-08,
+    "quad_error_estimate": 1e-09
+  },
+  "reference_selection": "Bothtargets firstavailabletick within eachchunk plus maxh/stiffness,minthresholdmargin,maxlog(p/h) overavailableintervals perchunk. Preserveexactownprecedingstates anddeduplicateby(tick,index). Allfailuresretained.",
+  "reference_methods": "Frozen scalar adaptiveattenuationquad,independentDOP853/RadauODE,and64-pointsame-equation quadrature; evaluateonlysavedselectedintervals, nomodelrerun orfit.",
+  "budgets": {
+    "trial_wall_seconds": 3600,
+    "trial_output_bytes": 4294967296,
+    "worker_peak_rss_bytes": 8589934592,
+    "global_wall_seconds": 86400,
+    "global_output_bytes": 68719476736,
+    "failure_reserve_bytes": 536870912,
+    "min_free_bytes": 10737418240
+  },
+  "enforcement": "Onefreshworkeratatime; checksaroundeach5mschunk/checkpoint and terminalbudgetreceipts afterresults/logclose. Oneoperationcanovershoot; terminalreceiptitself/lastloglinearethefinalunmeasuredoperation. Globaltimerstartsatruninvocation(includingpreflight); priorprepare/reviewexcluded. Pertrialfromworkerfunctionentrythroughfinalartifacts; processimportstartupisin globaltime. Filesystemusageincludeslogs/temps. Closedtrialdirectorybytesarecachedperworker underexclusivewritercontract; currentdirectory/rootfilesrescanperchunk, parentfullrescanperdispatch/finalization. Reserveis additionalfailureoutputonly. No biologicalspikeceiling.",
+  "dispatch": "All15C0 first(seed-majorconditionorder), thencondition-majorseed-majorC1/H0/H1. Resource-limitedtrialcanbefollowedbyfreshnexttrialifglobalresourcespass; correctness/interruption/retentionfailurehalts. Neverresumeorreplaceatrial.",
+  "retention": "Bulkdurablearchivesinignoredrunsdirectory; Gittracksfrozenplan,code,reviews,compactfinalmanifestandsummaries. Typed12bytespikes; all48selectedtraces; targeteventsalltime,otherselectedeventsonlyfixedauditranges; allglobalphase/work/edgecounts; completeboundarycheckpoints.",
+  "voltage_histogram_edges": [
+    -1000,
+    -500,
+    -250,
+    -150,
+    -100,
+    -90,
+    -80,
+    -75,
+    -70,
+    -65,
+    -60,
+    -55,
+    -52,
+    -50,
+    -45,
+    -40,
+    0,
+    20,
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "synaptic_histogram_edges": [
+    -1000000.0,
+    -10000.0,
+    -1000,
+    -100,
+    -10,
+    -1,
+    0,
+    1,
+    10,
+    100,
+    1000,
+    10000.0,
+    1000000.0
+  ],
+  "h_histogram_edges": [
+    0,
+    0.1,
+    1,
+    3,
+    10,
+    30,
+    100,
+    300,
+    1000,
+    10000.0,
+    1000000.0
+  ],
+  "histogram_overflow_bins": true,
+  "claim_limits": [
+    "Three numerical seeds are not biological replicates.",
+    "A finite3s test cannot establishlong-term stability.",
+    "Thispaneldoesnotcalibratephysiologicalamplitude/timingorpromoteH1."
+  ]
+}

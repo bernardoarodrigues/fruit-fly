@@ -1,0 +1,799 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T06:01:39.407748+00:00",
+  "checks": [
+    {
+      "name": "literal_conditions_seeds_windows",
+      "passed": true
+    },
+    {
+      "name": "checkpoint_and_audit_boundaries",
+      "passed": true
+    },
+    {
+      "name": "source_order_fragment_shape",
+      "passed": true
+    },
+    {
+      "name": "exact_60_job_order",
+      "passed": true
+    },
+    {
+      "name": "all_15_C0_jobs_precede_altered",
+      "passed": true
+    },
+    {
+      "name": "actual_cohorts_pinned_ID_join",
+      "passed": true
+    },
+    {
+      "name": "exact_15_original_trial_keys",
+      "passed": true
+    },
+    {
+      "name": "unchanged_condition_values_and_off_tail",
+      "passed": true
+    },
+    {
+      "name": "all_600_schedule_chunks:no_input",
+      "passed": true,
+      "detail": {
+        "chunks": 600,
+        "ticks": 30000,
+        "columns": 36
+      }
+    },
+    {
+      "name": "all_600_schedule_chunks:constant_baseline",
+      "passed": true,
+      "detail": {
+        "chunks": 600,
+        "ticks": 30000,
+        "columns": 36
+      }
+    },
+    {
+      "name": "all_600_schedule_chunks:ethyl_acetate",
+      "passed": true,
+      "detail": {
+        "chunks": 600,
+        "ticks": 30000,
+        "columns": 36
+      }
+    },
+    {
+      "name": "all_600_schedule_chunks:isoamyl_acetate",
+      "passed": true,
+      "detail": {
+        "chunks": 600,
+        "ticks": 30000,
+        "columns": 36
+      }
+    },
+    {
+      "name": "all_600_schedule_chunks:ethyl_acetate_source_outputs_blocked",
+      "passed": true,
+      "detail": {
+        "chunks": 600,
+        "ticks": 30000,
+        "columns": 36
+      }
+    },
+    {
+      "name": "no_schedule_transition_inside_chunk",
+      "passed": true
+    },
+    {
+      "name": "all_independent_xorshift_draws_and_boundaries:seed11",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:11:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:11:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:11:no_input",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:11:no_input",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:11:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:11:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:11:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:11:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:11:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:11:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:11:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:11:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:11:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:11:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:11:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:11:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:11:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:11:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:11:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:11:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:11:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:11:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:11:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:11:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:11:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "all_independent_xorshift_draws_and_boundaries:seed12",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:12:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:12:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:12:no_input",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:12:no_input",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:12:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:12:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:12:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:12:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:12:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:12:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:12:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:12:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:12:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:12:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:12:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:12:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:12:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:12:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:12:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:12:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:12:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:12:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:12:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:12:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:12:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "all_independent_xorshift_draws_and_boundaries:seed13",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:13:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:13:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:13:no_input",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:13:no_input",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:13:no_input",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:13:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:13:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:13:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:13:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:13:constant_baseline",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:13:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:13:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:13:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:13:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:13:ethyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:13:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:13:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:13:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:13:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:13:isoamyl_acetate",
+      "passed": true
+    },
+    {
+      "name": "old_candidates:13:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_source_order:13:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "old_rng_endpoints:13:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "all_old_5ms_rng_and_rates:13:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "off_probability_zero_draws_retained:13:ethyl_acetate_source_outputs_blocked",
+      "passed": true
+    },
+    {
+      "name": "actual_C0_source_matching_block_all_300_chunks",
+      "passed": true
+    },
+    {
+      "name": "actual_C0_seven_to_three_window_merge",
+      "passed": true
+    },
+    {
+      "name": "C0_merge_detects_wrong_count",
+      "passed": true
+    },
+    {
+      "name": "partial_first_off_window_is_not_complete",
+      "passed": true
+    },
+    {
+      "name": "missing_altered_trials_and_partial_off_are_null",
+      "passed": true
+    },
+    {
+      "name": "actual_parent_empty_analysis_is_explicitly_unavailable",
+      "passed": true
+    },
+    {
+      "name": "actual_parent_excludes_clock_complete_failed_trial",
+      "passed": true
+    },
+    {
+      "name": "actual_parent_preserves_resource_complete_prefix",
+      "passed": true
+    },
+    {
+      "name": "actual_parent_resource_partial_off_is_unavailable",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/experiment_inhibitory_recurrent_panel.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/review_inhibitory_recurrent_panel_inputs.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/inhibitory_recurrent_panel_metrics.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/inhibitory-recurrent-panel-metrics-checks.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/or42a-summary-plan.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:validation/or42a-summary-experiment.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged:data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-no_input/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-no_input/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-no_input/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-no_input/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-no_input/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-no_input/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/samples.jsonl",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/trace.npz",
+      "passed": true
+    },
+    {
+      "name": "unchanged:runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/samples.jsonl",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "scripts/experiment_inhibitory_recurrent_panel.py": {
+      "bytes": 40524,
+      "sha256": "597eef47d93f3b57896fa7c38864ea8003153f8e54d1de720f2efc23f2bf2512"
+    },
+    "scripts/review_inhibitory_recurrent_panel_inputs.py": {
+      "bytes": 16746,
+      "sha256": "5afb7ce62e23a2e113795d893919e722f6232411ff28b93734eeb5d92b8d4cde"
+    },
+    "scripts/inhibitory_recurrent_panel_metrics.py": {
+      "bytes": 24793,
+      "sha256": "d4cec767d98b7996522a288cf5d78f9180a09227e8a46fe2fb55b454186f9b26"
+    },
+    "validation/inhibitory-recurrent-panel-metrics-checks.json": {
+      "bytes": 3252,
+      "sha256": "bb81bf2cfc9a5bf31696bea76a280362014f7b74f16b87981a713e86e56247dc"
+    },
+    "validation/or42a-summary-plan.json": {
+      "bytes": 10824,
+      "sha256": "32a0f8f33d61b532c871a025b975945c7d79530d123b4ee5f7753ea54a0dd41e"
+    },
+    "validation/or42a-summary-experiment.json": {
+      "bytes": 93796,
+      "sha256": "09f8a0135d80b8ecffbc3ffe733fbcb8becba28617d7d2c1b784d073c156dada"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/trace.npz": {
+      "bytes": 11008,
+      "sha256": "bf92ff63786b99fee1efa36af89e72ecd80ba7cf726e9fa842f959eb6e42ece5"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-no_input/samples.jsonl": {
+      "bytes": 203423,
+      "sha256": "5dbb628eff97141e373436240263b351877a929bd5c01e6bd9354864df8f5d9c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/trace.npz": {
+      "bytes": 4595398,
+      "sha256": "f1f9042bdf1c3e0cb2e4d987b72c41375b62fe298dad29c7ffbc9cb3ab30fd0b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-constant_baseline/samples.jsonl": {
+      "bytes": 229364,
+      "sha256": "1295ca2dbcce62e3c6f7ca20428b58ec96bed80c86d94af586bd21b3344aece2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/trace.npz": {
+      "bytes": 4581880,
+      "sha256": "8dd1cea1aadf8dfb2d7658ddff10c99c70a80f6df25f2a732f9e1b5cba6738a8"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate/samples.jsonl": {
+      "bytes": 229831,
+      "sha256": "23857d445e6aaeb304550b4d4d42fe88cb7ddeea8cccb7af9d32da3f8a8481c3"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/trace.npz": {
+      "bytes": 4615262,
+      "sha256": "16dcb8c7428159538587e18508d66a201a9430afdcc3f78da5b80a4cca0b017c"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-isoamyl_acetate/samples.jsonl": {
+      "bytes": 230866,
+      "sha256": "14a37979feb397e828d2a7493c7d51ebfe5b12a49a312944168b36fc347403a1"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 35527,
+      "sha256": "6d85d732ff75b7a0ae6bdbd4a1e4bdd73f223f498e059157945fd2b4b95f72a2"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed11-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204223,
+      "sha256": "b0410d23f7527cf5fdd98353a68bee997f21a834b03fe4b3508b6211ff6263ac"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/trace.npz": {
+      "bytes": 11008,
+      "sha256": "fc44d2554ec350e24dd9e8384f508decf189be00b7604f9da758f520e3e10acf"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-no_input/samples.jsonl": {
+      "bytes": 203388,
+      "sha256": "67d2f79474b2d4658440b3d54ed9499f2aa492b5b689df03da3841fda29c58b7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/trace.npz": {
+      "bytes": 4732507,
+      "sha256": "07617c61bd263bcecc7702667efff293f16fadc792fb6e4c186b48195be83325"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-constant_baseline/samples.jsonl": {
+      "bytes": 229742,
+      "sha256": "de3c4a851ab49c3a48abd5b143ec976938a265b3849d101399c9f389e28f9943"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/trace.npz": {
+      "bytes": 4791832,
+      "sha256": "bad74967cb3ff5300f731f0f86a7f9000717ca5a790e6f22aee88769aa97140d"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate/samples.jsonl": {
+      "bytes": 230306,
+      "sha256": "f1d64a7c962fe48180d7b87e73015f9c6759c9cdcb0b08bb374e28f0cb5c2db7"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/trace.npz": {
+      "bytes": 4747355,
+      "sha256": "e27c8358ef7411ed1b3e3b2803ba0035b4d4e556cf4f05fee06431c78e6e4811"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-isoamyl_acetate/samples.jsonl": {
+      "bytes": 231377,
+      "sha256": "c360db127658bd8cff008838613878b26ef68f29f8fc8b6e326a7649cc3e7370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 34980,
+      "sha256": "2c46eb6a3a9b7550e1023deeb18a14fd98fb468b8d37ec286f13647ca6fb0bc9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed12-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204188,
+      "sha256": "bd97333c913558961afeb25cac0bced0dab679166891e0abae096e8287cb3991"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/trace.npz": {
+      "bytes": 11007,
+      "sha256": "e51aa493cf3d81744ce09c8f57630eac356ceaa1658b89e0772af4f438b50946"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-no_input/samples.jsonl": {
+      "bytes": 203406,
+      "sha256": "88ee9b3e690fa917daf13763d4b3f27beed401ba8701c3dde080390abc87e7ca"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/trace.npz": {
+      "bytes": 4888866,
+      "sha256": "73816d2b5a295c43ff3320b89dd260d0e4b901a6ed056398415da282ace4f86e"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-constant_baseline/samples.jsonl": {
+      "bytes": 230377,
+      "sha256": "1dd51b26ab199c495f6e5b133b40498039486ec0634623786a157bd3d8c8d95b"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/trace.npz": {
+      "bytes": 4915776,
+      "sha256": "2deae03a58f4984990126caf338df440a7de70012dfc19bdef88fd31a2909370"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate/samples.jsonl": {
+      "bytes": 230856,
+      "sha256": "57cfdb55d371a067ae364cee37576a623fa447d5a4ffa870a608e768ede68626"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/trace.npz": {
+      "bytes": 4898720,
+      "sha256": "5ba8e2ee34fe848ecaff8d674df603762ee93834b991f2a03bfdf004126bc3ec"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-isoamyl_acetate/samples.jsonl": {
+      "bytes": 231936,
+      "sha256": "e1ad6fad0e5804654f6197b267bdf43f7d4681a59405a56119d9305e007c31c9"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/trace.npz": {
+      "bytes": 35470,
+      "sha256": "ae22b2da244e4b8fcf4935f866852e162a45e26350c9347373567fa8df21787a"
+    },
+    "runs/20260905T030251528053Z-or42a-summary/seed13-ethyl_acetate_source_outputs_blocked/samples.jsonl": {
+      "bytes": 204206,
+      "sha256": "917a8044e390e87106c9d640d639c7ea387d24ca411df336d8bd7f56edee0853"
+    }
+  },
+  "exceptions": [],
+  "method": "Read-only source extraction and saved-input/manufactured-data checks; no producer/model imports or neural run",
+  "cohort_sizes": {
+    "all": 166700,
+    "source": 36,
+    "non_source": 166664,
+    "first_hop_non_source": 365,
+    "targets": 2,
+    "target_67052": 1,
+    "target_13314": 1,
+    "motor:forward": 2,
+    "motor:turn_left": 2,
+    "motor:turn_right": 2,
+    "motor:feeding": 2,
+    "motor:escape": 2
+  },
+  "rng": {
+    "11": {
+      "draws": 1080000,
+      "start": 3926704849073358691,
+      "end": 3154744467699249664,
+      "uniform_sha256": "60e0dea32a71284e6b7eee7ccbda58571dc0a388c8d7f4daa34cf60880702fad",
+      "boundary_sha256": "c17e678082a67c774e6cc9ea864c5fe3e4bd7dfb26b4de1a7fa31ddb550ceb1c"
+    },
+    "12": {
+      "draws": 1080000,
+      "start": 9986919024197907781,
+      "end": 17214549429647782169,
+      "uniform_sha256": "0482325a2e3d3db761d31f71dca64a20038f3d1e3b0f6b307dcc90b349b2bbaf",
+      "boundary_sha256": "6c6a8bbe0356a04fc93b2e372a9ead9ad07e077d8c0487edd9ed68be271a044b"
+    },
+    "13": {
+      "draws": 1080000,
+      "start": 1477825346072093981,
+      "end": 16188161420196381272,
+      "uniform_sha256": "fac0f2843283a939ea1884f44bf2ea06b8e83dd1c49677cd63385bfed8e50e93",
+      "boundary_sha256": "9ee1736a0edbe920d599f797a7c69dee61dbd6d8a2674998542f26026586e5cf"
+    }
+  },
+  "source_lines": {
+    "streams": {
+      "start": 64,
+      "end": 73
+    },
+    "prepare": {
+      "start": 76,
+      "end": 154
+    },
+    "trial": {
+      "start": 240,
+      "end": 435
+    },
+    "run_panel": {
+      "start": 438,
+      "end": 519
+    }
+  },
+  "limits": [
+    "Only explicitly extracted pure statements executed. No runner prepare/run/trial or model constructor called.",
+    "Resource, archive publication, dispatch/failure behavior and numerical references require the separate reviewers.",
+    "Saved original candidate/RNG/source mappings verified without decompressing full original spike streams.",
+    "Passing arithmetic/record checks does not establish biological behavior, physiological calibration or model promotion."
+  ],
+  "check_count": 138,
+  "passed": true,
+  "finished_utc": "2026-09-05T06:01:41.460631+00:00"
+}

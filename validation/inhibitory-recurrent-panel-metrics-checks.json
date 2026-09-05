@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "method": "Manufactured arithmetic, ID-join, streaming and missingness fixtures only; no neural simulation",
+  "source_sha256": "d4cec767d98b7996522a288cf5d78f9180a09227e8a46fe2fb55b454186f9b26",
+  "generated_utc": "2026-09-05T05:47:36.423289+00:00",
+  "numpy": "2.5.2",
+  "checks": [
+    {
+      "name": "all_half_open_window_boundaries",
+      "passed": true
+    },
+    {
+      "name": "streaming_equals_whole",
+      "passed": true
+    },
+    {
+      "name": "empty_terminal_chunk_no_change",
+      "passed": true
+    },
+    {
+      "name": "complete_windows_counts_and_rates",
+      "passed": true
+    },
+    {
+      "name": "empty_cohort_no_division_or_nan",
+      "passed": true
+    },
+    {
+      "name": "partial_count_preserved_rate_unavailable",
+      "passed": true
+    },
+    {
+      "name": "unobserved_is_not_zero_response",
+      "passed": true
+    },
+    {
+      "name": "complete_zero_is_observed_zero",
+      "passed": true
+    },
+    {
+      "name": "no_input_fixture_has_no_invented_growth",
+      "passed": true
+    },
+    {
+      "name": "reject_outside_panel_tick",
+      "passed": true
+    },
+    {
+      "name": "reject_negative_graph_index",
+      "passed": true
+    },
+    {
+      "name": "reject_duplicate_spike",
+      "passed": true
+    },
+    {
+      "name": "reject_unsorted_spike",
+      "passed": true
+    },
+    {
+      "name": "reject_outside_chunk_tick",
+      "passed": true
+    },
+    {
+      "name": "reject_future_window_counts",
+      "passed": true
+    },
+    {
+      "name": "reject_bad_count_dtype",
+      "passed": true
+    },
+    {
+      "name": "reject_duplicate_cohort",
+      "passed": true
+    },
+    {
+      "name": "reject_count_exceeding_tick_coverage",
+      "passed": true
+    },
+    {
+      "name": "reject_empty_trial_map_without_cohort_identity",
+      "passed": true
+    },
+    {
+      "name": "cohort_exact_source_firsthop_target_join",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_source_order",
+      "passed": true
+    },
+    {
+      "name": "baseline_and_pulse_durations_normalized",
+      "passed": true
+    },
+    {
+      "name": "pulse_vs_matched_constant",
+      "passed": true
+    },
+    {
+      "name": "ethyl_vs_isoamyl",
+      "passed": true
+    },
+    {
+      "name": "unblocked_vs_blocked",
+      "passed": true
+    },
+    {
+      "name": "H0_minus_C0",
+      "passed": true
+    },
+    {
+      "name": "H1_minus_C1",
+      "passed": true
+    },
+    {
+      "name": "factorial_interaction",
+      "passed": true
+    },
+    {
+      "name": "three_seeds_retained_separately",
+      "passed": true
+    },
+    {
+      "name": "all_manufactured_complete_contrasts",
+      "passed": true
+    },
+    {
+      "name": "partial_off_cannot_enter_interaction",
+      "passed": true
+    },
+    {
+      "name": "complete_prefix_contrast_survives_partial_tail",
+      "passed": true
+    },
+    {
+      "name": "missing_trial_not_imputed_zero",
+      "passed": true
+    },
+    {
+      "name": "unrelated_pair_remains_complete",
+      "passed": true
+    },
+    {
+      "name": "reject_same_size_different_membership",
+      "passed": true
+    },
+    {
+      "name": "json_has_no_nan",
+      "passed": true
+    }
+  ],
+  "check_count": 36,
+  "passed": true
+}

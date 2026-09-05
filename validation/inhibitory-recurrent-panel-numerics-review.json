@@ -1,0 +1,73 @@
+{
+  "completed_utc": "2026-09-05T05:59:12.598699+00:00",
+  "scope": "Independent worker source review, mock-only reference dispatch and one saved scalar interval reference comparison; no neural network or full graph executed",
+  "inputs": {
+    "scripts/experiment_inhibitory_recurrent_panel.py": {
+      "sha256": "597eef47d93f3b57896fa7c38864ea8003153f8e54d1de720f2efc23f2bf2512",
+      "bytes": 40524
+    },
+    "scripts/inhibitory_recurrent_panel_kernel.py": {
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff",
+      "bytes": 29863
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711",
+      "bytes": 13805
+    },
+    "validation/inhibitory-factorial-solver-results.json": {
+      "sha256": "7f0a65072d1a0cd7121c7405e7671a3c44013a85af951e0d864bb4617c284e38",
+      "bytes": 131009
+    },
+    "scripts/review_inhibitory_recurrent_panel_numerics.py": {
+      "sha256": "d39f430c2bbcc037ebbe41af06e800679c714d927711e2ad329c495b1bc38207",
+      "bytes": 8571
+    }
+  },
+  "reference_function_sha256": "fec6df8a5c12dc6e8a75a0ebfe72f6fadfd321bd9ca4b828f61a618fcd05220b",
+  "passed": true,
+  "check_count": 30,
+  "checks": {
+    "deduplicated_two_records": true,
+    "all_global_and_target_selection_reasons": true,
+    "first_available_target_rows": true,
+    "dedup_once_per_method": true,
+    "mock_success_all_pass": true,
+    "q:prior_result_retained": true,
+    "q:failed_identity_state": true,
+    "q:failed_method_and_error": true,
+    "q:later_unattempted": true,
+    "ode:prior_result_retained": true,
+    "ode:failed_identity_state": true,
+    "ode:failed_method_and_error": true,
+    "ode:later_unattempted": true,
+    "ode:earlier_method_values_retained": true,
+    "high:prior_result_retained": true,
+    "high:failed_identity_state": true,
+    "high:failed_method_and_error": true,
+    "high:later_unattempted": true,
+    "high:earlier_method_values_retained": true,
+    "high:ode_value_retained": true,
+    "interrupt:failed_row_retained": true,
+    "numerical_gate_failure_stops_later_refs": true,
+    "no_available_reference_no_calls": true,
+    "C_arm_no_H_references": true,
+    "real_frozen_scalar_reference_pass": true,
+    "real64_preserves_frozen_result": true,
+    "own_pending_boundary_formula": true,
+    "zero_rate_off_all_conditions": true,
+    "C0_merged_window_edges": true,
+    "event_audit_ranges_chunk_aligned": true
+  },
+  "cases": {
+    "path": "validation/inhibitory-recurrent-panel-numerics-review-cases.json",
+    "bytes": 22001,
+    "sha256": "bea02b52bf6b903b340303538092fbd9fc51385e7cbd193fbfef57aa7e4b7c9e"
+  },
+  "limits": [
+    "Not an executed trial or whole-panel validation.",
+    "Global H numerical references are fixed samples, not a full network reference integration.",
+    "Mock arrays test dispatch and retention, not a physical multi-tick trajectory.",
+    "Raw kernel failure intervals remain raw evidence; reference_checks examines completed-prefix reference samples only.",
+    "Threshold margin within measured reference error is reported unresolved, not promoted as timing robustness."
+  ]
+}

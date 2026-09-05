@@ -1,0 +1,726 @@
+{
+  "dedup_and_later_targets": {
+    "input": {
+      "start_tick": 100,
+      "completed_ticks": 4,
+      "reference_intervals": {
+        "found": {
+          "dtype": "bool",
+          "shape": [
+            3
+          ],
+          "values": [
+            true,
+            true,
+            true
+          ]
+        },
+        "ticks": {
+          "dtype": "int64",
+          "shape": [
+            3
+          ],
+          "values": [
+            102,
+            102,
+            102
+          ]
+        },
+        "graph_indices": {
+          "dtype": "int32",
+          "shape": [
+            3
+          ],
+          "values": [
+            7,
+            7,
+            7
+          ]
+        },
+        "values": {
+          "dtype": "float64",
+          "shape": [
+            3,
+            12
+          ],
+          "values": [
+            [
+              -52.0,
+              0.0,
+              3.0,
+              0.1,
+              -52.33820210886548,
+              7.338202108865481,
+              0.02,
+              0.0,
+              6.09362820619408e-14,
+              3.0,
+              0.019850995019933523,
+              {
+                "nonfinite": "-inf"
+              }
+            ],
+            [
+              -52.0,
+              0.0,
+              3.0,
+              0.1,
+              -52.33820210886548,
+              7.338202108865481,
+              0.02,
+              0.0,
+              6.09362820619408e-14,
+              3.0,
+              0.019850995019933523,
+              {
+                "nonfinite": "-inf"
+              }
+            ],
+            [
+              -52.0,
+              0.0,
+              3.0,
+              0.1,
+              -52.33820210886548,
+              7.338202108865481,
+              0.02,
+              0.0,
+              6.09362820619408e-14,
+              3.0,
+              0.019850995019933523,
+              {
+                "nonfinite": "-inf"
+              }
+            ]
+          ]
+        }
+      },
+      "selected_available": {
+        "dtype": "bool",
+        "shape": [
+          4,
+          2
+        ],
+        "values": [
+          [
+            false,
+            false
+          ],
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            true
+          ]
+        ]
+      },
+      "selected_v": {
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ],
+        "values": [
+          [
+            -52.0,
+            -52.0
+          ],
+          [
+            -52.0,
+            -52.0
+          ],
+          [
+            -52.0,
+            -52.0
+          ],
+          [
+            -52.0,
+            -52.0
+          ],
+          [
+            -52.0,
+            -52.0
+          ]
+        ]
+      },
+      "selected_s": {
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ],
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "selected_h": {
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ],
+        "values": [
+          [
+            3.0,
+            3.0
+          ],
+          [
+            3.0,
+            3.0
+          ],
+          [
+            3.0,
+            3.0
+          ],
+          [
+            3.0,
+            3.0
+          ],
+          [
+            3.0,
+            3.0
+          ]
+        ]
+      },
+      "selected_prethreshold_v": {
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ],
+        "values": [
+          [
+            -52.33820210886548,
+            -52.33820210886548
+          ],
+          [
+            -52.33820210886548,
+            -52.33820210886548
+          ],
+          [
+            -52.33820210886548,
+            -52.33820210886548
+          ],
+          [
+            -52.33820210886548,
+            -52.33820210886548
+          ]
+        ]
+      }
+    },
+    "rows": [
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0",
+          "global:1",
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "target_first_available"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      }
+    ],
+    "calls": {
+      "q": 2,
+      "ode": 2,
+      "high": 2
+    }
+  },
+  "q_failure": {
+    "rows": [
+      {
+        "tick": 101,
+        "index": 55,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:1",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": "adaptive_quadrature",
+        "error": {
+          "type": "ValueError",
+          "message": "deliberate reference failure",
+          "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_inhibitory_recurrent_panel.py\", line 223, in reference_checks\n    q,qe=hybrid_reference(r['v'],r['p'],r['h'],r['dt']);r.update(quad_v=q,quad_error_estimate=qe)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1139, in __call__\n    return self._mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1143, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1204, in _execute_mock_call\n    result = effect(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_numerics.py\", line 45, in f\n    if name==which and call_counts[name]==2:raise error\n                                            ^^^^^^^^^^^\nValueError: deliberate reference failure\n"
+        }
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      }
+    ],
+    "calls": {
+      "q": 2,
+      "ode": 1,
+      "high": 1
+    }
+  },
+  "ode_failure": {
+    "rows": [
+      {
+        "tick": 101,
+        "index": 55,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:1",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": "independent_ode",
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "error": {
+          "type": "ValueError",
+          "message": "deliberate reference failure",
+          "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_inhibitory_recurrent_panel.py\", line 225, in reference_checks\n    ode,method,nfev=ode_reference(r['v'],r['p'],r['h'],r['dt']);r.update(ode_v=ode,ode_method=method,ode_nfev=nfev)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1139, in __call__\n    return self._mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1143, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1204, in _execute_mock_call\n    result = effect(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_numerics.py\", line 45, in f\n    if name==which and call_counts[name]==2:raise error\n                                            ^^^^^^^^^^^\nValueError: deliberate reference failure\n"
+        }
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      }
+    ],
+    "calls": {
+      "q": 2,
+      "ode": 2,
+      "high": 1
+    }
+  },
+  "high_failure": {
+    "rows": [
+      {
+        "tick": 101,
+        "index": 55,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:1",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": "order64",
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "error": {
+          "type": "ValueError",
+          "message": "deliberate reference failure",
+          "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_inhibitory_recurrent_panel.py\", line 228, in reference_checks\n    high=hybrid_step(r['v'],r['p'],r['h'],r['dt'],a,b,c,NODES64,WEIGHTS64);r['order64_v']=high[0]\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1139, in __call__\n    return self._mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1143, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1204, in _execute_mock_call\n    result = effect(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_numerics.py\", line 45, in f\n    if name==which and call_counts[name]==2:raise error\n                                            ^^^^^^^^^^^\nValueError: deliberate reference failure\n"
+        }
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      }
+    ],
+    "calls": {
+      "q": 2,
+      "ode": 2,
+      "high": 2
+    }
+  },
+  "reference_interrupt": {
+    "rows": [
+      {
+        "tick": 101,
+        "index": 55,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 0.0,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:1",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": "independent_ode",
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 0.0,
+        "error": {
+          "type": "KeyboardInterrupt",
+          "message": "deliberate interrupt",
+          "traceback": "Traceback (most recent call last):\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/experiment_inhibitory_recurrent_panel.py\", line 225, in reference_checks\n    ode,method,nfev=ode_reference(r['v'],r['p'],r['h'],r['dt']);r.update(ode_v=ode,ode_method=method,ode_nfev=nfev)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1139, in __call__\n    return self._mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1143, in _mock_call\n    return self._execute_mock_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/unittest/mock.py\", line 1204, in _execute_mock_call\n    result = effect(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/bernardo/Documents/Code/fruit-fly/scripts/review_inhibitory_recurrent_panel_numerics.py\", line 45, in f\n    if name==which and call_counts[name]==2:raise error\n                                            ^^^^^^^^^^^\nKeyboardInterrupt: deliberate interrupt\n"
+        }
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      }
+    ],
+    "calls": {
+      "q": 2,
+      "ode": 2,
+      "high": 1
+    }
+  },
+  "accuracy_gate_failure": {
+    "rows": [
+      {
+        "tick": 101,
+        "index": 55,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820110886548,
+        "quad_error_estimate": 0.0,
+        "ode_v": -52.33820210886548,
+        "ode_method": "MOCK",
+        "ode_nfev": 0,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 9.999999974752427e-07,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 9.999999974752427e-07,
+        "threshold_margin_mv": 7.338202108865481
+      },
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:1",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      },
+      {
+        "tick": 103,
+        "index": 19,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:2",
+          "target_first_available"
+        ],
+        "passed": false,
+        "margin_within_observed_reference_error": false,
+        "not_attempted_after_failure": true
+      }
+    ],
+    "calls": {
+      "q": 1,
+      "ode": 1,
+      "high": 1
+    }
+  },
+  "one_saved_scalar_input": {
+    "frozen_case": {
+      "case": {
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "p_over_h": 0.0
+      },
+      "production": [
+        -52.33820210886548,
+        0.0,
+        2.9405960199202656,
+        0.0,
+        6.09362820619408e-14,
+        3,
+        0.019850995019933523
+      ],
+      "order64_mv": -52.33820210886548,
+      "quad_mv": -52.33820210886548,
+      "quad_error_bound_estimate_mv": 1.264198764196134e-15,
+      "ode_mv": -52.338202108865474,
+      "ode_method": "DOP853",
+      "ode_nfev": 26,
+      "errors_mv": {
+        "production_quad": 0.0,
+        "production64": 0.0,
+        "ode_quad": 7.105427357601002e-15
+      },
+      "checks": {
+        "finite": true,
+        "32_vs_64": true,
+        "production_vs_quad": true,
+        "ode_vs_quad": true,
+        "quad_error_estimate": true,
+        "lower_bound": true,
+        "upper_bound": true,
+        "exact_synaptic_decay": true,
+        "tail_bound": true,
+        "inversion_iterations": true
+      }
+    },
+    "row": [
+      {
+        "tick": 102,
+        "index": 7,
+        "v": -52.0,
+        "p": 0.0,
+        "h": 3.0,
+        "dt": 0.1,
+        "production_v": -52.33820210886548,
+        "selection": [
+          "global:0"
+        ],
+        "passed": true,
+        "margin_within_observed_reference_error": false,
+        "method_in_progress": null,
+        "quad_v": -52.33820210886548,
+        "quad_error_estimate": 1.264198764196134e-15,
+        "ode_v": -52.338202108865474,
+        "ode_method": "DOP853",
+        "ode_nfev": 26,
+        "order64_v": -52.33820210886548,
+        "production_quad_error": 0.0,
+        "production_order64_error": 0.0,
+        "ode_quad_error": 7.105427357601002e-15,
+        "threshold_margin_mv": 7.338202108865481
+      }
+    ]
+  }
+}

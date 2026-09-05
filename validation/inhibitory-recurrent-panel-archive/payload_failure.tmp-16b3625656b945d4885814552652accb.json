@@ -1,0 +1,300 @@
+{
+  "format": "inhibitory-recurrent-panel",
+  "version": 1,
+  "transaction": "16b3625656b945d4885814552652accb",
+  "tree": {
+    "kind": "dict",
+    "items": [
+      [
+        "spike_indices",
+        {
+          "kind": "spike_component",
+          "component": "index"
+        }
+      ],
+      [
+        "spike_ticks",
+        {
+          "kind": "spike_component",
+          "component": "tick"
+        }
+      ],
+      [
+        "partial",
+        {
+          "kind": "dict",
+          "items": [
+            [
+              "spike_indices",
+              {
+                "kind": "spike_component",
+                "component": "index"
+              }
+            ],
+            [
+              "spike_ticks",
+              {
+                "kind": "spike_component",
+                "component": "tick"
+              }
+            ],
+            [
+              "failed",
+              {
+                "kind": "scalar",
+                "value": true
+              }
+            ],
+            [
+              "voltage",
+              {
+                "kind": "array",
+                "array": {
+                  "key": "array_2",
+                  "shape": [
+                    4
+                  ],
+                  "dtype": ">f8",
+                  "itemsize": 8,
+                  "count": 4,
+                  "bytes": 32,
+                  "sha256": "8a26a5cb2a75c3966852905158c553011a007ae694cd47b5e686a093f6780d04"
+                }
+              }
+            ]
+          ],
+          "spikes": {
+            "array": {
+              "key": "array_1",
+              "shape": [
+                2
+              ],
+              "dtype": [
+                [
+                  "tick",
+                  "<i8"
+                ],
+                [
+                  "index",
+                  "<i4"
+                ]
+              ],
+              "itemsize": 12,
+              "count": 2,
+              "bytes": 24,
+              "sha256": "16f1909cc832952c92d98c2c7570c521a02050ba7dd9704aa0d4507737844cd1"
+            },
+            "header": {
+              "version": 1,
+              "count": 2,
+              "shape": [
+                2
+              ],
+              "dtype": [
+                [
+                  "tick",
+                  "<i8"
+                ],
+                [
+                  "index",
+                  "<i4"
+                ]
+              ],
+              "itemsize": 12,
+              "sha256": "16f1909cc832952c92d98c2c7570c521a02050ba7dd9704aa0d4507737844cd1",
+              "original_index_dtype": "<u4",
+              "original_tick_dtype": "<i4",
+              "original_index_sha256": "a68772f92f49c77f125f035a7984b54950e202d414b05068930d0d6d37c5112a",
+              "original_tick_sha256": "1f6f4b0d2ba528a06eb08eeb78503461eb4ac68a19abec2e33cd5bea1255f040"
+            }
+          }
+        }
+      ],
+      [
+        "finite",
+        {
+          "kind": "array",
+          "array": {
+            "key": "array_3",
+            "shape": [
+              4,
+              3
+            ],
+            "dtype": "<i2",
+            "itemsize": 2,
+            "count": 12,
+            "bytes": 24,
+            "sha256": "547fb0ef396e4ca6ddef39d710f052e8961f871e69319d06a667709a68548eac"
+          }
+        }
+      ],
+      [
+        "structured",
+        {
+          "kind": "array",
+          "array": {
+            "key": "array_4",
+            "shape": [
+              1
+            ],
+            "dtype": [
+              [
+                "id",
+                ">i4"
+              ],
+              [
+                "value",
+                "<f8"
+              ]
+            ],
+            "itemsize": 12,
+            "count": 1,
+            "bytes": 12,
+            "sha256": "86de97ca1d89a45c78252bd328f2837f91c5861fb8a4468eca6e435fa4688f07"
+          }
+        }
+      ],
+      [
+        "zero_dim",
+        {
+          "kind": "array",
+          "array": {
+            "key": "array_5",
+            "shape": [],
+            "dtype": "<i8",
+            "itemsize": 8,
+            "count": 1,
+            "bytes": 8,
+            "sha256": "35be322d094f9d154a8aba4733b8497f180353bd7ae7b0a15f90b586b549f28b"
+          }
+        }
+      ],
+      [
+        "scalar",
+        {
+          "kind": "numpy_scalar",
+          "array": {
+            "key": "array_6",
+            "shape": [],
+            "dtype": "<f4",
+            "itemsize": 4,
+            "count": 1,
+            "bytes": 4,
+            "sha256": "ef1eaf26cea96eb18f8fa3137abdf23f52852a855c22ae6f169d21a379dcd739"
+          }
+        }
+      ],
+      [
+        "extra",
+        {
+          "kind": "tuple",
+          "items": [
+            {
+              "kind": "scalar",
+              "value": null
+            },
+            {
+              "kind": "scalar",
+              "value": true
+            },
+            {
+              "kind": "scalar",
+              "value": 1237940039285380274899124224
+            },
+            {
+              "kind": "scalar",
+              "value": "text"
+            },
+            {
+              "kind": "list",
+              "items": [
+                {
+                  "kind": "nonfinite",
+                  "value": null,
+                  "nonfinite": "nan"
+                },
+                {
+                  "kind": "nonfinite",
+                  "value": null,
+                  "nonfinite": "positive_infinity"
+                },
+                {
+                  "kind": "nonfinite",
+                  "value": null,
+                  "nonfinite": "negative_infinity"
+                },
+                {
+                  "kind": "scalar",
+                  "value": -0.0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        "empty",
+        {
+          "kind": "array",
+          "array": {
+            "key": "array_7",
+            "shape": [
+              0,
+              3
+            ],
+            "dtype": "<f8",
+            "itemsize": 8,
+            "count": 0,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        }
+      ]
+    ],
+    "spikes": {
+      "array": {
+        "key": "array_0",
+        "shape": [
+          3
+        ],
+        "dtype": [
+          [
+            "tick",
+            "<i8"
+          ],
+          [
+            "index",
+            "<i4"
+          ]
+        ],
+        "itemsize": 12,
+        "count": 3,
+        "bytes": 36,
+        "sha256": "05c3f6eeb1a31ab0e21a6e1705d389b1e998cd91a19ea563c9742af6a228841d"
+      },
+      "header": {
+        "version": 1,
+        "count": 3,
+        "shape": [
+          3
+        ],
+        "dtype": [
+          [
+            "tick",
+            "<i8"
+          ],
+          [
+            "index",
+            "<i4"
+          ]
+        ],
+        "itemsize": 12,
+        "sha256": "05c3f6eeb1a31ab0e21a6e1705d389b1e998cd91a19ea563c9742af6a228841d",
+        "original_index_dtype": ">i8",
+        "original_tick_dtype": ">i8",
+        "original_index_sha256": "ed42ef0085275cc737907f014824a7ddca6ffdd9bc5d5fb9b1c953b05e62843c",
+        "original_tick_sha256": "c2e845477d1b0825bf52682fc73eaf21808e07fc97f40786f62ebec8684f9053"
+      }
+    }
+  }
+}

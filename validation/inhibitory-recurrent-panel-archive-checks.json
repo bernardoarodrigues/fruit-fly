@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "completed_utc": "2026-09-05T05:47:25.579302+00:00",
+  "plan_sha256": "a4594bfaf649bb205db6a0bbddc55f657d486379b1e2a93b935f8c2fcad9c4b5",
+  "source_sha256": {
+    "scripts/check_inhibitory_recurrent_panel_archive.py": "a4896139db56a132987ee61f90ff54f0a991d431c8cffffe0d78b7e3fb84b164",
+    "scripts/inhibitory_recurrent_panel_archive.py": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "record_order_and_hashes",
+      "passed": true
+    },
+    {
+      "name": "exact_nested_roundtrip",
+      "passed": true
+    },
+    {
+      "name": "native_arrays_unmodified",
+      "passed": true
+    },
+    {
+      "name": "completion_published_last",
+      "passed": true
+    },
+    {
+      "name": "sync_before_and_after_replaces",
+      "passed": true
+    },
+    {
+      "name": "root:packed_12B_little_endian",
+      "passed": true
+    },
+    {
+      "name": "root:packed_header",
+      "passed": true
+    },
+    {
+      "name": "partial:packed_12B_little_endian",
+      "passed": true
+    },
+    {
+      "name": "partial:packed_header",
+      "passed": true
+    },
+    {
+      "name": "NPZ_no_objects",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_scalar_null_flags",
+      "passed": true
+    },
+    {
+      "name": "immutable_refuses_overwrite",
+      "passed": true
+    },
+    {
+      "name": "immutable_preserves_existing",
+      "passed": true
+    },
+    {
+      "name": "empty_spikes_roundtrip",
+      "passed": true
+    },
+    {
+      "name": "atomic_json_nonfinite_tag",
+      "passed": true
+    },
+    {
+      "name": "atomic_json_refuses_default_overwrite",
+      "passed": true
+    },
+    {
+      "name": "atomic_json_explicit_overwrite",
+      "passed": true
+    },
+    {
+      "name": "truncated_temp_not_loadable",
+      "passed": true
+    },
+    {
+      "name": "truncated_temp_not_overwritten",
+      "passed": true
+    },
+    {
+      "name": "truncated_temp_retained",
+      "passed": true
+    },
+    {
+      "name": "unexpected_existing_file_refused",
+      "passed": true
+    },
+    {
+      "name": "unexpected_existing_file_preserved",
+      "passed": true
+    },
+    {
+      "name": "payload_failure",
+      "passed": true
+    },
+    {
+      "name": "payload_failure:retained",
+      "passed": true
+    },
+    {
+      "name": "payload_failure:no_completion",
+      "passed": true
+    },
+    {
+      "name": "payload_failure:load_refused",
+      "passed": true
+    },
+    {
+      "name": "completion_failure",
+      "passed": true
+    },
+    {
+      "name": "completion_failure:retained",
+      "passed": true
+    },
+    {
+      "name": "completion_failure:no_completion",
+      "passed": true
+    },
+    {
+      "name": "completion_failure:load_refused",
+      "passed": true
+    },
+    {
+      "name": "competing_writer_refused",
+      "passed": true
+    },
+    {
+      "name": "competing_lock_preserved",
+      "passed": true
+    },
+    {
+      "name": "object:refused_without_loss",
+      "passed": true
+    },
+    {
+      "name": "object:no_completion",
+      "passed": true
+    },
+    {
+      "name": "padded:refused_without_loss",
+      "passed": true
+    },
+    {
+      "name": "padded:no_completion",
+      "passed": true
+    },
+    {
+      "name": "overflow:refused_without_loss",
+      "passed": true
+    },
+    {
+      "name": "overflow:no_completion",
+      "passed": true
+    },
+    {
+      "name": "tick_overflow:refused_without_loss",
+      "passed": true
+    },
+    {
+      "name": "tick_overflow:no_completion",
+      "passed": true
+    },
+    {
+      "name": "bad_count:semantic_header_refused",
+      "passed": true
+    },
+    {
+      "name": "bad_endian:semantic_header_refused",
+      "passed": true
+    },
+    {
+      "name": "payload_checksum_refused",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/check_inhibitory_recurrent_panel_archive.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged:scripts/inhibitory_recurrent_panel_archive.py",
+      "passed": true
+    }
+  ],
+  "check_count": 45,
+  "errors": [],
+  "expected_errors": [
+    {
+      "name": "immutable_refuses_overwrite",
+      "type": "FileExistsError",
+      "message": "Refusing existing archive evidence: /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/roundtrip.npz, /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/roundtrip.json, /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/roundtrip.complete.json"
+    },
+    {
+      "name": "atomic_json_refuses_default_overwrite",
+      "type": "FileExistsError",
+      "message": "Existing JSON target/lock/temporary: /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/progress.json"
+    },
+    {
+      "name": "truncated_temp_not_loadable",
+      "type": "ValueError",
+      "message": "Incomplete or failed publication evidence exists"
+    },
+    {
+      "name": "truncated_temp_not_overwritten",
+      "type": "FileExistsError",
+      "message": "Refusing existing archive evidence: /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/truncated.tmp-interrupted.npz"
+    },
+    {
+      "name": "unexpected_existing_file_refused",
+      "type": "FileExistsError",
+      "message": "Refusing existing archive evidence: /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/unknown.npz"
+    },
+    {
+      "name": "payload_failure",
+      "type": "ArchivePublicationError",
+      "message": "intentional replacement failure"
+    },
+    {
+      "name": "payload_failure:load_refused",
+      "type": "ValueError",
+      "message": "Incomplete or failed publication evidence exists"
+    },
+    {
+      "name": "completion_failure",
+      "type": "ArchivePublicationError",
+      "message": "intentional replacement failure"
+    },
+    {
+      "name": "completion_failure:load_refused",
+      "type": "ValueError",
+      "message": "Incomplete or failed publication evidence exists"
+    },
+    {
+      "name": "competing_writer_refused",
+      "type": "FileExistsError",
+      "message": "Refusing existing archive evidence: /Users/bernardo/Documents/Code/fruit-fly/validation/inhibitory-recurrent-panel-archive/contending.publish.lock"
+    },
+    {
+      "name": "object:refused_without_loss",
+      "type": "ArchivePublicationError",
+      "message": "Object arrays and dtype metadata are unsupported"
+    },
+    {
+      "name": "padded:refused_without_loss",
+      "type": "ArchivePublicationError",
+      "message": "Padded, overlapping or aligned structured dtypes are unsupported"
+    },
+    {
+      "name": "overflow:refused_without_loss",
+      "type": "ArchivePublicationError",
+      "message": "Spike indices outside packed range; refusing coercion loss"
+    },
+    {
+      "name": "tick_overflow:refused_without_loss",
+      "type": "ArchivePublicationError",
+      "message": "Spike ticks outside packed range; refusing coercion loss"
+    },
+    {
+      "name": "bad_count:semantic_header_refused",
+      "type": "ValueError",
+      "message": "Packed spike header/dtype/count/endian/checksum mismatch"
+    },
+    {
+      "name": "bad_endian:semantic_header_refused",
+      "type": "ValueError",
+      "message": "Packed spike header/dtype/count/endian/checksum mismatch"
+    },
+    {
+      "name": "payload_checksum_refused",
+      "type": "ValueError",
+      "message": "Archive artifact checksum, length or path mismatch"
+    }
+  ],
+  "artifacts": {
+    "validation/inhibitory-recurrent-panel-archive/tick_overflow.failure-d2761f1107d64b22b63a8b34bf108276.json": {
+      "bytes": 300,
+      "sha256": "c23167ec4328c52b19aafdcc66ee27238ebc5739068c10d4c3b520eeb5fb2409"
+    },
+    "validation/inhibitory-recurrent-panel-archive/object.publish.lock": {
+      "bytes": 92,
+      "sha256": "4c882941254cb8aea27571df0cde4855032004703f3ef4e8281125e910c9d22c"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_checksum.json": {
+      "bytes": 558,
+      "sha256": "1f796cd968c171e233dcc3359027ed5a3d574f8164e14c53c148b742e27215d4"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_count.npz": {
+      "bytes": 238,
+      "sha256": "e90fccd27ee43cdc62da9c7906d4e0645c0cccb996edc99d01107333b43df55d"
+    },
+    "validation/inhibitory-recurrent-panel-archive/empty.json": {
+      "bytes": 1611,
+      "sha256": "8d62bd227e83ec7c7ab30698379f37b2847a7388e9ca17165efa8828de7dbdb2"
+    },
+    "validation/inhibitory-recurrent-panel-archive/completion_failure.failure-0076f1ad01bd4b7a8ac2b3819a95b7ae.json": {
+      "bytes": 561,
+      "sha256": "176745d6b3a8121a01d64e50e1f7ef11d5997e27d8eebcc1439753049021971c"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_endian.json": {
+      "bytes": 938,
+      "sha256": "b1bda3e6cb44b16119f472fd912a1fee2f9987fd8d6ae6b4d490f5f054d19a6b"
+    },
+    "validation/inhibitory-recurrent-panel-archive/completion_failure.json": {
+      "bytes": 7227,
+      "sha256": "b2c64d988bf738143d3db2f4d92cd2fcbf81458d2eb69465589c3e0b7b814474"
+    },
+    "validation/inhibitory-recurrent-panel-archive/roundtrip.json": {
+      "bytes": 7227,
+      "sha256": "06592345ae79839f7978a75df905f7f4bbba2714e7468a64003541890141455b"
+    },
+    "validation/inhibitory-recurrent-panel-archive/events.json": {
+      "bytes": 520,
+      "sha256": "bb93d9d40b01a62175b8d7a33351b4f0eed305e1cfd3a6a387ece157b162eb8b"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_checksum.complete.json": {
+      "bytes": 559,
+      "sha256": "24fb9cd8bfe05a9ddbe26a6c265a627ced013065436581b8e389cb9cf8aa0fec"
+    },
+    "validation/inhibitory-recurrent-panel-archive/empty.npz": {
+      "bytes": 232,
+      "sha256": "c05cd05daff07880483ed7861547468849bd808a4b943b315e01d4ef0ee84b94"
+    },
+    "validation/inhibitory-recurrent-panel-archive/payload_failure.failure-16b3625656b945d4885814552652accb.json": {
+      "bytes": 466,
+      "sha256": "bdb752bbdec41f4485b1ffd1fa2234b0646b1ee2dcabfa78a8f8c4262ef5f983"
+    },
+    "validation/inhibitory-recurrent-panel-archive/object.failure-4c5284bea4034c99b1c30ecfdf25e7e3.json": {
+      "bytes": 284,
+      "sha256": "b82dcd75832aa7663200ce8e001aba91ab541aaf009a6d458b3e386cf8350989"
+    },
+    "validation/inhibitory-recurrent-panel-archive/unknown.npz": {
+      "bytes": 11,
+      "sha256": "492997986dd5c1ae015ae1402d597fd1ecea467328fc1187cd2b585afc7855d7"
+    },
+    "validation/inhibitory-recurrent-panel-archive/truncated.tmp-interrupted.npz": {
+      "bytes": 11,
+      "sha256": "c24290eb69989e32f524f0b7be01e59e46a7f566101166b53cc832533b22b1bf"
+    },
+    "validation/inhibitory-recurrent-panel-archive/completion_failure.tmp-0076f1ad01bd4b7a8ac2b3819a95b7ae.complete.json": {
+      "bytes": 573,
+      "sha256": "36a420cad8f9581eef9acc9a4221a7af86462e45b454abd0ddc68353a329aaed"
+    },
+    "validation/inhibitory-recurrent-panel-archive/overflow.failure-1739c43c356e4bfeb37381a4e2599545.json": {
+      "bytes": 297,
+      "sha256": "c6a69bdd7c7eb2ef760493a3c815c32c4206ad9447827b069c39ca5ac378345c"
+    },
+    "validation/inhibitory-recurrent-panel-archive/payload_failure.npz": {
+      "bytes": 1661,
+      "sha256": "7ab012846319e5c34251cb5fe4ecdab7203f22327dcc677748519e4fedd098fb"
+    },
+    "validation/inhibitory-recurrent-panel-archive/empty.complete.json": {
+      "bytes": 546,
+      "sha256": "b2e07196d8dd8e7094d60b9b121f2cb359ddb61111893f683d4e1e120f879bdc"
+    },
+    "validation/inhibitory-recurrent-panel-archive/payload_failure.tmp-16b3625656b945d4885814552652accb.json": {
+      "bytes": 7227,
+      "sha256": "1e0866bb21cfd39d74b901979ec60ea9513375d99d586aa99dce3417b7a91d68"
+    },
+    "validation/inhibitory-recurrent-panel-archive/roundtrip.complete.json": {
+      "bytes": 555,
+      "sha256": "2b1c75fb6d996d6a61ebd00211691baf125fc545d18fbaf013a63ff7f76d328f"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_count.json": {
+      "bytes": 940,
+      "sha256": "5d57ab714e15cf7031d4254955ae8625d0e2ac08d5e1982ce5430af143f1d825"
+    },
+    "validation/inhibitory-recurrent-panel-archive/completion_failure.npz": {
+      "bytes": 1661,
+      "sha256": "7ab012846319e5c34251cb5fe4ecdab7203f22327dcc677748519e4fedd098fb"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_endian.npz": {
+      "bytes": 238,
+      "sha256": "e90fccd27ee43cdc62da9c7906d4e0645c0cccb996edc99d01107333b43df55d"
+    },
+    "validation/inhibitory-recurrent-panel-archive/overflow.publish.lock": {
+      "bytes": 94,
+      "sha256": "731234123a487414f61511f46375f27668b38f21abbdd01b7e7d1bbcdbe5f6f2"
+    },
+    "validation/inhibitory-recurrent-panel-archive/roundtrip.npz": {
+      "bytes": 1661,
+      "sha256": "7ab012846319e5c34251cb5fe4ecdab7203f22327dcc677748519e4fedd098fb"
+    },
+    "validation/inhibitory-recurrent-panel-archive/padded.failure-24e474de2b8f4d09a0b727595c6896a5.json": {
+      "bytes": 300,
+      "sha256": "4f94b5e4f96e291cdcca56c66c16bae939186822147a7f2596f342912c01b96b"
+    },
+    "validation/inhibitory-recurrent-panel-archive/progress.json": {
+      "bytes": 16,
+      "sha256": "a2c0410cd4ecf73a4acb38f365e2b55c97249aef3bf546e3c469b48328f1074c"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_endian.complete.json": {
+      "bytes": 483,
+      "sha256": "78112dea010ea1f3672165377b98a596ade914d65c6a5a6200088830e7666dc4"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_count.complete.json": {
+      "bytes": 481,
+      "sha256": "2ad0bfbcc846d6f9316726691433973871ab931f0199b79b95e8e3a5f88e4002"
+    },
+    "validation/inhibitory-recurrent-panel-archive/padded.publish.lock": {
+      "bytes": 92,
+      "sha256": "22ad69ecb991eb1e6a536113a47beb8e8e5e4cfcf7b34dc7b8a3166a876472da"
+    },
+    "validation/inhibitory-recurrent-panel-archive/bad_checksum.npz": {
+      "bytes": 223,
+      "sha256": "c3bb30f5219aeeba87ca408386140e7e6f41c60558759d8d977969179aafa65b"
+    },
+    "validation/inhibitory-recurrent-panel-archive/tick_overflow.publish.lock": {
+      "bytes": 99,
+      "sha256": "f26bdc9352a24a580a63ced9b589091198a96ebd94ea0a87c18603bcb4f3627a"
+    },
+    "validation/inhibitory-recurrent-panel-archive/completion_failure.publish.lock": {
+      "bytes": 104,
+      "sha256": "c72a74667c4295973a1c4112b1cb962bdc4b01e5c0fa29a17aedf95c9080221d"
+    },
+    "validation/inhibitory-recurrent-panel-archive/payload_failure.publish.lock": {
+      "bytes": 101,
+      "sha256": "32f6580e8ca9200287c5f00c147504b0e8e564b427195e88ebf0b7f3a5ef47ff"
+    },
+    "validation/inhibitory-recurrent-panel-archive/contending.publish.lock": {
+      "bytes": 12,
+      "sha256": "67d0ac3fcd7867dc9978ba4e88900340ebb9bdf226a454c5dfcf846c163aa8b2"
+    }
+  },
+  "scope": "Synthetic filesystem data only; intentional failures and corruptions retained.",
+  "limits": [
+    "Mocked exceptions and actual local fsync calls are not a hardware power-loss test.",
+    "Exclusive locks coordinate users of these utilities, not unrelated writers ignoring the protocol.",
+    "If the filesystem fails completely, diagnostic writing can also fail; already-created evidence is retained."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "passed": true,
+  "created_utc": "2026-09-05T06:04:42.618024+00:00",
+  "scope": "Executed preflight/source review for the fixed panel, assembled from seven passing component receipts; no 60-trial panel run or model promotion",
+  "reviewed_sources": {
+    "scripts/experiment_inhibitory_recurrent_panel.py": {
+      "bytes": 40524,
+      "sha256": "597eef47d93f3b57896fa7c38864ea8003153f8e54d1de720f2efc23f2bf2512"
+    },
+    "scripts/inhibitory_recurrent_panel_kernel.py": {
+      "bytes": 29863,
+      "sha256": "fecae2793af7d5b491a9090d0a8d0b712bba727d918c39be14e0e73048dd4eff"
+    },
+    "scripts/inhibitory_recurrent_panel_archive.py": {
+      "bytes": 17406,
+      "sha256": "3352c667249482e655116d073f899a3943e39c4d58fd53248801336abeade067"
+    },
+    "scripts/inhibitory_recurrent_panel_metrics.py": {
+      "bytes": 24793,
+      "sha256": "d4cec767d98b7996522a288cf5d78f9180a09227e8a46fe2fb55b454186f9b26"
+    },
+    "scripts/inhibitory_factorial_solver.py": {
+      "bytes": 13805,
+      "sha256": "ad92c4aa0292d9809f5fe5de1cf1ee938cdd6a8a6b175b94facc1e73f387f711"
+    }
+  },
+  "component_reviews": [
+    {
+      "role": "independent_input_schedule_and_metric_integration",
+      "path": "validation/inhibitory-recurrent-panel-input-review.json",
+      "bytes": 24525,
+      "sha256": "1c40c651dec97d3d95e495846ce28ed12fdf8e4e73d6f11c661c87c39849919f",
+      "passed": true,
+      "check_count": 138
+    },
+    {
+      "role": "independent_worker_numerics",
+      "path": "validation/inhibitory-recurrent-panel-numerics-review.json",
+      "bytes": 3169,
+      "sha256": "eba01ac9fa75a2d630c96ff578f29b32fa9ccbf8d29c66ac79be772051abc382",
+      "passed": true,
+      "check_count": 30
+    },
+    {
+      "role": "independent_resource_archive_dispatch",
+      "path": "validation/inhibitory-recurrent-panel-dispatch-checks.json",
+      "bytes": 262841,
+      "sha256": "81446afa4faaf65905751424bfba0cc3e8a436cb434a832aa7ff08fa1193faec",
+      "passed": true,
+      "check_count": 49
+    },
+    {
+      "role": "panel_kernel_bounded_synthetic",
+      "path": "validation/inhibitory-recurrent-panel-kernel-checks.json",
+      "bytes": 12924,
+      "sha256": "6cd10b15b36fa867a8f5212a760c6e3ad15f488ff5b8572b4d62719e1be659c6",
+      "passed": true,
+      "check_count": 284
+    },
+    {
+      "role": "archive_bounded_synthetic",
+      "path": "validation/inhibitory-recurrent-panel-archive-checks.json",
+      "bytes": 15150,
+      "sha256": "0557d6e3880997a33be446c5bc6119c9a10bf8f51b0915d93e7d86c4e017f7ed",
+      "passed": true,
+      "check_count": 45
+    },
+    {
+      "role": "metrics_manufactured_arithmetic",
+      "path": "validation/inhibitory-recurrent-panel-metrics-checks.json",
+      "bytes": 3252,
+      "sha256": "bb81bf2cfc9a5bf31696bea76a280362014f7b74f16b87981a713e86e56247dc",
+      "passed": true,
+      "check_count": 36
+    },
+    {
+      "role": "independent_archive_decoder",
+      "path": "validation/inhibitory-recurrent-panel-archive-independent-review.json",
+      "bytes": 6916,
+      "sha256": "ae631bd03ec9153c7c2b5998f259efbf55f9e38a9b4d7e09cba59b186c92f19f",
+      "passed": true,
+      "check_count": 84
+    }
+  ],
+  "component_check_count": 666,
+  "prerequisite_evidence": [
+    {
+      "path": "validation/inhibitory-recurrent-parallel-performance/results.json",
+      "bytes": 132442,
+      "sha256": "0bc69e23b06a1f0265f9609c31f4cc3c5aa98080d3cff95b8d21f33f2c8340f9",
+      "passed": true,
+      "check_count": 1242,
+      "scope": "Previously completed matched 50 ms graph performance evidence; no rerun by this aggregate"
+    },
+    {
+      "path": "validation/inhibitory-recurrent-parallel-performance-independent-review.json",
+      "bytes": 223283,
+      "sha256": "fe75746428b343542759e1d10a3b1faa340209a3ea1db9303ed591a74d4719f2",
+      "passed": true,
+      "check_count": 1859,
+      "scope": "Previously completed matched 50 ms graph performance evidence; no rerun by this aggregate"
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_seven_component_receipts_pass",
+      "passed": true
+    },
+    {
+      "name": "three_runner_reviews_match_one_exact_source_revision",
+      "passed": true
+    },
+    {
+      "name": "existing_kernel_archive_metrics_evidence_included",
+      "passed": true
+    },
+    {
+      "name": "matched_parallel_performance_prerequisites_pass",
+      "passed": true
+    }
+  ],
+  "assembly_history": [
+    {
+      "path": "validation/inhibitory-recurrent-panel-preflight-assembly-attempt1.json",
+      "bytes": 505,
+      "sha256": "e4b40604a1b5a6518520bc47e973597f52a15918f35659f4bd178ad7d9f3b0d7",
+      "scope": "Preserved assembler schema-handling failure; no component test failed or reran"
+    }
+  ],
+  "limits": [
+    "Preflight fixtures, source review and existing short-prefix graph performance do not establish the future panel outcome.",
+    "Each of the 15 real C0 first-1.5-second gates remains required before any altered panel arm.",
+    "Resource-only truncation yields incomplete windows and unavailable contrasts; correctness failures stop dispatch.",
+    "Historical prospective withholding notes remain historical; this is the final executed preflight gate for the exact reviewed source bytes.",
+    "No physiology calibration, seed robustness, persistence or H1 promotion is inferred from preflight checks."
+  ],
+  "supersedes": {
+    "path": "validation/inhibitory-recurrent-panel-preflight-review-v0.json",
+    "bytes": 5034,
+    "sha256": "4a213dfec37930b93fc0544c6ddfd27bba8f97fd2593880523901610b6ea1985",
+    "reason": "Parent requested adding the existing 84-check independent archive decoder receipt as a seventh component; no component rerun or source change"
+  }
+}
