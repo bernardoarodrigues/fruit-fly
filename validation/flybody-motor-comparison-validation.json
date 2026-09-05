@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "plan_sha256": "471e8aa00ab1cf8539f9d104d507d1d2c9b7d7af5b91fac582d54b497e210d76",
+  "results_sha256": "b5852b5e3c1b0337a69717b4281f98f6b4ada9df92b9281615df1b176ba034e5",
+  "checker_sha256": "1bab756156a4753b219aed87c303e802b43ea97d082654f59f63013e80618b0c",
+  "trials": [
+    {
+      "case": "straight10",
+      "seed": 11,
+      "trace_sha256": "296544f5d7a55b516f49b7d3b667802193aeb7eccd2586a03c1474f54188baa6",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "straight10",
+      "seed": 12,
+      "trace_sha256": "296544f5d7a55b516f49b7d3b667802193aeb7eccd2586a03c1474f54188baa6",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "straight20",
+      "seed": 11,
+      "trace_sha256": "90a22b5f381ab6882faaf1c495236a51c85aa435ff2c0e80be5e2b104af3c3e7",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "straight20",
+      "seed": 12,
+      "trace_sha256": "90a22b5f381ab6882faaf1c495236a51c85aa435ff2c0e80be5e2b104af3c3e7",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "left20",
+      "seed": 11,
+      "trace_sha256": "970f037033c6cd5eb905bb8cd80890d7f0c7e4d05ad7a1279f6c20d09138e758",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "left20",
+      "seed": 12,
+      "trace_sha256": "970f037033c6cd5eb905bb8cd80890d7f0c7e4d05ad7a1279f6c20d09138e758",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "right20",
+      "seed": 11,
+      "trace_sha256": "cb20d17c8d6185ebc0e0c3e0705fc743c5fdd2ea781e3928dc33f64a5a27fcab",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "right20",
+      "seed": 12,
+      "trace_sha256": "cb20d17c8d6185ebc0e0c3e0705fc743c5fdd2ea781e3928dc33f64a5a27fcab",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "zero",
+      "seed": 11,
+      "trace_sha256": "2655269ec75b7dc3ea8493a9e47a82b4619dba26b567967c35fb13d2cec52c86",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "zero",
+      "seed": 12,
+      "trace_sha256": "2655269ec75b7dc3ea8493a9e47a82b4619dba26b567967c35fb13d2cec52c86",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "withdraw20",
+      "seed": 11,
+      "trace_sha256": "9854a7f965732493f1e5713712af09d65245396e108ea18b7f0da65658728f02",
+      "metrics_reproduced": true
+    },
+    {
+      "case": "withdraw20",
+      "seed": 12,
+      "trace_sha256": "9854a7f965732493f1e5713712af09d65245396e108ea18b7f0da65658728f02",
+      "metrics_reproduced": true
+    }
+  ],
+  "diagnostic_fix_preserved_every_nondiagnostic_trace_array": {
+    "pose": true,
+    "tips_mm": true,
+    "tibia_rad": true,
+    "up_z": true,
+    "actuator_force": true,
+    "tibia_tracking_rad": true,
+    "canonical_action": true,
+    "native_action": true,
+    "command": true,
+    "target_pose": true
+  },
+  "diagnostic_fix_caveat": "Original contact-force array intentionally not reused: stale constraint-force cache.",
+  "decisions_reproduced": true,
+  "full_neural_integration": false
+}

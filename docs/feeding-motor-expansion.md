@@ -85,7 +85,7 @@ baseline recruited MN4a/MN4b or MN6. MN7 emitted zero/one spike, and MN11D/MN11V
 were silent. Some other motor classes responded sparsely. This is insufficient
 evidence of coordinated oral extension, opening and pumping. All counts and
 5 ms voltage samples are preserved. Sampled whole-network minima reached
-approximately −408 to −437 mV in active conditions, retaining the previously
+approximately −404 to −437 mV in active conditions, retaining the previously
 documented physiological failure of the transferred Shiu baseline.
 
 The original equality control **failed**, and its failed check remains in the

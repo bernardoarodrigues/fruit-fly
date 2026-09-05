@@ -59,6 +59,8 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [FlyBody policy compatibility trial](docs/flybody-inference-trial.md), [physical feeding and circuit-replay audit](docs/feeding-motor-expansion.md)
 - [Independent feeding review](docs/feeding-independent-review.md), [muscle mechanics and timestep audit](docs/musculoskeletal-feasibility.md), [unresolved muscle identifiers](docs/muscle-identifier-boundary.md)
 - [Male column/female optics registration boundary](docs/visual-retinotopy-feasibility.md), [measured-template camera coverage](docs/visual-template-coverage.md)
+- [Fixed FlyBody comparison and stopping failure](docs/flybody-motor-comparison.md)
+- [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

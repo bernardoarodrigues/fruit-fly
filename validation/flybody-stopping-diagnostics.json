@@ -1,0 +1,1207 @@
+{
+  "analysis_kind": "Post hoc diagnostics of existing frozen traces; no new physics, fit, thresholds or promotion decision.",
+  "script_sha256": "fff1ad8633f612ae5e2e181c8ee3d30c637a36320b131d6c4e6af3597206d178",
+  "comparison_sha256": "b5852b5e3c1b0337a69717b4281f98f6b4ada9df92b9281615df1b176ba034e5",
+  "contact_threshold_dyne": 1e-08,
+  "contact_definition": "Actual positive leg-floor vertical force on any named leg geom, from detached-state mj_forward; sampled500Hz.",
+  "cadence_caveat": "Contact onset rate is a contact-state diagnostic, not a validated step frequency. Hilbert candidate cycles on low-amplitude nonwalking motion must not be counted as biological steps.",
+  "windows": [
+    {
+      "case": "zero",
+      "seed": 11,
+      "window_s": [
+        0.3,
+        1.5
+      ],
+      "trace_sha256": "2655269ec75b7dc3ea8493a9e47a82b4619dba26b567967c35fb13d2cec52c86",
+      "motion": {
+        "speed_mm_s": {
+          "n": 600,
+          "mean": 1.6352102725771027,
+          "p05": 0.9944511699883396,
+          "p25": 1.4206595910039528,
+          "median": 1.6920566099606633,
+          "p75": 1.898067098902409,
+          "p95": 2.1207959177220097
+        },
+        "signed_yaw_deg_s": {
+          "n": 600,
+          "mean": -0.09861918085731967,
+          "p05": -4.0585405476588985,
+          "p25": -1.5927310741702627,
+          "median": -0.08295325498251338,
+          "p75": 1.2261631468452656,
+          "p95": 4.324174580495209
+        },
+        "absolute_yaw_deg_s": {
+          "n": 600,
+          "mean": 1.85274571728698,
+          "p05": 0.14111612222495729,
+          "p25": 0.588868131446853,
+          "median": 1.3928677630553845,
+          "p75": 2.7360561227474753,
+          "p95": 5.003506947729095
+        },
+        "net_heading_rate_deg_s": -0.1104093802283173,
+        "net_displacement_mm": 0.017604388706334795,
+        "planar_path_length_mm": 1.962252327092523,
+        "xy_extent_mm": [
+          0.019322715420423235,
+          0.019573204861773573
+        ]
+      },
+      "legs": {
+        "LF": {
+          "actual_positive_floor_contact_fraction": 0.16306156405990016,
+          "contact_onsets": 98,
+          "contact_offsets": 98,
+          "contact_onsets_per_s": 81.66666666666667,
+          "positive_contact_run_lengths_samples": {
+            "n": 98,
+            "mean": 1.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 1.0,
+            "p95": 1.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 97,
+            "mean": 95.3393470790378,
+            "p05": 41.666666666666664,
+            "p25": 62.5,
+            "median": 83.33333333333333,
+            "p75": 125.0,
+            "p95": 125.0
+          },
+          "tip_xyz_extent_mm": [
+            0.027379896989351504,
+            0.05816569370259639,
+            0.01885846653755091
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 6.69024847534302,
+            "p05": 3.5482095984969635,
+            "p25": 4.689743716822874,
+            "median": 5.899584444026182,
+            "p75": 7.923485195021987,
+            "p95": 12.395571243467597
+          },
+          "tibia_whole_window_rom_deg": 1.7734072172027664,
+          "hilbert_candidates_not_validated_steps": 12,
+          "hilbert_candidate_frequency_hz": {
+            "n": 12,
+            "mean": 20.478989554467297,
+            "p05": 13.088235294117647,
+            "p25": 16.607505070993916,
+            "median": 19.23076923076923,
+            "p75": 26.31578947368421,
+            "p95": 29.47368421052631
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 17,
+            "phase_reversal_rejected": 5
+          }
+        },
+        "LM": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 601.0,
+            "p05": 601.0,
+            "p25": 601.0,
+            "median": 601.0,
+            "p75": 601.0,
+            "p95": 601.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.011935887594632072,
+            0.03802914561991466,
+            0.008344980323850143
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 2.516969965267373,
+            "p05": 1.6226167517177823,
+            "p25": 2.1429220666487856,
+            "median": 2.597764867264015,
+            "p75": 2.939097440512907,
+            "p95": 3.230379491696713
+          },
+          "tibia_whole_window_rom_deg": 2.054854554482634,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 18.35583502481394,
+            "p05": 9.507954125046245,
+            "p25": 9.803921568627452,
+            "median": 13.513513513513514,
+            "p75": 27.77777777777778,
+            "p95": 30.555555555555554
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 9,
+            "phase_reversal_rejected": 4
+          }
+        },
+        "LH": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 601.0,
+            "p05": 601.0,
+            "p25": 601.0,
+            "median": 601.0,
+            "p75": 601.0,
+            "p95": 601.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.0034857224483202387,
+            0.004560671502941149,
+            0.011443249057709406
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 2.951430966256217,
+            "p05": 1.8291363278866823,
+            "p25": 2.440213634477545,
+            "median": 2.951490496962151,
+            "p75": 3.426905145814268,
+            "p95": 4.119780609921167
+          },
+          "tibia_whole_window_rom_deg": 2.3989141309084023,
+          "hilbert_candidates_not_validated_steps": 9,
+          "hilbert_candidate_frequency_hz": {
+            "n": 9,
+            "mean": 29.10184499858413,
+            "p05": 14.358108108108109,
+            "p25": 17.857142857142858,
+            "median": 22.727272727272727,
+            "p75": 41.666666666666664,
+            "p95": 51.515151515151516
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 18,
+            "phase_reversal_rejected": 9
+          }
+        },
+        "RF": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 601.0,
+            "p05": 601.0,
+            "p25": 601.0,
+            "median": 601.0,
+            "p75": 601.0,
+            "p95": 601.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.007480716278957411,
+            0.02188098917968062,
+            0.004935298387501931
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 1.5592885935442622,
+            "p05": 1.2951683332939394,
+            "p25": 1.4659425704804336,
+            "median": 1.5655787460986812,
+            "p75": 1.6635332453553398,
+            "p95": 1.7933005143322485
+          },
+          "tibia_whole_window_rom_deg": 1.2330110098284066,
+          "hilbert_candidates_not_validated_steps": 0,
+          "hilbert_candidate_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 5
+          }
+        },
+        "RM": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 601.0,
+            "p05": 601.0,
+            "p25": 601.0,
+            "median": 601.0,
+            "p75": 601.0,
+            "p95": 601.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.03017578582292207,
+            0.008081819079470032,
+            0.004343179348027873
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 1.201608519680628,
+            "p05": 0.662934823689763,
+            "p25": 0.9599952382515057,
+            "median": 1.1765240554461438,
+            "p75": 1.4339305284334523,
+            "p95": 1.8167119557536124
+          },
+          "tibia_whole_window_rom_deg": 1.3150100111523135,
+          "hilbert_candidates_not_validated_steps": 10,
+          "hilbert_candidate_frequency_hz": {
+            "n": 10,
+            "mean": 22.28173439463762,
+            "p05": 14.457070707070708,
+            "p25": 17.096774193548388,
+            "median": 23.26839826839827,
+            "p75": 25.0,
+            "p95": 30.83333333333333
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 14,
+            "phase_reversal_rejected": 4
+          }
+        },
+        "RH": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 601.0,
+            "p05": 601.0,
+            "p25": 601.0,
+            "median": 601.0,
+            "p75": 601.0,
+            "p95": 601.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.010412320574459955,
+            0.008284823532148877,
+            0.009093489217467426
+          ],
+          "tip_speed_mm_s": {
+            "n": 600,
+            "mean": 1.710379248217834,
+            "p05": 1.0191544478702215,
+            "p25": 1.4174866013122427,
+            "median": 1.7009413013888701,
+            "p75": 1.9956043384146578,
+            "p95": 2.4785733599692836
+          },
+          "tibia_whole_window_rom_deg": 1.1888091678344501,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 19.019020088099033,
+            "p05": 8.522727272727273,
+            "p25": 11.363636363636363,
+            "median": 13.88888888888889,
+            "p75": 26.31578947368421,
+            "p95": 33.83458646616541
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 11,
+            "phase_reversal_rejected": 6
+          }
+        }
+      },
+      "supporting_legs_count": {
+        "n": 601,
+        "mean": 5.1630615640599,
+        "p05": 5.0,
+        "p25": 5.0,
+        "median": 5.0,
+        "p75": 5.0,
+        "p95": 6.0
+      }
+    },
+    {
+      "case": "withdraw20",
+      "seed": 11,
+      "window_s": [
+        0.3,
+        0.75
+      ],
+      "trace_sha256": "9854a7f965732493f1e5713712af09d65245396e108ea18b7f0da65658728f02",
+      "motion": {
+        "speed_mm_s": {
+          "n": 225,
+          "mean": 20.72620648713426,
+          "p05": 11.11189885694208,
+          "p25": 14.628964246370177,
+          "median": 19.360993587762547,
+          "p75": 26.669192020431666,
+          "p95": 34.58041311166035
+        },
+        "signed_yaw_deg_s": {
+          "n": 225,
+          "mean": 2.111691391896348,
+          "p05": -81.34028322798939,
+          "p25": -38.39447729666101,
+          "median": -2.6814869538029003,
+          "p75": 39.6443638154927,
+          "p95": 92.84281326578179
+        },
+        "absolute_yaw_deg_s": {
+          "n": 225,
+          "mean": 43.15960840561592,
+          "p05": 3.9939312647899836,
+          "p25": 16.087290478744734,
+          "median": 38.39821130224607,
+          "p75": 66.40597228538823,
+          "p95": 95.1332131323284
+        },
+        "net_heading_rate_deg_s": 2.708749868094854,
+        "net_displacement_mm": 9.033801530358703,
+        "planar_path_length_mm": 9.326792919210419,
+        "xy_extent_mm": [
+          9.033645226216073,
+          0.15606873055305515
+        ]
+      },
+      "legs": {
+        "LF": {
+          "actual_positive_floor_contact_fraction": 0.5088495575221239,
+          "contact_onsets": 8,
+          "contact_offsets": 8,
+          "contact_onsets_per_s": 17.77777777777778,
+          "positive_contact_run_lengths_samples": {
+            "n": 8,
+            "mean": 14.375,
+            "p05": 7.7,
+            "p25": 13.5,
+            "median": 16.0,
+            "p75": 16.5,
+            "p95": 18.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 7,
+            "mean": 21.01889174642189,
+            "p05": 14.411764705882353,
+            "p25": 14.928698752228165,
+            "median": 15.625,
+            "p75": 18.682065217391305,
+            "p95": 41.52173913043476
+          },
+          "tip_xyz_extent_mm": [
+            8.606941400842299,
+            0.2344959396085322,
+            0.45976716566255194
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 29.641003466166293,
+            "p05": 1.9594898506346945,
+            "p25": 4.277801775545791,
+            "median": 17.00352969130216,
+            "p75": 63.100797728459476,
+            "p95": 71.5127986746101
+          },
+          "tibia_whole_window_rom_deg": 39.56487001378865,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 15.3525889828072,
+            "p05": 14.795008912655971,
+            "p25": 15.151515151515152,
+            "median": 15.151515151515152,
+            "p75": 15.625,
+            "p95": 16.028225806451612
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "LM": {
+          "actual_positive_floor_contact_fraction": 0.827433628318584,
+          "contact_onsets": 14,
+          "contact_offsets": 14,
+          "contact_onsets_per_s": 31.11111111111111,
+          "positive_contact_run_lengths_samples": {
+            "n": 15,
+            "mean": 12.466666666666667,
+            "p05": 1.0,
+            "p25": 1.5,
+            "median": 6.0,
+            "p75": 26.0,
+            "p95": 27.299999999999997
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 13,
+            "mean": 90.6712702312797,
+            "p05": 15.257352941176471,
+            "p25": 16.129032258064516,
+            "median": 50.0,
+            "p75": 125.0,
+            "p95": 250.0
+          },
+          "tip_xyz_extent_mm": [
+            9.195157108801716,
+            0.23376937789753405,
+            0.08628768915555417
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 23.58277016608408,
+            "p05": 1.6486987007771494,
+            "p25": 3.655372363904396,
+            "median": 6.268229845749311,
+            "p75": 36.91298604937985,
+            "p95": 88.64577998465813
+          },
+          "tibia_whole_window_rom_deg": 14.48544062838156,
+          "hilbert_candidates_not_validated_steps": 4,
+          "hilbert_candidate_frequency_hz": {
+            "n": 4,
+            "mean": 15.269886363636363,
+            "p05": 15.151515151515152,
+            "p25": 15.151515151515152,
+            "median": 15.151515151515152,
+            "p75": 15.269886363636363,
+            "p95": 15.553977272727273
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 4,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "LH": {
+          "actual_positive_floor_contact_fraction": 0.831858407079646,
+          "contact_onsets": 13,
+          "contact_offsets": 13,
+          "contact_onsets_per_s": 28.88888888888889,
+          "positive_contact_run_lengths_samples": {
+            "n": 14,
+            "mean": 13.428571428571429,
+            "p05": 1.0,
+            "p25": 2.0,
+            "median": 11.5,
+            "p75": 24.75,
+            "p95": 27.099999999999998
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 12,
+            "mean": 48.09308939517273,
+            "p05": 15.411931818181818,
+            "p25": 19.052706552706553,
+            "median": 43.40277777777778,
+            "p75": 71.42857142857143,
+            "p95": 95.53571428571425
+          },
+          "tip_xyz_extent_mm": [
+            9.208081094620267,
+            0.4304305873573603,
+            0.181898108318803
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 26.15724916808162,
+            "p05": 1.737871090345465,
+            "p25": 6.197144293541592,
+            "median": 16.68029291080624,
+            "p75": 42.229982622123536,
+            "p95": 70.79268420980945
+          },
+          "tibia_whole_window_rom_deg": 57.88421464522611,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 15.251782531194298,
+            "p05": 14.795008912655971,
+            "p25": 15.151515151515152,
+            "median": 15.151515151515152,
+            "p75": 15.625,
+            "p95": 15.625
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RF": {
+          "actual_positive_floor_contact_fraction": 0.6017699115044248,
+          "contact_onsets": 7,
+          "contact_offsets": 7,
+          "contact_onsets_per_s": 15.555555555555555,
+          "positive_contact_run_lengths_samples": {
+            "n": 8,
+            "mean": 17.0,
+            "p05": 7.4,
+            "p25": 16.75,
+            "median": 19.5,
+            "p75": 20.0,
+            "p95": 21.299999999999997
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 6,
+            "mean": 15.322871572871572,
+            "p05": 14.502164502164502,
+            "p25": 15.269886363636363,
+            "median": 15.625,
+            "p75": 15.625,
+            "p95": 15.625
+          },
+          "tip_xyz_extent_mm": [
+            9.286996539723619,
+            0.14828091959574818,
+            0.4001641224663761
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 27.619450082053735,
+            "p05": 1.2282417139074597,
+            "p25": 2.7761793569822455,
+            "median": 7.981716055039821,
+            "p75": 57.10057837554719,
+            "p95": 72.43128913965339
+          },
+          "tibia_whole_window_rom_deg": 36.28699275008933,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 15.435606060606062,
+            "p05": 15.151515151515152,
+            "p25": 15.151515151515152,
+            "median": 15.625,
+            "p75": 15.625,
+            "p95": 15.625
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RM": {
+          "actual_positive_floor_contact_fraction": 0.8495575221238938,
+          "contact_onsets": 15,
+          "contact_offsets": 14,
+          "contact_onsets_per_s": 33.333333333333336,
+          "positive_contact_run_lengths_samples": {
+            "n": 15,
+            "mean": 12.8,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 8.0,
+            "p75": 24.0,
+            "p95": 28.299999999999997
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 14,
+            "mean": 91.83243412307453,
+            "p05": 16.666666666666668,
+            "p25": 18.392857142857142,
+            "median": 59.02777777777778,
+            "p75": 156.25,
+            "p95": 250.0
+          },
+          "tip_xyz_extent_mm": [
+            9.031077434321132,
+            0.262738147538238,
+            0.10303096144506597
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 23.79223545037845,
+            "p05": 1.8609072960873378,
+            "p25": 3.7674233271635247,
+            "median": 6.218609133949553,
+            "p75": 34.47463648413613,
+            "p95": 92.83107519629745
+          },
+          "tibia_whole_window_rom_deg": 20.43979450114755,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 15.346479500891267,
+            "p05": 14.795008912655971,
+            "p25": 15.151515151515152,
+            "median": 15.625,
+            "p75": 15.625,
+            "p95": 15.625
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RH": {
+          "actual_positive_floor_contact_fraction": 0.6106194690265486,
+          "contact_onsets": 8,
+          "contact_offsets": 8,
+          "contact_onsets_per_s": 17.77777777777778,
+          "positive_contact_run_lengths_samples": {
+            "n": 9,
+            "mean": 15.333333333333334,
+            "p05": 3.4000000000000004,
+            "p25": 10.0,
+            "median": 19.0,
+            "p75": 21.0,
+            "p95": 22.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 7,
+            "mean": 22.80325619984064,
+            "p05": 14.83957219251337,
+            "p25": 15.151515151515152,
+            "median": 15.151515151515152,
+            "p75": 18.481182795698924,
+            "p95": 49.99999999999997
+          },
+          "tip_xyz_extent_mm": [
+            9.274425903055125,
+            0.3932752235353766,
+            0.3887441959522413
+          ],
+          "tip_speed_mm_s": {
+            "n": 225,
+            "mean": 29.23022919382102,
+            "p05": 1.9447380131368923,
+            "p25": 4.474359772520338,
+            "median": 11.237467533442487,
+            "p75": 59.33941505275518,
+            "p95": 80.33413516618229
+          },
+          "tibia_whole_window_rom_deg": 51.313034982770304,
+          "hilbert_candidates_not_validated_steps": 5,
+          "hilbert_candidate_frequency_hz": {
+            "n": 5,
+            "mean": 15.251782531194298,
+            "p05": 14.795008912655971,
+            "p25": 15.151515151515152,
+            "median": 15.151515151515152,
+            "p75": 15.625,
+            "p95": 15.625
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 5,
+            "phase_reversal_rejected": 0
+          }
+        }
+      },
+      "supporting_legs_count": {
+        "n": 226,
+        "mean": 4.230088495575221,
+        "p05": 3.0,
+        "p25": 4.0,
+        "median": 4.0,
+        "p75": 5.0,
+        "p95": 5.0
+      }
+    },
+    {
+      "case": "withdraw20",
+      "seed": 11,
+      "window_s": [
+        1.0,
+        1.5
+      ],
+      "trace_sha256": "9854a7f965732493f1e5713712af09d65245396e108ea18b7f0da65658728f02",
+      "motion": {
+        "speed_mm_s": {
+          "n": 250,
+          "mean": 1.4024834579010375,
+          "p05": 0.751699597961142,
+          "p25": 1.1241896200485235,
+          "median": 1.4014599794636582,
+          "p75": 1.6515584326411723,
+          "p95": 1.9414636018642975
+        },
+        "signed_yaw_deg_s": {
+          "n": 250,
+          "mean": -1.7727333028713244,
+          "p05": -6.135239511978024,
+          "p25": -3.6605106215419903,
+          "median": -1.9238137640764397,
+          "p75": -0.07161534338816196,
+          "p95": 3.804637066327533
+        },
+        "absolute_yaw_deg_s": {
+          "n": 250,
+          "mean": 2.881576590051922,
+          "p05": 0.3716148926327001,
+          "p25": 1.4402584755295122,
+          "median": 2.5469145724146527,
+          "p75": 4.168432555718002,
+          "p95": 6.135239511978021
+        },
+        "net_heading_rate_deg_s": -1.7510056079194758,
+        "net_displacement_mm": 0.17276545484002617,
+        "planar_path_length_mm": 0.7012417289505188,
+        "xy_extent_mm": [
+          0.16938822456163738,
+          0.05142765714004783
+        ]
+      },
+      "legs": {
+        "LF": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.01905299227212609,
+            0.031683421483416296,
+            0.008028987133236354
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 1.2853878486311414,
+            "p05": 0.7055375453023269,
+            "p25": 0.9640368362742564,
+            "median": 1.1997306718262872,
+            "p75": 1.494046468742974,
+            "p95": 2.034314456035516
+          },
+          "tibia_whole_window_rom_deg": 9.907144279693815,
+          "hilbert_candidates_not_validated_steps": 1,
+          "hilbert_candidate_frequency_hz": {
+            "n": 1,
+            "mean": 27.77777777777778,
+            "p05": 27.77777777777778,
+            "p25": 27.77777777777778,
+            "median": 27.77777777777778,
+            "p75": 27.77777777777778,
+            "p95": 27.77777777777778
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 1,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "LM": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.006517307635091285,
+            0.007097430010662542,
+            0.00480994829354793
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 0.9247006468934437,
+            "p05": 0.2904842704708631,
+            "p25": 0.5305606458470413,
+            "median": 0.9019298674887715,
+            "p75": 1.3036682499109415,
+            "p95": 1.6804467172849338
+          },
+          "tibia_whole_window_rom_deg": 6.193741471585097,
+          "hilbert_candidates_not_validated_steps": 2,
+          "hilbert_candidate_frequency_hz": {
+            "n": 2,
+            "mean": 27.205882352941174,
+            "p05": 25.220588235294116,
+            "p25": 26.102941176470587,
+            "median": 27.205882352941174,
+            "p75": 28.308823529411764,
+            "p95": 29.191176470588232
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 2,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "LH": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.008415959629914482,
+            0.0045015865435269475,
+            0.00970475927679093
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 1.410662274223665,
+            "p05": 0.39632555121105534,
+            "p25": 0.7669458325705553,
+            "median": 1.374952310354555,
+            "p75": 1.8601698635562098,
+            "p95": 2.8105436339120717
+          },
+          "tibia_whole_window_rom_deg": 11.884409797700215,
+          "hilbert_candidates_not_validated_steps": 0,
+          "hilbert_candidate_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 0,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RF": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.040971558008468634,
+            0.033614562650553625,
+            0.017397284709677864
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 2.4099242839979085,
+            "p05": 0.731862811959976,
+            "p25": 1.3911788931076852,
+            "median": 2.402236061381422,
+            "p75": 3.1565932870258773,
+            "p95": 4.278857154861176
+          },
+          "tibia_whole_window_rom_deg": 11.701888297128912,
+          "hilbert_candidates_not_validated_steps": 0,
+          "hilbert_candidate_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 0,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RM": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.054999254970127254,
+            0.017523101908675676,
+            0.012068494912864436
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 3.40504241730695,
+            "p05": 2.7116575064070036,
+            "p25": 3.0639937777792765,
+            "median": 3.5065269377796784,
+            "p75": 3.666985175358508,
+            "p95": 4.00414609979766
+          },
+          "tibia_whole_window_rom_deg": 6.298226017767849,
+          "hilbert_candidates_not_validated_steps": 0,
+          "hilbert_candidate_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 0,
+            "phase_reversal_rejected": 0
+          }
+        },
+        "RH": {
+          "actual_positive_floor_contact_fraction": 1.0,
+          "contact_onsets": 0,
+          "contact_offsets": 0,
+          "contact_onsets_per_s": 0.0,
+          "positive_contact_run_lengths_samples": {
+            "n": 1,
+            "mean": 251.0,
+            "p05": 251.0,
+            "p25": 251.0,
+            "median": 251.0,
+            "p75": 251.0,
+            "p95": 251.0
+          },
+          "inter_contact_onset_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "tip_xyz_extent_mm": [
+            0.0625490761008578,
+            0.019245488287469303,
+            0.011934218331282886
+          ],
+          "tip_speed_mm_s": {
+            "n": 250,
+            "mean": 1.6878641423873595,
+            "p05": 1.0353976656797832,
+            "p25": 1.4063967455834803,
+            "median": 1.705821332659923,
+            "p75": 1.908398575229214,
+            "p95": 2.400397470059704
+          },
+          "tibia_whole_window_rom_deg": 4.207797575764059,
+          "hilbert_candidates_not_validated_steps": 0,
+          "hilbert_candidate_frequency_hz": {
+            "n": 0,
+            "mean": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "hilbert_quality": {
+            "boundary_frames": 15,
+            "candidate_cycles": 0,
+            "phase_reversal_rejected": 0
+          }
+        }
+      },
+      "supporting_legs_count": {
+        "n": 251,
+        "mean": 6.0,
+        "p05": 6.0,
+        "p25": 6.0,
+        "median": 6.0,
+        "p75": 6.0,
+        "p95": 6.0
+      }
+    }
+  ],
+  "seed_12_duplicate_physics": {
+    "straight10": true,
+    "straight20": true,
+    "left20": true,
+    "right20": true,
+    "zero": true,
+    "withdraw20": true
+  },
+  "unchanged_decisions": {
+    "physical_pass_all": true,
+    "straight": [
+      {
+        "speed_mm_s": 10,
+        "flybody_abs_yaw_deg_s": 23.51277261655514,
+        "cpg_abs_yaw_deg_s": 92.69872781103706,
+        "yaw_reduction_fraction": 0.7463528014701015,
+        "yaw_pass": true,
+        "flybody_speed_error_mm_s": 0.9914485966982483,
+        "cpg_speed_error_mm_s": 0.6371910082660222,
+        "speed_pass": true
+      },
+      {
+        "speed_mm_s": 20,
+        "flybody_abs_yaw_deg_s": 37.777596180172246,
+        "cpg_abs_yaw_deg_s": 220.82478879227963,
+        "yaw_reduction_fraction": 0.8289250206610272,
+        "yaw_pass": true,
+        "flybody_speed_error_mm_s": 0.5087269290464818,
+        "cpg_speed_error_mm_s": 1.5913731547231045,
+        "speed_pass": true
+      }
+    ],
+    "turns": [
+      {
+        "case": "left20",
+        "command_deg_s": 114.59155902616465,
+        "yaw_pass": true,
+        "speed_pass": true
+      },
+      {
+        "case": "right20",
+        "command_deg_s": -114.59155902616465,
+        "yaw_pass": true,
+        "speed_pass": true
+      }
+    ],
+    "joint_rom": {
+      "flybody_mean_mae_deg": 22.65054562284004,
+      "cpg_mean_mae_deg": 21.852996093030125,
+      "pass": true
+    },
+    "zero_pass": false,
+    "withdrawal_pass": false,
+    "eligible_for_optional_adapter_discussion": false,
+    "defaults_changed": false,
+    "biological_validation_claim": false
+  }
+}

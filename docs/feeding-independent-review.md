@@ -51,7 +51,7 @@ save full-graph event histories or all internal states for an equivalence claim.
 
 ## Findings and bounded recommendations
 
-1. **Future exactness guard:**
+1. **Future exactness guard, since implemented:**
    `scripts/check_feeding_afferent_replay.py:64` checks historical input hashes,
    counts and intake, while its field is named `baseline_reproduced_exactly`.
    It does not itself compare historical spike times, graph identity or saved
@@ -60,11 +60,19 @@ save full-graph event histories or all internal states for an equivalence claim.
    or name the checked observables explicitly. Also record the full drive
    contract if future encoders use current, custom input weights or a different
    refractory flag; the two recorded arrays suffice for today's defaults.
-2. **Minor range wording:** the active conditions include seed 12 with Fdg
+2. **Minor range wording, since corrected:** the active conditions include seed 12 with Fdg
    outputs blocked at **−404.4786 mV**. The all-active sampled-minimum range in
    `docs/feeding-motor-expansion.md:88` is approximately **−404 to −437 mV**,
    rather than −408 to −437 mV. This changes no conclusion about the model's
    severe physiological failure.
+
+The original review and experiment versions are preserved in Git commit
+`e80fd06`. The follow-up now guards all six named observables: ordered inputs,
+monitored counts, monitored neuron IDs and spike times, graph identity, neural
+parameters and normalized intake. It also records the default drive contract.
+The hardened experiment and this independent review were rerun without changing
+the original failed closed-loop control, neural parameters or body behavior.
+“Exact” still refers to those named observables, not every original model state.
 
 Under the two frozen input histories, blocking both candidate Fdg cells' outgoing
 synapses changes MN9 totals **3→0 / 3→1**. Incoming activity and spikes are not

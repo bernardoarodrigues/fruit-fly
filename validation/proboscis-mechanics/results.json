@@ -1,0 +1,526 @@
+{
+  "scope": "Inspect installed NeuroMechFly proboscis geometry at its source zero pose.\n\nThe two pitch hinges are an explicitly selected composition-API subset, not a\npublished biological two-DOF model. Source supplies no oral motion limits or\nextension trajectory. Only zero pose and infinitesimal Jacobian checks are used.\nNo dynamic rollout, neural mapping, mouth assignment, fluid or ingestion.\n",
+  "script_sha256": "ccef8e8a449d2f32eef76afd706e3fd7d06b30bf627a1e6b22235e920f3fd9bd",
+  "versions": {
+    "flygym": "2.1.0",
+    "mujoco": "3.9.0",
+    "numpy": "2.5.2"
+  },
+  "source_license_expression": "Apache-2.0",
+  "source_sha256": {
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/compose/fly/neuromechfly.py": "c47f422e5719f712b3f8b60913a22ce9d89d3943c81a8433549a129197ed50e3",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/compose/fly/base_fly.py": "9f7ec2c3786972467085cf6a92363cc72a95551226151ff1941fd96800ec677f",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/anatomy.py": "64ac2cb6239d26ff872e34f2b59e6e35c9182b4b05e21e151e7e7d2c129c0e87",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/compose/pose.py": "77b275210751e4cf33627f0404e93ffb5094f913cdf54a5f6672190bbd4650d5",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/rigging.yaml": "4e51d5ed3f151aefc125c91ff9298921b3b79a9d64e03e6fe88f1ce9945dbe3d",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/mujoco_globals.yaml": "e5b70e5bd5199ab2a9a68eb119ce9ef3f0b1dfa1890e13f1adb6d6cc20579988",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/vision.yaml": "aeaf9c67603e85ac81d251a01e7a20821687c1a62be0626af49ef09919e10545",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/pose/neutral/yaw_pitch_roll.yaml": "b4ada107c43a1588e5f361dace0bac5ea1ce7df181201e62a02cc6ec99dc48a9",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tibia.stl": "8138fe5f1fc52588dca6677bb338d39451813ac96159f78d6cf677eba73f3862",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_arista.stl": "6201af1cbe213ee6e259a6d89df65080f9cb9d806e6526cbcc7c5f1ae793f97c",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tarsus2.stl": "2dbb000ae11ef58de0023ccbdbfc8f1c5ff7b7517824a58d3e204f3ee00770c4",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tarsus3.stl": "8f1814f0054382e037279f04d0bb998e36ccaabd57ec418d35dd6f7e47bd51bb",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tarsus4.stl": "623f9059236af1327770f6f8e5e4fb8dc87930c49f5559c36d3d4245f51f7678",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tarsus1.stl": "b7f50bfe1e75dfa65110a4f80e0216858a7a75712115b04605f344c8e837b1ae",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tarsus5.stl": "1b86c811928d0a6e04c693b9a213f06c0f7a037584252fc8f35d408be1bf87e8",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tarsus1.stl": "61af16259215525e092d61426b874c7855485a9c7cfa91eecfc2fe99281a2dc6",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_thorax.stl": "b7fac1a3bcbad2100d063bae2ae6e81217e808f3c32564763ee7e43ec3904969",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tarsus4.stl": "3f2881bd6f1fdb445bf01c00cac53c9a1b30388cd3fdc1b327704c60f138bf03",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tarsus5.stl": "3e9a76e4c0c4e829705271846f93a3aa056a0e87bc99996519722eeb841c1b70",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tarsus2.stl": "da796bc3ad5d355b9e941aeeb6ad96c7fb00dee7421995605dcc81cd6fd7af12",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_tibia.stl": "dc1ad6da6db91ba703150e6150f59a498f9dbd311b1ec0678da3f896c421dab5",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_trochanterfemur.stl": "50e4e7baf2852a369f0dda2a2c9708a68c45893b3019a79dd74799e8e2ea64c9",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_coxa.stl": "ad3a10789b8bd5e0f3db2667a1fe373ffdb83cfc876b34d60508e9e34a51366d",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tarsus3.stl": "08280c942abf91279e86414d064f39cae2b46ba9f62845252a9763d0839fabe5",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_trochanterfemur.stl": "8e6b7ee8c4f6c388b64250086acc952c10abd469ac7bf0fb7015c2837e53d423",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_eye.stl": "08ce40c3264c9ab87703b6c013eae39d1bc48fa3e4cf02aec06d529c94e70daf",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_trochanterfemur.stl": "9619105028e5006d891b12dfced77aafa3c41a599edbf49d14691907ce2eb502",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_haltere.stl": "13d77fcca66fca90db5cf00b33a7369ae80366fe39974df3667e709882e64ed6",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_abdomen12.stl": "656b60100c06b0a8eb2dfbd201b12cac5eb31ffec6bf9c6c4ff3f97d14376371",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_rostrum.stl": "4ed0fa33c5867013482011e2ff656b71189f2b29dfb0bda2b0797961d95d12e4",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_abdomen3.stl": "264af5ede95bfcb11720219b31c76141a0921394f7c46e7fb7fb6b7066880f3b",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_abdomen6.stl": "748dda76a46554fd1743113eaafdf0dc2d10546095f5420406745e0eb47f87fb",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_abdomen4.stl": "662bbc3af32a987511af04e437d02c40e99840960809f5020abe9ec91b226ca4",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_pedicel.stl": "6de0f06e57c78f8738f67c0c52b85e74cb105789497a4183944e90211d3a4bf4",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_haustellum.stl": "babceb7a6adf0c88e8de6ce9810c32b397d3d1cdd073c0b1bea1df9d8c6ac4e9",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_abdomen5.stl": "87d1de98ad39ba52c096e0fd3b4860ae3a0aadeb4be46cac824e9b2501be6c48",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tarsus1.stl": "29085dda732699c4a3110458303adf2eec667f7db6e42166d408c260ae6acf5e",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_funiculus.stl": "d2a6d35751922fb8b1ce07b269bc432f33d7f8f6d243b2dd1801e021b91d8156",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tarsus2.stl": "996735c15a7e8e0c022babf5500224fa6e23de0e277305279d4b6787d56335d8",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tarsus3.stl": "166044083a5a4a0e8b7db91cdd71ef0ea0e3feb18f1630955156de14931d9495",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lh_tibia.stl": "2853873ade9abeb35da5f1a6c822d223bbe19a50d8ed77921bb77743b4782a60",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lm_coxa.stl": "01a6f4f4147b7cd308f0a1db79786694632c9fe5a3425b5e3454a7fa7624897b",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/c_head.stl": "39c51acbdf5957af95e294fa485cd7602103ca83bf451e95e29d251bd43765b6",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tarsus4.stl": "c90d8c6ebd0e2384a45524944e4fb2e02ba413be26ee04bc5030b2afb5876943",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/l_wing.stl": "142f77f15008fd75e1490b546bb859cf98c056121f1abd65acea2052c4e7764c",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_coxa.stl": "bff053bfee772796dae2b396aa0e3be12919b7fb1ee33b5fde369bec00944b64",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym/assets/model/neuromechfly/meshes/simplified_max2000faces/lf_tarsus5.stl": "93b048052461fa756a767608418ec90e537435a1ff282f2a393faa45ba60ae73",
+    "/Users/bernardo/Documents/Code/fruit-fly/.venv/lib/python3.12/site-packages/flygym-2.1.0.dist-info/licenses/LICENSE": "02afa15750a169f0815ff1525dacf28d010f1dfd4cb119fc9e96bfca4f426eb4"
+  },
+  "source_proboscis_dofs_all_biological_preset": [
+    "c_head-c_rostrum-yaw",
+    "c_head-c_rostrum-pitch",
+    "c_head-c_rostrum-roll",
+    "c_rostrum-c_haustellum-yaw",
+    "c_rostrum-c_haustellum-pitch",
+    "c_rostrum-c_haustellum-roll"
+  ],
+  "diagnostic_joint_selection": "Two pitch hinges selected via API; no source-specific biological two-DOF preset",
+  "compile_warnings": [
+    "Compiling a fly model that is not attached to a world. `fusestatic` is changed to false to prevent the root body segment from being fused with the MJCF root, which would impair the placement of the tracking camera."
+  ],
+  "joints": [
+    {
+      "name": "c_head-c_rostrum-pitch",
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "anchor_world_mm": [
+        0.9546999999999999,
+        0.0,
+        1.026698
+      ],
+      "axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limited": false,
+      "unused_range_rad": [
+        0.0,
+        0.0
+      ],
+      "stiffness_native": 10.0,
+      "damping_native": 0.5,
+      "armature_native": 1e-06,
+      "springref_rad": 0.0,
+      "position_actuator_name": "c_head-c_rostrum-pitch-position",
+      "actuator_ctrl_limited": false,
+      "unused_ctrlrange": [
+        0.0,
+        0.0
+      ],
+      "actuator_force_limited": true,
+      "actuator_forcerange_native": [
+        -30.0,
+        30.0
+      ],
+      "actuator_gainprm": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "c_rostrum-c_haustellum-pitch",
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "anchor_world_mm": [
+        0.5836999999999999,
+        0.0,
+        1.007098
+      ],
+      "axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limited": false,
+      "unused_range_rad": [
+        0.0,
+        0.0
+      ],
+      "stiffness_native": 10.0,
+      "damping_native": 0.5,
+      "armature_native": 1e-06,
+      "springref_rad": 0.0,
+      "position_actuator_name": "c_rostrum-c_haustellum-pitch-position",
+      "actuator_ctrl_limited": false,
+      "unused_ctrlrange": [
+        0.0,
+        0.0
+      ],
+      "actuator_force_limited": true,
+      "actuator_forcerange_native": [
+        -30.0,
+        30.0
+      ],
+      "actuator_gainprm": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "parts": {
+    "c_head": {
+      "body_id": 2,
+      "geom_id": 1,
+      "source_rigging": {
+        "pos": [
+          0.0287,
+          0.0,
+          0.000698
+        ],
+        "quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass": 9.46e-05
+      },
+      "body_origin_world_mm": [
+        0.5246999999999999,
+        0.0,
+        1.3006980000000001
+      ],
+      "body_rotation_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "geom_pose_world_mm": [
+        0.724231679796629,
+        1.6351885555892945e-16,
+        1.3426387045504315
+      ],
+      "geom_rotation_world": [
+        [
+          0.9948671649633403,
+          -0.10118954529895383,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000000000000016
+        ],
+        [
+          0.10118954529895383,
+          0.9948671649633403,
+          0.0
+        ]
+      ],
+      "geom_local_position_mm": [
+        0.19953167979662897,
+        1.6351885555892945e-16,
+        0.041940704550431314
+      ],
+      "geom_local_quaternion": [
+        0.7061988326532659,
+        0.7061988326532659,
+        -0.03582190334369914,
+        0.03582190334369914
+      ],
+      "mesh_vertices": 869,
+      "mesh_faces": 1998,
+      "source_to_compiled_vertex_max_error_mm": 1.6637739407262774e-08,
+      "world_min_mm": [
+        0.5093866599648335,
+        -0.37635290622711226,
+        1.0242618959205172
+      ],
+      "world_max_mm": [
+        1.0200688557547073,
+        0.3763529062271126,
+        1.7021913606933858
+      ],
+      "contype": 0,
+      "conaffinity": 0,
+      "geom_group": 2,
+      "mass_native": 9.46e-05
+    },
+    "c_rostrum": {
+      "body_id": 3,
+      "geom_id": 2,
+      "source_rigging": {
+        "pos": [
+          0.43,
+          0.0,
+          -0.274
+        ],
+        "quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass": 1.82e-05
+      },
+      "body_origin_world_mm": [
+        0.9546999999999999,
+        0.0,
+        1.026698
+      ],
+      "body_rotation_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "geom_pose_world_mm": [
+        0.78150372389206,
+        2.7735646767477805e-17,
+        1.006399336973316
+      ],
+      "geom_rotation_world": [
+        [
+          0.9866929539097391,
+          -0.0,
+          -0.16259463307524474
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.16259463307524474,
+          0.0,
+          0.9866929539097391
+        ]
+      ],
+      "geom_local_position_mm": [
+        -0.17319627610793986,
+        2.7735646767477805e-17,
+        -0.0202986630266841
+      ],
+      "geom_local_quaternion": [
+        0.9966676863202045,
+        0.0,
+        -0.08156913046692633,
+        0.0
+      ],
+      "mesh_vertices": 817,
+      "mesh_faces": 2000,
+      "source_to_compiled_vertex_max_error_mm": 1.3395195248556339e-08,
+      "world_min_mm": [
+        0.5767691210876856,
+        -0.20681034028530118,
+        0.7486578806430708
+      ],
+      "world_max_mm": [
+        0.9944799336864969,
+        0.20681034028530124,
+        1.2516937960937364
+      ],
+      "contype": 0,
+      "conaffinity": 0,
+      "geom_group": 2,
+      "mass_native": 1.82e-05
+    },
+    "c_haustellum": {
+      "body_id": 4,
+      "geom_id": 3,
+      "source_rigging": {
+        "pos": [
+          -0.371,
+          0.0,
+          -0.0196
+        ],
+        "quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mass": 8.09e-06
+      },
+      "body_origin_world_mm": [
+        0.5836999999999999,
+        0.0,
+        1.007098
+      ],
+      "body_rotation_world": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "geom_pose_world_mm": [
+        0.7907903261711788,
+        -1.777545931894061e-18,
+        0.8934323083702762
+      ],
+      "geom_rotation_world": [
+        [
+          0.18160605362674134,
+          -0.9833713648902568,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000000000000027
+        ],
+        [
+          0.9833713648902568,
+          0.18160605362674137,
+          0.0
+        ]
+      ],
+      "geom_local_position_mm": [
+        0.20709032617117892,
+        -1.777545931894061e-18,
+        -0.11366569162972386
+      ],
+      "geom_local_quaternion": [
+        0.5435085219264607,
+        0.5435085219264607,
+        -0.45232564220184923,
+        0.45232564220184923
+      ],
+      "mesh_vertices": 746,
+      "mesh_faces": 1998,
+      "source_to_compiled_vertex_max_error_mm": 7.817055044671673e-09,
+      "world_min_mm": [
+        0.5701998474017075,
+        -0.17480812966823625,
+        0.786339055523049
+      ],
+      "world_max_mm": [
+        0.9249693334940478,
+        0.17480812966823625,
+        1.0289775595752841
+      ],
+      "contype": 0,
+      "conaffinity": 0,
+      "geom_group": 2,
+      "mass_native": 8.09e-06
+    }
+  },
+  "source_poses_tested_rad": [
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "finite_difference_epsilon_rad": 1e-06,
+  "simulation_time_s": 0.0,
+  "mesh_point": {
+    "selection": "Farthest compiled haustellum mesh vertex from its hinge origin; geometric fiducial, NOT identified mouth/contact aperture",
+    "compiled_vertex_index": 79,
+    "local_body_mm": [
+      0.3382213423656333,
+      6.400916146650838e-26,
+      -0.14344834119364358
+    ],
+    "world_mm": [
+      0.9219213423656332,
+      6.400916146650838e-26,
+      0.8636496588063565
+    ],
+    "distance_from_haustellum_origin_mm": 0.3673841355078073,
+    "jacobian_mm_per_rad": [
+      [
+        -0.16304834119364364,
+        -0.14344834119364358
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.032778657634366715,
+        -0.3382213423656333
+      ]
+    ],
+    "finite_difference_max_error_mm_per_rad": 6.835398913551671e-11,
+    "analytic_cross_product_max_error_mm_per_rad": 0.0
+  },
+  "checks": {
+    "explicit_two_pitch_dofs_only": true,
+    "source_neutral_has_no_proboscis_angles": true,
+    "source_preset_offers_six_proboscis_dofs": true,
+    "no_joint_limits_supplied": true,
+    "no_actuator_ctrl_limits_supplied": true,
+    "zero_source_qpos": true,
+    "c_head_compiled_mesh_matches_scaled_stl": true,
+    "c_rostrum_compiled_mesh_matches_scaled_stl": true,
+    "c_haustellum_compiled_mesh_matches_scaled_stl": true,
+    "mesh_point_jacobian_finite_difference": true,
+    "mesh_point_jacobian_independent_cross_product": true,
+    "no_dynamic_steps_or_contacts": true,
+    "default_proboscis_collision_masks_disabled": true,
+    "source_files_unchanged": true
+  },
+  "claim_ceiling": "Source geometry and infinitesimal mechanics only; no validated extension range, actuator physiology, mouth point, pumping, swallowing or neural-to-muscle mapping."
+}

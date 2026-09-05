@@ -2,7 +2,13 @@
   "scope": "Separate feeding circuit effects from body-induced changes in taste input.\n\nFollow-up to the retained failed closed-loop input-equality assumption in\naudit_feeding_motor_recruitment.py. No runtime/model parameters are changed.\n",
   "complete": true,
   "prior_experiment_sha256": "37a9a21b65304b302bc44b686fa1b83ddf911eb1bf2cfc96fd1f90eb498a766c",
-  "script_sha256": "b06b10400a35ebd816100b4c5d16836ab41e6c22b5f71209ac771090ebaab212",
+  "script_sha256": "35e71dc568a13c7ce47c96528e041b7a60788d1cae8299abd6438125fb115402",
+  "drive_contract": {
+    "current_mv": null,
+    "poisson_weight_mv": null,
+    "disable_refractory": true,
+    "note": "SparseDrive defaults; preserve listed zero-rate ORNs and exact array order."
+  },
   "plan": {
     "seeds": [
       11,
@@ -26,6 +32,26 @@
     {
       "seed": 11,
       "baseline_reproduced_exactly": true,
+      "baseline_checked_observables": {
+        "ordered_input_arrays": true,
+        "monitored_counts": true,
+        "monitored_neuron_ids_and_spike_times": true,
+        "graph": true,
+        "neural_parameters": true,
+        "normalized_intake": true
+      },
+      "historical_format_monitored_event_sha256": "7a25ae60c4d61ea65d3999e29965d8552564d7c6c59380a2833f2d0f325ed596",
+      "neural_parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "synapse_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "poisson_weight_mv": 68.75
+      },
       "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
       "catalogue": [
         {
@@ -53739,6 +53765,26 @@
     {
       "seed": 12,
       "baseline_reproduced_exactly": true,
+      "baseline_checked_observables": {
+        "ordered_input_arrays": true,
+        "monitored_counts": true,
+        "monitored_neuron_ids_and_spike_times": true,
+        "graph": true,
+        "neural_parameters": true,
+        "normalized_intake": true
+      },
+      "historical_format_monitored_event_sha256": "a2cb401fbb8f2e8d0032402ab963d81b92d4746517d9a4e9588ba5418aae57f4",
+      "neural_parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "synapse_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "poisson_weight_mv": 68.75
+      },
       "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8",
       "catalogue": [
         {
