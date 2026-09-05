@@ -56,12 +56,13 @@ function update(data) {
     sensory: ["Sensory assay", "Environmental stimuli feed the neural model."],
     motor_probe: ["Direct DN motor calibration", "Selected descending neurons receive artificial stimulation."],
     grooming_probe: ["Direct DN grooming calibration", "Left DNg62/DNge078 receive artificial stimulation to gate a recorded motion template."],
+    grooming_sensory_probe: ["Imposed JO-F sensory activation", "Audited left JO-F afferents receive artificial inputs; the full graph gates a female-derived motion template."],
     controller_only: ["Controller-only baseline", "Walking commands bypass neural activity."],
   };
   const assay = assays[telemetry.assay] || ["Assay not reported", "The runtime has not identified its experiment mode."];
   setText("assay-label", assay[0]);
   setText("assay-description", assay[1]);
-  $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "controller_only"].includes(telemetry.assay));
+  $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", labels[data.status] || data.status);
   $("status-dot").className = `dot ${data.status === "running" ? "live" : data.status === "error" ? "error" : ""}`;
@@ -102,6 +103,13 @@ function update(data) {
     setText("grooming-source-time", grooming.source_time_s === null ? "Inactive" : grooming.source_time_s === undefined ? "—" : `${number(grooming.source_time_s, 3)} s`);
     const rate = neural.output_rates?.grooming_left;
     setText("grooming-readout", typeof rate === "number" && Number.isFinite(rate) ? `${number(rate, 1)} Hz` : "—");
+  }
+  const groomingSensory = telemetry.grooming_sensory_probe;
+  $("grooming-sensory-panel").hidden = !groomingSensory;
+  if (groomingSensory) {
+    setText("grooming-sensory-input", `${count(groomingSensory.source_neurons)} left JO-F cells · ${number(groomingSensory.input_rate_hz_per_cell, 0)} Hz imposed events per cell`);
+    setText("grooming-sensory-spikes", `Sensory spikes · ${count(groomingSensory.source_spikes)} this update · ${count(groomingSensory.source_total_spikes)} total`);
+    if (typeof groomingSensory.outgoing_blocked === "boolean") $("grooming-source-block").checked = groomingSensory.outgoing_blocked;
   }
   for (const [label, key] of [["min", "minimum"], ["mean", "mean"], ["max", "maximum"]]) {
     const value = neural.voltage_mv?.[key];
@@ -242,6 +250,7 @@ $("pause").addEventListener("click", () => control({type: "pause", paused: !stat
 $("reset").addEventListener("click", () => control({type: "reset"}));
 $("speed").addEventListener("change", (event) => control({type: "speed", value: Number(event.target.value)}));
 $("ablation").addEventListener("change", (event) => control({type: "ablation", enabled: event.target.checked}));
+$("grooming-source-block").addEventListener("change", (event) => control({type: "synaptic_output", group: "grooming_sensory", blocked: event.target.checked}));
 for (const button of document.querySelectorAll("[data-camera]")) button.addEventListener("click", () => control({type: "camera", camera: button.dataset.camera}));
 for (const name of ["odor", "light"]) {
   $(name).addEventListener("input", (event) => setText(`${name}-value`, `${number(event.target.value)}×`));

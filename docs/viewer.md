@@ -49,6 +49,16 @@ recording is female-derived and antennae remain rigid. Source recording time is
 distinct from simulation time. No panel is shown when grooming is absent or
 disabled. This UI must not be interpreted as evidence of natural grooming.
 
+`grooming_sensory_probe` is separately labeled **Imposed JO-F sensory activation**.
+Its optional sidebar reports the 42 selected afferents, imposed per-cell input
+event rate, and their actual output spike counts. **Block JO-F synaptic output**
+suppresses the named `grooming_sensory` group's outgoing synapses at delivery;
+input events and source spikes continue. The separate motor-readout switch
+remains available. Neither switch establishes measured physiology. The sidebar
+states the putative subgroup correspondence, lack of physical touch/dust/wind
+transduction, and the possibility of bilateral DN recruitment. The fixed assay
+and causal body controls are documented in `grooming-sensory-loop.md`.
+
 ## Runtime API
 
 `fruitfly.simulation.SimulationRunner` is created inside a spawned subprocess:
@@ -152,3 +162,13 @@ playback showed **Standing · request held**, count **1**, actual behavior **Res
 and source time **Inactive**, while the readout remained active. The sequence did
 not repeat under the continued request. This confirms display of the calibrated
 runtime behavior, not natural grooming. Other viewer experiments were untouched.
+
+The JO-F sensory assay was inspected separately on port 8769 after both seeds
+passed its full-body causal controls. The browser source-output switch was
+applied to the actual runtime: source spike counts continued, the grooming DN
+readout stayed at 0 Hz, and no playback occurred. With the block removed and
+that separate assay reset, the renderer showed playback at simulation time
+0.56 s, source recording time 0.160 s, and a 17.9 Hz left-DN readout. The 42-cell,
+100 Hz imposed-input label and the sensory-mapping limits were visible; the
+real 800-pixel frame loaded, no UI error was displayed, and the desktop page had
+no horizontal overflow. Existing port-8766/8767/8768 experiments were untouched.

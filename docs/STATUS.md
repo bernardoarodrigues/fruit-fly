@@ -42,9 +42,15 @@ An [executed multisensory motor probe](../validation/multisensory-smoke.json) in
 
 The [full-graph grooming assay](grooming-loop.md) completes one measured traversal under direct left-DN stimulation, with 0.408 s of physical antennal contact and 2.151° joint tracking RMS. No-input and motor-mute controls produce no playback or contact; withdrawal cancels playback and tonic input does not loop it. The female-derived trajectory, rigid antennae, engineering motor adapter and unphysiological Shiu dynamics remain explicit limitations.
 
+The subsequent [JO-F sensory activation assay](grooming-sensory-loop.md) reaches the same body interface without direct DN stimulation. All 18 two-seed checks pass. Sensory-output blocking preserves the exact stimulated source spike trains and eliminates all downstream spikes and playback. Both sides' grooming DNs respond, and the inputs are imposed events with an uncertain crosswalk to experimental drivers. This is a causal model demonstration, not calibrated natural touch or side-selective grooming.
+
 The [free-running data audit](freewalking-data-alignment.md) discovered that native 800 Hz poses and stored interpolated velocities share array lengths but refer to different times. Independent reconstruction confirms the mismatch in all 372 bouts. Per-fly sex and exact absolute source-frame origins are not resolved. Aligned derivatives and mixed-sex labels are required before this dataset can support motor calibration.
 
-Latest complete suite: **107 tests passed, 26 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+The [mixed graded/spiking backend](graded-model.md) now supports exact nonspiking cell populations without removing their graph edges. Independent equation/delay/checkpoint checks and a full-graph 16-candidate APN2 smoke assay pass. Release parameters remain explicit hypotheses; no wind physiology fit or body/viewer integration is claimed.
+
+The [walking benchmark](freewalking-benchmark.md) now derives aligned kinematics from 372 bouts and compares the actual physical controller and neural motor probe. It identifies fixed cadence, undersized excursions and reversing body yaw as separate calibration targets, while preserving the source's mixed-sex and curated-running limits.
+
+Latest complete suite: **120 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 ## Compute and next gates
 

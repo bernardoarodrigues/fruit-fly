@@ -1,0 +1,12 @@
+{
+  "seed": 11,
+  "assay": "grooming_sensory_probe",
+  "neural_model": "shiu",
+  "probe_hz": 100,
+  "grooming_threshold_hz": 10,
+  "coupling_s": 0.005,
+  "sensory_parameters": {"odor_baseline_hz": 0, "odor_max_increment_hz": 0},
+  "enable_taste": false,
+  "body": {"enable_grooming": true, "grooming_trace_path": "data/grooming/unilateral_left.npz"},
+  "viewer": {"fps": 8, "step_seconds": 0.01, "camera": "follow"}
+}

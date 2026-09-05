@@ -191,6 +191,8 @@ def validate_command(command: Any) -> dict[str, Any]:
         return {"type": kind, "camera": command["camera"]}
     if kind == "ablation" and isinstance(command.get("enabled"), bool):
         return {"type": kind, "enabled": command["enabled"]}
+    if kind == "synaptic_output" and command.get("group") == "grooming_sensory" and isinstance(command.get("blocked"), bool):
+        return {"type": kind, "group": "grooming_sensory", "blocked": command["blocked"]}
     if kind in ("speed", "stimulus"):
         value = command.get("value")
         if isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value):

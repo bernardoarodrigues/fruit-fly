@@ -84,11 +84,15 @@ class ViewerValidationTests(unittest.TestCase):
         self.assertEqual(validate_command({"type": "stimulus", "name": "odor", "value": 0}),
                          {"type": "stimulus", "name": "odor", "value": 0.0})
         self.assertEqual(validate_command({"type": "camera", "camera": "side"}), {"type": "camera", "camera": "side"})
+        source_control = {"type": "synaptic_output", "group": "grooming_sensory", "blocked": True}
+        self.assertEqual(validate_command(source_control), source_control)
         for invalid in [[], None, {"type": "stop"}, {"type": "pause", "paused": 1},
                         {"type": "speed", "value": True}, {"type": "speed", "value": float("nan")},
                         {"type": "stimulus", "name": "odor", "value": -1},
                         {"type": "stimulus", "name": "unknown", "value": 1},
-                        {"type": "ablation", "enabled": "false"}, {"type": "camera", "camera": "../../file"}]:
+                        {"type": "ablation", "enabled": "false"}, {"type": "camera", "camera": "../../file"},
+                        {"type": "synaptic_output", "group": "grooming_sensory", "blocked": "false"},
+                        {"type": "synaptic_output", "group": "unknown", "blocked": True}]:
             with self.subTest(command=invalid), self.assertRaises(ValueError):
                 validate_command(invalid)
 

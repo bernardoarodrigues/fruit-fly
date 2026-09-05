@@ -18,6 +18,16 @@ from .neural import LIFNetwork, LIFParameters, SparseDrive
 from .sensors import SensoryEncoder, SensoryParameters, MotorDecoder, TasteEncoder
 
 
+# Audited MaleCNS left AN JO-F anatomical union, in graph-index order. This is
+# not an exact reproduction of the experimental driver or older JO-F subgroups.
+GROOMING_SENSORY_IDS = (38160, 60335, 92767, 127912, 146314, 154152, 162166,
+    170014, 179637, 188780, 200259, 224261, 227655, 231936, 237833, 240644,
+    246484, 247028, 249842, 279391, 287167, 303968, 308970, 324453, 331081,
+    336332, 343346, 360461, 403040, 407092, 426803, 482280, 166331476,
+    197061019, 209837831, 238817349, 639242246, 793720445, 812830130,
+    906350022, 975904445, 987117568)
+
+
 class SimulationRunner:
     def __init__(self, config: dict | None = None):
         self.config = copy.deepcopy(config or {})
@@ -58,15 +68,28 @@ class SimulationRunner:
         self.ablated = False
         self.outgoing_blocks = set()
         self.assay = self.config.get("assay", "sensory")
-        if self.assay not in ("sensory", "motor_probe", "grooming_probe", "controller_only"):
-            raise ValueError("assay must be sensory, motor_probe, grooming_probe or controller_only")
-        if self.assay == "grooming_probe" and not self.motor.enable_grooming:
+        if self.assay not in ("sensory", "motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"):
+            raise ValueError("Unknown assay")
+        if self.assay in ("grooming_probe", "grooming_sensory_probe") and not self.motor.enable_grooming:
             raise ValueError("Grooming probe requires the optional grooming body")
         self.probe_hz = float(self.config.get("probe_hz", 40))
         if not np.isfinite(self.probe_hz) or not 0 <= self.probe_hz <= 300:
             raise ValueError("probe_hz must lie in [0,300]")
         self.probe_indices = (self.motor.groups["grooming_left"] if self.assay == "grooming_probe"
                               else self.graph.select(["DNg97"]))
+        if self.assay == "grooming_sensory_probe":
+            self.probe_indices = self.graph.select(["JO-FD1", "JO-FD2", "JO-FV"], side="L", nerve="AN")
+            if tuple(self.graph.neuron_ids[self.probe_indices]) != GROOMING_SENSORY_IDS:
+                raise ValueError("Grooming sensory assay requires the exact audited 42-cell left JO-F union")
+            p = self.sensors.parameters
+            if (p.odor_baseline_hz != 0 or p.odor_max_increment_hz != 0
+                    or self.taste is not None or self.proprioceptor is not None):
+                raise ValueError("Grooming sensory assay requires zero odor rates and disabled taste/proprioceptive inputs")
+            if [len(self.sensors.groups[s]) for s in ("L", "R")] != [51, 54]:
+                raise ValueError("Grooming sensory assay requires the audited 105 zero-rate ORNs first")
+            if self.neural_model != "shiu" or self.brain.parameters != LIFParameters():
+                raise ValueError("Grooming sensory assay requires the unchanged Shiu baseline")
+        self.last_probe_spikes = self.total_probe_spikes = 0
         self.total_spikes = self.last_spikes = self.active_neurons = 0
         self.edge_visits = 0
         self.wall_s = 0.0
@@ -114,6 +137,12 @@ class SimulationRunner:
                     "motor_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.motor.groups.items()},
                     "grooming_threshold_hz": self.motor.grooming_threshold_hz if self.motor.enable_grooming else None,
                     "probe_ids": self.graph.neuron_ids[self.probe_indices].tolist(),
+                    "probe_input_order_ids": (self.graph.neuron_ids[np.r_[self.sensors.groups["L"],
+                        self.sensors.groups["R"], self.probe_indices]].tolist()
+                        if self.assay == "grooming_sensory_probe" else None),
+                    "probe_input_rate_hz": self.probe_hz,
+                    "probe_source_limit": ("Imposed independent JO-F Poisson inputs; putative subgroup crosswalk; not physical touch, dust, wind or natural grooming"
+                        if self.assay == "grooming_sensory_probe" else None),
                     "claim": "Full retained male graph with simplified dynamics and declared body/motor/sensory surrogates"}
         (self.run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 
@@ -137,6 +166,7 @@ class SimulationRunner:
         started = time.perf_counter()
         recent_active = set()
         self.last_spikes = 0
+        self.last_probe_spikes = 0
         for _ in range(count):
             duration = self.coupling_s
             observation = self.body.observe()
@@ -149,8 +179,8 @@ class SimulationRunner:
                 movement_drive = self.proprioceptor.encode(observation)
                 drive = SparseDrive(np.r_[drive.indices, movement_drive.indices],
                                     rates_hz=np.r_[drive.rates_hz, movement_drive.rates_hz])
-            if self.assay in ("motor_probe", "grooming_probe"):
-                # Positive control: explicit DN stimulation, never called foraging.
+            if self.assay in ("motor_probe", "grooming_probe", "grooming_sensory_probe"):
+                # Imposed neural inputs; JO-F sensory probe never drives DNs.
                 drive = SparseDrive(np.r_[drive.indices, self.probe_indices],
                                     rates_hz=np.r_[drive.rates_hz, np.full(len(self.probe_indices), self.probe_hz)])
             batch = self.brain.advance(duration * 1000, drive=drive)
@@ -166,6 +196,10 @@ class SimulationRunner:
             self.last_action = action
             self.last_spikes += batch.total_spikes
             self.total_spikes += batch.total_spikes
+            if self.assay == "grooming_sensory_probe":
+                source_spikes = int(batch.counts(self.probe_indices).sum())
+                self.last_probe_spikes += source_spikes
+                self.total_probe_spikes += source_spikes
             self.edge_visits += batch.traversed_edges
             recent_active.update(np.unique(batch.indices).tolist())
         self.wall_s += time.perf_counter() - started
@@ -194,6 +228,10 @@ class SimulationRunner:
             warnings.append("Motor calibration assay: DNg97 neurons receive direct Poisson stimulation.")
         elif self.assay == "grooming_probe":
             warnings.append("Grooming calibration: left DNg62/DNge078 receive direct stimulation and gate a female-derived motion template; not spontaneous sensory-driven grooming.")
+        elif self.assay == "grooming_sensory_probe":
+            warnings.append("Imposed left JO-F afferent activation: anatomical union with putative subgroup crosswalk, not an exact driver reproduction. No physical touch, dust or wind transduction and no natural grooming claim. Female-derived motor template; rigid antennae.")
+            warnings.append("Shiu input events apply voltage jumps and disable refractory time for every listed input, including 105 zero-rate ORNs before the 42 JO-F cells. The input rate is not a measured afferent firing rate.")
+            warnings.append("Left afferent input also recruits right grooming DNs in the neural assay. The selected left motor readout/template does not establish unilateral biological behavior.")
         elif self.assay == "controller_only":
             warnings.append("Controller-only baseline: movement is independent of neural outputs.")
         return {
@@ -223,6 +261,12 @@ class SimulationRunner:
             "stimuli": world["stimuli"], "vision": observation["vision"],
             "wind": observation["wind"], "wind_reference": world["wind_reference"],
             "grooming": observation.get("grooming"),
+            "grooming_sensory_probe": ({"source_group": "grooming_sensory",
+                "source_neurons": len(self.probe_indices), "input_rate_hz_per_cell": self.probe_hz,
+                "source_spikes": self.last_probe_spikes, "source_total_spikes": self.total_probe_spikes,
+                "outgoing_blocked": "grooming_sensory" in self.outgoing_blocks,
+                "input_kind": "imposed Poisson voltage events; not measured afferent firing or physical stimulation"}
+                if self.assay == "grooming_sensory_probe" else None),
             "events": list(self.events), "warnings": warnings, "run_dir": str(self.run_dir),
         }
 
@@ -238,6 +282,7 @@ class SimulationRunner:
             if self.proprioceptor:
                 self.proprioceptor.reset()
             self.total_spikes = self.last_spikes = self.active_neurons = self.edge_visits = 0
+            self.last_probe_spikes = self.total_probe_spikes = 0
             self.wall_s = 0.0
             self.last_action = {"behavior": "rest", "left": 0.0, "right": 0.0}
             self.events = []
@@ -261,6 +306,8 @@ class SimulationRunner:
         return self.snapshot()
 
     def _input_group(self, group):
+        if group == "grooming_sensory" and self.assay == "grooming_sensory_probe":
+            return self.probe_indices
         encoder = {"odor": self.sensors, "sweet": self.taste,
                    "club": self.proprioceptor}.get(group)
         if encoder is None:
@@ -288,7 +335,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path)
     parser.add_argument("--seconds", type=float, default=1)
-    parser.add_argument("--assay", choices=("sensory", "motor_probe", "grooming_probe", "controller_only"))
+    parser.add_argument("--assay", choices=("sensory", "motor_probe", "grooming_probe", "grooming_sensory_probe", "controller_only"))
     args = parser.parse_args()
     config = json.loads(args.config.read_text()) if args.config else {}
     if args.assay:

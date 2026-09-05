@@ -34,6 +34,8 @@ That assay is motor calibration, not emergent foraging. Light currently changes 
 
 `configs/male-grooming-probe.json` directly stimulates two identified left descending neurons, which gate one measured female grooming trajectory through the physical body. Launch it on port 8768 and use Reset to replay. The [four-condition check](docs/grooming-loop.md) verifies neural gating, actual contacts, cancellation and no tonic repetition. This is an optional motor calibration assay; natural sensory-driven grooming remains unvalidated.
 
+`configs/male-grooming-sensory-probe.json` instead stimulates 42 audited JO-F antennal sensory cells. The [two-seed body assay](docs/grooming-sensory-loop.md) passes 18 controls, including unchanged sensory spike trains with all downstream activity and movement abolished by blocking sensory outputs. Launch on port 8769. Inputs are imposed neural events; physical touch transduction and natural grooming are not yet calibrated.
+
 ## Validate and investigate
 
 ```sh
