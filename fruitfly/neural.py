@@ -381,15 +381,30 @@ class LIFNetwork:
             value = np.asarray(state[name])
             if value.shape != destination.shape or value.dtype != destination.dtype:
                 raise ValueError(f"Invalid checkpoint array: {name}")
+        for name in ("tick", "seed"):
+            if (isinstance(state[name], (bool, np.bool_))
+                    or not isinstance(state[name], (int, np.integer)) or state[name] < 0):
+                raise ValueError(f"Invalid checkpoint integer: {name}")
+        if any(not np.all(np.isfinite(state[name])) for name in ("voltage_mv", "synaptic_mv", "current_mv")):
+            raise ValueError("Invalid checkpoint non-finite neural state or current")
+        if state["rng_state"][0] == 0:
+            raise ValueError("Invalid checkpoint RNG: zero is an absorbing state")
+        if np.any(state["refractory_ticks"] < 0) or np.any(state["last_spike_tick"] >= state["tick"]):
+            raise ValueError("Invalid checkpoint refractory or last-spike clock")
+        pending = np.asarray(state["pending"])
+        if pending.ndim != 1 or pending.dtype != np.int32:
+            raise ValueError("Invalid checkpoint delayed source index dtype or shape")
         counts = state["pending_count"]
-        if np.any(counts < 0) or np.any(counts > self.n_neurons) or sum(counts) != len(state["pending"]):
+        if np.any(counts < 0) or np.any(counts > self.n_neurons) or sum(counts) != len(pending):
             raise ValueError("Invalid checkpoint delay queue")
         previous = self._indices(state["previous_drive"])
-        pending = np.asarray(state["pending"])
         if pending.size and (np.any(pending < 0) or np.any(pending >= self.n_neurons)):
             raise ValueError("Invalid checkpoint delayed source index")
-        if int(state["tick"]) < 0 or not np.all(np.isfinite(state["voltage_mv"])) or not np.all(np.isfinite(state["synaptic_mv"])):
-            raise ValueError("Invalid checkpoint clock or neural state")
+        offset = 0
+        for count in counts:
+            if len(np.unique(pending[offset:offset+count])) != count:
+                raise ValueError("Duplicate presynaptic spike in checkpoint delay slot")
+            offset += count
         for name, destination in destinations.items():
             destination[:] = state[name]
         offset = 0

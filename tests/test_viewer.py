@@ -49,6 +49,20 @@ class FakeRunner:
         pass
 
 
+class QuantizedRunner(FakeRunner):
+    """Contract fixture: rejects chunks that cut across sensor coupling steps."""
+
+    def __init__(self, config):
+        super().__init__(config)
+        self.coupling_s = config["coupling_s"]
+
+    def advance(self, sim_seconds):
+        if not np.isclose(round(sim_seconds / self.coupling_s) * self.coupling_s,
+                          sim_seconds, atol=1e-12, rtol=0):
+            raise ValueError("Duration cuts a coupling interval")
+        return super().advance(sim_seconds)
+
+
 def wait_for(service, predicate, timeout=10):
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
@@ -60,6 +74,12 @@ def wait_for(service, predicate, timeout=10):
 
 
 class ViewerValidationTests(unittest.TestCase):
+    def test_invalid_viewer_configuration_fails_before_worker_allocation(self):
+        for viewer in [[], {"camera": "bogus"}, {"paused": "false"}, {"speed": -1},
+                       {"step_seconds": float("nan")}, {"fps": 0}, {"fps": True}]:
+            with self.subTest(viewer=viewer), self.assertRaises(ValueError):
+                SimulationService({"viewer": viewer}, runner_factory=FakeRunner)
+
     def test_commands_validate_ranges_and_shapes(self):
         self.assertEqual(validate_command({"type": "stimulus", "name": "odor", "value": 0}),
                          {"type": "stimulus", "name": "odor", "value": 0.0})
@@ -78,6 +98,24 @@ class ViewerValidationTests(unittest.TestCase):
 
 
 class ViewerWorkerTests(unittest.TestCase):
+    def test_chunks_respect_runtime_coupling_interval(self):
+        # Covers an interval above the requested chunk and a non-divisor of it.
+        for interval in (.02, .003):
+            with self.subTest(interval=interval):
+                service = SimulationService({"coupling_s": interval,
+                    "viewer": {"step_seconds": .01, "fps": 30, "speed": .5}},
+                    runner_factory=QuantizedRunner)
+                service.start()
+                try:
+                    state = wait_for(service, lambda s: s["telemetry"].get("t_s", 0) >= .03
+                                     and s["observed_realtime_factor"] is not None)
+                    self.assertEqual(state["status"], "running")
+                    self.assertEqual(state["speed"], .5)
+                    self.assertGreater(state["observed_realtime_factor"], 0)
+                    self.assertLess(state["observed_realtime_factor"], .8)
+                finally:
+                    service.close()
+
     def test_pause_controls_reset_camera_and_graceful_close(self):
         service = SimulationService({"viewer": {"paused": True, "fps": 30}}, runner_factory=FakeRunner)
         service.start()
@@ -151,6 +189,13 @@ class ViewerHTTPTests(unittest.TestCase):
             with self.assertRaises(HTTPError) as error:
                 urlopen(bad_origin)
             self.assertEqual(error.exception.code, 403)
+            for path, body in [("/api/state", None), ("/api/control", b'{"type":"reset"}')]:
+                rebound_host = Request(base + path, data=body, headers={
+                    "Content-Type": "application/json", "Host": "foreign.example",
+                    "Origin": "http://foreign.example"})
+                with self.subTest(path=path), self.assertRaises(HTTPError) as error:
+                    urlopen(rebound_host)
+                self.assertEqual(error.exception.code, 403)
             invalid = Request(base + "/api/control", data=b'{"type":"speed","value":-1}',
                               headers={"Content-Type": "application/json"})
             with self.assertRaises(HTTPError) as error:

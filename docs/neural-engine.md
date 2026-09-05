@@ -149,7 +149,8 @@ Run the focused checks with:
 .venv/bin/python -m pytest tests/test_neural.py -q
 ```
 
-The focused validation run on 2026-09-04 passed **21 tests in 2.18 s**. Two
+The reference-engine suite contains **27 checks**; the combined reference and
+conductance suite passed **46 checks in 1.59 s** on 2026-09-05 UTC. Two
 tests ran live Brian2 2.10.1: a recurrent excitatory/inhibitory network with
 fixed current, and probability-one direct Poisson stimulation. The deterministic
 spike times match; voltage/synaptic traces agree to absolute tolerance
@@ -159,7 +160,8 @@ unavailable; the independent SciPy matrix-exponential reference remains required
 Additional tests check delayed causality across calls, zero delay, refractory
 freezing and rejected arrivals, conductance reset, equal time constants,
 deterministic seed/reset behavior, arbitrary chunk boundaries, complete checkpoint
-restoration while spikes are pending, graph mismatch rejection, recording-only
+restoration while spikes are pending, atomic rejection of corrupt/nonfinite
+checkpoint state, graph mismatch rejection, recording-only
 filters, outgoing ablation, quiet-network behavior and invalid inputs. These
 tests establish numerical/control behavior on controlled networks; they do not
 substitute for full-connectome benchmarks, published circuit replication, or

@@ -137,6 +137,9 @@ class Physiology:
 
     def snapshot(self) -> dict:
         return {"energy": self.energy, "hydration": self.hydration,
+                "capacities": {"energy": self.config.energy_capacity,
+                               "hydration": self.config.hydration_capacity,
+                               "crop": self.config.crop_capacity},
                 "crop": self.crop, "hunger": 1 - self.energy / self.config.energy_capacity,
                 "thirst": 1 - self.hydration / self.config.hydration_capacity,
                 "alive": self.alive, "food_ingested": self.food_ingested,

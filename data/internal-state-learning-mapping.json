@@ -1,0 +1,1013 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-05T00:55:54.920523+00:00",
+  "status": "research_catalog_only_not_a_controller_configuration",
+  "dataset": "male-cns:v1.0",
+  "annotation_source": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+  "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+  "neurotransmitter_source_sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+  "selection": "Exact type equality in processed neurons.feather; IDs are bodyId, not graph indices. somaSide is anatomical soma side, not synaptic compartment hemisphere.",
+  "types": {
+    "DN1a": {
+      "category": "clock",
+      "count": 4,
+      "body_ids": [
+        12969,
+        14636,
+        21316,
+        516397
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "DN1a"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "DN1pA": {
+      "category": "clock",
+      "count": 8,
+      "body_ids": [
+        19151,
+        31303,
+        35381,
+        39159,
+        41049,
+        42491,
+        45390,
+        110366
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "L",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "DN1pA"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "DN1pB": {
+      "category": "clock",
+      "count": 4,
+      "body_ids": [
+        15016,
+        15546,
+        16696,
+        28711
+      ],
+      "soma_sides": [
+        "R",
+        "L",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "DN1pB"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "l-LNv": {
+      "category": "clock",
+      "count": 8,
+      "body_ids": [
+        10870,
+        11114,
+        11212,
+        11715,
+        11999,
+        17015,
+        545813,
+        553895
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "consensus_nt": [
+        "unclear"
+      ],
+      "hemibrain_type": [
+        "l-LNv"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "s-LNv": {
+      "category": "clock",
+      "count": 8,
+      "body_ids": [
+        15832,
+        16461,
+        16552,
+        16634,
+        17336,
+        17355,
+        17916,
+        18945
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L",
+        "L",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "s-LNv"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "5thsLNv_LNd6": {
+      "category": "clock",
+      "count": 4,
+      "body_ids": [
+        11901,
+        12254,
+        13531,
+        14633
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "L",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "s-LNv"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Combined source label; individual fifth-sLNv versus LNd6 identities are not separated."
+    },
+    "LNd_b": {
+      "category": "clock",
+      "count": 4,
+      "body_ids": [
+        13290,
+        14287,
+        16031,
+        19469
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "LNd"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "No CRY/ITP molecular subclass inferred from count."
+    },
+    "LNd_c": {
+      "category": "clock",
+      "count": 6,
+      "body_ids": [
+        16011,
+        16320,
+        17219,
+        18222,
+        19086,
+        24307
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "No CRY/ITP molecular subclass inferred from count."
+    },
+    "LPN_a": {
+      "category": "clock",
+      "count": 4,
+      "body_ids": [
+        14711,
+        17620,
+        18668,
+        524719
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "LPN"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "hemibrainType=LPN supports broad LPN identity; subtype-specific clock phase is unresolved."
+    },
+    "LPN_b": {
+      "category": "clock",
+      "count": 2,
+      "body_ids": [
+        15634,
+        512906
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "LPN"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "hemibrainType=LPN supports broad LPN identity; subtype-specific clock phase is unresolved."
+    },
+    "ER5": {
+      "category": "sleep_wake",
+      "count": 21,
+      "body_ids": [
+        10043,
+        11605,
+        12059,
+        14284,
+        14963,
+        17078,
+        17171,
+        18633,
+        19072,
+        20026,
+        22001,
+        30206,
+        39798,
+        44909,
+        513379,
+        516944,
+        521528,
+        521534,
+        521535,
+        527297,
+        568502
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L",
+        "L",
+        "R",
+        "L",
+        "L",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "R"
+      ],
+      "consensus_nt": [
+        "gaba"
+      ],
+      "hemibrain_type": [
+        "ER5"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "ExR1": {
+      "category": "sleep_wake",
+      "count": 4,
+      "body_ids": [
+        10324,
+        11433,
+        11886,
+        12656
+      ],
+      "soma_sides": [
+        "R",
+        "L",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "ExR1"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "ExR3": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        12706,
+        520468
+      ],
+      "soma_sides": [
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "serotonin"
+      ],
+      "hemibrain_type": [
+        "ExR3"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "FB5H": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        16430,
+        536208
+      ],
+      "soma_sides": [
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "FB5H"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "FB6H": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        14540,
+        526639
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "unclear"
+      ],
+      "hemibrain_type": [
+        "FB6H"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Historical morphological match to TH-positive dFB DANs; male consensus_nt is unclear. Do not silently assign dopamine."
+    },
+    "FB7B": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        27698,
+        64956
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "unclear"
+      ],
+      "hemibrain_type": [
+        "FB7B"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Historical morphological match to TH-positive dFB DANs; male consensus_nt is unclear. Do not silently assign dopamine."
+    },
+    "hDeltaF": {
+      "category": "sleep_wake",
+      "count": 8,
+      "body_ids": [
+        24387,
+        26439,
+        30122,
+        39883,
+        45151,
+        63277,
+        533944,
+        557395
+      ],
+      "soma_sides": [
+        "L",
+        "L",
+        "R",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "hDeltaF"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; activation-screen wake phenotype in both sexes (Wolff et al. 2025), not proof of complete endogenous arousal mechanism."
+    },
+    "SMP368": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        11974,
+        511862
+      ],
+      "soma_sides": [
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "SMP368"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; activation-screen wake phenotype in both sexes (Wolff et al. 2025), not proof of complete endogenous arousal mechanism."
+    },
+    "SMP531": {
+      "category": "sleep_wake",
+      "count": 2,
+      "body_ids": [
+        19387,
+        140903
+      ],
+      "soma_sides": [
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "SMP531"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; activation-screen wake phenotype in both sexes (Wolff et al. 2025), not proof of complete endogenous arousal mechanism."
+    },
+    "PPL101": {
+      "category": "mushroom_body",
+      "count": 2,
+      "body_ids": [
+        11327,
+        11900
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "PPL101"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "MBON11": {
+      "category": "mushroom_body",
+      "count": 2,
+      "body_ids": [
+        10704,
+        11402
+      ],
+      "soma_sides": [
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "gaba"
+      ],
+      "hemibrain_type": [
+        "MBON11"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "PAM07": {
+      "category": "mushroom_body",
+      "count": 14,
+      "body_ids": [
+        39617,
+        47196,
+        49043,
+        60273,
+        65559,
+        86066,
+        86431,
+        96497,
+        98554,
+        114522,
+        120768,
+        131607,
+        137595,
+        153771
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "PAM07"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "PAM08": {
+      "category": "mushroom_body",
+      "count": 50,
+      "body_ids": [
+        55210,
+        58941,
+        65524,
+        65886,
+        69722,
+        74743,
+        75922,
+        76362,
+        86156,
+        87177,
+        90678,
+        90902,
+        95523,
+        102936,
+        103255,
+        104713,
+        105365,
+        107285,
+        109624,
+        117782,
+        119499,
+        122062,
+        129430,
+        133019,
+        135578,
+        136144,
+        142538,
+        146058,
+        147184,
+        152019,
+        152044,
+        152385,
+        157134,
+        158372,
+        161153,
+        162050,
+        174672,
+        174862,
+        175459,
+        175964,
+        178101,
+        178487,
+        184778,
+        197920,
+        212160,
+        226708,
+        242429,
+        523382,
+        523942,
+        524069
+      ],
+      "soma_sides": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R",
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "R"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "PAM08"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Broad gamma4 nominal type includes finer morphological subtypes; Li2020 reports PAM08-md gamma3. No individual male subtype/ROI assignment derived."
+    },
+    "MBON05": {
+      "category": "mushroom_body",
+      "count": 2,
+      "body_ids": [
+        10495,
+        519371
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "MBON05"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "PAM11": {
+      "category": "mushroom_body",
+      "count": 15,
+      "body_ids": [
+        114661,
+        119763,
+        137539,
+        138822,
+        139706,
+        145749,
+        147857,
+        157016,
+        204930,
+        215931,
+        224500,
+        238644,
+        273182,
+        319321,
+        520616
+      ],
+      "soma_sides": [
+        "R",
+        "L",
+        "R",
+        "L",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "PAM11"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "MBON07": {
+      "category": "mushroom_body",
+      "count": 4,
+      "body_ids": [
+        12859,
+        15626,
+        18603,
+        515338
+      ],
+      "soma_sides": [
+        "R",
+        "L",
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "glutamate"
+      ],
+      "hemibrain_type": [
+        "MBON07"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "PPL105": {
+      "category": "mushroom_body",
+      "count": 2,
+      "body_ids": [
+        14225,
+        512326
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "dopamine"
+      ],
+      "hemibrain_type": [
+        "PPL105"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "MBON18": {
+      "category": "mushroom_body",
+      "count": 2,
+      "body_ids": [
+        14221,
+        512788
+      ],
+      "soma_sides": [
+        "R",
+        "L"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "MBON18"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen."
+    },
+    "hDeltaK": {
+      "category": "navigation_memory",
+      "count": 31,
+      "body_ids": [
+        13914,
+        23083,
+        23359,
+        23858,
+        24153,
+        24314,
+        24671,
+        24963,
+        25024,
+        25036,
+        25137,
+        25176,
+        26064,
+        26242,
+        26429,
+        27106,
+        27133,
+        27425,
+        28782,
+        29648,
+        36059,
+        40565,
+        41715,
+        41743,
+        52191,
+        56542,
+        514184,
+        529142,
+        536264,
+        541855,
+        568471
+      ],
+      "soma_sides": [
+        "R",
+        "R",
+        "L",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "R",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "R"
+      ],
+      "consensus_nt": [
+        "acetylcholine"
+      ],
+      "hemibrain_type": [
+        "hDeltaK"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Female navigation persistence supported with specific split line; sleep sign is inconsistent across driver lines. No male persistence time constant established."
+    },
+    "PFGs": {
+      "category": "navigation_memory",
+      "count": 18,
+      "body_ids": [
+        16800,
+        19367,
+        19564,
+        20781,
+        22657,
+        23180,
+        23779,
+        28248,
+        28767,
+        30653,
+        35912,
+        44256,
+        52041,
+        58561,
+        522993,
+        524654,
+        525061,
+        539328
+      ],
+      "soma_sides": [
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "R",
+        "L",
+        "R"
+      ],
+      "consensus_nt": [
+        "unclear"
+      ],
+      "hemibrain_type": [
+        "PFGs"
+      ],
+      "evidence_scope": "Exact MaleCNS annotation; functional identity transferred by type from independent experiments, not physiology measured in this specimen.",
+      "ambiguity": "Male consensus_nt unclear; Wolff et al. EASI-FISH supports tyramine. Do not overwrite current source labels; receptor-specific signaling required."
+    }
+  },
+  "compartment_anchors": {
+    "gamma1pedc": {
+      "dan_types": [
+        "PPL101"
+      ],
+      "mbon_types": [
+        "MBON11"
+      ],
+      "mbon_long_name": "gamma1pedc>alpha/beta",
+      "status": "fast aversive learning anchor; excludes PPL102 and atypical MBONs"
+    },
+    "gamma4": {
+      "dan_types": [
+        "PAM07",
+        "PAM08"
+      ],
+      "mbon_types": [
+        "MBON05"
+      ],
+      "mbon_long_name": "gamma4>gamma1gamma2",
+      "status": "candidate for timing-dependent plasticity; DAN subtype/ROI crosswalk required before assigning every neuron"
+    },
+    "alpha1": {
+      "dan_types": [
+        "PAM11"
+      ],
+      "mbon_types": [
+        "MBON07"
+      ],
+      "mbon_long_name": "alpha1",
+      "status": "appetitive consolidation anchor; receptor-dependent feedback and post-training state required"
+    },
+    "alpha2": {
+      "dan_types": [
+        "PPL105"
+      ],
+      "mbon_types": [
+        "MBON18"
+      ],
+      "mbon_long_name": "alpha2sc",
+      "status": "longer-training comparison; PPL105 also innervates alpha-prime2; not all alpha2 MBONs included"
+    }
+  },
+  "sources": {
+    "clock": "https://doi.org/10.1038/s41467-024-54694-0",
+    "cx": "https://doi.org/10.7554/eLife.66039",
+    "cx_driver_and_transmitter": "https://doi.org/10.7554/eLife.104764",
+    "mb_type_crosswalk": "https://doi.org/10.7554/eLife.62576",
+    "hige": "https://doi.org/10.1016/j.neuron.2015.11.003",
+    "timing": "https://doi.org/10.1016/j.cell.2019.05.040",
+    "consolidation": "https://doi.org/10.7554/eLife.10719",
+    "navigation": "https://doi.org/10.1038/s41467-026-75945-2",
+    "navigation_addendum": "https://doi.org/10.1038/s41467-024-46225-8",
+    "navigation_mechanism_preprint": "https://doi.org/10.1101/2025.10.07.681003"
+  },
+  "excluded_inferences": [
+    "No sleep classifier or drive gains",
+    "No clock membership inferred from generic DN prefix",
+    "No CRY/PDF/ITP receptor values inferred per bodyId",
+    "No complete clock inventory claim",
+    "No dFB driver-wide phenotype assigned to every FB6 or FB7 cell",
+    "No universal dopamine reward or electrical sign",
+    "No blanket KC-to-MBON plasticity across compartments",
+    "No mapping of measured female time constants to male as validated facts"
+  ]
+}

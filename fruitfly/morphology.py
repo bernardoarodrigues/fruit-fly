@@ -156,6 +156,17 @@ def analyze_male_scan(scan_path: Path, trace_path: Path, output_dir: Path, *, do
     from skimage.morphology import ball
     from PIL import Image, ImageDraw
 
+    expected_hashes = {
+        "M1E.nii.gz": "cc347682b12ce4f10930253e9605f78bad20378903a1f49a61fbea5616d10246",
+        "M5H.swc": "4443580ff2e415ce3959a91a57ffea8bec6bb0a5ddd4ca8db59cfe75793eb69e",
+    }
+    for path in (Path(scan_path), Path(trace_path)):
+        if path.name not in expected_hashes:
+            raise ValueError("This frozen analysis currently supports only the verified M5H source pair")
+        with path.open("rb") as source:
+            actual = hashlib.file_digest(source, "sha256").hexdigest()
+        if actual != expected_hashes[path.name]:
+            raise ValueError("Morphology source hash differs from the verified specimen")
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     image = nib.load(scan_path)

@@ -2,7 +2,7 @@ import copy
 import numpy as np
 import pytest
 
-from fruitfly.sensors import SensoryEncoder, SensoryParameters, MotorDecoder
+from fruitfly.sensors import SensoryEncoder, SensoryParameters, MotorDecoder, TasteEncoder
 
 
 class AnatomyFixture:
@@ -70,3 +70,22 @@ def test_feeding_needs_neural_readout_and_physical_contact():
     assert motor.decode(Counts({8: 5, 9: 5}), .1, observation(taste_food=True))["behavior"] == "feed"
     motor.reset()
     assert motor.decode(Counts({}), .1, observation(taste_food=True))["behavior"] == "rest"
+
+
+class TasteAnatomyFixture:
+    def select(self, types, side=None, nerve=None):
+        assert types == ["LgAG2", "LgLG4"]
+        return np.array([{"ProLN": 0, "MesoLN": 1, "MetaLN": 2}[nerve] + (3 if side == "R" else 0)])
+
+
+def test_taste_is_leg_specific_and_does_not_borrow_water_channels():
+    encoder = TasteEncoder(TasteAnatomyFixture())
+    contacts = {leg: leg == "LF" for leg in encoder.groups}
+    result = encoder.encode({"food_contact_by_leg": contacts, "taste_water": True})
+    np.testing.assert_array_equal(result.indices, [0])
+    assert encoder.last_rates == dict(LF=100, LM=0, LH=0, RF=0, RM=0, RH=0)
+    contacts["LF"] = False
+    result = encoder.encode({"food_contact_by_leg": contacts, "taste_water": True})
+    assert len(result.indices) == 0
+    with pytest.raises(ValueError, match="six named"):
+        encoder.encode({"food_contact_by_leg": {"LF": True}})

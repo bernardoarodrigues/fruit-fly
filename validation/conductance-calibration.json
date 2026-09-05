@@ -1,0 +1,6235 @@
+{
+  "purpose": "Prespecified neural parameter sensitivity, not biological fit or motor policy optimization",
+  "dataset": "male-cns:v1.0",
+  "neurons": 166700,
+  "edges": 25582938,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "input_semantics": "Conductance backend rates are excitatory presynaptic event rates; actual ORN output rates are reported separately. Shiu uses original voltage stimulation.",
+  "conditions": [
+    {
+      "name": "shiu_reference",
+      "backend": "shiu-current-lif",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "synapse_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "poisson_weight_mv": 68.75
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -459.3881253282331,
+      "voltage_max_mv": 23.65467182706194,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": null,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -147.35333356186348
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -152.7788270465436
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -50.86730325781075
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -50.980742750462696
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -124.71229101109266
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.66483855072946
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -115.44114612177307
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -85.00701443881844
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -85.0942798431959
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -86.79812216095235
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -54.75082840172015
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.259804440860535
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.97388122645707
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -74.69193395066644
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.351036759186556
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -124.89648420505966
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -135.89945603445634
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -51.70052343636482
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -117.50955063990658
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -87.37578350509695
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 65706,
+          "traversed_edges": 24824079,
+          "wall_seconds": 0.2808064160053618,
+          "sensory_output_mean_hz": 146.76190476190476,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 240.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 210.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 70.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 30.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 30.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 87315,
+          "traversed_edges": 31941907,
+          "wall_seconds": 0.31353929196484387,
+          "sensory_output_mean_hz": 0.38095238095238104,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 260.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 250.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 100.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 60.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "default",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -73.83905619451843,
+      "voltage_max_mv": -45.00001020666511,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -63.589138374025076
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -64.23000671492233
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.63294375163566
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.39290765978258
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -61.37156674153434
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.760843239738136
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -59.03473495538158
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -57.76248943645087
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -57.790343978253915
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -62.51443282450413
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -53.93182502100067
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -51.644612137121634
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.6553627243682
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -61.230812842080525
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.59038666917263
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -62.012283708287804
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -61.58681481920971
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -54.28721797910717
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -63.581569917576196
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -58.590167538880934
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 102828,
+          "traversed_edges": 39036672,
+          "wall_seconds": 1.7887562909745611,
+          "sensory_output_mean_hz": 77.71428571428572,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 150.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 80.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 168872,
+          "traversed_edges": 58821553,
+          "wall_seconds": 2.0034389580250718,
+          "sensory_output_mean_hz": 1.1428571428571428,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 430.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 260.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 160.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "global_gain_0.1",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 0.1,
+        "inhibitory_gain": 0.1,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -61.69970144301244,
+      "voltage_max_mv": -45.000676483639,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.24178742486502
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -52.00538106443121
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -51.996767632681085
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -52.0
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -52.0
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 1771,
+          "traversed_edges": 612070,
+          "wall_seconds": 1.3137801249977201,
+          "sensory_output_mean_hz": 122.76190476190477,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 4462,
+          "traversed_edges": 3564332,
+          "wall_seconds": 1.3402169999899343,
+          "sensory_output_mean_hz": 5.523809523809524,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 110.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 70.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "global_gain_0.25",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 0.25,
+        "inhibitory_gain": 0.25,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -70.3073421709246,
+      "voltage_max_mv": -45.0000007718886,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -52.891642728898105
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -53.30506110742818
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -50.84924030222743
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -50.64764208882354
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -53.25461373237258
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -51.97688497807833
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -52.22277244873674
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -51.39566171557657
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -51.74338406176519
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -52.070483072934074
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -52.070036466224344
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.017197485555116
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -51.94194066786145
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -51.970547277295054
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -51.92045989089785
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -52.69916280802917
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -52.808744190178516
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -51.88853224252207
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -53.29245624762313
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -52.14119792057042
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 9892,
+          "traversed_edges": 5849005,
+          "wall_seconds": 1.4053604159853421,
+          "sensory_output_mean_hz": 118.76190476190477,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 190.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 180.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 12545,
+          "traversed_edges": 8114486,
+          "wall_seconds": 1.5295112919993699,
+          "sensory_output_mean_hz": 4.666666666666667,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 290.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 270.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "global_gain_0.5",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 0.5,
+        "inhibitory_gain": 0.5,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -70.75413564594716,
+      "voltage_max_mv": -45.000007408597185,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -58.60087576161212
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -59.511299117152966
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.18872007420332
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.087404151176536
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -59.98050477357446
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.846809315001494
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -54.05361201559579
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -52.73480138482486
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -54.34027173264492
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -56.36668943440138
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -52.241568052323174
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.36193862338795
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.92351506695912
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -54.247888330242795
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -51.52514802365641
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -59.99517952310603
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -60.03984695578698
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -52.77543921629619
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -59.84768911454113
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -55.26638097966951
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 19798,
+          "traversed_edges": 10372525,
+          "wall_seconds": 1.5933291250257753,
+          "sensory_output_mean_hz": 106.09523809523809,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 290.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 280.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 23865,
+          "traversed_edges": 13066053,
+          "wall_seconds": 1.963340749964118,
+          "sensory_output_mean_hz": 3.0476190476190483,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 380.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_reversal_-80",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -80,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -78.29998369041978,
+      "voltage_max_mv": -45.0000035395048,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -66.09210147467324
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -66.73978309902317
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.676046544998044
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.50091535294899
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -62.97229408669171
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.652568302317675
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -59.93212864982749
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -59.2107622977687
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -58.93010104590708
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -64.67682349308316
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -54.35975084351614
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -51.207228991184486
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -53.4383100456297
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -62.815514173482164
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.601459090586104
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -63.05650679551588
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -63.48070223651441
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -53.04571967841723
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -65.12472977045533
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -59.5695364329986
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 114381,
+          "traversed_edges": 42374500,
+          "wall_seconds": 1.796575458953157,
+          "sensory_output_mean_hz": 81.23809523809523,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 160.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 40.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 80.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 188707,
+          "traversed_edges": 64128964,
+          "wall_seconds": 1.966335250006523,
+          "sensory_output_mean_hz": 1.3333333333333335,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 440.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 410.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 270.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 30.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 180.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_reversal_-70",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -70,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -69.41043887812519,
+      "voltage_max_mv": -45.00000002544102,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -61.30377590343714
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -61.83905167833129
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.63906576286453
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.51154031282128
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -59.04357402679877
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.860155130554475
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -57.22480764981783
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -56.32040877107058
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -56.460655037676794
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -60.69762599058994
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -52.97248135884295
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.17814070770594
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.85341357120978
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -59.66620252977351
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.529352110828796
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -59.47051862141131
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -59.39317727001759
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -53.753765502608786
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -60.801510111659994
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -57.26793772276505
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 74103,
+          "traversed_edges": 31592948,
+          "wall_seconds": 1.7813097499893047,
+          "sensory_output_mean_hz": 73.33333333333333,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 150.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 80.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 151659,
+          "traversed_edges": 53830101,
+          "wall_seconds": 1.9694352920050733,
+          "sensory_output_mean_hz": 1.1428571428571428,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 420.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 220.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 130.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_reversal_-65",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -65,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -64.71608086740623,
+      "voltage_max_mv": -45.00000499084727,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -59.21797547515488
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -59.64980549294149
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.44396784889504
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.61204317815425
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -57.28698248316132
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.374457497634396
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -55.71084841088714
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -54.725484187789334
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -55.845456235753936
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -58.4959488468761
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -53.32302240536984
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -51.77799865251551
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.52287264808171
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -57.65405403348732
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.495496910900556
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -57.74012543110858
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -57.168023895220955
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -54.180836900000095
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -59.04480172266386
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -54.56255462335265
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 35878,
+          "traversed_edges": 18127912,
+          "wall_seconds": 1.711604707990773,
+          "sensory_output_mean_hz": 68.19047619047619,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 340.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 90.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 40.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 41608,
+          "traversed_edges": 21116519,
+          "wall_seconds": 1.8461614580010064,
+          "sensory_output_mean_hz": 0.6666666666666667,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 420.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 110.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 30.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_gain_0.25",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 0.25,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -72.38791207698294,
+      "voltage_max_mv": -45.00000064713905,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -51.91702761029357
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -52.02743435368391
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.8602903000054
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.90414471949579
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -51.90618419044617
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -51.701295286694986
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -51.853810271885635
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -51.83151030245335
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -51.893595047111994
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -51.62990923244508
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -51.69206875398717
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -50.12137742773056
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -51.84721621036536
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -51.640565810872275
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -51.21894167848272
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -52.02698338082245
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -52.01549226314313
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -51.67590443134275
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -51.82909743605136
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -51.78271639838992
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 836353,
+          "traversed_edges": 244763312,
+          "wall_seconds": 1.973962957970798,
+          "sensory_output_mean_hz": 210.47619047619045,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 390.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 390.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 310.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 340.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 330.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 330.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 290.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 290.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 100.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 300.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 280.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 310.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 320.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 340.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 1284559,
+          "traversed_edges": 374141060,
+          "wall_seconds": 2.304950917023234,
+          "sensory_output_mean_hz": 134.66666666666666,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 430.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 460.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 460.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 440.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 430.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 160.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 460.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 430.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 460.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 460.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_gain_0.5",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 0.5,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -72.96306484125232,
+      "voltage_max_mv": -45.000002317058104,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -57.757500028753846
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -58.13715376310215
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.820581189577986
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.69761460541352
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -56.29142603238357
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -51.13203207858997
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -51.687609197051906
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -53.651589535873114
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -50.046526824146255
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -61.75366849195208
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -51.26249162840704
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -49.7592824739952
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -51.656820585503
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -59.010821651691984
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.726424295532404
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -54.412814052941485
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -56.1786940338406
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -50.92145674843416
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -51.19916613155715
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -49.80990006203061
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 298433,
+          "traversed_edges": 99413857,
+          "wall_seconds": 1.7962767500430346,
+          "sensory_output_mean_hz": 182.19047619047618,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 380.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 380.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 240.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 270.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 220.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 50.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 30.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 170.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 210.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 120.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 110.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 416997,
+          "traversed_edges": 139453960,
+          "wall_seconds": 1.8853678329614922,
+          "sensory_output_mean_hz": 21.428571428571427,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 460.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 450.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 390.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 130.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 280.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 270.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 170.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 90.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inhibitory_gain_2",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 2,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -74.52301687212379,
+      "voltage_max_mv": -45.000016818445594,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -65.61263102486258
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -65.97389005345558
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.73117853438669
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.367708471385455
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -64.86277658213203
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.59107305741037
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -61.848206760230866
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -60.89390948817842
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -61.56058637822679
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -62.884630289103754
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -58.711539389169594
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -53.5272651388089
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -58.86683372215091
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -61.10880083968264
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.807448199205716
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -64.03581527263837
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -64.09104013687838
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -58.92488212354339
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -66.04782569172316
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -64.28996228447856
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 22426,
+          "traversed_edges": 11848126,
+          "wall_seconds": 1.662239916040562,
+          "sensory_output_mean_hz": 144.2857142857143,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 340.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 330.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 50.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 23077,
+          "traversed_edges": 11448409,
+          "wall_seconds": 1.88035349996062,
+          "sensory_output_mean_hz": 11.047619047619047,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 420.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 410.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "default_left150_right5",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 150,
+      "right_input_event_hz": 5,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -73.86422074524806,
+      "voltage_max_mv": -45.000046504634824,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -63.8862917952174
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -64.40443010836097
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.65088433186081
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.49354080582133
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -61.46648141533753
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.99380233527443
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -59.179150890747515
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -58.345686838642656
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -58.358993332674245
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -62.114172580931644
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -52.913275437728274
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.23402601890248
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -52.58441265197612
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -60.741709688196345
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.58733233469595
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -61.85746463707376
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -61.49146498241647
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -53.615650861685225
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -63.26543756210007
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -58.35047291064293
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 99427,
+          "traversed_edges": 38276313,
+          "wall_seconds": 1.8018411659868434,
+          "sensory_output_mean_hz": 38.476190476190474,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 350.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 150.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 40.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 70.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 170120,
+          "traversed_edges": 58972043,
+          "wall_seconds": 2.0142807079828344,
+          "sensory_output_mean_hz": 0.6666666666666667,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 430.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 400.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 250.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 10.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 160.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "default_left5_right150",
+      "backend": "conductance-lif-v1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0
+      },
+      "seed": 42,
+      "left_input_event_hz": 5,
+      "right_input_event_hz": 150,
+      "input_neurons": 105,
+      "input_neuron_ids": [
+        105395,
+        160643,
+        162611,
+        171201,
+        173751,
+        176260,
+        180317,
+        189075,
+        189518,
+        190032,
+        190294,
+        205597,
+        220183,
+        221747,
+        222974,
+        254321,
+        258551,
+        260128,
+        268855,
+        279476,
+        292378,
+        296449,
+        302181,
+        353891,
+        363119,
+        373875,
+        416090,
+        419997,
+        436473,
+        437025,
+        486852,
+        541552,
+        551768,
+        552278,
+        564451,
+        902023,
+        922590,
+        925639,
+        211747785,
+        212945075,
+        222256845,
+        325265593,
+        499769368,
+        526888712,
+        648510281,
+        651813160,
+        688942939,
+        742571852,
+        802014155,
+        821459348,
+        936218495,
+        60498,
+        116618,
+        119181,
+        123123,
+        123968,
+        126824,
+        132720,
+        141372,
+        149131,
+        150947,
+        153046,
+        157520,
+        158137,
+        160357,
+        161922,
+        166688,
+        167640,
+        170403,
+        173031,
+        173387,
+        179108,
+        181166,
+        181207,
+        181625,
+        182888,
+        183425,
+        183849,
+        184230,
+        185253,
+        186397,
+        187330,
+        187949,
+        189605,
+        191144,
+        192631,
+        195280,
+        202140,
+        202705,
+        204248,
+        204564,
+        207430,
+        210364,
+        214985,
+        217507,
+        218745,
+        226920,
+        240470,
+        246478,
+        272883,
+        350383,
+        532745,
+        536451,
+        556859,
+        900877
+      ],
+      "voltage_min_mv": -73.79391055857002,
+      "voltage_max_mv": -45.00001001856212,
+      "all_voltages_finite": true,
+      "inside_reversal_bounds": true,
+      "mean_motor_voltage_during_stimulus": [
+        {
+          "body_id": 10045,
+          "mean_mv": -64.073627786341
+        },
+        {
+          "body_id": 10056,
+          "mean_mv": -64.64595043939443
+        },
+        {
+          "body_id": 10065,
+          "mean_mv": -51.6375995400071
+        },
+        {
+          "body_id": 10118,
+          "mean_mv": -51.45421540830116
+        },
+        {
+          "body_id": 10192,
+          "mean_mv": -60.840847746768205
+        },
+        {
+          "body_id": 10295,
+          "mean_mv": -50.84575566926005
+        },
+        {
+          "body_id": 10360,
+          "mean_mv": -58.07561574544033
+        },
+        {
+          "body_id": 10442,
+          "mean_mv": -58.64173460928102
+        },
+        {
+          "body_id": 10760,
+          "mean_mv": -57.55842797792542
+        },
+        {
+          "body_id": 10783,
+          "mean_mv": -62.421600801231534
+        },
+        {
+          "body_id": 10888,
+          "mean_mv": -54.333168024615524
+        },
+        {
+          "body_id": 11067,
+          "mean_mv": -52.91171431400656
+        },
+        {
+          "body_id": 11074,
+          "mean_mv": -53.11046024731486
+        },
+        {
+          "body_id": 11177,
+          "mean_mv": -61.02409501059288
+        },
+        {
+          "body_id": 13585,
+          "mean_mv": -50.37793682432948
+        },
+        {
+          "body_id": 13805,
+          "mean_mv": -61.59920144226947
+        },
+        {
+          "body_id": 230783,
+          "mean_mv": -61.47646191100685
+        },
+        {
+          "body_id": 512006,
+          "mean_mv": -53.793969853633826
+        },
+        {
+          "body_id": 520300,
+          "mean_mv": -62.95335635299628
+        },
+        {
+          "body_id": 523769,
+          "mean_mv": -58.20289924754351
+        }
+      ],
+      "phases": [
+        {
+          "phase": "stimulus",
+          "duration_ms": 100,
+          "network_spikes": 100114,
+          "traversed_edges": 38430815,
+          "wall_seconds": 1.7881203750148416,
+          "sensory_output_mean_hz": 32.095238095238095,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 360.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 340.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 150.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 80.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        },
+        {
+          "phase": "offset",
+          "duration_ms": 100,
+          "network_spikes": 168982,
+          "traversed_edges": 58391011,
+          "wall_seconds": 1.9914907499914989,
+          "sensory_output_mean_hz": 0.4761904761904761,
+          "motor_readouts": [
+            {
+              "body_id": 10045,
+              "type": "DNg100",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10056,
+              "type": "DNg100",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10065,
+              "type": "DNb05",
+              "side": "R",
+              "rate_hz": 440.0
+            },
+            {
+              "body_id": 10118,
+              "type": "DNb05",
+              "side": "L",
+              "rate_hz": 410.0
+            },
+            {
+              "body_id": 10192,
+              "type": "DNg75",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10295,
+              "type": "DNg34",
+              "side": "L",
+              "rate_hz": 260.0
+            },
+            {
+              "body_id": 10360,
+              "type": "DNa02",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10442,
+              "type": "DNa01",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10760,
+              "type": "DNa01",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10783,
+              "type": "DNp09",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 10888,
+              "type": "DNb06",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11067,
+              "type": "DNb06",
+              "side": "R",
+              "rate_hz": 20.0
+            },
+            {
+              "body_id": 11074,
+              "type": "DNg13",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 11177,
+              "type": "DNp09",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 13585,
+              "type": "DNg34",
+              "side": "R",
+              "rate_hz": 160.0
+            },
+            {
+              "body_id": 13805,
+              "type": "DNg97",
+              "side": "L",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 230783,
+              "type": "DNg97",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 512006,
+              "type": "DNg13",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 520300,
+              "type": "DNg75",
+              "side": "R",
+              "rate_hz": 0.0
+            },
+            {
+              "body_id": 523769,
+              "type": "DNa02",
+              "side": "L",
+              "rate_hz": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "completed": true,
+  "selected_parameter_set": null,
+  "interpretation": "Conductance bounds are numerical evidence only; no parameter set selected for behavior. Short single-seed conditions are diagnostics, not measured fly responses."
+}

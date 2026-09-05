@@ -195,12 +195,15 @@ class Connectome:
             raise ValueError("Neuron metadata and matrix order disagree")
         return cls(**arrays, neurons=neurons, manifest=manifest)
 
-    def select(self, types: list[str] | tuple[str, ...], side: str | None = None) -> np.ndarray:
+    def select(self, types: list[str] | tuple[str, ...], side: str | None = None,
+               nerve: str | None = None) -> np.ndarray:
         mask = self.neurons.type.isin(types)
         if side is not None:
             # For sensory afferents, rootSide is the receptor's side, not somaSide.
             annotated_side = self.neurons.rootSide.fillna(self.neurons.somaSide)
             mask &= annotated_side.eq(side)
+        if nerve is not None:
+            mask &= self.neurons.entryNerve.eq(nerve)
         return np.flatnonzero(mask.to_numpy()).astype(np.int32)
 
 

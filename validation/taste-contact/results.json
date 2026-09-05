@@ -1,0 +1,1955 @@
+{
+  "claim": "Tarsal sugar input and abstract stationary ingestion; not proboscis mechanics",
+  "conditions": [
+    {
+      "condition": "taste",
+      "config": {
+        "seed": 11,
+        "enable_taste": true,
+        "sensory_parameters": {
+          "odor_baseline_hz": 0,
+          "odor_max_increment_hz": 0
+        },
+        "body": {
+          "initial_position_mm": [
+            6,
+            0,
+            0.8
+          ]
+        }
+      },
+      "initial": {
+        "status": "running",
+        "t_s": 0.0,
+        "brain_t_s": 0.0,
+        "realtime_factor": 0,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.553142789390195,
+            -3.6569506360064544e-05,
+            1.228904174780947
+          ],
+          "heading_rad": 3.317917641211136e-06
+        },
+        "physiology": {
+          "energy": 0.55,
+          "hydration": 0.75,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.44999999999999996,
+          "thirst": 0.25,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.0,
+          "water_lost": 0.0,
+          "feeding_s": 0.0,
+          "resting_s": 0.0,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            164055353.4418089,
+            164053880.4880333
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 0.0,
+            "LM": 0.0,
+            "LH": 0.0,
+            "RF": 0.0,
+            "RM": 0.0,
+            "RH": 0.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 0.2153876437023985,
+          "yaw_rate_rad_s": 0.001544011054108004,
+          "tarsus_height_mm": [
+            0.123883436045849,
+            0.13694325169056842,
+            0.16177203011640695,
+            0.12388930382003051,
+            0.1369511067826489,
+            0.16177311806097466
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.446252422947722,
+              -1.60779779093911,
+              42.031455858951595
+            ],
+            [
+              -0.04099974784821318,
+              -0.49210649855965094,
+              40.379760970163915
+            ],
+            [
+              2.5947093485940087,
+              -0.38938706402395423,
+              42.57431525479586
+            ],
+            [
+              -2.4454692036664682,
+              1.6085616654726345,
+              42.02917905507842
+            ],
+            [
+              -0.041088763701306104,
+              0.49284574989521335,
+              40.37922185040858
+            ],
+            [
+              2.593230552047541,
+              0.39038973976596253,
+              42.57311006837676
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.4402379759648638,
+              -0.14762336801238593,
+              0.7090241211215732,
+              0.4402354345801,
+              -0.14762442125136746,
+              0.7090259479310344
+            ],
+            "femur_pitch": [
+              -2.1753192292744323,
+              -1.7035142051486982,
+              -1.6221259864622564,
+              -2.175299152752299,
+              -1.7034928322814549,
+              -1.6221034395521219
+            ],
+            "tibia_pitch": [
+              1.6657564669146296,
+              2.116658961928663,
+              2.017441546695335,
+              1.6657504579467675,
+              2.1166713576557545,
+              2.017439831559895
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              -0.2051172513333444,
+              -0.21212395336496376,
+              -0.477584784853822,
+              -0.2168339832057793,
+              -0.20979261042135516,
+              -0.4749281966688351
+            ],
+            "femur_pitch": [
+              -0.01582337888383935,
+              0.22448015602424273,
+              0.5942367158770722,
+              -0.04989446046731913,
+              0.22461791239712778,
+              0.597304934503627
+            ],
+            "tibia_pitch": [
+              -0.21829443702116252,
+              -0.1904157569144448,
+              -0.09337660991588002,
+              -0.20871338743162185,
+              -0.18169584290583296,
+              -0.09170587694356351
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            -0.0047511530392178435,
+            0.6961704873156097,
+            0.001500197447332663
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 0,
+          "spikes": 0,
+          "total_spikes": 0,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": -2.220446049250313e-16,
+          "water": 0.0
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005112489289Z"
+      },
+      "final": {
+        "status": "running",
+        "t_s": 0.5,
+        "brain_t_s": 0.5,
+        "realtime_factor": 0.15765887085586683,
+        "behavior": "walk",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            7.138645292307308,
+            -0.02314135728423927,
+            1.0451003288632812
+          ],
+          "heading_rad": -0.10693281763789296
+        },
+        "physiology": {
+          "energy": 0.5556042036599792,
+          "hydration": 0.7497991018299869,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0034760000000000424,
+          "hunger": 0.4443957963400208,
+          "thirst": 0.2502008981700131,
+          "alive": true,
+          "food_ingested": 0.009432000000000001,
+          "water_ingested": 0.0,
+          "energy_spent": 0.0003517963400261258,
+          "water_lost": 0.00020089817001306352,
+          "feeding_s": 0.11790000000000235,
+          "resting_s": 0.21599999999999253,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            106494986.77138597,
+            108243428.08863166
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 100.0,
+            "LM": 0.0,
+            "LH": 100.0,
+            "RF": 100.0,
+            "RM": 0.0,
+            "RH": 100.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 2.329626769540407,
+          "yaw_rate_rad_s": 0.10503904512004798,
+          "tarsus_height_mm": [
+            0.10236644370946948,
+            0.11249924503513917,
+            0.15214831486598557,
+            0.09565984225841728,
+            0.11488945605641444,
+            0.13538597950995948
+          ],
+          "ground_force_by_leg": [
+            [
+              2.673516897703756,
+              1.4027144717201494,
+              40.29398243735642
+            ],
+            [
+              -0.5779288610308219,
+              -1.3391086354345516,
+              1.9170376087430963
+            ],
+            [
+              4.451229503370491,
+              -1.4230459408776397,
+              44.05469691012875
+            ],
+            [
+              -2.12288137147767,
+              2.0640158506652146,
+              43.04563034339242
+            ],
+            [
+              -0.3794296658630658,
+              0.12069108726104484,
+              1.307598959865889
+            ],
+            [
+              -4.146637064788328,
+              -1.2481061591633684,
+              39.81009672932526
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.4015380838923521,
+              -0.09693962461998679,
+              0.7567906256705095,
+              0.417320457034043,
+              -0.10700961241729139,
+              0.7119706943896728
+            ],
+            "femur_pitch": [
+              -2.1994356082065303,
+              -1.6854817173968666,
+              -1.638538821470092,
+              -2.2284004898063867,
+              -1.6922680535490988,
+              -1.5941420418500034
+            ],
+            "tibia_pitch": [
+              1.5974293303446787,
+              2.066160169241269,
+              1.9301726469910172,
+              1.6684841355189608,
+              2.0607965116910396,
+              1.8963856508988661
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              -0.028281350007542904,
+              -3.0680541369450602,
+              -0.05612196811425243,
+              1.3885345791901325,
+              1.8626268302034767,
+              0.13401511338232527
+            ],
+            "femur_pitch": [
+              0.9865586941035174,
+              4.57434658268207,
+              -2.574044937166419,
+              -0.8756615241685147,
+              -6.897291116683636,
+              -3.1912579402925676
+            ],
+            "tibia_pitch": [
+              -1.1335955588372226,
+              0.6114556669201502,
+              -1.580192843783889,
+              -1.1041226699069928,
+              0.24206450918513028,
+              1.2648331839554399
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            3.5342890381932435,
+            -1.3165437023090725,
+            0.18620931028122287
+          ]
+        },
+        "motor": {
+          "behavior": "walk",
+          "left": 0.06685179283448273,
+          "right": -0.06667659300768328
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 5752,
+          "spikes": 28915,
+          "total_spikes": 28915,
+          "output_rates": {
+            "forward": 0.0035039965359891564,
+            "turn_left": 0.07544699341230889,
+            "turn_right": 3.413656639466459,
+            "feeding": 3.979573496702744,
+            "escape": 0.5236151688543289
+          },
+          "traversed_edges": 16834841,
+          "voltage_mv": {
+            "minimum": -284.04967153027957,
+            "maximum": -2.082235058621208,
+            "mean": -52.316218765653275
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.4905679999999906
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": -4.218847493575595e-15,
+          "water": 0.0
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [
+          {
+            "t_s": 0.030000000000000002,
+            "behavior": "walk"
+          },
+          {
+            "t_s": 0.3,
+            "behavior": "rest"
+          },
+          {
+            "t_s": 0.34500000000000003,
+            "behavior": "walk"
+          },
+          {
+            "t_s": 0.35000000000000003,
+            "behavior": "feed"
+          },
+          {
+            "t_s": 0.42500000000000004,
+            "behavior": "rest"
+          },
+          {
+            "t_s": 0.44,
+            "behavior": "feed"
+          },
+          {
+            "t_s": 0.49000000000000005,
+            "behavior": "walk"
+          }
+        ],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005112489289Z"
+      },
+      "contacts_by_leg": {
+        "LF": true,
+        "LM": true,
+        "LH": true,
+        "RF": true,
+        "RM": false,
+        "RH": true
+      },
+      "min_voltage_mv": -284.04967153027957,
+      "max_voltage_mv": -2.082235058621208
+    },
+    {
+      "condition": "no-taste",
+      "config": {
+        "seed": 11,
+        "enable_taste": false,
+        "sensory_parameters": {
+          "odor_baseline_hz": 0,
+          "odor_max_increment_hz": 0
+        },
+        "body": {
+          "initial_position_mm": [
+            6,
+            0,
+            0.8
+          ]
+        }
+      },
+      "initial": {
+        "status": "running",
+        "t_s": 0.0,
+        "brain_t_s": 0.0,
+        "realtime_factor": 0,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.553142789390195,
+            -3.6569506360064544e-05,
+            1.228904174780947
+          ],
+          "heading_rad": 3.317917641211136e-06
+        },
+        "physiology": {
+          "energy": 0.55,
+          "hydration": 0.75,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.44999999999999996,
+          "thirst": 0.25,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.0,
+          "water_lost": 0.0,
+          "feeding_s": 0.0,
+          "resting_s": 0.0,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            164055353.4418089,
+            164053880.4880333
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {},
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 0.2153876437023985,
+          "yaw_rate_rad_s": 0.001544011054108004,
+          "tarsus_height_mm": [
+            0.123883436045849,
+            0.13694325169056842,
+            0.16177203011640695,
+            0.12388930382003051,
+            0.1369511067826489,
+            0.16177311806097466
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.446252422947722,
+              -1.60779779093911,
+              42.031455858951595
+            ],
+            [
+              -0.04099974784821318,
+              -0.49210649855965094,
+              40.379760970163915
+            ],
+            [
+              2.5947093485940087,
+              -0.38938706402395423,
+              42.57431525479586
+            ],
+            [
+              -2.4454692036664682,
+              1.6085616654726345,
+              42.02917905507842
+            ],
+            [
+              -0.041088763701306104,
+              0.49284574989521335,
+              40.37922185040858
+            ],
+            [
+              2.593230552047541,
+              0.39038973976596253,
+              42.57311006837676
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.4402379759648638,
+              -0.14762336801238593,
+              0.7090241211215732,
+              0.4402354345801,
+              -0.14762442125136746,
+              0.7090259479310344
+            ],
+            "femur_pitch": [
+              -2.1753192292744323,
+              -1.7035142051486982,
+              -1.6221259864622564,
+              -2.175299152752299,
+              -1.7034928322814549,
+              -1.6221034395521219
+            ],
+            "tibia_pitch": [
+              1.6657564669146296,
+              2.116658961928663,
+              2.017441546695335,
+              1.6657504579467675,
+              2.1166713576557545,
+              2.017439831559895
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              -0.2051172513333444,
+              -0.21212395336496376,
+              -0.477584784853822,
+              -0.2168339832057793,
+              -0.20979261042135516,
+              -0.4749281966688351
+            ],
+            "femur_pitch": [
+              -0.01582337888383935,
+              0.22448015602424273,
+              0.5942367158770722,
+              -0.04989446046731913,
+              0.22461791239712778,
+              0.597304934503627
+            ],
+            "tibia_pitch": [
+              -0.21829443702116252,
+              -0.1904157569144448,
+              -0.09337660991588002,
+              -0.20871338743162185,
+              -0.18169584290583296,
+              -0.09170587694356351
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            -0.0047511530392178435,
+            0.6961704873156097,
+            0.001500197447332663
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 0,
+          "spikes": 0,
+          "total_spikes": 0,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": -2.220446049250313e-16,
+          "water": 0.0
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Tarsal taste input is disabled in this assay.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005116111408Z"
+      },
+      "final": {
+        "status": "running",
+        "t_s": 0.5,
+        "brain_t_s": 0.5,
+        "realtime_factor": 0.21783301999408203,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.554185853286551,
+            -3.5700022778515247e-05,
+            1.22797570310718
+          ],
+          "heading_rad": -2.230769730483e-06
+        },
+        "physiology": {
+          "energy": 0.5497497844730181,
+          "hydration": 0.7498498922364232,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.45025021552698186,
+          "thirst": 0.2501501077635768,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.00025021552712172743,
+          "water_lost": 0.00015010776356087056,
+          "feeding_s": 0.0,
+          "resting_s": 0.49999999999996125,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            165583727.71484473,
+            165582088.72748545
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {},
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 9.033991146430949e-09,
+          "yaw_rate_rad_s": -6.674184736519416e-10,
+          "tarsus_height_mm": [
+            0.12324824187071051,
+            0.13696279591036753,
+            0.16179621205822328,
+            0.12326014521601904,
+            0.13697356947910425,
+            0.16179760554475572
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.5168655815396157,
+              -1.6689940789427524,
+              42.136680246399635
+            ],
+            [
+              -0.03043680349088734,
+              -0.4804539807312004,
+              40.37178369372731
+            ],
+            [
+              2.546779880961367,
+              -0.37868114946606385,
+              42.517940366389006
+            ],
+            [
+              -2.514438310038132,
+              1.668485380730349,
+              42.13474722277178
+            ],
+            [
+              -0.030399600858281105,
+              0.4803070005728689,
+              40.370622770938944
+            ],
+            [
+              2.5453592073770004,
+              0.3793380350207126,
+              42.51670679977347
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.43955611752951057,
+              -0.14830104075167622,
+              0.7074888300514157,
+              0.439545464539493,
+              -0.14830676006664714,
+              0.707487507195627
+            ],
+            "femur_pitch": [
+              -2.176003334135973,
+              -1.7030256022525663,
+              -1.6201821439909894,
+              -2.1759863121904495,
+              -1.7029946709660269,
+              -1.6201540828298047
+            ],
+            "tibia_pitch": [
+              1.6654458924728561,
+              2.1163305723399852,
+              2.0171115458011215,
+              1.6654393411622743,
+              2.116345812302207,
+              2.0171094415012503
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              6.903994586074609e-10,
+              1.1637297087533793e-09,
+              -1.093666706229027e-09,
+              -8.945946586559912e-10,
+              9.72331421510225e-10,
+              -6.352270841472039e-10
+            ],
+            "femur_pitch": [
+              -7.839720393432601e-10,
+              -2.5055214693555593e-09,
+              2.3504763682442567e-09,
+              2.164377271495028e-09,
+              -4.42029861176623e-09,
+              1.727138287325194e-09
+            ],
+            "tibia_pitch": [
+              -2.627773746537817e-09,
+              1.7693224326162862e-09,
+              -2.1227826371861476e-09,
+              -7.91395799164337e-09,
+              6.182008794323497e-09,
+              -1.4593961040475227e-09
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            3.572988264631511e-10,
+            5.4245290032550725e-09,
+            -6.61344763456839e-10
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 0,
+          "spikes": 0,
+          "total_spikes": 0,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": 1.4011014570769476e-13,
+          "water": -1.5987211554602254e-14
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Tarsal taste input is disabled in this assay.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005116111408Z"
+      },
+      "contacts_by_leg": {
+        "LF": true,
+        "LM": true,
+        "LH": true,
+        "RF": true,
+        "RM": true,
+        "RH": true
+      },
+      "min_voltage_mv": -52.0,
+      "max_voltage_mv": -52.0
+    },
+    {
+      "condition": "muted",
+      "config": {
+        "seed": 11,
+        "enable_taste": true,
+        "sensory_parameters": {
+          "odor_baseline_hz": 0,
+          "odor_max_increment_hz": 0
+        },
+        "body": {
+          "initial_position_mm": [
+            6,
+            0,
+            0.8
+          ]
+        }
+      },
+      "initial": {
+        "status": "running",
+        "t_s": 0.0,
+        "brain_t_s": 0.0,
+        "realtime_factor": 0,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.553142789390195,
+            -3.6569506360064544e-05,
+            1.228904174780947
+          ],
+          "heading_rad": 3.317917641211136e-06
+        },
+        "physiology": {
+          "energy": 0.55,
+          "hydration": 0.75,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.44999999999999996,
+          "thirst": 0.25,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.0,
+          "water_lost": 0.0,
+          "feeding_s": 0.0,
+          "resting_s": 0.0,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            164055353.4418089,
+            164053880.4880333
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 0.0,
+            "LM": 0.0,
+            "LH": 0.0,
+            "RF": 0.0,
+            "RM": 0.0,
+            "RH": 0.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 0.2153876437023985,
+          "yaw_rate_rad_s": 0.001544011054108004,
+          "tarsus_height_mm": [
+            0.123883436045849,
+            0.13694325169056842,
+            0.16177203011640695,
+            0.12388930382003051,
+            0.1369511067826489,
+            0.16177311806097466
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.446252422947722,
+              -1.60779779093911,
+              42.031455858951595
+            ],
+            [
+              -0.04099974784821318,
+              -0.49210649855965094,
+              40.379760970163915
+            ],
+            [
+              2.5947093485940087,
+              -0.38938706402395423,
+              42.57431525479586
+            ],
+            [
+              -2.4454692036664682,
+              1.6085616654726345,
+              42.02917905507842
+            ],
+            [
+              -0.041088763701306104,
+              0.49284574989521335,
+              40.37922185040858
+            ],
+            [
+              2.593230552047541,
+              0.39038973976596253,
+              42.57311006837676
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.4402379759648638,
+              -0.14762336801238593,
+              0.7090241211215732,
+              0.4402354345801,
+              -0.14762442125136746,
+              0.7090259479310344
+            ],
+            "femur_pitch": [
+              -2.1753192292744323,
+              -1.7035142051486982,
+              -1.6221259864622564,
+              -2.175299152752299,
+              -1.7034928322814549,
+              -1.6221034395521219
+            ],
+            "tibia_pitch": [
+              1.6657564669146296,
+              2.116658961928663,
+              2.017441546695335,
+              1.6657504579467675,
+              2.1166713576557545,
+              2.017439831559895
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              -0.2051172513333444,
+              -0.21212395336496376,
+              -0.477584784853822,
+              -0.2168339832057793,
+              -0.20979261042135516,
+              -0.4749281966688351
+            ],
+            "femur_pitch": [
+              -0.01582337888383935,
+              0.22448015602424273,
+              0.5942367158770722,
+              -0.04989446046731913,
+              0.22461791239712778,
+              0.597304934503627
+            ],
+            "tibia_pitch": [
+              -0.21829443702116252,
+              -0.1904157569144448,
+              -0.09337660991588002,
+              -0.20871338743162185,
+              -0.18169584290583296,
+              -0.09170587694356351
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            -0.0047511530392178435,
+            0.6961704873156097,
+            0.001500197447332663
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 0,
+          "spikes": 0,
+          "total_spikes": 0,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": true,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": -2.220446049250313e-16,
+          "water": 0.0
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005118786325Z"
+      },
+      "final": {
+        "status": "running",
+        "t_s": 0.5,
+        "brain_t_s": 0.5,
+        "realtime_factor": 0.2155936826260996,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.554185853286551,
+            -3.5700022778515247e-05,
+            1.22797570310718
+          ],
+          "heading_rad": -2.230769730483e-06
+        },
+        "physiology": {
+          "energy": 0.5497497844730181,
+          "hydration": 0.7498498922364232,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.45025021552698186,
+          "thirst": 0.2501501077635768,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.00025021552712172743,
+          "water_lost": 0.00015010776356087056,
+          "feeding_s": 0.0,
+          "resting_s": 0.49999999999996125,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            165583727.71484473,
+            165582088.72748545
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 100.0,
+            "LM": 100.0,
+            "LH": 100.0,
+            "RF": 100.0,
+            "RM": 100.0,
+            "RH": 100.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 9.033991146430949e-09,
+          "yaw_rate_rad_s": -6.674184736519416e-10,
+          "tarsus_height_mm": [
+            0.12324824187071051,
+            0.13696279591036753,
+            0.16179621205822328,
+            0.12326014521601904,
+            0.13697356947910425,
+            0.16179760554475572
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.5168655815396157,
+              -1.6689940789427524,
+              42.136680246399635
+            ],
+            [
+              -0.03043680349088734,
+              -0.4804539807312004,
+              40.37178369372731
+            ],
+            [
+              2.546779880961367,
+              -0.37868114946606385,
+              42.517940366389006
+            ],
+            [
+              -2.514438310038132,
+              1.668485380730349,
+              42.13474722277178
+            ],
+            [
+              -0.030399600858281105,
+              0.4803070005728689,
+              40.370622770938944
+            ],
+            [
+              2.5453592073770004,
+              0.3793380350207126,
+              42.51670679977347
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.43955611752951057,
+              -0.14830104075167622,
+              0.7074888300514157,
+              0.439545464539493,
+              -0.14830676006664714,
+              0.707487507195627
+            ],
+            "femur_pitch": [
+              -2.176003334135973,
+              -1.7030256022525663,
+              -1.6201821439909894,
+              -2.1759863121904495,
+              -1.7029946709660269,
+              -1.6201540828298047
+            ],
+            "tibia_pitch": [
+              1.6654458924728561,
+              2.1163305723399852,
+              2.0171115458011215,
+              1.6654393411622743,
+              2.116345812302207,
+              2.0171094415012503
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              6.903994586074609e-10,
+              1.1637297087533793e-09,
+              -1.093666706229027e-09,
+              -8.945946586559912e-10,
+              9.72331421510225e-10,
+              -6.352270841472039e-10
+            ],
+            "femur_pitch": [
+              -7.839720393432601e-10,
+              -2.5055214693555593e-09,
+              2.3504763682442567e-09,
+              2.164377271495028e-09,
+              -4.42029861176623e-09,
+              1.727138287325194e-09
+            ],
+            "tibia_pitch": [
+              -2.627773746537817e-09,
+              1.7693224326162862e-09,
+              -2.1227826371861476e-09,
+              -7.91395799164337e-09,
+              6.182008794323497e-09,
+              -1.4593961040475227e-09
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            3.572988264631511e-10,
+            5.4245290032550725e-09,
+            -6.61344763456839e-10
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 6520,
+          "spikes": 39782,
+          "total_spikes": 39782,
+          "output_rates": {
+            "forward": 0.0017519982679945782,
+            "turn_left": 14.152034367594506,
+            "turn_right": 0.06663328697429949,
+            "feeding": 0.015906136264087104,
+            "escape": 0.0
+          },
+          "traversed_edges": 23215416,
+          "voltage_mv": {
+            "minimum": -257.0944351904452,
+            "maximum": -45.00236574638144,
+            "mean": -52.27021660812894
+          },
+          "ablated": true,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": 1.4011014570769476e-13,
+          "water": -1.5987211554602254e-14
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005118786325Z"
+      },
+      "contacts_by_leg": {
+        "LF": true,
+        "LM": true,
+        "LH": true,
+        "RF": true,
+        "RM": true,
+        "RH": true
+      },
+      "min_voltage_mv": -257.0944351904452,
+      "max_voltage_mv": -45.00236574638144
+    },
+    {
+      "condition": "sweet-synapses-blocked",
+      "config": {
+        "seed": 11,
+        "enable_taste": true,
+        "sensory_parameters": {
+          "odor_baseline_hz": 0,
+          "odor_max_increment_hz": 0
+        },
+        "body": {
+          "initial_position_mm": [
+            6,
+            0,
+            0.8
+          ]
+        }
+      },
+      "initial": {
+        "status": "running",
+        "t_s": 0.0,
+        "brain_t_s": 0.0,
+        "realtime_factor": 0,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.553142789390195,
+            -3.6569506360064544e-05,
+            1.228904174780947
+          ],
+          "heading_rad": 3.317917641211136e-06
+        },
+        "physiology": {
+          "energy": 0.55,
+          "hydration": 0.75,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.44999999999999996,
+          "thirst": 0.25,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.0,
+          "water_lost": 0.0,
+          "feeding_s": 0.0,
+          "resting_s": 0.0,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            164055353.4418089,
+            164053880.4880333
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 0.0,
+            "LM": 0.0,
+            "LH": 0.0,
+            "RF": 0.0,
+            "RM": 0.0,
+            "RH": 0.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 0.2153876437023985,
+          "yaw_rate_rad_s": 0.001544011054108004,
+          "tarsus_height_mm": [
+            0.123883436045849,
+            0.13694325169056842,
+            0.16177203011640695,
+            0.12388930382003051,
+            0.1369511067826489,
+            0.16177311806097466
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.446252422947722,
+              -1.60779779093911,
+              42.031455858951595
+            ],
+            [
+              -0.04099974784821318,
+              -0.49210649855965094,
+              40.379760970163915
+            ],
+            [
+              2.5947093485940087,
+              -0.38938706402395423,
+              42.57431525479586
+            ],
+            [
+              -2.4454692036664682,
+              1.6085616654726345,
+              42.02917905507842
+            ],
+            [
+              -0.041088763701306104,
+              0.49284574989521335,
+              40.37922185040858
+            ],
+            [
+              2.593230552047541,
+              0.39038973976596253,
+              42.57311006837676
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.4402379759648638,
+              -0.14762336801238593,
+              0.7090241211215732,
+              0.4402354345801,
+              -0.14762442125136746,
+              0.7090259479310344
+            ],
+            "femur_pitch": [
+              -2.1753192292744323,
+              -1.7035142051486982,
+              -1.6221259864622564,
+              -2.175299152752299,
+              -1.7034928322814549,
+              -1.6221034395521219
+            ],
+            "tibia_pitch": [
+              1.6657564669146296,
+              2.116658961928663,
+              2.017441546695335,
+              1.6657504579467675,
+              2.1166713576557545,
+              2.017439831559895
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              -0.2051172513333444,
+              -0.21212395336496376,
+              -0.477584784853822,
+              -0.2168339832057793,
+              -0.20979261042135516,
+              -0.4749281966688351
+            ],
+            "femur_pitch": [
+              -0.01582337888383935,
+              0.22448015602424273,
+              0.5942367158770722,
+              -0.04989446046731913,
+              0.22461791239712778,
+              0.597304934503627
+            ],
+            "tibia_pitch": [
+              -0.21829443702116252,
+              -0.1904157569144448,
+              -0.09337660991588002,
+              -0.20871338743162185,
+              -0.18169584290583296,
+              -0.09170587694356351
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            -0.0047511530392178435,
+            0.6961704873156097,
+            0.001500197447332663
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 0,
+          "spikes": 0,
+          "total_spikes": 0,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [
+            "sweet"
+          ],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": -2.220446049250313e-16,
+          "water": 0.0
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005121499079Z"
+      },
+      "final": {
+        "status": "running",
+        "t_s": 0.5,
+        "brain_t_s": 0.5,
+        "realtime_factor": 0.22182377328971764,
+        "behavior": "rest",
+        "assay": "sensory",
+        "pose": {
+          "position_mm": [
+            6.554185853286551,
+            -3.5700022778515247e-05,
+            1.22797570310718
+          ],
+          "heading_rad": -2.230769730483e-06
+        },
+        "physiology": {
+          "energy": 0.5497497844730181,
+          "hydration": 0.7498498922364232,
+          "capacities": {
+            "energy": 1.0,
+            "hydration": 1.0,
+            "crop": 0.3
+          },
+          "crop": 0.0,
+          "hunger": 0.45025021552698186,
+          "thirst": 0.2501501077635768,
+          "alive": true,
+          "food_ingested": 0.0,
+          "water_ingested": 0.0,
+          "energy_spent": 0.00025021552712172743,
+          "water_lost": 0.00015010776356087056,
+          "feeding_s": 0.0,
+          "resting_s": 0.49999999999996125,
+          "units": "normalized engineering resource units; uncalibrated"
+        },
+        "senses": {
+          "odor": [
+            165583727.71484473,
+            165582088.72748545
+          ],
+          "odor_rates_hz": [
+            0.0,
+            0.0
+          ],
+          "taste_food": true,
+          "taste_water": false,
+          "sweet_event_rates_hz": {
+            "LF": 100.0,
+            "LM": 100.0,
+            "LH": 100.0,
+            "RF": 100.0,
+            "RM": 100.0,
+            "RH": 100.0
+          },
+          "club_event_rates_hz": {},
+          "light": 1.0
+        },
+        "proprioception": {
+          "speed_mm_s": 9.033991146430949e-09,
+          "yaw_rate_rad_s": -6.674184736519416e-10,
+          "tarsus_height_mm": [
+            0.12324824187071051,
+            0.13696279591036753,
+            0.16179621205822328,
+            0.12326014521601904,
+            0.13697356947910425,
+            0.16179760554475572
+          ],
+          "ground_force_by_leg": [
+            [
+              -2.5168655815396157,
+              -1.6689940789427524,
+              42.136680246399635
+            ],
+            [
+              -0.03043680349088734,
+              -0.4804539807312004,
+              40.37178369372731
+            ],
+            [
+              2.546779880961367,
+              -0.37868114946606385,
+              42.517940366389006
+            ],
+            [
+              -2.514438310038132,
+              1.668485380730349,
+              42.13474722277178
+            ],
+            [
+              -0.030399600858281105,
+              0.4803070005728689,
+              40.370622770938944
+            ],
+            [
+              2.5453592073770004,
+              0.3793380350207126,
+              42.51670679977347
+            ]
+          ],
+          "joint_angles_rad": {
+            "coxa_pitch": [
+              0.43955611752951057,
+              -0.14830104075167622,
+              0.7074888300514157,
+              0.439545464539493,
+              -0.14830676006664714,
+              0.707487507195627
+            ],
+            "femur_pitch": [
+              -2.176003334135973,
+              -1.7030256022525663,
+              -1.6201821439909894,
+              -2.1759863121904495,
+              -1.7029946709660269,
+              -1.6201540828298047
+            ],
+            "tibia_pitch": [
+              1.6654458924728561,
+              2.1163305723399852,
+              2.0171115458011215,
+              1.6654393411622743,
+              2.116345812302207,
+              2.0171094415012503
+            ]
+          },
+          "joint_velocities_rad_s": {
+            "coxa_pitch": [
+              6.903994586074609e-10,
+              1.1637297087533793e-09,
+              -1.093666706229027e-09,
+              -8.945946586559912e-10,
+              9.72331421510225e-10,
+              -6.352270841472039e-10
+            ],
+            "femur_pitch": [
+              -7.839720393432601e-10,
+              -2.5055214693555593e-09,
+              2.3504763682442567e-09,
+              2.164377271495028e-09,
+              -4.42029861176623e-09,
+              1.727138287325194e-09
+            ],
+            "tibia_pitch": [
+              -2.627773746537817e-09,
+              1.7693224326162862e-09,
+              -2.1227826371861476e-09,
+              -7.91395799164337e-09,
+              6.182008794323497e-09,
+              -1.4593961040475227e-09
+            ]
+          },
+          "body_angular_velocity_rad_s": [
+            3.572988264631511e-10,
+            5.4245290032550725e-09,
+            -6.61344763456839e-10
+          ]
+        },
+        "motor": {
+          "behavior": "rest",
+          "left": 0.0,
+          "right": 0.0
+        },
+        "neural": {
+          "neurons": 166700,
+          "edges": 25582938,
+          "active_neurons": 54,
+          "spikes": 2764,
+          "total_spikes": 2764,
+          "output_rates": {
+            "forward": 0.0,
+            "turn_left": 0.0,
+            "turn_right": 0.0,
+            "feeding": 0.0,
+            "escape": 0.0
+          },
+          "traversed_edges": 0,
+          "voltage_mv": {
+            "minimum": -52.0,
+            "maximum": -52.0,
+            "mean": -52.0
+          },
+          "ablated": false,
+          "ablation_target": "motor readout",
+          "blocked_synaptic_outputs": [
+            "sweet"
+          ],
+          "backend": "Numba CPU sparse-event shiu LIF",
+          "model": "shiu",
+          "graph_sha256": "e8d7babaecf923402d32fa1dd7fa687130968ac9ce57fa1b1af80ffea55c82e8"
+        },
+        "resources": {
+          "food": {
+            "name": "food",
+            "kind": "food",
+            "initial": 1.5,
+            "remaining": 1.5
+          },
+          "water": {
+            "name": "water",
+            "kind": "water",
+            "initial": 1.5,
+            "remaining": 1.5
+          }
+        },
+        "resource_balance": {
+          "nutrient": 1.4011014570769476e-13,
+          "water": -1.5987211554602254e-14
+        },
+        "stimuli": {
+          "odor": 1.0,
+          "light": 1.0
+        },
+        "vision": {
+          "enabled": false,
+          "sample_t_s": null,
+          "shape": null,
+          "mean_by_eye": null
+        },
+        "events": [],
+        "warnings": [
+          "Female-derived body is a declared morphology surrogate for the male CNS.",
+          "Odor rates, LIF parameters and motor gains are uncalibrated approximations.",
+          "Tarsal sweet cells are mapped; labellar/pharyngeal, water, vision and proprioceptive neural mappings remain incomplete.",
+          "Transferred current-based parameters produce implausible hyperpolarization in some male neurons; see motor calibration evidence."
+        ],
+        "run_dir": "runs/20260905T005121499079Z"
+      },
+      "contacts_by_leg": {
+        "LF": true,
+        "LM": true,
+        "LH": true,
+        "RF": true,
+        "RM": true,
+        "RH": true
+      },
+      "min_voltage_mv": -52.0,
+      "max_voltage_mv": -52.0
+    }
+  ],
+  "checks": {
+    "actual_contact": true,
+    "taste_drives_intake": true,
+    "no_intake_without_neural_taste": true,
+    "no_intake_with_muted_readout": true,
+    "no_intake_with_sweet_synapses_blocked": true,
+    "blocked_sweet_cells_still_fire": true,
+    "resources_conserved": true
+  }
+}

@@ -26,6 +26,28 @@ WEB_ROOT = Path(__file__).with_name("web")
 CAMERAS = ("overview", "follow", "side")
 
 
+def _viewer_settings(config: dict[str, Any]) -> dict[str, Any]:
+    """Validate before allocating a worker, so bad configuration is actionable."""
+    viewer = config.get("viewer", {})
+    if not isinstance(viewer, dict):
+        raise ValueError("viewer configuration must be an object")
+    settings = {"paused": False, "camera": "follow", "speed": 1.0,
+                "step_seconds": .01, "fps": 8.0} | viewer
+    if not isinstance(settings["paused"], bool):
+        raise ValueError("viewer.paused must be boolean")
+    if settings["camera"] not in CAMERAS:
+        raise ValueError("viewer.camera must be overview, follow or side")
+    for name, minimum, maximum in (("speed", .05, 10), ("step_seconds", .001, .05), ("fps", 1, 30)):
+        value = settings[name]
+        if (not isinstance(value, (int, float)) or isinstance(value, bool)
+                or not math.isfinite(value)
+                or not (minimum <= value <= maximum or name == "speed" and value == 0)):
+            raise ValueError(f"viewer.{name} must be finite and in [{minimum}, {maximum}]"
+                             + (", or 0 for maximum speed" if name == "speed" else ""))
+        settings[name] = float(value)
+    return settings
+
+
 def _publish(channel: Any, packet: dict[str, Any]) -> None:
     """Bounded latest-state channel: discard a stale frame, never accumulate video."""
     while True:
@@ -68,12 +90,10 @@ def _simulation_worker(
 ) -> None:
     """Only this spawned process imports/constructs the physical simulation."""
     runner = None
-    viewer = config.get("viewer", {})
-    paused = bool(viewer.get("paused", False))
-    camera = viewer.get("camera", "follow")
-    speed = float(viewer.get("speed", 1.0))
-    quantum = max(0.001, min(float(viewer.get("step_seconds", 0.01)), 0.05))
-    frame_period = 1.0 / max(1.0, min(float(viewer.get("fps", 8)), 30.0))
+    viewer = _viewer_settings(config)
+    paused, camera, speed = viewer["paused"], viewer["camera"], viewer["speed"]
+    quantum = viewer["step_seconds"]
+    frame_period = 1.0 / viewer["fps"]
     telemetry: dict[str, Any] = {}
     sequence = 0
     last_frame = 0.0
@@ -85,6 +105,13 @@ def _simulation_worker(
             from .simulation import SimulationRunner
             runner_factory = SimulationRunner
         runner = runner_factory(config)
+        interval = getattr(runner, "coupling_s", None)
+        if interval is not None:
+            if not math.isfinite(interval) or not 0 < interval <= .05:
+                raise ValueError("Simulation coupling interval must be finite and in (0, 0.05] seconds")
+            # Preserve the runtime's sensor/readout schedule for every valid
+            # coupling interval, including ones larger than the requested chunk.
+            quantum = interval * max(1, math.floor(quantum / interval + 1e-9))
         while not stopping:
             started = time.monotonic()
             while True:
@@ -176,6 +203,7 @@ def validate_command(command: Any) -> dict[str, Any]:
 
 class SimulationService:
     def __init__(self, config: dict[str, Any], runner_factory: Callable[..., Any] | None = None):
+        viewer = _viewer_settings(config)
         context = mp.get_context("spawn")
         self.commands = context.Queue(maxsize=64)
         self.updates = context.Queue(maxsize=2)
@@ -184,9 +212,10 @@ class SimulationService:
         self.lock = threading.Lock()
         self.stopped = threading.Event()
         self.state: dict[str, Any] = {
-            "status": "initializing", "paused": bool(config.get("viewer", {}).get("paused", False)),
-            "camera": config.get("viewer", {}).get("camera", "follow"), "speed": 1.0,
+            "status": "initializing", "paused": viewer["paused"],
+            "camera": viewer["camera"], "speed": viewer["speed"],
             "telemetry": {}, "frame_sequence": 0, "error": None, "updated_at": None,
+            "observed_realtime_factor": None,
         }
         self.frame: bytes | None = None
         self.monitor = threading.Thread(target=self._monitor, name="fruitfly-observer", daemon=True)
@@ -196,6 +225,7 @@ class SimulationService:
         self.monitor.start()
 
     def _monitor(self) -> None:
+        previous_frame = None
         while not self.stopped.is_set():
             try:
                 packet = self.updates.get(timeout=0.25)
@@ -211,6 +241,16 @@ class SimulationService:
                 trace = packet.pop("traceback", None)
                 if frame is not None:
                     self.frame = frame
+                    wall_time = time.monotonic()
+                    sim_time = packet.get("telemetry", {}).get("t_s")
+                    running = packet.get("status") == "running" and isinstance(sim_time, (int, float))
+                    factor = None
+                    if running and previous_frame is not None:
+                        previous_sim, previous_wall = previous_frame
+                        if sim_time >= previous_sim and wall_time > previous_wall:
+                            factor = (sim_time - previous_sim) / (wall_time - previous_wall)
+                    self.state["observed_realtime_factor"] = factor
+                    previous_frame = (sim_time, wall_time) if running else None
                 self.state.update(packet)
                 self.state["updated_at"] = time.time()
             if trace:
@@ -261,6 +301,18 @@ def make_handler(service: SimulationService) -> type[BaseHTTPRequestHandler]:
         def log_message(self, _format: str, *args: Any) -> None:
             pass
 
+        def _local_host(self) -> bool:
+            # Origin alone is insufficient if an external hostname is rebound
+            # to loopback: both Host and Origin would name the attacker's site.
+            port = self.server.server_port
+            allowed = {f"127.0.0.1:{port}", f"localhost:{port}"}
+            if port == 80:
+                allowed.update(("127.0.0.1", "localhost"))
+            if self.headers.get("Host", "").lower() not in allowed:
+                self._json(HTTPStatus.FORBIDDEN, {"error": "Use the local viewer hostname."})
+                return False
+            return True
+
         def _reply(self, status: int, body: bytes, content_type: str, headers: dict[str, str] | None = None) -> None:
             self.send_response(status)
             self.send_header("Content-Type", content_type)
@@ -280,6 +332,8 @@ def make_handler(service: SimulationService) -> type[BaseHTTPRequestHandler]:
             self._reply(status, json.dumps(value, allow_nan=False).encode(), "application/json; charset=utf-8")
 
         def do_GET(self) -> None:
+            if not self._local_host():
+                return
             path = urlsplit(self.path).path
             if path == "/api/state":
                 self._json(HTTPStatus.OK, service.snapshot())
@@ -299,6 +353,8 @@ def make_handler(service: SimulationService) -> type[BaseHTTPRequestHandler]:
                     {"Content-Security-Policy": "default-src 'self'; img-src 'self' blob:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"})
 
         def do_POST(self) -> None:
+            if not self._local_host():
+                return
             if urlsplit(self.path).path != "/api/control":
                 self._json(HTTPStatus.NOT_FOUND, {"error": "Not found."})
                 return
@@ -337,23 +393,25 @@ def main() -> None:
     if args.paused:
         config.setdefault("viewer", {})["paused"] = True
     service = SimulationService(config)
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), make_handler(service))
-    server.daemon_threads = True
-    service.start()
-    url = f"http://127.0.0.1:{server.server_port}"
-    print(f"Fruit fly lab: {url}\nCtrl+C stops the server and simulation worker.", flush=True)
-    if args.open:
-        import webbrowser
-        webbrowser.open(url)
-    def request_stop(_signum: int, _frame: Any) -> None:
-        raise KeyboardInterrupt
-    signal.signal(signal.SIGTERM, request_stop)
+    server = None
     try:
+        server = ThreadingHTTPServer(("127.0.0.1", args.port), make_handler(service))
+        server.daemon_threads = True
+        service.start()
+        url = f"http://127.0.0.1:{server.server_port}"
+        print(f"Fruit fly lab: {url}\nCtrl+C stops the server and simulation worker.", flush=True)
+        if args.open:
+            import webbrowser
+            webbrowser.open(url)
+        def request_stop(_signum: int, _frame: Any) -> None:
+            raise KeyboardInterrupt
+        signal.signal(signal.SIGTERM, request_stop)
         server.serve_forever(poll_interval=0.25)
     except KeyboardInterrupt:
         pass
     finally:
-        server.server_close()
+        if server is not None:
+            server.server_close()
         service.close()
 
 

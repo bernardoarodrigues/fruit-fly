@@ -60,8 +60,9 @@ class BodyPhysicsTests(unittest.TestCase):
             observed = body.advance(.05, behavior="feed")
             self.assertTrue(observed["taste_food"])
             self.assertFalse(observed["taste_water"])
-            self.assertTrue(any(observed["food_contact_by_leg"]))
-            self.assertFalse(any(observed["water_contact_by_leg"]))
+            self.assertTrue(any(observed["food_contact_by_leg"].values()))
+            self.assertFalse(any(observed["water_contact_by_leg"].values()))
+            self.assertEqual(list(observed["food_contact_by_leg"]), ["LF", "LM", "LH", "RF", "RM", "RH"])
             self.assertGreater(observed["physiology"]["food_ingested"], 0)
             self.assertEqual(observed["physiology"]["water_ingested"], 0)
             for residual in body.snapshot()["resource_balance"].values():
@@ -152,3 +153,21 @@ class OdorFieldTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_light_control_changes_actual_eye_images_and_reset_restores():
+    import numpy as np
+    from fruitfly.body import BodyConfig, BodyRuntime
+    with BodyRuntime(config=BodyConfig(enable_vision=True)) as body:
+        initial = body.vision_readouts().copy()
+        normal = initial.mean()
+        body.set_stimulus('light', 0)
+        body._sample_vision()  # identical pose isolates lighting from body motion
+        dark = body.vision_readouts().mean()
+        body.set_stimulus('light', 2)
+        body._sample_vision()
+        bright = body.vision_readouts().mean()
+        assert dark < normal
+        assert bright > normal
+        body.reset()
+        np.testing.assert_array_equal(body.vision_readouts(), initial)

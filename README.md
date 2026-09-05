@@ -28,17 +28,21 @@ The sensory assay currently rests: transferred Shiu dynamics over-suppress the w
 
 That assay is motor calibration, not emergent foraging. Light currently changes the physical scene; validated visual-to-neural mapping remains pending.
 
+`configs/male-multisensory-probe.json` additionally enables actual 50 Hz compound-eye images and an optional leg-specific FeCO club input proxy. `configs/male-taste-contact.json` starts on food to inspect the validated tarsal taste/feeding interface. `configs/male-conductance-sensory.json` selects the separately tested, experimental conductance model. Its bounded voltages do not yet establish calibrated navigation.
+
 ## Validate and investigate
 
 ```sh
 .venv/bin/python -m pytest -q
 .venv/bin/python scripts/validate_loop.py
+.venv/bin/python scripts/validate_taste.py
 ```
 
 Runs write configuration, graph hash, exact input/output IDs, dependency versions, telemetry, interventions and final state to `runs/`. Fixed coupling boundaries preserve behavior across browser update chunks. Missing graph data and invalid timing fail explicitly.
 
 - [Neural engine](docs/neural-engine.md), [original Shiu replication](docs/replication.md), [male motor diagnosis](docs/motor-calibration.md)
 - [Body and units](docs/body-runtime.md), [sensory mapping evidence](docs/sensory-mapping-evidence.md), [viewer](docs/viewer.md)
+- [Conductance dynamics](docs/conductance-model.md), [proprioceptive mapping](docs/proprioception-mapping.md), [navigation calibration](docs/navigation-calibration.md), [internal state and learning](docs/internal-state-learning-plan.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

@@ -234,6 +234,8 @@ class BodyRuntime:
         self._body_velocity = np.zeros(6)
         self._original_diffuse = self.model.light_diffuse.copy()
         self._original_ambient = self.model.light_ambient.copy()
+        self._original_headlight = {name: getattr(self.model.vis.headlight, name).copy()
+                                    for name in ("ambient", "diffuse", "specular")}
         self._vision_stride = round(cfg.vision_period_s / cfg.physics_dt_s)
 
     def reset(self, seed: int | None = None):
@@ -254,6 +256,8 @@ class BodyRuntime:
         self._stimuli = {"odor": 1.0, "light": 1.0}
         self.model.light_diffuse[:] = self._original_diffuse
         self.model.light_ambient[:] = self._original_ambient
+        for name, values in self._original_headlight.items():
+            getattr(self.model.vis.headlight, name)[:] = values
         self.physiology = Physiology(self.config.physiology)
         self.food = ResourcePatch("food", "food", self.config.food_amount)
         self.water = ResourcePatch("water", "water", self.config.water_amount)
@@ -369,8 +373,10 @@ class BodyRuntime:
             "antenna_odor": self.field.sample(antenna_m, self.time_s).tolist(),
             "taste_food": bool(self._food_contact and self.food.remaining > 0),
             "taste_water": bool(self._water_contact and self.water.remaining > 0),
-            "food_contact_by_leg": (self._food_contact_by_leg & (self.food.remaining > 0)).tolist(),
-            "water_contact_by_leg": (self._water_contact_by_leg & (self.water.remaining > 0)).tolist(),
+            "food_contact_by_leg": {leg.upper(): bool(contact and self.food.remaining > 0)
+                                    for leg, contact in zip(self.controller.legs, self._food_contact_by_leg)},
+            "water_contact_by_leg": {leg.upper(): bool(contact and self.water.remaining > 0)
+                                     for leg, contact in zip(self.controller.legs, self._water_contact_by_leg)},
             "light_intensity": self._stimuli["light"],
             "proprioception": {
                 "speed_mm_s": float(np.linalg.norm(velocity[3:5])),
@@ -413,12 +419,15 @@ class BodyRuntime:
             raise ValueError("Stimulus gain must be finite and in [0,10]")
         self._stimuli[name] = float(value)
         if name == "light":
-            self.model.light_diffuse[:] = self._original_diffuse * min(value, 1)
-            self.model.light_ambient[:] = self._original_ambient * min(value, 1)
+            self.model.light_diffuse[:] = self._original_diffuse * value
+            self.model.light_ambient[:] = self._original_ambient * value
+            for name, values in self._original_headlight.items():
+                getattr(self.model.vis.headlight, name)[:] = values * value
 
     def snapshot(self) -> dict:
         """Observer/evaluator state. Never pass this privileged world data to brain."""
         return {"observation": self.observe(), "config": asdict(self.config),
+                "stimuli": self._stimuli.copy(),
                 "resources": {"food": asdict(self.food), "water": asdict(self.water)},
                 "resource_balance": self.physiology.balance_residuals(self.food, self.water),
                 "physics": {"nq": self.model.nq, "nv": self.model.nv, "nu": self.model.nu,

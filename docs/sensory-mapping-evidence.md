@@ -159,3 +159,113 @@ These are proposals derived for this project, not published results:
 4. Document negative sensory-to-walking results. They may reveal missing
    physiological state, sensory transduction, sign/dynamics assumptions, or
    decoder calibration; they do not falsify the biological connectome.
+
+## Vision: available mappings and remaining registration
+
+### Photoreceptors in the same v1.0 annotation file
+
+| Type | Left (`rootSide`) | Right (`rootSide`) | Total |
+| --- | ---: | ---: | ---: |
+| R1-R6 | 1112 | 2265 | 3377 |
+| R7y | 230 | 252 | 482 |
+| R8y | 230 | 251 | 481 |
+| R7p | 173 | 159 | 332 |
+| R8p | 172 | 158 | 330 |
+| R7d | 40 | 42 | 82 |
+| R8d | 35 | 41 | 76 |
+| R7_unclear | 165 | 239 | 404 |
+| R8_unclear | 188 | 254 | 442 |
+| R7R8_unclear | 0 | 85 | 85 |
+
+All photoreceptor rows have null `assignedOlHex1` and `assignedOlHex2`. In
+contrast, 23,720 rows from 15 optic columnar types have coordinates, covering
+hex1 1–36 and hex2 1–39. The types are L1/L2/L3/L5, C2/C3, Mi1/Mi4/Mi9, T1,
+Tm1/Tm2/Tm4/Tm9/Tm20. Not every type is assigned bilaterally or completely.
+Coordinates identify anatomical columns, not camera pixel coordinates.
+
+The R1–R6 left/right count imbalance must not be interpreted as a measured
+sensitivity imbalance. Nern et al. explicitly discuss incomplete photoreceptor
+segmentation and count corrections in the [2025 optic-lobe
+paper](https://www.nature.com/articles/s41586-025-08746-0), Methods: quantification
+of cell numbers and assignment of R7/R8. Subtype assignments use anatomy and
+connectivity because rhodopsin expression is not directly visible in EM.
+
+### An authoritative R7/R8-to-column table exists
+
+The [MaleCNS companion
+repository](https://github.com/flyconnectome/2025malecns/tree/67767d2233657983993ff6c2be48e836a935863c)
+provides [optic-column-type-assignments-v1.0.xlsx](https://github.com/flyconnectome/2025malecns/blob/67767d2233657983993ff6c2be48e836a935863c/supplemental_data/optic-column-type-assignments-v1.0.xlsx).
+Pinned commit: `67767d2233657983993ff6c2be48e836a935863c`.
+Downloaded bytes checked in memory; SHA-256:
+`d4af1cacb751036f7e84bfecc9bec79ca010066ac066559c29b566003ec080d3`.
+
+| Sheet | Column rows | Assigned L1 | Assigned R7 | Assigned R8 |
+| --- | ---: | ---: | ---: | ---: |
+| Right OL | 892 | 892 | 691 | 704 |
+| Left OL | 880 | 872 | 608 | 625 |
+
+Columns are `column`, `L1`, `R7`, `R7_type`, `R8`, `R8_type`, `column_type`,
+`aMe12_branch`, `Tm5a_branch`, `Notes`. The README defines `-99` as missing.
+All positive R7/R8 IDs were cross-checked against the local annotation file:
+all exist and all type names agree. There are no duplicate positive R7/R8
+IDs within either sheet.
+
+Example: `ME_R_col_31_33` maps L1 31929, R7y 154574 and R8y 26388;
+`ME_L_col_02_10` maps L1 97509, R7_unclear 252506 and R8_unclear 250789.
+The latter column is marked pale, but the individual photoreceptors remain
+`unclear`; do not replace their type labels with an inferred pale identity.
+This table resolves a subset of missing annotation coordinates. It contains
+no R1–R6 mapping and no ommatidial viewing-direction vectors.
+
+### Coordinate orientation and optic chiasm
+
+Nern et al. [Fig. 3 and Methods](https://www.nature.com/articles/s41586-025-08746-0)
+define medulla hex coordinates using 15 columnar cell types and anatomical
+equator landmarks. The view is from inside the brain looking outward. Column
+centrelines and ROI assignments extend the map through medulla, lobula and
+lobula plate. The official [analysis code](https://github.com/reiserlab/male-drosophila-visual-system-connectome-code/tree/dbafc73124b5c96e96429cdf2a89d067cae841bc)
+contains `params/ME_columnar-cells_location.xlsx`,
+`src/utils/hex_hex.py`, and `results/exchange/ME_assigned_columns.csv`.
+Those older right-optic-lobe resources should not replace current bilateral
+MaleCNS release mappings without an explicit ID/version check.
+
+Zhao et al., [Eye structure shapes neuron function in Drosophila motion
+vision](https://www.nature.com/articles/s41586-025-09276-5), Nature 646, 135–142
+(2025), DOI 10.1038/s41586-025-09276-5, provide the physical eye-to-visual-space
+framework. Their mapping combines a whole-head micro-CT eye with FAFB medulla
+neurons. The Methods state that medulla and ommatidial grids are left-right
+flipped because of the optic chiasm. Positive azimuth denotes the right visual
+field from inside out, and positive elevation the dorsal field. Facet spacing
+is nonuniform, so a regular hex map is not itself an angular projection.
+
+Their [eyemap_T4 code](https://github.com/reiserlab/eyemap_T4/tree/99d2a43123db636cedb55af9ff31a59657e7d17e)
+contains `data/eyemap.RData`, `proc_eyemap.R`, and `eyemap_func.R`. It is a
+valuable template, but an exact registration from those FAFB/template eye
+coordinates to the current MaleCNS columns and FlyGym camera frame has not
+been established in this project. No claim of a verified spatial retinal
+mapping follows from simply having these files.
+
+### Dynamics and conservative first assay
+
+[Astorga et al., TRP, TRPL and Cacophony Channels Mediate Ca2+ Influx and
+Exocytosis in Photoreceptors Axons in Drosophila](https://pmc.ncbi.nlm.nih.gov/articles/PMC3432082/)
+describe non-spiking photoreceptors with tonic histamine release responding
+to graded depolarization. [Evidence for Dynamic Network
+Regulation of Drosophila Photoreceptor Function from Mutants Lacking the
+Neurotransmitter Histamine](https://pmc.ncbi.nlm.nih.gov/articles/PMC4801898/)
+show that feedback and adaptation alter visual encoding. These results rule
+out describing a Poisson/LIF retinal input as a biophysically faithful
+photoreceptor model.
+
+Engineering proposal: begin with uniform luminance per eye as an explicit
+coarse input proxy, with polarity and gain documented. Record eye image and
+mean luminance separately from neural activity. This tests a light-response
+interface without silently inventing retinotopy. It cannot establish object,
+motion, color, UV or polarization vision. If Poisson conversion is used, label
+it as an artificial encoding; biological photoreceptor output is graded.
+
+Before spatial input is claimed, validate front/back and up/down orientation,
+left/right eye frame conventions, angular field of view, neural-superposition
+mapping for R1–R6, and the response to a moving test bar with expected contrast
+sign. RGB rendering alone does not supply the UV spectrum or polarization
+needed by specialized R7/R8 pathways.

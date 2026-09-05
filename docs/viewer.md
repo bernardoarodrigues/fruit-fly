@@ -22,11 +22,19 @@ surrogate is disclosed beside the male circuit label. Space pauses/resumes;
 focused. Controls are ordinary keyboard-accessible HTML elements.
 
 The speed selector is a target simulation/wall-time ratio; `Maximum` removes
-pacing. Actual speed is measured by the simulation and shown separately. A
+pacing. Actual speed is measured between running frame updates, including
+rendering and pacing overhead. The runtime's compute-only ratio remains in raw
+telemetry. Paused time is excluded; two running frames establish an interval. A
 computer unable to reach the target runs as fast as it can. Pausing and camera
 changes do not advance simulated time. Reset reconstructs state through the
-runner's reset command. Stimulus sliders report requested values; the underlying
-runtime defines how those values change sensory input.
+runner's reset command. Stimulus sliders synchronize to the runtime's reported
+gains after controls, reset and browser reload; the runtime defines how those
+gains change sensory input. Reserve percentages use the runtime's capacities;
+when capacities are unavailable the viewer shows raw units instead.
+The neural panel reports model voltage minimum, mean and maximum. A separate
+sensory panel shows optional compound-eye sample timing/intensity and FeCO club
+input rates, explicitly distinguishing rendered eye samples from an implemented
+neural vision pathway.
 
 ## Runtime API
 
@@ -49,9 +57,11 @@ Cameras: `overview`, `follow`, `side`. Runtime commands:
 {"type": "ablation", "enabled": true}
 ```
 
-Odor/light values are in `[0, 2]`; zero disables the input. The viewer implements
+Odor/light values are in `[0, 2]`. Zero odor gain stops new source emission;
+previous airborne puffs and baseline receptor activity can remain. The viewer implements
 `pause`, `camera`, and `speed` itself. It steps in small quanta (default 0.01
-simulated seconds), checks commands between quanta, and renders up to eight
+simulated seconds, aligned to whole `runner.coupling_s` intervals when provided),
+checks commands between quanta, and renders up to eight
 frames per wall-clock second. Frame/update queues have fixed capacity and drop
 old frames, so rendering cannot accumulate unlimited queued video. A single slow
 simulation quantum still delays a control; its duration depends on model size and
@@ -64,15 +74,23 @@ Optional viewer configuration:
             "step_seconds": 0.01, "fps": 8}}
 ```
 
+Settings are validated before worker startup: FPS 1–30, requested step 0.001–0.05
+seconds, and speed 0.05–10 or zero for maximum. Invalid settings fail with a
+specific error. The effective step can be larger than the requested step when
+one coupling interval is larger.
+
 Telemetry keys are optional and absent values display as unknown:
 
 ```text
 t_s, realtime_factor, behavior
 pose: {position_mm: [x, y, z], heading}
-physiology: {energy, hydration, crop}             # normalized [0, 1]
-senses: {odor: [left, right], taste_food, taste_water}
+physiology: {energy, hydration, crop, capacities?: {energy, hydration, crop}}
+stimuli: {odor, light}                           # source gain controls
+senses: {odor: [left, right], taste_food, taste_water, club_event_rates_hz?}
+vision: {enabled, sample_t_s, shape, mean_by_eye}
 neural: {neurons, edges, active_neurons, spikes, output_rates,
-         ablated, backend, ablation_description?}
+         voltage_mv?: {minimum, maximum, mean},
+         ablated, backend, ablation_target?, ablation_description?}
 assay, status, warnings, provenance?
 ```
 
@@ -89,7 +107,9 @@ server terminal. A crashed worker does not restart or reset an experiment silent
 - `POST /api/control`: JSON command, HTTP 202 once queued (not yet applied).
 
 The control endpoint validates command shapes and rejects requests from a foreign
-browser origin. No simulation data is sent to an external service.
+browser origin. All endpoints also restrict the Host header to the loopback
+viewer address, preventing an external hostname from masquerading as the local
+origin through DNS rebinding. No simulation data is sent to an external service.
 
 ## Verification boundary
 

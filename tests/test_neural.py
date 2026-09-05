@@ -185,6 +185,28 @@ def test_checkpoint_preserves_pending_events_rng_and_intervention(tmp_path):
         wrong_graph.load_checkpoint(path)
 
 
+@pytest.mark.parametrize("defect", ["nan_current", "zero_rng", "fractional_pending",
+                                    "negative_refractory", "fractional_tick", "future_spike"])
+def test_corrupt_checkpoint_rejected_atomically(defect):
+    original=network([(0,1,100)])
+    original.voltage_mv[0]=-44
+    original.advance(.5)
+    state=original.state_dict()
+    if defect=="nan_current": state["current_mv"][1]=np.nan
+    elif defect=="zero_rng": state["rng_state"][0]=0
+    elif defect=="fractional_pending": state["pending"]=state["pending"].astype(float)+.5
+    elif defect=="negative_refractory": state["refractory_ticks"][0]=-1
+    elif defect=="fractional_tick": state["tick"]=5.5
+    elif defect=="future_spike": state["last_spike_tick"][1]=state["tick"]+1
+    fresh=network([(0,1,100)],seed=12)
+    before=fresh.state_dict()
+    with pytest.raises(ValueError): fresh.load_state_dict(state)
+    after=fresh.state_dict()
+    for key in before:
+        if isinstance(before[key],np.ndarray): np.testing.assert_array_equal(before[key],after[key])
+        else: assert before[key]==after[key]
+
+
 def test_recording_filter_does_not_change_dynamics():
     one = network([(0, 1, 150)], n=2)
     two = network([(0, 1, 150)], n=2)

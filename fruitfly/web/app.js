@@ -50,6 +50,7 @@ function update(data) {
   const telemetry = data.telemetry || {};
   const neural = telemetry.neural || {};
   const senses = telemetry.senses || {};
+  const stimuli = telemetry.stimuli || {};
   const physiology = telemetry.physiology || {};
   const assays = {
     sensory: ["Sensory assay", "Environmental stimuli feed the neural model."],
@@ -75,14 +76,43 @@ function update(data) {
     camera.setAttribute("aria-pressed", String(selected));
   }
   if (document.activeElement !== $("speed")) $("speed").value = String(data.speed);
+  for (const name of ["odor", "light"]) {
+    if (typeof stimuli[name] === "number" && Number.isFinite(stimuli[name]) && document.activeElement !== $(name)) {
+      $(name).value = String(stimuli[name]);
+      setText(`${name}-value`, `${number(stimuli[name])}×`);
+    }
+  }
   $("time").replaceChildren(document.createTextNode(`${number(telemetry.t_s)} `), Object.assign(document.createElement("small"), {textContent: "s"}));
-  $("realtime").replaceChildren(document.createTextNode(`${number(telemetry.realtime_factor)} `), Object.assign(document.createElement("small"), {textContent: "× realtime"}));
+  $("realtime").replaceChildren(document.createTextNode(`${number(data.observed_realtime_factor)} `), Object.assign(document.createElement("small"), {textContent: "× realtime"}));
   setText("behavior", String(telemetry.behavior || "Awaiting state").replaceAll("_", " "));
   setText("active-neurons", count(neural.active_neurons));
   setText("neuron-count", count(neural.neurons));
   setText("edge-count", count(neural.edges));
   setText("spike-count", count(neural.spikes));
   setText("backend", neural.backend || "—");
+  for (const [label, key] of [["min", "minimum"], ["mean", "mean"], ["max", "maximum"]]) {
+    const value = neural.voltage_mv?.[key];
+    setText(`voltage-${label}`, typeof value === "number" && Number.isFinite(value) ? `${number(value, 1)} mV` : "—");
+  }
+  const vision = telemetry.vision || {};
+  setText("vision-status", vision.enabled === true ? "Camera enabled" : vision.enabled === false ? "Disabled" : "Not reported");
+  setText("vision-values", Array.isArray(vision.mean_by_eye)
+    ? `L ${number(vision.mean_by_eye[0], 3)} · R ${number(vision.mean_by_eye[1], 3)} · native intensity`
+    : "No eye samples available.");
+  setText("vision-sample", vision.sample_t_s == null ? "No sampling time reported."
+    : `Sample at ${number(vision.sample_t_s, 3)} s${Array.isArray(vision.shape) ? ` · shape ${vision.shape.join(" × ")}` : ""}`);
+  const clubRates = senses.club_event_rates_hz || {};
+  const clubEntries = Object.entries(clubRates);
+  setText("club-status", clubEntries.length ? "Club adapter enabled"
+    : Object.hasOwn(senses, "club_event_rates_hz") ? "Adapter disabled" : "Not reported");
+  $("club-rates").replaceChildren();
+  for (const [leg, rate] of clubEntries) {
+    const chip = document.createElement("span");
+    chip.className = "output-rate";
+    chip.textContent = leg;
+    chip.append(Object.assign(document.createElement("strong"), {textContent: `${number(rate, 1)} Hz`}));
+    $("club-rates").append(chip);
+  }
   setText("neural-subtitle", neural.ablated ? `${neural.ablation_target || "Motor readout"} muted` : neural.neurons ? "Spiking network telemetry" : "Waiting for neural telemetry");
   if (typeof neural.ablated === "boolean") $("ablation").checked = neural.ablated;
   if (neural.ablation_target) {
@@ -92,9 +122,15 @@ function update(data) {
   if (neural.ablation_description) setText("ablation-note", neural.ablation_description);
   for (const name of ["energy", "hydration", "crop"]) {
     const value = physiology[name];
-    $(name).value = Number.isFinite(Number(value)) && value != null ? value : 0;
-    $(name).setAttribute("aria-label", `${name}: ${value == null ? "unavailable" : number(value * 100, 0) + " percent"}`);
-    setText(`${name}-value`, value == null ? "—" : `${number(value * 100, 0)}%`);
+    const capacity = physiology.capacities?.[name];
+    const hasCapacity = typeof capacity === "number" && Number.isFinite(capacity) && capacity > 0;
+    const hasValue = typeof value === "number" && Number.isFinite(value);
+    $(name).hidden = !hasCapacity || !hasValue;
+    $(name).max = hasCapacity ? capacity : 1;
+    $(name).value = hasValue ? value : 0;
+    const label = !hasValue ? "—" : hasCapacity ? `${number(value / capacity * 100, 0)}%` : `${number(value, 3)} units`;
+    $(name).setAttribute("aria-label", `${name}: ${label}`);
+    setText(`${name}-value`, label);
   }
   setText("odor-left", number(senses.odor?.[0], 3));
   setText("odor-right", number(senses.odor?.[1], 3));
@@ -147,7 +183,10 @@ async function poll() {
     }
   } catch (error) {
     connectionError = true;
+    if (state) state.status = "disconnected";
+    for (const control of document.querySelectorAll(".transport button, .transport select, .sidebar input")) control.disabled = true;
     setText("status-label", "Disconnected");
+    setText("frame-label", "DISCONNECTED / LAST RECEIVED FRAME");
     $("status-dot").className = "dot error";
     showError(`Cannot reach the local simulation server. ${error.message}`);
   } finally {

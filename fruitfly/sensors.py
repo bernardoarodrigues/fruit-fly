@@ -7,6 +7,41 @@ import numpy as np
 from .neural import SparseDrive
 
 
+class TasteEncoder:
+    """Leg-specific appetitive input from actual tarsal food contact.
+
+    Exact LgAG2/LgLG4 types follow Tastekin et al., Cell 2026,
+    DOI 10.1016/j.cell.2026.08.016, Figs. 3J/4J. Event rate is an
+    uncalibrated activation proxy; no labellar/pharyngeal cells are stimulated
+    from foot contact, and tarsal water is explicitly unmapped.
+    """
+
+    def __init__(self, connectome, contact_rate_hz=100.0):
+        if not np.isfinite(contact_rate_hz) or not 0 <= contact_rate_hz <= 300:
+            raise ValueError("Taste event rate must be finite and in [0,300] Hz")
+        self.contact_rate_hz = float(contact_rate_hz)
+        self.groups = {side + leg: connectome.select(["LgAG2", "LgLG4"], side=side, nerve=nerve)
+                       for side in ("L", "R")
+                       for leg, nerve in (("F", "ProLN"), ("M", "MesoLN"), ("H", "MetaLN"))}
+        if any(len(v) == 0 for v in self.groups.values()):
+            raise ValueError("Leg-specific appetitive taste mapping is incomplete")
+        self.last_rates = {leg: 0.0 for leg in self.groups}
+
+    def encode(self, observation):
+        contacts = observation["food_contact_by_leg"]
+        if set(contacts) != set(self.groups) or any(not isinstance(v, (bool, np.bool_)) for v in contacts.values()):
+            raise ValueError("Taste requires six named boolean physical leg contacts")
+        self.last_rates = {leg: self.contact_rate_hz if contacts[leg] else 0.0 for leg in self.groups}
+        # Omit inactive channels: a zero-rate target still changes the reference
+        # activation model's refractory declaration and RNG assignment.
+        active = [v for leg, v in self.groups.items() if self.last_rates[leg] > 0]
+        indices = np.concatenate(active) if active else np.empty(0, dtype=np.int32)
+        return SparseDrive(indices, rates_hz=np.full(len(indices), self.contact_rate_hz))
+
+    def reset(self):
+        self.last_rates = {leg: 0.0 for leg in self.groups}
+
+
 @dataclass(frozen=True)
 class SensoryParameters:
     odor_half_response: float = 1e8

@@ -1,0 +1,740 @@
+{
+  "purpose": "Full graph numerical method/timestep sensitivity with identical external synaptic events",
+  "dataset": "male-cns:v1.0",
+  "neurons": 166700,
+  "edges": 25582938,
+  "duration_ms": 100,
+  "stimulus_ms": 50,
+  "coupling_ms": 5,
+  "external_event_grid_ms": 0.2,
+  "external_event_rate_hz": 150,
+  "external_event_count": 805,
+  "input_ids": [
+    60498,
+    105395,
+    116618,
+    119181,
+    123123,
+    123968,
+    126824,
+    132720,
+    141372,
+    149131,
+    150947,
+    153046,
+    157520,
+    158137,
+    160357,
+    160643,
+    161922,
+    162611,
+    166688,
+    167640,
+    170403,
+    171201,
+    173031,
+    173387,
+    173751,
+    176260,
+    179108,
+    180317,
+    181166,
+    181207,
+    181625,
+    182888,
+    183425,
+    183849,
+    184230,
+    185253,
+    186397,
+    187330,
+    187949,
+    189075,
+    189518,
+    189605,
+    190032,
+    190294,
+    191144,
+    192631,
+    195280,
+    202140,
+    202705,
+    204248,
+    204564,
+    205597,
+    207430,
+    210364,
+    214985,
+    217507,
+    218745,
+    220183,
+    221747,
+    222974,
+    226920,
+    240470,
+    246478,
+    254321,
+    258551,
+    260128,
+    268855,
+    272883,
+    279476,
+    292378,
+    296449,
+    302181,
+    350383,
+    353891,
+    363119,
+    373875,
+    416090,
+    419997,
+    436473,
+    437025,
+    486852,
+    532745,
+    536451,
+    541552,
+    551768,
+    552278,
+    556859,
+    564451,
+    900877,
+    902023,
+    922590,
+    925639,
+    211747785,
+    212945075,
+    222256845,
+    325265593,
+    499769368,
+    526888712,
+    648510281,
+    651813160,
+    688942939,
+    742571852,
+    766592451,
+    802014155,
+    821459348,
+    936218495
+  ],
+  "seed": 42,
+  "conditions": [
+    {
+      "name": "exponential_dt_0.2",
+      "parameters": {
+        "dt_ms": 0.2,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "exponential"
+      },
+      "wall_seconds": 0.9590074159787036,
+      "network_spikes": 101800,
+      "traversed_edges": 39090581,
+      "voltage_min_mv": -72.47166525908519,
+      "voltage_max_mv": -45.000155389898865,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 37
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 35
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.031084461820502174,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 0.9237025585345514,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 18.607704611283246
+    },
+    {
+      "name": "exponential_dt_0.1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "exponential"
+      },
+      "wall_seconds": 1.7777295419946313,
+      "network_spikes": 100529,
+      "traversed_edges": 38617174,
+      "voltage_min_mv": -73.50831246622357,
+      "voltage_max_mv": -45.00083941488029,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 36
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 35
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.018211098844334608,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 0.8508963685132304,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 14.617933675615447
+    },
+    {
+      "name": "exponential_dt_0.05",
+      "parameters": {
+        "dt_ms": 0.05,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "exponential"
+      },
+      "wall_seconds": 3.454771000018809,
+      "network_spikes": 98731,
+      "traversed_edges": 38110460,
+      "voltage_min_mv": -73.50142241582844,
+      "voltage_max_mv": -45.00290651022495,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 36
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 34
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.0,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 0.0,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 0.0
+    },
+    {
+      "name": "pade22_dt_0.2",
+      "parameters": {
+        "dt_ms": 0.2,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "pade22"
+      },
+      "wall_seconds": 0.8437577920267358,
+      "network_spikes": 101800,
+      "traversed_edges": 39090581,
+      "voltage_min_mv": -72.47166524033014,
+      "voltage_max_mv": -45.00015539395709,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 37
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 35
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.031084461820502174,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 0.9237023176965427,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 18.607704611267764,
+      "voltage_rmse_vs_same_dt_exponential_mv": 1.0815503714369747e-05
+    },
+    {
+      "name": "pade22_dt_0.1",
+      "parameters": {
+        "dt_ms": 0.1,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "pade22"
+      },
+      "wall_seconds": 1.5201904159621336,
+      "network_spikes": 100529,
+      "traversed_edges": 38617174,
+      "voltage_min_mv": -73.50831149595363,
+      "voltage_max_mv": -45.00083941797295,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 36
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 35
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.018211098844334608,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 0.8508962518789072,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 14.617933660026566,
+      "voltage_rmse_vs_same_dt_exponential_mv": 6.318881717337236e-06
+    },
+    {
+      "name": "pade22_dt_0.05",
+      "parameters": {
+        "dt_ms": 0.05,
+        "resting_mv": -52.0,
+        "reset_mv": -52.0,
+        "threshold_mv": -45.0,
+        "membrane_tau_ms": 20.0,
+        "excitatory_tau_ms": 5.0,
+        "inhibitory_tau_ms": 5.0,
+        "refractory_ms": 2.2,
+        "delay_ms": 1.8,
+        "excitatory_reversal_mv": 0.0,
+        "inhibitory_reversal_mv": -75.0,
+        "excitatory_gain": 1.0,
+        "inhibitory_gain": 1.0,
+        "input_event_gleak": 1.0,
+        "voltage_method": "pade22"
+      },
+      "wall_seconds": 2.9521239589666948,
+      "network_spikes": 98731,
+      "traversed_edges": 38110460,
+      "voltage_min_mv": -73.50142241840891,
+      "voltage_max_mv": -45.00290651115024,
+      "motor_counts": [
+        {
+          "body_id": 10065,
+          "type": "DNb05",
+          "side": "R",
+          "count": 36
+        },
+        {
+          "body_id": 10118,
+          "type": "DNb05",
+          "side": "L",
+          "count": 34
+        },
+        {
+          "body_id": 10295,
+          "type": "DNg34",
+          "side": "L",
+          "count": 15
+        },
+        {
+          "body_id": 10360,
+          "type": "DNa02",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10442,
+          "type": "DNa01",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 10760,
+          "type": "DNa01",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 10783,
+          "type": "DNp09",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 11177,
+          "type": "DNp09",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 13585,
+          "type": "DNg34",
+          "side": "R",
+          "count": 8
+        },
+        {
+          "body_id": 13805,
+          "type": "DNg97",
+          "side": "L",
+          "count": 0
+        },
+        {
+          "body_id": 230783,
+          "type": "DNg97",
+          "side": "R",
+          "count": 0
+        },
+        {
+          "body_id": 523769,
+          "type": "DNa02",
+          "side": "L",
+          "count": 0
+        }
+      ],
+      "relative_total_spike_count_difference_vs_exponential_dt005": 0.0,
+      "final_voltage_rmse_vs_exponential_dt005_mv": 7.863135214483118e-09,
+      "final_voltage_max_abs_difference_vs_exponential_dt005_mv": 1.3004279324491108e-06,
+      "voltage_rmse_vs_same_dt_exponential_mv": 7.863135214483118e-09
+    }
+  ],
+  "completed": true,
+  "interpretation": "Shared-event numerical comparison only. Recurrent threshold events can make final-state differences non-monotonic. No biological convergence or parameter fit is inferred."
+}

@@ -21,6 +21,8 @@ def main():
     parser.add_argument("--seconds", type=float, default=1)
     parser.add_argument("--output", type=Path, default=Path("validation/closed-loop"))
     args = parser.parse_args()
+    if not np.isfinite(args.seconds) or args.seconds <= 0 or not np.isclose(round(args.seconds / .01) * .01, args.seconds, rtol=0, atol=1e-10):
+        parser.error("seconds must be a positive integer multiple of 0.01")
     args.output.mkdir(parents=True, exist_ok=True)
     results = {"duration_s": args.seconds, "seed": 1, "conditions": [],
                "claim": "Sensorimotor interface positive/negative controls; uncalibrated behavior"}
