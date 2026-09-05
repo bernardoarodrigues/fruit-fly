@@ -1,0 +1,143 @@
+{
+  "created_utc": "2026-09-05T04:09:13.507032+00:00",
+  "scope": "Wilson Laurent 2005 supplementary Figure1; public primary sources only",
+  "attempts": [
+    {
+      "url": "https://wilson.hms.harvard.edu/publications/role-gabaergic-inhibition-shaping-odor-evoked-spatiotemporal-patterns",
+      "attempt_utc": "2026-09-05T04:09:12.725658+00:00",
+      "method": "stdlib urllib.request public GET",
+      "status": 403,
+      "final_url": "https://wilson.hms.harvard.edu/publications/role-gabaergic-inhibition-shaping-odor-evoked-spatiotemporal-patterns",
+      "content_type": "text/html",
+      "error": "HTTP Error 403: Forbidden",
+      "path": "data/raw/wilson-gaba-reversal/author-publication.html",
+      "bytes": 494,
+      "sha256": "8f4dbed368a9809101ad384ed6aedf18b68cb2a2bfe0bf22613c94eb299d0ad1",
+      "starts_pdf": false,
+      "is_primary_article_or_supplement": false,
+      "response_classification": "HTTP403 Access Denied HTML, not scientific source payload"
+    },
+    {
+      "url": "https://wilson.hms.harvard.edu/resource/supplement-2",
+      "attempt_utc": "2026-09-05T04:09:13.086861+00:00",
+      "method": "stdlib urllib.request public GET",
+      "status": 403,
+      "final_url": "https://wilson.hms.harvard.edu/resource/supplement-2",
+      "content_type": "text/html",
+      "error": "HTTP Error 403: Forbidden",
+      "path": "data/raw/wilson-gaba-reversal/author-supplement-response",
+      "bytes": 409,
+      "sha256": "6c43e018c8352fc7c24e7a003e2adc5159045eea1df23bbefbdcde4c22f6ae94",
+      "starts_pdf": false,
+      "is_primary_article_or_supplement": false,
+      "response_classification": "HTTP403 Access Denied HTML, not scientific source payload"
+    },
+    {
+      "url": "https://www.jneurosci.org/content/25/40/9069/tab-figures-data",
+      "attempt_utc": "2026-09-05T04:09:13.190832+00:00",
+      "method": "stdlib urllib.request public GET",
+      "status": 403,
+      "final_url": "https://www.jneurosci.org/content/25/40/9069/tab-figures-data",
+      "content_type": "text/html; charset=UTF-8",
+      "error": "HTTP Error 403: Forbidden",
+      "path": "data/raw/wilson-gaba-reversal/journal-figures-response.html",
+      "bytes": 5513,
+      "sha256": "f40f53c74693677aa49c22d0102dde12a55e534df3427880c73843c6dc6ffc03",
+      "starts_pdf": false,
+      "is_primary_article_or_supplement": false,
+      "response_classification": "HTTP403 Access Denied HTML, not scientific source payload"
+    },
+    {
+      "url": "https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/wilsonlaurent2005supp.pdf",
+      "found_via": "Author publication supplement link; verified by web click",
+      "attempt_utc": "2026-09-05T04:09:25.082220+00:00",
+      "method": "stdlib urllib.request public GET",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "path": "data/raw/wilson-gaba-reversal/direct-supplement-response.html",
+      "bytes": 489,
+      "sha256": "99ea308848b204a0979bde28054f4c766a0857b1926717496aebd1b6e463da94",
+      "starts_pdf": false,
+      "is_primary_article_or_supplement": false,
+      "response_classification": "HTTP403 Access Denied HTML, not scientific source payload"
+    },
+    {
+      "url": "https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/wilsonlaurent2005supp.pdf",
+      "method": "Chrome public author attachment download via supported browser locator.downloadMedia",
+      "source_download_path": "/Users/bernardo/Downloads/wilsonlaurent2005supp.pdf",
+      "path": "data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pdf",
+      "bytes": 176169,
+      "sha256": "867ac68c88000b9b2ba44a46fb692636e84b993b495c5f6c5c34149cd1d26833",
+      "starts_pdf": true,
+      "pdf_pages": 3,
+      "metadata": {
+        "/ModDate": "D:20060218110843-05'00'",
+        "/CreationDate": "D:20051006092409-04'00'",
+        "/Creator": "Illustrator",
+        "/Producer": "Adobe PDF library 6.66"
+      },
+      "acquired_utc": "2026-09-05T04:11:44.719512+00:00",
+      "copied_source_identical": true,
+      "browser_navigation_timed_out_then_pdf_displayed": true,
+      "login_or_captcha_used": false,
+      "text_derivative": {
+        "path": "data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pypdf.txt",
+        "bytes": 3940,
+        "sha256": "29f4847f5c6dd432340ef8b59da265467fa61177e1e93e05b128eb89e596628d",
+        "method": "pypdf.PdfReader page.extract_text() with explicit page separators"
+      }
+    }
+  ],
+  "web_attempts": [
+    {
+      "url": "https://wilson.hms.harvard.edu/resource/supplement-2",
+      "result": "403 Forbidden when opened, but indexed search returned supplement caption text"
+    },
+    {
+      "url": "https://www.jneurosci.org/content/25/40/9069/tab-figures-data",
+      "result": "403 Forbidden web open"
+    }
+  ],
+  "original_supplement_pdf_retained": true,
+  "browser_tools_not_supported": [
+    "tab.content.export: Chrome does not support tab_content_export",
+    "pageAssets did not list PDF; only favicon"
+  ],
+  "main_article_source": {
+    "path": "data/raw/antennal-lobe-inhibition/wilson-laurent-2005.html",
+    "bytes": 234559,
+    "sha256": "87a10cf90ab26908f6f3095c8611b2694f286d17f826338ad27507d90efa5b67",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6725763/"
+  },
+  "derived_files": [
+    {
+      "path": "data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pypdf.txt",
+      "bytes": 3940,
+      "sha256": "29f4847f5c6dd432340ef8b59da265467fa61177e1e93e05b128eb89e596628d"
+    },
+    {
+      "path": "data/raw/wilson-gaba-reversal/supplement-page-1.png",
+      "bytes": 174163,
+      "sha256": "d238025b150482958cef1f98536e515696d99525c5b6393a5a1f3709f0ce883b"
+    },
+    {
+      "path": "data/raw/wilson-gaba-reversal/supplement-page-2.png",
+      "bytes": 249154,
+      "sha256": "ac4c0f83976ca0bf9a4a3b90203749d197dde34b5cdb8204c85580bb5c860b3b"
+    }
+  ],
+  "source_pdf_visual_inspection": {
+    "pages_1based": [
+      1,
+      2
+    ],
+    "tool": "Poppler pdftoppm; local view_image",
+    "purpose": "Verify caption, symbol meaning, group labels/n and Figure2 interpretation; no point digitization"
+  },
+  "notes": {
+    "path": "validation/wilson-gaba-reversal-notes.json",
+    "bytes": 5743,
+    "sha256": "1d0e0a4313154eb842a90ef571a870faefc5a6b357ca158ee77e4b38da22023f"
+  }
+}

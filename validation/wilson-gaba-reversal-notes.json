@@ -1,0 +1,166 @@
+{
+  "created_utc": "2026-09-05T04:13:36.755859+00:00",
+  "paper_doi": "10.1523/JNEUROSCI.2070-05.2005",
+  "sources": [
+    {
+      "path": "data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pdf",
+      "bytes": 176169,
+      "sha256": "867ac68c88000b9b2ba44a46fb692636e84b993b495c5f6c5c34149cd1d26833",
+      "url": "https://wilson.hms.harvard.edu/sites/g/files/omnuum8421/files/wilson-lab/files/wilsonlaurent2005supp.pdf"
+    },
+    {
+      "path": "data/raw/antennal-lobe-inhibition/wilson-laurent-2005.html",
+      "bytes": 234559,
+      "sha256": "87a10cf90ab26908f6f3095c8611b2694f286d17f826338ad27507d90efa5b67",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6725763/"
+    }
+  ],
+  "supplement_figure1": {
+    "page_1based": 1,
+    "target": "antennal-lobe LN soma",
+    "application": "GABA iontophoresis onto soma",
+    "recording": "whole-cell; main methods state current-clamp voltage acquisition",
+    "groups": [
+      {
+        "internal": "potassium methanesulfonate + 0.5% neurobiotin",
+        "n_label": 5,
+        "expected_ECl_mV": -52,
+        "expected_ECl_status": "author-stated expectation, not a measured reversal or a new calculation",
+        "observed_EGABA_description": "nearer -40 mV",
+        "observed_EGABA_status": "approximation stated in caption, not plot digitization"
+      },
+      {
+        "internal": "potassium methanesulfonate without neurobiotin",
+        "n_label": 16,
+        "nominal_intracellular_chloride": "zero",
+        "observed_EGABA_description": "similarly depolarized",
+        "new_nernst_calculation": false
+      },
+      {
+        "internal": "potassium aspartate",
+        "n_label": 5,
+        "open_bound_symbols_present": true
+      },
+      {
+        "internal": "potassium aspartate + 0.5% biocytin hydrazide",
+        "n_label": 5,
+        "open_bound_symbols_present": true
+      }
+    ],
+    "open_symbol_semantics": "The most hyperpolarized stable Vm remains more positive than EGABA; EGABA < V_open. Treat as upper bound on reversal, not observed reversal.",
+    "caption_holding_limit_mV": -75,
+    "holding_limit_status": "Author-reported stability limitation; not a common hard truncation threshold for every displayed point or native physiological reversal",
+    "mean_bar_censoring": "Black bars are labeled means; no numeric source table or handling rule for censored values was recovered.",
+    "point_digitization": false,
+    "receptor_selective_isolation_stated": false,
+    "exact_modern_subtype": null,
+    "per_cell_ids": null
+  },
+  "main_protocol": {
+    "sex": "female",
+    "age_days_after_eclosion": [
+      3,
+      10
+    ],
+    "preparation": "in vivo somatic whole-cell patch clamp",
+    "one_cell_per_fly": true,
+    "default_strain": "Canton-S except where otherwise noted; exact Figure1 cell genotypes not individually declared",
+    "GH298_assignment_to_reversal_cells_verified": false,
+    "internal_standard_mM": {
+      "potassium_aspartate": 140,
+      "HEPES": 10,
+      "KCl": 1,
+      "MgATP": 4,
+      "Na3GTP": 0.5,
+      "EGTA": 1
+    },
+    "internal_pH": 7.3,
+    "internal_mOsm": 265,
+    "usual_biocytin_hydrazide_percent": 0.5,
+    "bath_mM": {
+      "NaCl": 103,
+      "KCl": 3,
+      "N_tris_hydroxymethyl_methyl_2_aminoethanesulfonic_acid": 5,
+      "trehalose": 10,
+      "glucose": 10,
+      "sucrose": 2,
+      "NaHCO3": 26,
+      "NaH2PO4": 1,
+      "CaCl2": 1.5,
+      "MgCl2": 4
+    },
+    "bath_mOsm": 275,
+    "bath_pH_near": 7.3,
+    "bath_bubble_percent": {
+      "O2": 95,
+      "CO2": 5
+    },
+    "bath_perfusion_ml_min": 2,
+    "electrode_MOhm": [
+      5,
+      7
+    ],
+    "holding_mV": [
+      -60,
+      -55
+    ],
+    "hyperpolarizing_current_pA": [
+      0,
+      30
+    ],
+    "holding_status": "General recording operating condition, not reversal",
+    "acquisition_kHz": 10,
+    "lowpass_kHz": 5,
+    "iontophoresis_general": {
+      "GABA_mM": 250,
+      "pH": 4.3,
+      "ejection_ms": [
+        4,
+        7
+      ],
+      "ejection_nA": 1000,
+      "interval_s": 20,
+      "backing_negative_nA_magnitude": [
+        0,
+        5
+      ],
+      "figure1_all_settings_repeated_in_caption": false
+    }
+  },
+  "not_reported_in_recovered_figure1_and_main_methods": [
+    "reversal-search voltage sequence",
+    "raw response versus voltage measurements",
+    "liquid-junction correction",
+    "recording temperature",
+    "full methanesulfonate internal recipe in Figure1",
+    "per-cell genotype and modern subtype",
+    "receptor-selective isolation for Figure1",
+    "functional synapse mapping to exact MaleCNS neurons"
+  ],
+  "figure2_scope": "PN DM2 and VC1 odor responses across internal solutions; soma-local chloride effects and shunting are author interpretations, not direct compartmental measurements",
+  "derived_files": [
+    {
+      "path": "data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pypdf.txt",
+      "bytes": 3940,
+      "sha256": "29f4847f5c6dd432340ef8b59da265467fa61177e1e93e05b128eb89e596628d"
+    },
+    {
+      "path": "data/raw/wilson-gaba-reversal/supplement-page-1.png",
+      "bytes": 174163,
+      "sha256": "d238025b150482958cef1f98536e515696d99525c5b6393a5a1f3709f0ce883b"
+    },
+    {
+      "path": "data/raw/wilson-gaba-reversal/supplement-page-2.png",
+      "bytes": 249154,
+      "sha256": "ac4c0f83976ca0bf9a4a3b90203749d197dde34b5cdb8204c85580bb5c860b3b"
+    }
+  ],
+  "render_command": "pdftoppm -f 1 -l 2 -r 130 -png data/raw/wilson-gaba-reversal/wilsonlaurent2005supp.pdf data/raw/wilson-gaba-reversal/supplement-page",
+  "visually_inspected_pdf_pages_1based": [
+    1,
+    2
+  ],
+  "new_calculation_fit_or_simulation": false,
+  "modern_male_receptor_mapping_inferred": false,
+  "public_download_success_without_institutional_login": true
+}

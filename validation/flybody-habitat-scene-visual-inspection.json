@@ -1,0 +1,28 @@
+{
+  "inspected_utc": "2026-09-05T04:13:34.813595+00:00",
+  "method": "Assistant inspected the full returned PNG images with view_image; no image edit or physics run.",
+  "result_receipt_sha256": "76bee313d61c249ae4271da1ca53b8e6731b57b001d94125869cd91365489cbc",
+  "images": [
+    {
+      "camera": "overview",
+      "path": "runs/flybody-habitat-scene-14229a078298/0-overview.png",
+      "sha256": "e2ac76b473f4425aef527b133748e440eda265beac5eb50cc1c6211f28dc85de",
+      "observations": "Resource patches smooth; no dotted reference track or reference ghost shadow/reflection visible. Actual fly and its source-floor reflection remain."
+    },
+    {
+      "camera": "follow",
+      "path": "runs/flybody-habitat-scene-14229a078298/1-follow.png",
+      "sha256": "0aa237acca3647f739a710b480db456e53d53a031fd97bcb67f720644b47d372",
+      "observations": "Resource patches smooth; no dotted reference track or reference ghost shadow/reflection visible. Actual fly and its source-floor reflection remain."
+    },
+    {
+      "camera": "side",
+      "path": "runs/flybody-habitat-scene-14229a078298/2-side.png",
+      "sha256": "950c00572d8a2f26534cc51514fed3a8abd37a3efa108c166872d808b55c1155",
+      "observations": "Resource patches smooth; no dotted reference track or reference ghost shadow/reflection visible. Actual fly and its source-floor reflection remain."
+    }
+  ],
+  "source_floor_reflectance": 0.2,
+  "source_floor_definition": "tmp/flybody-env/lib/python3.10/site-packages/dm_control/locomotion/arenas/floors.py",
+  "limits": "Three saved initial-pose views inspected; live browser checks are separately owned by the parent task. Existing source mesh rendering/shadows and actual floor reflection are preserved."
+}

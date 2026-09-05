@@ -19,7 +19,11 @@ The cached failure exactly equals the run's single `failures.jsonl` entry. It in
 
 This first display correction fixed the jagged resource discs, but the actual close views exposed **residual shadows from the reference trajectory**, even with its visible alpha set to zero. The images and that failed visual observation remain retained. They are not final clean-render evidence; removal from the derived scene requires a separate source version and inspection. The source floor also reflects the actual fly, which is a rendering property rather than a second simulated animal.
 
+The [final display addendum](../validation/flybody-habitat-viewer-final/inspection.json) now verifies source commit `62129a3` in the actual browser. It removes reference objects from the derived scene, including their shadow/reflection passes. The restarted 8774 viewer's overview, follow and side images show clean resources and no dotted reference artifacts; the real fly's floor reflection remains. All three camera snapshots preserve the earlier reset's pose, senses, physiology, neural telemetry, stimuli, physics and behavior. The ten final receipt checks pass, and the viewer is left paused in overview at t=0. This addendum performs no neural evolution or new wall-contact trial. Its [separate frozen plan](../validation/flybody-habitat-viewer-final-plan.json), images and exact source hashes preserve the distinction from the earlier control/failure experiment.
+
 At `ef6e230`, the complete Python suite passed **175 tests and 54 subtests**, with 22 existing Brian2 parser deprecation warnings. JavaScript syntax validation also passed. Those checks and the successful failure display do not convert the native wall-contact termination or the earlier contact-force gate failures into successful avoidance.
+
+After final scene removal, the focused habitat/bridge suite also passes **11 tests and 26 subtests**; the separate native scene validation passes 26/26 checks, including complete compiled-model invariance and 101 exact controller-state samples.
 
 ```sh
 .venv/bin/python -m fruitfly.viewer --config configs/male-flybody-rolling-habitat.json --port 8774 --paused

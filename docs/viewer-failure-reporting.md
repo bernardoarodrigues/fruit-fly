@@ -15,3 +15,5 @@ Focused validation: **15 tests and 23 subtests pass** across `tests/test_viewer.
 ```
 
 These are viewer/runner correctness checks. The fixture is not physical wall-contact evidence or a biological simulation. Actual habitat trial and UI receipts are recorded separately.
+
+The subsequent [actual habitat viewer check](flybody-habitat-viewer.md) now confirms this behavior during source wall-contact termination: the last image is at 0.750 s, completed telemetry at 0.760 s, and both recorded failure clocks at 0.768 s. The worker exits and the UI retains the earlier frame with disabled controls. This separate controller-only experiment makes no avoidance claim.

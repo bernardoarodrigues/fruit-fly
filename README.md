@@ -54,6 +54,14 @@ For the reviewed rolling controller with optional local antenna airflow, launch:
 
 Open [the rolling FlyBody viewer](http://127.0.0.1:8773) and Resume. [Three 12-second neural trials](docs/flybody-rolling-loop.md) retain every ordered spike and repeated stop/resume controls. The sensory-only trial remained at rest; none contacted food. The rolling reference removes the artificial two-second limit while retaining physical termination guards. Airflow reports motion-relative velocity at proximal antenna origins; it supplies no wind-driven neural input. These remain engineering trials with an unbounded source floor and an uncalibrated neural model.
 
+For a small [physical habitat](docs/flybody-habitat.md) with food and water regions, launch:
+
+```sh
+.venv/bin/python -m fruitfly.viewer --config configs/male-flybody-rolling-habitat.json --port 8774 --paused
+```
+
+Open [the 30 × 24 mm habitat](http://127.0.0.1:8774). This sensory assay currently rests; the new walls do not supply an avoidance behavior. A separately labeled straight-command trial contacts a wall and stops at 0.768 s under the original physical guard. [Actual browser checks](docs/flybody-habitat-viewer.md) verify pause/reset and distinguish the last image from the failed state. The enclosure is open above its 6 mm walls, and odor advection has no wall-flow model.
+
 ## Validate and investigate
 
 ```sh
@@ -87,6 +95,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Recorded-input reconstruction of extreme-voltage cells](docs/negative-voltage-replay.md), with exact endpoint states and signed incoming-edge accounting; [381-check independent review](docs/negative-voltage-replay-independent-review.md)
 - [Published VM2 recovery curves as numerical data](docs/orn-pn-recovery-digitization.md), with separate protocols and graph-extraction limits; [inhibitory physiology and source signaling](research/13-antennal-lobe-inhibitory-constraints.md)
 - [Public inhibitory-source data inventory](docs/salman-source-inventory.md), [current-clamp workbook and published-current discrepancy](docs/salman-current-clamp-data.md); exact arithmetic does not resolve missing specimen/current metadata
+- [Recovered GABA-reversal supplement](docs/wilson-gaba-reversal-source.md); recording-solution effects and unreached reversals remain distinct from exact-cell physiological parameters
 - [Viewer failure-state reporting](docs/viewer-failure-reporting.md), with [independent clock and cleanup review](docs/viewer-failure-independent-review.md)
 - [Chemical odor responses, baseline/missingness and receptor identity audit](docs/door-odor-audit.md), [primary Or42a response and unresolved baseline offset](docs/or42a-primary-assay.md), [executed excitation assay](docs/or42a-summary-experiment.md)
 - [Source proboscis geometry and missing motion/contact data](docs/proboscis-mechanics.md)

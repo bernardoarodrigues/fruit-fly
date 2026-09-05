@@ -1,0 +1,69 @@
+{
+  "completed_utc": "2026-09-05T04:16:44.997747+00:00",
+  "runtime_source_commit": "62129a3",
+  "plan_sha256": "b09ecc40042a88f1b194151d11714809a722ad7366d58be42e7212b8729568f8",
+  "checks": {
+    "overview_paused_at_zero": true,
+    "overview_same_initial_scientific_state": true,
+    "overview_scene_filter_declared": true,
+    "follow_paused_at_zero": true,
+    "follow_same_initial_scientific_state": true,
+    "follow_scene_filter_declared": true,
+    "side_paused_at_zero": true,
+    "side_same_initial_scientific_state": true,
+    "side_scene_filter_declared": true,
+    "final_overview_paused_at_zero": true
+  },
+  "visual_inspection": {
+    "method": "Actual in-app browser screenshots after each clicked camera change, with matching read-only state/image sequences saved.",
+    "views": [
+      "overview",
+      "follow",
+      "side"
+    ],
+    "result": "Smooth food/water regions; one actual fly with its source floor reflection; no reference-dot tracks or their residual shadows visible in the three inspected views.",
+    "earlier_artifacts_preserved": true
+  },
+  "focused_tests": {
+    "command": ".venv/bin/python -m pytest tests/test_flybody_habitat.py tests/test_flybody_bridge.py -q",
+    "tests": 11,
+    "subtests": 26,
+    "passed": true
+  },
+  "remaining_state": "8774 is left in overview, paused at t=0. No evolution or physical wall trial ran during this final display addendum.",
+  "artifacts": {
+    "validation/flybody-habitat-viewer-final/final-state.json": {
+      "bytes": 23925,
+      "sha256": "aa3e2d30270214fd6aeed4862c71bdf2c2cdbcb20d7086bccede6a346aab55e4"
+    },
+    "validation/flybody-habitat-viewer-final/follow.jpg": {
+      "bytes": 43008,
+      "sha256": "c62b1628e1cadd6c3327941069d6a456db8ce581918bef8334f2901ee39d6a9f"
+    },
+    "validation/flybody-habitat-viewer-final/follow.json": {
+      "bytes": 23922,
+      "sha256": "0cc96abae451605431228078cfe7d8196e84547aeecada3e0ab2d2369f33b8f1"
+    },
+    "validation/flybody-habitat-viewer-final/overview.jpg": {
+      "bytes": 37009,
+      "sha256": "8aedd3f705962f7df4c1f98009cdffa74890f7cd6f399d7f2dcd72934cc93334"
+    },
+    "validation/flybody-habitat-viewer-final/overview.json": {
+      "bytes": 23922,
+      "sha256": "3f870ddf7a75d1f0fa292e8a149e82ce97fc0eee77afae20a16ee56007f50dd8"
+    },
+    "validation/flybody-habitat-viewer-final/side.jpg": {
+      "bytes": 45523,
+      "sha256": "286b315910b3f5115eefd604e072f837286380384d5278d241af997dd19cf068"
+    },
+    "validation/flybody-habitat-viewer-final/side.json": {
+      "bytes": 23921,
+      "sha256": "3f537dca9e63036847346d385db3caf943ad3264e8434eb8fefc24f3942e7d7a"
+    }
+  },
+  "limits": [
+    "Earlier controls/physical-failure evidence remains tied to ef6e230",
+    "Visual inspection covers three specific views; not pixel identity across all machines",
+    "No foraging, biological obstacle avoidance, male morphology or physiological fidelity claim"
+  ]
+}
