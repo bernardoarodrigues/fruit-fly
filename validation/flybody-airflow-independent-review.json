@@ -1,0 +1,1353 @@
+{
+  "created_at": "2026-09-05T03:22:20.856667+00:00",
+  "reviewer_sha256": "d65b83b10f6f850d7c6376ff6219e2452776a8c2e982172cdd37db363f89c267",
+  "passed": true,
+  "scope": "Saved geometry/kinematics/source review; no new MuJoCo construction, physics or neural run.",
+  "artifact_sha256": {
+    "validation/flybody-airflow-plan.json": "ae211324a811dccd033ee54f44f9d8022dbf436832cc160232110d6e0a3cac4a",
+    "validation/flybody-airflow-geometry.json": "f7e1d8ee5518bdc2923f0643f02205715df13fc0bffa5c62592f48717e1fdec8",
+    "validation/flybody-airflow-hash-v0-plan.json": "288a9a92612cfa7fa313e2d44146dcbc59bd0c8f15182b5923431e3bd7e75d8b",
+    "validation/flybody-airflow-hash-v0-result.json": "27b6f837c88cb2cb6c7796c492bd896bce82f61778b57e7ef731cc8e76420b3d",
+    "scripts/audit_flybody_airflow.py": "5b6be252aa153941682ed4e080f1bfe9ffc5c59923f874733217493964a3e24b",
+    "validation/flybody-airflow-hash-v0-script.py": "d25d62cbdfe49df403c6c3779890e805673a2e9bfd49aed2d2bd654d583d9330",
+    "validation/flybody-airflow-geometry.npz": "28863838de35f593db0f514f43f36f0df52c1ea959b04e1d62b9615a4d13c31f",
+    "validation/flybody-airflow-geometry.png": "37558b9f680511835cbf9e64b84baac0c0bdc714a75e62c95891e565deac8807",
+    "validation/flybody-airflow-ASSET-NOTICE.md": "026afa2be3449851af17b09e507bf92e0eff6a71726c2ca64b52a74684ce2225",
+    "validation/flybody-airflow-LICENSE-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "validation/flybody-source-manifest.json": "5e5d4a41322e85feea28537c6a9389f9aec29ea0f6a2c007741ceaf2342122f2",
+    "tmp/flybody-env/lib/python3.10/site-packages/mujoco/include/mujoco/mjdata.h": "3f32fbe69b9b7bc748727c30cadcda84e71d50f6bca6723629a6565a5ae785a1"
+  },
+  "checks": [
+    {
+      "name": "producer_hash_chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_hash_chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_failure_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "amendment_same_numerical_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "amendment_same_plan_parameters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "producer_completion_41_checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_source:fruitfly/flybody_worker.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_source:fruitfly/wind.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_upstream_files",
+      "passed": true,
+      "detail": {
+        "checked": 223,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "upstream_and_worker_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "geometry_all_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thorax:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thorax:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "thorax:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "thorax:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "head:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head_ocelli:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "head_ocelli:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head_ocelli:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "head_ocelli:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "rostrum:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rostrum:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "rostrum:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "rostrum:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_left:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_left:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_left:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_left:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_right:vertex_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_right:vertex_mean_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_right:min_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_right:max_cm",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "basis_proper",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "basis_positive_determinant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_operational_axes",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "neutral_head_calibration",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "all_nine_hinges_match_XML_axes_anchors_parameters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_head_rotation_from_XML",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "landmark_vector:ant_left_minus_right",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "landmark_vector:abdomen_to_head",
+      "passed": true,
+      "detail": 3.469446951953614e-18
+    },
+    {
+      "name": "landmark_vector:rostrum_mean_to_ocelli_mean",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "forward_left_dorsal_signs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passive_antenna_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "probes_exact_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:state_shape_and_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:source_XML_head_rotation",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "neutral_zero:L:source_XML_origin",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "neutral_zero:L:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:NPZ_origin",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "neutral_zero:L:NPZ_center",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:rigid_center_position",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:rigid_center_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:L:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:L:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:R:source_XML_origin",
+      "passed": true,
+      "detail": 8.673617379884035e-18
+    },
+    {
+      "name": "neutral_zero:R:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:NPZ_origin",
+      "passed": true,
+      "detail": 8.673617379884035e-18
+    },
+    {
+      "name": "neutral_zero:R:NPZ_center",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:rigid_center_position",
+      "passed": true,
+      "detail": 3.469446951953614e-18
+    },
+    {
+      "name": "neutral_zero:R:rigid_center_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:R:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:R:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:flow:relative_vector",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "neutral_zero:flow:horizontal_speed",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "neutral_zero:flow:azimuth",
+      "passed": true,
+      "detail": 7.105427357601002e-15
+    },
+    {
+      "name": "neutral_zero:flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:transformed_flow:relative_vector",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "neutral_zero:transformed_flow:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "neutral_zero:transformed_flow:azimuth",
+      "passed": true,
+      "detail": 7.105427357601002e-15
+    },
+    {
+      "name": "neutral_zero:transformed_flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "neutral_zero:independent_rigid_boost_invariance",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "neutral_zero:saved_covariance_metric",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:state_shape_and_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:source_XML_head_rotation",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "root_translation:L:source_XML_origin",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "root_translation:L:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:rigid_center_position",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:rigid_center_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:L:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 5.2635590330751825e-11
+    },
+    {
+      "name": "root_translation:L:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:L:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:R:source_XML_origin",
+      "passed": true,
+      "detail": 8.673617379884035e-18
+    },
+    {
+      "name": "root_translation:R:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:rigid_center_position",
+      "passed": true,
+      "detail": 3.469446951953614e-18
+    },
+    {
+      "name": "root_translation:R:rigid_center_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:R:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 5.2635590330751825e-11
+    },
+    {
+      "name": "root_translation:R:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:R:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:flow:relative_vector",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "root_translation:flow:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:flow:azimuth",
+      "passed": true,
+      "detail": 1.4210854715202004e-14
+    },
+    {
+      "name": "root_translation:flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:transformed_flow:relative_vector",
+      "passed": true,
+      "detail": 1.7763568394002505e-15
+    },
+    {
+      "name": "root_translation:transformed_flow:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_translation:transformed_flow:azimuth",
+      "passed": true,
+      "detail": 2.1316282072803006e-14
+    },
+    {
+      "name": "root_translation:transformed_flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_translation:independent_rigid_boost_invariance",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "root_translation:saved_covariance_metric",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:state_shape_and_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:source_XML_head_rotation",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "antenna_rotation_only:L:source_XML_origin",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "antenna_rotation_only:L:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 2.6645352591003757e-15
+    },
+    {
+      "name": "antenna_rotation_only:L:rigid_center_position",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:rigid_center_velocity",
+      "passed": true,
+      "detail": 1.1796119636642288e-16
+    },
+    {
+      "name": "antenna_rotation_only:L:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "antenna_rotation_only:L:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:L:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:L:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:R:source_XML_origin",
+      "passed": true,
+      "detail": 8.673617379884035e-18
+    },
+    {
+      "name": "antenna_rotation_only:R:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 1.7763568394002505e-15
+    },
+    {
+      "name": "antenna_rotation_only:R:rigid_center_position",
+      "passed": true,
+      "detail": 3.469446951953614e-18
+    },
+    {
+      "name": "antenna_rotation_only:R:rigid_center_velocity",
+      "passed": true,
+      "detail": 1.5265566588595902e-16
+    },
+    {
+      "name": "antenna_rotation_only:R:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 1.5265566588595902e-16
+    },
+    {
+      "name": "antenna_rotation_only:R:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:R:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:R:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:flow:relative_vector",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "antenna_rotation_only:flow:horizontal_speed",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "antenna_rotation_only:flow:azimuth",
+      "passed": true,
+      "detail": 7.105427357601002e-15
+    },
+    {
+      "name": "antenna_rotation_only:flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:transformed_flow:relative_vector",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "antenna_rotation_only:transformed_flow:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "antenna_rotation_only:transformed_flow:azimuth",
+      "passed": true,
+      "detail": 7.105427357601002e-15
+    },
+    {
+      "name": "antenna_rotation_only:transformed_flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "antenna_rotation_only:independent_rigid_boost_invariance",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "name": "antenna_rotation_only:saved_covariance_metric",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:state_shape_and_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:source_XML_head_rotation",
+      "passed": true,
+      "detail": 3.3306690738754696e-16
+    },
+    {
+      "name": "root_head_antenna_motion:L:source_XML_origin",
+      "passed": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "root_head_antenna_motion:L:analytic_origin_velocity",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "root_head_antenna_motion:L:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 2.220446049250313e-15
+    },
+    {
+      "name": "root_head_antenna_motion:L:rigid_center_position",
+      "passed": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "root_head_antenna_motion:L:rigid_center_velocity",
+      "passed": true,
+      "detail": 2.7755575615628914e-16
+    },
+    {
+      "name": "root_head_antenna_motion:L:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:L:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "root_head_antenna_motion:L:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:L:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 2.964670176019979e-10
+    },
+    {
+      "name": "root_head_antenna_motion:L:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:L:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:L:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:L:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:R:source_XML_origin",
+      "passed": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "root_head_antenna_motion:R:analytic_origin_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:R:analytic_body_angular_velocity",
+      "passed": true,
+      "detail": 2.220446049250313e-15
+    },
+    {
+      "name": "root_head_antenna_motion:R:rigid_center_position",
+      "passed": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "root_head_antenna_motion:R:rigid_center_velocity",
+      "passed": true,
+      "detail": 2.7755575615628914e-16
+    },
+    {
+      "name": "root_head_antenna_motion:R:saved_center_correction",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:R:center_correction_vs_Jacobian",
+      "passed": true,
+      "detail": 1.6653345369377348e-16
+    },
+    {
+      "name": "root_head_antenna_motion:R:FD_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:R:saved_FD_vs_analytic",
+      "passed": true,
+      "detail": 2.0212020945820086e-10
+    },
+    {
+      "name": "root_head_antenna_motion:R:saved_FD_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:R:saved_correction_error",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "root_head_antenna_motion:R:COM_origin_speed_difference",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "root_head_antenna_motion:R:own_hinge_pivot_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:flow:relative_vector",
+      "passed": true,
+      "detail": 4.884981308350689e-15
+    },
+    {
+      "name": "root_head_antenna_motion:flow:horizontal_speed",
+      "passed": true,
+      "detail": 1.7763568394002505e-15
+    },
+    {
+      "name": "root_head_antenna_motion:flow:azimuth",
+      "passed": true,
+      "detail": 2.842170943040401e-14
+    },
+    {
+      "name": "root_head_antenna_motion:flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:transformed_flow:relative_vector",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "name": "root_head_antenna_motion:transformed_flow:horizontal_speed",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "name": "root_head_antenna_motion:transformed_flow:azimuth",
+      "passed": true,
+      "detail": 1.4210854715202004e-14
+    },
+    {
+      "name": "root_head_antenna_motion:transformed_flow:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "root_head_antenna_motion:independent_rigid_boost_invariance",
+      "passed": true,
+      "detail": 3.552713678800501e-15
+    },
+    {
+      "name": "root_head_antenna_motion:saved_covariance_metric",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:0:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:0:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:0:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:0:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:0:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:1:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:1:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:1:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:1:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:1:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:2:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:2:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:2:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:2:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:2:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:3:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:3:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:3:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:3:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:3:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:4:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:4:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:4:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:4:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:4:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:5:opposite_velocity",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:5:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:5:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:5:azimuth",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:5:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:6:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:6:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:6:azimuth",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:6:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:7:relative_vector",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:7:horizontal_speed",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "sign:7:azimuth",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sign:7:labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "excluded_data_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "islands_disabled_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local_MuJoCo_header_island_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_view_counts_receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "producer_source_no_physics_advance_calls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_step_and_disabled_receipt",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "check_count": 248,
+  "upstream_files_checked": 223,
+  "probes": [
+    {
+      "case": "neutral_zero",
+      "max_source_XML_origin_error_cm": 1.3877787807814457e-17,
+      "max_analytic_velocity_error_cm_s": 0.0,
+      "head_rotation_error": 3.3306690738754696e-16,
+      "max_saved_FD_vs_analytic_cm_s": 0.0,
+      "max_center_correction_error_cm_s": 0.0,
+      "flow_error_mm_s": 8.881784197001252e-16,
+      "transformed_flow_error_mm_s": 8.881784197001252e-16,
+      "analytic_invariance_error_mm_s": 8.881784197001252e-16,
+      "saved_covariance_error_mm_s": 4.440892098500626e-16
+    },
+    {
+      "case": "root_translation",
+      "max_source_XML_origin_error_cm": 1.3877787807814457e-17,
+      "max_analytic_velocity_error_cm_s": 0.0,
+      "head_rotation_error": 3.3306690738754696e-16,
+      "max_saved_FD_vs_analytic_cm_s": 5.2635590330751825e-11,
+      "max_center_correction_error_cm_s": 0.0,
+      "flow_error_mm_s": 8.881784197001252e-16,
+      "transformed_flow_error_mm_s": 1.7763568394002505e-15,
+      "analytic_invariance_error_mm_s": 2.6645352591003757e-15,
+      "saved_covariance_error_mm_s": 1.7763568394002505e-15
+    },
+    {
+      "case": "antenna_rotation_only",
+      "max_source_XML_origin_error_cm": 1.3877787807814457e-17,
+      "max_analytic_velocity_error_cm_s": 0.0,
+      "head_rotation_error": 3.3306690738754696e-16,
+      "max_saved_FD_vs_analytic_cm_s": 0.0,
+      "max_center_correction_error_cm_s": 1.5265566588595902e-16,
+      "flow_error_mm_s": 8.881784197001252e-16,
+      "transformed_flow_error_mm_s": 8.881784197001252e-16,
+      "analytic_invariance_error_mm_s": 8.881784197001252e-16,
+      "saved_covariance_error_mm_s": 4.440892098500626e-16
+    },
+    {
+      "case": "root_head_antenna_motion",
+      "max_source_XML_origin_error_cm": 2.7755575615628914e-17,
+      "max_analytic_velocity_error_cm_s": 5.551115123125783e-17,
+      "head_rotation_error": 3.3306690738754696e-16,
+      "max_saved_FD_vs_analytic_cm_s": 2.964670176019979e-10,
+      "max_center_correction_error_cm_s": 1.6653345369377348e-16,
+      "flow_error_mm_s": 4.884981308350689e-15,
+      "transformed_flow_error_mm_s": 3.552713678800501e-15,
+      "analytic_invariance_error_mm_s": 3.552713678800501e-15,
+      "saved_covariance_error_mm_s": 7.105427357601002e-15
+    }
+  ],
+  "center_offsets_local_cm": [
+    [
+      -0.0033311751658669873,
+      0.011952353313399645,
+      0.002427944990526293
+    ],
+    [
+      0.0028304972578732717,
+      -0.01195213571424176,
+      -0.002427798243797019
+    ]
+  ],
+  "geometry_basis": "Neutral thorax-aligned forward/left/up signs; articulated head follows source XML hinges.",
+  "visual_review": "Two-panel PNG inspected: mm labels, origin/center markers, and anatomical signs are legible.",
+  "filter_review": {
+    "excluded_data_empty": 20,
+    "excluded_data_nonempty": [
+      "dof_island",
+      "dof_islandind",
+      "efc_island",
+      "island_dofind",
+      "island_efcind"
+    ],
+    "excluded_model_count": 134,
+    "excluded_model_inventory_retained": false
+  },
+  "limitations": [
+    "Finite-difference velocities are retained, but plus/minus native positions and full Jacobians are not. Analytic XML velocities independently support their values; native API internals are not replayed.",
+    "Transformed native qpos/qvel/Jacobians are not retained. NumPy source-kinematic rotation/boost reconstruction supports the saved transformed local flows.",
+    "COM offsets use the saved neutral compiled inertial centers. This independently verifies rigid-body velocity propagation, not source mesh mass compilation.",
+    "Native model/data before-after per-field hashes and physical arrays are not retained. No-mutation is producer evidence plus detached-copy source inspection, not an independently reconstructed state comparison.",
+    "The five nonempty excluded data fields are documented disabled island outputs; the twenty remaining excluded data fields are empty. The 134 excluded model fields have no retained names/shapes, so their complete irrelevance is not independently established.",
+    "Exact initial differing field names efc_island and island_efcind are an author diagnostic observation outside versioned receipts. The retained original result proves only the broad data-hash failure.",
+    "The native-view filter is configuration-specific evidence, not a general assertion that every owning getter is meaningless or that all MuJoCo state was hashed.",
+    "Antenna body origins are passive hinge pivots, not distal arista/sensillum receptor points. No aerodynamic response, physical antenna calibration, male/female transfer, or neural airflow gain is validated."
+  ]
+}
