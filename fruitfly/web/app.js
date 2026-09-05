@@ -55,12 +55,13 @@ function update(data) {
   const assays = {
     sensory: ["Sensory assay", "Environmental stimuli feed the neural model."],
     motor_probe: ["Direct DN motor calibration", "Selected descending neurons receive artificial stimulation."],
+    grooming_probe: ["Direct DN grooming calibration", "Left DNg62/DNge078 receive artificial stimulation to gate a recorded motion template."],
     controller_only: ["Controller-only baseline", "Walking commands bypass neural activity."],
   };
   const assay = assays[telemetry.assay] || ["Assay not reported", "The runtime has not identified its experiment mode."];
   setText("assay-label", assay[0]);
   setText("assay-description", assay[1]);
-  $("assay-bar").classList.toggle("calibration", ["motor_probe", "controller_only"].includes(telemetry.assay));
+  $("assay-bar").classList.toggle("calibration", ["motor_probe", "grooming_probe", "controller_only"].includes(telemetry.assay));
   const labels = {initializing: "Initializing", running: "Simulation running", paused: "Paused", error: "Worker error", stopped: "Stopped"};
   setText("status-label", labels[data.status] || data.status);
   $("status-dot").className = `dot ${data.status === "running" ? "live" : data.status === "error" ? "error" : ""}`;
@@ -90,6 +91,18 @@ function update(data) {
   setText("edge-count", count(neural.edges));
   setText("spike-count", count(neural.spikes));
   setText("backend", neural.backend || "—");
+  const grooming = telemetry.grooming;
+  const hasGrooming = grooming != null && typeof grooming === "object" && grooming.enabled === true;
+  $("grooming-panel").hidden = !hasGrooming;
+  if (hasGrooming) {
+    const phases = {ready: "Ready", entering: "Entering motion", playing: "Playing recording", exiting: "Returning to stance", held: "Standing · request held"};
+    setText("grooming-phase", phases[grooming.state] || (typeof grooming.state === "string" ? grooming.state.replaceAll("_", " ") : "Not reported"));
+    setText("grooming-armed", grooming.armed === true ? "Trigger armed" : grooming.armed === false ? "Trigger not armed" : "Trigger state not reported");
+    setText("grooming-completed", count(grooming.completed_count));
+    setText("grooming-source-time", grooming.source_time_s === null ? "Inactive" : grooming.source_time_s === undefined ? "—" : `${number(grooming.source_time_s, 3)} s`);
+    const rate = neural.output_rates?.grooming_left;
+    setText("grooming-readout", typeof rate === "number" && Number.isFinite(rate) ? `${number(rate, 1)} Hz` : "—");
+  }
   for (const [label, key] of [["min", "minimum"], ["mean", "mean"], ["max", "maximum"]]) {
     const value = neural.voltage_mv?.[key];
     setText(`voltage-${label}`, typeof value === "number" && Number.isFinite(value) ? `${number(value, 1)} mV` : "—");

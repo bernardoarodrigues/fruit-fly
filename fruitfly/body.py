@@ -7,6 +7,7 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
 import math
+from pathlib import Path
 from typing import Mapping
 
 import mujoco
@@ -47,6 +48,8 @@ class BodyConfig:
     body_profile: str = "female-derived NeuroMechFly morphology surrogate"
     width: int = 800
     height: int = 560
+    enable_grooming: bool = False
+    grooming_trace_path: str = "data/grooming/unilateral_left.npz"
     enable_vision: bool = False
     vision_period_s: float = .02
     physiology: PhysiologyConfig = field(default_factory=PhysiologyConfig)
@@ -202,7 +205,12 @@ class BodyRuntime:
         landmark = world.mjcf_root.worldbody.add_geom(name="landmark", type=mujoco.mjtGeom.mjGEOM_BOX,
             pos=(-13, 12, 1), size=(.8, .8, 1), rgba=(.7, .25, .4, 1), contype=0, conaffinity=0)
         world.ground_geoms.append(landmark)
-        self.fly = make_locomotion_fly(name="fly", add_adhesion=True, colorize=True)
+        if cfg.enable_grooming:
+            from .grooming import ReplayConfig, make_grooming_fly
+            self._grooming_config = ReplayConfig(timestep_s=cfg.physics_dt_s)
+            self.fly = make_grooming_fly(self._grooming_config, name="fly")
+        else:
+            self.fly = make_locomotion_fly(name="fly", add_adhesion=True, colorize=True)
         if cfg.enable_vision:
             self.fly.add_vision()
         angle = cfg.initial_heading_rad / 2
@@ -210,6 +218,10 @@ class BodyRuntime:
             Rotation3D("quat", [math.cos(angle), 0, 0, math.sin(angle)]),
             bodysegs_with_ground_contact=ContactBodiesPreset.LEGS_THORAX_ABDOMEN_HEAD,
             add_ground_contact_sensors=False)
+        grooming_pairs = {}
+        if cfg.enable_grooming:
+            from .grooming import add_grooming_contacts
+            grooming_pairs = add_grooming_contacts(world, self.fly)
         world.mjcf_root.worldbody.add_camera(name="overview", pos=(0, -32, 39),
             xyaxes=(1, 0, 0, 0, .773, .634), fovy=49)
         self.sim = Simulation(world, timestep=cfg.physics_dt_s)
@@ -217,11 +229,36 @@ class BodyRuntime:
         self.model.vis.global_.offwidth = max(cfg.width, self.model.vis.global_.offwidth)
         self.model.vis.global_.offheight = max(cfg.height, self.model.vis.global_.offheight)
         steps = PreprogrammedSteps()
-        order = self.fly.get_actuated_jointdofs_order("position")
+        full_order = self.fly.get_actuated_jointdofs_order("position")
+        leg_indices = [i for i, dof in enumerate(full_order) if dof.child.is_leg()]
+        order = [full_order[i] for i in leg_indices]
         self.controller = HybridTurningController(timestep=cfg.physics_dt_s,
             preprogrammed_steps=steps, output_dof_order=order)
         self._neutral_angles = steps.default_pose_by_dof_order(order)
-        self._position_actuator_ids = self.sim._intern_actuatorids_by_type_by_fly[ActuatorType.POSITION][self.fly.name]
+        full_actuator_ids = np.asarray(self.sim._intern_actuatorids_by_type_by_fly[ActuatorType.POSITION][self.fly.name])
+        self._position_actuator_ids = full_actuator_ids[leg_indices]
+        head_indices = [i for i, dof in enumerate(full_order) if dof.child.name == "c_head"]
+        self._head_position_actuator_ids = full_actuator_ids[head_indices]
+        self._head_neutral_angles = np.asarray([self.fly.jointdof_to_neutralangle[full_order[i]] for i in head_indices])
+        self._grooming = None
+        self._grooming_pair_labels = list(grooming_pairs.values())
+        self._grooming_pair_lookup = np.full((self.model.ngeom, self.model.ngeom), -1, dtype=np.int16) if cfg.enable_grooming else None
+        if cfg.enable_grooming:
+            from .grooming import GroomingPlayback, source_joint_map
+            by_name = {dof.name: int(full_actuator_ids[i]) for i, dof in enumerate(full_order)}
+            self._grooming_actuator_ids = np.asarray([by_name[name] for name, _ in source_joint_map().values()])
+            neutral = np.zeros(self.model.nu)
+            neutral[self._position_actuator_ids] = self._neutral_angles
+            neutral[self._head_position_actuator_ids] = self._head_neutral_angles
+            path = Path(cfg.grooming_trace_path)
+            if not path.is_absolute():
+                path = Path(__file__).resolve().parents[1] / path
+            self._grooming = GroomingPlayback(path, neutral[self._grooming_actuator_ids], self._grooming_config)
+            for index, (a, b) in enumerate(grooming_pairs):
+                ia, ib = (mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_GEOM, name) for name in (a, b))
+                if min(ia, ib) < 0:
+                    raise RuntimeError("Missing grooming collision geometry")
+                self._grooming_pair_lookup[ia, ib] = self._grooming_pair_lookup[ib, ia] = index
         self._adhesion_actuator_ids = self.sim._intern_adhesionactuatorids_by_fly[self.fly.name]
         body_order = self.fly.get_bodysegs_order()
         body_ids = self.sim._internal_bodyids_by_fly[self.fly.name]
@@ -259,6 +296,9 @@ class BodyRuntime:
         joint_order = self.fly.get_jointdofs_order()
         qpos_ids = self.sim._intern_qposadrs_by_fly[self.fly.name]
         qvel_ids = self.sim._intern_qveladrs_by_fly[self.fly.name]
+        if cfg.enable_grooming:
+            qpos_by_name = dict(zip((dof.name for dof in joint_order), qpos_ids))
+            self._grooming_qpos_ids = np.asarray([qpos_by_name[name] for name, _ in source_joint_map().values()])
         self._proprio_joint_qpos = {}
         self._proprio_joint_qvel = {}
         for label, child in (("coxa_pitch", "coxa"),
@@ -292,6 +332,15 @@ class BodyRuntime:
         mujoco.mj_resetDataKeyframe(self.model, self.data, self.sim._neutral_keyframe_id)
         self.controller.reset(seed=self.seed)
         self.data.ctrl[self._position_actuator_ids] = self._neutral_angles
+        self.data.ctrl[self._head_position_actuator_ids] = self._head_neutral_angles
+        if self._grooming is not None:
+            self._grooming.reset()
+        self._grooming_contact_force = np.zeros(len(self._grooming_pair_labels))
+        self._grooming_contact_s = np.zeros(len(self._grooming_pair_labels))
+        self._grooming_any_contact_s = 0.0
+        self._grooming_error_squared_sum = 0.0
+        self._grooming_error_count = 0
+        self._grooming_error_max_rad = 0.0
         self.data.ctrl[self._adhesion_actuator_ids] = 1
         self.sim.warmup(.05)
         self.data.time = 0
@@ -354,6 +403,12 @@ class BodyRuntime:
         self._water_contact_by_leg = taste(self._water_id)
         self._food_contact = bool(self._food_contact_by_leg.any())
         self._water_contact = bool(self._water_contact_by_leg.any())
+        if self._grooming is not None:
+            self._grooming_contact_force.fill(0)
+            pairs = self._grooming_pair_lookup[g1, g2]
+            for k in np.flatnonzero(valid & (pairs >= 0)):
+                mujoco.mj_contactForce(self.model, self.data, int(k), self._wrench)
+                self._grooming_contact_force[pairs[k]] += max(float(self._wrench[0]), 0.0)
 
     def _controller_observation(self):
         return HybridControllerObservation(
@@ -372,8 +427,10 @@ class BodyRuntime:
                 drive_right: float = 1.0, behavior: str = "walk") -> dict:
         if self._closed:
             raise RuntimeError("Runtime is closed")
-        if behavior not in ("walk", "rest", "feed"):
-            raise ValueError("Supported motor modes: walk, rest, feed; grooming is not implemented")
+        if behavior not in ("walk", "rest", "feed", "groom"):
+            raise ValueError("Supported motor modes: walk, rest, feed, groom")
+        if behavior == "groom" and self._grooming is None:
+            raise ValueError("Grooming requires BodyConfig(enable_grooming=True)")
         if not math.isfinite(duration_s) or duration_s < 0:
             raise ValueError("Duration must be finite and nonnegative")
         count = round(duration_s / self.timestep)
@@ -383,9 +440,14 @@ class BodyRuntime:
         if not np.isfinite(requested).all():
             raise ValueError("Drive must be finite")
         self._drive = np.clip(requested, -self.config.drive_limit, self.config.drive_limit)
-        self._mode = behavior
         for _ in range(count):
-            if behavior == "walk" and self.physiology.alive:
+            grooming_target = None
+            if self._grooming is not None:
+                grooming_target = self._grooming.step(behavior == "groom" and self.physiology.alive,
+                    self.data.ctrl[self._grooming_actuator_ids], self.timestep)
+            self._mode = ("groom" if self._grooming is not None and self._grooming.active
+                          else "rest" if behavior == "groom" else behavior)
+            if behavior == "walk" and self.physiology.alive and grooming_target is None:
                 action = self.controller.step(self._drive, self._controller_observation())
                 self.data.ctrl[self._position_actuator_ids] = action.joint_angles
                 self.data.ctrl[self._adhesion_actuator_ids] = action.adhesion_onoff
@@ -395,16 +457,30 @@ class BodyRuntime:
                 current = self.data.ctrl[self._position_actuator_ids]
                 self.data.ctrl[self._position_actuator_ids] = current + alpha * (self._neutral_angles - current)
                 self.data.ctrl[self._adhesion_actuator_ids] = 1
+            self.data.ctrl[self._head_position_actuator_ids] = self._head_neutral_angles
+            if grooming_target is not None:
+                self.data.ctrl[self._grooming_actuator_ids] = grooming_target
+                # Keep the four unrecorded legs standing; release foreleg pads.
+                self.data.ctrl[self._adhesion_actuator_ids] = [0, 1, 1, 0, 1, 1]
             self.sim.step()
             self._ticks += 1
             # mj_step's derived caches are pre-integration; refresh exactly once
             # before controller, sensory and ingestion observations of this time.
             mujoco.mj_forward(self.model, self.data)
             self._update_contact_cache()
+            if self._grooming is not None:
+                contacts = self._grooming_contact_force > 0
+                self._grooming_contact_s += contacts * self.timestep
+                self._grooming_any_contact_s += float(contacts.any()) * self.timestep
+                if self._grooming.tracking_active:
+                    errors = self.data.qpos[self._grooming_qpos_ids] - grooming_target
+                    self._grooming_error_squared_sum += float(np.square(errors).sum())
+                    self._grooming_error_count += len(errors)
+                    self._grooming_error_max_rad = max(self._grooming_error_max_rad, float(np.abs(errors).max()))
             speed = float(np.linalg.norm(self._velocity()[3:5]))
             self.physiology.advance(self.timestep, speed_mm_s=speed,
                 food_contact=self._food_contact, water_contact=self._water_contact,
-                feed_requested=behavior == "feed", food=self.food, water=self.water)
+                feed_requested=self._mode == "feed", food=self.food, water=self.water)
             self.field.advance(self.time_s, self.food.fraction * self._stimuli["odor"])
             if self.config.enable_vision and self._ticks % self._vision_stride == 0:
                 self._sample_vision()
@@ -443,10 +519,29 @@ class BodyRuntime:
                      "heading_rad": math.atan2(heading[1], heading[0])},
             "physiology": self.physiology.snapshot(),
             "motor": {"mode": self._mode, "drive": self._drive.tolist()},
+            "grooming": self._observe_grooming(),
             "vision": {"enabled": self.config.enable_vision, "sample_t_s": self._vision_time_s,
                        "shape": list(self._vision.shape) if self._vision is not None else None,
                        "mean_by_eye": self._vision.mean(axis=(1, 2)).tolist() if self._vision is not None else None},
         }
+
+    def _observe_grooming(self):
+        if self._grooming is None:
+            return {"enabled": False, "state": "disabled", "requested": False,
+                    "actual_active": False, "armed": False, "source_time_s": None,
+                    "completed_count": 0, "cancelled_count": 0}
+        return {**self._grooming.snapshot(),
+                "contact_count": int(np.count_nonzero(self._grooming_contact_force)),
+                "contact_by_pair": {label: float(force) for label, force in
+                    zip(self._grooming_pair_labels, self._grooming_contact_force) if force > 0},
+                "contact_force_unit": "native g mm/s^2; constraint normal force, not experimentally calibrated",
+                "contact_s": self._grooming_any_contact_s,
+                "contact_s_by_pair": {label: float(seconds) for label, seconds in
+                    zip(self._grooming_pair_labels, self._grooming_contact_s) if seconds > 0},
+                "tracking_sample_count": self._grooming_error_count // 16,
+                "tracking_rms_deg": (math.degrees(math.sqrt(self._grooming_error_squared_sum /
+                    self._grooming_error_count)) if self._grooming_error_count else None),
+                "tracking_max_deg": math.degrees(self._grooming_error_max_rad) if self._grooming_error_count else None}
 
     def _observe_wind(self):
         velocities = np.empty((2, 3))
@@ -492,6 +587,8 @@ class BodyRuntime:
         """Observer/evaluator state. Never pass this privileged world data to brain."""
         return {"observation": self.observe(), "config": asdict(self.config),
                 "wind_reference": self.wind_reference.provenance if self.wind_reference else None,
+                "grooming_reference": ({"source": self._grooming.trace["metadata"],
+                    "control": asdict(self._grooming_config)} if self._grooming is not None else None),
                 "stimuli": self._stimuli.copy(),
                 "resources": {"food": asdict(self.food), "water": asdict(self.water)},
                 "resource_balance": self.physiology.balance_residuals(self.food, self.water),

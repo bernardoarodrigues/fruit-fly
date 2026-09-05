@@ -52,16 +52,21 @@ class SimulationRunner:
         if self.config.get("proprioception") is not None:
             from .proprioception import ClubMovementEncoder
             self.proprioceptor = ClubMovementEncoder(self.graph, **self.config["proprioception"])
-        self.motor = MotorDecoder(self.graph)
+        self.motor = MotorDecoder(self.graph,
+            enable_grooming=(self.config.get("body") or {}).get("enable_grooming", False),
+            grooming_threshold_hz=self.config.get("grooming_threshold_hz", 10.))
         self.ablated = False
         self.outgoing_blocks = set()
         self.assay = self.config.get("assay", "sensory")
-        if self.assay not in ("sensory", "motor_probe", "controller_only"):
-            raise ValueError("assay must be sensory, motor_probe or controller_only")
+        if self.assay not in ("sensory", "motor_probe", "grooming_probe", "controller_only"):
+            raise ValueError("assay must be sensory, motor_probe, grooming_probe or controller_only")
+        if self.assay == "grooming_probe" and not self.motor.enable_grooming:
+            raise ValueError("Grooming probe requires the optional grooming body")
         self.probe_hz = float(self.config.get("probe_hz", 40))
         if not np.isfinite(self.probe_hz) or not 0 <= self.probe_hz <= 300:
             raise ValueError("probe_hz must lie in [0,300]")
-        self.probe_indices = self.graph.select(["DNg97"])
+        self.probe_indices = (self.motor.groups["grooming_left"] if self.assay == "grooming_probe"
+                              else self.graph.select(["DNg97"]))
         self.total_spikes = self.last_spikes = self.active_neurons = 0
         self.edge_visits = 0
         self.wall_s = 0.0
@@ -107,6 +112,7 @@ class SimulationRunner:
                     "proprioceptive_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.proprioceptor.groups.items()} if self.proprioceptor else {},
                     "proprioception_parameters": self.config.get("proprioception"),
                     "motor_groups": {k:self.graph.neuron_ids[v].tolist() for k,v in self.motor.groups.items()},
+                    "grooming_threshold_hz": self.motor.grooming_threshold_hz if self.motor.enable_grooming else None,
                     "probe_ids": self.graph.neuron_ids[self.probe_indices].tolist(),
                     "claim": "Full retained male graph with simplified dynamics and declared body/motor/sensory surrogates"}
         (self.run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
@@ -143,7 +149,7 @@ class SimulationRunner:
                 movement_drive = self.proprioceptor.encode(observation)
                 drive = SparseDrive(np.r_[drive.indices, movement_drive.indices],
                                     rates_hz=np.r_[drive.rates_hz, movement_drive.rates_hz])
-            if self.assay == "motor_probe":
+            if self.assay in ("motor_probe", "grooming_probe"):
                 # Positive control: explicit DN stimulation, never called foraging.
                 drive = SparseDrive(np.r_[drive.indices, self.probe_indices],
                                     rates_hz=np.r_[drive.rates_hz, np.full(len(self.probe_indices), self.probe_hz)])
@@ -186,12 +192,15 @@ class SimulationRunner:
             warnings.append("Experimental conductance model: bounded reversals with uncalibrated synaptic/input gains; not the replicated Shiu dynamics.")
         if self.assay == "motor_probe":
             warnings.append("Motor calibration assay: DNg97 neurons receive direct Poisson stimulation.")
+        elif self.assay == "grooming_probe":
+            warnings.append("Grooming calibration: left DNg62/DNge078 receive direct stimulation and gate a female-derived motion template; not spontaneous sensory-driven grooming.")
         elif self.assay == "controller_only":
             warnings.append("Controller-only baseline: movement is independent of neural outputs.")
         return {
             "status": "running", "t_s": self.body.time_s, "brain_t_s": self.brain.time_ms / 1000,
             "realtime_factor": self.body.time_s / self.wall_s if self.wall_s else 0,
-            "behavior": self.last_action["behavior"], "assay": self.assay,
+            "behavior": observation["motor"]["mode"],
+            "requested_behavior": self.last_action["behavior"], "assay": self.assay,
             "pose": observation["pose"], "physiology": observation["physiology"],
             "senses": {"odor": observation["antenna_odor"], "odor_rates_hz": self.sensors.last_rates.tolist(),
                        "taste_food": observation["taste_food"], "taste_water": observation["taste_water"],
@@ -213,6 +222,7 @@ class SimulationRunner:
             "resources": world["resources"], "resource_balance": world["resource_balance"],
             "stimuli": world["stimuli"], "vision": observation["vision"],
             "wind": observation["wind"], "wind_reference": world["wind_reference"],
+            "grooming": observation.get("grooming"),
             "events": list(self.events), "warnings": warnings, "run_dir": str(self.run_dir),
         }
 
@@ -278,7 +288,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path)
     parser.add_argument("--seconds", type=float, default=1)
-    parser.add_argument("--assay", choices=("sensory", "motor_probe", "controller_only"))
+    parser.add_argument("--assay", choices=("sensory", "motor_probe", "grooming_probe", "controller_only"))
     args = parser.parse_args()
     config = json.loads(args.config.read_text()) if args.config else {}
     if args.assay:

@@ -40,6 +40,14 @@ left and right antennae. An optional measured female reference shows predicted
 steady arista deflections only when the runtime's domain gates pass; otherwise
 it shows unavailable with the exclusion reason. Its caption explicitly states
 that the neural pathway is unmapped. There are no wind controls in this viewer.
+When optional grooming telemetry is present and enabled, a separate panel shows
+the motion phase, armed state, completed-sequence count, source recording time,
+and `grooming_left` neural readout rate. The `grooming_probe` assay is labeled
+**Direct DN grooming calibration**: selected left DNg62/DNge078 neurons receive
+artificial stimulation to gate a motion template. The panel discloses that the
+recording is female-derived and antennae remain rigid. Source recording time is
+distinct from simulation time. No panel is shown when grooming is absent or
+disabled. This UI must not be interpreted as evidence of natural grooming.
 
 ## Runtime API
 
@@ -97,6 +105,7 @@ wind: {relative_velocity_head_mm_s, source_azimuth_deg, horizontal_speed_mm_s,
        antenna_reference?: {estimated_steady_arista_deflection_deg, excluded_because}}
 wind_reference?: {nominal_speed_mm_s, speed_tolerance_fraction,
                   elevation_tolerance_deg, ...provenance}
+grooming?: {enabled, state, armed, source_time_s, completed_count, ...fidelity}
 neural: {neurons, edges, active_neurons, spikes, output_rates,
          voltage_mv?: {minimum, maximum, mean},
          ablated, backend, ablation_target?, ablation_description?}
@@ -134,3 +143,12 @@ The rendered dashboard showed left/right source azimuth 0.0°, relative flow
 596.0 mm/s, steady reference angles −8.05°/−8.24°, and the female-reference and
 unmapped-pathway caveats. The existing running port-8766 experiment was not reset
 or controlled by that check.
+
+Grooming was separately inspected with the real 166,700-neuron / 25,582,938-edge
+Shiu runner on port 8768 using `configs/male-grooming-probe.json`. Browser render
+and DOM inspection showed **Playing recording**, source time **0.160 s**, and
+left grooming readout **112.6 Hz** at simulation time **0.43 s**. A completed
+playback showed **Standing · request held**, count **1**, actual behavior **Rest**,
+and source time **Inactive**, while the readout remained active. The sequence did
+not repeat under the continued request. This confirms display of the calibrated
+runtime behavior, not natural grooming. Other viewer experiments were untouched.

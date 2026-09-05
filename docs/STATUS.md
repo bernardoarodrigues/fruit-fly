@@ -11,7 +11,7 @@ Evidence snapshot: 2026-09-04 Pacific / 2026-09-05 UTC. This follows [PLAN.md](P
 | M4 Full male graph | 166,700 neurons; 25,582,938 directed pairs; 124,177,617 contacts; 217 isolated selected neurons retained | Receptor-specific signs and physiological strengths remain assumptions |
 | M5 Neural/body loop | Continuous full graph; DNg97 stimulation moves body; motor-readout mute suppresses movement while spikes continue; clock/reset/chunk checks | Sensory-driven calibrated movement, circuit interventions, shuffled outputs, coupling sensitivity |
 | M6 Foraging/homeostasis | Actual tarsal sugar→full graph→feeding assay; removing taste, blocking sweet synaptic output or muting readout stops intake; separate nutrient/water conservation | Odor approach remains a negative result; ingestion abstracts proboscis mechanics |
-| M7 Repertoire | Reduced rest/walk/feed modes | Grooming, visual escape, sleep/circadian state, learning, male cue/song assays |
+| M7 Repertoire | Rest/walk/feed; optional neural-gated measured grooming template with contact and mute/withdrawal controls | Natural sensory grooming, visual escape, sleep/circadian state, learning, male cue/song assays |
 | M8 Motor mechanism | Full retained VNC participates in neural graph; frozen CPG/reflex body adapter | Motor-neuron-to-actuator calibration and refinement |
 | M9 Watch/control/record | Actual full-graph viewer inspected; pause/reset/camera/motor mute verified; assay and body caveats visible | Extend display with validated modules |
 | M10 Robustness/performance | Focused tests, exact replay, active full-graph benchmark, real loop controls | Longer/held-out behavior runs; voltage plausibility; compute assessment after calibration |
@@ -40,7 +40,11 @@ A [broad ORN recruitment diagnostic](odor-recruitment.md) also failed to restore
 
 An [executed multisensory motor probe](../validation/multisensory-smoke.json) includes actual compound-eye samples and leg-velocity-driven club input. Eye-image brightness responds to illumination changes, and reset restores the initial samples. Zero lighting leaves the renderer's fixed background radiance; it is not total darkness. The viewer reports elapsed simulation/wall time including rendering and pacing and labels both the assay and currently unmapped visual pathway.
 
-Latest complete suite: **100 tests passed, 24 subtests passed**, with 22 Brian2 dependency deprecation warnings. The subsequent wind/dashboard checks passed 22 tests and 21 subtests. Further experimental modules remain subject to their own validation.
+The [full-graph grooming assay](grooming-loop.md) completes one measured traversal under direct left-DN stimulation, with 0.408 s of physical antennal contact and 2.151° joint tracking RMS. No-input and motor-mute controls produce no playback or contact; withdrawal cancels playback and tonic input does not loop it. The female-derived trajectory, rigid antennae, engineering motor adapter and unphysiological Shiu dynamics remain explicit limitations.
+
+The [free-running data audit](freewalking-data-alignment.md) discovered that native 800 Hz poses and stored interpolated velocities share array lengths but refer to different times. Independent reconstruction confirms the mismatch in all 372 bouts. Per-fly sex and exact absolute source-frame origins are not resolved. Aligned derivatives and mixed-sex labels are required before this dataset can support motor calibration.
+
+Latest complete suite: **107 tests passed, 26 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
 
 ## Compute and next gates
 

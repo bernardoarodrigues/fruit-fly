@@ -105,14 +105,14 @@ class SensoryEncoder:
 
 
 class MotorDecoder:
-    """Fitted-interface baseline using anatomically identified descending outputs.
+    """Motor-interface baseline using anatomically identified descending outputs.
 
     Rate-to-drive gains and thresholds are engineering parameters. MN9 is a
     proboscis motor readout; the body's feed mode substitutes tarsal contact plus
     stationary ingestion until mouth/pump mechanics are implemented.
     """
 
-    def __init__(self, connectome, tau_s=.05):
+    def __init__(self, connectome, tau_s=.05, *, enable_grooming=False, grooming_threshold_hz=10.):
         if not np.isfinite(tau_s) or tau_s <= 0:
             raise ValueError("Motor readout time constant must be positive")
         self.groups = {
@@ -122,6 +122,16 @@ class MotorDecoder:
             "feeding": connectome.select(["MN9"]),
             "escape": connectome.select(["DNp01"]),
         }
+        if not isinstance(enable_grooming, bool):
+            raise ValueError("enable_grooming must be boolean")
+        if not np.isfinite(grooming_threshold_hz) or grooming_threshold_hz <= 0:
+            raise ValueError("Grooming threshold must be finite and positive")
+        self.enable_grooming = enable_grooming
+        self.grooming_threshold_hz = grooming_threshold_hz
+        if enable_grooming:
+            # Exact Hampel aDN1/aDN2 crosswalk. Only a unilateral-left motor
+            # template exists; the unrelated AOTU103m 'aDN' is excluded.
+            self.groups["grooming_left"] = connectome.select(["DNg62", "DNge078"], side="L")
         if any(len(v) == 0 for v in self.groups.values()):
             raise ValueError("Required motor readout cell types missing")
         self.tau_s = tau_s
@@ -136,6 +146,11 @@ class MotorDecoder:
             self.rates[name] += alpha * (rate - self.rates[name])
         if muted:
             return {"behavior": "rest", "left": 0.0, "right": 0.0}
+        # This priority and rate threshold are declared engineering choices.
+        # The body plays one measured template per request, with no raw-angle
+        # or resource-location access from this neural readout.
+        if self.enable_grooming and self.rates["grooming_left"] > self.grooming_threshold_hz:
+            return {"behavior": "groom", "left": 0.0, "right": 0.0}
         # Contact only gates consumption, never long-range approach or steering.
         if self.rates["feeding"] > 5 and (observation["taste_food"] or observation["taste_water"]):
             return {"behavior": "feed", "left": 0.0, "right": 0.0}

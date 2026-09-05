@@ -32,6 +32,8 @@ That assay is motor calibration, not emergent foraging. Light currently changes 
 
 `configs/male-wind-reference.json` adds relative airflow at both antennae and a domain-limited empirical deflection reference from verified female wind measurements. It is not a wind-to-neuron adapter. The separate viewer can be launched on port 8767. Research acquisition/analysis tools use `uv sync --extra test --extra morphology --extra research` with the committed lockfile.
 
+`configs/male-grooming-probe.json` directly stimulates two identified left descending neurons, which gate one measured female grooming trajectory through the physical body. Launch it on port 8768 and use Reset to replay. The [four-condition check](docs/grooming-loop.md) verifies neural gating, actual contacts, cancellation and no tonic repetition. This is an optional motor calibration assay; natural sensory-driven grooming remains unvalidated.
+
 ## Validate and investigate
 
 ```sh
@@ -46,6 +48,7 @@ Runs write configuration, graph hash, exact input/output IDs, dependency version
 - [Body and units](docs/body-runtime.md), [sensory mapping evidence](docs/sensory-mapping-evidence.md), [viewer](docs/viewer.md)
 - [Conductance dynamics](docs/conductance-model.md), [proprioceptive mapping](docs/proprioception-mapping.md), [navigation calibration](docs/navigation-calibration.md), [internal state and learning](docs/internal-state-learning-plan.md)
 - [Measured wind calibration](docs/wind-calibration.md), [wind neural targets](docs/suver-neural-calibration.md), [slow-circuit reproduction](docs/navigation-memory-model-audit.md), [measured grooming and free behavior](docs/grooming-model-audit.md)
+- [Grooming neural/body controls](docs/grooming-loop.md), [measured joint replay](docs/grooming-replay.md), [free-running dataset timing and units](docs/freewalking-data-alignment.md)
 - [Full-loop checks](validation/closed-loop/results.json), [neural benchmark](validation/neural-benchmark.json), [Shiu results](validation/shiu/results.json)
 - [Research overview](research/README.md), [architecture](research/04-system-architecture.md), [broader roadmap](research/05-build-roadmap-and-validation.md), [hypotheses](research/06-hypotheses-and-open-questions.md), [paper access](research/09-access-and-downloads.md)
 

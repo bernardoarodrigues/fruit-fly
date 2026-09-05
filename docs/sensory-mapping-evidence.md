@@ -4,6 +4,16 @@ Research checked 2026-09-04/05. This file separates published cell-type assignme
 release-specific neuron identifiers, and implementation proposals. It does not
 establish that the simulator reproduces the corresponding behavior.
 
+## Bilateral odor inventory
+
+The pinned male graph contains 106 DM1/DM4 annotations. `SensoryEncoder` assigns
+51 to the left antenna and 54 to the right. `ORN_DM4` body ID **766592451** has
+`rootSide=unknown` and no `somaSide`; it is retained in the graph but receives no
+assigned bilateral environmental input. Thus the runtime has 105 odor input
+cells. A brain-only experiment selecting both types without a side filter can
+include all 106 and must record that distinction. Exact input order matters for
+reproducing the original model's pseudorandom stimulation.
+
 ## Taste: use the final 2026 companion paper
 
 Primary source: Tastekin et al., [The complete gustatory connectome of adult

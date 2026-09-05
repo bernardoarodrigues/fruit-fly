@@ -1,6 +1,6 @@
 # Measured grooming trajectories and male free-walking data
 
-Audited 2026-09-05. Two small public grooming source files were acquired and checksum-verified. Three numeric snippets are available under `data/grooming/`, preserving measured source angles and timing. **They are female, tethered, inverse-kinematics-derived trajectories; no male grooming motor controller or physics replay has been validated.** The newer free-walking study's single-fly HDF5 was subsequently acquired; individual sex labels and exact source-frame alignment remain unresolved.
+Audited 2026-09-05. Two small public grooming source files were acquired and checksum-verified. Three numeric snippets are available under `data/grooming/`, preserving measured source angles and timing. **They are female, tethered, inverse-kinematics-derived trajectories.** A subsequent [bounded physical replay and optional motor template](grooming-replay.md) now checks the foreleg mapping and free-standing actuation; it does not validate male grooming or reproduce the paper's passive-antenna biomechanics. The newer free-walking study's single-fly HDF5 was subsequently acquired; individual sex labels and exact source-frame alignment remain unresolved.
 
 ## The 2026 grooming source
 
@@ -41,9 +41,9 @@ Regenerate the numeric files from the two acquired sources:
 .venv/bin/python scripts/curate_grooming_data.py
 ```
 
-The [curation script](../scripts/curate_grooming_data.py) checks exact source hashes before using a restricted legacy pandas unpickler. It writes ordinary numeric/string NumPy arrays; future adapters can load them using `np.load(path, allow_pickle=False)`. Each file includes `joint_names`, `angles_deg`, `angles_rad`, `time_source_s`, `time_relative_s`, `frame`, and `stimulus`.
+The [curation script](../scripts/curate_grooming_data.py) checks exact source hashes before using a restricted legacy pandas unpickler. It writes ordinary numeric/string NumPy arrays; future adapters can load them using `np.load(path, allow_pickle=False)`. Each file includes `joint_names`, `angles_deg`, `angles_rad`, `time_source_s`, `time_relative_s`, `frame`, `stimulus`, `pose_names`, and the unchanged `pose_source` coordinates.
 
-The checks actually performed were: contiguous 0.01 s samples, exactly 21 angle channels, finite values, and lossless numeric roundtrip. [The saved plot](../validation/grooming-curated-data.png) was visually inspected. These checks establish a reproducible data conversion. They do not establish marker accuracy, physical feasibility, correct body-joint mapping, or stable free-standing replay.
+The checks actually performed were: contiguous 0.01 s samples, exactly 21 angle channels, finite values, and lossless numeric roundtrip. [The saved plot](../validation/grooming-curated-data.png) was visually inspected. These checks establish a reproducible data conversion. They do not establish marker accuracy or physical feasibility. The later independent marker-conversion and physical-actuation checks are documented in [grooming-replay.md](grooming-replay.md).
 
 ## Replay fidelity and body compatibility
 
@@ -60,9 +60,9 @@ The source variables describe these anatomical joints:
 | `head_pitch/roll/yaw` | Neck rotation | Head axes, currently outside the walking actuator set |
 | `antenna_pitch/yaw_L/R` | Measured antennal rotation | Cannot equate automatically with individual pedicel/funiculus joints |
 
-This is an anatomical correspondence table, **not a verified numeric actuator map**. Source data were retargeted to NeuroMechFly segment proportions. Their zero poses, local axes, degree signs, joint limits, and model version must be compared with the current body. The plotting notebooks negate some head/antenna variables for presentation; those display operations were deliberately not applied to the exported data. No mirrored right-grooming trace was invented from the left example.
+This initial anatomical correspondence table is superseded for the 16 actuated channels by the explicit [numeric conversion audit](grooming-replay.md). Source data were retargeted to NeuroMechFly segment proportions. Their zero poses, local axes, degree signs, joint limits, and model version must be compared with the current body. The plotting notebooks negate some head/antenna variables for presentation; those display operations were deliberately not applied to the exported data. No mirrored right-grooming trace was invented from the left example.
 
-A credible next replay milestone is one finite, source-timed snippet in a separate test harness, initially with the author's tethered condition. Measure joint tracking error and head/leg contacts; then establish stable support by the other four legs before attempting free-standing replay. Any transition/blending controller, passive antennal parameters, trial selection, or amplitude limiting must be labeled as an engineering addition. The scientific endpoint is physical contact and coordinated kinematics; playing angles or attaching a “grooming” label alone is insufficient.
+The finite source-timed actuator diagnostic and supporting-leg check are now implemented and measured in [grooming-replay.md](grooming-replay.md). Recovering the exact published passive-antenna model remains necessary for faithful biomechanics. Any transition/blending controller, passive antennal parameters, trial selection, or amplitude limiting must be labeled as an engineering addition. The scientific endpoint is physical contact and coordinated kinematics; playing angles or attaching a “grooming” label alone is insufficient.
 
 ## Grooming descending-neuron identity
 
