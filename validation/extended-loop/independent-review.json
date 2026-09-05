@@ -1,0 +1,238 @@
+{
+  "scope": "Recompute completed extended-loop gates from retained records, without physics.\n\nThis verifies saved-data arithmetic and consistency, not the absent continuous\ntrajectory, native MuJoCo clock, full state arrays or force-bearing wall touch.\nFailed experiment gates are retained; review success means faithful recomputation.\n",
+  "reviewed_at_utc": "2026-09-05T02:26:20.066577+00:00",
+  "review_script_sha256": "6d3f6fef626f3f6852e8eed71796fe0a1d840fbbd196ab2b8cbfb7bdbe1a8a15",
+  "source_sha256": {
+    "validation/extended-loop/plan.json": "462c24316e4defa0ff38ddd44d9a108a5ce84ecd6cf0bba2c31f4c3b637d0e77",
+    "validation/extended-loop/results.json": "7dfe2aef8315ab54bd41b0113dae960a3e9a2aea29cac984cb30e3fd3dd7c443",
+    "fruitfly/body.py": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+    "fruitfly/simulation.py": "0fd35a04354e9334a4f3c0c991b7ee2c40827d13b56869fe350db4542407c817",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "scripts/check_extended_loop.py": "f8c9aa67d7c6d2c164aaaf5eca98d55fe7f32419955ee125d18c15e312441825",
+    "runs/20260905T022224576682Z/manifest.json": "d062820d1b6d0c4caa35c1587fe1dde78abc08a52ff9916ab510937244b2a31f",
+    "runs/20260905T022224576682Z/telemetry.jsonl": "8dca31bee7b3148fcdc9d091be4c18ef60fd116e73bc874e23e26dc3433e9b93",
+    "validation/extended-loop/sensory-05.0s.png": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e",
+    "validation/extended-loop/sensory-07.0s.png": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e",
+    "validation/extended-loop/sensory-10.0s.png": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e",
+    "runs/20260905T022331563778Z/manifest.json": "1d43c2f8e296ed4a3bc9ac3336f29a02546ad5b311ed3b58453d60cdc1f23046",
+    "runs/20260905T022331563778Z/telemetry.jsonl": "c89c218f6f25138fd1529ba8be812ea58d7fab07d2cbbf91f2e8ef9a0ec8a83f",
+    "validation/extended-loop/motor_probe-05.0s.png": "95da45cd54b74159071b140dc799f41e4d628355a3f81f6828817d5139823e7e",
+    "validation/extended-loop/motor_probe-07.0s.png": "00f43e0ac1dc9e0d1cb27fee872d0214b86a39e6b8172689b3e77971b1d50ae6",
+    "validation/extended-loop/motor_probe-10.0s.png": "af01d7cf9c329cbf67831c8868d31ca86d0b3189d206886054d9d655238aef72",
+    "runs/20260905T022445353060Z/manifest.json": "1d43c2f8e296ed4a3bc9ac3336f29a02546ad5b311ed3b58453d60cdc1f23046",
+    "runs/20260905T022445353060Z/telemetry.jsonl": "9f795ed00416fa3956d87125708adebacab0d4a211b004ec3e93f6c0934812a9",
+    "validation/extended-loop/probe_mute_resume-05.0s.png": "95da45cd54b74159071b140dc799f41e4d628355a3f81f6828817d5139823e7e",
+    "validation/extended-loop/probe_mute_resume-07.0s.png": "00f43e0ac1dc9e0d1cb27fee872d0214b86a39e6b8172689b3e77971b1d50ae6",
+    "validation/extended-loop/probe_mute_resume-10.0s.png": "af01d7cf9c329cbf67831c8868d31ca86d0b3189d206886054d9d655238aef72"
+  },
+  "checks": {
+    "plan_hash_matches_result": true,
+    "planned_source_hashes_match": true,
+    "all_three_conditions_in_planned_order": true,
+    "same_full_graph_all_conditions": true,
+    "no_biological_validation_claim": true,
+    "sensory_all_expected_sample_times": true,
+    "sensory_run_manifest_hash": true,
+    "sensory_config_and_graph_match_manifest": true,
+    "sensory_exact_control_times": true,
+    "sensory_all_snapshots_present": true,
+    "sensory_sample_observables_match_run_log": true,
+    "sensory_saved_interval_speeds_match": true,
+    "sensory_saved_path_and_displacement_match": true,
+    "sensory_saved_behavior_and_wall_frame_counts_match": true,
+    "sensory_every_declared_gate_recomputed": true,
+    "sensory_frame_sensory-05.0s_hash": true,
+    "sensory_frame_sensory-07.0s_hash": true,
+    "sensory_frame_sensory-10.0s_hash": true,
+    "motor_probe_all_expected_sample_times": true,
+    "motor_probe_run_manifest_hash": true,
+    "motor_probe_config_and_graph_match_manifest": true,
+    "motor_probe_exact_control_times": true,
+    "motor_probe_all_snapshots_present": true,
+    "motor_probe_sample_observables_match_run_log": true,
+    "motor_probe_saved_interval_speeds_match": true,
+    "motor_probe_saved_path_and_displacement_match": true,
+    "motor_probe_saved_behavior_and_wall_frame_counts_match": true,
+    "motor_probe_every_declared_gate_recomputed": true,
+    "motor_probe_frame_motor_probe-05.0s_hash": true,
+    "motor_probe_frame_motor_probe-07.0s_hash": true,
+    "motor_probe_frame_motor_probe-10.0s_hash": true,
+    "probe_mute_resume_all_expected_sample_times": true,
+    "probe_mute_resume_run_manifest_hash": true,
+    "probe_mute_resume_config_and_graph_match_manifest": true,
+    "probe_mute_resume_exact_control_times": true,
+    "probe_mute_resume_all_snapshots_present": true,
+    "probe_mute_resume_sample_observables_match_run_log": true,
+    "probe_mute_resume_saved_interval_speeds_match": true,
+    "probe_mute_resume_saved_path_and_displacement_match": true,
+    "probe_mute_resume_saved_behavior_and_wall_frame_counts_match": true,
+    "probe_mute_resume_mute_state_transitions_match_logs": true,
+    "probe_mute_resume_every_declared_gate_recomputed": true,
+    "probe_mute_resume_frame_probe_mute_resume-05.0s_hash": true,
+    "probe_mute_resume_frame_probe_mute_resume-07.0s_hash": true,
+    "probe_mute_resume_frame_probe_mute_resume-10.0s_hash": true,
+    "overall_pass_flag_recomputed": true,
+    "all_reviewed_files_unchanged": true
+  },
+  "recomputed_experiment_all_gates_pass": false,
+  "conditions": [
+    {
+      "condition": "sensory",
+      "recomputed_gates": {
+        "ten_seconds": true,
+        "clocks": true,
+        "finite": true,
+        "no_mujoco_warnings": true,
+        "resources": true,
+        "upright": true,
+        "inside_arena": true
+      },
+      "failed_gates": [],
+      "sample_count": 200,
+      "path_length_mm_sampled": 0.0007258102922270243,
+      "minimum_sampled_upright_z_after_settling": 0.9998484604646829,
+      "max_resource_residual": 3.844480289671992e-12,
+      "sampled_wall_nearcontact_frames": 0,
+      "frames": [
+        {
+          "path": "validation/extended-loop/sensory-05.0s.png",
+          "sha256": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e"
+        },
+        {
+          "path": "validation/extended-loop/sensory-07.0s.png",
+          "sha256": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e"
+        },
+        {
+          "path": "validation/extended-loop/sensory-10.0s.png",
+          "sha256": "4612ee3704ecd2a56bc245f04b26eedd4a2e562d0889ed4a7a810bafba8acd4e"
+        }
+      ]
+    },
+    {
+      "condition": "motor_probe",
+      "recomputed_gates": {
+        "ten_seconds": true,
+        "clocks": true,
+        "finite": true,
+        "no_mujoco_warnings": true,
+        "resources": true,
+        "upright": true,
+        "inside_arena": true,
+        "probe_path_exceeds_1mm": true
+      },
+      "failed_gates": [],
+      "sample_count": 200,
+      "path_length_mm_sampled": 5.806320215000706,
+      "minimum_sampled_upright_z_after_settling": 0.9941264545427977,
+      "max_resource_residual": 2.5557334026871104e-13,
+      "sampled_wall_nearcontact_frames": 0,
+      "frames": [
+        {
+          "path": "validation/extended-loop/motor_probe-05.0s.png",
+          "sha256": "95da45cd54b74159071b140dc799f41e4d628355a3f81f6828817d5139823e7e"
+        },
+        {
+          "path": "validation/extended-loop/motor_probe-07.0s.png",
+          "sha256": "00f43e0ac1dc9e0d1cb27fee872d0214b86a39e6b8172689b3e77971b1d50ae6"
+        },
+        {
+          "path": "validation/extended-loop/motor_probe-10.0s.png",
+          "sha256": "af01d7cf9c329cbf67831c8868d31ca86d0b3189d206886054d9d655238aef72"
+        }
+      ]
+    },
+    {
+      "condition": "probe_mute_resume",
+      "recomputed_gates": {
+        "ten_seconds": true,
+        "clocks": true,
+        "finite": true,
+        "no_mujoco_warnings": true,
+        "resources": true,
+        "upright": true,
+        "inside_arena": true,
+        "muted_output_is_rest": true,
+        "muted_median_speed_at_most_1": true,
+        "muted_neurons_continue": true,
+        "resume_locomotor_command": false
+      },
+      "failed_gates": [
+        "resume_locomotor_command"
+      ],
+      "sample_count": 200,
+      "path_length_mm_sampled": 5.806320215000706,
+      "minimum_sampled_upright_z_after_settling": 0.9941264545427977,
+      "max_resource_residual": 4.154454558147336e-13,
+      "sampled_wall_nearcontact_frames": 0,
+      "frames": [
+        {
+          "path": "validation/extended-loop/probe_mute_resume-05.0s.png",
+          "sha256": "95da45cd54b74159071b140dc799f41e4d628355a3f81f6828817d5139823e7e"
+        },
+        {
+          "path": "validation/extended-loop/probe_mute_resume-07.0s.png",
+          "sha256": "00f43e0ac1dc9e0d1cb27fee872d0214b86a39e6b8172689b3e77971b1d50ae6"
+        },
+        {
+          "path": "validation/extended-loop/probe_mute_resume-10.0s.png",
+          "sha256": "af01d7cf9c329cbf67831c8868d31ca86d0b3189d206886054d9d655238aef72"
+        }
+      ],
+      "muted_sample_count": 36,
+      "muted_sample_endpoints_s": [
+        5.25,
+        5.3,
+        5.3500000000000005,
+        5.4,
+        5.45,
+        5.5,
+        5.55,
+        5.6000000000000005,
+        5.65,
+        5.7,
+        5.75,
+        5.800000000000001,
+        5.8500000000000005,
+        5.9,
+        5.95,
+        6.0,
+        6.050000000000001,
+        6.1000000000000005,
+        6.15,
+        6.2,
+        6.25,
+        6.300000000000001,
+        6.3500000000000005,
+        6.4,
+        6.45,
+        6.5,
+        6.550000000000001,
+        6.6000000000000005,
+        6.65,
+        6.7,
+        6.75,
+        6.800000000000001,
+        6.8500000000000005,
+        6.9,
+        6.95,
+        7.0
+      ],
+      "muted_median_interval_speed_mm_s": 8.276479478197865e-06,
+      "muted_total_graph_spikes": 1630328,
+      "muted_nonzero_spike_intervals": 36,
+      "resume_nonzero_command_intervals": 0
+    }
+  ],
+  "limits": [
+    "No physics rerun or mutation.",
+    "Raw qpos/qvel/full neural state, thorax orientation matrix, wall geom pairs/forces and native data.time were not saved; their flags are retained witnesses, not independently reconstructable states.",
+    "Wall near-contact counts include MuJoCo generated contacts within the configured 0.001 mm pair margin, without active/force/distance filtering.",
+    "Behavior and motor are requested-command endpoint samples; path/speed are 50 ms chord measurements.",
+    "5.25-second endpoint speed covers 5.20\u20135.25 seconds; 7-second endpoint precedes resume control.",
+    "Finite current-based neural dynamics are not physiologically plausible by virtue of finiteness.",
+    "RSS is process-lifetime peak, not a per-condition memory-growth trace.",
+    "Single seed, three ten-second selected engineering trials do not establish natural behavior or long-term/general robustness."
+  ]
+}

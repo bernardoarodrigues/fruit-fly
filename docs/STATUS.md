@@ -14,7 +14,7 @@ Evidence snapshot: 2026-09-04 Pacific / 2026-09-05 UTC. This follows [PLAN.md](P
 | M7 Repertoire | Rest/walk/feed; optional neural-gated measured grooming template with contact and mute/withdrawal controls | Natural sensory grooming, visual escape, sleep/circadian state, learning, male cue/song assays |
 | M8 Motor mechanism | Full retained VNC participates in neural graph; frozen CPG/reflex body adapter | Motor-neuron-to-actuator calibration and refinement |
 | M9 Watch/control/record | Actual full-graph viewer inspected; pause/reset/camera/motor mute verified; assay and body caveats visible | Extend display with validated modules |
-| M10 Robustness/performance | Focused tests, exact replay, active full-graph benchmark, real loop controls | Longer/held-out behavior runs; voltage plausibility; compute assessment after calibration |
+| M10 Robustness/performance | Focused tests, exact replay, active full-graph benchmark, three 10-second full-loop runs | Held-out/perturbed behavior; locomotor restart isolated from feeding; wall contacts; voltage plausibility |
 
 ## Executed loop controls
 
@@ -67,6 +67,8 @@ The [FlyMimic muscle audit](musculoskeletal-feasibility.md) compiles the source-
 An isolated [proboscis geometry audit](proboscis-mechanics.md) verifies source mesh transforms and a two-pitch diagnostic Jacobian. The source has no NeuroMechFly oral-motion limits, extension trajectory or identified mouth aperture; generic hinge defaults and an arbitrary distal mesh vertex cannot supply them. No physical swallowing claim or runtime oral controller was added.
 
 Latest complete suite: **150 tests passed, 28 subtests passed**, with 22 Brian2 dependency deprecation warnings. Further experimental modules remain subject to their own validation.
+
+The [ten-second loop experiment](extended-loop.md) completes three full-graph conditions with finite, upright bodies and conserved resources. It retains one failed gate: after releasing motor mute, the fly requests feeding at the food patch rather than locomotion. Its [47-check independent review](extended-loop-independent-review.md) confirms that outcome and the actual mute release. No sampled wall interactions occur, and the current-based voltage failure remains. This is bounded engineering robustness evidence, not a completed natural-behavior milestone.
 
 ## Compute and next gates
 

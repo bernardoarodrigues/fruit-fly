@@ -1,0 +1,51 @@
+{
+  "scope": "Fixed ten-second full-graph robustness assay, not biological validation.\n\nTests the existing body, neural model and motor interface unchanged. All\nconditions and gates are recorded before any rollout; failures remain evidence.\n",
+  "seed": 1,
+  "duration_s": 10,
+  "sample_s": 0.05,
+  "coupling_s": 0.005,
+  "conditions": [
+    "sensory",
+    "motor_probe",
+    "probe_mute_resume"
+  ],
+  "interventions": {
+    "probe_mute_resume": [
+      {
+        "t_s": 5.0,
+        "muted": true
+      },
+      {
+        "t_s": 7.0,
+        "muted": false
+      }
+    ]
+  },
+  "base_config": {
+    "seed": 1,
+    "probe_hz": 40,
+    "coupling_s": 0.005
+  },
+  "source_sha256": {
+    "fruitfly/body.py": "c9690b27b5ce64031b71a85067bdc9aa7d3d670ef21d64e6d723d3db6dde42a8",
+    "fruitfly/simulation.py": "0fd35a04354e9334a4f3c0c991b7ee2c40827d13b56869fe350db4542407c817",
+    "fruitfly/sensors.py": "48fba104b48def2b1eb8085e99b443abe3fb35f828b206403fa3a988dd347536",
+    "fruitfly/neural.py": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+    "fruitfly/physiology.py": "dd8aab20457dcf187fd3c8e2cbec62d001b86b874c5cee25ef365639a840b842",
+    "scripts/check_extended_loop.py": "f8c9aa67d7c6d2c164aaaf5eca98d55fe7f32419955ee125d18c15e312441825"
+  },
+  "gates": {
+    "all": "10 s complete; all sampled neural/body states finite; clocks synchronized; zero MuJoCo warnings; conserved resources <1e-8",
+    "body": "After 0.3 s, thorax upright_z >=0.5; thorax x/y inside configured wall outer bounds (half_size+0.2 mm)",
+    "probe": "Continuous direct-DNg97 probe sampled planar path >1 mm",
+    "mute": "5.25\u20137 s requested rest and zero left/right commands, sampled planar speed <=1 mm/s median; neural spikes continue",
+    "resume": "After 7 s, at least one nonzero locomotor command; no requirement to move through an obstruction"
+  },
+  "measurement_limits": [
+    "Snapshots every50 ms, not a proof against between-sample excursions or missed short contacts.",
+    "Wall interactions are sampled current MuJoCo contact geometry, not integrated contact impulse.",
+    "Normalized resource and current-based neural-model physiology remain uncalibrated.",
+    "Single seed, selected assay, flat small arena; no biological/general robustness claim.",
+    "Vision and proprioception are default disabled; no new sensors or parameters are introduced."
+  ]
+}
