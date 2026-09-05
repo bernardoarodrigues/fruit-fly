@@ -1,0 +1,2110 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-05T03:45:42.696811+00:00",
+  "reviewer_sha256": "69c57ac71c31095a25305b9ccddf38e0efc0877f851e3d51ea1025a587790267",
+  "plan_sha256": "5e474e043a4c302a4694ac7b0e87db0bfce6f9de1d4a4213ae484e27399914a1",
+  "method": "Saved-state one-step residual checks plus independent original-event classification and discrete impulse algebra; no free-running neural recurrence.",
+  "full_graph_or_body_rerun": false,
+  "producer_imported_or_executed": false,
+  "conditions": [
+    {
+      "condition": "locomotor_feedback",
+      "all_graph_spikes": 10524467,
+      "relevant_source_spikes": 1162471,
+      "potential_target_deliveries": 1225720,
+      "accepted_deliveries": 1225512,
+      "source_blocked_deliveries": 0,
+      "unavailable_deliveries": 8,
+      "beyond_horizon_deliveries": 200,
+      "checked_state_transitions": 240000,
+      "maximum_discrete_endpoint_difference_mv": 9.663381206337363e-13,
+      "cells": [
+        {
+          "id": 67052,
+          "type": "lLN2T_b",
+          "incoming_edges": 2260,
+          "contacts": 27830,
+          "recorded_spike_ticks": [],
+          "predicted_spike_ticks": [],
+          "checkpoint_voltage_mv": -445.2935240127306,
+          "checkpoint_synaptic_mv": -553.013171846585,
+          "replayed_voltage_mv": -445.2935240127306,
+          "replayed_synaptic_mv": -553.013171846585,
+          "minimum_replayed_voltage_mv": -536.7385192000661,
+          "accepted_positive_events": 431332,
+          "accepted_negative_events": 142561,
+          "accepted_zero_weight_events": 59036,
+          "accepted_positive_jump_mv_sum": 1997003.0222770572,
+          "accepted_negative_jump_mv_sum": -2925399.4550609887,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 105,
+          "endpoint_positive_v_contribution_mv": 836.4393103076202,
+          "endpoint_negative_v_contribution_mv": -1229.7328343203503,
+          "minimum_reconstructed_sample_ms": 4444.900000000001
+        },
+        {
+          "id": 13314,
+          "type": "M_vPNml50",
+          "incoming_edges": 435,
+          "contacts": 7247,
+          "recorded_spike_ticks": [
+            140
+          ],
+          "predicted_spike_ticks": [
+            140
+          ],
+          "checkpoint_voltage_mv": -376.27775761225035,
+          "checkpoint_synaptic_mv": -235.2036645623094,
+          "replayed_voltage_mv": -376.27775761225035,
+          "replayed_synaptic_mv": -235.2036645623094,
+          "minimum_replayed_voltage_mv": -472.70615265366564,
+          "accepted_positive_events": 420565,
+          "accepted_negative_events": 143648,
+          "accepted_zero_weight_events": 28370,
+          "accepted_positive_jump_mv_sum": 2032329.2547101676,
+          "accepted_negative_jump_mv_sum": -2829410.7040040195,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 8,
+          "beyond_horizon_events": 95,
+          "endpoint_positive_v_contribution_mv": 844.0373362806071,
+          "endpoint_negative_v_contribution_mv": -1168.315093892857,
+          "minimum_reconstructed_sample_ms": 7374.900000000001
+        }
+      ]
+    },
+    {
+      "condition": "locomotor_sensory_block",
+      "all_graph_spikes": 10441248,
+      "relevant_source_spikes": 1150881,
+      "potential_target_deliveries": 1213516,
+      "accepted_deliveries": 1208502,
+      "source_blocked_deliveries": 4850,
+      "unavailable_deliveries": 0,
+      "beyond_horizon_deliveries": 164,
+      "checked_state_transitions": 240000,
+      "maximum_discrete_endpoint_difference_mv": 9.663381206337363e-13,
+      "cells": [
+        {
+          "id": 67052,
+          "type": "lLN2T_b",
+          "incoming_edges": 2260,
+          "contacts": 27830,
+          "recorded_spike_ticks": [],
+          "predicted_spike_ticks": [],
+          "checkpoint_voltage_mv": -453.4512350594275,
+          "checkpoint_synaptic_mv": -533.0878145582111,
+          "replayed_voltage_mv": -453.4512350594275,
+          "replayed_synaptic_mv": -533.0878145582111,
+          "minimum_replayed_voltage_mv": -526.9291269864417,
+          "accepted_positive_events": 422691,
+          "accepted_negative_events": 141092,
+          "accepted_zero_weight_events": 58311,
+          "accepted_positive_jump_mv_sum": 1965372.2464689314,
+          "accepted_negative_jump_mv_sum": -2892532.829423934,
+          "source_blocked_events": 4251,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 84,
+          "endpoint_positive_v_contribution_mv": 828.7440662849169,
+          "endpoint_negative_v_contribution_mv": -1230.1953013443429,
+          "minimum_reconstructed_sample_ms": 10256.1
+        },
+        {
+          "id": 13314,
+          "type": "M_vPNml50",
+          "incoming_edges": 435,
+          "contacts": 7247,
+          "recorded_spike_ticks": [],
+          "predicted_spike_ticks": [],
+          "checkpoint_voltage_mv": -429.3094623019002,
+          "checkpoint_synaptic_mv": -659.9815170244049,
+          "replayed_voltage_mv": -429.3094623019002,
+          "replayed_synaptic_mv": -659.9815170244049,
+          "minimum_replayed_voltage_mv": -466.85976698825937,
+          "accepted_positive_events": 416023,
+          "accepted_negative_events": 142301,
+          "accepted_zero_weight_events": 28084,
+          "accepted_positive_jump_mv_sum": 2002807.1789481044,
+          "accepted_negative_jump_mv_sum": -2808785.428596735,
+          "source_blocked_events": 599,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 80,
+          "endpoint_positive_v_contribution_mv": 841.1116932072232,
+          "endpoint_negative_v_contribution_mv": -1218.4211555091224,
+          "minimum_reconstructed_sample_ms": 2756.2000000000003
+        }
+      ]
+    },
+    {
+      "condition": "sensory_only",
+      "all_graph_spikes": 10523447,
+      "relevant_source_spikes": 1168156,
+      "potential_target_deliveries": 1232018,
+      "accepted_deliveries": 1231820,
+      "source_blocked_deliveries": 0,
+      "unavailable_deliveries": 6,
+      "beyond_horizon_deliveries": 192,
+      "checked_state_transitions": 240000,
+      "maximum_discrete_endpoint_difference_mv": 8.526512829121202e-13,
+      "cells": [
+        {
+          "id": 67052,
+          "type": "lLN2T_b",
+          "incoming_edges": 2260,
+          "contacts": 27830,
+          "recorded_spike_ticks": [],
+          "predicted_spike_ticks": [],
+          "checkpoint_voltage_mv": -336.91774336408105,
+          "checkpoint_synaptic_mv": -0.951106965740248,
+          "replayed_voltage_mv": -336.91774336408105,
+          "replayed_synaptic_mv": -0.951106965740248,
+          "minimum_replayed_voltage_mv": -529.721519776896,
+          "accepted_positive_events": 435619,
+          "accepted_negative_events": 142684,
+          "accepted_zero_weight_events": 59067,
+          "accepted_positive_jump_mv_sum": 2009852.1226474345,
+          "accepted_negative_jump_mv_sum": -2929505.7552778125,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 0,
+          "beyond_horizon_events": 108,
+          "endpoint_positive_v_contribution_mv": 876.5351540473714,
+          "endpoint_negative_v_contribution_mv": -1161.4528974114514,
+          "minimum_reconstructed_sample_ms": 8790.7
+        },
+        {
+          "id": 13314,
+          "type": "M_vPNml50",
+          "incoming_edges": 435,
+          "contacts": 7247,
+          "recorded_spike_ticks": [
+            117
+          ],
+          "predicted_spike_ticks": [
+            117
+          ],
+          "checkpoint_voltage_mv": -333.6620649562421,
+          "checkpoint_synaptic_mv": -385.7610012539134,
+          "replayed_voltage_mv": -333.6620649562421,
+          "replayed_synaptic_mv": -385.7610012539134,
+          "minimum_replayed_voltage_mv": -471.54952766399794,
+          "accepted_positive_events": 422041,
+          "accepted_negative_events": 143916,
+          "accepted_zero_weight_events": 28493,
+          "accepted_positive_jump_mv_sum": 2044955.8800738752,
+          "accepted_negative_jump_mv_sum": -2828564.2540043592,
+          "source_blocked_events": 0,
+          "target_unavailable_events": 6,
+          "beyond_horizon_events": 84,
+          "endpoint_positive_v_contribution_mv": 865.3493199748691,
+          "endpoint_negative_v_contribution_mv": -1147.0113849311103,
+          "minimum_reconstructed_sample_ms": 4934.200000000001
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Initial full synaptic state was not independently serialized; zero g and reset bookkeeping are grounded in pinned reset source.",
+    "Only the final original full-network per-cell voltage/synaptic arrays were retained; interior 0.1ms target states are reconstructed and checked against equations, not directly compared to original interior arrays.",
+    "Source output-mask membership between checkpoints is inferred from pinned runtime/design plus recorded counts/all-sensory flag, not a per-step full boolean mask serialization.",
+    "Self/cross target source spikes remain recorded external inputs. Matching target emissions corroborates this realized history, not recurrent intervention outcomes.",
+    "Conditional endpoint sums and cumulative signed jumps are numerical effective-state accounting, not biological causation, conductance, electric charge, or calibrated fly membrane potentials.",
+    "No parameter changes, fitting, free-running two-cell replay, full-brain, learned-policy or physics execution occurred in this review."
+  ],
+  "passed": true,
+  "completed_utc": "2026-09-05T03:45:54.184201+00:00",
+  "checks": [
+    {
+      "name": "fixed-plan-digest",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/negative-voltage-replay.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/neural.py",
+      "passed": true
+    },
+    {
+      "name": "hash:fruitfly/data.py",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/check_flybody_rolling_loop.py",
+      "passed": true
+    },
+    {
+      "name": "hash:scripts/check_flybody_loop.py",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-rolling-loop/plan.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-rolling-loop/results.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/flybody-rolling-loop/independent-review.json",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/neurons.feather",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/neuron_ids.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/indptr.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/targets.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/weights.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/contact_counts.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:data/processed/malecns_v1/signs.npy",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/actual-state-before-cleanup.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/actual-state-before-cleanup.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/events.jsonl.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/spikes.bin.gz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/actual-state-before-cleanup.json",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-incoming-edges.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_feedback-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_feedback-type-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-locomotor_sensory_block-type-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-sensory_only-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-sensory_only-edge-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-sensory_only-type-balance.csv",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-results.json",
+      "passed": true
+    },
+    {
+      "name": "hash:docs/negative-voltage-replay.md",
+      "passed": true
+    },
+    {
+      "name": "hash:validation/negative-voltage-replay-plot-receipt.json",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:scripts/negative-voltage-replay-plot.py",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:validation/negative-voltage-replay-results.json",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:validation/negative-voltage-replay-locomotor_feedback-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:validation/negative-voltage-replay-sensory_only-arrays.npz",
+      "passed": true
+    },
+    {
+      "name": "plot-hash:validation/negative-voltage-replay-voltages.png",
+      "passed": true
+    },
+    {
+      "name": "plan-parameters-and-targets",
+      "passed": true
+    },
+    {
+      "name": "producer-claims-and-finished-status",
+      "passed": true
+    },
+    {
+      "name": "annotation-body-id-order",
+      "passed": true
+    },
+    {
+      "name": "target-id-order",
+      "passed": true
+    },
+    {
+      "name": "target-type-order",
+      "passed": true
+    },
+    {
+      "name": "67052:unique-source-target-pairs",
+      "passed": true
+    },
+    {
+      "name": "13314:unique-source-target-pairs",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:row",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_index",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_id",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:target_slot",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:target_index",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:target_id",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:target_type",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:contacts",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:weight_mv",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_type",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_class",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_superclass",
+      "passed": true
+    },
+    {
+      "name": "incoming-edge-column:source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "annotation-and-graph-signs",
+      "passed": true
+    },
+    {
+      "name": "float32-contact-sign-weight-rule",
+      "passed": true
+    },
+    {
+      "name": "incoming-counts-and-contacts",
+      "passed": true
+    },
+    {
+      "name": "whole-csr-graph-fingerprint",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:journal-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:all-ordered-drives-and-block-metadata",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:spikes-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:all-6000-spike-blocks-order-hashes-clocks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:checkpoint-clock-parameters-graph",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:checkpoint-whole-output-block-mask",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:complete-archive-schema",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:source-indices-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:source-ticks-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:sample-clock",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:array-target-ids",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:state-array-shape-finite-and-dtype",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:initial-voltage",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:initial-synaptic",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:targets-not-directly-driven-final",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:target-refractory-ticks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:target0-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:target1-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:all-target-spike-stamps-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:threshold-and-refractory-from-saved-previous-state",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:every-voltage-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:accepted-delivery-order-and-delay",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:accepted-edge-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:row",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:target_slot",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:target_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:target_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:target_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_class",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_superclass",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:contacts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:weight_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:balance-inventory:weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-edge-classification:accepted_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-edge-classification:source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-edge-classification:target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-edge-classification:beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:every-original-input-accounted-once",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:every-synaptic-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-tick-positive-negative-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:original-checkpoint:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:duplicated-checkpoint-array:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:original-checkpoint:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:duplicated-checkpoint-array:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:last-spike-ticks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-0-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-1-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-2-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-3-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-4-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-5-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-6-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-7-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-8-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-9-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-10-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-11-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-12-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-13-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-14-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-15-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-16-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-17-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:pending-ring-slot-18-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:cumulative-signed-jump",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:last_100ms-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:last_100ms-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:last_1s-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:last_1s-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:per-edge-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 7.958078640513122e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:per-edge-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 9.663381206337363e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:summed-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 2.5579538487363607e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:summed-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 5.115907697472721e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:all-type-groups-preserved",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:type-sum:contacts",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:source_blocked_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:target_unavailable_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:beyond_horizon_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:accepted_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:endpoint_g_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:endpoint_v_minus_rest_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 1.4210854715202004e-14,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:last_100ms_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:last_100ms_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:last_1s_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-sum:last_1s_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_feedback:type-magnitude-column",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:type-cumulative-magnitude-ranking",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:result-condition-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:67052-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:67052-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:13314-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "locomotor_feedback:13314-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:block-group-ids:odor",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:block-group-ids:sweet",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:block-group-ids:club",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:journal-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:all-ordered-drives-and-block-metadata",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:spikes-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:all-6000-spike-blocks-order-hashes-clocks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:checkpoint-clock-parameters-graph",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:checkpoint-whole-output-block-mask",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:complete-archive-schema",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:source-indices-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:source-ticks-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:sample-clock",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:array-target-ids",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:state-array-shape-finite-and-dtype",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:initial-voltage",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:initial-synaptic",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:targets-not-directly-driven-final",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:target-refractory-ticks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:target0-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:target1-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:all-target-spike-stamps-from-original",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:threshold-and-refractory-from-saved-previous-state",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:every-voltage-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:accepted-delivery-order-and-delay",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:accepted-edge-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:row",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:target_slot",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:target_index",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:target_id",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:target_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_type",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_class",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_superclass",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:contacts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:weight_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:balance-inventory:weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-classification:accepted_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-classification:source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-classification:target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-classification:beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:every-original-input-accounted-once",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:every-synaptic-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-tick-positive-negative-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:original-checkpoint:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:duplicated-checkpoint-array:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:original-checkpoint:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:duplicated-checkpoint-array:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:last-spike-ticks",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-0-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-1-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-2-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-3-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-4-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-5-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-6-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-7-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-8-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-9-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-10-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-11-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-12-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-13-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-14-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-15-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-16-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-17-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:pending-ring-slot-18-source-order",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:cumulative-signed-jump",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:last_100ms-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:last_100ms-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:last_1s-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:last_1s-jumps",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 9.094947017729282e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:per-edge-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 7.958078640513122e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:summed-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 4.547473508864641e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:summed-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 9.663381206337363e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:all-type-groups-preserved",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:contacts",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:source_blocked_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:target_unavailable_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:beyond_horizon_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:accepted_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:endpoint_g_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:endpoint_v_minus_rest_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:last_100ms_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:last_100ms_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:last_1s_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-sum:last_1s_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "locomotor_sensory_block:type-magnitude-column",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:type-cumulative-magnitude-ranking",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:result-condition-counts",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:67052-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:67052-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:13314-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "locomotor_sensory_block:13314-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:journal-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:all-ordered-drives-and-block-metadata",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:spikes-uncompressed-hash-and-eof",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:all-6000-spike-blocks-order-hashes-clocks",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:checkpoint-clock-parameters-graph",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:checkpoint-whole-output-block-mask",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:complete-archive-schema",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:source-indices-from-original",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:source-ticks-from-original",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:sample-clock",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:array-target-ids",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:state-array-shape-finite-and-dtype",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:initial-voltage",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:initial-synaptic",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:targets-not-directly-driven-final",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:target-refractory-ticks",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:target0-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:target1-recorded-spike-array",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:all-target-spike-stamps-from-original",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:threshold-and-refractory-from-saved-previous-state",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:every-voltage-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:accepted-delivery-order-and-delay",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:accepted-edge-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:row",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:graph_edge_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_id",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:target_slot",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:target_index",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:target_id",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:target_type",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_type",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_class",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_superclass",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_consensus_nt",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:source_model_sign",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:contacts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:weight_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:balance-inventory:weight_float32_hex",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-edge-classification:accepted_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-edge-classification:source_blocked_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-edge-classification:target_unavailable_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-edge-classification:beyond_horizon_events",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:every-original-input-accounted-once",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:every-synaptic-transition-bitwise",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-tick-positive-negative-jumps",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:original-checkpoint:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:duplicated-checkpoint-array:voltage_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:original-checkpoint:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:duplicated-checkpoint-array:synaptic_mv",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:last-spike-ticks",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-0-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-1-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-2-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-3-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-4-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-5-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-6-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-7-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-8-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-9-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-10-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-11-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-12-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-13-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-14-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-15-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-16-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-17-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:pending-ring-slot-18-source-order",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:cumulative-signed-jump",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:last_100ms-counts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:last_100ms-jumps",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:last_1s-counts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:last_1s-jumps",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:per-edge-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 7.105427357601002e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:per-edge-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 8.526512829121202e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:summed-discrete-endpoint-g",
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:summed-discrete-endpoint-v",
+      "passed": true,
+      "maximum_absolute_error": 3.410605131648481e-13,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:all-type-groups-preserved",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:type-sum:contacts",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:source_blocked_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:target_unavailable_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:beyond_horizon_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:accepted_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:endpoint_g_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:endpoint_v_minus_rest_contribution_mv",
+      "passed": true,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:last_100ms_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:last_100ms_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:last_1s_accepted_events",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-sum:last_1s_signed_jump_mv_sum",
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "sensory_only:type-magnitude-column",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:type-cumulative-magnitude-ranking",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:result-condition-counts",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:67052-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:67052-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:13314-every-cell-summary-field",
+      "passed": true
+    },
+    {
+      "name": "sensory_only:13314-top-ten-types",
+      "passed": true
+    },
+    {
+      "name": "67052:documented-inhibitory-share",
+      "passed": true,
+      "percentage": 83.16794876637127
+    },
+    {
+      "name": "13314:documented-inhibitory-share",
+      "passed": true,
+      "percentage": 92.93249010374804
+    },
+    {
+      "name": "documented-four-strong-source-cells",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "scripts/negative-voltage-replay.py": {
+      "current_sha256": "7e302ce4d5808192b0bb68ab14f430c6736632b17eedc852727a20642159b082",
+      "expected_sha256": "7e302ce4d5808192b0bb68ab14f430c6736632b17eedc852727a20642159b082",
+      "bytes": 28139,
+      "location": "working-tree"
+    },
+    "fruitfly/neural.py": {
+      "current_sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "expected_sha256": "940a7b8721ccdf954203d4d08d25cfb70b4e31463262b5dc7d1e901d5a29e0b1",
+      "bytes": 21091,
+      "location": "working-tree"
+    },
+    "fruitfly/data.py": {
+      "current_sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "expected_sha256": "7b32fb049444ad1934d7a2fa47598cd0d82bd6022d405a3ada9a69d4271184bc",
+      "bytes": 11325,
+      "location": "working-tree"
+    },
+    "scripts/check_flybody_rolling_loop.py": {
+      "current_sha256": "dcaf13600b46d009339ad3ce9f14f10bfc8aa62bc3f9eeac9ef7191a3a59a7b1",
+      "expected_sha256": "dcaf13600b46d009339ad3ce9f14f10bfc8aa62bc3f9eeac9ef7191a3a59a7b1",
+      "bytes": 48369,
+      "location": "working-tree"
+    },
+    "scripts/check_flybody_loop.py": {
+      "current_sha256": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+      "expected_sha256": "1182561371548c78f25527610698292f3363cb35f76f2dea4db692e1f1ec1b4a",
+      "bytes": 35294,
+      "location": "working-tree"
+    },
+    "validation/flybody-rolling-loop/plan.json": {
+      "current_sha256": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+      "expected_sha256": "3e5ca3ca6c91bbd240ff2530d351fd010dc5001e19078e2270a95022449c2498",
+      "bytes": 50851,
+      "location": "working-tree"
+    },
+    "validation/flybody-rolling-loop/results.json": {
+      "current_sha256": "ba0774f38f8d65853b0a85fb372cf56f2a65196b22f27127be577c3d0e9bb800",
+      "expected_sha256": "ba0774f38f8d65853b0a85fb372cf56f2a65196b22f27127be577c3d0e9bb800",
+      "bytes": 124678,
+      "location": "working-tree"
+    },
+    "validation/flybody-rolling-loop/independent-review.json": {
+      "current_sha256": "bf9f6879b4a6032e6c56c98b457f1949447d48be79831444dfc164785d46a678",
+      "expected_sha256": "bf9f6879b4a6032e6c56c98b457f1949447d48be79831444dfc164785d46a678",
+      "bytes": 18798,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/manifest.json": {
+      "current_sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "expected_sha256": "d814f3b49cb5e1fa5d6ba85e2e86b5df6f739ea3b3fbf5a8dd4f3f8e577a10e7",
+      "bytes": 3869,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/neurons.feather": {
+      "current_sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+      "expected_sha256": "d35c2428957c7f18ce4290f02606d2f99b851381dd63edc3f760483f6c70b9a8",
+      "bytes": 22185954,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/neuron_ids.npy": {
+      "current_sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "expected_sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f",
+      "bytes": 1333728,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/indptr.npy": {
+      "current_sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "expected_sha256": "fe43420f11e6242a11f8199ae7f097cab4b8a6db181d36f2a46b9e46670acbb4",
+      "bytes": 1333736,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/targets.npy": {
+      "current_sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "expected_sha256": "ce20f7433f78442c717ad2a7b5394cf4a3b109d990b4be0788040b7b0f4ed150",
+      "bytes": 102331880,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/weights.npy": {
+      "current_sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "expected_sha256": "c094c8bda9d571a76d80118a5295cd19bd6ce7f52809ba81b10751f7ef036cf0",
+      "bytes": 102331880,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/contact_counts.npy": {
+      "current_sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "expected_sha256": "ba4def60ad30332e94a3e9cf58d23dd8e7ce6afb5fefce7ec7d49ffa14bb9952",
+      "bytes": 102331880,
+      "location": "working-tree"
+    },
+    "data/processed/malecns_v1/signs.npy": {
+      "current_sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "expected_sha256": "33d2339d5ad957f80e8baf7194beddcb58021ad0ac51e041aeb044bdede559c4",
+      "bytes": 166828,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/condition-summary.json": {
+      "current_sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "expected_sha256": "8bbd5ece351a461bb816428520c0eb3d138b6dad1b79b11ce6493d485aff310d",
+      "bytes": 34544,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/events.jsonl.gz": {
+      "current_sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+      "expected_sha256": "16165fd02f82d30f01d41b7cc832c38fee578a2a519416d130733a919c078e3c",
+      "bytes": 122230029,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/spikes.bin.gz": {
+      "current_sha256": "b70007557b5408e0028523a4e8385e4e2cbf0241be8a6b99dda681831f3a4c8e",
+      "expected_sha256": "b70007557b5408e0028523a4e8385e4e2cbf0241be8a6b99dda681831f3a4c8e",
+      "bytes": 33536690,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/brain-final-or-failure.npz": {
+      "current_sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "expected_sha256": "b279306d596c783fd595af7ac6ed2c0df424aa5dd5071a549bf0c13356f00080",
+      "bytes": 2136255,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_feedback/actual-state-before-cleanup.json": {
+      "current_sha256": "acc0642aef48583963193768c21f926d60d115c66b65aed413e726256bf1ded5",
+      "expected_sha256": "acc0642aef48583963193768c21f926d60d115c66b65aed413e726256bf1ded5",
+      "bytes": 58806,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/condition-summary.json": {
+      "current_sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "expected_sha256": "6e2dd80656534d8e08ec77dda239d11b0124beee110f14d052043db8c13f6dd9",
+      "bytes": 34696,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/events.jsonl.gz": {
+      "current_sha256": "fce2d3dd3df05d783c7c60f6f7ae5ca3a2afe0b8219a747057eced4b21b1d24f",
+      "expected_sha256": "fce2d3dd3df05d783c7c60f6f7ae5ca3a2afe0b8219a747057eced4b21b1d24f",
+      "bytes": 122226211,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/spikes.bin.gz": {
+      "current_sha256": "a0736ccc38e722e28a291a22ef0fd1ad6e3d8804f1b27c9810c0c74375456937",
+      "expected_sha256": "a0736ccc38e722e28a291a22ef0fd1ad6e3d8804f1b27c9810c0c74375456937",
+      "bytes": 33275849,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/brain-final-or-failure.npz": {
+      "current_sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "expected_sha256": "c47a19b93dd1e1145ac39e0d4c5bdd5befc036e6d6383cde3ad98834d762f0ec",
+      "bytes": 2131046,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/locomotor_sensory_block/actual-state-before-cleanup.json": {
+      "current_sha256": "4b4b467baa763b18e97e138cb8d7d8de283e8e1a6275c4e5d17b403cd4d08fc9",
+      "expected_sha256": "4b4b467baa763b18e97e138cb8d7d8de283e8e1a6275c4e5d17b403cd4d08fc9",
+      "bytes": 58073,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/condition-summary.json": {
+      "current_sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "expected_sha256": "6c171a293ce257d96775f63a18fc3fbbb6195d09ef8faed4be74ea013b591f27",
+      "bytes": 33834,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/events.jsonl.gz": {
+      "current_sha256": "a14143cf81e9d8aa5c0ec64d8e2bd2115d015a5af4b39e3822ec2099bd3b0cce",
+      "expected_sha256": "a14143cf81e9d8aa5c0ec64d8e2bd2115d015a5af4b39e3822ec2099bd3b0cce",
+      "bytes": 116874590,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/spikes.bin.gz": {
+      "current_sha256": "e3e8688a068d99a651d36196b79b4d603939f98baa07f2abd06073ebed7ddf93",
+      "expected_sha256": "e3e8688a068d99a651d36196b79b4d603939f98baa07f2abd06073ebed7ddf93",
+      "bytes": 33527902,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/brain-final-or-failure.npz": {
+      "current_sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "expected_sha256": "b3bda6ec3fc9fc469df8d5113098b31614e81f93ed6132fa14efbbd84fa3bdaf",
+      "bytes": 2136866,
+      "location": "working-tree"
+    },
+    "runs/flybody-rolling-loop-3e5ca3ca6c91/sensory_only/actual-state-before-cleanup.json": {
+      "current_sha256": "cc353ddbe3e774d26011a81ad746530d0583d5d91f65e6633e01e3ec01b402b2",
+      "expected_sha256": "cc353ddbe3e774d26011a81ad746530d0583d5d91f65e6633e01e3ec01b402b2",
+      "bytes": 55558,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-incoming-edges.csv": {
+      "current_sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "expected_sha256": "d2d7cbfc228b60b2a6d928698b482d90619878ddf7090a4e558861ad7d701d2e",
+      "bytes": 326262,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-arrays.npz": {
+      "current_sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "expected_sha256": "6aa8662caacb513f2c77e4cbd3cb4be3ea0b70e49e1d774963c8ee5063937c2d",
+      "bytes": 9139140,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-edge-balance.csv": {
+      "current_sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "expected_sha256": "16fad9f295a38aba2ba57bc53d984e0d791863d7b28c6e453492100ead7a011d",
+      "bytes": 465024,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_feedback-type-balance.csv": {
+      "current_sha256": "3014b118fab516d372fabe6c76c1fff30f71344d69aa35f3026eb2cf81b1de64",
+      "expected_sha256": "3014b118fab516d372fabe6c76c1fff30f71344d69aa35f3026eb2cf81b1de64",
+      "bytes": 66975,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-arrays.npz": {
+      "current_sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "expected_sha256": "e755a619c1d105b545be8394b466388e99b41035785140c20171b4be5cc945b6",
+      "bytes": 9059468,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-edge-balance.csv": {
+      "current_sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "expected_sha256": "151d0750a92b111eb63241721696e386718f3a146a5e866f42243ee21d492a7e",
+      "bytes": 459506,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-locomotor_sensory_block-type-balance.csv": {
+      "current_sha256": "a981f44c7fb5336ab360955f73160d8374bae7a84311eb03e7629ac253e0da90",
+      "expected_sha256": "a981f44c7fb5336ab360955f73160d8374bae7a84311eb03e7629ac253e0da90",
+      "bytes": 66781,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-sensory_only-arrays.npz": {
+      "current_sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "expected_sha256": "0a6609340668979c73eb61b0999928b5bce17a14401679f7c6be5c10ac61bd91",
+      "bytes": 9171625,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-sensory_only-edge-balance.csv": {
+      "current_sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "expected_sha256": "945f54ac28df0e9eca53bf6573d4f68b72178c2ebaac89187c748c00ac10c26c",
+      "bytes": 465337,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-sensory_only-type-balance.csv": {
+      "current_sha256": "b177b1894521d36e56cc41a2b2891d8c1a38e5e77f9a698ef8d947dfa0197e67",
+      "expected_sha256": "b177b1894521d36e56cc41a2b2891d8c1a38e5e77f9a698ef8d947dfa0197e67",
+      "bytes": 67010,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-results.json": {
+      "current_sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "expected_sha256": "bb783573fd36ef5bdcce0b42f4f37eaa925966f27acba4ba3668a8d167e0915f",
+      "bytes": 74092,
+      "location": "working-tree"
+    },
+    "docs/negative-voltage-replay.md": {
+      "current_sha256": "fd593949e1e612c963f443c94840e1b341e72cdfe6398037961536b28bcc9431",
+      "expected_sha256": "fd593949e1e612c963f443c94840e1b341e72cdfe6398037961536b28bcc9431",
+      "bytes": 12773,
+      "location": "working-tree"
+    },
+    "validation/negative-voltage-replay-plot-receipt.json": {
+      "current_sha256": "8117b9fe45e7a03ed4a252afe630429b9fdb31cac787f7ebcaec6fec672d73ae",
+      "expected_sha256": "8117b9fe45e7a03ed4a252afe630429b9fdb31cac787f7ebcaec6fec672d73ae",
+      "bytes": 906,
+      "location": "working-tree"
+    }
+  },
+  "check_count": 381,
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  }
+}
