@@ -1,0 +1,8332 @@
+{
+  "created_utc": "2026-09-06T00:10:57.680426+00:00",
+  "source_pins": {
+    "scripts/measure_apl_ahp_batch.py": "4c5b276126d0de68025c93b2dd5dd01bfc3212558b705416b65f68ec0a4d7474",
+    "scripts/apl_ephys_measurements.py": "35e6cf100486c69d33a6a179729ec94c3a39ae41a803487c51f4fbdfabb7da9c",
+    "validation/apl-sk-abf-headers.json": "293ba83994482c734ede05f8a9819dc8f2e681af5bb09f9ccc5efbdc6fe4c714",
+    "validation/apl-sk-workbook-join.json": "b37b81fe363e34a2999fe4f75dc0aecd15b86a0b4e3fe47f70898b33a4814d58"
+  },
+  "pyabf_version": "2.3.8",
+  "files": [
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "b6f5ca2cb7729ef66da45682be90dfac06889a4d91a45c6a6ac496c83c5c8152",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L",
+      "metadata": {
+        "abfID": "250610f01c01L_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-10T13:37:47.593",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP_750ms 30s APL.pro",
+        "protocol": "IC_AHP_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            10.729451179504395,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -62.69999694824219,
+            -0.3046875
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "eac9de6b45931dd137bd2bf37c99aa86f6692e2463b7e623a54cd90df9ebafb5",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R",
+      "metadata": {
+        "abfID": "250610f03c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-10T15:25:51.093",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "286d3b50d0a14ad03abfcb00a09d4a155eb449497069f035f2c80c67b778c608",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD",
+      "metadata": {
+        "abfID": "250611f01c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-11T15:39:11.098",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 7200000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 6,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "fed1c0c1ab7c0075205377a3f60bd4d4e232c6bbd01e7a712bc24fc03503e630",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD",
+      "metadata": {
+        "abfID": "250612f03c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-12T14:52:23.218",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "979d440099b9ef31fbd91aeab8ccfa3aa6f23e9351b5ca2aaf8219d7d6d28fe5",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD",
+      "metadata": {
+        "abfID": "250613f01c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-13T14:37:09.500",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "454e993d333e4077209506640c9bc51b1bbc39770c733b2dc57c59d1668b7ddb",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD",
+      "metadata": {
+        "abfID": "250613f02c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-13T16:03:12.898",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 67000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            2.352905511856079,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -59.75,
+            -0.015625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "d2e1e3faf975c2c3a031f84c7432c571a2f33c110d30be6e93ae1ed3fbbd6c5f",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R",
+      "metadata": {
+        "abfID": "250522f01c01R_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-05-22T15:51:21.821",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP_750ms 30s APL.pro",
+        "protocol": "IC_AHP_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 14400000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 12,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "mV"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            10.729451179504395,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -62.69999694824219,
+            -0.3046875
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            1.0
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf",
+      "sha256": "6ebb6b40fa5cd8f45264a6791fd9db476942e77ab1f1077807a56d26848bb20a",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L",
+      "metadata": {
+        "abfID": "250523f01c01L_IC_AHP_2na_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-05-23T14:47:38.638",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP_750ms 30s APL.pro",
+        "protocol": "IC_AHP_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "mV"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            10.729451179504395,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -62.69999694824219,
+            -0.3046875
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            1.0
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf",
+      "sha256": "de752f13ff513853c16b197263bbfcc39b1ca98ecf0b1c9accab54df5a0064a4",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R",
+      "metadata": {
+        "abfID": "250523f02c01R_IC_AHP_2na_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-05-23T15:34:37.743",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP_750ms 30s APL.pro",
+        "protocol": "IC_AHP_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 7200000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 6,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "mV"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            10.729451179504395,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -62.69999694824219,
+            -0.3046875
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            1.0
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "cc8be4e1c175641e3eff1c4482f0ff75e96f7dbc47d11c8d534c5176d6ed063b",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD",
+      "metadata": {
+        "abfID": "250612f01c01L_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-12T10:36:14.194",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 6000000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 5,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "94c7d67b054b2070d0abaf19f9275a39eda8bbbc6abeb510bbfb4577d92a3805",
+      "extracted_path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf",
+      "candidate_recording_directory": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD",
+      "metadata": {
+        "abfID": "250612f02c01L_IC_AHP_2nA_0000",
+        "abfVersionString": "2.9.0.0",
+        "creator": "Clampex 11.3.0.2",
+        "abfDateTimeString": "2025-06-12T11:25:50.983",
+        "holdingCommand": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "protocolPath": "D:\\CCC\\protocol\\IC_AHP2nA_750ms 30s APL.pro",
+        "protocol": "IC_AHP2nA_750ms 30s APL",
+        "abfFileComment": "",
+        "nOperationMode": 5,
+        "userList": null,
+        "userListEnable": [],
+        "userListParamToVary": [],
+        "userListRepeat": [],
+        "dataPointCount": 7200000,
+        "channelCount": 2,
+        "dataRate": 10000,
+        "sweepCount": 6,
+        "adcNames": [
+          "IN 0",
+          "I_MTest 1"
+        ],
+        "adcUnits": [
+          "mV",
+          "pA"
+        ],
+        "dacNames": [
+          "Cmd 0",
+          "Cmd 1"
+        ],
+        "dacUnits": [
+          "pA",
+          "mV"
+        ],
+        "sweepPointCount": 600000,
+        "sweepLengthSec": 60.0,
+        "sweepIntervalSec": 60.0,
+        "tagComments": [],
+        "tagTimesSec": []
+      },
+      "raw_header_sections": {
+        "_protocolSection": {
+          "nOperationMode": 5,
+          "fADCSequenceInterval": 100.0,
+          "bEnableFileCompression": 0,
+          "uFileCompressionRatio": 1,
+          "fSynchTimeUnit": 50.0,
+          "fSecondsPerRun": 30.0,
+          "lNumSamplesPerEpisode": 1200000,
+          "lPreTriggerSamples": 80,
+          "lEpisodesPerRun": 120,
+          "lRunsPerTrial": 1,
+          "lNumberOfTrials": 1,
+          "nAveragingMode": 0,
+          "nUndoRunCount": 0,
+          "nFirstEpisodeInRun": 0,
+          "fTriggerThreshold": 0.0,
+          "nTriggerSource": -3,
+          "nTriggerAction": 0,
+          "nTriggerPolarity": 0,
+          "fScopeOutputInterval": 0.0,
+          "fEpisodeStartToStart": 0.0,
+          "fRunStartToStart": 0.0,
+          "lAverageCount": 1,
+          "fTrialStartToStart": 0.0,
+          "nAutoTriggerStrategy": 1,
+          "fFirstRunDelayS": 0.0,
+          "nChannelStatsStrategy": 0,
+          "lSamplesPerTrace": 40000,
+          "lStartDisplayNum": 0,
+          "lFinishDisplayNum": 600000,
+          "nShowPNRawData": 0,
+          "fStatisticsPeriod": 1.0,
+          "lStatisticsMeasurements": 5,
+          "nStatisticsSaveStrategy": 0,
+          "fADCRange": 10.0,
+          "fDACRange": 10.0,
+          "lADCResolution": 32768,
+          "lDACResolution": 32768,
+          "nExperimentType": 2,
+          "nManualInfoStrategy": 0,
+          "nCommentsEnable": 0,
+          "lFileCommentIndex": 0,
+          "nAutoAnalyseEnable": 1,
+          "nSignalType": 0,
+          "nDigitalEnable": 0,
+          "nActiveDACChannel": 0,
+          "nDigitalHolding": 0,
+          "nDigitalInterEpisode": 0,
+          "nDigitalDACChannel": 0,
+          "nDigitalTrainActiveLogic": 1,
+          "nStatsEnable": 0,
+          "nStatisticsClearStrategy": 0,
+          "nLevelHysteresis": 64,
+          "lTimeHysteresis": 2,
+          "nAllowExternalTags": 0,
+          "nAverageAlgorithm": 0,
+          "fAverageWeighting": 0.10000000149011612,
+          "nUndoPromptStrategy": 0,
+          "nTrialTriggerSource": -1,
+          "nStatisticsDisplayStrategy": 0,
+          "nExternalTagType": 2,
+          "nScopeTriggerOut": 0,
+          "nLTPType": 0,
+          "nAlternateDACOutputState": 0,
+          "nAlternateDigitalOutputState": 0,
+          "fCellID": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nDigitizerADCs": 8,
+          "nDigitizerDACs": 8,
+          "nDigitizerTotalDigitalOuts": 16,
+          "nDigitizerSynchDigitalOuts": 8,
+          "nDigitizerType": 10,
+          "sDigitizerType": "Unknown"
+        },
+        "_adcSection": {
+          "nADCNum": [
+            0,
+            1
+          ],
+          "nTelegraphEnable": [
+            1,
+            1
+          ],
+          "nTelegraphInstrument": [
+            24,
+            24
+          ],
+          "sTelegraphInstrument": [
+            "MultiClamp 700",
+            "MultiClamp 700"
+          ],
+          "fTelegraphAdditGain": [
+            5.0,
+            1.0
+          ],
+          "fTelegraphFilter": [
+            3000.0,
+            10000.0
+          ],
+          "fTelegraphMembraneCap": [
+            0.0,
+            0.0
+          ],
+          "nTelegraphMode": [
+            1,
+            1
+          ],
+          "fTelegraphAccessResistance": [
+            0.0,
+            0.0
+          ],
+          "nADCPtoLChannelMap": [
+            0,
+            1
+          ],
+          "nADCSamplingSeq": [
+            0,
+            0
+          ],
+          "fADCProgrammableGain": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayAmplification": [
+            1.0,
+            1.0
+          ],
+          "fADCDisplayOffset": [
+            -0.06103515625,
+            -0.0152587890625
+          ],
+          "fInstrumentScaleFactor": [
+            0.009999999776482582,
+            0.0005000000237487257
+          ],
+          "fInstrumentOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalGain": [
+            1.0,
+            1.0
+          ],
+          "fSignalOffset": [
+            0.0,
+            0.0
+          ],
+          "fSignalLowpassFilter": [
+            5000.0,
+            5000.0
+          ],
+          "fSignalHighpassFilter": [
+            1.0,
+            1.0
+          ],
+          "nLowpassFilterType": [
+            0,
+            0
+          ],
+          "nHighpassFilterType": [
+            0,
+            0
+          ],
+          "fPostProcessLowpassFilter": [
+            100000.0,
+            100000.0
+          ],
+          "nPostProcessLowpassFilterType": [
+            "\u0000",
+            "\u0000"
+          ],
+          "bEnabledDuringPN": [
+            0,
+            0
+          ],
+          "nStatsChannelPolarity": [
+            0,
+            0
+          ],
+          "lADCChannelNameIndex": [
+            3,
+            5
+          ],
+          "lADCUnitsIndex": [
+            4,
+            6
+          ]
+        },
+        "_dacSection": {
+          "nDACNum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nTelegraphDACScaleFactorEnable": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fInstrumentHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACScaleFactor": [
+            400.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "fDACHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fDACCalibrationFactor": [
+            1.004847764968872,
+            1.0048514604568481,
+            1.004801630973816,
+            1.0062150955200195,
+            1.004963755607605,
+            1.0047005414962769,
+            1.0044447183609009,
+            1.0040253400802612
+          ],
+          "fDACCalibrationOffset": [
+            -1.0,
+            -6.0,
+            3.0,
+            2.0,
+            -8.0,
+            10.0,
+            -3.0,
+            6.0
+          ],
+          "lDACChannelNameIndex": [
+            7,
+            10,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "lDACChannelUnitsIndex": [
+            8,
+            11,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "lDACFilePtr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFileNumEpisodes": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformEnable": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nWaveformSource": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nInterEpisodeLevel": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fDACFileScale": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "fDACFileOffset": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lDACFileEpisodeNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nDACFileADCNum": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nConditEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lConditNumPulses": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fBaselineDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fBaselineLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepDuration": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fStepLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fPostTrainPeriod": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "fPostTrainLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nMembTestEnable": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLeakSubtractType": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPolarity": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "fPNHoldingLevel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nPNNumADCChannels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNPosition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nPNNumPulses": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "fPNSettlingTime": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fPNInterpulse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "nLTPUsageOfDAC": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nLTPPresynapticPulses": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "lDACFilePathIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "fMembTestPreSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "fMembTestPostSettlingTimeMS": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "nLeakSubtractADCIndex": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochPerDacSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nDACNum": [
+            0,
+            0,
+            0
+          ],
+          "nEpochType": [
+            1,
+            1,
+            1
+          ],
+          "fEpochInitLevel": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "fEpochLevelInc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "lEpochInitDuration": [
+            5000,
+            7500,
+            5000
+          ],
+          "lEpochDurationInc": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulsePeriod": [
+            0,
+            0,
+            0
+          ],
+          "lEpochPulseWidth": [
+            0,
+            0,
+            0
+          ]
+        },
+        "_epochSection": {
+          "nEpochNum": [
+            0,
+            1,
+            2
+          ],
+          "nEpochDigitalOutput": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "author_rows": [
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 2,
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+      "row_values": {
+        "A1": "250521e01f20SD",
+        "B1": "250522f01c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+        "D1": "SD",
+        "E1": 78.5811233520507,
+        "F1": 93.6568145751953,
+        "G1": -0.593684,
+        "H1": 11.5323
+      },
+      "directory_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 3,
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+      "row_values": {
+        "A1": "250522e01f12SD",
+        "B1": "250523f01c01L",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+        "D1": "SD",
+        "E1": 72.4269256591796,
+        "F1": 85.1832733154296,
+        "G1": -2.59138941764831,
+        "H1": 177.59568786621
+      },
+      "directory_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf"
+      ],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 4,
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+      "row_values": {
+        "A1": "250522e01f16SD",
+        "B1": "250523f02c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+        "D1": "SD",
+        "E1": 63.2343444824218,
+        "F1": 70.4059753417968,
+        "G1": -1.47513043880462,
+        "H1": 139.364
+      },
+      "directory_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf"
+      ],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 5,
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+      "row_values": {
+        "A1": "250611e10f01SD",
+        "B1": "250612f01c01L",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+        "D1": "SD",
+        "E1": 52.5571632385253,
+        "F1": 66.4975967407226,
+        "G1": -1.20871019363403,
+        "H1": 69.8977
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 6,
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+      "row_values": {
+        "A1": "250611e10f08SD",
+        "B1": "250612f02c01L",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+        "D1": "SD",
+        "E1": 55.9062042236328,
+        "F1": 59.5011749267578,
+        "G1": -1.03960168361663,
+        "H1": 19.8378
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 8,
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250609e01f01SD",
+        "B1": "250610f01c01L",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 69.3741302490234,
+        "F1": 68.6844329833984,
+        "G1": -4.42958450317382,
+        "H1": 577.538
+      },
+      "directory_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 9,
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250609e01f16SD",
+        "B1": "250610f03c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 52.4473190307617,
+        "F1": 59.0757369995117,
+        "G1": -5.05390787124633,
+        "H1": 197.999
+      },
+      "directory_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 10,
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250610e01f16SD",
+        "B1": "250611f01c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 54.6120071411132,
+        "F1": 68.7965774536132,
+        "G1": -3.29815316200256,
+        "H1": 475.782
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 11,
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250611e01f12SD",
+        "B1": "250612f03c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 41.7630386352539,
+        "F1": 50.7107925415039,
+        "G1": -5.13638162612915,
+        "H1": 247.991
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 12,
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250612e01f09SD",
+        "B1": "250613f01c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 60.7635879516601,
+        "F1": 72.9706192016601,
+        "G1": -3.65902256965637,
+        "H1": 214.452
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    },
+    {
+      "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+      "sheet": "AHP(2nA)",
+      "row": 13,
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "state": "SD",
+      "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+      "row_values": {
+        "A1": "250612e01f01SD",
+        "B1": "250613f02c01R",
+        "C1": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+        "D1": "SD",
+        "E1": 56.2261848449707,
+        "F1": 67.8533859252929,
+        "G1": -2.1356348991394,
+        "H1": 700.246
+      },
+      "directory_id_matches": [],
+      "filename_id_matches": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "matched_recording_directories": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD"
+      ],
+      "matched_abf_members": [
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_fp_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_I0_breakin_0000.abf",
+        "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf"
+      ],
+      "join_status": "matched_exact_cell_id"
+    }
+  ],
+  "expected_sweeps": 65,
+  "baseline_relative_to_onset_s": [
+    -0.4,
+    -0.05
+  ],
+  "post_offset_start_s": [
+    0.005,
+    0.02
+  ],
+  "post_offset_end_s": 2.8,
+  "minimum_amplitude_mV": 0.2,
+  "delivery_tolerance_pA": 100.0,
+  "plot_stride_samples": 10,
+  "methods": "Measure all sweeps in all eleven dedicated 2 nA files. Fixed baseline 400 to 50 ms before pulse onset. Two post-offset windows start at 5 and 20 ms and end at 2.8 s. Retain the minimum voltage, signed AHP magnitude, all 70/30 percent crossings and their ambiguity/incomplete/weak flags; no smoothing or exponential fit. The 0.2 mV amplitude floor and 100 pA delivery tolerance are declared diagnostic conventions, not author exclusions. Apply identical measurements to each raw sweep and the within-cell all-sweep mean. Do not choose a best sweep or treat sweeps as independent animals. Voltage differences receive no liquid-junction subtraction. Plot data are decimated to 1 ms; full 10 kHz data are measured.",
+  "scope": "Complete descriptive active-response measurement batch; not SK conductance fitting, physiological promotion or a source-blind evaluation."
+}
