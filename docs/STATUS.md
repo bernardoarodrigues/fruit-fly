@@ -2,6 +2,8 @@
 
 Evidence snapshot: 2026-09-06 UTC. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
+**Autonomous APL candidate remains unpromoted:** [all 16 full-pulse fits / 176 cell predictions are complete](../research/45-apl-autonomous-full-pulse.md). Positive compartment conductances enforce the reversal bound and greatly reduce passive overprediction, but the fits sacrifice sustained recovery (all recovery taus hit 50 ms). Independent ODE checks give at most 0.027 mV whole-trace RMSE; three cases fail the stricter 1 mV maximum-error gate. No runtime replacement follows from these results.
+
 **Full stimulation-response constraint:** [93 files / 2,197 sweeps are measured](../research/44-apl-complete-input-response.md). All 2,044 available current-channel checks and 13,029 independent arithmetic checks pass. Large depolarization is compressed (median 1 nA response 57.5% of passive extrapolation) while voltage keeps rising during the pulse (median +11.16 mV). This defines the next autonomous drive-model requirement; no nonlinear drive or runtime parameter is selected yet.
 
 **Experimental graded electrical state:** [exact state updates and the full conditional active-recovery comparison are implemented](../research/43-apl-graded-state-and-active-recovery.md). Active recovery improves four of five evaluation flies across all four fixed passive variants; evaluation mean-cell RMSE falls from 0.91–0.95 mV to 0.48–0.52 mV. Four ODE/subdivision tests and independent checks of all 88 prediction traces pass. Outward-state recruitment is still prescribed, so the module remains experimental and is not wired into neural runtime defaults.
