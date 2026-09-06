@@ -2,6 +2,8 @@
 
 Evidence snapshot: 2026-09-06 UTC. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
+**Full stimulation-response constraint:** [93 files / 2,197 sweeps are measured](../research/44-apl-complete-input-response.md). All 2,044 available current-channel checks and 13,029 independent arithmetic checks pass. Large depolarization is compressed (median 1 nA response 57.5% of passive extrapolation) while voltage keeps rising during the pulse (median +11.16 mV). This defines the next autonomous drive-model requirement; no nonlinear drive or runtime parameter is selected yet.
+
 **Experimental graded electrical state:** [exact state updates and the full conditional active-recovery comparison are implemented](../research/43-apl-graded-state-and-active-recovery.md). Active recovery improves four of five evaluation flies across all four fixed passive variants; evaluation mean-cell RMSE falls from 0.91–0.95 mV to 0.48–0.52 mV. Four ODE/subdivision tests and independent checks of all 88 prediction traces pass. Outward-state recruitment is still prescribed, so the module remains experimental and is not wired into neural runtime defaults.
 
 **Positive passive response candidate:** [all 656 single/two-mode fits are complete](../research/42-apl-positive-passive-modes.md). Two-mode median conditional switch-off error is 1.74–2.26% of the passive step, versus 5.91–6.43% for single-mode controls; 80–81/82 files improve per window. Both numerical reference tests and all independent mean-fit/prediction checks pass. The two-mode family advances to local active-response modeling with all window variants retained; no runtime or biological parameter promotion occurs.
