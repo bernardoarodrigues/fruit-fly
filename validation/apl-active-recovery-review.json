@@ -1,0 +1,117 @@
+{
+  "completed_utc": "2026-09-06T00:24:41.329957+00:00",
+  "script_sha256": "e7e84e9f8999101d9b50be3679fcdff305b352297efb671bb4d23379c9150870",
+  "result_sha256": "78a223e55035ee76ae3be204ce54ad2ec8d78f5623357387cdc1ca356461a63f",
+  "independent_matrix_propagation_traces": 88,
+  "max_trace_absolute_error_mV": 3.3639757646142243e-13,
+  "metric_checks": 264,
+  "calibration_objective_checks": [
+    {
+      "variant": 0,
+      "recomputed_calibration_mse_mV2": 0.4128319913547111
+    },
+    {
+      "variant": 1,
+      "recomputed_calibration_mse_mV2": 0.40108391614508937
+    },
+    {
+      "variant": 2,
+      "recomputed_calibration_mse_mV2": 0.41987144985658714
+    },
+    {
+      "variant": 3,
+      "recomputed_calibration_mse_mV2": 0.4183638594934429
+    }
+  ],
+  "summaries": [
+    {
+      "variant": 0,
+      "partition": "calibration",
+      "cells": 6,
+      "full_window_mean_cell_passive_rmse_mV": 1.0628489958189207,
+      "full_window_mean_cell_active_rmse_mV": 0.4838299797076873,
+      "full_window_improved_cells": 5,
+      "not_improved_cells": [
+        "250612f02c01L"
+      ]
+    },
+    {
+      "variant": 0,
+      "partition": "evaluation",
+      "cells": 5,
+      "full_window_mean_cell_passive_rmse_mV": 0.9093990574283589,
+      "full_window_mean_cell_active_rmse_mV": 0.48010363574891857,
+      "full_window_improved_cells": 4,
+      "not_improved_cells": [
+        "250522f01c01R"
+      ]
+    },
+    {
+      "variant": 1,
+      "partition": "calibration",
+      "cells": 6,
+      "full_window_mean_cell_passive_rmse_mV": 1.0763642407168226,
+      "full_window_mean_cell_active_rmse_mV": 0.4843107903604394,
+      "full_window_improved_cells": 5,
+      "not_improved_cells": [
+        "250612f02c01L"
+      ]
+    },
+    {
+      "variant": 1,
+      "partition": "evaluation",
+      "cells": 5,
+      "full_window_mean_cell_passive_rmse_mV": 0.9209141221136523,
+      "full_window_mean_cell_active_rmse_mV": 0.48468382400279075,
+      "full_window_improved_cells": 4,
+      "not_improved_cells": [
+        "250522f01c01R"
+      ]
+    },
+    {
+      "variant": 2,
+      "partition": "calibration",
+      "cells": 6,
+      "full_window_mean_cell_passive_rmse_mV": 1.090520747186964,
+      "full_window_mean_cell_active_rmse_mV": 0.4926409988861253,
+      "full_window_improved_cells": 5,
+      "not_improved_cells": [
+        "250612f02c01L"
+      ]
+    },
+    {
+      "variant": 2,
+      "partition": "evaluation",
+      "cells": 5,
+      "full_window_mean_cell_passive_rmse_mV": 0.9327821639503542,
+      "full_window_mean_cell_active_rmse_mV": 0.5072499199633913,
+      "full_window_improved_cells": 4,
+      "not_improved_cells": [
+        "250522f01c01R"
+      ]
+    },
+    {
+      "variant": 3,
+      "partition": "calibration",
+      "cells": 6,
+      "full_window_mean_cell_passive_rmse_mV": 1.1096176380580214,
+      "full_window_mean_cell_active_rmse_mV": 0.49693209443484626,
+      "full_window_improved_cells": 5,
+      "not_improved_cells": [
+        "250612f02c01L"
+      ]
+    },
+    {
+      "variant": 3,
+      "partition": "evaluation",
+      "cells": 5,
+      "full_window_mean_cell_passive_rmse_mV": 0.9473575380920908,
+      "full_window_mean_cell_active_rmse_mV": 0.5195888599503201,
+      "full_window_improved_cells": 4,
+      "not_improved_cells": [
+        "250522f01c01R"
+      ]
+    }
+  ],
+  "scope": "Independent matrix-exponential discrete state simulation of all 88 passive/active traces, plus all 264 metric checks. Disjoint fly identities verified. Optimization objective recomputed, optimizer not independently repeated; tests are retrospective conditional transfer, not blind validation or depolarization-phase prediction."
+}

@@ -1,0 +1,1550 @@
+{
+  "completed_utc": "2026-09-06T00:23:26.751917+00:00",
+  "plan_sha256": "e3a6fb9760db8e3b8b5b75e08fe849dca35cc60158323faf6eb967a38d9709c1",
+  "fits": [
+    {
+      "variant": 0,
+      "outward_tau_s": 0.644372214963579,
+      "initial_outward_pA": {
+        "control": 46.40128857218917,
+        "RNAi": 21.578944471081453
+      },
+      "calibration_mse_mV2": 0.4128319913547111,
+      "tau_at_bound": false
+    },
+    {
+      "variant": 1,
+      "outward_tau_s": 0.5989992450664904,
+      "initial_outward_pA": {
+        "control": 48.927961329853346,
+        "RNAi": 22.904355921964882
+      },
+      "calibration_mse_mV2": 0.40108391614508937,
+      "tau_at_bound": false
+    },
+    {
+      "variant": 2,
+      "outward_tau_s": 0.5767604152239445,
+      "initial_outward_pA": {
+        "control": 50.43449244115462,
+        "RNAi": 23.512889309236233
+      },
+      "calibration_mse_mV2": 0.41987144985658714,
+      "tau_at_bound": false
+    },
+    {
+      "variant": 3,
+      "outward_tau_s": 0.5368628368381017,
+      "initial_outward_pA": {
+        "control": 53.44658353670442,
+        "RNAi": 25.04322057116503
+      },
+      "calibration_mse_mV2": 0.4183638594934429,
+      "tau_at_bound": false
+    }
+  ],
+  "scores": [
+    {
+      "variant": 0,
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 66.12747000558036,
+      "resistance_modes_MOhm": [
+        56.2310070770415,
+        36.7559156993303
+      ],
+      "passive_tau_s": [
+        0.0011971462794284798,
+        0.026748639756812968
+      ],
+      "initial_modes_mV": [
+        39.988571756634954,
+        26.138898248945413
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.365511027898698,
+          "active_rmse_mV": 0.3514118070597931
+        },
+        "full": {
+          "passive_rmse_mV": 1.2927188908151221,
+          "active_rmse_mV": 0.3983467239604244
+        },
+        "late": {
+          "passive_rmse_mV": 0.4465725260304882,
+          "active_rmse_mV": 0.41457967614303953
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 56.144670061383934,
+      "resistance_modes_MOhm": [
+        54.80105032667043,
+        39.14099945469341
+      ],
+      "passive_tau_s": [
+        0.0016154755775121227,
+        0.023296096034070082
+      ],
+      "initial_modes_mV": [
+        32.751966736610335,
+        23.392703324773596
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.0771450496381805,
+          "active_rmse_mV": 0.7746113778804354
+        },
+        "full": {
+          "passive_rmse_mV": 1.7504762361518433,
+          "active_rmse_mV": 0.6085019756362053
+        },
+        "late": {
+          "passive_rmse_mV": 0.813892853599084,
+          "active_rmse_mV": 0.5330282400655868
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 68.11284848167783,
+      "resistance_modes_MOhm": [
+        46.04687775941705,
+        42.467991951610564
+      ],
+      "passive_tau_s": [
+        0.0013192053339928947,
+        0.02406210072058184
+      ],
+      "initial_modes_mV": [
+        35.4334138221164,
+        32.67943465956143
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.1116990899909207,
+          "active_rmse_mV": 0.4808145652402566
+        },
+        "full": {
+          "passive_rmse_mV": 1.3144860352480154,
+          "active_rmse_mV": 0.5195112522818603
+        },
+        "late": {
+          "passive_rmse_mV": 0.8388079164413231,
+          "active_rmse_mV": 0.5332990970459968
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 52.85181501116072,
+      "resistance_modes_MOhm": [
+        39.716504747486866,
+        37.40242807930835
+      ],
+      "passive_tau_s": [
+        0.0017580140555459945,
+        0.028466623011079252
+      ],
+      "initial_modes_mV": [
+        27.2188590384436,
+        25.632955972717117
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.9224244522180043,
+          "active_rmse_mV": 0.9022432681463975
+        },
+        "full": {
+          "passive_rmse_mV": 1.661242939412781,
+          "active_rmse_mV": 0.6294167591832275
+        },
+        "late": {
+          "passive_rmse_mV": 0.7693597260443159,
+          "active_rmse_mV": 0.48934794362005474
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 72.11012346540178,
+      "resistance_modes_MOhm": [
+        41.426364245843494,
+        32.90426324053389
+      ],
+      "passive_tau_s": [
+        0.0014320625216397533,
+        0.021215915512500325
+      ],
+      "initial_modes_mV": [
+        40.18882042988212,
+        31.92130303551966
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.511757687662688,
+          "active_rmse_mV": 0.5610600596254938
+        },
+        "full": {
+          "passive_rmse_mV": 1.3671375044074903,
+          "active_rmse_mV": 0.4269291322671127
+        },
+        "late": {
+          "passive_rmse_mV": 0.4517928827094213,
+          "active_rmse_mV": 0.3641064666139837
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 69.04740339006696,
+      "resistance_modes_MOhm": [
+        31.766169588721453,
+        36.37748369403219
+      ],
+      "passive_tau_s": [
+        0.001237221261477441,
+        0.013776294195395361
+      ],
+      "initial_modes_mV": [
+        32.187466038085816,
+        36.859937351981145
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.4261551316082253,
+          "active_rmse_mV": 0.7146670404059695
+        },
+        "full": {
+          "passive_rmse_mV": 0.8416375280653566,
+          "active_rmse_mV": 0.39379405106633286
+        },
+        "late": {
+          "passive_rmse_mV": 0.45963785158673837,
+          "active_rmse_mV": 0.14729407883537224
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 95.21053742908295,
+      "resistance_modes_MOhm": [
+        62.47479780859447,
+        38.86844524320142
+      ],
+      "passive_tau_s": [
+        0.0015557105984871833,
+        0.022056625512901325
+      ],
+      "initial_modes_mV": [
+        58.694185186963665,
+        36.51635224211928
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.1783579148664133,
+          "active_rmse_mV": 1.2479265716842498
+        },
+        "full": {
+          "passive_rmse_mV": 0.1811788021301659,
+          "active_rmse_mV": 0.6926758996087531
+        },
+        "late": {
+          "passive_rmse_mV": 0.18222537706369815,
+          "active_rmse_mV": 0.27519010155252976
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 85.3627214704241,
+      "resistance_modes_MOhm": [
+        51.122062457724454,
+        39.62320178094389
+      ],
+      "passive_tau_s": [
+        0.0012083474122769873,
+        0.02547730868373815
+      ],
+      "initial_modes_mV": [
+        48.08976441013127,
+        37.27295706029284
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.6750007810521566,
+          "active_rmse_mV": 0.6085969253254134
+        },
+        "full": {
+          "passive_rmse_mV": 0.9354999596486154,
+          "active_rmse_mV": 0.49572093447049287
+        },
+        "late": {
+          "passive_rmse_mV": 0.38888929497225944,
+          "active_rmse_mV": 0.4460887020885876
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 70.51321091424853,
+      "resistance_modes_MOhm": [
+        44.4621754331279,
+        37.11816093239007
+      ],
+      "passive_tau_s": [
+        0.0012297353484306036,
+        0.019975979195509263
+      ],
+      "initial_modes_mV": [
+        38.4304710387003,
+        32.08273987554823
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.8276041054711446,
+          "active_rmse_mV": 0.2764622652047234
+        },
+        "full": {
+          "passive_rmse_mV": 0.49579851312599993,
+          "active_rmse_mV": 0.2577023366191669
+        },
+        "late": {
+          "passive_rmse_mV": 0.2848666696060183,
+          "active_rmse_mV": 0.2503051350458032
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 66.21677280970982,
+      "resistance_modes_MOhm": [
+        40.81601849510141,
+        36.28493388335503
+      ],
+      "passive_tau_s": [
+        0.0014379102053361376,
+        0.022994129536562782
+      ],
+      "initial_modes_mV": [
+        35.054106860063165,
+        31.162665949646666
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.2733494030848378,
+          "active_rmse_mV": 0.5331775889259964
+        },
+        "full": {
+          "passive_rmse_mV": 0.763121255862163,
+          "active_rmse_mV": 0.3690170441884235
+        },
+        "late": {
+          "passive_rmse_mV": 0.43898155650686993,
+          "active_rmse_mV": 0.2839617808610768
+        }
+      }
+    },
+    {
+      "variant": 0,
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 60.502974155970975,
+      "resistance_modes_MOhm": [
+        40.08646871871467,
+        35.16533419333004
+      ],
+      "passive_tau_s": [
+        0.0013305659671063023,
+        0.020631425617539834
+      ],
+      "initial_modes_mV": [
+        32.22980031092829,
+        28.273173845042688
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.4966434525293138,
+          "active_rmse_mV": 0.9314653499995306
+        },
+        "full": {
+          "passive_rmse_mV": 0.3207915971877641,
+          "active_rmse_mV": 0.5118819477087174
+        },
+        "late": {
+          "passive_rmse_mV": 0.2213638351979421,
+          "active_rmse_mV": 0.1868727232441668
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 66.12747000558036,
+      "resistance_modes_MOhm": [
+        60.83617982311398,
+        32.150761331649804
+      ],
+      "passive_tau_s": [
+        0.002454789170785534,
+        0.030761996467426615
+      ],
+      "initial_modes_mV": [
+        43.263522883792035,
+        22.863947121788325
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.4297018847071983,
+          "active_rmse_mV": 0.35823605827246086
+        },
+        "full": {
+          "passive_rmse_mV": 1.3247905465223535,
+          "active_rmse_mV": 0.39326595420499627
+        },
+        "late": {
+          "passive_rmse_mV": 0.44657252603242087,
+          "active_rmse_mV": 0.40562297730846353
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 56.144670061383934,
+      "resistance_modes_MOhm": [
+        61.699819647426054,
+        32.24223496079756
+      ],
+      "passive_tau_s": [
+        0.0029923898075053367,
+        0.027878755136641994
+      ],
+      "initial_modes_mV": [
+        36.875029308235376,
+        19.269640753148558
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.1285827536683053,
+          "active_rmse_mV": 0.749548678055672
+        },
+        "full": {
+          "passive_rmse_mV": 1.7751686925414194,
+          "active_rmse_mV": 0.6110771106406343
+        },
+        "late": {
+          "passive_rmse_mV": 0.8138928535992215,
+          "active_rmse_mV": 0.5502383488444974
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 68.11284848167783,
+      "resistance_modes_MOhm": [
+        49.608860086385114,
+        38.9060112623762
+      ],
+      "passive_tau_s": [
+        0.0023824546970161236,
+        0.026134220450321915
+      ],
+      "initial_modes_mV": [
+        38.17438492453394,
+        29.938463557143884
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.141013132647066,
+          "active_rmse_mV": 0.4952163740068788
+        },
+        "full": {
+          "passive_rmse_mV": 1.3273555894052511,
+          "active_rmse_mV": 0.541268517746259
+        },
+        "late": {
+          "passive_rmse_mV": 0.8388079164413452,
+          "active_rmse_mV": 0.5575582839580531
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 52.85181501116072,
+      "resistance_modes_MOhm": [
+        41.56608236563945,
+        35.552858733398914
+      ],
+      "passive_tau_s": [
+        0.0024503240145325855,
+        0.029969270015727634
+      ],
+      "initial_modes_mV": [
+        28.486424536352317,
+        24.365390474808404
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.947959944044951,
+          "active_rmse_mV": 0.8789827496219788
+        },
+        "full": {
+          "passive_rmse_mV": 1.6735025490804392,
+          "active_rmse_mV": 0.6337922133206082
+        },
+        "late": {
+          "passive_rmse_mV": 0.7693597260454204,
+          "active_rmse_mV": 0.5124434412602461
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 72.11012346540178,
+      "resistance_modes_MOhm": [
+        48.161922716990915,
+        26.16870610618391
+      ],
+      "passive_tau_s": [
+        0.0030486677896496756,
+        0.025991467046781944
+      ],
+      "initial_modes_mV": [
+        46.72316444026789,
+        25.3869590251339
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.5728894556409285,
+          "active_rmse_mV": 0.5605282173745839
+        },
+        "full": {
+          "passive_rmse_mV": 1.3977974532612554,
+          "active_rmse_mV": 0.41599531755373814
+        },
+        "late": {
+          "passive_rmse_mV": 0.4517928827094528,
+          "active_rmse_mV": 0.34659008552496195
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 69.04740339006696,
+      "resistance_modes_MOhm": [
+        33.70614499882469,
+        34.437508283931315
+      ],
+      "passive_tau_s": [
+        0.001854988675230891,
+        0.01431166627895321
+      ],
+      "initial_modes_mV": [
+        34.1531702270338,
+        34.894233163033164
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.4268117598432128,
+          "active_rmse_mV": 0.7555834990742294
+        },
+        "full": {
+          "passive_rmse_mV": 0.841940995069825,
+          "active_rmse_mV": 0.42020482752421934
+        },
+        "late": {
+          "passive_rmse_mV": 0.45963785158673837,
+          "active_rmse_mV": 0.1694010757055133
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 95.21053742908295,
+      "resistance_modes_MOhm": [
+        65.9776266281744,
+        35.36561677857028
+      ],
+      "passive_tau_s": [
+        0.0023112350216177822,
+        0.023954916063319124
+      ],
+      "initial_modes_mV": [
+        61.985042893800305,
+        33.225494535282635
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.20121823607989964,
+          "active_rmse_mV": 1.2548322002753884
+        },
+        "full": {
+          "passive_rmse_mV": 0.18759604569426638,
+          "active_rmse_mV": 0.6925661726785576
+        },
+        "late": {
+          "passive_rmse_mV": 0.1822253770636994,
+          "active_rmse_mV": 0.2627535409801751
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 85.3627214704241,
+      "resistance_modes_MOhm": [
+        53.729761055330165,
+        37.015505873007285
+      ],
+      "passive_tau_s": [
+        0.00203315375022901,
+        0.027267766191209353
+      ],
+      "initial_modes_mV": [
+        50.54278622887006,
+        34.81993524155405
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.7077419052430578,
+          "active_rmse_mV": 0.606023356531095
+        },
+        "full": {
+          "passive_rmse_mV": 0.951507240440721,
+          "active_rmse_mV": 0.48949562900554067
+        },
+        "late": {
+          "passive_rmse_mV": 0.38888929497234614,
+          "active_rmse_mV": 0.43787451869616495
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 70.51321091424853,
+      "resistance_modes_MOhm": [
+        47.39382445342598,
+        34.18651195387386
+      ],
+      "passive_tau_s": [
+        0.00208522856641038,
+        0.021424011543866788
+      ],
+      "initial_modes_mV": [
+        40.96441479515966,
+        29.548796119088863
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.8449912073021433,
+          "active_rmse_mV": 0.2843051946671991
+        },
+        "full": {
+          "passive_rmse_mV": 0.5037335674624756,
+          "active_rmse_mV": 0.26086058893683034
+        },
+        "late": {
+          "passive_rmse_mV": 0.2848666696060183,
+          "active_rmse_mV": 0.25150605964889483
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 66.21677280970982,
+      "resistance_modes_MOhm": [
+        44.504702439992556,
+        32.59625083849826
+      ],
+      "passive_tau_s": [
+        0.0025645963574922634,
+        0.025337277248675186
+      ],
+      "initial_modes_mV": [
+        38.22206659090719,
+        27.994706218802644
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.289432956792016,
+          "active_rmse_mV": 0.5106828440321636
+        },
+        "full": {
+          "passive_rmse_mV": 0.7704514913530687,
+          "active_rmse_mV": 0.365929257666517
+        },
+        "late": {
+          "passive_rmse_mV": 0.43898155650688225,
+          "active_rmse_mV": 0.29380170528217514
+        }
+      }
+    },
+    {
+      "variant": 1,
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 60.502974155970975,
+      "resistance_modes_MOhm": [
+        44.36380735432812,
+        30.887995736448055
+      ],
+      "passive_tau_s": [
+        0.0025492729442452883,
+        0.023058925876399586
+      ],
+      "initial_modes_mV": [
+        35.66881030852536,
+        24.83416384744562
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.46821522573543745,
+          "active_rmse_mV": 0.9181757292122386
+        },
+        "full": {
+          "passive_rmse_mV": 0.3089118840381207,
+          "active_rmse_mV": 0.5048282728986891
+        },
+        "late": {
+          "passive_rmse_mV": 0.22136383519794245,
+          "active_rmse_mV": 0.18514434475340058
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 66.12747000558036,
+      "resistance_modes_MOhm": [
+        61.36893680607494,
+        31.618091090039645
+      ],
+      "passive_tau_s": [
+        0.0015239872141338644,
+        0.034860158946300145
+      ],
+      "initial_modes_mV": [
+        43.64235120061417,
+        22.48511880496619
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.538305080642168,
+          "active_rmse_mV": 0.41312804904912176
+        },
+        "full": {
+          "passive_rmse_mV": 1.3792090689829395,
+          "active_rmse_mV": 0.4052438392578764
+        },
+        "late": {
+          "passive_rmse_mV": 0.4465725260765507,
+          "active_rmse_mV": 0.40224742185123114
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 56.144670061383934,
+      "resistance_modes_MOhm": [
+        56.45151979444675,
+        37.490530598248384
+      ],
+      "passive_tau_s": [
+        0.0017243008173008338,
+        0.024833212185648167
+      ],
+      "initial_modes_mV": [
+        33.73837317872134,
+        22.406296882662595
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.0980630502833164,
+          "active_rmse_mV": 0.6929056229092186
+        },
+        "full": {
+          "passive_rmse_mV": 1.7605101690266742,
+          "active_rmse_mV": 0.5987722244127107
+        },
+        "late": {
+          "passive_rmse_mV": 0.8138928535990878,
+          "active_rmse_mV": 0.5594031794278574
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 68.11284848167783,
+      "resistance_modes_MOhm": [
+        48.90973810459615,
+        39.605134595348595
+      ],
+      "passive_tau_s": [
+        0.0015311481319850977,
+        0.02688511664968624
+      ],
+      "initial_modes_mV": [
+        37.63640481177718,
+        30.476443669900643
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.1635983209287444,
+          "active_rmse_mV": 0.5043674006401558
+        },
+        "full": {
+          "passive_rmse_mV": 1.3373060725494805,
+          "active_rmse_mV": 0.5526533057586301
+        },
+        "late": {
+          "passive_rmse_mV": 0.8388079164413799,
+          "active_rmse_mV": 0.5697063953849208
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 52.85181501116072,
+      "resistance_modes_MOhm": [
+        46.50718736497042,
+        30.612120287553573
+      ],
+      "passive_tau_s": [
+        0.00249155523009741,
+        0.03895756605578497
+      ],
+      "initial_modes_mV": [
+        31.87255361041137,
+        20.979261400749344
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.1495976203819445,
+          "active_rmse_mV": 1.1000854499590906
+        },
+        "full": {
+          "passive_rmse_mV": 1.7708552280191088,
+          "active_rmse_mV": 0.7274781208130159
+        },
+        "late": {
+          "passive_rmse_mV": 0.7693597267925034,
+          "active_rmse_mV": 0.5233192843813087
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 72.11012346540178,
+      "resistance_modes_MOhm": [
+        41.50758452375868,
+        32.82304296951871
+      ],
+      "passive_tau_s": [
+        0.0014361430274064174,
+        0.021372569729124973
+      ],
+      "initial_modes_mV": [
+        40.26761438317661,
+        31.842509082225167
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.514382373107763,
+          "active_rmse_mV": 0.5047833697552272
+        },
+        "full": {
+          "passive_rmse_mV": 1.3684526970773228,
+          "active_rmse_mV": 0.39125276354545724
+        },
+        "late": {
+          "passive_rmse_mV": 0.4517928827094213,
+          "active_rmse_mV": 0.3390146058168448
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 69.04740339006696,
+      "resistance_modes_MOhm": [
+        30.15303515558508,
+        37.990618127167565
+      ],
+      "passive_tau_s": [
+        0.0011178730689192535,
+        0.013044149457004621
+      ],
+      "initial_modes_mV": [
+        30.552937530126684,
+        38.494465859940284
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.4253938854967996,
+          "active_rmse_mV": 0.8051923283384502
+        },
+        "full": {
+          "passive_rmse_mV": 0.8412857488460024,
+          "active_rmse_mV": 0.4479336934641344
+        },
+        "late": {
+          "passive_rmse_mV": 0.45963785158673837,
+          "active_rmse_mV": 0.18099947316889792
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 95.21053742908295,
+      "resistance_modes_MOhm": [
+        63.4840419111332,
+        37.859201257843885
+      ],
+      "passive_tau_s": [
+        0.0016078028733870443,
+        0.022942380701730176
+      ],
+      "initial_modes_mV": [
+        59.642355617643304,
+        35.56818181143964
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.19243742346102727,
+          "active_rmse_mV": 1.278461824346762
+        },
+        "full": {
+          "passive_rmse_mV": 0.18506637389498262,
+          "active_rmse_mV": 0.7022757464086012
+        },
+        "late": {
+          "passive_rmse_mV": 0.18222537706369837,
+          "active_rmse_mV": 0.2553697209427897
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 85.3627214704241,
+      "resistance_modes_MOhm": [
+        53.87458353426879,
+        36.87068890855048
+      ],
+      "passive_tau_s": [
+        0.0013855215710157182,
+        0.0288267498254529
+      ],
+      "initial_modes_mV": [
+        50.67901549888593,
+        34.683705971538174
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.7568681681590181,
+          "active_rmse_mV": 0.6403946692874787
+        },
+        "full": {
+          "passive_rmse_mV": 0.9755947533696616,
+          "active_rmse_mV": 0.4983843175947821
+        },
+        "late": {
+          "passive_rmse_mV": 0.3888892949727546,
+          "active_rmse_mV": 0.4332926567161515
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 70.51321091424853,
+      "resistance_modes_MOhm": [
+        44.90508393552711,
+        36.675252436598036
+      ],
+      "passive_tau_s": [
+        0.0012587165736918484,
+        0.020344114701523364
+      ],
+      "initial_modes_mV": [
+        38.813294912446224,
+        31.6999160018023
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.8329865931746949,
+          "active_rmse_mV": 0.3044903764577351
+        },
+        "full": {
+          "passive_rmse_mV": 0.49825077191435435,
+          "active_rmse_mV": 0.267309275585748
+        },
+        "late": {
+          "passive_rmse_mV": 0.2848666696060183,
+          "active_rmse_mV": 0.2519557423660531
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 66.21677280970982,
+      "resistance_modes_MOhm": [
+        42.808446883626324,
+        34.29250623487849
+      ],
+      "passive_tau_s": [
+        0.0016053909764097791,
+        0.025032471645451214
+      ],
+      "initial_modes_mV": [
+        36.76526796332694,
+        29.451504846382882
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.2914268863211877,
+          "active_rmse_mV": 0.5145949406663528
+        },
+        "full": {
+          "passive_rmse_mV": 0.7713617630095567,
+          "active_rmse_mV": 0.37088813733194775
+        },
+        "late": {
+          "passive_rmse_mV": 0.43898155650687853,
+          "active_rmse_mV": 0.29973201690655216
+        }
+      }
+    },
+    {
+      "variant": 2,
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 60.502974155970975,
+      "resistance_modes_MOhm": [
+        40.37084871760476,
+        34.880954201670065
+      ],
+      "passive_tau_s": [
+        0.0013527583398577287,
+        0.020879781033547887
+      ],
+      "initial_modes_mV": [
+        32.458443809460206,
+        28.04453034651078
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.4927327892092978,
+          "active_rmse_mV": 0.9690902701655008
+        },
+        "full": {
+          "passive_rmse_mV": 0.3191426561834715,
+          "active_rmse_mV": 0.5299041689608042
+        },
+        "late": {
+          "passive_rmse_mV": 0.2213638351979421,
+          "active_rmse_mV": 0.18417887226624116
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 66.12747000558036,
+      "resistance_modes_MOhm": [
+        67.3839876365086,
+        25.603733292884982
+      ],
+      "passive_tau_s": [
+        0.0032903358742753597,
+        0.04247524286491052
+      ],
+      "initial_modes_mV": [
+        47.91958124229825,
+        18.207888763282114
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.6486449355544557,
+          "active_rmse_mV": 0.4420890528949417
+        },
+        "full": {
+          "passive_rmse_mV": 1.43468007746267,
+          "active_rmse_mV": 0.40963419428824493
+        },
+        "late": {
+          "passive_rmse_mV": 0.44657252874483083,
+          "active_rmse_mV": 0.3967798054909259
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 56.144670061383934,
+      "resistance_modes_MOhm": [
+        61.60154887443316,
+        32.34050564244833
+      ],
+      "passive_tau_s": [
+        0.002976814152383054,
+        0.027840458931160415
+      ],
+      "initial_modes_mV": [
+        36.816297606160305,
+        19.32837245522363
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.1284396876075222,
+          "active_rmse_mV": 0.6451209586015351
+        },
+        "full": {
+          "passive_rmse_mV": 1.775099926869997,
+          "active_rmse_mV": 0.5962457547845039
+        },
+        "late": {
+          "passive_rmse_mV": 0.8138928535992164,
+          "active_rmse_mV": 0.5768509174174771
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "partition": "calibration",
+      "group": "control",
+      "initial_voltage_mV": 68.11284848167783,
+      "resistance_modes_MOhm": [
+        53.63439828333052,
+        34.880485926044834
+      ],
+      "passive_tau_s": [
+        0.0029571861117344968,
+        0.029831260878645707
+      ],
+      "initial_modes_mV": [
+        41.27206035828345,
+        26.840788123394383
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.2042430448487043,
+          "active_rmse_mV": 0.5215968088318382
+        },
+        "full": {
+          "passive_rmse_mV": 1.3552876906192017,
+          "active_rmse_mV": 0.5739367621462552
+        },
+        "late": {
+          "passive_rmse_mV": 0.8388079164424026,
+          "active_rmse_mV": 0.592373170330739
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 52.85181501116072,
+      "resistance_modes_MOhm": [
+        51.532189109757844,
+        25.588511852208395
+      ],
+      "passive_tau_s": [
+        0.0042154118403562755,
+        0.04608059209263757
+      ],
+      "initial_modes_mV": [
+        35.31567749199906,
+        17.536137519161656
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 3.2505232421393115,
+          "active_rmse_mV": 1.1538040045142322
+        },
+        "full": {
+          "passive_rmse_mV": 1.8199155664751956,
+          "active_rmse_mV": 0.7606686237160677
+        },
+        "late": {
+          "passive_rmse_mV": 0.7693597433111558,
+          "active_rmse_mV": 0.5444025697574162
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 72.11012346540178,
+      "resistance_modes_MOhm": [
+        45.39216199528887,
+        28.938465706117825
+      ],
+      "passive_tau_s": [
+        0.0026480687054265175,
+        0.02343976603049576
+      ],
+      "initial_modes_mV": [
+        44.03614643200262,
+        28.07397703339917
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 2.537274483529852,
+          "active_rmse_mV": 0.474682655929096
+        },
+        "full": {
+          "passive_rmse_mV": 1.379928189345378,
+          "active_rmse_mV": 0.3736564250668853
+        },
+        "late": {
+          "passive_rmse_mV": 0.4517928827094224,
+          "active_rmse_mV": 0.3278413283151836
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "partition": "evaluation",
+      "group": "control",
+      "initial_voltage_mV": 69.04740339006696,
+      "resistance_modes_MOhm": [
+        30.35549529557118,
+        37.78815798718149
+      ],
+      "passive_tau_s": [
+        0.0010756333756354918,
+        0.013094352203550924
+      ],
+      "initial_modes_mV": [
+        30.75808278258363,
+        38.28932060748333
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.4254314921451703,
+          "active_rmse_mV": 0.8626683235644601
+        },
+        "full": {
+          "passive_rmse_mV": 0.8413031262861745,
+          "active_rmse_mV": 0.4826928331806392
+        },
+        "late": {
+          "passive_rmse_mV": 0.45963785158673837,
+          "active_rmse_mV": 0.20320130837390277
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 95.21053742908295,
+      "resistance_modes_MOhm": [
+        66.62905685461126,
+        34.71418676884242
+      ],
+      "passive_tau_s": [
+        0.0023779774207927204,
+        0.024509451244703162
+      ],
+      "initial_modes_mV": [
+        62.597052203018706,
+        32.613485226064235
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.21315280455024208,
+          "active_rmse_mV": 1.2953841450672867
+        },
+        "full": {
+          "passive_rmse_mV": 0.19115701747539302,
+          "active_rmse_mV": 0.7077785990748168
+        },
+        "late": {
+          "passive_rmse_mV": 0.1822253770637009,
+          "active_rmse_mV": 0.24402759795674125
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 85.3627214704241,
+      "resistance_modes_MOhm": [
+        57.60981556140244,
+        33.135478946988194
+      ],
+      "passive_tau_s": [
+        0.0026035516940470784,
+        0.031586891844640745
+      ],
+      "initial_modes_mV": [
+        54.19267926188014,
+        31.170042208543965
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.8074302728369747,
+          "active_rmse_mV": 0.6533823991445324
+        },
+        "full": {
+          "passive_rmse_mV": 1.000467692608601,
+          "active_rmse_mV": 0.49851112959940397
+        },
+        "late": {
+          "passive_rmse_mV": 0.3888892949778155,
+          "active_rmse_mV": 0.42616328020249705
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "partition": "evaluation",
+      "group": "RNAi",
+      "initial_voltage_mV": 70.51321091424853,
+      "resistance_modes_MOhm": [
+        47.53933500766275,
+        34.0410014053879
+      ],
+      "passive_tau_s": [
+        0.002105806233275,
+        0.021534801284274256
+      ],
+      "initial_modes_mV": [
+        41.09018549698197,
+        29.423025417266572
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.8466307129300008,
+          "active_rmse_mV": 0.3199504023688767
+        },
+        "full": {
+          "passive_rmse_mV": 0.5044837908783123,
+          "active_rmse_mV": 0.2731478187131913
+        },
+        "late": {
+          "passive_rmse_mV": 0.2848666696060183,
+          "active_rmse_mV": 0.25337774656071826
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 66.21677280970982,
+      "resistance_modes_MOhm": [
+        46.885766674286515,
+        30.215189755921614
+      ],
+      "passive_tau_s": [
+        0.0029264195823873263,
+        0.027664466307625278
+      ],
+      "initial_modes_mV": [
+        40.26699931657334,
+        25.94977349313648
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 1.3115805639563494,
+          "active_rmse_mV": 0.4969054655074986
+        },
+        "full": {
+          "passive_rmse_mV": 0.7805807385222311,
+          "active_rmse_mV": 0.37008821112698315
+        },
+        "late": {
+          "passive_rmse_mV": 0.4389815565070562,
+          "active_rmse_mV": 0.30940931611968386
+        }
+      }
+    },
+    {
+      "variant": 3,
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "partition": "calibration",
+      "group": "RNAi",
+      "initial_voltage_mV": 60.502974155970975,
+      "resistance_modes_MOhm": [
+        43.69980623087087,
+        31.55199678995573
+      ],
+      "passive_tau_s": [
+        0.00245043776928702,
+        0.022522047088908866
+      ],
+      "initial_modes_mV": [
+        35.1349488101379,
+        25.368025345833072
+      ],
+      "metrics": {
+        "early": {
+          "passive_rmse_mV": 0.4746767278433102,
+          "active_rmse_mV": 0.9760494571985076
+        },
+        "full": {
+          "passive_rmse_mV": 0.3115897022654267,
+          "active_rmse_mV": 0.5331765146636863
+        },
+        "late": {
+          "passive_rmse_mV": 0.22136383519794225,
+          "active_rmse_mV": 0.1833819528285067
+        }
+      }
+    }
+  ],
+  "arrays": {
+    "path": "validation/apl-active-recovery-arrays.npz",
+    "sha256": "c624d0e9c5d4ed9a2945cce569e38cd87195b7e91b7dbb2f4feb2e5a036b79e7",
+    "bytes": 2484263
+  },
+  "scope": "Experimental graded state realization and conditional active-recovery comparison only. No inferred calcium-to-outward-current drive, synaptic release rule, absolute rest or recurrent promotion."
+}
