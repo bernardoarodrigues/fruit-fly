@@ -2,6 +2,8 @@
 
 Evidence snapshot: 2026-09-06 UTC. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
+**Complete passive transient comparison:** [2,132 sweep fits and 328 mean/window fits are complete](../research/41-apl-passive-transient-comparison.md). Window-dependent median tau spans 9.1–18.4 ms; 221 sweep fits reach the upper bound. Small onset residuals do not assure conditional switch-off prediction. All 328 independent mean-fit optimizations agree and the complete figure is reviewed. No membrane time constant, capacitance or runtime parameter is promoted.
+
 **Complete dedicated AHP measurements:** [all eleven cells / 65 sweeps measured together](../research/40-apl-dedicated-ahp-measurements.md). Control and RNAi mean-trace AHP medians are 3.464 and 1.219 mV, with overlap. All eleven means retain repeated recovery crossings; no time constant is selected. All 42 recorded-current sweeps meet the declared 2 nA delivery tolerance; 23 are command-only. Independent measurement checks pass and all-cell traces are visually reviewed.
 
 **Complete raw passive measurements:** [82 files and 2,132 sweeps measured together](../research/39-apl-passive-measurement-batch.md). Recorded-current checks pass for all 2,002 available sweeps; 130 retain command-only estimates. Across 79 author comparisons, the fixed-window mean differs by median −3.37 MΩ. All 10,400 independent arithmetic checks pass, and the complete figure is reviewed. Identity conflicts and within-file variation remain explicit. This supplies a direct passive-response reference, with no model parameter promotion.
