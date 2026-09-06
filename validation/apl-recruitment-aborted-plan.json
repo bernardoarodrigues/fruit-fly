@@ -1,0 +1,283 @@
+{
+  "created_utc": "2026-09-06T20:14:28.587519+00:00",
+  "pins": {
+    "scripts/compare_apl_recruitment.py": "aa8fcfe601305e8338651ae5377b99610971c10bb2e15495b86af4569cf58652",
+    "fruitfly/apl_conductance.py": "baccacf78bd2b216d781c112ee5fe0ce18adb74731839366e927cb2bdd868f56",
+    "fruitfly/apl_recruitment.py": "cc6820a07642adfe2ecde2d37ebc1f4a7cff08f0f33d0a8603a4ce97dc7b3ac9",
+    "tests/test_apl_recruitment.py": "c2ddcca6e0b20ba16c1a8df5d7f2652026abb79854cfa039aa64cdc1410df6d6",
+    "validation/apl-full-pulse-results.json": "30ffbc2405035d918c210b6ce901370bc352c7ae26b92f305cd0a876f8921b72",
+    "validation/apl-full-pulse-arrays.npz": "2ab8d3466c30e82064121f82df14b80416a03fd66c874e200a8cb795f90360b7",
+    "validation/apl-active-recovery-plan.json": "e3a6fb9760db8e3b8b5b75e08fe849dca35cc60158323faf6eb967a38d9709c1",
+    "validation/apl-passive-modes-results.json": "288ea13e33f7a68e7bdbfc848b554dc039050f52293b93d216967306da72ece0",
+    "validation/apl-passive-measurements.json": "96264235cd2abc91e531d9a96ef0c237afcb609c2fe141b96c460d560f76265c"
+  },
+  "cells": [
+    {
+      "cell": "250610f01c01L",
+      "fly": "250609e01f01SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "b6f5ca2cb7729ef66da45682be90dfac06889a4d91a45c6a6ac496c83c5c8152",
+      "passive_file_index": 3,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    },
+    {
+      "cell": "250610f03c01R",
+      "fly": "250609e01f16SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "eac9de6b45931dd137bd2bf37c99aa86f6692e2463b7e623a54cd90df9ebafb5",
+      "passive_file_index": 6,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    },
+    {
+      "cell": "250611f01c01R",
+      "fly": "250610e01f16SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "286d3b50d0a14ad03abfcb00a09d4a155eb449497069f035f2c80c67b778c608",
+      "passive_file_index": 7,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    },
+    {
+      "cell": "250612f03c01R",
+      "fly": "250611e01f12SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "fed1c0c1ab7c0075205377a3f60bd4d4e232c6bbd01e7a712bc24fc03503e630",
+      "passive_file_index": 8,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "evaluation"
+    },
+    {
+      "cell": "250613f01c01R",
+      "fly": "250612e01f09SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "979d440099b9ef31fbd91aeab8ccfa3aa6f23e9351b5ca2aaf8219d7d6d28fe5",
+      "passive_file_index": 9,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "evaluation"
+    },
+    {
+      "cell": "250613f02c01R",
+      "fly": "250612e01f01SD",
+      "group": "control",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "454e993d333e4077209506640c9bc51b1bbc39770c733b2dc57c59d1668b7ddb",
+      "passive_file_index": 10,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "evaluation"
+    },
+    {
+      "cell": "250522f01c01R",
+      "fly": "250521e01f20SD",
+      "group": "RNAi",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_AHP_2nA_0000.abf",
+      "sha256": "d2e1e3faf975c2c3a031f84c7432c571a2f33c110d30be6e93ae1ed3fbbd6c5f",
+      "passive_file_index": 13,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "evaluation"
+    },
+    {
+      "cell": "250523f01c01L",
+      "fly": "250522e01f12SD",
+      "group": "RNAi",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_AHP_2na_0000.abf",
+      "sha256": "6ebb6b40fa5cd8f45264a6791fd9db476942e77ab1f1077807a56d26848bb20a",
+      "passive_file_index": 14,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    },
+    {
+      "cell": "250523f02c01R",
+      "fly": "250522e01f16SD",
+      "group": "RNAi",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_AHP_2na_0000.abf",
+      "sha256": "de752f13ff513853c16b197263bbfcc39b1ca98ecf0b1c9accab54df5a0064a4",
+      "passive_file_index": 15,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "evaluation"
+    },
+    {
+      "cell": "250612f01c01L",
+      "fly": "250611e10f01SD",
+      "group": "RNAi",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "cc8be4e1c175641e3eff1c4482f0ff75e96f7dbc47d11c8d534c5176d6ed063b",
+      "passive_file_index": 17,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    },
+    {
+      "cell": "250612f02c01L",
+      "fly": "250611e10f08SD",
+      "group": "RNAi",
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf",
+      "path": "data/raw/apl-sk-electrophysiology/inventory-files/Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_AHP_2nA_0000.abf",
+      "sha256": "94c7d67b054b2070d0abaf19f9275a39eda8bbbc6abeb510bbfb4577d92a3805",
+      "passive_file_index": 18,
+      "baseline_sample_range": [
+        10375,
+        13875
+      ],
+      "offset_sample": 21875,
+      "partition": "calibration"
+    }
+  ],
+  "variants": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "junction_correction_scenarios_mV": [
+    0.0,
+    15.7
+  ],
+  "separate_kinetics": [
+    false,
+    true
+  ],
+  "potassium_reversal_mV": -98.92022188818814,
+  "reversal_assumptions": "Ideal monovalent potassium Nernst calculation at assumed 25 C using nominal external 3 and internal 141 mM potassium. Temperature and activities are not measured here. Two alternatives apply zero or 15.7 mV subtraction to raw baseline; neither correction convention is selected as correct for the ABF traces. These are sensitivity scenarios, not measured reversal potentials.",
+  "parameter_names": [
+    "g_fast_nS",
+    "g_slow_control_nS",
+    "g_slow_RNAi_nS",
+    "tau_h_s",
+    "tau_on_s",
+    "tau_off_s",
+    "activation_scale_mV"
+  ],
+  "lower": [
+    0.1,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.05,
+    5.0
+  ],
+  "upper": [
+    100.0,
+    20.0,
+    20.0,
+    1.0,
+    3.0,
+    3.0,
+    80.0
+  ],
+  "starts": [
+    [
+      40.0,
+      1.0,
+      0.5,
+      0.08,
+      0.05,
+      0.6,
+      50.0
+    ],
+    [
+      10.0,
+      3.0,
+      1.5,
+      0.2,
+      0.5,
+      1.5,
+      20.0
+    ]
+  ],
+  "max_nfev": 100,
+  "dt_s": 5e-05,
+  "bin_s": 0.001,
+  "duration_s": 0.75,
+  "recovery_s": 2.8,
+  "amplitude_pA": 2000.0,
+  "windows_s": {
+    "pulse": [
+      0.005,
+      0.75
+    ],
+    "early_recovery": [
+      0.755,
+      1.55
+    ],
+    "late_recovery": [
+      1.55,
+      3.55
+    ]
+  },
+  "methods": "Retain the six calibration/five evaluation fly partition, all 65 observed repeats, both correction scenarios and all four fixed passive circuits. Both candidates have fast inactivation. Shared kinetics dz/dt=(m-z)/tau is nested in separate kinetics dz/dt=m*(1-z)/tau_on-(1-m)*z/tau_off. Shared tau bounds remain 0.05-3s; separate on 0.01-3s and off 0.05-3s. All other parameter bounds remain as in the full-pulse experiment. Refit both candidates under the same phase-scaled objective, giving equal weight to each calibration cell and phase after division by fixed calibration-only phase scales. Scale is the RMS of the six observed cell-mean waveforms in that phase, floored at 1mV; it is an amplitude normalization, not an estimated noise model. Two fixed starts, log-parameter optimization, max100 evaluations per start. No measured post-pulse state is supplied. Always observe model voltage at original 10kHz sample times even when refining the solver; average ten samples identically to data. Repeat history is explicitly propagated to a second pulse at 60s onset interval. Scores retain physical mV units and normalized phase errors. All source waveforms have previously been seen: retrospective conditional transfer only.",
+  "phase_acceptance": {
+    "pulse": 0.25,
+    "early_recovery": 0.5,
+    "late_recovery": 1.0
+  },
+  "acceptance_rule": "Engineering screening criteria, not literature-established physiological cutoffs: each evaluation fly must meet all three phase normalized-RMSE thresholds; at least four of five must pass. Every candidate prediction must pass numerical accuracy, reversal and gate checks. Report bound proximity and optimizer-start disagreement separately. Passing this local screen is insufficient for runtime promotion; different-amplitude transfer, natural-input/release and male/recurrent validation remain required.",
+  "numerical_gates": {
+    "max_error_mV": 1.0,
+    "rmse_mV": 0.2,
+    "half_step_rmse_ratio": 0.4
+  },
+  "history_check": "Integrate at 50us, observe at original 100us times. After the 3.55s window use 1ms stable steps through remaining 56.45s; propagate the second pulse at 50us and compare at exactly the same sample times.",
+  "scope": "Local descriptive electrical candidates only. Not channel identification, measured calcium, natural KC input, GABA release, male parameter validation, recurrent promotion or navigation/motor tuning.",
+  "phase_scales_mV": {
+    "pulse": 62.67312113862001,
+    "early_recovery": 2.3768895054075156,
+    "late_recovery": 1.0
+  }
+}

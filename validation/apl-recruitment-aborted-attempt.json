@@ -1,0 +1,8 @@
+{
+  "reason": "Initial attempt failed with a duplicate dt argument in repeat-history calls before saving a complete batch or interpreting any partial fit result. Fixed call signatures and refroze identical experimental methods.",
+  "plan_sha256": "b45e7cde125dea9307c0adf76bdf201aef492892c93cda06e706d6256144d499",
+  "affected_process_pid": 6948,
+  "terminal_exit_code": 1,
+  "error": "TypeError: too many arguments: expected 6, got 7",
+  "stop_attempt": "Target PID had already exited when SIGTERM was attempted; no process was killed."
+}
