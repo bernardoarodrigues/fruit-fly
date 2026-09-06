@@ -1,6 +1,8 @@
 # Single-male implementation status
 
-Evidence snapshot: 2026-09-05. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
+Evidence snapshot: 2026-09-06 UTC. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
+
+**Complete electrical source inventory:** [all 1,227 archive files passed integrity checks and all 171 APL ABF headers parsed](../research/37-apl-electrophysiology-inventory.md). The completion heartbeat is paused. Actual epoch tables distinguish 500 ms firing-pattern pulses from dedicated 750 ms AHP pulses and confirm 2 nA SK-RNAi/control commands. Heterogeneous channels, extra candidate records and 16 duplicate KC ABF pairs across NS/SD folders require source-workbook joins before comparison. No voltage fitting or parameter promotion occurred.
 
 **Prepared electrical measurements:** [passive-step and AHP measurement functions](../research/36-apl-electrical-measurement-reference.md) pass six tests against constructed waveforms while the source archive downloads. They preserve holding offsets, explicit units/windows, flat/weak signals, incomplete recovery and repeated threshold crossings. The source's 70%-to-30% recovery interval is kept distinct from an exponential time constant. No biological data or partial archive was analyzed; source grouping and quality rules remain pending.
 
