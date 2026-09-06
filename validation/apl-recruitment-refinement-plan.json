@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-09-06T20:21:59.885372+00:00",
+  "pins": {
+    "scripts/diagnose_apl_recruitment_refinement.py": "616bbec85dc30cf53c82583936edad9a19e7e7efe7dde2839100a0389c8545f0",
+    "fruitfly/apl_recruitment.py": "cc6820a07642adfe2ecde2d37ebc1f4a7cff08f0f33d0a8603a4ce97dc7b3ac9",
+    "validation/apl-recruitment-results.json": "8fbbd9edddd9d4698e7b6e68e3795be56add74e53844aeecb064fb52a814a7ad",
+    "validation/apl-recruitment-review.json": "4c5b2cff4531e969d94e2a4658f00f1cdd421e97d282c936352f9889aab6ff48"
+  },
+  "cases": [
+    [
+      0,
+      "250610f01c01L"
+    ],
+    [
+      4,
+      "250613f02c01R"
+    ],
+    [
+      5,
+      "250612f01c01L"
+    ],
+    [
+      5,
+      "250612f02c01L"
+    ],
+    [
+      5,
+      "250612f03c01R"
+    ],
+    [
+      5,
+      "250613f01c01R"
+    ],
+    [
+      5,
+      "250613f02c01R"
+    ],
+    [
+      6,
+      "250613f02c01R"
+    ],
+    [
+      7,
+      "250612f01c01L"
+    ],
+    [
+      7,
+      "250612f03c01R"
+    ],
+    [
+      9,
+      "250612f03c01R"
+    ],
+    [
+      12,
+      "250612f02c01L"
+    ],
+    [
+      13,
+      "250611f01c01R"
+    ],
+    [
+      13,
+      "250612f01c01L"
+    ],
+    [
+      13,
+      "250612f02c01L"
+    ],
+    [
+      13,
+      "250612f03c01R"
+    ],
+    [
+      14,
+      "250613f01c01R"
+    ],
+    [
+      15,
+      "250611f01c01R"
+    ],
+    [
+      15,
+      "250612f01c01L"
+    ],
+    [
+      15,
+      "250612f03c01R"
+    ]
+  ],
+  "dt_s": [
+    5e-05,
+    2.5e-05,
+    1.25e-05,
+    6.25e-06
+  ],
+  "selection": "All 19 failed refinement-ratio cases plus maximum-absolute-error and first passing reference cases, deduplicated. No biological fitting, parameter change, gate revision or promotion.",
+  "methods": "Recompute original DOP853 reference at rtol2e-9 atol2e-10 and a tighter reference at rtol2e-12 atol2e-13. Split at the current discontinuity. Keep original 10kHz observation clock and 1ms bins for all four integration steps. Save RMSE/max error and its bin time, reference shift, successive error ratios and whether the original 50-to25us ratio gate changes under the tighter reference."
+}
