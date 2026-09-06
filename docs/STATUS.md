@@ -2,6 +2,8 @@
 
 Evidence snapshot: 2026-09-06 UTC. This follows [PLAN.md](PLAN.md). Full-graph execution, numerical correctness and biological fidelity are distinct results.
 
+**Positive passive response candidate:** [all 656 single/two-mode fits are complete](../research/42-apl-positive-passive-modes.md). Two-mode median conditional switch-off error is 1.74–2.26% of the passive step, versus 5.91–6.43% for single-mode controls; 80–81/82 files improve per window. Both numerical reference tests and all independent mean-fit/prediction checks pass. The two-mode family advances to local active-response modeling with all window variants retained; no runtime or biological parameter promotion occurs.
+
 **Complete passive transient comparison:** [2,132 sweep fits and 328 mean/window fits are complete](../research/41-apl-passive-transient-comparison.md). Window-dependent median tau spans 9.1–18.4 ms; 221 sweep fits reach the upper bound. Small onset residuals do not assure conditional switch-off prediction. All 328 independent mean-fit optimizations agree and the complete figure is reviewed. No membrane time constant, capacitance or runtime parameter is promoted.
 
 **Complete dedicated AHP measurements:** [all eleven cells / 65 sweeps measured together](../research/40-apl-dedicated-ahp-measurements.md). Control and RNAi mean-trace AHP medians are 3.464 and 1.219 mV, with overlap. All eleven means retain repeated recovery crossings; no time constant is selected. All 42 recorded-current sweeps meet the declared 2 nA delivery tolerance; 23 are command-only. Independent measurement checks pass and all-cell traces are visually reviewed.
