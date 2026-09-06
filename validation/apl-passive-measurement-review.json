@@ -1,0 +1,2453 @@
+{
+  "completed_utc": "2026-09-06T00:08:24.109687+00:00",
+  "script_sha256": "666bce6850887f2468649f7a478145f58d719716b78e12fd7fc55d71792ca112",
+  "results_sha256": "96264235cd2abc91e531d9a96ef0c237afcb609c2fe141b96c460d560f76265c",
+  "independent_scalar_checks": 10400,
+  "max_absolute_recomputation_error": 1.4210854715202004e-14,
+  "recorded_current_sweeps": 2002,
+  "missing_recorded_current_sweeps": 130,
+  "recorded_delta_current_pA_quantiles": {
+    "min": -54.083251953125,
+    "median": -50.7733154296875,
+    "max": -50.0494384765625
+  },
+  "source_comparison_count": 79,
+  "mean_minus_author_MOhm_quantiles": {
+    "min": -12.563154266826913,
+    "median": -3.3689924579326487,
+    "max": 6.13207460937501
+  },
+  "files": [
+    {
+      "file_index": 0,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250609/250608e01f06SD/250609f02c01R/250609f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 12,
+          "cell": "250609f02c01R",
+          "fly": "250608e01f06SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H12",
+          "author_resistance_numeric_MOhm": 93.91099999999999,
+          "mean_minus_author_MOhm": -3.7464633037860438
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 90.16453669621394,
+      "mean_recorded_resistance_MOhm": 88.69398421474605,
+      "min_commanded_resistance_MOhm": 80.75354003906256,
+      "max_commanded_resistance_MOhm": 98.57580566406241,
+      "first_sweep_resistance_MOhm": 92.04309082031244,
+      "last_sweep_resistance_MOhm": 88.77368164062504,
+      "within_file_sd_MOhm": 4.99473206698911,
+      "mean_held_baseline_mV": -61.675243436373194,
+      "max_abs_plateau_half_change_mV": 0.46187591552734375
+    },
+    {
+      "file_index": 1,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250609/250608e01f06SD/250609f02c02L/250609f02c02L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 13,
+          "cell": "250609f02c02L",
+          "fly": "250608e01f06SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H13",
+          "author_resistance_numeric_MOhm": 99.82699999999998,
+          "mean_minus_author_MOhm": -4.248785794771621
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 95.57821420522836,
+      "mean_recorded_resistance_MOhm": 93.97571009528676,
+      "min_commanded_resistance_MOhm": 80.30847167968744,
+      "max_commanded_resistance_MOhm": 112.84155273437491,
+      "first_sweep_resistance_MOhm": 112.84155273437491,
+      "last_sweep_resistance_MOhm": 82.36279296875011,
+      "within_file_sd_MOhm": 8.690382432454092,
+      "mean_held_baseline_mV": -60.43869112454927,
+      "max_abs_plateau_half_change_mV": 0.6729583740234375
+    },
+    {
+      "file_index": 2,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250609/250608e10f03SD/250609f01c01R/250609f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 11,
+          "cell": "250609f01c01R",
+          "fly": "250608e10f03SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H11",
+          "author_resistance_numeric_MOhm": 102.38279999999999,
+          "mean_minus_author_MOhm": -2.212643374399022
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 100.17015662560097,
+      "mean_recorded_resistance_MOhm": 98.08459382440944,
+      "min_commanded_resistance_MOhm": 74.98181152343747,
+      "max_commanded_resistance_MOhm": 135.16589355468753,
+      "first_sweep_resistance_MOhm": 92.01538085937486,
+      "last_sweep_resistance_MOhm": 77.46813964843753,
+      "within_file_sd_MOhm": 12.80007806330973,
+      "mean_held_baseline_mV": -60.269684072641226,
+      "max_abs_plateau_half_change_mV": 0.4997711181640625
+    },
+    {
+      "file_index": 3,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f01SD/250610f01c01L/250610f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 14,
+          "cell": "250610f01c01L",
+          "fly": "250609e01f01SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H14",
+          "author_resistance_numeric_MOhm": 93.8138,
+          "mean_minus_author_MOhm": -0.8268803034855807
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 92.98691969651442,
+      "mean_recorded_resistance_MOhm": 91.37923972184821,
+      "min_commanded_resistance_MOhm": 64.359130859375,
+      "max_commanded_resistance_MOhm": 122.53991699218744,
+      "first_sweep_resistance_MOhm": 96.88549804687496,
+      "last_sweep_resistance_MOhm": 100.99645996093741,
+      "within_file_sd_MOhm": 12.609474178935374,
+      "mean_held_baseline_mV": -59.994104003906244,
+      "max_abs_plateau_half_change_mV": 0.6038589477539062
+    },
+    {
+      "file_index": 4,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f03SD/250610f02c01L/250610f02c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 15,
+          "cell": "250610f02c01L",
+          "fly": "250609e01f03SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H15",
+          "author_resistance_numeric_MOhm": 103.3052,
+          "mean_minus_author_MOhm": -4.336083789062499
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 98.9691162109375,
+      "mean_recorded_resistance_MOhm": 97.33315420902585,
+      "min_commanded_resistance_MOhm": 70.99084472656259,
+      "max_commanded_resistance_MOhm": 124.52099609374983,
+      "first_sweep_resistance_MOhm": 104.95092773437491,
+      "last_sweep_resistance_MOhm": 108.50012207031241,
+      "within_file_sd_MOhm": 9.948750966895526,
+      "mean_held_baseline_mV": -59.831308922400844,
+      "max_abs_plateau_half_change_mV": 0.2954559326171875
+    },
+    {
+      "file_index": 5,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f12SD/250610f04c01L/250610f04c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 17,
+          "cell": "250610f04c01L",
+          "fly": "250609e01f12SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H17",
+          "author_resistance_numeric_MOhm": 75.0726,
+          "mean_minus_author_MOhm": -2.9820003530649046
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 72.09059964693509,
+      "mean_recorded_resistance_MOhm": 71.70010498017706,
+      "min_commanded_resistance_MOhm": 62.8662109375,
+      "max_commanded_resistance_MOhm": 89.59436035156259,
+      "first_sweep_resistance_MOhm": 76.45263671875,
+      "last_sweep_resistance_MOhm": 69.96862792968756,
+      "within_file_sd_MOhm": 6.613047378381153,
+      "mean_held_baseline_mV": -59.968839674729566,
+      "max_abs_plateau_half_change_mV": 0.43259429931640625
+    },
+    {
+      "file_index": 6,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250610/250609e01f16SD/250610f03c01R/250610f03c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 16,
+          "cell": "250610f03c01R",
+          "fly": "250609e01f16SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H16",
+          "author_resistance_numeric_MOhm": 98.2624,
+          "mean_minus_author_MOhm": -4.320350533353363
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 93.94204946664664,
+      "mean_recorded_resistance_MOhm": 92.29955974055686,
+      "min_commanded_resistance_MOhm": 73.83068847656261,
+      "max_commanded_resistance_MOhm": 113.50756835937504,
+      "first_sweep_resistance_MOhm": 99.78649902343761,
+      "last_sweep_resistance_MOhm": 89.35339355468756,
+      "within_file_sd_MOhm": 11.918216667562803,
+      "mean_held_baseline_mV": -59.9313227726863,
+      "max_abs_plateau_half_change_mV": 0.6815109252929688
+    },
+    {
+      "file_index": 7,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250611/250611f01c01R/250610e01f16SD/250611f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 18,
+          "cell": "250611f01c01R",
+          "fly": "250610e01f16SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "H18",
+          "author_resistance_numeric_MOhm": 89.587,
+          "mean_minus_author_MOhm": -1.072130896935093
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 88.51486910306491,
+      "mean_recorded_resistance_MOhm": 87.09889609792455,
+      "min_commanded_resistance_MOhm": 68.47521972656253,
+      "max_commanded_resistance_MOhm": 97.6580810546875,
+      "first_sweep_resistance_MOhm": 89.2022705078125,
+      "last_sweep_resistance_MOhm": 90.46997070312486,
+      "within_file_sd_MOhm": 5.6014557742901365,
+      "mean_held_baseline_mV": -59.48648916391226,
+      "max_abs_plateau_half_change_mV": 0.3272705078125
+    },
+    {
+      "file_index": 8,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250612/250612f03c01R/250611e01f12SD/250612f03c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 19,
+          "cell": "250612f03c01R",
+          "fly": "250611e01f12SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "H19",
+          "author_resistance_numeric_MOhm": 80.7008,
+          "mean_minus_author_MOhm": -3.581875345552902
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 77.1189246544471,
+      "mean_recorded_resistance_MOhm": 75.87463197033398,
+      "min_commanded_resistance_MOhm": 47.88537597656244,
+      "max_commanded_resistance_MOhm": 121.08593750000011,
+      "first_sweep_resistance_MOhm": 76.5240478515625,
+      "last_sweep_resistance_MOhm": 85.02465820312494,
+      "within_file_sd_MOhm": 19.805166508746698,
+      "mean_held_baseline_mV": -60.64821659968449,
+      "max_abs_plateau_half_change_mV": 1.3599128723144531
+    },
+    {
+      "file_index": 9,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f01c01R/250612e01f09SD/250613f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 20,
+          "cell": "250613f01c01R",
+          "fly": "250612e01f09SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "H20",
+          "author_resistance_numeric_MOhm": 76.885,
+          "mean_minus_author_MOhm": -2.554372558593741
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 74.33062744140626,
+      "mean_recorded_resistance_MOhm": 73.08706786923493,
+      "min_commanded_resistance_MOhm": 23.113647460937585,
+      "max_commanded_resistance_MOhm": 113.03479003906261,
+      "first_sweep_resistance_MOhm": 72.03076171875011,
+      "last_sweep_resistance_MOhm": 78.89086914062489,
+      "within_file_sd_MOhm": 20.820478286061647,
+      "mean_held_baseline_mV": -60.93835050142729,
+      "max_abs_plateau_half_change_mV": 0.5110359191894531
+    },
+    {
+      "file_index": 10,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_RNAi_ctrl_kk/250613/250613f02c01R/250612e01f01SD/250613f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 21,
+          "cell": "250613f02c01R",
+          "fly": "250612e01f01SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-RNAi ctrl_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "H21",
+          "author_resistance_numeric_MOhm": 75.11219999999999,
+          "mean_minus_author_MOhm": -6.968546717247577
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 68.14365328275241,
+      "mean_recorded_resistance_MOhm": 67.0036287443328,
+      "min_commanded_resistance_MOhm": 43.6517333984375,
+      "max_commanded_resistance_MOhm": 94.4287109375,
+      "first_sweep_resistance_MOhm": 74.6148681640625,
+      "last_sweep_resistance_MOhm": 43.6517333984375,
+      "within_file_sd_MOhm": 12.182847131502497,
+      "mean_held_baseline_mV": -60.73884582519531,
+      "max_abs_plateau_half_change_mV": 0.7400627136230469
+    },
+    {
+      "file_index": 11,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250516/250515e01f05SD/250516f01c01R/250516f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 3,
+          "cell": "250516f01c01R",
+          "fly": "250515e01f05SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H3",
+          "author_resistance_numeric_MOhm": 103.3322,
+          "mean_minus_author_MOhm": -1.3328995567908635
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 101.99930044320914,
+      "mean_recorded_resistance_MOhm": 100.76327623555495,
+      "min_commanded_resistance_MOhm": 78.3966064453125,
+      "max_commanded_resistance_MOhm": 140.4046630859375,
+      "first_sweep_resistance_MOhm": 78.3966064453125,
+      "last_sweep_resistance_MOhm": 87.0751953125,
+      "within_file_sd_MOhm": 15.411385269318522,
+      "mean_held_baseline_mV": -59.90759629469652,
+      "max_abs_plateau_half_change_mV": 0.3970794677734375
+    },
+    {
+      "file_index": 12,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250520/250519e01f12SD/250520f01c01L/250520f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 4,
+          "cell": "250520f01c01L",
+          "fly": "250519e01f12SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H4",
+          "author_resistance_numeric_MOhm": 139.61999999999998,
+          "mean_minus_author_MOhm": -5.1795233623797685
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 134.4404766376202,
+      "mean_recorded_resistance_MOhm": null,
+      "min_commanded_resistance_MOhm": 108.09936523437514,
+      "max_commanded_resistance_MOhm": 159.41308593750009,
+      "first_sweep_resistance_MOhm": 159.41308593750009,
+      "last_sweep_resistance_MOhm": 154.59692382812506,
+      "within_file_sd_MOhm": 12.34016395566756,
+      "mean_held_baseline_mV": -60.43076993502104,
+      "max_abs_plateau_half_change_mV": 1.160980224609375
+    },
+    {
+      "file_index": 13,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250522/250521e01f20SD/250522f01c01R/250522f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 5,
+          "cell": "250522f01c01R",
+          "fly": "250521e01f20SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H5",
+          "author_resistance_numeric_MOhm": 103.3146,
+          "mean_minus_author_MOhm": -1.9713570612980789
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 101.34324293870192,
+      "mean_recorded_resistance_MOhm": null,
+      "min_commanded_resistance_MOhm": 88.61157226562496,
+      "max_commanded_resistance_MOhm": 114.21179199218741,
+      "first_sweep_resistance_MOhm": 106.01733398437489,
+      "last_sweep_resistance_MOhm": 90.20812988281264,
+      "within_file_sd_MOhm": 6.8694435801827245,
+      "mean_held_baseline_mV": -60.66471862792969,
+      "max_abs_plateau_half_change_mV": 0.491302490234375
+    },
+    {
+      "file_index": 14,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f12SD/250523f01c01L/250523f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 6,
+          "cell": "250523f01c01L",
+          "fly": "250522e01f12SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H6",
+          "author_resistance_numeric_MOhm": 92.69299999999998,
+          "mean_minus_author_MOhm": -1.9477372671273514
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 90.74526273287263,
+      "mean_recorded_resistance_MOhm": null,
+      "min_commanded_resistance_MOhm": 76.43896484375006,
+      "max_commanded_resistance_MOhm": 114.42822265624996,
+      "first_sweep_resistance_MOhm": 89.210205078125,
+      "last_sweep_resistance_MOhm": 91.99121093749994,
+      "within_file_sd_MOhm": 10.172791618793468,
+      "mean_held_baseline_mV": -59.7399881216196,
+      "max_abs_plateau_half_change_mV": 0.328765869140625
+    },
+    {
+      "file_index": 15,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250523/250522e01f16SD/250523f02c01R/250523f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 7,
+          "cell": "250523f02c01R",
+          "fly": "250522e01f16SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H7",
+          "author_resistance_numeric_MOhm": 83.6468,
+          "mean_minus_author_MOhm": -2.066463649338928
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 81.58033635066107,
+      "mean_recorded_resistance_MOhm": null,
+      "min_commanded_resistance_MOhm": 44.26745605468753,
+      "max_commanded_resistance_MOhm": 97.10656738281244,
+      "first_sweep_resistance_MOhm": 81.202392578125,
+      "last_sweep_resistance_MOhm": 44.26745605468753,
+      "within_file_sd_MOhm": 9.934358790662932,
+      "mean_held_baseline_mV": -59.218507033128006,
+      "max_abs_plateau_half_change_mV": 0.4354362487792969
+    },
+    {
+      "file_index": 16,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250526/250523e01f16SD/250526f01c01R/250526f01c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 8,
+          "cell": "250526f01c01R",
+          "fly": "250523e01f16SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "H8",
+          "author_resistance_numeric_MOhm": 82.4712,
+          "mean_minus_author_MOhm": -8.77182631460336
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 73.69937368539664,
+      "mean_recorded_resistance_MOhm": null,
+      "min_commanded_resistance_MOhm": 30.098022460937553,
+      "max_commanded_resistance_MOhm": 120.83837890624991,
+      "first_sweep_resistance_MOhm": 101.18603515625011,
+      "last_sweep_resistance_MOhm": 36.38818359374994,
+      "within_file_sd_MOhm": 23.124677650667973,
+      "mean_held_baseline_mV": -60.34895512507512,
+      "max_abs_plateau_half_change_mV": 1.18157958984375
+    },
+    {
+      "file_index": 17,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f01c01L/250611e10f01SD/250612f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/APL_SKRNAi_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 9,
+          "cell": "250612f01c01L",
+          "fly": "250611e10f01SD",
+          "state": "SD",
+          "genotype": "UAS-dicer2; UAS-mCD8-GFP; VT43924-Gal4.2 > UAS-dSK RNAi_KKline",
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "H9",
+          "author_resistance_numeric_MOhm": 78.6672,
+          "mean_minus_author_MOhm": -1.5662478515625082
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 77.10095214843749,
+      "mean_recorded_resistance_MOhm": 75.79969604446948,
+      "min_commanded_resistance_MOhm": 64.14208984375009,
+      "max_commanded_resistance_MOhm": 97.91345214843759,
+      "first_sweep_resistance_MOhm": 82.87829589843754,
+      "last_sweep_resistance_MOhm": 80.24707031250003,
+      "within_file_sd_MOhm": 8.522673623517274,
+      "mean_held_baseline_mV": -60.75092327411358,
+      "max_abs_plateau_half_change_mV": 0.7247200012207031
+    },
+    {
+      "file_index": 18,
+      "member": "Ephys_sparse coding/APL_SD_APL_SKRNAi_Fig4H-J/raw/APL_SK_RNAi_kk/250612/250612f02c01L/250611e10f08SD/250612f02c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [],
+      "mean_commanded_resistance_MOhm": 75.2518028846154,
+      "mean_recorded_resistance_MOhm": 73.88182213049578,
+      "min_commanded_resistance_MOhm": 60.48107910156247,
+      "max_commanded_resistance_MOhm": 87.52893066406259,
+      "first_sweep_resistance_MOhm": 87.52893066406259,
+      "last_sweep_resistance_MOhm": 87.10620117187504,
+      "within_file_sd_MOhm": 7.668491975638125,
+      "mean_held_baseline_mV": -60.794275371844954,
+      "max_abs_plateau_half_change_mV": 0.5856552124023438
+    },
+    {
+      "file_index": 19,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240109/240108e01f01NS/240109f01c01R/240109 f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 2,
+          "cell": "240109f01c01R",
+          "fly": "240108e01f01",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G2",
+          "author_resistance_numeric_MOhm": 125.2086,
+          "mean_minus_author_MOhm": -0.3104113356370277
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 124.89818866436298,
+      "mean_recorded_resistance_MOhm": 122.91058729700958,
+      "min_commanded_resistance_MOhm": 92.069091796875,
+      "max_commanded_resistance_MOhm": 136.5765380859375,
+      "first_sweep_resistance_MOhm": 130.609130859375,
+      "last_sweep_resistance_MOhm": 125.19287109375,
+      "within_file_sd_MOhm": 9.571174764939107,
+      "mean_held_baseline_mV": -59.731457050030045,
+      "max_abs_plateau_half_change_mV": 0.73199462890625
+    },
+    {
+      "file_index": 20,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240112/240111e01f02 NS/240112f01c01L/240112f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 3,
+          "cell": "240112f01c01L",
+          "fly": "240111e01f02",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G3",
+          "author_resistance_numeric_MOhm": 105.38019999999999,
+          "mean_minus_author_MOhm": -6.177225240384601
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 99.20297475961539,
+      "mean_recorded_resistance_MOhm": 98.97044370313573,
+      "min_commanded_resistance_MOhm": 70.1422119140625,
+      "max_commanded_resistance_MOhm": 149.4189453125,
+      "first_sweep_resistance_MOhm": 149.4189453125,
+      "last_sweep_resistance_MOhm": 103.5894775390625,
+      "within_file_sd_MOhm": 16.288326458749353,
+      "mean_held_baseline_mV": -59.56841688889723,
+      "max_abs_plateau_half_change_mV": 1.18243408203125
+    },
+    {
+      "file_index": 21,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240125/240124e01f03 SD/240125f02c01R/240125f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 5,
+          "cell": "240125f02c01R",
+          "fly": "240124e01f03",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G5",
+          "author_resistance_numeric_MOhm": 132.7882,
+          "mean_minus_author_MOhm": -1.4739957106370127
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 131.31420428936298,
+      "mean_recorded_resistance_MOhm": 129.22348768026805,
+      "min_commanded_resistance_MOhm": 103.2305908203125,
+      "max_commanded_resistance_MOhm": 160.7281494140625,
+      "first_sweep_resistance_MOhm": 160.7281494140625,
+      "last_sweep_resistance_MOhm": 113.2354736328125,
+      "within_file_sd_MOhm": 13.481539018071665,
+      "mean_held_baseline_mV": -56.58938716008113,
+      "max_abs_plateau_half_change_mV": 1.19073486328125
+    },
+    {
+      "file_index": 22,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240125/240124e05f03 NS/240125f01c01L/240125f01c01L_IC_Fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 4,
+          "cell": "240125f01c01L",
+          "fly": "240124e05f03",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G4",
+          "author_resistance_numeric_MOhm": 120.0564,
+          "mean_minus_author_MOhm": -4.94003412710336
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 115.11636587289664,
+      "mean_recorded_resistance_MOhm": 113.44340560049899,
+      "min_commanded_resistance_MOhm": 93.8232421875,
+      "max_commanded_resistance_MOhm": 135.4034423828125,
+      "first_sweep_resistance_MOhm": 122.2900390625,
+      "last_sweep_resistance_MOhm": 135.4034423828125,
+      "within_file_sd_MOhm": 10.686482537149312,
+      "mean_held_baseline_mV": -60.01498295710637,
+      "max_abs_plateau_half_change_mV": 0.9110641479492188
+    },
+    {
+      "file_index": 23,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240126/240125e01f18 NS/240126f03c01L/240126f03c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 7,
+          "cell": "240126f03c01L",
+          "fly": "240125e01f18",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G7",
+          "author_resistance_numeric_MOhm": 100.04239999999999,
+          "mean_minus_author_MOhm": -2.1945700345552694
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 97.84782996544472,
+      "mean_recorded_resistance_MOhm": 96.49431843956305,
+      "min_commanded_resistance_MOhm": 62.899169921875,
+      "max_commanded_resistance_MOhm": 119.22607421875,
+      "first_sweep_resistance_MOhm": 94.8577880859375,
+      "last_sweep_resistance_MOhm": 106.7962646484375,
+      "within_file_sd_MOhm": 13.362115135403428,
+      "mean_held_baseline_mV": -56.79846543532152,
+      "max_abs_plateau_half_change_mV": 1.0286293029785156
+    },
+    {
+      "file_index": 24,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240126/240125e01f03 NS/240126f02c01R/240126f02c01R_IC_Fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 6,
+          "cell": "240126f02c01R",
+          "fly": "240125e01f03",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G6",
+          "author_resistance_numeric_MOhm": 80.9216,
+          "mean_minus_author_MOhm": -2.9175669846754744
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 78.00403301532452,
+      "mean_recorded_resistance_MOhm": 76.92305026603798,
+      "min_commanded_resistance_MOhm": 44.639892578125,
+      "max_commanded_resistance_MOhm": 102.97119140625,
+      "first_sweep_resistance_MOhm": 53.6517333984375,
+      "last_sweep_resistance_MOhm": 84.119873046875,
+      "within_file_sd_MOhm": 12.874734143201133,
+      "mean_held_baseline_mV": -56.08775564340445,
+      "max_abs_plateau_half_change_mV": 1.07098388671875
+    },
+    {
+      "file_index": 25,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240126/240125e01f01 SD/240126f04c01R/240126f04c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 8,
+          "cell": "240126f04c01R",
+          "fly": "240125e01f01",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G8",
+          "author_resistance_numeric_MOhm": 198.688,
+          "mean_minus_author_MOhm": 0.560093825120191
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 199.24809382512018,
+      "mean_recorded_resistance_MOhm": 198.8851304505911,
+      "min_commanded_resistance_MOhm": 176.6802978515625,
+      "max_commanded_resistance_MOhm": 216.36474609375,
+      "first_sweep_resistance_MOhm": 200.755615234375,
+      "last_sweep_resistance_MOhm": 191.239013671875,
+      "within_file_sd_MOhm": 11.212463342755385,
+      "mean_held_baseline_mV": -59.31060321514423,
+      "max_abs_plateau_half_change_mV": 0.8032302856445312
+    },
+    {
+      "file_index": 26,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240201/240131e01f05 SD/240201f02c01/240201f02c01_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [],
+      "mean_commanded_resistance_MOhm": 131.58461350661057,
+      "mean_recorded_resistance_MOhm": 129.28986299458165,
+      "min_commanded_resistance_MOhm": 91.75537109375,
+      "max_commanded_resistance_MOhm": 156.1688232421875,
+      "first_sweep_resistance_MOhm": 155.0457763671875,
+      "last_sweep_resistance_MOhm": 115.7086181640625,
+      "within_file_sd_MOhm": 15.235642978335566,
+      "mean_held_baseline_mV": -58.74831918569711,
+      "max_abs_plateau_half_change_mV": 1.28277587890625
+    },
+    {
+      "file_index": 27,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240201/240131e01f12 SD/240201f03c01R/240201f03c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 11,
+          "cell": "240201f03c01R",
+          "fly": "240131e01f12 SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G11",
+          "author_resistance_numeric_MOhm": 108.5084,
+          "mean_minus_author_MOhm": -5.084233834134608
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 103.42416616586539,
+      "mean_recorded_resistance_MOhm": 101.79316599344821,
+      "min_commanded_resistance_MOhm": 71.373291015625,
+      "max_commanded_resistance_MOhm": 121.2725830078125,
+      "first_sweep_resistance_MOhm": 118.9501953125,
+      "last_sweep_resistance_MOhm": 108.8067626953125,
+      "within_file_sd_MOhm": 11.574727693443702,
+      "mean_held_baseline_mV": -61.01086073655348,
+      "max_abs_plateau_half_change_mV": 1.386474609375
+    },
+    {
+      "file_index": 28,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240201/240131e05f04 NS/240201f01c01L/240201f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 9,
+          "cell": "240201f01c01L",
+          "fly": "240131e05f04 NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G9",
+          "author_resistance_numeric_MOhm": 111.8026,
+          "mean_minus_author_MOhm": -4.517584600360578
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 107.28501539963942,
+      "mean_recorded_resistance_MOhm": 105.98752366304666,
+      "min_commanded_resistance_MOhm": 85.0189208984375,
+      "max_commanded_resistance_MOhm": 134.8651123046875,
+      "first_sweep_resistance_MOhm": 112.2686767578125,
+      "last_sweep_resistance_MOhm": 93.485107421875,
+      "within_file_sd_MOhm": 12.43096178370348,
+      "mean_held_baseline_mV": -58.979432326096756,
+      "max_abs_plateau_half_change_mV": 1.13482666015625
+    },
+    {
+      "file_index": 29,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240202/240201e29f07 NS/240202f01c01R/240202f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 12,
+          "cell": "240202f01c01R",
+          "fly": "240201e29f07 NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G12",
+          "author_resistance_numeric_MOhm": 137.6178,
+          "mean_minus_author_MOhm": -5.052468907752399
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 132.5653310922476,
+      "mean_recorded_resistance_MOhm": 131.11875503538408,
+      "min_commanded_resistance_MOhm": 110.6414794921875,
+      "max_commanded_resistance_MOhm": 157.8302001953125,
+      "first_sweep_resistance_MOhm": 140.8087158203125,
+      "last_sweep_resistance_MOhm": 130.79833984375,
+      "within_file_sd_MOhm": 9.967959300107458,
+      "mean_held_baseline_mV": -59.342437744140625,
+      "max_abs_plateau_half_change_mV": 0.9366455078125
+    },
+    {
+      "file_index": 30,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240209/240208e01f09SD/240209f01c01L/240209f01c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 13,
+          "cell": "240209f01c01R",
+          "fly": "240208e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "G13",
+          "author_resistance_numeric_MOhm": 127.3994,
+          "mean_minus_author_MOhm": -1.5034978064903868
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 125.89590219350961,
+      "mean_recorded_resistance_MOhm": 123.6737610886699,
+      "min_commanded_resistance_MOhm": 91.8914794921875,
+      "max_commanded_resistance_MOhm": 160.63232421875,
+      "first_sweep_resistance_MOhm": 128.2537841796875,
+      "last_sweep_resistance_MOhm": 117.5982666015625,
+      "within_file_sd_MOhm": 14.74152779499721,
+      "mean_held_baseline_mV": -59.394247201772835,
+      "max_abs_plateau_half_change_mV": 1.3098068237304688
+    },
+    {
+      "file_index": 31,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240212/240209e01f09SD/240212f01c01R/240212f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 14,
+          "cell": "240212f01c01R",
+          "fly": "240209e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G14",
+          "author_resistance_numeric_MOhm": 117.03939999999999,
+          "mean_minus_author_MOhm": -4.197415324519213
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 112.84198467548077,
+      "mean_recorded_resistance_MOhm": 112.02226469782603,
+      "min_commanded_resistance_MOhm": 84.8138427734375,
+      "max_commanded_resistance_MOhm": 133.355712890625,
+      "first_sweep_resistance_MOhm": 132.813720703125,
+      "last_sweep_resistance_MOhm": 121.680908203125,
+      "within_file_sd_MOhm": 11.87897560524535,
+      "mean_held_baseline_mV": -58.477296095628006,
+      "max_abs_plateau_half_change_mV": 1.087890625
+    },
+    {
+      "file_index": 32,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240220/240219e01f05SD/240220f01c01L/24022f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 16,
+          "cell": "240220f01c01L",
+          "fly": "240219e01f05SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G16",
+          "author_resistance_numeric_MOhm": 104.39859999999999,
+          "mean_minus_author_MOhm": -10.662074684495181
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 93.7365253155048,
+      "mean_recorded_resistance_MOhm": 93.46911531896065,
+      "min_commanded_resistance_MOhm": 66.8194580078125,
+      "max_commanded_resistance_MOhm": 134.0118408203125,
+      "first_sweep_resistance_MOhm": 119.9957275390625,
+      "last_sweep_resistance_MOhm": 97.7752685546875,
+      "within_file_sd_MOhm": 17.72390001116337,
+      "mean_held_baseline_mV": -58.621978759765625,
+      "max_abs_plateau_half_change_mV": 1.2008056640625
+    },
+    {
+      "file_index": 33,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240226/240223e01f18NS/240226f01c01R/240226f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 17,
+          "cell": "240226f01c01R",
+          "fly": "240223e01f18NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G17",
+          "author_resistance_numeric_MOhm": 120.5808,
+          "mean_minus_author_MOhm": -7.566414483173077
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 113.01438551682692,
+      "mean_recorded_resistance_MOhm": 111.14888002992342,
+      "min_commanded_resistance_MOhm": 52.7911376953125,
+      "max_commanded_resistance_MOhm": 169.6533203125,
+      "first_sweep_resistance_MOhm": 142.23388671875,
+      "last_sweep_resistance_MOhm": 96.75048828125,
+      "within_file_sd_MOhm": 29.232883376224503,
+      "mean_held_baseline_mV": -58.092874380258415,
+      "max_abs_plateau_half_change_mV": 1.5108680725097656
+    },
+    {
+      "file_index": 34,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240227/240226e01f01SD/240227f02c01R/240227f02c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 19,
+          "cell": "240227f02c01R",
+          "fly": "240226e01f01SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G19",
+          "author_resistance_numeric_MOhm": 118.52499999999999,
+          "mean_minus_author_MOhm": -5.278352238581718
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 113.24664776141827,
+      "mean_recorded_resistance_MOhm": 112.96360423804224,
+      "min_commanded_resistance_MOhm": 84.3804931640625,
+      "max_commanded_resistance_MOhm": 141.400146484375,
+      "first_sweep_resistance_MOhm": 84.3804931640625,
+      "last_sweep_resistance_MOhm": 132.542724609375,
+      "within_file_sd_MOhm": 12.350945100511506,
+      "mean_held_baseline_mV": -58.26822251539964,
+      "max_abs_plateau_half_change_mV": 1.3073196411132812
+    },
+    {
+      "file_index": 35,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240227/240226e01f05SD/240227f01c01L/240227f01c01L_IC_fp_0002.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 18,
+          "cell": "240227f01c01L",
+          "fly": "240226e01f05SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G18",
+          "author_resistance_numeric_MOhm": 106.43539999999999,
+          "mean_minus_author_MOhm": -12.1298861778846
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 94.30551382211539,
+      "mean_recorded_resistance_MOhm": 94.04841842362757,
+      "min_commanded_resistance_MOhm": 27.113037109375,
+      "max_commanded_resistance_MOhm": 166.09375,
+      "first_sweep_resistance_MOhm": 51.1859130859375,
+      "last_sweep_resistance_MOhm": 166.09375,
+      "within_file_sd_MOhm": 39.76827537633652,
+      "mean_held_baseline_mV": -59.98564969576322,
+      "max_abs_plateau_half_change_mV": 2.57232666015625
+    },
+    {
+      "file_index": 36,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240229/240228e01f05NS/240229f01c01R/240229f01c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 20,
+          "cell": "240229f01c01R",
+          "fly": "240228e01f05NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G20",
+          "author_resistance_numeric_MOhm": 110.0356,
+          "mean_minus_author_MOhm": -5.548342262620196
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 104.4872577373798,
+      "mean_recorded_resistance_MOhm": 103.01683627260975,
+      "min_commanded_resistance_MOhm": 69.8480224609375,
+      "max_commanded_resistance_MOhm": 143.36669921875,
+      "first_sweep_resistance_MOhm": 111.826171875,
+      "last_sweep_resistance_MOhm": 103.770751953125,
+      "within_file_sd_MOhm": 18.629268074739734,
+      "mean_held_baseline_mV": -56.2035886324369,
+      "max_abs_plateau_half_change_mV": 1.2990684509277344
+    },
+    {
+      "file_index": 37,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240304/240301e01f14NS/240304f01c01L/240304f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 21,
+          "cell": "240304f01c01L",
+          "fly": "240301e01f14NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G21",
+          "author_resistance_numeric_MOhm": 130.059,
+          "mean_minus_author_MOhm": -3.0269753230168277
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 127.03202467698317,
+      "mean_recorded_resistance_MOhm": 125.57009812582639,
+      "min_commanded_resistance_MOhm": 107.952880859375,
+      "max_commanded_resistance_MOhm": 162.39501953125,
+      "first_sweep_resistance_MOhm": 138.6431884765625,
+      "last_sweep_resistance_MOhm": 121.0272216796875,
+      "within_file_sd_MOhm": 12.851796771940693,
+      "mean_held_baseline_mV": -56.28099881685697,
+      "max_abs_plateau_half_change_mV": 1.2158851623535156
+    },
+    {
+      "file_index": 38,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240701/240628 e05f05SD/240701f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 22,
+          "cell": "240701f01c01L",
+          "fly": "240628e05f05SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "G22",
+          "author_resistance_numeric_MOhm": 125.75659999999999,
+          "mean_minus_author_MOhm": -4.345302862079322
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 121.41129713792067,
+      "mean_recorded_resistance_MOhm": 120.45274852597755,
+      "min_commanded_resistance_MOhm": 76.1029052734375,
+      "max_commanded_resistance_MOhm": 175.0006103515625,
+      "first_sweep_resistance_MOhm": 104.3017578125,
+      "last_sweep_resistance_MOhm": 76.1029052734375,
+      "within_file_sd_MOhm": 20.28840215998523,
+      "mean_held_baseline_mV": -61.8455071082482,
+      "max_abs_plateau_half_change_mV": 1.63958740234375
+    },
+    {
+      "file_index": 39,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240701/240628 e05f05SD/240701f01c01L_IC_fp after NS8593_0001.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 22,
+          "cell": "240701f01c01L",
+          "fly": "240628e05f05SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": false,
+          "author_cell": "P22",
+          "author_resistance_numeric_MOhm": 130.6268,
+          "mean_minus_author_MOhm": -3.4211537785456727
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 127.20564622145433,
+      "mean_recorded_resistance_MOhm": 125.34141422208187,
+      "min_commanded_resistance_MOhm": 109.453125,
+      "max_commanded_resistance_MOhm": 137.0648193359375,
+      "first_sweep_resistance_MOhm": 109.453125,
+      "last_sweep_resistance_MOhm": 133.4063720703125,
+      "within_file_sd_MOhm": 6.793777728172638,
+      "mean_held_baseline_mV": -61.553395197941704,
+      "max_abs_plateau_half_change_mV": 0.75946044921875
+    },
+    {
+      "file_index": 40,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240702/240701e01f16SD/240702f01c01R/240702f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 23,
+          "cell": "240702f01c01R",
+          "fly": "240701e01f16SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G23",
+          "author_resistance_numeric_MOhm": 142.4468,
+          "mean_minus_author_MOhm": -2.625421732271633
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 139.82137826772836,
+      "mean_recorded_resistance_MOhm": 139.41911391139712,
+      "min_commanded_resistance_MOhm": 97.0782470703125,
+      "max_commanded_resistance_MOhm": 166.622314453125,
+      "first_sweep_resistance_MOhm": 112.330322265625,
+      "last_sweep_resistance_MOhm": 147.0751953125,
+      "within_file_sd_MOhm": 16.41589769704994,
+      "mean_held_baseline_mV": -60.6770254281851,
+      "max_abs_plateau_half_change_mV": 0.5712203979492188
+    },
+    {
+      "file_index": 41,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240704/240703e05f20SD/240704f01c01R/240704f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 24,
+          "cell": "240704f01c01R",
+          "fly": "240703e05f20SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G24",
+          "author_resistance_numeric_MOhm": 128.0422,
+          "mean_minus_author_MOhm": -4.109235381610588
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 123.93296461838942,
+      "mean_recorded_resistance_MOhm": 123.40994995877917,
+      "min_commanded_resistance_MOhm": 89.599609375,
+      "max_commanded_resistance_MOhm": 157.3699951171875,
+      "first_sweep_resistance_MOhm": 94.27001953125,
+      "last_sweep_resistance_MOhm": 111.156005859375,
+      "within_file_sd_MOhm": 16.226436498157067,
+      "mean_held_baseline_mV": -59.17610637958233,
+      "max_abs_plateau_half_change_mV": 1.63128662109375
+    },
+    {
+      "file_index": 42,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240704/240703e01f09SD/240704f02c01R/240704f02c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 25,
+          "cell": "240704f02c01R",
+          "fly": "240703e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G25",
+          "author_resistance_numeric_MOhm": 114.27899999999998,
+          "mean_minus_author_MOhm": -4.183855581430265
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 110.09514441856972,
+      "mean_recorded_resistance_MOhm": 108.47050087128042,
+      "min_commanded_resistance_MOhm": 78.3831787109375,
+      "max_commanded_resistance_MOhm": 155.2593994140625,
+      "first_sweep_resistance_MOhm": 108.8720703125,
+      "last_sweep_resistance_MOhm": 119.4464111328125,
+      "within_file_sd_MOhm": 15.908047207631492,
+      "mean_held_baseline_mV": -59.90758338341346,
+      "max_abs_plateau_half_change_mV": 0.84332275390625
+    },
+    {
+      "file_index": 43,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240704/240703e01f09SD/240704f02c01R/240704f02c01R_IC_fp_after NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 25,
+          "cell": "240704f02c01R",
+          "fly": "240703e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P25",
+          "author_resistance_numeric_MOhm": 142.2286,
+          "mean_minus_author_MOhm": -8.704664828725953
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 133.52393517127405,
+      "mean_recorded_resistance_MOhm": 132.93792022287715,
+      "min_commanded_resistance_MOhm": 116.8048095703125,
+      "max_commanded_resistance_MOhm": 148.7109375,
+      "first_sweep_resistance_MOhm": 133.048095703125,
+      "last_sweep_resistance_MOhm": 131.229248046875,
+      "within_file_sd_MOhm": 8.047907863137041,
+      "mean_held_baseline_mV": -59.76516606257512,
+      "max_abs_plateau_half_change_mV": 0.4232177734375
+    },
+    {
+      "file_index": 44,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240708/240705e01f09SD/240708f01c01R/240708f01c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 26,
+          "cell": "240708f01c01R",
+          "fly": "240705e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G26",
+          "author_resistance_numeric_MOhm": 107.2544,
+          "mean_minus_author_MOhm": -10.74692554086539
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 96.50747445913461,
+      "mean_recorded_resistance_MOhm": 96.22131391131003,
+      "min_commanded_resistance_MOhm": 83.8525390625,
+      "max_commanded_resistance_MOhm": 110.3619384765625,
+      "first_sweep_resistance_MOhm": 101.74560546875,
+      "last_sweep_resistance_MOhm": 109.403076171875,
+      "within_file_sd_MOhm": 7.49187735290978,
+      "mean_held_baseline_mV": -57.38763427734375,
+      "max_abs_plateau_half_change_mV": 1.01507568359375
+    },
+    {
+      "file_index": 45,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240708/240705e01f09SD/240708f01c01R/240708f01c01R_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 26,
+          "cell": "240708f01c01R",
+          "fly": "240705e01f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P26",
+          "author_resistance_numeric_MOhm": 78.9768,
+          "mean_minus_author_MOhm": -1.4836547175480774
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 77.49314528245192,
+      "mean_recorded_resistance_MOhm": 76.29926827629713,
+      "min_commanded_resistance_MOhm": 70.3131103515625,
+      "max_commanded_resistance_MOhm": 82.6483154296875,
+      "first_sweep_resistance_MOhm": 82.6483154296875,
+      "last_sweep_resistance_MOhm": 73.3489990234375,
+      "within_file_sd_MOhm": 3.1943252517007967,
+      "mean_held_baseline_mV": -61.189646794245796,
+      "max_abs_plateau_half_change_mV": 0.5446853637695312
+    },
+    {
+      "file_index": 46,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240711/240710e01f07NS/240711f02c01L/240711f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 27,
+          "cell": "240711f02c01L",
+          "fly": "240710e01f07NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G27",
+          "author_resistance_numeric_MOhm": 120.79339999999999,
+          "mean_minus_author_MOhm": -4.232848429987968
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 116.56055157001202,
+      "mean_recorded_resistance_MOhm": 114.5925818339668,
+      "min_commanded_resistance_MOhm": 73.138427734375,
+      "max_commanded_resistance_MOhm": 146.3037109375,
+      "first_sweep_resistance_MOhm": 117.1868896484375,
+      "last_sweep_resistance_MOhm": 94.3743896484375,
+      "within_file_sd_MOhm": 15.84523001179933,
+      "mean_held_baseline_mV": -59.17531996506911,
+      "max_abs_plateau_half_change_mV": 3.23406982421875
+    },
+    {
+      "file_index": 47,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240712/240711e05f07NS/240712f02c01L/240712f02c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 29,
+          "cell": "240712f02c01L",
+          "fly": "240711e05f07NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G29",
+          "author_resistance_numeric_MOhm": 134.0346,
+          "mean_minus_author_MOhm": -2.613771987680309
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 131.4208280123197,
+      "mean_recorded_resistance_MOhm": 129.56623699795776,
+      "min_commanded_resistance_MOhm": 118.6968994140625,
+      "max_commanded_resistance_MOhm": 150.679931640625,
+      "first_sweep_resistance_MOhm": 126.77001953125,
+      "last_sweep_resistance_MOhm": 125.2764892578125,
+      "within_file_sd_MOhm": 8.823691830393553,
+      "mean_held_baseline_mV": -57.56709641676683,
+      "max_abs_plateau_half_change_mV": 0.76177978515625
+    },
+    {
+      "file_index": 48,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240712/240711e05f07NS/240712f02c01L/240712f02c01L_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 29,
+          "cell": "240712f02c01L",
+          "fly": "240711e05f07NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P29",
+          "author_resistance_numeric_MOhm": 109.22459999999998,
+          "mean_minus_author_MOhm": -1.0145968073918112
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 108.21000319260817,
+      "mean_recorded_resistance_MOhm": 106.67476333977386,
+      "min_commanded_resistance_MOhm": 88.670654296875,
+      "max_commanded_resistance_MOhm": 116.9207763671875,
+      "first_sweep_resistance_MOhm": 107.3834228515625,
+      "last_sweep_resistance_MOhm": 102.0184326171875,
+      "within_file_sd_MOhm": 6.377391681067382,
+      "mean_held_baseline_mV": -61.15431213378906,
+      "max_abs_plateau_half_change_mV": 0.3770751953125
+    },
+    {
+      "file_index": 49,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240712/240711e05f12NS/240712f01c01R/240712f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 28,
+          "cell": "240712f01c01R",
+          "fly": "240711e05f12NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G28",
+          "author_resistance_numeric_MOhm": 136.62839999999997,
+          "mean_minus_author_MOhm": -4.472755656550447
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 132.15564434344952,
+      "mean_recorded_resistance_MOhm": 130.2218909444314,
+      "min_commanded_resistance_MOhm": 117.9058837890625,
+      "max_commanded_resistance_MOhm": 141.1334228515625,
+      "first_sweep_resistance_MOhm": 131.91162109375,
+      "last_sweep_resistance_MOhm": 132.2381591796875,
+      "within_file_sd_MOhm": 5.932320094626034,
+      "mean_held_baseline_mV": -59.42557466947115,
+      "max_abs_plateau_half_change_mV": 0.6610107421875
+    },
+    {
+      "file_index": 50,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240715/240712e01f14NS/240715f02c01L/240715f02c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 30,
+          "cell": "240715f02c01L",
+          "fly": "240712e01f14NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G30",
+          "author_resistance_numeric_MOhm": 128.7252,
+          "mean_minus_author_MOhm": -1.427766293569718
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 127.29743370643028,
+      "mean_recorded_resistance_MOhm": 125.1242571733662,
+      "min_commanded_resistance_MOhm": 113.4100341796875,
+      "max_commanded_resistance_MOhm": 145.6243896484375,
+      "first_sweep_resistance_MOhm": 139.47509765625,
+      "last_sweep_resistance_MOhm": 113.4100341796875,
+      "within_file_sd_MOhm": 8.825931265243854,
+      "mean_held_baseline_mV": -59.69140977125902,
+      "max_abs_plateau_half_change_mV": 0.51177978515625
+    },
+    {
+      "file_index": 51,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240715/240712e01f14NS/240715f02c01L/240715f02c01L_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 30,
+          "cell": "240715f02c01L",
+          "fly": "240712e01f14NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P30",
+          "author_resistance_numeric_MOhm": 134.87699999999998,
+          "mean_minus_author_MOhm": -0.6381553485576603
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 134.23884465144232,
+      "mean_recorded_resistance_MOhm": 132.25931543746492,
+      "min_commanded_resistance_MOhm": 127.3834228515625,
+      "max_commanded_resistance_MOhm": 142.823486328125,
+      "first_sweep_resistance_MOhm": 132.7813720703125,
+      "last_sweep_resistance_MOhm": 139.5050048828125,
+      "within_file_sd_MOhm": 3.509589307781615,
+      "mean_held_baseline_mV": -61.80216158353365,
+      "max_abs_plateau_half_change_mV": 0.17901611328125
+    },
+    {
+      "file_index": 52,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240716/240715e01f07NS/240716f01c01L/240716f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 31,
+          "cell": "240716f01c01L",
+          "fly": "240715e01f07NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G31",
+          "author_resistance_numeric_MOhm": 115.88459999999999,
+          "mean_minus_author_MOhm": -0.23077262620191163
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 115.65382737379808,
+      "mean_recorded_resistance_MOhm": 114.77720476001308,
+      "min_commanded_resistance_MOhm": 103.76220703125,
+      "max_commanded_resistance_MOhm": 125.3472900390625,
+      "first_sweep_resistance_MOhm": 110.5499267578125,
+      "last_sweep_resistance_MOhm": 114.99267578125,
+      "within_file_sd_MOhm": 5.1445541419204,
+      "mean_held_baseline_mV": -59.49556321364183,
+      "max_abs_plateau_half_change_mV": 0.43048095703125
+    },
+    {
+      "file_index": 53,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240716/240715e01f07NS/240716f01c02R/240716f01c02R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 32,
+          "cell": "240716f01c02R",
+          "fly": "240715e01f07NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G32",
+          "author_resistance_numeric_MOhm": 130.9136,
+          "mean_minus_author_MOhm": -1.345447205528842
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 129.56815279447116,
+      "mean_recorded_resistance_MOhm": 127.92411737868636,
+      "min_commanded_resistance_MOhm": 118.0902099609375,
+      "max_commanded_resistance_MOhm": 143.0914306640625,
+      "first_sweep_resistance_MOhm": 138.8946533203125,
+      "last_sweep_resistance_MOhm": 118.0902099609375,
+      "within_file_sd_MOhm": 7.047484655357558,
+      "mean_held_baseline_mV": -59.71726285494291,
+      "max_abs_plateau_half_change_mV": 0.59051513671875
+    },
+    {
+      "file_index": 54,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240729_fig_NS/240726e01f18NS/240729f02c01R/240729f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 33,
+          "cell": "240729f02c01R",
+          "fly": "240726e01f18NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G33",
+          "author_resistance_numeric_MOhm": 132.76,
+          "mean_minus_author_MOhm": -3.2480934495192173
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 129.51190655048077,
+      "mean_recorded_resistance_MOhm": 127.51564490635602,
+      "min_commanded_resistance_MOhm": 106.905517578125,
+      "max_commanded_resistance_MOhm": 149.5294189453125,
+      "first_sweep_resistance_MOhm": 129.31396484375,
+      "last_sweep_resistance_MOhm": 132.203369140625,
+      "within_file_sd_MOhm": 10.927675691597697,
+      "mean_held_baseline_mV": -59.4225334754357,
+      "max_abs_plateau_half_change_mV": 0.88836669921875
+    },
+    {
+      "file_index": 55,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240729_fig_NS/240726e01f18NS/240729f02c01R/240729f02c01R_IC_fp_NS8593.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 33,
+          "cell": "240729f02c01R",
+          "fly": "240726e01f18NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P33",
+          "author_resistance_numeric_MOhm": 103.02519999999998,
+          "mean_minus_author_MOhm": -0.6215181715745075
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 102.40368182842548,
+      "mean_recorded_resistance_MOhm": 100.8479456395741,
+      "min_commanded_resistance_MOhm": 96.2091064453125,
+      "max_commanded_resistance_MOhm": 108.7237548828125,
+      "first_sweep_resistance_MOhm": 99.3634033203125,
+      "last_sweep_resistance_MOhm": 101.9696044921875,
+      "within_file_sd_MOhm": 3.6385250380092105,
+      "mean_held_baseline_mV": -60.5645986703726,
+      "max_abs_plateau_half_change_mV": 0.312744140625
+    },
+    {
+      "file_index": 56,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240801/240731e05f09SD/240801f01c01R/240801f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 34,
+          "cell": "240801f01c01R",
+          "fly": "240731e05f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G34",
+          "author_resistance_numeric_MOhm": 124.8874,
+          "mean_minus_author_MOhm": -5.91764996243991
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 118.96975003756009,
+      "mean_recorded_resistance_MOhm": 117.14484410025669,
+      "min_commanded_resistance_MOhm": 98.311767578125,
+      "max_commanded_resistance_MOhm": 151.44775390625,
+      "first_sweep_resistance_MOhm": 113.9080810546875,
+      "last_sweep_resistance_MOhm": 98.311767578125,
+      "within_file_sd_MOhm": 12.040253840176339,
+      "mean_held_baseline_mV": -59.7713388296274,
+      "max_abs_plateau_half_change_mV": 0.8227005004882812
+    },
+    {
+      "file_index": 57,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240801/240731e05f09SD/240801f01c01R/240801f01c01R_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 34,
+          "cell": "240801f01c01R",
+          "fly": "240731e05f09SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P34",
+          "author_resistance_numeric_MOhm": 107.3808,
+          "mean_minus_author_MOhm": -12.563154266826913
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 94.81764573317308,
+      "mean_recorded_resistance_MOhm": 93.5100154351235,
+      "min_commanded_resistance_MOhm": 43.7109375,
+      "max_commanded_resistance_MOhm": 134.9188232421875,
+      "first_sweep_resistance_MOhm": 106.3079833984375,
+      "last_sweep_resistance_MOhm": 124.3255615234375,
+      "within_file_sd_MOhm": 23.143994227948305,
+      "mean_held_baseline_mV": -58.23130915715144,
+      "max_abs_plateau_half_change_mV": 2.3237876892089844
+    },
+    {
+      "file_index": 58,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240805_fig_SD_fig3B,C/240802e05f16SD_fig4B,C/240805f01c01L/240805f01c01L_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 35,
+          "cell": "240805f01c01L",
+          "fly": "240802e05f16SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P35",
+          "author_resistance_numeric_MOhm": 90.6856,
+          "mean_minus_author_MOhm": -2.1252080603966306
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 88.56039193960336,
+      "mean_recorded_resistance_MOhm": 87.18247998873328,
+      "min_commanded_resistance_MOhm": 80.5828857421875,
+      "max_commanded_resistance_MOhm": 97.4505615234375,
+      "first_sweep_resistance_MOhm": 88.6614990234375,
+      "last_sweep_resistance_MOhm": 80.5828857421875,
+      "within_file_sd_MOhm": 3.6786951964165184,
+      "mean_held_baseline_mV": -60.398673424353966,
+      "max_abs_plateau_half_change_mV": 0.16619873046875
+    },
+    {
+      "file_index": 59,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240805_fig_SD_fig3B,C/240802e05f16SD_fig4B,C/240805f01c01L/240805f01c01L_IC_fp_0000_fig4B,C.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 35,
+          "cell": "240805f01c01L",
+          "fly": "240802e05f16SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G35",
+          "author_resistance_numeric_MOhm": 101.25439999999999,
+          "mean_minus_author_MOhm": 6.13207460937501
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 107.386474609375,
+      "mean_recorded_resistance_MOhm": 105.47638228299431,
+      "min_commanded_resistance_MOhm": 80.30517578125,
+      "max_commanded_resistance_MOhm": 140.616455078125,
+      "first_sweep_resistance_MOhm": 107.5537109375,
+      "last_sweep_resistance_MOhm": 125.1446533203125,
+      "within_file_sd_MOhm": 13.940830741498006,
+      "mean_held_baseline_mV": -60.51571185772236,
+      "max_abs_plateau_half_change_mV": 0.80657958984375
+    },
+    {
+      "file_index": 60,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240920/240919e01f16SD/240920f01c01L/240920f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 36,
+          "cell": "240920f01c01L",
+          "fly": "240919e01f16SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G36",
+          "author_resistance_numeric_MOhm": 106.10099999999998,
+          "mean_minus_author_MOhm": -5.981746694711518
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 100.11925330528847,
+      "mean_recorded_resistance_MOhm": 98.68160190408074,
+      "min_commanded_resistance_MOhm": 73.2135009765625,
+      "max_commanded_resistance_MOhm": 136.93115234375,
+      "first_sweep_resistance_MOhm": 101.08154296875,
+      "last_sweep_resistance_MOhm": 91.9866943359375,
+      "within_file_sd_MOhm": 12.868657751430037,
+      "mean_held_baseline_mV": -61.05394216684195,
+      "max_abs_plateau_half_change_mV": 0.970703125
+    },
+    {
+      "file_index": 61,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240920/240919e01f16SD/240920f01c01L/240920f01c01L_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 36,
+          "cell": "240920f01c01L",
+          "fly": "240919e01f16SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P36",
+          "author_resistance_numeric_MOhm": 122.2786,
+          "mean_minus_author_MOhm": -1.2575522611177803
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 121.02104773888222,
+      "mean_recorded_resistance_MOhm": 119.13542081671237,
+      "min_commanded_resistance_MOhm": 111.046142578125,
+      "max_commanded_resistance_MOhm": 130.8087158203125,
+      "first_sweep_resistance_MOhm": 111.046142578125,
+      "last_sweep_resistance_MOhm": 120.95947265625,
+      "within_file_sd_MOhm": 4.884897163407441,
+      "mean_held_baseline_mV": -60.224353496844955,
+      "max_abs_plateau_half_change_mV": 0.29438018798828125
+    },
+    {
+      "file_index": 62,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240930/240927e05f14NS/240930f01c01R/240930f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 37,
+          "cell": "240930f01c01R",
+          "fly": "240927e05f14NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G37",
+          "author_resistance_numeric_MOhm": 137.37159999999997,
+          "mean_minus_author_MOhm": -1.4921538236177696
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 135.8794461763822,
+      "mean_recorded_resistance_MOhm": 133.9242355612147,
+      "min_commanded_resistance_MOhm": 117.608642578125,
+      "max_commanded_resistance_MOhm": 149.3756103515625,
+      "first_sweep_resistance_MOhm": 136.44287109375,
+      "last_sweep_resistance_MOhm": 139.0740966796875,
+      "within_file_sd_MOhm": 7.76439708144437,
+      "mean_held_baseline_mV": -58.95180452786959,
+      "max_abs_plateau_half_change_mV": 0.6446533203125
+    },
+    {
+      "file_index": 63,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/240930/240927e05f14NS/240930f01c01R/240930f01c01R_IC_Fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 37,
+          "cell": "240930f01c01R",
+          "fly": "240927e05f14NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P37",
+          "author_resistance_numeric_MOhm": 106.2906,
+          "mean_minus_author_MOhm": -2.2755900465745214
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 104.01500995342548,
+      "mean_recorded_resistance_MOhm": 102.53695510231957,
+      "min_commanded_resistance_MOhm": 95.794677734375,
+      "max_commanded_resistance_MOhm": 115.8416748046875,
+      "first_sweep_resistance_MOhm": 103.3203125,
+      "last_sweep_resistance_MOhm": 96.1773681640625,
+      "within_file_sd_MOhm": 5.991613666505239,
+      "mean_held_baseline_mV": -60.90505629319411,
+      "max_abs_plateau_half_change_mV": 0.51629638671875
+    },
+    {
+      "file_index": 64,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241001/240930e01f20SD/241001f01c01R/241001f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 38,
+          "cell": "241001f01c01R",
+          "fly": "240930e01f20SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G38",
+          "author_resistance_numeric_MOhm": 123.64280000000001,
+          "mean_minus_author_MOhm": -2.5644496394230885
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 121.07835036057692,
+      "mean_recorded_resistance_MOhm": 119.02457597631809,
+      "min_commanded_resistance_MOhm": 86.2152099609375,
+      "max_commanded_resistance_MOhm": 150.7183837890625,
+      "first_sweep_resistance_MOhm": 150.7183837890625,
+      "last_sweep_resistance_MOhm": 112.1258544921875,
+      "within_file_sd_MOhm": 14.464819094350954,
+      "mean_held_baseline_mV": -60.03373835637019,
+      "max_abs_plateau_half_change_mV": 0.9175491333007812
+    },
+    {
+      "file_index": 65,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241001/240930e01f20SD/241001f01c01R/241001f01c01R_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 38,
+          "cell": "241001f01c01R",
+          "fly": "240930e01f20SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "P38",
+          "author_resistance_numeric_MOhm": 129.8912,
+          "mean_minus_author_MOhm": -1.9522163762019176
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 127.93898362379808,
+      "mean_recorded_resistance_MOhm": 126.08628287008824,
+      "min_commanded_resistance_MOhm": 119.4720458984375,
+      "max_commanded_resistance_MOhm": 138.916015625,
+      "first_sweep_resistance_MOhm": 121.5484619140625,
+      "last_sweep_resistance_MOhm": 131.6680908203125,
+      "within_file_sd_MOhm": 5.357264704685339,
+      "mean_held_baseline_mV": -60.960803692157455,
+      "max_abs_plateau_half_change_mV": 0.26659393310546875
+    },
+    {
+      "file_index": 66,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241024/241023e01f16NS/241024f01c01R/241023f01c01R_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 39,
+          "cell": "241024f01c01R",
+          "fly": "241023e01f16NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G39",
+          "author_resistance_numeric_MOhm": 127.6206,
+          "mean_minus_author_MOhm": -4.530483939302883
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 123.09011606069711,
+      "mean_recorded_resistance_MOhm": 122.80869694915188,
+      "min_commanded_resistance_MOhm": 95.0830078125,
+      "max_commanded_resistance_MOhm": 145.23681640625,
+      "first_sweep_resistance_MOhm": 131.0284423828125,
+      "last_sweep_resistance_MOhm": 110.738525390625,
+      "within_file_sd_MOhm": 13.029504717093968,
+      "mean_held_baseline_mV": -59.92596905048077,
+      "max_abs_plateau_half_change_mV": 0.90838623046875
+    },
+    {
+      "file_index": 67,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241024/241023e01f16NS/241024f01c01R/241023f01c01R_IC_fp_NS8593_0000.abf",
+      "drug_filename_category": "after_NS8593_explicit_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 39,
+          "cell": "241024f01c01R",
+          "fly": "241023e01f16NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "P39",
+          "author_resistance_numeric_MOhm": 102.36079999999998,
+          "mean_minus_author_MOhm": -1.0342008789062334
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 101.32659912109375,
+      "mean_recorded_resistance_MOhm": 101.09137601929046,
+      "min_commanded_resistance_MOhm": 89.2333984375,
+      "max_commanded_resistance_MOhm": 128.0242919921875,
+      "first_sweep_resistance_MOhm": 105.526123046875,
+      "last_sweep_resistance_MOhm": 95.1837158203125,
+      "within_file_sd_MOhm": 6.7563474230178,
+      "mean_held_baseline_mV": -60.61578017014723,
+      "max_abs_plateau_half_change_mV": 0.46856689453125
+    },
+    {
+      "file_index": 68,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241029/241028e01f03NS/241029f01c01L/241029f01c0L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 40,
+          "cell": "241029f01c01L",
+          "fly": "241028e01f03NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G40",
+          "author_resistance_numeric_MOhm": 198.7428,
+          "mean_minus_author_MOhm": -3.2192826847956724
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 195.52351731520432,
+      "mean_recorded_resistance_MOhm": 192.48405747685527,
+      "min_commanded_resistance_MOhm": 142.0703125,
+      "max_commanded_resistance_MOhm": 209.16748046875,
+      "first_sweep_resistance_MOhm": 200.628662109375,
+      "last_sweep_resistance_MOhm": 195.1995849609375,
+      "within_file_sd_MOhm": 14.340026454813943,
+      "mean_held_baseline_mV": -62.39984130859375,
+      "max_abs_plateau_half_change_mV": 0.892822265625
+    },
+    {
+      "file_index": 69,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/241029/241028e01f03NS/241029f01c01L/241029f01c0L_IC_FP_NS_0001.abf",
+      "drug_filename_category": "ambiguous_NS_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 40,
+          "cell": "241029f01c01L",
+          "fly": "241028e01f03NS",
+          "state": "NS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": null,
+          "author_resistance_numeric_MOhm": null,
+          "mean_minus_author_MOhm": null
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 124.42481407752403,
+      "mean_recorded_resistance_MOhm": 122.2808738480951,
+      "min_commanded_resistance_MOhm": 112.8271484375,
+      "max_commanded_resistance_MOhm": 134.476318359375,
+      "first_sweep_resistance_MOhm": 121.10595703125,
+      "last_sweep_resistance_MOhm": 128.0584716796875,
+      "within_file_sd_MOhm": 5.288659718774929,
+      "mean_held_baseline_mV": -60.72481830303486,
+      "max_abs_plateau_half_change_mV": 0.3188629150390625
+    },
+    {
+      "file_index": 70,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251031 RS/251030e04f14RS/251031f01c01L/251031f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 41,
+          "cell": "251031f01c01L",
+          "fly": "251030e04f14RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G41",
+          "author_resistance_numeric_MOhm": 144.47979999999998,
+          "mean_minus_author_MOhm": -6.663074489182662
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 137.81672551081732,
+      "mean_recorded_resistance_MOhm": 136.95597002044192,
+      "min_commanded_resistance_MOhm": 112.2186279296875,
+      "max_commanded_resistance_MOhm": 155.1849365234375,
+      "first_sweep_resistance_MOhm": 125.47607421875,
+      "last_sweep_resistance_MOhm": 150.2862548828125,
+      "within_file_sd_MOhm": 12.469436938409237,
+      "mean_held_baseline_mV": -60.535491943359375,
+      "max_abs_plateau_half_change_mV": 0.80157470703125
+    },
+    {
+      "file_index": 71,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251114 RS/251112e01f14RS/251114f01c01R/251114_f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 42,
+          "cell": "251114f01c01R",
+          "fly": "251112e01f14RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": false,
+          "directory_exact_match": true,
+          "author_cell": "G42",
+          "author_resistance_numeric_MOhm": 145.256,
+          "mean_minus_author_MOhm": -1.859628305288453
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 143.39637169471155,
+      "mean_recorded_resistance_MOhm": 142.24234359772458,
+      "min_commanded_resistance_MOhm": 126.585693359375,
+      "max_commanded_resistance_MOhm": 166.124267578125,
+      "first_sweep_resistance_MOhm": 155.0,
+      "last_sweep_resistance_MOhm": 138.5321044921875,
+      "within_file_sd_MOhm": 9.742257934102977,
+      "mean_held_baseline_mV": -59.57699467585637,
+      "max_abs_plateau_half_change_mV": 0.5212936401367188
+    },
+    {
+      "file_index": 72,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251117 RS/251114e29f05RS/251117f02c01R/251117f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 44,
+          "cell": "251117f02c01R",
+          "fly": "251114e29f05RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G44",
+          "author_resistance_numeric_MOhm": 130.62539999999998,
+          "mean_minus_author_MOhm": -2.173721063701919
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 128.45167893629807,
+      "mean_recorded_resistance_MOhm": 127.77051932668003,
+      "min_commanded_resistance_MOhm": 110.0433349609375,
+      "max_commanded_resistance_MOhm": 150.15869140625,
+      "first_sweep_resistance_MOhm": 116.7242431640625,
+      "last_sweep_resistance_MOhm": 134.8004150390625,
+      "within_file_sd_MOhm": 9.751938485517451,
+      "mean_held_baseline_mV": -59.42877432016226,
+      "max_abs_plateau_half_change_mV": 1.9161453247070312
+    },
+    {
+      "file_index": 73,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251117 RS/251114e29f18RS/251117f01c01L/251117f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 43,
+          "cell": "251117f01c01L",
+          "fly": "251114e29f18RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G43",
+          "author_resistance_numeric_MOhm": 162.32459999999998,
+          "mean_minus_author_MOhm": -4.371883466045659
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 157.95271653395432,
+      "mean_recorded_resistance_MOhm": 155.93694135401677,
+      "min_commanded_resistance_MOhm": 130.531005859375,
+      "max_commanded_resistance_MOhm": 171.6473388671875,
+      "first_sweep_resistance_MOhm": 163.1036376953125,
+      "last_sweep_resistance_MOhm": 162.9449462890625,
+      "within_file_sd_MOhm": 9.519117850495432,
+      "mean_held_baseline_mV": -59.10330552321214,
+      "max_abs_plateau_half_change_mV": 0.9572219848632812
+    },
+    {
+      "file_index": 74,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251118 RS/251116e01f12 RS/251118f01c01L/251118f01c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 45,
+          "cell": "251118f01c01L",
+          "fly": "251116e01f12RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G45",
+          "author_resistance_numeric_MOhm": 172.36979999999997,
+          "mean_minus_author_MOhm": -3.3689924579326487
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 169.00080754206732,
+      "mean_recorded_resistance_MOhm": 166.9638233525469,
+      "min_commanded_resistance_MOhm": 157.623291015625,
+      "max_commanded_resistance_MOhm": 192.0880126953125,
+      "first_sweep_resistance_MOhm": 167.989501953125,
+      "last_sweep_resistance_MOhm": 188.134765625,
+      "within_file_sd_MOhm": 9.52912311731439,
+      "mean_held_baseline_mV": -59.40594482421875,
+      "max_abs_plateau_half_change_mV": 1.23724365234375
+    },
+    {
+      "file_index": 75,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/251118 RS/251116e05f09 RS/251118f02c01R/251118f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 46,
+          "cell": "251118f02c01R",
+          "fly": "251116e05f09RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G46",
+          "author_resistance_numeric_MOhm": 170.82659999999998,
+          "mean_minus_author_MOhm": -3.5953894381009377
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 167.23121056189905,
+      "mean_recorded_resistance_MOhm": 164.39461570562696,
+      "min_commanded_resistance_MOhm": 151.395263671875,
+      "max_commanded_resistance_MOhm": 184.6807861328125,
+      "first_sweep_resistance_MOhm": 165.6463623046875,
+      "last_sweep_resistance_MOhm": 175.9075927734375,
+      "within_file_sd_MOhm": 8.4037264632369,
+      "mean_held_baseline_mV": -61.79158959021935,
+      "max_abs_plateau_half_change_mV": 1.0492477416992188
+    },
+    {
+      "file_index": 76,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260105 RS/260102e01f01RS/260105f01c01L/260105f01c01L_IC_fp_0001.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 47,
+          "cell": "260105f01c01L",
+          "fly": "260102e01f01RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G47",
+          "author_resistance_numeric_MOhm": 144.9958,
+          "mean_minus_author_MOhm": -6.5704366060697055
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 138.4253633939303,
+      "mean_recorded_resistance_MOhm": 136.12961524783884,
+      "min_commanded_resistance_MOhm": 107.119140625,
+      "max_commanded_resistance_MOhm": 168.973388671875,
+      "first_sweep_resistance_MOhm": 141.441650390625,
+      "last_sweep_resistance_MOhm": 158.033447265625,
+      "within_file_sd_MOhm": 15.524727171505212,
+      "mean_held_baseline_mV": -62.8642096886268,
+      "max_abs_plateau_half_change_mV": 1.1265335083007812
+    },
+    {
+      "file_index": 77,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260105 RS/260102e01f14RS/260105f02c01R/260105f02c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 48,
+          "cell": "260105f02c01R",
+          "fly": "260102e01f14RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G48",
+          "author_resistance_numeric_MOhm": 135.85219999999998,
+          "mean_minus_author_MOhm": -5.754872400841322
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 130.09732759915866,
+      "mean_recorded_resistance_MOhm": 127.89452490113473,
+      "min_commanded_resistance_MOhm": 110.908203125,
+      "max_commanded_resistance_MOhm": 146.6876220703125,
+      "first_sweep_resistance_MOhm": 139.378662109375,
+      "last_sweep_resistance_MOhm": 140.2716064453125,
+      "within_file_sd_MOhm": 11.061657453541025,
+      "mean_held_baseline_mV": -58.56707294170673,
+      "max_abs_plateau_half_change_mV": 0.779296875
+    },
+    {
+      "file_index": 78,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260106 RS_fig4c/260104e05f14RS/260106f02c01L/260106f02c01L_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 50,
+          "cell": "260106f02c01L",
+          "fly": "260104e05f14RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G50",
+          "author_resistance_numeric_MOhm": 222.952,
+          "mean_minus_author_MOhm": -3.0363458909254746
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 219.91565410907452,
+      "mean_recorded_resistance_MOhm": 216.07317799841712,
+      "min_commanded_resistance_MOhm": 204.3011474609375,
+      "max_commanded_resistance_MOhm": 235.5047607421875,
+      "first_sweep_resistance_MOhm": 224.2974853515625,
+      "last_sweep_resistance_MOhm": 232.9083251953125,
+      "within_file_sd_MOhm": 9.069486048138694,
+      "mean_held_baseline_mV": -61.705606313852165,
+      "max_abs_plateau_half_change_mV": 0.7518386840820312
+    },
+    {
+      "file_index": 79,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260106 RS_fig4c/260104e05f12RS_fig4c/260106f01c01L/260106f01c01L_IC_fp_0000_fig4c.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 49,
+          "cell": "260106f01c01L",
+          "fly": "260104e05f12RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G49",
+          "author_resistance_numeric_MOhm": 136.03879999999998,
+          "mean_minus_author_MOhm": -6.473605063100933
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 129.56519493689905,
+      "mean_recorded_resistance_MOhm": 127.3168600317324,
+      "min_commanded_resistance_MOhm": 65.196533203125,
+      "max_commanded_resistance_MOhm": 150.1458740234375,
+      "first_sweep_resistance_MOhm": 133.9300537109375,
+      "last_sweep_resistance_MOhm": 145.28564453125,
+      "within_file_sd_MOhm": 15.650869083531225,
+      "mean_held_baseline_mV": -59.34651066706731,
+      "max_abs_plateau_half_change_mV": 2.3310546875
+    },
+    {
+      "file_index": 80,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260107 RS/260105e01f05RS/260107f01c01R/260107f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 51,
+          "cell": "260107f01c01R",
+          "fly": "260105e01f05RS",
+          "state": "RS",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G51",
+          "author_resistance_numeric_MOhm": 177.87977218627918,
+          "mean_minus_author_MOhm": -8.67060001079841
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 169.20917217548077,
+      "mean_recorded_resistance_MOhm": 166.28127342970572,
+      "min_commanded_resistance_MOhm": 142.4237060546875,
+      "max_commanded_resistance_MOhm": 188.800048828125,
+      "first_sweep_resistance_MOhm": 172.266845703125,
+      "last_sweep_resistance_MOhm": 176.26953125,
+      "within_file_sd_MOhm": 11.260460615281561,
+      "mean_held_baseline_mV": -59.14971454326923,
+      "max_abs_plateau_half_change_mV": 1.7520751953125
+    },
+    {
+      "file_index": 81,
+      "member": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/raw/260109/260107e01f14SD/260109f01c01R/260109f01c01R_IC_fp_0000.abf",
+      "drug_filename_category": "baseline_filename",
+      "comparisons": [
+        {
+          "workbook": "Ephys_sparse coding/APL_NS_SD_RS_Fig4B-G/APL_NS_SD_RS_final.xlsx",
+          "sheet": "intrinsic",
+          "row": 52,
+          "cell": "260109f01c01R",
+          "fly": "260107e01f14SD",
+          "state": "SD",
+          "genotype": null,
+          "filename_prefix_agrees": true,
+          "directory_exact_match": true,
+          "author_cell": "G52",
+          "author_resistance_numeric_MOhm": 146.9494,
+          "mean_minus_author_MOhm": -6.4006704702524075
+        }
+      ],
+      "mean_commanded_resistance_MOhm": 140.5487295297476,
+      "mean_recorded_resistance_MOhm": 138.66756471410434,
+      "min_commanded_resistance_MOhm": 100.8319091796875,
+      "max_commanded_resistance_MOhm": 183.4466552734375,
+      "first_sweep_resistance_MOhm": 128.792724609375,
+      "last_sweep_resistance_MOhm": 135.0689697265625,
+      "within_file_sd_MOhm": 19.821704434818212,
+      "mean_held_baseline_mV": -59.84078627366286,
+      "max_abs_plateau_half_change_mV": 1.209716796875
+    }
+  ],
+  "scope": "All sweeps checked independently by integer slices and compensated scalar sums, using the same pyABF reader. This is not independent ABF binary decoding. Source comparisons use the declared all-sweep 100 ms windows, not a claim to reproduce author cursor/sweep selection. Filename ambiguities retained; no parameter fit or statistical condition inference."
+}
